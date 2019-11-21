@@ -1,0 +1,20 @@
+@import "../../styles/_variables.scss";
+
+:local(.container) {
+  display: flex;
+  flex-direction: column;
+}
+
+:local(.element)::after {
+  content: '';
+  display: flex;
+  width: 20px;
+  height: 3px;
+  background: $primary;
+  left: 0;
+  position: absolute;
+}
+
+:local(.element) {
+  position: relative;
+}

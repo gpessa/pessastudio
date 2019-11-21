@@ -1,0 +1,6 @@
+@import "../../styles/_variables.scss";
+
+:local(.primary) {
+  background-color: $primary;
+  color: $white;
+}

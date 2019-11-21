@@ -1,0 +1,6 @@
+@import "../../styles/_variables.scss";
+
+:local(.element) {
+  text-transform: uppercase;
+  background: $white;
+}
