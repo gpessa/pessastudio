@@ -1,5 +1,5 @@
 module.exports = {
-  pathPrefix: "/gatsby-react-bootstrap-starter",
+  pathPrefix: "/pessastudio",
   siteMetadata: {
     title: `Gatsby React Bootstrap Starter`,
     description: `A starter that includes react-bootstrap and react-icons, along with SASS compilation.`,
