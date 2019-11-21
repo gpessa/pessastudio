@@ -1,11 +1,10 @@
 import React from "react"
 import { Container } from "react-bootstrap"
 
-import Layout from "../../components/Layout"
+
 import ProductCard from "../../components/ProductCard"
 
 const CucchiaiSegnaletica = () => (
-  <Layout pageInfo={{ pageName: "Cucchiai e segnaletica" }}>
     <Container>
 
       <h1>Cucchiai e segnaletica</h1>
@@ -70,10 +69,8 @@ const CucchiaiSegnaletica = () => (
         ]}
         price={16}
       />
-
-
+      
     </Container>
-  </Layout>
 )
 
 export default CucchiaiSegnaletica

@@ -1,5 +1,5 @@
 import React from "react"
-import { withIntl } from "gatsby-plugin-intl"
+import { injectIntl } from "gatsby-plugin-intl"
 
 const styles = require('./styles.scss');
 
@@ -23,4 +23,4 @@ const ProductCard = ({ image, name, description, price, intl: { formatNumber } }
   </div>
 )
 
-export default withIntl(ProductCard)
+export default injectIntl(ProductCard)

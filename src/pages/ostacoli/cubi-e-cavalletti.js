@@ -1,11 +1,9 @@
 import React from "react"
 import { Container } from "react-bootstrap"
 
-import Layout from "../../components/Layout"
 import ProductCard from "../../components/ProductCard"
 
 const CubiCavalletti = () => (
-  <Layout pageInfo={{ pageName: "ostacoli" }}>
     <Container>
       <h1>Cubi e Cavalletti</h1>
       
@@ -56,7 +54,6 @@ const CubiCavalletti = () => (
       </section>
 
     </Container>
-  </Layout>
 )
 
 export default CubiCavalletti

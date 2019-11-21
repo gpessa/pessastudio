@@ -1,15 +1,13 @@
-import { Link } from 'gatsby-plugin-intl';
 import React from 'react';
-import { Col, Container, Nav, Row, Button } from 'react-bootstrap';
+import { Col, Row, Button } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebook, faInstagram } from '@fortawesome/free-brands-svg-icons'
 
 import Map from '../Map';
 import Section from "../Section";
-import { LINKS } from '../Navigation';
 import Newsletter from '../Newsletter';
 
-const styles = require('./styles.scss');
+import styles from './styles.scss';
 
 const Footer = ({ pageInfo }) => (
   <footer>

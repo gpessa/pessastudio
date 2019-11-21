@@ -1,11 +1,9 @@
 import React from "react"
 import { Container } from "react-bootstrap"
 
-import Layout from "../../components/Layout"
 import ProductCard from "../../components/ProductCard"
 
 const CandelieriLameForate = () => (
-  <Layout pageInfo={{ pageName: "" }}>
     <Container>
       <h1>Candelieri e lame forate</h1>
       
@@ -26,7 +24,6 @@ const CandelieriLameForate = () => (
 
 
     </Container>
-  </Layout>
 )
 
 export default CandelieriLameForate

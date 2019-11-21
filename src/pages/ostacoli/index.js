@@ -2,11 +2,10 @@ import React from "react"
 import { Container, ListGroup } from "react-bootstrap"
 import { Link } from "gatsby-plugin-intl"
 
-import Layout from "../../components/Layout"
 import Seo from "../../components/Seo"
 
 const OstacoliPage = () => (
-  <Layout pageInfo={{ pageName: "ostacoli" }}>
+  <>
     <Seo title="Ostacoli" keywords={[`gatsby`, `react`, `bootstrap`]} />
     <Container>
       <h1>Ostacoli</h1>
@@ -37,7 +36,7 @@ const OstacoliPage = () => (
 
       </ListGroup>
     </Container>
-  </Layout>
+  </>
 )
 
 export default OstacoliPage
