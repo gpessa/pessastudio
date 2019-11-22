@@ -4,3 +4,17 @@
   background-color: $primary;
   color: $white;
 }
+
+:local(.social) {
+  color: $white;
+  font-size: $font-size-lg;
+
+  &:hover {
+    color: $white;
+  }
+
+  + :local(.social) {
+    margin-left: $spacer;
+  }
+}
+

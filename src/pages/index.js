@@ -1,7 +1,9 @@
 import React from "react"
 import { Carousel, Col, Row } from "react-bootstrap"
 import { Seo, Hero, Section, ProductSquare } from "../components"
-import { LINKS } from "../components/Navigation"
+import { PRODUCT_IDS } from "../constants";
+import { injectIntl } from 'gatsby-plugin-intl';
+
 
 const QUOTES = [
   {
@@ -21,7 +23,7 @@ const QUOTES = [
   },
 ]
 
-const IndexPage = () => (
+const IndexPage = ({ intl: { formatMessage } }) => (
   <>
     <Seo title="Home" keywords={[`gatsby`, `react`, `bootstrap`]} />
 
@@ -58,12 +60,13 @@ const IndexPage = () => (
     <Section fluid={true}>
       <h1 className={"text-center"}>I nostri prodotti</h1>
       <Row>
-        {LINKS.map(({ id, label }) => (
-          <Col>
+        {PRODUCT_IDS.map(id => (
+          <Col key={id}>
             <ProductSquare
+              url={`/${id}`}
+              name={formatMessage({ id: `NAVIGATION_${id}` })}
               image={require(`../images/icon-${id}.jpg`)}
-              name={label}
-              description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante."
+              description={formatMessage({ id: `HOME_product_description_${id}` })}
             />
           </Col>
         ))}
@@ -73,12 +76,9 @@ const IndexPage = () => (
     <Section fluid={true} className="bg-light">
       <h1 className={"text-center"}>Cosa dicono di noi</h1>
       <Carousel className="text-center py-5">
-        {QUOTES.map(({ quote, who }) => (
+        {Array(2).fill(null).map((x, index) => (
           <Carousel.Item>
-            <blockquote className="blockquote">
-              <p>{quote}</p>
-              <footer className="blockquote-footer">{who}</footer>
-            </blockquote>
+            <blockquote className="blockquote">{formatMessage({ id: `HOME_quote_${index + 1}` })}</blockquote>
           </Carousel.Item>
         ))}
       </Carousel>
@@ -86,4 +86,4 @@ const IndexPage = () => (
   </>
 )
 
-export default IndexPage
+export default injectIntl(IndexPage)

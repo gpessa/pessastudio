@@ -1,13 +1,11 @@
 import React from "react"
-import { Container, ListGroup } from "react-bootstrap"
+import { ListGroup } from "react-bootstrap"
 import { Link } from "gatsby-plugin-intl"
-
-import Seo from "../../components/Seo"
+import { Section } from "../../components";
 
 const OstacoliPage = () => (
   <>
-    <Seo title="Ostacoli" keywords={[`gatsby`, `react`, `bootstrap`]} />
-    <Container>
+    <Section>
       <h1>Ostacoli</h1>
 
       <p>I nostri ostacoli sono progettati e costruiti per durare nel tempo non richiedono alcuna manutenzione e conservano, inalterata, la loro "bellezza" anche se lasciati nel campo per anni. Se gli ostacoli per il professionista sono uno strumento di lavoro, per molti altri appassionati rappresentano la realizzazione di un sogno. Noi abbiamo deciso di rendere questi strumenti resistenti nel tempo per fare in modo che questo sogno duri.</p>
@@ -35,7 +33,7 @@ const OstacoliPage = () => (
         </ListGroup.Item>
 
       </ListGroup>
-    </Container>
+    </Section>
   </>
 )
 

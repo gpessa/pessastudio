@@ -1,6 +1,9 @@
 @import "../../styles/_variables.scss";
 
 :local(.container) {
+}
+
+:local(.containerWithHover) {
   color: inherit;
 
   &:hover {

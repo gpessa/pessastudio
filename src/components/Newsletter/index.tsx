@@ -51,7 +51,7 @@ const NewsletterSubscription = () => {
             />
           </Form.Group>
 
-          <Button variant="light" type="submit" block>
+          <Button variant="dark" type="submit" block>
             Iscriviti
             {isLoading && (
               <Spinner

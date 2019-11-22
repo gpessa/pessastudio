@@ -12,15 +12,20 @@ $gray-800: #343a40;
 $gray-900: #212529;
 $black:    #000;
 
+$grid-gutter-width:   40px;
+$font-size-base:              1rem;
+$font-size-lg:                $font-size-base * 1.25;
+$font-size-sm:                $font-size-base * .875;
+
 $headings-margin-bottom:   0.6em;
 $spacer:                 1rem;
 
-$gray-base:              #000 !default;
-$gray-darker:            lighten($gray-base, 13.5%) !default; // #222
-$gray-dark:              lighten($gray-base, 20%) !default;   // #333
-$gray:                   lighten($gray-base, 33.5%) !default; // #555
-$gray-light:             lighten($gray-base, 46.7%) !default; // #777
-$gray-lighter:           lighten($gray-base, 93.5%) !default; // #eee
+$gray-base:              #000;
+$gray-darker:            lighten($gray-base, 13.5%);
+$gray-dark:              lighten($gray-base, 20%);
+$gray:                   lighten($gray-base, 33.5%);
+$gray-light:             lighten($gray-base, 46.7%);
+$gray-lighter:           lighten($gray-base, 93.5%);
 
 $primary:                 #356434;
 
@@ -46,3 +51,5 @@ $text-color:                #555;
 
 $carousel-control-color:    $primary;
 $carousel-indicator-active-bg: $primary;
+
+$input-border-color:                    $gray-800;

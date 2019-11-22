@@ -6,11 +6,11 @@ module.exports = {
     author: `Billy Jacoby`,
   },
   plugins: [
-    `gatsby-plugin-react-helmet`,
     `gatsby-plugin-sass`,
-    `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`,
     `gatsby-plugin-typescript`,
+    `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -41,7 +41,7 @@ module.exports = {
         // language JSON resource path
         path: `${__dirname}/src/intl`,
         // supported language
-        languages: [`it`],
+        languages: [`it`, `fr`],
         // language file path
         defaultLanguage: `it`,
         // option to redirect to `/ko` when connecting `/`
