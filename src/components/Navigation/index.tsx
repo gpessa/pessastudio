@@ -1,7 +1,8 @@
-import React from "react"
+import { Link } from 'gatsby-plugin-intl';
+import React from 'react';
+import { Nav, Navbar } from 'react-bootstrap';
 
-import { Navbar, Nav } from "react-bootstrap"
-import { Link } from "gatsby-plugin-intl"
+import * as styles from './styles.module.scss';
 
 const logo = require("../../images/logo.jpg");
 
@@ -13,9 +14,7 @@ const LINKS = [
   { id: "dressage", label: "Dressage" },
 ]
 
-const styles = require('./styles.scss');
-
-const Navigation = ({ pageInfo }) => {
+const Navigation = ({ }) => {
   return (
     <Navbar expand="lg" sticky="top" className={styles.element}>
       <Navbar.Brand to="/" as={Link}>

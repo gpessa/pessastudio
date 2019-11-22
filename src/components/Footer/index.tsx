@@ -1,21 +1,21 @@
 import React from 'react';
-import { Col, Row, Button } from 'react-bootstrap';
+import { Button, Col, Row } from 'react-bootstrap';
+
+import { faFacebook, faInstagram } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faFacebook, faInstagram } from '@fortawesome/free-brands-svg-icons'
 
 import Map from '../Map';
-import Section from "../Section";
 import Newsletter from '../Newsletter';
+import Section from '../Section';
+import * as styles from './styles.module.scss';
 
-import styles from './styles.scss';
-
-const Footer = ({ pageInfo }) => (
+const Footer = ({ }) => (
   <footer>
     <Map />
 
     <Section className={styles.primary}>
       <Row>
-        <Col md={6}>
+        <Col md={4}>
           <p>
             <strong>PESSASTUDIO Horse Tecnology srl</strong><br/>
             via Cà Megliadino, 35<br/>
@@ -27,7 +27,7 @@ const Footer = ({ pageInfo }) => (
           <Button href="#" variant="light" className="ml-3"><FontAwesomeIcon icon={faInstagram} size="lg" /></Button>
 
         </Col>
-        <Col md={6}>
+        <Col md={{ span: 4, offset: 4 }}>
           <Newsletter />
         </Col>
       </Row>

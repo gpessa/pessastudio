@@ -1,7 +1,7 @@
 import React from "react"
 import { injectIntl } from "gatsby-plugin-intl"
 
-const styles = require('./styles.scss');
+import * as styles from './styles.module.scss';
 
 const ProductCard = ({ image, name, description, price, intl: { formatNumber } }) => (
   <div className={styles.container}>

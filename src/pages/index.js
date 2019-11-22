@@ -1,6 +1,6 @@
 import React from "react"
 import { Carousel, Col, Row } from "react-bootstrap"
-import { Seo, Layout, Hero, Section, ProductSquare } from "../components"
+import { Seo, Hero, Section, ProductSquare } from "../components"
 import { LINKS } from "../components/Navigation"
 
 const QUOTES = [

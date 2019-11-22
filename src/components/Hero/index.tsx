@@ -1,7 +1,7 @@
 import React from "react"
 import { Image } from "react-bootstrap"
 
-const styles = require("./styles.scss")
+import * as styles from './styles.module.scss';
 
 const Hero = ({ image }) => (
   <div>

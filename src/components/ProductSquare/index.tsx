@@ -3,7 +3,7 @@ import Header from "../Header";
 import { Image } from "react-bootstrap"
 import { Link } from "gatsby-plugin-intl"
 
-const styles = require('./styles.scss');
+import * as styles from './styles.module.scss';
 
 const ProductSquare = ({ id, image, name, description }) => (
   <Link to={`/${id}`} className={styles.container}>

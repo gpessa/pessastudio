@@ -1,6 +1,6 @@
 import React from "react"
 
-const styles = require('./styles.scss');
+import * as styles from './styles.module.scss';
 
 const Map = () => (
   <div className={styles.container}> 

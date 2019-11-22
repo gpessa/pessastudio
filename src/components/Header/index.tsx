@@ -1,6 +1,6 @@
 import React from "react"
 
-const styles = require("./styles.scss")
+import * as styles from './styles.module.scss';
 
 const Header = ({ as: Component = 'h3', children, ...props }) => (
   <Component {...props}>
