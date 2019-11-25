@@ -7,22 +7,23 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Map from '../Map';
 import Newsletter from '../Newsletter';
 import Section from '../Section';
+
 import * as styles from './styles.module.scss';
 
 const FooterAddress = () => (
-  <p>
+  <>
     <h5 className="mb-0">PESSASTUDIO Horse Tecnology srl</h5>
     via Cà Megliadino, 35<br />
     Montagnana (PD)<br />
     Tel: <a href="tel:+39 0429 805613" className="text-light">+39 0429 805613</a>
-  </p>
+  </>
 )
 
 const Footer = () => (
-  <footer>
+  <footer className={styles.element}>
     <Map />
 
-    <Section className={styles.primary}>
+    <Section className={styles.data}>
       <Row>
         <Col md={4}>
           <FooterAddress />

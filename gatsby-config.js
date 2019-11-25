@@ -27,24 +27,21 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-react-bootstrap`,
-        short_name: `react-bootstrap`,
+        name: `pessastudio`,
+        short_name: `pessastudio`,
         start_url: `/`,
         background_color: `#20232a`,
         theme_color: `#20232a`,
         display: `minimal-ui`,
+        icon: "src/images/favicon.jpg"
       },
     },
     {
       resolve: `gatsby-plugin-intl`,
       options: {
-        // language JSON resource path
         path: `${__dirname}/src/intl`,
-        // supported language
         languages: [`it`, `fr`],
-        // language file path
         defaultLanguage: `it`,
-        // option to redirect to `/ko` when connecting `/`
         redirect: true,
       },
     },
@@ -53,3 +50,7 @@ module.exports = {
     // `gatsby-plugin-offline`,
   ],
 }
+
+// npm install --save gatsby-plugin-sitemap
+// npm install --save gatsby-plugin-google-analytics
+// npm install --save gatsby-plugin-robots-txt

@@ -16,10 +16,9 @@ const Navigation = ({ intl: { formatMessage } }) => (
 
     <Navbar.Toggle aria-controls="basic-navbar-nav" />
 
-
     <Navbar.Collapse id="basic-navbar-nav">
       <Nav className="ml-auto">
-        {PRODUCT_IDS.map(id => <Nav.Link to={`/${id}`} as={Link} key={id}>{formatMessage({ id: `NAVIGATION_${id}` })}</Nav.Link>)}
+        {PRODUCT_IDS.map(id => <Nav.Link to={`/${id}`} as={Link} key={id} activeClassName="active">{formatMessage({ id: `NAVIGATION_${id}` })}</Nav.Link>)}
         <LanguageSelector />
       </Nav>
     </Navbar.Collapse>

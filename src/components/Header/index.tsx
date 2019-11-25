@@ -9,7 +9,7 @@ const Header = ({ as: Component = 'h3', children, ...props }: Props) => (
 )
 
 interface Props {
-  as: React.ElementType;
+  as?: React.ElementType;
   children: ReactNode;
   className?: string;
 };

@@ -1,13 +1,12 @@
 import React from "react"
 import { Container, ListGroup } from "react-bootstrap"
 
-
-import Seo from "../components/Seo"
+import { Section, Seo } from "../components";
 
 const RecintiFondiPage = () => (
   <>
     <Seo title="Home" keywords={[`gatsby`, `react`, `bootstrap`]} />
-    <Container>
+    <Section>
       <h1>Recinti e fondi</h1>
 
       <p>
@@ -30,21 +29,15 @@ const RecintiFondiPage = () => (
         altezze che vanno da 1,20 mt a 1,90 mt, misura quest’ultima utilizzata
         principalmente per tondini da lavoro o paddock per stalloni.
       </p>
-      <p>
-        In ogni recinzione inoltre si possono inserire uno o più cancelli
-        scorrevoli in alluminio.
-      </p>
-      <p>
-        Tutte le nostre recinzioni sono personalizzate in base alle esigenze di
-        metratura e di figura del cliente.
-      </p>
+      <p>In ogni recinzione inoltre si possono inserire uno o più cancelli scorrevoli in alluminio.</p>
+      <p>Tutte le nostre recinzioni sono personalizzate in base alle esigenze di metratura e di figura del cliente.</p>
 
       <ListGroup>
         <ListGroup.Item>Gamma recinzioni</ListGroup.Item>
         <ListGroup.Item>Ovale per salto in libertà</ListGroup.Item>
         <ListGroup.Item>Fondi</ListGroup.Item>
       </ListGroup>
-    </Container>
+    </Section>
   </>
 )
 

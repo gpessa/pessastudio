@@ -1,6 +1,10 @@
 @import "../../styles/_variables.scss";
 
-:local(.primary) {
+:local(.element) {
+  border-top: 1px solid $border-color;
+}
+
+:local(.data) {
   background-color: $primary;
   color: $white;
 }

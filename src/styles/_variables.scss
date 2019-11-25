@@ -12,6 +12,8 @@ $gray-800: #343a40;
 $gray-900: #212529;
 $black:    #000;
 
+$border-color: $gray-300;
+
 $grid-gutter-width:   40px;
 $font-size-base:              1rem;
 $font-size-lg:                $font-size-base * 1.25;
@@ -28,6 +30,7 @@ $gray-light:             lighten($gray-base, 46.7%);
 $gray-lighter:           lighten($gray-base, 93.5%);
 
 $primary:                 #356434;
+$danger:                red;
 
 $border-radius:             0;
 $border-radius-lg:          0;
@@ -53,3 +56,4 @@ $carousel-control-color:    $primary;
 $carousel-indicator-active-bg: $primary;
 
 $input-border-color:                    $gray-800;
+$figure-caption-font-size:  70%;

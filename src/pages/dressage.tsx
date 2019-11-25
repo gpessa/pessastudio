@@ -11,8 +11,8 @@ const Dressage = ({ intl: { formatMessage } }) => (
       <FormattedMessage
         id="DRESSAGE_intro_1"
         values={{
-          linktraining: (msg: string) => (<a href="#dressage-training">{msg}</a>),
-          linkolimpic: (msg: string) => (<a href="#dressage-olimpic">{msg}</a>)
+          linktraining: (msg: string) => (<a href="#dressage-training"><strong>{msg}</strong></a>),
+          linkolimpic: (msg: string) => (<a href="#dressage-olimpic"><strong>{msg}</strong></a>)
         }}
       />
       <FormattedMessage id="DRESSAGE_intro_2"/>
@@ -21,13 +21,11 @@ const Dressage = ({ intl: { formatMessage } }) => (
     <Section id="dressage-training">
       <Header as="h2">{formatMessage({ id: `DRESSAGE_training_title` })}</Header>
       <FormattedHTMLMessage id="DRESSAGE_training_description" />
-    </Section>
 
-    <Container>
-      <Row>
+      <Row className="mt-5">
         <Col md={3}>
           <ProductSquare
-            image={require("../images/product/dressage/lettera.jpg")}
+            image={require("../images/product/dressage/training-lettera.jpg")}
             name="Lettera Dressage Light"
             width={20}
             height={30}
@@ -39,7 +37,7 @@ const Dressage = ({ intl: { formatMessage } }) => (
 
         <Col md={3}>
           <ProductSquare
-            image={require("../images/product/dressage/modulo-dressage.jpg")}
+            image={require("../images/product/dressage/training-modulo-dressage.jpg")}
             name="Modulo dressage"
             height={28.5}
             weight={3}
@@ -49,7 +47,7 @@ const Dressage = ({ intl: { formatMessage } }) => (
 
         <Col md={3}>
           <ProductSquare
-            image={require("../images/product/dressage/rettangolo-dressage-20x60.jpg")}
+            image={require("../images/product/dressage/training-rettangolo-dressage-20x60.jpg")}
             description="Un comodo set composto da 60 moduli e 8 letter"
             name="Rettangolo dressage 20x40"
             height={2000}
@@ -59,7 +57,7 @@ const Dressage = ({ intl: { formatMessage } }) => (
 
         <Col md={3}>
           <ProductSquare
-            image={require("../images/product/dressage/rettangolo-dressage-20x40.jpg")}
+            image={require("../images/product/dressage/training-rettangolo-dressage-20x40.jpg")}
             description="Un comodo set composto da 80 moduli e 12 letter"
             name="Rettangolo dressage 20x60"
             height={2000}
@@ -68,30 +66,28 @@ const Dressage = ({ intl: { formatMessage } }) => (
         </Col>
 
       </Row>
-    </Container>
+    </Section>
 
     <Section id="dressage-olimpic">
       <Header as="h2">{formatMessage({ id: `DRESSAGE_olimpic_title` })}</Header>
       <FormattedHTMLMessage id="DRESSAGE_olimpic_description" />
-    </Section>
 
-    <Container>
-      <Row>
+      <Row className="mt-5">
         <Col md={3}>
           <ProductSquare
-            image={require("../images/product/dressage/lettera.jpg")}
+            image={require("../images/product/dressage/olimpic-lettera.jpg")}
             name="Lettera Dressage Light"
-            width={20}
-            height={30}
-            weight={0.5}
+            width={39}
+            height={39}
+            weight={2.5}
             colors={['white']}
-            price={20}
+            price={51}
           />
         </Col>
 
         <Col md={3}>
           <ProductSquare
-            image={require("../images/product/dressage/modulo-dressage.jpg")}
+            image={require("../images/product/dressage/olimpic-modulo-dressage.jpg")}
             name="Modulo dressage"
             height={28.5}
             weight={3}
@@ -101,7 +97,7 @@ const Dressage = ({ intl: { formatMessage } }) => (
 
         <Col md={3}>
           <ProductSquare
-            image={require("../images/product/dressage/rettangolo-dressage-20x60.jpg")}
+            image={require("../images/product/dressage/olimpic-rettangolo-dressage-20x60.jpg")}
             description="Un comodo set composto da 60 moduli e 8 letter"
             name="Rettangolo dressage 20x40"
             height={2000}
@@ -111,7 +107,7 @@ const Dressage = ({ intl: { formatMessage } }) => (
 
         <Col md={3}>
           <ProductSquare
-            image={require("../images/product/dressage/rettangolo-dressage-20x40.jpg")}
+            image={require("../images/product/dressage/olimpic-rettangolo-dressage-20x40.jpg")}
             description="Un comodo set composto da 80 moduli e 12 letter"
             name="Rettangolo dressage 20x60"
             height={2000}
@@ -120,7 +116,7 @@ const Dressage = ({ intl: { formatMessage } }) => (
         </Col>
 
       </Row>
-    </Container>
+    </Section>
   </>
 )
 
