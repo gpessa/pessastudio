@@ -1,0 +1,10 @@
+@import "../../styles/_variables.scss";
+
+:local(.container) {
+  padding-top: $spacer * 2;
+  // padding-bottom: $spacer * 2;
+}
+
+:local(.containerLast) {
+  padding-bottom: 0;
+}

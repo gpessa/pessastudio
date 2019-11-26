@@ -4,14 +4,13 @@ import { Nav, Navbar } from 'react-bootstrap';
 
 import { PRODUCT_IDS } from '../../constants';
 import LanguageSelector from '../LanguageSelector';
+import Logo from '../Logo';
 import * as styles from './styles.module.scss';
-
-const logo = require("../../images/logo.jpg");
 
 const Navigation = ({ intl: { formatMessage } }) => (
   <Navbar expand="lg" sticky="top" className={styles.element}>
     <Navbar.Brand to="/" as={Link}>
-      <img src={logo} alt="Pessa Studio" />
+      <Logo />
     </Navbar.Brand>
 
     <Navbar.Toggle aria-controls="basic-navbar-nav" />

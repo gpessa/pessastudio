@@ -7,7 +7,7 @@ import { injectIntl } from 'gatsby-plugin-intl';
 
 const IndexPage = ({ intl: { formatMessage } }) => (
   <>
-    <Seo title="Home" keywords={[`gatsby`, `react`, `bootstrap`]} />
+    <Seo title={formatMessage({ id: "META_title_index" })} keywords={[]} />
 
     <Hero image={require("../images/background-home-1.jpg")} />
 

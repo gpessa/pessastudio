@@ -6,4 +6,14 @@ const PRODUCT_IDS = [
   "dressage",
 ];
 
-export { PRODUCT_IDS }
+
+enum Colors {
+  WHITE = "#FFFFF",
+  BLU = "#264FD0",
+  YELLOW = "#FEB00D",
+  GREEN = "#316330",
+  RED = "#F41701"
+}
+
+
+export { PRODUCT_IDS, Colors }

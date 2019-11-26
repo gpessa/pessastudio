@@ -1,6 +1,7 @@
 @import "../../styles/_variables.scss";
 
-:local(.container) {
+:local(.label) {
+  font-weight: bold;
 }
 
 :local(.containerWithHover) {
@@ -9,10 +10,14 @@
   &:hover {
     text-decoration: none;
   }
+}
 
-  &:hover :local(.image) img {
-    transform: scale(1.1);
-  }
+:local(.color) {
+  display: inline-block;
+  height: 12px;
+  width: 12px;
+  border: 1px solid $border-color;
+  margin-right: $spacer / 4;
 }
 
 :local(.image) {
@@ -21,10 +26,12 @@
   overflow: hidden;
   position: relative;
   margin-bottom: $spacer;
+  background-repeat: no-repeat;
+  background-position: center center;
+  // background-size: contain;
+  background-size: cover;
 }
 
-:local(.image) img {
-  position: absolute;
-  width: 100%;
-  transition-duration: 0.5s;
+:local(.price) {
+  margin-top: $spacer / 2;
 }

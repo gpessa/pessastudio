@@ -1,0 +1,30 @@
+@import "../../styles/_variables.scss";
+
+:local(.element) {
+  height: 55px;
+  padding-left: 60px;
+  position: relative;
+}
+
+:local(.image) {
+  height: 100%;
+  position: absolute;
+  left: 0;
+}
+
+:local(.title) {
+  font-family: $headings-font-family;
+  line-height: 0.8em;
+  margin: 0;
+  font-weight: $headings-font-weight;
+}
+
+:local(.subtitle) {
+  font-family: $font-family-sans-serif;
+  line-height: 1;
+  margin: 0;
+  color: $primary;
+  position: absolute;
+  bottom: -3px;
+  letter-spacing: 2.3px;
+}

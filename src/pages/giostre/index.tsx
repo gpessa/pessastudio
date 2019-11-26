@@ -1,6 +1,6 @@
 import React from "react"
 
-import { Section, Hero, Header } from "../../components"
+import { Section, Hero, Header, SubSection } from "../../components"
 
 const Giostre = () => (
   <>
@@ -13,18 +13,18 @@ const Giostre = () => (
       <p>Sono state create dalla ricerca di <strong>Luciano Pessa</strong> con l'intenzione di realizzare un semplice ed affidabile strumento di lavoro che vi consentirà di allenare il vostro cavallo anche quando non avete la possibilità di montarlo</p>
       <p>La giostra vi permetterà, non solo di raffreddare il vostro cavallo con una passeggiata post allenamento, ma anche di creare una vera sessione di lavoro passando da un’andatura all'altra e cambiando di mano</p>
       <p>La caratteristica principale delle nostre giostre è di essere considerate strutture precarie. Non avrete quindi bisogno di nessuna concessione edilizia, ma solo in taluni casi, di un semplice permesso di installazione rilasciato dalle amministrazioni locali</p>
-    </Section>
 
-    <Section>
-      <Header>La gamma</Header>
-      <p>Due sono i modelli di giostra che proponiamo. <strong>TECNOEXERCISER</strong>, prodotta da oltre 20 anni, e <strong>IPPOWALKER</strong>, realizzata per rispondere alle esigenze di un mercato che richiede un prodotto affidabile e al tempo stesso economico.</p>
-      <p>Sia <strong>TECNOEXERCISER</strong> che <strong>IPPOWALKER</strong> sono disponibili in tre diverse versioni:</p>
+      <SubSection>
+        <Header>La gamma</Header>
+        <p>Due sono i modelli di giostra che proponiamo. <strong>TECNOEXERCISER</strong>, prodotta da oltre 20 anni, e <strong>IPPOWALKER</strong>, realizzata per rispondere alle esigenze di un mercato che richiede un prodotto affidabile e al tempo stesso economico.</p>
+        <p>Sia <strong>TECNOEXERCISER</strong> che <strong>IPPOWALKER</strong> sono disponibili in tre diverse versioni:</p>
 
-      <ul>
-        <li>Completa di corridoio con copertura in pvc</li>
-        <li>Con corridoio scoperto in PPO</li>
-        <li>Solo la macchina da posizionare in un corridoio di vostra realizzazione</li>
-      </ul>
+        <ul>
+          <li>Completa di corridoio con copertura in pvc</li>
+          <li>Con corridoio scoperto in PPO</li>
+          <li>Solo la macchina da posizionare in un corridoio di vostra realizzazione</li>
+        </ul>
+      </SubSection>
     </Section>
   </>
 )
