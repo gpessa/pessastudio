@@ -3,6 +3,7 @@ import { StaticQuery, graphql } from "gatsby"
 
 import Navigation from "../Navigation"
 import Footer from "../Footer"
+import Gdpr from "../Gdpr"
 
 const Layout = ({ children, pageInfo }) => (
   <StaticQuery
@@ -20,6 +21,7 @@ const Layout = ({ children, pageInfo }) => (
         <Navigation pageInfo={pageInfo} />
         <main>{children}</main>
         <Footer />
+        <Gdpr />
       </>
     )}
   />

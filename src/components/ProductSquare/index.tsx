@@ -12,7 +12,7 @@ const ProductSquare = ({ image, url, name, width, height, weight, colors, length
     <Tag to={url} className={`${styles.container} ${url && styles.containerWithHover} ${className}`}>
       <div className={styles.image} style={{ backgroundImage: `url(${image})` }}></div>
       <Header as="h5" className={styles.title}>{name}</Header>
-      <div className="text-muted small">
+      <div className={styles.description}>
         {description && <p>{description}</p>}
         {length && <div><span className={styles.label}>Altezza: </span>{formatNumber(length)} cm.</div>}
         {width && <div><span className={styles.label}>Larghezza:</span> {formatNumber(width)} cm.</div>}
