@@ -17,26 +17,27 @@ const CubiCavalletti = () => (
       <Row>
         <Col md={3}>
           <ProductSquare
-            image={require("../../images/cubi-mini.jpg")}
-            name="Cubi Mini"
-            width={35}
+            colors={[Colors.WHITE, Colors.BLU, Colors.YELLOW, Colors.RED, Colors.GREEN]}
             height={57}
+            image={require("../../images/cubi-mini.jpg")}
             length={37}
-            weight={3}
-            colors={[Colors.WHITE, Colors.BLU]}
+            name="Cubi Mini"
             price={35}
+            weight={3}
+            width={35}
           />
         </Col>  
 
         <Col md={3}>
           <ProductSquare
-            image={require("../../images/cubi-maxi.jpg")}
-            name="Cubi Maxi"
-            width={37}
+            colors={[Colors.WHITE, Colors.BLU, Colors.YELLOW, Colors.RED, Colors.GREEN]}
             height={70}
+            image={require("../../images/cubi-maxi.jpg")}
             length={57}
-            weight={5}
+            name="Cubi Maxi"
             price={62}
+            weight={5}
+            width={37}
           />
         </Col>
       </Row>
@@ -50,6 +51,7 @@ const CubiCavalletti = () => (
       <Row>
         <Col md={3}>
           <ProductSquare
+            colors={[Colors.WHITE, Colors.BLU, Colors.YELLOW, Colors.RED, Colors.GREEN]}
             image={require("../../images/cavalletto.jpg")}
             name="Cavalletti caprilli"
             length={50}

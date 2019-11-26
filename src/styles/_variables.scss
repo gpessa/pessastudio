@@ -19,7 +19,7 @@ $font-size-base:              1rem;
 $font-size-lg:                $font-size-base * 1.25;
 $font-size-sm:                $font-size-base * .875;
 
-$headings-margin-bottom:   0.6em;
+$headings-margin-bottom:   0.8em;
 $spacer:                 1rem;
 
 $gray-base:              #000;
@@ -57,3 +57,7 @@ $carousel-indicator-active-bg: $primary;
 
 $input-border-color:                    $gray-800;
 $figure-caption-font-size:  70%;
+
+
+$small-font-size:             80%;
+$text-muted:                  $gray-600;

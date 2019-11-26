@@ -4,6 +4,10 @@
   font-weight: bold;
 }
 
+:local(.title) {
+  margin-bottom: $spacer;
+}
+
 :local(.containerWithHover) {
   color: inherit;
 
@@ -34,4 +38,14 @@
 
 :local(.price) {
   margin-top: $spacer / 2;
+  font-family: $headings-font-family;
+}
+
+:local(.priceVat) {
+  font-size: $small-font-size;
+  color: $text-muted;
+}
+
+:local(.container) {
+  margin-bottom: $grid-gutter-width;
 }

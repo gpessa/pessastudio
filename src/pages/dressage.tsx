@@ -2,7 +2,8 @@ import React from "react"
 
 import { Section, Header, ProductSquare } from "../components";
 import { injectIntl, FormattedHTMLMessage, FormattedMessage } from 'gatsby-plugin-intl';
-import { Container, Row, Col } from "react-bootstrap";
+import { Row, Col } from "react-bootstrap";
+import { Colors } from "../constants";
 
 const Dressage = ({ intl: { formatMessage } }) => (
   <>
@@ -15,7 +16,7 @@ const Dressage = ({ intl: { formatMessage } }) => (
           linkolimpic: (msg: string) => (<a href="#dressage-olimpic"><strong>{msg}</strong></a>)
         }}
       />
-      <FormattedMessage id="DRESSAGE_intro_2"/>
+      <p>{formatMessage({ id: "DRESSAGE_intro_2" })}</p>
     </Section>
 
     <Section id="dressage-training">
@@ -30,7 +31,7 @@ const Dressage = ({ intl: { formatMessage } }) => (
             width={20}
             height={30}
             weight={0.5}
-            colors={['white']}
+            colors={[Colors.WHITE]}
             price={20}
           />
         </Col>
@@ -41,14 +42,14 @@ const Dressage = ({ intl: { formatMessage } }) => (
             name="Modulo dressage"
             height={28.5}
             weight={3}
-            colors={['white']}
+            colors={[Colors.WHITE]}
           />
         </Col>
 
         <Col md={3}>
           <ProductSquare
             image={require("../images/product/dressage/training-rettangolo-dressage-20x60.jpg")}
-            description="Un comodo set composto da 60 moduli e 8 letter"
+            description="Un comodo set composto da 60 moduli e 8 lettere"
             name="Rettangolo dressage 20x40"
             height={2000}
             weight={4000}
@@ -58,7 +59,7 @@ const Dressage = ({ intl: { formatMessage } }) => (
         <Col md={3}>
           <ProductSquare
             image={require("../images/product/dressage/training-rettangolo-dressage-20x40.jpg")}
-            description="Un comodo set composto da 80 moduli e 12 letter"
+            description="Un comodo set composto da 80 moduli e 12 lettere"
             name="Rettangolo dressage 20x60"
             height={2000}
             weight={6000}
@@ -80,7 +81,7 @@ const Dressage = ({ intl: { formatMessage } }) => (
             width={39}
             height={39}
             weight={2.5}
-            colors={['white']}
+            colors={[Colors.WHITE]}
             price={51}
           />
         </Col>
@@ -91,7 +92,7 @@ const Dressage = ({ intl: { formatMessage } }) => (
             name="Modulo dressage"
             height={28.5}
             weight={3}
-            colors={['white']}
+            colors={[Colors.WHITE]}
           />
         </Col>
 

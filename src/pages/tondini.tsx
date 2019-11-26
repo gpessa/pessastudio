@@ -18,32 +18,24 @@ const TondiniPage = ({ intl: { formatMessage } }) => (
       <p>Come per le nostre giostre anche i tondini sono considerate strutture precarie e non necessitano quindi di nessuna concessione edilizia ma, in taluni casi di un semplice permesso di installazione rilasciato dall’amministrazione locale.</p>
 
       <Row>
-        <Col>
-          <Figure>
-            <Figure.Image src={require("../images/product/tondini/tondino-1.jpg")} />
-            <Figure.Caption>Tondino coperto 18 pannelli 15mt.</Figure.Caption>
-          </Figure>
+        <Col as={Figure}>
+          <Figure.Image src={require("../images/product/tondini/tondino-1.jpg")} />
+          <Figure.Caption>Tondino coperto 18 pannelli 15mt.</Figure.Caption>
         </Col>
 
-        <Col>
-          <Figure>
-            <Figure.Image src={require("../images/product/tondini/tondino-2.jpg")} />
-            <Figure.Caption>Tondino coperto 24 pannelli 19.9mt.</Figure.Caption>
-          </Figure>
+        <Col as={Figure}>
+          <Figure.Image src={require("../images/product/tondini/tondino-2.jpg")} />
+          <Figure.Caption>Tondino coperto 24 pannelli 19.9mt.</Figure.Caption>
         </Col>
 
-        <Col>
-          <Figure>
-            <Figure.Image src={require("../images/product/tondini/tondino-3.jpg")} />
-            <Figure.Caption>Tondino coperto.</Figure.Caption>
-          </Figure>
+        <Col as={Figure}>
+          <Figure.Image src={require("../images/product/tondini/tondino-3.jpg")} />
+          <Figure.Caption>Tondino coperto.</Figure.Caption>
         </Col>
 
-        <Col>
-          <Figure>
-            <Figure.Image src={require("../images/product/tondini/tondino-4.jpg")} />
-            <Figure.Caption>Interno tondino coperto.</Figure.Caption>
-          </Figure>
+        <Col as={Figure}>
+          <Figure.Image src={require("../images/product/tondini/tondino-4.jpg")} />
+          <Figure.Caption>Interno tondino coperto.</Figure.Caption>
         </Col>
       </Row>
 

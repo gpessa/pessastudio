@@ -23,14 +23,13 @@ const IndexPage = ({ intl: { formatMessage } }) => (
       <h1 className={"text-center"}>I nostri prodotti</h1>
       <Row>
         {PRODUCT_IDS.map(id => (
-          <Col key={id}>
-            <ProductSquare
-              key={id}
-              url={`/${id}`}
-              name={formatMessage({ id: `NAVIGATION_${id}` })}
-              image={require(`../images/icon-${id}.jpg`)}
-              description={formatMessage({ id: `HOME_product_description_${id}` })}
-            />
+          <Col
+            key={id}>
+            as={ProductSquare}
+            url={`/${id}`}
+            name={formatMessage({ id: `NAVIGATION_${id}` })}
+            image={require(`../images/icon-${id}.jpg`)}
+            description={formatMessage({ id: `HOME_product_description_${id}` })}
           </Col>
         ))}
       </Row>
