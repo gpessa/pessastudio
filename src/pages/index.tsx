@@ -24,20 +24,20 @@ const IndexPage = ({ intl: { formatMessage } }) => (
       <Row>
         {PRODUCT_IDS.map(id => (
           <Col
-            key={id}>
+            key={id}
             as={ProductSquare}
             url={`/${id}`}
             name={formatMessage({ id: `NAVIGATION_${id}` })}
             image={require(`../images/icon-${id}.jpg`)}
             description={formatMessage({ id: `HOME_product_description_${id}` })}
-          </Col>
+          />
         ))}
       </Row>
     </Section>
 
     <Section fluid={true} className="bg-light">
       <h1 className={"text-center"}>Cosa dicono di noi</h1>
-      <Carousel className="text-center py-5">
+      <Carousel className="text-center py-4">
         {Array(2).fill(null).map((x, index) => (
           <Carousel.Item key={index}>
             <blockquote className="blockquote">{formatMessage({ id: `HOME_quote_${index + 1}` })}</blockquote>

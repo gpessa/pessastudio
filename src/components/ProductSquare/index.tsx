@@ -5,7 +5,7 @@ import { Link, injectIntl } from "gatsby-plugin-intl"
 import * as styles from './styles.module.scss';
 import { Colors } from "../../constants";
 
-const ProductSquare = ({ image, url, name, width, height, weight, colors, price, description, className, intl: { formatNumber } }: Props) => {
+const ProductSquare = ({ image, url, name, width, height, weight, colors, length, price, description, className, intl: { formatNumber } }: Props) => {
   const Tag = url ? Link : 'div';
 
   return (

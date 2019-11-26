@@ -1,6 +1,7 @@
 module.exports = {
   pathPrefix: "/pessastudio",
   siteMetadata: {
+    siteUrl: `https://www.pessastudio.com`,
     title: `Pessa studio`,
     description: ``,
     author: ``
@@ -8,7 +9,9 @@ module.exports = {
   plugins: [
     `gatsby-plugin-sass`,
     `gatsby-plugin-sharp`,
+    `gatsby-plugin-sitemap`,
     `gatsby-transformer-sharp`,
+    'gatsby-plugin-robots-txt',
     `gatsby-plugin-typescript`,
     `gatsby-plugin-react-helmet`,
     {
@@ -51,6 +54,4 @@ module.exports = {
   ],
 }
 
-// npm install --save gatsby-plugin-sitemap
 // npm install --save gatsby-plugin-google-analytics
-// npm install --save gatsby-plugin-robots-txt
