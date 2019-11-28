@@ -3,11 +3,15 @@ import { Container } from "react-bootstrap";
 
 import * as styles from './styles.module.scss';
 
-const Section = ({ children, className, fluid, id, ...props }: SectionPros) => (
-  <div className={`${styles.container} ${className}`} id={id} {...props}>
-    <Container fluid={fluid}>{children}</Container>
-  </div>
-)
+const Section = ({ children, className, fluid, id, ...props }: SectionPros) => {
+  const Tag = fluid ? 'div' : Container;
+
+  return (
+    <Tag className={`${styles.container} ${className}`} id={id} {...props}>
+      <Container fluid={fluid}>{children}</Container>
+    </Tag>
+  )
+}
 
 interface SectionPros {
   children: ReactNode;

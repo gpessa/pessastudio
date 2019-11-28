@@ -15,5 +15,11 @@ enum Colors {
   RED = "#F41701"
 }
 
+enum Ratio {
+  SQUARE = "square",
+  HORIZONTAL = "horizontal",
+  VERTICAL = "vertical",
+}
 
-export { PRODUCT_IDS, Colors }
+
+export { PRODUCT_IDS, Colors, Ratio }

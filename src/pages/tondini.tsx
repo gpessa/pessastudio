@@ -44,7 +44,7 @@ const TondiniPage = ({ intl: { formatMessage } }) => (
         </Col>
       </Row>
 
-      <SubSection>
+      <SubSection fluid>
         <Header>Come preparare il terreno</Header>
         <p>Prima del montaggio il terreno deve essere preparato seguendo le istruzioni sotto elencate:</p>
         <ul>
@@ -55,7 +55,7 @@ const TondiniPage = ({ intl: { formatMessage } }) => (
         </ul>
       </SubSection>
 
-      <SubSection>
+      <SubSection fluid>
         <Header>Dimensioni tondini</Header>
 
         <Row className="mt-4">

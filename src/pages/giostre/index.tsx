@@ -14,7 +14,7 @@ const Giostre = () => (
       <p>La giostra vi permetterà, non solo di raffreddare il vostro cavallo con una passeggiata post allenamento, ma anche di creare una vera sessione di lavoro passando da un’andatura all'altra e cambiando di mano</p>
       <p>La caratteristica principale delle nostre giostre è di essere considerate strutture precarie. Non avrete quindi bisogno di nessuna concessione edilizia, ma solo in taluni casi, di un semplice permesso di installazione rilasciato dalle amministrazioni locali</p>
 
-      <SubSection>
+      <SubSection fluid>
         <Header>La gamma</Header>
         <p>Due sono i modelli di giostra che proponiamo. <strong>TECNOEXERCISER</strong>, prodotta da oltre 20 anni, e <strong>IPPOWALKER</strong>, realizzata per rispondere alle esigenze di un mercato che richiede un prodotto affidabile e al tempo stesso economico.</p>
         <p>Sia <strong>TECNOEXERCISER</strong> che <strong>IPPOWALKER</strong> sono disponibili in tre diverse versioni:</p>

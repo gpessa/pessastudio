@@ -23,30 +23,31 @@ const Footer = () => (
   <footer className={styles.element}>
     <Map />
 
-    <Section className={styles.data}>
-      <Row>
-        <Col md={4}>
-          <FooterAddress />
+    <div className={styles.data} >
+      <Section>
+        <Row>
+          <Col md={4}>
+            <FooterAddress />
 
-          <div className="mt-2">
-            <a target="_blank" href="https://www.facebook.com/Pessastudio-HORSE-Tecnology-1050570271816027/" className={styles.social}>
-              <FontAwesomeIcon icon={faFacebookSquare} size="lg" />
-            </a>
+            <div className="mt-2">
+              <a target="_blank" href="https://www.facebook.com/Pessastudio-HORSE-Tecnology-1050570271816027/" className={styles.social}>
+                <FontAwesomeIcon icon={faFacebookSquare} size="lg" />
+              </a>
 
-            <a target="_blank" href="https://www.instagram.com/pessastudiohorsetecnology" className={styles.social}>
-              <FontAwesomeIcon icon={faInstagram} size="lg" />
-            </a>
-          </div>
-        </Col>
-        
-        <Col md={{ span: 4, offset: 4 }}>
-          <Newsletter />
-        </Col>
-      </Row>
-    </Section>
+              <a target="_blank" href="https://www.instagram.com/pessastudiohorsetecnology" className={styles.social}>
+                <FontAwesomeIcon icon={faInstagram} size="lg" />
+              </a>
+            </div>
+          </Col>
+          
+          <Col md={{ span: 4, offset: 4 }}>
+            <Newsletter />
+          </Col>
+        </Row>
+      </Section>
+    </div>
 
     <div className="small text-center text-muted py-3">COD. FISC. e Part: I.V.A. 04743610281 C.C.I.A.A. PD - R.E.A. 414822</div>
-
   </footer>
 )
 

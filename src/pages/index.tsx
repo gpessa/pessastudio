@@ -1,6 +1,6 @@
 import React from "react"
 import { Carousel, Col, Row } from "react-bootstrap"
-import { Seo, Hero, Section, ProductSquare } from "../components"
+import { Seo, Hero, Section, Product } from "../components"
 import { PRODUCT_IDS } from "../constants";
 import { injectIntl } from 'gatsby-plugin-intl';
 
@@ -25,7 +25,7 @@ const IndexPage = ({ intl: { formatMessage } }) => (
         {PRODUCT_IDS.map(id => (
           <Col
             key={id}
-            as={ProductSquare}
+            as={Product}
             url={`/${id}`}
             name={formatMessage({ id: `NAVIGATION_${id}` })}
             image={require(`../images/icon-${id}.jpg`)}
