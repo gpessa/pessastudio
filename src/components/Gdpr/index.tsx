@@ -11,7 +11,7 @@ const Gdpr = () => (
     ButtonComponent={Button}
     containerClasses={`shadow ${styles.element}`}
     buttonClasses="mt-2 btn-block"
-  >Questo sito utilizza cookies e tecnologie simili. Se non si modificano le impostazioni del browser, l'utente accetta.</CookieConsent>
+  >Utilizziamo i cookie per garantire il corretto funzionamento del sito. Per ulteriori informazioni sul nostro utilizzo dei cookie, consultare la nostra politica sui cookie.</CookieConsent>
 )
 
 export default Gdpr

@@ -16,9 +16,7 @@ const CandelieriLameForate = () => (
         image={require("../../images/candeliereAlluminio.jpg")}
         name="Candeliere 1.7 mt. Piede in alluminio"
         width={72}
-        description={[
-          "Profondità : 72 cm.",
-        ]}
+        description="Profondità : 72 cm."
         height={170}
         weight={10}
       />
@@ -28,9 +26,7 @@ const CandelieriLameForate = () => (
         ratio={Ratio.VERTICAL}
         image={require("../../images/candelierePvc.jpg")}
         name="Candeliere 1.7 mt. Piede in PVC"
-        description={[
-          "Profondità : 72 cm."
-        ]}
+        description="Profondità : 72 cm."
         height={170}
         weight={7}
         width={72}
@@ -41,11 +37,8 @@ const CandelieriLameForate = () => (
         ratio={Ratio.VERTICAL}
         image={require("../../images/lamaDePiccola.jpg")}
         name="Lama DE piccola"
-        description={[
-          "Materiale: acciaio zincato",
-          "Spessore: 2 mm.",
-          "Lunghezza: 50 cm.",
-        ]}
+        description="Materiale: acciaio zincato"
+        thickness={2}
         weight={0.6}
         price={6.6}
       />
@@ -55,11 +48,8 @@ const CandelieriLameForate = () => (
         ratio={Ratio.VERTICAL}
         image={require("../../images/lamaDeGrande.jpg")}
         name="Lama DE grande"
-        description={[
-          "Materiale: acciaio zincato",
-          "Spessore: 2 mm.",
-          "Lunghezza: 1.50 cm.",
-        ]}
+        description="Materiale: acciaio zincato"
+        thickness={2}
         width={6.5}
         weight={0.6}
         price={12.5}

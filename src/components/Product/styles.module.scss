@@ -1,33 +1,11 @@
 @import "../../styles/_variables.scss";
 
-:local(.label) {
-  font-weight: bold;
+:local(.container) {
+  margin-bottom: $grid-gutter-width;
 }
 
-:local(.title) {
-  margin-bottom: $spacer;
-}
-
-:local(.containerWithHover) {
-  color: inherit;
-
-  &:hover {
-    text-decoration: none;
-  }
-}
-
-:local(.description) {
-  color: $text-muted;
-  font-size: 90%;
-  text-align: justify;
-}
-
-:local(.color) {
-  display: inline-block;
-  height: 12px;
-  width: 12px;
-  border: 1px solid $border-color;
-  margin-right: $spacer / 4;
+:local(.container:hover) {
+  text-decoration: none;
 }
 
 :local(.image) {
@@ -38,6 +16,34 @@
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
+}
+
+:local(.label) {
+  font-weight: bold;
+}
+
+:local(.data) {
+  color: $text-muted;
+  font-size: 90%;
+}
+
+:local(.dataLabel) {
+  color: $text-muted;
+}
+
+:local(.price) {
+  margin-top: $spacer;
+  font-family: $headings-font-family;
+  color: $text-color;
+  font-size: 1.2rem;
+}
+
+:local(.color) {
+  display: inline-block;
+  height: 12px;
+  width: 12px;
+  border: 1px solid $border-color;
+  margin-right: $spacer / 4;
 }
 
 :local(.square) {
@@ -52,16 +58,7 @@
   padding-bottom: 200%;
 }
 
-:local(.price) {
-  margin-top: $spacer / 2;
-  font-family: $headings-font-family;
-}
-
 :local(.priceVat) {
   font-size: $small-font-size;
   color: $text-muted;
-}
-
-:local(.container) {
-  margin-bottom: $grid-gutter-width;
 }

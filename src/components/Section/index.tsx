@@ -7,9 +7,9 @@ const Section = ({ children, className, fluid, id, ...props }: SectionPros) => {
   const Tag = fluid ? 'div' : Container;
 
   return (
-    <Tag className={`${styles.container} ${className}`} id={id} {...props}>
-      <Container fluid={fluid}>{children}</Container>
-    </Tag>
+    <div className={`${styles.container} ${className}`} id={id} {...props}>
+      <Tag fluid={fluid}>{children}</Tag>
+    </div>
   )
 }
 

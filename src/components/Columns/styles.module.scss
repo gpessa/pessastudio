@@ -1,0 +1,18 @@
+@import "../../styles/_variables.scss";
+
+:local(.element) {
+  position: relative;
+  background: linear-gradient(90deg, $primary 50%, $light 50%);
+}
+
+:local(.left) {
+  color: $white;
+  padding-top: $spacer * 3;
+  padding-bottom: $spacer * 3;
+}
+
+:local(.right) {
+  color: $black;
+  padding-top: $spacer * 3;
+  padding-bottom: $spacer * 3;
+}

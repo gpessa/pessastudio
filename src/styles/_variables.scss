@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700|Raleway:400,600|Cabin|Roboto+Condensed:400,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700|Raleway:400,600|Cabin|Quicksand|Roboto+Condensed:400,700&display=swap');
 
 $white:    #fff;
 $gray-100: #f8f9fa;
@@ -11,6 +11,7 @@ $gray-700: #495057;
 $gray-800: #343a40;
 $gray-900: #212529;
 $black:    #000;
+$light:         $gray-100;
 
 $border-color: $gray-300;
 
@@ -36,10 +37,10 @@ $border-radius:             0;
 $border-radius-lg:          0;
 $border-radius-sm:          0;
 
-$font-family-sans-serif:    "Raleway", Helvetica, Arial, sans-serif;
+$font-family-sans-serif:    "Quicksand", Helvetica, Arial, sans-serif;
 $font-family-serif:         Georgia, "Times New Roman", Times, serif;
 $headings-font-family:      "Roboto Condensed", Helvetica, Arial, sans-serif;
-$headings-font-weight:      700;
+$headings-font-weight:      normal;
 $navbar-nav-link-padding-x: 1rem;
 
 $navbar-light-bg:                   $white;

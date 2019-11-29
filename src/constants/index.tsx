@@ -21,5 +21,12 @@ enum Ratio {
   VERTICAL = "vertical",
 }
 
+enum Position {
+  TOP = "top",
+  BOTTOM = "bottom",
+  LEFT = "left",
+  RIGHT = 'right'
+}
 
-export { PRODUCT_IDS, Colors, Ratio }
+
+export { PRODUCT_IDS, Colors, Position, Ratio }
