@@ -1,8 +1,8 @@
 import React from "react"
 import { Row, Col, Figure, Container } from "react-bootstrap"
 
-import { Section, Seo, SubSection, Header, Product } from "../components";
-import { Colors } from "../constants";
+import { Section, Seo, SubSection, Header, Product } from "../components"
+import { Colors } from "../constants"
 
 const RecintiFondiPage = () => (
   <>
@@ -12,32 +12,79 @@ const RecintiFondiPage = () => (
       <Container>
         <h1>Recinti e fondi</h1>
 
-        <p>Le recinzioni <strong>Tecno Fence</strong> sono realizzate con materiale particolarmente adatto a durare nel tempo anche in presenza delle più avverse condizioni meteorologiche.</p>
-        <p>Sono in grado di sopportare senza rompersi i calci e le spinte dei cavalli. A differenza del legno o di altri prodotti utilizzati per il medesimo scopo, gli animali non mordono la recinzione. Tecno Fence, non presenta spigoli vivi e inoltre, essendo elastica, è in grado di assorbire gli urti senza rompersi evitando cosi di provocare infortuni a persone e animali. </p>
-        <p>Il materiale impiegato è lo stesso che viene utilizzato per la produzione di serramenti dove l’inalterabilità del colore e delle caratteristiche tecniche sono condizioni indispensabili per garantire un prodotto di qualità. L’inclusione di inibitori dei raggi ultravioletti consente anche di prevenire crepe e rotture e di resistere alla corrosione e allo sfogliamento mantenendo, inalterate, le caratteristiche originali anche con temperature variabili da +70° C a -20°C.</p>
-        <p>Principalmente prodotte nel colore bianco, possono essere fornite, a richiesta, anche nel colore verde. Variabili le altezze che vanno da 1,20 mt a 1,90 mt, misura quest’ultima utilizzata principalmente per tondini da lavoro o paddock per stalloni.</p>
-        <p>In ogni recinzione inoltre si possono inserire uno o più cancelli scorrevoli in alluminio.</p>
-        <p>Tutte le nostre recinzioni sono personalizzate in base alle esigenze di metratura e di figura del cliente.</p>
+        <p>
+          Le recinzioni <strong>Tecno Fence</strong> sono realizzate con
+          materiale particolarmente adatto a durare nel tempo anche in presenza
+          delle più avverse condizioni meteorologiche.
+        </p>
+        <p>
+          Sono in grado di sopportare senza rompersi i calci e le spinte dei
+          cavalli. A differenza del legno o di altri prodotti utilizzati per il
+          medesimo scopo, gli animali non mordono la recinzione. Tecno Fence,
+          non presenta spigoli vivi e inoltre, essendo elastica, è in grado di
+          assorbire gli urti senza rompersi evitando cosi di provocare infortuni
+          a persone e animali.{" "}
+        </p>
+        <p>
+          Il materiale impiegato è lo stesso che viene utilizzato per la
+          produzione di serramenti dove l’inalterabilità del colore e delle
+          caratteristiche tecniche sono condizioni indispensabili per garantire
+          un prodotto di qualità. L’inclusione di inibitori dei raggi
+          ultravioletti consente anche di prevenire crepe e rotture e di
+          resistere alla corrosione e allo sfogliamento mantenendo, inalterate,
+          le caratteristiche originali anche con temperature variabili da +70° C
+          a -20°C.
+        </p>
+        <p>
+          Principalmente prodotte nel colore bianco, possono essere fornite, a
+          richiesta, anche nel colore verde. Variabili le altezze che vanno da
+          1,20 mt a 1,90 mt, misura quest’ultima utilizzata principalmente per
+          tondini da lavoro o paddock per stalloni.
+        </p>
+        <p>
+          In ogni recinzione inoltre si possono inserire uno o più cancelli
+          scorrevoli in alluminio.
+        </p>
+        <p>
+          Tutte le nostre recinzioni sono personalizzate in base alle esigenze
+          di metratura e di figura del cliente.
+        </p>
 
         <Row>
           <Col as={Figure}>
-            <Figure.Image src={require("../images/product/recinti/recinti-image-1.jpg")} />
-            <Figure.Caption>Recinzione per delimitazione area 3 filagne</Figure.Caption>
+            <Figure.Image
+              src={require("../images/product/recinti/recinti-image-1.jpg")}
+            />
+            <Figure.Caption>
+              Recinzione per delimitazione area 3 filagne
+            </Figure.Caption>
           </Col>
 
           <Col as={Figure}>
-            <Figure.Image src={require("../images/product/recinti/recinti-image-2.jpg")} />
-            <Figure.Caption>Recinzione per delimitazione area 3 filagne</Figure.Caption>
+            <Figure.Image
+              src={require("../images/product/recinti/recinti-image-2.jpg")}
+            />
+            <Figure.Caption>
+              Recinzione per delimitazione area 3 filagne
+            </Figure.Caption>
           </Col>
 
           <Col as={Figure}>
-            <Figure.Image src={require("../images/product/recinti/recinti-image-3.jpg")} />
-            <Figure.Caption>Recinzione per delimitazione area 2 filagne</Figure.Caption>
+            <Figure.Image
+              src={require("../images/product/recinti/recinti-image-3.jpg")}
+            />
+            <Figure.Caption>
+              Recinzione per delimitazione area 2 filagne
+            </Figure.Caption>
           </Col>
 
           <Col as={Figure}>
-            <Figure.Image src={require("../images/product/recinti/recinti-image-4.jpg")} />
-            <Figure.Caption>Recinzione per delimitazione area 2 filagne</Figure.Caption>
+            <Figure.Image
+              src={require("../images/product/recinti/recinti-image-4.jpg")}
+            />
+            <Figure.Caption>
+              Recinzione per delimitazione area 2 filagne
+            </Figure.Caption>
           </Col>
         </Row>
       </Container>
@@ -119,11 +166,31 @@ const RecintiFondiPage = () => (
       <SubSection>
         <Header>Fondi</Header>
         <ul>
-          <li>Preparare la superficie spianandola a " SCHIENA D'ASINO " con il centro più alto dei bordi (2%) per far si che la pioggia defluisca. Mantenere i bordi dell'area alla stessa altezza del terreno circostante e riportare materiale nel centro dell'area per alzarlo.</li>
-          <li>Stendere sull'area una "RETE DI SEPARAZIONE", ben tesa e trattenuta lungo i bordi in una canaletta scavata nel terreno impedendo così che la terra si mescoli alla sabbia.</li>
-          <li>Distendere uniformemente sopra la rete uno strato di 7/8 centimetri di sabbia ( diametro 1 mm.)</li>
-          <li>Distribuire sopra alla sabbia 3 kg di "straccetti di geotessuto" per mt. quadro di superficie in modo da mantenere il fondo stabile e morbido. Distribuire successivamente dopo un paio di ingressi a cavallo altri 2 kg.</li>
-          <li>Tutti i giorni passare con una " ERPICE LIVELLATRICE " per eliminare le impronte lasciate dagli zoccoli.</li>
+          <li>
+            Preparare la superficie spianandola a " SCHIENA D'ASINO " con il
+            centro più alto dei bordi (2%) per far si che la pioggia defluisca.
+            Mantenere i bordi dell'area alla stessa altezza del terreno
+            circostante e riportare materiale nel centro dell'area per alzarlo.
+          </li>
+          <li>
+            Stendere sull'area una "RETE DI SEPARAZIONE", ben tesa e trattenuta
+            lungo i bordi in una canaletta scavata nel terreno impedendo così
+            che la terra si mescoli alla sabbia.
+          </li>
+          <li>
+            Distendere uniformemente sopra la rete uno strato di 7/8 centimetri
+            di sabbia ( diametro 1 mm.)
+          </li>
+          <li>
+            Distribuire sopra alla sabbia 3 kg di "straccetti di geotessuto" per
+            mt. quadro di superficie in modo da mantenere il fondo stabile e
+            morbido. Distribuire successivamente dopo un paio di ingressi a
+            cavallo altri 2 kg.
+          </li>
+          <li>
+            Tutti i giorni passare con una " ERPICE LIVELLATRICE " per eliminare
+            le impronte lasciate dagli zoccoli.
+          </li>
         </ul>
       </SubSection>
     </Section>

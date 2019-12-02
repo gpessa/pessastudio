@@ -1,28 +1,41 @@
 import React from "react"
 
-import { Section, Header, Product, SubSection } from "../components";
-import { injectIntl, FormattedHTMLMessage, FormattedMessage } from 'gatsby-plugin-intl';
-import { Row, Col, Container } from "react-bootstrap";
-import { Colors } from "../constants";
+import { Section, Header, Product, SubSection } from "../components"
+import {
+  injectIntl,
+  FormattedHTMLMessage,
+  FormattedMessage,
+} from "gatsby-plugin-intl"
+import { Row, Col, Container } from "react-bootstrap"
+import { Colors } from "../constants"
 
 const Dressage = ({ intl: { formatMessage } }) => (
   <>
     <Section fluid>
-      
       <Container>
         <h1>{formatMessage({ id: `NAVIGATION_dressage` })}</h1>
         <FormattedMessage
           id="DRESSAGE_intro_1"
           values={{
-            linktraining: (msg: string) => (<a href="#dressage-training"><strong>{msg}</strong></a>),
-            linkolimpic: (msg: string) => (<a href="#dressage-olimpic"><strong>{msg}</strong></a>)
+            linktraining: (msg: string) => (
+              <a href="#dressage-training">
+                <strong>{msg}</strong>
+              </a>
+            ),
+            linkolimpic: (msg: string) => (
+              <a href="#dressage-olimpic">
+                <strong>{msg}</strong>
+              </a>
+            ),
           }}
         />
         <p>{formatMessage({ id: "DRESSAGE_intro_2" })}</p>
       </Container>
 
       <SubSection id="dressage-training" className="bg-light">
-        <Header as="h2">{formatMessage({ id: `DRESSAGE_training_title` })}</Header>
+        <Header as="h2">
+          {formatMessage({ id: `DRESSAGE_training_title` })}
+        </Header>
         <FormattedHTMLMessage id="DRESSAGE_training_description" />
 
         <Row className="mt-5">
@@ -67,12 +80,13 @@ const Dressage = ({ intl: { formatMessage } }) => (
               weight={6000}
             />
           </Col>
-
         </Row>
       </SubSection>
 
       <SubSection id="dressage-olimpic">
-        <Header as="h2">{formatMessage({ id: `DRESSAGE_olimpic_title` })}</Header>
+        <Header as="h2">
+          {formatMessage({ id: `DRESSAGE_olimpic_title` })}
+        </Header>
         <FormattedHTMLMessage id="DRESSAGE_olimpic_description" />
 
         <Row className="mt-5">
@@ -117,7 +131,6 @@ const Dressage = ({ intl: { formatMessage } }) => (
               weight={6000}
             />
           </Col>
-
         </Row>
       </SubSection>
     </Section>
