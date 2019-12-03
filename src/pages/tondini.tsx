@@ -11,6 +11,7 @@ const IMAGES = [
   require("../images/product/tondini/tondino-2.jpg"),
   require("../images/product/tondini/tondino-3.jpg"),
   require("../images/product/tondini/tondino-4.jpg"),
+  require("../images/product/tondini/tondino-5.jpg"),
 ];
 
 const Tondini = ({ intl: { formatMessage } }) => (
@@ -58,7 +59,7 @@ const Tondini = ({ intl: { formatMessage } }) => (
 
         <Row className="mt-4">
           {DIMENSIONS.map(dimension => (
-            <Col>
+            <Col key={dimension}>
               <Button
                 block
                 variant="outline-primary"
