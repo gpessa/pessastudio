@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack:///./src/pages/giostre/tecnoexerciser.tsx"],"names":["TecnoExercise"],"mappings":"2FAAA,gCAQeA,UANO,kBACpB","file":"component---src-pages-giostre-tecnoexerciser-tsx-1e2fae66a06fd8812ab4.js","sourcesContent":["import React from \"react\"\n\nconst TecnoExercise = () => (\n  <>\n\n  </>\n)\n\nexport default TecnoExercise\n"],"sourceRoot":""}
