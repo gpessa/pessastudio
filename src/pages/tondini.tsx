@@ -4,6 +4,8 @@ import { Button, Col, Figure, Row } from 'react-bootstrap';
 
 import { Columns, Header, PdfIcon, Section, Seo, SubSection } from '../components';
 
+const DIMENSIONS = [16, 18, 20, 22, 24]
+
 const Tondini = ({ intl: { formatMessage } }) => (
   <>
     <Seo title={formatMessage({ id: "META_tondini_title" })} />
@@ -71,51 +73,17 @@ const Tondini = ({ intl: { formatMessage } }) => (
         <Header>Dimensioni tondini</Header>
 
         <Row className="mt-4">
-          <Col>
-            <Button
-              block
-              variant="outline-primary"
-              href="http://www.pessastudio.eu/pdf/tondino16.pdf"
-            >
-              <PdfIcon /> 16 LATI 13,2 mt.
+          {DIMENSIONS.map(dimension => (
+            <Col>
+              <Button
+                block
+                variant="outline-primary"
+                href={`/tondino-${dimension}.pdf`}
+              >
+                <PdfIcon /> {formatMessage({ id: `TONDINO_dimension_${dimension}` })}
             </Button>
-          </Col>
-          <Col>
-            <Button
-              block
-              variant="outline-primary"
-              href="http://www.pessastudio.eu/pdf/tondino18.pdf"
-            >
-              <PdfIcon /> 18 LATI 15 mt.
-            </Button>
-          </Col>
-          <Col>
-            <Button
-              block
-              variant="outline-primary"
-              href="http://www.pessastudio.eu/pdf/tondino20.pdf"
-            >
-              <PdfIcon /> 20 LATI 16,6 mt.
-            </Button>
-          </Col>
-          <Col>
-            <Button
-              block
-              variant="outline-primary"
-              href="http://www.pessastudio.eu/pdf/tondino22.pdf"
-            >
-              <PdfIcon /> 22 LATI 18,3 mt.
-            </Button>
-          </Col>
-          <Col>
-            <Button
-              block
-              variant="outline-primary"
-              href="http://www.pessastudio.eu/pdf/tondino24.pdf"
-            >
-              <PdfIcon /> 24 LATI 19,9 mt.
-            </Button>
-          </Col>
+            </Col>
+          ))}
         </Row>
       </SubSection>
     </Section>

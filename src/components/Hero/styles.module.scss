@@ -1,5 +1,14 @@
 @import "../../styles/_variables.scss";
 
-:local(.image) {
-  width: 100%;
+:local(.element) {
+  height: 400px;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+}
+
+:local(.text) {
+  background: $white;
+  display: inline-block;
+  padding: 0 $spacer;
 }

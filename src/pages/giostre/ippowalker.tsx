@@ -1,7 +1,9 @@
-import React from "react"
-import { Section, Product, Columns, Header, SubSection, Path } from "../../components"
-import { Row, Col, Figure } from "react-bootstrap"
-import { Ratio } from "../../constants"
+import { injectIntl } from 'gatsby-plugin-intl';
+import React from 'react';
+import { Button, Col, Figure, Row } from 'react-bootstrap';
+
+import { Columns, Header, Path, PdfIcon, Product, Section, SubSection } from '../../components';
+import { Ratio } from '../../constants';
 
 const PHOTOS = [
   { 
@@ -73,7 +75,9 @@ const STEPS = [
   },
 ]
 
-const IppoWalker = () => (
+const DIMENSIONS = [4, 6]
+
+const IppoWalker = ({ intl: { formatMessage } }) => (
   <>
     <Columns
       left={
@@ -162,17 +166,32 @@ const IppoWalker = () => (
       </SubSection>
 
       <SubSection>
+        <Header>Dimensioni tondini</Header>
+
+        <Row className="mt-4">
+          {DIMENSIONS.map(dimension => (
+            <Col>
+              <Button
+                block
+                variant="outline-primary"
+                href={`/giostra-${dimension}.pdf`}
+                target="_blank"
+              >
+                <PdfIcon /> {formatMessage({ id: `GIOSTRA_dimension_${dimension}` })}
+              </Button>
+            </Col>
+          ))}
+        </Row>
+      </SubSection>
+
+      <SubSection>
         <Header>Istruzioni per il montaggio</Header>
         <p>Segui le semplici istruzioni per montare la nostra giostra.</p>
-
-        <Path
-          steps={STEPS}
-        />
-
+        <Path steps={STEPS}/>
       </SubSection>
 
     </Section>
   </>
 )
 
-export default IppoWalker
+export default injectIntl(IppoWalker)

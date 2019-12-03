@@ -31,5 +31,14 @@
   "PRODUCT_length": "Lunghezza",
   "PRODUCT_thickness": "Spessore",
   "PRODUCT_weight": "Peso",
-  "PRODUCT_width": "Larghezza"
+  "PRODUCT_width": "Larghezza",
+  "TONDINO_dimension_16": "16 lati 13,2 mt.",
+  "TONDINO_dimension_18": "18 lati 15,0 mt.",
+  "TONDINO_dimension_20": "20 lati 16,6 mt.",
+  "TONDINO_dimension_22": "22 lati 18,3 mt.",
+  "TONDINO_dimension_24": "24 lati 19,9 mt.",
+  "GIOSTRA_dimension_4": "Giostra 4 cavalli",
+  "GIOSTRA_dimension_6": "Giostra 6 cavalli",
+  "HOME_storia_title": "Una storia che continua",
+  "HOME_storia_text": ""
 }
