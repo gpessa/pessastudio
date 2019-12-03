@@ -91,16 +91,14 @@ const IppoWalker = ({ intl: { formatMessage } }) => (
         </>
       }
       right={
-        <>
-          <Row>
-            {PHOTOS.map(({ image, text }, index) => (
-              <Col md={6} as={Figure} key={index}>
-                <Figure.Image fluid src={image} />
-                <Figure.Caption>{ text }</Figure.Caption>
-              </Col> 
-            ))}
-          </Row>
-        </>
+        <Row>
+          {PHOTOS.map(({ image, text }, index) => (
+            <Col md={6} as={Figure} key={index}>
+              <Figure.Image fluid src={image} />
+              <Figure.Caption>{ text }</Figure.Caption>
+            </Col> 
+          ))}
+        </Row>
       }
     />
 

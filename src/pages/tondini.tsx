@@ -6,6 +6,13 @@ import { Columns, Header, PdfIcon, Section, Seo, SubSection } from '../component
 
 const DIMENSIONS = [16, 18, 20, 22, 24]
 
+const IMAGES = [
+  require("../images/product/tondini/tondino-1.jpg"),
+  require("../images/product/tondini/tondino-2.jpg"),
+  require("../images/product/tondini/tondino-3.jpg"),
+  require("../images/product/tondini/tondino-4.jpg"),
+];
+
 const Tondini = ({ intl: { formatMessage } }) => (
   <>
     <Seo title={formatMessage({ id: "META_tondini_title" })} />
@@ -23,35 +30,12 @@ const Tondini = ({ intl: { formatMessage } }) => (
       }
       right={
         <Row>
-          <Col as={Figure} md={6}>
-            <Figure.Image
-              src={require("../images/product/tondini/tondino-1.jpg")}
-            />
-            <Figure.Caption>Tondino coperto 18 pannelli 15mt.</Figure.Caption>
-          </Col>
-
-          <Col as={Figure} md={6}>
-            <Figure.Image
-              src={require("../images/product/tondini/tondino-2.jpg")}
-            />
-            <Figure.Caption>
-              Tondino coperto 24 pannelli 19.9mt.
-              </Figure.Caption>
-          </Col>
-
-          <Col as={Figure} md={6}>
-            <Figure.Image
-              src={require("../images/product/tondini/tondino-3.jpg")}
-            />
-            <Figure.Caption>Tondino coperto.</Figure.Caption>
-          </Col>
-
-          <Col as={Figure} md={6}>
-            <Figure.Image
-              src={require("../images/product/tondini/tondino-4.jpg")}
-            />
-            <Figure.Caption>Interno tondino coperto.</Figure.Caption>
-          </Col>
+          {IMAGES.map((src, index) => (
+            <Col as={Figure} md={6} key={index}>
+              <Figure.Image src={src} />
+              <Figure.Caption>{formatMessage({ id: `TONDINO_image_${index}` })}</Figure.Caption> 
+            </Col>
+          ))}
         </Row>
       }
     />

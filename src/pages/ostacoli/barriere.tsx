@@ -2,7 +2,7 @@ import React from "react"
 
 import { Product, Header } from "../../components"
 import { Ratio } from "../../constants"
-import { Row, Col, Container } from "react-bootstrap"
+import { Row, Col } from "react-bootstrap"
 
 const Barriere = ({ className }: { className?: string; }) => (
   <div className={className}>

@@ -5,6 +5,13 @@ import { Col, Container, Figure, Row } from 'react-bootstrap';
 import { Header, Product, Section, Seo, SubSection } from '../components';
 import { Colors } from '../constants';
 
+const PHOTOS = [
+  require("../images/product/recinti/recinti-image-1.jpg"),
+  require("../images/product/recinti/recinti-image-2.jpg"),
+  require("../images/product/recinti/recinti-image-3.jpg"),
+  require("../images/product/recinti/recinti-image-4.jpg"),
+]
+
 const RecintiFondi = ({ intl: { formatMessage } }) => (
   <>
     <Seo title={formatMessage({ id: "META_recinti-e-fondi_title" })} />
@@ -21,41 +28,12 @@ const RecintiFondi = ({ intl: { formatMessage } }) => (
         <p>Tutte le nostre recinzioni sono personalizzate in base alle esigenze di metratura e di figura del cliente.</p>
 
         <Row>
-          <Col as={Figure}>
-            <Figure.Image
-              src={require("../images/product/recinti/recinti-image-1.jpg")}
-            />
-            <Figure.Caption>
-              Recinzione per delimitazione area 3 filagne
-            </Figure.Caption>
-          </Col>
-
-          <Col as={Figure}>
-            <Figure.Image
-              src={require("../images/product/recinti/recinti-image-2.jpg")}
-            />
-            <Figure.Caption>
-              Recinzione per delimitazione area 3 filagne
-            </Figure.Caption>
-          </Col>
-
-          <Col as={Figure}>
-            <Figure.Image
-              src={require("../images/product/recinti/recinti-image-3.jpg")}
-            />
-            <Figure.Caption>
-              Recinzione per delimitazione area 2 filagne
-            </Figure.Caption>
-          </Col>
-
-          <Col as={Figure}>
-            <Figure.Image
-              src={require("../images/product/recinti/recinti-image-4.jpg")}
-            />
-            <Figure.Caption>
-              Recinzione per delimitazione area 2 filagne
-            </Figure.Caption>
-          </Col>
+          {PHOTOS.map((src, index) => (
+            <Col md={3} as={Figure} key={index}>
+              <Figure.Image fluid src={src} />
+              <Figure.Caption>{formatMessage({ id: `RECINTI_E_FONDI_image_${index}`})}</Figure.Caption>
+            </Col>
+          ))}
         </Row>
       </Container>
 

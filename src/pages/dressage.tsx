@@ -31,9 +31,7 @@ const Dressage = ({ intl: { formatMessage } }) => (
       </Container>
 
       <SubSection id="dressage-training" className="bg-light">
-        <Header as="h2">
-          {formatMessage({ id: `DRESSAGE_training_title` })}
-        </Header>
+        <Header as="h2">{formatMessage({ id: `DRESSAGE_training_title` })}</Header>
         <FormattedHTMLMessage id="DRESSAGE_training_description" />
 
         <Row className="mt-5">
@@ -82,9 +80,7 @@ const Dressage = ({ intl: { formatMessage } }) => (
       </SubSection>
 
       <SubSection id="dressage-olimpic">
-        <Header as="h2">
-          {formatMessage({ id: `DRESSAGE_olimpic_title` })}
-        </Header>
+        <Header as="h2">{formatMessage({ id: `DRESSAGE_olimpic_title` })}</Header>
         <FormattedHTMLMessage id="DRESSAGE_olimpic_description" />
 
         <Row className="mt-5">
