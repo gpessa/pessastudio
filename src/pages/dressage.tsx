@@ -1,16 +1,14 @@
-import React from "react"
+import { FormattedHTMLMessage, FormattedMessage, injectIntl } from 'gatsby-plugin-intl'
+import React from 'react'
+import { Col, Container, Row } from 'react-bootstrap'
 
-import { Section, Header, Product, SubSection } from "../components"
-import {
-  injectIntl,
-  FormattedHTMLMessage,
-  FormattedMessage,
-} from "gatsby-plugin-intl"
-import { Row, Col, Container } from "react-bootstrap"
-import { Colors } from "../constants"
+import { Header, Product, Section, Seo, SubSection } from '../components'
+import { Colors } from '../constants'
 
 const Dressage = ({ intl: { formatMessage } }) => (
   <>
+    <Seo title={formatMessage({ id: "META_dressage_title" })} />
+
     <Section fluid>
       <Container>
         <h1>{formatMessage({ id: `NAVIGATION_dressage` })}</h1>

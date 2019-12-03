@@ -1,9 +1,12 @@
 import React from "react"
+import { injectIntl } from 'gatsby-plugin-intl';
 
 import { Section, Hero, Header, SubSection } from "../../components"
 
-const Giostre = () => (
+const Giostre = ({ intl: { formatMessage } }) => (
   <>
+    <Seo title={formatMessage({ id: "META_ostacoli_title" })} />
+
     <Hero image={require("../../images/background-giostre.jpg")} />
 
     <Section>
@@ -29,4 +32,4 @@ const Giostre = () => (
   </>
 )
 
-export default Giostre
+export default injectIntl(Giostre)

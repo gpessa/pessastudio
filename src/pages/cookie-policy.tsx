@@ -1,11 +1,12 @@
 import React from "react"
-import { Section, SubSection, Header } from "../components"
-import { Container } from "react-bootstrap"
+import { Section, SubSection, Header, Seo } from "../components"
+import { injectIntl } from 'gatsby-plugin-intl'
 
-const CookiePolicy = () => (
+const CookiePolicy = ({ intl: { formatMessage } }) => (
   <>
+    <Seo title={formatMessage({ id: "META_cookie-policy_title" })} />
+    
     <Section>
-
       <h1>INFORMATIVA PRIVACY</h1>
 
       <p>Scopo di questa Politica sulla privacy è di informarvi in merito ai dati che vengono raccolti su di voi, all’utilizzo che ne possiamo fare ed al modo in cui tali informazioni possono essere corrette o modificate.</p>
@@ -94,4 +95,4 @@ const CookiePolicy = () => (
   </>
 )
 
-export default CookiePolicy
+export default injectIntl(CookiePolicy)

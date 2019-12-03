@@ -1,137 +1,60 @@
-import React from "react"
-import { injectIntl } from "gatsby-plugin-intl"
+import { injectIntl } from 'gatsby-plugin-intl';
+import React from 'react';
+import { Button, Col, Figure, Row } from 'react-bootstrap';
 
-import {
-  Section,
-  Header,
-  PdfIcon,
-  Seo,
-  SubSection,
-  Columns,
-} from "../components"
-import { Button, Row, Col, Figure, Container } from "react-bootstrap"
+import { Columns, Header, PdfIcon, Section, Seo, SubSection } from '../components';
 
-const TondiniPage = ({ intl: { formatMessage } }) => (
+const Tondini = ({ intl: { formatMessage } }) => (
   <>
-    <Seo title={formatMessage({ id: "META_title_tondini" })} keywords={[]} />
+    <Seo title={formatMessage({ id: "META_tondini_title" })} />
 
-    <Section fluid>
-      {/* <Container>
-        <h1>Tondini</h1>
+    <Columns
+      left={
+        <>
+          <h1>Tondini</h1>
+          <p> Il tondino coperto è adatto a svolgere molteplici attività, per esempio è la migliore soluzione per addestrare puledri in libertà o lavorare cavalli alla corda, aiuta a facilitare il controllo dei vostri cavalli durante le lezioni ai principianti, nelle riprese dei pony ed è indispensabile per il longeur durante le riprese di volteggi.</p>
+          <p> E' costituito da pannelli laterali di compensato marino, fissati alle colonne del perimetro di acciaio zincato.</p>
+          <p> La struttura è costituita da tubi in acciaio zincato a caldo ad alta resistenza, collegati tra loro da piastre che formano un reticolo "geodetico a cupola ribassata". E’ una struttura semplice, leggera e piacevole alla vista. La struttura viene poi coperta con un telo spalmato in pvc di cui potrete liberamente sceglierne il colore tra quelli da noi proposti: bianco, verde o crema.</p>
+          <p> La porta, che ha un’apertura standard di 2,05 mt, è fissata al suo lato sinistro con una cerniera registrabile che ne consente la regolazione. Sul lato destro un catenaccio verticale a doppio riscontro ne garantisce l’assoluta sicurezza. In zone particolarmente ventose è conveniente montare attorno al tondino una rete antivento che riduce il disturbo dell'aria al suo interno. Nel caso in cui si voglia utilizzare il tondino per l'addestramento di puledri, le pareti laterali in plywood che normalmente sono alte 1,4 metri, possono essere rialzate fino a 2 metri.</p>
+          <p> Come per le nostre giostre anche i tondini sono considerate strutture precarie e non necessitano quindi di nessuna concessione edilizia ma, in taluni casi di un semplice permesso di installazione rilasciato dall’amministrazione locale.</p>
+        </>
+      }
+      right={
         <Row>
-          <Col>
-            <p>Il tondino coperto è adatto a svolgere molteplici attività, per esempio è la migliore soluzione per addestrare puledri in libertà o lavorare cavalli alla corda, aiuta a facilitare il controllo dei vostri cavalli durante le lezioni ai principianti, nelle riprese dei pony ed è indispensabile per il longeur durante le riprese di volteggi.</p>
-            <p>E' costituito da pannelli laterali di compensato marino, fissati alle colonne del perimetro di acciaio zincato.</p>
-            <p>La struttura è costituita da tubi in acciaio zincato a caldo ad alta resistenza, collegati tra loro da piastre che formano un reticolo "geodetico a cupola ribassata". E’ una struttura semplice, leggera e piacevole alla vista. La struttura viene poi coperta con un telo spalmato in pvc di cui potrete liberamente sceglierne il colore tra quelli da noi proposti: bianco, verde o crema.</p>
-            <p>La porta, che ha un’apertura standard di 2,05 mt, è fissata al suo lato sinistro con una cerniera registrabile che ne consente la regolazione. Sul lato destro un catenaccio verticale a doppio riscontro ne garantisce l’assoluta sicurezza. In zone particolarmente ventose è conveniente montare attorno al tondino una rete antivento che riduce il disturbo dell'aria al suo interno. Nel caso in cui si voglia utilizzare il tondino per l'addestramento di puledri, le pareti laterali in plywood che normalmente sono alte 1,4 metri, possono essere rialzate fino a 2 metri.</p>
-            <p>Come per le nostre giostre anche i tondini sono considerate strutture precarie e non necessitano quindi di nessuna concessione edilizia ma, in taluni casi di un semplice permesso di installazione rilasciato dall’amministrazione locale.</p>
+          <Col as={Figure} md={6}>
+            <Figure.Image
+              src={require("../images/product/tondini/tondino-1.jpg")}
+            />
+            <Figure.Caption>Tondino coperto 18 pannelli 15mt.</Figure.Caption>
           </Col>
 
-          <Col>
-            <Row>
-              <Col as={Figure} md={6}>
-                <Figure.Image src={require("../images/product/tondini/tondino-1.jpg")} />
-                <Figure.Caption>Tondino coperto 18 pannelli 15mt.</Figure.Caption>
-              </Col>
+          <Col as={Figure} md={6}>
+            <Figure.Image
+              src={require("../images/product/tondini/tondino-2.jpg")}
+            />
+            <Figure.Caption>
+              Tondino coperto 24 pannelli 19.9mt.
+              </Figure.Caption>
+          </Col>
 
-              <Col as={Figure} md={6}>
-                <Figure.Image src={require("../images/product/tondini/tondino-2.jpg")} />
-                <Figure.Caption>Tondino coperto 24 pannelli 19.9mt.</Figure.Caption>
-              </Col>
+          <Col as={Figure} md={6}>
+            <Figure.Image
+              src={require("../images/product/tondini/tondino-3.jpg")}
+            />
+            <Figure.Caption>Tondino coperto.</Figure.Caption>
+          </Col>
 
-              <Col as={Figure} md={6}>
-                <Figure.Image src={require("../images/product/tondini/tondino-3.jpg")} />
-                <Figure.Caption>Tondino coperto.</Figure.Caption>
-              </Col>
-
-              <Col as={Figure} md={6}>
-                <Figure.Image src={require("../images/product/tondini/tondino-4.jpg")} />
-                <Figure.Caption>Interno tondino coperto.</Figure.Caption>
-              </Col>
-            </Row>
+          <Col as={Figure} md={6}>
+            <Figure.Image
+              src={require("../images/product/tondini/tondino-4.jpg")}
+            />
+            <Figure.Caption>Interno tondino coperto.</Figure.Caption>
           </Col>
         </Row>
-      </Container> */}
+      }
+    />
 
-      <Columns
-        left={
-          <>
-            <h1>Tondini</h1>
-            <p>
-              Il tondino coperto è adatto a svolgere molteplici attività, per
-              esempio è la migliore soluzione per addestrare puledri in libertà
-              o lavorare cavalli alla corda, aiuta a facilitare il controllo dei
-              vostri cavalli durante le lezioni ai principianti, nelle riprese
-              dei pony ed è indispensabile per il longeur durante le riprese di
-              volteggi.
-            </p>
-            <p>
-              E' costituito da pannelli laterali di compensato marino, fissati
-              alle colonne del perimetro di acciaio zincato.
-            </p>
-            <p>
-              La struttura è costituita da tubi in acciaio zincato a caldo ad
-              alta resistenza, collegati tra loro da piastre che formano un
-              reticolo "geodetico a cupola ribassata". E’ una struttura
-              semplice, leggera e piacevole alla vista. La struttura viene poi
-              coperta con un telo spalmato in pvc di cui potrete liberamente
-              sceglierne il colore tra quelli da noi proposti: bianco, verde o
-              crema.
-            </p>
-            <p>
-              La porta, che ha un’apertura standard di 2,05 mt, è fissata al suo
-              lato sinistro con una cerniera registrabile che ne consente la
-              regolazione. Sul lato destro un catenaccio verticale a doppio
-              riscontro ne garantisce l’assoluta sicurezza. In zone
-              particolarmente ventose è conveniente montare attorno al tondino
-              una rete antivento che riduce il disturbo dell'aria al suo
-              interno. Nel caso in cui si voglia utilizzare il tondino per
-              l'addestramento di puledri, le pareti laterali in plywood che
-              normalmente sono alte 1,4 metri, possono essere rialzate fino a 2
-              metri.
-            </p>
-            <p>
-              Come per le nostre giostre anche i tondini sono considerate
-              strutture precarie e non necessitano quindi di nessuna concessione
-              edilizia ma, in taluni casi di un semplice permesso di
-              installazione rilasciato dall’amministrazione locale.
-            </p>
-          </>
-        }
-        right={
-          <Row>
-            <Col as={Figure} md={6}>
-              <Figure.Image
-                src={require("../images/product/tondini/tondino-1.jpg")}
-              />
-              <Figure.Caption>Tondino coperto 18 pannelli 15mt.</Figure.Caption>
-            </Col>
-
-            <Col as={Figure} md={6}>
-              <Figure.Image
-                src={require("../images/product/tondini/tondino-2.jpg")}
-              />
-              <Figure.Caption>
-                Tondino coperto 24 pannelli 19.9mt.
-              </Figure.Caption>
-            </Col>
-
-            <Col as={Figure} md={6}>
-              <Figure.Image
-                src={require("../images/product/tondini/tondino-3.jpg")}
-              />
-              <Figure.Caption>Tondino coperto.</Figure.Caption>
-            </Col>
-
-            <Col as={Figure} md={6}>
-              <Figure.Image
-                src={require("../images/product/tondini/tondino-4.jpg")}
-              />
-              <Figure.Caption>Interno tondino coperto.</Figure.Caption>
-            </Col>
-          </Row>
-        }
-      />
+    <Section fluid>
 
       <SubSection className="bg-light">
         <Header>Come preparare il terreno</Header>
@@ -150,8 +73,8 @@ const TondiniPage = ({ intl: { formatMessage } }) => (
         <Row className="mt-4">
           <Col>
             <Button
-              variant="outline-primary"
               block
+              variant="outline-primary"
               href="http://www.pessastudio.eu/pdf/tondino16.pdf"
             >
               <PdfIcon /> 16 LATI 13,2 mt.
@@ -159,8 +82,8 @@ const TondiniPage = ({ intl: { formatMessage } }) => (
           </Col>
           <Col>
             <Button
-              variant="outline-primary"
               block
+              variant="outline-primary"
               href="http://www.pessastudio.eu/pdf/tondino18.pdf"
             >
               <PdfIcon /> 18 LATI 15 mt.
@@ -168,8 +91,8 @@ const TondiniPage = ({ intl: { formatMessage } }) => (
           </Col>
           <Col>
             <Button
-              variant="outline-primary"
               block
+              variant="outline-primary"
               href="http://www.pessastudio.eu/pdf/tondino20.pdf"
             >
               <PdfIcon /> 20 LATI 16,6 mt.
@@ -177,8 +100,8 @@ const TondiniPage = ({ intl: { formatMessage } }) => (
           </Col>
           <Col>
             <Button
-              variant="outline-primary"
               block
+              variant="outline-primary"
               href="http://www.pessastudio.eu/pdf/tondino22.pdf"
             >
               <PdfIcon /> 22 LATI 18,3 mt.
@@ -186,8 +109,8 @@ const TondiniPage = ({ intl: { formatMessage } }) => (
           </Col>
           <Col>
             <Button
-              variant="outline-primary"
               block
+              variant="outline-primary"
               href="http://www.pessastudio.eu/pdf/tondino24.pdf"
             >
               <PdfIcon /> 24 LATI 19,9 mt.
@@ -199,4 +122,4 @@ const TondiniPage = ({ intl: { formatMessage } }) => (
   </>
 )
 
-export default injectIntl(TondiniPage)
+export default injectIntl(Tondini)

@@ -1,13 +1,17 @@
-import React from "react"
+import { injectIntl } from 'gatsby-plugin-intl';
+import React from 'react';
 
-import { Seo } from "../components"
+import { Section, Seo } from '../components';
 
-const NotFoundPage = () => (
+const NotFound = ({ intl: { formatMessage } }) => (
   <>
-    <Seo title="404: Not found" />
-    <h1>NOT FOUND</h1>
-    <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
+    <Seo title={formatMessage({ id: "META_404_title" })} />
+
+    <Section className="text-center">
+      <h1>Pagina non trovata</h1>
+      <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
+    </Section>
   </>
 )
 
-export default NotFoundPage
+export default injectIntl(NotFound)

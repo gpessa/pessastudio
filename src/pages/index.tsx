@@ -4,9 +4,9 @@ import { Seo, Hero, Section, Product } from "../components"
 import { PRODUCT_IDS } from "../constants"
 import { injectIntl } from "gatsby-plugin-intl"
 
-const IndexPage = ({ intl: { formatMessage } }) => (
+const Index = ({ intl: { formatMessage } }) => (
   <>
-    <Seo title={formatMessage({ id: "META_title_index" })} keywords={[]} />
+    <Seo title={formatMessage({ id: "META_index_title" })} />
 
     <Hero image={require("../images/background-home-1.jpg")} />
 
@@ -76,4 +76,4 @@ const IndexPage = ({ intl: { formatMessage } }) => (
   </>
 )
 
-export default injectIntl(IndexPage)
+export default injectIntl(Index)
