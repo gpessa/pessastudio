@@ -9,10 +9,12 @@
   color: $white;
   padding-top: $spacer * 3;
   padding-bottom: $spacer * 3;
+  padding-right: $spacer * 3;
 }
 
 :local(.right) {
   color: $black;
   padding-top: $spacer * 3;
   padding-bottom: $spacer * 3;
+  padding-left: $spacer * 3;
 }

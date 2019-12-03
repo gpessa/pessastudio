@@ -135,24 +135,12 @@ const TondiniPage = ({ intl: { formatMessage } }) => (
 
       <SubSection className="bg-light">
         <Header>Come preparare il terreno</Header>
-        <p>
-          Prima del montaggio il terreno deve essere preparato seguendo le
-          istruzioni sotto elencate:
-        </p>
+        <p>Prima del montaggio il terreno deve essere preparato seguendo le istruzioni sotto elencate:</p>
         <ul>
-          <li>
-            Spianare il terreno su un'area corrispondente al diametro del
-            tondino indicata sul disegno
-          </li>
+          <li>Spianare il terreno su un'area corrispondente al diametro del tondino indicata sul disegno</li>
           <li>Distendere su quest'area un foglio di geotessuto</li>
-          <li>
-            Creare una piattaforma alta 7 centimetri di stabilizzato (diametro
-            delle pietre 3-4 centimetri) quindi comprimerlo per compattarlo
-          </li>
-          <li>
-            Infine, dopo aver montato il tondino stendere circa 10 centimetri di
-            sabbia (grammatura 1/1,5 millimetri)
-          </li>
+          <li>Creare una piattaforma alta 7 centimetri di stabilizzato (diametro delle pietre 3-4 centimetri) quindi comprimerlo per compattarlo</li>
+          <li>Infine, dopo aver montato il tondino stendere circa 10 centimetri di sabbia (grammatura 1/1,5 millimetri)</li>
         </ul>
       </SubSection>
 

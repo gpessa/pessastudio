@@ -10,14 +10,14 @@ import * as styles from './styles.module.scss';
 const Navigation = ({ intl: { formatMessage } }) => (
   <Navbar expand="lg" sticky="top" className={styles.element}>
     <Navbar.Brand to="/" as={Link}>
-      <Logo />
+      {/* <Logo /> */}
     </Navbar.Brand>
 
     <Navbar.Toggle aria-controls="basic-navbar-nav" />
 
     <Navbar.Collapse id="basic-navbar-nav">
       <Nav className="ml-auto">
-        {PRODUCT_IDS.map(id => <Nav.Link to={`/${id}`} as={Link} key={id} activeClassName="active">{formatMessage({ id: `NAVIGATION_${id}` })}</Nav.Link>)}
+        {PRODUCT_IDS.map(id => <Nav.Link to={`/${id}/`} as={Link} key={id} activeClassName="active">{formatMessage({ id: `NAVIGATION_${id}` })}</Nav.Link>)}
         <LanguageSelector />
       </Nav>
     </Navbar.Collapse>

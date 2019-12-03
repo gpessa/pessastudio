@@ -1,4 +1,4 @@
-import React from "react"
+import React, { ReactNode } from "react"
 import Header from "../Header";
 import { Link, injectIntl } from "gatsby-plugin-intl"
 
@@ -37,7 +37,7 @@ const Product = ({ image, url, name, width, height, weight, colors, thickness, l
       <div className={`${styles.image} ${styles[ratio || Ratio.SQUARE]}`} style={{ backgroundImage: `url(${image})` }}></div>
 
       <div className={styles.data}>
-        <Header as="h6">{name}</Header>
+        <Header as="h6" className={styles.title}>{name}</Header>
 
         <Description description={description} />
 
@@ -61,7 +61,7 @@ interface Props {
   ratio?: Ratio;
   className?: string;
   colors?: Colors[];
-  description?: string;
+  description?: string | ReactNode;
   weight?: number;
   height?: number;
   thickness?: number;

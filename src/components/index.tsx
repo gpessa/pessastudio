@@ -11,3 +11,5 @@ export { default as Product } from "./Product"
 export { default as PdfIcon } from "./PdfIcon"
 export { default as ImageModal } from "./ImageModal"
 export { default as Columns } from "./Columns"
+export { default as Path } from "./Path"
+

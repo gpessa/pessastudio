@@ -22,6 +22,10 @@
   font-weight: bold;
 }
 
+:local(.title) {
+  color: $black;
+}
+
 :local(.data) {
   color: $text-muted;
   font-size: 90%;

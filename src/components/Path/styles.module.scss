@@ -1,0 +1,29 @@
+@import "../../styles/_variables.scss";
+
+:local(.imageWrapper) {
+  border: 3px dashed $gray-200;
+  display: block;
+  width: 100%;
+  padding-bottom: 100%;
+  border-radius: 50%;
+  position: relative;
+}
+
+:local(.image) {
+  top: 52%;
+  margin-left: -50%;
+  border-radius: 50%;
+  position: absolute;
+  width: 96%;
+  height: 96%;
+  left: 52%;
+  margin-top: -50%;
+}
+
+:local(.text) {
+  // position: absolute;
+  // top: 105%;
+  // text-align: center;
+  // left: 0;
+  // right: 0;
+}
