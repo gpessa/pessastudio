@@ -54,7 +54,7 @@ const Tondini = ({ intl: { formatMessage } }) => (
       }
     />
 
-    <Section fluid>
+    <Section fluid className="pt-0">
 
       <SubSection className="bg-light">
         <Header>Come preparare il terreno</Header>

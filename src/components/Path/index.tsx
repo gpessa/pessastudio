@@ -1,7 +1,7 @@
-import React, { ReactNode } from 'react';
-import { Image } from "react-bootstrap"
+import React from 'react';
 
 import * as styles from './styles.module.scss';
+import { Row, Col } from 'react-bootstrap';
 
 interface Step {
   image: string;
@@ -12,17 +12,19 @@ interface Props {
   steps: Step[]
 }
 
-const Footer = ({ steps }: Props) => (
-  <div>
-    {steps.map(({ text, image }) => (
-      <div className={styles.step}>
+const Path = ({ steps }: Props) => (
+  <Row>
+    {steps.map(({ text, image }, index) => (
+      <Col md={3}>
         <div className={styles.imageWrapper}>
-          <Image className={styles.image} src={image} />
+          <div className={styles.image} style={{ backgroundImage: `url(${image})` }} />
         </div>
-        <div className={styles.stepText}>{text}</div>
-      </div>
+        <div className={styles.stepText}>
+          <span className={styles.stepNumber}>{(index + 1)}</span> {text}
+        </div>
+      </Col>
     ))}
-  </div>
+  </Row>
 )
 
-export default Footer
+export default Path

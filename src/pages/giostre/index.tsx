@@ -1,7 +1,7 @@
 import React from "react"
 import { injectIntl } from 'gatsby-plugin-intl';
 
-import { Section, Hero, Header, SubSection } from "../../components"
+import { Section, Hero, Header, SubSection, Seo } from "../../components"
 
 const Giostre = ({ intl: { formatMessage } }) => (
   <>

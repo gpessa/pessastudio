@@ -1,5 +1,5 @@
 import React from "react"
-import { Section, Product, Columns, Header } from "../../components"
+import { Section, Product, Columns, Header, SubSection, Path } from "../../components"
 import { Row, Col, Figure } from "react-bootstrap"
 import { Ratio } from "../../constants"
 
@@ -27,6 +27,49 @@ const PHOTOS = [
   {
     image: require("../../images/product/giostre/ippowalker-giostra-motore.jpg"),
     text: "Motore giostra",
+  },
+]
+
+const STEPS = [
+  {
+    image: require("../../images/product/giostre/giostra-montaggio-step-01.jpg"),
+    text: "Trovate e segnate il centro di ciò che sarà la vostra giostra",
+  },
+  {
+    image: require("../../images/product/giostre/giostra-montaggio-step-02.jpg"),
+    text: "Usate la base della giostra per trovare e segnare i punti dove saranno piantate i supporti",
+  },
+  {
+    image: require("../../images/product/giostre/giostra-montaggio-step-04.jpg"),
+    text: "Ancorate al suolo i supporti della giostra",
+  },
+  {
+    image: require("../../images/product/giostre/giostra-montaggio-step-05.jpg"),
+    text: "Montate il fondo della giostra",
+  },
+  {
+    image: require("../../images/product/giostre/giostra-montaggio-step-06.jpg"),
+    text: "Ancorate il gruppo motore",
+  },
+  {
+    image: require("../../images/product/giostre/giostra-montaggio-step-07.jpg"),
+    text: "Assicuratevi di bloccare la giostra alla giusta altezza e piana",
+  },
+  {
+    image: require("../../images/product/giostre/giostra-montaggio-step-08.jpg"),
+    text: "Montate le braccia di separazione",
+  },
+  {
+    image: require("../../images/product/giostre/giostra-montaggio-step-09.jpg"),
+    text: "Collegate le braccia di separazione attraverso i cavi",
+  },
+  {
+    image: require("../../images/product/giostre/giostra-montaggio-step-10.jpg"),
+    text: "Montate le porte di separazione",
+  },
+  {
+    image: require("../../images/product/giostre/giostra-montaggio-step-11.jpg"),
+    text: "Assicuratevi che le porte corrispondano alla figura",
   },
 ]
 
@@ -58,62 +101,76 @@ const IppoWalker = () => (
     />
 
     <Section>
-      <Header>La gamma</Header>
-      <p>E' possibile acquistare la giostra senza la recinzione o puoi scegliere tra due tipologie di recinzioni disponibili: FLAT o con corridoio TECNOFENCE (da 2 o 4 filagne).</p>
 
-      <Row>
-        <Col 
-          as={Product}
-          ratio={Ratio.HORIZONTAL}
-          image={require("../../images/product/giostre/ippowalker-giostra-motore.jpg")}
-          name="Giostra"
-          description={
-            <>
-              <p>L'opzione semplice ed economica</p>
-              <ul>
-                <li>Giostra da 4 o 6 cavalli</li>
-                <li>Diametro da 12 mt. o 14.2 mt.</li>
-                <li>Cadenza compresa fra 60 e 210 metri al minuto</li>
-                <li>Potenza motore 0.37 kw</li>
-              </ul>
-            </>
-          }
+      <SubSection>
+        <Header>La gamma</Header>
+        <p>E' possibile acquistare la giostra senza la recinzione o puoi scegliere tra due tipologie di recinzioni disponibili: FLAT o con corridoio TECNOFENCE (da 2 o 4 filagne).</p>
+
+        <Row>
+          <Col
+            as={Product}
+            ratio={Ratio.HORIZONTAL}
+            image={require("../../images/product/giostre/ippowalker-giostra-motore.jpg")}
+            name="Giostra"
+            description={
+              <>
+                <p>L'opzione semplice ed economica</p>
+                <ul>
+                  <li>Giostra da 4 o 6 cavalli</li>
+                  <li>Diametro da 12 mt. o 14.2 mt.</li>
+                  <li>Cadenza compresa fra 60 e 210 metri al minuto</li>
+                  <li>Potenza motore 0.37 kw</li>
+                </ul>
+              </>
+            }
+          />
+
+          <Col
+            as={Product}
+            ratio={Ratio.HORIZONTAL}
+            image={require("../../images/product/giostre/ippowalker-giostra-con-corridoio-tecnofence.jpg")}
+            name="Giostra con corridoio Tecnofence"
+            description={
+              <>
+                <ul>
+                  <li>Giostra da 4 o 6 cavalli</li>
+                  <li>Diametro da 12 mt. o 14.2 mt.</li>
+                  <li>Cadenza compresa fra 60 e 210 metri al minuto</li>
+                  <li>Potenza motore 0.37 kw</li>
+                </ul>
+              </>
+            }
+          />
+
+          <Col
+            as={Product}
+            ratio={Ratio.HORIZONTAL}
+            image={require("../../images/product/giostre/ippowalker-giostra-con-corridoio-flat.jpg")}
+            name="Giostra con corridoio Flat"
+            description={
+              <>
+                <ul>
+                  <li>Giostra da 4 o 6 cavalli</li>
+                  <li>Diametro da 12 mt. o 14.2 mt.</li>
+                  <li>Cadenza compresa fra 60 e 210 metri al minuto</li>
+                  <li>Potenza motore 0.37 kw</li>
+                </ul>
+              </>
+            }
+          />
+        </Row>
+      </SubSection>
+
+      <SubSection>
+        <Header>Istruzioni per il montaggio</Header>
+        <p>Segui le semplici istruzioni per montare la nostra giostra.</p>
+
+        <Path
+          steps={STEPS}
         />
 
-        <Col 
-          as={Product}
-          ratio={Ratio.HORIZONTAL}
-          image={require("../../images/product/giostre/ippowalker-giostra-con-corridoio-tecnofence.jpg")}
-          name="Giostra con corridoio Tecnofence"
-          description={
-            <>
-              <ul>
-                <li>Giostra da 4 o 6 cavalli</li>
-                <li>Diametro da 12 mt. o 14.2 mt.</li>
-                <li>Cadenza compresa fra 60 e 210 metri al minuto</li>
-                <li>Potenza motore 0.37 kw</li>
-              </ul>
-            </>
-          }
-        />
+      </SubSection>
 
-        <Col 
-          as={Product}
-          ratio={Ratio.HORIZONTAL}
-          image={require("../../images/product/giostre/ippowalker-giostra-con-corridoio-flat.jpg")}
-          name="Giostra con corridoio Flat"
-          description={
-            <>
-              <ul>
-                <li>Giostra da 4 o 6 cavalli</li>
-                <li>Diametro da 12 mt. o 14.2 mt.</li>
-                <li>Cadenza compresa fra 60 e 210 metri al minuto</li>
-                <li>Potenza motore 0.37 kw</li>
-              </ul>
-            </>
-          }
-        />
-      </Row>
     </Section>
   </>
 )
