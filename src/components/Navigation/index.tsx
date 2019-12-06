@@ -10,7 +10,7 @@ import * as styles from './styles.module.scss';
 const Navigation = ({ intl: { formatMessage } }) => (
   <Navbar expand="lg" sticky="top" className={styles.element}>
     <Navbar.Brand to="/" as={Link}>
-      {/* <Logo /> */}
+      <Logo />
     </Navbar.Brand>
 
     <Navbar.Toggle aria-controls="basic-navbar-nav" />

@@ -1,7 +1,7 @@
 import React from "react"
 
-import { Product, SubSection, Header } from "../../components"
-import { Col, Row, Container } from "react-bootstrap"
+import { Product, Header } from "../../components"
+import { Col, Row } from "react-bootstrap"
 import { Ratio } from "../../constants"
 
 const Fosso = ({ className }: { className?: string; }) => (
@@ -11,7 +11,7 @@ const Fosso = ({ className }: { className?: string; }) => (
         md={5}
         ratio={Ratio.HORIZONTAL}
         as={Product}
-        image={require("../../images/fosso.jpg")}
+        image={require("../../images/product/ostacoli/fosso.jpg")}
         name="Fosso 3 mt."
         height={8}
         width={2800}

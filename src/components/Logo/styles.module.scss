@@ -1,30 +1,73 @@
 @import "../../styles/_variables.scss";
 
+$titleScale: 0.9;
+$titleSize: 35px;
+$zoom: 1.5;
+$subtitleScale: 3;
+$time: 0.2s;
+
 :local(.element) {
-  height: 55px;
-  padding-left: 60px;
-  position: relative;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  transition: all $time ease-out;
+
+  &:hover {
+    transform: scale(1.03); 
+  }
 }
 
 :local(.image) {
-  height: 100%;
-  position: absolute;
-  left: 0;
+  height: 55px;
+  margin-right: $spacer / 2;
+  transition: height $time ease-out;
 }
 
 :local(.title) {
   font-family: $headings-font-family;
-  line-height: 0.8em;
+  font-weight: bold;
   margin: 0;
-  font-weight: $headings-font-weight;
+  line-height: $titleSize * $titleScale;
+  font-size: $titleSize;
+  transition: all $time ease-out;
+  
+}
+
+:local(.group) {
+  margin-top: 8px;
+  transition: all $time ease-out;
 }
 
 :local(.subtitle) {
   font-family: $font-family-sans-serif;
-  line-height: 1;
   margin: 0;
   color: $primary;
-  position: absolute;
-  bottom: -3px;
-  letter-spacing: 2.3px;
+  letter-spacing: 4.1px;
+  line-height: $titleSize * $titleScale / $subtitleScale;
+  font-size: $titleSize / $subtitleScale;
+  transition: all $time ease-out;
+  letter-spacing: 6.2px;
+  margin-top: 1px;
+}
+
+:local(.elementSmall) {
+
+  .image {
+    height: 35px; 
+  }
+  
+  .title {
+    line-height: $titleSize / $zoom * $titleScale;
+    font-size: $titleSize / $zoom;
+  }
+  
+  .subtitle {
+    line-height: $titleSize / $zoom * $titleScale / $subtitleScale;
+    font-size: $titleSize / $zoom / $subtitleScale;
+    letter-spacing: 4.1px;
+  }
+  
+  .group {
+    margin-top: 5px;
+  }
 }

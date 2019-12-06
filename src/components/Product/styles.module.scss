@@ -1,9 +1,5 @@
 @import "../../styles/_variables.scss";
 
-:local(.container) {
-  margin-bottom: $grid-gutter-width;
-}
-
 :local(.container:hover) {
   text-decoration: none;
 }
