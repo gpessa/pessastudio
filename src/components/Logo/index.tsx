@@ -24,7 +24,7 @@ const Logo = () => {
   return (
     <div className={styles.element} ref={refContainer}>
       <Image src={require("../../images/favicon.jpg")} alt="Pessa Studio" className={styles.image} />
-      <hgroup className={styles.group}>
+      <hgroup className={`${styles.group} d-none d-sm-block`}>
         <h1 className={styles.title}>Pessa studio</h1>
         <div className={styles.subtitle}>Horse technology</div>
       </hgroup>

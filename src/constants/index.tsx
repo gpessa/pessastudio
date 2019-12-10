@@ -7,24 +7,24 @@ const PRODUCT_IDS = [
 ]
 
 enum Colors {
-  WHITE = "#FFFFF",
-  BLU = "#264FD0",
   YELLOW = "#FEB00D",
   GREEN = "#316330",
+  WHITE = "#FFFFF",
+  BLU = "#264FD0",
   RED = "#F41701",
 }
 
 enum Ratio {
-  SQUARE = "square",
   HORIZONTAL = "horizontal",
   VERTICAL = "vertical",
+  SQUARE = "square",
 }
 
 enum Position {
-  TOP = "top",
   BOTTOM = "bottom",
-  LEFT = "left",
   RIGHT = "right",
+  LEFT = "left",
+  TOP = "top",
 }
 
 export { PRODUCT_IDS, Colors, Position, Ratio }

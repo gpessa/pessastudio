@@ -2,82 +2,39 @@ import { injectIntl } from 'gatsby-plugin-intl';
 import React from 'react';
 import { Button, Col, Figure, Row } from 'react-bootstrap';
 
-import { Columns, Header, Path, PdfIcon, Product, Section, SubSection } from '../../components';
-import { Ratio } from '../../constants';
+import { Columns, Header, PdfIcon, Product, Section, SubSection } from '../../../components';
+import { Ratio } from '../../../constants';
 
 const PHOTOS = [
   { 
-    image: require("../../images/product/giostre/ippowalker-giostra.jpg"),
+    image: require("../../../images/product/giostre/ippowalker-giostra.jpg"),
     text: "Giostra Ippowalker con corridoio FLAT",
   },
   { 
-    image: require("../../images/product/giostre/ippowalker-giostra-separazioni.jpg"),
+    image: require("../../../images/product/giostre/ippowalker-giostra-separazioni.jpg"),
     text: "Separazioni elettrificate",
   },
   { 
-    image: require("../../images/product/giostre/ippowalker-giostra-corridoio-tecno-fence.jpg"),
+    image: require("../../../images/product/giostre/ippowalker-giostra-corridoio-tecno-fence.jpg"),
     text: "Giostra con corridoio TECNCOFENCE",
   },
   { 
-    image: require("../../images/product/giostre/ippowalker-giostra-copertura-pvc-2.jpg"),
+    image: require("../../../images/product/giostre/ippowalker-giostra-copertura-pvc-2.jpg"),
     text: "Copertura in PVC verde",
   },
   { 
-    image: require("../../images/product/giostre/ippowalker-giostra-con-corridoio-tecnofence.jpg"),
+    image: require("../../../images/product/giostre/ippowalker-giostra-con-corridoio-tecnofence.jpg"),
     text: "Giostra con corridoio TECNCOFENCE",
   },
   {
-    image: require("../../images/product/giostre/ippowalker-giostra-motore.jpg"),
+    image: require("../../../images/product/giostre/ippowalker-giostra-motore.jpg"),
     text: "Motore giostra",
-  },
-]
-
-const STEPS = [
-  {
-    image: require("../../images/product/giostre/giostra-montaggio-step-01.jpg"),
-    text: "Trovate e segnate il centro di ciò che sarà la vostra giostra",
-  },
-  {
-    image: require("../../images/product/giostre/giostra-montaggio-step-02.jpg"),
-    text: "Usate la base della giostra per trovare e segnare i punti dove saranno piantate i supporti",
-  },
-  {
-    image: require("../../images/product/giostre/giostra-montaggio-step-04.jpg"),
-    text: "Ancorate al suolo i supporti della giostra",
-  },
-  {
-    image: require("../../images/product/giostre/giostra-montaggio-step-05.jpg"),
-    text: "Montate il fondo della giostra",
-  },
-  {
-    image: require("../../images/product/giostre/giostra-montaggio-step-06.jpg"),
-    text: "Ancorate il gruppo motore",
-  },
-  {
-    image: require("../../images/product/giostre/giostra-montaggio-step-07.jpg"),
-    text: "Assicuratevi di bloccare la giostra alla giusta altezza e piana",
-  },
-  {
-    image: require("../../images/product/giostre/giostra-montaggio-step-08.jpg"),
-    text: "Montate le braccia di separazione",
-  },
-  {
-    image: require("../../images/product/giostre/giostra-montaggio-step-09.jpg"),
-    text: "Collegate le braccia di separazione attraverso i cavi",
-  },
-  {
-    image: require("../../images/product/giostre/giostra-montaggio-step-10.jpg"),
-    text: "Montate le porte di separazione",
-  },
-  {
-    image: require("../../images/product/giostre/giostra-montaggio-step-11.jpg"),
-    text: "Assicuratevi che le porte corrispondano alla figura",
   },
 ]
 
 const DIMENSIONS = [4, 6]
 
-const IppoWalker = ({ intl: { formatMessage } }) => (
+const Ippowalker = ({ intl: { formatMessage } }) => (
   <>
     <Columns
       left={
@@ -112,7 +69,7 @@ const IppoWalker = ({ intl: { formatMessage } }) => (
           <Col
             as={Product}
             ratio={Ratio.HORIZONTAL}
-            image={require("../../images/product/giostre/ippowalker-giostra-motore.jpg")}
+            image={require("../../../images/product/giostre/ippowalker-giostra-motore.jpg")}
             name="Giostra"
             description={
               <>
@@ -130,7 +87,7 @@ const IppoWalker = ({ intl: { formatMessage } }) => (
           <Col
             as={Product}
             ratio={Ratio.HORIZONTAL}
-            image={require("../../images/product/giostre/ippowalker-giostra-con-corridoio-tecnofence.jpg")}
+            image={require("../../../images/product/giostre/ippowalker-giostra-con-corridoio-tecnofence.jpg")}
             name="Giostra con corridoio Tecnofence"
             description={
               <>
@@ -147,7 +104,7 @@ const IppoWalker = ({ intl: { formatMessage } }) => (
           <Col
             as={Product}
             ratio={Ratio.HORIZONTAL}
-            image={require("../../images/product/giostre/ippowalker-giostra-con-corridoio-flat.jpg")}
+            image={require("../../../images/product/giostre/ippowalker-giostra-con-corridoio-flat.jpg")}
             name="Giostra con corridoio Flat"
             description={
               <>
@@ -172,24 +129,18 @@ const IppoWalker = ({ intl: { formatMessage } }) => (
               <Button
                 block
                 variant="outline-primary"
-                href={`/giostra-${dimension}.pdf`}
+                href={`/giostra-ippowalker-${dimension}.pdf`}
                 target="_blank"
               >
-                <PdfIcon /> {formatMessage({ id: `GIOSTRA_dimension_${dimension}` })}
+                <PdfIcon /> {formatMessage({ id: `GIOSTRA_ippowalker-dimension_${dimension}` })}
               </Button>
             </Col>
           ))}
         </Row>
       </SubSection>
 
-      <SubSection>
-        <Header>Istruzioni per il montaggio</Header>
-        <p>Segui le semplici istruzioni per montare la nostra giostra.</p>
-        <Path steps={STEPS}/>
-      </SubSection>
-
     </Section>
   </>
 )
 
-export default injectIntl(IppoWalker)
+export default injectIntl(Ippowalker)

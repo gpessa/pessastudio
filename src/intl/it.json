@@ -37,8 +37,13 @@
   "TONDINO_dimension_20": "20 lati 16,6 mt.",
   "TONDINO_dimension_22": "22 lati 18,3 mt.",
   "TONDINO_dimension_24": "24 lati 19,9 mt.",
-  "GIOSTRA_dimension_4": "Giostra 4 cavalli",
-  "GIOSTRA_dimension_6": "Giostra 6 cavalli",
+  "GIOSTRA_ippowalker-dimension_4": "Giostra 4 cavalli",
+  "GIOSTRA_ippowalker-dimension_6": "Giostra 6 cavalli",
+  "GIOSTRA_tecnoexerciser-dimension_15": "15 pannelli 12 mt.",
+  "GIOSTRA_tecnoexerciser-dimension_18": "18 pannelli 14,40 mt.",
+  "GIOSTRA_tecnoexerciser-dimension_20": "20 pannelli 16 mt.",
+  "GIOSTRA_tecnoexerciser-dimension_22": "22 pannelli 17,50 mt.",
+  "GIOSTRA_tecnoexerciser-dimension_24": "24 pannelli 19,20 mt.",
   "HOME_storia_title": "Una storia che continua",
   "TONDINO_image_0": "Tondino coperto 18 pannelli 15 mt.",
   "TONDINO_image_1": "Tondino coperto 24 pannelli 19 mt.",
@@ -49,3 +54,5 @@
   "RECINTI_E_FONDI_image_2": "Recinzione per delimitazione area 2 filagne",
   "RECINTI_E_FONDI_image_3": "Recinzione per delimitazione area 2 filagne"
 }
+
+

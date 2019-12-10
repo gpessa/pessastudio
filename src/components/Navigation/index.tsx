@@ -9,7 +9,7 @@ import * as styles from './styles.module.scss';
 
 const Navigation = ({ intl: { formatMessage } }) => (
   <Navbar expand="lg" sticky="top" className={styles.element}>
-    <Navbar.Brand to="/" as={Link}>
+    <Navbar.Brand to="/" as={Link} className="mr-0">
       <Logo />
     </Navbar.Brand>
 
