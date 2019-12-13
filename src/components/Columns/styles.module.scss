@@ -2,14 +2,13 @@
 
 :local(.element) {
   position: relative;
-  background: linear-gradient(90deg, $primary 50%, $white 50%);
 }
 
 :local(.left) {
   color: $white;
-  padding-top: $spacer * 3;
-  padding-bottom: $spacer * 3;
-  padding-right: $spacer * 3;
+  background: $primary;
+  padding-top: $spacer * 2;
+  padding-bottom: $spacer * 2;
 
   ul li::before {
     color: $white
@@ -18,7 +17,23 @@
 
 :local(.right) {
   color: $black;
-  padding-top: $spacer * 3;
-  padding-bottom: $spacer * 3;
-  padding-left: $spacer * 3;
+  background: $white;
+  padding-top: $spacer * 2;
+  padding-bottom: $spacer * 2;
+}
+
+
+@include media-breakpoint-up(lg) { 
+
+  :local(.element) {
+    background: linear-gradient(90deg, $primary 50%, $white 50%);
+  }
+  :local(.left) {
+    padding-right: $spacer * 3;
+  }
+
+  :local(.right) {
+    padding-left: $spacer * 3;
+  }
+
 }

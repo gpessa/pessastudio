@@ -1,8 +1,7 @@
 import React from "react"
-import { injectIntl } from 'gatsby-plugin-intl';
+import { injectIntl, Link } from 'gatsby-plugin-intl';
 
-import { Section, Hero, Header, SubSection, Seo } from "../../components"
-import { Container } from "react-bootstrap";
+import { Section, Hero, Header, Seo } from "../../components"
 
 const Giostre = ({ intl: { formatMessage } }) => (
   <>
@@ -30,6 +29,8 @@ const Giostre = ({ intl: { formatMessage } }) => (
     <Section className="bg-light">
       <Header>La gamma</Header>
       <p>Due sono i modelli di giostra che proponiamo. <strong>TECNOEXERCISER</strong>, prodotta da oltre 20 anni, e <strong>IPPOWALKER</strong>, realizzata per rispondere alle esigenze di un mercato che richiede un prodotto affidabile e al tempo stesso economico.</p>
+      <Link to="/giostre/tecnoexerciser">tecnoexerciser</Link>
+      <Link to="/giostre/ippowalker">ippowalker</Link>
     </Section>
   </>
 )
