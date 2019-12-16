@@ -1,6 +1,6 @@
 import { FormattedHTMLMessage, FormattedMessage, injectIntl } from 'gatsby-plugin-intl'
 import React from 'react'
-import { Col, Container, Row } from 'react-bootstrap'
+import { Col, Row } from 'react-bootstrap'
 
 import { Header, Product, Section, Seo } from '../components'
 import { Colors } from '../constants'
@@ -9,7 +9,7 @@ const Dressage = ({ intl: { formatMessage } }) => (
   <>
     <Seo title={formatMessage({ id: "META_dressage_title" })} />
 
-    <Container>
+    <Section>
       <h1>{formatMessage({ id: `NAVIGATION_dressage` })}</h1>
       <FormattedMessage
         id="DRESSAGE_intro_1"
@@ -26,8 +26,8 @@ const Dressage = ({ intl: { formatMessage } }) => (
           ),
         }}
       />
-      <p>{formatMessage({ id: "DRESSAGE_intro_2" })}</p>
-    </Container>
+      <div>{formatMessage({ id: "DRESSAGE_intro_2" })}</div>
+    </Section>
 
     <Section id="dressage-training" className="bg-light">
       <Header as="h2">{formatMessage({ id: `DRESSAGE_training_title` })}</Header>
