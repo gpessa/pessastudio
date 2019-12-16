@@ -7,19 +7,19 @@ import { Ratio } from '../../../constants';
 
 const PHOTOS = [
   {
-    image: require("../../../images/product/giostre/tecnoexerciser-giostra.jpg"),
+    image: require("../../../images/product/giostre/tecnoexerciser/galleria/giostra.jpg"),
     text: "Giostra Tecnoexerciser",
   },
   {
-    image: require("../../../images/product/giostre/tecnoexerciser-motore.jpg"),
+    image: require("../../../images/product/giostre/tecnoexerciser/galleria/motore.jpg"),
     text: "Motore Giostra Tecnoexerciser",
   },
   {
-    image: require("../../../images/product/giostre/tecnoexerciser-separazione-1.jpg"),
+    image: require("../../../images/product/giostre/tecnoexerciser/galleria/separazione-1.jpg"),
     text: "Giostra Tecnoexerciser separazioni",
   },
   {
-    image: require("../../../images/product/giostre/tecnoexerciser-separazione-2.jpg"),
+    image: require("../../../images/product/giostre/tecnoexerciser/galleria/separazione-2.jpg"),
     text: "Giostra Tecnoexerciser separazioni",
   },
 ]
@@ -65,7 +65,7 @@ const Tecnoexerciser = ({ intl: { formatMessage } }) => (
         <Col
           as={Product}
           ratio={Ratio.HORIZONTAL}
-          image={require("../../../images/product/giostre/ippowalker-giostra-motore.jpg")}
+          image={require("../../../images/product/giostre/tecnoexerciser/gamma/solo-motore.jpg")}
           name="Giostra"
           description={
             <>
@@ -83,7 +83,7 @@ const Tecnoexerciser = ({ intl: { formatMessage } }) => (
         <Col
           as={Product}
           ratio={Ratio.HORIZONTAL}
-          image={require("../../../images/product/giostre/ippowalker-giostra-con-corridoio-tecnofence.jpg")}
+          image={require("../../../images/product/giostre/tecnoexerciser/gamma/con-corridoio-tecnofence.jpg")}
           name="Giostra con corridoio Tecnofence"
           description={
             <>
@@ -100,7 +100,7 @@ const Tecnoexerciser = ({ intl: { formatMessage } }) => (
         <Col
           as={Product}
           ratio={Ratio.HORIZONTAL}
-          image={require("../../../images/product/giostre/ippowalker-giostra-con-corridoio-flat.jpg")}
+          image={require("../../../images/product/giostre/tecnoexerciser/gamma/con-corridoio-flat.jpg")}
           name="Giostra con corridoio Flat"
           description={
             <>
@@ -148,6 +148,10 @@ const Tecnoexerciser = ({ intl: { formatMessage } }) => (
               {
                 label: "Istruzioni di montaggio",
                 link: <Link to="/giostre/tecnoexerciser/istruzioni-montaggio">Istruzioni</Link>
+              },
+              {
+                label: "Procedura lubrificazione",
+                link: <a href="https://www.youtube.com/watch?v=QMA4wPxq_ow" target="_blanck">Istruzioni</a>
               }
             ]}
           />

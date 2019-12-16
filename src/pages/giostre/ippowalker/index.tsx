@@ -7,29 +7,21 @@ import { Ratio } from '../../../constants';
 
 const PHOTOS = [
   { 
-    image: require("../../../images/product/giostre/ippowalker-giostra.jpg"),
+    image: require("../../../images/product/giostre/ippowalker/galleria/giostra.jpg"),
     text: "Giostra Ippowalker con corridoio FLAT",
   },
   { 
-    image: require("../../../images/product/giostre/ippowalker-giostra-separazioni.jpg"),
+    image: require("../../../images/product/giostre/ippowalker/galleria/giostra-separazioni.jpg"),
     text: "Separazioni elettrificate",
   },
   { 
-    image: require("../../../images/product/giostre/ippowalker-giostra-corridoio-tecno-fence.jpg"),
+    image: require("../../../images/product/giostre/ippowalker/galleria/giostra-corridoio-tecno-fence.jpg"),
     text: "Giostra con corridoio TECNCOFENCE",
   },
   { 
-    image: require("../../../images/product/giostre/ippowalker-giostra-copertura-pvc-2.jpg"),
+    image: require("../../../images/product/giostre/ippowalker/galleria/giostra-copertura-pvc-2.jpg"),
     text: "Copertura in PVC verde",
-  },
-  { 
-    image: require("../../../images/product/giostre/ippowalker-giostra-con-corridoio-tecnofence.jpg"),
-    text: "Giostra con corridoio TECNCOFENCE",
-  },
-  {
-    image: require("../../../images/product/giostre/ippowalker-giostra-motore.jpg"),
-    text: "Motore giostra",
-  },
+  }
 ]
 
 const DIMENSIONS = [4, 6]
@@ -68,7 +60,7 @@ const Ippowalker = ({ intl: { formatMessage } }) => (
         <Col
           as={Product}
           ratio={Ratio.HORIZONTAL}
-          image={require("../../../images/product/giostre/ippowalker-giostra-motore.jpg")}
+          image={require("../../../images/product/giostre/ippowalker/gamma/solo-motore.jpg")}
           name="Giostra"
           description={
             <>
@@ -86,7 +78,7 @@ const Ippowalker = ({ intl: { formatMessage } }) => (
         <Col
           as={Product}
           ratio={Ratio.HORIZONTAL}
-          image={require("../../../images/product/giostre/ippowalker-giostra-con-corridoio-tecnofence.jpg")}
+          image={require("../../../images/product/giostre/ippowalker/gamma/con-corridoio-tecnofence.jpg")}
           name="Giostra con corridoio Tecnofence"
           description={
             <>
@@ -103,7 +95,7 @@ const Ippowalker = ({ intl: { formatMessage } }) => (
         <Col
           as={Product}
           ratio={Ratio.HORIZONTAL}
-          image={require("../../../images/product/giostre/ippowalker-giostra-con-corridoio-flat.jpg")}
+          image={require("../../../images/product/giostre/ippowalker/gamma/con-corridoio-flat.jpg")}
           name="Giostra con corridoio Flat"
           description={
             <>

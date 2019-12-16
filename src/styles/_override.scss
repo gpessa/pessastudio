@@ -20,7 +20,7 @@ ul li::before {
 }
 
 strong {
-  text-transform: uppercase;
+  font-family: $headings-font-family;
   color: darken($primary,10%);
 }
 
