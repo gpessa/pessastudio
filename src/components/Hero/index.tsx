@@ -8,7 +8,7 @@ const Hero = ({ image, text }: Props) => (
   <div className={styles.element} style={{ backgroundImage: `url(${image})` }}>
     {text && (
       <Container>
-        <ScrollAnimation animateIn="fadeIn">
+        <ScrollAnimation animateIn="fadeIn" animateOnce={true}>
           <h1 className={`display-3 ${styles.text}`}>{text}</h1>
         </ScrollAnimation>
       </Container>

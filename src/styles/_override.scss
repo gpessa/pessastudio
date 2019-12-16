@@ -19,11 +19,6 @@ ul li::before {
   vertical-align: middle;
 }
 
-strong {
-  font-family: $headings-font-family;
-  color: darken($primary,10%);
-}
-
 .navbar .navbar-nav > .nav-link:after {
   content: "";
   width:100%;

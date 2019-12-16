@@ -2,7 +2,7 @@ import { injectIntl } from 'gatsby-plugin-intl';
 import React from 'react';
 import { Button, Col, Figure, Row } from 'react-bootstrap';
 
-import { Columns, Header, PdfIcon, Section, Seo, SubSection } from '../components';
+import { Columns, Header, PdfIcon, Section, Seo, SubSection, ContentTable } from '../components';
 
 const DIMENSIONS = [16, 18, 20, 22, 24]
 
@@ -41,36 +41,28 @@ const Tondini = ({ intl: { formatMessage } }) => (
       }
     />
 
-    <Section fluid className="pt-0">
+    <Section>
+      <Header>Come preparare il terreno</Header>
+      <p>Prima del montaggio il terreno deve essere preparato seguendo le istruzioni sotto elencate:</p>
+      <ul>
+        <li>Spianare il terreno su un'area corrispondente al diametro del tondino indicata sul disegno</li>
+        <li>Distendere su quest'area un foglio di geotessuto</li>
+        <li>Creare una piattaforma alta 7 centimetri di stabilizzato (diametro delle pietre 3-4 centimetri) quindi comprimerlo per compattarlo</li>
+        <li>Infine, dopo aver montato il tondino stendere circa 10 centimetri di sabbia (grammatura 1/1,5 millimetri)</li>
+      </ul>
+    </Section>
 
-      <SubSection className="bg-light">
-        <Header>Come preparare il terreno</Header>
-        <p>Prima del montaggio il terreno deve essere preparato seguendo le istruzioni sotto elencate:</p>
-        <ul>
-          <li>Spianare il terreno su un'area corrispondente al diametro del tondino indicata sul disegno</li>
-          <li>Distendere su quest'area un foglio di geotessuto</li>
-          <li>Creare una piattaforma alta 7 centimetri di stabilizzato (diametro delle pietre 3-4 centimetri) quindi comprimerlo per compattarlo</li>
-          <li>Infine, dopo aver montato il tondino stendere circa 10 centimetri di sabbia (grammatura 1/1,5 millimetri)</li>
-        </ul>
-      </SubSection>
+    <Section className="bg-light">
+      <Header>Supporto clienti</Header>
 
-      <SubSection>
-        <Header>Dimensioni tondini</Header>
-
-        <Row className="mt-4">
-          {DIMENSIONS.map(dimension => (
-            <Col key={dimension}>
-              <Button
-                block
-                variant="outline-primary"
-                href={`/tondino-${dimension}.pdf`}
-              >
-                <PdfIcon /> {formatMessage({ id: `TONDINO_dimension_${dimension}` })}
-            </Button>
-            </Col>
-          ))}
-        </Row>
-      </SubSection>
+      <ContentTable
+        title="Dimensioni tondini"
+        headers={["Dimensione", "Scarica"]}
+        rows={DIMENSIONS.map(dimension => ({
+          label: formatMessage({ id: `TONDINO_dimension_${dimension}` }),
+          link: <a target="_blank" href={`/tondino-${dimension}.pdf`}><PdfIcon /></a>
+        }))}
+      />
     </Section>
   </>
 )
