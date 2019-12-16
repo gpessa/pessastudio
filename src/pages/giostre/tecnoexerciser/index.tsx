@@ -2,9 +2,7 @@ import { injectIntl, Link } from 'gatsby-plugin-intl';
 import React from 'react';
 import { Col, Figure, Row } from 'react-bootstrap';
 
-import {
-    Columns, ContentTable, Header, PdfIcon, Product, Section, SubSection
-} from '../../../components';
+import { Columns, ContentTable, Header, PdfIcon, Product, Section } from '../../../components';
 import { Ratio } from '../../../constants';
 
 const PHOTOS = [

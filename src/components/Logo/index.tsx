@@ -3,33 +3,18 @@ import { Image } from 'react-bootstrap';
 
 import * as styles from './styles.module.scss';
 
-const Logo = () => {
-  const refContainer = useRef <HTMLHeadingElement>(null);
-  
-  useLayoutEffect(() => {
-    const handleScroll = _ => {
-      if (window.pageYOffset > 1) {
-        refContainer.current!.classList.add(styles.elementSmall);
-      } else {
-        refContainer.current!.classList.remove(styles.elementSmall);
-      }
-    }
-    window.addEventListener('scroll', handleScroll)
-
-    return () => {
-      window.removeEventListener('scroll', handleScroll)
-    }
-  }, []);
-
-  return (
-    <div className={styles.element} ref={refContainer}>
-      <Image src={require("../../images/favicon.jpg")} alt="Pessa Studio" className={styles.image} />
-      <hgroup className={`${styles.group} d-none d-sm-block`}>
-        <h1 className={styles.title}>Pessa studio</h1>
-        <div className={styles.subtitle}>Horse technology</div>
-      </hgroup>
-    </div>
-  )
+interface Props {
+  small: Boolean
 }
+
+const Logo = ({ small }: Props) => (
+  <div className={`${styles.element} ${small && styles.elementSmall}`}>
+    <Image src={require("../../images/favicon.jpg")} alt="Pessa Studio" className={styles.image} />
+    <hgroup className={`${styles.group} d-none d-sm-block`}>
+      <h1 className={styles.title}>Pessa studio</h1>
+      <div className={styles.subtitle}>Horse technology</div>
+    </hgroup>
+  </div>
+)
 
 export default Logo

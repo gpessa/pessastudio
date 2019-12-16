@@ -5,4 +5,6 @@
   background: $white;
   border-bottom: 1px solid $border-color;
   text-align: center;
+  box-shadow: 0 0 0 0 $black;
+  transition: box-shadow 0.5s;
 }

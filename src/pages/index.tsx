@@ -13,19 +13,18 @@ const Index = ({ intl: { formatMessage } }) => (
     <Section className={"text-center bg-light"} fluid>
       <Container>
         <h1>{formatMessage({ id: "HOME_storia_title" })}</h1>
-        <p>Pessastudio nasce 28 anni fa dalla famiglia Pessa, gente di cavalli da generazioni, oggi Luciano Pessa il fondatore si avvale della forza commerciale della figlia.</p>
-        <p>L'<strong>innovazione tecnologica</strong> e la <strong>qualità</strong> dei prodotti proposti, aggiunti alla loro <strong>accessibilità economica</strong>, sono le caratteristiche che hanno sempre contraddistinto i prodotti Pessastudio venduti ed apprezzati sia in Italia che all'estero.</p>
-        <p>Le nostre giostre <strong>TECNOEXERCISER</strong>, in produzione da oltre 20 anni, i tondini coperti TECNOHALLE, le recinzioni TECNOFENCE, i tapis roulant per cavalli TECNOTAPIS e gli ostacoli in alluminio indistruttibili nel tempo, hanno portato la nostra azienda ad essere leader nel settore.</p>
-        <p>Negli ultimi anni abbiamo arricchito la nostra gamma con una nicchia di prodotti semplici ed economicamente sempre più accessibili, ma siamo costantemente alla ricerca di soluzioni innovative per soddisfare le esigenze dei nostri clienti.</p>
+        <div dangerouslySetInnerHTML={{ __html: formatMessage({ id: "HOME_storia_text" })}}></div>
       </Container>
     </Section>
 
     <Section fluid={true}>
-      <h1 className={"text-center"}>I nostri prodotti</h1>
+      <h1 className={"text-center"}>{formatMessage({ id: "HOME_our-product_title" })}</h1>
       <Container fluid>
         <Row>
           {PRODUCT_IDS.map(id => (
             <Col
+              xs={6}
+              md={true}
               key={id}
               as={Product}
               url={`/${id}`}
@@ -41,7 +40,7 @@ const Index = ({ intl: { formatMessage } }) => (
     </Section>
 
     <Section fluid={true} className="bg-light">
-      <h1 className={"text-center"}>Cosa dicono di noi</h1>
+      <h1 className={"text-center"}>{ formatMessage({ id: "HOME_quotes" })}</h1>
       <Carousel className="text-center py-4">
         {Array(2)
           .fill(null)

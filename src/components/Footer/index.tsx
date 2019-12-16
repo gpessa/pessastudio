@@ -7,7 +7,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Map from '../Map';
 import Newsletter from '../Newsletter';
 import Section from '../Section';
-
 import * as styles from './styles.module.scss';
 
 const FooterAddress = () => (

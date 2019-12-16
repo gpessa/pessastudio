@@ -1,10 +1,9 @@
-import { Button, Form, FormControl, Spinner } from "react-bootstrap"
-import React, { useState } from "react"
+import { injectIntl } from 'gatsby-plugin-intl';
+import addToMailchimp from 'gatsby-plugin-mailchimp';
+import React, { useState } from 'react';
+import { Button, Form, FormControl, Spinner } from 'react-bootstrap';
 
-import addToMailchimp from "gatsby-plugin-mailchimp"
-
-
-const NewsletterSubscription = () => {
+const NewsletterSubscription = ({ intl: { formatMessage } }) => {
   const [isValidated, setIsValidated] = useState(false)
   const [isLoading, setIsLoading] = useState(false)
   const [response, setResponse] = useState()
@@ -39,20 +38,20 @@ const NewsletterSubscription = () => {
     <Form noValidate validated={isValidated} onSubmit={e => handleSubmit(e)}>
       {response !== "success" && (
         <>
-          <h5>Iscriviti alla nostra newsletter</h5>
+          <h5>{formatMessage({ id: "NEWSLETTER_title"})}</h5>
 
-          <p>Rimani informato sui nostri sconti e gli eventi.</p>
+          <p>{formatMessage({ id: "NEWSLETTER_intro" })}</p>
 
           <Form.Group>
             <FormControl
               required
               type="email"
-              placeholder="Email"
+              placeholder={formatMessage({ id: "NEWSLETTER_field-email_placeholder" })}
             />
           </Form.Group>
 
           <Button variant="dark" type="submit" block>
-            Iscriviti
+            {formatMessage({ id: "NEWSLETTER_button" })}
             {isLoading && (
               <Spinner
                 as="span"
@@ -68,18 +67,18 @@ const NewsletterSubscription = () => {
       )}
 
       {response == "success" && (
-        <div className="mt-3 text-success small">Complimenti! Ti sei iscritto</div>
+        <div className="mt-3 text-success small">{ formatMessage({ id: "NEWSLETTER_sucess" })}</div>
       )}
 
       {response === "error-already-subscribed" && (
-        <div className="mt-3 text-danger small">Ti sei gia' iscritto</div>
+        <div className="mt-3 text-danger small">{ formatMessage({ id: "NEWSLETTER_error_already-subscribed" })}</div>
       )}
 
       {response === "error-generic" && (
-        <div className="mt-3 text-danger small">Si E' verificato un problema, riprova</div>
+        <div className="mt-3 text-danger small">{ formatMessage({ id: "NEWSLETTER_error_generic" })}</div>
       )}
     </Form>
   )
 }
 
-export default NewsletterSubscription
+export default injectIntl(NewsletterSubscription)
