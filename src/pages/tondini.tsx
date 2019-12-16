@@ -1,8 +1,8 @@
 import { injectIntl } from 'gatsby-plugin-intl';
 import React from 'react';
-import { Button, Col, Figure, Row } from 'react-bootstrap';
+import { Col, Figure, Row } from 'react-bootstrap';
 
-import { Columns, Header, PdfIcon, Section, Seo, SubSection, ContentTable } from '../components';
+import { Columns, Header, PdfIcon, Section, Seo, ContentTable } from '../components';
 
 const DIMENSIONS = [16, 18, 20, 22, 24]
 
@@ -12,6 +12,7 @@ const IMAGES = [
   require("../images/product/tondini/tondino-3.jpg"),
   require("../images/product/tondini/tondino-4.jpg"),
   require("../images/product/tondini/tondino-5.jpg"),
+  require("../images/product/tondini/tondino-6.jpg"),
 ];
 
 const Tondini = ({ intl: { formatMessage } }) => (
