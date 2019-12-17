@@ -1,7 +1,7 @@
-import { injectIntl } from 'gatsby-plugin-intl';
-import React from 'react';
+import { injectIntl } from "gatsby-plugin-intl"
+import React from "react"
 
-import { Header, Path, Section } from '../../../components';
+import { Header, Path, Section } from "../../../components"
 
 const STEPS = [
   {
@@ -75,13 +75,11 @@ const STEPS = [
 ]
 
 const IstruzioniMontaggio = ({ intl: { formatMessage } }) => (
-  <>
-    <Section>
-      <Header>Istruzioni per il montaggio</Header>
-      <p>Segui le semplici istruzioni per montare la nostra giostra.</p>
-      <Path steps={STEPS} />
-    </Section>
-  </>
+  <Section>
+    <Header>Istruzioni per il montaggio</Header>
+    <p>Segui le semplici istruzioni per montare la nostra giostra.</p>
+    <Path steps={STEPS} />
+  </Section>
 )
 
 export default injectIntl(IstruzioniMontaggio)

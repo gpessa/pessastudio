@@ -1,7 +1,7 @@
 @import "../../styles/_variables.scss";
 
 $titleScale: 0.9;
-$titleSize: 35px;
+$titleSize: 33px;
 $zoom: 1.5;
 $subtitleScale: 3;
 $time: 0.2s;
@@ -45,7 +45,7 @@ $time: 0.2s;
   line-height: $titleSize * $titleScale / $subtitleScale;
   font-size: $titleSize / $subtitleScale;
   transition: all $time ease-out;
-  letter-spacing: 6px;
+  letter-spacing: 5.7px;
   margin-top: 1px;
   padding-left: 4px;
 }
@@ -64,12 +64,12 @@ $time: 0.2s;
   .subtitle {
     line-height: $titleSize / $zoom * $titleScale / $subtitleScale;
     font-size: $titleSize / $zoom / $subtitleScale;
-    letter-spacing: 4.1px;
-    padding-left: 4px;
+    letter-spacing: 3.9px;
+    padding-left: 2px;
   }
   
   .group {
-    margin-top: 4px;
+    margin-top: 6px;
   }
   
 }

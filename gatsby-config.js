@@ -4,14 +4,14 @@ module.exports = {
     siteUrl: `https://www.pessastudio.com`,
     title: `Pessa studio`,
     description: ``,
-    author: ``
+    author: ``,
   },
   plugins: [
     `gatsby-plugin-sass`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-sitemap`,
     `gatsby-transformer-sharp`,
-    'gatsby-plugin-robots-txt',
+    "gatsby-plugin-robots-txt",
     `gatsby-plugin-typescript`,
     `gatsby-plugin-react-helmet`,
     {
@@ -36,7 +36,7 @@ module.exports = {
         background_color: `#20232a`,
         theme_color: `#20232a`,
         display: `minimal-ui`,
-        icon: "src/images/favicon.jpg"
+        icon: "src/images/favicon.jpg",
       },
     },
     {
@@ -52,11 +52,11 @@ module.exports = {
       resolve: `gatsby-plugin-gdpr-cookies`,
       options: {
         googleAnalytics: {
-          trackingId: 'UA-8737323-14'
+          trackingId: "UA-8737323-14",
         },
-        environments: ['production', 'development'] // Defines the environments where the tracking should be available  - default is ["production"]
+        environments: ["production", "development"], // Defines the environments where the tracking should be available  - default is ["production"]
       },
-    }
+    },
   ],
 }
 

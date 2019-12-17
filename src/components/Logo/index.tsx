@@ -10,7 +10,7 @@ interface Props {
 const Logo = ({ small }: Props) => (
   <div className={`${styles.element} ${small && styles.elementSmall}`}>
     <Image src={require("../../images/favicon.jpg")} alt="Pessa Studio" className={styles.image} />
-    <hgroup className={`${styles.group} d-none d-sm-block`}>
+    <hgroup className={`${styles.group}`}>
       <h1 className={styles.title}>Pessa studio</h1>
       <div className={styles.subtitle}>Horse technology</div>
     </hgroup>

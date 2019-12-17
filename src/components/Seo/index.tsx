@@ -5,12 +5,14 @@
  * See: https://www.gatsbyjs.org/docs/use-static-query/
  */
 
+import { graphql, useStaticQuery } from "gatsby"
+import PropTypes, { InferProps } from "prop-types"
 import React from "react"
-import PropTypes from "prop-types"
 import Helmet from "react-helmet"
-import { useStaticQuery, graphql } from "gatsby"
+import { injectTree } from "../../hoc"
+import { injectIntl } from "gatsby-plugin-intl"
 
-function Seo({ description, lang, meta, keywords, title }) {
+function Seo({ description, lang, meta, keywords, fragments, intl: { formatMessage } }: InferProps<typeof Seo.propTypes>) {
   const { site } = useStaticQuery(
     graphql`
       query {
@@ -25,6 +27,7 @@ function Seo({ description, lang, meta, keywords, title }) {
     `
   )
 
+  const title = formatMessage({ id: `NAVIGATION_${fragments[0].id}` })
   const metaDescription = description || site.siteMetadata.description
 
   return (
@@ -69,7 +72,7 @@ function Seo({ description, lang, meta, keywords, title }) {
         },
       ]
         .concat(
-          keywords.length > 0
+          keywords && keywords.length > 0
             ? {
                 name: `keywords`,
                 content: keywords.join(`, `),
@@ -86,14 +89,16 @@ Seo.defaultProps = {
   meta: [],
   keywords: [],
   description: ``,
+  fragments: [],
 }
 
 Seo.propTypes = {
+  intl: PropTypes.any,
   description: PropTypes.string,
   lang: PropTypes.string,
   meta: PropTypes.arrayOf(PropTypes.object),
   keywords: PropTypes.arrayOf(PropTypes.string),
-  title: PropTypes.string.isRequired,
+  fragments: PropTypes.array.isRequired,
 }
 
-export default Seo
+export default injectIntl(injectTree(Seo))

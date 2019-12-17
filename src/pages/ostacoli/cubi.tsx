@@ -1,11 +1,11 @@
-import React from "react"
-import { Row, Col } from "react-bootstrap"
+import React from 'react';
+import { Col, Row } from 'react-bootstrap';
 
-import { Colors } from "../../constants"
-import { Product, SubSection, Header } from "../../components"
+import { Header, Product, Section } from '../../components';
+import { Colors } from '../../constants';
 
 const Cubi = () => (
-  <SubSection>
+  <Section>
     <Row>
       <Col>
         <Header>Cubi Mini</Header>
@@ -38,7 +38,7 @@ const Cubi = () => (
         width={37}
       />
     </Row>
-  </SubSection>
+  </Section>
 )
 
 export default Cubi

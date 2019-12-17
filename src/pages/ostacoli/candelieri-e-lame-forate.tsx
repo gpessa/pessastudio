@@ -1,10 +1,11 @@
-import React from "react"
-import { Row, Col } from "react-bootstrap"
-import { Product, SubSection, Header } from "../../components"
-import { Ratio } from "../../constants"
+import React from 'react';
+import { Col, Row } from 'react-bootstrap';
+
+import { Header, Product, Section } from '../../components';
+import { Ratio } from '../../constants';
 
 const CandelieriLameForate = () => (
-  <SubSection className="bg-light">
+  <Section className="bg-light">
     <Header>Candelieri e lame forate</Header>
     <p>I candelieri sono costruiti con un montante di alluminio verniciato di colore bianco, muniti di 4 piedi, rivestiti con puntali di plastica che garantiscono, in caso di ribaltamento, l’incolumità vostra e dei vostri cavalli. Per consentirvi di realizzare ostacoli di vostra creazione possiamo fornirvi "le lame forate" in due diverse lunghezze.</p>
 
@@ -57,7 +58,7 @@ const CandelieriLameForate = () => (
 
     </Row>  
     
-  </SubSection>
+  </Section>
 )
 
 export default CandelieriLameForate

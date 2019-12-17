@@ -1,40 +1,26 @@
-import { Link } from 'gatsby-plugin-intl';
-import React from 'react';
-import { Container, Breadcrumb as BootstrapBreadcrumb } from 'react-bootstrap';
-import { injectIntl } from 'react-intl';
+import { Link } from "gatsby-plugin-intl"
+import React from "react"
+import { Breadcrumb as BootstrapBreadcrumb, Container } from "react-bootstrap"
+import { injectIntl } from "react-intl"
 
-import { Location } from '@reach/router';
-import * as styles from './styles.module.scss';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faHome } from '@fortawesome/free-solid-svg-icons';
+import { faHome } from "@fortawesome/free-solid-svg-icons"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
-const Breadcrumb = ({ intl: { formatMessage } }) => (
-    <Location>
-      {({location : { pathname }}) => {
-        const fragments = pathname.split('/').filter(f => ["", "/"].indexOf(f) === -1).slice(1);
-        let url = "";
+import { injectTree } from "../../hoc"
+import * as styles from "./styles.module.scss"
 
-      return fragments.length > 0 ? (
-          <BootstrapBreadcrumb>
-            <Container>
-              <Link to={'/'} className={`breadcrumb-item ${styles.item}`}>
-                <FontAwesomeIcon icon={faHome} className="mr-2"/>
-                {formatMessage({ id: `NAVIGATION_home` })}
-              </Link>
-              {fragments.map(fragment => {
-                url = `${url}/${fragment}/`;
-                return <Link key={url} to={url} className={`breadcrumb-item ${styles.item}`}>{formatMessage({
-                  id: `NAVIGATION_${fragment}`
-                })}</Link>
-              })}
-            </Container>
-          </BootstrapBreadcrumb>
-        ) : null
-      }}
-    </Location>
-)
+const Breadcrumb = ({ fragments, intl: { formatMessage } }) =>
+  fragments.length > 1 && (
+    <BootstrapBreadcrumb>
+      <Container>
+        {fragments.reverse().map(({ id, url }, index) => (
+          <Link key={id} to={url} className={`breadcrumb-item ${styles.item}`}>
+            {index === 0 && <FontAwesomeIcon icon={faHome} className="mr-2" />}
+            {formatMessage({ id: `NAVIGATION_${id}` })}
+          </Link>
+        ))}
+      </Container>
+    </BootstrapBreadcrumb>
+  )
 
-export default injectIntl(Breadcrumb)
-
-
-
+export default injectIntl(injectTree(Breadcrumb))

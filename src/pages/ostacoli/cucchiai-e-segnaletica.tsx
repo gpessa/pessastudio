@@ -1,12 +1,11 @@
-import React from "react"
-import { Row, Col } from "react-bootstrap"
+import React from 'react';
+import { Col, Row } from 'react-bootstrap';
 
-import { Product, SubSection, Header } from "../../components"
-import { Ratio } from "./../../constants"
- 
+import { Header, Product, Section } from '../../components';
+import { Ratio } from '../../constants';
 
 const CucchiaiSegnaletica = () => (
-  <SubSection>
+  <Section>
     <Header>Cucchiai e segnaletica</Header>
     
     <p>Numerosi sono stati i test a cui abbiamo sottoposto i cucchiai per garantirne robustezza e durata nel tempo.</p>
@@ -79,7 +78,7 @@ const CucchiaiSegnaletica = () => (
       />
 
     </Row>
-  </SubSection>
+  </Section>
 )
 
 export default CucchiaiSegnaletica

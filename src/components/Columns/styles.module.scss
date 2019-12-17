@@ -22,9 +22,14 @@
   padding-bottom: $spacer * 2;
 }
 
+@include media-breakpoint-down(md) { 
 
-@include media-breakpoint-up(lg) { 
+  :local(.container) {
+    max-width: 100%;
+  }
+}
 
+@include media-breakpoint-up(md) { 
   :local(.element) {
     background: linear-gradient(90deg, $primary 50%, $white 50%);
   }

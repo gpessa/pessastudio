@@ -1,11 +1,9 @@
 import React from "react"
-import { Section, SubSection, Header, Seo } from "../components"
-import { injectIntl } from 'gatsby-plugin-intl'
+import { Section, SubSection, Header } from "../components"
+import { injectIntl } from "gatsby-plugin-intl"
 
 const CookiePolicy = ({ intl: { formatMessage } }) => (
   <>
-    <Seo title={formatMessage({ id: "META_cookie-policy_title" })} />
-    
     <Section>
       <h1>INFORMATIVA PRIVACY</h1>
 
@@ -13,7 +11,9 @@ const CookiePolicy = ({ intl: { formatMessage } }) => (
 
       <section className="mt-5">
         <h5>Titolare del trattamento e dati di contatto</h5>
-        <div><strong>PESSASTUDIO HORSE TECHNOLOGY SRL</strong>, il cui Responsabile del Trattamento dei Dati è raggiungibile al n.tel 349 0543098, sede legale eletta in Via Garibaldi 28 – 35043 Monselice (PD)</div>
+        <div>
+          <strong>PESSASTUDIO HORSE TECHNOLOGY SRL</strong>, il cui Responsabile del Trattamento dei Dati è raggiungibile al n.tel 349 0543098, sede legale eletta in Via Garibaldi 28 – 35043 Monselice (PD)
+        </div>
       </section>
 
       <section className="mt-5">
@@ -46,10 +46,9 @@ const CookiePolicy = ({ intl: { formatMessage } }) => (
           <li>Portabilità dei dati</li>
           <li>Revoca del consenso</li>
           <li>Reclamo all’autorità di controllo, per l’Italia Garante della Privacy https://www.garanteprivacy.it/web/guest/home/footer/contatti</li>
-          </ul>
+        </ul>
       </section>
     </Section>
-
 
     <Section className="bg-light">
       <Header>COOKIE UTILIZZATI DAL PRESENTE SITO</Header>
@@ -60,7 +59,7 @@ const CookiePolicy = ({ intl: { formatMessage } }) => (
       </SubSection>
 
       <SubSection fluid>
-        <h3>Cookie di terze parti</h3> 
+        <h3>Cookie di terze parti</h3>
 
         <section className="mb-5">
           <h5>Google analytics</h5>
@@ -68,30 +67,38 @@ const CookiePolicy = ({ intl: { formatMessage } }) => (
           <ul>
             <li>Il percorso di navigazione dell’utente</li>
             <li>il numero di pagine visitate,</li>
-            <li>Il tempo trascorso tra un clic e un altro   </li>
+            <li>Il tempo trascorso tra un clic e un altro </li>
             <li>La visualizzazione di determinate risorse </li>
           </ul>
-          <p>Questi  i cookie  tengono traccia dei percorsi di navigazione permettendoci così di analizzare l’esperienza d’uso e  migliorarne l’usabilità. Ciò che viene analizzato è il dato legato all’utente, ma quest’ultimo non viene mai identificato.</p>
+          <p>Questi i cookie tengono traccia dei percorsi di navigazione permettendoci così di analizzare l’esperienza d’uso e migliorarne l’usabilità. Ciò che viene analizzato è il dato legato all’utente, ma quest’ultimo non viene mai identificato.</p>
           <ul>
-            <li><a href="https://developers.google.com/analytics/devguides/collection/analyticsjs/cookie-usageprivacy">Informativa gestione dati</a></li>
-            <li><a href="http://www.google.com/intl/en/analytics/privacyoverview.html">Informativa privacy</a></li>
-            <li><a href="https://developers.google.com/analytics/devguides/collection/analyticsjs/cookie-usage">Uso cookie google analytics</a></li>
+            <li>
+              <a href="https://developers.google.com/analytics/devguides/collection/analyticsjs/cookie-usageprivacy">Informativa gestione dati</a>
+            </li>
+            <li>
+              <a href="http://www.google.com/intl/en/analytics/privacyoverview.html">Informativa privacy</a>
+            </li>
+            <li>
+              <a href="https://developers.google.com/analytics/devguides/collection/analyticsjs/cookie-usage">Uso cookie google analytics</a>
+            </li>
           </ul>
         </section>
 
         <section className="mb-5">
           <h5>Google maps</h5>
-          <div>Utilizziamo Google Maps per fornire informazioni dettagliate su come individuare i nostri punti vendita e crediamo che contribuisca alla tua esperienza nell'uso del nostro Sito. <a href="http://www.google.it/intl/it/policies/privacy">Privacy Policy</a></div>
+          <div>
+            Utilizziamo Google Maps per fornire informazioni dettagliate su come individuare i nostri punti vendita e crediamo che contribuisca alla tua esperienza nell'uso del nostro Sito. <a href="http://www.google.it/intl/it/policies/privacy">Privacy Policy</a>
+          </div>
         </section>
 
         <section>
-          <h5>AddThis</h5> 
-          <div>Il pulsante “Mi Piace” e i widget sociali di Facebook sono servizi di interazione con il social network Dati Personali raccolti: Cookie e Dati di utilizzo. Luogo del trattamento: <a href="https://www.facebook.com/privacy/explanation">USA - Privacy policy</a></div>
+          <h5>AddThis</h5>
+          <div>
+            Il pulsante “Mi Piace” e i widget sociali di Facebook sono servizi di interazione con il social network Dati Personali raccolti: Cookie e Dati di utilizzo. Luogo del trattamento: <a href="https://www.facebook.com/privacy/explanation">USA - Privacy policy</a>
+          </div>
         </section>
       </SubSection>
-
     </Section>
-    
   </>
 )
 

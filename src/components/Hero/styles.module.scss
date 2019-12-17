@@ -1,14 +1,31 @@
 @import "../../styles/_variables.scss";
 
 :local(.element) {
-  height: 400px;
-  background-size: cover;
+  position: relative;
+}
+
+:local(.image) {
+  width: 100%;
+}
+
+:local(.textWrapper) {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
   display: flex;
   align-items: center;
 }
 
 :local(.text) {
   background: $white;
-  display: inline-block;
   padding: 0 $spacer;
+  margin: 0;
+  font-size: 50px;
+  display: inline;
+
+  @include media-breakpoint-up(md) {
+    font-size: 65px;
+  }
 }

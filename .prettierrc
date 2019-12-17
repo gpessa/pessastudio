@@ -8,5 +8,6 @@
   "bracketSpacing": true,
   "jsxBracketSameLine": false,
   "arrowParens": "avoid",
-  "proseWrap": "preserve"
+  "proseWrap": "preserve",
+  "printWidth": 1000000
 }

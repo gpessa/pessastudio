@@ -22,10 +22,10 @@ const Footer = () => (
   <footer className={styles.element}>
     <Map />
 
-    <div className={styles.data} >
+    <div className={styles.data}>
       <Section>
         <Row>
-          <Col md={4}>
+          <Col md={6} lg={{ span: 4 }} className="mb-5 mb-md-0">
             <FooterAddress />
 
             <div className="mt-2">
@@ -39,7 +39,7 @@ const Footer = () => (
             </div>
           </Col>
           
-          <Col md={{ span: 4, offset: 4 }}>
+          <Col md={6} lg={{ span: 4, offset: 4 }}>
             <Newsletter />
           </Col>
         </Row>
