@@ -15,10 +15,12 @@ const Breadcrumb = ({ fragments, intl: { formatMessage } }) =>
       <Container>
         <BootstrapBreadcrumb>
           {fragments.reverse().map(({ id, url }, index) => (
-            <Link key={id} to={url} className={`breadcrumb-item ${styles.item}`}>
-              {index === 0 && <FontAwesomeIcon icon={faHome} className="mr-2" />}
-              {formatMessage({ id: `NAVIGATION_${id}` })}
-            </Link>
+            <BootstrapBreadcrumb.Item>
+              <Link key={id} to={url} className={`${styles.item}`}>
+                {index === 0 && <FontAwesomeIcon icon={faHome} className="mr-2" />}
+                {formatMessage({ id: `NAVIGATION_${id}` })}
+              </Link>
+            </BootstrapBreadcrumb.Item>
           ))}
         </BootstrapBreadcrumb>
       </Container>
