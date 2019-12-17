@@ -22,11 +22,11 @@ const Tree = (Component: any) => (props: any) => (
         }, [] as UrlFragment[])
 
       fragments = [
-        ...fragments,
         {
           id: "index",
           url: "/",
         },
+        ...fragments,
       ]
 
       return <Component fragments={fragments} {...props} />

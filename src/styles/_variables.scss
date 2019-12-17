@@ -33,10 +33,6 @@ $gray-lighter: lighten($gray-base, 93.5%);
 $primary: #356434;
 $danger: red;
 
-$border-radius: 0;
-$border-radius-lg: 0;
-$border-radius-sm: 0;
-
 $font-family-sans-serif: "Quicksand", Helvetica, Arial, sans-serif;
 $font-family-serif: Georgia, "Times New Roman", Times, serif;
 $headings-font-family: "Roboto Condensed", Helvetica, Arial, sans-serif;
@@ -71,6 +67,9 @@ $breadcrumb-margin-bottom: 0;
 $breadcrumb-bg: $gray-100;
 $breadcrumb-divider-color: $primary;
 $breadcrumb-divider: quote("/") !default;
+
+$enable-caret: false;
+$enable-rounded: false;
 
 @import "~bootstrap/scss/functions";
 @import "~bootstrap/scss/variables";

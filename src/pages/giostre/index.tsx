@@ -1,7 +1,8 @@
 import React from "react"
 import { injectIntl, Link } from "gatsby-plugin-intl"
 
-import { Section, Hero, Header } from "../../components"
+import { Section, Hero, Header, Columns } from "../../components"
+import { Container, Button } from "react-bootstrap"
 
 const Giostre = ({ intl: { formatMessage } }) => (
   <>
@@ -26,12 +27,33 @@ const Giostre = ({ intl: { formatMessage } }) => (
       </ul>
     </Section>
 
-    <Section className="bg-light">
-      <Header>La gamma</Header>
-      <div>
-        Due sono i modelli di giostra che proponiamo. <Link to="/giostre/tecnoexerciser">{formatMessage({ id: "NAVIGATION_tecnoexerciser" })}</Link>, prodotta da oltre 20 anni, e <Link to="/giostre/ippowalker">{formatMessage({ id: "NAVIGATION_ippowalker" })}</Link>, realizzata per rispondere alle esigenze di un mercato che richiede un prodotto affidabile e al tempo stesso economico.
-      </div>
-    </Section>
+    <div>
+      <Container>
+        <Header>La gamma</Header>
+        <p>
+          Due sono i modelli di giostra che proponiamo. <Link to="/giostre/tecnoexerciser">{formatMessage({ id: "NAVIGATION_tecnoexerciser" })}</Link>, prodotta da oltre 20 anni, e <Link to="/giostre/ippowalker">{formatMessage({ id: "NAVIGATION_ippowalker" })}</Link>, realizzata per rispondere alle esigenze di un mercato che richiede un prodotto affidabile e al tempo stesso economico.
+        </p>
+      </Container>
+
+      <Columns
+        left={
+          <div className="text-center py-4">
+            <h3>{formatMessage({ id: "NAVIGATION_tecnoexerciser" })}</h3>
+            <Button as={Link} to="/giostre/tecnoexerciser" variant="light">
+              {formatMessage({ id: "GIOSTRE_discover-more" })}
+            </Button>
+          </div>
+        }
+        right={
+          <div className="text-center py-4">
+            <h3>{formatMessage({ id: "NAVIGATION_ippowalker" })}</h3>
+            <Button as={Link} to="/giostre/ippowalker" variant="primary">
+              {formatMessage({ id: "GIOSTRE_discover-more" })}
+            </Button>
+          </div>
+        }
+      />
+    </div>
   </>
 )
 

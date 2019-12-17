@@ -14,7 +14,7 @@ const Breadcrumb = ({ fragments, intl: { formatMessage } }) =>
     <div className={styles.element}>
       <Container>
         <BootstrapBreadcrumb>
-          {fragments.reverse().map(({ id, url }, index) => (
+          {fragments.map(({ id, url }, index) => (
             <BootstrapBreadcrumb.Item>
               <Link key={id} to={url} className={`${styles.item}`}>
                 {index === 0 && <FontAwesomeIcon icon={faHome} className="mr-2" />}
