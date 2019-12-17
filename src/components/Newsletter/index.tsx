@@ -1,7 +1,7 @@
-import { injectIntl } from 'gatsby-plugin-intl';
-import addToMailchimp from 'gatsby-plugin-mailchimp';
-import React, { useState } from 'react';
-import { Button, Form, FormControl, Spinner } from 'react-bootstrap';
+import { injectIntl } from "gatsby-plugin-intl"
+import addToMailchimp from "gatsby-plugin-mailchimp"
+import React, { useState } from "react"
+import { Button, Form, FormControl, Spinner } from "react-bootstrap"
 
 const NewsletterSubscription = ({ intl: { formatMessage } }) => {
   const [isValidated, setIsValidated] = useState(false)
@@ -38,45 +38,26 @@ const NewsletterSubscription = ({ intl: { formatMessage } }) => {
     <Form noValidate validated={isValidated} onSubmit={e => handleSubmit(e)}>
       {response !== "success" && (
         <>
-          <h5>{formatMessage({ id: "NEWSLETTER_title"})}</h5>
+          <h5>{formatMessage({ id: "NEWSLETTER_title" })}</h5>
 
           <p>{formatMessage({ id: "NEWSLETTER_intro" })}</p>
 
           <Form.Group>
-            <FormControl
-              required
-              type="email"
-              placeholder={formatMessage({ id: "NEWSLETTER_field-email_placeholder" })}
-            />
+            <FormControl required type="email" aria-label={formatMessage({ id: "NEWSLETTER_field-email_placeholder" })} placeholder={formatMessage({ id: "NEWSLETTER_field-email_placeholder" })} />
           </Form.Group>
 
           <Button variant="dark" type="submit" block>
             {formatMessage({ id: "NEWSLETTER_button" })}
-            {isLoading && (
-              <Spinner
-                as="span"
-                animation="border"
-                size="sm"
-                role="status"
-                aria-hidden="true"
-                className="ml-2"
-              />
-            )}
+            {isLoading && <Spinner as="span" animation="border" size="sm" role="status" aria-hidden="true" className="ml-2" />}
           </Button>
-        </>    
+        </>
       )}
 
-      {response == "success" && (
-        <div className="mt-3 text-success small">{ formatMessage({ id: "NEWSLETTER_sucess" })}</div>
-      )}
+      {response == "success" && <div className="mt-3 text-success small">{formatMessage({ id: "NEWSLETTER_sucess" })}</div>}
 
-      {response === "error-already-subscribed" && (
-        <div className="mt-3 text-danger small">{ formatMessage({ id: "NEWSLETTER_error_already-subscribed" })}</div>
-      )}
+      {response === "error-already-subscribed" && <div className="mt-3 text-danger small">{formatMessage({ id: "NEWSLETTER_error_already-subscribed" })}</div>}
 
-      {response === "error-generic" && (
-        <div className="mt-3 text-danger small">{ formatMessage({ id: "NEWSLETTER_error_generic" })}</div>
-      )}
+      {response === "error-generic" && <div className="mt-3 text-danger small">{formatMessage({ id: "NEWSLETTER_error_generic" })}</div>}
     </Form>
   )
 }

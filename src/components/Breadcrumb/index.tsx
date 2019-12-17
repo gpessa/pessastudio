@@ -11,16 +11,18 @@ import * as styles from "./styles.module.scss"
 
 const Breadcrumb = ({ fragments, intl: { formatMessage } }) =>
   fragments.length > 1 && (
-    <BootstrapBreadcrumb>
+    <div className={styles.element}>
       <Container>
-        {fragments.reverse().map(({ id, url }, index) => (
-          <Link key={id} to={url} className={`breadcrumb-item ${styles.item}`}>
-            {index === 0 && <FontAwesomeIcon icon={faHome} className="mr-2" />}
-            {formatMessage({ id: `NAVIGATION_${id}` })}
-          </Link>
-        ))}
+        <BootstrapBreadcrumb>
+          {fragments.reverse().map(({ id, url }, index) => (
+            <Link key={id} to={url} className={`breadcrumb-item ${styles.item}`}>
+              {index === 0 && <FontAwesomeIcon icon={faHome} className="mr-2" />}
+              {formatMessage({ id: `NAVIGATION_${id}` })}
+            </Link>
+          ))}
+        </BootstrapBreadcrumb>
       </Container>
-    </BootstrapBreadcrumb>
+    </div>
   )
 
 export default injectIntl(injectTree(Breadcrumb))

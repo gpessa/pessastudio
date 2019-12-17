@@ -1,6 +1,6 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700|Raleway:400,600|Cabin|Quicksand:400,500,600|Roboto+Condensed:400,700&display=swap');
+// @import url("https://fonts.googleapis.com/css?family=Quicksand:400,600|Roboto+Condensed:400,700&display=swap");
 
-$white:    #fff;
+$white: #fff;
 $gray-100: #f8f9fa;
 $gray-200: #e9ecef;
 $gray-300: #dee2e6;
@@ -10,69 +10,67 @@ $gray-600: #6c757d;
 $gray-700: #495057;
 $gray-800: #343a40;
 $gray-900: #212529;
-$black:    #000;
-$light:         $gray-100;
+$black: #000;
+$light: $gray-100;
 
 $border-color: $gray-300;
 
-$grid-gutter-width:   40px;
-$font-size-base:              1rem;
-$font-size-lg:                $font-size-base * 1.25;
-$font-size-sm:                $font-size-base * .875;
+$grid-gutter-width: 40px;
+$font-size-base: 1rem;
+$font-size-lg: $font-size-base * 1.25;
+$font-size-sm: $font-size-base * 0.875;
 
-$headings-margin-bottom:   0.8em;
-$spacer:                 1rem;
+$headings-margin-bottom: 0.8em;
+$spacer: 1rem;
 
-$gray-base:              #000;
-$gray-darker:            lighten($gray-base, 13.5%);
-$gray-dark:              lighten($gray-base, 20%);
-$gray:                   lighten($gray-base, 33.5%);
-$gray-light:             lighten($gray-base, 46.7%);
-$gray-lighter:           lighten($gray-base, 93.5%);
+$gray-base: #000;
+$gray-darker: lighten($gray-base, 13.5%);
+$gray-dark: lighten($gray-base, 20%);
+$gray: lighten($gray-base, 33.5%);
+$gray-light: lighten($gray-base, 46.7%);
+$gray-lighter: lighten($gray-base, 93.5%);
 
-$primary:                 #356434;
-$danger:                red;
+$primary: #356434;
+$danger: red;
 
-$border-radius:             0;
-$border-radius-lg:          0;
-$border-radius-sm:          0;
+$border-radius: 0;
+$border-radius-lg: 0;
+$border-radius-sm: 0;
 
-$font-family-sans-serif:    "Quicksand", Helvetica, Arial, sans-serif;
-$font-family-serif:         Georgia, "Times New Roman", Times, serif;
-$headings-font-family:      "Roboto Condensed", Helvetica, Arial, sans-serif;
-$headings-font-weight:      normal;
+$font-family-sans-serif: "Quicksand", Helvetica, Arial, sans-serif;
+$font-family-serif: Georgia, "Times New Roman", Times, serif;
+$headings-font-family: "Roboto Condensed", Helvetica, Arial, sans-serif;
+$headings-font-weight: normal;
 $navbar-nav-link-padding-x: 1rem;
 
-$navbar-light-bg:                   $white;
-$navbar-light-color:                $gray-dark;
-$navbar-light-hover-color:          rgba($black, .7);
-$navbar-light-active-color:         rgba($black, .9);
-$navbar-light-disabled-color:       rgba($black, .3);
-$navbar-light-toggler-icon-bg:      url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='#000' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+$navbar-light-bg: $white;
+$navbar-light-color: $gray-dark;
+$navbar-light-hover-color: rgba($black, 0.7);
+$navbar-light-active-color: rgba($black, 0.9);
+$navbar-light-disabled-color: rgba($black, 0.3);
+$navbar-light-toggler-icon-bg: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='#000' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 $navbar-light-toggler-border-color: $black;
 
-$text-color:                #555;
+$text-color: #555;
 
-$carousel-control-color:    $primary;
+$carousel-control-color: $primary;
 $carousel-indicator-active-bg: $primary;
 
-$input-border-color:                    $gray-800;
-$figure-caption-font-size:  70%;
+$input-border-color: $gray-800;
+$figure-caption-font-size: 70%;
 
+$small-font-size: 80%;
+$text-muted: $gray-600;
 
-$small-font-size:             80%;
-$text-muted:                  $gray-600;
+$breadcrumb-padding-y: 1rem !default;
+$breadcrumb-padding-x: 0rem !default;
+$breadcrumb-item-padding: 0.7rem !default;
 
+$breadcrumb-margin-bottom: 0;
 
-$breadcrumb-padding-y:              1rem !default;
-$breadcrumb-padding-x:              0rem !default;
-$breadcrumb-item-padding:           .7rem !default;
-
-$breadcrumb-margin-bottom:          0;
-
-$breadcrumb-bg:                     $gray-100;
-$breadcrumb-divider-color:          $primary;
-$breadcrumb-divider:                quote("/") !default;
+$breadcrumb-bg: $gray-100;
+$breadcrumb-divider-color: $primary;
+$breadcrumb-divider: quote("/") !default;
 
 @import "~bootstrap/scss/functions";
 @import "~bootstrap/scss/variables";

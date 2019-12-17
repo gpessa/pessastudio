@@ -1,5 +1,9 @@
 @import "../../styles/_variables.scss";
 
+:local(.element) {
+  background-color: $breadcrumb-bg;
+}
+
 :local(.item) {
   font-family: $headings-font-family;
   text-transform: uppercase;

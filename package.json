@@ -23,6 +23,7 @@
     "gatsby-plugin-sharp": "^2.3.8",
     "gatsby-plugin-sitemap": "^2.2.24",
     "gatsby-plugin-typescript": "^2.1.23",
+    "gatsby-plugin-web-font-loader": "^1.0.4",
     "gatsby-source-filesystem": "^2.1.42",
     "gatsby-transformer-sharp": "^2.3.9",
     "google-map-react": "^1.1.5",

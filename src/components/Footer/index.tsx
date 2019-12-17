@@ -1,20 +1,25 @@
-import React from 'react';
-import { Col, Row } from 'react-bootstrap';
+import React from "react"
+import { Col, Row } from "react-bootstrap"
 
-import { faFacebookSquare, faInstagram } from '@fortawesome/free-brands-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFacebookSquare, faInstagram } from "@fortawesome/free-brands-svg-icons"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
-import Map from '../Map';
-import Newsletter from '../Newsletter';
-import Section from '../Section';
-import * as styles from './styles.module.scss';
+import Map from "../Map"
+import Newsletter from "../Newsletter"
+import Section from "../Section"
+import * as styles from "./styles.module.scss"
 
 const FooterAddress = () => (
   <>
     <h5 className="mb-0">PESSASTUDIO Horse Tecnology srl</h5>
-    via Cà Megliadino, 35<br />
-    Montagnana (PD)<br />
-    Tel: <a href="tel:+39 0429 805613" className="text-light">+39 0429 805613</a>
+    via Cà Megliadino, 35
+    <br />
+    Montagnana (PD)
+    <br />
+    Tel:{" "}
+    <a href="tel:+39 0429 805613" className="text-light">
+      +39 0429 805613
+    </a>
   </>
 )
 
@@ -29,16 +34,16 @@ const Footer = () => (
             <FooterAddress />
 
             <div className="mt-2">
-              <a target="_blank" href="https://www.facebook.com/Pessastudio-HORSE-Tecnology-1050570271816027/" className={styles.social}>
+              <a target="_blank" href="https://www.facebook.com/Pessastudio-HORSE-Tecnology-1050570271816027/" className={styles.social} aria-label="Facebook" rel="noopener">
                 <FontAwesomeIcon icon={faFacebookSquare} size="lg" />
               </a>
 
-              <a target="_blank" href="https://www.instagram.com/pessastudiohorsetecnology" className={styles.social}>
+              <a target="_blank" href="https://www.instagram.com/pessastudiohorsetecnology" className={styles.social} aria-label="Instagram" rel="noopener">
                 <FontAwesomeIcon icon={faInstagram} size="lg" />
               </a>
             </div>
           </Col>
-          
+
           <Col md={6} lg={{ span: 4, offset: 4 }}>
             <Newsletter />
           </Col>
