@@ -17,7 +17,6 @@ const Giostre = ({ intl: { formatMessage } }) => (
       </p>
       <p>La giostra vi permetterà, non solo di raffreddare il vostro cavallo con una passeggiata post allenamento, ma anche di creare una vera sessione di lavoro passando da un’andatura all'altra e cambiando di mano</p>
       <p>La caratteristica principale delle nostre giostre è di essere considerate strutture precarie. Non avrete quindi bisogno di nessuna concessione edilizia, ma solo in taluni casi, di un semplice permesso di installazione rilasciato dalle amministrazioni locali</p>
-
       <p>E' possibile aquistare le nostre giostre in diverse versioni:</p>
 
       <ul>
