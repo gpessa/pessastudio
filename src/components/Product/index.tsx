@@ -42,9 +42,7 @@ const Product = ({ image, url, name, width, height, weight, colors, thickness, l
       <div className={`${styles.image} ${styles[ratio || Ratio.SQUARE]}`} style={{ backgroundImage: `url(${image})` }}></div>
 
       <div className={styles.data}>
-        <Header as="h6" className={styles.title}>
-          {name}
-        </Header>
+        <h6 className={styles.title}>{name}</h6>
 
         <Description description={description} />
 

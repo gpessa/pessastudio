@@ -1,11 +1,17 @@
-import { FormattedMessage, Link } from "gatsby-plugin-intl"
+import { FormattedMessage, Link, injectIntl } from "gatsby-plugin-intl"
 import React from "react"
 import CookieConsent from "react-cookie-consent"
 
 import * as styles from "./styles.module.scss"
 
-const Gdpr = () => (
-  <CookieConsent cookieName="gatsby-gdpr-google-analytics" disableStyles={true} containerClasses={`shadow ${styles.element}`} buttonClasses="mt-2 btn btn-primary btn-block">
+const Gdpr = ({ intl: { formatMessage } }) => (
+  <CookieConsent
+    disableStyles={true}
+    cookieName="gatsby-gdpr-google-analytics"
+    containerClasses={`shadow ${styles.element}`}
+    buttonClasses="mt-2 btn btn-primary btn-block" 
+    buttonText={formatMessage({ id: "COOKIE_popup-button" })}
+  >
     <FormattedMessage
       id="COOKIE_popup"
       values={{
@@ -15,4 +21,4 @@ const Gdpr = () => (
   </CookieConsent>
 )
 
-export default Gdpr
+export default injectIntl(Gdpr)

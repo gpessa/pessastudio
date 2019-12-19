@@ -1,3 +1,4 @@
+export { default as Address } from "./Address"
 export { default as Breadcrumb } from "./Breadcrumb"
 export { default as Columns } from "./Columns"
 export { default as ContentTable } from "./ContentTable"

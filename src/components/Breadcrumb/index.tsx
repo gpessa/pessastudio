@@ -1,6 +1,6 @@
 import { Link } from "gatsby-plugin-intl"
 import React from "react"
-import { Breadcrumb as BootstrapBreadcrumb, Container } from "react-bootstrap"
+import { Container } from "react-bootstrap"
 import { injectIntl } from "react-intl"
 
 import { faHome } from "@fortawesome/free-solid-svg-icons"
@@ -12,17 +12,17 @@ import * as styles from "./styles.module.scss"
 const Breadcrumb = ({ fragments, intl: { formatMessage } }) =>
   fragments.length > 1 && (
     <div className={styles.element}>
-      <Container>
-        <BootstrapBreadcrumb>
+      <Container aria-label="breadcrumb" as="nav">
+        <ol className="breadcrumb">
           {fragments.map(({ id, url }, index) => (
-            <BootstrapBreadcrumb.Item>
-              <Link key={id} to={url} className={`${styles.item}`}>
+            <li key={id} className="breadcrumb-item">
+              <Link to={url} className={`${styles.item}`}>
                 {index === 0 && <FontAwesomeIcon icon={faHome} className="mr-2" />}
                 {formatMessage({ id: `NAVIGATION_${id}` })}
               </Link>
-            </BootstrapBreadcrumb.Item>
+            </li>
           ))}
-        </BootstrapBreadcrumb>
+        </ol>
       </Container>
     </div>
   )

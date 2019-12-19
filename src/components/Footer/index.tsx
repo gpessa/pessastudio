@@ -1,27 +1,15 @@
-import React from "react"
-import { Col, Row } from "react-bootstrap"
+import React from 'react';
+import { Col, Row } from 'react-bootstrap';
 
-import { faFacebookSquare, faInstagram } from "@fortawesome/free-brands-svg-icons"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faFacebookSquare, faInstagram } from '@fortawesome/free-brands-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-import Map from "../Map"
-import Newsletter from "../Newsletter"
-import Section from "../Section"
-import * as styles from "./styles.module.scss"
+import Address from '../Address';
+import Map from '../Map';
+import Newsletter from '../Newsletter';
+import Section from '../Section';
 
-const FooterAddress = () => (
-  <>
-    <h5 className="mb-0">PESSASTUDIO Horse Tecnology srl</h5>
-    via Cà Megliadino, 35
-    <br />
-    Montagnana (PD)
-    <br />
-    Tel:{" "}
-    <a href="tel:+39 0429 805613" className="text-light">
-      +39 0429 805613
-    </a>
-  </>
-)
+import * as styles from './styles.module.scss';
 
 const Footer = () => (
   <footer className={styles.element}>
@@ -31,8 +19,19 @@ const Footer = () => (
       <Section>
         <Row>
           <Col md={6} lg={{ span: 4 }} className="mb-5 mb-md-0">
-            <FooterAddress />
-
+            <h5>Contatti</h5>
+            
+            <Address
+              name="PESSASTUDIO Horse Tecnology srl"
+              country="Italy"
+              postalCode="35044"
+              streetAddress="via Cà Megliadino, 35"
+              addressLocality="Montagnana"
+              addressRegion="Padova"
+              email="annapessa@pessastudio.eu"
+              telephoneMobile="+39 0429 805613"
+            />
+                      
             <div className="mt-2">
               <a target="_blank" href="https://www.facebook.com/Pessastudio-HORSE-Tecnology-1050570271816027/" className={styles.social} aria-label="Facebook" rel="noopener">
                 <FontAwesomeIcon icon={faFacebookSquare} size="lg" />

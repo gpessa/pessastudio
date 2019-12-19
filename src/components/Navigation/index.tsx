@@ -2,7 +2,7 @@ import { injectIntl, Link } from "gatsby-plugin-intl"
 import React, { useState, useLayoutEffect } from "react"
 import { Nav, Navbar } from "react-bootstrap"
 
-import { PRODUCT_IDS } from "../../constants"
+import { PAGES_IDS } from "../../constants"
 import LanguageSelector from "../LanguageSelector"
 import Logo from "../Logo"
 import * as styles from "./styles.module.scss"
@@ -32,8 +32,8 @@ const Navigation = ({ intl: { formatMessage } }) => {
 
       <Navbar.Collapse id="menu">
         <Nav className="ml-auto">
-          {PRODUCT_IDS.map(id => (
-            <Nav.Link to={`/${id}/`} as={Link} key={id} activeClassName="active">
+          {PAGES_IDS.map(id => (
+            <Nav.Link to={`/${id}/`} as={Link} key={id} activeClassName="active" className={`${(id === 'contatti') && "text-muted"}`}>
               {formatMessage({ id: `NAVIGATION_${id}` })}
             </Nav.Link>
           ))}
