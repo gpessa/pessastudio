@@ -31,6 +31,8 @@ const Footer = () => (
               email="annapessa@pessastudio.eu"
               telephoneMobile="+39 0429 805613"
             />
+
+            <hr />
                       
             <div className="mt-2">
               <a target="_blank" href="https://www.facebook.com/Pessastudio-HORSE-Tecnology-1050570271816027/" className={styles.social} aria-label="Facebook" rel="noopener">

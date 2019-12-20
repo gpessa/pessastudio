@@ -1,8 +1,8 @@
-import { injectIntl } from "gatsby-plugin-intl"
-import React from "react"
-import { Carousel, Col, Container, Row } from "react-bootstrap"
+import { injectIntl } from 'gatsby-plugin-intl';
+import React from 'react';
 
-import { Address, Header, Columns } from "../components"
+import { Address, Columns, Header } from '../../components';
+import * as styles from './styles.module.scss';
 
 const Contatti = ({ intl: { formatMessage } }) => (
   <Columns
@@ -36,8 +36,6 @@ const Contatti = ({ intl: { formatMessage } }) => (
             streetAddress="via Cà Megliadino, 35"
             addressLocality="Montagnana"
             addressRegion="Padova"
-            email="annapessa@pessastudio.eu"
-            telephoneMobile="+39 0429 805613"
           />
         </section>
 
@@ -54,7 +52,14 @@ const Contatti = ({ intl: { formatMessage } }) => (
     right={
       <>
         <Header>Contatto commerciale</Header>
-        <img src="https://scontent-amt2-1.xx.fbcdn.net/v/t1.0-9/23380110_10214556926297738_2875892551704965348_n.jpg?_nc_cat=107&_nc_ohc=h6HbXr_kRz8AQnIXz-A3_hUjQxGeQOX74xfxwm45W3TVnj_byFxCrSWgA&_nc_ht=scontent-amt2-1.xx&oh=83281f1cef6ac1e228945e4e42ea6d56&oe=5EA93ED9" className="img-thumbnail rounded-circle" />
+
+        <img src={require('../../images/anna.jpg')} className={`img-thumbnail rounded-circle mb-4 ${styles.selfie}`} />
+
+        <Address
+          name="Anna Pessa"
+          email="annapessa@pessastudio.eu"
+          telephoneMobile="+39 0429 805613"
+        />
       </>
     }
   />
