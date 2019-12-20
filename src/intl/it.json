@@ -65,5 +65,6 @@
   "NEWSLETTER_button": "Iscriviti",
   "NEWSLETTER_sucess": "Complimenti! Ti sei iscritto",
   "NEWSLETTER_error_already-subscribed": "Ti sei già iscritto",
-  "NEWSLETTER_error_generic": "Si è verificato un problema, riprova"
+  "NEWSLETTER_error_generic": "Si è verificato un problema, riprova",
+  "CONTACT_title": "Contatti"
 }

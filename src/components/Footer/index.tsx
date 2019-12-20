@@ -1,5 +1,6 @@
 import React from 'react';
 import { Col, Row } from 'react-bootstrap';
+import { injectIntl } from "react-intl"
 
 import { faFacebookSquare, faInstagram } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -11,7 +12,7 @@ import Section from '../Section';
 
 import * as styles from './styles.module.scss';
 
-const Footer = () => (
+const Footer = ({ intl: { formatMessage } }) => (
   <footer className={styles.element}>
     <Map />
 
@@ -19,7 +20,7 @@ const Footer = () => (
       <Section>
         <Row>
           <Col md={6} lg={{ span: 4 }} className="mb-5 mb-md-0">
-            <h5>Contatti</h5>
+            <h5>{formatMessage({ id: "CONTACT_title" })}</h5>
             
             <Address
               name="PESSASTUDIO Horse Tecnology srl"
@@ -56,4 +57,4 @@ const Footer = () => (
   </footer>
 )
 
-export default Footer
+export default injectIntl(Footer)
