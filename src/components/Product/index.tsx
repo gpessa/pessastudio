@@ -23,7 +23,8 @@ const Color = ({ colors }: { colors?: Colors[] }) =>
     </div>
   )
 
-const Description = ({ description }: { description?: string }) => (!description ? null : <p>{description}</p>)
+const Description = ({ description }: { description?: string }) =>
+  !description ? null : <div className="mb-1">{description}</div>
 
 const Data = injectIntl(
   ({ value, label, intl: { formatMessage } }: { value: number; label: string; unit: string; intl: any }) => (
@@ -54,22 +55,20 @@ const Product = ({
 
   return (
     <Tag to={url} className={`${styles.container} ${className}`}>
-      <img src={image} className={styles.image} />
+      <img src={image} className={styles.image} alt={name} />
 
       <div className={styles.data}>
         <h6 className={styles.title}>{name}</h6>
 
         <Description description={description} />
 
-        {material && <Data label={formatMessage({ id: "PRODUCT_material" })} value={material} />}
-        {width && <Data label={formatMessage({ id: "PRODUCT_width" })} value={`${formatNumber(width)} cm.`} />}
-        {height && <Data label={formatMessage({ id: "PRODUCT_height" })} value={`${formatNumber(height)} cm.`} />}
-        {length && <Data label={formatMessage({ id: "PRODUCT_length" })} value={`${formatNumber(length)} cm.`} />}
-        {depth && <Data label={formatMessage({ id: "PRODUCT_depth" })} value={`${formatNumber(depth)} cm.`} />}
-        {thickness && (
-          <Data label={formatMessage({ id: "PRODUCT_thickness" })} value={`${formatNumber(thickness)} cm.`} />
-        )}
-        {weight && <Data label={formatMessage({ id: "PRODUCT_weight" })} value={`${formatNumber(weight)} kg.`} />}
+        {material && <Data label="PRODUCT_material" value={material} />}
+        {width && <Data label="PRODUCT_width" value={`${formatNumber(width)} cm.`} />}
+        {height && <Data label="PRODUCT_height" value={`${formatNumber(height)} cm.`} />}
+        {length && <Data label="PRODUCT_length" value={`${formatNumber(length)} cm.`} />}
+        {depth && <Data label="PRODUCT_depth" value={`${formatNumber(depth)} cm.`} />}
+        {thickness && <Data label="PRODUCT_thickness" value={`${formatNumber(thickness)} cm.`} />}
+        {weight && <Data label="PRODUCT_weight" value={`${formatNumber(weight)} kg.`} />}
 
         <Color colors={colors} />
 
