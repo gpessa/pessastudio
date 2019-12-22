@@ -33,7 +33,7 @@ const Navigation = ({ intl: { formatMessage } }) => {
       <Navbar.Collapse id="menu">
         <Nav className="ml-auto">
           {PAGES_IDS.map(id => (
-            <Nav.Link to={`/${id}/`} as={Link} key={id} activeClassName="active" className={`${(id === 'contatti') && "text-muted"}`}>
+            <Nav.Link to={`/${id}/`} as={Link} key={id} activeClassName="active" className={`${id === "contatti" && styles.contact}`}>
               {formatMessage({ id: `NAVIGATION_${id}` })}
             </Nav.Link>
           ))}

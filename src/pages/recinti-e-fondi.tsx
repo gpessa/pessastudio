@@ -2,7 +2,7 @@ import { injectIntl } from "gatsby-plugin-intl"
 import React from "react"
 import { Col, Row } from "react-bootstrap"
 
-import { Columns, Gallery, Header, Product, Section, Seo } from "../components"
+import { Columns, Gallery, Header, Product, Section } from "../components"
 import { Colors } from "../constants"
 
 const RecintiFondi = ({ intl: { formatMessage } }) => {

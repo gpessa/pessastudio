@@ -7,3 +7,20 @@
   box-shadow: 0 0 0 0 $black;
   transition: box-shadow 0.5s;
 }
+
+@include media-breakpoint-up(md) {
+  :local(.contact) {
+    position: relative;
+    color: $primary !important;
+
+    &:before {
+      content: "";
+      display: block;
+      position: absolute;
+      left: -$spacer;
+      border-left: 1px solid $gray-300;
+      height: 100%;
+      top: 0;
+    }
+  }
+}

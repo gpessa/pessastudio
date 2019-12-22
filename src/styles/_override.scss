@@ -38,14 +38,15 @@ ul li::before {
   position: relative;
   padding-left: 0;
   padding-right: 0;
-  margin-left: 1rem;
   margin-right: 1rem;
+  margin-left: $navbar-nav-link-padding-x;
+  margin-right: $navbar-nav-link-padding-x;
 
   &::after {
     content: "";
     position: absolute;
     left: 50%;
-    bottom: 0;
+    bottom: 3px;
     transform: translateX(-50%) scaleX(0);
     transform-origin: 50% 50%;
     width: 100%;

@@ -1,7 +1,7 @@
 import { injectIntl } from "gatsby-plugin-intl"
 import React from "react"
 
-import { Section, Seo } from "../components"
+import { Section } from "../components"
 
 const NotFound = ({ intl: { formatMessage } }) => (
   <Section className="text-center">

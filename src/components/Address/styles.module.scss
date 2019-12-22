@@ -3,3 +3,7 @@
 :local(.link) {
   color: inherit;
 }
+
+:local(.name) {
+  text-transform: uppercase;
+}
