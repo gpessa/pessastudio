@@ -1,5 +1,6 @@
 {
   "COOKIE_popup": "Utilizziamo i cookie per garantire il corretto funzionamento del sito. Per ulteriori informazioni sul nostro utilizzo dei cookie, consultare la nostra <linkcookie>politica sui cookie</linkcookie>.",
+  "COOKIE_popup-button": "Acconsento",
   "DRESSAGE_intro_1": "Due sono i modelli presenti nella nostra gamma dressage: <linktraining>training</linktraining> e <linkolimpic>olimpic</linkolimpic>.",
   "DRESSAGE_intro_2": "Ogni elemento e' acquistabile anche singolarmente.",
   "DRESSAGE_olimpic_description": "Il rettangolo della linea olimpic e' costruito con moduli di polietilene antiurto, accostabili tra di loro, ciascuno dei quali e' lungo 2 mt.<br/>Durevole nel tempo, il materiale usato non infragilisce alle basse temperature e non ingiallisce sotto l'azione dei raggi ultravioletti.<br/>Su ciascun modulo sono previste tre aree piane con superficie lucida di centimetri 50x12 sulle quali possono essere applicati adesivi pubblicitari.<br/>Facile da posizionare, leggero, resistente.",
@@ -37,6 +38,7 @@
   "NAVIGATION_ostacoli": "Ostacoli",
   "NAVIGATION_recinti-e-fondi": "Recinti e fondi",
   "NAVIGATION_tondini": "Tondini",
+  "NAVIGATION_contatti": "Contatti",
   "NAVIGATION_toggle-button": "Apri/chiudi menu",
   "PRODUCT_height": "Altezza",
   "PRODUCT_length": "Lunghezza",
@@ -59,8 +61,10 @@
   "NEWSLETTER_title": "Iscriviti alla nostra newsletter",
   "NEWSLETTER_intro": "Rimani informato sui nostri sconti e gli eventi",
   "NEWSLETTER_field-email_placeholder": "Email",
+  "NEWSLETTER_field-name_placeholder": "Name",
   "NEWSLETTER_button": "Iscriviti",
   "NEWSLETTER_sucess": "Complimenti! Ti sei iscritto",
-  "NEWSLETTER_error_already-subscribed": "Ti sei gia' iscritto",
-  "NEWSLETTER_error_generic": "Si E' verificato un problema, riprova"
+  "NEWSLETTER_error_already-subscribed": "Ti sei già iscritto",
+  "NEWSLETTER_error_generic": "Si è verificato un problema, riprova",
+  "CONTACT_title": "Contatti"
 }

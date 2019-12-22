@@ -20,6 +20,8 @@
 
 :local(.title) {
   color: $black;
+  text-transform: uppercase;
+  margin-bottom: $spacer / 2;
 }
 
 :local(.data) {
@@ -34,8 +36,8 @@
 :local(.price) {
   margin-top: $spacer;
   font-family: $headings-font-family;
-  color: $text-color;
-  font-size: 1.2rem;
+  color: $black;
+  font-size: 1.1rem;
 }
 
 :local(.color) {

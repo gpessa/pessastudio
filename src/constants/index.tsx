@@ -1,9 +1,14 @@
-const PRODUCT_IDS = [
+const PRODUCT_IDS: string[] = [
   "ostacoli",
   "recinti-e-fondi",
   "tondini",
   "giostre",
   "dressage",
+]
+
+const PAGES_IDS: string[] = [
+  ...PRODUCT_IDS,
+  "contatti"
 ]
 
 enum Colors {
@@ -27,4 +32,4 @@ enum Position {
   TOP = "top",
 }
 
-export { PRODUCT_IDS, Colors, Position, Ratio }
+export { PRODUCT_IDS, PAGES_IDS, Colors, Position, Ratio }

@@ -1,63 +1,68 @@
 import { injectIntl } from "gatsby-plugin-intl"
 import addToMailchimp from "gatsby-plugin-mailchimp"
 import React, { useState } from "react"
-import { Button, Form, FormControl, Spinner } from "react-bootstrap"
+import { Button, Form, FormControl, Alert } from "react-bootstrap"
 
-const NewsletterSubscription = ({ intl: { formatMessage } }) => {
-  const [isValidated, setIsValidated] = useState(false)
-  const [isLoading, setIsLoading] = useState(false)
-  const [response, setResponse] = useState()
+const NewsletterSubscription = ({ intl: { formatMessage, locale } }) => {
+  const [state, setState] = useState({
+    showError: false,
+    response: '',
+  })
 
-  const handleSubmit = async event => {
+  const handleSubmit = async (event: any) => {
+    const data = new FormData(event.target)
+    const isValid = event.currentTarget.checkValidity()
+
+    const email = data.get('email') as String;
+    const name = data.get('name') as String;
+
     event.preventDefault()
     event.stopPropagation()
 
-    setIsValidated(true)
-    setResponse(undefined)
+    setState({
+      showError: true,
+      response: '',
+    })
 
-    if (!event.currentTarget.checkValidity()) return
+    if (!isValid) return;
 
-    setIsLoading(true)
+    const { msg } = await addToMailchimp(email, {
+      NAME: name,
+      LOCALE: locale
+    });
 
-    const email = event.target[1].value
+    let response = "error-generic"
+    if (msg.indexOf("is already subscribed") != -1) response = "error-already-subscribed";
+    if (msg.indexOf("Thank you for subscribing!") != -1) response = "success";
 
-    const { msg } = await addToMailchimp(email)
-
-    let status = "error-generic"
-
-    if (msg.indexOf("is already subscribed")) {
-      status = "error-already-subscribed"
-    }
-
-    setResponse(status)
-    setIsLoading(false)
-    setIsValidated(false)
+    setState({
+      showError: false,
+      response
+    })
   }
 
   return (
-    <Form noValidate validated={isValidated} onSubmit={e => handleSubmit(e)}>
-      {response !== "success" && (
+    <Form noValidate validated={state.showError} onSubmit={handleSubmit}>
+      <h5>{formatMessage({ id: "NEWSLETTER_title" })}</h5>
+      <p>{formatMessage({ id: "NEWSLETTER_intro" })}</p>
+
+      {state.response !== "success" && (
         <>
-          <h5>{formatMessage({ id: "NEWSLETTER_title" })}</h5>
-
-          <p>{formatMessage({ id: "NEWSLETTER_intro" })}</p>
-
           <Form.Group>
-            <FormControl required type="email" aria-label={formatMessage({ id: "NEWSLETTER_field-email_placeholder" })} placeholder={formatMessage({ id: "NEWSLETTER_field-email_placeholder" })} />
+            <FormControl required type="email" name="email" aria-label={formatMessage({ id: "NEWSLETTER_field-email_placeholder" })} placeholder={formatMessage({ id: "NEWSLETTER_field-email_placeholder" })} />
           </Form.Group>
 
-          <Button variant="dark" type="submit" block>
-            {formatMessage({ id: "NEWSLETTER_button" })}
-            {isLoading && <Spinner as="span" animation="border" size="sm" role="status" aria-hidden="true" className="ml-2" />}
-          </Button>
+          <Form.Group>
+            <FormControl required type="text" name="name" aria-label={formatMessage({ id: "NEWSLETTER_field-name_placeholder" })} placeholder={formatMessage({ id: "NEWSLETTER_field-name_placeholder" })} />
+          </Form.Group>
+
+          <Button variant="dark" type="submit" block>{formatMessage({ id: "NEWSLETTER_button" })}</Button>
         </>
       )}
-
-      {response == "success" && <div className="mt-3 text-success small">{formatMessage({ id: "NEWSLETTER_sucess" })}</div>}
-
-      {response === "error-already-subscribed" && <div className="mt-3 text-danger small">{formatMessage({ id: "NEWSLETTER_error_already-subscribed" })}</div>}
-
-      {response === "error-generic" && <div className="mt-3 text-danger small">{formatMessage({ id: "NEWSLETTER_error_generic" })}</div>}
+      
+      {state.response === "success" && <Alert className="mt-3" variant="success">{formatMessage({ id: "NEWSLETTER_sucess" })}</Alert>}
+      {state.response === "error-already-subscribed" && <Alert className="mt-3" variant="danger">{formatMessage({ id: "NEWSLETTER_error_already-subscribed" })}</Alert>}
+      {state.response === "error-generic" && <Alert className="mt-3" variant="danger">{formatMessage({ id: "NEWSLETTER_error_generic" })}</Alert>}
     </Form>
   )
 }

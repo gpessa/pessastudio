@@ -23,6 +23,12 @@ module.exports = {
       },
     },
     {
+      resolve: 'gatsby-plugin-mailchimp',
+      options: {
+        endpoint: 'https://pessastudio.us4.list-manage.com/subscribe/post?u=9827f22cb9c00c4d7ff1c48ab&amp;id=199848d4fd',
+      }
+    },
+    {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
@@ -51,7 +57,7 @@ module.exports = {
       resolve: `gatsby-plugin-intl`,
       options: {
         path: `${__dirname}/src/intl`,
-        languages: [`it`, `fr`],
+        languages: [`it`],
         defaultLanguage: `it`,
         redirect: true,
       },
@@ -67,5 +73,3 @@ module.exports = {
     },
   ],
 }
-
-// npm install --save gatsby-plugin-google-analytics

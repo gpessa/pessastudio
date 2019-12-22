@@ -8,4 +8,8 @@
   font-family: $headings-font-family;
   text-transform: uppercase;
   color: $black;
+
+  &:hover {
+    text-decoration: none;
+  }
 }
