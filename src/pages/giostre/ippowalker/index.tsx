@@ -1,9 +1,8 @@
+import { injectIntl, Link } from "gatsby-plugin-intl"
 import React from "react"
 import { Col, Row } from "react-bootstrap"
-import { injectIntl, Link } from "gatsby-plugin-intl"
 
-import { Columns, Header, PdfIcon, Product, Section, ContentTable, Gallery } from "../../../components"
-import { Ratio } from "../../../constants"
+import { Columns, ContentTable, Gallery, Header, PdfIcon, Product, Section } from "../../../components"
 
 const Ippowalker = ({ intl: { formatMessage } }) => {
   const IMAGES = [
@@ -50,7 +49,6 @@ const Ippowalker = ({ intl: { formatMessage } }) => {
         <Row>
           <Col
             as={Product}
-            ratio={Ratio.HORIZONTAL}
             image={require("../../../images/product/giostre/ippowalker/gamma/solo-motore.jpg")}
             name="Giostra"
             description={
@@ -68,7 +66,6 @@ const Ippowalker = ({ intl: { formatMessage } }) => {
 
           <Col
             as={Product}
-            ratio={Ratio.HORIZONTAL}
             image={require("../../../images/product/giostre/ippowalker/gamma/con-corridoio-tecnofence.jpg")}
             name="Giostra con corridoio Tecnofence"
             description={
@@ -85,7 +82,6 @@ const Ippowalker = ({ intl: { formatMessage } }) => {
 
           <Col
             as={Product}
-            ratio={Ratio.HORIZONTAL}
             image={require("../../../images/product/giostre/ippowalker/gamma/con-corridoio-flat.jpg")}
             name="Giostra con corridoio Flat"
             description={

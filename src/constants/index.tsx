@@ -1,15 +1,6 @@
-const PRODUCT_IDS: string[] = [
-  "ostacoli",
-  "recinti-e-fondi",
-  "tondini",
-  "giostre",
-  "dressage",
-]
+const PRODUCT_IDS: string[] = ["ostacoli", "recinti-e-fondi", "tondini", "giostre", "dressage"]
 
-const PAGES_IDS: string[] = [
-  ...PRODUCT_IDS,
-  "contatti"
-]
+const PAGES_IDS: string[] = [...PRODUCT_IDS, "contatti"]
 
 enum Colors {
   YELLOW = "#FEB00D",
@@ -19,12 +10,6 @@ enum Colors {
   RED = "#F41701",
 }
 
-enum Ratio {
-  HORIZONTAL = "horizontal",
-  VERTICAL = "vertical",
-  SQUARE = "square",
-}
-
 enum Position {
   BOTTOM = "bottom",
   RIGHT = "right",
@@ -32,4 +17,4 @@ enum Position {
   TOP = "top",
 }
 
-export { PRODUCT_IDS, PAGES_IDS, Colors, Position, Ratio }
+export { PRODUCT_IDS, PAGES_IDS, Colors, Position }

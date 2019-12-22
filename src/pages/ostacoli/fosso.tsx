@@ -2,14 +2,12 @@ import React from "react"
 
 import { Product, Header } from "../../components"
 import { Col, Row } from "react-bootstrap"
-import { Ratio } from "../../constants"
 
-const Fosso = ({ className }: { className?: string; }) => (
+const Fosso = ({ className }: { className?: string }) => (
   <div className={className}>
     <Row>
       <Col
         md={5}
-        ratio={Ratio.HORIZONTAL}
         as={Product}
         image={require("../../images/product/ostacoli/fosso.jpg")}
         name="Fosso 3 mt."
@@ -19,11 +17,13 @@ const Fosso = ({ className }: { className?: string; }) => (
       />
       <Col>
         <Header>Fosso</Header>
-        <p>Il fosso ha il fondo in PVC di colore azzurro con un bordo saldato alto 6 cm. Ottimo per insegnare ai vostri cavalli/puledri a saltarlo.</p>
+        <p>
+          Il fosso ha il fondo in PVC di colore azzurro con un bordo saldato alto 6 cm. Ottimo per insegnare ai vostri
+          cavalli/puledri a saltarlo.
+        </p>
       </Col>
     </Row>
   </div>
 )
 
 export default Fosso
-

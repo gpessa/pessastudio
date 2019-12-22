@@ -1,9 +1,8 @@
 import React, { ReactNode } from "react"
-import Header from "../Header"
 import { Link, injectIntl } from "gatsby-plugin-intl"
 
 import * as styles from "./styles.module.scss"
-import { Colors, Ratio } from "../../constants"
+import { Colors } from "../../constants"
 import ImageModal from "../ImageModal"
 
 const Price = injectIntl(({ price, intl: { formatNumber } }) =>
@@ -26,31 +25,51 @@ const Color = ({ colors }: { colors?: Colors[] }) =>
 
 const Description = ({ description }: { description?: string }) => (!description ? null : <p>{description}</p>)
 
-const Data = injectIntl(({ value, label, unit, intl: { formatMessage, formatNumber } }: { value: number; label: string; unit: string; intl: any }) =>
-  !value ? null : (
+const Data = injectIntl(
+  ({ value, label, intl: { formatMessage } }: { value: number; label: string; unit: string; intl: any }) => (
     <div className={styles.data}>
-      <span className={styles.dataLabel}>{formatMessage({ id: label })}:</span> {formatNumber(value)} {unit}.
+      <span className={styles.dataLabel}>{formatMessage({ id: label })}:</span> {value}
     </div>
   )
 )
 
-const Product = ({ image, url, name, width, height, weight, colors, thickness, length, price, ratio, description, className }: Props) => {
+const Product = ({
+  image,
+  url,
+  name,
+  width,
+  height,
+  material,
+  depth,
+  weight,
+  colors,
+  thickness,
+  length,
+  price,
+  description,
+  className,
+  intl: { formatMessage, formatNumber },
+}: Props) => {
   const Tag = url ? Link : "div"
 
   return (
     <Tag to={url} className={`${styles.container} ${className}`}>
-      <div className={`${styles.image} ${styles[ratio || Ratio.SQUARE]}`} style={{ backgroundImage: `url(${image})` }}></div>
+      <img src={image} className={styles.image} />
 
       <div className={styles.data}>
         <h6 className={styles.title}>{name}</h6>
 
         <Description description={description} />
 
-        <Data value={thickness} label="PRODUCT_thickness" unit="cm" />
-        <Data value={weight} label="PRODUCT_weight" unit="kg" />
-        <Data value={length} label="PRODUCT_length" unit="cm" />
-        <Data value={height} label="PRODUCT_height" unit="cm" />
-        <Data value={width} label="PRODUCT_width" unit="cm" />
+        {material && <Data label={formatMessage({ id: "PRODUCT_material" })} value={material} />}
+        {width && <Data label={formatMessage({ id: "PRODUCT_width" })} value={`${formatNumber(width)} cm.`} />}
+        {height && <Data label={formatMessage({ id: "PRODUCT_height" })} value={`${formatNumber(height)} cm.`} />}
+        {length && <Data label={formatMessage({ id: "PRODUCT_length" })} value={`${formatNumber(length)} cm.`} />}
+        {depth && <Data label={formatMessage({ id: "PRODUCT_depth" })} value={`${formatNumber(depth)} cm.`} />}
+        {thickness && (
+          <Data label={formatMessage({ id: "PRODUCT_thickness" })} value={`${formatNumber(thickness)} cm.`} />
+        )}
+        {weight && <Data label={formatMessage({ id: "PRODUCT_weight" })} value={`${formatNumber(weight)} kg.`} />}
 
         <Color colors={colors} />
 
@@ -61,7 +80,6 @@ const Product = ({ image, url, name, width, height, weight, colors, thickness, l
 }
 
 interface Props {
-  ratio?: Ratio
   className?: string
   colors?: Colors[]
   description?: string | ReactNode
@@ -75,6 +93,8 @@ interface Props {
   name: string
   url?: string
   intl?: any
+  depth?: number
+  material?: string
 }
 
-export default Product
+export default injectIntl(Product)

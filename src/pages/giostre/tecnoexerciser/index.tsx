@@ -2,8 +2,7 @@ import { injectIntl, Link } from "gatsby-plugin-intl"
 import React from "react"
 import { Col, Row } from "react-bootstrap"
 
-import { Columns, ContentTable, Header, PdfIcon, Product, Section, Gallery, Seo } from "../../../components"
-import { Ratio } from "../../../constants"
+import { Columns, ContentTable, Gallery, Header, PdfIcon, Product, Section, Seo } from "../../../components"
 
 const Tecnoexerciser = ({ intl: { formatMessage } }) => {
   const IMAGES = [
@@ -55,7 +54,6 @@ const Tecnoexerciser = ({ intl: { formatMessage } }) => {
         <Row>
           <Col
             as={Product}
-            ratio={Ratio.HORIZONTAL}
             image={require("../../../images/product/giostre/tecnoexerciser/gamma/solo-motore.jpg")}
             name="Giostra"
             description={
@@ -73,7 +71,6 @@ const Tecnoexerciser = ({ intl: { formatMessage } }) => {
 
           <Col
             as={Product}
-            ratio={Ratio.HORIZONTAL}
             image={require("../../../images/product/giostre/tecnoexerciser/gamma/con-corridoio-tecnofence.jpg")}
             name="Giostra con corridoio Tecnofence"
             description={
@@ -90,7 +87,6 @@ const Tecnoexerciser = ({ intl: { formatMessage } }) => {
 
           <Col
             as={Product}
-            ratio={Ratio.HORIZONTAL}
             image={require("../../../images/product/giostre/tecnoexerciser/gamma/con-corridoio-flat.jpg")}
             name="Giostra con corridoio Flat"
             description={

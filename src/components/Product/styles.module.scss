@@ -4,14 +4,18 @@
   text-decoration: none;
 }
 
+// :local(.image) {
+//   width: 100%;
+//   overflow: hidden;
+//   position: relative;
+//   margin-bottom: $spacer;
+//   background-repeat: no-repeat;
+//   background-position: center center;
+//   background-size: cover;
+// }
 :local(.image) {
   width: 100%;
-  overflow: hidden;
-  position: relative;
   margin-bottom: $spacer;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
 }
 
 :local(.label) {
@@ -26,11 +30,13 @@
 
 :local(.data) {
   color: $text-muted;
-  font-size: 90%;
+  // font-size: 90%;
 }
 
 :local(.dataLabel) {
   color: $text-muted;
+  font-size: $small-font-size;
+  text-transform: uppercase;
 }
 
 :local(.price) {
@@ -46,18 +52,6 @@
   width: 12px;
   border: 1px solid $border-color;
   margin-right: $spacer / 4;
-}
-
-:local(.square) {
-  padding-bottom: 100%;
-}
-
-:local(.horizontal) {
-  padding-bottom: 50%;
-}
-
-:local(.vertical) {
-  padding-bottom: 200%;
 }
 
 :local(.priceVat) {
