@@ -5,21 +5,38 @@
 }
 
 :local(.left) {
-  color: $white;
-  background: $primary;
   padding-top: $spacer * 2;
   padding-bottom: $spacer * 2;
+}
+
+:local(.right) {
+  padding-top: $spacer * 2;
+  padding-bottom: $spacer * 2;
+}
+
+:local(.light) {
+  :local(.left) {
+    background-color: $light;
+  }
+
+  @include media-breakpoint-up(md) {
+    background: linear-gradient(90deg, $light 50%, $white 50%);
+  }
+}
+
+:local(.primary) {
+  :local(.left) {
+    color: $white;
+    background: $primary;
+  }
 
   ul li::before {
     color: $white;
   }
-}
 
-:local(.right) {
-  color: $black;
-  background: $white;
-  padding-top: $spacer * 2;
-  padding-bottom: $spacer * 2;
+  @include media-breakpoint-up(md) {
+    background: linear-gradient(90deg, $primary 50%, $white 50%);
+  }
 }
 
 @include media-breakpoint-down(md) {
@@ -29,9 +46,6 @@
 }
 
 @include media-breakpoint-up(md) {
-  :local(.element) {
-    background: linear-gradient(90deg, $primary 50%, $white 50%);
-  }
   :local(.left) {
     padding-right: $spacer * 3;
   }

@@ -29,14 +29,22 @@ const Ippowalker = ({ intl: { formatMessage } }) => {
   return (
     <>
       <Columns
+        variant="primary"
         left={
           <>
             <h1>Giostra IppoWalker</h1>
 
-            <p>Ippowalker è una giostra di recente realizzazione semplice, essenziale, di conseguenza più economica ma costruita con la qualità e la robustezza che contraddistingue tutti i nostri prodotti.</p>
+            <p>
+              Ippowalker è una giostra di recente realizzazione semplice, essenziale, di conseguenza più economica ma
+              costruita con la qualità e la robustezza che contraddistingue tutti i nostri prodotti.
+            </p>
             <p>Le braccia sono dotate di elettrificazione.</p>
-            <p>Il motore produce una potenza di 0,37 kw e permette una cadenza compresa fra 60 e 210 metri al minuto.</p>
-            <p>La giostra è disponibile in due diverse grandezze di diametro: 12 mt. (4 cavalli) e 14.20 mt (6 cavalli).</p>
+            <p>
+              Il motore produce una potenza di 0,37 kw e permette una cadenza compresa fra 60 e 210 metri al minuto.
+            </p>
+            <p>
+              La giostra è disponibile in due diverse grandezze di diametro: 12 mt. (4 cavalli) e 14.20 mt (6 cavalli).
+            </p>
           </>
         }
         right={<Gallery images={IMAGES} />}
@@ -44,7 +52,10 @@ const Ippowalker = ({ intl: { formatMessage } }) => {
 
       <Section>
         <Header>La gamma</Header>
-        <p>E' possibile acquistare la giostra senza la recinzione o puoi scegliere tra due tipologie di recinzioni disponibili: FLAT o con corridoio TECNOFENCE (da 2 o 4 filagne).</p>
+        <p>
+          E' possibile acquistare la giostra senza la recinzione o puoi scegliere tra due tipologie di recinzioni
+          disponibili: FLAT o con corridoio TECNOFENCE (da 2 o 4 filagne).
+        </p>
 
         <Row>
           <Col

@@ -11,12 +11,24 @@ const Giostre = ({ intl: { formatMessage } }) => (
     <Section>
       <h1>Giostre</h1>
 
-      <p>Le giostre rappresentano il punto di forza della nostra azienda e, a darne dimostrazione, sono le oltre 3000 giostre ancora funzionanti installate in tutta Europa</p>
       <p>
-        Sono state create dalla ricerca di <strong>Luciano Pessa</strong> con l'intenzione di realizzare un semplice ed affidabile strumento di lavoro che vi consentirà di allenare il vostro cavallo anche quando non avete la possibilità di montarlo
+        Le giostre rappresentano il punto di forza della nostra azienda e, a darne dimostrazione, sono le oltre 3000
+        giostre ancora funzionanti installate in tutta Europa
       </p>
-      <p>La giostra vi permetterà, non solo di raffreddare il vostro cavallo con una passeggiata post allenamento, ma anche di creare una vera sessione di lavoro passando da un’andatura all'altra e cambiando di mano</p>
-      <p>La caratteristica principale delle nostre giostre è di essere considerate strutture precarie. Non avrete quindi bisogno di nessuna concessione edilizia, ma solo in taluni casi, di un semplice permesso di installazione rilasciato dalle amministrazioni locali</p>
+      <p>
+        Sono state create dalla ricerca di <strong>Luciano Pessa</strong> con l'intenzione di realizzare un semplice ed
+        affidabile strumento di lavoro che vi consentirà di allenare il vostro cavallo anche quando non avete la
+        possibilità di montarlo
+      </p>
+      <p>
+        La giostra vi permetterà, non solo di raffreddare il vostro cavallo con una passeggiata post allenamento, ma
+        anche di creare una vera sessione di lavoro passando da un’andatura all'altra e cambiando di mano
+      </p>
+      <p>
+        La caratteristica principale delle nostre giostre è di essere considerate strutture precarie. Non avrete quindi
+        bisogno di nessuna concessione edilizia, ma solo in taluni casi, di un semplice permesso di installazione
+        rilasciato dalle amministrazioni locali
+      </p>
       <p>E' possibile aquistare le nostre giostre in diverse versioni:</p>
 
       <ul>
@@ -30,11 +42,16 @@ const Giostre = ({ intl: { formatMessage } }) => (
       <Container>
         <Header>La gamma</Header>
         <p>
-          Due sono i modelli di giostra che proponiamo. <Link to="/giostre/tecnoexerciser">{formatMessage({ id: "NAVIGATION_tecnoexerciser" })}</Link>, prodotta da oltre 20 anni, e <Link to="/giostre/ippowalker">{formatMessage({ id: "NAVIGATION_ippowalker" })}</Link>, realizzata per rispondere alle esigenze di un mercato che richiede un prodotto affidabile e al tempo stesso economico.
+          Due sono i modelli di giostra che proponiamo.{" "}
+          <Link to="/giostre/tecnoexerciser">{formatMessage({ id: "NAVIGATION_tecnoexerciser" })}</Link>, prodotta da
+          oltre 20 anni, e <Link to="/giostre/ippowalker">{formatMessage({ id: "NAVIGATION_ippowalker" })}</Link>,
+          realizzata per rispondere alle esigenze di un mercato che richiede un prodotto affidabile e al tempo stesso
+          economico.
         </p>
       </Container>
 
       <Columns
+        variant="primary"
         left={
           <div className="text-center py-4">
             <h3>{formatMessage({ id: "NAVIGATION_tecnoexerciser" })}</h3>
