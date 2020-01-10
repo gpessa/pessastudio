@@ -59,6 +59,7 @@ const Contatti = ({ intl: { formatMessage } }) => (
           name="Anna Pessa"
           email="annapessa@pessastudio.eu"
           telephoneMobile="+39 0429 805613"
+          whatsapp="+39 0429 805613"
         />
       </>
     }
