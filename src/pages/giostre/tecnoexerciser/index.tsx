@@ -49,7 +49,7 @@ const Tecnoexerciser = ({ intl: { formatMessage } }) => {
       />
 
       <Section>
-        <Header>La gamma</Header>
+        <Header>{formatMessage({ id: "GENERAL_gamma" })}</Header>
         <p>E' possibile acquistare la giostra senza la recinzione o puoi scegliere tra due tipologie di recinzioni disponibili: FLAT o con corridoio TECNOFENCE (da 2 o 4 filagne).</p>
 
         <Row>
@@ -108,7 +108,7 @@ const Tecnoexerciser = ({ intl: { formatMessage } }) => {
       </Section>
 
       <Section className="bg-light">
-        <Header>Supporto clienti</Header>
+        <Header>{formatMessage({ id: "GENERAL_client-service" })}</Header>
 
         <Row>
           <Col md={6}>
@@ -154,7 +154,7 @@ const Tecnoexerciser = ({ intl: { formatMessage } }) => {
                 {
                   label: "Procedura lubrificazione",
                   link: (
-                    <a href="https://www.youtube.com/watch?v=QMA4wPxq_ow" target="_blanck">
+                    <a href="https://www.youtube.com/watch?v=QMA4wPxq_ow" target="_blank">
                       Istruzioni
                     </a>
                   ),

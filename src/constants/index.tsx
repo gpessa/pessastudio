@@ -1,6 +1,6 @@
 const PRODUCT_IDS: string[] = [
   "ostacoli",
-  "recinti-e-fondi",
+  "recinti",
   "tondini",
   "giostre",
   "dressage",

@@ -24,7 +24,7 @@ const Color = ({ colors }: { colors?: Colors[] }) =>
     </div>
   )
 
-const Description = ({ description }: { description?: string }) => (!description ? null : <p>{description}</p>)
+const Description = ({ description }: { description: string | ReactNode | null }) => (!description ? null : <p>{description}</p>)
 
 const Data = injectIntl(({ value, label, unit, intl: { formatMessage, formatNumber } }: { value: number; label: string; unit: string; intl: any }) =>
   !value ? null : (
@@ -34,7 +34,7 @@ const Data = injectIntl(({ value, label, unit, intl: { formatMessage, formatNumb
   )
 )
 
-const Product = ({ image, url, name, width, height, weight, colors, thickness, length, price, ratio, description, className }: Props) => {
+const Product = ({ image, url, name, width, height, diameter,  weight, colors, thickness, length, price, ratio, description, className }: Props) => {
   const Tag = url ? Link : "div"
 
   return (
@@ -46,11 +46,12 @@ const Product = ({ image, url, name, width, height, weight, colors, thickness, l
 
         <Description description={description} />
 
-        <Data value={thickness} label="PRODUCT_thickness" unit="cm" />
+        <Data value={thickness} label="PRODUCT_thickness" unit="mm" />
         <Data value={weight} label="PRODUCT_weight" unit="kg" />
-        <Data value={length} label="PRODUCT_length" unit="cm" />
-        <Data value={height} label="PRODUCT_height" unit="cm" />
-        <Data value={width} label="PRODUCT_width" unit="cm" />
+        <Data value={length} label="PRODUCT_length" unit="mm" />
+        <Data value={height} label="PRODUCT_height" unit="mm" />
+        <Data value={width} label="PRODUCT_width" unit="mm" />
+        <Data value={diameter} label="PRODUCT_diameter" unit="mm" />
 
         <Color colors={colors} />
 
@@ -64,12 +65,13 @@ interface Props {
   ratio?: Ratio
   className?: string
   colors?: Colors[]
-  description?: string | ReactNode
+  description?: string | ReactNode | null
   weight?: number
   height?: number
   thickness?: number
   width?: number
   length?: number
+  diameter?: number
   price?: number
   image: string
   name: string

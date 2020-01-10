@@ -26,7 +26,8 @@
 
 :local(.data) {
   color: $text-muted;
-  font-size: 90%;
+  font-size: 95%;
+  margin-bottom: $spacer / 3;
 }
 
 :local(.dataLabel) {

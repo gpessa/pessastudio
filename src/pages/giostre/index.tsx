@@ -29,10 +29,8 @@ const Giostre = ({ intl: { formatMessage } }) => (
 
     <div>
       <Container>
-        <Header>La gamma</Header>
-        <p>
-          Due sono i modelli di giostra che proponiamo. <Link to="/giostre/tecnoexerciser">{formatMessage({ id: "NAVIGATION_tecnoexerciser" })}</Link>, prodotta da oltre 20 anni, e <Link to="/giostre/ippowalker">{formatMessage({ id: "NAVIGATION_ippowalker" })}</Link>, realizzata per rispondere alle esigenze di un mercato che richiede un prodotto affidabile e al tempo stesso economico.
-        </p>
+        <Header>{formatMessage({ id: "GENERAL_gamma" })}</Header>
+        <p>Due sono i modelli di giostra che proponiamo. <Link to="/giostre/tecnoexerciser">{formatMessage({ id: "NAVIGATION_tecnoexerciser" })}</Link>, prodotta da oltre 20 anni, e <Link to="/giostre/ippowalker">{formatMessage({ id: "NAVIGATION_ippowalker" })}</Link>, realizzata per rispondere alle esigenze di un mercato che richiede un prodotto affidabile e al tempo stesso economico.</p>
       </Container>
 
       <Columns
