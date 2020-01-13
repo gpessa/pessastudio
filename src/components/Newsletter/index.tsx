@@ -13,8 +13,8 @@ const NewsletterSubscription = ({ intl: { formatMessage, locale } }) => {
     const data = new FormData(event.target)
     const isValid = event.currentTarget.checkValidity()
 
-    const email = data.get('email') as String;
-    const name = data.get('name') as String;
+    const email = data.get('email') as string;
+    const name = data.get('name') as string;
 
     event.preventDefault()
     event.stopPropagation()

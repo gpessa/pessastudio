@@ -95,7 +95,7 @@ Seo.defaultProps = {
 Seo.propTypes = {
   intl: PropTypes.any,
   description: PropTypes.string,
-  lang: PropTypes.string,
+  lang: PropTypes.string.isRequired,
   meta: PropTypes.arrayOf(PropTypes.object),
   keywords: PropTypes.arrayOf(PropTypes.string),
   fragments: PropTypes.array.isRequired,

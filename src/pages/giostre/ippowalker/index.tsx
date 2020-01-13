@@ -104,7 +104,7 @@ const Ippowalker = ({ intl: { formatMessage } }) => {
       </Section>
 
       <Section className="bg-light">
-        <Header>Supporto clienti</Header>
+        <Header>{formatMessage({ id: "GENERAL_client-service" })}</Header>
 
         <Row>
           <Col md={6}>

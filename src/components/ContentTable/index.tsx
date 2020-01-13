@@ -2,9 +2,9 @@ import React from 'react';
 import { Table } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFilePdf, faEye } from '@fortawesome/free-solid-svg-icons';
-import { Link } from "gatsby-plugin-intl"
+import { Link, injectIntl } from "gatsby-plugin-intl"
 
-const ContentTable = ({ headers, rows, title }: Props) => (
+const ContentTable = ({ headers, rows, title, intl: { formatMessage }  }: Props) => (
   <div>
     <h6 className="mt-3 mb-3 text-uppercase">{title}</h6>
     <Table striped bordered hover size="sm">
@@ -21,13 +21,19 @@ const ContentTable = ({ headers, rows, title }: Props) => (
 
             {link && (
               <td className="text-center">
-                <Link to={link}><FontAwesomeIcon icon={faEye} className="text-primary"/></Link>
+                <Link to={link}>
+                  {formatMessage({id: "GENERAL_view" })} {" "}
+                  <FontAwesomeIcon icon={faEye} className="text-primary" />
+                </Link>
               </td>
             )}
 
             {file && (
               <td className="text-center">
-                <a href={file} target="_blank"><FontAwesomeIcon icon={faFilePdf} className="text-danger" /></a>
+                <a href={file} target="_blank">
+                  {formatMessage({id: "GENERAL_download" })} {" "}
+                  <FontAwesomeIcon icon={faFilePdf} className="text-danger" />
+                </a>
               </td>
             )}
 
@@ -39,6 +45,7 @@ const ContentTable = ({ headers, rows, title }: Props) => (
 )
 
 interface Props {
+  intl: any,
   title: string;
   headers: string[];
   rows: {
@@ -48,7 +55,7 @@ interface Props {
   }[]
 };
 
-export default ContentTable
+export default injectIntl(ContentTable)
 
 
 
