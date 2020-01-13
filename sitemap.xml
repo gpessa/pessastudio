@@ -34,8 +34,12 @@
 <url> <loc>https://www.pessastudio.com/pessastudio/it/ostacoli/fosso/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://www.pessastudio.com/pessastudio/ostacoli/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://www.pessastudio.com/pessastudio/it/ostacoli/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://www.pessastudio.com/pessastudio/recinti-e-fondi/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://www.pessastudio.com/pessastudio/it/recinti-e-fondi/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://www.pessastudio.com/pessastudio/recinti/come-preparare-il-fondo/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://www.pessastudio.com/pessastudio/it/recinti/come-preparare-il-fondo/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://www.pessastudio.com/pessastudio/recinti/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://www.pessastudio.com/pessastudio/it/recinti/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://www.pessastudio.com/pessastudio/tondini/come-preparare-il-fondo/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://www.pessastudio.com/pessastudio/it/tondini/come-preparare-il-fondo/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://www.pessastudio.com/pessastudio/tondini/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://www.pessastudio.com/pessastudio/it/tondini/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 </urlset>
