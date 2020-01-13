@@ -9,7 +9,7 @@ const Contatti: React.FC<{ intl: IntlFormatters }> = ({ intl: { formatMessage } 
   <Columns
     left={
       <>
-        <h1>{formatMessage({ id: 'NAVIGATION_contatti' })}</h1>
+        <h1>{formatMessage({ id: 'NAVIGATION__contatti' })}</h1>
 
         <section className="mb-5">
           <h4>{formatMessage({ id: 'CONTACT_sede-legale' })}</h4>

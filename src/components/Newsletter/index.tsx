@@ -43,26 +43,26 @@ const NewsletterSubscription = ({ intl: { formatMessage, locale } }) => {
 
   return (
     <Form noValidate validated={state.showError} onSubmit={handleSubmit}>
-      <h5>{formatMessage({ id: "NEWSLETTER_title" })}</h5>
-      <p>{formatMessage({ id: "NEWSLETTER_intro" })}</p>
+      <h5>{formatMessage({ id: "NEWSLETTER__title" })}</h5>
+      <p>{formatMessage({ id: "NEWSLETTER__intro" })}</p>
 
       {state.response !== "success" && (
         <>
           <Form.Group>
-            <FormControl required type="email" name="email" aria-label={formatMessage({ id: "NEWSLETTER_field-email_placeholder" })} placeholder={formatMessage({ id: "NEWSLETTER_field-email_placeholder" })} />
+            <FormControl required type="email" name="email" aria-label={formatMessage({ id: "NEWSLETTER__field-placeholder__email_placeholder" })} placeholder={formatMessage({ id: "NEWSLETTER__field-email" })} />
           </Form.Group>
 
           <Form.Group>
-            <FormControl required type="text" name="name" aria-label={formatMessage({ id: "NEWSLETTER_field-name_placeholder" })} placeholder={formatMessage({ id: "NEWSLETTER_field-name_placeholder" })} />
+            <FormControl required type="text" name="name" aria-label={formatMessage({ id: "NEWSLETTER__field-placeholder__name_placeholder" })} placeholder={formatMessage({ id: "NEWSLETTER__field-name" })} />
           </Form.Group>
 
-          <Button variant="dark" type="submit" block>{formatMessage({ id: "NEWSLETTER_button" })}</Button>
+          <Button variant="dark" type="submit" block>{formatMessage({ id: "NEWSLETTER__button" })}</Button>
         </>
       )}
       
-      {state.response === "success" && <Alert className="mt-3" variant="success">{formatMessage({ id: "NEWSLETTER_sucess" })}</Alert>}
-      {state.response === "error-already-subscribed" && <Alert className="mt-3" variant="danger">{formatMessage({ id: "NEWSLETTER_error_already-subscribed" })}</Alert>}
-      {state.response === "error-generic" && <Alert className="mt-3" variant="danger">{formatMessage({ id: "NEWSLETTER_error_generic" })}</Alert>}
+      {state.response === "success" && <Alert className="mt-3" variant="success">{formatMessage({ id: "NEWSLETTER__sucess" })}</Alert>}
+      {state.response === "error-already-subscribed" && <Alert className="mt-3" variant="danger">{formatMessage({ id: "NEWSLETTER__error__already-subscribed" })}</Alert>}
+      {state.response === "error-generic" && <Alert className="mt-3" variant="danger">{formatMessage({ id: "NEWSLETTER__error__generic" })}</Alert>}
     </Form>
   )
 }

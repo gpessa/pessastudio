@@ -18,7 +18,7 @@ const Breadcrumb = ({ fragments, intl: { formatMessage } }) =>
             <li key={id} className="breadcrumb-item">
               <Link to={url} className={`${styles.item}`}>
                 {index === 0 && <FontAwesomeIcon icon={faHome} className="mr-2" />}
-                {formatMessage({ id: `NAVIGATION_${id}` })}
+                {formatMessage({ id: `NAVIGATION__${id}` })}
               </Link>
             </li>
           ))}

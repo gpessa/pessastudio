@@ -2,19 +2,20 @@ import { withPrefix } from 'gatsby';
 import { injectIntl } from 'gatsby-plugin-intl';
 import React from 'react';
 import { Col, Row } from 'react-bootstrap';
+import { IntlFormatters } from "react-intl";
 
 import { Columns, ContentTable, Gallery, Header, Section } from '../../components';
 
-const Tondini = ({ intl: { formatMessage } }) => {
+const Tondini: React.FC<{ intl: IntlFormatters }> = ({ intl: { formatMessage } }) => {
   const DIMENSIONS = [16, 18, 20, 22, 24]
 
   const IMAGES = [
-    { caption: formatMessage({ id: `TONDINO_image_1` }), src: require("../../images/product/tondini/tondino-1.jpg") },
-    { caption: formatMessage({ id: `TONDINO_image_2` }), src: require("../../images/product/tondini/tondino-2.jpg") },
-    { caption: formatMessage({ id: `TONDINO_image_3` }), src: require("../../images/product/tondini/tondino-3.jpg") },
-    { caption: formatMessage({ id: `TONDINO_image_4` }), src: require("../../images/product/tondini/tondino-4.jpg") },
-    { caption: formatMessage({ id: `TONDINO_image_5` }), src: require("../../images/product/tondini/tondino-5.jpg") },
-    { caption: formatMessage({ id: `TONDINO_image_6` }), src: require("../../images/product/tondini/tondino-6.jpg") },
+    { caption: formatMessage({ id: `TONDINO__gallery__image-0` }), src: require("../../images/product/tondini/tondino-0.jpg") },
+    { caption: formatMessage({ id: `TONDINO__gallery__image-1` }), src: require("../../images/product/tondini/tondino-1.jpg") },
+    { caption: formatMessage({ id: `TONDINO__gallery__image-2` }), src: require("../../images/product/tondini/tondino-2.jpg") },
+    { caption: formatMessage({ id: `TONDINO__gallery__image-3` }), src: require("../../images/product/tondini/tondino-3.jpg") },
+    { caption: formatMessage({ id: `TONDINO__gallery__image-4` }), src: require("../../images/product/tondini/tondino-4.jpg") },
+    { caption: formatMessage({ id: `TONDINO__gallery__image-5` }), src: require("../../images/product/tondini/tondino-5.jpg") },
   ]
 
   return (
@@ -38,16 +39,16 @@ const Tondini = ({ intl: { formatMessage } }) => {
         <Row>
           <Col md={6}>
             <ContentTable
-              title="Dimensioni tondini"
+              title={formatMessage({ id: "GENERAL__dimensioni" })}
               rows={DIMENSIONS.map(dimension => ({
-                label: formatMessage({ id: `TONDINO_dimension_${dimension}` }),
+                label: formatMessage({ id: `TONDINO__dimensioni-${dimension}` }),
                 file: withPrefix(`/tondino-${dimension}.pdf`)
               }))}
             />
           </Col>
           <Col md={6}>
             <ContentTable
-              title="Manuali"
+              title={formatMessage({ id: "GENERAL__manauli" })}
               rows={[
                 {
                   label: "Come preparare il fondo",

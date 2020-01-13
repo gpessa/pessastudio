@@ -76,7 +76,7 @@ const Dressage: React.FC<{ intl: IntlFormatters }> = ({ intl: { formatMessage } 
   return (
     <>
       <Section>
-        <h1>{formatMessage({ id: `NAVIGATION_dressage` })}</h1>
+        <h1>{formatMessage({ id: `NAVIGATION__dressage` })}</h1>
         <FormattedMessage
           id="DRESSAGE_intro_1"
           values={{

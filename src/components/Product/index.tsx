@@ -46,12 +46,12 @@ const Product = ({ image, url, name, width, height, diameter,  weight, colors, t
 
         <Description description={description} />
 
-        <Data value={thickness} label="PRODUCT_thickness" unit="mm" />
-        <Data value={weight} label="PRODUCT_weight" unit="kg" />
-        <Data value={length} label="PRODUCT_length" unit="mm" />
-        <Data value={height} label="PRODUCT_height" unit="mm" />
-        <Data value={width} label="PRODUCT_width" unit="mm" />
-        <Data value={diameter} label="PRODUCT_diameter" unit="mm" />
+        <Data value={thickness} label="PRODUCT__attributo__thickness" unit="mm" />
+        <Data value={weight} label="PRODUCT__attributo__weight" unit="kg" />
+        <Data value={length} label="PRODUCT__attributo__length" unit="mm" />
+        <Data value={height} label="PRODUCT__attributo__height" unit="mm" />
+        <Data value={width} label="PRODUCT__attributo__width" unit="mm" />
+        <Data value={diameter} label="PRODUCT__attributo__diameter" unit="mm" />
 
         <Color colors={colors} />
 

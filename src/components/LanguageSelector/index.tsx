@@ -17,7 +17,7 @@ const LanguageSelector = ({ intl: { formatMessage } }) => (
         <NavDropdown title={<LanguageSelectorItem id={currentLocale} />} alignRight className={styles.languageSelector} id="language-selector">
           {languages.map(language => (
             <NavDropdown.Item key={language} onClick={() => changeLocale(language)}>
-              <LanguageSelectorItem id={language} /> {formatMessage({ id: `LOCALE_${language}` })}
+              <LanguageSelectorItem id={language} /> {formatMessage({ id: `LOCALE__${language}` })}
             </NavDropdown.Item>
           ))}
         </NavDropdown>

@@ -93,7 +93,7 @@ const Tecnoexerciser = ({ intl: { formatMessage } }) => {
       />
 
       <Section>
-        <Header>{formatMessage({ id: "GENERAL_gamma" })}</Header>
+        <Header>{formatMessage({ id: "GENERAL__gamma" })}</Header>
         <p>E' possibile acquistare la giostra senza la recinzione o puoi scegliere tra due tipologie di recinzioni disponibili: FLAT o con corridoio TECNOFENCE (da 2 o 4 filagne).</p>
 
         <Row>
@@ -114,9 +114,9 @@ const Tecnoexerciser = ({ intl: { formatMessage } }) => {
         <Row>
           <Col md={6}>
             <ContentTable
-              title="Dimensioni tondini"
+              title={formatMessage({ id: "GENERAL__dimensioni" })}
               rows={DIMENSIONS.map(dimension => ({
-                label: formatMessage({ id: `GIOSTRA_tecnoexerciser-dimension_${dimension}` }),
+                label: formatMessage({ id: `GIOSTRA__tecnoexerciser__dimensioni-${dimension}` }),
                 file: withPrefix(`/giostra-tecnoexerciser-${dimension}.pdf`),
               }))}
             />
@@ -124,7 +124,7 @@ const Tecnoexerciser = ({ intl: { formatMessage } }) => {
 
           <Col md={6}>
             <ContentTable
-              title="Manuali"
+              title={formatMessage({ id: "GENERAL__manauli" })}
               rows={[
                 {
                   label: "Manuale quadro di controllo",

@@ -1,12 +1,13 @@
-import React from "react"
-import { Col, Row } from "react-bootstrap"
-import { injectIntl } from "gatsby-plugin-intl"
+import { withPrefix } from 'gatsby';
+import { injectIntl } from 'gatsby-plugin-intl';
+import React from 'react';
+import { Col, Row } from 'react-bootstrap';
+import { IntlFormatters } from 'react-intl';
 
-import { Columns, Header, Product, Section, ContentTable, Gallery } from "../../../components"
-import { Ratio } from "../../../constants"
-import { withPrefix } from "gatsby"
+import { Columns, ContentTable, Gallery, Header, Product, Section } from '../../../components';
+import { Ratio } from '../../../constants';
 
-const Ippowalker = ({ intl: { formatMessage } }) => {
+const Ippowalker: React.FC<{ intl: IntlFormatters }> = ({ intl: { formatMessage } }) => {
   const IMAGES = [
     {
       src: require("../../../images/product/giostre/ippowalker/galleria/giostra.jpg"),
@@ -90,7 +91,6 @@ const Ippowalker = ({ intl: { formatMessage } }) => {
         <Header>La gamma</Header>
         <p>E' possibile acquistare la giostra senza la recinzione o puoi scegliere tra due tipologie di recinzioni disponibili: FLAT o con corridoio TECNOFENCE (da 2 o 4 filagne).</p>
 
-
         <Row>
           {PRODUCTS.map((product, index) => (
             <Col
@@ -109,10 +109,10 @@ const Ippowalker = ({ intl: { formatMessage } }) => {
         <Row>
           <Col md={6}>
             <ContentTable
-              title="Dimensioni tondini"
+              title={formatMessage({ id: "GENERAL__dimensioni" })}
               rows={DIMENSIONS.map(dimension => (
                 {
-                  label: formatMessage({ id: `GIOSTRA_ippowalker-dimension_${dimension}` }),
+                  label: formatMessage({ id: `GIOSTRA__ippowalker__dimensioni-${dimension}` }),
                   file: withPrefix(`/giostra-ippowalker-${dimension}.pdf`)
                 }
               ))}
@@ -121,7 +121,7 @@ const Ippowalker = ({ intl: { formatMessage } }) => {
 
           <Col md={6}>
             <ContentTable
-              title="Manuali"
+              title={formatMessage({ id: "GENERAL__manauli" })}
               rows={[
                 {
                   label: "Manuale quadro di controllo",
