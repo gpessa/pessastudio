@@ -110,7 +110,6 @@ const Ippowalker = ({ intl: { formatMessage } }) => {
           <Col md={6}>
             <ContentTable
               title="Dimensioni tondini"
-              headers={["Dimensione", "Scarica"]}
               rows={DIMENSIONS.map(dimension => (
                 {
                   label: formatMessage({ id: `GIOSTRA_ippowalker-dimension_${dimension}` }),
@@ -123,7 +122,6 @@ const Ippowalker = ({ intl: { formatMessage } }) => {
           <Col md={6}>
             <ContentTable
               title="Manuali"
-              headers={["Argomento", "Scarica"]}
               rows={[
                 {
                   label: "Manuale quadro di controllo",

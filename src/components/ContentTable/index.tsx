@@ -4,16 +4,10 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFilePdf, faEye } from '@fortawesome/free-solid-svg-icons';
 import { Link, injectIntl } from "gatsby-plugin-intl"
 
-const ContentTable = ({ headers, rows, title, intl: { formatMessage }  }: Props) => (
+const ContentTable = ({ rows, title, intl: { formatMessage }  }: Props) => (
   <div>
     <h6 className="mt-3 mb-3 text-uppercase">{title}</h6>
-    <Table striped bordered hover size="sm">
-      <thead>
-        <tr>
-          <th>{headers[0]}</th>
-          <th className="text-center">{headers[1]}</th>
-        </tr>
-      </thead>
+    <Table striped bordered size="sm">
       <tbody>
         {rows.map(({ label, link, file }, index) => (
           <tr key={index}>
@@ -47,7 +41,6 @@ const ContentTable = ({ headers, rows, title, intl: { formatMessage }  }: Props)
 interface Props {
   intl: any,
   title: string;
-  headers: string[];
   rows: {
     label: string;
     link?: string;

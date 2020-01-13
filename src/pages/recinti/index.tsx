@@ -1,12 +1,13 @@
 import { withPrefix } from 'gatsby';
-import { injectIntl, Link } from 'gatsby-plugin-intl';
+import { injectIntl, FormattedHTMLMessage } from 'gatsby-plugin-intl';
 import React from 'react';
 import { Col, Row } from 'react-bootstrap';
+import { IntlFormatters } from 'react-intl';
 
 import { Columns, ContentTable, Gallery, Header, Product, Section } from '../../components';
 import { Colors } from '../../constants';
 
-const Recinti = ({ intl: { formatMessage } }) => {
+const Recinti: React.FC<{ intl: IntlFormatters }> = ({ intl: { formatMessage } }) => {
   const IMAGES = [
     { 
       caption: formatMessage({ id: `RECINTI_image_1` }), 
@@ -71,6 +72,11 @@ const Recinti = ({ intl: { formatMessage } }) => {
       image: require("../../images/product/recinti/piede-mobile.jpg"),
       colors: [Colors.GREEN],
       height: 30
+    },
+    {
+      name: formatMessage({ id: "RECINTI_product-recinzione-erpice-livellatrice-name" }),
+      description: formatMessage({ id: "RECINTI_product-recinzione-erpice-livellatrice-description" }),
+      image: require("../../images/product/recinti/erpice-livellatrice.jpg")
     }
   ]
 
@@ -80,12 +86,7 @@ const Recinti = ({ intl: { formatMessage } }) => {
         left={
           <>
             <h1>{formatMessage({ id: "NAVIGATION_recinti" })}</h1>
-            <p>Le recinzioni <strong>Tecno Fence</strong> sono realizzate con materiale particolarmente adatto a durare nel tempo anche in presenza delle più avverse condizioni meteorologiche.</p>
-            <p>Sono in grado di sopportare senza rompersi i calci e le spinte dei cavalli. A differenza del legno o di altri prodotti utilizzati per il medesimo scopo, gli animali non mordono la recinzione. Tecno Fence, non presenta spigoli vivi e inoltre, essendo elastica, è in grado di assorbire gli urti senza rompersi evitando cosi di provocare infortuni a persone e animali. </p>
-            <p>Il materiale impiegato è lo stesso che viene utilizzato per la produzione di serramenti dove l’inalterabilità del colore e delle caratteristiche tecniche sono condizioni indispensabili per garantire un prodotto di qualità. L’inclusione di inibitori dei raggi ultravioletti consente anche di prevenire crepe e rotture e di resistere alla corrosione e allo sfogliamento mantenendo, inalterate, le caratteristiche originali anche con temperature variabili da +70° C a -20°C.</p>
-            <p>Principalmente prodotte nel colore bianco, possono essere fornite, a richiesta, anche nel colore verde. Variabili le altezze che vanno da 1,20 mt a 1,90 mt, misura quest’ultima utilizzata principalmente per tondini da lavoro o paddock per stalloni.</p>
-            <p>In ogni recinzione inoltre si possono inserire uno o più cancelli scorrevoli in alluminio.</p>
-            <p>Tutte le nostre recinzioni sono personalizzate in base alle esigenze di metratura e di figura del cliente.</p>
+            <FormattedHTMLMessage id="RECINTI_text" />
           </>
         }
         right={<Gallery images={IMAGES} />}
@@ -99,15 +100,14 @@ const Recinti = ({ intl: { formatMessage } }) => {
       <Section className="bg-light">
         <Header>{formatMessage({ id: "GENERAL_client-service" })}</Header>
         <ContentTable
-          title="Manuali"
-          headers={["Argomento", "Scarica"]}
+          title={formatMessage({ id: "GENERAL_handbook" })}
           rows={[
             {
-              label: "Come preparare il fondo",
+              label: formatMessage({ id: "RECINTI_handbook-prepare-the-ground" }),
               link: "/recinti/come-preparare-il-fondo"
             },
             {
-              label: "Istruzioni di montaggio",
+              label: formatMessage({ id: "RECINTI_handbook-istruzioni-montaggio" }),
               file: withPrefix("/recinti-istruzioni-montaggio.pdf")
             }
           ]}

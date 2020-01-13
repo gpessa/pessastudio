@@ -39,7 +39,6 @@ const Tondini = ({ intl: { formatMessage } }) => {
           <Col md={6}>
             <ContentTable
               title="Dimensioni tondini"
-              headers={["Dimensione", "Scarica"]}
               rows={DIMENSIONS.map(dimension => ({
                 label: formatMessage({ id: `TONDINO_dimension_${dimension}` }),
                 file: withPrefix(`/tondino-${dimension}.pdf`)
@@ -49,7 +48,6 @@ const Tondini = ({ intl: { formatMessage } }) => {
           <Col md={6}>
             <ContentTable
               title="Manuali"
-              headers={["Argomento", "Scarica"]}
               rows={[
                 {
                   label: "Come preparare il fondo",

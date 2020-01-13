@@ -1,10 +1,11 @@
 import { injectIntl } from 'gatsby-plugin-intl';
 import React from 'react';
+import { IntlFormatters } from 'react-intl';
 
 import { Address, Columns, Header } from '../../components';
 import * as styles from './styles.module.scss';
 
-const Contatti = ({ intl: { formatMessage } }) => (
+const Contatti: React.FC<{ intl: IntlFormatters }> = ({ intl: { formatMessage } }) => (
   <Columns
     left={
       <>

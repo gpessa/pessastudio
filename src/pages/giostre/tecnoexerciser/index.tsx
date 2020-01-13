@@ -115,7 +115,6 @@ const Tecnoexerciser = ({ intl: { formatMessage } }) => {
           <Col md={6}>
             <ContentTable
               title="Dimensioni tondini"
-              headers={["Dimensione", "Scarica"]}
               rows={DIMENSIONS.map(dimension => ({
                 label: formatMessage({ id: `GIOSTRA_tecnoexerciser-dimension_${dimension}` }),
                 file: withPrefix(`/giostra-tecnoexerciser-${dimension}.pdf`),
@@ -126,7 +125,6 @@ const Tecnoexerciser = ({ intl: { formatMessage } }) => {
           <Col md={6}>
             <ContentTable
               title="Manuali"
-              headers={["Argomento", "Scarica"]}
               rows={[
                 {
                   label: "Manuale quadro di controllo",
