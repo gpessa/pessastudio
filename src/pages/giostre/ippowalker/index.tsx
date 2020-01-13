@@ -1,9 +1,10 @@
 import React from "react"
 import { Col, Row } from "react-bootstrap"
-import { injectIntl, Link } from "gatsby-plugin-intl"
+import { injectIntl } from "gatsby-plugin-intl"
 
-import { Columns, Header, PdfIcon, Product, Section, ContentTable, Gallery } from "../../../components"
+import { Columns, Header, Product, Section, ContentTable, Gallery } from "../../../components"
 import { Ratio } from "../../../constants"
+import { withPrefix } from "gatsby"
 
 const Ippowalker = ({ intl: { formatMessage } }) => {
   const IMAGES = [
@@ -110,14 +111,12 @@ const Ippowalker = ({ intl: { formatMessage } }) => {
             <ContentTable
               title="Dimensioni tondini"
               headers={["Dimensione", "Scarica"]}
-              rows={DIMENSIONS.map(dimension => ({
-                label: formatMessage({ id: `GIOSTRA_ippowalker-dimension_${dimension}` }),
-                link: (
-                  <a target="_blank" href={`/giostra-ippowalker-${dimension}.pdf`}>
-                    <PdfIcon />
-                  </a>
-                ),
-              }))}
+              rows={DIMENSIONS.map(dimension => (
+                {
+                  label: formatMessage({ id: `GIOSTRA_ippowalker-dimension_${dimension}` }),
+                  file: withPrefix(`/giostra-ippowalker-${dimension}.pdf`)
+                }
+              ))}
             />
           </Col>
 
@@ -128,23 +127,15 @@ const Ippowalker = ({ intl: { formatMessage } }) => {
               rows={[
                 {
                   label: "Manuale quadro di controllo",
-                  link: (
-                    <a target="_blank" href={`/giostra-ippowalker-manuale-quadro.pdf`}>
-                      <PdfIcon />
-                    </a>
-                  ),
+                  file: withPrefix(`/giostra-ippowalker-manuale-quadro.pdf`)
                 },
                 {
                   label: "Manuale collegamento elettrico",
-                  link: (
-                    <a target="_blank" href={`/giostra-ippowalker-collegamento-elettrico.pdf`}>
-                      <PdfIcon />
-                    </a>
-                  ),
+                  file: withPrefix(`/giostra-collegamento-elettrico.pdf`)
                 },
                 {
                   label: "Istruzioni di montaggio",
-                  link: <Link to="/giostre/ippowalker/istruzioni-montaggio">Istruzioni</Link>,
+                  link: withPrefix(`/giostre/ippowalker/istruzioni-montaggio`)
                 },
               ]}
             />

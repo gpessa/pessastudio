@@ -1,5 +1,8 @@
-import React, { ReactNode } from 'react';
+import React from 'react';
 import { Table } from 'react-bootstrap';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFilePdf, faEye } from '@fortawesome/free-solid-svg-icons';
+import { Link } from "gatsby-plugin-intl"
 
 const ContentTable = ({ headers, rows, title }: Props) => (
   <div>
@@ -12,10 +15,22 @@ const ContentTable = ({ headers, rows, title }: Props) => (
         </tr>
       </thead>
       <tbody>
-        {rows.map(({ label, link }, index) => (
+        {rows.map(({ label, link, file }, index) => (
           <tr key={index}>
             <td>{label}</td>
-            <td className="text-center">{link}</td>
+
+            {link && (
+              <td className="text-center">
+                <Link to={link}><FontAwesomeIcon icon={faEye} className="text-primary"/></Link>
+              </td>
+            )}
+
+            {file && (
+              <td className="text-center">
+                <a href={file} target="_blank"><FontAwesomeIcon icon={faFilePdf} className="text-danger" /></a>
+              </td>
+            )}
+
           </tr>
         ))}
       </tbody>
@@ -28,7 +43,8 @@ interface Props {
   headers: string[];
   rows: {
     label: string;
-    link: ReactNode
+    link?: string;
+    file?: string;
   }[]
 };
 

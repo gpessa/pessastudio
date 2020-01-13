@@ -31,7 +31,7 @@ const Address = ({ name, country, addressLocality, whatsapp, postalCode, address
 
       {whatsapp && (
         <div className="mt-2">
-          <a className={styles.link} itemProp="telephone" href={`tel:${whatsapp}`}>
+          <a className={styles.link} href={`https://wa.me/15551234567:${whatsapp}`}>
             <FontAwesomeIcon icon={faWhatsapp} className="mr-2" /> {whatsapp}</a>
         </div>
       )}

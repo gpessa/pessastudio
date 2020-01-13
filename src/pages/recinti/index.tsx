@@ -1,9 +1,10 @@
-import { injectIntl, Link } from "gatsby-plugin-intl"
-import React from "react"
-import { Col, Row } from "react-bootstrap"
+import { withPrefix } from 'gatsby';
+import { injectIntl, Link } from 'gatsby-plugin-intl';
+import React from 'react';
+import { Col, Row } from 'react-bootstrap';
 
-import { Columns, Gallery, Header, Product, Section, ContentTable } from "../../components"
-import { Colors } from "../../constants"
+import { Columns, ContentTable, Gallery, Header, Product, Section } from '../../components';
+import { Colors } from '../../constants';
 
 const Recinti = ({ intl: { formatMessage } }) => {
   const IMAGES = [
@@ -95,27 +96,22 @@ const Recinti = ({ intl: { formatMessage } }) => {
         <Row>{PRODUCTS.map((product, index) => <Col as={Product} key={index} md={4} {...product} />)}</Row>
       </Section>
       
-
-
       <Section className="bg-light">
         <Header>{formatMessage({ id: "GENERAL_client-service" })}</Header>
-
-        <Row>
-          <Col md={6}>
-            <ContentTable
-              title="Manuali"
-              headers={["Argomento", "Scarica"]}
-              rows={[
-                {
-                  label: "Come preparare il fondo",
-                  link: (
-                    <Link to="/recinti/come-preparare-il-fondo">Istruzioni</Link> 
-                  ),
-                }
-              ]}
-            />
-          </Col>
-        </Row>
+        <ContentTable
+          title="Manuali"
+          headers={["Argomento", "Scarica"]}
+          rows={[
+            {
+              label: "Come preparare il fondo",
+              link: "/recinti/come-preparare-il-fondo"
+            },
+            {
+              label: "Istruzioni di montaggio",
+              file: withPrefix("/recinti-istruzioni-montaggio.pdf")
+            }
+          ]}
+        />
       </Section>
     </>
   )

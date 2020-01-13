@@ -1,9 +1,10 @@
-import { injectIntl, Link } from "gatsby-plugin-intl"
+import { injectIntl } from "gatsby-plugin-intl"
 import React from "react"
 import { Col, Row } from "react-bootstrap"
 
 import { Columns, ContentTable, Header, PdfIcon, Product, Section, Gallery, Seo } from "../../../components"
 import { Ratio } from "../../../constants"
+import { withPrefix } from "gatsby"
 
 const Tecnoexerciser = ({ intl: { formatMessage } }) => {
   const IMAGES = [
@@ -117,11 +118,7 @@ const Tecnoexerciser = ({ intl: { formatMessage } }) => {
               headers={["Dimensione", "Scarica"]}
               rows={DIMENSIONS.map(dimension => ({
                 label: formatMessage({ id: `GIOSTRA_tecnoexerciser-dimension_${dimension}` }),
-                link: (
-                  <a target="_blank" href={`/giostra-tecnoexerciser-${dimension}.pdf`}>
-                    <PdfIcon />
-                  </a>
-                ),
+                file: withPrefix(`/giostra-tecnoexerciser-${dimension}.pdf`),
               }))}
             />
           </Col>
@@ -133,31 +130,19 @@ const Tecnoexerciser = ({ intl: { formatMessage } }) => {
               rows={[
                 {
                   label: "Manuale quadro di controllo",
-                  link: (
-                    <a target="_blank" href={`/giostra-tecnoexerciser-manuale-quadro.pdf`}>
-                      <PdfIcon />
-                    </a>
-                  ),
+                  file: withPrefix(`/giostra-tecnoexerciser-manuale-quadro.pdf`)
                 },
                 {
                   label: "Manuale collegamento elettrico",
-                  link: (
-                    <a target="_blank" href={`/giostra-tecnoexerciser-collegamento-elettrico.pdf`}>
-                      <PdfIcon />
-                    </a>
-                  ),
+                  file: withPrefix(`/giostra-collegamento-elettrico.pdf`)
                 },
                 {
                   label: "Istruzioni di montaggio",
-                  link: <Link to="/giostre/tecnoexerciser/istruzioni-montaggio">Istruzioni</Link>,
+                  link: "/giostre/tecnoexerciser/istruzioni-montaggio",
                 },
                 {
                   label: "Procedura lubrificazione",
-                  link: (
-                    <a href="https://www.youtube.com/watch?v=QMA4wPxq_ow" target="_blank">
-                      Istruzioni
-                    </a>
-                  ),
+                  link: "https://www.youtube.com/watch?v=QMA4wPxq_ow",
                 },
               ]}
             />
