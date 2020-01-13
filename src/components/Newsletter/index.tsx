@@ -1,9 +1,10 @@
-import { injectIntl } from "gatsby-plugin-intl"
-import addToMailchimp from "gatsby-plugin-mailchimp"
-import React, { useState } from "react"
-import { Button, Form, FormControl, Alert } from "react-bootstrap"
+import { injectIntl } from 'gatsby-plugin-intl';
+import addToMailchimp from 'gatsby-plugin-mailchimp';
+import React, { useState } from 'react';
+import { Alert, Button, Form, FormControl } from 'react-bootstrap';
+import { IntlFormatters } from 'react-intl';
 
-const NewsletterSubscription = ({ intl: { formatMessage, locale } }) => {
+const NewsletterSubscription: React.FC<{ intl: IntlFormatters, locale: string }> = ({ locale, intl: { formatMessage } }) => {
   const [state, setState] = useState({
     showError: false,
     response: '',
@@ -49,11 +50,23 @@ const NewsletterSubscription = ({ intl: { formatMessage, locale } }) => {
       {state.response !== "success" && (
         <>
           <Form.Group>
-            <FormControl required type="email" name="email" aria-label={formatMessage({ id: "NEWSLETTER__field-placeholder__email_placeholder" })} placeholder={formatMessage({ id: "NEWSLETTER__field-email" })} />
+            <FormControl
+              required
+              type="email"
+              name="email"
+              aria-label={formatMessage({ id: "NEWSLETTER__field-placeholder__email" })}
+              placeholder={formatMessage({ id: "NEWSLETTER__field-placeholder__email" })} 
+            />
           </Form.Group>
 
           <Form.Group>
-            <FormControl required type="text" name="name" aria-label={formatMessage({ id: "NEWSLETTER__field-placeholder__name_placeholder" })} placeholder={formatMessage({ id: "NEWSLETTER__field-name" })} />
+            <FormControl
+              required
+              type="text"
+              name="name"
+              aria-label={formatMessage({ id: "NEWSLETTER__field-placeholder__name" })}
+              placeholder={formatMessage({ id: "NEWSLETTER__field-placeholder__name" })} 
+            />
           </Form.Group>
 
           <Button variant="dark" type="submit" block>{formatMessage({ id: "NEWSLETTER__button" })}</Button>
