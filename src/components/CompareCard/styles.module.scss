@@ -1,0 +1,19 @@
+@import "../../styles/_variables.scss";
+
+:local(.title) {
+  text-transform: uppercase;
+  margin-bottom: $spacer / 2;
+}
+
+:local(.body) {
+  // background-color: $primary;
+  // color: $white;
+}
+
+:local(.feature) {
+  // background: $primary;
+  border-color: $white;
+  border-top-width: 12px !important;
+  // color: $white;
+  font-weight: bold;
+}
