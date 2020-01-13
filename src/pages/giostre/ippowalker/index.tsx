@@ -1,10 +1,13 @@
-import { injectIntl, Link } from "gatsby-plugin-intl"
-import React from "react"
-import { Col, Row } from "react-bootstrap"
+import { withPrefix } from 'gatsby';
+import { injectIntl } from 'gatsby-plugin-intl';
+import React from 'react';
+import { Col, Row } from 'react-bootstrap';
+import { IntlFormatters } from 'react-intl';
 
-import { Columns, ContentTable, Gallery, Header, PdfIcon, Product, Section } from "../../../components"
+import { Columns, ContentTable, Gallery, Header, Product, Section } from '../../../components';
+import { Ratio } from '../../../constants';
 
-const Ippowalker = ({ intl: { formatMessage } }) => {
+const Ippowalker: React.FC<{ intl: IntlFormatters }> = ({ intl: { formatMessage } }) => {
   const IMAGES = [
     {
       src: require("../../../images/product/giostre/ippowalker/galleria/giostra.jpg"),
@@ -26,6 +29,49 @@ const Ippowalker = ({ intl: { formatMessage } }) => {
 
   const DIMENSIONS = [4, 6]
 
+  const PRODUCTS = [
+    {
+      image: require("../../../images/product/giostre/ippowalker/gamma/solo-motore.jpg"),
+      name: "Giostra",
+      description:
+        <>
+          <p>L'opzione semplice ed economica</p>
+          <ul>
+            <li>Giostra da 4 o 6 cavalli</li>
+            <li>Diametro da 12 mt. o 14.2 mt.</li>
+            <li>Cadenza compresa fra 60 e 210 metri al minuto</li>
+            <li>Potenza motore 0.37 kw</li>
+          </ul>
+        </>
+    },
+    {
+      image: require("../../../images/product/giostre/ippowalker/gamma/con-corridoio-tecnofence.jpg"),
+      name: "Giostra con corridoio Tecnofence",
+      description:
+        <>
+          <ul>
+            <li>Giostra da 4 o 6 cavalli</li>
+            <li>Diametro da 12 mt. o 14.2 mt.</li>
+            <li>Cadenza compresa fra 60 e 210 metri al minuto</li>
+            <li>Potenza motore 0.37 kw</li>
+          </ul>
+        </>
+    },
+    {
+      image: require("../../../images/product/giostre/ippowalker/gamma/con-corridoio-flat.jpg"),
+      name: "Giostra con corridoio Flat",
+      description:
+        <>
+          <ul>
+            <li>Giostra da 4 o 6 cavalli</li>
+            <li>Diametro da 12 mt. o 14.2 mt.</li>
+            <li>Cadenza compresa fra 60 e 210 metri al minuto</li>
+            <li>Potenza motore 0.37 kw</li>
+          </ul>
+        </>
+    }
+  ]
+
   return (
     <>
       <Columns
@@ -33,11 +79,7 @@ const Ippowalker = ({ intl: { formatMessage } }) => {
         left={
           <>
             <h1>Giostra IppoWalker</h1>
-
-            <p>
-              Ippowalker è una giostra di recente realizzazione semplice, essenziale, di conseguenza più economica ma
-              costruita con la qualità e la robustezza che contraddistingue tutti i nostri prodotti.
-            </p>
+            <p>Ippowalker è una giostra di recente realizzazione semplice, essenziale, di conseguenza più economica ma costruita con la qualità e la robustezza che contraddistingue tutti i nostri prodotti.</p>
             <p>Le braccia sono dotate di elettrificazione.</p>
             <p>
               Il motore produce una potenza di 0,37 kw e permette una cadenza compresa fra 60 e 210 metri al minuto.
@@ -58,100 +100,48 @@ const Ippowalker = ({ intl: { formatMessage } }) => {
         </p>
 
         <Row>
-          <Col
-            as={Product}
-            image={require("../../../images/product/giostre/ippowalker/gamma/solo-motore.jpg")}
-            name="Giostra"
-            description={
-              <>
-                <p>L'opzione semplice ed economica</p>
-                <ul>
-                  <li>Giostra da 4 o 6 cavalli</li>
-                  <li>Diametro da 12 mt. o 14.2 mt.</li>
-                  <li>Cadenza compresa fra 60 e 210 metri al minuto</li>
-                  <li>Potenza motore 0.37 kw</li>
-                </ul>
-              </>
-            }
-          />
-
-          <Col
-            as={Product}
-            image={require("../../../images/product/giostre/ippowalker/gamma/con-corridoio-tecnofence.jpg")}
-            name="Giostra con corridoio Tecnofence"
-            description={
-              <>
-                <ul>
-                  <li>Giostra da 4 o 6 cavalli</li>
-                  <li>Diametro da 12 mt. o 14.2 mt.</li>
-                  <li>Cadenza compresa fra 60 e 210 metri al minuto</li>
-                  <li>Potenza motore 0.37 kw</li>
-                </ul>
-              </>
-            }
-          />
-
-          <Col
-            as={Product}
-            image={require("../../../images/product/giostre/ippowalker/gamma/con-corridoio-flat.jpg")}
-            name="Giostra con corridoio Flat"
-            description={
-              <>
-                <ul>
-                  <li>Giostra da 4 o 6 cavalli</li>
-                  <li>Diametro da 12 mt. o 14.2 mt.</li>
-                  <li>Cadenza compresa fra 60 e 210 metri al minuto</li>
-                  <li>Potenza motore 0.37 kw</li>
-                </ul>
-              </>
-            }
-          />
+          {PRODUCTS.map((product, index) => (
+            <Col
+              key={index}
+              as={Product}
+              ratio={Ratio.HORIZONTAL}
+              {...product}
+            />
+          ))}
         </Row>
       </Section>
 
       <Section className="bg-light">
-        <Header>Supporto clienti</Header>
+        <Header>{formatMessage({ id: "GENERAL_client-service" })}</Header>
 
         <Row>
           <Col md={6}>
             <ContentTable
-              title="Dimensioni tondini"
-              headers={["Dimensione", "Scarica"]}
-              rows={DIMENSIONS.map(dimension => ({
-                label: formatMessage({ id: `GIOSTRA_ippowalker-dimension_${dimension}` }),
-                link: (
-                  <a target="_blank" href={`/giostra-ippowalker-${dimension}.pdf`}>
-                    <PdfIcon />
-                  </a>
-                ),
-              }))}
+              title={formatMessage({ id: "GENERAL__dimensioni" })}
+              rows={DIMENSIONS.map(dimension => (
+                {
+                  label: formatMessage({ id: `GIOSTRA__ippowalker__dimensioni-${dimension}` }),
+                  file: withPrefix(`/giostra-ippowalker-${dimension}.pdf`)
+                }
+              ))}
             />
           </Col>
 
           <Col md={6}>
             <ContentTable
-              title="Manuali"
-              headers={["Argomento", "Scarica"]}
+              title={formatMessage({ id: "GENERAL__manauli" })}
               rows={[
                 {
                   label: "Manuale quadro di controllo",
-                  link: (
-                    <a target="_blank" href={`/giostra-ippowalker-manuale-quadro.pdf`}>
-                      <PdfIcon />
-                    </a>
-                  ),
+                  file: withPrefix(`/giostra-ippowalker-manuale-quadro.pdf`)
                 },
                 {
                   label: "Manuale collegamento elettrico",
-                  link: (
-                    <a target="_blank" href={`/giostra-ippowalker-collegamento-elettrico.pdf`}>
-                      <PdfIcon />
-                    </a>
-                  ),
+                  file: withPrefix(`/giostra-collegamento-elettrico.pdf`)
                 },
                 {
                   label: "Istruzioni di montaggio",
-                  link: <Link to="/giostre/ippowalker/istruzioni-montaggio">Istruzioni</Link>,
+                  link: withPrefix(`/giostre/ippowalker/istruzioni-montaggio`)
                 },
               ]}
             />

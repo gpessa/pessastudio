@@ -1,13 +1,13 @@
-import { Link } from "gatsby-plugin-intl"
-import React from "react"
-import { Container } from "react-bootstrap"
-import { injectIntl } from "react-intl"
+import { Link } from 'gatsby-plugin-intl';
+import React from 'react';
+import { Container } from 'react-bootstrap';
+import { injectIntl } from 'react-intl';
 
-import { faHome } from "@fortawesome/free-solid-svg-icons"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faHome } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-import { injectTree } from "../../hoc"
-import * as styles from "./styles.module.scss"
+import { injectTree } from '../../hoc';
+import * as styles from './styles.module.scss';
 
 const Breadcrumb = ({ fragments, intl: { formatMessage } }) =>
   fragments.length > 1 && (
@@ -18,7 +18,7 @@ const Breadcrumb = ({ fragments, intl: { formatMessage } }) =>
             <li key={id} className="breadcrumb-item">
               <Link to={url} className={`${styles.item}`}>
                 {index === 0 && <FontAwesomeIcon icon={faHome} className="mr-2" />}
-                {formatMessage({ id: `NAVIGATION_${id}` })}
+                {formatMessage({ id: `NAVIGATION__${id}` })}
               </Link>
             </li>
           ))}

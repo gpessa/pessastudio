@@ -1,18 +1,19 @@
-import { injectIntl } from "gatsby-plugin-intl"
-import React from "react"
+import { injectIntl } from 'gatsby-plugin-intl';
+import React from 'react';
+import { IntlFormatters } from 'react-intl';
 
 import { Address, Columns, Header } from "../../components"
 import * as styles from "./styles.module.scss"
 
-const Contatti = ({ intl: { formatMessage } }) => (
+const Contatti: React.FC<{ intl: IntlFormatters }> = ({ intl: { formatMessage } }) => (
   <Columns
     variant="primary"
     left={
       <>
-        <h1>Contatti</h1>
+        <h1>{formatMessage({ id: 'NAVIGATION__contatti' })}</h1>
 
         <section className="mb-5">
-          <h4>Sede legale</h4>
+          <h4>{formatMessage({ id: 'CONTACT_sede-legale' })}</h4>
           <Address
             name="PESSASTUDIO Horse Tecnology srl"
             country="Italy"
@@ -31,7 +32,7 @@ const Contatti = ({ intl: { formatMessage } }) => (
         </section>
 
         <section className="mb-5">
-          <h4>Sede operativa</h4>
+          <h4>{formatMessage({ id: 'CONTACT_sede-operativa' })}</h4>
           <Address
             name="PESSASTUDIO Horse Tecnology srl"
             country="Italy"
@@ -43,7 +44,7 @@ const Contatti = ({ intl: { formatMessage } }) => (
         </section>
 
         <section>
-          <h4>Estremi bancari</h4>
+          <h4>{formatMessage({ id: 'CONTACT_bank-details' })}</h4>
           <div>
             Cassa di Risparmio del Veneto filiale di Monselice
             <br />
@@ -56,11 +57,16 @@ const Contatti = ({ intl: { formatMessage } }) => (
     }
     right={
       <>
-        <Header>Contatto commerciale</Header>
+        <Header>{formatMessage({ id: 'CONTACT_contatto-commerciale' })}</Header>
 
         <img src={require("../../images/anna.jpg")} className={`img-thumbnail rounded-circle mb-4 ${styles.selfie}`} />
 
-        <Address name="Anna Pessa" email="annapessa@pessastudio.eu" telephoneMobile="+39 0429 805613" />
+        <Address
+          name="Anna Pessa"
+          email="annapessa@pessastudio.eu"
+          telephoneMobile="+39 0429 805613"
+          whatsapp="+39 0429 805613"
+        />
       </>
     }
   />

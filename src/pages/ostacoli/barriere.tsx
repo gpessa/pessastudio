@@ -2,31 +2,30 @@ import React from "react"
 
 import { Product, Header } from "../../components"
 import { Row, Col } from "react-bootstrap"
+import { Colors } from "../../constants"
+import { injectIntl, FormattedHTMLMessage } from "gatsby-plugin-intl"
 
-const Barriere = ({ className }: { className?: string }) => (
+const Barriere = ({ className, intl: { formatMessage } }: { className?: string, intl: any }) => (
   <div className={className}>
-    <Header>Barriere</Header>
-    <p>
-      Sono le componenti dell'ostacolo più stressate, poichè, come i candelieri e i pilieri, sono perennemente
-      sottoposte all'azione aggressiva degli agenti atmosferici ( caldo-freddo, sole-pioggia ). A questi si aggiungono
-      anche gli urti degli zoccoli dei cavalli, frequenti ribaltamenti e le manipolazioni necessarie per aggiustarne le
-      altezze.
-    </p>
-    <p>
-      Le barriere di abete, comunemente usate, richiedono una continua manutenzione perchè si piegano, scoloriscono nel
-      tempo e si rompono frequentemente.
-    </p>
-    <p>
-      Le barriere sintetiche della Pessa Studio, invece, hanno lo stesso peso di quelle in abete, ma perdono il loro
-      colore solamente dopo anni, non si scrostano e, solo raramente, si rompono sotto l'azione di un carico eccessivo.
-    </p>
-    <Product
-      as={Product}
-      image={require("../../images/barriere.jpg")}
-      name="Candeliere 1.7 mt. Piede in alluminio"
-      price={35}
-    />
+    <Row>
+      <Col md={7}>
+        <Header>{formatMessage({ id: "BARRIERE_title" })}</Header>
+        <FormattedHTMLMessage id="BARRIERE_description" />
+      </Col>
+      <Col
+        as={Product}
+        ratio={Ratio.HORIZONTAL}
+        description={formatMessage({ id: "BARRIERE_product_description" })}
+        image={require("../../images/barriere.jpg")}
+        name={formatMessage({ id: "BARRIERE_product_title" })}
+        price={35}
+        weight={9.75}
+        length={3000}
+        diameter={95}
+        colors={[Colors.BLU, Colors.GREEN, Colors.RED, Colors.WHITE, Colors.YELLOW]}
+      />
+    </Row>
   </div>
 )
 
-export default Barriere
+export default injectIntl(Barriere)

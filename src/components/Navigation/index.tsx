@@ -28,13 +28,13 @@ const Navigation = ({ intl: { formatMessage } }) => {
         <Logo small={isFloating} />
       </Navbar.Brand>
 
-      <Navbar.Toggle aria-controls="menu" aria-label={formatMessage({ id: `NAVIGATION_toggle-button` })} />
+      <Navbar.Toggle aria-controls="menu" aria-label={formatMessage({ id: `GENERAL__toggle-button` })} />
 
       <Navbar.Collapse id="menu">
         <Nav className="ml-auto">
           {PAGES_IDS.map(id => (
-            <Nav.Link to={`/${id}/`} as={Link} key={id} activeClassName="active" className={`${id === "contatti" && styles.contact}`}>
-              {formatMessage({ id: `NAVIGATION_${id}` })}
+            <Nav.Link to={`/${id}/`} as={Link} key={id} activeClassName="active" className={`${(id === 'contatti') && "text-muted"}`}>
+              {formatMessage({ id: `NAVIGATION__${id}` })}
             </Nav.Link>
           ))}
           <LanguageSelector />

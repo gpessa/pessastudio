@@ -27,7 +27,7 @@ function Seo({ description, lang, meta, keywords, fragments, intl: { formatMessa
     `
   )
 
-  const title = formatMessage({ id: `NAVIGATION_${fragments[fragments.length - 1].id}` })
+  const title = formatMessage({ id: `NAVIGATION__${fragments[fragments.length - 1].id}` })
   const metaDescription = description || site.siteMetadata.description
 
   return (
@@ -95,7 +95,7 @@ Seo.defaultProps = {
 Seo.propTypes = {
   intl: PropTypes.any,
   description: PropTypes.string,
-  lang: PropTypes.string,
+  lang: PropTypes.string.isRequired,
   meta: PropTypes.arrayOf(PropTypes.object),
   keywords: PropTypes.arrayOf(PropTypes.string),
   fragments: PropTypes.array.isRequired,

@@ -1,4 +1,10 @@
-const PRODUCT_IDS: string[] = ["ostacoli", "recinti-e-fondi", "tondini", "giostre", "dressage"]
+const PRODUCT_IDS: string[] = [
+  "ostacoli",
+  "recinti",
+  "tondini",
+  "giostre",
+  "dressage",
+]
 
 const PAGES_IDS: string[] = [...PRODUCT_IDS, "contatti"]
 

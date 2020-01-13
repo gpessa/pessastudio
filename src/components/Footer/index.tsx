@@ -20,7 +20,7 @@ const Footer = ({ intl: { formatMessage } }) => (
       <Section>
         <Row>
           <Col md={6} lg={{ span: 4 }} className="mb-5 mb-md-0">
-            <h5>{formatMessage({ id: "CONTACT_title" })}</h5>
+            <h5>{formatMessage({ id: "NAVIGATION__contatti" })}</h5>
             
             <Address
               name="PESSASTUDIO Horse Tecnology srl"

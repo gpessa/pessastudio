@@ -1,12 +1,17 @@
-import { injectIntl } from "gatsby-plugin-intl"
-import React from "react"
+import { injectIntl } from 'gatsby-plugin-intl';
+import { IntlFormatters } from "react-intl";
+import React from 'react';
 
-import { Section } from "../components"
+import { faFrown } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-const NotFound = ({ intl: { formatMessage } }) => (
+import { Section } from '../components';
+
+const NotFound: React.FC<{ intl: IntlFormatters }> = ({ intl: { formatMessage } }) => (
   <Section className="text-center">
-    <h1>Pagina non trovata</h1>
-    <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
+    <h1>{formatMessage({ id: "404_title" })}</h1>
+    <FontAwesomeIcon icon={faFrown} size="7x" className="mb-4" />
+    <p>{formatMessage({ id: "404_text" })}</p>
   </Section>
 )
 

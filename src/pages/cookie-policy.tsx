@@ -1,12 +1,12 @@
 import React from "react"
 import { Section, SubSection, Header } from "../components"
 import { injectIntl } from "gatsby-plugin-intl"
+import { IntlFormatters } from "react-intl";
 
-const CookiePolicy = ({ intl: { formatMessage } }) => (
+const CookiePolicy: React.FC<{ intl: IntlFormatters }> = ({ intl: { formatMessage } }) => (
   <>
     <Section>
       <h1>INFORMATIVA PRIVACY</h1>
-
       <p>Scopo di questa Politica sulla privacy è di informarvi in merito ai dati che vengono raccolti su di voi, all’utilizzo che ne possiamo fare ed al modo in cui tali informazioni possono essere corrette o modificate.</p>
 
       <section className="mt-5">

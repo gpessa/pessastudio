@@ -1,7 +1,6 @@
 {
-  "NAVIGATION_ostacoli": "Obstacles",
-  "NAVIGATION_recinti-e-fondi": "Clôtures et geo-textile",
-  "NAVIGATION_tondini": "Tondini",
-  "NAVIGATION_giostre": "Marcheur pour chevaux",
-  "NAVIGATION_dressage": "Rond de longe"
+  "NAVIGATION__ostacoli": "Obstacles",
+  "NAVIGATION__tondini": "Tondini",
+  "NAVIGATION__giostre": "Marcheur pour chevaux",
+  "NAVIGATION__dressage": "Rond de longe"
 }

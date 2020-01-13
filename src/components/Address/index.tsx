@@ -1,10 +1,11 @@
 import React from "react"
-import { faPhone, faEnvelope } from "@fortawesome/free-solid-svg-icons"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faPhone, faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faWhatsapp } from '@fortawesome/free-brands-svg-icons';
 
 import * as styles from "./styles.module.scss"
 
-const Address = ({ name, country, addressLocality, postalCode, addressRegion, streetAddress, telephoneMobile, email }: Props) => {
+const Address = ({ name, country, addressLocality, whatsapp, postalCode, addressRegion, streetAddress, telephoneMobile, email }: Props) => {
   const hasAddress = streetAddress != undefined
 
   return (
@@ -37,6 +38,13 @@ const Address = ({ name, country, addressLocality, postalCode, addressRegion, st
         </div>
       )}
 
+      {whatsapp && (
+        <div className="mt-2">
+          <a className={styles.link} href={`https://wa.me/15551234567:${whatsapp}`}>
+            <FontAwesomeIcon icon={faWhatsapp} className="mr-2" /> {whatsapp}</a>
+        </div>
+      )}
+
       {email && (
         <div className="mt-2">
           <a className={styles.link} itemProp="email" href={`mailto:${email}`}>
@@ -53,6 +61,7 @@ interface Props {
   name?: string
   email?: string
   country?: string
+  whatsapp?: string
   postalCode?: string
   addressRegion?: string
   streetAddress?: string

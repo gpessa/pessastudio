@@ -1,18 +1,21 @@
-import { injectIntl } from "gatsby-plugin-intl"
-import React from "react"
+import { withPrefix } from 'gatsby';
+import { injectIntl } from 'gatsby-plugin-intl';
+import React from 'react';
+import { Col, Row } from 'react-bootstrap';
+import { IntlFormatters } from "react-intl";
 
-import { Columns, ContentTable, Gallery, Header, PdfIcon, Section } from "../components"
+import { Columns, ContentTable, Gallery, Header, Section } from '../../components';
 
-const Tondini = ({ intl: { formatMessage } }) => {
+const Tondini: React.FC<{ intl: IntlFormatters }> = ({ intl: { formatMessage } }) => {
   const DIMENSIONS = [16, 18, 20, 22, 24]
 
   const IMAGES = [
-    { caption: formatMessage({ id: `TONDINO_image_1` }), src: require("../images/product/tondini/tondino-1.jpg") },
-    { caption: formatMessage({ id: `TONDINO_image_2` }), src: require("../images/product/tondini/tondino-2.jpg") },
-    { caption: formatMessage({ id: `TONDINO_image_3` }), src: require("../images/product/tondini/tondino-3.jpg") },
-    { caption: formatMessage({ id: `TONDINO_image_4` }), src: require("../images/product/tondini/tondino-4.jpg") },
-    { caption: formatMessage({ id: `TONDINO_image_5` }), src: require("../images/product/tondini/tondino-5.jpg") },
-    { caption: formatMessage({ id: `TONDINO_image_6` }), src: require("../images/product/tondini/tondino-6.jpg") },
+    { caption: formatMessage({ id: `TONDINO__gallery__image-0` }), src: require("../../images/product/tondini/tondino-0.jpg") },
+    { caption: formatMessage({ id: `TONDINO__gallery__image-1` }), src: require("../../images/product/tondini/tondino-1.jpg") },
+    { caption: formatMessage({ id: `TONDINO__gallery__image-2` }), src: require("../../images/product/tondini/tondino-2.jpg") },
+    { caption: formatMessage({ id: `TONDINO__gallery__image-3` }), src: require("../../images/product/tondini/tondino-3.jpg") },
+    { caption: formatMessage({ id: `TONDINO__gallery__image-4` }), src: require("../../images/product/tondini/tondino-4.jpg") },
+    { caption: formatMessage({ id: `TONDINO__gallery__image-5` }), src: require("../../images/product/tondini/tondino-5.jpg") },
   ]
 
   return (
@@ -56,37 +59,30 @@ const Tondini = ({ intl: { formatMessage } }) => {
         right={<Gallery images={IMAGES} />}
       />
 
-      <Section>
-        <Header>Come preparare il terreno</Header>
-        <p>Prima del montaggio il terreno deve essere preparato seguendo le istruzioni sotto elencate:</p>
-        <ul>
-          <li>Spianare il terreno su un'area corrispondente al diametro del tondino indicata sul disegno</li>
-          <li>Distendere su quest'area un foglio di geotessuto</li>
-          <li>
-            Creare una piattaforma alta 7 centimetri di stabilizzato (diametro delle pietre 3-4 centimetri) quindi
-            comprimerlo per compattarlo
-          </li>
-          <li>
-            Infine, dopo aver montato il tondino stendere circa 10 centimetri di sabbia (grammatura 1/1,5 millimetri)
-          </li>
-        </ul>
-      </Section>
-
       <Section className="bg-light">
-        <Header>Supporto clienti</Header>
-
-        <ContentTable
-          title="Dimensioni tondini"
-          headers={["Dimensione", "Scarica"]}
-          rows={DIMENSIONS.map(dimension => ({
-            label: formatMessage({ id: `TONDINO_dimension_${dimension}` }),
-            link: (
-              <a target="_blank" href={`/tondino-${dimension}.pdf`}>
-                <PdfIcon />
-              </a>
-            ),
-          }))}
-        />
+        <Header>{formatMessage({ id: "GENERAL_client-service" })}</Header>
+        <Row>
+          <Col md={6}>
+            <ContentTable
+              title={formatMessage({ id: "GENERAL__dimensioni" })}
+              rows={DIMENSIONS.map(dimension => ({
+                label: formatMessage({ id: `TONDINO__dimensioni-${dimension}` }),
+                file: withPrefix(`/tondino-${dimension}.pdf`)
+              }))}
+            />
+          </Col>
+          <Col md={6}>
+            <ContentTable
+              title={formatMessage({ id: "GENERAL__manauli" })}
+              rows={[
+                {
+                  label: "Come preparare il fondo",
+                  link: "/tondini/come-preparare-il-fondo",
+                }
+              ]}
+            />
+          </Col>
+        </Row>
       </Section>
     </>
   )

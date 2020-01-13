@@ -23,8 +23,7 @@ const Color = ({ colors }: { colors?: Colors[] }) =>
     </div>
   )
 
-const Description = ({ description }: { description?: string }) =>
-  !description ? null : <div className="mb-1">{description}</div>
+const Description = ({ description }: { description: string | ReactNode | null }) => (!description ? null : <p>{description}</p>)
 
 const Data = injectIntl(
   ({ value, label, intl: { formatMessage } }: { value: number; label: string; unit: string; intl: any }) => (
@@ -34,23 +33,7 @@ const Data = injectIntl(
   )
 )
 
-const Product = ({
-  image,
-  url,
-  name,
-  width,
-  height,
-  material,
-  depth,
-  weight,
-  colors,
-  thickness,
-  length,
-  price,
-  description,
-  className,
-  intl: { formatMessage, formatNumber },
-}: Props) => {
+const Product = ({ image, url, name, width, height, diameter,  weight, colors, thickness, length, price, ratio, description, className }: Props) => {
   const Tag = url ? Link : "div"
 
   return (
@@ -62,13 +45,12 @@ const Product = ({
 
         <Description description={description} />
 
-        {material && <Data label="PRODUCT_material" value={material} />}
-        {width && <Data label="PRODUCT_width" value={`${formatNumber(width)} cm.`} />}
-        {height && <Data label="PRODUCT_height" value={`${formatNumber(height)} cm.`} />}
-        {length && <Data label="PRODUCT_length" value={`${formatNumber(length)} cm.`} />}
-        {depth && <Data label="PRODUCT_depth" value={`${formatNumber(depth)} cm.`} />}
-        {thickness && <Data label="PRODUCT_thickness" value={`${formatNumber(thickness)} cm.`} />}
-        {weight && <Data label="PRODUCT_weight" value={`${formatNumber(weight)} kg.`} />}
+        <Data value={thickness} label="PRODUCT__attributo__thickness" unit="mm" />
+        <Data value={weight} label="PRODUCT__attributo__weight" unit="kg" />
+        <Data value={length} label="PRODUCT__attributo__length" unit="mm" />
+        <Data value={height} label="PRODUCT__attributo__height" unit="mm" />
+        <Data value={width} label="PRODUCT__attributo__width" unit="mm" />
+        <Data value={diameter} label="PRODUCT__attributo__diameter" unit="mm" />
 
         <Color colors={colors} />
 
@@ -81,12 +63,13 @@ const Product = ({
 interface Props {
   className?: string
   colors?: Colors[]
-  description?: string | ReactNode
+  description?: string | ReactNode | null
   weight?: number
   height?: number
   thickness?: number
   width?: number
   length?: number
+  diameter?: number
   price?: number
   image: string
   name: string
