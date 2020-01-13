@@ -32,44 +32,44 @@ const Recinti = ({ intl: { formatMessage } }) => {
 
   const PRODUCTS = [
     { 
-      name: formatMessage({ id: `RECINTI_product-recinzione-1-filagna-name` }),
       description: formatMessage({ id: `RECINTI_product-recinzione-1-filagna-description` }),
-      colors: [Colors.WHITE],
+      name: formatMessage({ id: `RECINTI_product-recinzione-1-filagna-name` }),
       image: require("../../images/product/recinti/recinto-1-filagna.jpg"),
+      colors: [Colors.WHITE],
       height: 120
     },
     { 
-      name: formatMessage({ id: `RECINTI_product-recinzione-2-filagne-name` }),
       description: formatMessage({ id: `RECINTI_product-recinzione-2-filagne-description` }),
-      colors: [Colors.WHITE],
+      name: formatMessage({ id: `RECINTI_product-recinzione-2-filagne-name` }),
       image: require("../../images/product/recinti/recinto-2-filagna.jpg"),
+      colors: [Colors.WHITE],
       height: 135
     },
     { 
-      name: formatMessage({ id: `RECINTI_product-recinzione-3-filagne-name` }),
       description: formatMessage({ id: `RECINTI_product-recinzione-3-filagne-description` }),
-      colors: [Colors.WHITE],
+      name: formatMessage({ id: `RECINTI_product-recinzione-3-filagne-name` }),
       image: require("../../images/product/recinti/recinto-3-filagna.jpg"),
+      colors: [Colors.WHITE],
       height: 160
     },
     { 
-      name: formatMessage({ id: `RECINTI_product-recinzione-4-filagne-name` }),
       description: formatMessage({ id: `RECINTI_product-recinzione-4-filagne-description` }),
-      colors: [Colors.WHITE],
+      name: formatMessage({ id: `RECINTI_product-recinzione-4-filagne-name` }),
       image: require("../../images/product/recinti/recinto-4-filagna.jpg"),
+      colors: [Colors.WHITE],
       height: 190
     },
     { 
-      name: formatMessage({ id: `RECINTI_product-recinzione-bordo-pista-name` }),
       description: formatMessage({ id: `RECINTI_product-recinzione-bordo-pista-description` }),
-      colors: [Colors.WHITE],
-      image: require("../../images/product/recinti/bordo-pista.jpg")
+      name: formatMessage({ id: `RECINTI_product-recinzione-bordo-pista-name` }),
+      image: require("../../images/product/recinti/bordo-pista.jpg"),
+      colors: [Colors.WHITE]
     },
     {
-      name: formatMessage({ id: `RECINTI_product-piede-mobile-name` }),
       description: formatMessage({ id: `RECINTI_product-piede-mobile-description` }),
-      colors: [Colors.GREEN],
+      name: formatMessage({ id: `RECINTI_product-piede-mobile-name` }),
       image: require("../../images/product/recinti/piede-mobile.jpg"),
+      colors: [Colors.GREEN],
       height: 30
     }
   ]

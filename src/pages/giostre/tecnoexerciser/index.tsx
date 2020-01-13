@@ -1,10 +1,10 @@
-import { injectIntl } from "gatsby-plugin-intl"
-import React from "react"
-import { Col, Row } from "react-bootstrap"
+import { withPrefix } from 'gatsby';
+import { injectIntl } from 'gatsby-plugin-intl';
+import React from 'react';
+import { Col, Row } from 'react-bootstrap';
 
-import { Columns, ContentTable, Header, PdfIcon, Product, Section, Gallery, Seo } from "../../../components"
-import { Ratio } from "../../../constants"
-import { withPrefix } from "gatsby"
+import { Columns, ContentTable, Gallery, Header, Product, Section } from '../../../components';
+import { Ratio } from '../../../constants';
 
 const Tecnoexerciser = ({ intl: { formatMessage } }) => {
   const IMAGES = [
@@ -27,6 +27,49 @@ const Tecnoexerciser = ({ intl: { formatMessage } }) => {
   ]
 
   const DIMENSIONS = [15, 18, 20, 22, 24]
+
+  const PRODUCTS = [
+    {
+      image: require("../../../images/product/giostre/tecnoexerciser/gamma/solo-motore.jpg"),
+      name: "Giostra",
+      description:
+        <>
+          <p>L'opzione semplice ed economica</p>
+          <ul>
+            <li>Giostra da 4 o 6 cavalli</li>
+            <li>Diametro da 12 mt. o 14.2 mt.</li>
+            <li>Cadenza compresa fra 60 e 210 metri al minuto</li>
+            <li>Potenza motore 0.37 kw</li>
+          </ul>
+        </>
+    },
+    {
+      image: require("../../../images/product/giostre/tecnoexerciser/gamma/con-corridoio-coperto.jpg"),
+      name: "Giostra con corridoio Coperto",
+      description:
+        <>
+          <ul>
+            <li>Giostra da 4 o 6 cavalli</li>
+            <li>Diametro da 12 mt. o 14.2 mt.</li>
+            <li>Cadenza compresa fra 60 e 210 metri al minuto</li>
+            <li>Potenza motore 0.37 kw</li>
+          </ul>
+        </>
+    },
+    {
+      image: require("../../../images/product/giostre/tecnoexerciser/gamma/con-corridoio-tecnofence.jpg"),
+      name: "Giostra con corridoio tecnofence",
+      description:
+        <>
+          <ul>
+            <li>Giostra da 4 o 6 cavalli</li>
+            <li>Diametro da 12 mt. o 14.2 mt.</li>
+            <li>Cadenza compresa fra 60 e 210 metri al minuto</li>
+            <li>Potenza motore 0.37 kw</li>
+          </ul>
+        </>
+    }
+  ]
 
   return (
     <>
@@ -54,57 +97,14 @@ const Tecnoexerciser = ({ intl: { formatMessage } }) => {
         <p>E' possibile acquistare la giostra senza la recinzione o puoi scegliere tra due tipologie di recinzioni disponibili: FLAT o con corridoio TECNOFENCE (da 2 o 4 filagne).</p>
 
         <Row>
-          <Col
-            as={Product}
-            ratio={Ratio.HORIZONTAL}
-            image={require("../../../images/product/giostre/tecnoexerciser/gamma/solo-motore.jpg")}
-            name="Giostra"
-            description={
-              <>
-                <p>L'opzione semplice ed economica</p>
-                <ul>
-                  <li>Giostra da 4 o 6 cavalli</li>
-                  <li>Diametro da 12 mt. o 14.2 mt.</li>
-                  <li>Cadenza compresa fra 60 e 210 metri al minuto</li>
-                  <li>Potenza motore 0.37 kw</li>
-                </ul>
-              </>
-            }
-          />
-
-          <Col
-            as={Product}
-            ratio={Ratio.HORIZONTAL}
-            image={require("../../../images/product/giostre/tecnoexerciser/gamma/con-corridoio-tecnofence.jpg")}
-            name="Giostra con corridoio Tecnofence"
-            description={
-              <>
-                <ul>
-                  <li>Giostra da 4 o 6 cavalli</li>
-                  <li>Diametro da 12 mt. o 14.2 mt.</li>
-                  <li>Cadenza compresa fra 60 e 210 metri al minuto</li>
-                  <li>Potenza motore 0.37 kw</li>
-                </ul>
-              </>
-            }
-          />
-
-          <Col
-            as={Product}
-            ratio={Ratio.HORIZONTAL}
-            image={require("../../../images/product/giostre/tecnoexerciser/gamma/con-corridoio-flat.jpg")}
-            name="Giostra con corridoio Flat"
-            description={
-              <>
-                <ul>
-                  <li>Giostra da 4 o 6 cavalli</li>
-                  <li>Diametro da 12 mt. o 14.2 mt.</li>
-                  <li>Cadenza compresa fra 60 e 210 metri al minuto</li>
-                  <li>Potenza motore 0.37 kw</li>
-                </ul>
-              </>
-            }
-          />
+          {PRODUCTS.map((product, index) => (
+            <Col
+              key={index}
+              as={Product}
+              ratio={Ratio.HORIZONTAL}
+              {...product}
+            />
+          ))}
         </Row>
       </Section>
 

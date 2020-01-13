@@ -8,7 +8,7 @@ const Giostre = ({ intl: { formatMessage } }) => (
   <>
     <Hero image={require("../../images/background-giostre.jpg")} />
 
-    <Section>
+    <Section className="bg-light">
       <h1>Giostre</h1>
 
       <p>Le giostre rappresentano il punto di forza della nostra azienda e, a darne dimostrazione, sono le oltre 3000 giostre ancora funzionanti installate in tutta Europa</p>
@@ -27,7 +27,7 @@ const Giostre = ({ intl: { formatMessage } }) => (
       </ul>
     </Section>
 
-    <div>
+    <Section fluid className="pb-0">
       <Container>
         <Header>{formatMessage({ id: "GENERAL_gamma" })}</Header>
         <p>Due sono i modelli di giostra che proponiamo. <Link to="/giostre/tecnoexerciser">{formatMessage({ id: "NAVIGATION_tecnoexerciser" })}</Link>, prodotta da oltre 20 anni, e <Link to="/giostre/ippowalker">{formatMessage({ id: "NAVIGATION_ippowalker" })}</Link>, realizzata per rispondere alle esigenze di un mercato che richiede un prodotto affidabile e al tempo stesso economico.</p>
@@ -35,23 +35,23 @@ const Giostre = ({ intl: { formatMessage } }) => (
 
       <Columns
         left={
-          <div className="text-center py-4">
+          <div className="text-center py-5">
             <h3>{formatMessage({ id: "NAVIGATION_tecnoexerciser" })}</h3>
-            <Button as={Link} to="/giostre/tecnoexerciser" variant="light">
+            <Button as={Link} to="/giostre/tecnoexerciser" variant="light" size="lg">
               {formatMessage({ id: "GIOSTRE_discover-more" })}
             </Button>
           </div>
         }
         right={
-          <div className="text-center py-4">
+          <div className="text-center py-5">
             <h3>{formatMessage({ id: "NAVIGATION_ippowalker" })}</h3>
-            <Button as={Link} to="/giostre/ippowalker" variant="primary">
+            <Button as={Link} to="/giostre/ippowalker" variant="primary" size="lg">
               {formatMessage({ id: "GIOSTRE_discover-more" })}
             </Button>
           </div>
         }
       />
-    </div>
+    </Section>
   </>
 )
 
