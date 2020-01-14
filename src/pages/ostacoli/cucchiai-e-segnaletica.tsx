@@ -53,7 +53,7 @@ const CucchiaiSegnaletica: React.FC<{ intl: IntlFormatters }> = ({ intl: { forma
   ]
 
   return (
-    <Section>
+    <>
       <Header>{formatMessage({ id: "OSTACOLI__cucchiai-e-segnaletica__title" })}</Header>
       <FormattedHTMLMessage id="OSTACOLI__cucchiai-e-segnaletica__text" />
       <Row>
@@ -65,7 +65,7 @@ const CucchiaiSegnaletica: React.FC<{ intl: IntlFormatters }> = ({ intl: { forma
           />
         ))}
       </Row>
-    </Section>
+    </>
   )
 }
 

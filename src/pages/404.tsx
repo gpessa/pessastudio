@@ -9,9 +9,9 @@ import { Section } from '../components';
 
 const NotFound: React.FC<{ intl: IntlFormatters }> = ({ intl: { formatMessage } }) => (
   <Section className="text-center">
-    <h1>{formatMessage({ id: "404_title" })}</h1>
+    <h1>{formatMessage({ id: "404__title" })}</h1>
     <FontAwesomeIcon icon={faFrown} size="7x" className="mb-4" />
-    <p>{formatMessage({ id: "404_text" })}</p>
+    <p>{formatMessage({ id: "404__text" })}</p>
   </Section>
 )
 

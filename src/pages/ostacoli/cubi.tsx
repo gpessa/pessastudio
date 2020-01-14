@@ -3,7 +3,7 @@ import React from 'react';
 import { Col, Row } from 'react-bootstrap';
 import { IntlFormatters } from 'react-intl';
 
-import { Header, Product, Section } from '../../components';
+import { Header, Product } from '../../components';
 import { Colors } from '../../constants';
 
 const Cubi: React.FC<{ intl: IntlFormatters }> = ({ intl: { formatMessage } }) => {
@@ -31,22 +31,20 @@ const Cubi: React.FC<{ intl: IntlFormatters }> = ({ intl: { formatMessage } }) =
   ]
 
   return (
-    <Section>
-      <Row>
-        <Col>
-          <Header>{formatMessage({ id: "OSTACOLI__cubi__title" })}</Header>
-          {formatMessage({ id: "OSTACOLI__cubi__text" })}
-        </Col>
-        {PRODUCTS.map((product, index) => (
-          <Col
-            as={Product}
-            key={index}
-            md={3}
-            {...product}
-          />
-        ))}
-      </Row>
-    </Section>
+    <Row>
+      <Col>
+        <Header>{formatMessage({ id: "OSTACOLI__cubi__title" })}</Header>
+        {formatMessage({ id: "OSTACOLI__cubi__text" })}
+      </Col>
+      {PRODUCTS.map((product, index) => (
+        <Col
+          as={Product}
+          key={index}
+          md={3}
+          {...product}
+        />
+      ))}
+    </Row>
   )
 }
 

@@ -77,7 +77,7 @@ const Ippowalker: React.FC<{ intl: IntlFormatters }> = ({ intl: { formatMessage 
       <Columns
         left={
           <>
-            <h1>Giostra IppoWalker</h1>
+            <h1>{formatMessage({ id: "NAVIGATION__ippowalker" })}</h1>
             <p>Ippowalker è una giostra di recente realizzazione semplice, essenziale, di conseguenza più economica ma costruita con la qualità e la robustezza che contraddistingue tutti i nostri prodotti.</p>
             <p>Le braccia sono dotate di elettrificazione.</p>
             <p>Il motore produce una potenza di 0,37 kw e permette una cadenza compresa fra 60 e 210 metri al minuto.</p>
@@ -88,7 +88,7 @@ const Ippowalker: React.FC<{ intl: IntlFormatters }> = ({ intl: { formatMessage 
       />
 
       <Section>
-        <Header>La gamma</Header>
+        <Header>{formatMessage({ id: "GENERAL__gamma" })}</Header>
         <p>E' possibile acquistare la giostra senza la recinzione o puoi scegliere tra due tipologie di recinzioni disponibili: FLAT o con corridoio TECNOFENCE (da 2 o 4 filagne).</p>
 
         <Row>
@@ -104,7 +104,7 @@ const Ippowalker: React.FC<{ intl: IntlFormatters }> = ({ intl: { formatMessage 
       </Section>
 
       <Section className="bg-light">
-        <Header>{formatMessage({ id: "GENERAL_client-service" })}</Header>
+        <Header>{formatMessage({ id: "GENERAL__client-service" })}</Header>
 
         <Row>
           <Col md={6}>
@@ -124,15 +124,15 @@ const Ippowalker: React.FC<{ intl: IntlFormatters }> = ({ intl: { formatMessage 
               title={formatMessage({ id: "GENERAL__manauli" })}
               rows={[
                 {
-                  label: "Manuale quadro di controllo",
+                  label: formatMessage({ id: "GIOSTRE__manuali__manuale-quadro" }),
                   file: withPrefix(`/giostra-ippowalker-manuale-quadro.pdf`)
                 },
                 {
-                  label: "Manuale collegamento elettrico",
+                  label: formatMessage({ id: "GIOSTRE__manuali__manuale-collegamento-elettrico" }),
                   file: withPrefix(`/giostra-collegamento-elettrico.pdf`)
                 },
                 {
-                  label: "Istruzioni di montaggio",
+                  label: formatMessage({ id: "GIOSTRE__manuali__istruzioni-montaggio" }),
                   link: withPrefix(`/giostre/ippowalker/istruzioni-montaggio`)
                 },
               ]}

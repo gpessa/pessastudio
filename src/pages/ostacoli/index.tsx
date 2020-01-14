@@ -1,4 +1,4 @@
-import { injectIntl, FormattedHTMLMessage } from 'gatsby-plugin-intl';
+import { FormattedHTMLMessage, injectIntl } from 'gatsby-plugin-intl';
 import React from 'react';
 import { IntlFormatters } from 'react-intl';
 
@@ -29,11 +29,17 @@ const Ostacoli: React.FC<{ intl: IntlFormatters }> = ({ intl: { formatMessage } 
       <Cavalletti />
     </Section>
 
-    <Cubi />
+    <Section>
+      <Cubi />
+    </Section>
 
-    <CandelieriLameForate className="bg-light"/>
+    <Section className="bg-light">
+      <CandelieriLameForate />
+    </Section>
 
-    <CucchiaiSegnaletica />
+    <Section>
+      <CucchiaiSegnaletica />
+    </Section>
   </>
 )
 

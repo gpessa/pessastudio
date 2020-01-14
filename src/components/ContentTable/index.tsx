@@ -1,5 +1,5 @@
 import React from 'react';
-import { Table } from 'react-bootstrap';
+import { Table, Button } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFilePdf, faEye } from '@fortawesome/free-solid-svg-icons';
 import { Link, injectIntl } from "gatsby-plugin-intl"
@@ -11,25 +11,23 @@ const ContentTable = ({ rows, title, intl: { formatMessage }  }: Props) => (
       <tbody>
         {rows.map(({ label, link, file }, index) => (
           <tr key={index}>
-            <td>{label}</td>
+            <td style={{ verticalAlign: 'middle' }}>{label}</td>
 
-            {link && (
-              <td className="text-center">
-                <Link to={link}>
-                  {formatMessage({id: "GENERAL_view" })} {" "}
-                  <FontAwesomeIcon icon={faEye} className="text-primary" />
-                </Link>
-              </td>
-            )}
+            <td className="text-right">
+              {link && (
+                <Button as={Link} to={link} size="sm" variant="link">
+                  {formatMessage({id: "GENERAL__view" })} {" "}
+                  <FontAwesomeIcon icon={faEye} className="text-dark" />
+                </Button>
+              )}
 
-            {file && (
-              <td className="text-center">
-                <a href={file} target="_blank">
-                  {formatMessage({id: "GENERAL_download" })} {" "}
+              {file && (
+                <Button href={file} target="_blank" size="sm" as="a" variant="link">
+                  {formatMessage({id: "GENERAL__download" })} {" "}
                   <FontAwesomeIcon icon={faFilePdf} className="text-danger" />
-                </a>
+                </Button>
+                )}
               </td>
-            )}
 
           </tr>
         ))}

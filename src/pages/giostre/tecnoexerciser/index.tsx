@@ -1,12 +1,13 @@
 import { withPrefix } from 'gatsby';
 import { injectIntl } from 'gatsby-plugin-intl';
+import { IntlFormatters } from 'react-intl';
 import React from 'react';
 import { Col, Row } from 'react-bootstrap';
 
 import { Columns, ContentTable, Gallery, Header, Product, Section } from '../../../components';
 import { Ratio } from '../../../constants';
 
-const Tecnoexerciser = ({ intl: { formatMessage } }) => {
+const Tecnoexerciser: React.FC<{ intl: IntlFormatters }> = ({ intl: { formatMessage } }) => {
   const IMAGES = [
     {
       src: require("../../../images/product/giostre/tecnoexerciser/galleria/giostra.jpg"),
@@ -76,7 +77,7 @@ const Tecnoexerciser = ({ intl: { formatMessage } }) => {
       <Columns
         left={
           <>
-            <h1>Giostra Tecnoexerciser</h1>
+            <h1>{formatMessage({ id: "NAVIGATION__tecnoexerciser" })}</h1>
             <p>Tecnoexerciser è il modello di giostra attualmente più richiesto.</p>
             <p>Oggi, alle già note caratteristiche tecniche e alla grande affidabilità, abbiamo aggiunto anche alcune specifiche funzioni che fanno della giostra Tecnoexcerciser una macchina "leader" nel settore.</p>
             <p>E' possibile infatti:</p>
@@ -109,7 +110,7 @@ const Tecnoexerciser = ({ intl: { formatMessage } }) => {
       </Section>
 
       <Section className="bg-light">
-        <Header>{formatMessage({ id: "GENERAL_client-service" })}</Header>
+        <Header>{formatMessage({ id: "GENERAL__client-service" })}</Header>
 
         <Row>
           <Col md={6}>
@@ -127,19 +128,19 @@ const Tecnoexerciser = ({ intl: { formatMessage } }) => {
               title={formatMessage({ id: "GENERAL__manauli" })}
               rows={[
                 {
-                  label: "Manuale quadro di controllo",
+                  label: formatMessage({ id: "GIOSTRE__manuali__manuale-quadro" }),
                   file: withPrefix(`/giostra-tecnoexerciser-manuale-quadro.pdf`)
                 },
                 {
-                  label: "Manuale collegamento elettrico",
+                  label: formatMessage({ id: "GIOSTRE__manuali__manuale-collegamento-elettrico" }),
                   file: withPrefix(`/giostra-collegamento-elettrico.pdf`)
                 },
                 {
-                  label: "Istruzioni di montaggio",
+                  label: formatMessage({ id: "GIOSTRE__manuali__istruzioni-montaggio" }),
                   link: "/giostre/tecnoexerciser/istruzioni-montaggio",
                 },
                 {
-                  label: "Procedura lubrificazione",
+                  label: formatMessage({ id: "GIOSTRE__manuali__procedura-lubrificazione" }),
                   link: "https://www.youtube.com/watch?v=QMA4wPxq_ow",
                 },
               ]}
@@ -150,5 +151,4 @@ const Tecnoexerciser = ({ intl: { formatMessage } }) => {
     </>
   )
 }
-
 export default injectIntl(Tecnoexerciser)

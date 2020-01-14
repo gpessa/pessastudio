@@ -5,7 +5,7 @@ import { Col, Row } from 'react-bootstrap';
 import { Header, Product, Section } from '../../components';
 import { Ratio, Material } from '../../constants';
 
-const CandelieriLameForate = ({ className, intl: { formatMessage } }: { className?: string, intl: any }) => {
+const CandelieriLameForate = ({ intl: { formatMessage } }: { intl: any }) => {
   const PRODUCTS = [
     {
       name: formatMessage({ id: "OSTACOLI__candelieri-e-lame__prodotto__candeliere-alluminio__name" }),
@@ -48,7 +48,7 @@ const CandelieriLameForate = ({ className, intl: { formatMessage } }: { classNam
   ]
 
   return (
-    <Section className={className}>
+    <>
       <Header>{formatMessage({ id: "OSTACOLI__barriere__title" })}</Header>
       <FormattedHTMLMessage id="OSTACOLI__barriere__text" />
       <Row>
@@ -61,8 +61,7 @@ const CandelieriLameForate = ({ className, intl: { formatMessage } }: { classNam
           />
         ))}
       </Row>  
-    
-    </Section>
+    </>
   )
 }
 

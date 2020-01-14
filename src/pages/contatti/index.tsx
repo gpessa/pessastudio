@@ -12,7 +12,7 @@ const Contatti: React.FC<{ intl: IntlFormatters }> = ({ intl: { formatMessage } 
         <h1>{formatMessage({ id: 'NAVIGATION__contatti' })}</h1>
 
         <section className="mb-5">
-          <h4>{formatMessage({ id: 'CONTACT_sede-legale' })}</h4>
+          <h4>{formatMessage({ id: 'CONTACT__sede-legale' })}</h4>
           <Address
             name="PESSASTUDIO Horse Tecnology srl"
             country="Italy"
@@ -29,7 +29,7 @@ const Contatti: React.FC<{ intl: IntlFormatters }> = ({ intl: { formatMessage } 
         </section>
 
         <section className="mb-5">
-          <h4>{formatMessage({ id: 'CONTACT_sede-operativa' })}</h4>
+          <h4>{formatMessage({ id: 'CONTACT__sede-operativa' })}</h4>
           <Address
             name="PESSASTUDIO Horse Tecnology srl"
             country="Italy"
@@ -41,7 +41,7 @@ const Contatti: React.FC<{ intl: IntlFormatters }> = ({ intl: { formatMessage } 
         </section>
 
         <section>
-          <h4>{formatMessage({ id: 'CONTACT_bank-details' })}</h4>
+          <h4>{formatMessage({ id: 'CONTACT__bank-details' })}</h4>
           <div>
             Cassa di Risparmio del Veneto filiale di Monselice<br/>
             IBAN: IT97 M030 6962 6691 0000 0004 400<br/>
@@ -52,7 +52,7 @@ const Contatti: React.FC<{ intl: IntlFormatters }> = ({ intl: { formatMessage } 
     }
     right={
       <>
-        <Header>{formatMessage({ id: 'CONTACT_contatto-commerciale' })}</Header>
+        <Header>{formatMessage({ id: 'CONTACT__contatto-commerciale' })}</Header>
 
         <img src={require('../../images/anna.jpg')} className={`img-thumbnail rounded-circle mb-4 ${styles.selfie}`} />
 

@@ -86,7 +86,7 @@ const Recinti: React.FC<{ intl: IntlFormatters }> = ({ intl: { formatMessage } }
         left={
           <>
             <h1>{formatMessage({ id: "NAVIGATION__recinti" })}</h1>
-            <FormattedHTMLMessage id="RECINTI_text" />
+            <FormattedHTMLMessage id="RECINTI__text" />
           </>
         }
         right={<Gallery images={IMAGES} />}
@@ -98,16 +98,16 @@ const Recinti: React.FC<{ intl: IntlFormatters }> = ({ intl: { formatMessage } }
       </Section>
       
       <Section className="bg-light">
-        <Header>{formatMessage({ id: "GENERAL_client-service" })}</Header>
+        <Header>{formatMessage({ id: "GENERAL__client-service" })}</Header>
         <ContentTable
           title={formatMessage({ id: "GENERAL__manauli" })}
           rows={[
             {
-              label: formatMessage({ id: "RECINTI_handbook-prepare-the-ground" }),
+              label: formatMessage({ id: "RECINTI__manuali__preparare-il-fondo" }),
               link: "/recinti/come-preparare-il-fondo"
             },
             {
-              label: formatMessage({ id: "RECINTI_handbook-istruzioni-montaggio" }),
+              label: formatMessage({ id: "RECINTI__manuali__istruzioni-montaggio" }),
               file: withPrefix("/recinti-istruzioni-montaggio.pdf")
             }
           ]}

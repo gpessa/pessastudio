@@ -1,5 +1,5 @@
 import { withPrefix } from 'gatsby';
-import { injectIntl } from 'gatsby-plugin-intl';
+import { injectIntl, FormattedHTMLMessage } from 'gatsby-plugin-intl';
 import React from 'react';
 import { Col, Row } from 'react-bootstrap';
 import { IntlFormatters } from "react-intl";
@@ -23,19 +23,15 @@ const Tondini: React.FC<{ intl: IntlFormatters }> = ({ intl: { formatMessage } }
       <Columns
         left={
           <>
-            <h1>Tondini</h1>
-            <p>Il tondino coperto è adatto a svolgere molteplici attività, per esempio è la migliore soluzione per addestrare puledri in libertà o lavorare cavalli alla corda, aiuta a facilitare il controllo dei vostri cavalli durante le lezioni ai principianti, nelle riprese dei pony ed è indispensabile per il longeur durante le riprese di volteggi.</p>
-            <p>E' costituito da pannelli laterali di compensato marino, fissati alle colonne del perimetro di acciaio zincato.</p>
-            <p>La struttura è costituita da tubi in acciaio zincato a caldo ad alta resistenza, collegati tra loro da piastre che formano un reticolo "geodetico a cupola ribassata". E’ una struttura semplice, leggera e piacevole alla vista. La struttura viene poi coperta con un telo spalmato in pvc di cui potrete liberamente sceglierne il colore tra quelli da noi proposti: bianco, verde o crema.</p>
-            <p>La porta, che ha un’apertura standard di 2,05 mt, è fissata al suo lato sinistro con una cerniera registrabile che ne consente la regolazione. Sul lato destro un catenaccio verticale a doppio riscontro ne garantisce l’assoluta sicurezza. In zone particolarmente ventose è conveniente montare attorno al tondino una rete antivento che riduce il disturbo dell'aria al suo interno. Nel caso in cui si voglia utilizzare il tondino per l'addestramento di puledri, le pareti laterali in plywood che normalmente sono alte 1,4 metri, possono essere rialzate fino a 2 metri.</p>
-            <p>Come per le nostre giostre anche i tondini sono considerate strutture precarie e non necessitano quindi di nessuna concessione edilizia ma, in taluni casi di un semplice permesso di installazione rilasciato dall’amministrazione locale.</p>
+            <Header>{formatMessage({ id: "NAVIGATION__tondini" })}</Header>
+            <FormattedHTMLMessage id="OSTACOLI__tondini__text" />
           </>
         }
         right={<Gallery images={IMAGES} />}
       />
 
       <Section className="bg-light">
-        <Header>{formatMessage({ id: "GENERAL_client-service" })}</Header>
+        <Header>{formatMessage({ id: "GENERAL__client-service" })}</Header>
         <Row>
           <Col md={6}>
             <ContentTable
@@ -51,7 +47,7 @@ const Tondini: React.FC<{ intl: IntlFormatters }> = ({ intl: { formatMessage } }
               title={formatMessage({ id: "GENERAL__manauli" })}
               rows={[
                 {
-                  label: "Come preparare il fondo",
+                  label: formatMessage({ id: "TONDINI__manuali__preparare-il-fondo" }),
                   link: "/tondini/come-preparare-il-fondo",
                 }
               ]}
