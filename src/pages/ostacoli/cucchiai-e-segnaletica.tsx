@@ -1,85 +1,73 @@
+import { injectIntl, FormattedHTMLMessage } from 'gatsby-plugin-intl';
 import React from 'react';
 import { Col, Row } from 'react-bootstrap';
+import { IntlFormatters } from 'react-intl';
 
 import { Header, Product, Section } from '../../components';
-import { Ratio } from '../../constants';
+import { Ratio, Material } from '../../constants';
 
-const CucchiaiSegnaletica = () => (
-  <Section>
-    <Header>Cucchiai e segnaletica</Header>
-    
-    <p>Numerosi sono stati i test a cui abbiamo sottoposto i cucchiai per garantirne robustezza e durata nel tempo.</p>
-    <p>Per salvaguardare l'integrità degli arti dei vostri cavalli disponiamo di supporti di sicurezza semplici, efficaci ed economici che vengono applicati ai cucchiai.</p>
-    <p>Le barriere di abete, comunemente usate, richiedono una continua manutenzione perchè si piegano, scoloriscono nel tempo e si rompono frequentemente.</p>
+const CucchiaiSegnaletica: React.FC<{ intl: IntlFormatters }> = ({ intl: { formatMessage } }) => {
+  const PRODUCTS = [
+    {
+      name: formatMessage({ id: "OSTACOLI__cucchiai-e-segnaletica__product__cucchiaio_de" }),
+      image: require("../../images/product/ostacoli/cucchiaio-de.jpg"),
+      materials: [Material.TECNOPOLIMERO],
+      depth: 2,
+      ratio: Ratio.VERTICAL,
+      weight: 15,
+      price: 2.5,
+    },
+    {
+      name: formatMessage({ id: "OSTACOLI__cucchiai-e-segnaletica__product__supporto_di_sicurezza" }),
+      image: require("../../images/product/ostacoli/supporto.jpg"),
+      materials: [Material.PLASTICA],
+      width: 37,
+      ratio: Ratio.VERTICAL,
+      weight: 0.05,
+      price: 3.5,
+    },
+    {
+      name: formatMessage({ id: "OSTACOLI__cucchiai-e-segnaletica__product__bandierine" }),
+      image: require("../../images/product/ostacoli/bandierine.jpg"),
+      materials: [Material.PLASTICA],
+      price: 2.5,
+    },
+    {
+      name: formatMessage({ id: "OSTACOLI__cucchiai-e-segnaletica__product__numero_per_campo_ostacoli_professional" }),
+      image: require("../../images/product/ostacoli/numero-light.jpg"),
+      materials: [Material.POLIETILENE],
+      height: 30,
+      width: 20,
+      weight: 0.05,
+      price: 16,
+    },
+    {
+      name: formatMessage({ id: "OSTACOLI__cucchiai-e-segnaletica__product__numero_per_campo_ostacoli_light" }),
+      image: require("../../images/product/ostacoli/numero-professional.jpg"),
+      materials: [Material.POLIPROPILENE],
+      width: 33,
+      height: 33,
+      weight: 1.25,
+      price: 16,
+    }
+  ]
 
-    <Row>
-      <Col
-        as={Product}
-        image={require("../../images/cucchiaioDe.jpg")}
-        name="Cucchiaio DE"
-        description={[
-          "Materiale: tecnopolimero",
-          "Profondità: 2 cm.",
-        ]}
-        ratio={Ratio.VERTICAL}
-        weight={15}
-        price={2.5}
-      />
+  return (
+    <Section>
+      <Header>{formatMessage({ id: "OSTACOLI__cucchiai-e-segnaletica__title" })}</Header>
+      <FormattedHTMLMessage id="OSTACOLI__cucchiai-e-segnaletica__text" />
+      <Row>
+        {PRODUCTS.map((product, index) => (
+          <Col
+            as={Product}
+            key={index}
+            {...product}
+          />
+        ))}
+      </Row>
+    </Section>
+  )
+}
 
-      <Col
-        as={Product}
-        image={require("../../images/supporto.jpg")}
-        name="Supporto di sicurezza"
-        description={[
-          "Materiale: tecnopolimero elastico",
-          "larghezza: 37 cm",
-        ]}
-        ratio={Ratio.VERTICAL}
-        weight={0.05}
-        price={3.5}
-      />
-
-      <Col
-        as={Product}
-        image={require("../../images/bandierine.jpg")}
-        name="Bandierine"
-        description={[
-          "Materiale: plastica",
-        ]}
-        price={2.5}
-      />
-
-      <Col
-        as={Product}
-        image={require("../../images/numero-light.jpg")}
-        name="Numero per campo ostacoli professional"
-        description={[
-          "Materiale: polietilene bianco",
-          "larghezza: 20 cm",
-          "altezza: 30",
-        ]}
-        weight={0.05}
-        price={16}
-      />
-
-      <Col
-        as={Product}
-        image={require("../../images/numero-professional.jpg")}
-        name="Numero per campo ostacoli light"
-        description={[
-          "Materiale: polipropilene neutro",
-          "con MASTER BIANCO",
-          "larghezza base: 33 cm",
-          "larghezza top: 19 cm",
-          "altezza: 33 cm",
-        ]}
-        weight={1.25}
-        price={16}
-      />
-
-    </Row>
-  </Section>
-)
-
-export default CucchiaiSegnaletica
+export default injectIntl(CucchiaiSegnaletica)
 

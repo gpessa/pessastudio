@@ -1,45 +1,53 @@
+import { injectIntl } from 'gatsby-plugin-intl';
 import React from 'react';
 import { Col, Row } from 'react-bootstrap';
+import { IntlFormatters } from 'react-intl';
 
 import { Header, Product, Section } from '../../components';
 import { Colors } from '../../constants';
 
-const Cubi = () => (
-  <Section>
-    <Row>
-      <Col>
-        <Header>Cubi Mini</Header>
-        <p>Bianchi, rossi, blu o gialli, sono utilizzati nei maneggi sia come riempitivi sotto le barriere, sia per realizzare sequenze di piccoli salti. Ottimi per indicare le traiettorie quando si predispongono esercizi per i principianti, ma anche per preparare una successione di cavalletti quando si addestrano cavalli. Sovrapponibili, costruiti con plastica resistente agli agenti atmosferici, nel caso di impatto accidentale garantiscono l'incolumità di cavalli e cavalieri.</p>
-      </Col>
-      
-      <Col
-        md={3}
-        as={Product}
-        colors={[Colors.WHITE, Colors.BLU, Colors.YELLOW, Colors.RED, Colors.GREEN]}
-        height={57}
-        image={require("../../images/cubi-mini.jpg")}
-        length={37}
-        name="Cubi Mini"
-        price={35}
-        weight={3}
-        width={35}
-      />
+const Cubi: React.FC<{ intl: IntlFormatters }> = ({ intl: { formatMessage } }) => {
+  const PRODUCTS = [
+    {
+      name: formatMessage({ id: "OSTACOLI__cubi__product__cubi-mini" }),
+      image: require("../../images/product/ostacoli/cubi-mini.jpg") ,
+      colors: [Colors.WHITE, Colors.BLU, Colors.YELLOW, Colors.RED, Colors.GREEN],
+      height: 57,
+      length: 37,
+      price: 35,
+      weight: 3,
+      width: 35,
+    },
+    {
+      name: formatMessage({ id: "OSTACOLI__cubi__product__cubi-maxi" }),
+      image: require("../../images/product/ostacoli/cubi-maxi.jpg") ,
+      colors: [Colors.WHITE, Colors.BLU, Colors.YELLOW, Colors.RED, Colors.GREEN],
+      height: 70,
+      length: 57,
+      price: 62,
+      weight: 5,
+      width: 37,
+    }
+  ]
 
-      <Col
-        md={3}
-        as={Product}
-        colors={[Colors.WHITE, Colors.BLU, Colors.YELLOW, Colors.RED, Colors.GREEN]}
-        height={70}
-        image={require("../../images/cubi-maxi.jpg")}
-        length={57}
-        name="Cubi Maxi"
-        price={62}
-        weight={5}
-        width={37}
-      />
-    </Row>
-  </Section>
-)
+  return (
+    <Section>
+      <Row>
+        <Col>
+          <Header>{formatMessage({ id: "OSTACOLI__cubi__title" })}</Header>
+          {formatMessage({ id: "OSTACOLI__cubi__text" })}
+        </Col>
+        {PRODUCTS.map((product, index) => (
+          <Col
+            as={Product}
+            key={index}
+            md={3}
+            {...product}
+          />
+        ))}
+      </Row>
+    </Section>
+  )
+}
 
-export default Cubi
-
+export default injectIntl(Cubi)

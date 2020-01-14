@@ -2,7 +2,6 @@ import { injectIntl, Link } from 'gatsby-plugin-intl';
 import React, { ReactNode } from 'react';
 
 import { Colors, Material, Ratio } from '../../constants';
-import Header from '../Header';
 import ImageModal from '../ImageModal';
 import * as styles from './styles.module.scss';
 

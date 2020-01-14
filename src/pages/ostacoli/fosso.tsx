@@ -1,29 +1,35 @@
-import React from "react"
+import { injectIntl } from 'gatsby-plugin-intl';
+import React from 'react';
+import { Col, Row } from 'react-bootstrap';
+import { IntlFormatters } from 'react-intl';
 
-import { Product, Header } from "../../components"
-import { Col, Row } from "react-bootstrap"
-import { Ratio } from "../../constants"
+import { Header, Product } from '../../components';
+import { Ratio } from '../../constants';
 
-const Fosso = ({ className }: { className?: string; }) => (
-  <div className={className}>
+const Fosso: React.FC<{ intl: IntlFormatters }> = ({ intl: { formatMessage } }) => {
+  const PRODUCT = {
+    image: require("../../images/product/ostacoli/fosso.jpg"),
+    name: formatMessage({ id: "OSTACOLI__fosso__product__name" }),
+    width: 2800,
+    price: 440,
+    height: 8,
+  }
+
+  return (
     <Row>
       <Col
         md={5}
         ratio={Ratio.HORIZONTAL}
         as={Product}
-        image={require("../../images/product/ostacoli/fosso.jpg")}
-        name="Fosso 3 mt."
-        height={8}
-        width={2800}
-        price={440}
+        {...PRODUCT}
       />
       <Col>
-        <Header>Fosso</Header>
-        <p>Il fosso ha il fondo in PVC di colore azzurro con un bordo saldato alto 6 cm. Ottimo per insegnare ai vostri cavalli/puledri a saltarlo.</p>
+        <Header>{formatMessage({ id: "OSTACOLI__fosso__title" })}</Header>
+        {formatMessage({ id: "OSTACOLI__fosso__text" })}
       </Col>
     </Row>
-  </div>
-)
+  )
+}
 
-export default Fosso
+export default injectIntl(Fosso)
 

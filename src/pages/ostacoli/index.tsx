@@ -25,7 +25,9 @@ const Ostacoli: React.FC<{ intl: IntlFormatters }> = ({ intl: { formatMessage } 
       <Fosso />
     </Section>
 
-    <Cavalletti />
+    <Section className="bg-light">
+      <Cavalletti />
+    </Section>
 
     <Cubi />
 

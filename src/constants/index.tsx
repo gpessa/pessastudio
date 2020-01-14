@@ -33,7 +33,11 @@ enum Position {
 }
 
 enum Material {
-  ACCIAIO_ZINCATO = "acciaio-zincato"
+  ACCIAIO_ZINCATO = "acciaio-zincato",
+  POLIPROPILENE = "polipropilene",
+  POLIETILENE = "polietilene",
+  PLASTICA = "plastica",
+  TECNOPOLIMERO = "tecnopolimero"
 }
 
 export { PRODUCT_IDS, PAGES_IDS, Colors, Position, Ratio, Material }

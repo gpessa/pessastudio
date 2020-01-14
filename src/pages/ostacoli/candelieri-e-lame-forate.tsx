@@ -51,8 +51,6 @@ const CandelieriLameForate = ({ className, intl: { formatMessage } }: { classNam
     <Section className={className}>
       <Header>{formatMessage({ id: "OSTACOLI__barriere__title" })}</Header>
       <FormattedHTMLMessage id="OSTACOLI__barriere__text" />
-
-
       <Row>
         {PRODUCTS.map((product, index) => (
           <Col
