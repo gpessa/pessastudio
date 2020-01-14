@@ -1,5 +1,5 @@
 import { withPrefix } from 'gatsby';
-import { injectIntl } from 'gatsby-plugin-intl';
+import { injectIntl, FormattedHTMLMessage } from 'gatsby-plugin-intl';
 import { IntlFormatters } from 'react-intl';
 import React from 'react';
 import { Col, Row } from 'react-bootstrap';
@@ -95,7 +95,7 @@ const Tecnoexerciser: React.FC<{ intl: IntlFormatters }> = ({ intl: { formatMess
 
       <Section>
         <Header>{formatMessage({ id: "GENERAL__gamma" })}</Header>
-        <p>E' possibile acquistare la giostra senza la recinzione o puoi scegliere tra due tipologie di recinzioni disponibili: FLAT o con corridoio TECNOFENCE (da 2 o 4 filagne).</p>
+        <FormattedHTMLMessage id="GIOSTRA__tecnoexerciser__gamma__text"/>
 
         <Row>
           {PRODUCTS.map((product, index) => (
