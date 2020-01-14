@@ -1,15 +1,6 @@
-const PRODUCT_IDS: string[] = [
-  "ostacoli",
-  "recinti",
-  "tondini",
-  "giostre",
-  "dressage",
-]
+const PRODUCT_IDS: string[] = ["ostacoli", "recinti", "tondini", "giostre", "dressage"]
 
-const PAGES_IDS: string[] = [
-  ...PRODUCT_IDS,
-  "contatti"
-]
+const PAGES_IDS: string[] = [...PRODUCT_IDS, "contatti"]
 
 enum Colors {
   YELLOW = "#FEB00D",
@@ -37,7 +28,7 @@ enum Material {
   POLIPROPILENE = "polipropilene",
   POLIETILENE = "polietilene",
   PLASTICA = "plastica",
-  TECNOPOLIMERO = "tecnopolimero"
+  TECNOPOLIMERO = "tecnopolimero",
 }
 
 export { PRODUCT_IDS, PAGES_IDS, Colors, Position, Ratio, Material }
