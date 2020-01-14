@@ -24,15 +24,15 @@ ul li::before {
   &:hover,
   &.active {
     color: $primary;
-      font-weight: bold;
+    font-weight: bold;
   }
 
-  @include media-breakpoint-up(md) { 
+  @include media-breakpoint-up(md) {
     &:hover,
     &.active {
       font-weight: normal;
     }
-    
+
     &:after {
       content: "";
       width: 100%;
@@ -48,7 +48,6 @@ ul li::before {
     }
   }
 }
-
 
 .figure-img {
   margin-bottom: 0.2rem;
