@@ -29,7 +29,7 @@ const Ostacoli: React.FC<{ intl: IntlFormatters }> = ({ intl: { formatMessage } 
 
     <Cubi />
 
-    <CandelieriLameForate />
+    <CandelieriLameForate className="bg-light"/>
 
     <CucchiaiSegnaletica />
   </>

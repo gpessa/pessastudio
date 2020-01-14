@@ -1,10 +1,10 @@
-import React, { ReactNode } from "react"
-import Header from "../Header"
-import { Link, injectIntl } from "gatsby-plugin-intl"
+import { injectIntl, Link } from 'gatsby-plugin-intl';
+import React, { ReactNode } from 'react';
 
-import * as styles from "./styles.module.scss"
-import { Colors, Ratio } from "../../constants"
-import ImageModal from "../ImageModal"
+import { Colors, Material, Ratio } from '../../constants';
+import Header from '../Header';
+import ImageModal from '../ImageModal';
+import * as styles from './styles.module.scss';
 
 const Price = injectIntl(({ price, intl: { formatNumber } }) =>
   !price ? null : (
@@ -14,15 +14,25 @@ const Price = injectIntl(({ price, intl: { formatNumber } }) =>
   )
 )
 
-const Color = ({ colors }: { colors?: Colors[] }) =>
+const ColorsList = injectIntl(({ colors, intl: { formatMessage } }: { colors?: Colors[], intl: any }) =>
   !colors ? null : (
     <div className={styles.data}>
-      <span className={styles.dataLabel}>Colors:</span>{" "}
+      <span className={styles.dataLabel}>{formatMessage({ id: "PRODUCT__attributo__colors" })}:</span>{" "}
       {colors.map(backgroundColor => (
         <div className={styles.color} style={{ backgroundColor }} key={backgroundColor}></div>
       ))}
     </div>
-  )
+  ))
+
+
+const MaterialsList = injectIntl(({ materials, intl: { formatMessage } }: { materials?: Material[], intl: any }) =>
+  !materials ? null : (
+    <div className={styles.data}>
+      <span className={styles.dataLabel}>{formatMessage({ id: "PRODUCT__attributo__materials" })}:</span>{" "}
+      {materials.map(material => formatMessage({ id: `GENERAL__material__${material}` })).join(', ')}
+    </div>
+  ))
+
 
 const Description = ({ description }: { description: string | ReactNode | null }) => (!description ? null : <p>{description}</p>)
 
@@ -34,7 +44,7 @@ const Data = injectIntl(({ value, label, unit, intl: { formatMessage, formatNumb
   )
 )
 
-const Product = ({ image, url, name, width, height, diameter,  weight, colors, thickness, length, price, ratio, description, className }: Props) => {
+const Product = ({ image, materials, url, name, depth, width, height, diameter,  weight, colors, thickness, length, price, ratio, description, className }: Props) => {
   const Tag = url ? Link : "div"
 
   return (
@@ -45,16 +55,15 @@ const Product = ({ image, url, name, width, height, diameter,  weight, colors, t
         <h6 className={styles.title}>{name}</h6>
 
         <Description description={description} />
-
         <Data value={thickness} label="PRODUCT__attributo__thickness" unit="mm" />
         <Data value={weight} label="PRODUCT__attributo__weight" unit="kg" />
         <Data value={length} label="PRODUCT__attributo__length" unit="mm" />
         <Data value={height} label="PRODUCT__attributo__height" unit="mm" />
         <Data value={width} label="PRODUCT__attributo__width" unit="mm" />
         <Data value={diameter} label="PRODUCT__attributo__diameter" unit="mm" />
-
-        <Color colors={colors} />
-
+        <Data value={depth} label="PRODUCT__attributo__depth" unit="mm" />
+        <MaterialsList materials={materials} />
+        <ColorsList colors={colors} />
         <Price price={price} />
       </div>
     </Tag>
@@ -62,21 +71,23 @@ const Product = ({ image, url, name, width, height, diameter,  weight, colors, t
 }
 
 interface Props {
-  ratio?: Ratio
   className?: string
   colors?: Colors[]
+  depth?: Number
   description?: string | ReactNode | null
-  weight?: number
-  height?: number
-  thickness?: number
-  width?: number
-  length?: number
   diameter?: number
-  price?: number
+  height?: number
   image: string
-  name: string
-  url?: string
   intl?: any
+  length?: number
+  materials?: Material[]
+  name: string
+  price?: number
+  ratio?: Ratio
+  thickness?: number
+  url?: string
+  weight?: number
+  width?: number
 }
 
 export default Product

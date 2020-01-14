@@ -10,15 +10,15 @@ const Barriere = ({ className, intl: { formatMessage } }: { className?: string, 
   <div className={className}>
     <Row>
       <Col md={7}>
-        <Header>{formatMessage({ id: "BARRIERE_title" })}</Header>
-        <FormattedHTMLMessage id="BARRIERE_description" />
+        <Header>{formatMessage({ id: "OSTACOLI__barriere__title" })}</Header>
+        <FormattedHTMLMessage id="OSTACOLI__barriere__text" />
       </Col>
       <Col
         as={Product}
         ratio={Ratio.HORIZONTAL}
-        description={formatMessage({ id: "BARRIERE_product_description" })}
+        description={formatMessage({ id: "OSTACOLI__barriere__product__description" })}
         image={require("../../images/barriere.jpg")}
-        name={formatMessage({ id: "BARRIERE_product_title" })}
+        name={formatMessage({ id: "OSTACOLI__barriere__product__title" })}
         price={35}
         weight={9.75}
         length={3000}

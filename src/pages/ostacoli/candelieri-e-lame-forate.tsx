@@ -1,65 +1,72 @@
+import { FormattedHTMLMessage, injectIntl } from 'gatsby-plugin-intl';
 import React from 'react';
 import { Col, Row } from 'react-bootstrap';
 
 import { Header, Product, Section } from '../../components';
-import { Ratio } from '../../constants';
+import { Ratio, Material } from '../../constants';
 
-const CandelieriLameForate = () => (
-  <Section className="bg-light">
-    <Header>Candelieri e lame forate</Header>
-    <p>I candelieri sono costruiti con un montante di alluminio verniciato di colore bianco, muniti di 4 piedi, rivestiti con puntali di plastica che garantiscono, in caso di ribaltamento, l’incolumità vostra e dei vostri cavalli. Per consentirvi di realizzare ostacoli di vostra creazione possiamo fornirvi "le lame forate" in due diverse lunghezze.</p>
+const CandelieriLameForate = ({ className, intl: { formatMessage } }: { className?: string, intl: any }) => {
+  const PRODUCTS = [
+    {
+      name: formatMessage({ id: "OSTACOLI__candelieri-e-lame__prodotto__candeliere-alluminio__name" }),
+      image: require("../../images/product/ostacoli/candeliere-alluminio.jpg"),
+      depth: 72,
+      width: 72,
+      height: 170,
+      weight: 10
+    },
+    {
+      name: formatMessage({ id: "OSTACOLI__candelieri-e-lame__prodotto__candeliere-pvc__name" }),
+      image: require("../../images/product/ostacoli/candeliere-pvc.jpg"),
+      depth: 72,
+      height: 170,
+      weight: 7,
+      width: 72
+    },
+    {
+      name: formatMessage({ id: "OSTACOLI__candelieri-e-lame__prodotto__lama-de-piccola__name" }),
+      materials: [Material.ACCIAIO_ZINCATO],
+      image: require("../../images/product/ostacoli/lama-de-piccola.jpg"),
+      ratio: Ratio.VERTICAL,
+      thickness: 2,
+      weight: 0.65,
+      width: 6.5,
+      lenght: 50,
+      price: 6.6,
+    },
+    {
+      name: formatMessage({ id: "OSTACOLI__candelieri-e-lame__prodotto__lama-de-grande__name" }),
+      materials: [Material.ACCIAIO_ZINCATO],
+      image: require("../../images/product/ostacoli/lama-de-grande.jpg"),
+      ratio: Ratio.VERTICAL,
+      thickness: 2,
+      weight: 0.65,
+      width: 6.5,
+      lenght: 50,
+      price: 6.6,
+    }
+  ]
 
-    <Row>
-      
-      <Col
-        as={Product}
-        ratio={Ratio.VERTICAL}
-        image={require("../../images/candeliereAlluminio.jpg")}
-        name="Candeliere 1.7 mt. Piede in alluminio"
-        width={72}
-        description="Profondità : 72 cm."
-        height={170}
-        weight={10}
-      />
+  return (
+    <Section className={className}>
+      <Header>{formatMessage({ id: "OSTACOLI__barriere__title" })}</Header>
+      <FormattedHTMLMessage id="OSTACOLI__barriere__text" />
 
-      <Col
-        as={Product}
-        ratio={Ratio.VERTICAL}
-        image={require("../../images/candelierePvc.jpg")}
-        name="Candeliere 1.7 mt. Piede in PVC"
-        description="Profondità : 72 cm."
-        height={170}
-        weight={7}
-        width={72}
-      />
 
-      <Col
-        as={Product}
-        ratio={Ratio.VERTICAL}
-        image={require("../../images/lamaDePiccola.jpg")}
-        name="Lama DE piccola"
-        description="Materiale: acciaio zincato"
-        thickness={2}
-        weight={0.6}
-        price={6.6}
-      />
-
-      <Col
-        as={Product}
-        ratio={Ratio.VERTICAL}
-        image={require("../../images/lamaDeGrande.jpg")}
-        name="Lama DE grande"
-        description="Materiale: acciaio zincato"
-        thickness={2}
-        width={6.5}
-        weight={0.6}
-        price={12.5}
-      />
-
-    </Row>  
+      <Row>
+        {PRODUCTS.map((product, index) => (
+          <Col
+            key={index}
+            as={Product}
+            ratio={Ratio.VERTICAL}
+            {...product}
+          />
+        ))}
+      </Row>  
     
-  </Section>
-)
+    </Section>
+  )
+}
 
-export default CandelieriLameForate
+export default injectIntl(CandelieriLameForate)
 
