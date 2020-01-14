@@ -1,16 +1,16 @@
-import { injectIntl } from 'gatsby-plugin-intl';
-import React from 'react';
-import { Col, Row } from 'react-bootstrap';
-import { IntlFormatters } from 'react-intl';
+import { injectIntl } from "gatsby-plugin-intl"
+import React from "react"
+import { Col, Row } from "react-bootstrap"
+import { IntlFormatters } from "react-intl"
 
-import { Header, Product } from '../../components';
-import { Colors } from '../../constants';
+import { Header, Product } from "@components"
+import { Colors } from "@constants"
 
 const Cubi: React.FC<{ intl: IntlFormatters }> = ({ intl: { formatMessage } }) => {
   const PRODUCTS = [
     {
       name: formatMessage({ id: "OSTACOLI__cubi__product__cubi-mini" }),
-      image: require("../../images/product/ostacoli/cubi-mini.jpg") ,
+      image: require("@images/product/ostacoli/cubi-mini.jpg"),
       colors: [Colors.WHITE, Colors.BLU, Colors.YELLOW, Colors.RED, Colors.GREEN],
       height: 57,
       length: 37,
@@ -20,14 +20,14 @@ const Cubi: React.FC<{ intl: IntlFormatters }> = ({ intl: { formatMessage } }) =
     },
     {
       name: formatMessage({ id: "OSTACOLI__cubi__product__cubi-maxi" }),
-      image: require("../../images/product/ostacoli/cubi-maxi.jpg") ,
+      image: require("@images/product/ostacoli/cubi-maxi.jpg"),
       colors: [Colors.WHITE, Colors.BLU, Colors.YELLOW, Colors.RED, Colors.GREEN],
       height: 70,
       length: 57,
       price: 62,
       weight: 5,
       width: 37,
-    }
+    },
   ]
 
   return (
@@ -37,12 +37,7 @@ const Cubi: React.FC<{ intl: IntlFormatters }> = ({ intl: { formatMessage } }) =
         {formatMessage({ id: "OSTACOLI__cubi__text" })}
       </Col>
       {PRODUCTS.map((product, index) => (
-        <Col
-          as={Product}
-          key={index}
-          md={3}
-          {...product}
-        />
+        <Col as={Product} key={index} md={3} {...product} />
       ))}
     </Row>
   )

@@ -4,6 +4,14 @@
     "module": "commonjs",
     "jsx": "react",
     "strict": true,
-    "esModuleInterop": true
+    "esModuleInterop": true,
+    "baseUrl": ".",
+    "paths": {
+      "@components": ["src/components"],
+      "@constants": ["src/constants"],
+      "@images": ["src/images"],
+      "@styles": ["src/styles"],
+      "@hoc": ["src/hoc"]
+    }
   }
 }

@@ -1,13 +1,13 @@
-import { injectIntl, Link, FormattedHTMLMessage, FormattedMessage } from 'gatsby-plugin-intl';
-import React from 'react';
-import { Button, Container } from 'react-bootstrap';
-import { IntlFormatters } from 'react-intl';
+import { injectIntl, Link, FormattedHTMLMessage, FormattedMessage } from "gatsby-plugin-intl"
+import React from "react"
+import { Button, Container } from "react-bootstrap"
+import { IntlFormatters } from "react-intl"
 
-import { Columns, Header, Hero, Section } from '../../components';
+import { Columns, Header, Hero, Section } from "@components"
 
 const Giostre: React.FC<{ intl: IntlFormatters }> = ({ intl: { formatMessage } }) => (
   <>
-    <Hero image={require("../../images/background-giostre.jpg")} />
+    <Hero image={require("@images/background-giostre.jpg")} />
 
     <Section className="bg-light">
       <h1>{formatMessage({ id: "NAVIGATION__giostre" })}</h1>

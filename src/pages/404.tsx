@@ -1,11 +1,10 @@
-import { injectIntl } from 'gatsby-plugin-intl';
-import { IntlFormatters } from "react-intl";
-import React from 'react';
+import { injectIntl } from "gatsby-plugin-intl"
+import React from "react"
+import { IntlFormatters } from "react-intl"
 
-import { faFrown } from '@fortawesome/free-solid-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-
-import { Section } from '../components';
+import { Section } from "@components"
+import { faFrown } from "@fortawesome/free-solid-svg-icons"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
 const NotFound: React.FC<{ intl: IntlFormatters }> = ({ intl: { formatMessage } }) => (
   <Section className="text-center">

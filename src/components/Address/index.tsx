@@ -1,7 +1,8 @@
 import React from "react"
-import { faPhone, faEnvelope } from '@fortawesome/free-solid-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faWhatsapp } from '@fortawesome/free-brands-svg-icons';
+
+import { faWhatsapp } from "@fortawesome/free-brands-svg-icons"
+import { faEnvelope, faPhone } from "@fortawesome/free-solid-svg-icons"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
 import * as styles from "./styles.module.scss"
 
@@ -10,29 +11,38 @@ const Address = ({ name, country, addressLocality, whatsapp, postalCode, address
 
   return (
     <div itemScope itemType="http://schema.org/ContactPoint">
-      <h6 itemProp="name" className="mb-1">{name}</h6>
+      <h6 itemProp="name" className="mb-1">
+        {name}
+      </h6>
 
       {hasAddress && (
         <div itemScope itemType="http://schema.org/PostalAddress">
           <div itemProp="streetAddress">{streetAddress}</div>
           <span itemProp="addressLocality">{addressLocality}</span>,
-          <span itemProp="postalCode" className="ml-1">{postalCode}</span>,
-          <span itemProp="addressRegion" className="ml-1 mr-1">{addressRegion}</span>
+          <span itemProp="postalCode" className="ml-1">
+            {postalCode}
+          </span>
+          ,
+          <span itemProp="addressRegion" className="ml-1 mr-1">
+            {addressRegion}
+          </span>
           (<span itemProp="addressCountry">{country}</span>)
         </div>
       )}
-      
+
       {telephoneMobile && (
         <div className="mt-2">
           <a className={styles.link} itemProp="telephone" href={`tel:${telephoneMobile}`}>
-            <FontAwesomeIcon icon={faPhone} className="mr-2" /> {telephoneMobile}</a>
+            <FontAwesomeIcon icon={faPhone} className="mr-2" /> {telephoneMobile}
+          </a>
         </div>
       )}
 
       {whatsapp && (
         <div className="mt-2">
           <a className={styles.link} href={`https://wa.me/15551234567:${whatsapp}`}>
-            <FontAwesomeIcon icon={faWhatsapp} className="mr-2" /> {whatsapp}</a>
+            <FontAwesomeIcon icon={faWhatsapp} className="mr-2" /> {whatsapp}
+          </a>
         </div>
       )}
 

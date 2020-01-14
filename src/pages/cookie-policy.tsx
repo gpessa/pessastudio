@@ -1,7 +1,8 @@
-import React from "react"
-import { Section, SubSection, Header } from "../components"
 import { injectIntl } from "gatsby-plugin-intl"
-import { IntlFormatters } from "react-intl";
+import React from "react"
+import { IntlFormatters } from "react-intl"
+
+import { Header, Section, SubSection } from "@components"
 
 const CookiePolicy: React.FC<{ intl: IntlFormatters }> = ({ intl: { formatMessage } }) => (
   <>

@@ -1,4 +1,4 @@
-@import "../../styles/_variables.scss";
+@import "@styles/_variables.scss";
 
 $titleScale: 0.9;
 $titleSize: 33px;
@@ -13,7 +13,7 @@ $time: 0.2s;
   transition: all $time ease-out;
 
   &:hover {
-    transform: scale(1.03); 
+    transform: scale(1.03);
   }
 }
 
@@ -51,25 +51,23 @@ $time: 0.2s;
 }
 
 :local(.elementSmall) {
-
   .image {
-    height: 35px; 
+    height: 35px;
   }
-  
+
   .title {
     line-height: $titleSize / $zoom * $titleScale;
     font-size: $titleSize / $zoom;
   }
-  
+
   .subtitle {
     line-height: $titleSize / $zoom * $titleScale / $subtitleScale;
     font-size: $titleSize / $zoom / $subtitleScale;
     letter-spacing: 3.9px;
     padding-left: 2px;
   }
-  
+
   .group {
     margin-top: 6px;
   }
-  
 }

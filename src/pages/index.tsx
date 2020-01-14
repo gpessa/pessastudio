@@ -1,10 +1,10 @@
-import { injectIntl } from 'gatsby-plugin-intl';
-import React from 'react';
-import { Carousel, Col, Container, Row } from 'react-bootstrap';
-import { IntlFormatters } from 'react-intl';
+import { injectIntl } from "gatsby-plugin-intl"
+import React from "react"
+import { Carousel, Col, Container, Row } from "react-bootstrap"
+import { IntlFormatters } from "react-intl"
 
-import { Hero, Product, Section } from '../components';
-import { PRODUCT_IDS } from '../constants';
+import { Hero, Product, Section } from "@components"
+import { PRODUCT_IDS } from "@constants"
 
 const Index: React.FC<{ intl: IntlFormatters }> = ({ intl: { formatMessage } }) => (
   <>

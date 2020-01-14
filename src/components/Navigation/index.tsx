@@ -1,13 +1,15 @@
 import { injectIntl, Link } from "gatsby-plugin-intl"
-import React, { useState, useLayoutEffect } from "react"
+import React, { useLayoutEffect, useState } from "react"
 import { Nav, Navbar } from "react-bootstrap"
+import { IntlFormatters } from "react-intl"
 
-import { PAGES_IDS } from "../../constants"
+import { PAGES_IDS } from "@constants"
+
 import LanguageSelector from "../LanguageSelector"
 import Logo from "../Logo"
 import * as styles from "./styles.module.scss"
 
-const Navigation = ({ intl: { formatMessage } }) => {
+const Navigation: React.FC<{ intl: IntlFormatters }> = ({ intl: { formatMessage } }) => {
   const [isFloating, setIsFloating] = useState(false)
 
   const handleScroll = () => {
@@ -33,7 +35,7 @@ const Navigation = ({ intl: { formatMessage } }) => {
       <Navbar.Collapse id="menu">
         <Nav className="ml-auto">
           {PAGES_IDS.map(id => (
-            <Nav.Link to={`/${id}/`} as={Link} key={id} activeClassName="active" className={`${(id === 'contatti') && "text-muted"}`}>
+            <Nav.Link to={`/${id}/`} as={Link} key={id} activeClassName="active" className={`${id === "contatti" && "text-muted"}`}>
               {formatMessage({ id: `NAVIGATION__${id}` })}
             </Nav.Link>
           ))}

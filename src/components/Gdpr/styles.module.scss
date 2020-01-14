@@ -1,8 +1,8 @@
-@import "../../styles/_variables.scss";
+@import "@styles/_variables.scss";
 
 :local(.element) {
   position: fixed;
-  bottom: $spacer!important;
+  bottom: $spacer !important;
   right: $spacer;
   background: $white;
   width: 350px;

@@ -16,6 +16,7 @@
     "gatsby-plugin-layout": "^1.1.21",
     "gatsby-plugin-mailchimp": "^5.1.2",
     "gatsby-plugin-manifest": "^2.2.37",
+    "gatsby-plugin-module-resolver": "^1.0.3",
     "gatsby-plugin-offline": "^3.0.31",
     "gatsby-plugin-react-helmet": "^3.1.21",
     "gatsby-plugin-robots-txt": "^1.5.0",
@@ -40,10 +41,12 @@
   },
   "devDependencies": {
     "@types/react-animate-on-scroll": "^2.1.2",
+    "@types/react-helmet": "^5.0.15",
+    "eslint-import-resolver-babel-module": "^5.1.1",
+    "eslint-plugin-import": "^2.20.0",
     "gh-pages": "^2.2.0",
-    "prettier": "^1.19.1",
     "node-sass": "^4.13.0",
-    "@types/react-helmet": "^5.0.15"
+    "prettier": "^1.19.1"
   },
   "license": "MIT",
   "scripts": {

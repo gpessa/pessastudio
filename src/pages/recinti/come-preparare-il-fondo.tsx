@@ -1,10 +1,12 @@
 import { injectIntl } from "gatsby-plugin-intl"
 import React from "react"
-import { Header, Section } from "../../components"
+import { IntlFormatters } from "react-intl"
 
-const ComePreparareIlFondo = ({ intl: { formatMessage } }) => (
+import { Header, Section } from "@components"
+
+const ComePreparareIlFondo: React.FC<{ intl: IntlFormatters }> = ({ intl: { formatMessage } }) => (
   <Section>
-    <Header>Fondi</Header>
+    <Header>{formatMessage({ id: "NAVIGATION__come-preparare-il-fondo" })}</Header>
     <ul>
       <li>Preparare la superficie spianandola a " SCHIENA D'ASINO " con il centro più alto dei bordi (2%) per far si che la pioggia defluisca. Mantenere i bordi dell'area alla stessa altezza del terreno circostante e riportare materiale nel centro dell'area per alzarlo.</li>
       <li>Stendere sull'area una "RETE DI SEPARAZIONE", ben tesa e trattenuta lungo i bordi in una canaletta scavata nel terreno impedendo così che la terra si mescoli alla sabbia.</li>

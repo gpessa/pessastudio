@@ -1,4 +1,4 @@
-@import "../../styles/_variables.scss";
+@import "@styles/_variables.scss";
 
 :local(.container) {
   display: flex;
@@ -6,7 +6,7 @@
 }
 
 :local(.element)::after {
-  content: '';
+  content: "";
   display: flex;
   width: 20px;
   height: 3px;

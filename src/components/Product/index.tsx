@@ -1,11 +1,12 @@
-import { injectIntl, Link } from 'gatsby-plugin-intl';
-import React, { ReactNode } from 'react';
+import { injectIntl, Link } from "gatsby-plugin-intl"
+import React, { ReactNode } from "react"
+import { IntlFormatters } from "react-intl"
 
-import { Colors, Material, Ratio } from '../../constants';
-import ImageModal from '../ImageModal';
-import * as styles from './styles.module.scss';
+import { Colors, Material, Ratio } from "@constants"
+import ImageModal from "../ImageModal"
+import * as styles from "./styles.module.scss"
 
-const Price = injectIntl(({ price, intl: { formatNumber } }) =>
+const Price = injectIntl(({ price, intl: { formatNumber } }: { price: number; intl: IntlFormatters }) =>
   !price ? null : (
     <div className={styles.price}>
       {formatNumber(price, { style: "currency", currency: "EUR" })} <span className={styles.priceVat}>+ IVA</span>
@@ -13,7 +14,7 @@ const Price = injectIntl(({ price, intl: { formatNumber } }) =>
   )
 )
 
-const ColorsList = injectIntl(({ colors, intl: { formatMessage } }: { colors?: Colors[], intl: any }) =>
+const ColorsList = injectIntl(({ colors, intl: { formatMessage } }: { colors?: Colors[]; intl: any }) =>
   !colors ? null : (
     <div className={styles.data}>
       <span className={styles.dataLabel}>{formatMessage({ id: "PRODUCT__attributo__colors" })}:</span>{" "}
@@ -21,17 +22,16 @@ const ColorsList = injectIntl(({ colors, intl: { formatMessage } }: { colors?: C
         <div className={styles.color} style={{ backgroundColor }} key={backgroundColor}></div>
       ))}
     </div>
-  ))
+  )
+)
 
-
-const MaterialsList = injectIntl(({ materials, intl: { formatMessage } }: { materials?: Material[], intl: any }) =>
+const MaterialsList = injectIntl(({ materials, intl: { formatMessage } }: { materials?: Material[]; intl: any }) =>
   !materials ? null : (
     <div className={styles.data}>
-      <span className={styles.dataLabel}>{formatMessage({ id: "PRODUCT__attributo__materials" })}:</span>{" "}
-      {materials.map(material => formatMessage({ id: `GENERAL__material__${material}` })).join(', ')}
+      <span className={styles.dataLabel}>{formatMessage({ id: "PRODUCT__attributo__materials" })}:</span> {materials.map(material => formatMessage({ id: `GENERAL__material__${material}` })).join(", ")}
     </div>
-  ))
-
+  )
+)
 
 const Description = ({ description }: { description: string | ReactNode | null }) => (!description ? null : <p>{description}</p>)
 
@@ -43,7 +43,7 @@ const Data = injectIntl(({ value, label, unit, intl: { formatMessage, formatNumb
   )
 )
 
-const Product = ({ image, materials, url, name, depth, width, height, diameter,  weight, colors, thickness, length, price, ratio, description, className }: Props) => {
+const Product = ({ image, materials, url, name, depth, width, height, diameter, weight, colors, thickness, length, price, ratio, description, className }: Props) => {
   const Tag = url ? Link : "div"
 
   return (

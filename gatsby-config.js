@@ -15,6 +15,19 @@ module.exports = {
     `gatsby-plugin-typescript`,
     `gatsby-plugin-react-helmet`,
     {
+      resolve: "gatsby-plugin-module-resolver",
+      options: {
+        root: "./src",
+        aliases: {
+          "@components": "./components",
+          "@constants": "./constants",
+          "@styles": "./styles",
+          "@images": "./images",
+          "@hoc": "./hoc",
+        },
+      },
+    },
+    {
       resolve: "gatsby-plugin-web-font-loader",
       options: {
         google: {
@@ -23,10 +36,10 @@ module.exports = {
       },
     },
     {
-      resolve: 'gatsby-plugin-mailchimp',
+      resolve: "gatsby-plugin-mailchimp",
       options: {
-        endpoint: 'https://pessastudio.us4.list-manage.com/subscribe/post?u=9827f22cb9c00c4d7ff1c48ab&amp;id=199848d4fd',
-      }
+        endpoint: "https://pessastudio.us4.list-manage.com/subscribe/post?u=9827f22cb9c00c4d7ff1c48ab&amp;id=199848d4fd",
+      },
     },
     {
       resolve: `gatsby-source-filesystem`,
