@@ -46,7 +46,7 @@ const Index: React.FC<{ intl: IntlFormatters }> = ({ intl: { formatMessage } }) 
           .fill(null)
           .map((x, index) => (
             <Carousel.Item key={index}>
-              <blockquote className="blockquote">{formatMessage({ id: `HOME_quote_${index}` })}</blockquote>
+              <blockquote className="blockquote">{formatMessage({ id: `HOME__quote__item-${index}` })}</blockquote>
             </Carousel.Item>
           ))}
       </Carousel>
