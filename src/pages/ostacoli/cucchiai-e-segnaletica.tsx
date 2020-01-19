@@ -3,7 +3,7 @@ import React from "react"
 import { Col, Row } from "react-bootstrap"
 import { IntlFormatters } from "react-intl"
 
-import { Header, Product, Section } from "@components"
+import { Header, Product } from "@components"
 import { Ratio, Material } from "@constants"
 
 const CucchiaiSegnaletica: React.FC<{ intl: IntlFormatters }> = ({ intl: { formatMessage } }) => {

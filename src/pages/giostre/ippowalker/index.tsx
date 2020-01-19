@@ -11,19 +11,19 @@ const Ippowalker: React.FC<{ intl: IntlFormatters }> = ({ intl: { formatMessage 
   const IMAGES = [
     {
       src: require("@images/product/giostre/ippowalker/galleria/giostra.jpg"),
-      caption: "Giostra Ippowalker con corridoio FLAT",
+      caption: formatMessage({ id: "GIOSTRE__ippowalker__image-0" }),
     },
     {
       src: require("@images/product/giostre/ippowalker/galleria/giostra-separazioni.jpg"),
-      caption: "Separazioni elettrificate",
+      caption: formatMessage({ id: "GIOSTRE__ippowalker__image-1" }),
     },
     {
       src: require("@images/product/giostre/ippowalker/galleria/giostra-corridoio-tecno-fence.jpg"),
-      caption: "Giostra con corridoio TECNCOFENCE",
+      caption: formatMessage({ id: "GIOSTRE__ippowalker__image-2" }),
     },
     {
       src: require("@images/product/giostre/ippowalker/galleria/giostra-copertura-pvc-2.jpg"),
-      caption: "Copertura in PVC verde",
+      caption: formatMessage({ id: "GIOSTRE__ippowalker__image-3" }),
     },
   ]
 
@@ -81,10 +81,7 @@ const Ippowalker: React.FC<{ intl: IntlFormatters }> = ({ intl: { formatMessage 
         left={
           <>
             <h1>{formatMessage({ id: "NAVIGATION__ippowalker" })}</h1>
-            <p>Ippowalker è una giostra di recente realizzazione semplice, essenziale, di conseguenza più economica ma costruita con la qualità e la robustezza che contraddistingue tutti i nostri prodotti.</p>
-            <p>Le braccia sono dotate di elettrificazione.</p>
-            <p>Il motore produce una potenza di 0,37 kw e permette una cadenza compresa fra 60 e 210 metri al minuto.</p>
-            <p>La giostra è disponibile in due diverse grandezze di diametro: 12 mt. (4 cavalli) e 14.20 mt (6 cavalli).</p>
+            <FormattedHTMLMessage id="GIOSTRE__ippowalker__descrizione" />
           </>
         }
         right={<Gallery images={IMAGES} />}
@@ -92,7 +89,7 @@ const Ippowalker: React.FC<{ intl: IntlFormatters }> = ({ intl: { formatMessage 
 
       <Section>
         <Header>{formatMessage({ id: "GENERAL__gamma" })}</Header>
-        <FormattedHTMLMessage id="GIOSTRA__ippowalker__gamma__text" />
+        <FormattedHTMLMessage id="GIOSTRE__ippowalker__gamma__text" />
 
         <Row>
           {PRODUCTS.map((product, index) => (
@@ -109,7 +106,7 @@ const Ippowalker: React.FC<{ intl: IntlFormatters }> = ({ intl: { formatMessage 
             <ContentTable
               title={formatMessage({ id: "GENERAL__dimensioni" })}
               rows={DIMENSIONS.map(dimension => ({
-                label: formatMessage({ id: `GIOSTRA__ippowalker__dimensioni-${dimension}` }),
+                label: formatMessage({ id: `GIOSTRE__ippowalker__dimensioni-${dimension}` }),
                 file: withPrefix(`/giostra-ippowalker-${dimension}.pdf`),
               }))}
             />

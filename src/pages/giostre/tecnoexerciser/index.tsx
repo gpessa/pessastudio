@@ -11,19 +11,19 @@ const Tecnoexerciser: React.FC<{ intl: IntlFormatters }> = ({ intl: { formatMess
   const IMAGES = [
     {
       src: require("@images/product/giostre/tecnoexerciser/galleria/giostra.jpg"),
-      caption: "Giostra Tecnoexerciser",
+      caption: formatMessage({ id: "GIOSTRE__tecnoexerciser__image-0" }),
     },
     {
       src: require("@images/product/giostre/tecnoexerciser/galleria/motore.jpg"),
-      caption: "Motore Giostra Tecnoexerciser",
+      caption: formatMessage({ id: "GIOSTRE__tecnoexerciser__image-1" }),
     },
     {
       src: require("@images/product/giostre/tecnoexerciser/galleria/separazione-1.jpg"),
-      caption: "Giostra Tecnoexerciser separazioni",
+      caption: formatMessage({ id: "GIOSTRE__tecnoexerciser__image-2" }),
     },
     {
       src: require("@images/product/giostre/tecnoexerciser/galleria/separazione-2.jpg"),
-      caption: "Giostra Tecnoexerciser separazioni",
+      caption: formatMessage({ id: "GIOSTRE__tecnoexerciser__image-3" }),
     },
   ]
 
@@ -81,16 +81,7 @@ const Tecnoexerciser: React.FC<{ intl: IntlFormatters }> = ({ intl: { formatMess
         left={
           <>
             <h1>{formatMessage({ id: "NAVIGATION__tecnoexerciser" })}</h1>
-            <p>Tecnoexerciser è il modello di giostra attualmente più richiesto.</p>
-            <p>Oggi, alle già note caratteristiche tecniche e alla grande affidabilità, abbiamo aggiunto anche alcune specifiche funzioni che fanno della giostra Tecnoexcerciser una macchina "leader" nel settore.</p>
-            <p>E' possibile infatti:</p>
-            <ul>
-              <li>scegliere la forza che la porta mobile esercita sugli animali per invitarli ad avanzare</li>
-              <li>mantenere un controllo costante sull'elettrificazione delle porte mobili</li>
-              <li>beneficiare dell'innovativo sistema "training program" che vi consentirà di allenare i vostri cavalli fino ad ottenere performance atletiche.</li>
-            </ul>
-            <p>La struttura di acciaio zincato sorregge la copertura inclinata in PVC e prevede un carico neve di 80 kg/ mq e una forza vento pari a 110 Km/h.</p>
-            <p>La struttura è fornita, a seconda delle esigenze, o con punte per l'ancoraggio al suolo o con tasselli nel caso in cui si desideri ancorarla ad un fondo di calcestruzzo.</p>
+            <FormattedHTMLMessage id="GIOSTRE__tecnoexerciser__descrizione" />
           </>
         }
         right={<Gallery images={IMAGES} />}
@@ -98,7 +89,7 @@ const Tecnoexerciser: React.FC<{ intl: IntlFormatters }> = ({ intl: { formatMess
 
       <Section>
         <Header>{formatMessage({ id: "GENERAL__gamma" })}</Header>
-        <FormattedHTMLMessage id="GIOSTRA__tecnoexerciser__gamma__text" />
+        <FormattedHTMLMessage id="GIOSTRE__tecnoexerciser__gamma__text" />
 
         <Row>
           {PRODUCTS.map((product, index) => (
@@ -115,7 +106,7 @@ const Tecnoexerciser: React.FC<{ intl: IntlFormatters }> = ({ intl: { formatMess
             <ContentTable
               title={formatMessage({ id: "GENERAL__dimensioni" })}
               rows={DIMENSIONS.map(dimension => ({
-                label: formatMessage({ id: `GIOSTRA__tecnoexerciser__dimensioni-${dimension}` }),
+                label: formatMessage({ id: `GIOSTRE__tecnoexerciser__dimensioni-${dimension}` }),
                 file: withPrefix(`/giostra-tecnoexerciser-${dimension}.pdf`),
               }))}
             />
