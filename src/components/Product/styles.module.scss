@@ -1,7 +1,13 @@
 @import "@styles/_variables.scss";
 
-:local(.container:hover) {
+:local(.container) {
+  transform: scale(1);
+  transition: transform 0.2s ease-out;
+}
+
+:local(a.container:hover) {
   text-decoration: none;
+  transform: scale(1.05);
 }
 
 :local(.image) {
@@ -34,13 +40,6 @@
   color: $text-muted;
 }
 
-:local(.price) {
-  margin-top: $spacer;
-  font-family: $headings-font-family;
-  color: $black;
-  font-size: 1.1rem;
-}
-
 :local(.color) {
   display: inline-block;
   height: 12px;
@@ -59,9 +58,4 @@
 
 :local(.vertical) {
   padding-bottom: 200%;
-}
-
-:local(.priceVat) {
-  font-size: $small-font-size;
-  color: $text-muted;
 }

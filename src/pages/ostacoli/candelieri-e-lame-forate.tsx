@@ -50,7 +50,7 @@ const CandelieriLameForate = ({ intl: { formatMessage } }: { intl: any }) => {
       <Header>{formatMessage({ id: "OSTACOLI__barriere__title" })}</Header>
       <FormattedHTMLMessage id="OSTACOLI__barriere__text" />
       <Row>
-        {PRODUCTS.map((product, index) => <Col key={index} as={Product} ratio={Ratio.VERTICAL} {...product} />)}
+        {PRODUCTS.map((product, index) => <Col key={index} as={Product} ratio={Ratio.VERTICAL} {...product} md={3} />)}
       </Row>
     </>
   )

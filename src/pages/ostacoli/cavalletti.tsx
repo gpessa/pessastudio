@@ -30,10 +30,14 @@ const Cavalletti: React.FC<{ intl: IntlFormatters }> = ({ intl: { formatMessage 
 
   return (
     <Row>
-      {PRODUCTS.map((product, index) => <Col md={3} key={index} as={Product} {...product} />)}
       <Col md={6}>
         <Header>{formatMessage({ id: "OSTACOLI__cavalletti__title" })}</Header>
         {formatMessage({ id: "OSTACOLI__cavalletti__text" })}
+      </Col>
+      <Col md={6}>
+        <Row>
+          {PRODUCTS.map((product, index) => <Col md={6} key={index} as={Product} {...product} />)}
+        </Row>
       </Col>
     </Row>
   )

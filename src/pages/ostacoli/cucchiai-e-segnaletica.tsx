@@ -57,7 +57,7 @@ const CucchiaiSegnaletica: React.FC<{ intl: IntlFormatters }> = ({ intl: { forma
       <Header>{formatMessage({ id: "OSTACOLI__cucchiai-e-segnaletica__title" })}</Header>
       <FormattedHTMLMessage id="OSTACOLI__cucchiai-e-segnaletica__text" />
       <Row>
-        {PRODUCTS.map((product, index) => <Col as={Product} key={index} {...product} />)}
+        {PRODUCTS.map((product, index) => <Col as={Product} key={index} {...product} sm={12} md={3} />)}
       </Row>
     </>
   )

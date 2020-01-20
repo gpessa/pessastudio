@@ -18,8 +18,17 @@ const Fosso: React.FC<{ intl: IntlFormatters }> = ({ intl: { formatMessage } }) 
 
   return (
     <Row>
-      <Col md={5} ratio={Ratio.HORIZONTAL} as={Product} {...PRODUCT} />
-      <Col>
+      <Col
+        xs={{ order: 12, span: 12 }}
+        md={{ order: 1, span: 5 }}
+        ratio={Ratio.HORIZONTAL}
+        as={Product}
+        {...PRODUCT}
+      />
+      <Col
+        xs={{ order:  1 }}
+        md={{ order: 12 }}
+      >
         <Header>{formatMessage({ id: "OSTACOLI__fosso__title" })}</Header>
         {formatMessage({ id: "OSTACOLI__fosso__text" })}
       </Col>

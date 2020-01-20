@@ -8,7 +8,7 @@ import { PRODUCT_IDS } from "@constants"
 
 const Index: React.FC<{ intl: IntlFormatters }> = ({ intl: { formatMessage } }) => (
   <>
-    <Hero image={require("../images/background-home-1.jpg")} text="Tradizione e qualità" />
+    <Hero image={require("@images/background-home-1.jpg")} text="Tradizione e qualità" />
 
     <Section className={"text-center bg-light"} fluid>
       <Container>
@@ -29,7 +29,7 @@ const Index: React.FC<{ intl: IntlFormatters }> = ({ intl: { formatMessage } }) 
               as={Product}
               url={`/${id}`}
               name={formatMessage({ id: `NAVIGATION__${id}` })}
-              image={require(`../images/icon-${id}.jpg`)}
+              image={require(`@images/icon-${id}.jpg`)}
               description={formatMessage({
                 id: `HOME_product_description_${id}`,
               })}
