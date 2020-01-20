@@ -2,6 +2,7 @@
 
 :local(.element) {
   background-color: $breadcrumb-bg;
+  font-size: $small-font-size;
 }
 
 :local(.item) {
@@ -11,5 +12,26 @@
 
   &:hover {
     text-decoration: none;
+  }
+}
+
+:local(.index) :local(.itemLabel) {
+  display: none;
+}
+
+@include media-breakpoint-up(md) {
+  :local(.element) {
+    font-size: inherit;
+  }
+
+  :local(.index) {
+
+    :local(.itemLabel) {
+      display: inherit;
+    }
+
+    :local(.itemIcon) {
+      margin-right: $spacer / 2;
+    }
   }
 }

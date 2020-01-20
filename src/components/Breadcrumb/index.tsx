@@ -16,9 +16,9 @@ const Breadcrumb = ({ fragments, intl: { formatMessage } }) =>
         <ol className="breadcrumb">
           {fragments.map(({ id, url }, index) => (
             <li key={id} className="breadcrumb-item">
-              <Link to={url} className={`${styles.item}`}>
-                {index === 0 && <FontAwesomeIcon icon={faHome} className="mr-2" />}
-                {formatMessage({ id: `NAVIGATION__${id}` })}
+              <Link to={url} className={`${styles.item} ${styles[id]}`}>
+                {index === 0 && <FontAwesomeIcon icon={faHome} className={styles.itemIcon}/>}
+                <span className={styles.itemLabel}>{formatMessage({ id: `NAVIGATION__${id}` })}</span>
               </Link>
             </li>
           ))}

@@ -4,6 +4,11 @@
   transform: scale(1);
   transition: transform 0.2s ease-out;
   color: $text-muted;
+
+  margin-top: $spacer * 2;
+  @include media-breakpoint-up(md) {
+    margin-top: 0;
+  }
 }
 
 :local(a.container:hover) {
@@ -23,7 +28,7 @@
 
 :local(.label) {
   font-weight: bold;
-}
+}m
 
 :local(.title) {
   color: $black;

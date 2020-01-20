@@ -128,7 +128,7 @@ const Tecnoexerciser: React.FC<{ intl: IntlFormatters }> = ({ intl: { formatMess
                 },
                 {
                   label: formatMessage({ id: "GIOSTRE__manuali__procedura-lubrificazione" }),
-                  link: "https://www.youtube.com/watch?v=QMA4wPxq_ow",
+                  file: "https://www.youtube.com/watch?v=QMA4wPxq_ow",
                 },
               ]}
             />
