@@ -24,8 +24,8 @@ const Index: React.FC<{ intl: IntlFormatters }> = ({ intl: { formatMessage } }) 
           {PRODUCT_IDS.map(id => (
             <Col
               xs={6}
-              md={true}
               key={id}
+              md={true}
               as={Product}
               url={`/${id}`}
               name={formatMessage({ id: `NAVIGATION__${id}` })}
@@ -46,7 +46,7 @@ const Index: React.FC<{ intl: IntlFormatters }> = ({ intl: { formatMessage } }) 
           .fill(null)
           .map((x, index) => (
             <Carousel.Item key={index}>
-              <blockquote className="blockquote">{formatMessage({ id: `HOME__quote__item-${index}` })}</blockquote>
+              <Container as="blockquote" className="blockquote">{formatMessage({ id: `HOME__quote__item-${index}` })}</Container>
             </Carousel.Item>
           ))}
       </Carousel>

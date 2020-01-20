@@ -4,9 +4,8 @@ import { Nav, Navbar } from "react-bootstrap"
 import { IntlFormatters } from "react-intl"
 
 import { PAGES_IDS } from "@constants"
+import { LanguageSelector, Logo } from "@components"
 
-import LanguageSelector from "../LanguageSelector"
-import Logo from "../Logo"
 import * as styles from "./styles.module.scss"
 
 const Navigation: React.FC<{ intl: IntlFormatters }> = ({ intl: { formatMessage } }) => {
@@ -25,7 +24,7 @@ const Navigation: React.FC<{ intl: IntlFormatters }> = ({ intl: { formatMessage 
   }, [])
 
   return (
-    <Navbar expand="lg" sticky="top" className={`${styles.element} ${isFloating && "shadow-sm"}`}>
+    <Navbar expand="lg" sticky="top" className={`${styles.element} ${isFloating && "shadow-sm"}`} collapseOnSelect>
       <Navbar.Brand to="/" as={Link} className="mr-0">
         <Logo small={isFloating} />
       </Navbar.Brand>
@@ -35,7 +34,7 @@ const Navigation: React.FC<{ intl: IntlFormatters }> = ({ intl: { formatMessage 
       <Navbar.Collapse id="menu">
         <Nav className="ml-auto">
           {PAGES_IDS.map(id => (
-            <Nav.Link to={`/${id}/`} as={Link} key={id} activeClassName="active" className={`${id === "contatti" && "text-muted"}`}>
+            <Nav.Link to={`/${id}/`} as={Link} key={id} activeClassName="active" className={`${id === "contatti" && "text-muted"}`} eventKey={id}>
               {formatMessage({ id: `NAVIGATION__${id}` })}
             </Nav.Link>
           ))}

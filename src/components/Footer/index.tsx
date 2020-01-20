@@ -1,18 +1,15 @@
+import { injectIntl } from 'gatsby-plugin-intl';
 import React from 'react';
 import { Col, Row } from 'react-bootstrap';
-import { injectIntl } from "react-intl"
+import { IntlFormatters } from 'react-intl';
 
+import { Address, Map, Newsletter, Section } from '@components';
 import { faFacebookSquare, faInstagram } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-import Address from '../Address';
-import Map from '../Map';
-import Newsletter from '../Newsletter';
-import Section from '../Section';
-
 import * as styles from './styles.module.scss';
 
-const Footer = ({ intl: { formatMessage } }) => (
+const Footer: React.FC<{ intl: IntlFormatters }> = ({ intl: { formatMessage } }) => (
   <footer className={styles.element}>
     <Map />
 
@@ -33,7 +30,7 @@ const Footer = ({ intl: { formatMessage } }) => (
               telephoneMobile="+39 0429 805613"
             />
 
-            <hr />
+            <hr className="border-top"/>
                       
             <div className="mt-2">
               <a target="_blank" href="https://www.facebook.com/Pessastudio-HORSE-Tecnology-1050570271816027/" className={styles.social} aria-label="Facebook" rel="noopener">
