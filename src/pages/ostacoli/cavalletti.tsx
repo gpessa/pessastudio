@@ -10,13 +10,13 @@ const Cavalletti: React.FC<{ intl: IntlFormatters }> = ({ intl: { formatMessage 
   const PRODUCTS = [
     {
       name: formatMessage({ id: "OSTACOLI__cavalletti__product__name" }),
-      colors: [Colors.WHITE, Colors.BLU, Colors.YELLOW, Colors.RED, Colors.GREEN],
       image: require("@images/cavalletto.jpg"),
-      tickness: 100,
+      thickness: 100,
       length: 500,
       height: 500,
       weight: 2,
       price: 35,
+      colors: [Colors.WHITE, Colors.BLU, Colors.YELLOW, Colors.RED, Colors.GREEN],
     },
     {
       name: formatMessage({ id: "OSTACOLI__cavalletti-con-barriera__product__name" }),
@@ -25,7 +25,7 @@ const Cavalletti: React.FC<{ intl: IntlFormatters }> = ({ intl: { formatMessage 
       length: 2000,
       weight: 5.3,
       price: 91,
-    }
+    },
   ]
 
   return (
@@ -36,7 +36,9 @@ const Cavalletti: React.FC<{ intl: IntlFormatters }> = ({ intl: { formatMessage 
       </Col>
       <Col md={6}>
         <Row>
-          {PRODUCTS.map((product, index) => <Col md={6} key={index} as={Product} {...product} />)}
+          {PRODUCTS.map((product, index) => (
+            <Col md={6} key={index} as={Product} {...product} />
+          ))}
         </Row>
       </Col>
     </Row>

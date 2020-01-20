@@ -30,7 +30,7 @@ const CandelieriLameForate = ({ intl: { formatMessage } }: { intl: any }) => {
       ratio: Ratio.VERTICAL,
       thickness: 2,
       width: 65,
-      lenght: 500,
+      length: 500,
       price: 6.6,
     },
     {
@@ -40,7 +40,7 @@ const CandelieriLameForate = ({ intl: { formatMessage } }: { intl: any }) => {
       ratio: Ratio.VERTICAL,
       thickness: 2,
       width: 65,
-      lenght: 1500,
+      length: 1500,
       price: 12.5,
     },
   ]
@@ -50,7 +50,9 @@ const CandelieriLameForate = ({ intl: { formatMessage } }: { intl: any }) => {
       <Header>{formatMessage({ id: "OSTACOLI__candelieri-e-lame__title" })}</Header>
       <FormattedHTMLMessage id="OSTACOLI__candelieri-e-lame__text" />
       <Row>
-        {PRODUCTS.map((product, index) => <Col key={index} as={Product} ratio={Ratio.VERTICAL} {...product} md={3} />)}
+        {PRODUCTS.map((product, index) => (
+          <Col key={index} as={Product} ratio={Ratio.VERTICAL} {...product} md={3} />
+        ))}
       </Row>
     </>
   )

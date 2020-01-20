@@ -1,0 +1,16 @@
+@import "@styles/_variables.scss";
+
+:local(.data) {
+  font-size: 95%;
+  margin-bottom: $spacer / 3;
+}
+
+:local(.dataLabel) {
+  margin-right: $spacer / 3;
+  text-transform: uppercase;
+  font-size: $small-font-size;
+}
+
+:local(.dataValue) {
+  color: $black;
+}

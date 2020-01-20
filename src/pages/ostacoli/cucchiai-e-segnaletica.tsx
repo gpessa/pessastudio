@@ -1,10 +1,10 @@
-import { FormattedHTMLMessage, injectIntl } from 'gatsby-plugin-intl';
-import React from 'react';
-import { Col, Row } from 'react-bootstrap';
-import { IntlFormatters } from 'react-intl';
+import { FormattedHTMLMessage, injectIntl } from "gatsby-plugin-intl"
+import React from "react"
+import { Col, Row } from "react-bootstrap"
+import { IntlFormatters } from "react-intl"
 
-import { Header, Product } from '@components';
-import { Material, Ratio } from '@constants';
+import { Header, Product } from "@components"
+import { Material, Ratio } from "@constants"
 
 const CucchiaiSegnaletica: React.FC<{ intl: IntlFormatters }> = ({ intl: { formatMessage } }) => {
   const PRODUCTS = [
@@ -57,7 +57,9 @@ const CucchiaiSegnaletica: React.FC<{ intl: IntlFormatters }> = ({ intl: { forma
       <Header>{formatMessage({ id: "OSTACOLI__cucchiai-e-segnaletica__title" })}</Header>
       <FormattedHTMLMessage id="OSTACOLI__cucchiai-e-segnaletica__text" />
       <Row>
-        {PRODUCTS.map((product, index) => <Col as={Product} key={index} {...product} sm={12} md={3} />)}
+        {PRODUCTS.map((product, index) => (
+          <Col as={Product} key={index} {...product} sm={12} md={3} />
+        ))}
       </Row>
     </>
   )

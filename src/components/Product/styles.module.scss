@@ -26,32 +26,10 @@
   background-size: cover;
 }
 
-:local(.label) {
-  font-weight: bold;
-}m
-
 :local(.title) {
   color: $black;
   text-transform: uppercase;
   margin-bottom: $spacer / 2;
-}
-
-:local(.data) {
-  color: $text-muted;
-  font-size: 95%;
-  margin-bottom: $spacer / 3;
-}
-
-:local(.dataLabel) {
-  color: $text-muted;
-}
-
-:local(.color) {
-  display: inline-block;
-  height: 12px;
-  width: 12px;
-  border: 1px solid $border-color;
-  margin-right: $spacer / 4;
 }
 
 :local(.square) {
