@@ -12,21 +12,21 @@ const Cubi: React.FC<{ intl: IntlFormatters }> = ({ intl: { formatMessage } }) =
       name: formatMessage({ id: "OSTACOLI__cubi__product__cubi-mini" }),
       image: require("@images/product/ostacoli/cubi-mini.jpg"),
       colors: [Colors.WHITE, Colors.BLU, Colors.YELLOW, Colors.RED, Colors.GREEN],
-      height: 57,
-      length: 37,
-      price: 35,
+      width: 350,
+      length: 370,
+      height: 570,
       weight: 3,
-      width: 35,
+      price: 35
     },
     {
       name: formatMessage({ id: "OSTACOLI__cubi__product__cubi-maxi" }),
       image: require("@images/product/ostacoli/cubi-maxi.jpg"),
       colors: [Colors.WHITE, Colors.BLU, Colors.YELLOW, Colors.RED, Colors.GREEN],
+      width: 370,
+      length: 570,
       height: 70,
-      length: 57,
-      price: 62,
       weight: 5,
-      width: 37,
+      price: 62
     },
   ]
 
@@ -36,9 +36,7 @@ const Cubi: React.FC<{ intl: IntlFormatters }> = ({ intl: { formatMessage } }) =
         <Header>{formatMessage({ id: "OSTACOLI__cubi__title" })}</Header>
         {formatMessage({ id: "OSTACOLI__cubi__text" })}
       </Col>
-      {PRODUCTS.map((product, index) => (
-        <Col as={Product} key={index} md={3} {...product} />
-      ))}
+      {PRODUCTS.map((product, index) => <Col as={Product} key={index} md={3} {...product} />)}
     </Row>
   )
 }

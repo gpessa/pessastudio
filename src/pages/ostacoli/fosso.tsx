@@ -10,9 +10,10 @@ const Fosso: React.FC<{ intl: IntlFormatters }> = ({ intl: { formatMessage } }) 
   const PRODUCT = {
     image: require("@images/product/ostacoli/fosso.jpg"),
     name: formatMessage({ id: "OSTACOLI__fosso__product__name" }),
+    length: 1500,
     width: 2800,
     price: 440,
-    height: 8,
+    height: 80,
   }
 
   return (

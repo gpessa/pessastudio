@@ -4,39 +4,36 @@ import { IntlFormatters } from "react-intl"
 import { Col, Row } from "react-bootstrap"
 
 import { Header, Product, Section } from "@components"
-import { Colors } from "@constants"
+import { Colors, Material } from "@constants"
 
 const Dressage: React.FC<{ intl: IntlFormatters }> = ({ intl: { formatMessage } }) => {
   const TRAINING_PRODUCTS = [
     {
       name: "Lettera Dressage Light",
       image: require("@images/product/dressage/training-lettera.jpg"),
-      width: 20,
-      height: 30,
+      width: 200,
+      height: 300,
       weight: 0.5,
       colors: [Colors.WHITE],
+      material: [Material.POLIETILENE],
       price: 20,
     },
     {
       name: "Modulo dressage",
       image: require("@images/product/dressage/training-modulo-dressage.jpg"),
       weight: 3,
-      height: 28.5,
+      height: 285,
       colors: [Colors.WHITE],
     },
     {
       name: "Rettangolo dressage 20x40",
       description: "Un comodo set composto da 60 moduli e 8 lettere",
       image: require("@images/product/dressage/training-rettangolo-dressage-20x60.jpg"),
-      weight: 4000,
-      height: 2000,
     },
     {
       name: "Rettangolo dressage 20x60",
       description: "Un comodo set composto da 80 moduli e 12 lettere",
       image: require("@images/product/dressage/training-rettangolo-dressage-20x40.jpg"),
-      weight: 6000,
-      height: 2000,
     },
   ]
 
@@ -44,8 +41,8 @@ const Dressage: React.FC<{ intl: IntlFormatters }> = ({ intl: { formatMessage } 
     {
       name: "Lettera Dressage Light",
       image: require("@images/product/dressage/olimpic-lettera.jpg"),
-      width: 39,
-      height: 39,
+      width: 390,
+      height: 700,
       weight: 2.5,
       colors: [Colors.WHITE],
       price: 51,
@@ -53,23 +50,22 @@ const Dressage: React.FC<{ intl: IntlFormatters }> = ({ intl: { formatMessage } 
     {
       name: "Modulo dressage",
       image: require("@images/product/dressage/olimpic-modulo-dressage.jpg"),
-      height: 28.5,
-      weight: 3,
+      width: 210,
+      length: 2000,
+      height: 370,
+      weight: 5,
       colors: [Colors.WHITE],
+      price: 74
     },
     {
       name: "Rettangolo dressage 20x40",
       image: require("@images/product/dressage/olimpic-rettangolo-dressage-20x60.jpg"),
       description: "Un comodo set composto da 60 moduli e 8 lettere",
-      height: 2000,
-      weight: 4000,
     },
     {
       name: "Rettangolo dressage 20x60",
       description: "Un comodo set composto da 80 moduli e 12 lettere",
       image: require("@images/product/dressage/olimpic-rettangolo-dressage-20x40.jpg"),
-      height: 2000,
-      weight: 6000,
     },
   ]
 
@@ -100,9 +96,7 @@ const Dressage: React.FC<{ intl: IntlFormatters }> = ({ intl: { formatMessage } 
         <p>{formatMessage({ id: "DRESSAGE_training_description" })}</p>
 
         <Row className="mt-5">
-          {TRAINING_PRODUCTS.map((product, index) => (
-            <Col key={index} as={Product} {...product} />
-          ))}
+          {TRAINING_PRODUCTS.map((product, index) => <Col key={index} as={Product} {...product} />)}
         </Row>
       </Section>
 
@@ -111,9 +105,7 @@ const Dressage: React.FC<{ intl: IntlFormatters }> = ({ intl: { formatMessage } 
         <p>{formatMessage({ id: "DRESSAGE_olimpic_description" })}</p>
 
         <Row className="mt-5">
-          {OLIMPIC_PRODUCTS.map((product, index) => (
-            <Col key={index} as={Product} {...product} />
-          ))}
+          {OLIMPIC_PRODUCTS.map((product, index) => <Col key={index} as={Product} {...product} />)}
         </Row>
       </Section>
     </>

@@ -71,6 +71,7 @@ const Recinti: React.FC<{ intl: IntlFormatters }> = ({ intl: { formatMessage } }
       name: formatMessage({ id: `RECINTI__prodotto__piede-mobile__name` }),
       image: require("@images/product/recinti/piede-mobile.jpg"),
       colors: [Colors.GREEN],
+      diameter: 60,
       height: 30,
     },
     {
@@ -95,9 +96,7 @@ const Recinti: React.FC<{ intl: IntlFormatters }> = ({ intl: { formatMessage } }
       <Section>
         <Header>{formatMessage({ id: "GENERAL__gamma" })}</Header>
         <Row>
-          {PRODUCTS.map((product, index) => (
-            <Col as={Product} key={index} md={4} {...product} />
-          ))}
+          {PRODUCTS.map((product, index) => <Col as={Product} key={index} md={4} {...product} />)}
         </Row>
       </Section>
 
