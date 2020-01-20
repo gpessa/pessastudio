@@ -15,14 +15,14 @@ const ContentTable = ({ rows, title, intl: { formatMessage }  }: Props) => (
 
             <td className="text-right">
               {link && (
-                <Button as={Link} to={link} size="sm" variant="link">
+                <Button as={Link} to={link} size="sm" variant="link" className="text-nowrap">
                   {formatMessage({id: "GENERAL__view" })} {" "}
                   <FontAwesomeIcon icon={faEye} className="text-dark" fixedWidth={true}/>
                 </Button>
               )}
 
               {file && (
-                <Button href={file} target="_blank" size="sm" as="a" variant="link">
+                <Button href={file} target="_blank" size="sm" as="a" variant="link" className="text-nowrap">
                   {formatMessage({id: "GENERAL__download" })} {" "}
                   <FontAwesomeIcon icon={faFilePdf} className="text-danger" fixedWidth={true}/>
                 </Button>

@@ -36,7 +36,7 @@ const Giostre: React.FC<{ intl: IntlFormatters }> = ({ intl: { formatMessage } }
 
       <Columns
         left={
-          <div className="text-center py-5">
+          <div className="text-center py-md-5">
             <h3>{formatMessage({ id: "NAVIGATION__tecnoexerciser" })}</h3>
             <Button as={Link} to="/giostre/tecnoexerciser" variant="light" size="lg">
               {formatMessage({ id: "GIOSTRE_discover-more" })}
@@ -44,7 +44,7 @@ const Giostre: React.FC<{ intl: IntlFormatters }> = ({ intl: { formatMessage } }
           </div>
         }
         right={
-          <div className="text-center py-5">
+          <div className="text-center py-md-5">
             <h3>{formatMessage({ id: "NAVIGATION__ippowalker" })}</h3>
             <Button as={Link} to="/giostre/ippowalker" variant="primary" size="lg">
               {formatMessage({ id: "GIOSTRE_discover-more" })}

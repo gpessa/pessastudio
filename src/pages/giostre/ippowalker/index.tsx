@@ -90,11 +90,8 @@ const Ippowalker: React.FC<{ intl: IntlFormatters }> = ({ intl: { formatMessage 
       <Section>
         <Header>{formatMessage({ id: "GENERAL__gamma" })}</Header>
         <FormattedHTMLMessage id="GIOSTRE__ippowalker__gamma__text" />
-
         <Row>
-          {PRODUCTS.map((product, index) => (
-            <Col key={index} as={Product} ratio={Ratio.HORIZONTAL} {...product} />
-          ))}
+          {PRODUCTS.map((product, index) => <Col key={index} as={Product} ratio={Ratio.HORIZONTAL} {...product} md={4}/>)}
         </Row>
       </Section>
 

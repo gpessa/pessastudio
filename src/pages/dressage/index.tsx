@@ -1,4 +1,4 @@
-import { FormattedMessage, injectIntl } from "gatsby-plugin-intl"
+import { FormattedMessage, injectIntl, FormattedHTMLMessage } from "gatsby-plugin-intl"
 import React from "react"
 import { IntlFormatters } from "react-intl"
 import { Col, Row } from "react-bootstrap"
@@ -77,35 +77,29 @@ const Dressage: React.FC<{ intl: IntlFormatters }> = ({ intl: { formatMessage } 
           id="DRESSAGE_intro_1"
           values={{
             linktraining: (msg: string) => (
-              <a href="#dressage-training">
-                <strong>{msg}</strong>
-              </a>
+              <a href="#dressage-training">{msg}</a>
             ),
             linkolimpic: (msg: string) => (
-              <a href="#dressage-olimpic">
-                <strong>{msg}</strong>
-              </a>
+              <a href="#dressage-olimpic">{msg}</a>
             ),
           }}
         />
-        <div>{formatMessage({ id: "DRESSAGE_intro_2" })}</div>
+        <FormattedHTMLMessage id="DRESSAGE_intro_2" />
       </Section>
 
       <Section id="dressage-training" className="bg-light">
         <Header as="h2">{formatMessage({ id: `DRESSAGE_training_title` })}</Header>
-        <p>{formatMessage({ id: "DRESSAGE_training_description" })}</p>
-
+        <FormattedHTMLMessage as="div" id="DRESSAGE_training_description" />
         <Row className="mt-5">
-          {TRAINING_PRODUCTS.map((product, index) => <Col key={index} as={Product} {...product} />)}
+          {TRAINING_PRODUCTS.map((product, index) => <Col key={index} as={Product} {...product} md={3} />)}
         </Row>
       </Section>
 
       <Section id="dressage-olimpic">
         <Header as="h2">{formatMessage({ id: `DRESSAGE_olimpic_title` })}</Header>
-        <p>{formatMessage({ id: "DRESSAGE_olimpic_description" })}</p>
-
+        <FormattedHTMLMessage as="div" id="DRESSAGE_olimpic_description" />
         <Row className="mt-5">
-          {OLIMPIC_PRODUCTS.map((product, index) => <Col key={index} as={Product} {...product} />)}
+          {OLIMPIC_PRODUCTS.map((product, index) => <Col key={index} as={Product} {...product} md={3} />)}
         </Row>
       </Section>
     </>

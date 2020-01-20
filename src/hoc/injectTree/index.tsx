@@ -2,7 +2,7 @@ import React from "react"
 
 import { Location } from "@reach/router"
 
-const Tree = (Component: any) => (props: any) => (
+const Tree = (Component: React.FC) => (props: any) => (
   <Location>
     {({ location: { pathname } }) => {
       let url = ""

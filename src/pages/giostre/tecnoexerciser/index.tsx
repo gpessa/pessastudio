@@ -92,7 +92,7 @@ const Tecnoexerciser: React.FC<{ intl: IntlFormatters }> = ({ intl: { formatMess
         <FormattedHTMLMessage id="GIOSTRE__tecnoexerciser__gamma__text" />
 
         <Row>
-          {PRODUCTS.map((product, index) => <Col key={index} as={Product} ratio={Ratio.HORIZONTAL} {...product} />)}
+          {PRODUCTS.map((product, index) => <Col key={index} as={Product} ratio={Ratio.HORIZONTAL} {...product} md={4} />)}
         </Row>
       </Section>
 
