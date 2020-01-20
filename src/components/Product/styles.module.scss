@@ -3,6 +3,7 @@
 :local(.container) {
   transform: scale(1);
   transition: transform 0.2s ease-out;
+  color: $text-muted;
 }
 
 :local(a.container:hover) {
