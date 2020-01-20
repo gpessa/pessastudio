@@ -14,7 +14,7 @@ const Giostre: React.FC<{ intl: IntlFormatters }> = ({ intl: { formatMessage } }
       <FormattedHTMLMessage id="GIOSTRE__text" />
     </Section>
 
-    <Section fluid className="pb-0">
+    <Section fluid={true} className="pb-0">
       <Container className="mb-4">
         <Header>{formatMessage({ id: "GENERAL__gamma" })}</Header>
         <FormattedMessage
