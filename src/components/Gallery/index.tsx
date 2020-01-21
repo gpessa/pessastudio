@@ -47,6 +47,8 @@ const Gallery: React.FC<Props> = ({ images }: Props) => {
           </Button>
 
         </Modal.Body>
+
+        {active && <Modal.Footer>{active.caption}</Modal.Footer>}
       </Modal>
     </>
   )
