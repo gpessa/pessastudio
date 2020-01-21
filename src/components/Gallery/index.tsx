@@ -1,6 +1,6 @@
 import React from "react"
 import { Row, Col, Figure, Modal, Image, Button } from "react-bootstrap"
-import useGallery from "@hooks/useGallery"
+import { useGallery } from "@hooks"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowLeft, faArrowRight } from '@fortawesome/free-solid-svg-icons';
 
@@ -25,11 +25,11 @@ const Gallery: React.FC<Props> = ({ images }: Props) => {
     <>
       <Row>
         {images.map((image, index) => (
-          <Col as={Figure} md={6} key={index}>
-            <a onClick={() => open(image)} className={styles.galleryItem}>
+          <Col md={6} key={index}>
+            <Figure onClick={() => open(image)} className={styles.galleryItem}>
               <Figure.Image src={image.src} />
               <Figure.Caption>{image.caption}</Figure.Caption>
-            </a>
+            </Figure>
           </Col>
         ))}
       </Row>

@@ -32,11 +32,12 @@
   :local(.element) {
     background: linear-gradient(90deg, $primary 50%, $white 50%);
   }
+
   :local(.left) {
-    padding-right: $spacer * 3;
+    padding-right: $grid-gutter-width!important;
   }
 
   :local(.right) {
-    padding-left: $spacer * 3;
+    padding-left: $grid-gutter-width!important;
   }
 }
