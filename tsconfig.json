@@ -7,11 +7,24 @@
     "esModuleInterop": true,
     "baseUrl": ".",
     "paths": {
-      "@components": ["src/components"],
-      "@constants": ["src/constants"],
-      "@images": ["src/images"],
-      "@styles": ["src/styles"],
-      "@hoc": ["src/hoc"]
+      "@hooks": [
+        "src/hooks"
+      ],
+      "@components": [
+        "src/components"
+      ],
+      "@constants": [
+        "src/constants"
+      ],
+      "@images": [
+        "src/images"
+      ],
+      "@styles": [
+        "src/styles"
+      ],
+      "@hoc": [
+        "src/hoc"
+      ]
     }
   }
 }

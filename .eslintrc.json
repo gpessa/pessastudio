@@ -2,15 +2,21 @@
   "import/no-unresolved": 2,
   "import/resolver": {
     "node": {
-      "moduleDirectory": ["node_modules", "src"]
+      "moduleDirectory": [
+        "node_modules",
+        "src"
+      ]
     },
     "babel-module": {
-      "root": ["./src"],
+      "root": [
+        "./src"
+      ],
       "alias": {
         "@components": "./components",
         "@constants": "./constants",
         "@styles": "./styles",
         "@images": "./images",
+        "@hooks": "./hooks",
         "@hoc": "./hoc"
       }
     }

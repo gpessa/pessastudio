@@ -23,6 +23,7 @@ module.exports = {
           "@constants": "./constants",
           "@styles": "./styles",
           "@images": "./images",
+          "@hooks": "./hooks",
           "@hoc": "./hoc",
         },
       },
