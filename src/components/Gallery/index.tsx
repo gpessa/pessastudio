@@ -27,7 +27,7 @@ const Gallery: React.FC<Props> = ({ images }: Props) => {
         {images.map((image, index) => (
           <Col md={6} key={index}>
             <Figure onClick={() => open(image)} className={styles.galleryItem}>
-              <Figure.Image src={image.src} />
+              <Figure.Image src={image.src} className={styles.galleryItemImage} />
               <Figure.Caption>{image.caption}</Figure.Caption>
             </Figure>
           </Col>

@@ -2,6 +2,10 @@
   cursor: pointer;
 }
 
+:local(.galleryItemImage) {
+  width: 100%;
+}
+
 :local(.galleryModalImage) {
   width: 100%;
 }
