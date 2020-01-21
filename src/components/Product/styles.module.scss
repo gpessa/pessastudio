@@ -1,9 +1,9 @@
 @import "@styles/_variables.scss";
 
 :local(.container) {
+  color: $text-muted;
   transform: scale(1);
   transition: transform 0.2s ease-out;
-  color: $text-muted;
 
   margin-top: $spacer * 2;
   @include media-breakpoint-up(md) {

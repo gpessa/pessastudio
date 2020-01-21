@@ -1,5 +1,11 @@
 :local(.galleryItem) {
   cursor: pointer;
+  transform: scale(1);
+  transition: transform 0.2s ease-out;
+}
+
+:local(.galleryItem:hover) {
+  transform: scale(1.05);
 }
 
 :local(.galleryItemImage) {
@@ -10,14 +16,14 @@
   width: 100%;
 }
 
-:local(.galleryModalPrevious){
+:local(.galleryModalPrevious) {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
   left: 0;
 }
 
-:local(.galleryModalNext){
+:local(.galleryModalNext) {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);

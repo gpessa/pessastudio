@@ -1,25 +1,17 @@
 import React from "react"
 import { Row, Col, Figure, Modal, Image, Button } from "react-bootstrap"
 import { useGallery } from "@hooks"
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faArrowLeft, faArrowRight } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faArrowLeft, faArrowRight } from "@fortawesome/free-solid-svg-icons"
 
-import * as styles from './styles.module.scss';
+import * as styles from "./styles.module.scss"
 
 interface Props {
   images: Picture[]
 }
 
 const Gallery: React.FC<Props> = ({ images }: Props) => {
-  const {
-    showPreviousDisabled,
-    showNextDisabled,
-    showPrevious,
-    showNext,
-    active,
-    close,
-    open
-  } = useGallery(images);
+  const { showPreviousDisabled, showNextDisabled, showPrevious, showNext, active, close, open } = useGallery(images)
 
   return (
     <>
@@ -43,9 +35,8 @@ const Gallery: React.FC<Props> = ({ images }: Props) => {
           </Button>
 
           <Button className={styles.galleryModalNext} disabled={showNextDisabled} onClick={showNext}>
-            <FontAwesomeIcon icon={faArrowRight} fixedWidth={true}/>
+            <FontAwesomeIcon icon={faArrowRight} fixedWidth={true} />
           </Button>
-
         </Modal.Body>
 
         {active && <Modal.Footer>{active.caption}</Modal.Footer>}
