@@ -1,2 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[8],{lOmY:function(n,e,t){"use strict";t.r(e);var a=t("q1tI"),r=t.n(a);e.default=function(){return r.a.createElement(r.a.Fragment,null)}}}]);
-//# sourceMappingURL=component---src-pages-giostre-tecnoexerciser-tsx-1e2fae66a06fd8812ab4.js.map
