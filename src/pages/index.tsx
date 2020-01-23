@@ -8,7 +8,7 @@ import { PRODUCT_IDS } from "@constants"
 
 const Index: React.FC<{ intl: IntlFormatters }> = ({ intl: { formatMessage } }) => (
   <>
-    <Hero image={require("@images/background-home-1.jpg")} text="Tradizione e qualità" />
+    <Hero image={require("@images/background-home-1.jpg")} text={formatMessage({ id: "HOME__hero__text" })} />
 
     <Section className={"text-center bg-light"} fluid>
       <Container>
@@ -46,7 +46,9 @@ const Index: React.FC<{ intl: IntlFormatters }> = ({ intl: { formatMessage } }) 
           .fill(null)
           .map((x, index) => (
             <Carousel.Item key={index}>
-              <Container as="blockquote" className="blockquote">{formatMessage({ id: `HOME__quote__item-${index}` })}</Container>
+              <Container as="blockquote" className="blockquote">
+                {formatMessage({ id: `HOME__quote__item-${index}` })}
+              </Container>
             </Carousel.Item>
           ))}
       </Carousel>
