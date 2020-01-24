@@ -3,7 +3,7 @@ import React from "react"
 import { Carousel, Col, Container, Row } from "react-bootstrap"
 import { IntlFormatters } from "react-intl"
 
-import { Hero, Product, Section } from "@components"
+import { Hero, Product, Section, ProductTitle } from "@components"
 import { PRODUCT_IDS } from "@constants"
 
 const Index: React.FC<{ intl: IntlFormatters }> = ({ intl: { formatMessage } }) => (
@@ -18,9 +18,13 @@ const Index: React.FC<{ intl: IntlFormatters }> = ({ intl: { formatMessage } }) 
     </Section>
 
     <Section fluid={true}>
-      <h1 className={"text-center"}>{formatMessage({ id: "HOME_our-product_title" })}</h1>
       <Container fluid>
         <Row>
+          <Col xs={6} md={12}>
+            <ProductTitle>
+              <h1>{formatMessage({ id: "HOME_our-product_title" })}</h1>
+            </ProductTitle>
+          </Col>
           {PRODUCT_IDS.map(id => (
             <Col
               xs={6}

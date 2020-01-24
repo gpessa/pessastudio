@@ -1,0 +1,10 @@
+@import "@styles/_variables.scss";
+
+:local(.element) {
+  margin-top: $spacer * 2;
+
+  @include media-breakpoint-up(md) {
+    margin-top: 0;
+    text-align: center;
+  }
+}
