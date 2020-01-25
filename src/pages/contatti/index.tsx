@@ -2,7 +2,7 @@ import { injectIntl } from "gatsby-plugin-intl"
 import React from "react"
 import { IntlFormatters } from "react-intl"
 
-import { Address, Columns, Header } from "@components"
+import { Address, Columns, Header, Section } from "@components"
 import * as styles from "./styles.module.scss"
 
 const Contatti: React.FC<{ intl: IntlFormatters }> = ({ intl: { formatMessage } }) => (
@@ -42,11 +42,15 @@ const Contatti: React.FC<{ intl: IntlFormatters }> = ({ intl: { formatMessage } 
     }
     right={
       <>
-        <Header>{formatMessage({ id: "CONTACT__contatto-commerciale" })}</Header>
-
-        <img src={require("@images/anna.jpg")} className={`img-thumbnail rounded-circle mb-4 ${styles.selfie}`} />
-
-        <Address name="Anna Pessa" email="annapessa@pessastudio.eu" telephoneMobile="+39 0429 805613" whatsapp="+39 0429 805613" />
+        <Section className="pt-0">
+          <Header>{formatMessage({ id: "CONTACT__contatto-commerciale__italia" })}</Header>
+          <img src={require("@images/anna.jpg")} className={`img-thumbnail rounded-circle mb-4 ${styles.selfie}`} />
+          <Address name="Anna Pessa" email="annapessa@pessastudio.eu" telephoneMobile="+39 0429 805613" whatsapp="+39 0429 805613" />
+        </Section>
+        <Section className="pb-0">
+          <Header>{formatMessage({ id: "CONTACT__contatto-commerciale__belgio" })}</Header>
+          <Address name="Roberto Della Bella" email="magiccavallo@hotmail.com" telephoneMobile="+32 475 96 5123" />
+        </Section>
       </>
     }
   />

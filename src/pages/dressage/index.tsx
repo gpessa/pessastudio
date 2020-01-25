@@ -55,7 +55,7 @@ const Dressage: React.FC<{ intl: IntlFormatters }> = ({ intl: { formatMessage } 
       height: 370,
       weight: 5,
       colors: [Colors.WHITE],
-      price: 74
+      price: 74,
     },
     {
       name: "Rettangolo dressage 20x40",
@@ -74,32 +74,31 @@ const Dressage: React.FC<{ intl: IntlFormatters }> = ({ intl: { formatMessage } 
       <Section>
         <h1>{formatMessage({ id: `NAVIGATION__dressage` })}</h1>
         <FormattedMessage
-          id="DRESSAGE_intro_1"
+          id="DRESSAGE__text"
           values={{
-            linktraining: (msg: string) => (
-              <a href="#dressage-training">{msg}</a>
-            ),
-            linkolimpic: (msg: string) => (
-              <a href="#dressage-olimpic">{msg}</a>
-            ),
+            linktraining: (msg: string) => <a href="#dressage-training">{msg}</a>,
+            linkolimpic: (msg: string) => <a href="#dressage-olimpic">{msg}</a>,
           }}
         />
-        <FormattedHTMLMessage id="DRESSAGE_intro_2" />
       </Section>
 
       <Section id="dressage-training" className="bg-light">
-        <Header as="h2">{formatMessage({ id: `DRESSAGE_training_title` })}</Header>
-        <FormattedHTMLMessage as="div" id="DRESSAGE_training_description" />
+        <Header as="h2">{formatMessage({ id: `DRESSAGE__training_title` })}</Header>
+        <FormattedHTMLMessage as="div" id="DRESSAGE__training_description" />
         <Row className="mt-5">
-          {TRAINING_PRODUCTS.map((product, index) => <Col key={index} as={Product} {...product} md={3} />)}
+          {TRAINING_PRODUCTS.map((product, index) => (
+            <Col key={index} as={Product} {...product} md={3} />
+          ))}
         </Row>
       </Section>
 
       <Section id="dressage-olimpic">
-        <Header as="h2">{formatMessage({ id: `DRESSAGE_olimpic_title` })}</Header>
-        <FormattedHTMLMessage as="div" id="DRESSAGE_olimpic_description" />
+        <Header as="h2">{formatMessage({ id: `DRESSAGE__olimpic_title` })}</Header>
+        <FormattedHTMLMessage as="div" id="DRESSAGE__olimpic_description" />
         <Row className="mt-5">
-          {OLIMPIC_PRODUCTS.map((product, index) => <Col key={index} as={Product} {...product} md={3} />)}
+          {OLIMPIC_PRODUCTS.map((product, index) => (
+            <Col key={index} as={Product} {...product} md={3} />
+          ))}
         </Row>
       </Section>
     </>

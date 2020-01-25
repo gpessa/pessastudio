@@ -1,4 +1,4 @@
-import { injectIntl } from "gatsby-plugin-intl"
+import { injectIntl, FormattedHTMLMessage } from "gatsby-plugin-intl"
 import React from "react"
 import { Col, Row } from "react-bootstrap"
 import { IntlFormatters } from "react-intl"
@@ -32,7 +32,7 @@ const Cavalletti: React.FC<{ intl: IntlFormatters }> = ({ intl: { formatMessage 
     <Row>
       <Col md={6}>
         <Header>{formatMessage({ id: "OSTACOLI__cavalletti__title" })}</Header>
-        {formatMessage({ id: "OSTACOLI__cavalletti__text" })}
+        <FormattedHTMLMessage id="OSTACOLI__cavalletti__text" />
       </Col>
       <Col md={6}>
         <Row>

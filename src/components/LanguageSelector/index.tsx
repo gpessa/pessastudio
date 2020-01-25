@@ -1,29 +1,44 @@
-import { changeLocale, injectIntl, IntlContextConsumer } from 'gatsby-plugin-intl';
-import * as React from 'react';
-import { NavDropdown } from 'react-bootstrap';
-import { IntlFormatters } from 'react-intl';
-import Flag from 'react-world-flags';
+import { changeLocale, injectIntl, IntlContextConsumer } from "gatsby-plugin-intl"
+import * as React from "react"
+import { Button, Modal, Nav } from "react-bootstrap"
+import { IntlFormatters } from "react-intl"
+import Flag from "react-world-flags"
 
-import * as styles from './styles.module.scss';
+const LanguageSelector: React.FC<{ intl: IntlFormatters }> = ({ intl: { formatMessage } }) => {
+  const [show, setShow] = React.useState(false)
 
-const LanguageSelectorItem = ({ id }: { id: String }) => <Flag code={id} height={20} className={styles.languageSelectorItem} />
+  const handleModal = () => {
+    setShow(prevCount => !prevCount)
+  }
 
-const LanguageSelector: React.FC<{ intl: IntlFormatters }> = ({ intl: { formatMessage } }) => (
-  <IntlContextConsumer>
-    {({ languages, language: currentLocale }) => {
-      const showLanguageSelector = languages.length > 1;
-
-      return showLanguageSelector ? (
-        <NavDropdown title={<LanguageSelectorItem id={currentLocale} />} alignRight className={styles.languageSelector} id="language-selector">
-          {languages.map(language => (
-            <NavDropdown.Item key={language} onClick={() => changeLocale(language)}>
-              <LanguageSelectorItem id={language} /> {formatMessage({ id: `LOCALE__${language}` })}
-            </NavDropdown.Item>
-          ))}
-        </NavDropdown>
-      ) : null;
-    }}
-  </IntlContextConsumer>
-)
+  return (
+    <IntlContextConsumer>
+      {({ languages, language }) => (
+        <>
+          <Nav.Link onClick={handleModal}>
+            <Flag code={language} height={15} />
+          </Nav.Link>
+          <Modal show={show} onHide={handleModal} size="sm">
+            <Modal.Body>
+              {languages.map((lang: string) => (
+                <Button
+                  onClick={() => {
+                    changeLocale(lang)
+                    handleModal()
+                  }}
+                  block
+                  variant="link"
+                >
+                  <Flag code={lang} height={15} className="mr-2" />
+                  {formatMessage({ id: `LOCALE__${lang}` })}
+                </Button>
+              ))}
+            </Modal.Body>
+          </Modal>
+        </>
+      )}
+    </IntlContextConsumer>
+  )
+}
 
 export default injectIntl(LanguageSelector)

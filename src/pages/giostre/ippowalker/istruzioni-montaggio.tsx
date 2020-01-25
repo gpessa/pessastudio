@@ -50,7 +50,7 @@ const IstruzioniMontaggio: React.FC<{ intl: IntlFormatters }> = ({ intl: { forma
 
   return (
     <Section>
-      <Header>{formatMessage({ id: "GIOSTRE__istruzioni-montaggio__title" })}</Header>
+      <Header>{formatMessage({ id: "NAVIGATION__istruzioni-montaggio" })}</Header>
       <p>{formatMessage({ id: "GIOSTRE__istruzioni-montaggio__testo" })}</p>
       <Path steps={STEPS} />
     </Section>
