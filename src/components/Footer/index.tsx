@@ -19,11 +19,12 @@ const Footer: React.FC<{ intl: IntlFormatters }> = ({ intl: { formatMessage } })
           <Col md={6} lg={{ span: 4 }} className="mb-5 mb-md-0">
             <h5>{formatMessage({ id: "NAVIGATION__contatti" })}</h5>
 
-            <Address name="PESSASTUDIO Horse Tecnology srl" country="Italy" postalCode="35044" streetAddress="via Cà Megliadino, 35" addressLocality="Montagnana" addressRegion="Padova" email="annapessa@pessastudio.eu" telephoneMobile="+39 0429 805613" />
+            <Address name="PESSASTUDIO Horse Tecnology srl" country="Italy" postalCode="35044" streetAddress="via Cà Megliadino, 35" addressLocality="Montagnana" addressRegion="Padova" />
 
-            <hr className="border-top" />
 
-            <div className="mt-2">
+            <Address email="annapessa@pessastudio.eu" telephoneMobile="+39 0429 805613" className="mt-4"/>
+
+            <div className="mt-4">
               <a target="_blank" href="https://www.facebook.com/Pessastudio-HORSE-Tecnology-1050570271816027/" className={styles.social} aria-label="Facebook" rel="noopener">
                 <FontAwesomeIcon icon={faFacebookSquare} size="lg" />
               </a>

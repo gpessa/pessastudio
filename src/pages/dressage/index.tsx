@@ -15,7 +15,7 @@ const Dressage: React.FC<{ intl: IntlFormatters }> = ({ intl: { formatMessage } 
       height: 300,
       weight: 0.5,
       colors: [Colors.WHITE],
-      material: [Material.POLIETILENE],
+      materials: [Material.POLIETILENE],
       price: 20,
     },
     {

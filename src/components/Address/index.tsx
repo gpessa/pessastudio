@@ -6,11 +6,11 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
 import * as styles from "./styles.module.scss"
 
-const Address = ({ name, country, addressLocality, whatsapp, postalCode, addressRegion, streetAddress, telephoneMobile, email }: Props) => {
+const Address: React.FC<Props> = ({ name, country, addressLocality, whatsapp, postalCode, addressRegion, streetAddress, telephoneMobile, email, ...props }) => {
   const hasAddress = streetAddress != undefined
 
   return (
-    <div itemScope itemType="http://schema.org/ContactPoint">
+    <div itemScope itemType="http://schema.org/ContactPoint" {...props}>
       <h6 itemProp="name" className="mb-1">
         {name}
       </h6>
@@ -67,6 +67,7 @@ interface Props {
   streetAddress?: string
   addressLocality?: string
   telephoneMobile?: string
+  className?: string
 }
 
 export default Address

@@ -1,3 +1,5 @@
+@import "@styles/_variables.scss";
+
 :local(.galleryItem) {
   cursor: pointer;
   transform: scale(1);
@@ -10,6 +12,7 @@
 
 :local(.galleryItemImage) {
   width: 100%;
+  border: 1px solid $border-color;
 }
 
 :local(.galleryModalImage) {
