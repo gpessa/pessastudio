@@ -73,7 +73,7 @@ const NewsletterSubscription: React.FC<{ intl: IntlFormatters, locale: string }>
             />
           </Form.Group>
 
-          <Button variant="dark" type="submit" size="sm" block>{formatMessage({ id: "NEWSLETTER__button" })}</Button>
+          <Button variant="secondary" type="submit" size="sm" block>{formatMessage({ id: "NEWSLETTER__button" })}</Button>
         </>
       )}
       

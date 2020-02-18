@@ -16,6 +16,7 @@ const Tondini: React.FC<{ intl: IntlFormatters }> = ({ intl: { formatMessage } }
     { caption: formatMessage({ id: `TONDINO__gallery__image-3` }), src: require("@images/product/tondini/tondino-3.jpg") },
     { caption: formatMessage({ id: `TONDINO__gallery__image-4` }), src: require("@images/product/tondini/tondino-4.jpg") },
     { caption: formatMessage({ id: `TONDINO__gallery__image-5` }), src: require("@images/product/tondini/tondino-5.jpg") },
+    { caption: formatMessage({ id: `TONDINO__gallery__image-6` }), src: require("@images/product/tondini/tondino-6.jpg") },
   ]
 
   return (

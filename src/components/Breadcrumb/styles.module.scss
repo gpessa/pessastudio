@@ -9,10 +9,6 @@
   font-family: $headings-font-family;
   text-transform: uppercase;
   color: $black;
-
-  &:hover {
-    text-decoration: none;
-  }
 }
 
 :local(.index) :local(.itemLabel) {
@@ -25,7 +21,6 @@
   }
 
   :local(.index) {
-
     :local(.itemLabel) {
       display: inherit;
     }

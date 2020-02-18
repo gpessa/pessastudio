@@ -25,6 +25,10 @@ const Tecnoexerciser: React.FC<{ intl: IntlFormatters }> = ({ intl: { formatMess
       src: require("@images/product/giostre/tecnoexerciser/galleria/separazione-2.jpg"),
       caption: formatMessage({ id: "GIOSTRE__tecnoexerciser__image-3" }),
     },
+    {
+      src: require("@images/product/giostre/tecnoexerciser/galleria/interno.jpg"),
+      caption: formatMessage({ id: "GIOSTRE__tecnoexerciser__image-4" }),
+    },
   ]
 
   const DIMENSIONS = [15, 18, 20, 22, 24]
@@ -89,7 +93,7 @@ const Tecnoexerciser: React.FC<{ intl: IntlFormatters }> = ({ intl: { formatMess
 
       <Section>
         <Header>{formatMessage({ id: "GENERAL__gamma" })}</Header>
-        <FormattedHTMLMessage id="GIOSTRE__tecnoexerciser__gamma__text" />
+        <p>{formatMessage({ id: "GIOSTRE__tecnoexerciser__gamma__text" })}</p>
 
         <Row>
           {PRODUCTS.map((product, index) => <Col key={index} as={Product} ratio={Ratio.HORIZONTAL} {...product} md={4} />)}

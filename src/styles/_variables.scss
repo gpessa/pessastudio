@@ -58,6 +58,8 @@ $figure-caption-font-size: 70%;
 $small-font-size: 80%;
 $text-muted: $gray-600;
 
+$link-color: $black;
+
 $breadcrumb-padding-y: 1rem !default;
 $breadcrumb-padding-x: 0rem !default;
 $breadcrumb-item-padding: 0.7rem !default;
@@ -72,6 +74,10 @@ $enable-caret: false;
 $enable-rounded: false;
 
 $font-weight-base: 300;
+
+$secondary: darken($primary, 10);
+
+$link-hover-decoration: none;
 
 @import "~bootstrap/scss/functions";
 @import "~bootstrap/scss/variables";
