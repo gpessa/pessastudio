@@ -3,11 +3,10 @@ import React from "react"
 import { Col, Row, Container } from "react-bootstrap"
 import { IntlFormatters } from "react-intl"
 
-import { Address, Map, Newsletter, Section } from "@components"
-import { faFacebookSquare, faInstagram } from "@fortawesome/free-brands-svg-icons"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { Address, Map, Newsletter, Section, FooterMenu } from "@components"
 
 import * as styles from "./styles.module.scss"
+import { SOCIALS, LEGAL_IDS, PRODUCT_IDS } from "@constants"
 
 const Footer: React.FC<{ intl: IntlFormatters }> = ({ intl: { formatMessage } }) => (
   <footer className={styles.element}>
@@ -16,28 +15,37 @@ const Footer: React.FC<{ intl: IntlFormatters }> = ({ intl: { formatMessage } })
     <div className={styles.data}>
       <Section>
         <Row>
-          <Col md={6} lg={{ span: 4 }} className="mb-5 mb-md-0">
-            <h5>{formatMessage({ id: "NAVIGATION__contatti" })}</h5>
+   
+          {/* <Address name="PESSASTUDIO Horse Tecnology srl" country="Italy" postalCode="35044" streetAddress="via Cà Megliadino, 35" addressLocality="Montagnana" addressRegion="Padova" email="annapessa@pessastudio.eu" telephoneMobile="+39 0429 805613" /> */}
 
-            <Address name="PESSASTUDIO Horse Tecnology srl" country="Italy" postalCode="35044" streetAddress="via Cà Megliadino, 35" addressLocality="Montagnana" addressRegion="Padova" />
-
-
-            <Address email="annapessa@pessastudio.eu" telephoneMobile="+39 0429 805613" className="mt-4"/>
-
-            <div className="mt-4">
-              <a target="_blank" href="https://www.facebook.com/Pessastudio-HORSE-Tecnology-1050570271816027/" className={styles.social} aria-label="Facebook" rel="noopener">
-                <FontAwesomeIcon icon={faFacebookSquare} size="lg" />
-              </a>
-
-              <a target="_blank" href="https://www.instagram.com/pessastudiohorsetecnology" className={styles.social} aria-label="Instagram" rel="noopener">
-                <FontAwesomeIcon icon={faInstagram} size="lg" />
-              </a>
-            </div>
+          <Col md={2}>
+            <FooterMenu title={formatMessage({ id: "FOOTER__menu-title__prodotti" })} links={PRODUCT_IDS.map(id => ({
+              label: formatMessage({ id: `NAVIGATION__${id}` }),
+              to: `/${id}/`,
+            }))} />
           </Col>
 
-          <Col md={6} lg={{ span: 4, offset: 4 }}>
+          <Col md={2}>
+            <FooterMenu title={formatMessage({ id: "FOOTER__menu-title__contattaci" })} links={[
+              {
+                label: formatMessage({ id: `NAVIGATION__contatti` }),
+                to: '/contatti'
+              },
+              ...SOCIALS
+            ]} />
+          </Col>
+
+          <Col md={2}>
+            <FooterMenu title={formatMessage({ id: "FOOTER__menu-title__area_legale" })} links={LEGAL_IDS.map(id => ({
+              label: formatMessage({ id: `NAVIGATION__${id}` }),
+              to: `/${id}/`,
+            }))} />
+          </Col>
+          
+          <Col md={{ span: 4, offset: 2 }}>
             <Newsletter />
-          </Col>
+          </Col> 
+
         </Row>
       </Section>
     </div>
@@ -47,3 +55,4 @@ const Footer: React.FC<{ intl: IntlFormatters }> = ({ intl: { formatMessage } })
 )
 
 export default injectIntl(Footer)
+

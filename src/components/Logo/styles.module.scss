@@ -3,7 +3,7 @@
 $titleScale: 0.9;
 $titleSize: 33px;
 $zoom: 1.5;
-$subtitleScale: 3;
+$subtitleScale: 2.61;
 $time: 0.2s;
 
 :local(.element) {
@@ -64,7 +64,7 @@ $time: 0.2s;
     line-height: $titleSize / $zoom * $titleScale / $subtitleScale;
     font-size: $titleSize / $zoom / $subtitleScale;
     letter-spacing: 3.9px;
-    padding-left: 2px;
+    padding-left: 3px;
   }
 
   .group {

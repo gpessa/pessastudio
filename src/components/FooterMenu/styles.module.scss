@@ -1,0 +1,41 @@
+@import "@styles/_variables.scss";
+
+:local(.menu) {
+  margin-bottom: $spacer * 3;
+
+  @include media-breakpoint-up(md) {
+    margin-bottom: 0;
+  }
+}
+
+:local(.menuName) {
+  text-transform: uppercase;
+  font-size: $small-font-size;
+}
+
+:local(.menuList) {
+  margin: 0;
+  padding: 0;
+}
+
+:local(.menuItem) {
+  & + & {
+    margin-top: $spacer / 3;
+  }
+
+  &::before {
+    content: none;
+  }
+}
+
+:local(.menuItemLink) {
+  color: $white;
+  text-transform: uppercase;
+  font-size: $small-font-size;
+
+  &:hover {
+    color: $white;
+    font-weight: bold;
+    text-decoration: none;
+  }
+}

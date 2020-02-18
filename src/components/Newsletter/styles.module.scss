@@ -1,0 +1,11 @@
+@import "@styles/_variables.scss";
+
+:local(.newsletterText) {
+  font-size: $small-font-size;
+}
+
+:local(.newsletterTitle) {
+  color: $white;
+  text-transform: uppercase;
+  font-size: $small-font-size;
+}

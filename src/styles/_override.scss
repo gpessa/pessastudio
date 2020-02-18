@@ -21,6 +21,7 @@ ul li::before {
 }
 
 .navbar .navbar-nav > .nav-link {
+  font-family: $headings-font-family;
   transform: scale(1);
   transition: transform 0.2s;
 

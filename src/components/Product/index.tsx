@@ -18,39 +18,43 @@ const Product = ({ image, price, url, name, ratio, description, className, intl:
 
   return (
     <Tag to={url} className={`${styles.container} ${className}`}>
-      <div className={`${styles.image} ${styles[ratio || Ratio.SQUARE]}`} style={{ backgroundImage: `url(${image})` }}></div>
-      <h6 className={styles.title}>{name}</h6>
-      <Description description={description} />
+      <div className={`${styles.image} ${styles[ratio || Ratio.SQUARE]}`} style={{ backgroundImage: `url(${image})` }}>
+        <h6 className={styles.title}>{name}</h6>
+      </div>
 
-      {Object.keys(attributes).map(name => {
-        let valueToPrint
+      <div className={styles.data}>
+        <Description description={description} />
 
-        switch (name) {
-          case "materials":
-            valueToPrint = <MaterialsList materials={attributes[name]!} />
-            break
+        {Object.keys(attributes).map(name => {
+          let valueToPrint
 
-          case "colors":
-            valueToPrint = <ColorsList colors={attributes[name]!} />
-            break
+          switch (name) {
+            case "materials":
+              valueToPrint = <MaterialsList materials={attributes[name]!} />
+              break
 
-          case "weight":
-            valueToPrint = formatNumber(attributes[name]!, { style: "unit", unit: "kilogram" })
-            break
+            case "colors":
+              valueToPrint = <ColorsList colors={attributes[name]!} />
+              break
 
-          case "diameter":
-          case "thickness":
-          case "height":
-          case "length":
-          case "depth":
-          case "width":
-            valueToPrint = formatNumber(attributes[name]! / 10, { style: "unit", unit: "centimeter" })
-            break
-        }
-        return <Data key={name} label={formatMessage({ id: `PRODUCT__attributo__${name}` })} value={valueToPrint} />
-      })}
+            case "weight":
+              valueToPrint = formatNumber(attributes[name]!, { style: "unit", unit: "kilogram" })
+              break
 
-      <Price price={price} />
+            case "diameter":
+            case "thickness":
+            case "height":
+            case "length":
+            case "depth":
+            case "width":
+              valueToPrint = formatNumber(attributes[name]! / 10, { style: "unit", unit: "centimeter" })
+              break
+          }
+          return <Data key={name} label={formatMessage({ id: `PRODUCT__attributo__${name}` })} value={valueToPrint} />
+        })}
+
+        <Price price={price} />
+      </div>
     </Tag>
   )
 }

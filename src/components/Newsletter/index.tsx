@@ -4,6 +4,8 @@ import React, { useState } from 'react';
 import { Alert, Button, Form, FormControl } from 'react-bootstrap';
 import { IntlFormatters } from 'react-intl';
 
+import * as styles from "./styles.module.scss"
+
 const NewsletterSubscription: React.FC<{ intl: IntlFormatters, locale: string }> = ({ locale, intl: { formatMessage } }) => {
   const [state, setState] = useState({
     showError: false,
@@ -44,13 +46,14 @@ const NewsletterSubscription: React.FC<{ intl: IntlFormatters, locale: string }>
 
   return (
     <Form noValidate validated={state.showError} onSubmit={handleSubmit}>
-      <h5>{formatMessage({ id: "NEWSLETTER__title" })}</h5>
-      <p>{formatMessage({ id: "NEWSLETTER__intro" })}</p>
+      <h6 className={styles.newsletterTitle}>{formatMessage({ id: "NEWSLETTER__title" })}</h6>
+      <p className={styles.newsletterText}>{formatMessage({ id: "NEWSLETTER__intro" })}</p>
 
       {state.response !== "success" && (
         <>
           <Form.Group>
             <FormControl
+              size="sm"
               required
               type="email"
               name="email"
@@ -61,6 +64,7 @@ const NewsletterSubscription: React.FC<{ intl: IntlFormatters, locale: string }>
 
           <Form.Group>
             <FormControl
+              size="sm"
               required
               type="text"
               name="name"
@@ -69,7 +73,7 @@ const NewsletterSubscription: React.FC<{ intl: IntlFormatters, locale: string }>
             />
           </Form.Group>
 
-          <Button variant="dark" type="submit" block>{formatMessage({ id: "NEWSLETTER__button" })}</Button>
+          <Button variant="dark" type="submit" size="sm" block>{formatMessage({ id: "NEWSLETTER__button" })}</Button>
         </>
       )}
       
