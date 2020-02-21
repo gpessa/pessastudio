@@ -4,6 +4,10 @@ import { Button, Modal, Nav } from "react-bootstrap"
 import { IntlFormatters } from "react-intl"
 import Flag from "react-world-flags"
 
+
+import * as styles from "./styles.module.scss"
+
+
 const LanguageSelector: React.FC<{ intl: IntlFormatters }> = ({ intl: { formatMessage } }) => {
   const [show, setShow] = React.useState(false)
 
@@ -16,7 +20,7 @@ const LanguageSelector: React.FC<{ intl: IntlFormatters }> = ({ intl: { formatMe
       {({ languages, language }) => (
         <>
           <Nav.Link onClick={handleModal}>
-            <Flag code={language} height={15} />
+            <Flag code={language} height={15}  className={styles.flag}/>
           </Nav.Link>
           <Modal show={show} onHide={handleModal} size="sm">
             <Modal.Body>
@@ -29,7 +33,7 @@ const LanguageSelector: React.FC<{ intl: IntlFormatters }> = ({ intl: { formatMe
                   block
                   variant="link"
                 >
-                  <Flag code={lang} height={15} className="mr-2" />
+                  <Flag code={lang} height={15} className={`${styles.flag} mr-2`}/>
                   {formatMessage({ id: `LOCALE__${lang}` })}
                 </Button>
               ))}

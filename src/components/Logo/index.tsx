@@ -1,4 +1,4 @@
-import React, { useRef, useLayoutEffect } from "react"
+import React from "react"
 import { Image } from "react-bootstrap"
 
 import * as styles from "./styles.module.scss"

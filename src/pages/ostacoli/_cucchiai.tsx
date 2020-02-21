@@ -10,18 +10,22 @@ const CucchiaiSegnaletica: React.FC<{ intl: IntlFormatters }> = ({ intl: { forma
   const PRODUCTS = [
     {
       name: formatMessage({ id: "OSTACOLI__cucchiai__product__cucchiaio_de" }),
-      image: require("@images/product/ostacoli/cucchiaio-de.jpg"),
+      image: require("@images/product/ostacoli/cucchiaio-de.png"),
       materials: [Material.TECNOPOLIMERO],
-      ratio: Ratio.VERTICAL,
       depth: 20,
       weight: 0.15,
       price: 2.5,
     },
     {
+      name: formatMessage({ id: "OSTACOLI__cucchiai__product__cucchiaio_ps" }),
+      image: require("@images/product/ostacoli/cucchiaio-ps.png"),
+      materials: [Material.TECNOPOLIMERO],
+
+    },
+    {
       name: formatMessage({ id: "OSTACOLI__cucchiai__product__supporto_di_sicurezza" }),
       image: require("@images/product/ostacoli/supporto-di-sicurezza.jpg"),
       materials: [Material.PLASTICA],
-      ratio: Ratio.VERTICAL,
       width: 37,
       weight: 0.05,
       price: 3.5,

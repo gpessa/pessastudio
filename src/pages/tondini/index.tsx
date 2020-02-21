@@ -24,7 +24,7 @@ const Tondini: React.FC<{ intl: IntlFormatters }> = ({ intl: { formatMessage } }
       <Columns
         left={
           <>
-            <Header>{formatMessage({ id: "NAVIGATION__tondini" })}</Header>
+            <h1>{formatMessage({ id: "NAVIGATION__tondini" })}</h1>
             <FormattedHTMLMessage id="OSTACOLI__tondini__text" />
           </>
         }

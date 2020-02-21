@@ -30,10 +30,8 @@
   color: $black;
   background-color: $white;
   text-transform: uppercase;
-  bottom: 0;
-  margin: 0;
-  position: absolute;
   padding: $spacer;
+  margin: 0;
 }
 
 :local(.square) {

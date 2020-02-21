@@ -10,7 +10,7 @@ const Cubi: React.FC<{ intl: IntlFormatters }> = ({ intl: { formatMessage } }) =
   const PRODUCTS = [
     {
       name: formatMessage({ id: "OSTACOLI__cubi__product__cubi-mini" }),
-      image: require("@images/product/ostacoli/cubi-mini.jpg"),
+      image: require("@images/product/ostacoli/cubi-mini.png"),
       width: 350,
       length: 370,
       height: 570,
@@ -20,7 +20,7 @@ const Cubi: React.FC<{ intl: IntlFormatters }> = ({ intl: { formatMessage } }) =
     },
     {
       name: formatMessage({ id: "OSTACOLI__cubi__product__cubi-maxi" }),
-      image: require("@images/product/ostacoli/cubi-maxi.jpg"),
+      image: require("@images/product/ostacoli/cubi-maxi.png"),
       width: 370,
       length: 570,
       height: 70,

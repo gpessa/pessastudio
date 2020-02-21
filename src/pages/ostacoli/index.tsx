@@ -4,13 +4,13 @@ import { IntlFormatters } from "react-intl"
 
 import { Section } from "@components"
 
-import Barriere from "./barriere"
-import CandelieriLameForate from "./candelieri-e-lame-forate"
-import Cavalletti from "./cavalletti"
-import Cubi from "./cubi"
-import Cucchiai from "./cucchiai"
-import Segnaletica from "./segnaletica"
-import Fosso from "./fosso"
+import Barriere from "./_barriere"
+import CandelieriLameForate from "./_candelieri-e-lame-forate"
+import Cavalletti from "./_cavalletti"
+import Cubi from "./_cubi"
+import Cucchiai from "./_cucchiai"
+import Segnaletica from "./_segnaletica"
+import Fosso from "./_fosso"
 
 const Ostacoli: React.FC<{ intl: IntlFormatters }> = ({ intl: { formatMessage } }) => (
   <>
@@ -39,12 +39,12 @@ const Ostacoli: React.FC<{ intl: IntlFormatters }> = ({ intl: { formatMessage } 
       <CandelieriLameForate />
     </Section>
 
-    <Section>
-      <Segnaletica />
-    </Section>
-
     <Section className="bg-light">
       <Cucchiai />
+    </Section>
+
+    <Section>
+      <Segnaletica />
     </Section>
   </>
 )

@@ -19,9 +19,10 @@ const Product = ({ image, price, url, name, ratio, description, className, intl:
   return (
     <Tag to={url} className={`${styles.container} ${className}`}>
       <div className={`${styles.image} ${styles[ratio || Ratio.SQUARE]}`} style={{ backgroundImage: `url(${image})` }}>
-        <h6 className={styles.title}>{name}</h6>
       </div>
 
+      <h6 className={styles.title}>{name}</h6>
+      
       <div className={styles.data}>
         <Description description={description} />
 
