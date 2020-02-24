@@ -9,7 +9,7 @@ const SOCIALS: { label: string, href: string}[] = [
 enum Colors {
   YELLOW = "#FEB00D",
   GREEN = "#316330",
-  WHITE = "#FFFFF",
+  WHITE = "#FFFFFF",
   BLU = "#264FD0",
   RED = "#F41701",
 }

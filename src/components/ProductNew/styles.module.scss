@@ -1,0 +1,41 @@
+@import "@styles/_variables.scss";
+
+:local(.container) {
+  color: $gray-800;
+  transform: scale(1);
+  transition: transform 0.2s ease-out;
+  margin-top: $spacer * 2;
+  background-color: $gray-100;
+}
+
+:local(a.container:hover) {
+  transform: scale(1.05);
+}
+
+:local(.data) {
+  background-color: darken($gray-100, 2);
+  padding: $spacer;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  min-height: 100%;
+}
+
+:local(.title) {
+  color: $black;
+  text-transform: uppercase;
+  margin-bottom: $spacer / 2;
+}
+
+:local(.square) {
+  padding-bottom: 100%;
+}
+
+:local(.horizontal) {
+  padding-bottom: 50%;
+}
+
+:local(.vertical) {
+  padding-bottom: 200%;
+}

@@ -3,12 +3,12 @@ import React from "react"
 import { Col, Row } from "react-bootstrap"
 import { IntlFormatters } from "react-intl"
 
-import { Header, Product } from "@components"
+import { Header, ProductNew } from "@components"
 import { Ratio } from "@constants"
 
 const Fosso: React.FC<{ intl: IntlFormatters }> = ({ intl: { formatMessage } }) => {
   const PRODUCT = {
-    image: require("@images/product/ostacoli/fosso.jpg"),
+    image: require("@images/product/ostacoli/fosso.png"),
     name: formatMessage({ id: "OSTACOLI__fosso__product__name" }),
     length: 1500,
     width: 2800,
@@ -17,22 +17,11 @@ const Fosso: React.FC<{ intl: IntlFormatters }> = ({ intl: { formatMessage } }) 
   }
 
   return (
-    <Row>
-      <Col
-        xs={{ order: 12, span: 12 }}
-        md={{ order: 1, span: 5 }}
-        ratio={Ratio.HORIZONTAL}
-        as={Product}
-        {...PRODUCT}
-      />
-      <Col
-        xs={{ order:  1 }}
-        md={{ order: 12 }}
-      >
-        <Header>{formatMessage({ id: "OSTACOLI__fosso__title" })}</Header>
-        {formatMessage({ id: "OSTACOLI__fosso__text" })}
-      </Col>
-    </Row>
+    <>
+      <Header>{formatMessage({ id: "OSTACOLI__fosso__title" })}</Header>
+      {formatMessage({ id: "OSTACOLI__fosso__text" })}
+      <ProductNew {...PRODUCT} />
+    </>
   )
 }
 

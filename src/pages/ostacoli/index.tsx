@@ -19,7 +19,7 @@ const Ostacoli: React.FC<{ intl: IntlFormatters }> = ({ intl: { formatMessage } 
       <FormattedHTMLMessage id="OSTACOLI__text" />
     </Section>
 
-    <Section className="bg-light">
+    <Section>
       <Barriere />
     </Section>
 
@@ -27,7 +27,7 @@ const Ostacoli: React.FC<{ intl: IntlFormatters }> = ({ intl: { formatMessage } 
       <Fosso />
     </Section>
 
-    <Section className="bg-light">
+    <Section>
       <Cavalletti />
     </Section>
 
@@ -35,11 +35,11 @@ const Ostacoli: React.FC<{ intl: IntlFormatters }> = ({ intl: { formatMessage } 
       <Cubi />
     </Section>
 
-    <Section className="bg-light">
+    <Section>
       <CandelieriLameForate />
     </Section>
 
-    <Section className="bg-light">
+    <Section>
       <Cucchiai />
     </Section>
 

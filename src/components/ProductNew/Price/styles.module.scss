@@ -1,0 +1,14 @@
+@import "@styles/_variables.scss";
+
+:local(.price) {
+  margin-top: $spacer / 2;
+  font-family: $headings-font-family;
+  color: $black;
+  font-size: 1.1rem;
+}
+
+:local(.priceVat) {
+  font-size: $small-font-size;
+  color: $text-muted;
+  margin-left: $spacer / 2;
+}

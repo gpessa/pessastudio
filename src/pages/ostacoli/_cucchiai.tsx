@@ -3,14 +3,18 @@ import React from "react"
 import { Col, Row } from "react-bootstrap"
 import { IntlFormatters } from "react-intl"
 
-import { Header, Product } from "@components"
-import { Material, Ratio } from "@constants"
+import { Header, ProductNew } from "@components"
+import { Material } from "@constants"
 
 const CucchiaiSegnaletica: React.FC<{ intl: IntlFormatters }> = ({ intl: { formatMessage } }) => {
   const PRODUCTS = [
     {
       name: formatMessage({ id: "OSTACOLI__cucchiai__product__cucchiaio_de" }),
-      image: require("@images/product/ostacoli/cucchiaio-de.png"),
+      image: [
+        require("@images/product/ostacoli/cucchiaio-de-01.png"),
+        require("@images/product/ostacoli/cucchiaio-de-02.png"),
+        require("@images/product/ostacoli/cucchiaio-de-03.png"),
+      ],
       materials: [Material.TECNOPOLIMERO],
       depth: 20,
       weight: 0.15,
@@ -18,13 +22,21 @@ const CucchiaiSegnaletica: React.FC<{ intl: IntlFormatters }> = ({ intl: { forma
     },
     {
       name: formatMessage({ id: "OSTACOLI__cucchiai__product__cucchiaio_ps" }),
-      image: require("@images/product/ostacoli/cucchiaio-ps.png"),
+      image: [
+        require("@images/product/ostacoli/cucchiaio-ps-01.png"),
+        require("@images/product/ostacoli/cucchiaio-ps-02.png"),
+        require("@images/product/ostacoli/cucchiaio-ps-03.png")
+      ],
       materials: [Material.TECNOPOLIMERO],
 
     },
     {
       name: formatMessage({ id: "OSTACOLI__cucchiai__product__supporto_di_sicurezza" }),
-      image: require("@images/product/ostacoli/supporto-di-sicurezza.jpg"),
+      image: [
+        require("@images/product/ostacoli/supporto-di-sicurezza-01.png"),
+        require("@images/product/ostacoli/supporto-di-sicurezza-04.png"),
+        require("@images/product/ostacoli/supporto-di-sicurezza-03.png"),
+      ],
       materials: [Material.PLASTICA],
       width: 37,
       weight: 0.05,
@@ -35,12 +47,11 @@ const CucchiaiSegnaletica: React.FC<{ intl: IntlFormatters }> = ({ intl: { forma
   return (
     <>
       <Header>{formatMessage({ id: "OSTACOLI__cucchiai__title" })}</Header>
-      <FormattedHTMLMessage id="OSTACOLI__cucchiai__text" tagName="p"/>
-      <Row>
-        {PRODUCTS.map((product, index) => (
-          <Col as={Product} key={index} {...product} sm={12} md={3} />
-        ))}
-      </Row>
+      <FormattedHTMLMessage id="OSTACOLI__cucchiai__text" tagName="p" />
+
+      <ProductNew {...PRODUCTS[0]} />
+      <ProductNew {...PRODUCTS[1]} />
+      <ProductNew {...PRODUCTS[2]} />
     </>
   )
 }
