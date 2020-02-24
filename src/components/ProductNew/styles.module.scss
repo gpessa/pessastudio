@@ -5,7 +5,7 @@
   transform: scale(1);
   transition: transform 0.2s ease-out;
   margin-top: $spacer * 2;
-  background-color: $gray-100;
+  // background-color: $gray-100;
 }
 
 :local(a.container:hover) {
@@ -13,7 +13,7 @@
 }
 
 :local(.data) {
-  background-color: darken($gray-100, 2);
+  // background-color: darken($gray-100, 2);
   padding: $spacer;
   display: flex;
   flex-direction: column;

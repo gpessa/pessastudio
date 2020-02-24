@@ -4,7 +4,6 @@ import { Col, Row } from "react-bootstrap"
 import { IntlFormatters } from "react-intl"
 
 import { Header, ProductNew } from "@components"
-import { Ratio } from "@constants"
 
 const Fosso: React.FC<{ intl: IntlFormatters }> = ({ intl: { formatMessage } }) => {
   const PRODUCT = {
@@ -17,11 +16,15 @@ const Fosso: React.FC<{ intl: IntlFormatters }> = ({ intl: { formatMessage } }) 
   }
 
   return (
-    <>
-      <Header>{formatMessage({ id: "OSTACOLI__fosso__title" })}</Header>
-      {formatMessage({ id: "OSTACOLI__fosso__text" })}
-      <ProductNew {...PRODUCT} />
-    </>
+    <Row>
+      <Col md={6}>
+        <Header>{formatMessage({ id: "OSTACOLI__fosso__title" })}</Header>
+        {formatMessage({ id: "OSTACOLI__fosso__text" })}
+      </Col>
+      <Col md={6}>
+        <ProductNew {...PRODUCT} />
+      </Col>
+    </Row>
   )
 }
 

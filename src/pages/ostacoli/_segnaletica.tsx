@@ -1,10 +1,10 @@
-import { FormattedHTMLMessage, injectIntl } from "gatsby-plugin-intl"
+import { injectIntl } from "gatsby-plugin-intl"
 import React from "react"
 import { Col, Row } from "react-bootstrap"
 import { IntlFormatters } from "react-intl"
 
-import { Header, Product } from "@components"
-import { Material, Ratio } from "@constants"
+import { Header, ProductNew } from "@components"
+import { Material } from "@constants"
 
 const Segnaletica: React.FC<{ intl: IntlFormatters }> = ({ intl: { formatMessage } }) => {
   const PRODUCTS = [
@@ -40,7 +40,9 @@ const Segnaletica: React.FC<{ intl: IntlFormatters }> = ({ intl: { formatMessage
       <p>{formatMessage({ id: "OSTACOLI__segnaletica__text" })}</p>
       <Row>
         {PRODUCTS.map((product, index) => (
-          <Col as={Product} key={index} {...product} sm={12} md={3} />
+          <Col key={index} sm={6} md={6}>
+            <ProductNew {...product}/>
+          </Col>
         ))}
       </Row>
     </>

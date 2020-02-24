@@ -34,8 +34,8 @@ const CucchiaiSegnaletica: React.FC<{ intl: IntlFormatters }> = ({ intl: { forma
       name: formatMessage({ id: "OSTACOLI__cucchiai__product__supporto_di_sicurezza" }),
       image: [
         require("@images/product/ostacoli/supporto-di-sicurezza-01.png"),
-        require("@images/product/ostacoli/supporto-di-sicurezza-04.png"),
         require("@images/product/ostacoli/supporto-di-sicurezza-03.png"),
+        require("@images/product/ostacoli/supporto-di-sicurezza-04.png"),
       ],
       materials: [Material.PLASTICA],
       width: 37,

@@ -3,14 +3,14 @@ import React from "react"
 import { Col, Row } from "react-bootstrap"
 import { IntlFormatters } from "react-intl"
 
-import { Header, Product } from "@components"
+import { Header, ProductNew } from "@components"
 import { Colors } from "@constants"
 
 const Cavalletti: React.FC<{ intl: IntlFormatters }> = ({ intl: { formatMessage } }) => {
   const PRODUCTS = [
     {
       name: formatMessage({ id: "OSTACOLI__cavalletti__product__name" }),
-      image: require("@images/cavalletto.jpg"),
+      image: [require("@images/product/ostacoli/cavalletto-01.png")],
       thickness: 100,
       length: 500,
       height: 500,
@@ -20,7 +20,7 @@ const Cavalletti: React.FC<{ intl: IntlFormatters }> = ({ intl: { formatMessage 
     },
     {
       name: formatMessage({ id: "OSTACOLI__cavalletti-con-barriera__product__name" }),
-      image: require("@images/cavalletto.jpg"),
+      image: [require("@images/product/ostacoli/cavalletto-01.png") ],
       diameter: 85,
       length: 2000,
       weight: 5.3,
@@ -35,11 +35,9 @@ const Cavalletti: React.FC<{ intl: IntlFormatters }> = ({ intl: { formatMessage 
         <FormattedHTMLMessage id="OSTACOLI__cavalletti__text" />
       </Col>
       <Col md={6}>
-        <Row>
-          {PRODUCTS.map((product, index) => (
-            <Col md={6} key={index} as={Product} {...product} />
-          ))}
-        </Row>
+        {PRODUCTS.map((product, index) => (
+          <ProductNew key={index} {...product} />
+        ))}
       </Col>
     </Row>
   )

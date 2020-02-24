@@ -14,7 +14,7 @@ import Fosso from "./_fosso"
 
 const Ostacoli: React.FC<{ intl: IntlFormatters }> = ({ intl: { formatMessage } }) => (
   <>
-    <Section>
+    <Section className="bg-light">
       <h1>{formatMessage({ id: "NAVIGATION__ostacoli" })}</h1>
       <FormattedHTMLMessage id="OSTACOLI__text" />
     </Section>
@@ -23,7 +23,7 @@ const Ostacoli: React.FC<{ intl: IntlFormatters }> = ({ intl: { formatMessage } 
       <Barriere />
     </Section>
 
-    <Section>
+    <Section className="bg-light">
       <Fosso />
     </Section>
 
@@ -31,7 +31,7 @@ const Ostacoli: React.FC<{ intl: IntlFormatters }> = ({ intl: { formatMessage } 
       <Cavalletti />
     </Section>
 
-    <Section>
+    <Section className="bg-light">
       <Cubi />
     </Section>
 
@@ -39,7 +39,7 @@ const Ostacoli: React.FC<{ intl: IntlFormatters }> = ({ intl: { formatMessage } 
       <CandelieriLameForate />
     </Section>
 
-    <Section>
+    <Section className="bg-light">
       <Cucchiai />
     </Section>
 

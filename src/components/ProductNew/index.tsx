@@ -22,10 +22,12 @@ const Product = ({ image, price, url, name, ratio, description, className, intl:
   return (
     <div>
       <Tag to={url} className={`${styles.container} ${className}`}>
-        <Row className={styles.image}>
-          {
-            images.map(image => <Col xs={{ span }} as={Image} fluid src={image} alt={name}/>)
-          }
+        <Row className={`${styles.image} align-items-center`}>
+          {images.map(image => (
+            <Col xs={{ span }}>
+              <Image fluid src={image} alt={name} className="w-100"/>
+            </Col>
+          ))}
           <Col xs={{ span }}>
             <div className={styles.data}>
               <h6 className={styles.title}>{name}</h6>
