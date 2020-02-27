@@ -10,10 +10,10 @@ const Cubi: React.FC<{ intl: IntlFormatters }> = ({ intl: { formatMessage } }) =
   const PRODUCTS = [
     {
       name: formatMessage({ id: "OSTACOLI__cubi__product__cubi-mini" }),
-      image: [
-        require("@images/product/ostacoli/cubi-mini-01.png"),
-        require("@images/product/ostacoli/cubi-mini-02.png"),
-        require("@images/product/ostacoli/cubi-mini-03.png"),
+      images: [
+        { src: require("@images/product/ostacoli/cubi-mini-01.png") },
+        { src: require("@images/product/ostacoli/cubi-mini-02.png") },
+        { src: require("@images/product/ostacoli/cubi-mini-03.png") },
       ],
       width: 350,
       length: 370,
@@ -24,10 +24,10 @@ const Cubi: React.FC<{ intl: IntlFormatters }> = ({ intl: { formatMessage } }) =
     },
     {
       name: formatMessage({ id: "OSTACOLI__cubi__product__cubi-maxi" }),
-      image: [
-        require("@images/product/ostacoli/cubi-maxi-01.png"),
-        require("@images/product/ostacoli/cubi-maxi-02.png"),
-        require("@images/product/ostacoli/cubi-maxi-03.png"),
+      images: [
+        { src: require("@images/product/ostacoli/cubi-maxi-01.png") },
+        { src: require("@images/product/ostacoli/cubi-maxi-02.png") },
+        { src: require("@images/product/ostacoli/cubi-maxi-03.png") },
       ],
       width: 370,
       length: 570,

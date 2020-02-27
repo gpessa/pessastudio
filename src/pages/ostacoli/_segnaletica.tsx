@@ -10,13 +10,17 @@ const Segnaletica: React.FC<{ intl: IntlFormatters }> = ({ intl: { formatMessage
   const PRODUCTS = [
     {
       name: formatMessage({ id: "OSTACOLI__segnaletica__product__bandierine" }),
-      image: require("@images/product/ostacoli/bandierine.jpg"),
+      images: [{
+        src: require("@images/product/ostacoli/bandierine.jpg")
+      }],
       materials: [Material.PLASTICA],
       price: 2.5,
     },
     {
       name: formatMessage({ id: "OSTACOLI__segnaletica__product__numero_per_campo_ostacoli_professional" }),
-      image: require("@images/product/ostacoli/numero-light.jpg"),
+      images: [{
+        src: require("@images/product/ostacoli/numero-light.jpg")
+      }],
       materials: [Material.POLIETILENE],
       width: 200,
       height: 300,
@@ -25,7 +29,9 @@ const Segnaletica: React.FC<{ intl: IntlFormatters }> = ({ intl: { formatMessage
     },
     {
       name: formatMessage({ id: "OSTACOLI__segnaletica__product__numero_per_campo_ostacoli_light" }),
-      image: require("@images/product/ostacoli/numero-professional.jpg"),
+      images: [{
+        src: require("@images/product/ostacoli/numero-professional.jpg")
+      }],
       materials: [Material.POLIPROPILENE],
       width: 330,
       height: 330,

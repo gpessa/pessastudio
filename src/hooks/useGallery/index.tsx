@@ -4,8 +4,8 @@ const useGallery: (
   pictures: Picture[]
 ) => {
   active: Picture | null;
-  showPreviousDisabled: boolean;
-  showNextDisabled: boolean;
+  showPreviousEnabled: boolean;
+  showNextEnabled: boolean;
   showPrevious: () => void;
   showNext: () => void;
   close: () => void;
@@ -24,13 +24,13 @@ const useGallery: (
 
   const showPrevious = () => setSelected(setSelected => setSelected! - 1);
 
-  const showPreviousDisabled = selected! > 0 ? false : true;
-  const showNextDisabled = selected! < pictures.length - 1 ? false : true;
+  const showPreviousEnabled = (selected != null && selected > 0) ? true : false;
+  const showNextEnabled = (selected != null && selected < pictures.length - 1) ? true : false;
   const active = selected != null ? pictures[selected] : null;
 
   return {
-    showPreviousDisabled,
-    showNextDisabled,
+    showPreviousEnabled,
+    showNextEnabled,
     showPrevious,
     showNext,
     active,

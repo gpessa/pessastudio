@@ -9,7 +9,7 @@ import { Columns, ContentTable, Gallery, Header, Section } from "@components"
 const Tondini: React.FC<{ intl: IntlFormatters }> = ({ intl: { formatMessage } }) => {
   const DIMENSIONS = [16, 18, 20, 22, 24]
 
-  const IMAGES = [
+  const IMAGES: Picture[] = [
     { caption: formatMessage({ id: `TONDINO__gallery__image-0` }), src: require("@images/product/tondini/tondino-0.jpg") },
     { caption: formatMessage({ id: `TONDINO__gallery__image-1` }), src: require("@images/product/tondini/tondino-1.jpg") },
     { caption: formatMessage({ id: `TONDINO__gallery__image-2` }), src: require("@images/product/tondini/tondino-2.jpg") },

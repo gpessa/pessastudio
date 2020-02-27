@@ -10,10 +10,10 @@ const CucchiaiSegnaletica: React.FC<{ intl: IntlFormatters }> = ({ intl: { forma
   const PRODUCTS = [
     {
       name: formatMessage({ id: "OSTACOLI__cucchiai__product__cucchiaio_de" }),
-      image: [
-        require("@images/product/ostacoli/cucchiaio-de-01.png"),
-        require("@images/product/ostacoli/cucchiaio-de-02.png"),
-        require("@images/product/ostacoli/cucchiaio-de-03.png"),
+      images: [
+        { src: require("@images/product/ostacoli/cucchiaio-de-01.png") },
+        { src: require("@images/product/ostacoli/cucchiaio-de-02.png") },
+        { src: require("@images/product/ostacoli/cucchiaio-de-03.png") },
       ],
       materials: [Material.TECNOPOLIMERO],
       depth: 20,
@@ -22,20 +22,20 @@ const CucchiaiSegnaletica: React.FC<{ intl: IntlFormatters }> = ({ intl: { forma
     },
     {
       name: formatMessage({ id: "OSTACOLI__cucchiai__product__cucchiaio_ps" }),
-      image: [
-        require("@images/product/ostacoli/cucchiaio-ps-01.png"),
-        require("@images/product/ostacoli/cucchiaio-ps-02.png"),
-        require("@images/product/ostacoli/cucchiaio-ps-03.png")
+      images: [
+        { src: require("@images/product/ostacoli/cucchiaio-ps-01.png") },
+        { src: require("@images/product/ostacoli/cucchiaio-ps-02.png") },
+        { src: require("@images/product/ostacoli/cucchiaio-ps-03.png") },
       ],
       materials: [Material.TECNOPOLIMERO],
 
     },
     {
       name: formatMessage({ id: "OSTACOLI__cucchiai__product__supporto_di_sicurezza" }),
-      image: [
-        require("@images/product/ostacoli/supporto-di-sicurezza-01.png"),
-        require("@images/product/ostacoli/supporto-di-sicurezza-03.png"),
-        require("@images/product/ostacoli/supporto-di-sicurezza-04.png"),
+      images: [
+        { src: require("@images/product/ostacoli/supporto-di-sicurezza-01.png") },
+        { src: require("@images/product/ostacoli/supporto-di-sicurezza-03.png") },
+        { src: require("@images/product/ostacoli/supporto-di-sicurezza-04.png") },
       ],
       materials: [Material.PLASTICA],
       width: 37,

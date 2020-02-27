@@ -9,7 +9,10 @@ const Barriere = ({ intl: { formatMessage } }: { intl: any }) => {
   const PRODUCT = {
     description: formatMessage({ id: "OSTACOLI__barriere__product__description" }),
     name: formatMessage({ id: "OSTACOLI__barriere__product__title" }),
-    image: require("@images/product/ostacoli/barriere.jpg"),
+    images: [{
+      caption: '',
+      src: require("@images/product/ostacoli/barriere.jpg"),
+    }],
     price: 35,
     weight: 9.75,
     length: 2990,
@@ -25,7 +28,7 @@ const Barriere = ({ intl: { formatMessage } }: { intl: any }) => {
           <FormattedHTMLMessage id="OSTACOLI__barriere__text" />
         </Col>
         <Col md={6}>
-          <ProductNew {...PRODUCT} />
+          <ProductNew vertical {...PRODUCT} />
         </Col>
       </Row>
     </div>

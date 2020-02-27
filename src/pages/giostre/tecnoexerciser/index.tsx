@@ -8,7 +8,7 @@ import { Columns, ContentTable, Gallery, Header, Product, Section } from "@compo
 import { Ratio } from "@constants"
 
 const Tecnoexerciser: React.FC<{ intl: IntlFormatters }> = ({ intl: { formatMessage } }) => {
-  const IMAGES = [
+  const IMAGES: Picture[] = [
     {
       src: require("@images/product/giostre/tecnoexerciser/galleria/giostra.jpg"),
       caption: formatMessage({ id: "GIOSTRE__tecnoexerciser__image-0" }),

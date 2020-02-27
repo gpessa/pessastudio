@@ -7,7 +7,9 @@ import { Header, ProductNew } from "@components"
 
 const Fosso: React.FC<{ intl: IntlFormatters }> = ({ intl: { formatMessage } }) => {
   const PRODUCT = {
-    image: require("@images/product/ostacoli/fosso.png"),
+    images: [
+      { src: require("@images/product/ostacoli/fosso.png") },
+    ],
     name: formatMessage({ id: "OSTACOLI__fosso__product__name" }),
     length: 1500,
     width: 2800,
@@ -22,7 +24,7 @@ const Fosso: React.FC<{ intl: IntlFormatters }> = ({ intl: { formatMessage } }) 
         {formatMessage({ id: "OSTACOLI__fosso__text" })}
       </Col>
       <Col md={6}>
-        <ProductNew {...PRODUCT} />
+        <ProductNew vertical {...PRODUCT} />
       </Col>
     </Row>
   )

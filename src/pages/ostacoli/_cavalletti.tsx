@@ -10,7 +10,9 @@ const Cavalletti: React.FC<{ intl: IntlFormatters }> = ({ intl: { formatMessage 
   const PRODUCTS = [
     {
       name: formatMessage({ id: "OSTACOLI__cavalletti__product__name" }),
-      image: [require("@images/product/ostacoli/cavalletto-01.png")],
+      images: [{
+        src: require("@images/product/ostacoli/cavalletto-01.png")
+      }],
       thickness: 100,
       length: 500,
       height: 500,
@@ -20,7 +22,9 @@ const Cavalletti: React.FC<{ intl: IntlFormatters }> = ({ intl: { formatMessage 
     },
     {
       name: formatMessage({ id: "OSTACOLI__cavalletti-con-barriera__product__name" }),
-      image: [require("@images/product/ostacoli/cavalletto-01.png") ],
+      images: [{
+        src: require("@images/product/ostacoli/cavalletto-01.png") 
+      }],
       diameter: 85,
       length: 2000,
       weight: 5.3,

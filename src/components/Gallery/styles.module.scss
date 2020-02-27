@@ -14,21 +14,3 @@
   width: 100%;
   border: 1px solid $border-color;
 }
-
-:local(.galleryModalImage) {
-  width: 100%;
-}
-
-:local(.galleryModalPrevious) {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  left: 0;
-}
-
-:local(.galleryModalNext) {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  right: 0;
-}

@@ -32,6 +32,7 @@ const LanguageSelector: React.FC<{ intl: IntlFormatters }> = ({ intl: { formatMe
                   }}
                   block
                   variant="link"
+                  key={lang}
                 >
                   <Flag code={lang} height={15} className={`${styles.flag} mr-2`}/>
                   {formatMessage({ id: `LOCALE__${lang}` })}

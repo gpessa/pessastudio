@@ -8,7 +8,7 @@ import { Columns, ContentTable, Gallery, Header, Product, Section } from "@compo
 import { Colors } from "@constants"
 
 const Recinti: React.FC<{ intl: IntlFormatters }> = ({ intl: { formatMessage } }) => {
-  const IMAGES = [
+  const IMAGES: Picture[] = [
     {
       caption: formatMessage({ id: `RECINTI__gallery__image-0` }),
       src: require("@images/product/recinti/recinti-image-0.jpg"),
