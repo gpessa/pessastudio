@@ -23,7 +23,7 @@ const Cavalletti: React.FC<{ intl: IntlFormatters }> = ({ intl: { formatMessage 
     {
       name: formatMessage({ id: "OSTACOLI__cavalletti-con-barriera__product__name" }),
       images: [{
-        src: require("@images/product/ostacoli/cavalletto-01.png") 
+        src: require("@images/product/ostacoli/cavalletto-barriera-01.png") 
       }],
       diameter: 85,
       length: 2000,

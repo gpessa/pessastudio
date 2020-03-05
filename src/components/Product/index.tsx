@@ -2,7 +2,6 @@ import { Link } from "gatsby-plugin-intl"
 import React, { ReactNode } from "react"
 
 import { Colors, Material, Ratio } from "@constants"
-import ImageModal from "../ImageModal"
 import * as styles from "./styles.module.scss"
 
 import { IntlFormatters } from "react-intl"

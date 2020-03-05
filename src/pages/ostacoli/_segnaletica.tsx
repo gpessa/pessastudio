@@ -19,7 +19,7 @@ const Segnaletica: React.FC<{ intl: IntlFormatters }> = ({ intl: { formatMessage
     {
       name: formatMessage({ id: "OSTACOLI__segnaletica__product__numero_per_campo_ostacoli_professional" }),
       images: [{
-        src: require("@images/product/ostacoli/numero-light.jpg")
+        src: require("@images/product/ostacoli/numero-professional.png")
       }],
       materials: [Material.POLIETILENE],
       width: 200,
@@ -30,7 +30,7 @@ const Segnaletica: React.FC<{ intl: IntlFormatters }> = ({ intl: { formatMessage
     {
       name: formatMessage({ id: "OSTACOLI__segnaletica__product__numero_per_campo_ostacoli_light" }),
       images: [{
-        src: require("@images/product/ostacoli/numero-professional.jpg")
+        src: require("@images/product/ostacoli/numero-light.png")
       }],
       materials: [Material.POLIPROPILENE],
       width: 330,
@@ -43,7 +43,6 @@ const Segnaletica: React.FC<{ intl: IntlFormatters }> = ({ intl: { formatMessage
   return (
     <>
       <Header>{formatMessage({ id: "OSTACOLI__segnaletica__title" })}</Header>
-      <p>{formatMessage({ id: "OSTACOLI__segnaletica__text" })}</p>
       <Row>
         {PRODUCTS.map((product, index) => (
           <Col key={index} sm={6} md={6}>

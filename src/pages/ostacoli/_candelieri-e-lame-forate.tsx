@@ -21,9 +21,9 @@ const CandelieriLameForate = ({ intl: { formatMessage } }: { intl: any }) => {
       weight: 7,
     },
     {
-      name: formatMessage({ id: "OSTACOLI__candelieri-e-lame__prodotto__lama-de-grande__name" }),
+      name: formatMessage({ id: "OSTACOLI__candelieri-e-lame__prodotto__lama-de__name" }),
       materials: [Material.ACCIAIO_ZINCATO],
-      description: "Lama forata disponibile in lunghezze 150cm. e 50cm.",
+      description: formatMessage({ id: "OSTACOLI__candelieri-e-lame__prodotto__lama-de__description" }),
       images: [
         { src: require("@images/product/ostacoli/lama-de-03.png") } ,
         { src: require("@images/product/ostacoli/lama-de-02.png") } ,

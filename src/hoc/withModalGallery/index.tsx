@@ -29,23 +29,20 @@ const withModalGallery = <P extends object>(
       <Modal show={!!active} onHide={close} className={styles.modal} size="lg" centered={true}>
         {active && (
           <>
-            <Modal.Body>
-              <Image className={styles.galleryModalImage} src={active.src} />
+            <Image className={styles.galleryModalImage} src={active.src} />
 
-              {showPreviousEnabled &&
-                <Button className={styles.galleryModalPrevious} onClick={showPrevious}>
-                  <FontAwesomeIcon icon={faArrowLeft} fixedWidth={true} />
-                </Button>
-              }
+            {showPreviousEnabled &&
+              <Button className={styles.galleryModalPrevious} onClick={showPrevious}>
+                <FontAwesomeIcon icon={faArrowLeft} fixedWidth={true} />
+              </Button>
+            }
 
-              {showNextEnabled &&
-                <Button className={styles.galleryModalNext} onClick={showNext}>
-                  <FontAwesomeIcon icon={faArrowRight} fixedWidth={true} />
-                </Button>
-              }
-
-            </Modal.Body>
-
+            {showNextEnabled &&
+              <Button className={styles.galleryModalNext} onClick={showNext}>
+                <FontAwesomeIcon icon={faArrowRight} fixedWidth={true} />
+              </Button>
+            }
+            
             {active.caption && <Modal.Footer>{active.caption}</Modal.Footer>}
           </>
         )}

@@ -9,10 +9,17 @@ const Barriere = ({ intl: { formatMessage } }: { intl: any }) => {
   const PRODUCT = {
     description: formatMessage({ id: "OSTACOLI__barriere__product__description" }),
     name: formatMessage({ id: "OSTACOLI__barriere__product__title" }),
-    images: [{
-      caption: '',
-      src: require("@images/product/ostacoli/barriere.jpg"),
-    }],
+    images: [
+      {
+        src: require("@images/product/ostacoli/barriere-01.png"),
+      },
+      {
+        src: require("@images/product/ostacoli/barriere-02.png"),
+      },
+      {
+        src: require("@images/product/ostacoli/barriere-03.png"),
+      }
+    ],
     price: 35,
     weight: 9.75,
     length: 2990,
@@ -23,12 +30,12 @@ const Barriere = ({ intl: { formatMessage } }: { intl: any }) => {
   return (
     <div>
       <Row>
-        <Col md={6}>
+        <Col md={12}>
           <Header>{formatMessage({ id: "OSTACOLI__barriere__title" })}</Header>
           <FormattedHTMLMessage id="OSTACOLI__barriere__text" />
         </Col>
-        <Col md={6}>
-          <ProductNew vertical {...PRODUCT} />
+        <Col md={12}>
+          <ProductNew {...PRODUCT} />
         </Col>
       </Row>
     </div>

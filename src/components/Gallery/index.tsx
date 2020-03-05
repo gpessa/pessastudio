@@ -6,19 +6,17 @@ import { withModalGallery } from "@hoc"
 import { WithInjectedModalGalleryProps } from "src/hoc/withModalGallery"
 
 
-const Gallery = withModalGallery(({ images, open }: WithInjectedModalGalleryProps) => {
-  return (
-    <Row>
-      {images.map((image, index) => (
-        <Col md={6} key={index}>
-          <Figure onClick={() => open(image)} className={styles.galleryItem}>
-            <Figure.Image src={image.src} className={styles.galleryItemImage} />
-            <Figure.Caption>{image.caption}</Figure.Caption>
-          </Figure>
-        </Col>
-      ))}
-    </Row>
-  )
-})
+const Gallery = withModalGallery(({ images, open }: WithInjectedModalGalleryProps) => (
+  <Row>
+    {images.map((image, index) => (
+      <Col md={6} key={index}>
+        <Figure onClick={() => open(image)} className={styles.galleryItem}>
+          <Figure.Image src={image.src} className={styles.galleryItemImage} />
+          <Figure.Caption>{image.caption}</Figure.Caption>
+        </Figure>
+      </Col>
+    ))}
+  </Row>
+))
 
 export default Gallery
