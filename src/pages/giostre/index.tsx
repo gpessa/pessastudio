@@ -7,10 +7,9 @@ import { Columns, Header, Hero, Section } from "@components"
 
 const Giostre: React.FC<{ intl: IntlFormatters }> = ({ intl: { formatMessage } }) => (
   <>
-    <Hero image={require("@images/background-giostre.jpg")} />
+    <Hero image={require("@images/background-giostre.jpg")} text={formatMessage({ id: "NAVIGATION__giostre" })} />
 
     <Section className="bg-light">
-      <h1>{formatMessage({ id: "NAVIGATION__giostre" })}</h1>
       <FormattedHTMLMessage id="GIOSTRE__text" />
     </Section>
 

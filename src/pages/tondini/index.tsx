@@ -4,7 +4,7 @@ import React from "react"
 import { Col, Row } from "react-bootstrap"
 import { IntlFormatters } from "react-intl"
 
-import { Columns, ContentTable, Gallery, Header, Section } from "@components"
+import { Columns, ContentTable, Gallery, Header, Section, Hero } from "@components"
 
 const Tondini: React.FC<{ intl: IntlFormatters }> = ({ intl: { formatMessage } }) => {
   const DIMENSIONS = [16, 18, 20, 22, 24]
@@ -17,17 +17,15 @@ const Tondini: React.FC<{ intl: IntlFormatters }> = ({ intl: { formatMessage } }
     { caption: formatMessage({ id: `TONDINO__gallery__image-4` }), src: require("@images/product/tondini/tondino-4.jpg") },
     { caption: formatMessage({ id: `TONDINO__gallery__image-5` }), src: require("@images/product/tondini/tondino-5.jpg") },
     { caption: formatMessage({ id: `TONDINO__gallery__image-6` }), src: require("@images/product/tondini/tondino-6.jpg") },
+    { caption: formatMessage({ id: `TONDINO__gallery__image-7` }), src: require("@images/product/tondini/tondino-7.jpg") },
   ]
 
   return (
     <>
-      <Columns
-        left={
-          <>
-            <h1>{formatMessage({ id: "NAVIGATION__tondini" })}</h1>
-            <FormattedHTMLMessage id="OSTACOLI__tondini__text" />
-          </>
-        }
+      <Hero image={require("@images/background-tondini.jpg")} text={formatMessage({ id: "NAVIGATION__tondini" })}/>
+      
+      <Columns 
+        left={<FormattedHTMLMessage id="OSTACOLI__tondini__text" />}
         right={<Gallery images={IMAGES} />}
       />
 

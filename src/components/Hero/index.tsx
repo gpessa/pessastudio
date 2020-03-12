@@ -1,5 +1,5 @@
 import React from "react"
-import ScrollAnimation from "react-animate-on-scroll"
+// import ScrollAnimation from "react-animate-on-scroll"
 import { Container, Image } from "react-bootstrap"
 
 import * as styles from "./styles.module.scss"
@@ -10,9 +10,9 @@ const Hero = ({ image, text }: Props) => (
     {text && (
       <div className={styles.textWrapper}>
         <Container>
-          <ScrollAnimation animateIn="fadeIn" animateOnce={true}>
+          {/* <ScrollAnimation animateIn="fadeIn" animateOnce={true}> */}
             <h1 className={`${styles.text}`}>{text}</h1>
-          </ScrollAnimation>
+          {/* </ScrollAnimation> */}
         </Container>
       </div>
     )}
