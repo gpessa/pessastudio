@@ -10,18 +10,17 @@ ul {
   margin-bottom: 0;
 }
 
-ul li::before {
-  content: "•";
-  color: $primary;
-  font-weight: bold;
-  display: inline-block;
-  width: 1em;
-  margin-left: -1em;
-  vertical-align: middle;
-}
+// ul li::before {
+//   content: "•";
+//   color: $primary;
+//   font-weight: bold;
+//   display: inline-block;
+//   width: 1em;
+//   margin-left: -1em;
+//   vertical-align: middle;
+// }
 
 .navbar .navbar-nav > .nav-link {
-  font-family: $headings-font-family;
   transform: scale(1);
   transition: transform 0.2s;
 
@@ -42,6 +41,8 @@ ul li::before {
 
 .btn {
   text-transform: uppercase;
-  letter-spacing: 0.06rem;
-  font-family: $headings-font-family;
+}
+
+.form-control{
+  border-width: 0 0 1px 0;
 }

@@ -1,9 +1,10 @@
 import React from "react"
 
 import { ProductNew, Header } from "@components"
-import { Row, Col } from "react-bootstrap"
 import { Colors } from "@constants"
 import { injectIntl, FormattedHTMLMessage } from "gatsby-plugin-intl"
+import { Grid } from "@material-ui/core"
+import { Row } from "react-bootstrap"
 
 const Barriere = ({ intl: { formatMessage } }: { intl: any }) => {
   const PRODUCT = {
@@ -29,15 +30,15 @@ const Barriere = ({ intl: { formatMessage } }: { intl: any }) => {
 
   return (
     <div>
-      <Row>
-        <Col md={12}>
+      <Grid container>
+        <Grid item md={12}>
           <Header>{formatMessage({ id: "OSTACOLI__barriere__title" })}</Header>
           <FormattedHTMLMessage id="OSTACOLI__barriere__text" />
-        </Col>
-        <Col md={12}>
+        </Grid>
+        <Grid item md={12}>
           <ProductNew {...PRODUCT} />
-        </Col>
-      </Row>
+        </Grid>
+      </Grid>
     </div>
   )
 }

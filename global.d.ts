@@ -3,7 +3,6 @@ declare module '*.scss' {
     export = content;
 }
 
-declare module "gatsby-plugin-intl"
 
 declare module 'react-world-flags'
 

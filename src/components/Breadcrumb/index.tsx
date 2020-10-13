@@ -1,30 +1,36 @@
-import { Link } from 'gatsby-plugin-intl';
+import { Breadcrumbs, ButtonBase, Container, makeStyles } from '@material-ui/core';
+import { Link, useIntl } from 'gatsby-plugin-intl';
 import React from 'react';
-import { Container } from 'react-bootstrap';
-import { injectIntl } from 'react-intl';
-
-import { faHome } from '@fortawesome/free-solid-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-
+import HomeIcon from '@material-ui/icons/Home';
 import { injectTree } from '../../hoc';
-import * as styles from './styles.module.scss';
+import { COLORS } from '@theme';
+import { UrlFragment } from 'src/hoc/injectTree';
 
-const Breadcrumb = ({ fragments, intl: { formatMessage } }) =>
-  fragments.length > 1 && (
-    <div className={styles.element}>
-      <Container aria-label="breadcrumb" as="nav">
-        <ol className="breadcrumb">
-          {fragments.map(({ id, url }, index) => (
-            <li key={id} className="breadcrumb-item">
-              <Link to={url} className={`${styles.item} ${styles[id]}`}>
-                {index === 0 && <FontAwesomeIcon icon={faHome} className={styles.itemIcon}/>}
-                <span className={styles.itemLabel}>{formatMessage({ id: `NAVIGATION__${id}` })}</span>
-              </Link>
-            </li>
-          ))}
-        </ol>
-      </Container>
+const useStyles = makeStyles(theme => ({
+  root: {
+    paddingBottom: theme.spacing(2),
+    paddingTop: theme.spacing(2),
+    backgroundColor: COLORS.WARM1,
+    color: COLORS.WARM2
+  }
+}))
+
+const Breadcrumb: React.FC<{ fragments: UrlFragment[] }> = ({ fragments }) => {
+  const { formatMessage } = useIntl()
+  const classes = useStyles()
+  
+  return fragments.length > 1 && (
+    <div className={classes.root}>
+      <Breadcrumbs separator="›" component={Container}>
+        {fragments.map(({ id, url }, index) => (
+          <ButtonBase component={Link} to={url} color="inherit">
+            {index === 0 && <HomeIcon/>}
+            {index !== 0 && <span>{formatMessage({ id: `NAVIGATION__${id}` })}</span>}
+          </ButtonBase>
+        ))}
+      </Breadcrumbs>
     </div>
-  )
+  ) 
+}
 
-export default injectIntl(injectTree(Breadcrumb))
+export default injectTree(Breadcrumb)

@@ -1,58 +1,68 @@
-import { injectIntl } from "gatsby-plugin-intl"
-import React from "react"
-import { Col, Row, Container } from "react-bootstrap"
-import { IntlFormatters } from "react-intl"
+import { useIntl } from 'gatsby-plugin-intl';
+import React from 'react';
 
-import { Address, Map, Newsletter, Section, FooterMenu } from "@components"
+import { Section, Title, TSmall } from '@components';
+import { Divider, Grid, makeStyles } from '@material-ui/core';
+import { COLORS } from '@theme';
 
-import * as styles from "./styles.module.scss"
-import { SOCIALS, LEGAL_IDS, PRODUCT_IDS } from "@constants"
+import LanguageSelector from './LanguageSelector';
+import Map from './Map';
+import Newsletter from './Newsletter';
+import Socials from './Socials';
 
-const Footer: React.FC<{ intl: IntlFormatters }> = ({ intl: { formatMessage } }) => (
-  <footer className={styles.element}>
-    <Map />
+const useStyles = makeStyles(theme => ({
+  copyright: {
+    color: COLORS.GREY1
+  }
+}));
 
-    <div className={styles.data}>
-      <Section>
-        <Row>
-   
-          {/* <Address name="PESSASTUDIO Horse Tecnology srl" country="Italy" postalCode="35044" streetAddress="via Cà Megliadino, 35" addressLocality="Montagnana" addressRegion="Padova" email="annapessa@pessastudio.eu" telephoneMobile="+39 0429 805613" /> */}
+const Footer: React.FC = () => {
+  const classes = useStyles()
+  const { formatMessage } = useIntl()
+  
+  return (
+    <footer>
 
-          <Col md={2}>
-            <FooterMenu title={formatMessage({ id: "FOOTER__menu-title__prodotti" })} links={PRODUCT_IDS.map(id => ({
-              label: formatMessage({ id: `NAVIGATION__${id}` }),
-              to: `/${id}/`,
-            }))} />
-          </Col>
+      <Section color={COLORS.WARM1}>
+        <Grid container justify="space-evenly">
+          <Grid item md={4}>
+            <Title
+              title={formatMessage({ id: "FOOTER__social__title" })}
+              subtitle={"social"}
+              text={formatMessage({ id: "FOOTER__social__intro" })}
+            />
+            <Socials />
+          </Grid>
 
-          <Col md={2}>
-            <FooterMenu title={formatMessage({ id: "FOOTER__menu-title__contattaci" })} links={[
-              {
-                label: formatMessage({ id: `NAVIGATION__contatti` }),
-                to: '/contatti'
-              },
-              ...SOCIALS
-            ]} />
-          </Col>
+          <Divider orientation="vertical" flexItem />
 
-          <Col md={2}>
-            <FooterMenu title={formatMessage({ id: "FOOTER__menu-title__area_legale" })} links={LEGAL_IDS.map(id => ({
-              label: formatMessage({ id: `NAVIGATION__${id}` }),
-              to: `/${id}/`,
-            }))} />
-          </Col>
-          
-          <Col md={{ span: 4, offset: 2 }}>
+          <Grid item md={4}>
+            <Title
+              title={formatMessage({ id: "FOOTER__newsletter__title" })}
+              subtitle={"newsletter"}
+              text={formatMessage({ id: "FOOTER__newsletter__intro" })}
+            />
             <Newsletter />
-          </Col> 
-
-        </Row>
+          </Grid>
+        </Grid>
       </Section>
-    </div>
+      
+      <Map />
 
-    <Container className="small text-center text-muted py-3">COD. FISC. e Part: I.V.A. 04743610281 C.C.I.A.A. PD - R.E.A. 414822</Container>
-  </footer>
-)
+      <Section spacing="small">
+        <Grid container justify="space-between" className={classes.copyright}>
+          <Grid item>
+            <TSmall>COD. FISC. e Part: I.V.A. 04743610281 C.C.I.A.A. PD - R.E.A. 414822</TSmall>
+          </Grid>
+          <Grid item>
+            <LanguageSelector />
+          </Grid>
+        </Grid>
+      </Section>
 
-export default injectIntl(Footer)
+    </footer>
+  )
+}
+
+export default Footer
 

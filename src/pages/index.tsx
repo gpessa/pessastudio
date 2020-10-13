@@ -1,63 +1,39 @@
-import { injectIntl } from "gatsby-plugin-intl"
+import { useIntl } from "gatsby-plugin-intl"
 import React from "react"
-import { Carousel, Col, Container, Row } from "react-bootstrap"
-import { IntlFormatters } from "react-intl"
+import { Carousel, Container } from "react-bootstrap"
 
-import { Hero, Product, Section, ProductTitle } from "@components"
-import { PRODUCT_IDS } from "@constants"
+import { Hero, Products, Section, Benefits } from "@components"
 
-const Index: React.FC<{ intl: IntlFormatters }> = ({ intl: { formatMessage } }) => (
-  <>
-    <Hero image={require("@images/background-home-1.jpg")} text={formatMessage({ id: "HOME__hero__text" })} />
+const Index: React.FC = () => {
+  const { formatMessage } = useIntl()
+  
+  return (
+    <>
+      <Hero
+        image={require("@images/background-home-1.jpg")}
+        text={formatMessage({ id: "HOME__hero__text" })}
+      />
 
-    <Section className={"text-center bg-light"} fluid>
-      <Container>
-        <h1>{formatMessage({ id: "HOME_storia_title" })}</h1>
-        <div dangerouslySetInnerHTML={{ __html: formatMessage({ id: "HOME_storia_text" }) }}></div>
-      </Container>
-    </Section>
+      <Benefits />
 
-    <Section fluid={true}>
-      <Container fluid>
-        <Row>
-          <Col xs={6} md={12}>
-            <ProductTitle>
-              <h1>{formatMessage({ id: "HOME_our-product_title" })}</h1>
-            </ProductTitle>
-          </Col>
-          {PRODUCT_IDS.map(id => (
-            <Col
-              xs={6}
-              key={id}
-              md={true}
-              as={Product}
-              url={`/${id}`}
-              name={formatMessage({ id: `NAVIGATION__${id}` })}
-              image={require(`@images/icon-${id}.jpg`)}
-              description={formatMessage({
-                id: `HOME_product_description_${id}`,
-              })}
-            />
-          ))}
-        </Row>
-      </Container>
-    </Section>
+      <Products />
 
-    <Section fluid={true} className="bg-light">
-      <h1 className={"text-center"}>{formatMessage({ id: "HOME__quote__title" })}</h1>
-      <Carousel className="text-center py-4">
-        {Array(2)
-          .fill(null)
-          .map((x, index) => (
-            <Carousel.Item key={index}>
-              <Container as="blockquote" className="blockquote">
-                {formatMessage({ id: `HOME__quote__item-${index}` })}
-              </Container>
-            </Carousel.Item>
-          ))}
-      </Carousel>
-    </Section>
-  </>
-)
+      {/* <Section className="bg-light">
+        <h1 className={"text-center"}>{formatMessage({ id: "HOME__quote__title" })}</h1>
+        <Carousel className="text-center py-4">
+          {Array(2)
+            .fill(null)
+            .map((x, index) => (
+              <Carousel.Item key={index}>
+                <Container as="blockquote" className="blockquote">
+                  {formatMessage({ id: `HOME__quote__item-${index}` })}
+                </Container>
+              </Carousel.Item>
+            ))}
+        </Carousel>
+      </Section> */}
+    </>
+  )
+}
 
-export default injectIntl(Index)
+export default Index

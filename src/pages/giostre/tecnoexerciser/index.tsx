@@ -2,10 +2,10 @@ import { withPrefix } from "gatsby"
 import { injectIntl, FormattedHTMLMessage } from "gatsby-plugin-intl"
 import { IntlFormatters } from "react-intl"
 import React from "react"
-import { Col, Row } from "react-bootstrap"
 
 import { Columns, ContentTable, Gallery, Header, Product, Section } from "@components"
 import { Ratio } from "@constants"
+import { Grid } from "@material-ui/core"
 
 const Tecnoexerciser: React.FC<{ intl: IntlFormatters }> = ({ intl: { formatMessage } }) => {
   const IMAGES: Picture[] = [
@@ -95,16 +95,16 @@ const Tecnoexerciser: React.FC<{ intl: IntlFormatters }> = ({ intl: { formatMess
         <Header>{formatMessage({ id: "GENERAL__gamma" })}</Header>
         <p>{formatMessage({ id: "GIOSTRE__tecnoexerciser__gamma__text" })}</p>
 
-        <Row>
-          {PRODUCTS.map((product, index) => <Col key={index} as={Product} ratio={Ratio.HORIZONTAL} {...product} md={4} />)}
-        </Row>
+        <Grid container>
+          {PRODUCTS.map((product, index) => <Grid item key={index} as={Product} ratio={Ratio.HORIZONTAL} {...product} md={4} />)}
+        </Grid>
       </Section>
 
       <Section className="bg-light">
         <Header>{formatMessage({ id: "GENERAL__client-service" })}</Header>
 
-        <Row>
-          <Col md={6}>
+        <Grid>
+          <Grid item md={6}>
             <ContentTable
               title={formatMessage({ id: "GENERAL__dimensioni" })}
               rows={DIMENSIONS.map(dimension => ({
@@ -112,9 +112,9 @@ const Tecnoexerciser: React.FC<{ intl: IntlFormatters }> = ({ intl: { formatMess
                 file: withPrefix(`/giostra-tecnoexerciser-${dimension}.pdf`),
               }))}
             />
-          </Col>
+          </Grid>
 
-          <Col md={6}>
+          <Grid item md={6}>
             <ContentTable
               title={formatMessage({ id: "GENERAL__manauli" })}
               rows={[
@@ -136,8 +136,8 @@ const Tecnoexerciser: React.FC<{ intl: IntlFormatters }> = ({ intl: { formatMess
                 },
               ]}
             />
-          </Col>
-        </Row>
+          </Grid>
+        </Grid>
       </Section>
     </>
   )

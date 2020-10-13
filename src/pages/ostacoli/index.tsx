@@ -2,7 +2,7 @@ import { FormattedHTMLMessage, injectIntl } from "gatsby-plugin-intl"
 import React from "react"
 import { IntlFormatters } from "react-intl"
 
-import { Section } from "@components"
+import { Section, TH1 } from "@components"
 
 import Barriere from "./_barriere"
 import CandelieriLameForate from "./_candelieri-e-lame-forate"
@@ -15,7 +15,7 @@ import Fosso from "./_fosso"
 const Ostacoli: React.FC<{ intl: IntlFormatters }> = ({ intl: { formatMessage } }) => (
   <>
     <Section className="bg-light">
-      <h1>{formatMessage({ id: "NAVIGATION__ostacoli" })}</h1>
+      <TH1 gutterBottom>{formatMessage({ id: "NAVIGATION__ostacoli" })}</TH1>
       <FormattedHTMLMessage id="OSTACOLI__text" />
     </Section>
 

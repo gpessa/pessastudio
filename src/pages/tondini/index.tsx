@@ -1,10 +1,10 @@
 import { withPrefix } from "gatsby"
 import { FormattedHTMLMessage, injectIntl } from "gatsby-plugin-intl"
 import React from "react"
-import { Col, Row } from "react-bootstrap"
 import { IntlFormatters } from "react-intl"
 
 import { Columns, ContentTable, Gallery, Header, Section, Hero } from "@components"
+import { Grid } from "@material-ui/core"
 
 const Tondini: React.FC<{ intl: IntlFormatters }> = ({ intl: { formatMessage } }) => {
   const DIMENSIONS = [16, 18, 20, 22, 24]
@@ -31,8 +31,8 @@ const Tondini: React.FC<{ intl: IntlFormatters }> = ({ intl: { formatMessage } }
 
       <Section className="bg-light">
         <Header>{formatMessage({ id: "GENERAL__client-service" })}</Header>
-        <Row>
-          <Col md={6}>
+        <Grid container>
+          <Grid item md={6}>
             <ContentTable
               title={formatMessage({ id: "GENERAL__dimensioni" })}
               rows={DIMENSIONS.map(dimension => ({
@@ -40,8 +40,8 @@ const Tondini: React.FC<{ intl: IntlFormatters }> = ({ intl: { formatMessage } }
                 file: withPrefix(`/tondino-${dimension}.pdf`),
               }))}
             />
-          </Col>
-          <Col md={6}>
+          </Grid>
+          <Grid item md={6}>
             <ContentTable
               title={formatMessage({ id: "GENERAL__manauli" })}
               rows={[
@@ -51,8 +51,8 @@ const Tondini: React.FC<{ intl: IntlFormatters }> = ({ intl: { formatMessage } }
                 },
               ]}
             />
-          </Col>
-        </Row>
+          </Grid>
+        </Grid>
       </Section>
     </>
   )

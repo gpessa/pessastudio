@@ -24,6 +24,7 @@ module.exports = {
           "@styles": "./styles",
           "@images": "./images",
           "@hooks": "./hooks",
+          "@theme": "./theme",
           "@hoc": "./hoc",
         },
       },
@@ -32,7 +33,11 @@ module.exports = {
       resolve: "gatsby-plugin-web-font-loader",
       options: {
         google: {
-          families: ["Quicksand:400,600", "Roboto+Condensed:400,700", "Source+Sans+Pro:300,400,600,700"],
+          families: ["Source+Sans+Pro:300,400,600,700", "Roboto+Condensed:400,700"],
+        },
+        custom: {
+          families: ["GT America", "Tiempos Fine"],
+          urls: ["/fonts/fonts.css"],
         },
       },
     },
@@ -75,6 +80,9 @@ module.exports = {
         defaultLanguage: `it`,
         redirect: true,
       },
+    },
+    {
+      resolve: `gatsby-plugin-material-ui`
     },
     {
       resolve: `gatsby-plugin-gdpr-cookies`,

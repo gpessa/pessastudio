@@ -1,7 +1,5 @@
 import React from "react"
 import { Modal, Button, Image } from "react-bootstrap"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faArrowLeft, faArrowRight } from "@fortawesome/free-solid-svg-icons"
 import { useGallery } from "@hooks"
 
 import * as styles from "./styles.module.scss"
@@ -33,13 +31,13 @@ const withModalGallery = <P extends object>(
 
             {showPreviousEnabled &&
               <Button className={styles.galleryModalPrevious} onClick={showPrevious}>
-                <FontAwesomeIcon icon={faArrowLeft} fixedWidth={true} />
+                PREV
               </Button>
             }
 
             {showNextEnabled &&
               <Button className={styles.galleryModalNext} onClick={showNext}>
-                <FontAwesomeIcon icon={faArrowRight} fixedWidth={true} />
+                NEXT
               </Button>
             }
             

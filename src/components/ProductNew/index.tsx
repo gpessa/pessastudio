@@ -1,6 +1,6 @@
 import { injectIntl, Link } from 'gatsby-plugin-intl';
 import React, { ReactNode } from 'react';
-import { Col, Image, Row, Button } from 'react-bootstrap';
+import { Image, Button } from 'react-bootstrap';
 import { IntlFormatters } from 'react-intl';
 import { WithInjectedModalGalleryProps } from 'src/hoc/withModalGallery';
 
@@ -13,6 +13,7 @@ import Description from './Description';
 import MaterialsList from './MaterialsList';
 import Price from './Price';
 import * as styles from './styles.module.scss';
+import { Grid } from '@material-ui/core';
 
 const Product = withModalGallery(({ images, open, vertical, price, url, name, description, intl: { formatMessage, formatNumber }, ...attributes }: Props) => {
   const Tag = url ? Link : "div"
@@ -20,15 +21,15 @@ const Product = withModalGallery(({ images, open, vertical, price, url, name, de
 
   return (
     <Tag to={url} className={`${styles.container}`}>
-      <Row className={`${styles.image} align-items-center`}>
+      <Grid container className={`${styles.image} align-items-center`}>
         {images.map(image => (
-          <Col xs={{ span }} key={image.src}>
+          <Grid item xs={{ span }} key={image.src}>
             <Button onClick={() => open(image)} variant="link" className="p-0">
               <Image fluid src={image.src} alt={name} className="w-100"/>
             </Button>
-          </Col>
+          </Grid>
         ))}
-        <Col xs={{ span }}>
+        <Grid item xs={{ span }}>
           <div className={styles.data}>
             <h6 className={styles.title}>{name}</h6>
 
@@ -64,8 +65,8 @@ const Product = withModalGallery(({ images, open, vertical, price, url, name, de
 
             <Price price={price} />
           </div>
-        </Col>
-      </Row>
+        </Grid>
+      </Grid>
     </Tag>
   )
 })

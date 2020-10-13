@@ -16,6 +16,7 @@
         "@constants": "./constants",
         "@styles": "./styles",
         "@images": "./images",
+        "@theme": "./theme",
         "@hooks": "./hooks",
         "@hoc": "./hoc"
       }

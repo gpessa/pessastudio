@@ -16,6 +16,9 @@
       "@constants": [
         "src/constants"
       ],
+      "@theme": [
+        "src/theme"
+      ],
       "@images": [
         "src/images"
       ],

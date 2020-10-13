@@ -1,10 +1,10 @@
 const PRODUCT_IDS: string[] = ["ostacoli", "recinti", "tondini", "giostre", "dressage"]
 const LEGAL_IDS: string[] = ['cookie-policy']
 const PAGES_IDS: string[] = [...PRODUCT_IDS, "contatti"]
-const SOCIALS: { label: string, href: string}[] = [
-  { label: 'Facebook', href: "https://www.facebook.com/Pessastudio-HORSE-Tecnology-1050570271816027/" },
-  { label: 'Instagram', href: "https://www.instagram.com/pessastudiohorsetecnology" }
-]
+const SOCIALS = {
+  facebook: { label: 'Facebook', href: "https://www.facebook.com/Pessastudio-HORSE-Tecnology-1050570271816027/" },
+  instagram: { label: 'Instagram', href: "https://www.instagram.com/pessastudiohorsetecnology" }
+}
 
 enum Colors {
   YELLOW = "#FEB00D",

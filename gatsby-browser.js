@@ -6,3 +6,7 @@
 
 // You can delete this file if you're not using it
 import "./src/styles/style.scss"
+import 'pure-react-carousel/dist/react-carousel.es.css';
+
+import { MaterialTheme } from "./src/components"
+export const wrapRootElement = MaterialTheme

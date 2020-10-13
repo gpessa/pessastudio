@@ -1,15 +1,35 @@
-import { injectIntl, Link } from "gatsby-plugin-intl"
-import React, { useLayoutEffect, useState } from "react"
-import { Nav, Navbar } from "react-bootstrap"
-import { IntlFormatters } from "react-intl"
+import { Link, useIntl } from 'gatsby-plugin-intl';
+import React, { useLayoutEffect, useState } from 'react';
 
-import { PAGES_IDS } from "@constants"
-import { LanguageSelector, Logo } from "@components"
+import { PAGES_IDS } from '@constants';
+import { AppBar, Box, ButtonBase, makeStyles, Toolbar } from '@material-ui/core';
+import { COLORS, FONTS } from '@theme';
 
-import * as styles from "./styles.module.scss"
+import Logo from './Logo';
 
-const Navigation: React.FC<{ intl: IntlFormatters }> = ({ intl: { formatMessage } }) => {
+const useStyles = makeStyles(theme => ({
+  toolbar: {
+    justifyContent: 'space-between',
+  },
+  link: {
+    fontFamily: FONTS.SANSERIF_SLIM,
+    textTransform: 'uppercase',
+    padding: theme.spacing(1),
+    fontWeight: 500,
+    fontSize: 18,
+    '& + &': {
+      marginLeft: theme.spacing(2)
+    },
+    '&.contatti': {
+      color: COLORS.GREY1
+    }
+  }
+}))
+
+const Navigation: React.FC = () => {
   const [isFloating, setIsFloating] = useState(false)
+  const { formatMessage } = useIntl()
+  const classes = useStyles()
 
   const handleScroll = () => {
     if (window.pageYOffset > 1) return setIsFloating(true)
@@ -24,25 +44,29 @@ const Navigation: React.FC<{ intl: IntlFormatters }> = ({ intl: { formatMessage 
   }, [])
 
   return (
-    <Navbar expand="lg" sticky="top" className={`${styles.element} ${isFloating && "shadow-sm"}`} collapseOnSelect>
-      <Navbar.Brand to="/" as={Link} className="mr-0">
-        <Logo small={isFloating} />
-      </Navbar.Brand>
+    <AppBar position="sticky" color="inherit" elevation={isFloating ? 3 : 0}>
+      <Toolbar className={classes.toolbar}>
+        <ButtonBase component={Link} to="/">
+          <Logo small={isFloating} />
+        </ButtonBase>
 
-      <Navbar.Toggle aria-controls="menu" aria-label={formatMessage({ id: `GENERAL__toggle-button` })} />
-
-      <Navbar.Collapse id="menu">
-        <Nav className="ml-auto">
+        <Box>
           {PAGES_IDS.map(id => (
-            <Nav.Link to={`/${id}/`} as={Link} key={id} activeClassName="active" className={`${id === "contatti" && "text-muted"}`} eventKey={id}>
+            <ButtonBase 
+              component={Link} 
+              to={`/${id}/`} 
+              key={id} 
+              partiallyActive={true} 
+              className={`${classes.link} ${id}`}
+              activeStyle={{ color: COLORS.PRIMARY }}
+            >
               {formatMessage({ id: `NAVIGATION__${id}` })}
-            </Nav.Link>
+            </ButtonBase>
           ))}
-          <LanguageSelector />
-        </Nav>
-      </Navbar.Collapse>
-    </Navbar>
+        </Box>
+      </Toolbar>
+    </AppBar>
   )
 }
 
-export default injectIntl(Navigation)
+export default Navigation

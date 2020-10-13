@@ -1,9 +1,9 @@
 import { injectIntl } from "gatsby-plugin-intl"
 import React from "react"
-import { Col, Row } from "react-bootstrap"
 import { IntlFormatters } from "react-intl"
 
 import { Header, ProductNew } from "@components"
+import { Grid } from "@material-ui/core"
 
 const Fosso: React.FC<{ intl: IntlFormatters }> = ({ intl: { formatMessage } }) => {
   const PRODUCT = {
@@ -18,15 +18,15 @@ const Fosso: React.FC<{ intl: IntlFormatters }> = ({ intl: { formatMessage } }) 
   }
 
   return (
-    <Row>
-      <Col md={6}>
+    <Grid container>
+      <Grid item md={6}>
         <Header>{formatMessage({ id: "OSTACOLI__fosso__title" })}</Header>
         {formatMessage({ id: "OSTACOLI__fosso__text" })}
-      </Col>
-      <Col md={6}>
+      </Grid>
+      <Grid md={6}>
         <ProductNew vertical {...PRODUCT} />
-      </Col>
-    </Row>
+      </Grid>
+    </Grid>
   )
 }
 

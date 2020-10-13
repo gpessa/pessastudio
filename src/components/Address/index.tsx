@@ -1,19 +1,16 @@
 import React from "react"
 
-import { faWhatsapp } from "@fortawesome/free-brands-svg-icons"
-import { faEnvelope, faPhone } from "@fortawesome/free-solid-svg-icons"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-
-import * as styles from "./styles.module.scss"
+import PhoneIcon from '@material-ui/icons/Phone';
+import MailOutlineIcon from '@material-ui/icons/MailOutline';
+import WhatsAppIcon from '@material-ui/icons/WhatsApp';
+import { Button } from "@material-ui/core";
 
 const Address: React.FC<Props> = ({ name, country, addressLocality, whatsapp, postalCode, addressRegion, streetAddress, telephoneMobile, email, ...props }) => {
   const hasAddress = streetAddress != undefined
 
   return (
     <div itemScope itemType="http://schema.org/ContactPoint" {...props}>
-      <h6 itemProp="name" className="mb-1">
-        {name}
-      </h6>
+      <strong itemProp="name">{name}</strong>
 
       {hasAddress && (
         <div itemScope itemType="http://schema.org/PostalAddress">
@@ -31,26 +28,31 @@ const Address: React.FC<Props> = ({ name, country, addressLocality, whatsapp, po
       )}
 
       {telephoneMobile && (
-        <div className="mt-2">
-          <a className={styles.link} itemProp="telephone" href={`tel:${telephoneMobile}`}>
-            <FontAwesomeIcon icon={faPhone} className="mr-2" /> {telephoneMobile}
-          </a>
+        <div>
+          <Button 
+            itemProp="telephone"
+            startIcon={<PhoneIcon />} 
+            href={`tel:${telephoneMobile}`} 
+          >{telephoneMobile}</Button>
         </div>
       )}
 
       {whatsapp && (
-        <div className="mt-2">
-          <a className={styles.link} href={`https://wa.me/15551234567:${whatsapp}`}>
-            <FontAwesomeIcon icon={faWhatsapp} className="mr-2" /> {whatsapp}
-          </a>
+        <div>
+          <Button 
+            startIcon={<WhatsAppIcon />} 
+            href={`https://wa.me/15551234567:${whatsapp}`}
+          >{whatsapp}</Button>
         </div>
       )}
 
       {email && (
-        <div className="mt-2">
-          <a className={styles.link} itemProp="email" href={`mailto:${email}`}>
-            <FontAwesomeIcon icon={faEnvelope} className="mr-2" /> {email}
-          </a>
+        <div>
+          <Button 
+            itemProp="email"
+            startIcon={<MailOutlineIcon />} 
+            href={`mailto:${email}`} 
+          >{email}</Button>
         </div>
       )}
     </div>

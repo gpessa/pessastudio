@@ -1,7 +1,7 @@
 import React from 'react';
 import { Table, Button } from 'react-bootstrap';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faFilePdf, faEye } from '@fortawesome/free-solid-svg-icons';
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+// import { faFilePdf, faEye } from '@fortawesome/free-solid-svg-icons';
 import { Link, injectIntl } from "gatsby-plugin-intl"
 
 const ContentTable = ({ rows, title, intl: { formatMessage }  }: Props) => (
@@ -17,14 +17,16 @@ const ContentTable = ({ rows, title, intl: { formatMessage }  }: Props) => (
               {link && (
                 <Button as={Link} to={link} size="sm" variant="link" className="text-nowrap">
                   {formatMessage({id: "GENERAL__view" })} {" "}
-                  <FontAwesomeIcon icon={faEye} className="text-dark" fixedWidth={true}/>
+                  {/* <FontAwesomeIcon icon={faEye} className="text-dark" fixedWidth={true}/> */}
+                  EYE
                 </Button>
               )}
 
               {file && (
                 <Button href={file} target="_blank" size="sm" as="a" variant="link" className="text-nowrap">
                   {formatMessage({id: "GENERAL__download" })} {" "}
-                  <FontAwesomeIcon icon={faFilePdf} className="text-danger" fixedWidth={true}/>
+                  {/* <FontAwesomeIcon icon={faFilePdf} className="text-danger" fixedWidth={true} /> */}
+                  PDF
                 </Button>
                 )}
               </td>

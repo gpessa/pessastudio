@@ -12,11 +12,12 @@ $gray-800: #343a40;
 $gray-900: #212529;
 $black: #000;
 $light: $gray-100;
+$warm: #F6F4F0;
 
 $border-color: $gray-400;
 
 $grid-gutter-width: 46px;
-$font-size-base: 1.1rem;
+$font-size-base: 1rem;
 $font-size-lg: $font-size-base * 1.25;
 $font-size-sm: $font-size-base * 0.875;
 
@@ -27,15 +28,15 @@ $gray-base: #000;
 $gray-darker: lighten($gray-base, 13.5%);
 $gray-dark: lighten($gray-base, 20%);
 $gray: lighten($gray-base, 33.5%);
-$gray-light: lighten($gray-base, 46.7%);
+$gray-light: #D4D6D8;
 $gray-lighter: lighten($gray-base, 93.5%);
 
 $primary: #356434;
 $danger: red;
 
-$font-family-sans-serif: "Source Sans Pro", Helvetica, Arial, sans-serif;
-$font-family-serif: Georgia, "Times New Roman", Times, serif;
-$headings-font-family: "Roboto Condensed", Helvetica, Arial, sans-serif;
+$font-family-sans-serif: "GT America";
+$font-family-serif: "Tiempos Fine";
+$headings-font-family: $font-family-serif; //"Roboto Condensed", Helvetica, Arial, sans-serif;
 $headings-font-weight: normal;
 $navbar-nav-link-padding-x: 1rem;
 
@@ -52,7 +53,6 @@ $text-color: #555;
 $carousel-control-color: $primary;
 $carousel-indicator-active-bg: $primary;
 
-$input-border-color: transparent;
 $figure-caption-font-size: 70%;
 
 $small-font-size: 80%;
@@ -78,6 +78,9 @@ $font-weight-base: 300;
 $secondary: darken($primary, 10);
 
 $link-hover-decoration: none;
+
+$btn-font-family: $font-family-sans-serif;
+$input-bg: transparent;
 
 @import "~bootstrap/scss/functions";
 @import "~bootstrap/scss/variables";
