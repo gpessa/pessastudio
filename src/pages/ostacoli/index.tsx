@@ -1,52 +1,57 @@
-import { FormattedHTMLMessage, injectIntl } from "gatsby-plugin-intl"
-import React from "react"
-import { IntlFormatters } from "react-intl"
+import { FormattedHTMLMessage, useIntl } from 'gatsby-plugin-intl';
+import React from 'react';
 
-import { Section, TH1 } from "@components"
+import { Section, TH1 } from '@components';
 
-import Barriere from "./_barriere"
-import CandelieriLameForate from "./_candelieri-e-lame-forate"
-import Cavalletti from "./_cavalletti"
-import Cubi from "./_cubi"
-import Cucchiai from "./_cucchiai"
-import Segnaletica from "./_segnaletica"
-import Fosso from "./_fosso"
+import Barriere from './_barriere';
+import CandelieriLameForate from './_candelieri-e-lame-forate';
+import Cavalletti from './_cavalletti';
+import Cubi from './_cubi';
+import Cucchiai from './_cucchiai';
+import Fosso from './_fosso';
+import Segnaletica from './_segnaletica';
+import { COLORS } from '@theme';
+import { Typography } from '@material-ui/core';
 
-const Ostacoli: React.FC<{ intl: IntlFormatters }> = ({ intl: { formatMessage } }) => (
-  <>
-    <Section className="bg-light">
-      <TH1 gutterBottom>{formatMessage({ id: "NAVIGATION__ostacoli" })}</TH1>
-      <FormattedHTMLMessage id="OSTACOLI__text" />
-    </Section>
+const Ostacoli: React.FC = () => {
+  const { formatMessage } = useIntl()
 
-    <Section>
-      <Barriere />
-    </Section>
+  return (
+    <>
+      <Section>
+        <TH1>{formatMessage({ id: "NAVIGATION__ostacoli" })}</TH1>
+        <FormattedHTMLMessage id="OSTACOLI__text" tagName={Typography} variant="body1" />
+      </Section>
 
-    <Section className="bg-light">
-      <Fosso />
-    </Section>
+      <Section color={COLORS.WARM2}>
+        <Barriere />
+      </Section>
 
-    <Section>
-      <Cavalletti />
-    </Section>
+      <Section>
+        <Fosso />
+      </Section>
 
-    <Section className="bg-light">
-      <Cubi />
-    </Section>
+      <Section color={COLORS.WARM2}>
+        <Cavalletti />
+      </Section>
 
-    <Section>
-      <CandelieriLameForate />
-    </Section>
+      <Section>
+        <Cubi />
+      </Section>
 
-    <Section className="bg-light">
-      <Cucchiai />
-    </Section>
+      <Section color={COLORS.WARM2}>
+        <CandelieriLameForate />
+      </Section>
 
-    <Section>
-      <Segnaletica />
-    </Section>
-  </>
-)
+      <Section>
+        <Cucchiai />
+      </Section>
 
-export default injectIntl(Ostacoli)
+      <Section color={COLORS.WARM2}>
+        <Segnaletica />
+      </Section>
+    </>
+  )
+}
+
+export default Ostacoli

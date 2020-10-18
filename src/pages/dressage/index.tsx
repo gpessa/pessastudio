@@ -1,16 +1,18 @@
-import { FormattedMessage, injectIntl, FormattedHTMLMessage } from "gatsby-plugin-intl"
+import { FormattedHTMLMessage, FormattedMessage, useIntl } from "gatsby-plugin-intl"
 import React from "react"
-import { IntlFormatters } from "react-intl"
-import { Col, Row } from "react-bootstrap"
 
-import { Header, Product, Section } from "@components"
+import { Product, Section, TH1, TH2 } from "@components"
 import { Colors, Material } from "@constants"
+import { Grid, Link, Typography } from "@material-ui/core"
+import { COLORS } from "@theme"
 
-const Dressage: React.FC<{ intl: IntlFormatters }> = ({ intl: { formatMessage } }) => {
+const Dressage: React.FC = () => {
+  const { formatMessage } = useIntl()
+
   const TRAINING_PRODUCTS = [
     {
       name: "Lettera Dressage Light",
-      image: require("@images/product/dressage/training-lettera.jpg"),
+      images: [{src: require("@images/product/dressage/training-lettera.jpg")}],
       width: 200,
       height: 300,
       weight: 0.5,
@@ -20,7 +22,7 @@ const Dressage: React.FC<{ intl: IntlFormatters }> = ({ intl: { formatMessage } 
     },
     {
       name: "Modulo dressage",
-      image: require("@images/product/dressage/training-modulo-dressage.jpg"),
+      images: [{src: require("@images/product/dressage/training-modulo-dressage.jpg")}],
       weight: 3,
       height: 285,
       colors: [Colors.WHITE],
@@ -28,19 +30,19 @@ const Dressage: React.FC<{ intl: IntlFormatters }> = ({ intl: { formatMessage } 
     {
       name: "Rettangolo dressage 20x40",
       description: "Un comodo set composto da 60 moduli e 8 lettere",
-      image: require("@images/product/dressage/training-rettangolo-dressage-20x60.jpg"),
+      images: [{src: require("@images/product/dressage/training-rettangolo-dressage-20x60.jpg")}],
     },
     {
       name: "Rettangolo dressage 20x60",
       description: "Un comodo set composto da 80 moduli e 12 lettere",
-      image: require("@images/product/dressage/training-rettangolo-dressage-20x40.jpg"),
+      images: [{src: require("@images/product/dressage/training-rettangolo-dressage-20x40.jpg")}],
     },
   ]
 
   const OLIMPIC_PRODUCTS = [
     {
       name: "Lettera Dressage Light",
-      image: require("@images/product/dressage/olimpic-lettera.jpg"),
+      images: [{src: require("@images/product/dressage/olimpic-lettera.jpg")}],
       width: 390,
       height: 700,
       weight: 2.5,
@@ -49,7 +51,7 @@ const Dressage: React.FC<{ intl: IntlFormatters }> = ({ intl: { formatMessage } 
     },
     {
       name: "Modulo dressage",
-      image: require("@images/product/dressage/olimpic-modulo-dressage.jpg"),
+      images: [{src: require("@images/product/dressage/olimpic-modulo-dressage.jpg")}],
       width: 210,
       length: 2000,
       height: 370,
@@ -59,50 +61,56 @@ const Dressage: React.FC<{ intl: IntlFormatters }> = ({ intl: { formatMessage } 
     },
     {
       name: "Rettangolo dressage 20x40",
-      image: require("@images/product/dressage/olimpic-rettangolo-dressage-20x60.jpg"),
+      images: [{src: require("@images/product/dressage/olimpic-rettangolo-dressage-20x60.jpg")}],
       description: "Un comodo set composto da 60 moduli e 8 lettere",
     },
     {
       name: "Rettangolo dressage 20x60",
       description: "Un comodo set composto da 80 moduli e 12 lettere",
-      image: require("@images/product/dressage/olimpic-rettangolo-dressage-20x40.jpg"),
+      images: [{src: require("@images/product/dressage/olimpic-rettangolo-dressage-20x40.jpg")}],
     },
   ]
 
   return (
     <>
       <Section>
-        <h1>{formatMessage({ id: `NAVIGATION__dressage` })}</h1>
-        <FormattedMessage
+        <TH1>{formatMessage({ id: `NAVIGATION__dressage` })}</TH1>
+        <Typography
+          variant="body1"
+          component={FormattedMessage}
           id="DRESSAGE__text"
           values={{
-            linktraining: (msg: string) => <a href="#dressage-training">{msg}</a>,
-            linkolimpic: (msg: string) => <a href="#dressage-olimpic">{msg}</a>,
+            linktraining: (msg: string) => <Link href="#dressage-training">{msg}</Link>,
+            linkolimpic: (msg: string) => <Link href="#dressage-olimpic">{msg}</Link>,
           }}
         />
       </Section>
 
-      <Section id="dressage-training" className="bg-light">
-        <Header as="h2">{formatMessage({ id: `DRESSAGE__training_title` })}</Header>
-        <FormattedHTMLMessage as="div" id="DRESSAGE__training_description" />
-        <Row className="mt-5">
+      <Section id="dressage-training" color={COLORS.WARM2}>
+        <TH2>{formatMessage({ id: `DRESSAGE__training_title` })}</TH2>
+        <FormattedHTMLMessage id="DRESSAGE__training_description" />
+        <Grid container spacing={5}>
           {TRAINING_PRODUCTS.map((product, index) => (
-            <Col key={index} as={Product} {...product} md={3} />
+            <Grid item key={index} md={3}>
+              <Product vertical {...product} />
+            </Grid>
           ))}
-        </Row>
+        </Grid>
       </Section>
 
       <Section id="dressage-olimpic">
-        <Header as="h2">{formatMessage({ id: `DRESSAGE__olimpic_title` })}</Header>
-        <FormattedHTMLMessage as="div" id="DRESSAGE__olimpic_description" />
-        <Row className="mt-5">
+        <TH2>{formatMessage({ id: `DRESSAGE__olimpic_title` })}</TH2>
+        <FormattedHTMLMessage id="DRESSAGE__olimpic_description" />
+        <Grid container spacing={5}>
           {OLIMPIC_PRODUCTS.map((product, index) => (
-            <Col key={index} as={Product} {...product} md={3} />
+            <Grid item key={index} md={3}>
+              <Product vertical {...product} />
+            </Grid>
           ))}
-        </Row>
+        </Grid>
       </Section>
     </>
   )
 }
 
-export default injectIntl(Dressage)
+export default Dressage

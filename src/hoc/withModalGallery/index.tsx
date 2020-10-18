@@ -1,8 +1,7 @@
 import React from "react"
-import { Modal, Button, Image } from "react-bootstrap"
 import { useGallery } from "@hooks"
 
-import * as styles from "./styles.module.scss"
+import { Button, Dialog, makeStyles, Typography } from "@material-ui/core"
 
 interface WithModalGallery {
   images: Picture[];
@@ -12,39 +11,62 @@ export interface WithInjectedModalGalleryProps extends Pick<ReturnType<typeof us
   images: Picture[];
 } 
 
+const useStyles = makeStyles(theme => ({
+  image: {
+    width: '100%',
+  },
+  previous: {
+    transform: 'translateY(-50%)',
+    position: 'absolute',
+    top: '50%',
+    left: 0,
+  },
+  next: {
+    transform: 'translateY(-50%)',
+    position: 'absolute',
+    top: '50%',
+    right: 0,
+  },
+  caption: {
+    padding: theme.spacing(1)
+  }
+}))
+
+
 const withModalGallery = <P extends object>(
   Component: React.ComponentType<P>
 ): React.FC<P & WithModalGallery & WithInjectedModalGalleryProps> => ({
   images,
   ...props
 }: WithModalGallery) => {
+  const classes = useStyles()
   const { showPreviousEnabled, showNextEnabled, showPrevious, showNext, active, close, open } = useGallery(images)
 
   return (
     <>
       <Component {...props as P} images={images} open={open}/>
 
-      <Modal show={!!active} onHide={close} className={styles.modal} size="lg" centered={true}>
+      <Dialog open={!!active} onClose={close} maxWidth="lg">
         {active && (
           <>
-            <Image className={styles.galleryModalImage} src={active.src} />
+            <img className={classes.image} src={active.src} />
 
             {showPreviousEnabled &&
-              <Button className={styles.galleryModalPrevious} onClick={showPrevious}>
+              <Button color="primary" className={classes.previous} onClick={showPrevious}>
                 PREV
               </Button>
             }
 
             {showNextEnabled &&
-              <Button className={styles.galleryModalNext} onClick={showNext}>
+              <Button color="primary" className={classes.next} onClick={showNext}>
                 NEXT
               </Button>
             }
             
-            {active.caption && <Modal.Footer>{active.caption}</Modal.Footer>}
+            {active.caption && <Typography variant="caption" className={classes.caption}>{active.caption}</Typography>}
           </>
         )}
-      </Modal>
+      </Dialog>
     </>
   )
 }

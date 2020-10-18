@@ -1,12 +1,13 @@
-import { injectIntl } from "gatsby-plugin-intl"
 import React from "react"
-import { Col, Row } from "react-bootstrap"
-import { IntlFormatters } from "react-intl"
+import { useIntl } from "gatsby-plugin-intl"
 
-import { Header, ProductNew } from "@components"
+import { Product, Title } from "@components"
 import { Material } from "@constants"
+import { Grid } from "@material-ui/core"
 
-const Segnaletica: React.FC<{ intl: IntlFormatters }> = ({ intl: { formatMessage } }) => {
+const Segnaletica: React.FC= () => {
+  const { formatMessage } = useIntl()
+
   const PRODUCTS = [
     {
       name: formatMessage({ id: "OSTACOLI__segnaletica__product__bandierine" }),
@@ -42,16 +43,18 @@ const Segnaletica: React.FC<{ intl: IntlFormatters }> = ({ intl: { formatMessage
 
   return (
     <>
-      <Header>{formatMessage({ id: "OSTACOLI__segnaletica__title" })}</Header>
-      <Row>
+      <Title
+        title={formatMessage({ id: "OSTACOLI__segnaletica__title" })}
+      />
+      <Grid container>
         {PRODUCTS.map((product, index) => (
-          <Col key={index} sm={6} md={6}>
-            <ProductNew {...product}/>
-          </Col>
+          <Grid key={index} sm={6} md={6} item>
+            <Product {...product}/>
+          </Grid>
         ))}
-      </Row>
+      </Grid>
     </>
   )
 }
 
-export default injectIntl(Segnaletica)
+export default Segnaletica

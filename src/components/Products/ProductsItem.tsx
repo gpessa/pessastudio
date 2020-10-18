@@ -58,7 +58,7 @@ const ProductItem: React.FC<Props> = (props) => {
         opacity: index >= currentSlide ? 1: 0
       }}
     >
-      <TH4 gutterBottom>{props.name}</TH4>
+      <TH4>{props.name}</TH4>
       {props.description}
     </Link>
   )

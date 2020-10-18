@@ -1,58 +1,86 @@
-import { injectIntl, Link, FormattedHTMLMessage, FormattedMessage } from "gatsby-plugin-intl"
+import { Link as LinkGatsby, FormattedHTMLMessage, FormattedMessage, useIntl } from "gatsby-plugin-intl"
 import React from "react"
-import { Button, Container } from "react-bootstrap"
-import { IntlFormatters } from "react-intl"
 
-import { Columns, Header, Hero, Section } from "@components"
+import { Columns, TH2, Hero, Section, TH4 } from "@components"
+import { Box, Button, Link, makeStyles, Typography } from "@material-ui/core"
+import Numeri from "./_numeri"
 
-const Giostre: React.FC<{ intl: IntlFormatters }> = ({ intl: { formatMessage } }) => (
-  <>
-    <Hero image={require("@images/background-giostre.jpg")} text={formatMessage({ id: "NAVIGATION__giostre" })} />
+const useStyles = makeStyles(_ => ({
+  gamma: {
+    textAlign: 'center'
+  }
+}))
 
-    <Section className="bg-light">
-      <FormattedHTMLMessage id="GIOSTRE__text" />
-    </Section>
+const Giostre: React.FC = () => {
+  const { formatMessage } = useIntl()
+  const classes = useStyles()
 
-    <Section fluid={true} className="pb-0">
-      <Container className="mb-4">
-        <Header>{formatMessage({ id: "GENERAL__gamma" })}</Header>
+  return (
+    <>
+      <Hero
+        image={require("@images/background-giostre.jpg")}
+        text={formatMessage({ id: "NAVIGATION__giostre" })}
+      />
+
+      <Section className={classes.gamma} maxWidth="md">
+        <Typography variant="body1">
+          <FormattedHTMLMessage id="GIOSTRE__text" />
+        </Typography>
+      </Section>
+
+      <Numeri />
+
+      <Section className={classes.gamma} maxWidth="md">
+        <TH2>{formatMessage({ id: "GENERAL__gamma" })}</TH2>
         <FormattedMessage
           id="GIOSTRE__gamma__text"
           values={{
             linktecnoexerciser: () => (
-              <Link to="/giostre/tecnoexerciser">
-                <strong>{formatMessage({ id: "NAVIGATION__tecnoexerciser" })}</strong>
-              </Link>
+              <Link
+                component={LinkGatsby}
+                to="/giostre/tecnoexerciser"
+              >{formatMessage({ id: "NAVIGATION__tecnoexerciser" })}</Link>
             ),
             linkippowalker: () => (
-              <Link to="/giostre/ippowalker">
-                <strong>{formatMessage({ id: "NAVIGATION__ippowalker" })}</strong>
-              </Link>
+              <Link
+                component={LinkGatsby}
+                to="/giostre/ippowalker"
+              >{formatMessage({ id: "NAVIGATION__ippowalker" })}</Link>
             ),
           }}
         />
-      </Container>
+      </Section>
 
       <Columns
         left={
-          <div className="text-center py-md-5">
-            <h3>{formatMessage({ id: "NAVIGATION__tecnoexerciser" })}</h3>
-            <Button as={Link} to="/giostre/tecnoexerciser" variant="light" size="lg">
+          <Box textAlign="center">
+            <TH4>{formatMessage({ id: "NAVIGATION__tecnoexerciser" })}</TH4>
+            <Button
+              component={LinkGatsby}
+              to="/giostre/tecnoexerciser"
+              color="default"
+              size="large"
+            >
               {formatMessage({ id: "GIOSTRE_discover-more" })}
             </Button>
-          </div>
+          </Box>
         }
         right={
-          <div className="text-center py-md-5">
-            <h3>{formatMessage({ id: "NAVIGATION__ippowalker" })}</h3>
-            <Button as={Link} to="/giostre/ippowalker" variant="primary" size="lg">
+          <Box textAlign="center">
+            <TH4>{formatMessage({ id: "NAVIGATION__ippowalker" })}</TH4>
+            <Button
+              component={LinkGatsby}
+              to="/giostre/ippowalker"
+              color="primary"
+              size="large"
+            >
               {formatMessage({ id: "GIOSTRE_discover-more" })}
             </Button>
-          </div>
+          </Box>
         }
       />
-    </Section>
-  </>
-)
+    </>
+  )
+}
 
-export default injectIntl(Giostre)
+export default Giostre

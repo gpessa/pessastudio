@@ -1,11 +1,11 @@
 import { Typography, TypographyProps } from '@material-ui/core';
 import React from 'react';
 
-const TH5 = (props: Pick<
+const TH2 = (props: Pick<
   TypographyProps, 'children' | 'className' | 'gutterBottom' | 'noWrap' | 'paragraph' | 'variant' | 'dangerouslySetInnerHTML'
 >) => (
-  <Typography component="h5" variant="h5" {...props}/>
+  <Typography component="h2" variant="h2" {...props}/>
 )
 
-export default TH5
+export default TH2
 

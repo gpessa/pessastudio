@@ -1,6 +1,6 @@
 import { changeLocale, injectIntl, IntlContextConsumer } from 'gatsby-plugin-intl';
 import * as React from 'react';
-import { useIntl } from 'react-intl';
+import { useIntl } from "gatsby-plugin-intl"
 import Flag from 'react-world-flags';
 
 import { TSmall } from '@components';
@@ -29,11 +29,12 @@ const LanguageSelector: React.FC = () => {
           <Button 
             size="small" 
             color="inherit"
+            variant="text"
             onClick={handleModal} 
             className={classes.button}
             startIcon={<Flag code={locale} height={15} />}
           >
-            <TSmall>Change language</TSmall>
+            <TSmall gutterBottom={false}>Change language</TSmall>
           </Button>
 
           <Dialog open={show} onClose={handleModal}>

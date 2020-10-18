@@ -1,11 +1,11 @@
 import { withPrefix } from "gatsby"
 import { FormattedHTMLMessage, injectIntl } from "gatsby-plugin-intl"
 import React from "react"
-import { Col, Row } from "react-bootstrap"
 import { IntlFormatters } from "react-intl"
 
-import { Columns, ContentTable, Gallery, Header, Product, Section } from "@components"
-import { Ratio } from "@constants"
+import { Columns, ContentTable, Gallery, TH2, TH1, Product, Section, TH4 } from "@components"
+import { Grid } from "@material-ui/core"
+import { COLORS } from "@theme"
 
 const Ippowalker: React.FC<{ intl: IntlFormatters }> = ({ intl: { formatMessage } }) => {
   const IMAGES: Picture[] = [
@@ -31,7 +31,7 @@ const Ippowalker: React.FC<{ intl: IntlFormatters }> = ({ intl: { formatMessage 
 
   const PRODUCTS = [
     {
-      image: require("@images/product/giostre/ippowalker/gamma/solo-motore.jpg"),
+      images: [{ src: require("@images/product/giostre/ippowalker/gamma/solo-motore.jpg") }],
       name: "Giostra",
       description: (
         <>
@@ -46,7 +46,7 @@ const Ippowalker: React.FC<{ intl: IntlFormatters }> = ({ intl: { formatMessage 
       ),
     },
     {
-      image: require("@images/product/giostre/ippowalker/gamma/con-corridoio-tecnofence.jpg"),
+      images: [{ src: require("@images/product/giostre/ippowalker/gamma/con-corridoio-tecnofence.jpg") }],
       name: "Giostra con corridoio Tecnofence",
       description: (
         <>
@@ -60,7 +60,7 @@ const Ippowalker: React.FC<{ intl: IntlFormatters }> = ({ intl: { formatMessage 
       ),
     },
     {
-      image: require("@images/product/giostre/ippowalker/gamma/con-corridoio-flat.jpg"),
+      images: [{ src: require("@images/product/giostre/ippowalker/gamma/con-corridoio-flat.jpg") }],
       name: "Giostra con corridoio Flat",
       description: (
         <>
@@ -80,7 +80,7 @@ const Ippowalker: React.FC<{ intl: IntlFormatters }> = ({ intl: { formatMessage 
       <Columns
         left={
           <>
-            <h1>{formatMessage({ id: "NAVIGATION__ippowalker" })}</h1>
+            <TH1>{formatMessage({ id: "NAVIGATION__ippowalker" })}</TH1>
             <FormattedHTMLMessage id="GIOSTRE__ippowalker__descrizione" />
           </>
         }
@@ -88,19 +88,23 @@ const Ippowalker: React.FC<{ intl: IntlFormatters }> = ({ intl: { formatMessage 
       />
 
       <Section>
-        <Header>{formatMessage({ id: "GENERAL__gamma" })}</Header>
+        <TH2>{formatMessage({ id: "GENERAL__gamma" })}</TH2>
         <p>{formatMessage({ id: "GIOSTRE__ippowalker__gamma__text" })}</p>
         
-        <Row>
-          {PRODUCTS.map((product, index) => <Col key={index} as={Product} ratio={Ratio.HORIZONTAL} {...product} md={4}/>)}
-        </Row>
+        <Grid container spacing={5}>
+          {PRODUCTS.map((product, index) => (
+            <Grid item key={index} md={4}>
+              <Product vertical {...product} />
+            </Grid>
+          ))}
+        </Grid>
       </Section>
 
-      <Section className="bg-light">
-        <Header>{formatMessage({ id: "GENERAL__client-service" })}</Header>
+      <Section color={COLORS.WARM2}>
+        <TH4>{formatMessage({ id: "GENERAL__client-service" })}</TH4>
 
-        <Row>
-          <Col md={6}>
+        <Grid container spacing={5}>
+          <Grid item md={6}>
             <ContentTable
               title={formatMessage({ id: "GENERAL__dimensioni" })}
               rows={DIMENSIONS.map(dimension => ({
@@ -108,28 +112,24 @@ const Ippowalker: React.FC<{ intl: IntlFormatters }> = ({ intl: { formatMessage 
                 file: withPrefix(`/giostra-ippowalker-${dimension}.pdf`),
               }))}
             />
-          </Col>
+          </Grid>
 
-          <Col md={6}>
+          <Grid item md={6}>
             <ContentTable
               title={formatMessage({ id: "GENERAL__manauli" })}
-              rows={[
-                {
-                  label: formatMessage({ id: "GIOSTRE__manuali__manuale-quadro" }),
-                  file: withPrefix(`/giostra-ippowalker-manuale-quadro.pdf`),
-                },
-                {
-                  label: formatMessage({ id: "GIOSTRE__manuali__manuale-collegamento-elettrico" }),
-                  file: withPrefix(`/giostra-collegamento-elettrico.pdf`),
-                },
-                {
-                  label: formatMessage({ id: "GIOSTRE__manuali__istruzioni-montaggio" }),
-                  link: withPrefix(`/giostre/ippowalker/istruzioni-montaggio`),
-                },
-              ]}
+              rows={[{
+                label: formatMessage({ id: "GIOSTRE__manuali__manuale-quadro" }),
+                file: withPrefix(`/giostra-ippowalker-manuale-quadro.pdf`),
+              },{
+                label: formatMessage({ id: "GIOSTRE__manuali__manuale-collegamento-elettrico" }),
+                file: withPrefix(`/giostra-collegamento-elettrico.pdf`),
+              },{
+                label: formatMessage({ id: "GIOSTRE__manuali__istruzioni-montaggio" }),
+                link: withPrefix(`/giostre/ippowalker/istruzioni-montaggio`),
+              }]}
             />
-          </Col>
-        </Row>
+          </Grid>
+        </Grid>
       </Section>
     </>
   )

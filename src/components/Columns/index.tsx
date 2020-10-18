@@ -1,10 +1,7 @@
 import { Grid, makeStyles, useMediaQuery } from '@material-ui/core';
-import theme, { COLORS } from '@theme';
+import theme, { BREAKPOINT, COLORS } from '@theme';
 import React, { ReactNode } from 'react';
-import { Container } from 'react-bootstrap';
 import Section from '../Section';
-
-// import * as styles from './styles.module.scss';
 
 interface Props {
   left: ReactNode;
@@ -14,15 +11,24 @@ interface Props {
 const useStyles = makeStyles(theme => ({
   root: {
     position: 'relative',
-    background: `linear-gradient(90deg, ${COLORS.PRIMARY} 50%, ${COLORS.WHITE} 50%)`
+    [theme.breakpoints.up(BREAKPOINT)]: {
+      background: `linear-gradient(90deg, ${theme.palette.primary.main} 50%, ${theme.palette.common.white} 50%)`
+    },
+    [theme.breakpoints.down(BREAKPOINT)]: {
+      padding: 0,
+      '& .MuiGrid-container': {
+        marginTop: 0,
+        marginBottom: 0
+      }
+    }
   },
   left: {
-    backgroundColor: COLORS.PRIMARY,
-    color: COLORS.WHITE,
+    backgroundColor: theme.palette.primary.main,
+    color: theme.palette.common.white,
     padding: theme.spacing(3)
   },
   right: {
-    backgroundColor: COLORS.WHITE,
+    backgroundColor: theme.palette.common.white,
     color: "inherit",
     padding: theme.spacing(3),
   }
@@ -35,12 +41,11 @@ const Footer = ({ left, right }: Props) => {
   return (
     <Section
       className={classes.root}
-      disableGutters={isSmall}
       maxWidth={isSmall ? false : 'lg'}
   >
       <Grid container spacing={10}>
-        <Grid item xs={12} sm={6} className={classes.left}>{left}</Grid>
-        <Grid item xs={12} sm={6} className={classes.right}>{right}</Grid>
+        <Grid item xs={12} md={6} className={classes.left}>{left}</Grid>
+        <Grid item xs={12} md={6} className={classes.right}>{right}</Grid>
       </Grid>
     </Section>
   )

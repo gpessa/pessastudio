@@ -29,7 +29,7 @@ const useStyles = makeStyles(theme => ({
       }
     },
     '&:before': {
-      // backgroundImage: ({ image }: Props) => image && `url(${require(`assets/images/backgrounds/${image}.png`)})`,
+      backgroundImage: ({ image }: Props) => image && `url(${require(`@images/patterns/${image}.jpg`)})`,
       backgroundColor: ({ color }: Props) => color && color,
       backgroundSize: 'cover',
       position: 'absolute',
@@ -51,24 +51,27 @@ const useStyles = makeStyles(theme => ({
 }), { name: 'Section' });
 
 type Props = {
+  id?: string
   color?: string
   className?: string,
   disableGutters?: boolean,
   spacing?: 'small' | 'medium' | 'big' | 'menu'
   image?: 'paper' | 'marble-white' | 'marble-black'
   type?: 'vertical' | 'horizontal'
-} & Pick<ContainerProps, "maxWidth">
+} & Pick<ContainerProps, "maxWidth" | "children">
 
 const Section: React.FC<Props> = ({ maxWidth, disableGutters, ...props }) => {
   const classes = useStyles(props)
 
   return (
-    <section className={`${classes.root} ${props.className}`} >
+    <section className={`${classes.root} ${props.className}`} id={props.id}>
       <Container
         disableGutters={disableGutters}
         className={classes.container}
         maxWidth={maxWidth}
-      >{props.children}</Container>
+      >
+        {props.children}
+      </Container>
     </section>
   )
 }

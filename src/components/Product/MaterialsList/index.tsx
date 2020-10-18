@@ -1,11 +1,12 @@
 import React from "react"
-import { IntlFormatters } from "react-intl"
-import { injectIntl } from "gatsby-plugin-intl"
+import { useIntl } from 'gatsby-plugin-intl';
 
 import { Material } from "@constants"
 
-const MaterialsList: React.FC<{ intl: IntlFormatters; materials: Material[] }> = ({ materials, intl: { formatMessage } }) => {
+const MaterialsList: React.FC<{ materials: Material[] }> = ({ materials }) => {
+  const { formatMessage } = useIntl()
+
   return <>{materials.map(material => formatMessage({ id: `GENERAL__material__${material}` })).join(", ")}</>
 }
 
-export default injectIntl(MaterialsList)
+export default MaterialsList

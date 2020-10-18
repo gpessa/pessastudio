@@ -1,20 +1,28 @@
 import { makeStyles } from "@material-ui/core"
 import React from "react"
 import { Image } from "react-bootstrap"
-import { COLORS, FONTS } from "@theme";
+import { BREAKPOINT, COLORS, FONTS } from "@theme";
 
 interface Props {
   small: Boolean
 }
 
+const FACTOR = 1.2
+const LOGO_SIZE = 40
+const TITLE_SIZE = 28
+const SUBTITLE_SIZE = 10
+
 const useStyles = makeStyles(theme => ({
   image: {
-    height: ({ small }: Props) => small ? 40 : 50,
     marginRight: theme.spacing(1),
     transition: theme.transitions.create(
       ['height'],
       { duration: theme.transitions.duration.short }
     ),
+    height: LOGO_SIZE,
+    [theme.breakpoints.up(BREAKPOINT)]: {
+      height: ({ small }: Props) => LOGO_SIZE * (small ? 1 : FACTOR)
+    }
   },
   root: {
     display: 'flex',
@@ -22,22 +30,30 @@ const useStyles = makeStyles(theme => ({
   },
   title: {
     margin: 0,
-    fontSize: 30,
-    lineHeight: '21px',
+    marginBottom: 5,
     color: COLORS.BLACK,
     textTransform: 'uppercase',
     fontFamily: FONTS.SANSERIF_SLIM,
-    marginBottom: 5
+    fontSize: TITLE_SIZE,
+    lineHeight: `${TITLE_SIZE * 0.7}px`,
+    [theme.breakpoints.up(BREAKPOINT)]: {
+      fontSize: ({ small }: Props) => TITLE_SIZE * (small ? 1 : FACTOR),
+      lineHeight: ({ small }: Props) => `${TITLE_SIZE * 0.7 * (small ? 1 : FACTOR)}px`
+    }
   },
   subtitle: {
     margin: 0,
-    fontSize: 13,
-    letterSpacing: 4.6,
-    lineHeight: '11px',
-    textIndent: 3,
-    color: COLORS.PRIMARY,
+    letterSpacing: 6.5,
+    color: theme.palette.primary.main,
     textTransform: 'uppercase',
     fontFamily: FONTS.SANSERIF_SLIM,
+    fontSize: SUBTITLE_SIZE,
+    lineHeight: `${SUBTITLE_SIZE * 0.7}px`,
+    [theme.breakpoints.up(BREAKPOINT)]: {
+      letterSpacing: ({ small }: Props) => small ? 5.6 : 6.5,
+      fontSize: ({ small }: Props) => SUBTITLE_SIZE * (small ? 1 : FACTOR),
+      lineHeight: ({ small }: Props) => `${SUBTITLE_SIZE * 0.7 * (small ? 1 : FACTOR)}px`
+    }
   },
 }))
   

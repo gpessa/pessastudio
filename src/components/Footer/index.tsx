@@ -2,8 +2,8 @@ import { useIntl } from 'gatsby-plugin-intl';
 import React from 'react';
 
 import { Section, Title, TSmall } from '@components';
-import { Divider, Grid, makeStyles } from '@material-ui/core';
-import { COLORS } from '@theme';
+import { Divider, Grid, makeStyles, useMediaQuery } from '@material-ui/core';
+import theme, { COLORS, BREAKPOINT } from '@theme';
 
 import LanguageSelector from './LanguageSelector';
 import Map from './Map';
@@ -13,19 +13,28 @@ import Socials from './Socials';
 const useStyles = makeStyles(theme => ({
   copyright: {
     color: COLORS.GREY1
+  },
+  divider: {
+    margin: theme.spacing(4),
+    width: 300,
+    [theme.breakpoints.up(BREAKPOINT)]: {
+      width: 1,
+      margin: 'unset'
+    }
   }
 }));
 
 const Footer: React.FC = () => {
   const classes = useStyles()
   const { formatMessage } = useIntl()
+  const isDesktop = useMediaQuery(theme.breakpoints.up(BREAKPOINT));
   
   return (
     <footer>
 
       <Section color={COLORS.WARM1}>
         <Grid container justify="space-evenly">
-          <Grid item md={4}>
+          <Grid item md={4} xs={12}>
             <Title
               title={formatMessage({ id: "FOOTER__social__title" })}
               subtitle={"social"}
@@ -34,9 +43,13 @@ const Footer: React.FC = () => {
             <Socials />
           </Grid>
 
-          <Divider orientation="vertical" flexItem />
+          <Divider
+            orientation={isDesktop ? 'vertical' : 'horizontal'}
+            flexItem={isDesktop}
+            className={classes.divider}
+          />
 
-          <Grid item md={4}>
+          <Grid item md={4} xs={12}>
             <Title
               title={formatMessage({ id: "FOOTER__newsletter__title" })}
               subtitle={"newsletter"}

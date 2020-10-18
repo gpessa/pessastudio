@@ -2,7 +2,7 @@ import { injectIntl, FormattedHTMLMessage } from "gatsby-plugin-intl"
 import React from "react"
 import { IntlFormatters } from "react-intl"
 
-import { Header, ProductNew } from "@components"
+import { Title, Product } from "@components"
 import { Colors } from "@constants"
 import { Grid } from "@material-ui/core"
 
@@ -33,14 +33,16 @@ const Cavalletti: React.FC<{ intl: IntlFormatters }> = ({ intl: { formatMessage 
   ]
 
   return (
-    <Grid>
+    <Grid container spacing={10}>
       <Grid item md={6}>
-        <Header>{formatMessage({ id: "OSTACOLI__cavalletti__title" })}</Header>
-        <FormattedHTMLMessage id="OSTACOLI__cavalletti__text" />
+        <Title
+          title={formatMessage({ id: "OSTACOLI__cavalletti__title" })}
+          text={<FormattedHTMLMessage id="OSTACOLI__cavalletti__text" />}
+        />
       </Grid>
       <Grid item md={6}>
         {PRODUCTS.map((product, index) => (
-          <ProductNew key={index} {...product} />
+          <Product key={index} {...product} />
         ))}
       </Grid>
     </Grid>

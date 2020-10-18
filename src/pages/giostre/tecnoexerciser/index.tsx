@@ -2,9 +2,8 @@ import { withPrefix } from "gatsby"
 import { injectIntl, FormattedHTMLMessage } from "gatsby-plugin-intl"
 import { IntlFormatters } from "react-intl"
 import React from "react"
-
-import { Columns, ContentTable, Gallery, Header, Product, Section } from "@components"
-import { Ratio } from "@constants"
+import { COLORS } from "@theme"
+import { Columns, ContentTable, Gallery, TH4, TH1, Product, Section } from "@components"
 import { Grid } from "@material-ui/core"
 
 const Tecnoexerciser: React.FC<{ intl: IntlFormatters }> = ({ intl: { formatMessage } }) => {
@@ -35,7 +34,7 @@ const Tecnoexerciser: React.FC<{ intl: IntlFormatters }> = ({ intl: { formatMess
 
   const PRODUCTS = [
     {
-      image: require("@images/product/giostre/tecnoexerciser/gamma/solo-motore.jpg"),
+      images: [{ src: require("@images/product/giostre/tecnoexerciser/gamma/solo-motore.jpg") }],
       name: "Giostra",
       description: (
         <>
@@ -50,7 +49,7 @@ const Tecnoexerciser: React.FC<{ intl: IntlFormatters }> = ({ intl: { formatMess
       ),
     },
     {
-      image: require("@images/product/giostre/tecnoexerciser/gamma/con-corridoio-coperto.jpg"),
+      images: [{ src: require("@images/product/giostre/tecnoexerciser/gamma/con-corridoio-coperto.jpg") }],
       name: "Giostra con corridoio Coperto",
       description: (
         <>
@@ -64,7 +63,7 @@ const Tecnoexerciser: React.FC<{ intl: IntlFormatters }> = ({ intl: { formatMess
       ),
     },
     {
-      image: require("@images/product/giostre/tecnoexerciser/gamma/con-corridoio-tecnofence.jpg"),
+      images: [{ src: require("@images/product/giostre/tecnoexerciser/gamma/con-corridoio-tecnofence.jpg") }],
       name: "Giostra con corridoio tecnofence",
       description: (
         <>
@@ -84,7 +83,7 @@ const Tecnoexerciser: React.FC<{ intl: IntlFormatters }> = ({ intl: { formatMess
       <Columns
         left={
           <>
-            <h1>{formatMessage({ id: "NAVIGATION__tecnoexerciser" })}</h1>
+            <TH1>{formatMessage({ id: "NAVIGATION__tecnoexerciser" })}</TH1>
             <FormattedHTMLMessage id="GIOSTRE__tecnoexerciser__descrizione" />
           </>
         }
@@ -92,18 +91,22 @@ const Tecnoexerciser: React.FC<{ intl: IntlFormatters }> = ({ intl: { formatMess
       />
 
       <Section>
-        <Header>{formatMessage({ id: "GENERAL__gamma" })}</Header>
+        <TH4>{formatMessage({ id: "GENERAL__gamma" })}</TH4>
         <p>{formatMessage({ id: "GIOSTRE__tecnoexerciser__gamma__text" })}</p>
 
-        <Grid container>
-          {PRODUCTS.map((product, index) => <Grid item key={index} as={Product} ratio={Ratio.HORIZONTAL} {...product} md={4} />)}
+        <Grid container spacing={5}>
+          {PRODUCTS.map((product, index) => (
+            <Grid item key={index} md={4}>
+              <Product vertical {...product} />
+            </Grid>
+          ))}
         </Grid>
       </Section>
 
-      <Section className="bg-light">
-        <Header>{formatMessage({ id: "GENERAL__client-service" })}</Header>
+      <Section color={COLORS.WARM2}>
+        <TH4>{formatMessage({ id: "GENERAL__client-service" })}</TH4>
 
-        <Grid>
+        <Grid container spacing={5}>
           <Grid item md={6}>
             <ContentTable
               title={formatMessage({ id: "GENERAL__dimensioni" })}

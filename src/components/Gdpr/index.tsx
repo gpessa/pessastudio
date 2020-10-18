@@ -1,25 +1,49 @@
-import { FormattedMessage, injectIntl, Link } from 'gatsby-plugin-intl';
+import { makeStyles, Button, ButtonProps, Link } from '@material-ui/core';
+import { FormattedMessage, Link as LinkGatsby, useIntl } from 'gatsby-plugin-intl';
 import React from 'react';
 import CookieConsent from 'react-cookie-consent';
-import { IntlFormatters } from 'react-intl';
 
-import * as styles from './styles.module.scss';
+const useStyles = makeStyles(theme => ({
+  root: {
+    position: 'fixed',
+    right: theme.spacing(3),
+    bottom: `${theme.spacing(3)}px!important`,
+    width: 350,
+    boxShadow: theme.shadows[8],
+    padding: theme.spacing(3),
+    background: theme.palette.common.white
+  },
+  intro: {
+    marginBottom: theme.spacing(3)
+  }
+}))
 
-const Gdpr: React.FC<{ intl: IntlFormatters }> = ({ intl: { formatMessage } }) => (
-  <CookieConsent
-    disableStyles={true}
-    cookieName="gatsby-gdpr-google-analytics"
-    containerClasses={`shadow ${styles.element}`}
-    buttonClasses="mt-2 btn btn-primary btn-block" 
-    buttonText={formatMessage({ id: "COOKIE__popup__button" })}
-  >
-    <FormattedMessage
-      id="COOKIE__popup__text"
-      values={{
-        linkcookie: (msg: string) => <Link to="/cookie-policy">{msg}</Link>,
-      }}
-    />
-  </CookieConsent>
+const Accept = (props: ButtonProps) => (
+  <Button {...props} color="primary" fullWidth/>
 )
 
-export default injectIntl(Gdpr)
+const Gdpr: React.FC = () => {
+  const { formatMessage } = useIntl();
+  const classes = useStyles();
+
+  return (
+    <CookieConsent
+      containerClasses={classes.root}
+      disableStyles={true}
+      ButtonComponent={Accept}
+      cookieName="gatsby-gdpr-google-analytics"
+      buttonText={formatMessage({ id: "COOKIE__popup__button" })}
+    >
+      <div className={classes.intro}>
+        <FormattedMessage
+          id="COOKIE__popup__text"
+          values={{
+            linkcookie: (msg: string) => <Link component={LinkGatsby} to="/cookie-policy">{msg}</Link>,
+          }}
+        />
+      </div>
+    </CookieConsent>
+  )
+}
+
+export default Gdpr

@@ -1,4 +1,4 @@
-import { BREAKPOINT, COLORS } from '@theme';
+import { BREAKPOINT, COLORS, FONTS } from '@theme';
 import React from 'react'; 
 import { Box, makeStyles, Typography } from '@material-ui/core';
 
@@ -8,16 +8,19 @@ const useStyles = makeStyles(theme => ({
       maxWidth: '100%'
     }
   },
-  subHeader: {
-    textTransform: 'uppercase',
+  subtitle: {
+    fontSize: 14,
+    fontWeight: 500,
     color: COLORS.GREY1,
+    textTransform: 'uppercase',
+    fontFamily: FONTS.SANSERIF,
   }
 }));
 
 export type Props = {
   text?: any
   title: string
-  subtitle: string
+  subtitle?: string
   className?: string
 }
 
@@ -26,9 +29,9 @@ const Title: React.FC<Props> = ({ title, subtitle, text, className  }) => {
   
   return (
     <Box className = {`${className} ${classes.root}`}>
-      <Typography variant="h5" className={classes.subHeader}>{subtitle}</Typography>
-      <Typography variant="h3" gutterBottom={!!text} dangerouslySetInnerHTML={{ __html: title }}/>
-      {text && <Typography gutterBottom component="div">{text}</Typography>}
+      {subtitle && <Typography className={classes.subtitle}>{subtitle}</Typography>}
+      <Typography variant="h3" dangerouslySetInnerHTML={{ __html: title }}/>
+      {text && <div>{text}</div>}
     </Box>
   )
 }

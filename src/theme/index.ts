@@ -44,13 +44,15 @@ export const FONTS = {
   SANSERIF_SLIM: "Roboto Condensed"
 }
 
+const defaultTheme = createMuiTheme({ })
+
 const theme = createMuiTheme({
   shape: {
     borderRadius: 0,
   },
   palette: {
     primary: {
-      main: COLORS.PRIMARY,
+      main: COLORS.PRIMARY
     },
     background: {
       default: COLORS.WHITE,
@@ -60,10 +62,15 @@ const theme = createMuiTheme({
     fontSize: 15,
     htmlFontSize: 15,
     fontFamily: [FONTS.SANSERIF_WEIRD].join(", "),
+    caption: {
+      lineHeight: '1em',
+      textTransform: 'uppercase',
+      color: defaultTheme.palette.grey[700]
+    },
     h1: {
       fontFamily: FONTS.SERIF,
       textTransform: 'none',
-      fontSize: 91,
+      fontSize: 78,
       lineHeight: (88 / 91)
     },
     h2: {
@@ -82,12 +89,27 @@ const theme = createMuiTheme({
       fontFamily: FONTS.SERIF,
     },
     h5: {
-      fontSize: 12,
-      color: COLORS.WARM1,
-      fontFamily: FONTS.SANSERIF,
+      fontSize: 23,
+      lineHeight: 1.1,
+      fontFamily: FONTS.SERIF,
+    },
+    h6: {
+      lineHeight: 1.1,
+      fontSize: 18
+    },
+    body1: {
+      fontSize: 18
+    },
+    body2: {
+      fontSize: 17
     }
   },
   overrides: {
+    MuiTypography: {
+      gutterBottom: {
+        marginBottom: '0.4em'
+      }
+    },
     MuiButtonBase: {
       root: {
         fontFamily: FONTS.SANSERIF_WEIRD,
@@ -96,13 +118,29 @@ const theme = createMuiTheme({
     },
     MuiButton: {
       root: {
-        textTransform: 'none'
+        fontWeight: 'bold'
       }
-    }
+    },
+    MuiTableRow: {
+      root: {
+        '&:nth-child(odd)': {
+          backgroundColor: COLORS.WARM1
+        }
+      }
+    },
+    MuiLink: {
+      root: {
+        fontWeight: 'bold'
+      }
+    },
   },
   props: {
+    MuiTypography: {
+      gutterBottom: true
+    },
     MuiButton: {
-      disableElevation: true
+      disableElevation: true,
+      variant: "contained"
     }
   },
 })

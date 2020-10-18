@@ -21,7 +21,7 @@ const BenefitsItem: React.FC<Props> = ({ icon: Icon, title, description, ...prop
     <div {...props}>
       {Icon && <Icon />}
       <TH4Sans className={classes.title}>{title}</TH4Sans>
-      <Typography>{description}</Typography>
+      <div>{description}</div>
     </div>
   )
 }

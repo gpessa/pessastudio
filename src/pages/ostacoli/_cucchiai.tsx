@@ -1,9 +1,8 @@
 import { FormattedHTMLMessage, injectIntl } from "gatsby-plugin-intl"
 import React from "react"
-import { Col, Row } from "react-bootstrap"
 import { IntlFormatters } from "react-intl"
 
-import { Header, ProductNew } from "@components"
+import { Title, Product } from "@components"
 import { Material } from "@constants"
 
 const CucchiaiSegnaletica: React.FC<{ intl: IntlFormatters }> = ({ intl: { formatMessage } }) => {
@@ -46,12 +45,14 @@ const CucchiaiSegnaletica: React.FC<{ intl: IntlFormatters }> = ({ intl: { forma
 
   return (
     <>
-      <Header>{formatMessage({ id: "OSTACOLI__cucchiai__title" })}</Header>
-      <FormattedHTMLMessage id="OSTACOLI__cucchiai__text" tagName="p" />
+      <Title
+        title={formatMessage({ id: "OSTACOLI__cucchiai__title" })}
+        text={<FormattedHTMLMessage id="OSTACOLI__cucchiai__text" tagName="p" />}
+      />
 
-      <ProductNew {...PRODUCTS[0]} />
-      <ProductNew {...PRODUCTS[1]} />
-      <ProductNew {...PRODUCTS[2]} />
+      <Product {...PRODUCTS[0]} />
+      <Product {...PRODUCTS[1]} />
+      <Product {...PRODUCTS[2]} />
     </>
   )
 }

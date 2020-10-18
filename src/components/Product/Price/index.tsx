@@ -1,17 +1,33 @@
 import React from "react"
-import { IntlFormatters } from "react-intl"
-import { injectIntl } from "gatsby-plugin-intl"
+import { useIntl } from "gatsby-plugin-intl"
+import { makeStyles } from "@material-ui/core"
+import { FONTS, COLORS } from "@theme"
 
-import * as styles from "./styles.module.scss"
+const useStyles = makeStyles(theme => ({
+  root: {
+    marginTop: theme.spacing(3),
+  },
+  price: {
+    fontSize: '120%',
+    fontFamily: FONTS.SERIF,
+    marginRight: theme.spacing(1)
+  },
+  vat: {
+    color: COLORS.GREY1
+  },
+}))
 
-const Price: React.FC<{ intl: IntlFormatters, price?: number }> = ({ price, intl: { formatNumber, formatMessage } }) => {
+const Price: React.FC<{ price?: number }> = ({ price }) => {
+  const { formatMessage, formatNumber } = useIntl()
+  const classes = useStyles();
+
   return price ? (
-    <div className={styles.price}>
-      {formatNumber(price, { style: "currency", currency: "EUR" })}
-      <span className={styles.priceVat}>+ {formatMessage({ id: "GENERAL__IVA" })}</span>
+    <div className={classes.root}>
+      <span className={classes.price}>{formatNumber(price, { style: "currency", currency: "EUR" })}</span>
+      <span className={classes.vat}>+ {formatMessage({ id: "GENERAL__IVA" })}</span>
     </div>
   ) : null
 }
 
 
-export default injectIntl(Price)
+export default Price

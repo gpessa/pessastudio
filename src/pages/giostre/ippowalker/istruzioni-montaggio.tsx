@@ -1,10 +1,20 @@
-import { injectIntl } from "gatsby-plugin-intl"
+import { useIntl } from "gatsby-plugin-intl"
 import React from "react"
-import { IntlFormatters } from "react-intl"
 
-import { Header, Path, Section } from "@components"
+import { TH2, Path, Section } from "@components"
+import { makeStyles } from "@material-ui/core";
 
-const IstruzioniMontaggio: React.FC<{ intl: IntlFormatters }> = ({ intl: { formatMessage } }) => {
+const useStyles = makeStyles(theme => ({
+  intro: {
+    textAlign: 'center',
+    marginBottom: theme.spacing(3)
+  }
+}));
+
+const IstruzioniMontaggio: React.FC = () => {
+  const { formatMessage } = useIntl()
+  const classes = useStyles()
+
   const STEPS = [
     {
       image: require("@images/product/giostre/ippowalker/montaggio/step-01.jpg"),
@@ -50,11 +60,13 @@ const IstruzioniMontaggio: React.FC<{ intl: IntlFormatters }> = ({ intl: { forma
 
   return (
     <Section>
-      <Header>{formatMessage({ id: "NAVIGATION__istruzioni-montaggio" })}</Header>
-      <p>{formatMessage({ id: "GIOSTRE__istruzioni-montaggio__testo" })}</p>
+      <div className={classes.intro}>
+        <TH2>{formatMessage({ id: "NAVIGATION__istruzioni-montaggio" })}</TH2>
+        <p>{formatMessage({ id: "GIOSTRE__istruzioni-montaggio__testo" })}</p>
+      </div>
       <Path steps={STEPS} />
     </Section>
   )
 }
 
-export default injectIntl(IstruzioniMontaggio)
+export default IstruzioniMontaggio

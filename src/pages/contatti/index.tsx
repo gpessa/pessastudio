@@ -1,9 +1,10 @@
 import { useIntl } from "gatsby-plugin-intl"
 import React from "react"
 
-import { Address, Columns, TH1, TH4, TH4Sans } from "@components"
+import { Columns, TH1, TH4 } from "@components"
 import { Box, makeStyles } from "@material-ui/core"
-import { COLORS } from "@theme"
+import { BREAKPOINT, COLORS } from "@theme"
+import Address from "./_address"
 
 const SEDE_LEGALE = {
   name:"PESSASTUDIO Horse Tecnology srl" ,
@@ -20,20 +21,21 @@ const SEDE_OPERATIVA = {
   postalCode:"35044",
   streetAddress:"via Cà Megliadino, 35",
   addressLocality:"Montagnana",
-  addressRegion:"Padova" 
+  addressRegion: "Padova",
+  telephone: "+39 0429 805613"
 }
 
 const BELGIO = {
   name: "Roberto Della Bella",
   email: "magiccavallo@hotmail.com",
-  telephoneMobile: "+32 475 96 5123" 
+  telephone: "+32 475 96 5123" 
 }
 
 const ITALIA = {
   name: "Anna Pessa",
   email: "annapessa@pessastudio.eu",
-  telephoneMobile: "+39 0429 805613",
-  whatsapp: "+39 0429 805613"
+  telephone: "+39 349 0543098",
+  whatsapp: "+39 349 0543098"
 }
 
 const useStyles = makeStyles(theme => ({
@@ -45,6 +47,12 @@ const useStyles = makeStyles(theme => ({
     backgroundColor: '#fff',
     border: `1px solid ${COLORS.GREY2}`,
     borderRadius: '50%'
+  },
+  right: {
+
+    [theme.breakpoints.up(BREAKPOINT)]: {
+      marginTop: 138
+    }
   }
 }))
 
@@ -59,7 +67,7 @@ const Contatti: React.FC = () => {
           <TH1>{formatMessage({ id: "NAVIGATION__contatti" })}</TH1>
 
           <Box mt={6}>
-            <TH4Sans gutterBottom>{formatMessage({ id: "CONTACT__sede-legale" })}</TH4Sans>
+            <TH4>{formatMessage({ id: "CONTACT__sede-legale" })}</TH4>
             <Address {...SEDE_LEGALE} />
             <div>
               COD. FISC. e Part: I.V.A. 04743610281<br />
@@ -69,12 +77,12 @@ const Contatti: React.FC = () => {
           </Box>
 
           <Box mt={6}>
-            <TH4Sans gutterBottom>{formatMessage({ id: "CONTACT__sede-operativa" })}</TH4Sans>
+            <TH4>{formatMessage({ id: "CONTACT__sede-operativa" })}</TH4>
             <Address {...SEDE_OPERATIVA} />
           </Box>
 
           <Box mt={6}>
-            <TH4Sans gutterBottom>{formatMessage({ id: "CONTACT__bank-details" })}</TH4Sans>
+            <TH4>{formatMessage({ id: "CONTACT__bank-details" })}</TH4>
             <div>
               Cassa di Risparmio del Veneto filiale di Monselice<br />
               IBAN: IT97 M030 6962 6691 0000 0004 400<br />
@@ -84,22 +92,22 @@ const Contatti: React.FC = () => {
         </>
       }
       right={
-        <>
-          <Box mt={6}>
-            <TH4 gutterBottom>{formatMessage({ id: "CONTACT__contatto-commerciale__italia" })}</TH4>
+        <div className={classes.right}>
+          <Box>
+            <TH4>{formatMessage({ id: "CONTACT__contatto-commerciale__italia" })}</TH4>
             <img
               src={require("@images/anna.jpg")}
-              alt="Anna Pessa"
               className={classes.avatar}
+              alt="Anna Pessa"
             />
             <Address {...ITALIA}/>
           </Box>
           
           <Box mt={6}>
-            <TH4 gutterBottom>{formatMessage({ id: "CONTACT__contatto-commerciale__belgio" })}</TH4>
+            <TH4>{formatMessage({ id: "CONTACT__contatto-commerciale__belgio" })}</TH4>
             <Address {...BELGIO}/>
           </Box>
-        </>
+        </div>
       }
     />
   )

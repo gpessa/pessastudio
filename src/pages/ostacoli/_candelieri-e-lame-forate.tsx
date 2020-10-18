@@ -2,7 +2,7 @@ import { FormattedHTMLMessage, injectIntl } from "gatsby-plugin-intl"
 import React from "react"
 import { Col, Row } from "react-bootstrap"
 
-import { Header, ProductNew } from "@components"
+import { TH2, Product, Title } from "@components"
 import { Ratio, Material } from "@constants"
 
 const CandelieriLameForate = ({ intl: { formatMessage } }: { intl: any }) => {
@@ -37,10 +37,13 @@ const CandelieriLameForate = ({ intl: { formatMessage } }: { intl: any }) => {
 
   return (
     <>
-      <Header>{formatMessage({ id: "OSTACOLI__candelieri-e-lame__title" })}</Header>
-      <FormattedHTMLMessage id="OSTACOLI__candelieri-e-lame__text" />
+      <Title
+        title={formatMessage({ id: "OSTACOLI__candelieri-e-lame__title" })}
+        text={<FormattedHTMLMessage id="OSTACOLI__candelieri-e-lame__text" />}
+      />
+      
       {PRODUCTS.map((product, index) => (
-        <ProductNew key={index} {...product} />
+        <Product key={index} {...product} />
       ))}
     </>
   )

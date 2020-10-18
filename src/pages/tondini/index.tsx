@@ -2,9 +2,9 @@ import { withPrefix } from "gatsby"
 import { FormattedHTMLMessage, injectIntl } from "gatsby-plugin-intl"
 import React from "react"
 import { IntlFormatters } from "react-intl"
-
-import { Columns, ContentTable, Gallery, Header, Section, Hero } from "@components"
+import { Columns, ContentTable, Gallery, Section, Hero, TH4 } from "@components"
 import { Grid } from "@material-ui/core"
+import { COLORS } from "@theme"
 
 const Tondini: React.FC<{ intl: IntlFormatters }> = ({ intl: { formatMessage } }) => {
   const DIMENSIONS = [16, 18, 20, 22, 24]
@@ -29,9 +29,9 @@ const Tondini: React.FC<{ intl: IntlFormatters }> = ({ intl: { formatMessage } }
         right={<Gallery images={IMAGES} />}
       />
 
-      <Section className="bg-light">
-        <Header>{formatMessage({ id: "GENERAL__client-service" })}</Header>
-        <Grid container>
+      <Section color={COLORS.WARM2}>
+        <TH4>{formatMessage({ id: "GENERAL__client-service" })}</TH4>
+        <Grid container spacing={5}>
           <Grid item md={6}>
             <ContentTable
               title={formatMessage({ id: "GENERAL__dimensioni" })}

@@ -51,7 +51,7 @@ const Products: React.FC = () => {
 
   return (
     <CarouselProvider {...CAROUSEL_CONFIGURATION}>
-      <Section image="marble-white" type="horizontal">
+      <Section image="marble-black" type="horizontal">
         <Grid container justify="space-between">
           <Grid item md={3} xs={12} className={classes.text}>
             <Title

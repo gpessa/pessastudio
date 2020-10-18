@@ -1,9 +1,8 @@
 import { injectIntl } from "gatsby-plugin-intl"
 import React from "react"
-import { Col, Row } from "react-bootstrap"
 import { IntlFormatters } from "react-intl"
 
-import { Header, ProductNew } from "@components"
+import { Title, Product } from "@components"
 import { Colors } from "@constants"
 
 const Cubi: React.FC<{ intl: IntlFormatters }> = ({ intl: { formatMessage } }) => {
@@ -40,18 +39,13 @@ const Cubi: React.FC<{ intl: IntlFormatters }> = ({ intl: { formatMessage } }) =
 
   return (
     <>
-      <Header>{formatMessage({ id: "OSTACOLI__cubi__title" })}</Header>
-      {formatMessage({ id: "OSTACOLI__cubi__text" })}
-
-
-      {/* <Row>
-        <Col md={{ span: 12 }}> */} 
-          <ProductNew {...PRODUCTS[0]} />
-        {/* </Col> */}
-        {/* <Col md={{ span: 12 }}> */}
-          <ProductNew {...PRODUCTS[1]} />
-        {/* </Col>
-      </Row> */}
+      <Title
+        title={formatMessage({ id: "OSTACOLI__cubi__title" })}
+        text={formatMessage({ id: "OSTACOLI__cubi__text" })}
+      />
+      
+      <Product {...PRODUCTS[0]} />
+      <Product {...PRODUCTS[1]} />
 
     </>
   )

@@ -5,7 +5,7 @@ import MailOutlineIcon from '@material-ui/icons/MailOutline';
 import WhatsAppIcon from '@material-ui/icons/WhatsApp';
 import { Button } from "@material-ui/core";
 
-const Address: React.FC<Props> = ({ name, country, addressLocality, whatsapp, postalCode, addressRegion, streetAddress, telephoneMobile, email, ...props }) => {
+const Address: React.FC<Props> = ({ name, country, addressLocality, whatsapp, postalCode, addressRegion, streetAddress, telephone, email, ...props }) => {
   const hasAddress = streetAddress != undefined
 
   return (
@@ -27,28 +27,34 @@ const Address: React.FC<Props> = ({ name, country, addressLocality, whatsapp, po
         </div>
       )}
 
-      {telephoneMobile && (
+      {telephone && (
         <div>
-          <Button 
+          <Button
+            variant="text"
+            color="inherit"
             itemProp="telephone"
             startIcon={<PhoneIcon />} 
-            href={`tel:${telephoneMobile}`} 
-          >{telephoneMobile}</Button>
+            href={`tel:${telephone}`} 
+          >{telephone}</Button>
         </div>
       )}
 
       {whatsapp && (
         <div>
-          <Button 
+          <Button
+            variant="text" 
+            color="inherit"
             startIcon={<WhatsAppIcon />} 
-            href={`https://wa.me/15551234567:${whatsapp}`}
+            href={`https://wa.me/${whatsapp}`}
           >{whatsapp}</Button>
         </div>
       )}
 
       {email && (
         <div>
-          <Button 
+          <Button
+            variant="text" 
+            color="inherit"
             itemProp="email"
             startIcon={<MailOutlineIcon />} 
             href={`mailto:${email}`} 
@@ -68,7 +74,7 @@ interface Props {
   addressRegion?: string
   streetAddress?: string
   addressLocality?: string
-  telephoneMobile?: string
+  telephone?: string
   className?: string
 }
 
