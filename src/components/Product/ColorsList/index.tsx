@@ -1,14 +1,30 @@
 import React from "react"
 
-import * as styles from "./styles.module.scss"
 import { Colors } from "@constants"
+import { makeStyles } from "@material-ui/core"
 
-const ColorsList: React.FC<{ colors: Colors[] }> = ({ colors }) => (
-  <>
-    {colors.map(backgroundColor => (
-      <div className={styles.color} style={{ backgroundColor }} key={backgroundColor}></div>
-    ))}
-  </>
-)
+const useStyles = makeStyles(theme => ({
+  color: {
+    display: 'inline-block',
+    width: 14,
+    height: 14,
+    border: `1px solid ${theme.palette.divider}`,
+    '& + &': {
+      marginLeft: theme.spacing(2)
+    }
+  }
+}))
+
+const ColorsList: React.FC<{ colors: Colors[] }> = ({ colors }) => {
+  const classes = useStyles()
+
+  return (
+    <>
+      {colors.map(backgroundColor => (
+        <div className={classes.color} style={{ backgroundColor }} key={backgroundColor}></div>
+      ))}
+    </>
+  )
+}
 
 export default ColorsList

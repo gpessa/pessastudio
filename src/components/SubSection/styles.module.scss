@@ -1,8 +1,6 @@
-@import "@styles/_variables.scss";
-
 :local(.container) {
-  padding-top: $spacer * 2;
-  padding-bottom: $spacer * 2;
+  padding-top: 1rem * 2;
+  padding-bottom: 1rem * 2;
 }
 
 :local(.containerLast) {

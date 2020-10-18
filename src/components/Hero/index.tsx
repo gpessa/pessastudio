@@ -1,24 +1,43 @@
 import { TH1 } from "@components"
-import { Container } from "@material-ui/core"
+import { Container, makeStyles } from "@material-ui/core"
 import React from "react"
 
-import * as styles from "./styles.module.scss"
+const useStyles = makeStyles(theme => ({
+  root: { 
+    lineHeight: 0,
+    position: 'relative'
+  },
+  wrapper: {
+    left: 0,
+    right: 0,
+    top: '50%',
+    position: 'absolute',
+    transform: 'translateY(-50%)',
+  },
+  text: {
+    backgroundColor: theme.palette.common.white,
+    display: 'inline-block',
+  },
+  image: {
+    width: '100%'
+  }
+}))
 
-const Hero = ({ image, text, className }: Props) => (
-  <div className={`${styles.element} ${className}`}>
-    <img src={image} className={styles.image} />
-    {text && (
-      <div className={styles.textWrapper}>
-        <Container>
-          <TH1
-            className={`${styles.text}`}
-            dangerouslySetInnerHTML={{ __html: text }}
-          />
+const Hero = (props: Props) => {
+  const classes = useStyles(props);
+  const { text, image, className } = props
+  
+  return (
+    <div className={`${classes.root} ${className}`}>
+      <img className={classes.image} src={image} />
+      {text && (
+        <Container className={classes.wrapper} maxWidth="lg">
+          <TH1 dangerouslySetInnerHTML={{ __html: text }} className={classes.text}/>
         </Container>
-      </div>
-    )}
-  </div>
-)
+      )}
+    </div>
+  )
+}
 
 type Props = {
   image: string

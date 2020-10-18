@@ -1,14 +1,12 @@
-import React, { ReactNode } from "react"
+import { Container } from "@material-ui/core";
+import React from "react"
 
 import * as styles from './styles.module.scss';
-import { Container } from "react-bootstrap";
 
-const Section = ({ children, className, id, fluid, ...props }: SectionPros) => {
-  const Tag = fluid ? 'div' : Container;
-
+const Section: React.FC<SectionPros> = ({ children, className, id, fluid, ...props }) => {
   return (
     <div className={`${styles.container} ${className}`} id={id} {...props}>
-      <Tag fluid={fluid}>{children}</Tag>
+      <Container {...{ children }} maxWidth={fluid || false}/>
     </div>
   )
 }
@@ -16,7 +14,6 @@ const Section = ({ children, className, id, fluid, ...props }: SectionPros) => {
 interface SectionPros {
   id?: any;
   fluid?: boolean;
-  children: ReactNode;
   className?: string;
 };
 

@@ -1,9 +1,8 @@
 import { FormattedHTMLMessage, injectIntl } from "gatsby-plugin-intl"
 import React from "react"
-import { Col, Row } from "react-bootstrap"
 
-import { TH2, Product, Title } from "@components"
-import { Ratio, Material } from "@constants"
+import { Product, Title } from "@components"
+import { Material } from "@constants"
 
 const CandelieriLameForate = ({ intl: { formatMessage } }: { intl: any }) => {
   const PRODUCTS = [

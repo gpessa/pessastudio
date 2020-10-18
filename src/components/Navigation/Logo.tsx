@@ -1,6 +1,5 @@
 import { makeStyles } from "@material-ui/core"
 import React from "react"
-import { Image } from "react-bootstrap"
 import { BREAKPOINT, COLORS, FONTS } from "@theme";
 
 interface Props {
@@ -62,7 +61,7 @@ const Logo: React.FC<Props> = (props) => {
 
   return (
     <div className={classes.root}>
-      <Image src={require("@images/favicon.jpg")} alt="Pessa Studio" className={classes.image} />
+      <img src={require("@images/favicon.jpg")} alt="Pessa Studio" className={classes.image} />
       <hgroup>
         <h1 className={classes.title}>Pessa studio</h1>
         <div className={classes.subtitle}>Horse technology</div>
