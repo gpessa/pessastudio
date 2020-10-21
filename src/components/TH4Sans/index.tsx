@@ -3,7 +3,7 @@ import { FONTS } from '@theme';
 import { makeStyles, Typography, TypographyProps } from '@material-ui/core';
 import React from 'react';
 
-export const useStyles = makeStyles(theme => ({
+export const useStyles = makeStyles(_ => ({
   root: {
     fontFamily: FONTS.SANSERIF_WEIRD,
     fontWeight: 'bold'

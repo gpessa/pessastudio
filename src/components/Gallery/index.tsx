@@ -5,7 +5,7 @@ import { withModalGallery } from '@hoc';
 import { Grid, makeStyles, Typography, ButtonBase } from '@material-ui/core';
 
 
-const useStyles = makeStyles(theme => ({
+const useStyles = makeStyles(_ => ({
   item: {
     display: 'block',
     textAlign: 'left'

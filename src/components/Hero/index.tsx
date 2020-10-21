@@ -15,8 +15,8 @@ const useStyles = makeStyles(theme => ({
     transform: 'translateY(-50%)',
   },
   text: {
-    backgroundColor: theme.palette.common.white,
     display: 'inline-block',
+    backgroundColor: theme.palette.common.white,
   },
   image: {
     width: '100%'

@@ -22,11 +22,11 @@ const useStyles = makeStyles(theme => ({
       ['padding'],
       { duration: theme.transitions.duration.short }
     ),
-    '& + &': {
-      [theme.breakpoints.up(BREAKPOINT)]: {
+    [theme.breakpoints.up(BREAKPOINT)]: {
+      paddingTop: ({ isFloating }: { isFloating: boolean }) => isFloating ? theme.spacing(2) : theme.spacing(3.5),
+      paddingBottom: ({ isFloating }: { isFloating: boolean }) => isFloating ? theme.spacing(2) : theme.spacing(3.5),
+      '& + &': {
         marginLeft: theme.spacing(1),
-        paddingTop: ({ isFloating }: { isFloating: boolean }) => isFloating ? theme.spacing(2) : theme.spacing(3.5),
-        paddingBottom: ({ isFloating }: { isFloating: boolean }) => isFloating ? theme.spacing(2) : theme.spacing(3.5),
       }
     },
     '&.contatti': {
@@ -83,6 +83,7 @@ const Navigation: React.FC = () => {
     return menu.map(id => (
       <Component
         button
+        key={id}
         to={`/${id}/`}
         color="inherit"
         component={Link}
@@ -106,9 +107,9 @@ const Navigation: React.FC = () => {
 
         <Box className={classes.mobileMenu}>
           <IconButton
-            color="primary"
-            aria-label="Apri menu"
             edge="end"
+            color="primary"
+            aria-label={formatMessage({ id: "GENERAL__toggle-button" })}
             onClick={handleMenuToggle}
           >
             <Menu />

@@ -23,7 +23,7 @@ const Breadcrumb: React.FC<{ fragments: UrlFragment[] }> = ({ fragments }) => {
     <div className={classes.root}>
       <Breadcrumbs separator="›" component={Container}>
         {fragments.map(({ id, url }, index) => (
-          <ButtonBase component={Link} to={url} color="inherit">
+          <ButtonBase component={Link} to={url} color="inherit" key={id}>
             {index === 0 && <HomeIcon/>}
             {index !== 0 && <span>{formatMessage({ id: `NAVIGATION__${id}` })}</span>}
           </ButtonBase>

@@ -29,13 +29,13 @@ const Dressage: React.FC = () => {
     },
     {
       name: "Rettangolo dressage 20x40",
-      description: "Un comodo set composto da 60 moduli e 8 lettere",
-      images: [{src: require("@images/product/dressage/training-rettangolo-dressage-20x60.jpg")}],
+      images: [{src: require("@images/product/dressage/rettangolo-dressage-60x20.svg")}],
+      description: "Un comodo set composto da 60 moduli e 8 lettere. Tutto il necessario per creare un circuito standard 60x20 mt.",
     },
     {
       name: "Rettangolo dressage 20x60",
-      description: "Un comodo set composto da 80 moduli e 12 lettere",
-      images: [{src: require("@images/product/dressage/training-rettangolo-dressage-20x40.jpg")}],
+      images: [{src: require("@images/product/dressage/rettangolo-dressage-40x20.svg")}],
+      description: "Un comodo set composto da 80 moduli e 12 lettere. Tutto il necessario per creare un circuito standard 40x20 mt.",
     },
   ]
 
@@ -61,13 +61,13 @@ const Dressage: React.FC = () => {
     },
     {
       name: "Rettangolo dressage 20x40",
-      images: [{src: require("@images/product/dressage/olimpic-rettangolo-dressage-20x60.jpg")}],
-      description: "Un comodo set composto da 60 moduli e 8 lettere",
+      images: [{ src: require("@images/product/dressage/rettangolo-dressage-60x20.svg")}],
+      description: "Un comodo set composto da 60 moduli e 8 lettere. Tutto il necessario per creare un circuito standard 60x20 mt.",
     },
-    {
+    { 
       name: "Rettangolo dressage 20x60",
-      description: "Un comodo set composto da 80 moduli e 12 lettere",
-      images: [{src: require("@images/product/dressage/olimpic-rettangolo-dressage-20x40.jpg")}],
+      images: [{ src: require("@images/product/dressage/rettangolo-dressage-40x20.svg")}],
+      description: "Un comodo set composto da 80 moduli e 12 lettere. Tutto il necessario per creare un circuito standard 40x20 mt.",
     },
   ]
 

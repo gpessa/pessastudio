@@ -10,7 +10,7 @@ const useStyles = makeStyles(theme => ({
     height: 14,
     border: `1px solid ${theme.palette.divider}`,
     '& + &': {
-      marginLeft: theme.spacing(2)
+      marginLeft: theme.spacing(1)
     }
   }
 }))
@@ -20,9 +20,11 @@ const ColorsList: React.FC<{ colors: Colors[] }> = ({ colors }) => {
 
   return (
     <>
-      {colors.map(backgroundColor => (
-        <div className={classes.color} style={{ backgroundColor }} key={backgroundColor}></div>
-      ))}
+      {colors
+        .sort()
+        .map(backgroundColor => (
+          <div className={classes.color} style={{ backgroundColor }} key={backgroundColor}></div>
+        ))}
     </>
   )
 }

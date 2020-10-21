@@ -1,12 +1,7 @@
 import { TH4Sans } from '@components';
-import { makeStyles, Typography } from '@material-ui/core';
+import { makeStyles } from '@material-ui/core';
 import React from 'react';
-
-type Props = {
-  title: string
-  description: string
-  icon?: React.FunctionComponent<React.SVGAttributes<SVGElement>>
-}
+import { Benefit } from '.';
 
 const useStyles = makeStyles(theme => ({
   title: {
@@ -14,7 +9,7 @@ const useStyles = makeStyles(theme => ({
   }
 }));
 
-const BenefitsItem: React.FC<Props> = ({ icon: Icon, title, description, ...props }) => {
+const BenefitsItem: React.FC<Benefit> = ({ icon: Icon, title, description, ...props }) => {
   const classes = useStyles()
 
   return (

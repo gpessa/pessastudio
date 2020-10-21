@@ -1,12 +1,9 @@
-import { useIntl } from 'gatsby-plugin-intl';
+
 import React from 'react';
 
 import { Section, Title } from '@components';
-import { Grid, makeStyles, useMediaQuery } from '@material-ui/core';
-import AccountBalanceIcon from '@material-ui/icons/AccountBalance';
-import AppsIcon from '@material-ui/icons/Apps';
-import RestoreIcon from '@material-ui/icons/Restore';
-import TurnedInNotIcon from '@material-ui/icons/TurnedInNot';
+import { Grid, makeStyles, SvgIconTypeMap, useMediaQuery } from '@material-ui/core';
+import { OverridableComponent } from '@material-ui/core/OverridableComponent';
 import theme, { BREAKPOINT } from '@theme';
 
 import BenefitsItem from './BenefitsItem';
@@ -19,62 +16,47 @@ const useStyles = makeStyles(theme => ({
     }
   }
 }))
-  
-const Benefits = () => {
-  const classes = useStyles()
-  const { formatMessage } = useIntl()
-  const isDesktop = useMediaQuery(theme.breakpoints.up(BREAKPOINT));
 
-  const PLUS = [
-    {
-      title: formatMessage({ id: "BENEFITS--1__title" }),
-      description: formatMessage({ id: "BENEFITS--1__text" }),
-      icon: TurnedInNotIcon
-    },
-    {
-      title: formatMessage({ id: "BENEFITS--2__title" }),
-      description: formatMessage({ id: "BENEFITS--2__text" }),
-      icon: AccountBalanceIcon
-    },
-    {
-      title: formatMessage({ id: "BENEFITS--3__title" }),
-      description: formatMessage({ id: "BENEFITS--3__text" }),
-      icon: AppsIcon
-    },
-    {
-      title: formatMessage({ id: "BENEFITS--4__title" }),
-      description: formatMessage({ id: "BENEFITS--4__text" }),
-      icon: AppsIcon
-    },
-    {
-      title: formatMessage({ id: "BENEFITS--5__title" }),
-      description: formatMessage({ id: "BENEFITS--5__text" }),
-      icon: RestoreIcon
-    }
-  ]
+export type Benefit = {
+  title: string
+  description: string
+  icon?: OverridableComponent<SvgIconTypeMap<{}, "svg">>
+}
+
+type Props = {
+  title: string
+  subtitle: string
+  text?: any
+  benefits: Benefit[]
+}
+  
+const Benefits: React.FC<Props> = ({ title, subtitle, text, benefits }) => {
+  const classes = useStyles()
+  const isDesktop = useMediaQuery(theme.breakpoints.up(BREAKPOINT));
 
   return (
     <Section>
-      <Grid container spacing={10}>
+      <Grid container spacing={10} justify="space-between">
         <Grid
           item
           md={6}
           xs={12}
           component={Title}
           className={classes.intro}
-          title={formatMessage({ id: "BENEFITS__title" })}
-          subtitle={formatMessage({ id: "BENEFITS__subtitle" })}
+          text={text}
+          title={title}
+          subtitle={subtitle}
         />
-        <Grid item md={6}>
+        <Grid item md={5}>
           <Grid container spacing={isDesktop ? 10 : 6}>
-            {PLUS.map((item, index) => (
+            {benefits.map((item, index) => (
               <Grid
                 item
                 xs={6}
                 key={index}
-                component={BenefitsItem}
-                {...item}
-              />
+              >
+                <BenefitsItem {...item} />
+              </Grid>
             ))}
           </Grid>
         </Grid>

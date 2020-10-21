@@ -3,8 +3,8 @@ import { FormattedHTMLMessage, injectIntl } from "gatsby-plugin-intl"
 import React from "react"
 import { IntlFormatters } from "react-intl"
 
-import { Columns, ContentTable, Gallery, TH2, TH1, Product, Section, TH4 } from "@components"
-import { Grid } from "@material-ui/core"
+import { Columns, ContentTable, Gallery, TH2, TH1, TH3, Product, Section, TH4, SubSection, TH4Sans, Title } from "@components"
+import { Box, Container, Grid } from "@material-ui/core"
 import { COLORS } from "@theme"
 
 const Ippowalker: React.FC<{ intl: IntlFormatters }> = ({ intl: { formatMessage } }) => {
@@ -46,20 +46,6 @@ const Ippowalker: React.FC<{ intl: IntlFormatters }> = ({ intl: { formatMessage 
       ),
     },
     {
-      images: [{ src: require("@images/product/giostre/ippowalker/gamma/con-corridoio-tecnofence.jpg") }],
-      name: "Giostra con corridoio Tecnofence",
-      description: (
-        <>
-          <ul>
-            <li>Giostra da 4 o 6 cavalli</li>
-            <li>Diametro da 12 mt. o 14.2 mt.</li>
-            <li>Cadenza compresa fra 60 e 210 metri al minuto</li>
-            <li>Potenza motore 0.37 kw</li>
-          </ul>
-        </>
-      ),
-    },
-    {
       images: [{ src: require("@images/product/giostre/ippowalker/gamma/con-corridoio-flat.jpg") }],
       name: "Giostra con corridoio Flat",
       description: (
@@ -73,6 +59,20 @@ const Ippowalker: React.FC<{ intl: IntlFormatters }> = ({ intl: { formatMessage 
         </>
       ),
     },
+    {
+      images: [{ src: require("@images/product/giostre/ippowalker/gamma/con-corridoio-tecnofence.jpg") }],
+      name: "Giostra con corridoio Tecnofence",
+      description: (
+        <>
+          <ul>
+            <li>Giostra da 4 o 6 cavalli</li>
+            <li>Diametro da 12 mt. o 14.2 mt.</li>
+            <li>Cadenza compresa fra 60 e 210 metri al minuto</li>
+            <li>Potenza motore 0.37 kw</li>
+          </ul>
+        </>
+      ),
+    }
   ]
 
   return (
@@ -86,6 +86,29 @@ const Ippowalker: React.FC<{ intl: IntlFormatters }> = ({ intl: { formatMessage 
         }
         right={<Gallery images={IMAGES} />}
       />
+
+      {/* <Section maxWidth={false}>
+        <Container>
+          <TH2>{'Caratteristiche'}</TH2>
+        </Container>
+        <SubSection>
+          <Box mb={10}>
+            <Title
+              title={"Motore"}
+              subtitle={'Caratteristiche'}
+              text={"Il motore offre una potenza di 0.37 kw e permette una cadenza compresa fra 60 e 210 metri al minuto"}
+            />
+          </Box>
+          
+          <Box>
+            <Title
+              title={"Pareti di separazione"}
+              subtitle={'Caratteristiche'}
+              text={"Robuste pareti permettono di operari diversi cavalli in sicurezza."}
+            />
+          </Box>
+        </SubSection>
+      </Section> */}
 
       <Section>
         <TH2>{formatMessage({ id: "GENERAL__gamma" })}</TH2>

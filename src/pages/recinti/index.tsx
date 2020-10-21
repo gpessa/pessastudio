@@ -2,7 +2,7 @@ import { withPrefix } from "gatsby"
 import { FormattedHTMLMessage, useIntl } from "gatsby-plugin-intl"
 import React from "react"
 
-import { Columns, ContentTable, Gallery, TH2, Product, Section, TH1 } from "@components"
+import { Columns, ContentTable, Gallery, TH2, Product, Section, TH1, TH4 } from "@components"
 import { Colors } from "@constants"
 import { Grid, Typography } from "@material-ui/core"
 import { COLORS } from "@theme"

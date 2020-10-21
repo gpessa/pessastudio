@@ -1,12 +1,12 @@
 import { withPrefix } from "gatsby"
-import { FormattedHTMLMessage, injectIntl } from "gatsby-plugin-intl"
+import { FormattedHTMLMessage, useIntl } from "gatsby-plugin-intl"
 import React from "react"
-import { IntlFormatters } from "react-intl"
 import { Columns, ContentTable, Gallery, Section, Hero, TH4 } from "@components"
-import { Grid } from "@material-ui/core"
+import { Grid, Typography } from "@material-ui/core"
 import { COLORS } from "@theme"
 
-const Tondini: React.FC<{ intl: IntlFormatters }> = ({ intl: { formatMessage } }) => {
+const Tondini: React.FC = () => {
+  const { formatMessage } = useIntl()
   const DIMENSIONS = [16, 18, 20, 22, 24]
 
   const IMAGES: Picture[] = [
@@ -18,6 +18,7 @@ const Tondini: React.FC<{ intl: IntlFormatters }> = ({ intl: { formatMessage } }
     { caption: formatMessage({ id: `TONDINO__gallery__image-5` }), src: require("@images/product/tondini/tondino-5.jpg") },
     { caption: formatMessage({ id: `TONDINO__gallery__image-6` }), src: require("@images/product/tondini/tondino-6.jpg") },
     { caption: formatMessage({ id: `TONDINO__gallery__image-7` }), src: require("@images/product/tondini/tondino-7.jpg") },
+    { caption: formatMessage({ id: `TONDINO__gallery__image-8` }), src: require("@images/product/tondini/tondino-8.jpg") },
   ]
 
   return (
@@ -25,7 +26,11 @@ const Tondini: React.FC<{ intl: IntlFormatters }> = ({ intl: { formatMessage } }
       <Hero image={require("@images/background-tondini.jpg")} text={formatMessage({ id: "NAVIGATION__tondini" })}/>
       
       <Columns 
-        left={<FormattedHTMLMessage id="OSTACOLI__tondini__text" />}
+        left={(
+          <Typography variant="body1">
+            <FormattedHTMLMessage id="OSTACOLI__tondini__text" />
+          </Typography>
+        )}
         right={<Gallery images={IMAGES} />}
       />
 
@@ -58,4 +63,4 @@ const Tondini: React.FC<{ intl: IntlFormatters }> = ({ intl: { formatMessage } }
   )
 }
 
-export default injectIntl(Tondini)
+export default Tondini

@@ -1,21 +1,27 @@
-import { Container } from "@material-ui/core";
+import { Container, ContainerProps, makeStyles } from "@material-ui/core";
 import React from "react"
 
-import * as styles from './styles.module.scss';
+const useStyles = makeStyles(theme => ({
+  root: {
+    paddingTop: theme.spacing(3),
+    paddingBottom: theme.spacing(3)
+  }
+}))
 
-const Section: React.FC<SectionPros> = ({ children, className, id, fluid, ...props }) => {
+const Section: React.FC<SectionPros> = ({ children, className, id, maxWidth, ...props }) => {
+  const classes = useStyles()
+
   return (
-    <div className={`${styles.container} ${className}`} id={id} {...props}>
-      <Container {...{ children }} maxWidth={fluid || false}/>
+    <div className={`${classes.root} ${className}`} id={id} {...props}>
+      <Container maxWidth={maxWidth}>{children}</Container>
     </div>
   )
 }
 
-interface SectionPros {
+type SectionPros = {
   id?: any;
-  fluid?: boolean;
   className?: string;
-};
+} & Pick<ContainerProps, 'maxWidth' | 'children'>
 
 export default Section
 

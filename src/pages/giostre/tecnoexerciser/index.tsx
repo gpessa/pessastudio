@@ -1,39 +1,50 @@
 import { withPrefix } from "gatsby"
-import { injectIntl, FormattedHTMLMessage } from "gatsby-plugin-intl"
-import { IntlFormatters } from "react-intl"
+import { FormattedHTMLMessage, useIntl } from "gatsby-plugin-intl"
 import React from "react"
 import { COLORS } from "@theme"
-import { Columns, ContentTable, Gallery, TH4, TH1, Product, Section } from "@components"
+import { Columns, ContentTable, Gallery, TH2, TH1, Product, Section, TH4 } from "@components"
 import { Grid } from "@material-ui/core"
 
-const Tecnoexerciser: React.FC<{ intl: IntlFormatters }> = ({ intl: { formatMessage } }) => {
-  const IMAGES: Picture[] = [
-    {
+const Tecnoexerciser: React.FC = () => {
+  const { formatMessage } = useIntl()
+
+  const IMAGES: Picture[] = [{
       src: require("@images/product/giostre/tecnoexerciser/galleria/giostra.jpg"),
       caption: formatMessage({ id: "GIOSTRE__tecnoexerciser__image-0" }),
-    },
-    {
+    },{
       src: require("@images/product/giostre/tecnoexerciser/galleria/motore.jpg"),
       caption: formatMessage({ id: "GIOSTRE__tecnoexerciser__image-1" }),
-    },
-    {
+    },{
       src: require("@images/product/giostre/tecnoexerciser/galleria/separazione-1.jpg"),
       caption: formatMessage({ id: "GIOSTRE__tecnoexerciser__image-2" }),
-    },
-    {
+    },{
       src: require("@images/product/giostre/tecnoexerciser/galleria/separazione-2.jpg"),
       caption: formatMessage({ id: "GIOSTRE__tecnoexerciser__image-3" }),
-    },
-    {
+    },{
       src: require("@images/product/giostre/tecnoexerciser/galleria/interno.jpg"),
       caption: formatMessage({ id: "GIOSTRE__tecnoexerciser__image-4" }),
-    },
-  ]
+  }]
 
-  const DIMENSIONS = [15, 18, 20, 22, 24]
+  const ATTACHMENT = [{
+      label: formatMessage({ id: "GIOSTRE__manuali__manuale-quadro" }),
+      file: withPrefix(`/giostra-tecnoexerciser-manuale-quadro.pdf`),
+    },{
+      label: formatMessage({ id: "GIOSTRE__manuali__manuale-collegamento-elettrico" }),
+      file: withPrefix(`/giostra-collegamento-elettrico.pdf`),
+    },{
+      label: formatMessage({ id: "GIOSTRE__manuali__istruzioni-montaggio" }),
+      link: "/giostre/tecnoexerciser/istruzioni-montaggio",
+    },{
+      label: formatMessage({ id: "GIOSTRE__manuali__procedura-lubrificazione" }),
+      file: "https://www.youtube.com/watch?v=QMA4wPxq_ow",
+  }]
+  
+  const DIMENSIONS = [15, 18, 20, 22, 24].map(dimension => ({
+    label: formatMessage({ id: `GIOSTRE__tecnoexerciser__dimensioni-${dimension}` }),
+    file: withPrefix(`/giostra-tecnoexerciser-${dimension}.pdf`),
+  }))
 
-  const PRODUCTS = [
-    {
+  const PRODUCTS = [{
       images: [{ src: require("@images/product/giostre/tecnoexerciser/gamma/solo-motore.jpg") }],
       name: "Giostra",
       description: (
@@ -49,8 +60,8 @@ const Tecnoexerciser: React.FC<{ intl: IntlFormatters }> = ({ intl: { formatMess
       ),
     },
     {
-      images: [{ src: require("@images/product/giostre/tecnoexerciser/gamma/con-corridoio-coperto.jpg") }],
-      name: "Giostra con corridoio Coperto",
+      images: [{ src: require("@images/product/giostre/tecnoexerciser/gamma/con-corridoio-tecnofence.jpg") }],
+      name: "Giostra con corridoio tecnofence",
       description: (
         <>
           <ul>
@@ -63,8 +74,8 @@ const Tecnoexerciser: React.FC<{ intl: IntlFormatters }> = ({ intl: { formatMess
       ),
     },
     {
-      images: [{ src: require("@images/product/giostre/tecnoexerciser/gamma/con-corridoio-tecnofence.jpg") }],
-      name: "Giostra con corridoio tecnofence",
+      images: [{ src: require("@images/product/giostre/tecnoexerciser/gamma/con-corridoio-coperto.jpg") }],
+      name: "Giostra con corridoio Coperto",
       description: (
         <>
           <ul>
@@ -91,7 +102,7 @@ const Tecnoexerciser: React.FC<{ intl: IntlFormatters }> = ({ intl: { formatMess
       />
 
       <Section>
-        <TH4>{formatMessage({ id: "GENERAL__gamma" })}</TH4>
+        <TH2>{formatMessage({ id: "GENERAL__gamma" })}</TH2>
         <p>{formatMessage({ id: "GIOSTRE__tecnoexerciser__gamma__text" })}</p>
 
         <Grid container spacing={5}>
@@ -108,41 +119,15 @@ const Tecnoexerciser: React.FC<{ intl: IntlFormatters }> = ({ intl: { formatMess
 
         <Grid container spacing={5}>
           <Grid item md={6}>
-            <ContentTable
-              title={formatMessage({ id: "GENERAL__dimensioni" })}
-              rows={DIMENSIONS.map(dimension => ({
-                label: formatMessage({ id: `GIOSTRE__tecnoexerciser__dimensioni-${dimension}` }),
-                file: withPrefix(`/giostra-tecnoexerciser-${dimension}.pdf`),
-              }))}
-            />
+            <ContentTable rows={DIMENSIONS} title={formatMessage({ id: "GENERAL__dimensioni" })} />
           </Grid>
 
           <Grid item md={6}>
-            <ContentTable
-              title={formatMessage({ id: "GENERAL__manauli" })}
-              rows={[
-                {
-                  label: formatMessage({ id: "GIOSTRE__manuali__manuale-quadro" }),
-                  file: withPrefix(`/giostra-tecnoexerciser-manuale-quadro.pdf`),
-                },
-                {
-                  label: formatMessage({ id: "GIOSTRE__manuali__manuale-collegamento-elettrico" }),
-                  file: withPrefix(`/giostra-collegamento-elettrico.pdf`),
-                },
-                {
-                  label: formatMessage({ id: "GIOSTRE__manuali__istruzioni-montaggio" }),
-                  link: "/giostre/tecnoexerciser/istruzioni-montaggio",
-                },
-                {
-                  label: formatMessage({ id: "GIOSTRE__manuali__procedura-lubrificazione" }),
-                  file: "https://www.youtube.com/watch?v=QMA4wPxq_ow",
-                },
-              ]}
-            />
+            <ContentTable rows={ATTACHMENT} title={formatMessage({ id: "GENERAL__manauli" })} />
           </Grid>
         </Grid>
       </Section>
     </>
   )
 }
-export default injectIntl(Tecnoexerciser)
+export default Tecnoexerciser

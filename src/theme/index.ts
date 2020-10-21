@@ -80,6 +80,7 @@ const theme = createMuiTheme({
     },
     h3: {
       fontFamily: FONTS.SERIF,
+      fontSize: 35,
       lineHeight: 1.1
     },
     h4: {
