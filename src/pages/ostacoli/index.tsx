@@ -9,7 +9,7 @@ import Cavalletti from './_cavalletti';
 import Cubi from './_cubi';
 import Cucchiai from './_cucchiai';
 import Fosso from './_fosso';
-import Segnaletica from './_segnaletica';
+import Segnaletica from './_segnaletica'
 import { COLORS } from '@theme';
 import { Typography } from '@material-ui/core';
 

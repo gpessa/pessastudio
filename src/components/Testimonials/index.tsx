@@ -50,7 +50,7 @@ const Testimonials = () => {
         <Title
           title={formatMessage({ id: "HOME__quote__title" })}
           subtitle="Dicono di noi"
-          text="Scopri la qualita' dei nostri prodotti attraverso la testimonianza dei clienti"
+          text="Scopri la qualità dei nostri prodotti attraverso la testimonianza dei clienti"
         />
       )}
       right={(

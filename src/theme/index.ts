@@ -38,7 +38,7 @@ export const COLORS = {
 }
 
 export const FONTS = {
-  SERIF: "Tiempos Fine",
+  SERIF: "serif",
   SANSERIF: "GT America",
   SANSERIF_WEIRD: "Source Sans Pro",
   SANSERIF_SLIM: "Roboto Condensed"
@@ -69,32 +69,38 @@ const theme = createMuiTheme({
     },
     h1: {
       fontFamily: FONTS.SERIF,
+      fontWeight: 'bold',
       textTransform: 'none',
       fontSize: 78,
-      lineHeight: (88 / 91)
+      lineHeight: (74 / 91)
     },
     h2: {
       fontFamily: FONTS.SERIF,
+      fontWeight: 'bold',
       fontSize: 57,
       lineHeight: (56 / 57)
     },
     h3: {
       fontFamily: FONTS.SERIF,
+      fontWeight: 'bold',
+      lineHeight: 1,
       fontSize: 35,
-      lineHeight: 1.1
     },
     h4: {
-      fontSize: 28,
-      fontWeight: 500,
-      lineHeight: 1.1,
       fontFamily: FONTS.SERIF,
+      fontWeight: 'bold',
+      lineHeight: 1.1,
+      fontSize: 28,
     },
     h5: {
-      fontSize: 23,
-      lineHeight: 1.1,
       fontFamily: FONTS.SERIF,
+      fontWeight: 'bold',
+      lineHeight: 1.1,
+      fontSize: 23,
     },
     h6: {
+      fontFamily: FONTS.SERIF,
+      fontWeight: 'bold',
       lineHeight: 1.1,
       fontSize: 18
     },

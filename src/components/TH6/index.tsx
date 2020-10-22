@@ -11,7 +11,6 @@ type Props = Pick<
 const useStyles = makeStyles(_ => ({
   root: {
     fontFamily: ({ sans }: Props) => sans ? FONTS.SANSERIF_WEIRD : FONTS.SERIF,
-    fontWeight: ({ sans }: Props) => sans ? 600 : 'inherit'
   }
 }))
 

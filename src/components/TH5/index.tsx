@@ -11,15 +11,14 @@ type Props = Pick<
 const useStyles = makeStyles(_ => ({
   root: {
     fontFamily: ({ sans }: Props) => sans ? FONTS.SANSERIF_WEIRD : FONTS.SERIF,
-    fontWeight: ({ sans }: Props) => sans ? 600 : 'inherit'
   }
 }))
 
-const TH3 = ({ className, ...props }: Props) => {
+const TH5 = ({ className, ...props }: Props) => {
   const classes = useStyles(props)
 
   return <Typography component="h5" variant="h5" {...props} className={`${classes.root} ${className}`} />
 }
 
-export default TH3
+export default TH5
 
