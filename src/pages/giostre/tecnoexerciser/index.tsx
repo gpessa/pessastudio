@@ -2,7 +2,7 @@ import { withPrefix } from "gatsby"
 import { FormattedHTMLMessage, useIntl } from "gatsby-plugin-intl"
 import React from "react"
 import { COLORS } from "@theme"
-import { Columns, ContentTable, Gallery, TH2, TH1, Product, Section, TH4 } from "@components"
+import { Columns, ContentTable, Gallery, TH1, Section, TH4, Compare } from "@components"
 import { Grid } from "@material-ui/core"
 
 const Tecnoexerciser: React.FC = () => {
@@ -23,7 +23,10 @@ const Tecnoexerciser: React.FC = () => {
     },{
       src: require("@images/product/giostre/tecnoexerciser/galleria/interno.jpg"),
       caption: formatMessage({ id: "GIOSTRE__tecnoexerciser__image-4" }),
-  }]
+    }, {
+      src: require("@images/product/giostre/tecnoexerciser/galleria/porte.jpg"),
+      caption: formatMessage({ id: "GIOSTRE__tecnoexerciser__image-5" }),
+    }]
 
   const ATTACHMENT = [{
       label: formatMessage({ id: "GIOSTRE__manuali__manuale-quadro" }),
@@ -45,49 +48,47 @@ const Tecnoexerciser: React.FC = () => {
   }))
 
   const PRODUCTS = [{
-      images: [{ src: require("@images/product/giostre/tecnoexerciser/gamma/solo-motore.jpg") }],
-      name: "Giostra",
-      description: (
-        <>
-          <p>L'opzione semplice ed economica</p>
-          <ul>
-            <li>Giostra da 4 o 6 cavalli</li>
-            <li>Diametro da 12 mt. o 14.2 mt.</li>
-            <li>Cadenza compresa fra 60 e 210 metri al minuto</li>
-            <li>Potenza motore 0.37 kw</li>
-          </ul>
-        </>
-      ),
-    },
-    {
-      images: [{ src: require("@images/product/giostre/tecnoexerciser/gamma/con-corridoio-tecnofence.jpg") }],
-      name: "Giostra con corridoio tecnofence",
-      description: (
-        <>
-          <ul>
-            <li>Giostra da 4 o 6 cavalli</li>
-            <li>Diametro da 12 mt. o 14.2 mt.</li>
-            <li>Cadenza compresa fra 60 e 210 metri al minuto</li>
-            <li>Potenza motore 0.37 kw</li>
-          </ul>
-        </>
-      ),
-    },
-    {
-      images: [{ src: require("@images/product/giostre/tecnoexerciser/gamma/con-corridoio-coperto.jpg") }],
-      name: "Giostra con corridoio Coperto",
-      description: (
-        <>
-          <ul>
-            <li>Giostra da 4 o 6 cavalli</li>
-            <li>Diametro da 12 mt. o 14.2 mt.</li>
-            <li>Cadenza compresa fra 60 e 210 metri al minuto</li>
-            <li>Potenza motore 0.37 kw</li>
-          </ul>
-        </>
-      ),
-    },
-  ]
+    image: require("@images/product/giostre/tecnoexerciser/gamma/solo-motore.jpg"),
+    name: "Giostra base",
+    description: "Is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since",
+    features: [
+      { name: "Diametro", value: "Da 12 mt. o 14.2 mt."},
+      { name: "Numero cavalli", value: "da 4 o 6 cavalli <br/><small>(A seconda del diametro scelto)</small>"},
+      { name: "Motore", value: "Potenza motore 0.37 kw e cadenza regolabile fra 60 e 210 metri al minuto" },
+      { name: "Irrigazione", value: "Irrigazione del percorso controllabile dal quadro di comando" },
+      { name: "Porte", value: "Porte di separazione <br/><small>(Elettrificatione inclusa 200-240 Volt monofase)</small>" },
+      { name: "Quadro di controllo", value: "Controllo manuale della cadenza o accesso ai \"training programs\" automatici che vi consentiranno di allenare i vostri cavalli fino ad ottenere performance atletiche." },
+    ]
+  },
+  {
+    image: require("@images/product/giostre/tecnoexerciser/gamma/con-corridoio-tecnofence.jpg"),
+    name: "Giostra con corridoio tecnofence",
+    description: "Is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since",
+    features: [
+      { name: "Diametro", value: "Da 12 mt. o 14.2 mt." },
+      { name: "Numero cavalli", value: "da 4 o 6 cavalli <br/><small>(A seconda del diametro scelto)</small>"},
+      { name: "Motore", value: "Potenza motore 0.37 kw e cadenza regolabile fra 60 e 210 metri al minuto" },
+      { name: "Irrigazione", value: "Irrigazione del percorso controllabile dal quadro di comando" },
+      { name: "Porte", value: "Porte di separazione <br/><small>(Elettrificatione inclusa 200-240 Volt monofase)</small>" },
+      { name: "Quadro di controllo", value: "Controllo manuale della cadenza o accesso ai \"training programs\" automatici che vi consentiranno di allenare i vostri cavalli fino ad ottenere performance atletiche." },
+      { name: "Recinzione", value: "Corridoio composto da recinzione TECNOFENCE in PVC <small>(2 o 4 filagne)</small>" },
+    ]
+  },
+  {
+    image: require("@images/product/giostre/tecnoexerciser/gamma/con-corridoio-coperto.jpg"),
+    name: "Giostra con corridoio Coperto",
+    description: "Is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since",
+    features: [
+      { name: "Diametro", value: "Da 12 mt. o 14.2 mt." },
+      { name: "Numero cavalli", value: "da 4 o 6 cavalli <br/><small>(A seconda del diametro scelto)</small>"},
+      { name: "Motore", value: "Potenza motore 0.37 kw e cadenza regolabile fra 60 e 210 metri al minuto" },
+      { name: "Irrigazione", value: "Irrigazione del percorso controllabile dal quadro di comando" },
+      { name: "Porte", value: "Porte di separazione <br/><small>(Elettrificatione inclusa 200-240 Volt monofase)</small>" },
+      { name: "Quadro di controllo", value: "Controllo manuale della cadenza o accesso ai \"training programs\" automatici che vi consentiranno di allenare i vostri cavalli fino ad ottenere performance atletiche." },
+      { name: "Recinzione", value: "Corridoio composto da pannelli laterali in compensato marino" },
+      { name: "Copertura", value: "Copertura in PVC crema o verde <br/><small>(Portata di 80 kg mq. In presenza di nevicate che superino la portata consentita, è opportuno intervenire rimuovendo l’eccesso di neve)</small>" }, 
+    ]
+  }]
 
   return (
     <>
@@ -101,28 +102,21 @@ const Tecnoexerciser: React.FC = () => {
         right={<Gallery images={IMAGES} />}
       />
 
-      <Section>
-        <TH2>{formatMessage({ id: "GENERAL__gamma" })}</TH2>
-        <p>{formatMessage({ id: "GIOSTRE__tecnoexerciser__gamma__text" })}</p>
-
-        <Grid container spacing={5}>
-          {PRODUCTS.map((product, index) => (
-            <Grid item key={index} md={4}>
-              <Product vertical {...product} />
-            </Grid>
-          ))}
-        </Grid>
-      </Section>
+      <Compare
+        title={formatMessage({ id: "GENERAL__gamma" })}
+        text={formatMessage({ id: "GIOSTRE__tecnoexerciser__gamma__text" })}
+        products={PRODUCTS}
+      />
 
       <Section color={COLORS.WARM2}>
         <TH4>{formatMessage({ id: "GENERAL__client-service" })}</TH4>
 
         <Grid container spacing={5}>
-          <Grid item md={6}>
+          <Grid item xs={12} md={6}>
             <ContentTable rows={DIMENSIONS} title={formatMessage({ id: "GENERAL__dimensioni" })} />
           </Grid>
 
-          <Grid item md={6}>
+          <Grid item xs={12} md={6}>
             <ContentTable rows={ATTACHMENT} title={formatMessage({ id: "GENERAL__manauli" })} />
           </Grid>
         </Grid>

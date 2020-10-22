@@ -1,7 +1,7 @@
 import { injectIntl, Link } from 'gatsby-plugin-intl';
 import React from 'react';
 
-import { TH4Sans } from '@components';
+import { TH5 } from '@components';
 import { ButtonBase, makeStyles, Table, TableBody, TableCell, TableContainer, TableRow, Paper } from '@material-ui/core';
 import PictureAsPdfIcon from '@material-ui/icons/PictureAsPdf';
 import VisibilityIcon from '@material-ui/icons/Visibility';
@@ -32,7 +32,7 @@ const ContentTable = ({ rows, title, intl: { formatMessage } }: Props) => {
 
   return (
     <div>
-      <TH4Sans>{title}</TH4Sans>
+      <TH5 sans>{title}</TH5>
       <TableContainer component={Paper} elevation={0} variant="outlined">
         <Table>
           <TableBody>

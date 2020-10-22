@@ -3,7 +3,7 @@ import React from "react"
 
 import AppsIcon from '@material-ui/icons/Apps';
 import DomainDisabledIcon from '@material-ui/icons/DomainDisabled';
-import PersonPinCircleIcon from '@material-ui/icons/PersonPinCircle';
+import AccessibilityNewIcon from '@material-ui/icons/AccessibilityNew';
 import { Columns, TH2, Hero, Section, TH4, Benefits } from "@components"
 import { Box, Button, Container, Link, makeStyles, Typography } from "@material-ui/core"
 import { COLORS } from "@theme";
@@ -28,19 +28,19 @@ const Giostre: React.FC = () => {
 
   const BENEFITS = [
     {
-      icon: PersonPinCircleIcon,
+      icon: AccessibilityNewIcon,
       title: "3.000 giostre installate",
       description: "Piu' di 3.000 clienti europei hanno scelto PessaStudio per la loro giostra"
+    },
+    {
+      icon: AppsIcon,
+      title: "Ampia gamma",
+      description: "E' possibile aquistare le nostre giostre in diverse versioni adatte al tuo budget e alle tue esigenze"
     },
     {
       icon: DomainDisabledIcon,
       title: "Nessuna concessione edilizia",
       description: "Le nostre giostre sono considerate strutture precarie. Non avrete quindi bisogno di nessuna concessione edilizia"
-    },
-    {
-      icon: AppsIcon,
-      title: "Ampia gamma",
-      description: "E' possibile aquistare le nostre giostre in diverse versioni"
     }
   ]
 

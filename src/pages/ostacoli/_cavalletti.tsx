@@ -40,7 +40,7 @@ const Cavalletti: React.FC<{ intl: IntlFormatters }> = ({ intl: { formatMessage 
           text={<FormattedHTMLMessage id="OSTACOLI__cavalletti__text" />}
         />
       </Grid>
-      <Grid item md={6}>
+      <Grid item md={6} spacing={10}>
         {PRODUCTS.map((product, index) => (
           <Product key={index} {...product} />
         ))}

@@ -22,7 +22,7 @@ const Gallery = withModalGallery(({ images, open }: WithInjectedModalGalleryProp
   return (
     <Grid container spacing={5}>
       {images.map((image, index) => (
-        <Grid item md={6} key={index}>
+        <Grid item xs={6} key={index}>
           <ButtonBase onClick={() => open(image)} className={classes.item}>
             <img src={image.src} className={classes.image} />
             <Typography variant="caption" gutterBottom={false}>{image.caption}</Typography>

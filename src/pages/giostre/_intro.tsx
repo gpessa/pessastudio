@@ -37,7 +37,7 @@ const Intro = () => {
     {
       icon: AppsIcon,
       title: "Ampia gamma",
-      description: "E' possibile aquistare le nostre giostre in diverse versioni"
+      description: "E' possibile aquistare le nostre giostre in diverse versioni adatte al tuo budget e alle tue esigenze"
     }
   ]
 

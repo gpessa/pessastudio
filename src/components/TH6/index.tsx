@@ -1,11 +1,25 @@
-import { Typography, TypographyProps } from '@material-ui/core';
+import { makeStyles, Typography, TypographyProps } from '@material-ui/core';
+import { FONTS } from '@theme';
 import React from 'react';
 
-const TH6 = (props: Pick<
-  TypographyProps, 'children' | 'className' | 'gutterBottom' | 'noWrap' | 'paragraph' | 'variant' | 'dangerouslySetInnerHTML'
->) => (
-  <Typography component="h6" variant="h6" {...props}/>
-)
+type Props = Pick<
+  TypographyProps, 'className' | 'align' | 'children' | 'className' | 'gutterBottom' | 'noWrap' | 'paragraph' | 'variant' | 'dangerouslySetInnerHTML'
+> & {
+  sans?: boolean
+}
 
-export default TH6
+const useStyles = makeStyles(_ => ({
+  root: {
+    fontFamily: ({ sans }: Props) => sans ? FONTS.SANSERIF_WEIRD : FONTS.SERIF,
+    fontWeight: ({ sans }: Props) => sans ? 600 : 'inherit'
+  }
+}))
+
+const TH3 = ({ className, ...props }: Props) => {
+  const classes = useStyles(props)
+
+  return <Typography component="h6" variant="h6" {...props} className={`${classes.root} ${className}`} />
+}
+
+export default TH3
 

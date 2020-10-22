@@ -3,8 +3,8 @@ import { FormattedHTMLMessage, injectIntl } from "gatsby-plugin-intl"
 import React from "react"
 import { IntlFormatters } from "react-intl"
 
-import { Columns, ContentTable, Gallery, TH2, TH1, TH3, Product, Section, TH4, SubSection, TH4Sans, Title } from "@components"
-import { Box, Container, Grid } from "@material-ui/core"
+import { Columns, ContentTable, Gallery, TH1, Section, TH4, Compare } from "@components"
+import { Grid } from "@material-ui/core"
 import { COLORS } from "@theme"
 
 const Ippowalker: React.FC<{ intl: IntlFormatters }> = ({ intl: { formatMessage } }) => {
@@ -31,47 +31,43 @@ const Ippowalker: React.FC<{ intl: IntlFormatters }> = ({ intl: { formatMessage 
 
   const PRODUCTS = [
     {
-      images: [{ src: require("@images/product/giostre/ippowalker/gamma/solo-motore.jpg") }],
+      image: require("@images/product/giostre/ippowalker/gamma/solo-motore.jpg"),
       name: "Giostra",
-      description: (
-        <>
-          <p>L'opzione semplice ed economica</p>
-          <ul>
-            <li>Giostra da 4 o 6 cavalli</li>
-            <li>Diametro da 12 mt. o 14.2 mt.</li>
-            <li>Cadenza compresa fra 60 e 210 metri al minuto</li>
-            <li>Potenza motore 0.37 kw</li>
-          </ul>
-        </>
-      ),
+      description: "Is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since",
+      features: [
+        { name: "Diametro", value: "Da 12 mt. o 14.2 mt." },
+        { name: "Numero cavalli", value: "da 4 o 6 cavalli <br/><small>(A seconda del diametro scelto)</small>" },
+        { name: "Motore", value: "Potenza motore 0.37 kw e cadenza regolabile fra 60 e 210 metri al minuto" },
+        { name: "Porte", value: "Porte di separazione <br/><small>(Elettrificatione inclusa 200-240 Volt monofase)</small>" },
+        { name: "Quadro di controllo", value: "Quadro di comando con cui manualmente impostare la cadenza" },
+      ]
     },
     {
-      images: [{ src: require("@images/product/giostre/ippowalker/gamma/con-corridoio-flat.jpg") }],
+      image: require("@images/product/giostre/ippowalker/gamma/con-corridoio-flat.jpg"),
       name: "Giostra con corridoio Flat",
-      description: (
-        <>
-          <ul>
-            <li>Giostra da 4 o 6 cavalli</li>
-            <li>Diametro da 12 mt. o 14.2 mt.</li>
-            <li>Cadenza compresa fra 60 e 210 metri al minuto</li>
-            <li>Potenza motore 0.37 kw</li>
-          </ul>
-        </>
-      ),
+      description: "Is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since",
+      features: [
+        { name: "Diametro", value: "Da 12 mt. o 14.2 mt." },
+        { name: "Numero cavalli", value: "da 4 o 6 cavalli <br/><small>(A seconda del diametro scelto)</small>" },
+        { name: "Motore", value: "Potenza motore 0.37 kw e cadenza regolabile fra 60 e 210 metri al minuto" },
+        { name: "Porte", value: "Porte di separazione <br/><small>(Elettrificatione inclusa 200-240 Volt monofase)</small>" },
+        { name: "Quadro di controllo", value: "Quadro di comando con cui manualmente impostare la cadenza" },
+        { name: "Recinzione", value: "Corridoio composto da recinzione TECNOFENCE in PVC <small>(2 o 4 filagne)</small>" },
+      ]
     },
     {
-      images: [{ src: require("@images/product/giostre/ippowalker/gamma/con-corridoio-tecnofence.jpg") }],
+      image: require("@images/product/giostre/ippowalker/gamma/con-corridoio-tecnofence.jpg"),
       name: "Giostra con corridoio Tecnofence",
-      description: (
-        <>
-          <ul>
-            <li>Giostra da 4 o 6 cavalli</li>
-            <li>Diametro da 12 mt. o 14.2 mt.</li>
-            <li>Cadenza compresa fra 60 e 210 metri al minuto</li>
-            <li>Potenza motore 0.37 kw</li>
-          </ul>
-        </>
-      ),
+      description: "Is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since",
+      features: [
+        { name: "Diametro", value: "Da 12 mt. o 14.2 mt." },
+        { name: "Numero cavalli", value: "da 4 o 6 cavalli <br/><small>(A seconda del diametro scelto)</small>" },
+        { name: "Motore", value: "Potenza motore 0.37 kw e cadenza regolabile fra 60 e 210 metri al minuto" },
+        { name: "Porte", value: "Porte di separazione <br/><small>(Elettrificatione inclusa 200-240 Volt monofase)</small>" },
+        { name: "Quadro di controllo", value: "Quadro di comando con cui manualmente impostare la cadenza" },
+        { name: "Recinzione", value: "Corridoio composto da pannelli laterali in compensato marino" },
+        { name: "Copertura", value: "Copertura in PVC crema o verde <br/><small>(Portata di 80 kg mq. In presenza di nevicate che superino la portata consentita, è opportuno intervenire rimuovendo l’eccesso di neve)</small>" },
+      ]
     }
   ]
 
@@ -110,24 +106,18 @@ const Ippowalker: React.FC<{ intl: IntlFormatters }> = ({ intl: { formatMessage 
         </SubSection>
       </Section> */}
 
-      <Section>
-        <TH2>{formatMessage({ id: "GENERAL__gamma" })}</TH2>
-        <p>{formatMessage({ id: "GIOSTRE__ippowalker__gamma__text" })}</p>
-        
-        <Grid container spacing={5}>
-          {PRODUCTS.map((product, index) => (
-            <Grid item key={index} md={4}>
-              <Product vertical {...product} />
-            </Grid>
-          ))}
-        </Grid>
-      </Section>
+
+      <Compare
+        title={formatMessage({ id: "GENERAL__gamma" })}
+        text={formatMessage({ id: "GIOSTRE__ippowalker__gamma__text" })}
+        products={PRODUCTS}
+      />
 
       <Section color={COLORS.WARM2}>
         <TH4>{formatMessage({ id: "GENERAL__client-service" })}</TH4>
 
         <Grid container spacing={5}>
-          <Grid item md={6}>
+          <Grid item xs={12} md={6}>
             <ContentTable
               title={formatMessage({ id: "GENERAL__dimensioni" })}
               rows={DIMENSIONS.map(dimension => ({
@@ -137,7 +127,7 @@ const Ippowalker: React.FC<{ intl: IntlFormatters }> = ({ intl: { formatMessage 
             />
           </Grid>
 
-          <Grid item md={6}>
+          <Grid item xs={12} md={6}>
             <ContentTable
               title={formatMessage({ id: "GENERAL__manauli" })}
               rows={[{

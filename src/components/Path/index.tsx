@@ -49,10 +49,10 @@ const Path = ({ steps }: Props) => {
         return (
           <Step key={text} active={inView} expanded={true} ref={ref}>
             <StepLabel>
-              <TH4Sans className={`
+              <TH4 sans className={`
                 ${(index % 2 == 0) ? classes.even : undefined}
                 ${classes.text}
-              `}>{text}</TH4Sans>
+              `}>{text}</TH4>
             </StepLabel>
             <StepContent>
               <img src={image} className={(index % 2 == 0) ? classes.even : undefined} />

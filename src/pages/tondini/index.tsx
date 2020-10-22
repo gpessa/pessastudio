@@ -37,7 +37,7 @@ const Tondini: React.FC = () => {
       <Section color={COLORS.WARM2}>
         <TH4>{formatMessage({ id: "GENERAL__client-service" })}</TH4>
         <Grid container spacing={5}>
-          <Grid item md={6}>
+          <Grid item xs={12} md={6}>
             <ContentTable
               title={formatMessage({ id: "GENERAL__dimensioni" })}
               rows={DIMENSIONS.map(dimension => ({
@@ -46,7 +46,7 @@ const Tondini: React.FC = () => {
               }))}
             />
           </Grid>
-          <Grid item md={6}>
+          <Grid item xs={12} md={6}>
             <ContentTable
               title={formatMessage({ id: "GENERAL__manauli" })}
               rows={[

@@ -108,7 +108,7 @@ const theme = createMuiTheme({
   overrides: {
     MuiTypography: {
       gutterBottom: {
-        marginBottom: '0.4em'
+        marginBottom: '0.5em'
       }
     },
     MuiButtonBase: {
@@ -138,6 +138,9 @@ const theme = createMuiTheme({
   props: {
     MuiTypography: {
       gutterBottom: true
+    },
+    MuiLink: {
+      color: "inherit"
     },
     MuiButton: {
       disableElevation: true,

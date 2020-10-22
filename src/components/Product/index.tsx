@@ -11,7 +11,7 @@ import Data from './Data';
 import Description from './Description';
 import MaterialsList from './MaterialsList';
 import Price from './Price';
-import { TH4Sans } from '@components';
+import { TH6 } from '@components';
 
 const useStyles = makeStyles(theme => ({
   container: {
@@ -64,7 +64,7 @@ const Product = withModalGallery(({ images, open, vertical, price, url, name, de
         ))}
         <Grid item xs={span}>
           <div className={classes.data}>
-            <TH4Sans className={classes.title}>{name}</TH4Sans>
+            <TH6 sans className={classes.title}>{name}</TH6>
 
             <Description description={description} />
 

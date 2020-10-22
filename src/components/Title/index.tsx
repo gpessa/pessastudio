@@ -1,19 +1,13 @@
-import { BREAKPOINT, COLORS, FONTS } from '@theme';
+import { BREAKPOINT } from '@theme';
 import React from 'react'; 
 import { Box, makeStyles, Typography } from '@material-ui/core';
+import Caption from "../Caption"
 
 const useStyles = makeStyles(theme => ({
   root: {
     [theme.breakpoints.up(BREAKPOINT)]: {
       maxWidth: '100%'
     }
-  },
-  subtitle: {
-    fontSize: 14,
-    fontWeight: 500,
-    color: COLORS.GREY1,
-    textTransform: 'uppercase',
-    fontFamily: FONTS.SANSERIF,
   }
 }));
 
@@ -29,7 +23,7 @@ const Title: React.FC<Props> = ({ title, subtitle, text, className  }) => {
   
   return (
     <Box className = {`${className} ${classes.root}`}>
-      {subtitle && <Typography className={classes.subtitle}>{subtitle}</Typography>}
+      {subtitle && <Caption>{subtitle}</Caption>}
       <Typography variant="h3" dangerouslySetInnerHTML={{ __html: title }}/>
       {text && <div>{text}</div>}
     </Box>
