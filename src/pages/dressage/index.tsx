@@ -88,7 +88,7 @@ const Dressage: React.FC = () => {
 
       <Section id="dressage-training" color={COLORS.WARM2}>
         <TH2>{formatMessage({ id: `DRESSAGE__training_title` })}</TH2>
-        <FormattedHTMLMessage id="DRESSAGE__training_description" />
+        <FormattedHTMLMessage id="DRESSAGE__training_description" tagName="p" />
         <Grid container spacing={5}>
           {TRAINING_PRODUCTS.map((product, index) => (
             <Grid item key={index} md={3}>
@@ -100,7 +100,7 @@ const Dressage: React.FC = () => {
 
       <Section id="dressage-olimpic">
         <TH2>{formatMessage({ id: `DRESSAGE__olimpic_title` })}</TH2>
-        <FormattedHTMLMessage id="DRESSAGE__olimpic_description" />
+        <FormattedHTMLMessage id="DRESSAGE__olimpic_description" tagName="p" />
         <Grid container spacing={5}>
           {OLIMPIC_PRODUCTS.map((product, index) => (
             <Grid item key={index} md={3}>

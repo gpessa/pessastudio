@@ -34,7 +34,7 @@ const Cavalletti: React.FC<{ intl: IntlFormatters }> = ({ intl: { formatMessage 
   ]
 
   return (
-    <Grid container spacing={10}>
+    <Grid container spacing={PRODUCT_GUTTER}>
       <Grid item md={6}>
         <Title
           title={formatMessage({ id: "OSTACOLI__cavalletti__title" })}

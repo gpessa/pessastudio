@@ -19,23 +19,22 @@ const useStyles = makeStyles(theme => ({
   },
   data: {
     display: 'flex',
-    flexDirection: 'column',
-    alignContent: 'center',
-    justifyContent: 'center',
     minHeight: '100%',
+    flexDirection: 'column',
+    paddingTop: theme.spacing(1)
   },
   button: {
+    boxShadow: `inset 0 0 0 2px ${theme.palette.divider}`,
     backgroundColor: theme.palette.common.white,
-    border: `2px solid ${theme.palette.divider}`,
     paddingBottom: '100%',
     position: 'relative',
     width: '100%',
   },
   image: {
-    position: 'absolute',
-    width: '100%',
     top: 0,
+    width: '100%',
     marginTop: '50%',
+    position: 'absolute',
     transform: 'translateY(-50%)',
   },
   title: {

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1504px" height="2126px" viewBox="0 0 1504 2126" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<title>
+		3
+	</title>
+	<g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+		<g id="3" transform="translate(2.000000, 0.000000)">
+			<g id="Fence" transform="translate(0.000000, 126.000000)" fill="#FFFFFF" stroke="#979797" stroke-width="4">
+				<rect id="Rectangle" x="2" y="66.556338" width="1075" height="95.9295775">
+				</rect>
+				<rect id="Rectangle" x="2" y="500" width="1075" height="95.9295775">
+				</rect>
+				<rect id="Rectangle" x="2" y="933" width="1075" height="95.9295775">
+				</rect>
+				<ellipse id="Oval" cx="539" cy="22.6584507" rx="60" ry="20.6584507">
+				</ellipse>
+				<rect id="Rectangle" x="479" y="25.2394366" width="120" height="1622.76056">
+				</rect>
+			</g>
+			<g id="Dim" transform="translate(1090.000000, 0.000000)">
+				<text id="1650mm." font-family="Helvetica" font-size="80" font-weight="normal" letter-spacing="7.27272727">
+					<tspan x="0" y="78" fill="#FFFFFF">
+						1650mm
+					</tspan>
+					<tspan x="354.886364" y="78" font-size="50" letter-spacing="4.54545455" fill="#93969B">
+						.
+					</tspan>
+				</text>
+				<path d="M172,1778.08164 L172,1773.08164 L184,1773.081 L184,128.918 L172,128.918357 L172,123.918357 L201,123.918357 L201,128.918357 L189,128.918 L189,1773.081 L201,1773.08164 L201,1778.08164 L172,1778.08164 Z" fill="#979797" fill-rule="nonzero">
+				</path>
+			</g>
+			<g id="Ground" transform="translate(-0.000000, 1776.000000)">
+				<rect id="Rectangle" stroke="#979797" stroke-width="1" fill="#D8D8D8" fill-rule="evenodd" x="1.5" y="0.5" width="1497" height="349">
+				</rect>
+				<line x1="0.5" y1="0.5" x2="1499.5" y2="0.5" id="Line" stroke="#939292" stroke-width="4" stroke-linecap="square">
+				</line>
+				<rect id="Rectangle" stroke="#979797" stroke-width="1" fill="#CACACA" fill-rule="evenodd" x="69.5" y="52.5" width="53" height="53" rx="26.5">
+				</rect>
+				<rect id="Rectangle" stroke="#979797" stroke-width="1" fill="#CACACA" fill-rule="evenodd" x="204.5" y="206.5" width="53" height="53" rx="26.5">
+				</rect>
+				<rect id="Rectangle" stroke="#979797" stroke-width="1" fill="#CACACA" fill-rule="evenodd" x="788.5" y="52.5" width="89" height="89" rx="44.5">
+				</rect>
+				<rect id="Rectangle" stroke="#979797" stroke-width="1" fill="#CACACA" fill-rule="evenodd" x="878.5" y="230.5" width="53" height="53" rx="26.5">
+				</rect>
+				<rect id="Rectangle" stroke="#979797" stroke-width="1" fill="#CACACA" fill-rule="evenodd" x="1254.5" y="233.5" width="53" height="53" rx="26.5">
+				</rect>
+				<rect id="Rectangle" stroke="#979797" stroke-width="1" fill="#CACACA" fill-rule="evenodd" x="580.5" y="260.5" width="53" height="53" rx="26.5">
+				</rect>
+				<rect id="Rectangle" stroke="#979797" stroke-width="1" fill="#CACACA" fill-rule="evenodd" x="302.5" y="58.5" width="64" height="64" rx="32">
+				</rect>
+				<rect id="Rectangle" stroke="#979797" stroke-width="1" fill="#CACACA" fill-rule="evenodd" x="1308.5" y="106.5" width="32" height="32" rx="16">
+				</rect>
+				<rect id="Rectangle" stroke="#979797" stroke-width="1" fill="#CACACA" fill-rule="evenodd" x="1148.5" y="126.5" width="32" height="32" rx="16">
+				</rect>
+				<rect id="Rectangle" stroke="#979797" stroke-width="1" fill="#CACACA" fill-rule="evenodd" x="461.5" y="142.5" width="32" height="32" rx="16">
+				</rect>
+			</g>
+		</g>
+	</g>
+</svg>

@@ -2,10 +2,12 @@ import { withPrefix } from "gatsby"
 import { FormattedHTMLMessage, useIntl } from "gatsby-plugin-intl"
 import React from "react"
 
-import { Columns, ContentTable, Gallery, TH2, Product, Section, TH1, TH4 } from "@components"
+import { Columns, ContentTable, Gallery, TH2, TH6, Section, TH1, TH4 } from "@components"
 import { Colors } from "@constants"
 import { Grid, Typography } from "@material-ui/core"
 import { COLORS } from "@theme"
+import Gamma from "./_gamma"
+import Accessori from "./_accessori"
 
 const Recinti: React.FC = () => {
   const { formatMessage } = useIntl()
@@ -33,56 +35,6 @@ const Recinti: React.FC = () => {
     },
   ]
 
-  const PRODUCTS = [
-    {
-      description: formatMessage({ id: `RECINTI__prodotto__recinzione-1-filagna__description` }),
-      name: formatMessage({ id: `RECINTI__prodotto__recinzione-1-filagna__name` }),
-      images: [{ src: require("@images/product/recinti/recinto-1-filagna.jpg") }],
-      colors: [Colors.WHITE],
-      height: 1200,
-    },
-    {
-      description: formatMessage({ id: `RECINTI__prodotto__recinzione-2-filagne__description` }),
-      name: formatMessage({ id: `RECINTI__prodotto__recinzione-2-filagne__name` }),
-      images: [{ src: require("@images/product/recinti/recinto-2-filagna.jpg") }],
-      colors: [Colors.WHITE],
-      height: 1350,
-    },
-    {
-      description: formatMessage({ id: `RECINTI__prodotto__recinzione-3-filagne__description` }),
-      name: formatMessage({ id: `RECINTI__prodotto__recinzione-3-filagne__name` }),
-      images: [{ src: require("@images/product/recinti/recinto-3-filagna.jpg") }],
-      colors: [Colors.WHITE],
-      height: 1600,
-    },
-    {
-      description: formatMessage({ id: `RECINTI__prodotto__recinzione-4-filagne__description` }),
-      name: formatMessage({ id: `RECINTI__prodotto__recinzione-4-filagne__name` }),
-      images: [{ src: require("@images/product/recinti/recinto-4-filagna.jpg") }],
-      colors: [Colors.WHITE],
-      height: 1900,
-    },
-    {
-      description: formatMessage({ id: `RECINTI__prodotto__recinzione-bordo-pista__description` }),
-      name: formatMessage({ id: `RECINTI__prodotto__recinzione-bordo-pista__name` }),
-      images: [{ src: require("@images/product/recinti/bordo-pista.jpg") }],
-      colors: [Colors.WHITE],
-    },
-    {
-      description: formatMessage({ id: `RECINTI__prodotto__piede-mobile__description` }),
-      name: formatMessage({ id: `RECINTI__prodotto__piede-mobile__name` }),
-      images: [{ src: require("@images/product/recinti/piede-mobile.jpg") }],
-      colors: [Colors.GREEN],
-      diameter: 60,
-      height: 300,
-    },
-    {
-      name: formatMessage({ id: "RECINTI__prodotto__recinzione-erpice-livellatrice__name" }),
-      description: formatMessage({ id: "RECINTI__prodotto__recinzione-erpice-livellatrice__description" }),
-      images: [{ src: require("@images/product/recinti/erpice-livellatrice.jpg") }],
-    },
-  ]
-
   return (
     <>
       <Columns
@@ -95,16 +47,9 @@ const Recinti: React.FC = () => {
         right={<Gallery images={IMAGES} />}
       />
 
-      <Section>
-        <TH2>{formatMessage({ id: "GENERAL__gamma" })}</TH2>
-        <Grid container spacing={5}>
-          {PRODUCTS.map((product, index) => (
-            <Grid item key={index} md={4}>
-              <Product {...product} vertical/>
-            </Grid>
-          ))}
-        </Grid>
-      </Section>
+      <Gamma />
+
+      {/* <Accessori /> */}
 
       <Section color={COLORS.WARM2}>
         <TH2>{formatMessage({ id: "GENERAL__client-service" })}</TH2>
