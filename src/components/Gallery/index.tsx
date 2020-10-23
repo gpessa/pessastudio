@@ -5,14 +5,14 @@ import { withModalGallery } from '@hoc';
 import { Grid, makeStyles, Typography, ButtonBase } from '@material-ui/core';
 
 
-const useStyles = makeStyles(_ => ({
+const useStyles = makeStyles(theme => ({
   item: {
     display: 'block',
     textAlign: 'left'
   },
   image: {
     width: '100%',
-    marginBottom: 5
+    border: `2px solid ${theme.palette.divider}`,
   }
 }));
 

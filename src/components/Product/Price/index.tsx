@@ -9,6 +9,7 @@ const useStyles = makeStyles(theme => ({
   },
   price: {
     fontSize: '120%',
+    fontWeight: 'bold',
     fontFamily: FONTS.SERIF,
     marginRight: theme.spacing(1)
   },

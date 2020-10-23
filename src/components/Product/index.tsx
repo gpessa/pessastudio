@@ -5,7 +5,7 @@ import { WithInjectedModalGalleryProps } from 'src/hoc/withModalGallery';
 import { Colors, Material } from '@constants';
 import { withModalGallery } from '@hoc';
 import { Grid, ButtonBase, makeStyles } from '@material-ui/core';
-import { COLORS } from "@theme";
+import { COLORS, PRODUCT_GUTTER } from "@theme";
 import ColorsList from './ColorsList';
 import Data from './Data';
 import Description from './Description';
@@ -15,11 +15,9 @@ import { TH6 } from '@components';
 
 const useStyles = makeStyles(theme => ({
   container: {
-    transform: 'scale(1)',
-    marginTop: theme.spacing(2),
+    transform: 'scale(1)'
   },
   data: {
-    padding: theme.spacing(1),
     display: 'flex',
     flexDirection: 'column',
     alignContent: 'center',
@@ -28,6 +26,7 @@ const useStyles = makeStyles(theme => ({
   },
   button: {
     backgroundColor: theme.palette.common.white,
+    border: `2px solid ${theme.palette.divider}`,
     paddingBottom: '100%',
     position: 'relative',
     width: '100%',
@@ -54,7 +53,7 @@ const Product = withModalGallery(({ images, open, vertical, price, url, name, de
 
   return (
     <Tag to={url} className={`${classes.container}`}>
-      <Grid container spacing={5}>
+      <Grid container spacing={PRODUCT_GUTTER}>
         {images.map(image => (
           <Grid item xs={span} key={image.src} onClick={() => open(image)}>
             <ButtonBase className={classes.button}>

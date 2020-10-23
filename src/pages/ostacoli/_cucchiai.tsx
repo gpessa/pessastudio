@@ -4,6 +4,8 @@ import { IntlFormatters } from "react-intl"
 
 import { Title, Product } from "@components"
 import { Material } from "@constants"
+import { Grid } from "@material-ui/core"
+import { PRODUCT_GUTTER } from "@theme"
 
 const CucchiaiSegnaletica: React.FC<{ intl: IntlFormatters }> = ({ intl: { formatMessage } }) => {
   const PRODUCTS = [
@@ -50,9 +52,13 @@ const CucchiaiSegnaletica: React.FC<{ intl: IntlFormatters }> = ({ intl: { forma
         text={<FormattedHTMLMessage id="OSTACOLI__cucchiai__text" tagName="p" />}
       />
 
-      <Product {...PRODUCTS[0]} />
-      <Product {...PRODUCTS[1]} />
-      <Product {...PRODUCTS[2]} />
+      <Grid container spacing={PRODUCT_GUTTER}>
+        {PRODUCTS.map(product => (
+          <Grid item xs={12}>
+            <Product {...product} />
+          </Grid>
+        ))}
+      </Grid>
     </>
   )
 }

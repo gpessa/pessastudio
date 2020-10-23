@@ -17,6 +17,7 @@ const useStyles = makeStyles(theme => ({
   text: {
     display: 'inline-block',
     backgroundColor: theme.palette.common.white,
+    padding: theme.spacing(3)
   },
   image: {
     width: '100%'

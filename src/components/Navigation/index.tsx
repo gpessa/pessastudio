@@ -13,11 +13,10 @@ const useStyles = makeStyles(theme => ({
     justifyContent: 'space-between',
   },
   link: {
-    fontFamily: FONTS.SANSERIF_SLIM,
-    textTransform: 'uppercase',
-    padding: theme.spacing(2),
-    fontWeight: 500,
     fontSize: 18,
+    padding: theme.spacing(2),
+    textTransform: 'uppercase',
+    fontFamily: FONTS.SANSERIF_SLIM,
     transition: theme.transitions.create(
       ['padding'],
       { duration: theme.transitions.duration.short }
@@ -28,9 +27,6 @@ const useStyles = makeStyles(theme => ({
       '& + &': {
         marginLeft: theme.spacing(1),
       }
-    },
-    '&.contatti': {
-      color: COLORS.GREY1
     }
   },
   mobileMenu: {
@@ -97,7 +93,7 @@ const Navigation: React.FC = () => {
   return (
     <AppBar position="sticky" color="inherit" elevation={isFloating ? 3 : 0}>
       <Toolbar className={classes.toolbar}>
-        <ButtonBase component={Link} to="/">
+        <ButtonBase component={props => <Link {...props} />} to="/">
           <Logo small={isFloating} />
         </ButtonBase>
 

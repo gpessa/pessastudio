@@ -4,6 +4,7 @@ import { Product, Title } from "@components"
 import { Colors } from "@constants"
 import { FormattedHTMLMessage, injectIntl } from "gatsby-plugin-intl"
 import { Grid } from "@material-ui/core"
+import { PRODUCT_GUTTER } from "@theme"
 
 const Barriere = ({ intl: { formatMessage } }: { intl: any }) => {
   const PRODUCT = {
@@ -29,17 +30,11 @@ const Barriere = ({ intl: { formatMessage } }: { intl: any }) => {
 
   return (
     <div>
-      <Grid container>
-        <Grid item md={12}>
-          <Title
-            title={formatMessage({ id: "OSTACOLI__barriere__title" })}
-            text={<FormattedHTMLMessage id="OSTACOLI__barriere__text" />}
-          />
-        </Grid>
-        <Grid item md={12}>
-          <Product {...PRODUCT} />
-        </Grid>
-      </Grid>
+      <Title
+        title={formatMessage({ id: "OSTACOLI__barriere__title" })}
+        text={<FormattedHTMLMessage id="OSTACOLI__barriere__text" tagName="p"/>}
+      />
+      <Product {...PRODUCT} />
     </div>
   )
 }

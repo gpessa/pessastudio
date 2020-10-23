@@ -1,5 +1,7 @@
 import { createMuiTheme, responsiveFontSizes } from "@material-ui/core/styles"
 
+export const PRODUCT_GUTTER = 5
+
 export const SECTION_SPACING = (breakingPoint: 'xs' | 'md') => {
   return (spacing: 'small' | 'medium' | 'big' | 'menu') => {
     const CONFIGURATION = new Map()
@@ -39,7 +41,7 @@ export const COLORS = {
 
 export const FONTS = {
   SERIF: "serif",
-  SANSERIF: "GT America",
+  SANSERIF: "Source Sans Pro",
   SANSERIF_WEIRD: "Source Sans Pro",
   SANSERIF_SLIM: "Roboto Condensed"
 }
@@ -64,7 +66,6 @@ const theme = createMuiTheme({
     fontFamily: [FONTS.SANSERIF_WEIRD].join(", "),
     caption: {
       lineHeight: '1em',
-      textTransform: 'uppercase',
       color: defaultTheme.palette.grey[700]
     },
     h1: {

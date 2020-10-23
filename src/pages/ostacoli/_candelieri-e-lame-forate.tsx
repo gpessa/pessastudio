@@ -3,6 +3,8 @@ import React from "react"
 
 import { Product, Title } from "@components"
 import { Material } from "@constants"
+import { PRODUCT_GUTTER } from "@theme"
+import { Grid } from "@material-ui/core"
 
 const CandelieriLameForate = ({ intl: { formatMessage } }: { intl: any }) => {
   const PRODUCTS = [
@@ -41,9 +43,13 @@ const CandelieriLameForate = ({ intl: { formatMessage } }: { intl: any }) => {
         text={<FormattedHTMLMessage id="OSTACOLI__candelieri-e-lame__text" />}
       />
       
-      {PRODUCTS.map((product, index) => (
-        <Product key={index} {...product} />
-      ))}
+      <Grid container spacing={PRODUCT_GUTTER}>
+        {PRODUCTS.map((product, index) => (
+          <Grid item xs={12}>
+            <Product key={index} {...product} />
+          </Grid>
+        ))}
+      </Grid>
     </>
   )
 }

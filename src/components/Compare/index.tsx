@@ -6,19 +6,15 @@ import { StickyContainer, Sticky } from 'react-sticky';
 
 const useStyles = makeStyles(theme => ({
   root: {
-    background: `linear-gradient(to bottom, 
-        rgba(0,0,0, 0) 100px,
-        ${COLORS.WARM1} 100px, 
-        ${COLORS.WARM1} calc(100% - 100px), 
-        rgba(0,0,0, 0) calc(100% - 100px)
-      )`,
+    backgroundColor: COLORS.WARM2
   },
   titleSticky: {
-    zIndex: 9999999,
+    zIndex: theme.zIndex.appBar + 1,
     top: `80px!important`,
     boxShadow: theme.shadows[8],
     color: theme.palette.common.white,
     background: theme.palette.primary.main,
+    borderLeft: `8px solid ${theme.palette.common.white}!important`,
   },
   item: {
     flexDirection: 'column',
@@ -26,6 +22,7 @@ const useStyles = makeStyles(theme => ({
     display: 'flex',
   },
   title: {
+    borderLeft: `8px solid ${theme.palette.primary.main}`,
     textTransform: 'uppercase',
     minHeight: 82,
     transition: theme.transitions.create(
@@ -61,12 +58,12 @@ const Compare: React.FC<Props> = ({ products, title, text }) => {
   const classes = useStyles()
 
   return (
-    <Section maxWidth={false} disableGutters>
+    <Section maxWidth={false} disableGutters className={classes.root}>
       <Box textAlign="center" mb={5}>
         <TH2>{title}</TH2>
         <div>{text}</div>
       </Box>
-      <div className={classes.root}>
+      <div>
         <Container>
           <Grid container spacing={7}>
             {products.map(({ description, image, name, features }) => (
@@ -78,7 +75,7 @@ const Compare: React.FC<Props> = ({ products, title, text }) => {
                         style={style}
                         disableTypography={true}
                         className={`${classes.title} ${isSticky && classes.titleSticky}`}
-                        title={<TH5 sans gutterBottom={false}>{name}</TH5>}
+                        title={<TH5 sans gutterBottom={false} dangerouslySetInnerHTML={{ __html: name }} />}
                       />
                     )}</Sticky>
                     <CardMedia
@@ -100,7 +97,12 @@ const Compare: React.FC<Props> = ({ products, title, text }) => {
                       </Table>
                     </CardContent>
                     <CardActions>
-                      <Button color="primary" fullWidth size="large" href={`mailto:annapessa@pessastudio.eu`} >Richiedi un preventivo</Button>
+                      <Button
+                        color="primary"
+                        fullWidth
+                        size="large"
+                        href={`mailto:annapessa@pessastudio.eu`}
+                      >Richiedi un preventivo</Button>
                     </CardActions>
                   </Card> 
                   </StickyContainer>

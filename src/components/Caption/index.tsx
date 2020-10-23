@@ -11,7 +11,8 @@ type Props = Pick<
 
 const useStyles = makeStyles(_ => ({
   root: {
-    fontSize: 14,
+    fontSize: 15,
+    lineHeight: 1.2,
     fontWeight: 500,
     color: COLORS.GREY1,
     textTransform: 'uppercase',

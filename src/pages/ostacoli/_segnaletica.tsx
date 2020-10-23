@@ -4,6 +4,7 @@ import { useIntl } from "gatsby-plugin-intl"
 import { Product, Title } from "@components"
 import { Material } from "@constants"
 import { Grid } from "@material-ui/core"
+import { PRODUCT_GUTTER } from "@theme"
 
 const Segnaletica: React.FC= () => {
   const { formatMessage } = useIntl()
@@ -46,7 +47,7 @@ const Segnaletica: React.FC= () => {
       <Title
         title={formatMessage({ id: "OSTACOLI__segnaletica__title" })}
       />
-      <Grid container>
+      <Grid container spacing={PRODUCT_GUTTER}>
         {PRODUCTS.map((product, index) => (
           <Grid key={index} sm={6} md={6} item>
             <Product {...product}/>

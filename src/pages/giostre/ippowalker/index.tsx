@@ -25,6 +25,10 @@ const Ippowalker: React.FC<{ intl: IntlFormatters }> = ({ intl: { formatMessage 
       src: require("@images/product/giostre/ippowalker/galleria/giostra-copertura-pvc-2.jpg"),
       caption: formatMessage({ id: "GIOSTRE__ippowalker__image-3" }),
     },
+    {
+      src: require("@images/product/giostre/ippowalker/galleria/porte.jpg"),
+      caption: formatMessage({ id: "GIOSTRE__ippowalker__image-4" }),
+    },
   ]
 
   const DIMENSIONS = [4, 6]
@@ -32,43 +36,43 @@ const Ippowalker: React.FC<{ intl: IntlFormatters }> = ({ intl: { formatMessage 
   const PRODUCTS = [
     {
       image: require("@images/product/giostre/ippowalker/gamma/solo-motore.jpg"),
-      name: "Giostra",
+      name: "Giostra <br />Base",
       description: "Is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since",
       features: [
-        { name: "Diametro", value: "Da 12 mt. o 14.2 mt." },
-        { name: "Numero cavalli", value: "da 4 o 6 cavalli <br/><small>(A seconda del diametro scelto)</small>" },
-        { name: "Motore", value: "Potenza motore 0.37 kw e cadenza regolabile fra 60 e 210 metri al minuto" },
-        { name: "Porte", value: "Porte di separazione <br/><small>(Elettrificatione inclusa 200-240 Volt monofase)</small>" },
-        { name: "Quadro di controllo", value: "Quadro di comando con cui manualmente impostare la cadenza" },
-      ]
-    },
-    {
-      image: require("@images/product/giostre/ippowalker/gamma/con-corridoio-flat.jpg"),
-      name: "Giostra con corridoio Flat",
-      description: "Is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since",
-      features: [
-        { name: "Diametro", value: "Da 12 mt. o 14.2 mt." },
-        { name: "Numero cavalli", value: "da 4 o 6 cavalli <br/><small>(A seconda del diametro scelto)</small>" },
-        { name: "Motore", value: "Potenza motore 0.37 kw e cadenza regolabile fra 60 e 210 metri al minuto" },
-        { name: "Porte", value: "Porte di separazione <br/><small>(Elettrificatione inclusa 200-240 Volt monofase)</small>" },
-        { name: "Quadro di controllo", value: "Quadro di comando con cui manualmente impostare la cadenza" },
-        { name: "Recinzione", value: "Corridoio composto da recinzione TECNOFENCE in PVC <small>(2 o 4 filagne)</small>" },
+        { name: formatMessage({ id: "GIOSTRE__caratteristica__diametro" }), value: formatMessage({ id: "GIOSTRE__caratteristica__diametro_value" }) },
+        { name: formatMessage({ id: "GIOSTRE__caratteristica__numero_cavalli" }), value: formatMessage({ id: "GIOSTRE__caratteristica__numero_cavalli_value" }) },
+        { name: formatMessage({ id: "GIOSTRE__caratteristica__motore" }), value: formatMessage({ id: "GIOSTRE__caratteristica__motore_value" }) },
+        { name: formatMessage({ id: "GIOSTRE__caratteristica__porte" }), value: formatMessage({ id: "GIOSTRE__caratteristica__porte_value" }) },
+        { name: formatMessage({ id: "GIOSTRE__caratteristica__quadro" }), value: formatMessage({ id: "GIOSTRE__caratteristica__quadro_value" }) },
       ]
     },
     {
       image: require("@images/product/giostre/ippowalker/gamma/con-corridoio-tecnofence.jpg"),
-      name: "Giostra con corridoio Tecnofence",
+      name: "Giostra<br />corridoio Tecnofence",
       description: "Is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since",
       features: [
-        { name: "Diametro", value: "Da 12 mt. o 14.2 mt." },
-        { name: "Numero cavalli", value: "da 4 o 6 cavalli <br/><small>(A seconda del diametro scelto)</small>" },
-        { name: "Motore", value: "Potenza motore 0.37 kw e cadenza regolabile fra 60 e 210 metri al minuto" },
-        { name: "Porte", value: "Porte di separazione <br/><small>(Elettrificatione inclusa 200-240 Volt monofase)</small>" },
-        { name: "Quadro di controllo", value: "Quadro di comando con cui manualmente impostare la cadenza" },
-        { name: "Recinzione", value: "Corridoio composto da pannelli laterali in compensato marino" },
-        { name: "Copertura", value: "Copertura in PVC crema o verde <br/><small>(Portata di 80 kg mq. In presenza di nevicate che superino la portata consentita, è opportuno intervenire rimuovendo l’eccesso di neve)</small>" },
+        { name: formatMessage({ id: "GIOSTRE__caratteristica__diametro" }), value: formatMessage({ id: "GIOSTRE__caratteristica__diametro_value" }) },
+        { name: formatMessage({ id: "GIOSTRE__caratteristica__numero_cavalli" }), value: formatMessage({ id: "GIOSTRE__caratteristica__numero_cavalli_value" }) },
+        { name: formatMessage({ id: "GIOSTRE__caratteristica__motore" }), value: formatMessage({ id: "GIOSTRE__caratteristica__motore_value" }) },
+        { name: formatMessage({ id: "GIOSTRE__caratteristica__porte" }), value: formatMessage({ id: "GIOSTRE__caratteristica__porte_value" }) },
+        { name: formatMessage({ id: "GIOSTRE__caratteristica__quadro" }), value: formatMessage({ id: "GIOSTRE__caratteristica__quadro_value" }) },
+        { name: formatMessage({ id: "GIOSTRE__caratteristica__recinzione" }), value: formatMessage({ id: "GIOSTRE__caratteristica__quadro_value" }) },
       ]
-    }
+    },
+    {
+      image: require("@images/product/giostre/ippowalker/gamma/con-corridoio-flat.jpg"),
+      name: "Giostra coperta<br />con corridoio Flat",
+      description: "Is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since",
+      features: [
+        { name: formatMessage({ id: "GIOSTRE__caratteristica__diametro" }), value: formatMessage({ id: "GIOSTRE__caratteristica__diametro_value" }) },
+        { name: formatMessage({ id: "GIOSTRE__caratteristica__numero_cavalli" }), value: formatMessage({ id: "GIOSTRE__caratteristica__numero_cavalli_value" }) },
+        { name: formatMessage({ id: "GIOSTRE__caratteristica__motore" }), value: formatMessage({ id: "GIOSTRE__caratteristica__motore_value" }) },
+        { name: formatMessage({ id: "GIOSTRE__caratteristica__porte" }), value: formatMessage({ id: "GIOSTRE__caratteristica__porte_value" }) },
+        { name: formatMessage({ id: "GIOSTRE__caratteristica__quadro" }), value: formatMessage({ id: "GIOSTRE__caratteristica__quadro_value" }) },
+        { name: formatMessage({ id: "GIOSTRE__caratteristica__recinzione" }), value: formatMessage({ id: "GIOSTRE__caratteristica__recinzione_value_pannello_marino" }) },
+        { name: formatMessage({ id: "GIOSTRE__caratteristica__copertura" }), value: formatMessage({ id: "GIOSTRE__caratteristica__copertura_value" }) },
+      ]
+    },
   ]
 
   return (
@@ -113,7 +117,7 @@ const Ippowalker: React.FC<{ intl: IntlFormatters }> = ({ intl: { formatMessage 
         products={PRODUCTS}
       />
 
-      <Section color={COLORS.WARM2}>
+      <Section>
         <TH4>{formatMessage({ id: "GENERAL__client-service" })}</TH4>
 
         <Grid container spacing={5}>

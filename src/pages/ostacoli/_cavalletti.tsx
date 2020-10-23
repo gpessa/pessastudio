@@ -5,6 +5,7 @@ import { IntlFormatters } from "react-intl"
 import { Title, Product } from "@components"
 import { Colors } from "@constants"
 import { Grid } from "@material-ui/core"
+import { PRODUCT_GUTTER } from "@theme"
 
 const Cavalletti: React.FC<{ intl: IntlFormatters }> = ({ intl: { formatMessage } }) => {
   const PRODUCTS = [
@@ -40,9 +41,11 @@ const Cavalletti: React.FC<{ intl: IntlFormatters }> = ({ intl: { formatMessage 
           text={<FormattedHTMLMessage id="OSTACOLI__cavalletti__text" />}
         />
       </Grid>
-      <Grid item md={6} spacing={10}>
+      <Grid item container md={6} spacing={PRODUCT_GUTTER} >
         {PRODUCTS.map((product, index) => (
-          <Product key={index} {...product} />
+          <Grid item xs={12}>
+            <Product key={index} {...product} />
+          </Grid>
         ))}
       </Grid>
     </Grid>

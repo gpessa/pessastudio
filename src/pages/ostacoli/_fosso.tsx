@@ -3,6 +3,7 @@ import React from "react"
 
 import { Title, Product } from "@components"
 import { Grid } from "@material-ui/core"
+import { PRODUCT_GUTTER } from "@theme"
 
 const Fosso: React.FC = () => {
   const { formatMessage } = useIntl()
@@ -19,7 +20,7 @@ const Fosso: React.FC = () => {
   }
 
   return (
-    <Grid container spacing={10}>
+    <Grid container spacing={PRODUCT_GUTTER}>
       <Grid item md={6}>
         <Title
           title={formatMessage({ id: "OSTACOLI__fosso__title" })}

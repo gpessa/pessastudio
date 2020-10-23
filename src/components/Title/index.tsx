@@ -25,7 +25,7 @@ const Title: React.FC<Props> = ({ title, subtitle, text, className  }) => {
     <Box className = {`${className} ${classes.root}`}>
       {subtitle && <Caption>{subtitle}</Caption>}
       <Typography variant="h3" dangerouslySetInnerHTML={{ __html: title }}/>
-      {text && <div>{text}</div>}
+      {text && <>{text}</>}
     </Box>
   )
 }
