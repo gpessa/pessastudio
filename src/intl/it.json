@@ -35,9 +35,9 @@
   "GENERAL__client-service": "Servizio clienti",
   "GENERAL__dimensioni": "Dimensioni",
   "GENERAL__download": "Scarica",
-  "GENERAL__gamma": "La nostra gamma",
+  "GENERAL__gamma": "La gamma",
   "GENERAL__IVA": "IVA",
-  "GENERAL__manauli": "Manuali",
+  "GENERAL__manuali": "Manuali",
   "GENERAL__material__acciaio-zincato": "Acciaio zincato",
   "GENERAL__material__plastica": "Plastica",
   "GENERAL__material__polietilene": "Politilene",
@@ -177,7 +177,6 @@
   "OSTACOLI__segnaletica__product__numero_per_campo_ostacoli_professional": "Numero per campo ostacoli professional",
   "OSTACOLI__segnaletica__title": "Segnaletica",
   "OSTACOLI__text": "I nostri ostacoli sono progettati e costruiti per durare nel tempo non richiedono alcuna manutenzione e conservano, inalterata, la loro bellezza anche se lasciati nel campo per anni. Se gli ostacoli per il professionista sono uno strumento di lavoro, per molti altri appassionati rappresentano la realizzazione di un sogno. Noi abbiamo deciso di rendere questi strumenti resistenti nel tempo per fare in modo che questo sogno duri.<br/><br/>Potrete scegliere le quantità e i colori nella nostra gamma di produzione e acquistare anche singoli pezzi di ricambio.",
-  "OSTACOLI__tondini__text": "Il tondino coperto è adatto a svolgere molteplici attività, per esempio è la migliore soluzione per addestrare puledri in libertà o lavorare cavalli alla corda, aiuta a facilitare il controllo dei vostri cavalli durante le lezioni ai principianti, nelle riprese dei pony ed è indispensabile per il longeur durante le riprese di volteggi.<br/><br/>E' costituito da pannelli laterali di compensato marino, fissati alle colonne del perimetro di acciaio zincato.<br/><br/>La struttura è costituita da tubi in acciaio zincato a caldo ad alta resistenza, collegati tra loro da piastre che formano un reticolo 'geodetico a cupola ribassatà. E’ una struttura semplice, leggera e piacevole alla vista. La struttura viene poi coperta con un telo spalmato in pvc di cui potrete liberamente sceglierne il colore tra quelli da noi proposti: bianco, verde o crema.<br/><br/>La porta, che ha un’apertura standard di 2,05 mt, è fissata al suo lato sinistro con una cerniera registrabile che ne consente la regolazione. Sul lato destro un catenaccio verticale a doppio riscontro ne garantisce l’assoluta sicurezza. In zone particolarmente ventose è conveniente montare attorno al tondino una rete antivento che riduce il disturbo dell'aria al suo interno. Nel caso in cui si voglia utilizzare il tondino per l'addestramento di puledri, le pareti laterali in plywood che normalmente sono alte 1,4 metri, possono essere rialzate fino a 2 metri.<br/><br/>Come per le nostre giostre anche <strong>i tondini sono considerate strutture precarie e non necessitano quindi di nessuna concessione edilizia</strong> ma, in taluni casi di un semplice permesso di installazione rilasciato dall’amministrazione locale.",
   "PRODUCT__attributo__colors": "Colori",
   "PRODUCT__attributo__depth": "Profondità",
   "PRODUCT__attributo__diameter": "Diametro",
@@ -223,7 +222,7 @@
   "TONDINO__gallery__image-2": "Tondino coperto",
   "TONDINO__gallery__image-3": "Interno tondino coperto",
   "TONDINO__gallery__image-4": "Tondino coperto",
-  "TONDINO__gallery__image-5": "Tondino coperto",
+  "TONDINO__gallery__image-5": "Copertura",
   "TONDINO__gallery__image-6": "Copertura",
-  "TONDINO__gallery__image-7": "Copertura"
+  "TONDINO__gallery__image-7": "Ingresso"
 }

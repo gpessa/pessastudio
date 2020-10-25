@@ -1,13 +1,36 @@
 import { withPrefix } from "gatsby"
 import { FormattedHTMLMessage, useIntl } from "gatsby-plugin-intl"
 import React from "react"
-import { Columns, ContentTable, Gallery, Section, Hero, TH4 } from "@components"
-import { Grid, Typography } from "@material-ui/core"
-import { COLORS } from "@theme"
+import { Columns, ContentTable, Gallery, Section, Hero, TH4, Benefits } from "@components"
+import { Grid, makeStyles, Typography } from "@material-ui/core"
+import { COLORS, PRODUCT_GUTTER } from "@theme"
+import AccountBalanceIcon from '@material-ui/icons/AccountBalance';
+import VisibilityIcon from '@material-ui/icons/Visibility';
+import DomainDisabledIcon from '@material-ui/icons/DomainDisabled';
+import LockIcon from '@material-ui/icons/Lock';
+
+const useStyles = makeStyles(theme => ({
+  gallery: {
+    backgroundColor: theme.palette.primary.main,
+    '& figcaption': {
+      color: theme.palette.common.white,
+    }
+  }
+}))
 
 const Tondini: React.FC = () => {
   const { formatMessage } = useIntl()
-  const DIMENSIONS = [16, 18, 20, 22, 24]
+  const classes = useStyles()
+
+  const DIMENSIONS = [16, 18, 20, 22, 24].map(dimension => ({
+    label: formatMessage({ id: `TONDINO__dimensioni-${dimension}` }),
+    file: withPrefix(`/tondino-${dimension}.pdf`),
+  }))
+
+  const MANUALS = [{
+    label: formatMessage({ id: "TONDINI__manuali__preparare-il-fondo" }),
+    link: "/tondini/come-preparare-il-fondo"
+  }]
 
   const IMAGES: Picture[] = [
     { caption: formatMessage({ id: `TONDINO__gallery__image-0` }), src: require("@images/product/tondini/tondino-0.jpg") },
@@ -15,46 +38,64 @@ const Tondini: React.FC = () => {
     { caption: formatMessage({ id: `TONDINO__gallery__image-2` }), src: require("@images/product/tondini/tondino-2.jpg") },
     { caption: formatMessage({ id: `TONDINO__gallery__image-3` }), src: require("@images/product/tondini/tondino-3.jpg") },
     { caption: formatMessage({ id: `TONDINO__gallery__image-4` }), src: require("@images/product/tondini/tondino-4.jpg") },
-    { caption: formatMessage({ id: `TONDINO__gallery__image-5` }), src: require("@images/product/tondini/tondino-5.jpg") },
-    { caption: formatMessage({ id: `TONDINO__gallery__image-6` }), src: require("@images/product/tondini/tondino-6.jpg") },
-    { caption: formatMessage({ id: `TONDINO__gallery__image-7` }), src: require("@images/product/tondini/tondino-7.jpg") },
-    { caption: formatMessage({ id: `TONDINO__gallery__image-8` }), src: require("@images/product/tondini/tondino-8.jpg") },
+    { caption: formatMessage({ id: `TONDINO__gallery__image-5` }), src: require("@images/product/tondini/tondino-6.jpg") },
+    { caption: formatMessage({ id: `TONDINO__gallery__image-6` }), src: require("@images/product/tondini/tondino-7.jpg") },
+    { caption: formatMessage({ id: `TONDINO__gallery__image-7` }), src: require("@images/product/tondini/tondino-8.jpg") },
   ]
 
   return (
     <>
       <Hero image={require("@images/background-tondini.jpg")} text={formatMessage({ id: "NAVIGATION__tondini" })}/>
-      
-      <Columns 
-        left={(
-          <Typography variant="body1">
-            <FormattedHTMLMessage id="OSTACOLI__tondini__text" />
+
+      <Benefits
+        title="Scopri il nostro tondino"
+        subtitle="Caratteristiche"
+        text={(
+          <Typography variant="body2">
+            Il tondino coperto è adatto a svolgere molteplici attività, per esempio è la migliore soluzione per addestrare puledri in libertà o lavorare cavalli alla corda, aiuta a facilitare il controllo dei vostri cavalli durante le lezioni ai principianti, nelle riprese dei pony ed è indispensabile per il longeur durante le riprese di volteggi.
           </Typography>
         )}
-        right={<Gallery images={IMAGES} />}
+        benefits={[
+          {
+            icon: AccountBalanceIcon,
+            title: "Materiali di qualità",
+            description: "Costituito da pannelli laterali in compensato marino, fissati a colonne in acciaio zincato. Copertura in telo spalmato in PVC  disponibile in bianco, verde o crema.",
+          },
+          {
+            icon: DomainDisabledIcon,
+            title: "Nessuna concessione edilizia",
+            description: "Le nostre giostre sono considerate strutture precarie. Non avrete quindi bisogno di nessuna concessione edilizia",
+          },
+          {
+            icon: VisibilityIcon,
+            title: "Bello e funzionale",
+            description: "É una struttura semplice, leggera e piacevole alla vista.",
+          },
+          {
+            icon: LockIcon,
+            title: "Sicuro",
+            description: "Ampio ingresso di 2,05 mt. dotato di catenaccio verticale che garantisce l’assoluta sicurezza."
+          }
+        ]}
       />
+
+      <Section className={classes.gallery}>
+        <Gallery images={IMAGES} md={3}/>
+      </Section>
 
       <Section color={COLORS.WARM2}>
         <TH4>{formatMessage({ id: "GENERAL__client-service" })}</TH4>
-        <Grid container spacing={5}>
+        <Grid container spacing={PRODUCT_GUTTER}>
           <Grid item xs={12} md={6}>
             <ContentTable
               title={formatMessage({ id: "GENERAL__dimensioni" })}
-              rows={DIMENSIONS.map(dimension => ({
-                label: formatMessage({ id: `TONDINO__dimensioni-${dimension}` }),
-                file: withPrefix(`/tondino-${dimension}.pdf`),
-              }))}
+              rows={DIMENSIONS}
             />
           </Grid>
           <Grid item xs={12} md={6}>
             <ContentTable
-              title={formatMessage({ id: "GENERAL__manauli" })}
-              rows={[
-                {
-                  label: formatMessage({ id: "TONDINI__manuali__preparare-il-fondo" }),
-                  link: "/tondini/come-preparare-il-fondo",
-                },
-              ]}
+              title={formatMessage({ id: "GENERAL__manuali" })}
+              rows={MANUALS}
             />
           </Grid>
         </Grid>

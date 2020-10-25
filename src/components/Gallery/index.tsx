@@ -1,9 +1,7 @@
 import React from 'react';
-import { WithInjectedModalGalleryProps } from 'src/hoc/withModalGallery';
-
-import { withModalGallery } from '@hoc';
-import { Grid, makeStyles, Typography, ButtonBase } from '@material-ui/core';
-
+import { Grid, makeStyles, Typography, ButtonBase, GridProps } from '@material-ui/core';
+import { PRODUCT_GUTTER } from '@theme';
+import { ModalGallery } from "@components"
 
 const useStyles = makeStyles(theme => ({
   item: {
@@ -16,21 +14,30 @@ const useStyles = makeStyles(theme => ({
   }
 }));
 
-const Gallery = withModalGallery(({ images, open }: WithInjectedModalGalleryProps) => {
+type Props = {
+  images: Picture[]
+} & Pick<GridProps, 'xs' | 'md'>
+
+const Gallery: React.FC<Props> = ({ images, xs = 6, md = 6 }) => {
   const classes = useStyles()
 
   return (
-    <Grid container spacing={5}>
-      {images.map((image, index) => (
-        <Grid item xs={6} key={index}>
-          <ButtonBase onClick={() => open(image)} className={classes.item}>
-            <img src={image.src} className={classes.image} />
-            <Typography variant="caption" gutterBottom={false}>{image.caption}</Typography>
-          </ButtonBase>
+    <ModalGallery 
+      images={images}
+      render={({ open, images }) => (
+        <Grid container spacing={PRODUCT_GUTTER}>
+          {images.map((image, index) => (
+            <Grid item xs={xs} md={md} key={index}>
+              <ButtonBase onClick={() => open(image)} className={classes.item} component="figure">
+                <img src={image.src} className={classes.image} />
+                <Typography variant="caption" gutterBottom={false} component="figcaption">{image.caption}</Typography>
+              </ButtonBase>
+            </Grid>
+          ))}
         </Grid>
-      ))}
-    </Grid>
+      )}
+    />
   )
-})
+}
 
 export default Gallery

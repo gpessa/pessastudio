@@ -6,6 +6,7 @@ import RestoreIcon from '@material-ui/icons/Restore';
 import TurnedInNotIcon from '@material-ui/icons/TurnedInNot';
 
 import { Hero, Products, Benefits, Testimonials } from "@components"
+import { Typography } from "@material-ui/core";
 
 const Index: React.FC = () => {
   const { formatMessage } = useIntl()
@@ -48,6 +49,9 @@ const Index: React.FC = () => {
       <Benefits
         title={formatMessage({ id: "BENEFITS__title" })}
         subtitle={formatMessage({ id: "BENEFITS__subtitle" })}
+        text={(
+          <Typography variant="body1">"Scopri perchè ogni anno centinaia di persone si affidano a Pessa Studio per i loro articoli d'equitazione"</Typography>
+        )}
         benefits={BENEFITS}
       />
 

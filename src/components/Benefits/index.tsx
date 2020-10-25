@@ -12,7 +12,7 @@ const useStyles = makeStyles(theme => ({
   intro: {
     marginBottom: -20,
     [theme.breakpoints.up(BREAKPOINT)]: {
-      marginBottom: 0,
+      marginBottom: 0
     }
   }
 }))

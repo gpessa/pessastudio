@@ -101,7 +101,7 @@ const Compare: React.FC<Props> = ({ products, title, text }) => {
                         color="primary"
                         fullWidth
                         size="large"
-                        href={`mailto:annapessa@pessastudio.eu`}
+                        href={`mailto:annapessa@pessastudio.eu?subject=Info ${name}`}
                       >Richiedi un preventivo</Button>
                     </CardActions>
                   </Card> 

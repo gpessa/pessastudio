@@ -54,7 +54,7 @@ const Recinti: React.FC = () => {
       <Section color={COLORS.WARM2}>
         <TH2>{formatMessage({ id: "GENERAL__client-service" })}</TH2>
         <ContentTable
-          title={formatMessage({ id: "GENERAL__manauli" })}
+          title={formatMessage({ id: "GENERAL__manuali" })}
           rows={[
             {
               label: formatMessage({ id: "RECINTI__manuali__preparare-il-fondo" }),

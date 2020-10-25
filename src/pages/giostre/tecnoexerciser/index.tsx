@@ -118,7 +118,7 @@ const Tecnoexerciser: React.FC = () => {
           </Grid>
 
           <Grid item xs={12} md={6}>
-            <ContentTable rows={ATTACHMENT} title={formatMessage({ id: "GENERAL__manauli" })} />
+            <ContentTable rows={ATTACHMENT} title={formatMessage({ id: "GENERAL__manuali" })} />
           </Grid>
         </Grid>
       </Section>

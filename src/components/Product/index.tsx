@@ -1,17 +1,14 @@
 import { Link, useIntl } from 'gatsby-plugin-intl';
 import React, { ReactNode } from 'react';
-import { WithInjectedModalGalleryProps } from 'src/hoc/withModalGallery';
-
 import { Colors, Material } from '@constants';
-import { withModalGallery } from '@hoc';
 import { Grid, ButtonBase, makeStyles } from '@material-ui/core';
-import { COLORS, PRODUCT_GUTTER } from "@theme";
+import { BREAKPOINT, COLORS, PRODUCT_GUTTER } from "@theme";
 import ColorsList from './ColorsList';
 import Data from './Data';
 import Description from './Description';
 import MaterialsList from './MaterialsList';
 import Price from './Price';
-import { TH6 } from '@components';
+import { ModalGallery, TH6 } from '@components';
 
 const useStyles = makeStyles(theme => ({
   container: {
@@ -21,7 +18,11 @@ const useStyles = makeStyles(theme => ({
     display: 'flex',
     minHeight: '100%',
     flexDirection: 'column',
-    paddingTop: theme.spacing(1)
+    marginTop: theme.spacing(2),
+    order: -1,
+    [theme.breakpoints.up(BREAKPOINT)]: {
+      order: 'unset'
+    }
   },
   button: {
     boxShadow: `inset 0 0 0 2px ${theme.palette.divider}`,
@@ -44,24 +45,24 @@ const useStyles = makeStyles(theme => ({
   }
 }))
 
-const Product = withModalGallery(({ images, open, vertical, price, url, name, description, ...attributes }: Props & WithInjectedModalGalleryProps) => {
+const Product = ({ images, vertical, price, url, name, description, ...attributes }: Props) => {
   const Tag = url ? Link : "div"
   const span = vertical ? 12 : (12 / (images.length + 1))
   const { formatMessage, formatNumber } = useIntl()
   const classes = useStyles()
 
   return (
-    <Tag to={url} className={`${classes.container}`}>
-      <Grid container spacing={PRODUCT_GUTTER}>
-        {images.map(image => (
-          <Grid item xs={span} key={image.src} onClick={() => open(image)}>
-            <ButtonBase className={classes.button}>
-              <img src={image.src} alt={name} className={classes.image} />
-            </ButtonBase>
-          </Grid>
-        ))}
-        <Grid item xs={span}>
-          <div className={classes.data}>
+    <ModalGallery images={images} render={({ images, open }) => (
+      <Tag to={url} className={`${classes.container}`}>
+        <Grid container spacing={PRODUCT_GUTTER}>
+          {images.map(image => (
+            <Grid item xs={6} md={span} key={image.src} onClick={() => open(image)}>
+              <ButtonBase className={classes.button}>
+                <img src={image.src} alt={name} className={classes.image} />
+              </ButtonBase>
+            </Grid>
+          ))}
+          <Grid item xs={12} md={span} className={classes.data}>
             <TH6 sans className={classes.title}>{name}</TH6>
 
             <Description description={description} />
@@ -101,14 +102,15 @@ const Product = withModalGallery(({ images, open, vertical, price, url, name, de
             })}
 
             <Price price={price} />
-          </div>
+          </Grid>
         </Grid>
-      </Grid>
-    </Tag>
+      </Tag>
+    )}/>
   )
-})
+}
 
 interface Props {
+  images: Picture[]
   colors?: Colors[]
   materials?: Material[]
   name: string

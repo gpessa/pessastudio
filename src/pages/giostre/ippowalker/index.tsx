@@ -133,7 +133,7 @@ const Ippowalker: React.FC<{ intl: IntlFormatters }> = ({ intl: { formatMessage 
 
           <Grid item xs={12} md={6}>
             <ContentTable
-              title={formatMessage({ id: "GENERAL__manauli" })}
+              title={formatMessage({ id: "GENERAL__manuali" })}
               rows={[{
                 label: formatMessage({ id: "GIOSTRE__manuali__manuale-quadro" }),
                 file: withPrefix(`/giostra-ippowalker-manuale-quadro.pdf`),

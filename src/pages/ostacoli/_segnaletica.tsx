@@ -49,7 +49,7 @@ const Segnaletica: React.FC= () => {
       />
       <Grid container spacing={PRODUCT_GUTTER}>
         {PRODUCTS.map((product, index) => (
-          <Grid key={index} sm={6} md={6} item>
+          <Grid key={index} xs={12} md={6} item>
             <Product {...product}/>
           </Grid>
         ))}
