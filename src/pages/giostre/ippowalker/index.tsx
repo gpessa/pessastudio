@@ -2,7 +2,7 @@ import { graphql, withPrefix } from "gatsby"
 import { FormattedHTMLMessage, useIntl } from "gatsby-plugin-intl"
 import React from "react"
 
-import { Columns, ContentTable, Gallery, TH1, Section, TH4, Compare } from "@components"
+import { Columns, ContentTable, Gallery, Section, TH, Compare } from "@components"
 import { Grid } from "@material-ui/core"
 
 export const query = graphql`
@@ -77,7 +77,7 @@ const Ippowalker: React.FC<{ data: ImagesQuery }> = ({ data }) => {
       <Columns
         left={
           <>
-            <TH1>{formatMessage({ id: "NAVIGATION__ippowalker" })}</TH1>
+            <TH variant="h1">{formatMessage({ id: "NAVIGATION__ippowalker" })}</TH>
             <FormattedHTMLMessage id="GIOSTRE__ippowalker__descrizione" />
           </>
         }
@@ -92,7 +92,7 @@ const Ippowalker: React.FC<{ data: ImagesQuery }> = ({ data }) => {
       />
 
       <Section>
-        <TH4>{formatMessage({ id: "GENERAL__client-service" })}</TH4>
+        <TH variant="h4">{formatMessage({ id: "GENERAL__client-service" })}</TH>
 
         <Grid container spacing={5}>
           <Grid item xs={12} md={6}>

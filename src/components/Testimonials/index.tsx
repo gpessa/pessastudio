@@ -1,6 +1,6 @@
 import { CarouselProvider, Slide, CarouselProviderProps, DotGroup, Slider } from "pure-react-carousel"
 import React from "react"
-import { TH4, Columns, Title } from "@components"
+import { TH, Columns, Title } from "@components"
 import { useIntl } from 'gatsby-plugin-intl';
 import { makeStyles } from "@material-ui/core";
 import FormatQuoteIcon from '@material-ui/icons/FormatQuote';
@@ -59,12 +59,12 @@ const Testimonials = () => {
             {Array(TESTIMONIALS)
               .fill(null)
               .map((_, index) => (
-                <Slide index={index}>
-                  <TH4 className={classes.slide}>
+                <Slide index={index} key={index}>
+                  <TH variant="h4" className={classes.slide}>
                     <FormatQuoteIcon />
                     {formatMessage({ id: `HOME__quote__item-${index}` })}
                     <FormatQuoteIcon />
-                  </TH4>
+                  </TH>
                 </Slide>
               ))
             }

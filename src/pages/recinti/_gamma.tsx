@@ -1,4 +1,4 @@
-import { Section, TH2, TH6 } from "@components"
+import { Section, TH } from "@components"
 import { Grid, makeStyles } from "@material-ui/core"
 import { COLORS } from "@theme"
 import { useIntl } from "gatsby-plugin-intl"
@@ -55,12 +55,12 @@ const Gamma = () => {
 
   return (
     <Section color={COLORS.PRIMARY} className={classes.root} spacing="small">
-      <TH2 align="center">{formatMessage({ id: "GENERAL__gamma" })}</TH2>
+      <TH variant="h2" align="center">{formatMessage({ id: "GENERAL__gamma" })}</TH>
       <Grid container spacing={10}>
         {PRODUCTS.map((product, index) => (
           <Grid item key={index} md={3}>
             <div style={{ backgroundImage: `url(${product.image})` }} className={classes.image} />
-            <TH6 sans className={classes.title}>{product.name}</TH6>
+            <TH variant="h6" sans className={classes.title}>{product.name}</TH>
             <div>{product.description}</div>
           </Grid>
         ))}

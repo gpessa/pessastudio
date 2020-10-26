@@ -1,4 +1,4 @@
-import { Product, Section, TH2, TH6 } from "@components"
+import { Product, Section, TH } from "@components"
 import { Grid, makeStyles } from "@material-ui/core"
 import { COLORS, PRODUCT_GUTTER } from "@theme"
 import { useIntl } from "gatsby-plugin-intl"
@@ -23,7 +23,6 @@ const Accessori = () => {
       description: formatMessage({ id: `RECINTI__prodotto__piede-mobile__description` }),
       name: formatMessage({ id: `RECINTI__prodotto__piede-mobile__name` }),
       images: [
-        { src: require("@images/product/recinti/piede-mobile-1.png") },
         { src: require("@images/product/recinti/piede-mobile-2.png") },
         { src: require("@images/product/recinti/piede-mobile-3.png") },
         { src: require("@images/product/recinti/piede-mobile-4.jpg") },
@@ -40,7 +39,7 @@ const Accessori = () => {
 
   return (
     <Section>
-      <TH2>{"Accessori"}</TH2>
+      <TH variant="h2">{"Accessori"}</TH>
 
       <Grid container spacing={PRODUCT_GUTTER}>
         {PRODUCTS.map((product, index) => (

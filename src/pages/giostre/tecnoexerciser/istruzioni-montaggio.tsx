@@ -1,7 +1,7 @@
 import { useIntl } from "gatsby-plugin-intl"
 import React from "react"
 
-import { TH2, Path, Section } from "@components"
+import { TH, Path, Section } from "@components"
 import { makeStyles } from "@material-ui/core";
 
 const useStyles = makeStyles(theme => ({
@@ -89,7 +89,7 @@ const IstruzioniMontaggio: React.FC = () => {
   return (
     <Section>
       <div className={classes.intro}>
-        <TH2>{formatMessage({ id: "NAVIGATION__istruzioni-montaggio" })}</TH2>
+        <TH variant="h2">{formatMessage({ id: "NAVIGATION__istruzioni-montaggio" })}</TH>
         <p>{formatMessage({ id: "GIOSTRE__istruzioni-montaggio__testo" })}</p>
       </div>
       <Path steps={STEPS} />

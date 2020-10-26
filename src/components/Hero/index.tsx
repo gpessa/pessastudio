@@ -1,4 +1,4 @@
-import { TH1 } from "@components"
+import { TH } from "@components"
 import { Container, makeStyles } from "@material-ui/core"
 import React from "react"
 
@@ -33,7 +33,7 @@ const Hero = (props: Props) => {
       <img className={classes.image} src={image} />
       {text && (
         <Container className={classes.wrapper} maxWidth="lg">
-          <TH1 dangerouslySetInnerHTML={{ __html: text }} className={classes.text}/>
+          <TH variant="h1" dangerouslySetInnerHTML={{ __html: text }} className={classes.text}/>
         </Container>
       )}
     </div>

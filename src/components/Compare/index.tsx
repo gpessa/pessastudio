@@ -1,7 +1,7 @@
-import { Section, TH2, TH4, TH5, Caption } from "@components"
+import { Section, TH, Caption } from "@components"
 import { Button, Grid, Card, CardHeader, CardMedia, makeStyles, Container, Box, CardContent, Table, TableCell, TableRow, CardActions } from "@material-ui/core"
 import { COLORS, FONTS } from "@theme"
-import React from "react"
+import React, { ReactNode } from "react"
 import { StickyContainer, Sticky } from 'react-sticky';
 
 const useStyles = makeStyles(theme => ({
@@ -60,7 +60,7 @@ const Compare: React.FC<Props> = ({ products, title, text }) => {
   return (
     <Section maxWidth={false} disableGutters className={classes.root}>
       <Box textAlign="center" mb={5}>
-        <TH2>{title}</TH2>
+        <TH variant="h2">{title}</TH>
         <div>{text}</div>
       </Box>
       <div>
@@ -75,7 +75,7 @@ const Compare: React.FC<Props> = ({ products, title, text }) => {
                         style={style}
                         disableTypography={true}
                         className={`${classes.title} ${isSticky && classes.titleSticky}`}
-                        title={<TH5 sans gutterBottom={false} dangerouslySetInnerHTML={{ __html: name }} />}
+                        title={<TH variant="h5" sans gutterBottom={false} dangerouslySetInnerHTML={{ __html: name }} />}
                       />
                     )}</Sticky>
                     <CardMedia

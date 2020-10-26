@@ -2,7 +2,7 @@ import { injectIntl } from "gatsby-plugin-intl"
 import React from "react"
 import { IntlFormatters } from "react-intl"
 
-import { TH2, Section, SubSection } from "@components"
+import { TH, Section, SubSection } from "@components"
 
 const CookiePolicy: React.FC<{ intl: IntlFormatters }> = ({ intl: { formatMessage } }) => (
   <>
@@ -52,14 +52,14 @@ const CookiePolicy: React.FC<{ intl: IntlFormatters }> = ({ intl: { formatMessag
     </Section>
 
     <Section>
-      <TH2>COOKIE UTILIZZATI DAL PRESENTE SITO</TH2>
+      <TH variant="h2">COOKIE UTILIZZATI DAL PRESENTE SITO</TH>
 
-      <SubSection fluid>
+      <SubSection>
         <h3>Cookie del titolare</h3>
         <p>I cookie utilizzati sono di navigazione/sessione. Si tratta di cookie fondamentali per navigare all'interno del sito utilizzando tutte le sue funzionalità, come ad esempio il mantenimento della sessione e l'accesso alle aree riservate. Sono strettamente necessari, in quanto senza di essi non sarebbe possibile fornire i servizi richiesti.</p>
       </SubSection>
 
-      <SubSection fluid>
+      <SubSection>
         <h3>Cookie di terze parti</h3>
 
         <section>

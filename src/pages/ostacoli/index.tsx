@@ -1,7 +1,7 @@
 import { FormattedHTMLMessage, useIntl } from 'gatsby-plugin-intl';
 import React from 'react';
 
-import { Section, TH1 } from '@components';
+import { Section, TH } from '@components';
 
 import Barriere from './_barriere';
 import CandelieriLameForate from './_candelieri-e-lame-forate';
@@ -19,7 +19,7 @@ const Ostacoli: React.FC = () => {
   return (
     <>
       <Section>
-        <TH1>{formatMessage({ id: "NAVIGATION__ostacoli" })}</TH1>
+        <TH variant="h1">{formatMessage({ id: "NAVIGATION__ostacoli" })}</TH>
         <FormattedHTMLMessage id="OSTACOLI__text" tagName={Typography} variant="body1" />
       </Section>
 

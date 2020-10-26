@@ -1,14 +1,16 @@
 import { Link, useIntl } from 'gatsby-plugin-intl';
 import React, { ReactNode } from 'react';
+
+import { ModalGallery, TH } from '@components';
 import { Colors, Material } from '@constants';
-import { Grid, ButtonBase, makeStyles } from '@material-ui/core';
-import { BREAKPOINT, COLORS, PRODUCT_GUTTER } from "@theme";
+import { ButtonBase, Grid, makeStyles } from '@material-ui/core';
+import { BREAKPOINT, COLORS, PRODUCT_GUTTER } from '@theme';
+
 import ColorsList from './ColorsList';
 import Data from './Data';
 import Description from './Description';
 import MaterialsList from './MaterialsList';
 import Price from './Price';
-import { ModalGallery, TH6 } from '@components';
 
 const useStyles = makeStyles(theme => ({
   container: {
@@ -63,7 +65,7 @@ const Product = ({ images, vertical, price, url, name, description, ...attribute
             </Grid>
           ))}
           <Grid item xs={12} md={span} className={classes.data}>
-            <TH6 sans className={classes.title}>{name}</TH6>
+            <TH variant="h6" sans className={classes.title}>{name}</TH>
 
             <Description description={description} />
 

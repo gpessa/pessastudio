@@ -1,11 +1,12 @@
 import { injectIntl, Link } from 'gatsby-plugin-intl';
 import React from 'react';
 
-import { TH5 } from '@components';
-import { ButtonBase, makeStyles, Table, TableBody, TableCell, TableContainer, TableRow, Paper } from '@material-ui/core';
+import { TH } from '@components';
+import {
+    ButtonBase, makeStyles, Paper, Table, TableBody, TableCell, TableContainer, TableRow
+} from '@material-ui/core';
 import PictureAsPdfIcon from '@material-ui/icons/PictureAsPdf';
 import VisibilityIcon from '@material-ui/icons/Visibility';
-
 
 const useStyles = makeStyles(theme => ({
   button: {
@@ -32,7 +33,7 @@ const ContentTable = ({ rows, title, intl: { formatMessage } }: Props) => {
 
   return (
     <div>
-      <TH5 sans>{title}</TH5>
+      <TH variant="h5" sans>{title}</TH>
       <TableContainer component={Paper} elevation={0} variant="outlined">
         <Table>
           <TableBody>

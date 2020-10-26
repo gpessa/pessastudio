@@ -1,4 +1,4 @@
-import { TH6 } from '@components';
+import { TH } from '@components';
 import { makeStyles } from '@material-ui/core';
 import React from 'react';
 import { Benefit } from '.';
@@ -15,7 +15,7 @@ const BenefitsItem: React.FC<Benefit> = ({ icon: Icon, title, description, ...pr
   return (
     <div {...props}>
       {Icon && <Icon />}
-      <TH6 sans className={classes.title}>{title}</TH6>
+      <TH variant="h6" sans className={classes.title}>{title}</TH>
       <div>{description}</div>
     </div>
   )

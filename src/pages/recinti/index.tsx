@@ -2,7 +2,7 @@ import { graphql, withPrefix } from 'gatsby';
 import { FormattedHTMLMessage, useIntl } from 'gatsby-plugin-intl';
 import React from 'react';
 
-import { Columns, ContentTable, Gallery, Section, TH1, TH2, TH6 } from '@components';
+import { Columns, ContentTable, Gallery, Section, TH } from '@components';
 import { Typography } from '@material-ui/core';
 import { COLORS } from '@theme';
 
@@ -36,7 +36,7 @@ const Recinti: React.FC<{
       <Columns
         left={
           <>
-            <TH1>{formatMessage({ id: "NAVIGATION__recinti" })}</TH1>
+            <TH variant="h1">{formatMessage({ id: "NAVIGATION__recinti" })}</TH>
             <FormattedHTMLMessage id="RECINTI__text" tagName={Typography} />
           </>
         }
@@ -48,7 +48,7 @@ const Recinti: React.FC<{
       <Accessori />
 
       <Section color={COLORS.WARM2}>
-        <TH2>{formatMessage({ id: "GENERAL__client-service" })}</TH2>
+        <TH variant="h2">{formatMessage({ id: "GENERAL__client-service" })}</TH>
         <ContentTable
           title={formatMessage({ id: "GENERAL__manuali" })}
           rows={[

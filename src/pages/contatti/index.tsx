@@ -1,7 +1,7 @@
 import { useIntl } from "gatsby-plugin-intl"
 import React from "react"
 
-import { Columns, TH1, TH4 } from "@components"
+import { Columns, TH } from "@components"
 import { Box, makeStyles } from "@material-ui/core"
 import { BREAKPOINT, COLORS } from "@theme"
 import Address from "./_address"
@@ -64,10 +64,10 @@ const Contatti: React.FC = () => {
     <Columns
       left={
         <>
-          <TH1>{formatMessage({ id: "NAVIGATION__contatti" })}</TH1>
+          <TH variant="h1">{formatMessage({ id: "NAVIGATION__contatti" })}</TH>
 
           <Box mt={6}>
-            <TH4>{formatMessage({ id: "CONTACT__sede-legale" })}</TH4>
+            <TH variant="h4">{formatMessage({ id: "CONTACT__sede-legale" })}</TH>
             <Address {...SEDE_LEGALE} />
             <div>
               COD. FISC. e Part: I.V.A. 04743610281<br />
@@ -77,12 +77,12 @@ const Contatti: React.FC = () => {
           </Box>
 
           <Box mt={6}>
-            <TH4>{formatMessage({ id: "CONTACT__sede-operativa" })}</TH4>
+            <TH variant="h4">{formatMessage({ id: "CONTACT__sede-operativa" })}</TH>
             <Address {...SEDE_OPERATIVA} />
           </Box>
 
           <Box mt={6}>
-            <TH4>{formatMessage({ id: "CONTACT__bank-details" })}</TH4>
+            <TH variant="h4">{formatMessage({ id: "CONTACT__bank-details" })}</TH>
             <div>
               Cassa di Risparmio del Veneto filiale di Monselice<br />
               IBAN: IT97 M030 6962 6691 0000 0004 400<br />
@@ -94,7 +94,7 @@ const Contatti: React.FC = () => {
       right={
         <div className={classes.right}>
           <Box>
-            <TH4>{formatMessage({ id: "CONTACT__contatto-commerciale__italia" })}</TH4>
+            <TH variant="h4">{formatMessage({ id: "CONTACT__contatto-commerciale__italia" })}</TH>
             <img
               src={require("@images/anna.jpg")}
               className={classes.avatar}
@@ -104,7 +104,7 @@ const Contatti: React.FC = () => {
           </Box>
           
           <Box mt={6}>
-            <TH4>{formatMessage({ id: "CONTACT__contatto-commerciale__belgio" })}</TH4>
+            <TH variant="h4">{formatMessage({ id: "CONTACT__contatto-commerciale__belgio" })}</TH>
             <Address {...BELGIO}/>
           </Box>
         </div>

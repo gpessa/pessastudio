@@ -1,7 +1,7 @@
 import { FormattedHTMLMessage, FormattedMessage, useIntl } from "gatsby-plugin-intl"
 import React from "react"
 
-import { Product, Section, TH1, TH2 } from "@components"
+import { Product, Section, TH } from "@components"
 import { Colors, Material } from "@constants"
 import { Grid, Link, Typography } from "@material-ui/core"
 import { COLORS } from "@theme"
@@ -74,7 +74,7 @@ const Dressage: React.FC = () => {
   return (
     <>
       <Section>
-        <TH1>{formatMessage({ id: `NAVIGATION__dressage` })}</TH1>
+        <TH variant="h1">{formatMessage({ id: `NAVIGATION__dressage` })}</TH>
         <Typography
           variant="body1"
           component={FormattedMessage}
@@ -87,7 +87,7 @@ const Dressage: React.FC = () => {
       </Section>
 
       <Section id="dressage-training" color={COLORS.WARM2}>
-        <TH2>{formatMessage({ id: `DRESSAGE__training_title` })}</TH2>
+        <TH variant="h2">{formatMessage({ id: `DRESSAGE__training_title` })}</TH>
         <FormattedHTMLMessage id="DRESSAGE__training_description" tagName="p" />
         <Grid container spacing={5}>
           {TRAINING_PRODUCTS.map((product, index) => (
@@ -99,7 +99,7 @@ const Dressage: React.FC = () => {
       </Section>
 
       <Section id="dressage-olimpic">
-        <TH2>{formatMessage({ id: `DRESSAGE__olimpic_title` })}</TH2>
+        <TH variant="h2">{formatMessage({ id: `DRESSAGE__olimpic_title` })}</TH>
         <FormattedHTMLMessage id="DRESSAGE__olimpic_description" tagName="p" />
         <Grid container spacing={5}>
           {OLIMPIC_PRODUCTS.map((product, index) => (

@@ -1,7 +1,7 @@
 import { withPrefix } from "gatsby"
 import { FormattedHTMLMessage, useIntl } from "gatsby-plugin-intl"
 import React from "react"
-import { Columns, ContentTable, Gallery, TH1, Section, TH4, Compare } from "@components"
+import { Columns, ContentTable, Gallery, Section, TH, Compare } from "@components"
 import { Grid, Typography } from "@material-ui/core"
 
 const Tecnoexerciser: React.FC = () => {
@@ -97,7 +97,7 @@ const Tecnoexerciser: React.FC = () => {
       <Columns
         left={
           <>
-            <TH1>{formatMessage({ id: "NAVIGATION__tecnoexerciser" })}</TH1>
+            <TH variant="h1">{formatMessage({ id: "NAVIGATION__tecnoexerciser" })}</TH>
             <Typography variant="body2">
               <FormattedHTMLMessage id="GIOSTRE__tecnoexerciser__descrizione" />
             </Typography>
@@ -113,7 +113,7 @@ const Tecnoexerciser: React.FC = () => {
       />
 
       <Section>
-        <TH4>{formatMessage({ id: "GENERAL__client-service" })}</TH4>
+        <TH variant="h4">{formatMessage({ id: "GENERAL__client-service" })}</TH>
 
         <Grid container spacing={5}>
           <Grid item xs={12} md={6}>

@@ -1,7 +1,7 @@
 import { withPrefix } from "gatsby"
 import { FormattedHTMLMessage, useIntl } from "gatsby-plugin-intl"
 import React from "react"
-import { Columns, ContentTable, Gallery, Section, Hero, TH4, Benefits } from "@components"
+import { Columns, ContentTable, Gallery, Section, Hero, TH, Benefits } from "@components"
 import { Grid, makeStyles, Typography } from "@material-ui/core"
 import { COLORS, PRODUCT_GUTTER } from "@theme"
 import AccountBalanceIcon from '@material-ui/icons/AccountBalance';
@@ -93,7 +93,7 @@ const Tondini: React.FC<{
       </Section>
 
       <Section color={COLORS.WARM2}>
-        <TH4>{formatMessage({ id: "GENERAL__client-service" })}</TH4>
+        <TH variant="h4">{formatMessage({ id: "GENERAL__client-service" })}</TH>
         <Grid container spacing={PRODUCT_GUTTER}>
           <Grid item xs={12} md={6}>
             <ContentTable

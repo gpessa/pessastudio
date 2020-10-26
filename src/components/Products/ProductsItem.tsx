@@ -3,7 +3,7 @@ import { Link } from 'gatsby-plugin-intl';
 import { CarouselContext } from 'pure-react-carousel';
 import React from 'react';
 import { useContext, useEffect, useState } from 'react';
-import { TH4 } from '@components';
+import { TH } from '@components';
 import { COLORS } from "@theme";
 
 type Props = {
@@ -58,7 +58,7 @@ const ProductItem: React.FC<Props> = (props) => {
         opacity: index >= currentSlide ? 1: 0
       }}
     >
-      <TH4>{props.name}</TH4>
+      <TH variant="h4">{props.name}</TH>
       {props.description}
     </Link>
   )

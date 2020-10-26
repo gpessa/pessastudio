@@ -4,7 +4,7 @@ import React from "react"
 import AppsIcon from '@material-ui/icons/Apps';
 import DomainDisabledIcon from '@material-ui/icons/DomainDisabled';
 import AccessibilityNewIcon from '@material-ui/icons/AccessibilityNew';
-import { Columns, TH2, Hero, Section, TH4, Benefits, Gallery } from "@components"
+import { Columns, Hero, Section, TH, Benefits, Gallery } from "@components"
 import { Box, Button, Container, Link, makeStyles, Typography } from "@material-ui/core"
 import { BREAKPOINT, COLORS, SECTION_SPACING } from "@theme";
 import { graphql } from "gatsby";
@@ -106,7 +106,7 @@ const Giostre: React.FC<{
       </section>
 
       <Section className={classes.gamma} maxWidth="md">
-        <TH2>{formatMessage({ id: "GENERAL__gamma" })}</TH2>
+        <TH variant="h2">{formatMessage({ id: "GENERAL__gamma" })}</TH>
         <FormattedMessage
           id="GIOSTRE__gamma__text"
           values={{
@@ -127,7 +127,7 @@ const Giostre: React.FC<{
       <Columns
         left={
           <Box textAlign="center">
-            <TH4>{formatMessage({ id: "NAVIGATION__tecnoexerciser" })}</TH4>
+            <TH variant="h4">{formatMessage({ id: "NAVIGATION__tecnoexerciser" })}</TH>
             <Button
               component={LinkGatsby}
               to="/giostre/tecnoexerciser"
@@ -140,7 +140,7 @@ const Giostre: React.FC<{
         }
         right={
           <Box textAlign="center">
-            <TH4>{formatMessage({ id: "NAVIGATION__ippowalker" })}</TH4>
+            <TH variant="h4">{formatMessage({ id: "NAVIGATION__ippowalker" })}</TH>
             <Button
               component={LinkGatsby}
               to="/giostre/ippowalker"
