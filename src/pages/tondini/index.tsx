@@ -8,6 +8,7 @@ import AccountBalanceIcon from '@material-ui/icons/AccountBalance';
 import VisibilityIcon from '@material-ui/icons/Visibility';
 import DomainDisabledIcon from '@material-ui/icons/DomainDisabled';
 import LockIcon from '@material-ui/icons/Lock';
+import { graphql } from "gatsby"
 
 const useStyles = makeStyles(theme => ({
   gallery: {
@@ -18,7 +19,21 @@ const useStyles = makeStyles(theme => ({
   }
 }))
 
-const Tondini: React.FC = () => {
+export const query = graphql`
+  query TondiniGallery {
+    allFile(filter: {relativeDirectory: {in: "product/tondini/gallery"}}) {
+      edges {
+        node {
+          relativePath
+        }
+      }
+    }
+  }
+`
+
+const Tondini: React.FC<{
+  data: ImagesQuery
+}> = ({ data }) => {
   const { formatMessage } = useIntl()
   const classes = useStyles()
 
@@ -32,16 +47,10 @@ const Tondini: React.FC = () => {
     link: "/tondini/come-preparare-il-fondo"
   }]
 
-  const IMAGES: Picture[] = [
-    { caption: formatMessage({ id: `TONDINO__gallery__image-0` }), src: require("@images/product/tondini/tondino-0.jpg") },
-    { caption: formatMessage({ id: `TONDINO__gallery__image-1` }), src: require("@images/product/tondini/tondino-1.jpg") },
-    { caption: formatMessage({ id: `TONDINO__gallery__image-2` }), src: require("@images/product/tondini/tondino-2.jpg") },
-    { caption: formatMessage({ id: `TONDINO__gallery__image-3` }), src: require("@images/product/tondini/tondino-3.jpg") },
-    { caption: formatMessage({ id: `TONDINO__gallery__image-4` }), src: require("@images/product/tondini/tondino-4.jpg") },
-    { caption: formatMessage({ id: `TONDINO__gallery__image-5` }), src: require("@images/product/tondini/tondino-6.jpg") },
-    { caption: formatMessage({ id: `TONDINO__gallery__image-6` }), src: require("@images/product/tondini/tondino-7.jpg") },
-    { caption: formatMessage({ id: `TONDINO__gallery__image-7` }), src: require("@images/product/tondini/tondino-8.jpg") },
-  ]
+  const IMAGES = data.allFile.edges.map(({ node }, index) => ({
+    caption: formatMessage({ id: `TONDINO__gallery__image-${index}` }),
+    src: require(`@images/${node.relativePath}`),
+  }))
 
   return (
     <>

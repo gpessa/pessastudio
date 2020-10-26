@@ -1,39 +1,35 @@
-import { withPrefix } from "gatsby"
-import { FormattedHTMLMessage, useIntl } from "gatsby-plugin-intl"
-import React from "react"
+import { graphql, withPrefix } from 'gatsby';
+import { FormattedHTMLMessage, useIntl } from 'gatsby-plugin-intl';
+import React from 'react';
 
-import { Columns, ContentTable, Gallery, TH2, TH6, Section, TH1, TH4 } from "@components"
-import { Colors } from "@constants"
-import { Grid, Typography } from "@material-ui/core"
-import { COLORS } from "@theme"
-import Gamma from "./_gamma"
-import Accessori from "./_accessori"
+import { Columns, ContentTable, Gallery, Section, TH1, TH2, TH6 } from '@components';
+import { Typography } from '@material-ui/core';
+import { COLORS } from '@theme';
 
-const Recinti: React.FC = () => {
+import Accessori from './_accessori';
+import Gamma from './_gamma';
+
+export const query = graphql`
+  query RecintiGallery {
+    allFile(filter: {relativeDirectory: {in: "product/recinti/gallery"}}) {
+      edges {
+        node {
+          relativePath
+        }
+      }
+    }
+  }
+`
+
+const Recinti: React.FC<{
+  data: ImagesQuery
+}> = ({ data }) => {
   const { formatMessage } = useIntl()
 
-  const IMAGES: Picture[] = [
-    {
-      caption: formatMessage({ id: `RECINTI__gallery__image-0` }),
-      src: require("@images/product/recinti/recinti-image-0.jpg"),
-    },
-    {
-      caption: formatMessage({ id: `RECINTI__gallery__image-1` }),
-      src: require("@images/product/recinti/recinti-image-1.jpg"),
-    },
-    {
-      caption: formatMessage({ id: `RECINTI__gallery__image-2` }),
-      src: require("@images/product/recinti/recinti-image-2.jpg"),
-    },
-    {
-      caption: formatMessage({ id: `RECINTI__gallery__image-3` }),
-      src: require("@images/product/recinti/recinti-image-3.jpg"),
-    },
-    {
-      caption: formatMessage({ id: `RECINTI__gallery__image-4` }),
-      src: require("@images/product/recinti/recinti-image-4.jpg"),
-    },
-  ]
+  const IMAGES = data.allFile.edges.map(({ node }, index) => ({
+    caption: formatMessage({ id: `RECINTI__gallery__image-${index}` }),
+    src: require(`@images/${node.relativePath}`),
+  }))
 
   return (
     <>
@@ -49,7 +45,7 @@ const Recinti: React.FC = () => {
 
       <Gamma />
 
-      {/* <Accessori /> */}
+      <Accessori />
 
       <Section color={COLORS.WARM2}>
         <TH2>{formatMessage({ id: "GENERAL__client-service" })}</TH2>

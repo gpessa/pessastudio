@@ -22,7 +22,12 @@ const Accessori = () => {
     {
       description: formatMessage({ id: `RECINTI__prodotto__piede-mobile__description` }),
       name: formatMessage({ id: `RECINTI__prodotto__piede-mobile__name` }),
-      images: [{ src: require("@images/product/recinti/piede-mobile.jpg") }],
+      images: [
+        { src: require("@images/product/recinti/piede-mobile-1.png") },
+        { src: require("@images/product/recinti/piede-mobile-2.png") },
+        { src: require("@images/product/recinti/piede-mobile-3.png") },
+        { src: require("@images/product/recinti/piede-mobile-4.jpg") },
+      ],
       diameter: 60,
       height: 300,
     },
@@ -35,11 +40,14 @@ const Accessori = () => {
 
   return (
     <Section>
-      <TH2 align="center">{"Accessori"}</TH2>
+      <TH2>{"Accessori"}</TH2>
+
       <Grid container spacing={PRODUCT_GUTTER}>
-          <Product { ...PRODUCTS[0] }  />
-          <Product {...PRODUCTS[1]}  />
-          <Product {...PRODUCTS[2]}  />
+        {PRODUCTS.map((product, index) => (
+          <Grid key={index} xs={12} md={12} item>
+            <Product {...product} />
+          </Grid>
+        ))}
       </Grid>
     </Section>
   )

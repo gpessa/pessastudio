@@ -1,5 +1,5 @@
 declare module '*.scss' {
-    const content: {[className: string]: string};
+    const content: { [className: string]: string };
     export = content;
 }
 
@@ -28,5 +28,15 @@ declare module 'gatsby-plugin-mailchimp' {
 
 interface Picture {
     src: string
-    caption: string
+    caption?: string
+}
+
+interface ImagesQuery {
+    allFile: {
+        edges: {
+            node: {
+                relativePath: string
+            }
+        }[]
+    }
 }

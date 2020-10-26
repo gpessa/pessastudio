@@ -85,7 +85,7 @@ const Navigation: React.FC = () => {
         component={Link}
         partiallyActive={true}
         className={classes.link}
-        activeStyle={{ color: COLORS.PRIMARY }}
+        activeStyle={{ color: COLORS.PRIMARY, fontWeight: 'bold' }}
       >{formatMessage({ id: `NAVIGATION__${id}` })}</Component>
     ))
   }
@@ -105,8 +105,8 @@ const Navigation: React.FC = () => {
           <IconButton
             edge="end"
             color="primary"
-            aria-label={formatMessage({ id: "GENERAL__toggle-button" })}
             onClick={handleMenuToggle}
+            aria-label={formatMessage({ id: "GENERAL__toggle-button" })}
           >
             <Menu />
           </IconButton>

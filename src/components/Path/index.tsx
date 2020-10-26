@@ -2,8 +2,7 @@ import React from "react"
 
 import { makeStyles, Step, StepContent, StepLabel, Stepper } from "@material-ui/core"
 import { useInView } from "react-intersection-observer";
-import TH4 from "../TH4";
-import { TH4Sans } from "@components";
+import TH5 from "../TH5";
 import { BREAKPOINT } from "@theme";
 
 interface Step {
@@ -49,10 +48,10 @@ const Path = ({ steps }: Props) => {
         return (
           <Step key={text} active={inView} expanded={true} ref={ref}>
             <StepLabel>
-              <TH4 sans className={`
+              <TH5 sans className={`
                 ${(index % 2 == 0) ? classes.even : undefined}
                 ${classes.text}
-              `}>{text}</TH4>
+              `}>{text}</TH5>
             </StepLabel>
             <StepContent>
               <img src={image} className={(index % 2 == 0) ? classes.even : undefined} />

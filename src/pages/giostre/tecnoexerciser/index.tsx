@@ -23,7 +23,10 @@ const Tecnoexerciser: React.FC = () => {
       src: require("@images/product/giostre/tecnoexerciser/galleria/porte.jpg"),
       caption: formatMessage({ id: "GIOSTRE__tecnoexerciser__image-4" }),
     }, {
-      src: require("@images/product/giostre/tecnoexerciser/galleria/tecnofence.jpg"),
+      src: require("@images/product/giostre/tecnoexerciser/galleria/tecnofence-1.jpg"),
+      caption: formatMessage({ id: "GIOSTRE__tecnoexerciser__image-5" }),
+    }, {
+      src: require("@images/product/giostre/tecnoexerciser/galleria/tecnofence-2.jpg"),
       caption: formatMessage({ id: "GIOSTRE__tecnoexerciser__image-5" }),
     }]
 
@@ -118,7 +121,7 @@ const Tecnoexerciser: React.FC = () => {
           </Grid>
 
           <Grid item xs={12} md={6}>
-            <ContentTable rows={ATTACHMENT} title={formatMessage({ id: "GENERAL__manuali" })} />
+            <ContentTable rows={ATTACHMENT} title={formatMessage({ id: "GENERAL__manauli" })} />
           </Grid>
         </Grid>
       </Section>

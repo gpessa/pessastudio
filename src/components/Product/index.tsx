@@ -58,7 +58,7 @@ const Product = ({ images, vertical, price, url, name, description, ...attribute
           {images.map(image => (
             <Grid item xs={6} md={span} key={image.src} onClick={() => open(image)}>
               <ButtonBase className={classes.button}>
-                <img src={image.src} alt={name} className={classes.image} />
+                <img src={image.src} alt={image.caption || name} className={classes.image} />
               </ButtonBase>
             </Grid>
           ))}
