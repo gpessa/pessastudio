@@ -1,37 +1,34 @@
-import { withPrefix } from "gatsby"
-import { FormattedHTMLMessage, injectIntl } from "gatsby-plugin-intl"
+import { graphql, withPrefix } from "gatsby"
+import { FormattedHTMLMessage, useIntl } from "gatsby-plugin-intl"
 import React from "react"
-import { IntlFormatters } from "react-intl"
 
 import { Columns, ContentTable, Gallery, TH1, Section, TH4, Compare } from "@components"
 import { Grid } from "@material-ui/core"
-import { COLORS } from "@theme"
 
-const Ippowalker: React.FC<{ intl: IntlFormatters }> = ({ intl: { formatMessage } }) => {
-  const IMAGES: Picture[] = [
-    {
-      src: require("@images/product/giostre/ippowalker/galleria/giostra.jpg"),
-      caption: formatMessage({ id: "GIOSTRE__ippowalker__image-0" }),
-    },
-    {
-      src: require("@images/product/giostre/ippowalker/galleria/giostra-separazioni.jpg"),
-      caption: formatMessage({ id: "GIOSTRE__ippowalker__image-1" }),
-    },
-    {
-      src: require("@images/product/giostre/ippowalker/galleria/giostra-corridoio-tecno-fence.jpg"),
-      caption: formatMessage({ id: "GIOSTRE__ippowalker__image-2" }),
-    },
-    {
-      src: require("@images/product/giostre/ippowalker/galleria/giostra-copertura-pvc-2.jpg"),
-      caption: formatMessage({ id: "GIOSTRE__ippowalker__image-3" }),
-    },
-    {
-      src: require("@images/product/giostre/ippowalker/galleria/porte.jpg"),
-      caption: formatMessage({ id: "GIOSTRE__ippowalker__image-4" }),
-    },
-  ]
+export const query = graphql`
+  query GiostraIppowalkerGallery {
+    allFile(filter: {relativeDirectory: {in: "product/giostre/ippowalker/gallery"}}) {
+      edges {
+        node {
+          relativePath
+        }
+      }
+    }
+  }
+`
 
-  const DIMENSIONS = [4, 6]
+const Ippowalker: React.FC<{ data: ImagesQuery }> = ({ data }) => {
+  const { formatMessage } = useIntl()
+
+  const IMAGES = data.allFile.edges.map(({ node }, index) => ({
+    caption: formatMessage({ id: `GIOSTRE__ippowalker__gallery__image-${index}` }),
+    src: require(`@images/${node.relativePath}`),
+  }))
+
+  const DIMENSIONS = [4, 6].map(dimension => ({
+    label: formatMessage({ id: `GIOSTRE__ippowalker__dimensioni-${dimension}` }),
+    file: withPrefix(`/giostra-ippowalker-${dimension}.pdf`),
+  }))
 
   const PRODUCTS = [
     {
@@ -87,29 +84,6 @@ const Ippowalker: React.FC<{ intl: IntlFormatters }> = ({ intl: { formatMessage 
         right={<Gallery images={IMAGES} />}
       />
 
-      {/* <Section maxWidth={false}>
-        <Container>
-          <TH2>{'Caratteristiche'}</TH2>
-        </Container>
-        <SubSection>
-          <Box mb={10}>
-            <Title
-              title={"Motore"}
-              subtitle={'Caratteristiche'}
-              text={"Il motore offre una potenza di 0.37 kw e permette una cadenza compresa fra 60 e 210 metri al minuto"}
-            />
-          </Box>
-          
-          <Box>
-            <Title
-              title={"Pareti di separazione"}
-              subtitle={'Caratteristiche'}
-              text={"Robuste pareti permettono di operari diversi cavalli in sicurezza."}
-            />
-          </Box>
-        </SubSection>
-      </Section> */}
-
 
       <Compare
         title={formatMessage({ id: "GENERAL__gamma" })}
@@ -124,10 +98,7 @@ const Ippowalker: React.FC<{ intl: IntlFormatters }> = ({ intl: { formatMessage 
           <Grid item xs={12} md={6}>
             <ContentTable
               title={formatMessage({ id: "GENERAL__dimensioni" })}
-              rows={DIMENSIONS.map(dimension => ({
-                label: formatMessage({ id: `GIOSTRE__ippowalker__dimensioni-${dimension}` }),
-                file: withPrefix(`/giostra-ippowalker-${dimension}.pdf`),
-              }))}
+              rows={DIMENSIONS}
             />
           </Grid>
 
@@ -152,4 +123,4 @@ const Ippowalker: React.FC<{ intl: IntlFormatters }> = ({ intl: { formatMessage 
   )
 }
 
-export default injectIntl(Ippowalker)
+export default Ippowalker

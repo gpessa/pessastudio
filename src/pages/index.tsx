@@ -50,7 +50,7 @@ const Index: React.FC = () => {
         title={formatMessage({ id: "BENEFITS__title" })}
         subtitle={formatMessage({ id: "BENEFITS__subtitle" })}
         text={(
-          <Typography variant="body1">"Scopri perchè ogni anno centinaia di persone si affidano a Pessa Studio per i loro articoli d'equitazione"</Typography>
+          <Typography variant="body1">Scopri perchè ogni anno centinaia di persone si affidano a Pessa Studio per i loro articoli d'equitazione</Typography>
         )}
         benefits={BENEFITS}
       />

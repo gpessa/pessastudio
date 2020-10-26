@@ -67,10 +67,10 @@
   "GIOSTRE__ippowalker__dimensioni-4": "Giostra 4 cavalli",
   "GIOSTRE__ippowalker__dimensioni-6": "Giostra 6 cavalli",
   "GIOSTRE__ippowalker__gamma__text": "E' possibile acquistare la giostra senza la recinzione o puoi scegliere tra due tipologie di recinzioni disponibili: FLAT o con corridoio TECNOFENCE (da 2 o 4 filagne).",
-  "GIOSTRE__ippowalker__image-0": "Giostra Ippowalker con corridoio FLAT",
-  "GIOSTRE__ippowalker__image-1": "Separazioni elettrificate",
-  "GIOSTRE__ippowalker__image-2": "Giostra con corridoio TECNOFENCE",
-  "GIOSTRE__ippowalker__image-3": "Copertura in PVC verde",
+  "GIOSTRE__ippowalker__gallery__image-0": "Giostra Ippowalker con corridoio FLAT",
+  "GIOSTRE__ippowalker__gallery__image-1": "Separazioni elettrificate",
+  "GIOSTRE__ippowalker__gallery__image-2": "Giostra con corridoio TECNOFENCE",
+  "GIOSTRE__ippowalker__gallery__image-3": "Copertura in PVC verde",
   "GIOSTRE__ippowalker__istruzioni-montaggio__step-01": "Trovate e segnate il centro di ciò che sarà la vostra giostra",
   "GIOSTRE__ippowalker__istruzioni-montaggio__step-02": "Usate la base della giostra per trovare e segnare i punti dove saranno piantate i supporti",
   "GIOSTRE__ippowalker__istruzioni-montaggio__step-04": "Ancorate al suolo i supporti della giostra",
@@ -224,5 +224,6 @@
   "TONDINO__gallery__image-4": "Tondino coperto",
   "TONDINO__gallery__image-5": "Copertura",
   "TONDINO__gallery__image-6": "Copertura",
-  "TONDINO__gallery__image-7": "Ingresso"
+  "TONDINO__gallery__image-7": "Ingresso",
+  "TONDINO__gallery__image-8": "Copertura"
 }

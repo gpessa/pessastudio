@@ -82,7 +82,7 @@ const Navigation: React.FC = () => {
         key={id}
         to={`/${id}/`}
         color="inherit"
-        component={Link}
+        component={props => <Link {...props}/>}
         partiallyActive={true}
         className={classes.link}
         activeStyle={{ color: COLORS.PRIMARY, fontWeight: 'bold' }}

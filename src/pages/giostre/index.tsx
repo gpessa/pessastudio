@@ -4,27 +4,61 @@ import React from "react"
 import AppsIcon from '@material-ui/icons/Apps';
 import DomainDisabledIcon from '@material-ui/icons/DomainDisabled';
 import AccessibilityNewIcon from '@material-ui/icons/AccessibilityNew';
-import { Columns, TH2, Hero, Section, TH4, Benefits } from "@components"
+import { Columns, TH2, Hero, Section, TH4, Benefits, Gallery } from "@components"
 import { Box, Button, Container, Link, makeStyles, Typography } from "@material-ui/core"
-import { COLORS } from "@theme";
+import { BREAKPOINT, COLORS, SECTION_SPACING } from "@theme";
+import { graphql } from "gatsby";
 
-const useStyles = makeStyles(_ => ({
+const useStyles = makeStyles(theme => ({
   gamma: {
     textAlign: 'center'
   },
   video: {
+    zIndex: 1,
+    position: 'relative',
     background: `linear-gradient(to bottom, 
         rgba(0,0,0, 0) 100px,
         ${COLORS.WARM1} 100px, 
         ${COLORS.WARM1} calc(100% - 100px), 
         rgba(0,0,0, 0) calc(100% - 100px)
       )`,
+  },
+  gallery: {
+    marginBottom: -SECTION_SPACING('xs')('medium'),
+    paddingBottom: 2 * SECTION_SPACING('xs')('medium'),
+    backgroundColor: theme.palette.primary.main,
+    '& figcaption': {
+      color: theme.palette.common.white,
+    },
+    [theme.breakpoints.up(BREAKPOINT)]: {
+      marginBottom: -SECTION_SPACING('md')('medium'),
+      paddingBottom: 2 * SECTION_SPACING('md')('medium'),
+    }
   }
 }))
 
-const Giostre: React.FC = () => {
+export const query = graphql`
+  query GiostreGallery {
+    allFile(filter: {relativeDirectory: {in: "product/giostre/gallery"}}) {
+      edges {
+        node {
+          relativePath
+        }
+      }
+    }
+  }
+`
+
+const Giostre: React.FC<{
+  data: ImagesQuery
+}> = ({ data }) => {
   const { formatMessage } = useIntl()
   const classes = useStyles()
+
+  const IMAGES = data.allFile.edges.map(({ node }, index) => ({
+    caption: formatMessage({ id: `GIOSTRE__gallery__image-${index}` }),
+    src: require(`@images/${node.relativePath}`),
+  }))
 
   const BENEFITS = [
     {
@@ -50,17 +84,18 @@ const Giostre: React.FC = () => {
         image={require("@images/background-giostre.jpg")}
         text={formatMessage({ id: "NAVIGATION__giostre" })}
       />
-      
+
       <Benefits
         title={formatMessage({ id: "BENEFITS__title" })}
         subtitle={formatMessage({ id: "BENEFITS__subtitle" })}
-        text={
-          <Typography variant="body1">
-            <FormattedHTMLMessage id="GIOSTRE__text" />
-          </Typography>
-        }
+        text={<FormattedHTMLMessage id="GIOSTRE__text" />}
         benefits={BENEFITS}
       />
+
+
+      <Section className={classes.gallery}>
+        <Gallery images={IMAGES} md={3} />
+      </Section>
 
       <section className={classes.video}>
         <Container>
