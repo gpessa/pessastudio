@@ -15,14 +15,9 @@ const Address: React.FC<Props> = ({ name, country, addressLocality, whatsapp, po
       {hasAddress && (
         <div itemScope itemType="http://schema.org/PostalAddress">
           <div itemProp="streetAddress">{streetAddress}</div>
-          <span itemProp="addressLocality">{addressLocality}</span>,
-          <span itemProp="postalCode" className="ml-1">
-            {postalCode}
-          </span>
-          ,
-          <span itemProp="addressRegion" className="ml-1 mr-1">
-            {addressRegion}
-          </span>
+          <span itemProp="addressLocality">{addressLocality}</span>,{" "}
+          <span itemProp="postalCode">{postalCode}</span>,{" "}
+          <span itemProp="addressRegion">{addressRegion}</span>
           (<span itemProp="addressCountry">{country}</span>)
         </div>
       )}

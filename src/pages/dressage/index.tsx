@@ -11,7 +11,7 @@ const Dressage: React.FC = () => {
 
   const TRAINING_PRODUCTS = [
     {
-      name: "Lettera Dressage Light",
+      name: formatMessage({ id: "DRESSAGE__prodotto__lettera__name" }),
       images: [{src: require("@images/product/dressage/training-lettera.jpg")}],
       width: 200,
       height: 300,
@@ -21,27 +21,27 @@ const Dressage: React.FC = () => {
       price: 20,
     },
     {
-      name: "Modulo dressage",
+      name: formatMessage({ id: "DRESSAGE__prodotto__modulo__name" }),
       images: [{src: require("@images/product/dressage/training-modulo-dressage.jpg")}],
       weight: 3,
       height: 285,
       colors: [Colors.WHITE],
     },
     {
-      name: "Rettangolo dressage 20x40",
+      name: formatMessage({ id: "DRESSAGE__prodotto__rettangolo_20x40__name" }),
       images: [{src: require("@images/product/dressage/rettangolo-dressage-60x20.svg")}],
-      description: "Un comodo set composto da 60 moduli e 8 lettere. Tutto il necessario per creare un circuito standard 60x20 mt.",
+      description: formatMessage({ id: "DRESSAGE__prodotto__rettangolo_20x40__text" })
     },
     {
-      name: "Rettangolo dressage 20x60",
+      name: formatMessage({ id: "DRESSAGE__prodotto__rettangolo_20x60__name" }),
       images: [{src: require("@images/product/dressage/rettangolo-dressage-40x20.svg")}],
-      description: "Un comodo set composto da 80 moduli e 12 lettere. Tutto il necessario per creare un circuito standard 40x20 mt.",
+      description: formatMessage({ id: "DRESSAGE__prodotto__rettangolo_20x60__text" })
     },
   ]
 
   const OLIMPIC_PRODUCTS = [
     {
-      name: "Lettera Dressage Light",
+      name: formatMessage({ id: "DRESSAGE__prodotto__lettera__name" }),
       images: [{src: require("@images/product/dressage/olimpic-lettera.jpg")}],
       width: 390,
       height: 700,
@@ -50,7 +50,7 @@ const Dressage: React.FC = () => {
       price: 51,
     },
     {
-      name: "Modulo dressage",
+      name: formatMessage({ id: "DRESSAGE__prodotto__modulo__name" }),
       images: [{src: require("@images/product/dressage/olimpic-modulo-dressage.jpg")}],
       width: 210,
       length: 2000,
@@ -60,14 +60,14 @@ const Dressage: React.FC = () => {
       price: 74,
     },
     {
-      name: "Rettangolo dressage 20x40",
+      name: formatMessage({ id: "DRESSAGE__prodotto__rettangolo_20x40__name" }),
       images: [{ src: require("@images/product/dressage/rettangolo-dressage-60x20.svg")}],
-      description: "Un comodo set composto da 60 moduli e 8 lettere. Tutto il necessario per creare un circuito standard 60x20 mt.",
+      description: formatMessage({ id: "DRESSAGE__prodotto__rettangolo_20x40__text" })
     },
     { 
-      name: "Rettangolo dressage 20x60",
+      name: formatMessage({ id: "DRESSAGE__prodotto__rettangolo_20x60__name" }),
       images: [{ src: require("@images/product/dressage/rettangolo-dressage-40x20.svg")}],
-      description: "Un comodo set composto da 80 moduli e 12 lettere. Tutto il necessario per creare un circuito standard 40x20 mt.",
+      description: formatMessage({ id: "DRESSAGE__prodotto__rettangolo_20x60__text" })
     },
   ]
 

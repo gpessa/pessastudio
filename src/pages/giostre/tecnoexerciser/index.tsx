@@ -45,8 +45,8 @@ const Tecnoexerciser: React.FC<{ data: ImagesQuery }> = ({ data }) => {
 
   const PRODUCTS = [{
     image: require("@images/product/giostre/tecnoexerciser/gamma/solo-motore.jpg"),
-name: formatHTMLMessage({ id: 'GIOSTRE__name--base' }),
-    description: "Is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since",
+    name: formatHTMLMessage({ id: 'GIOSTRE__name--base' }),
+    description: formatHTMLMessage({ id: "GIOSTRE__description--base" }),
     features: [
       { name: formatMessage({ id: "GIOSTRE__caratteristica__diametro" }), value: formatMessage({ id: "GIOSTRE__caratteristica__diametro_value" })},
       { name: formatMessage({ id: "GIOSTRE__caratteristica__numero_cavalli" }), value: formatMessage({ id: "GIOSTRE__caratteristica__numero_cavalli_value" })},
@@ -59,7 +59,7 @@ name: formatHTMLMessage({ id: 'GIOSTRE__name--base' }),
   {
     image: require("@images/product/giostre/tecnoexerciser/gamma/con-corridoio-tecnofence.jpg"),
     name: formatHTMLMessage({ id: 'GIOSTRE__name--tecnofence' }),
-    description: "Is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since",
+    description: formatHTMLMessage({ id: "GIOSTRE__description--tecnofence" }),
     features: [
       { name: formatMessage({ id: "GIOSTRE__caratteristica__diametro" }), value: formatMessage({ id: "GIOSTRE__caratteristica__diametro_value" }) },
       { name: formatMessage({ id: "GIOSTRE__caratteristica__numero_cavalli" }), value: formatMessage({ id: "GIOSTRE__caratteristica__numero_cavalli_value" })},
@@ -73,7 +73,7 @@ name: formatHTMLMessage({ id: 'GIOSTRE__name--base' }),
   {
     image: require("@images/product/giostre/tecnoexerciser/gamma/con-corridoio-coperto.jpg"),
     name: formatHTMLMessage({ id: 'GIOSTRE__name--flat' }),
-    description: "Is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since",
+    description: formatHTMLMessage({ id: "GIOSTRE__description--flat" }),
     features: [
       { name: formatMessage({ id: "GIOSTRE__caratteristica__diametro" }), value: formatMessage({ id: "GIOSTRE__caratteristica__diametro_value" }) },
       { name: formatMessage({ id: "GIOSTRE__caratteristica__numero_cavalli" }), value: formatMessage({ id: "GIOSTRE__caratteristica__numero_cavalli_value" })},

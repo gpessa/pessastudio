@@ -1,6 +1,7 @@
 import { Section, TH, Caption } from "@components"
 import { Button, Grid, Card, CardHeader, CardMedia, makeStyles, Container, Box, CardContent, Table, TableCell, TableRow, CardActions } from "@material-ui/core"
 import { COLORS, FONTS } from "@theme"
+import { useIntl } from "gatsby-plugin-intl";
 import React, { ReactNode } from "react"
 import { StickyContainer, Sticky } from 'react-sticky';
 
@@ -56,6 +57,9 @@ const useStyles = makeStyles(theme => ({
 
 const Compare: React.FC<Props> = ({ products, title, text }) => {
   const classes = useStyles()
+  const { formatMessage } = useIntl()
+
+  const stripHtml = (str: string | ReactNode) => str?.toString().replace(/<[^>]*>?/gm, ' ');
 
   return (
     <Section maxWidth={false} disableGutters className={classes.root}>
@@ -81,7 +85,7 @@ const Compare: React.FC<Props> = ({ products, title, text }) => {
                     <CardMedia
                       className={classes.media}
                       image={image}
-                      title={name}
+                      title={stripHtml(name)}
                     />
                     <CardContent>{description}</CardContent>
                     <CardContent className={classes.content}>
@@ -101,8 +105,8 @@ const Compare: React.FC<Props> = ({ products, title, text }) => {
                         color="primary"
                         fullWidth
                         size="large"
-                        href={`mailto:annapessa@pessastudio.eu?subject=Info ${name}`}
-                      >Richiedi un preventivo</Button>
+                        href={`mailto:annapessa@pessastudio.eu?subject=Info ${stripHtml(name)}`}
+                      >{formatMessage({ id: "GENERAL__preventivo" })}</Button>
                     </CardActions>
                   </Card> 
                   </StickyContainer>
