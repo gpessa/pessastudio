@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
-Sitemap: https://www.pessastudio.com/sitemap.xml
-Host: https://www.pessastudio.com
+Sitemap: https://gpessa.github.io/sitemap.xml
+Host: https://gpessa.github.io
