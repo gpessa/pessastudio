@@ -2,11 +2,11 @@ import React from "react"
 
 import { Product, Title } from "@components"
 import { Colors } from "@constants"
-import { FormattedHTMLMessage, injectIntl } from "gatsby-plugin-intl"
-import { Grid } from "@material-ui/core"
-import { PRODUCT_GUTTER } from "@theme"
+import { useIntl } from "gatsby-plugin-intl"
 
-const Barriere = ({ intl: { formatMessage } }: { intl: any }) => {
+const Barriere = () => {
+  const { formatMessage, formatHTMLMessage } = useIntl()
+
   const PRODUCT = {
     description: formatMessage({ id: "OSTACOLI__barriere__product__description" }),
     name: formatMessage({ id: "OSTACOLI__barriere__product__title" }),
@@ -32,11 +32,11 @@ const Barriere = ({ intl: { formatMessage } }: { intl: any }) => {
     <div>
       <Title
         title={formatMessage({ id: "OSTACOLI__barriere__title" })}
-        text={<FormattedHTMLMessage id="OSTACOLI__barriere__text" tagName="p"/>}
+        text={<p>{formatHTMLMessage({ id: "OSTACOLI__barriere__text" })}</p>}
       />
       <Product {...PRODUCT} />
     </div>
   )
 }
 
-export default injectIntl(Barriere)
+export default Barriere

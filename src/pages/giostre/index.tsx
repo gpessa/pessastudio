@@ -53,7 +53,7 @@ export const query = graphql`
 const Giostre: React.FC<{
   data: ImagesQuery
 }> = ({ data }) => {
-  const { formatMessage } = useIntl()
+  const { formatHTMLMessage, formatMessage } = useIntl()
   const classes = useStyles()
 
   const IMAGES = data.allFile.edges.map(({ node }, index) => ({
@@ -94,7 +94,7 @@ const Giostre: React.FC<{
       <Benefits
         title={formatMessage({ id: "GIOSTRE__benefits__title" })}
         subtitle={formatMessage({ id: "GIOSTRE__benefits__subtitle" })}
-        text={<FormattedHTMLMessage id="GIOSTRE__benefits__text" />}
+        text={<p>{formatHTMLMessage({ id: "GIOSTRE__benefits__text" })}</p>}
         benefits={BENEFITS}
       />
 

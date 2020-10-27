@@ -119,7 +119,7 @@ type Props = {
   title: string
   text: string
   products: {
-    name: string
+    name: string | ReactNode
     description?: string | ReactNode
     image: string,
     features?: {

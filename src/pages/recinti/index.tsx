@@ -25,7 +25,7 @@ export const query = graphql`
 const Recinti: React.FC<{
   data: ImagesQuery
 }> = ({ data }) => {
-  const { formatMessage } = useIntl()
+  const { formatMessage, formatHTMLMessage } = useIntl()
 
   const IMAGES = data.allFile.edges.map(({ node }) => ({
     caption: formatMessage({ id: `RECINTI__gallery__image-${node.name}` }),
@@ -38,7 +38,7 @@ const Recinti: React.FC<{
         left={
           <>
             <TH variant="h1">{formatMessage({ id: "NAVIGATION__recinti" })}</TH>
-            <FormattedHTMLMessage id="RECINTI__text" tagName={Typography} />
+            <p>{formatHTMLMessage({ id: "RECINTI__text" })}</p>
           </>
         }
         right={<Gallery images={IMAGES} />}

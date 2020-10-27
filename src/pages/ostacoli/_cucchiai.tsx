@@ -1,13 +1,14 @@
-import { FormattedHTMLMessage, injectIntl } from "gatsby-plugin-intl"
 import React from "react"
-import { IntlFormatters } from "react-intl"
 
 import { Title, Product } from "@components"
 import { Material } from "@constants"
 import { Grid } from "@material-ui/core"
 import { PRODUCT_GUTTER } from "@theme"
+import { useIntl } from "gatsby-plugin-intl"
 
-const CucchiaiSegnaletica: React.FC<{ intl: IntlFormatters }> = ({ intl: { formatMessage } }) => {
+const CucchiaiSegnaletica: React.FC = () => {
+  const { formatHTMLMessage, formatMessage } = useIntl()
+
   const PRODUCTS = [
     {
       name: formatMessage({ id: "OSTACOLI__cucchiai__product__cucchiaio_de" }),
@@ -49,7 +50,7 @@ const CucchiaiSegnaletica: React.FC<{ intl: IntlFormatters }> = ({ intl: { forma
     <>
       <Title
         title={formatMessage({ id: "OSTACOLI__cucchiai__title" })}
-        text={<FormattedHTMLMessage id="OSTACOLI__cucchiai__text" tagName="p" />}
+        text={<p>{formatHTMLMessage({ id: "OSTACOLI__cucchiai__text" })}</p>}
       />
 
       <Grid container spacing={PRODUCT_GUTTER}>
@@ -63,4 +64,4 @@ const CucchiaiSegnaletica: React.FC<{ intl: IntlFormatters }> = ({ intl: { forma
   )
 }
 
-export default injectIntl(CucchiaiSegnaletica)
+export default CucchiaiSegnaletica

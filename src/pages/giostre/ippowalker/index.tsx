@@ -18,7 +18,7 @@ export const query = graphql`
 `
 
 const Ippowalker: React.FC<{ data: ImagesQuery }> = ({ data }) => {
-  const { formatMessage } = useIntl()
+  const { formatMessage, formatHTMLMessage } = useIntl()
 
   const IMAGES = data.allFile.edges.map(({ node }, index) => ({
     caption: formatMessage({ id: `GIOSTRE__ippowalker__gallery__image-${index}` }),
@@ -33,7 +33,7 @@ const Ippowalker: React.FC<{ data: ImagesQuery }> = ({ data }) => {
   const PRODUCTS = [
     {
       image: require("@images/product/giostre/ippowalker/gamma/solo-motore.jpg"),
-      name: "Giostra <br />Base",
+      name: formatHTMLMessage({ id: 'GIOSTRE__name--base' }),
       description: "Is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since",
       features: [
         { name: formatMessage({ id: "GIOSTRE__caratteristica__diametro" }), value: formatMessage({ id: "GIOSTRE__caratteristica__diametro_value" }) },
@@ -45,7 +45,7 @@ const Ippowalker: React.FC<{ data: ImagesQuery }> = ({ data }) => {
     },
     {
       image: require("@images/product/giostre/ippowalker/gamma/con-corridoio-tecnofence.jpg"),
-      name: "Giostra<br />corridoio Tecnofence",
+      name: formatHTMLMessage({ id: 'GIOSTRE__name--tecnofence' }),
       description: "Is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since",
       features: [
         { name: formatMessage({ id: "GIOSTRE__caratteristica__diametro" }), value: formatMessage({ id: "GIOSTRE__caratteristica__diametro_value" }) },
@@ -58,7 +58,7 @@ const Ippowalker: React.FC<{ data: ImagesQuery }> = ({ data }) => {
     },
     {
       image: require("@images/product/giostre/ippowalker/gamma/con-corridoio-flat.jpg"),
-      name: "Giostra coperta<br />con corridoio Flat",
+      name: formatHTMLMessage({ id: 'GIOSTRE__name--flat' }),
       description: "Is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since",
       features: [
         { name: formatMessage({ id: "GIOSTRE__caratteristica__diametro" }), value: formatMessage({ id: "GIOSTRE__caratteristica__diametro_value" }) },
@@ -78,7 +78,7 @@ const Ippowalker: React.FC<{ data: ImagesQuery }> = ({ data }) => {
         left={
           <>
             <TH variant="h1">{formatMessage({ id: "NAVIGATION__ippowalker" })}</TH>
-            <FormattedHTMLMessage id="GIOSTRE__ippowalker__descrizione" />
+            <p>{formatHTMLMessage({ id: "GIOSTRE__ippowalker__descrizione" })}</p>
           </>
         }
         right={<Gallery images={IMAGES} />}

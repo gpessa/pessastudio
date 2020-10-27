@@ -1,4 +1,4 @@
-import { FormattedHTMLMessage, FormattedMessage, useIntl } from "gatsby-plugin-intl"
+import { FormattedMessage, useIntl } from "gatsby-plugin-intl"
 import React from "react"
 
 import { Product, Section, TH } from "@components"
@@ -7,7 +7,7 @@ import { Grid, Link, Typography } from "@material-ui/core"
 import { COLORS } from "@theme"
 
 const Dressage: React.FC = () => {
-  const { formatMessage } = useIntl()
+  const { formatMessage, formatHTMLMessage } = useIntl()
 
   const TRAINING_PRODUCTS = [
     {
@@ -88,7 +88,7 @@ const Dressage: React.FC = () => {
 
       <Section id="dressage-training" color={COLORS.WARM2}>
         <TH variant="h2">{formatMessage({ id: `DRESSAGE__training_title` })}</TH>
-        <FormattedHTMLMessage id="DRESSAGE__training_description" tagName="p" />
+        <p>{formatHTMLMessage({ id: "DRESSAGE__training_description" })}</p>
         <Grid container spacing={5}>
           {TRAINING_PRODUCTS.map((product, index) => (
             <Grid item key={index} md={3}>
@@ -100,7 +100,7 @@ const Dressage: React.FC = () => {
 
       <Section id="dressage-olimpic">
         <TH variant="h2">{formatMessage({ id: `DRESSAGE__olimpic_title` })}</TH>
-        <FormattedHTMLMessage id="DRESSAGE__olimpic_description" tagName="p" />
+        <p>{formatHTMLMessage({ id: "DRESSAGE__olimpic_description" })}</p>
         <Grid container spacing={5}>
           {OLIMPIC_PRODUCTS.map((product, index) => (
             <Grid item key={index} md={3}>

@@ -1,13 +1,14 @@
-import { FormattedHTMLMessage, injectIntl } from "gatsby-plugin-intl"
+import { useIntl } from "gatsby-plugin-intl"
 import React from "react"
-import { IntlFormatters } from "react-intl"
 
 import { Title, Product } from "@components"
 import { Colors } from "@constants"
 import { Grid } from "@material-ui/core"
 import { PRODUCT_GUTTER } from "@theme"
 
-const Cubi: React.FC<{ intl: IntlFormatters }> = ({ intl: { formatMessage } }) => {
+const Cubi: React.FC = () => {
+  const { formatHTMLMessage, formatMessage } = useIntl()
+
   const PRODUCTS = [
     {
       name: formatMessage({ id: "OSTACOLI__cubi__product__cubi-mini" }),
@@ -43,7 +44,7 @@ const Cubi: React.FC<{ intl: IntlFormatters }> = ({ intl: { formatMessage } }) =
     <>
       <Title
         title={formatMessage({ id: "OSTACOLI__cubi__title" })}
-        text={<FormattedHTMLMessage tagName="p" id="OSTACOLI__cubi__text" />}
+        text={<p>{formatHTMLMessage({ id: "OSTACOLI__cubi__text" })}</p>}
       />
 
       <Grid container spacing={PRODUCT_GUTTER}>
@@ -58,4 +59,4 @@ const Cubi: React.FC<{ intl: IntlFormatters }> = ({ intl: { formatMessage } }) =
   )
 }
 
-export default injectIntl(Cubi)
+export default Cubi

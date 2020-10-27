@@ -1,4 +1,4 @@
-import { FormattedHTMLMessage, injectIntl } from "gatsby-plugin-intl"
+import { useIntl } from "gatsby-plugin-intl"
 import React from "react"
 
 import { Product, Title } from "@components"
@@ -6,9 +6,10 @@ import { Material } from "@constants"
 import { PRODUCT_GUTTER } from "@theme"
 import { Grid } from "@material-ui/core"
 
-const CandelieriLameForate = ({ intl: { formatMessage } }: { intl: any }) => {
-  const PRODUCTS = [
+const CandelieriLameForate = () => {
+  const { formatHTMLMessage, formatMessage } = useIntl()
 
+  const PRODUCTS = [
     {
       name: formatMessage({ id: "OSTACOLI__candelieri-e-lame__prodotto__candeliere-pvc__name" }),
       images: [
@@ -40,7 +41,7 @@ const CandelieriLameForate = ({ intl: { formatMessage } }: { intl: any }) => {
     <>
       <Title
         title={formatMessage({ id: "OSTACOLI__candelieri-e-lame__title" })}
-        text={<FormattedHTMLMessage id="OSTACOLI__candelieri-e-lame__text" />}
+        text={<p>{formatHTMLMessage({ id: "OSTACOLI__candelieri-e-lame__text" })}</p>}
       />
       
       <Grid container spacing={PRODUCT_GUTTER}>
@@ -54,4 +55,4 @@ const CandelieriLameForate = ({ intl: { formatMessage } }: { intl: any }) => {
   )
 }
 
-export default injectIntl(CandelieriLameForate)
+export default CandelieriLameForate
