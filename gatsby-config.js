@@ -2,15 +2,13 @@ module.exports = {
   pathPrefix: "/pessastudio",
   siteMetadata: {
     siteUrl: `https://www.pessastudio.com`,
-    title: `Pessa studio`,
+    title: `Pessastudio`,
     description: ``,
     author: ``,
   },
   plugins: [
     `gatsby-plugin-sass`,
-    `gatsby-plugin-sharp`,
     `gatsby-plugin-sitemap`,
-    `gatsby-transformer-sharp`,
     "gatsby-plugin-robots-txt",
     `gatsby-plugin-typescript`,
     `gatsby-plugin-react-helmet`,
@@ -89,5 +87,7 @@ module.exports = {
         environments: ["production", "development"], // Defines the environments where the tracking should be available  - default is ["production"]
       },
     },
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
   ],
 }

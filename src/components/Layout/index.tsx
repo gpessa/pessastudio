@@ -9,11 +9,11 @@ import Footer from "../Footer"
 import Gdpr from "../Gdpr"
 import Seo from "../Seo"
 
-const Layout = ({ children, pageInfo }) => (
+const Layout: React.FC = ({ children }) => (
   <ThemeProvider theme={theme}>
     <CssBaseline />
     <Seo />
-    <Navigation pageInfo={pageInfo} />
+    <Navigation />
     <Breadcrumb />
     <main>{children}</main>
     <Footer />

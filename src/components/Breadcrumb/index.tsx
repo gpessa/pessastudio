@@ -2,9 +2,8 @@ import { Breadcrumbs, Link, Container, makeStyles, Typography } from '@material-
 import { Link as LinkGatsby, useIntl } from 'gatsby-plugin-intl';
 import React from 'react';
 import HomeIcon from '@material-ui/icons/Home';
-import { injectTree } from '../../hoc';
 import { COLORS } from '@theme';
-import { UrlFragment } from 'src/hoc/injectTree';
+import { useTree } from '@hooks';
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -21,11 +20,12 @@ const useStyles = makeStyles(theme => ({
   }
 }))
 
-const Breadcrumb: React.FC<{ fragments: UrlFragment[] }> = ({ fragments }) => {
+const Breadcrumb: React.FC = () => {
   const { formatMessage } = useIntl()
   const classes = useStyles()
+  const { fragments } = useTree()
 
-  return fragments.length > 1 && (
+  return fragments.length > 1 ? (
     <div className={classes.root}>
       <Breadcrumbs separator="›" gutterBottom={false} component={props => <Container {...props} component="nav"/>}>
         {fragments.map(({ id, url }, index) => {
@@ -56,7 +56,7 @@ const Breadcrumb: React.FC<{ fragments: UrlFragment[] }> = ({ fragments }) => {
         })}
       </Breadcrumbs>
     </div>
-  ) 
+  ) : null
 }
 
-export default injectTree(Breadcrumb)
+export default Breadcrumb

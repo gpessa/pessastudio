@@ -8,6 +8,7 @@ import { Columns, Hero, Section, TH, Benefits, Gallery } from "@components"
 import { Box, Button, Container, Link, makeStyles, Typography } from "@material-ui/core"
 import { BREAKPOINT, COLORS, SECTION_SPACING } from "@theme";
 import { graphql } from "gatsby";
+import VideogameAssetIcon from '@material-ui/icons/VideogameAsset';
 
 const useStyles = makeStyles(theme => ({
   gamma: {
@@ -63,18 +64,23 @@ const Giostre: React.FC<{
   const BENEFITS = [
     {
       icon: AccessibilityNewIcon,
-      title: "3.000 giostre installate",
-      description: "Piu' di 3.000 clienti europei hanno scelto PessaStudio per la loro giostra"
+      title: formatMessage({ id: "GIOSTRE__benefit--1__title" }),
+      description: formatMessage({ id: "GIOSTRE__benefit--1__text" }),
     },
     {
       icon: AppsIcon,
-      title: "Ampia gamma",
-      description: "E' possibile aquistare le nostre giostre in diverse versioni adatte al tuo budget e alle tue esigenze"
+      title: formatMessage({ id: "GIOSTRE__benefit--2__title" }),
+      description: formatMessage({ id: "GIOSTRE__benefit--2__text" }),
     },
     {
       icon: DomainDisabledIcon,
-      title: "Nessuna concessione edilizia",
-      description: "Le nostre giostre sono considerate strutture precarie. Non avrete quindi bisogno di nessuna concessione edilizia"
+      title: formatMessage({ id: "GIOSTRE__benefit--3__title" }),
+      description: formatMessage({ id: "GIOSTRE__benefit--3__text" }),
+    },
+    {
+      icon: VideogameAssetIcon,
+      title: formatMessage({ id: "GIOSTRE__benefit--4__title" }),
+      description: formatMessage({ id: "GIOSTRE__benefit--4__text" }),
     }
   ]
 
@@ -86,12 +92,11 @@ const Giostre: React.FC<{
       />
 
       <Benefits
-        title={formatMessage({ id: "BENEFITS__title" })}
-        subtitle={formatMessage({ id: "BENEFITS__subtitle" })}
-        text={<FormattedHTMLMessage id="GIOSTRE__text" />}
+        title={formatMessage({ id: "GIOSTRE__benefits__title" })}
+        subtitle={formatMessage({ id: "GIOSTRE__benefits__subtitle" })}
+        text={<FormattedHTMLMessage id="GIOSTRE__benefits__text" />}
         benefits={BENEFITS}
       />
-
 
       <Section className={classes.gallery}>
         <Gallery images={IMAGES} md={3} />

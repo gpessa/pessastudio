@@ -35,6 +35,7 @@ const useStyles = makeStyles(theme => ({
   },
   image: {
     top: 0,
+    padding: 2,
     width: '100%',
     marginTop: '50%',
     position: 'absolute',

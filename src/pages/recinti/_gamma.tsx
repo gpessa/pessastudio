@@ -54,7 +54,7 @@ const Gamma = () => {
   ]
 
   return (
-    <Section color={COLORS.PRIMARY} className={classes.root} spacing="small">
+    <Section color={COLORS.PRIMARY} className={classes.root}>
       <TH variant="h2" align="center">{formatMessage({ id: "GENERAL__gamma" })}</TH>
       <Grid container spacing={10}>
         {PRODUCTS.map((product, index) => (

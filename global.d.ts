@@ -36,6 +36,7 @@ interface ImagesQuery {
         edges: {
             node: {
                 relativePath: string
+                name: string
             }
         }[]
     }

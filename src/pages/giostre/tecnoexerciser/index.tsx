@@ -3,32 +3,26 @@ import { FormattedHTMLMessage, useIntl } from "gatsby-plugin-intl"
 import React from "react"
 import { Columns, ContentTable, Gallery, Section, TH, Compare } from "@components"
 import { Grid, Typography } from "@material-ui/core"
+import { graphql } from "gatsby"
 
-const Tecnoexerciser: React.FC = () => {
+export const query = graphql`
+  query GiostraTecnoexerciserGallery {
+    allFile(filter: {relativeDirectory: {in: "product/giostre/ippowalker/gallery"}}) {
+      edges {
+        node {
+          relativePath
+        }
+      }
+    }
+  }
+`
+const Tecnoexerciser: React.FC<{ data: ImagesQuery }> = ({ data }) => {
   const { formatMessage } = useIntl()
 
-  const IMAGES: Picture[] = [{
-      src: require("@images/product/giostre/tecnoexerciser/galleria/giostra.jpg"),
-      caption: formatMessage({ id: "GIOSTRE__tecnoexerciser__image-0" }),
-    },{
-      src: require("@images/product/giostre/tecnoexerciser/galleria/motore.jpg"),
-      caption: formatMessage({ id: "GIOSTRE__tecnoexerciser__image-1" }),
-    },{
-      src: require("@images/product/giostre/tecnoexerciser/galleria/separazione-1.jpg"),
-      caption: formatMessage({ id: "GIOSTRE__tecnoexerciser__image-2" }),
-    },{
-      src: require("@images/product/giostre/tecnoexerciser/galleria/interno.jpg"),
-      caption: formatMessage({ id: "GIOSTRE__tecnoexerciser__image-3" }),
-    }, {
-      src: require("@images/product/giostre/tecnoexerciser/galleria/porte.jpg"),
-      caption: formatMessage({ id: "GIOSTRE__tecnoexerciser__image-4" }),
-    }, {
-      src: require("@images/product/giostre/tecnoexerciser/galleria/tecnofence-1.jpg"),
-      caption: formatMessage({ id: "GIOSTRE__tecnoexerciser__image-5" }),
-    }, {
-      src: require("@images/product/giostre/tecnoexerciser/galleria/tecnofence-2.jpg"),
-      caption: formatMessage({ id: "GIOSTRE__tecnoexerciser__image-5" }),
-    }]
+  const IMAGES = data.allFile.edges.map(({ node }, index) => ({
+    caption: formatMessage({ id: `GIOSTRE__tecnoexerciser__gallery__image-${index}` }),
+    src: require(`@images/${node.relativePath}`),
+  }))
 
   const ATTACHMENT = [{
       label: formatMessage({ id: "GIOSTRE__manuali__manuale-quadro" }),

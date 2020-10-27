@@ -42,6 +42,7 @@ const LanguageSelector: React.FC = () => {
             <List>
               {languages.map((lang: string) => (
                 <ListItem
+                  button
                   onClick={() => {
                     changeLocale(lang)
                     handleModal()

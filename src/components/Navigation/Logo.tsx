@@ -61,9 +61,9 @@ const Logo: React.FC<Props> = (props) => {
 
   return (
     <div className={classes.root}>
-      <img src={require("@images/favicon.jpg")} alt="Pessa Studio" className={classes.image} />
+      <img src={require("@images/favicon.jpg")} alt="Pessastudio" className={classes.image} />
       <hgroup>
-        <h1 className={classes.title}>Pessa studio</h1>
+        <h1 className={classes.title}>Pessastudio</h1>
         <div className={classes.subtitle}>Horse technology</div>
       </hgroup>
     </div>

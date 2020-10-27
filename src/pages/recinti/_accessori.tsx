@@ -1,17 +1,12 @@
 import { Product, Section, TH } from "@components"
-import { Grid, makeStyles } from "@material-ui/core"
-import { COLORS, PRODUCT_GUTTER } from "@theme"
+import { Grid } from "@material-ui/core"
+import { PRODUCT_GUTTER } from "@theme"
 import { useIntl } from "gatsby-plugin-intl"
 import React from "react"
-
-
-const useStyle = makeStyles(theme => ({
-
-}))
+import { Colors } from "@constants"
 
 const Accessori = () => {
   const { formatMessage } = useIntl()
-  const classes = useStyle()
 
   const PRODUCTS = [
     {
@@ -29,6 +24,7 @@ const Accessori = () => {
       ],
       diameter: 60,
       height: 300,
+      colors: [Colors.WHITE, Colors.GREEN]
     },
     {
       name: formatMessage({ id: "RECINTI__prodotto__recinzione-erpice-livellatrice__name" }),
@@ -39,7 +35,7 @@ const Accessori = () => {
 
   return (
     <Section>
-      <TH variant="h2">{"Accessori"}</TH>
+      <TH variant="h2">{formatMessage({ id: "GENERAL__accessories" })}</TH>
 
       <Grid container spacing={PRODUCT_GUTTER}>
         {PRODUCTS.map((product, index) => (

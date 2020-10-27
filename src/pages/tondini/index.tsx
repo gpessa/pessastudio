@@ -57,35 +57,32 @@ const Tondini: React.FC<{
       <Hero image={require("@images/background-tondini.jpg")} text={formatMessage({ id: "NAVIGATION__tondini" })}/>
 
       <Benefits
-        title="Scopri il nostro tondino"
-        subtitle="Caratteristiche"
+        title={formatMessage({ id: "TONDINI__benefit__title" })}
+        subtitle={formatMessage({ id: "TONDINI__benefit__subtitle" })}
         text={(
-          <Typography variant="body2">
-            Il tondino coperto è adatto a svolgere molteplici attività, per esempio è la migliore soluzione per addestrare puledri in libertà o lavorare cavalli alla corda, aiuta a facilitare il controllo dei vostri cavalli durante le lezioni ai principianti, nelle riprese dei pony ed è indispensabile per il longeur durante le riprese di volteggi.
-          </Typography>
+          <Typography
+            variant="body1"
+            id="TONDINI__benefit__text"
+            component={FormattedHTMLMessage}
+          />
         )}
-        benefits={[
-          {
-            icon: AccountBalanceIcon,
-            title: "Materiali di qualità",
-            description: "Costituito da pannelli laterali in compensato marino, fissati a colonne in acciaio zincato. Copertura in telo spalmato in PVC  disponibile in bianco, verde o crema.",
-          },
-          {
-            icon: DomainDisabledIcon,
-            title: "Nessuna concessione edilizia",
-            description: "Le nostre giostre sono considerate strutture precarie. Non avrete quindi bisogno di nessuna concessione edilizia",
-          },
-          {
-            icon: VisibilityIcon,
-            title: "Bello e funzionale",
-            description: "É una struttura semplice, leggera e piacevole alla vista.",
-          },
-          {
-            icon: LockIcon,
-            title: "Sicuro",
-            description: "Ampio ingresso di 2,05 mt. dotato di catenaccio verticale che garantisce l’assoluta sicurezza."
-          }
-        ]}
+        benefits={[{
+          icon: AccountBalanceIcon,
+          title: formatMessage({ id: "TONDINI__benefit--1__title" }),
+          description: formatMessage({ id: "TONDINI__benefit--1__text" }),
+        }, {
+          icon: DomainDisabledIcon,
+          title: formatMessage({ id: "TONDINI__benefit--1__title" }),
+          description: formatMessage({ id: "TONDINI__benefit--1__text" }),
+        }, {
+          icon: VisibilityIcon,
+          title: formatMessage({ id: "TONDINI__benefit--3__title" }),
+          description: formatMessage({ id: "TONDINI__benefit--3__text" }),
+        }, {
+          icon: LockIcon,
+          title: formatMessage({ id: "TONDINI__benefit--4__title" }),
+          description: formatMessage({ id: "TONDINI__benefit--4__text" }),
+        }]}
       />
 
       <Section className={classes.gallery}>

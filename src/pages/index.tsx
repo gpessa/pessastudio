@@ -1,4 +1,4 @@
-import { useIntl } from "gatsby-plugin-intl"
+import { FormattedHTMLMessage, useIntl } from "gatsby-plugin-intl"
 import React from "react"
 import AccountBalanceIcon from '@material-ui/icons/AccountBalance';
 import AppsIcon from '@material-ui/icons/Apps';
@@ -50,7 +50,11 @@ const Index: React.FC = () => {
         title={formatMessage({ id: "BENEFITS__title" })}
         subtitle={formatMessage({ id: "BENEFITS__subtitle" })}
         text={(
-          <Typography variant="body1">Scopri perchè ogni anno centinaia di persone si affidano a Pessa Studio per i loro articoli d'equitazione</Typography>
+          <Typography
+            variant="body1"
+            id="BENEFITS__text"
+            component={FormattedHTMLMessage}
+          />
         )}
         benefits={BENEFITS}
       />

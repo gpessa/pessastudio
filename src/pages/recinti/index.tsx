@@ -14,7 +14,8 @@ export const query = graphql`
     allFile(filter: {relativeDirectory: {in: "product/recinti/gallery"}}) {
       edges {
         node {
-          relativePath
+          relativePath,
+          name
         }
       }
     }
@@ -26,8 +27,8 @@ const Recinti: React.FC<{
 }> = ({ data }) => {
   const { formatMessage } = useIntl()
 
-  const IMAGES = data.allFile.edges.map(({ node }, index) => ({
-    caption: formatMessage({ id: `RECINTI__gallery__image-${index}` }),
+  const IMAGES = data.allFile.edges.map(({ node }) => ({
+    caption: formatMessage({ id: `RECINTI__gallery__image-${node.name}` }),
     src: require(`@images/${node.relativePath}`),
   }))
 
