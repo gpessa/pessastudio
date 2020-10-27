@@ -1,7 +1,7 @@
 module.exports = {
   pathPrefix: "/pessastudio",
   siteMetadata: {
-    siteUrl: `https://www.pessastudio.com`,
+    siteUrl: `https://gpessa.github.io`,
     title: `Pessastudio`,
     description: ``,
     author: ``,

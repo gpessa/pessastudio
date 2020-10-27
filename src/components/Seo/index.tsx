@@ -5,7 +5,7 @@
  * See: https://www.gatsbyjs.org/docs/use-static-query/
  */
 
-import { graphql, useStaticQuery } from "gatsby"
+import { graphql, useStaticQuery, withPrefix } from "gatsby"
 import PropTypes, { InferProps } from "prop-types"
 import React from "react"
 import Helmet from "react-helmet"
@@ -13,7 +13,7 @@ import { IntlContextConsumer, useIntl } from "gatsby-plugin-intl"
 import { useTree } from "@hooks"
 import { useLocation } from "@reach/router"
 
-function Seo({ description, lang, meta, keywords }: InferProps<typeof Seo.propTypes>) {
+function Seo({ description , lang, meta, keywords }: InferProps<typeof Seo.propTypes>) {
   const { fragments } = useTree()
   const { formatMessage } = useIntl()
 
@@ -23,7 +23,6 @@ function Seo({ description, lang, meta, keywords }: InferProps<typeof Seo.propTy
         site {
           siteMetadata {
             title
-            author
             siteUrl
             description
           }
@@ -35,8 +34,8 @@ function Seo({ description, lang, meta, keywords }: InferProps<typeof Seo.propTy
   const title = formatMessage({ id: `NAVIGATION__${fragments[fragments.length - 1].id}` })
 
   const metaDescription = description || site.siteMetadata.description
-  const a = useLocation()
-  const { siteUrl } = site.siteMetadata
+  const siteUrl = description || site.siteMetadata.siteUrl
+  const location = useLocation()
   
   return (
     <IntlContextConsumer>
@@ -48,12 +47,15 @@ function Seo({ description, lang, meta, keywords }: InferProps<typeof Seo.propTy
             lang,
           }}
           link={languages
-            .map(language => ({
-              key: language,
-              rel: "alternate",
-              hrefLang: language,
-              href: a.href.replace(`${currentLanguage}`, language)
-            }))
+            .map(hrefLang => {
+              const href = siteUrl + location.pathname.replace(`${currentLanguage}`, hrefLang);
+              return {
+                href,
+                hrefLang,
+                key: hrefLang,
+                rel: "alternate",
+              }
+            })
           }
           meta={
             [{
@@ -71,9 +73,6 @@ function Seo({ description, lang, meta, keywords }: InferProps<typeof Seo.propTy
             }, {
               name: `twitter:card`,
               content: `summary`,
-            }, {
-              name: `twitter:creator`,
-              content: site.siteMetadata.author,
             }, {
               name: `twitter:title`,
               content: title,
