@@ -20,7 +20,7 @@ const useStyles = makeStyles(theme => ({
     display: 'flex',
     minHeight: '100%',
     flexDirection: 'column',
-    marginTop: theme.spacing(2),
+    marginTop: ({ vertical }: { vertical: boolean }) => vertical ? -theme.spacing(2) : theme.spacing(2),
     order: -1,
     [theme.breakpoints.up(BREAKPOINT)]: {
       order: 'unset'
@@ -52,7 +52,7 @@ const Product = ({ images, vertical, price, url, name, description, ...attribute
   const Tag = url ? Link : "div"
   const span = vertical ? 12 : (12 / (images.length + 1))
   const { formatMessage, formatNumber } = useIntl()
-  const classes = useStyles()
+  const classes = useStyles({ vertical })
 
   return (
     <ModalGallery images={images} render={({ images, open }) => (
@@ -70,45 +70,48 @@ const Product = ({ images, vertical, price, url, name, description, ...attribute
 
             <Description description={description} />
 
-            {Object.keys(attributes).map(name => {
-              let valueToPrint
+            {Object
+              .keys(attributes)
+              .sort()
+              .map(name => {
+                let valueToPrint
 
-              switch (name) {
-                case "materials":
-                  valueToPrint = <MaterialsList materials={attributes[name]!} />
-                  break
+                switch (name) {
+                  case "materials":
+                    valueToPrint = <MaterialsList materials={attributes[name]!} />
+                    break
 
-                case "colors":
-                  valueToPrint = <ColorsList colors={attributes[name]!} />
-                  break
+                  case "weight":
+                    valueToPrint = formatNumber(attributes[name]!, { style: "unit", unit: "kilogram" })
+                    break
 
-                case "weight":
-                  valueToPrint = formatNumber(attributes[name]!, { style: "unit", unit: "kilogram" })
-                  break
+                  case "diameter":
+                  case "thickness":
+                  case "height":
+                  case "length":
+                  case "depth":
+                  case "width":
+                    valueToPrint = formatNumber(attributes[name]! / 10, { style: "unit", unit: "centimeter" })
+                    break
 
-                case "diameter":
-                case "thickness":
-                case "height":
-                case "length":
-                case "depth":
-                case "width":
-                  valueToPrint = formatNumber(attributes[name]! / 10, { style: "unit", unit: "centimeter" })
-                  break
-              }
-              return (
-                <Data 
-                  key={name} 
-                  label={formatMessage({ id: `PRODUCT__attributo__${name}` })}
-                  value={valueToPrint}
-                />
-              )
-            })}
+                  case "colors":
+                    valueToPrint = <ColorsList colors={attributes[name]!} />
+                    break
+                }
+                return (
+                  <Data
+                    key={name}
+                    label={formatMessage({ id: `PRODUCT__attributo__${name}` })}
+                    value={valueToPrint}
+                  />
+                )
+              })}
 
             <Price price={price} />
           </Grid>
         </Grid>
       </Tag>
-    )}/>
+    )} />
   )
 }
 

@@ -11,6 +11,7 @@ import React from "react"
 import Helmet from "react-helmet"
 import { IntlContextConsumer, useIntl } from "gatsby-plugin-intl"
 import { useTree } from "@hooks"
+import { useLocation } from "@reach/router"
 
 function Seo({ description, lang, meta, keywords }: InferProps<typeof Seo.propTypes>) {
   const { fragments } = useTree()
@@ -34,42 +35,52 @@ function Seo({ description, lang, meta, keywords }: InferProps<typeof Seo.propTy
   const title = formatMessage({ id: `NAVIGATION__${fragments[fragments.length - 1].id}` })
 
   const metaDescription = description || site.siteMetadata.description
-  const siteUrl = site.siteMetadata.siteUrl
-
+  const a = useLocation()
+  const { siteUrl } = site.siteMetadata
+  
   return (
     <IntlContextConsumer>
-      {({ languages, language: currentLocale }) => (
+      {({ languages, language: currentLanguage }: { languages: string[], language: string }) => (
         <Helmet
+          title={title}
+          titleTemplate={`%s | ${site.siteMetadata.title}`}
           htmlAttributes={{
             lang,
           }}
-          title={title}
-          titleTemplate={`%s | ${site.siteMetadata.title}`}
-          meta={[{
-            name: `description`,
-            content: metaDescription,
-          }, {
-            property: `og:title`,
-            content: title,
-          }, {
-            property: `og:description`,
-            content: metaDescription,
-          }, {
-            property: `og:type`,
-            content: `website`,
-          }, {
-            name: `twitter:card`,
-            content: `summary`,
-          }, {
-            name: `twitter:creator`,
-            content: site.siteMetadata.author,
-          }, {
-            name: `twitter:title`,
-            content: title,
-          }, {
-            name: `twitter:description`,
-            content: metaDescription,
-          }]
+          link={languages
+            .map(language => ({
+              key: language,
+              rel: "alternate",
+              hrefLang: language,
+              href: a.href.replace(`${currentLanguage}`, language)
+            }))
+          }
+          meta={
+            [{
+              name: `description`,
+              content: metaDescription,
+            }, {
+              property: `og:title`,
+              content: title,
+            }, {
+              property: `og:description`,
+              content: metaDescription,
+            }, {
+              property: `og:type`,
+              content: `website`,
+            }, {
+              name: `twitter:card`,
+              content: `summary`,
+            }, {
+              name: `twitter:creator`,
+              content: site.siteMetadata.author,
+            }, {
+              name: `twitter:title`,
+              content: title,
+            }, {
+              name: `twitter:description`,
+              content: metaDescription,
+            }]
             .concat(
               keywords && keywords.length > 0
                 ? {
@@ -78,15 +89,9 @@ function Seo({ description, lang, meta, keywords }: InferProps<typeof Seo.propTy
                 }
                 : []
             )
-            .concat(meta)}
-        >
-
-          {/* {
-            languages.map((langCode) => {
-              <link rel="alternate" href={`${siteUrl}/${langCode}${pathname}`} hrefLang={langCode} key={langCode} />
-            })
-          } */}
-        </Helmet>
+            .concat(meta)
+          }
+        />
       )}
     </IntlContextConsumer>
   )
