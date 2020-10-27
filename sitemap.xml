@@ -17,9 +17,6 @@
 <url> <loc>https://gpessa.github.io/pessastudio/giostre/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://gpessa.github.io/pessastudio/it/giostre/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://gpessa.github.io/pessastudio/fr/giostre/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://gpessa.github.io/pessastudio/ostacoli/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://gpessa.github.io/pessastudio/it/ostacoli/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://gpessa.github.io/pessastudio/fr/ostacoli/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://gpessa.github.io/pessastudio/recinti/come-preparare-il-fondo/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://gpessa.github.io/pessastudio/it/recinti/come-preparare-il-fondo/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://gpessa.github.io/pessastudio/fr/recinti/come-preparare-il-fondo/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
@@ -32,6 +29,9 @@
 <url> <loc>https://gpessa.github.io/pessastudio/tondini/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://gpessa.github.io/pessastudio/it/tondini/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://gpessa.github.io/pessastudio/fr/tondini/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://gpessa.github.io/pessastudio/ostacoli/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://gpessa.github.io/pessastudio/it/ostacoli/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://gpessa.github.io/pessastudio/fr/ostacoli/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://gpessa.github.io/pessastudio/giostre/ippowalker/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://gpessa.github.io/pessastudio/it/giostre/ippowalker/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://gpessa.github.io/pessastudio/fr/giostre/ippowalker/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
