@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[15],{usQs:function(e,a,n){"use strict";n.r(a);var r=n("kCIJ"),t=n("q1tI"),o=n.n(t),i=n("7cJT");a.default=function(){var e=Object(r.useIntl)(),a=e.formatMessage,n=e.formatHTMLMessage;return o.a.createElement(i.l,null,o.a.createElement(i.n,{variant:"h2"},a({id:"NAVIGATION__come-preparare-il-fondo"})),o.a.createElement("p",null,n({id:"RECINTI__come-preparare-il-fondo__istruzioni"})))}}}]);
+//# sourceMappingURL=component---src-pages-recinti-come-preparare-il-fondo-tsx-98e4092edcafc4e5bcfe.js.map
