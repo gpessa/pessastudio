@@ -36,7 +36,6 @@
     "react-helmet": "^6.1.0",
     "react-intersection-observer": "^8.29.1",
     "react-sticky": "^6.0.3",
-    "react-world-flags": "^1.4.0",
     "universal-cookie": "^4.0.4"
   },
   "devDependencies": {

@@ -54,7 +54,7 @@ const ModalGallery: React.FC<Props> = ({ render, images }) => {
     <>
       {render(gallery)}
 
-      <Dialog open={!!gallery.active} onClose={gallery.close} maxWidth="lg">
+      <Dialog open={!!gallery.active} onClose={gallery.close} maxWidth="md" >
         {gallery.active && (
           <>
             <img className={classes.image} src={gallery.active.src} />

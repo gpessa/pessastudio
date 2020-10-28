@@ -46,7 +46,7 @@ const withModalGallery = <P extends object>(
     <>
       <Component {...props as P} images={images} open={open}/>
 
-      <Dialog open={!!active} onClose={close} maxWidth="lg">
+      <Dialog open={!!active} onClose={close} >
         {active && (
           <>
             <img className={classes.image} src={active.src} />

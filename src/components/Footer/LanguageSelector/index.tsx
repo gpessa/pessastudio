@@ -1,15 +1,19 @@
-import { changeLocale, injectIntl, IntlContextConsumer } from 'gatsby-plugin-intl';
+import { changeLocale, IntlContextConsumer } from 'gatsby-plugin-intl';
 import * as React from 'react';
 import { useIntl } from "gatsby-plugin-intl"
-import Flag from 'react-world-flags';
 
 import { TSmall } from '@components';
-import { Button, Dialog, List, ListItem, ListItemText, ListItemAvatar, DialogTitle, makeStyles } from '@material-ui/core';
+import { Button, Dialog, List, ListItem, ListItemText, ListItemAvatar, DialogTitle, makeStyles, SvgIcon } from '@material-ui/core';
 import { useState } from 'react';
+
+// https://www.flaticon.com/packs/countrys-flags
 
 const useStyles = makeStyles(() => ({
   button: {
     textTransform: "none"
+  },
+  icon: {
+    width: 20
   }
 }));
 
@@ -32,7 +36,7 @@ const LanguageSelector: React.FC = () => {
             variant="text"
             onClick={handleModal} 
             className={classes.button}
-            startIcon={<Flag code={locale} height={15} />}
+            startIcon={<img className={classes.icon } src={require(`@images/flags/${locale}.svg`)} />}
           >
             <TSmall gutterBottom={false}>Change language</TSmall>
           </Button>
@@ -50,7 +54,7 @@ const LanguageSelector: React.FC = () => {
                   key={lang}
                 >
                   <ListItemAvatar>
-                    <Flag code={lang} height={15} />
+                    <img className={classes.icon  } src={require(`@images/flags/${lang}.svg`)} />
                   </ListItemAvatar>
                   <ListItemText>{formatMessage({ id: `LOCALE__${lang}` })}</ListItemText>
                 </ListItem>
@@ -63,4 +67,4 @@ const LanguageSelector: React.FC = () => {
   )
 }
 
-export default injectIntl(LanguageSelector)
+export default LanguageSelector
