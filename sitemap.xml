@@ -23,10 +23,6 @@
 <url> <loc>https://gpessa.github.io/pessastudio/it/giostre/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://gpessa.github.io/pessastudio/fr/giostre/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://gpessa.github.io/pessastudio/en/giostre/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://gpessa.github.io/pessastudio/ostacoli/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://gpessa.github.io/pessastudio/it/ostacoli/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://gpessa.github.io/pessastudio/fr/ostacoli/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://gpessa.github.io/pessastudio/en/ostacoli/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://gpessa.github.io/pessastudio/recinti/come-preparare-il-fondo/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://gpessa.github.io/pessastudio/it/recinti/come-preparare-il-fondo/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://gpessa.github.io/pessastudio/fr/recinti/come-preparare-il-fondo/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
@@ -35,6 +31,10 @@
 <url> <loc>https://gpessa.github.io/pessastudio/it/recinti/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://gpessa.github.io/pessastudio/fr/recinti/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://gpessa.github.io/pessastudio/en/recinti/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://gpessa.github.io/pessastudio/ostacoli/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://gpessa.github.io/pessastudio/it/ostacoli/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://gpessa.github.io/pessastudio/fr/ostacoli/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://gpessa.github.io/pessastudio/en/ostacoli/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://gpessa.github.io/pessastudio/tondini/come-preparare-il-fondo/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://gpessa.github.io/pessastudio/it/tondini/come-preparare-il-fondo/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://gpessa.github.io/pessastudio/fr/tondini/come-preparare-il-fondo/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
