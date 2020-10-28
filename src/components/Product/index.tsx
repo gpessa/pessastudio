@@ -8,7 +8,6 @@ import { BREAKPOINT, COLORS, PRODUCT_GUTTER } from '@theme';
 
 import ColorsList from './ColorsList';
 import Data from './Data';
-import Description from './Description';
 import MaterialsList from './MaterialsList';
 import Price from './Price';
 
@@ -68,7 +67,7 @@ const Product = ({ images, vertical, price, url, name, description, ...attribute
           <Grid item xs={12} md={span} className={classes.data}>
             <TH variant="h6" sans className={classes.title}>{name}</TH>
 
-            <Description description={description} />
+            {description && <div dangerouslySetInnerHTML={{ __html: description }} />}
 
             {Object
               .keys(attributes)

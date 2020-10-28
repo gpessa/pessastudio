@@ -10,6 +10,7 @@ export const query = graphql`
     allFile(filter: {relativeDirectory: {in: "product/giostre/ippowalker/gallery"}}) {
       edges {
         node {
+          name
           relativePath
         }
       }
@@ -20,8 +21,8 @@ export const query = graphql`
 const Ippowalker: React.FC<{ data: ImagesQuery }> = ({ data }) => {
   const { formatMessage, formatHTMLMessage } = useIntl()
 
-  const IMAGES = data.allFile.edges.map(({ node }, index) => ({
-    caption: formatMessage({ id: `GIOSTRE__ippowalker__gallery__image-${index}` }),
+  const IMAGES = data.allFile.edges.map(({ node }) => ({
+    caption: formatMessage({ id: `GIOSTRE__ippowalker__gallery__image-${node.name}` }),
     src: require(`@images/${node.relativePath}`),
   }))
 
@@ -78,7 +79,7 @@ const Ippowalker: React.FC<{ data: ImagesQuery }> = ({ data }) => {
         left={
           <>
             <TH variant="h1">{formatMessage({ id: "NAVIGATION__ippowalker" })}</TH>
-            <p>{formatHTMLMessage({ id: "GIOSTRE__ippowalker__descrizione" })}</p>
+            <p dangerouslySetInnerHTML={{ __html: formatMessage({ id: "GIOSTRE__ippowalker__descrizione" }) }}/>
           </>
         }
         right={<Gallery images={IMAGES} />}

@@ -41,7 +41,7 @@ const CandelieriLameForate = () => {
     <>
       <Title
         title={formatMessage({ id: "OSTACOLI__candelieri-e-lame__title" })}
-        text={<p>{formatHTMLMessage({ id: "OSTACOLI__candelieri-e-lame__text" })}</p>}
+        text={<p dangerouslySetInnerHTML={{ __html: formatMessage({ id: "OSTACOLI__candelieri-e-lame__text" }) }} />}
       />
       
       <Grid container spacing={PRODUCT_GUTTER}>

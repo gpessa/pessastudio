@@ -3,7 +3,7 @@ import React from 'react';
 
 import { Section, Title, TSmall } from '@components';
 import { Divider, Grid, makeStyles, useMediaQuery } from '@material-ui/core';
-import theme, { COLORS, BREAKPOINT } from '@theme';
+import theme, { COLORS, BREAKPOINT, PRODUCT_GUTTER } from '@theme';
 
 import LanguageSelector from './LanguageSelector';
 import Map from './Map';
@@ -12,7 +12,8 @@ import Socials from './Socials';
 
 const useStyles = makeStyles(theme => ({
   copyright: {
-    color: COLORS.GREY1
+    color: COLORS.GREY1,
+    paddingBottom: theme.spacing(3)
   },
   divider: {
     margin: theme.spacing(4),
@@ -63,7 +64,7 @@ const Footer: React.FC = () => {
       <Map />
 
       <Section spacing="small">
-        <Grid container justify="space-between" className={classes.copyright}>
+        <Grid container justify="space-between" className={classes.copyright} spacing={3}>
           <Grid item>
             <TSmall>COD. FISC. e Part: I.V.A. 04743610281 C.C.I.A.A. PD - R.E.A. 414822</TSmall>
           </Grid>

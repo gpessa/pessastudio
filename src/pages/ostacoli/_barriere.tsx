@@ -32,7 +32,7 @@ const Barriere = () => {
     <div>
       <Title
         title={formatMessage({ id: "OSTACOLI__barriere__title" })}
-        text={<p>{formatHTMLMessage({ id: "OSTACOLI__barriere__text" })}</p>}
+        text={<p dangerouslySetInnerHTML={{ __html: formatMessage({ id: "OSTACOLI__barriere__text" }) }} />}
       />
       <Product {...PRODUCT} />
     </div>

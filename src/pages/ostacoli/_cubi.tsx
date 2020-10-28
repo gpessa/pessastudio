@@ -7,7 +7,7 @@ import { Grid } from "@material-ui/core"
 import { PRODUCT_GUTTER } from "@theme"
 
 const Cubi: React.FC = () => {
-  const { formatHTMLMessage, formatMessage } = useIntl()
+  const { formatMessage } = useIntl()
 
   const PRODUCTS = [
     {
@@ -44,7 +44,7 @@ const Cubi: React.FC = () => {
     <>
       <Title
         title={formatMessage({ id: "OSTACOLI__cubi__title" })}
-        text={<p>{formatHTMLMessage({ id: "OSTACOLI__cubi__text" })}</p>}
+        text={<p dangerouslySetInnerHTML={{ __html: formatMessage({ id: "OSTACOLI__cubi__text" }) }} />}
       />
 
       <Grid container spacing={PRODUCT_GUTTER}>

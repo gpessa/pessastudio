@@ -44,6 +44,7 @@ export const query = graphql`
       edges {
         node {
           relativePath
+          name
         }
       }
     }
@@ -53,11 +54,11 @@ export const query = graphql`
 const Giostre: React.FC<{
   data: ImagesQuery
 }> = ({ data }) => {
-  const { formatHTMLMessage, formatMessage } = useIntl()
+  const { formatMessage } = useIntl()
   const classes = useStyles()
 
-  const IMAGES = data.allFile.edges.map(({ node }, index) => ({
-    caption: formatMessage({ id: `GIOSTRE__gallery__image-${index}` }),
+  const IMAGES = data.allFile.edges.map(({ node }) => ({
+    caption: formatMessage({ id: `GIOSTRE__gallery__image-${node.name}` }),
     src: require(`@images/${node.relativePath}`),
   }))
 
@@ -94,7 +95,7 @@ const Giostre: React.FC<{
       <Benefits
         title={formatMessage({ id: "GIOSTRE__benefits__title" })}
         subtitle={formatMessage({ id: "GIOSTRE__benefits__subtitle" })}
-        text={<p>{formatHTMLMessage({ id: "GIOSTRE__benefits__text" })}</p>}
+        text={<p dangerouslySetInnerHTML={{ __html: formatMessage({ id: "GIOSTRE__benefits__text" }) }} />}
         benefits={BENEFITS}
       />
 
@@ -132,7 +133,7 @@ const Giostre: React.FC<{
       <Columns
         left={
           <Box textAlign="center">
-            <TH variant="h4">{formatMessage({ id: "NAVIGATION__tecnoexerciser" })}</TH>
+            <TH variant="h4" sans>{formatMessage({ id: "NAVIGATION__tecnoexerciser" })}</TH>
             <Button
               component={LinkGatsby}
               to="/giostre/tecnoexerciser"
@@ -145,7 +146,7 @@ const Giostre: React.FC<{
         }
         right={
           <Box textAlign="center">
-            <TH variant="h4">{formatMessage({ id: "NAVIGATION__ippowalker" })}</TH>
+            <TH variant="h4" sans>{formatMessage({ id: "NAVIGATION__ippowalker" })}</TH>
             <Button
               component={LinkGatsby}
               to="/giostre/ippowalker"

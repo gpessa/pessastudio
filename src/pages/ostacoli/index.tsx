@@ -23,31 +23,31 @@ const Ostacoli: React.FC = () => {
         <FormattedHTMLMessage id="OSTACOLI__text" tagName={Typography} variant="body1" />
       </Section>
 
-      <Section color={COLORS.WARM2}>
+      <Section id="barriere" color={COLORS.WARM2}>
         <Barriere />
       </Section>
 
-      <Section>
+      <Section id="fosso">
         <Fosso />
       </Section>
 
-      <Section color={COLORS.WARM2}>
+      <Section id="cavalletti" color={COLORS.WARM2}>
         <Cavalletti />
       </Section>
 
-      <Section>
+      <Section id="cubi">
         <Cubi />
       </Section>
 
-      <Section color={COLORS.WARM2}>
+      <Section id="candelierilameforate" color={COLORS.WARM2}>
         <CandelieriLameForate />
       </Section>
 
-      <Section>
+      <Section id="cucchiai">
         <Cucchiai />
       </Section>
 
-      <Section color={COLORS.WARM2}>
+      <Section id="segnaletica" color={COLORS.WARM2}>
         <Segnaletica />
       </Section>
     </>

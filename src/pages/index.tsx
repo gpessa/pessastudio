@@ -23,9 +23,9 @@ const Index: React.FC = () => {
       description: formatMessage({ id: "BENEFITS--2__text" }),
     },
     {
-      icon: AppsIcon,
-      title: formatMessage({ id: "BENEFITS--3__title" }),
-      description: formatMessage({ id: "BENEFITS--3__text" }),
+      icon: RestoreIcon,
+      title: formatMessage({ id: "BENEFITS--5__title" }),
+      description: formatMessage({ id: "BENEFITS--5__text" }),
     },
     {
       icon: AppsIcon,
@@ -33,10 +33,10 @@ const Index: React.FC = () => {
       description: formatMessage({ id: "BENEFITS--4__text" }),
     },
     {
-      icon: RestoreIcon,
-      title: formatMessage({ id: "BENEFITS--5__title" }),
-      description: formatMessage({ id: "BENEFITS--5__text" }),
-    }
+      icon: AppsIcon,
+      title: formatMessage({ id: "BENEFITS--3__title" }),
+      description: formatMessage({ id: "BENEFITS--3__text" }),
+    },
   ]
 
   return (

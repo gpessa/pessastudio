@@ -3,7 +3,6 @@ import { FormattedHTMLMessage, useIntl } from 'gatsby-plugin-intl';
 import React from 'react';
 
 import { Columns, ContentTable, Gallery, Section, TH } from '@components';
-import { Typography } from '@material-ui/core';
 import { COLORS } from '@theme';
 
 import Accessori from './_accessori';
@@ -38,7 +37,7 @@ const Recinti: React.FC<{
         left={
           <>
             <TH variant="h1">{formatMessage({ id: "NAVIGATION__recinti" })}</TH>
-            <p>{formatHTMLMessage({ id: "RECINTI__text" })}</p>
+            <FormattedHTMLMessage id="RECINTI__text" />
           </>
         }
         right={<Gallery images={IMAGES} />}

@@ -36,7 +36,7 @@ const LanguageSelector: React.FC = () => {
             variant="text"
             onClick={handleModal} 
             className={classes.button}
-            startIcon={<img className={classes.icon } src={require(`@images/flags/${locale}.svg`)} />}
+            startIcon={<img className={classes.icon} alt={locale} src={require(`@images/flags/${locale}.svg`)} />}
           >
             <TSmall gutterBottom={false}>Change language</TSmall>
           </Button>
@@ -54,7 +54,7 @@ const LanguageSelector: React.FC = () => {
                   key={lang}
                 >
                   <ListItemAvatar>
-                    <img className={classes.icon  } src={require(`@images/flags/${lang}.svg`)} />
+                    <img className={classes.icon} alt={lang} src={require(`@images/flags/${lang}.svg`)} />
                   </ListItemAvatar>
                   <ListItemText>{formatMessage({ id: `LOCALE__${lang}` })}</ListItemText>
                 </ListItem>

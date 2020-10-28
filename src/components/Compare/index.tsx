@@ -52,6 +52,10 @@ const useStyles = makeStyles(theme => ({
     color: COLORS.GREY1,
     textTransform: 'uppercase',
     fontFamily: FONTS.SANSERIF,
+  },
+  intro: {
+    textAlign: 'center',
+    marginBottom: theme.spacing(5)
   }
 }))
 
@@ -63,10 +67,10 @@ const Compare: React.FC<Props> = ({ products, title, text }) => {
 
   return (
     <Section maxWidth={false} disableGutters className={classes.root}>
-      <Box textAlign="center" mb={5}>
+      <Container className={classes.intro}>
         <TH variant="h2">{title}</TH>
-        <div>{text}</div>
-      </Box>
+        <p>{text}</p>
+      </Container>
       <div>
         <Container>
           <Grid container spacing={7}>

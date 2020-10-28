@@ -4,10 +4,10 @@ import React from "react"
 import { Product, Section, TH } from "@components"
 import { Colors, Material } from "@constants"
 import { Grid, Link, Typography } from "@material-ui/core"
-import { COLORS } from "@theme"
+import { COLORS, PRODUCT_GUTTER } from "@theme"
 
 const Dressage: React.FC = () => {
-  const { formatMessage, formatHTMLMessage } = useIntl()
+  const { formatMessage } = useIntl()
 
   const TRAINING_PRODUCTS = [
     {
@@ -23,6 +23,7 @@ const Dressage: React.FC = () => {
     {
       name: formatMessage({ id: "DRESSAGE__prodotto__modulo__name" }),
       images: [{src: require("@images/product/dressage/training-modulo-dressage.jpg")}],
+      width: 2000,
       weight: 3,
       height: 285,
       colors: [Colors.WHITE],
@@ -52,8 +53,7 @@ const Dressage: React.FC = () => {
     {
       name: formatMessage({ id: "DRESSAGE__prodotto__modulo__name" }),
       images: [{src: require("@images/product/dressage/olimpic-modulo-dressage.jpg")}],
-      width: 210,
-      length: 2000,
+      width: 2000,
       height: 370,
       weight: 5,
       colors: [Colors.WHITE],
@@ -88,10 +88,10 @@ const Dressage: React.FC = () => {
 
       <Section id="dressage-training" color={COLORS.WARM2}>
         <TH variant="h2">{formatMessage({ id: `DRESSAGE__training_title` })}</TH>
-        <p>{formatHTMLMessage({ id: "DRESSAGE__training_description" })}</p>
-        <Grid container spacing={5}>
+        <p dangerouslySetInnerHTML={{ __html: formatMessage({ id: "DRESSAGE__training_description" })} } />
+        <Grid container spacing={PRODUCT_GUTTER}>
           {TRAINING_PRODUCTS.map((product, index) => (
-            <Grid item key={index} md={3}>
+            <Grid item key={index} md={3} xs={12}>
               <Product vertical {...product} />
             </Grid>
           ))}
@@ -100,10 +100,10 @@ const Dressage: React.FC = () => {
 
       <Section id="dressage-olimpic">
         <TH variant="h2">{formatMessage({ id: `DRESSAGE__olimpic_title` })}</TH>
-        <p>{formatHTMLMessage({ id: "DRESSAGE__olimpic_description" })}</p>
-        <Grid container spacing={5}>
+        <p dangerouslySetInnerHTML={{ __html: formatMessage({ id: "DRESSAGE__olimpic_description" })} } />
+        <Grid container spacing={PRODUCT_GUTTER}>
           {OLIMPIC_PRODUCTS.map((product, index) => (
-            <Grid item key={index} md={3}>
+            <Grid item key={index} md={3} xs={12}>
               <Product vertical {...product} />
             </Grid>
           ))}

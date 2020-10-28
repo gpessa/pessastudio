@@ -7,7 +7,7 @@ import { PRODUCT_GUTTER } from "@theme"
 import { useIntl } from "gatsby-plugin-intl"
 
 const CucchiaiSegnaletica: React.FC = () => {
-  const { formatHTMLMessage, formatMessage } = useIntl()
+  const { formatMessage } = useIntl()
 
   const PRODUCTS = [
     {
@@ -50,7 +50,7 @@ const CucchiaiSegnaletica: React.FC = () => {
     <>
       <Title
         title={formatMessage({ id: "OSTACOLI__cucchiai__title" })}
-        text={<p>{formatHTMLMessage({ id: "OSTACOLI__cucchiai__text" })}</p>}
+        text={<p dangerouslySetInnerHTML={{ __html: formatMessage({ id: "OSTACOLI__cucchiai__text" }) }}/>}
       />
 
       <Grid container spacing={PRODUCT_GUTTER}>

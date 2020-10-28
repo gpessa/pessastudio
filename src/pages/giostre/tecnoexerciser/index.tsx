@@ -7,9 +7,10 @@ import { graphql } from "gatsby"
 
 export const query = graphql`
   query GiostraTecnoexerciserGallery {
-    allFile(filter: {relativeDirectory: {in: "product/giostre/ippowalker/gallery"}}) {
+    allFile(filter: {relativeDirectory: {in: "product/giostre/tecnoexerciser/gallery"}}) {
       edges {
         node {
+          name,
           relativePath
         }
       }
@@ -19,10 +20,11 @@ export const query = graphql`
 const Tecnoexerciser: React.FC<{ data: ImagesQuery }> = ({ data }) => {
   const { formatMessage, formatHTMLMessage } = useIntl()
 
-  const IMAGES = data.allFile.edges.map(({ node }, index) => ({
-    caption: formatMessage({ id: `GIOSTRE__tecnoexerciser__gallery__image-${index}` }),
+  const IMAGES = data.allFile.edges.map(({ node }) => ({
+    caption: formatMessage({ id: `GIOSTRE__tecnoexerciser__gallery__image-${node.name}` }),
     src: require(`@images/${node.relativePath}`),
   }))
+
 
   const ATTACHMENT = [{
       label: formatMessage({ id: "GIOSTRE__manuali__manuale-quadro" }),
@@ -115,7 +117,7 @@ const Tecnoexerciser: React.FC<{ data: ImagesQuery }> = ({ data }) => {
           </Grid>
 
           <Grid item xs={12} md={6}>
-            <ContentTable rows={ATTACHMENT} title={formatMessage({ id: "GENERAL__manauli" })} />
+            <ContentTable rows={ATTACHMENT} title={formatMessage({ id: "GENERAL__manuali" })} />
           </Grid>
         </Grid>
       </Section>

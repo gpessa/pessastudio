@@ -1,4 +1,4 @@
-import { injectIntl, FormattedHTMLMessage } from "gatsby-plugin-intl"
+import { injectIntl } from "gatsby-plugin-intl"
 import React from "react"
 import { IntlFormatters } from "react-intl"
 
@@ -38,7 +38,7 @@ const Cavalletti: React.FC<{ intl: IntlFormatters }> = ({ intl: { formatMessage 
       <Grid item md={6}>
         <Title
           title={formatMessage({ id: "OSTACOLI__cavalletti__title" })}
-          text={<FormattedHTMLMessage id="OSTACOLI__cavalletti__text" />}
+          text={<p dangerouslySetInnerHTML={{ __html: formatMessage({ id: "OSTACOLI__cavalletti__text" }) }} />}
         />
       </Grid>
       <Grid item container md={6} spacing={PRODUCT_GUTTER} >

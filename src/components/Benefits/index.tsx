@@ -39,7 +39,7 @@ const Benefits: React.FC<Props> = ({ title, subtitle, text, benefits }) => {
       <Grid container spacing={10} justify="space-between">
         <Grid
           item
-          md={6}
+          md={5}
           xs={12}
           component={Title}
           className={classes.intro}

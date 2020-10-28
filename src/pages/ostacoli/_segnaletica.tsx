@@ -44,9 +44,7 @@ const Segnaletica: React.FC= () => {
 
   return (
     <>
-      <Title
-        title={formatMessage({ id: "OSTACOLI__segnaletica__title" })}
-      />
+      <Title title={formatMessage({ id: "OSTACOLI__segnaletica__title" })} />
       <Grid container spacing={PRODUCT_GUTTER}>
         {PRODUCTS.map((product, index) => (
           <Grid key={index} xs={12} md={6} item>
