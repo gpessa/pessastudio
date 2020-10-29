@@ -19,7 +19,7 @@ export const query = graphql`
 `
 
 const Ippowalker: React.FC<{ data: ImagesQuery }> = ({ data }) => {
-  const { formatMessage, formatHTMLMessage } = useIntl()
+  const { formatMessage, formatHTMLMessage, locale } = useIntl()
 
   const IMAGES = data.allFile.edges.map(({ node }) => ({
     caption: formatMessage({ id: `GIOSTRE__ippowalker__gallery__image-${node.name}` }),
@@ -31,15 +31,26 @@ const Ippowalker: React.FC<{ data: ImagesQuery }> = ({ data }) => {
     file: withPrefix(`/giostra-ippowalker-${dimension}.pdf`),
   }))
 
+  const MANUALI = [{
+    label: formatMessage({ id: "GIOSTRE__manuali__manuale-quadro" }),
+    file: withPrefix(`/manuale-quadro-ippowalker-${locale}.pdf`),
+  }, {
+    label: formatMessage({ id: "GIOSTRE__manuali__manuale-collegamento-elettrico" }),
+    file: withPrefix(`/giostra-collegamento-elettrico.pdf`),
+  }, {
+    label: formatMessage({ id: "GIOSTRE__manuali__istruzioni-montaggio" }),
+    link: withPrefix(`/giostre/ippowalker/istruzioni-montaggio`),
+  }]
+
   const PRODUCTS = [
     {
       image: require("@images/product/giostre/ippowalker/gamma/solo-motore.jpg"),
       name: formatHTMLMessage({ id: 'GIOSTRE__name--base' }),
       description: formatHTMLMessage({ id: "GIOSTRE__description--base" }),
       features: [
-        { name: formatMessage({ id: "GIOSTRE__caratteristica__diametro" }), value: formatMessage({ id: "GIOSTRE__caratteristica__diametro_value" }) },
-        { name: formatMessage({ id: "GIOSTRE__caratteristica__numero_cavalli" }), value: formatMessage({ id: "GIOSTRE__caratteristica__numero_cavalli_value" }) },
-        { name: formatMessage({ id: "GIOSTRE__caratteristica__motore" }), value: formatMessage({ id: "GIOSTRE__caratteristica__motore_value" }) },
+        { name: formatMessage({ id: "GIOSTRE__caratteristica__diametro" }), value: formatMessage({ id: "GIOSTRE__caratteristica__diametro_ippowalker_value" }) },
+        { name: formatMessage({ id: "GIOSTRE__caratteristica__numero_cavalli" }), value: formatMessage({ id: "GIOSTRE__caratteristica__numero_cavalli_ippowalker_value" }) },
+        { name: formatMessage({ id: "GIOSTRE__caratteristica__motore" }), value: formatMessage({ id: "GIOSTRE__caratteristica__motore_ippowalker_value" }) },
         { name: formatMessage({ id: "GIOSTRE__caratteristica__porte" }), value: formatMessage({ id: "GIOSTRE__caratteristica__porte_value" }) },
         { name: formatMessage({ id: "GIOSTRE__caratteristica__quadro" }), value: formatMessage({ id: "GIOSTRE__caratteristica__quadro_value" }) },
       ]
@@ -49,9 +60,9 @@ const Ippowalker: React.FC<{ data: ImagesQuery }> = ({ data }) => {
       name: formatHTMLMessage({ id: 'GIOSTRE__name--tecnofence' }),
       description: formatHTMLMessage({ id: "GIOSTRE__description--tecnofence" }),
       features: [
-        { name: formatMessage({ id: "GIOSTRE__caratteristica__diametro" }), value: formatMessage({ id: "GIOSTRE__caratteristica__diametro_value" }) },
-        { name: formatMessage({ id: "GIOSTRE__caratteristica__numero_cavalli" }), value: formatMessage({ id: "GIOSTRE__caratteristica__numero_cavalli_value" }) },
-        { name: formatMessage({ id: "GIOSTRE__caratteristica__motore" }), value: formatMessage({ id: "GIOSTRE__caratteristica__motore_value" }) },
+        { name: formatMessage({ id: "GIOSTRE__caratteristica__diametro" }), value: formatMessage({ id: "GIOSTRE__caratteristica__diametro_ippowalker_value" }) },
+        { name: formatMessage({ id: "GIOSTRE__caratteristica__numero_cavalli" }), value: formatMessage({ id: "GIOSTRE__caratteristica__numero_cavalli_ippowalker_value" }) },
+        { name: formatMessage({ id: "GIOSTRE__caratteristica__motore" }), value: formatMessage({ id: "GIOSTRE__caratteristica__motore_ippowalker_value" }) },
         { name: formatMessage({ id: "GIOSTRE__caratteristica__porte" }), value: formatMessage({ id: "GIOSTRE__caratteristica__porte_value" }) },
         { name: formatMessage({ id: "GIOSTRE__caratteristica__quadro" }), value: formatMessage({ id: "GIOSTRE__caratteristica__quadro_value" }) },
         { name: formatMessage({ id: "GIOSTRE__caratteristica__recinzione" }), value: formatMessage({ id: "GIOSTRE__caratteristica__quadro_value" }) },
@@ -62,9 +73,9 @@ const Ippowalker: React.FC<{ data: ImagesQuery }> = ({ data }) => {
       name: formatHTMLMessage({ id: 'GIOSTRE__name--flat' }),
       description: formatHTMLMessage({ id: "GIOSTRE__description--flat" }),
       features: [
-        { name: formatMessage({ id: "GIOSTRE__caratteristica__diametro" }), value: formatMessage({ id: "GIOSTRE__caratteristica__diametro_value" }) },
-        { name: formatMessage({ id: "GIOSTRE__caratteristica__numero_cavalli" }), value: formatMessage({ id: "GIOSTRE__caratteristica__numero_cavalli_value" }) },
-        { name: formatMessage({ id: "GIOSTRE__caratteristica__motore" }), value: formatMessage({ id: "GIOSTRE__caratteristica__motore_value" }) },
+        { name: formatMessage({ id: "GIOSTRE__caratteristica__diametro" }), value: formatMessage({ id: "GIOSTRE__caratteristica__diametro_ippowalker_value" }) },
+        { name: formatMessage({ id: "GIOSTRE__caratteristica__numero_cavalli" }), value: formatMessage({ id: "GIOSTRE__caratteristica__numero_cavalli_ippowalker_value" }) },
+        { name: formatMessage({ id: "GIOSTRE__caratteristica__motore" }), value: formatMessage({ id: "GIOSTRE__caratteristica__motore_ippowalker_value" }) },
         { name: formatMessage({ id: "GIOSTRE__caratteristica__porte" }), value: formatMessage({ id: "GIOSTRE__caratteristica__porte_value" }) },
         { name: formatMessage({ id: "GIOSTRE__caratteristica__quadro" }), value: formatMessage({ id: "GIOSTRE__caratteristica__quadro_value" }) },
         { name: formatMessage({ id: "GIOSTRE__caratteristica__recinzione" }), value: formatMessage({ id: "GIOSTRE__caratteristica__recinzione_value_pannello_marino" }) },
@@ -106,16 +117,7 @@ const Ippowalker: React.FC<{ data: ImagesQuery }> = ({ data }) => {
           <Grid item xs={12} md={6}>
             <ContentTable
               title={formatMessage({ id: "GENERAL__manuali" })}
-              rows={[{
-                label: formatMessage({ id: "GIOSTRE__manuali__manuale-quadro" }),
-                file: withPrefix(`/giostra-ippowalker-manuale-quadro.pdf`),
-              },{
-                label: formatMessage({ id: "GIOSTRE__manuali__manuale-collegamento-elettrico" }),
-                file: withPrefix(`/giostra-collegamento-elettrico.pdf`),
-              },{
-                label: formatMessage({ id: "GIOSTRE__manuali__istruzioni-montaggio" }),
-                link: withPrefix(`/giostre/ippowalker/istruzioni-montaggio`),
-              }]}
+              rows={MANUALI}
             />
           </Grid>
         </Grid>

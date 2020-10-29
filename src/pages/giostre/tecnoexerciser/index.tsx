@@ -18,7 +18,7 @@ export const query = graphql`
   }
 `
 const Tecnoexerciser: React.FC<{ data: ImagesQuery }> = ({ data }) => {
-  const { formatMessage, formatHTMLMessage } = useIntl()
+  const { formatMessage, formatHTMLMessage, locale } = useIntl()
 
   const IMAGES = data.allFile.edges.map(({ node }) => ({
     caption: formatMessage({ id: `GIOSTRE__tecnoexerciser__gallery__image-${node.name}` }),
@@ -27,17 +27,17 @@ const Tecnoexerciser: React.FC<{ data: ImagesQuery }> = ({ data }) => {
 
 
   const ATTACHMENT = [{
-      label: formatMessage({ id: "GIOSTRE__manuali__manuale-quadro" }),
-      file: withPrefix(`/giostra-tecnoexerciser-manuale-quadro.pdf`),
-    },{
-      label: formatMessage({ id: "GIOSTRE__manuali__manuale-collegamento-elettrico" }),
-      file: withPrefix(`/giostra-collegamento-elettrico.pdf`),
-    },{
-      label: formatMessage({ id: "GIOSTRE__manuali__istruzioni-montaggio" }),
-      link: "/giostre/tecnoexerciser/istruzioni-montaggio",
-    },{
-      label: formatMessage({ id: "GIOSTRE__manuali__procedura-lubrificazione" }),
-      file: "https://www.youtube.com/watch?v=QMA4wPxq_ow",
+    label: formatMessage({ id: "GIOSTRE__manuali__manuale-quadro" }),
+    file: withPrefix(`/manuale-quadro-tecnoexerciser-${locale}.pdf`),
+  },{
+    label: formatMessage({ id: "GIOSTRE__manuali__manuale-collegamento-elettrico" }),
+    file: withPrefix(`/giostra-collegamento-elettrico.pdf`),
+  },{
+    label: formatMessage({ id: "GIOSTRE__manuali__istruzioni-montaggio" }),
+    link: "/giostre/tecnoexerciser/istruzioni-montaggio",
+  },{
+    label: formatMessage({ id: "GIOSTRE__manuali__procedura-lubrificazione" }),
+      file: formatMessage({ id: "GIOSTRE__manuali__procedura-lubrificazione-link" }),
   }]
   
   const DIMENSIONS = [15, 18, 20, 22, 24].map(dimension => ({
@@ -50,9 +50,9 @@ const Tecnoexerciser: React.FC<{ data: ImagesQuery }> = ({ data }) => {
     name: formatHTMLMessage({ id: 'GIOSTRE__name--base' }),
     description: formatHTMLMessage({ id: "GIOSTRE__description--base" }),
     features: [
-      { name: formatMessage({ id: "GIOSTRE__caratteristica__diametro" }), value: formatMessage({ id: "GIOSTRE__caratteristica__diametro_value" })},
-      { name: formatMessage({ id: "GIOSTRE__caratteristica__numero_cavalli" }), value: formatMessage({ id: "GIOSTRE__caratteristica__numero_cavalli_value" })},
-      { name: formatMessage({ id: "GIOSTRE__caratteristica__motore" }), value: formatMessage({ id: "GIOSTRE__caratteristica__motore_value" }) },
+      { name: formatMessage({ id: "GIOSTRE__caratteristica__diametro" }), value: formatMessage({ id: "GIOSTRE__caratteristica__diametro_tecnoexerciser__value" })},
+      { name: formatMessage({ id: "GIOSTRE__caratteristica__numero_cavalli" }), value: formatMessage({ id: "GIOSTRE__caratteristica__numero_cavalli_tecnoexerciser_value" })},
+      { name: formatMessage({ id: "GIOSTRE__caratteristica__motore" }), value: formatMessage({ id: "GIOSTRE__caratteristica__motore_tecnoexerciser_value" }) },
       { name: formatMessage({ id: "GIOSTRE__caratteristica__irrigazione" }), value: formatMessage({ id: "GIOSTRE__caratteristica__irrigazione_value" }) },
       { name: formatMessage({ id: "GIOSTRE__caratteristica__porte" }), value: formatMessage({ id: "GIOSTRE__caratteristica__porte_value" }) },
       { name: formatMessage({ id: "GIOSTRE__caratteristica__quadro" }), value: "Controllo manuale della cadenza o accesso ai \"training programs\" automatici che vi consentiranno di allenare i vostri cavalli fino ad ottenere performance atletiche." },
@@ -63,9 +63,9 @@ const Tecnoexerciser: React.FC<{ data: ImagesQuery }> = ({ data }) => {
     name: formatHTMLMessage({ id: 'GIOSTRE__name--tecnofence' }),
     description: formatHTMLMessage({ id: "GIOSTRE__description--tecnofence" }),
     features: [
-      { name: formatMessage({ id: "GIOSTRE__caratteristica__diametro" }), value: formatMessage({ id: "GIOSTRE__caratteristica__diametro_value" }) },
-      { name: formatMessage({ id: "GIOSTRE__caratteristica__numero_cavalli" }), value: formatMessage({ id: "GIOSTRE__caratteristica__numero_cavalli_value" })},
-      { name: formatMessage({ id: "GIOSTRE__caratteristica__motore" }), value: formatMessage({ id: "GIOSTRE__caratteristica__motore_value" }) },
+      { name: formatMessage({ id: "GIOSTRE__caratteristica__diametro" }), value: formatMessage({ id: "GIOSTRE__caratteristica__diametro_tecnoexerciser_value" }) },
+      { name: formatMessage({ id: "GIOSTRE__caratteristica__numero_cavalli" }), value: formatMessage({ id: "GIOSTRE__caratteristica__numero_cavalli_tecnoexerciser_value" })},
+      { name: formatMessage({ id: "GIOSTRE__caratteristica__motore" }), value: formatMessage({ id: "GIOSTRE__caratteristica__motore_tecnoexerciser_value" }) },
       { name: formatMessage({ id: "GIOSTRE__caratteristica__irrigazione" }), value: formatMessage({ id: "GIOSTRE__caratteristica__irrigazione_value" }) },
       { name: formatMessage({ id: "GIOSTRE__caratteristica__porte" }), value: formatMessage({ id: "GIOSTRE__caratteristica__porte_value" }) },
       { name: formatMessage({ id: "GIOSTRE__caratteristica__quadro" }), value: "Controllo manuale della cadenza o accesso ai \"training programs\" automatici che vi consentiranno di allenare i vostri cavalli fino ad ottenere performance atletiche." },
@@ -77,9 +77,9 @@ const Tecnoexerciser: React.FC<{ data: ImagesQuery }> = ({ data }) => {
     name: formatHTMLMessage({ id: 'GIOSTRE__name--flat' }),
     description: formatHTMLMessage({ id: "GIOSTRE__description--flat" }),
     features: [
-      { name: formatMessage({ id: "GIOSTRE__caratteristica__diametro" }), value: formatMessage({ id: "GIOSTRE__caratteristica__diametro_value" }) },
-      { name: formatMessage({ id: "GIOSTRE__caratteristica__numero_cavalli" }), value: formatMessage({ id: "GIOSTRE__caratteristica__numero_cavalli_value" })},
-      { name: formatMessage({ id: "GIOSTRE__caratteristica__motore" }), value: formatMessage({ id: "GIOSTRE__caratteristica__motore_value" }) },
+      { name: formatMessage({ id: "GIOSTRE__caratteristica__diametro" }), value: formatMessage({ id: "GIOSTRE__caratteristica__diametro_tecnoexerciser_value" }) },
+      { name: formatMessage({ id: "GIOSTRE__caratteristica__numero_cavalli" }), value: formatMessage({ id: "GIOSTRE__caratteristica__numero_cavalli_tecnoexerciser_value" })},
+      { name: formatMessage({ id: "GIOSTRE__caratteristica__motore" }), value: formatMessage({ id: "GIOSTRE__caratteristica__motore_tecnoexerciser_value" }) },
       { name: formatMessage({ id: "GIOSTRE__caratteristica__irrigazione" }), value: formatMessage({ id: "GIOSTRE__caratteristica__irrigazione_value" }) },
       { name: formatMessage({ id: "GIOSTRE__caratteristica__porte" }), value: formatMessage({ id: "GIOSTRE__caratteristica__porte_value" }) },
       { name: formatMessage({ id: "GIOSTRE__caratteristica__quadro" }), value: "Controllo manuale della cadenza o accesso ai \"training programs\" automatici che vi consentiranno di allenare i vostri cavalli fino ad ottenere performance atletiche." },

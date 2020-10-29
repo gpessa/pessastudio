@@ -11,7 +11,7 @@ const Dressage: React.FC = () => {
 
   const TRAINING_PRODUCTS = [
     {
-      name: formatMessage({ id: "DRESSAGE__prodotto__lettera__name" }),
+      name: formatMessage({ id: "DRESSAGE__prodotto__lettera-light__name" }),
       images: [{src: require("@images/product/dressage/training-lettera.jpg")}],
       width: 200,
       height: 300,
