@@ -8,12 +8,17 @@ import { useState } from 'react';
 
 // https://www.flaticon.com/packs/countrys-flags
 
-const useStyles = makeStyles(() => ({
+const useStyles = makeStyles(theme => ({
   button: {
     textTransform: "none"
   },
   icon: {
-    width: 20
+    width: 20,
+    marginRight: theme.spacing(1)
+  },
+  text: {
+    display: 'flex',
+    justifyContent: 'center'
   }
 }));
 
@@ -53,10 +58,10 @@ const LanguageSelector: React.FC = () => {
                   }}
                   key={lang}
                 >
-                  <ListItemAvatar>
+                  <ListItemText disableTypography className={classes.text}>
                     <img className={classes.icon} alt={lang} src={require(`@images/flags/${lang}.svg`)} />
-                  </ListItemAvatar>
-                  <ListItemText>{formatMessage({ id: `LOCALE__${lang}` })}</ListItemText>
+                    {formatMessage({ id: `LOCALE__${lang}` })}
+                  </ListItemText>
                 </ListItem>
               ))}
             </List>
