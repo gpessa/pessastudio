@@ -31,7 +31,7 @@ const useStyles = makeStyles(theme => ({
 const Testimonials = () => {
   const { formatMessage } = useIntl()
   const classes = useStyles()
-  const TESTIMONIALS = 2
+  const TESTIMONIALS = 4
   
   const CAROUSEL_CONFIGURATION = {
     totalSlides: TESTIMONIALS,

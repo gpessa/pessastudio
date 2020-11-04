@@ -45,8 +45,8 @@ const Ippowalker: React.FC<{ data: ImagesQuery }> = ({ data }) => {
   const PRODUCTS = [
     {
       image: require("@images/product/giostre/ippowalker/gamma/solo-motore.jpg"),
-      name: formatHTMLMessage({ id: 'GIOSTRE__name--base' }),
-      description: formatHTMLMessage({ id: "GIOSTRE__description--base" }),
+      name: formatHTMLMessage({ id: 'GIOSTRE__name--solo-macchina' }),
+      description: formatHTMLMessage({ id: "GIOSTRE__description--solo-macchina" }),
       features: [
         { name: formatMessage({ id: "GIOSTRE__caratteristica__diametro" }), value: formatMessage({ id: "GIOSTRE__caratteristica__diametro_ippowalker_value" }) },
         { name: formatMessage({ id: "GIOSTRE__caratteristica__numero_cavalli" }), value: formatMessage({ id: "GIOSTRE__caratteristica__numero_cavalli_ippowalker_value" }) },

@@ -7,7 +7,7 @@ import { BREAKPOINT, COLORS } from "@theme"
 import Address from "./_address"
 
 const SEDE_LEGALE = {
-  name:"PESSASTUDIO Horse Tecnology srl" ,
+  name:"Pessastudio Horse Tecnology srl" ,
   country:"Italy" ,
   postalCode:"35043" ,
   streetAddress:"via Garibaldi, 28" ,
@@ -16,7 +16,7 @@ const SEDE_LEGALE = {
 }
 
 const SEDE_OPERATIVA = {
-  name: "PESSASTUDIO Horse Tecnology srl",
+  name: "Pessastudio Horse Tecnology srl",
   country:"Italy",
   postalCode:"35044",
   streetAddress:"via Cà Megliadino, 35",
