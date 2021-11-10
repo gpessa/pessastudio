@@ -8,7 +8,7 @@ import React from "react"
 
 const PRODUCTS = [
   {
-    name: <Trans id={`Cubi mini`} />,
+    name: <Trans>Cubi mini</Trans>,
     images: [
       { src: withPrefix("/products/ostacoli/cubi-mini-01.png") },
       { src: withPrefix("/products/ostacoli/cubi-mini-02.png") },
@@ -22,7 +22,7 @@ const PRODUCTS = [
     colors: [Colors.WHITE, Colors.BLU, Colors.YELLOW, Colors.RED, Colors.GREEN],
   },
   {
-    name: <Trans id={`Cubi maxi`} />,
+    name: <Trans>Cubi maxi</Trans>,
     images: [
       { src: withPrefix("/products/ostacoli/cubi-maxi-01.png") },
       { src: withPrefix("/products/ostacoli/cubi-maxi-02.png") },
