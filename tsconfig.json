@@ -1,0 +1,33 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "strict": true,
+    "esModuleInterop": true,
+    "baseUrl": ".",
+    "paths": {
+      "@hooks": [
+        "src/hooks"
+      ],
+      "@components": [
+        "src/components"
+      ],
+      "@constants": [
+        "src/constants"
+      ],
+      "@theme": [
+        "src/theme"
+      ],
+      "@images": [
+        "src/images"
+      ],
+      "@styles": [
+        "src/styles"
+      ],
+      "@hoc": [
+        "src/hoc"
+      ]
+    },
+    "jsx": "preserve",
+    "target": "es2016"
+  }
+}

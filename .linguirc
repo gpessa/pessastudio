@@ -1,0 +1,19 @@
+{
+  "locales": ["it", "en", "fr"],
+  "catalogs": [
+    {
+      "path": "<rootDir>/src/i18n/lingui/{locale}/messages",
+      "include": ["<rootDir>/src"],
+      "exclude": ["**/node_modules/**"]
+    }
+  ],
+  "format": "po",
+  "extractBabelOptions": {
+    "plugins": ["@babel/plugin-transform-typescript"],
+    "presets": ["babel-preset-gatsby", "@babel/preset-typescript"]
+  },
+  "sourceLocale": "it",
+  "fallbackLocales": {
+    "default": "it"
+  }
+}
