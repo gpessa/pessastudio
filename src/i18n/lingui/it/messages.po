@@ -238,7 +238,7 @@ msgstr "<0>Un set per creare un circuito dressage standard da 20x60 mt.</0><1>Il
 msgid "<0>È possibile ordinare una giostra nei diametri:</0><1><2>12,0 mt. <3>(4 cavalli)</3></2><4>14,2 mt. <5>(6 cavalli)</5></4></1>"
 msgstr "<0>È possibile ordinare una giostra nei diametri:</0><1><2>12,0 mt. <3>(4 cavalli)</3></2><4>14,2 mt. <5>(6 cavalli)</5></4></1>"
 
-#: src/pages/index.tsx:25
+#: src/pages/index.tsx:31
 msgid "Accessibili"
 msgstr ""
 
@@ -298,7 +298,7 @@ msgstr ""
 msgid "Ancorate il gruppo motore"
 msgstr ""
 
-#: src/pages/index.tsx:30
+#: src/pages/index.tsx:38
 msgid "Apprezzati"
 msgstr ""
 
@@ -490,7 +490,7 @@ msgstr ""
 msgid "Cucchiaio PS"
 msgstr ""
 
-#: src/pages/index.tsx:26
+#: src/pages/index.tsx:33
 msgid "Da anni Pessastudio è focalizzata nel produrre prodotti di qualità a costi accessibili"
 msgstr ""
 
@@ -647,11 +647,11 @@ msgstr "I candelieri sono costruiti con un montante di alluminio verniciato di c
 msgid "I corridoi"
 msgstr "I corridoi"
 
-#: src/pages/index.tsx:21
+#: src/pages/index.tsx:24
 msgid "I nostri prodotti sono MADE IN ITALY, costruiti da Pessastudio e personalizzabili (in dimensioni o colori)"
 msgstr "I nostri prodotti sono MADE IN ITALY, costruiti da Pessastudio e personalizzabili (in dimensioni o colori)"
 
-#: src/pages/index.tsx:36
+#: src/pages/index.tsx:45
 msgid "I nostri prodotti sono pensati per resistere nel tempo, anche se soggetti a difficili condizioni climatiche"
 msgstr "I nostri prodotti sono pensati per resistere nel tempo, anche se soggetti a difficili condizioni climatiche"
 
@@ -659,7 +659,7 @@ msgstr "I nostri prodotti sono pensati per resistere nel tempo, anche se soggett
 msgid "I nostri tondini sono considerati strutture precarie. Non avrete bisogno di nessuna concessione edilizia"
 msgstr "I nostri tondini sono considerati strutture precarie. Non avrete bisogno di nessuna concessione edilizia"
 
-#: src/pages/index.tsx:31
+#: src/pages/index.tsx:39
 msgid "I prodotti vengono venduti ed apprezzati sia in Italia che all'estero"
 msgstr ""
 
@@ -691,7 +691,7 @@ msgstr "Il tondino coperto è adatto a svolgere molteplici attività, per esempi
 msgid "Indietro"
 msgstr "Indietro"
 
-#: src/pages/index.tsx:35
+#: src/pages/index.tsx:43
 msgid "Indistruttibili"
 msgstr ""
 
@@ -753,7 +753,7 @@ msgstr "Kit cavalletti + barriera"
 msgid "L'aveolo è la soluzione ottimale mantenere un fondo sempre perfetto in ogni condizione, permette di evitare buche o avvallamenti riducendo i costi di manutenzione."
 msgstr "L'aveolo è la soluzione ottimale mantenere un fondo sempre perfetto in ogni condizione, permette di evitare buche o avvallamenti riducendo i costi di manutenzione."
 
-#: src/pages/index.tsx:16
+#: src/pages/index.tsx:17
 msgid "L'innovazione tecnologica e la qualità sono le caratteristiche chiave dei nostri prodotti"
 msgstr ""
 
@@ -936,7 +936,7 @@ msgstr "Per consentirvi di realizzare ostacoli di vostra creazione possiamo forn
 msgid "Perché una giostra Pessastudio"
 msgstr "Perché una giostra Pessastudio"
 
-#: src/pages/index.tsx:20
+#: src/pages/index.tsx:22
 msgid "Personalizzabili"
 msgstr "Personalizzabili"
 
@@ -948,11 +948,11 @@ msgstr ""
 msgid "Pessastudio fornisce due soluzioni per trasformare il vostro terreno in un'arena da dressage: la gamma <0>training</0> e quella <1>olimpic</1>"
 msgstr "Pessastudio fornisce due soluzioni per trasformare il vostro terreno in un'arena da dressage: la gamma <0>training</0> e quella <1>olimpic</1>"
 
-#: src/pages/index.tsx:41
+#: src/pages/index.tsx:54
 msgid "Pessastudio nasce 28 anni fa dalla famiglia Pessa, gente di cavalli da generazioni, oggi Luciano Pessa il fondatore si avvale della forza commerciale della figlia"
 msgstr "Pessastudio nasce 28 anni fa dalla famiglia Pessa, gente di cavalli da generazioni, oggi Luciano Pessa il fondatore si avvale della forza commerciale della figlia"
 
-#: src/pages/index.tsx:52
+#: src/pages/index.tsx:69
 msgid "Pessastudio, una scelta di qualità"
 msgstr ""
 
@@ -1111,7 +1111,7 @@ msgstr ""
 msgid "Scopri la qualità dei nostri prodotti attraverso la testimonianza dei clienti"
 msgstr ""
 
-#: src/pages/index.tsx:53
+#: src/pages/index.tsx:70
 msgid "Scopri perché ogni anno centinaia di persone si affidano a Pessastudio per i loro articoli d'equitazione"
 msgstr ""
 
@@ -1218,7 +1218,7 @@ msgstr "Tondino coperto"
 msgid "Tondino coperto {sides} pannelli {size} mt."
 msgstr "Tondino coperto {sides} pannelli {size} mt."
 
-#: src/pages/index.tsx:47
+#: src/pages/index.tsx:64
 msgid "Tradizione e qualità"
 msgstr ""
 
@@ -1239,7 +1239,7 @@ msgstr ""
 msgid "Un rosone posizionato nel centro ti permetterà di irrigare il tuo tondino."
 msgstr "Un rosone posizionato nel centro ti permetterà di irrigare il tuo tondino."
 
-#: src/pages/index.tsx:40
+#: src/pages/index.tsx:52
 msgid "Una lunga storia"
 msgstr ""
 

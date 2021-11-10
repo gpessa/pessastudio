@@ -16,7 +16,7 @@ const IntroStyled = styled(Grid)(({ theme }) => ({
 export type Benefit = {
   icon?: OverridableComponent<SvgIconTypeMap<{}, "svg">>
   description: string | ReactElement
-  title: string
+  title: string | ReactElement
 }
 
 type Props = {
