@@ -33,13 +33,8 @@ const Accessori: React.FC<Props> = ({ intro, accessories }) => (
     </Box>
 
     {accessories.map(({ name, description, images }, index) => (
-      <AccessorioStyled component="section">
-        <Grid
-          container
-          alignItems="center"
-          spacing={PRODUCT_GUTTER}
-          direction={index % 2 == 0 ? "row" : "row-reverse"}
-        >
+      <AccessorioStyled component="section" key={index}>
+        <Grid container alignItems="center" spacing={PRODUCT_GUTTER} direction={index % 2 == 0 ? "row" : "row-reverse"}>
           <Grid item md textAlign={index % 2 == 0 ? "right" : "left"}>
             <TH variant="h4" sans>
               {name}
