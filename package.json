@@ -56,7 +56,7 @@
     "extract": "lingui extract --clean",
     "compile": "lingui compile",
     "build": "gatsby build",
-    "develop": "gatsby develop -H 0.0.0.0 -p 8000",
+    "develop": "export ACTIVE_ENV=DEVELOPMENT && gatsby develop -H 0.0.0.0 -p 8000",
     "format": "prettier --write src/**/*.{js,ts,tsx}",
     "start": "yarn run develop",
     "serve": "gatsby serve",

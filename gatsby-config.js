@@ -9,11 +9,10 @@ const pathPrefix = IS_PRODUCTION ?
   undefined :
   "/pessastudio"
 
-const googleAnalytics = IS_PRODUCTION ?
+const googleTagManager = IS_PRODUCTION ?
   {
-    anonymize: false,
-    allowAdFeatures: true,
-    trackingId: 'G-NW0NP4N7ZF'
+    trackingId: 'GTM-NTCR82T',
+    cookieName: 'gatsby-gdpr-google-tagmanager',
   } :
   undefined
 
@@ -26,6 +25,13 @@ module.exports = {
     author: `Pessastudio`
   },
   plugins: [
+    {
+      resolve: `gatsby-plugin-gdpr-cookies`,
+      options: {
+        googleTagManager,
+        environments: ['production', 'development']
+      },
+    },
     `gatsby-plugin-sitemap`,
     "gatsby-plugin-robots-txt",
     `gatsby-plugin-typescript`,
@@ -99,13 +105,6 @@ module.exports = {
       },
     },
     `gatsby-plugin-material-ui`,
-    {
-      resolve: `gatsby-plugin-gdpr-cookies`,
-      options: {
-        googleAnalytics,
-        environments: ["production"],
-      },
-    },
     `gatsby-plugin-image`,
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,

@@ -37,10 +37,10 @@ const Gdpr: React.FC = () => {
       overlay={true}
       disableStyles={true}
       ButtonComponent={Accept}
-      cookieName="gatsby-gdpr-google-analytics"
       buttonText={t`Acconsento`}
       containerClasses={classes.root}
       overlayClasses={classes.overlay}
+      cookieName="gatsby-gdpr-google-tagmanager"
     >
       <Box mb={3}>
         <Trans>
