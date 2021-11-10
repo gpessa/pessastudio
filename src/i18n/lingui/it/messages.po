@@ -251,7 +251,7 @@ msgstr ""
 msgid "Acciaio zincato"
 msgstr "Acciaio zincato"
 
-#: src/components/Gdpr/index.tsx:30
+#: src/components/Gdpr/index.tsx:41
 msgid "Acconsento"
 msgstr ""
 
@@ -1256,7 +1256,7 @@ msgstr ""
 msgid "Utilizziamo Google Maps per fornire informazioni dettagliate su come individuare i nostri punti vendita e crediamo che contribuisca alla tua esperienza nell'uso del nostro Sito (<0>Informativa privacy</0>)"
 msgstr "Utilizziamo Google Maps per fornire informazioni dettagliate su come individuare i nostri punti vendita e crediamo che contribuisca alla tua esperienza nell'uso del nostro Sito (<0>Informativa privacy</0>)"
 
-#: src/components/Gdpr/index.tsx:34
+#: src/components/Gdpr/index.tsx:46
 msgid "Utilizziamo i cookie per garantire il corretto funzionamento del sito. Per ulteriori informazioni sul nostro utilizzo dei cookie, consultare la nostra <0>politica sui cookie</0>."
 msgstr ""
 
