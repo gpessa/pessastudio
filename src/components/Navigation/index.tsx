@@ -1,20 +1,7 @@
 import { NAVIGATION_PAGES } from "@constants"
-import { useLingui, Trans } from "@lingui/react"
+import { Trans, useLingui } from "@lingui/react"
 import { Menu } from "@mui/icons-material"
-import {
-  AppBar,
-  Box,
-  Button,
-  ButtonBase,
-  Divider,
-  IconButton,
-  List,
-  ListItem,
-  Toolbar,
-  useScrollTrigger,
-  useTheme,
-} from "@mui/material"
-import makeStyles from "@mui/styles/makeStyles"
+import { AppBar, Box, Button, Divider, IconButton, ListItem, Toolbar, useScrollTrigger, useTheme } from "@mui/material"
 import { styled } from "@mui/system"
 import { globalHistory } from "@reach/router"
 import { BREAKPOINT } from "@theme"
@@ -23,12 +10,10 @@ import React, { useEffect, useState } from "react"
 import LanguageSelectorLegacy from "./LanguageSelectorLegacy"
 import Logo from "./Logo"
 
-const useStyles = makeStyles(theme => ({
-  mobileMenu: {
-    display: "block",
-    [theme.breakpoints.up(BREAKPOINT)]: {
-      display: "none",
-    },
+const MenuMobileStyled = styled(Toolbar)(({ theme }) => ({
+  display: "block",
+  [theme.breakpoints.up(BREAKPOINT)]: {
+    display: "none",
   },
 }))
 
@@ -97,7 +82,6 @@ const ElevationScroll: React.FC = ({ children }) => {
 }
 
 const Navigation: React.FC = () => {
-  const classes = useStyles()
   const [open, setOpen] = useState(false)
   const { i18n } = useLingui()
   const theme = useTheme()
@@ -151,7 +135,7 @@ const Navigation: React.FC = () => {
         </ToolbarStyled>
 
         {open && (
-          <List className={classes.mobileMenu}>
+          <MenuMobileStyled>
             {Object.values(NAVIGATION_PAGES).map(({ url, name }) => (
               <ListItem
                 button
@@ -167,7 +151,7 @@ const Navigation: React.FC = () => {
                 <Trans id={name} />
               </ListItem>
             ))}
-          </List>
+          </MenuMobileStyled>
         )}
       </AppBar>
     </ElevationScroll>

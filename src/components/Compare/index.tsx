@@ -26,21 +26,10 @@ const TableCellStyled = styled(TableCell)<{ type?: string }>(({ type }) => ({
 type Props = {
   title: string
   attributes: {
-    [key: string]:
-      | FunctionComponent
-      | Element
-      | string
-      | undefined
-      | ReactElement
+    [key: string]: FunctionComponent | Element | string | undefined | ReactElement
   }
   products: {
-    [key: keyof Props["attributes"]]:
-      | boolean
-      | FunctionComponent
-      | Element
-      | string
-      | undefined
-      | ReactElement
+    [key: keyof Props["attributes"]]: boolean | FunctionComponent | Element | string | undefined | ReactElement
   }[]
 }
 
@@ -60,10 +49,7 @@ const ContainerXS = styled(Stack)(({ theme }) => ({
   },
 }))
 
-const CompareXS: React.FC<Omit<Props, "title">> = ({
-  attributes,
-  products,
-}) => (
+const CompareXS: React.FC<Omit<Props, "title">> = ({ attributes, products }) => (
   <ContainerXS spacing={PRODUCT_GUTTER * 2}>
     {products.map((product, index) => (
       <Box key={index}>
@@ -80,26 +66,14 @@ const CompareXS: React.FC<Omit<Props, "title">> = ({
                     <TableCellStyled size="medium">
                       <Caption>{label}</Caption>
                     </TableCellStyled>
-                    <TableCellStyled
-                      key={`head_${index}`}
-                      size="medium"
-                      type={type}
-                    >
+                    <TableCellStyled key={`head_${index}`} size="medium" type={type}>
                       {product[type] || <CloseIcon />}
                     </TableCellStyled>
                   </TableRow>
                 ))}
               <TableRow>
-                <TableCellStyled
-                  size="medium"
-                  align="center"
-                  key={index}
-                  colSpan={2}
-                >
-                  <Button
-                    color="primary"
-                    href={`mailto:annapessa@pessastudio.eu?subject=Info Giostra`}
-                  >
+                <TableCellStyled size="medium" align="center" key={index} colSpan={2}>
+                  <Button color="primary" href={`mailto:annapessa@pessastudio.eu?subject=Info Giostra`}>
                     {t`Richiedi un preventivo`}
                   </Button>
                 </TableCellStyled>
@@ -119,10 +93,7 @@ const ContainerMD = styled(TableContainer)(({ theme }) => ({
   },
 }))
 
-const CompareMD: React.FC<Omit<Props, "title">> = ({
-  attributes,
-  products,
-}) => (
+const CompareMD: React.FC<Omit<Props, "title">> = ({ attributes, products }) => (
   <ContainerMD>
     <Table>
       <TableBody>
@@ -142,10 +113,7 @@ const CompareMD: React.FC<Omit<Props, "title">> = ({
           <TableCellStyled size="medium" />
           {products.map((_, index) => (
             <TableCellStyled size="medium" align="center" key={index}>
-              <Button
-                color="primary"
-                href={`mailto:annapessa@pessastudio.eu?subject=Info Giostra`}
-              >
+              <Button color="primary" href={`mailto:annapessa@pessastudio.eu?subject=Info Giostra`}>
                 {t`Richiedi un preventivo`}
               </Button>
             </TableCellStyled>

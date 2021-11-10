@@ -1,16 +1,9 @@
-import { Columns, TH, Title } from "@components"
+import { Columns, Title } from "@components"
 import { t } from "@lingui/macro"
 import FormatQuoteIcon from "@mui/icons-material/FormatQuote"
 import { Typography } from "@mui/material"
-import { makeStyles } from "@mui/styles"
-import { styled, Theme } from "@mui/system"
-import {
-  CarouselProvider,
-  CarouselProviderProps,
-  DotGroup,
-  Slide,
-  Slider,
-} from "pure-react-carousel"
+import { styled } from "@mui/system"
+import { CarouselProvider, CarouselProviderProps, DotGroup, Slide, Slider } from "pure-react-carousel"
 import React from "react"
 
 const DotGroupStyled = styled(DotGroup)(({ theme }) => ({
@@ -30,11 +23,9 @@ const DotGroupStyled = styled(DotGroup)(({ theme }) => ({
   },
 }))
 
-const useStyles = makeStyles((theme: Theme) => ({
-  title: {
-    "& small": {
-      color: theme.palette.grey[400],
-    },
+const StyledTitle = styled(Title)(({ theme }) => ({
+  "& small": {
+    color: theme.palette.grey[400],
   },
 }))
 
@@ -57,13 +48,10 @@ const CAROUSEL_CONFIGURATION = {
 } as CarouselProviderProps
 
 const Testimonials = () => {
-  const styles = useStyles()
-
   return (
     <Columns
       left={
-        <Title
-          className={styles.title}
+        <StyledTitle
           subtitle={t`Dicono di noi`}
           title={t`Cosa dicono di noi`}
           text={t`Scopri la qualità dei nostri prodotti attraverso la testimonianza dei clienti`}

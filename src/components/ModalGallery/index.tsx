@@ -1,46 +1,52 @@
 import { useGallery } from "@hooks"
 import { t } from "@lingui/macro"
 import { NavigateBefore, NavigateNext } from "@mui/icons-material"
-import { ButtonBase, Dialog, Button, Typography } from "@mui/material"
-import makeStyles from "@mui/styles/makeStyles"
+import { Button, ButtonBase, Dialog, styled, Typography } from "@mui/material"
 import React from "react"
 
-const useStyles = makeStyles(theme => ({
-  image: {
-    width: "100%",
-  },
-  previous: {
-    "position": "absolute",
-    "top": 0,
-    "left": 0,
-    "width": "50%",
-    "bottom": 0,
-    "& > span": {
-      position: "absolute",
-      left: 0,
-    },
-  },
-  next: {
-    "position": "absolute",
-    "top": 0,
-    "right": 0,
-    "width": "50%",
-    "bottom": 0,
-    "& > span": {
-      position: "absolute",
-      right: 0,
-    },
-  },
-  caption: {
-    backgroundColor: theme.palette.common.white,
-    paddingRight: theme.spacing(2),
-    paddingLeft: theme.spacing(2),
-    padding: theme.spacing(1),
+const ButtonBackStyled = styled(ButtonBase)({
+  "position": "absolute",
+  "top": 0,
+  "left": 0,
+  "width": "50%",
+  "bottom": 0,
+  "& > span": {
     position: "absolute",
-    bottom: 0,
     left: 0,
   },
+})
+
+const ButtonNextStyled = styled(ButtonBase)({
+  "position": "absolute",
+  "top": 0,
+  "right": 0,
+  "width": "50%",
+  "bottom": 0,
+  "& > span": {
+    position: "absolute",
+    right: 0,
+  },
+})
+
+const ImageStyled = styled("img")({
+  width: "100%",
+})
+
+const StyledCaption = styled(Typography)(({ theme }) => ({
+  backgroundColor: theme.palette.common.white,
+  fontSize: theme.typography.small.fontSize,
+  paddingRight: theme.spacing(2),
+  paddingLeft: theme.spacing(2),
+  padding: theme.spacing(1),
+  position: "absolute",
+  bottom: 0,
+  left: 0,
 }))
+
+type Picture = {
+  src: string
+  caption?: string | Element | React.ReactElement
+}
 
 type Props = {
   render: (props: ReturnType<typeof useGallery>) => JSX.Element
@@ -48,7 +54,6 @@ type Props = {
 }
 
 const ModalGallery: React.FC<Props> = ({ render, images }) => {
-  const classes = useStyles()
   const gallery = useGallery(images)
 
   return (
@@ -58,32 +63,25 @@ const ModalGallery: React.FC<Props> = ({ render, images }) => {
       <Dialog open={!!gallery.active} onClose={gallery.close} maxWidth="md">
         {gallery.active && (
           <>
-            <img className={classes.image} src={gallery.active.src} />
+            <ImageStyled src={gallery.active.src} />
 
             {gallery.showPreviousEnabled && (
-              <ButtonBase
-                className={classes.previous}
-                onClick={gallery.showPrevious}
-              >
+              <ButtonBackStyled onClick={gallery.showPrevious}>
                 <Button component="span" startIcon={<NavigateBefore />}>
                   {t`Indietro`}
                 </Button>
-              </ButtonBase>
+              </ButtonBackStyled>
             )}
 
             {gallery.showNextEnabled && (
-              <ButtonBase className={classes.next} onClick={gallery.showNext}>
+              <ButtonNextStyled onClick={gallery.showNext}>
                 <Button component="span" endIcon={<NavigateNext />}>
                   {t`Avanti`}
                 </Button>
-              </ButtonBase>
+              </ButtonNextStyled>
             )}
 
-            {gallery.active.caption && (
-              <Typography variant="small" className={classes.caption}>
-                {gallery.active.caption}
-              </Typography>
-            )}
+            {gallery.active.caption && <StyledCaption>{gallery.active.caption}</StyledCaption>}
           </>
         )}
       </Dialog>

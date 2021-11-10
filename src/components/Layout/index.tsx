@@ -1,3 +1,5 @@
+/* global GATSBY_THEME_I18N_REACT_INTL */
+import { Theme } from "@emotion/react"
 import { useLingui } from "@lingui/react"
 import { CssBaseline } from "@mui/material"
 import { StyledEngineProvider, ThemeProvider } from "@mui/material/styles"
@@ -14,7 +16,43 @@ import Gdpr from "../Gdpr"
 import Navigation from "../Navigation"
 import Seo from "../Seo"
 
-/* global GATSBY_THEME_I18N_REACT_INTL */
+declare module "@mui/material/styles/createTypography" {
+  interface TypographyOptions {
+    small: TypographyStyleOptions
+    slim: TypographyStyleOptions
+  }
+  interface Typography {
+    small: TypographyStyleOptions
+    slim: TypographyStyleOptions
+  }
+}
+
+declare module "@mui/material/styles/createPalette" {
+  interface Palette {
+    warm1: Palette["primary"]
+    warm2: Palette["primary"]
+  }
+  interface PaletteOptions {
+    warm1: PaletteOptions["primary"]
+    warm2: PaletteOptions["primary"]
+  }
+}
+
+declare module "@mui/material/Button" {
+  interface ButtonPropsVariantOverrides {
+    thin: true
+  }
+}
+
+declare module "@mui/styles/defaultTheme" {
+  // eslint-disable-next-line @typescript-eslint/no-empty-interface
+  interface DefaultTheme extends Theme {}
+}
+
+declare module "@mui/styles/defaultTheme" {
+  // eslint-disable-next-line @typescript-eslint/no-empty-interface
+  interface DefaultTheme extends Theme {}
+}
 
 const getRedirectLanguage = (config, defaultLang) => {
   const availableLocales = config.map(({ code }) => code)
