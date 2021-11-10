@@ -11,6 +11,8 @@ const pathPrefix = IS_PRODUCTION ?
 
 const googleAnalytics = IS_PRODUCTION ?
   {
+    anonymize: false,
+    allowAdFeatures: true,
     trackingId: 'G-NW0NP4N7ZF'
   } :
   undefined
@@ -100,7 +102,6 @@ module.exports = {
     {
       resolve: `gatsby-plugin-gdpr-cookies`,
       options: {
-        anonymize: false,
         googleAnalytics,
         environments: ["production"],
       },
