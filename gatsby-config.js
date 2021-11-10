@@ -1,12 +1,27 @@
 const redirect = require('./src/rewrite/index.js');
+const IS_PRODUCTION = process.env.ACTIVE_ENV === "PRODUCTION" ? true : false
 
+const siteUrl = IS_PRODUCTION ?
+  "https://pessastudio.eu" :
+  "https://gpessa.github.io"
+
+const pathPrefix = IS_PRODUCTION ?
+  undefined :
+  "/pessastudio"
+
+const googleAnalytics = IS_PRODUCTION ?
+  {
+    trackingId: 'G-NW0NP4N7ZF'
+  } :
+  undefined
 
 module.exports = {
+  pathPrefix,
   siteMetadata: {
-    siteUrl: `https://pessastudio.eu`,
-    title: `Pessastudio`,
+    siteUrl,
     description: ``,
-    author: ``,
+    title: `Pessastudio`,
+    author: `Pessastudio`
   },
   plugins: [
     `gatsby-plugin-sitemap`,
@@ -81,15 +96,12 @@ module.exports = {
         icon: "static/generals/logo.jpg",
       },
     },
-    {
-      resolve: `gatsby-plugin-material-ui`
-    },
+    `gatsby-plugin-material-ui`,
     {
       resolve: `gatsby-plugin-gdpr-cookies`,
       options: {
-        googleAnalytics: {
-          trackingId: 'G-NW0NP4N7ZF',
-        },
+        anonymize: false,
+        googleAnalytics,
         environments: ["production"],
       },
     },
