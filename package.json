@@ -33,7 +33,6 @@
     "gatsby-theme-i18n-lingui": "^2.0.0",
     "gatsby-transformer-sharp": "4.1.0",
     "google-map-react": "2.1.10",
-    "prop-types": "^15.7.2",
     "pure-react-carousel": "^1.27.6",
     "react": "17.0.2",
     "react-cookie-consent": "6.4.1",

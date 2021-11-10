@@ -9,11 +9,16 @@ import { useLingui } from "@lingui/react"
 import { useLocation } from "@reach/router"
 import { graphql, useStaticQuery } from "gatsby"
 import { useLocalization } from "gatsby-theme-i18n"
-import PropTypes, { InferProps } from "prop-types"
 import React from "react"
 import Helmet from "react-helmet"
 
-function Seo({ keywords, meta }: InferProps<typeof Seo.propTypes>) {
+type Props = {
+  meta?: { name: string; content: string }[]
+  keywords?: string[]
+  fragments: unknown[]
+}
+
+const Seo: React.FC<Props> = ({ keywords, meta = [] }) => {
   const { locale } = useLocalization()
   const { pathname } = useLocation()
   const path = pathname.replace(`/${locale}`, "")
@@ -81,17 +86,6 @@ function Seo({ keywords, meta }: InferProps<typeof Seo.propTypes>) {
         .concat(meta)}
     />
   )
-}
-
-Seo.defaultProps = {
-  meta: [],
-  keywords: [],
-  fragments: [],
-}
-
-Seo.propTypes = {
-  meta: PropTypes.arrayOf(PropTypes.object),
-  keywords: PropTypes.arrayOf(PropTypes.string),
 }
 
 export default Seo
