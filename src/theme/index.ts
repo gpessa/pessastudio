@@ -122,23 +122,6 @@ const theme = createTheme({
       },
     },
     MuiButton: {
-      variants: [
-        {
-          props: {
-            variant: "thin",
-          },
-          style: {
-            "textTransform": "none",
-            "fontWeight": "normal",
-            "fontSize": "inherit",
-            "padding": "8px 5px",
-            "lineHeight": "unset",
-            ":hover": {
-              fontWeight: "bold",
-            },
-          },
-        },
-      ],
       styleOverrides: {
         root: {
           fontWeight: "bold",
