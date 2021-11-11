@@ -1,8 +1,6 @@
 declare module 'react-world-flags'
 
 declare module 'gatsby-plugin-mailchimp' {
-    import * as React from 'react';
-
     type MailchimpResult = 'success' | 'error';
 
     export interface MailchimpResponse {
