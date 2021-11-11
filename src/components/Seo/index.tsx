@@ -15,7 +15,7 @@ import Helmet from "react-helmet"
 type Props = {
   meta?: { name: string; content: string }[]
   keywords?: string[]
-  fragments: unknown[]
+  fragments?: unknown[]
 }
 
 const Seo: React.FC<Props> = ({ keywords, meta = [] }) => {
