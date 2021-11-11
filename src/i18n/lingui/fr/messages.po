@@ -251,7 +251,7 @@ msgstr ""
 msgid "Acciaio zincato"
 msgstr ""
 
-#: src/components/Gdpr/index.tsx:41
+#: src/components/Gdpr/index.tsx:40
 msgid "Acconsento"
 msgstr "Vous acceptez"
 
@@ -319,7 +319,7 @@ msgstr ""
 msgid "Assicuratevi di bloccare la giostra alla giusta altezza e piana"
 msgstr ""
 
-#: src/components/ModalGallery/index.tsx:77
+#: src/components/ModalGallery/index.tsx:79
 msgid "Avanti"
 msgstr ""
 
@@ -454,7 +454,7 @@ msgstr "Clôture TECNOFENCE"
 msgid "Corridoio in compensato marino"
 msgstr ""
 
-#: src/components/Testimonials/index.tsx:68
+#: src/components/Testimonials/index.tsx:56
 msgid "Cosa dicono di noi"
 msgstr ""
 
@@ -503,7 +503,7 @@ msgstr "Diamètre"
 msgid "Diamo la possibilità di montare nella vostra recinzione un piede mobile che vi permetterà di posizionarla e spostarla dove e quando volete"
 msgstr "Nous offrons la possibilité de monter a votre Clôtures un pied mobile  qui vous permettra de la positionner et de la déplacer où et quand vous le désirez"
 
-#: src/components/Testimonials/index.tsx:67
+#: src/components/Testimonials/index.tsx:55
 msgid "Dicono di noi"
 msgstr ""
 
@@ -622,7 +622,7 @@ msgstr ""
 msgid "Giostre"
 msgstr "Marcheur"
 
-#: src/components/Testimonials/index.tsx:45
+#: src/components/Testimonials/index.tsx:36
 msgid "Gli ostacoli sono arrivati. Sono fantastici!"
 msgstr ""
 
@@ -634,7 +634,7 @@ msgstr ""
 msgid "Google maps"
 msgstr ""
 
-#: src/components/Testimonials/index.tsx:42
+#: src/components/Testimonials/index.tsx:33
 msgid "Ho ricevuto questa mattina il materiale. I miei complimenti per la qualità dei prodotti, l'imballo ed il trasportatore"
 msgstr ""
 
@@ -687,7 +687,7 @@ msgstr ""
 msgid "Il tondino coperto è adatto a svolgere molteplici attività, per esempio è la migliore soluzione per addestrare puledri in libertà o lavorare cavalli alla corda, aiuta a facilitare il controllo dei vostri animali durante le lezioni ai principianti, nelle riprese dei pony ed è indispensabile per il longeur durante le riprese di volteggi."
 msgstr "Le rond de longe couvert se prête  à de nombreuses activités, par exemple, c’est la meilleure solution pour entraîner des poulains en liberté ou travailler des chevaux à la corde, aide à faciliter le contrôle de vos chevaux pendant les leçons aux débutants , dans les reprises des pony et est indispensable pour il longeur en voltige."
 
-#: src/components/ModalGallery/index.tsx:69
+#: src/components/ModalGallery/index.tsx:71
 msgid "Indietro"
 msgstr ""
 
@@ -1073,8 +1073,8 @@ msgstr "Rectangle de dressage 20x40"
 msgid "Rettangolo dressage 20x60"
 msgstr "Rectangle de dressage 20x60"
 
-#: src/components/Compare/index.tsx:103
-#: src/components/Compare/index.tsx:149
+#: src/components/Compare/index.tsx:77
+#: src/components/Compare/index.tsx:117
 msgid "Richiedi un preventivo"
 msgstr ""
 
@@ -1082,7 +1082,7 @@ msgstr ""
 msgid "Rimani informato sui nostri sconti e gli eventi"
 msgstr "Abonnez-vous à notre newsletter et découvrez les dernières nouveautés et promotions"
 
-#: src/components/Testimonials/index.tsx:43
+#: src/components/Testimonials/index.tsx:34
 msgid "Ringrazio tutto il team per la professionalità, gentilezza, velocità e sopratutto per l'ottimo risultato"
 msgstr ""
 
@@ -1107,7 +1107,7 @@ msgstr ""
 msgid "Scopri la nostra gamma di prodotti"
 msgstr ""
 
-#: src/components/Testimonials/index.tsx:69
+#: src/components/Testimonials/index.tsx:57
 msgid "Scopri la qualità dei nostri prodotti attraverso la testimonianza dei clienti"
 msgstr ""
 
@@ -1167,7 +1167,7 @@ msgstr ""
 msgid "Spessore"
 msgstr "Epaisseur"
 
-#: src/components/Testimonials/index.tsx:44
+#: src/components/Testimonials/index.tsx:35
 msgid "Splendido niente da dire! Il tondino è ben pensato e ingegnoso. Molto bene!"
 msgstr ""
 
