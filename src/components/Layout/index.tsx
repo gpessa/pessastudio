@@ -5,7 +5,7 @@ import { CssBaseline } from "@mui/material"
 import { StyledEngineProvider, ThemeProvider } from "@mui/material/styles"
 import { useLocation } from "@reach/router"
 import theme from "@theme"
-import { navigate } from "gatsby"
+import { navigate, PageProps } from "gatsby"
 import { useLocalization } from "gatsby-theme-i18n"
 import { intersection } from "lodash"
 import React, { useEffect } from "react"
@@ -38,12 +38,6 @@ declare module "@mui/material/styles/createPalette" {
   }
 }
 
-declare module "@mui/material/Button" {
-  interface ButtonPropsVariantOverrides {
-    thin: true
-  }
-}
-
 declare module "@mui/styles/defaultTheme" {
   // eslint-disable-next-line @typescript-eslint/no-empty-interface
   interface DefaultTheme extends Theme {}
@@ -60,7 +54,7 @@ const getRedirectLanguage = (config, defaultLang) => {
   return intersection(preferredLocales, availableLocales)[0] || defaultLang
 }
 
-const Layout: React.FC<{ pageResources: any }> = ({ children, pageResources }) => {
+const Layout: React.FC<PageProps<object, { originalPath: string }>> = ({ children, pageResources }) => {
   const { defaultLang, prefixDefault, localizedPath, config } = useLocalization()
 
   const { i18n } = useLingui()
@@ -68,8 +62,8 @@ const Layout: React.FC<{ pageResources: any }> = ({ children, pageResources }) =
   const currentLanguage = i18n.locale
 
   const path = pathname.replace(gatsbyConfig.pathPrefix, ``).replace("/" + currentLanguage, ``)
-  const isNotFoundPage = pageResources?.component?.name === "NotFound"
   const hasLocale = pathname.replace(gatsbyConfig.pathPrefix, ``).startsWith("/" + currentLanguage)
+  const isNotFoundPage = pageResources?.json?.pageContext?.originalPath === "/404/"
 
   useEffect(() => {
     if (hasLocale) return
