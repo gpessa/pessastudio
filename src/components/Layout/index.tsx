@@ -1,5 +1,6 @@
 /* global GATSBY_THEME_I18N_REACT_INTL */
 import { Theme } from "@emotion/react"
+import { useLingui } from "@lingui/react"
 import { CssBaseline } from "@mui/material"
 import { StyledEngineProvider, ThemeProvider } from "@mui/material/styles"
 import theme from "@theme"
@@ -53,8 +54,9 @@ const getRedirectLanguage = (config, defaultLang) => {
 
 const Layout: React.FC<PageProps<object, { originalPath: string }>> = ({ children, pageResources, path }) => {
   const { defaultLang, prefixDefault, localizedPath, config, locale: currentLanguage } = useLocalization()
-  const hasLocale = pageResources.page.path.startsWith("/" + currentLanguage)
+  const { i18n } = useLingui()
 
+  const hasLocale = pageResources.page.path.startsWith("/" + currentLanguage)
   const originalPath = pageResources?.json?.pageContext?.originalPath
   const isNotFoundPage = originalPath === "/404/"
 
@@ -75,11 +77,14 @@ const Layout: React.FC<PageProps<object, { originalPath: string }>> = ({ childre
 
   if (!hasLocale) return null
 
+  const title = i18n._(`${originalPath}:title`)
+  const description = i18n._(`${originalPath}:description`)
+
   return (
     <StyledEngineProvider injectFirst>
       <ThemeProvider theme={theme}>
         <CssBaseline />
-        <Seo />
+        <Seo {...{ title, description }} />
         <Navigation />
         {!isNotFoundPage && <Breadcrumb path={originalPath} />}
         <main>{children}</main>
