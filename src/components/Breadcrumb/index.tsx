@@ -16,8 +16,8 @@ const HomeIconStyled = styled(HomeIcon)({
   marginBottom: -5,
 })
 
-const Breadcrumb: React.FC = a => {
-  const fragments = useTree()
+const Breadcrumb: React.FC<{ path: string }> = ({ path }) => {
+  const fragments = useTree(path)
   const { i18n } = useLingui()
 
   return fragments.length > 1 ? (

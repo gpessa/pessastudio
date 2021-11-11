@@ -88,7 +88,7 @@ const Layout: React.FC<PageProps<object, { originalPath: string }>> = ({ childre
         <CssBaseline />
         <Seo />
         <Navigation />
-        {!isNotFoundPage && <Breadcrumb />}
+        {!isNotFoundPage && <Breadcrumb path={path} />}
         <main>{children}</main>
         <Footer />
         <Gdpr />
