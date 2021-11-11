@@ -99,8 +99,12 @@ msgid "/products/giostre/ippowalker/pdf/manuale-quadro-ippowalker-it.pdf"
 msgstr ""
 
 #: src/pages/giostre/tecnoexerciser/index.tsx:21
-msgid "/products/giostre/tecnoexerciser/pdf/giostra-collegamento-elettrico.pdf"
+msgid "/products/giostre/pdf/giostra-collegamento-elettrico.pdf"
 msgstr ""
+
+#: src/pages/giostre/tecnoexerciser/index.tsx:21
+#~ msgid "/products/giostre/tecnoexerciser/pdf/giostra-collegamento-elettrico.pdf"
+#~ msgstr ""
 
 #: src/pages/giostre/tecnoexerciser/index.tsx:17
 msgid "/products/giostre/tecnoexerciser/pdf/manuale-quadro-tecnoexerciser-it.pdf"

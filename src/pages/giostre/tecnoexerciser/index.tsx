@@ -18,7 +18,7 @@ const Tecnoexerciser: React.FC = () => {
     },
     {
       label: <Trans id="Manuale collegamento elettrico" />,
-      file: withPrefix(t`/products/giostre/tecnoexerciser/pdf/giostra-collegamento-elettrico.pdf`),
+      file: withPrefix(t`/products/giostre/pdf/giostra-collegamento-elettrico.pdf`),
     },
     {
       label: <Trans id={PAGES.GIOSTRE_TECNOEXERCISER_ISTRUZIONI_MONTAGGIO.url + ":title"} />,
