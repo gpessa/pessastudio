@@ -407,6 +407,10 @@ msgstr "Complimenti! Ti sei iscritto"
 msgid "Contatti"
 msgstr "Contatti"
 
+#: src/pages/contatti/index.tsx:105
+msgid "Contatto commerciale"
+msgstr "Contatto commerciale"
+
 #: src/pages/contatti/index.tsx:111
 msgid "Contatto commerciale Belgio"
 msgstr "Contatto commerciale Belgio"
@@ -416,8 +420,8 @@ msgid "Contatto commerciale Francia"
 msgstr "Contatto commerciale Francia"
 
 #: src/pages/contatti/index.tsx:105
-msgid "Contatto commerciale Italia"
-msgstr "Contatto commerciale Italia"
+#~ msgid "Contatto commerciale Italia"
+#~ msgstr "Contatto commerciale Italia"
 
 #: src/pages/cookie-policy.tsx:11
 msgid "Cookie policy"

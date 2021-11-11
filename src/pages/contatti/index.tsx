@@ -102,7 +102,7 @@ const Contatti: React.FC = () => (
     right={
       <RightColumnStyled>
         <Box>
-          <TH variant="h4">{t`Contatto commerciale Italia`}</TH>
+          <TH variant="h4">{t`Contatto commerciale`}</TH>
           <AvatarStyled src={withPrefix("/pages/contatti/anna.jpg")} alt="Anna Pessa" />
           <Address {...ITALIA} />
         </Box>
