@@ -52,7 +52,7 @@ const Products: React.FC = () => {
 
   return (
     <CarouselProvider {...CAROUSEL_CONFIGURATION} visibleSlides={ITEM_TO_SHOW}>
-      <Section image="marble-black" type="horizontal">
+      <Section image="dots" type="horizontal">
         <Grid container justifyContent="space-between">
           <TextStyled item md={3} xs={12}>
             <Title subtitle={t`Prodotti`} title={t`Scopri la nostra gamma di prodotti`} />
