@@ -52,8 +52,8 @@ const Index: React.FC = () => {
       title: <Trans>Una lunga storia</Trans>,
       description: (
         <Trans>
-          Pessastudio nasce 28 anni fa dalla famiglia Pessa, gente di cavalli da generazioni, oggi Luciano Pessa il
-          fondatore si avvale della forza commerciale della figlia
+          Pessastudio nasce 28 fa dalla passione per i cavalli e dall'ingegno del fondatore Luciano Pessa. Oggi, la
+          figlia Anna, continua a portare avanti lo stesso sogno
         </Trans>
       ),
     },

@@ -961,8 +961,12 @@ msgid "Pessastudio fornisce due soluzioni per trasformare il vostro terreno in u
 msgstr "Pessastudio fornisce due soluzioni per trasformare il vostro terreno in un'arena da dressage: la gamma <0>training</0> e quella <1>olimpic</1>"
 
 #: src/pages/index.tsx:54
-msgid "Pessastudio nasce 28 anni fa dalla famiglia Pessa, gente di cavalli da generazioni, oggi Luciano Pessa il fondatore si avvale della forza commerciale della figlia"
-msgstr "Pessastudio nasce 28 anni fa dalla famiglia Pessa, gente di cavalli da generazioni, oggi Luciano Pessa il fondatore si avvale della forza commerciale della figlia"
+#~ msgid "Pessastudio nasce 28 anni fa dalla famiglia Pessa, gente di cavalli da generazioni, oggi Luciano Pessa il fondatore si avvale della forza commerciale della figlia"
+#~ msgstr "Pessastudio nasce 28 anni fa dalla famiglia Pessa, gente di cavalli da generazioni, oggi Luciano Pessa il fondatore si avvale della forza commerciale della figlia"
+
+#: src/pages/index.tsx:54
+msgid "Pessastudio nasce 28 fa dalla passione per i cavalli e dall'ingegno del fondatore Luciano Pessa. Oggi, la figlia Anna, continua a portare avanti lo stesso sogno"
+msgstr "Pessastudio nasce 28 fa dalla passione per i cavalli e dall'ingegno del fondatore Luciano Pessa. Oggi, la figlia Anna, continua a portare avanti lo stesso sogno"
 
 #: src/pages/index.tsx:69
 msgid "Pessastudio, una scelta di qualità"
