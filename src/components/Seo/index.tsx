@@ -7,7 +7,6 @@
 
 import { useLingui } from "@lingui/react"
 import { useLocation } from "@reach/router"
-import { graphql, useStaticQuery } from "gatsby"
 import { useLocalization } from "gatsby-theme-i18n"
 import React from "react"
 import Helmet from "react-helmet"
@@ -24,27 +23,13 @@ const Seo: React.FC<Props> = ({ keywords, meta = [] }) => {
   const path = pathname.replace(`/${locale}`, "")
   const { i18n } = useLingui()
 
-  const { site } = useStaticQuery(
-    graphql`
-      query {
-        site {
-          siteMetadata {
-            title
-            siteUrl
-            description
-          }
-        }
-      }
-    `
-  )
-
   const title = i18n._(`${path}:title`)
   const description = i18n._(`${path}:description`)
 
   return (
     <Helmet
       title={title}
-      titleTemplate={`%s | ${site.siteMetadata.title}`}
+      titleTemplate={`%s | Pessastudio`}
       meta={[
         {
           name: `description`,
