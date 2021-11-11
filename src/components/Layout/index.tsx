@@ -56,7 +56,7 @@ const Layout: React.FC<PageProps<object, { originalPath: string }>> = ({ childre
   const { defaultLang, prefixDefault, localizedPath, config, locale: currentLanguage } = useLocalization()
   const { i18n } = useLingui()
 
-  const hasLocale = pageResources.page.path.startsWith("/" + currentLanguage)
+  const hasLocale = pageResources?.page?.path?.startsWith("/" + currentLanguage)
   const originalPath = pageResources?.json?.pageContext?.originalPath
   const isNotFoundPage = originalPath === "/404/"
 
