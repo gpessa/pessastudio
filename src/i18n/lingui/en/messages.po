@@ -965,8 +965,12 @@ msgstr ""
 #~ msgstr ""
 
 #: src/pages/index.tsx:54
-msgid "Pessastudio nasce 28 fa dalla passione per i cavalli e dall'ingegno del fondatore Luciano Pessa. Oggi, la figlia Anna, continua a portare avanti lo stesso sogno"
+msgid "Pessastudio nasce 28 fa dall'ingegno e dalla passione per i cavalli del fondatore Luciano Pessa. Oggi, la figlia Anna, continua a portare avanti lo stesso sogno"
 msgstr ""
+
+#: src/pages/index.tsx:54
+#~ msgid "Pessastudio nasce 28 fa dalla passione per i cavalli e dall'ingegno del fondatore Luciano Pessa. Oggi, la figlia Anna, continua a portare avanti lo stesso sogno"
+#~ msgstr ""
 
 #: src/pages/index.tsx:69
 msgid "Pessastudio, una scelta di qualità"
