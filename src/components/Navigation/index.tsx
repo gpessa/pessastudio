@@ -1,7 +1,18 @@
 import { NAVIGATION_PAGES } from "@constants"
-import { Trans, useLingui } from "@lingui/react"
+import { Trans } from "@lingui/react"
 import { Menu } from "@mui/icons-material"
-import { AppBar, Box, Button, Divider, IconButton, ListItem, Toolbar, useScrollTrigger, useTheme } from "@mui/material"
+import {
+  AppBar,
+  Box,
+  Button,
+  Divider,
+  IconButton,
+  List,
+  ListItem,
+  Toolbar,
+  useScrollTrigger,
+  useTheme,
+} from "@mui/material"
 import { styled } from "@mui/system"
 import { globalHistory } from "@reach/router"
 import { BREAKPOINT } from "@theme"
@@ -10,7 +21,7 @@ import React, { useEffect, useState } from "react"
 import LanguageSelectorLegacy from "./LanguageSelectorLegacy"
 import Logo from "./Logo"
 
-const MenuMobileStyled = styled(Toolbar)(({ theme }) => ({
+const MenuMobileStyled = styled(List)(({ theme }) => ({
   display: "block",
   [theme.breakpoints.up(BREAKPOINT)]: {
     display: "none",
@@ -83,7 +94,6 @@ const ElevationScroll: React.FC = ({ children }) => {
 
 const Navigation: React.FC = () => {
   const [open, setOpen] = useState(false)
-  const { i18n } = useLingui()
   const theme = useTheme()
 
   useEffect(() => {
