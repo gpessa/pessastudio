@@ -53,7 +53,7 @@
   },
   "license": "MIT",
   "scripts": {
-    "extract": "lingui extract --clean",
+    "extract": "lingui extract",
     "compile": "lingui compile",
     "build": "gatsby build",
     "develop": "export ACTIVE_ENV=DEVELOPMENT && gatsby develop -H 0.0.0.0 -p 8000",

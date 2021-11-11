@@ -1,0 +1,33 @@
+{
+  "writeKey": "a8435190322245823710-1d8e354536153b862ac8b019391563d2f0f5eaa0aec12a4d0c9c5fdb04edb74d",
+  "readKey": "a8435190322245823710-9316d2a42729cb354c7e117393b3e6b960a072a84ddd2abb0267400059f5ecf5",
+  
+  "upload": {  
+    "type": "po",
+
+
+    "files": [
+      {
+        "pattern": "/src/i18n/lingui/it/messages.po",
+        "lang": "it",
+        "file": "source_strings.po"
+      },
+      {
+        "group": "fr",
+        "pattern": "/src/i18n/lingui/fr/messages.po",
+        "lang": "fr",
+        "file": "source_strings.po"
+      },
+      {
+        "group": "en",
+        "pattern": "/src/i18n/lingui/en/messages.po",
+        "lang": "en",
+        "file": "source_strings.po"
+      }
+    ]
+  },
+  
+  "download": {
+    "files": "/src/i18n/lingui/${lang}/messages.po"
+  }
+}

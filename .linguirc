@@ -12,8 +12,5 @@
     "plugins": ["@babel/plugin-transform-typescript"],
     "presets": ["babel-preset-gatsby", "@babel/preset-typescript"]
   },
-  "sourceLocale": "it",
-  "fallbackLocales": {
-    "default": "it"
-  }
+  "sourceLocale": "it"
 }
