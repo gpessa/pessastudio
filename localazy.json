@@ -3,6 +3,7 @@
   "readKey": "a8435190322245823710-9316d2a42729cb354c7e117393b3e6b960a072a84ddd2abb0267400059f5ecf5",
   
   "upload": {  
+    "filterSource": true,
     "type": "po",
 
 
