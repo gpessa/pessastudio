@@ -19,7 +19,7 @@ const SubtitleStyled = styled("div")(({ theme }) => ({
   color: theme.palette.primary.main,
   lineHeight: `${12 * 0.7}px`,
   textTransform: "uppercase",
-  letterSpacing: 4,
+  letterSpacing: 3.7,
   fontSize: 12,
   marginTop: 6,
 }))
