@@ -25,7 +25,7 @@ var config = {
     // with Gatsby, these should never make it into your public
     // folder anyway, but it's worth keeping these excludes here
     // to be on the safe-side
-    exclude: ["dist/**/*.map", "node_modules/**", "node_modules/**/.*"],
+    exclude: ["dist/**/*.map", "node_modules/**", "node_modules/**/.*", ".DS_Store", "*.mp4"],
     // set to true if you want it to delete all the existing remote
     // files first - I prefer not to
     deleteRemote: false,
