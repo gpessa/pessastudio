@@ -13,7 +13,7 @@ const Dressage: React.FC = () => {
       <Typography paragraph>Il set contiene:</Typography>
       <Ul>
         <li>60 moduli</li>
-        <li>12 lettere</li>
+        <li>8 lettere</li>
       </Ul>
       `
     </Trans>

@@ -1,5 +1,5 @@
 msgid ""
-msgstr"""
+msgstr ""
 "POT-Creation-Date: 2021-10-13 18:45+0200\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
@@ -227,8 +227,12 @@ msgid "<0>Tecnoexerciser è il modello di giostra attualmente più richiesto.</0
 msgstr "<0>Tecnoexerciser è il modello di giostra attualmente più richiesto.</0><1>Oggi, grazie alle già note caratteristiche tecniche e alla grande affidabilità, abbiamo aggiunto anche alcune specifiche funzioni che fanno, di questo modello, la macchina <2>leader</2> del settore.</1><3>È possibile infatti:</3><4><5>Scegliere la forza che la porta mobile esercita sugli animali per invitarli ad avanzare</5><6>Mantenere un controllo costante sull'elettrificazione delle porte mobili</6><7>Beneficiare dell'innovativo sistema \"training program\" che vi consentirà di allenare i vostri cavalli fino ad ottenere performance atletiche.</7><8>Scegliere il programma di irrigazione pesta mentre la giostra sta girando</8></4><9>La struttura è fornita, a seconda delle esigenze, o con punte per l'ancoraggio al suolo o con tasselli nel caso in cui si desideri ancorarla ad un fondo di calcestruzzo.</9>"
 
 #: src/pages/dressage/index.tsx:11
-msgid "<0>Un set per creare un circuito dressage standard da 20x40 mt.</0><1>Il set contiene:</1><2><3>60 moduli</3><4>12 lettere</4></2>`"
-msgstr "<0>Un set per creare un circuito dressage standard da 20x40 mt.</0><1>Il set contiene:</1><2><3>60 moduli</3><4>12 lettere</4></2>`"
+#~ msgid "<0>Un set per creare un circuito dressage standard da 20x40 mt.</0><1>Il set contiene:</1><2><3>60 moduli</3><4>12 lettere</4></2>`"
+#~ msgstr "<0>Un set per creare un circuito dressage standard da 20x40 mt.</0><1>Il set contiene:</1><2><3>60 moduli</3><4>12 lettere</4></2>`"
+
+#: src/pages/dressage/index.tsx:11
+msgid "<0>Un set per creare un circuito dressage standard da 20x40 mt.</0><1>Il set contiene:</1><2><3>60 moduli</3><4>8 lettere</4></2>`"
+msgstr "<0>Un set per creare un circuito dressage standard da 20x40 mt.</0><1>Il set contiene:</1><2><3>60 moduli</3><4>8 lettere</4></2>`"
 
 #: src/pages/dressage/index.tsx:23
 msgid "<0>Un set per creare un circuito dressage standard da 20x60 mt.</0><1>Il set contiene:</1><2><3>80 moduli</3><4>12 lettere</4></2>`"

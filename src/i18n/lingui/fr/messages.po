@@ -227,7 +227,11 @@ msgid "<0>Tecnoexerciser è il modello di giostra attualmente più richiesto.</0
 msgstr ""
 
 #: src/pages/dressage/index.tsx:11
-msgid "<0>Un set per creare un circuito dressage standard da 20x40 mt.</0><1>Il set contiene:</1><2><3>60 moduli</3><4>12 lettere</4></2>`"
+#~ msgid "<0>Un set per creare un circuito dressage standard da 20x40 mt.</0><1>Il set contiene:</1><2><3>60 moduli</3><4>12 lettere</4></2>`"
+#~ msgstr ""
+
+#: src/pages/dressage/index.tsx:11
+msgid "<0>Un set per creare un circuito dressage standard da 20x40 mt.</0><1>Il set contiene:</1><2><3>60 moduli</3><4>8 lettere</4></2>`"
 msgstr ""
 
 #: src/pages/dressage/index.tsx:23
