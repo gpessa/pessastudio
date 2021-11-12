@@ -24,6 +24,9 @@ const languages = [
   `
     RewriteCond %{HTTP:Accept-Language} ^fr [NC]
     RewriteRule ^$ https://www.pessastudio.fr/ [L,R=302]
+  `,
+  `
+    Redirect 302 / /it/
   `
   //   `
   //   RewriteCond %{HTTP:Accept-Language} ^en [NC]
@@ -34,4 +37,4 @@ const languages = [
   //   `
 ]
 
-module.exports = [...rewrite]
+module.exports = [...rewrite, ...languages]
