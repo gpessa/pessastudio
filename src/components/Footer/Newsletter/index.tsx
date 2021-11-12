@@ -1,7 +1,7 @@
 import { t } from "@lingui/macro"
 import { useLingui } from "@lingui/react"
 import { Send } from "@mui/icons-material"
-import { Alert, IconButton, InputAdornment, TextField } from "@mui/material"
+import { Alert, IconButton, InputAdornment, Input } from "@mui/material"
 import addToMailchimp from "gatsby-plugin-mailchimp"
 import React, { useState } from "react"
 import { styled } from "@mui/system"
@@ -47,21 +47,20 @@ const NewsletterSubscription: React.FC = () => {
   return (
     <form noValidate onSubmit={handleSubmit}>
       {state.response !== "success" && (
-        <TextField
+        <Input
           required
           fullWidth
           type="email"
           name="email"
-          aria-label={t`Email`}
-          InputProps={{
-            endAdornment: (
-              <InputAdornment position="end">
-                <IconButton edge="end" type="submit" color="inherit" size="large" aria-label={t`Iscriviti`}>
-                  <Send />
-                </IconButton>
-              </InputAdornment>
-            ),
-          }}
+          placeholder={t`Email`}
+          inputProps={{ "aria-label": t`Email` }}
+          endAdornment={
+            <InputAdornment position="end">
+              <IconButton edge="end" type="submit" color="inherit" size="large" aria-label={t`Iscriviti`}>
+                <Send />
+              </IconButton>
+            </InputAdornment>
+          }
         />
       )}
 
