@@ -44,9 +44,11 @@ const Seo: React.FC<Props> = ({ title, description, keywords, meta = [] }) => {
           "image": siteUrl + withPrefix("/generals/logo.jpg"),
           "address": {
             "@type": "PostalAddress",
+            "postalCode": SEDE_OPERATIVA.postalCode,
             "addressLocality": SEDE_OPERATIVA.addressLocality,
             "addressRegion": SEDE_OPERATIVA.addressRegion,
             "streetAddress": SEDE_OPERATIVA.streetAddress,
+            "addressCountry": SEDE_OPERATIVA.country,
           },
           "telephone": ITALIA.telephone,
           "sameAs": [SOCIALS.facebook, SOCIALS.instagram],
