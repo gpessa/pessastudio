@@ -41,8 +41,8 @@ const Price: React.FC<PriceProp> = ({ price }) => {
     )
 
   return price.map(({ price, note }) => (
-    <>
-      <PriceStyled component={"span"}>
+    <React.Fragment key={note}>
+      <PriceStyled as={"span"}>
         <Badge
           color="warm2"
           badgeContent={t`+ IVA`}
@@ -57,7 +57,7 @@ const Price: React.FC<PriceProp> = ({ price }) => {
           ({note})
         </Typography>
       </PriceStyled>
-    </>
+    </React.Fragment>
   ))
 }
 

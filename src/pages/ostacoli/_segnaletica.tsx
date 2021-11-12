@@ -39,7 +39,7 @@ const Segnaletica: React.FC = () => {
       <Title title={t`Segnaletica`} />
       <Grid container spacing={PRODUCT_GUTTER}>
         {PRODUCTS.map((product, index) => (
-          <Grid key={index} xs={12} md={6} item>
+          <Grid xs={12} md={6} item key={`segnaletica_${index}`}>
             <Product {...product} />
           </Grid>
         ))}

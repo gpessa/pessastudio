@@ -59,8 +59,8 @@ const Cavalletti: React.FC = () => (
     </Grid>
     <Grid item container md={6} spacing={PRODUCT_GUTTER}>
       {PRODUCTS.map((product, index) => (
-        <Grid item xs={12}>
-          <Product key={index} {...product} />
+        <Grid item xs={12} key={`cavalletti_${index}`}>
+          <Product {...product} />
         </Grid>
       ))}
     </Grid>

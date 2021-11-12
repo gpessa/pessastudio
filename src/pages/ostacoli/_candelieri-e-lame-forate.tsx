@@ -3,8 +3,8 @@ import { MATERIALS } from "@constants"
 import { t, Trans } from "@lingui/macro"
 import { Grid } from "@mui/material"
 import { PRODUCT_GUTTER } from "@theme"
-import React from "react"
 import { withPrefix } from "gatsby-link"
+import React from "react"
 
 const PRODUCTS = [
   {
@@ -49,8 +49,8 @@ const CandelieriLameForate = () => (
     <Title sx={{ mb: PRODUCT_GUTTER }} title={t`Candelieri e lame forate`} />
     <Grid container spacing={PRODUCT_GUTTER}>
       {PRODUCTS.map((product, index) => (
-        <Grid item xs={12}>
-          <Product key={index} {...product} />
+        <Grid item xs={12} key={`candelieri_lame_forate_${index}`}>
+          <Product {...product} />
         </Grid>
       ))}
     </Grid>

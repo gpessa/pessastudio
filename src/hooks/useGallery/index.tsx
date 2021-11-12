@@ -1,8 +1,7 @@
-import { useState } from "react";
+import { useState } from "react"
+import { Picture } from "src/components/ModalGallery"
 
-const useGallery: (
-  images: Picture[]
-) => {
+const useGallery: (images: Picture[]) => {
   images: Picture[]
   active: Picture | null
   showPreviousEnabled: boolean
@@ -11,7 +10,7 @@ const useGallery: (
   showNext: () => void
   close: () => void
   open: (picture: Picture) => void
-  } = images => {
+} = images => {
   const [selected, setSelected] = useState<null | number>(null)
 
   const close = () => setSelected(null)
@@ -21,13 +20,13 @@ const useGallery: (
     setSelected(index)
   }
 
-  const showNext = () => setSelected(setSelected => setSelected! + 1);
+  const showNext = () => setSelected(setSelected => setSelected! + 1)
 
-  const showPrevious = () => setSelected(setSelected => setSelected! - 1);
+  const showPrevious = () => setSelected(setSelected => setSelected! - 1)
 
-  const showPreviousEnabled = (selected != null && selected > 0) ? true : false;
-  const showNextEnabled = (selected != null && selected < images.length - 1) ? true : false;
-  const active = selected != null ? images[selected] : null;
+  const showPreviousEnabled = selected != null && selected > 0 ? true : false
+  const showNextEnabled = selected != null && selected < images.length - 1 ? true : false
+  const active = selected != null ? images[selected] : null
 
   return {
     showPreviousEnabled,
@@ -37,8 +36,8 @@ const useGallery: (
     images,
     active,
     close,
-    open
-  };
-};
+    open,
+  }
+}
 
-export default useGallery;
+export default useGallery

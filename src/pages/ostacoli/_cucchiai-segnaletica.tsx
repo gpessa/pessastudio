@@ -60,8 +60,8 @@ const CucchiaiSegnaletica: React.FC = () => {
       />
 
       <Grid container spacing={PRODUCT_GUTTER}>
-        {PRODUCTS.map(product => (
-          <Grid item xs={12}>
+        {PRODUCTS.map((product, index) => (
+          <Grid item xs={12} key={`cucchiai-segnaletica_${index}`}>
             <Product {...product} />
           </Grid>
         ))}

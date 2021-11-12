@@ -7,6 +7,7 @@ import { styled } from "@mui/system"
 import { BREAKPOINT, PRODUCT_GUTTER } from "@theme"
 import { LocalizedLink } from "gatsby-theme-i18n"
 import React, { ReactNode } from "react"
+import { Picture } from "../ModalGallery"
 import ColorsList from "./ColorsList"
 import Price, { PriceProp } from "./Price"
 
@@ -146,7 +147,7 @@ type Props = {
   name: string | JSX.Element
   description?: string | ReactNode
   url?: string
-  price: PriceProp
+  price: PriceProp["price"]
 } & Attributes
 
 export default Product

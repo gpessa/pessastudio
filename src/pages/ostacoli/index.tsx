@@ -6,7 +6,7 @@ import Barriere from "./_barriere"
 import CandelieriLameForate from "./_candelieri-e-lame-forate"
 import Cavalletti from "./_cavalletti"
 import Cubi from "./_cubi"
-import Cucchiai from "./_cucchiai"
+import Cucchiai from "./_cucchiai-segnaletica"
 import Fosso from "./_fosso"
 import Segnaletica from "./_segnaletica"
 
