@@ -114,21 +114,25 @@ const Product = ({ images, vertical, price, url, name, description, ...attribute
     <ModalGallery
       images={images}
       render={({ images, open }) => (
-        <Tag to={url}>
+        <Tag to={url} itemscope itemtype="https://schema.org/Product">
           <Grid container spacing={PRODUCT_GUTTER}>
             {images.map(image => (
               <Grid item xs={12} md={span} key={image.src} onClick={() => open(image)}>
                 <ButtonBaseStyled>
-                  <ImgStyled src={image.src} alt={image.caption || name} />
+                  <ImgStyled src={image.src} alt={image.caption || name} itemprop="image" />
                 </ButtonBaseStyled>
               </Grid>
             ))}
             <DataStyled item xs={12} md={span}>
-              <TH variant="h6" sans sx={{ textTransform: "uppercase" }}>
+              <TH variant="h6" sans sx={{ textTransform: "uppercase" }} itemprop="name">
                 {name}
               </TH>
 
-              {description && <Typography paragraph>{description}</Typography>}
+              {description && (
+                <Typography paragraph property="schema:description">
+                  {description}
+                </Typography>
+              )}
 
               {getData(attributes)}
 
@@ -146,8 +150,8 @@ type Props = {
   images: Picture[]
   name: string | JSX.Element
   description?: string | ReactNode
-  url?: string
   price?: PriceProp["price"]
+  url?: string
 } & Attributes
 
 export default Product

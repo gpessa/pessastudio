@@ -41,7 +41,7 @@ const Address: React.FC<Props> = ({
         <Data
           label={<Trans>Telefono</Trans>}
           value={
-            <Link underline="hover" itemProp="telephone" href={`tel:${telephone}`}>
+            <Link underline="hover" itemProp="telephone" href={`tel:${telephone.replace(/ /g, "")}`}>
               {telephone}
             </Link>
           }
@@ -52,7 +52,7 @@ const Address: React.FC<Props> = ({
         <Data
           label={<Trans>WhatsApp</Trans>}
           value={
-            <Link underline="hover" href={`https://wa.me/${whatsapp}`}>
+            <Link underline="hover" href={`https://wa.me/${whatsapp.replace(/ /g, "")}`}>
               {whatsapp}
             </Link>
           }
