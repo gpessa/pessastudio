@@ -43,7 +43,7 @@ const StyledCaption = styled(Typography)(({ theme }) => ({
   left: 0,
 }))
 
-type Picture = {
+export type Picture = {
   src: string
   caption?: string | Element | React.ReactElement
 }

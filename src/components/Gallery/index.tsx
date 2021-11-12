@@ -3,6 +3,7 @@ import { ButtonBase, Grid, GridProps } from "@mui/material"
 import { styled } from "@mui/system"
 import { PRODUCT_GUTTER } from "@theme"
 import React from "react"
+import { Picture } from "../ModalGallery"
 
 const ButtonBaseStyled = styled(ButtonBase)(() => ({
   textAlign: "left",

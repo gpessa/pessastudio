@@ -16,7 +16,7 @@ const PRODUCT = {
 
 const Fosso: React.FC = () => (
   <Grid container spacing={PRODUCT_GUTTER}>
-    <Grid item md={6}>
+    <Grid item xs={12} md={6}>
       <Title
         title={t`Fosso`}
         text={
@@ -27,7 +27,7 @@ const Fosso: React.FC = () => (
         }
       />
     </Grid>
-    <Grid item md={6}>
+    <Grid item xs={12} md={6}>
       <Product {...PRODUCT} />
     </Grid>
   </Grid>
