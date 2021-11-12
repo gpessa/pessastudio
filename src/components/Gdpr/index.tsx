@@ -5,6 +5,8 @@ import { PRODUCT_GUTTER } from "@theme"
 import { LocalizedLink } from "gatsby-theme-i18n"
 import React from "react"
 import CookieConsent from "react-cookie-consent"
+import { initializeAndTrack } from "gatsby-plugin-gdpr-cookies"
+import { useLocation } from "@reach/router"
 
 const useStyles = makeStyles((theme: Theme) => ({
   root: {
@@ -31,10 +33,16 @@ const Accept = (props: ButtonProps) => <Button {...props} color="primary" fullWi
 
 const Gdpr: React.FC = () => {
   const classes = useStyles()
+  const location = useLocation()
+
+  const onAccept = () => {
+    initializeAndTrack(location)
+  }
 
   return (
     <CookieConsent
       overlay={true}
+      onAccept={onAccept}
       disableStyles={true}
       ButtonComponent={Accept}
       buttonText={t`Acconsento`}
