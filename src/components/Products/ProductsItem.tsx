@@ -9,7 +9,7 @@ type Props = {
   readonly index: number
   description?: ReactElement | string
   image: string
-  name: JSX.Element
+  name: string
   url: string
 }
 
@@ -60,7 +60,7 @@ const ProductItem: React.FC<Props> = props => {
 
   return (
     <LinkStyled to={url} visible={visible} underline="none" component={LocalizedLink}>
-      <ImgStyled src={image} />
+      <ImgStyled src={image} alt={name} />
       <BoxStyled>
         <TH variant="h6" sans sx={{ textTransform: "uppercase" }}>
           {name}

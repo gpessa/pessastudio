@@ -1,6 +1,6 @@
 import { Section, Title } from "@components"
 import { PRODUCT_PAGES } from "@constants"
-import { t, Trans } from "@lingui/macro"
+import { t } from "@lingui/macro"
 import { Grid, useMediaQuery, styled } from "@mui/material"
 import theme, { BREAKPOINT } from "@theme"
 import { withPrefix } from "gatsby-link"
@@ -32,23 +32,24 @@ const SliderSelectorStyled = styled(Grid)(({ theme }) => ({
   },
 }))
 
-const PRODUCTS = Object.entries(PRODUCT_PAGES).map(([id, page]) => ({
-  ...page,
-  image: withPrefix(`/icons/${id.toLowerCase()}.jpg`),
-  name: <Trans id={`${page.url}:title`} />,
-}))
-
-const CAROUSEL_CONFIGURATION = {
-  totalSlides: PRODUCTS.length,
-  naturalSlideHeight: 500,
-  naturalSlideWidth: 400,
-  currentSlide: 0,
-  step: 2,
-}
-
 const Products: React.FC = () => {
   const isTable = useMediaQuery(theme.breakpoints.up("sm"))
   const ITEM_TO_SHOW = isTable ? 2 : 1
+
+  // Life is difficult and those outsise break translations
+  const PRODUCTS = Object.entries(PRODUCT_PAGES).map(([id, page]) => ({
+    ...page,
+    image: withPrefix(`/icons/${id.toLowerCase()}.jpg`),
+    name: t({ id: `${page.url}:title` }),
+  }))
+
+  const CAROUSEL_CONFIGURATION = {
+    totalSlides: PRODUCTS.length,
+    naturalSlideHeight: 500,
+    naturalSlideWidth: 400,
+    currentSlide: 0,
+    step: 2,
+  }
 
   return (
     <CarouselProvider {...CAROUSEL_CONFIGURATION} visibleSlides={ITEM_TO_SHOW}>
