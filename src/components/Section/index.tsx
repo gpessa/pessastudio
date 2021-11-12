@@ -78,7 +78,7 @@ const StyledContainer = styled(Container)(() => ({
 
 const Section: React.FC<Props> = ({ maxWidth, disableGutters, ...props }) => (
   <SectionStyledColored {...props} maxWidth={false}>
-    <StyledContainer disableGutters={disableGutters} maxWidth={maxWidth}>
+    <StyledContainer disableGutters maxWidth={maxWidth}>
       {props.children}
     </StyledContainer>
   </SectionStyledColored>

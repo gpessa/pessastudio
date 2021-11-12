@@ -1,26 +1,13 @@
 import { Benefits, Columns, Gallery, Hero, Section, TH, Video } from "@components"
 import { PAGES } from "@constants"
 import { t, Trans } from "@lingui/macro"
-import { VideogameAsset, AccessibilityNew, Apps, DomainDisabled } from "@mui/icons-material"
+import { AccessibilityNew, Apps, DomainDisabled, VideogameAsset } from "@mui/icons-material"
 import { Box, Button, Link, Typography } from "@mui/material"
 import { styled } from "@mui/system"
 import { BREAKPOINT, SECTION_SPACING } from "@theme"
 import { withPrefix } from "gatsby"
 import { LocalizedLink } from "gatsby-theme-i18n"
 import React from "react"
-
-const VideoSectionStyled = styled("section")(({ theme }) => ({
-  background: `linear-gradient(to bottom, 
-    rgba(0,0,0, 0) 100px,
-    ${theme.palette.warm1.main} 100px, 
-    ${theme.palette.warm1.main} calc(100% - 100px), 
-    rgba(0,0,0, 0) calc(100% - 100px)
-    )`,
-  marginBottom: theme.spacing(4),
-  marginTop: theme.spacing(8),
-  position: "relative",
-  zIndex: 1,
-}))
 
 const GammaSectionStyled = styled(Section)({
   textAlign: "center",
@@ -119,7 +106,7 @@ const Giostre: React.FC = () => (
 
     <Video src={"https://www.youtube.com/embed/1C7R5u270QE"} />
 
-    <GammaSectionStyled maxWidth="md" component="div">
+    <GammaSectionStyled maxWidth="md">
       <TH variant="h2">{t`Gamma`}</TH>
 
       <Trans>
