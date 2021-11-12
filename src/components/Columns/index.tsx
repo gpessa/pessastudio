@@ -1,9 +1,8 @@
-import { Grid, useMediaQuery, Container } from "@mui/material"
+import { Container, Grid } from "@mui/material"
 import { styled } from "@mui/system"
-import theme, { BREAKPOINT, PRODUCT_GUTTER } from "@theme"
+import { BREAKPOINT } from "@theme"
 import React, { ReactNode } from "react"
 import Section from "../Section"
-
 interface Props {
   left: ReactNode
   right: ReactNode
@@ -39,23 +38,19 @@ const RightColumn = styled(Grid)(({ theme }) => ({
   },
 }))
 
-const Footer = ({ left, right }: Props) => {
-  const isSmall = useMediaQuery(theme.breakpoints.down("lg"))
-
-  return (
-    <SectionStyled spacing="small" disableGutters={true}>
-      <Container disableGutters={isSmall}>
-        <Grid container>
-          <LeftColumn item xs={12} md={6}>
-            {left}
-          </LeftColumn>
-          <RightColumn item xs={12} md={6}>
-            {right}
-          </RightColumn>
-        </Grid>
-      </Container>
-    </SectionStyled>
-  )
-}
+const Footer = ({ left, right }: Props) => (
+  <SectionStyled spacing="small" disableGutters={true}>
+    <Container disableGutters>
+      <Grid container>
+        <LeftColumn item xs={12} md={6}>
+          {left}
+        </LeftColumn>
+        <RightColumn item xs={12} md={6}>
+          {right}
+        </RightColumn>
+      </Grid>
+    </Container>
+  </SectionStyled>
+)
 
 export default Footer
