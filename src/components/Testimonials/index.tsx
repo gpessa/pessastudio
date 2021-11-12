@@ -1,5 +1,5 @@
 import { Columns, Title } from "@components"
-import { t } from "@lingui/macro"
+import { t, Trans } from "@lingui/macro"
 import FormatQuoteIcon from "@mui/icons-material/FormatQuote"
 import { Typography } from "@mui/material"
 import { styled } from "@mui/system"
@@ -30,10 +30,15 @@ const StyledTitle = styled(Title)(({ theme }) => ({
 }))
 
 const TESTIMONIALS = [
-  t`Ho ricevuto questa mattina il materiale. I miei complimenti per la qualità dei prodotti, l'imballo ed il trasportatore`,
-  t`Ringrazio tutto il team per la professionalità, gentilezza, velocità e sopratutto per l'ottimo risultato`,
-  t`Splendido niente da dire! Il tondino è ben pensato e ingegnoso. Molto bene!`,
-  t`Gli ostacoli sono arrivati. Sono fantastici!`,
+  <Trans>
+    Ho ricevuto questa mattina il materiale. I miei complimenti per la qualità dei prodotti, l'imballo ed il
+    trasportatore
+  </Trans>,
+  <Trans>
+    Ringrazio tutto il team per la professionalità, gentilezza, velocità e sopratutto per l'ottimo risultato
+  </Trans>,
+  <Trans>Splendido niente da dire! Il tondino è ben pensato e ingegnoso. Molto bene!</Trans>,
+  <Trans>Gli ostacoli sono arrivati. Sono fantastici!</Trans>,
 ]
 
 const CAROUSEL_CONFIGURATION = {

@@ -138,7 +138,7 @@ msgstr "Rond de longe"
 msgid "/tondini/come-preparare-il-fondo/:title"
 msgstr "Preparation du fonds"
 
-#: src/pages/giostre/index.tsx:48
+#: src/pages/giostre/index.tsx:45
 msgid "3.000 giostre installate"
 msgstr ""
 
@@ -206,7 +206,7 @@ msgstr ""
 msgid "<0>La linea <1>olimpic</1>, presente sul mercato da oltre vent'anni, è rappresentata da un rettangolo professionale, dove il campo da dressage è utilizzato quotidianamente.</0><2>Il campo è delimitato da moduli accostabili tra di loro, ciascuno dei quali è lungo 2 mt. Ogni modulo è costruito in polietilene antiurto resistente anche alle basse temperature e che non ingiallisce sotto l'azione dei raggi ultravioletti.</2><3>Su ciascun modulo sono previste tre aree piane con superficie lucida di 50x12 cm. sulle quali possono essere applicati adesivi pubblicitari.</3>"
 msgstr ""
 
-#: src/pages/giostre/index.tsx:103
+#: src/pages/giostre/index.tsx:100
 msgid "<0>Le giostre rappresentano il punto di forza della nostra azienda.</0><1>Sono state create dalla ricerca di <2>Luciano Pessa</2> con l'intenzione di realizzare un semplice ed affidabile strumento di lavoro che vi consentirè di allenare il vostro cavallo anche quando non avete la possibilità di montarlo.</1><3>La giostra vi permetterè, non solo di raffreddare il vostro cavallo con una passeggiata post allenamento, ma anche di creare una vera sessione di lavoro passando da un'andatura all'altra e cambiando di mano.</3>"
 msgstr ""
 
@@ -246,7 +246,7 @@ msgstr ""
 msgid "<0>È possibile ordinare una giostra nei diametri:</0><1><2>12,0 mt. <3>(4 cavalli)</3></2><4>14,2 mt. <5>(6 cavalli)</5></4></1>"
 msgstr ""
 
-#: src/pages/index.tsx:31
+#: src/pages/index.tsx:27
 msgid "Accessibili"
 msgstr ""
 
@@ -265,11 +265,11 @@ msgstr "Vous acceptez"
 
 #: src/pages/giostre/ippowalker/_informations.tsx:97
 #: src/pages/giostre/tecnoexerciser/_informations.tsx:139
-#: src/pages/tondini/index.tsx:15
+#: src/pages/tondini/index.tsx:12
 msgid "Alcuni accessori possono essere acquistati separatamente e permettono di migliorare ulteriormente le condizioni d'uso."
 msgstr ""
 
-#: src/components/Product/index.tsx:63
+#: src/components/Product/index.tsx:64
 msgid "Altezza"
 msgstr "Hauteur"
 
@@ -284,11 +284,11 @@ msgstr ""
 msgid "Alveolo sulla pesta"
 msgstr ""
 
-#: src/pages/giostre/index.tsx:53
+#: src/pages/giostre/index.tsx:50
 msgid "Ampia gamma"
 msgstr ""
 
-#: src/pages/tondini/index.tsx:171
+#: src/pages/tondini/index.tsx:168
 msgid "Ampio ingresso di 2,05 mt. dotato di catenaccio verticale che garantisce l’assoluta sicurezza"
 msgstr ""
 
@@ -306,7 +306,7 @@ msgstr ""
 msgid "Ancorate il gruppo motore"
 msgstr ""
 
-#: src/pages/index.tsx:38
+#: src/pages/index.tsx:34
 msgid "Apprezzati"
 msgstr ""
 
@@ -347,7 +347,7 @@ msgstr "Bars 3 mt."
 msgid "Barriere"
 msgstr "Bars d’ostacle"
 
-#: src/pages/tondini/index.tsx:164
+#: src/pages/tondini/index.tsx:161
 msgid "Bello e funzionale"
 msgstr ""
 
@@ -363,7 +363,7 @@ msgstr ""
 msgid "Candelieri e lame forate"
 msgstr "Chandeliers et lame en acier percée à visser"
 
-#: src/pages/tondini/index.tsx:182
+#: src/pages/tondini/index.tsx:179
 msgid "Caratteristiche"
 msgstr ""
 
@@ -376,7 +376,7 @@ msgstr "Cavalletti caprilli"
 #: src/constants/index.tsx:283
 #: src/pages/giostre/ippowalker/_informations.tsx:101
 #: src/pages/giostre/tecnoexerciser/_informations.tsx:143
-#: src/pages/tondini/index.tsx:70
+#: src/pages/tondini/index.tsx:67
 msgid "Chiusura a terra"
 msgstr ""
 
@@ -389,13 +389,13 @@ msgstr ""
 msgid "Collegate le braccia di separazione attraverso i cavi"
 msgstr ""
 
-#: src/components/Product/index.tsx:55
+#: src/components/Product/index.tsx:56
 msgid "Colori"
 msgstr "Couleurs"
 
 #: src/pages/recinti/come-preparare-il-fondo.tsx:7
 #: src/pages/recinti/index.tsx:39
-#: src/pages/tondini/index.tsx:137
+#: src/pages/tondini/index.tsx:134
 msgid "Come preparare il fondo"
 msgstr "Preparation du fonds"
 
@@ -436,9 +436,9 @@ msgid "Coordinate bancarie"
 msgstr "Coordonnées bancaires"
 
 #: src/constants/index.tsx:200
-#: src/pages/tondini/index.tsx:107
-#: src/pages/tondini/index.tsx:111
-#: src/pages/tondini/index.tsx:115
+#: src/pages/tondini/index.tsx:104
+#: src/pages/tondini/index.tsx:108
+#: src/pages/tondini/index.tsx:112
 msgid "Copertura"
 msgstr ""
 
@@ -466,11 +466,11 @@ msgstr "Clôture TECNOFENCE"
 msgid "Corridoio in compensato marino"
 msgstr ""
 
-#: src/components/Testimonials/index.tsx:56
+#: src/components/Testimonials/index.tsx:61
 msgid "Cosa dicono di noi"
 msgstr ""
 
-#: src/pages/tondini/index.tsx:147
+#: src/pages/tondini/index.tsx:144
 msgid "Costituito da pannelli laterali in compensato marino, fissati a colonne in acciaio zincato. Copertura in telo spalmato in PVC disponibile in bianco, verde o crema"
 msgstr ""
 
@@ -490,23 +490,23 @@ msgstr "Cubes maxi"
 msgid "Cubi mini"
 msgstr "Cubes mini"
 
-#: src/pages/ostacoli/_cucchiai.tsx:56
+#: src/pages/ostacoli/_cucchiai-segnaletica.tsx:56
 msgid "Cucchiai"
 msgstr "Cuillère"
 
-#: src/pages/ostacoli/_cucchiai.tsx:12
+#: src/pages/ostacoli/_cucchiai-segnaletica.tsx:12
 msgid "Cucchiaio DE"
 msgstr "Cuillère DE"
 
-#: src/pages/ostacoli/_cucchiai.tsx:25
+#: src/pages/ostacoli/_cucchiai-segnaletica.tsx:25
 msgid "Cucchiaio PS"
 msgstr "Cuillère PS"
 
-#: src/pages/index.tsx:33
+#: src/pages/index.tsx:29
 msgid "Da anni Pessastudio è focalizzata nel produrre prodotti di qualità a costi accessibili"
 msgstr ""
 
-#: src/components/Product/index.tsx:61
+#: src/components/Product/index.tsx:62
 #: src/constants/index.tsx:195
 msgid "Diametro"
 msgstr "Diamètre"
@@ -515,13 +515,13 @@ msgstr "Diamètre"
 msgid "Diamo la possibilità di montare nella vostra recinzione un piede mobile che vi permetterà di posizionarla e spostarla dove e quando volete"
 msgstr "Nous offrons la possibilité de monter a votre Clôtures un pied mobile  qui vous permettra de la positionner et de la déplacer où et quand vous le désirez"
 
-#: src/components/Testimonials/index.tsx:55
+#: src/components/Testimonials/index.tsx:60
 msgid "Dicono di noi"
 msgstr ""
 
 #: src/pages/giostre/ippowalker/index.tsx:87
 #: src/pages/giostre/tecnoexerciser/index.tsx:88
-#: src/pages/tondini/index.tsx:204
+#: src/pages/tondini/index.tsx:201
 msgid "Dimensioni"
 msgstr ""
 
@@ -541,7 +541,7 @@ msgstr ""
 msgid "Dressage"
 msgstr "Dressage"
 
-#: src/pages/giostre/index.tsx:128
+#: src/pages/giostre/index.tsx:125
 msgid "Due sono i modelli di giostra che proponiamo: il modello <0>tecnoexerciser</0>, prodotta da oltre 20 anni, e il modello <1>ippowalker</1>, pensata per rispondere alle esigenze di un mercato che richiede un prodotto affidabile e al tempo stesso economico."
 msgstr ""
 
@@ -558,7 +558,7 @@ msgstr ""
 msgid "Fac simile domanda installazione giostra"
 msgstr ""
 
-#: src/pages/giostre/index.tsx:67
+#: src/pages/giostre/index.tsx:64
 msgid "Facile da usare"
 msgstr ""
 
@@ -571,7 +571,7 @@ msgstr ""
 msgid "Fosso"
 msgstr "Fossé"
 
-#: src/pages/giostre/index.tsx:126
+#: src/pages/giostre/index.tsx:123
 #: src/pages/giostre/ippowalker/index.tsx:80
 #: src/pages/giostre/tecnoexerciser/index.tsx:81
 #: src/pages/recinti/_gamma.tsx:64
@@ -625,16 +625,16 @@ msgstr "Marcheur Couloir Tecnofence"
 msgid "Giostra solo motore"
 msgstr ""
 
-#: src/pages/giostre/index.tsx:79
+#: src/pages/giostre/index.tsx:76
 msgid "Giostra tecnoexercize"
 msgstr ""
 
-#: src/pages/giostre/index.tsx:97
-#: src/pages/giostre/index.tsx:101
+#: src/pages/giostre/index.tsx:94
+#: src/pages/giostre/index.tsx:98
 msgid "Giostre"
 msgstr "Marcheur"
 
-#: src/components/Testimonials/index.tsx:36
+#: src/components/Testimonials/index.tsx:41
 msgid "Gli ostacoli sono arrivati. Sono fantastici!"
 msgstr ""
 
@@ -659,19 +659,19 @@ msgstr ""
 msgid "I corridoi"
 msgstr ""
 
-#: src/pages/index.tsx:24
+#: src/pages/index.tsx:20
 msgid "I nostri prodotti sono MADE IN ITALY, costruiti da Pessastudio e personalizzabili (in dimensioni o colori)"
 msgstr ""
 
-#: src/pages/index.tsx:45
+#: src/pages/index.tsx:41
 msgid "I nostri prodotti sono pensati per resistere nel tempo, anche se soggetti a difficili condizioni climatiche"
 msgstr ""
 
-#: src/pages/tondini/index.tsx:157
+#: src/pages/tondini/index.tsx:154
 msgid "I nostri tondini sono considerati strutture precarie. Non avrete bisogno di nessuna concessione edilizia"
 msgstr ""
 
-#: src/pages/index.tsx:39
+#: src/pages/index.tsx:35
 msgid "I prodotti vengono venduti ed apprezzati sia in Italia che all'estero"
 msgstr ""
 
@@ -687,15 +687,15 @@ msgstr ""
 msgid "Iban"
 msgstr ""
 
-#: src/pages/ostacoli/_cucchiai.tsx:26
+#: src/pages/ostacoli/_cucchiai-segnaletica.tsx:26
 msgid "Il cucchiaio dotato del nostro sistema brevettato di aggancio"
 msgstr ""
 
-#: src/pages/ostacoli/_cucchiai.tsx:13
+#: src/pages/ostacoli/_cucchiai-segnaletica.tsx:13
 msgid "Il cucchiaio standard utilizzato al livello internazionale"
 msgstr ""
 
-#: src/pages/tondini/index.tsx:185
+#: src/pages/tondini/index.tsx:182
 msgid "Il tondino coperto è adatto a svolgere molteplici attività, per esempio è la migliore soluzione per addestrare puledri in libertà o lavorare cavalli alla corda, aiuta a facilitare il controllo dei vostri animali durante le lezioni ai principianti, nelle riprese dei pony ed è indispensabile per il longeur durante le riprese di volteggi."
 msgstr "Le rond de longe couvert se prête  à de nombreuses activités, par exemple, c’est la meilleure solution pour entraîner des poulains en liberté ou travailler des chevaux à la corde, aide à faciliter le contrôle de vos chevaux pendant les leçons aux débutants , dans les reprises des pony et est indispensable pour il longeur en voltige."
 
@@ -703,35 +703,35 @@ msgstr "Le rond de longe couvert se prête  à de nombreuses activités, par exe
 msgid "Indietro"
 msgstr ""
 
-#: src/pages/index.tsx:43
+#: src/pages/index.tsx:39
 msgid "Indistruttibili"
 msgstr ""
 
-#: src/pages/giostre/index.tsx:87
-#: src/pages/tondini/index.tsx:119
+#: src/pages/giostre/index.tsx:84
+#: src/pages/tondini/index.tsx:116
 msgid "Ingresso"
 msgstr "Porte d’entrée"
 
-#: src/pages/index.tsx:15
+#: src/pages/index.tsx:11
 msgid "Innovativi"
 msgstr ""
 
-#: src/pages/giostre/index.tsx:83
+#: src/pages/giostre/index.tsx:80
 msgid "Interno giostra con alveolo"
 msgstr ""
 
-#: src/pages/tondini/index.tsx:95
-#: src/pages/tondini/index.tsx:99
+#: src/pages/tondini/index.tsx:92
+#: src/pages/tondini/index.tsx:96
 msgid "Interno tondino coperto"
 msgstr ""
 
-#: src/pages/giostre/index.tsx:153
+#: src/pages/giostre/index.tsx:150
 #: src/pages/giostre/ippowalker/index.tsx:34
 msgid "Ippowalker"
 msgstr "Ippowalker"
 
 #: src/constants/index.tsx:197
-#: src/pages/tondini/index.tsx:41
+#: src/pages/tondini/index.tsx:38
 msgid "Irrigazione"
 msgstr "Irrigation"
 
@@ -765,7 +765,7 @@ msgstr ""
 msgid "L'aveolo è la soluzione ottimale mantenere un fondo sempre perfetto in ogni condizione, permette di evitare buche o avvallamenti riducendo i costi di manutenzione."
 msgstr ""
 
-#: src/pages/index.tsx:17
+#: src/pages/index.tsx:13
 msgid "L'innovazione tecnologica e la qualità sono le caratteristiche chiave dei nostri prodotti"
 msgstr ""
 
@@ -798,7 +798,7 @@ msgstr "Clôtures avec trois lisse est utilisé pour délimiter les paddock pour
 msgid "La recinzione ad una filagna viene utilizzata per delimitare campi da lavoro o gara poco adoperati e non è adatta per l'addestramento. Potete utilizzarla anche per delimitare un'area del vostro giardino di casa"
 msgstr "Clôtures avec une lisse est utilisé pour délimiter les champs de travail ou de compétition , donc peu utilisé et non adapté pour le dressage. Vous pouvez également l’utiliser pour délimiter une partie de votre jardin à la maison"
 
-#: src/pages/tondini/index.tsx:53
+#: src/pages/tondini/index.tsx:50
 msgid "La rete antivento della porta è un’ulteriore protezione che offriamo per rendere ancora di più il tuo tondino sicuro in caso di forte vendo e per garantire una maggiore concentrazione del tuo cavallo."
 msgstr ""
 
@@ -806,7 +806,7 @@ msgstr ""
 msgid "La rete antivento protegge l'interno della giostra da correnti d'aria inoltre aiuta il cavallo a rimanere concentrato sul percorso e lo rende più tranquillo."
 msgstr ""
 
-#: src/pages/tondini/index.tsx:24
+#: src/pages/tondini/index.tsx:21
 msgid "La rete antivento protegge l'interno della tondino da correnti d'aria inoltre aiuta il cavallo a rimanere concentrato mentre lo lavorate al suo interno."
 msgstr ""
 
@@ -822,11 +822,11 @@ msgstr ""
 msgid "Lama DE da 50/150 cm."
 msgstr ""
 
-#: src/components/Product/index.tsx:71
+#: src/components/Product/index.tsx:72
 msgid "Larghezza"
 msgstr "Largeur"
 
-#: src/pages/giostre/index.tsx:62
+#: src/pages/giostre/index.tsx:59
 msgid "Le nostre giostre sono considerate strutture precarie. Non avrete bisogno di nessuna concessione edilizia"
 msgstr ""
 
@@ -842,7 +842,7 @@ msgstr "Lettre de dressage"
 msgid "Lettera dressage light"
 msgstr ""
 
-#: src/components/Product/index.tsx:65
+#: src/components/Product/index.tsx:66
 msgid "Lunghezza"
 msgstr "Longueur"
 
@@ -866,15 +866,15 @@ msgstr "Instructions de montage"
 msgid "Manuale quadro di controllo"
 msgstr "Instructions pour utiliser le programmeur"
 
-#: src/pages/tondini/index.tsx:207
+#: src/pages/tondini/index.tsx:204
 msgid "Manuali"
 msgstr ""
 
-#: src/components/Product/index.tsx:57
+#: src/components/Product/index.tsx:58
 msgid "Materiali"
 msgstr "Matériels"
 
-#: src/pages/tondini/index.tsx:145
+#: src/pages/tondini/index.tsx:142
 msgid "Materiali di qualità"
 msgstr ""
 
@@ -907,8 +907,8 @@ msgstr ""
 msgid "Motore"
 msgstr "Moteur électrique"
 
-#: src/pages/giostre/index.tsx:60
-#: src/pages/tondini/index.tsx:155
+#: src/pages/giostre/index.tsx:57
+#: src/pages/tondini/index.tsx:152
 msgid "Nessuna concessione edilizia"
 msgstr ""
 
@@ -924,7 +924,7 @@ msgstr "Numéro de champ de barrière Light"
 msgid "Numero per campo ostacoli professional"
 msgstr "Numéro de champ de barrière professionnel"
 
-#: src/pages/ostacoli/_cucchiai.tsx:58
+#: src/pages/ostacoli/_cucchiai-segnaletica.tsx:58
 msgid "Numerosi sono stati i test a cui abbiamo sottoposto i cucchiai per garantirne robustezza e durata nel tempo."
 msgstr ""
 
@@ -944,15 +944,15 @@ msgstr "Le page que tu demandes n’existes pas"
 msgid "Per consentirvi di realizzare ostacoli di vostra creazione possiamo fornirvi le lame forate in due diverse lunghezze."
 msgstr ""
 
-#: src/pages/giostre/index.tsx:100
+#: src/pages/giostre/index.tsx:97
 msgid "Perché una giostra Pessastudio"
 msgstr ""
 
-#: src/pages/index.tsx:22
+#: src/pages/index.tsx:18
 msgid "Personalizzabili"
 msgstr ""
 
-#: src/components/Product/index.tsx:69
+#: src/components/Product/index.tsx:70
 msgid "Peso"
 msgstr "Poids"
 
@@ -964,7 +964,7 @@ msgstr ""
 #~ msgid "Pessastudio nasce 28 anni fa dalla famiglia Pessa, gente di cavalli da generazioni, oggi Luciano Pessa il fondatore si avvale della forza commerciale della figlia"
 #~ msgstr "Pessastudio a été fondé il y a 28 ans par la famille Pessa, gens de chevaux depuis des générations. Actuellement Luciano Pessa, le fondateur, est soutenu par la force commerciale de sa fille"
 
-#: src/pages/index.tsx:54
+#: src/pages/index.tsx:50
 msgid "Pessastudio nasce 28 fa dall'ingegno e dalla passione per i cavalli del fondatore Luciano Pessa. Oggi, la figlia Anna, continua a portare avanti lo stesso sogno"
 msgstr ""
 
@@ -972,7 +972,7 @@ msgstr ""
 #~ msgid "Pessastudio nasce 28 fa dalla passione per i cavalli e dall'ingegno del fondatore Luciano Pessa. Oggi, la figlia Anna, continua a portare avanti lo stesso sogno"
 #~ msgstr ""
 
-#: src/pages/index.tsx:69
+#: src/pages/index.tsx:65
 msgid "Pessastudio, una scelta di qualità"
 msgstr ""
 
@@ -980,7 +980,7 @@ msgstr ""
 msgid "Piede mobile"
 msgstr "Clôture de pied"
 
-#: src/pages/giostre/index.tsx:49
+#: src/pages/giostre/index.tsx:46
 msgid "Più' di 3.000 clienti europei hanno scelto Pessastudio per la loro giostra"
 msgstr ""
 
@@ -1025,12 +1025,12 @@ msgstr "Procedure per la lubrification"
 msgid "Prodotti"
 msgstr "Produits"
 
-#: src/components/Product/index.tsx:59
+#: src/components/Product/index.tsx:60
 msgid "Profondità"
 msgstr ""
 
 #: src/constants/index.tsx:196
-#: src/pages/giostre/index.tsx:91
+#: src/pages/giostre/index.tsx:88
 msgid "Quadro di comando"
 msgstr ""
 
@@ -1075,11 +1075,11 @@ msgstr "Clôtures avec quatre lisse"
 #: src/constants/index.tsx:295
 #: src/pages/giostre/ippowalker/_informations.tsx:133
 #: src/pages/giostre/tecnoexerciser/_informations.tsx:175
-#: src/pages/tondini/index.tsx:22
+#: src/pages/tondini/index.tsx:19
 msgid "Rete antivento"
 msgstr "Réseau du vent"
 
-#: src/pages/tondini/index.tsx:51
+#: src/pages/tondini/index.tsx:48
 msgid "Rete antivento ingresso"
 msgstr ""
 
@@ -1102,11 +1102,11 @@ msgstr ""
 msgid "Rimani informato sui nostri sconti e gli eventi"
 msgstr "Abonnez-vous à notre newsletter et découvrez les dernières nouveautés et promotions"
 
-#: src/components/Testimonials/index.tsx:34
+#: src/components/Testimonials/index.tsx:37
 msgid "Ringrazio tutto il team per la professionalità, gentilezza, velocità e sopratutto per l'ottimo risultato"
 msgstr ""
 
-#: src/components/ContentTable/index.tsx:47
+#: src/components/ContentTable/index.tsx:41
 msgid "Scarica"
 msgstr "Télécharger un fichier"
 
@@ -1114,12 +1114,12 @@ msgstr "Télécharger un fichier"
 msgid "Scopo di questa Politica sulla privacy è di informarvi in merito ai dati che vengono raccolti su di voi, all’utilizzo che ne possiamo fare ed al modo in cui tali informazioni possono essere corrette o modificate."
 msgstr ""
 
-#: src/pages/giostre/index.tsx:147
-#: src/pages/giostre/index.tsx:155
+#: src/pages/giostre/index.tsx:144
+#: src/pages/giostre/index.tsx:152
 msgid "Scopri di piú"
 msgstr ""
 
-#: src/pages/tondini/index.tsx:183
+#: src/pages/tondini/index.tsx:180
 msgid "Scopri il nostro tondino"
 msgstr ""
 
@@ -1127,11 +1127,11 @@ msgstr ""
 msgid "Scopri la nostra gamma di prodotti"
 msgstr ""
 
-#: src/components/Testimonials/index.tsx:57
+#: src/components/Testimonials/index.tsx:62
 msgid "Scopri la qualità dei nostri prodotti attraverso la testimonianza dei clienti"
 msgstr ""
 
-#: src/pages/index.tsx:70
+#: src/pages/index.tsx:66
 msgid "Scopri perché ogni anno centinaia di persone si affidano a Pessastudio per i loro articoli d'equitazione"
 msgstr ""
 
@@ -1163,7 +1163,7 @@ msgstr ""
 #: src/pages/giostre/ippowalker/index.tsx:83
 #: src/pages/giostre/tecnoexerciser/index.tsx:84
 #: src/pages/recinti/index.tsx:95
-#: src/pages/tondini/index.tsx:201
+#: src/pages/tondini/index.tsx:198
 msgid "Servizio clienti"
 msgstr ""
 
@@ -1171,7 +1171,7 @@ msgstr ""
 msgid "Si è verificato un problema, riprova"
 msgstr ""
 
-#: src/pages/tondini/index.tsx:169
+#: src/pages/tondini/index.tsx:166
 msgid "Sicuro"
 msgstr ""
 
@@ -1183,19 +1183,19 @@ msgstr ""
 msgid "Sono la soluzione ideale per impedire alla sabbia di uscire dal percorso consentendo di ridurre il materiale disperso."
 msgstr ""
 
-#: src/components/Product/index.tsx:67
+#: src/components/Product/index.tsx:68
 msgid "Spessore"
 msgstr "Epaisseur"
 
-#: src/components/Testimonials/index.tsx:35
+#: src/components/Testimonials/index.tsx:40
 msgid "Splendido niente da dire! Il tondino è ben pensato e ingegnoso. Molto bene!"
 msgstr ""
 
-#: src/pages/ostacoli/_cucchiai.tsx:38
+#: src/pages/ostacoli/_cucchiai-segnaletica.tsx:38
 msgid "Supporti di sicurezza da applicare ai nostri cucchiai per salvaguardare l'integrità degli arti dei vostri cavalli in maniera efficace ed economica."
 msgstr ""
 
-#: src/pages/ostacoli/_cucchiai.tsx:36
+#: src/pages/ostacoli/_cucchiai-segnaletica.tsx:36
 msgid "Supporto di sicurezza"
 msgstr "Support de sécurité"
 
@@ -1203,7 +1203,7 @@ msgstr "Support de sécurité"
 msgid "Swift"
 msgstr ""
 
-#: src/pages/giostre/index.tsx:145
+#: src/pages/giostre/index.tsx:142
 #: src/pages/giostre/tecnoexerciser/index.tsx:45
 msgid "Tecnoexerciser"
 msgstr "Tecnoexerciser"
@@ -1224,21 +1224,21 @@ msgstr ""
 msgid "Titolare del trattamento e dati di contatto"
 msgstr ""
 
-#: src/pages/tondini/index.tsx:178
+#: src/pages/tondini/index.tsx:175
 msgid "Tondini"
 msgstr "Rond de longe"
 
-#: src/pages/tondini/index.tsx:103
+#: src/pages/tondini/index.tsx:100
 msgid "Tondino coperto"
 msgstr "Ronde de longe"
 
-#: src/pages/tondini/index.tsx:87
-#: src/pages/tondini/index.tsx:91
-#: src/pages/tondini/index.tsx:131
+#: src/pages/tondini/index.tsx:84
+#: src/pages/tondini/index.tsx:88
+#: src/pages/tondini/index.tsx:128
 msgid "Tondino coperto {sides} pannelli {size} mt."
 msgstr "{sides} côtés {size} mt."
 
-#: src/pages/index.tsx:64
+#: src/pages/index.tsx:60
 msgid "Tradizione e qualità"
 msgstr ""
 
@@ -1255,15 +1255,15 @@ msgstr ""
 msgid "Trovate e segnate il centro di ciò che sarà la vostra giostra"
 msgstr ""
 
-#: src/pages/tondini/index.tsx:42
+#: src/pages/tondini/index.tsx:39
 msgid "Un rosone posizionato nel centro ti permetterà di irrigare il tuo tondino."
 msgstr ""
 
-#: src/pages/index.tsx:52
+#: src/pages/index.tsx:48
 msgid "Una lunga storia"
 msgstr ""
 
-#: src/pages/giostre/index.tsx:69
+#: src/pages/giostre/index.tsx:66
 msgid "Usa il nostro semplice pannello di controllo per scegliere uno dei nostri \"training programs\" o seleziona manualmente la velocità desiderata"
 msgstr ""
 
@@ -1280,7 +1280,7 @@ msgstr ""
 msgid "Utilizziamo i cookie per garantire il corretto funzionamento del sito. Per ulteriori informazioni sul nostro utilizzo dei cookie, consultare la nostra <0>politica sui cookie</0>."
 msgstr ""
 
-#: src/components/ContentTable/index.tsx:36
+#: src/components/ContentTable/index.tsx:35
 msgid "Vedi"
 msgstr ""
 
@@ -1300,7 +1300,7 @@ msgstr ""
 msgid "È possibile acquistare la giostra sprovvista di copertura ma se il vostro obbiettivo è quello di poter lavorare 365 giorni all'anno, Pessastudio, offre due possibili soluzioni abbinabili al corridoio <0>Exerciser</0>."
 msgstr ""
 
-#: src/pages/giostre/index.tsx:55
+#: src/pages/giostre/index.tsx:52
 msgid "È possibile acquistare le nostre giostre in diverse versioni adatte al tuo budget e alle tue esigenze"
 msgstr ""
 
@@ -1312,6 +1312,6 @@ msgstr ""
 msgid "É possibile acquistare la giostra sprovvista di copertura ma se il vostro obbiettivo è quello di poter lavorare 365 giorni all'anno, Pessastudio offre la possibilità di dotare la giostra, con corridoio EASY, di una <0>copertura in PVC</0>."
 msgstr ""
 
-#: src/pages/tondini/index.tsx:165
+#: src/pages/tondini/index.tsx:162
 msgid "É una struttura semplice, leggera e piacevole alla vista"
 msgstr ""
