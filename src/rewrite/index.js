@@ -1,7 +1,7 @@
 const rewrite = [
   ["^contatto.php", "/it/contatti/"],
-  ["^index.php", "/"],
-  ["^azienda.php", "/"],
+  ["^index.php", "/it"],
+  ["^azienda.php", "/it"],
   ["^dressage.php", "/it/dressage/"],
   ["^dressage-economico.php", "/it/dressage/"],
   ["^dressage-standard.php", "/it/dressage/"],
@@ -22,11 +22,14 @@ const rewrite = [
 
 const languages = [
   `
+  # Redirect sito francese se browser in francese
     RewriteCond %{HTTP:Accept-Language} ^fr [NC]
     RewriteRule ^$ https://www.pessastudio.fr/ [L,R=302]
   `,
   `
-    Redirect 302 / /it/
+    # Redirect /it se lingua non selezionata
+    RewriteEngine On
+    RewriteRule ^$ /it [L,R=302]
   `
   //   `
   //   RewriteCond %{HTTP:Accept-Language} ^en [NC]
