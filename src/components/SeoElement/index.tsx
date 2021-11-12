@@ -15,6 +15,10 @@ const Seo: React.FC<Props> = ({ title, description, keywords, meta = [] }) => (
     titleTemplate={`%s | Pessastudio`}
     meta={[
       {
+        name: "charset",
+        content: "UTF-8",
+      },
+      {
         name: `description`,
         content: description,
       },
