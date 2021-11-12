@@ -114,7 +114,7 @@ const Product = ({ images, vertical, price, url, name, description, ...attribute
     <ModalGallery
       images={images}
       render={({ images, open }) => (
-        <Tag to={url} sx={{ transform: "scale(1)" }}>
+        <Tag to={url}>
           <Grid container spacing={PRODUCT_GUTTER}>
             {images.map(image => (
               <Grid item xs={12} md={span} key={image.src} onClick={() => open(image)}>
