@@ -66,13 +66,11 @@ const Testimonials = () => {
         <CarouselProvider {...CAROUSEL_CONFIGURATION}>
           <Slider>
             {TESTIMONIALS.map((quote, index) => (
-              <Slide index={index} key={index}>
-                <Typography textAlign="center" fontSize="1.2rem">
-                  <FormatQuoteIcon />
-                  {quote}
-                  <FormatQuoteIcon />
-                </Typography>
-              </Slide>
+              <Typography textAlign="center" fontSize="1.2rem" component={Slide} index={index} key={index}>
+                <FormatQuoteIcon />
+                {quote}
+                <FormatQuoteIcon />
+              </Typography>
             ))}
           </Slider>
           <DotGroupStyled />
