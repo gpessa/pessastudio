@@ -58,12 +58,14 @@ module.exports = {
       },
     },
     {
-      resolve: "gatsby-plugin-web-font-loader",
+      resolve: `gatsby-plugin-google-fonts`,
       options: {
-        google: {
-          families: ["Source+Sans+Pro:400,700", "Roboto+Condensed:400"],
-        }
-      },
+        fonts: [
+          `roboto condensed\:400`,
+          `source sans pro\:400,700`
+        ],
+        display: 'swap'
+      }
     },
     {
       resolve: "gatsby-plugin-mailchimp",
