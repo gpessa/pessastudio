@@ -1,3 +1,4 @@
+import { t } from "@lingui/macro"
 import { Box } from "@mui/material"
 import { styled } from "@mui/system"
 import React from "react"
@@ -15,6 +16,7 @@ const Map = () => (
       frameBorder={0}
       marginWidth={0}
       marginHeight={0}
+      title={t`Mappa`}
       role="application"
       src="https://maps.google.com/maps?q=Pessastudio%20Horse%20Tecnology&t=&z=11&ie=UTF8&iwloc=&output=embed"
     ></iframe>
