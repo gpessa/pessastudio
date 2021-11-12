@@ -101,6 +101,13 @@ module.exports = {
           ErrorDocument 403 /404.html
           ErrorDocument 404 /404.html
         `,
+        custom: `
+          <IfModule mod_headers.c>
+            <FilesMatch "\.(bmp|cur|gif|ico|jpe?g|png|svgz?|webp)$">
+                Header set Cache-Control "public, max-age=1209600, immutable"
+            </FilesMatch>
+          </IfModule>
+        `
       },
     },
   ],

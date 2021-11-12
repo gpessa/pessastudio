@@ -35,8 +35,7 @@ const NewsletterSubscription: React.FC = () => {
     const { msg } = await addToMailchimp(email, { LOCALE: i18n.locale })
 
     let response = "error-generic"
-    if (msg.indexOf("is already subscribed") != -1)
-      response = "error-already-subscribed"
+    if (msg.indexOf("is already subscribed") != -1) response = "error-already-subscribed"
     if (msg.indexOf("Thank you for subscribing!") != -1) response = "success"
 
     setState({
@@ -53,17 +52,11 @@ const NewsletterSubscription: React.FC = () => {
           fullWidth
           type="email"
           name="email"
-          label={t`Email`}
+          aria-label={t`Email`}
           InputProps={{
             endAdornment: (
               <InputAdornment position="end">
-                <IconButton
-                  edge="end"
-                  type="submit"
-                  color="inherit"
-                  aria-label={t`Iscriviti`}
-                  size="large"
-                >
+                <IconButton edge="end" type="submit" color="inherit" size="large" aria-label={t`Iscriviti`}>
                   <Send />
                 </IconButton>
               </InputAdornment>
@@ -72,9 +65,7 @@ const NewsletterSubscription: React.FC = () => {
         />
       )}
 
-      {state.response === "success" && (
-        <StyledAlert severity="success">{t`Complimenti! Ti sei iscritto`}</StyledAlert>
-      )}
+      {state.response === "success" && <StyledAlert severity="success">{t`Complimenti! Ti sei iscritto`}</StyledAlert>}
 
       {state.response === "error-already-subscribed" && (
         <StyledAlert severity="error">{t`Ti sei già iscritto`} </StyledAlert>
