@@ -114,17 +114,17 @@ const Product = ({ images, vertical, price, url, name, description, ...attribute
     <ModalGallery
       images={images}
       render={({ images, open }) => (
-        <Tag to={url} itemscope itemtype="https://schema.org/Product">
+        <Tag to={url}>
           <Grid container spacing={PRODUCT_GUTTER}>
             {images.map(image => (
               <Grid item xs={12} md={span} key={image.src} onClick={() => open(image)}>
                 <ButtonBaseStyled>
-                  <ImgStyled src={image.src} alt={image.caption || name} itemprop="image" />
+                  <ImgStyled src={image.src} alt={image.caption || name} />
                 </ButtonBaseStyled>
               </Grid>
             ))}
             <DataStyled item xs={12} md={span}>
-              <TH variant="h6" sans sx={{ textTransform: "uppercase" }} itemprop="name">
+              <TH variant="h6" sans sx={{ textTransform: "uppercase" }}>
                 {name}
               </TH>
 
