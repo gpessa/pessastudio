@@ -23,7 +23,7 @@ const BANCA = {
   swift: "BCITITMM",
 }
 
-const SEDE_OPERATIVA = {
+export const SEDE_OPERATIVA = {
   name: "Pessastudio Horse Tecnology srl",
   country: "Italy",
   postalCode: "35044",

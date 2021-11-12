@@ -38,10 +38,7 @@ const Footer: React.FC = () => {
             <Socials />
           </Grid>
 
-          <DividerStyled
-            orientation={isDesktop ? "vertical" : "horizontal"}
-            flexItem={isDesktop}
-          />
+          <DividerStyled orientation={isDesktop ? "vertical" : "horizontal"} flexItem={isDesktop} />
 
           <Grid item md={4} xs={12}>
             <Title

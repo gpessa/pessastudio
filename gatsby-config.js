@@ -20,7 +20,6 @@ module.exports = {
   pathPrefix,
   siteMetadata: {
     siteUrl,
-    description: ``,
     title: `Pessastudio`,
     author: `Pessastudio`
   },

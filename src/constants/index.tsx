@@ -162,17 +162,6 @@ export const PAGES: Pages = {
   GIOSTRE_TECNOEXERCISER_ISTRUZIONI_MONTAGGIO,
 }
 
-export const SOCIALS = {
-  facebook: {
-    name: "Facebook",
-    url: "https://www.facebook.com/Pessastudio-HORSE-Tecnology-1050570271816027/",
-  },
-  instagram: {
-    name: "Instagram",
-    url: "https://www.instagram.com/pessastudiohorsetecnology",
-  },
-}
-
 export enum Colors {
   YELLOW = "#FEB00D",
   GREEN = "#316330",

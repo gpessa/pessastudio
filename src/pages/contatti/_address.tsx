@@ -1,6 +1,6 @@
 import { Data } from "@components"
 import { Trans } from "@lingui/macro"
-import { Link, Typography, Box } from "@mui/material"
+import { Box, Link, Typography } from "@mui/material"
 import React from "react"
 
 const Address: React.FC<Props> = ({
@@ -20,18 +20,17 @@ const Address: React.FC<Props> = ({
   const hasAddress = streetAddress != undefined
 
   return (
-    <div itemScope itemType="http://schema.org/ContactPoint" {...props}>
-      <Typography itemProp="name" gutterBottom={true} fontWeight="bold">
+    <div itemScope {...props}>
+      <Typography gutterBottom={true} fontWeight="bold">
         {name}
       </Typography>
 
       {hasAddress && (
-        <Box itemScope itemType="http://schema.org/PostalAddress" mb={1}>
-          <div itemProp="streetAddress">{streetAddress}</div>
-          <span itemProp="addressLocality">{addressLocality}</span>
+        <Box itemScope mb={1}>
+          <div>{streetAddress}</div>
+          <span>{addressLocality}</span>
           <br />
-          <span itemProp="postalCode">{postalCode}</span>, <span itemProp="addressRegion">{addressRegion}</span> (
-          <span itemProp="addressCountry">{country}</span>)
+          <span>{postalCode}</span>, <span>{addressRegion}</span> (<span>{country}</span>)
         </Box>
       )}
 
@@ -41,7 +40,7 @@ const Address: React.FC<Props> = ({
         <Data
           label={<Trans>Telefono</Trans>}
           value={
-            <Link underline="hover" itemProp="telephone" href={`tel:${telephone.replace(/ /g, "")}`}>
+            <Link underline="hover" href={`tel:${telephone.replace(/ /g, "")}`}>
               {telephone}
             </Link>
           }
@@ -63,23 +62,14 @@ const Address: React.FC<Props> = ({
         <Data
           label={<Trans>Email</Trans>}
           value={
-            <Link underline="hover" itemProp="email" href={`mailto:${email}`}>
+            <Link underline="hover" href={`mailto:${email}`}>
               {email}
             </Link>
           }
         />
       )}
 
-      {bank && (
-        <Data
-          label={<Trans>Banca</Trans>}
-          value={
-            <Link underline="hover" itemProp="bank">
-              {bank}
-            </Link>
-          }
-        />
-      )}
+      {bank && <Data label={<Trans>Banca</Trans>} value={<Link underline="hover">{bank}</Link>} />}
     </div>
   )
 }
