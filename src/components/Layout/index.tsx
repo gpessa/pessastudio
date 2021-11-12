@@ -12,7 +12,7 @@ import Breadcrumb from "../Breadcrumb"
 import Footer from "../Footer"
 import Gdpr from "../Gdpr"
 import Navigation from "../Navigation"
-import Seo from "../Seo"
+import SeoElement from "../SeoElement"
 
 declare module "@mui/material/styles/createTypography" {
   interface TypographyOptions {
@@ -84,7 +84,7 @@ const Layout: React.FC<PageProps<object, { originalPath: string }>> = ({ childre
     <StyledEngineProvider injectFirst>
       <ThemeProvider theme={theme}>
         <CssBaseline />
-        <Seo {...{ title, description }} />
+        <SeoElement {...{ title, description }} />
         <Navigation />
         {!isNotFoundPage && <Breadcrumb path={originalPath} />}
         <main>{children}</main>

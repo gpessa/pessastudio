@@ -6,19 +6,6 @@
         "node_modules",
         "src"
       ]
-    },
-    "babel-module": {
-      "root": [
-        "./src"
-      ],
-      "alias": {
-        "@components": "./components",
-        "@constants": "./constants",
-        "@styles": "./styles",
-        "@theme": "./theme",
-        "@hooks": "./hooks",
-        "@hoc": "./hoc"
-      }
     }
   },
   "react/jsx-max-props-per-line": [2, {"maximum": 1, "when": "always" }] 

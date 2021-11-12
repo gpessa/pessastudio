@@ -25,6 +25,7 @@ module.exports = {
     author: `Pessastudio`
   },
   plugins: [
+    `gatsby-plugin-tsconfig-paths`,
     {
       resolve: `gatsby-plugin-gdpr-cookies`,
       options: {
@@ -57,21 +58,6 @@ module.exports = {
       },
     },
     {
-      resolve: "gatsby-plugin-module-resolver",
-      options: {
-        root: "./src",
-        aliases: {
-          "@components": "./components",
-          "@constants": "./constants",
-          "@styles": "./styles",
-          "@images": "./images",
-          "@hooks": "./hooks",
-          "@theme": "./theme",
-          "@hoc": "./hoc",
-        },
-      },
-    },
-    {
       resolve: "gatsby-plugin-web-font-loader",
       options: {
         google: {
@@ -83,13 +69,6 @@ module.exports = {
       resolve: "gatsby-plugin-mailchimp",
       options: {
         endpoint: "https://pessastudio.us4.list-manage.com/subscribe/post?u=9827f22cb9c00c4d7ff1c48ab&amp;id=199848d4fd",
-      },
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `static`,
-        path: `${__dirname}/static`,
       },
     },
     {
@@ -120,6 +99,13 @@ module.exports = {
           ErrorDocument 403 /404.html
           ErrorDocument 404 /404.html
         `,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `images`,
+        path: `${__dirname}/static`,
       },
     },
   ],

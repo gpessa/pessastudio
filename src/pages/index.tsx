@@ -1,24 +1,20 @@
 import { Benefits, Hero, Products, Testimonials } from "@components"
 import { t, Trans } from "@lingui/macro"
-import AccountBalanceIcon from "@mui/icons-material/AccountBalance"
-import AppsIcon from "@mui/icons-material/Apps"
-import ArchitectureIcon from "@mui/icons-material/Architecture"
-import RestoreIcon from "@mui/icons-material/Restore"
-import TurnedInNotIcon from "@mui/icons-material/TurnedInNot"
+import { AccountBalance, Apps, Architecture, Restore, TurnedInNot } from "@mui/icons-material"
 import { withPrefix } from "gatsby"
 import React from "react"
 
 const Index: React.FC = () => {
   const BENEFITS = [
     {
-      icon: TurnedInNotIcon,
+      icon: TurnedInNot,
       title: <Trans>Innovativi</Trans>,
       description: (
         <Trans>L'innovazione tecnologica e la qualità sono le caratteristiche chiave dei nostri prodotti</Trans>
       ),
     },
     {
-      icon: ArchitectureIcon,
+      icon: Architecture,
       title: <Trans>Personalizzabili</Trans>,
       description: (
         <Trans>
@@ -27,19 +23,19 @@ const Index: React.FC = () => {
       ),
     },
     {
-      icon: AccountBalanceIcon,
+      icon: AccountBalance,
       title: <Trans>Accessibili</Trans>,
       description: (
         <Trans>Da anni Pessastudio è focalizzata nel produrre prodotti di qualità a costi accessibili</Trans>
       ),
     },
     {
-      icon: RestoreIcon,
+      icon: Restore,
       title: <Trans>Apprezzati</Trans>,
       description: <Trans>I prodotti vengono venduti ed apprezzati sia in Italia che all'estero</Trans>,
     },
     {
-      icon: AppsIcon,
+      icon: Apps,
       title: <Trans>Indistruttibili</Trans>,
       description: (
         <Trans>
@@ -48,7 +44,7 @@ const Index: React.FC = () => {
       ),
     },
     {
-      icon: AppsIcon,
+      icon: Apps,
       title: <Trans>Una lunga storia</Trans>,
       description: (
         <Trans>

@@ -1,10 +1,7 @@
 import { Benefits, ContentTable, Gallery, Hero, Section, TH, Accessori } from "@components"
 import { GIOSTRA_TONDINO_CHIUSURA_A_TERRA_DESCRIZIONE } from "@constants"
 import { t, Trans } from "@lingui/macro"
-import AccountBalanceIcon from "@mui/icons-material/AccountBalance"
-import DomainDisabledIcon from "@mui/icons-material/DomainDisabled"
-import LockIcon from "@mui/icons-material/Lock"
-import VisibilityIcon from "@mui/icons-material/Visibility"
+import { Visibility, AccountBalance, DomainDisabled, Lock } from "@mui/icons-material"
 import { Grid } from "@mui/material"
 import { PRODUCT_GUTTER } from "@theme"
 import { withPrefix } from "gatsby"
@@ -141,7 +138,7 @@ const Tondini: React.FC = () => {
 
   const BENEFITS = [
     {
-      icon: AccountBalanceIcon,
+      icon: AccountBalance,
       title: t`Materiali di qualità`,
       description: (
         <Trans>
@@ -151,7 +148,7 @@ const Tondini: React.FC = () => {
       ),
     },
     {
-      icon: DomainDisabledIcon,
+      icon: DomainDisabled,
       title: t`Nessuna concessione edilizia`,
       description: (
         <Trans>
@@ -160,12 +157,12 @@ const Tondini: React.FC = () => {
       ),
     },
     {
-      icon: VisibilityIcon,
+      icon: Visibility,
       title: t`Bello e funzionale`,
       description: <Trans>É una struttura semplice, leggera e piacevole alla vista</Trans>,
     },
     {
-      icon: LockIcon,
+      icon: Lock,
       title: t`Sicuro`,
       description: (
         <Trans>Ampio ingresso di 2,05 mt. dotato di catenaccio verticale che garantisce l’assoluta sicurezza</Trans>

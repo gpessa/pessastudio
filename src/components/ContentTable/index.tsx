@@ -1,7 +1,6 @@
 import { TH } from "@components"
 import { t } from "@lingui/macro"
-import PictureAsPdfIcon from "@mui/icons-material/PictureAsPdf"
-import VisibilityIcon from "@mui/icons-material/Visibility"
+import { PictureAsPdf, Visibility } from "@mui/icons-material"
 import { Button, Paper, Table, TableBody, TableCell, TableContainer, TableRow } from "@mui/material"
 import { Box, styled } from "@mui/system"
 import { LocalizedLink } from "gatsby-theme-i18n"
@@ -32,18 +31,13 @@ const ContentTable = ({ rows, title, ...props }: Props) => (
 
               <TableCell align="right">
                 {link && (
-                  <ButtonStyled to={link} color="inherit" component={LocalizedLink} endIcon={<VisibilityIcon />}>
+                  <ButtonStyled to={link} color="inherit" component={LocalizedLink} endIcon={<Visibility />}>
                     {t`Vedi`}
                   </ButtonStyled>
                 )}
 
                 {file && (
-                  <ButtonStyled
-                    href={file}
-                    target="_blank"
-                    color="inherit"
-                    endIcon={<PictureAsPdfIcon color="error" />}
-                  >
+                  <ButtonStyled href={file} target="_blank" color="inherit" endIcon={<PictureAsPdf color="error" />}>
                     {t`Scarica`}
                   </ButtonStyled>
                 )}

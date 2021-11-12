@@ -1,10 +1,7 @@
 import { Benefits, Columns, Gallery, Hero, Section, TH, Video } from "@components"
 import { PAGES } from "@constants"
 import { t, Trans } from "@lingui/macro"
-import AccessibilityNewIcon from "@mui/icons-material/AccessibilityNew"
-import AppsIcon from "@mui/icons-material/Apps"
-import DomainDisabledIcon from "@mui/icons-material/DomainDisabled"
-import VideogameAssetIcon from "@mui/icons-material/VideogameAsset"
+import { VideogameAsset, AccessibilityNew, Apps, DomainDisabled } from "@mui/icons-material"
 import { Box, Button, Link, Typography } from "@mui/material"
 import { styled } from "@mui/system"
 import { BREAKPOINT, SECTION_SPACING } from "@theme"
@@ -44,26 +41,26 @@ const GallerySectionStyled = styled(Section)(({ theme }) => ({
 
 const BENEFITS = [
   {
-    icon: AccessibilityNewIcon,
+    icon: AccessibilityNew,
     title: <Trans id="3.000 giostre installate" />,
     description: <Trans id="Più' di 3.000 clienti europei hanno scelto Pessastudio per la loro giostra" />,
   },
   {
-    icon: AppsIcon,
+    icon: Apps,
     title: <Trans id="Ampia gamma" />,
     description: (
       <Trans id="È possibile acquistare le nostre giostre in diverse versioni adatte al tuo budget e alle tue esigenze" />
     ),
   },
   {
-    icon: DomainDisabledIcon,
+    icon: DomainDisabled,
     title: <Trans id="Nessuna concessione edilizia" />,
     description: (
       <Trans id="Le nostre giostre sono considerate strutture precarie. Non avrete bisogno di nessuna concessione edilizia" />
     ),
   },
   {
-    icon: VideogameAssetIcon,
+    icon: VideogameAsset,
     title: <Trans id="Facile da usare" />,
     description: (
       <Trans
