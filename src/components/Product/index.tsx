@@ -147,7 +147,7 @@ type Props = {
   name: string | JSX.Element
   description?: string | ReactNode
   url?: string
-  price: PriceProp["price"]
+  price?: PriceProp["price"]
 } & Attributes
 
 export default Product
