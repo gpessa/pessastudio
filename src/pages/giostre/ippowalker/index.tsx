@@ -69,7 +69,7 @@ const Ippowalker: React.FC = () => {
         right={<Gallery images={IMAGES} />}
       />
 
-      <Video src={"https://www.youtube-nocookie.com/embed/slFfbd7kTzg"} />
+      <Video src={"https://www.youtube-nocookie.com/embed/slFfbd7kTzg"} title={t`Video giostra in movimento`} />
 
       <Corridoi />
 

@@ -25,12 +25,13 @@ const VideoSectionStyled = styled(Section)(({ theme }) => ({
   },
 }))
 
-const Video: React.FC<{ src: string }> = ({ src }) => (
+const Video: React.FC<{ src: string; title: string }> = ({ src, title }) => (
   <VideoSectionStyled>
     <iframe
       width="100%"
       allowFullScreen
       frameBorder="0"
+      title={title}
       src={`${src}?controls=0`}
       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
     ></iframe>

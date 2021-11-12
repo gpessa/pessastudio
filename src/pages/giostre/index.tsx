@@ -104,7 +104,7 @@ const Giostre: React.FC = () => (
       <Gallery images={IMAGES} md={3} />
     </GallerySectionStyled>
 
-    <Video src={"https://www.youtube.com/embed/1C7R5u270QE"} />
+    <Video src={"https://www.youtube.com/embed/1C7R5u270QE"} title={t`Video giostra in movimento`} />
 
     <GammaSectionStyled maxWidth="md">
       <TH variant="h2">{t`Gamma`}</TH>

@@ -70,7 +70,7 @@ const Tecnoexerciser: React.FC = () => {
         right={<Gallery images={IMAGES} />}
       />
 
-      <Video src={"https://www.youtube-nocookie.com/embed/mkB5ZPK9swA"} />
+      <Video src={"https://www.youtube-nocookie.com/embed/mkB5ZPK9swA"} title={t`Video giostra in movimento`} />
 
       <Corridoi />
 
