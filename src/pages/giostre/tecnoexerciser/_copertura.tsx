@@ -1,8 +1,8 @@
-import { Gallery, Section, TH } from "@components"
-import { GIOSTRA_COPERTURA_PVC_DESCRIZIONE, GIOSTRE_COPERTURA_NOTE } from "@constants"
+import { Gallery, Section, TH } from "src/components"
+import { GIOSTRA_COPERTURA_PVC_DESCRIZIONE, GIOSTRE_COPERTURA_NOTE } from "src/constants"
 import { t, Trans } from "@lingui/macro"
 import { Grid, Typography } from "@mui/material"
-import { PRODUCT_GUTTER } from "@theme"
+import { PRODUCT_GUTTER } from "src/theme"
 import { withPrefix } from "gatsby-link"
 import React from "react"
 

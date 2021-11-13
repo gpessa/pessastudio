@@ -1,4 +1,4 @@
-import { Section, TH, Ul } from "@components"
+import { Section, TH, Ul } from "src/components"
 import { t, Trans } from "@lingui/macro"
 import React from "react"
 

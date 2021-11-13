@@ -1,10 +1,10 @@
-import { Section, TH } from "@components"
+import { Section, TH } from "src/components"
 import { t, Trans } from "@lingui/macro"
 import { Grid, Typography } from "@mui/material"
 import { styled } from "@mui/system"
 import React from "react"
 import { withPrefix } from "gatsby"
-import { PRODUCT_GUTTER } from "@theme"
+import { PRODUCT_GUTTER } from "src/theme"
 
 const DivStyled = styled("div")(({ theme }) => ({
   marginBottom: theme.spacing(3),

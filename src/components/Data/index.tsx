@@ -1,4 +1,4 @@
-import { Caption } from "@components"
+import { Caption } from "src/components"
 import { Stack } from "@mui/material"
 import React from "react"
 

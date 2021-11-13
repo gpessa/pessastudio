@@ -1,6 +1,6 @@
 import { Step, StepContent, StepLabel, Stepper } from "@mui/material"
 import makeStyles from "@mui/styles/makeStyles"
-import { BREAKPOINT } from "@theme"
+import { BREAKPOINT } from "src/theme"
 import React from "react"
 import { useInView } from "react-intersection-observer"
 import TH from "../TH"

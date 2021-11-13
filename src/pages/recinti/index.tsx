@@ -1,4 +1,4 @@
-import { Columns, ContentTable, Gallery, Section, TH } from "@components"
+import { Columns, ContentTable, Gallery, Section, TH } from "src/components"
 import { t, Trans } from "@lingui/macro"
 import { Typography } from "@mui/material"
 import { withPrefix } from "gatsby"

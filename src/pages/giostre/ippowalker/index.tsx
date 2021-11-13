@@ -1,5 +1,5 @@
-import { Accessori, Columns, Compare, ContentTable, Gallery, Section, TH, Video } from "@components"
-import { GIOSTRE_ATTRIBUTES, PAGES } from "@constants"
+import { Accessori, Columns, Compare, ContentTable, Gallery, Section, TH, Video } from "src/components"
+import { GIOSTRE_ATTRIBUTES, PAGES } from "src/constants"
 import { t, Trans } from "@lingui/macro"
 import { Grid, Link, Typography } from "@mui/material"
 import { withPrefix } from "gatsby"

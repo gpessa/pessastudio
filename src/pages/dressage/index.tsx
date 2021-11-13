@@ -1,8 +1,8 @@
-import { Product, Section, TH, Ul } from "@components"
-import { Colors, MATERIALS } from "@constants"
+import { Product, Section, TH, Ul } from "src/components"
+import { Colors, MATERIALS } from "src/constants"
 import { t, Trans } from "@lingui/macro"
 import { Box, Grid, Link, Typography } from "@mui/material"
-import { PRODUCT_GUTTER } from "@theme"
+import { PRODUCT_GUTTER } from "src/theme"
 import { withPrefix } from "gatsby"
 import React from "react"
 

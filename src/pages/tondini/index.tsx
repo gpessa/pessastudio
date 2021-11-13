@@ -1,9 +1,9 @@
-import { Benefits, ContentTable, Gallery, Hero, Section, TH, Accessori } from "@components"
-import { GIOSTRA_TONDINO_CHIUSURA_A_TERRA_DESCRIZIONE } from "@constants"
+import { Benefits, ContentTable, Gallery, Hero, Section, TH, Accessori } from "src/components"
+import { GIOSTRA_TONDINO_CHIUSURA_A_TERRA_DESCRIZIONE } from "src/constants"
 import { t, Trans } from "@lingui/macro"
 import { Visibility, AccountBalance, DomainDisabled, Lock } from "@mui/icons-material"
 import { Grid } from "@mui/material"
-import { PRODUCT_GUTTER } from "@theme"
+import { PRODUCT_GUTTER } from "src/theme"
 import { withPrefix } from "gatsby"
 import React from "react"
 

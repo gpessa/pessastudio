@@ -1,4 +1,4 @@
-import { NAVIGATION_PAGES } from "@constants"
+import { NAVIGATION_PAGES } from "src/constants"
 import { Trans } from "@lingui/react"
 import { Menu } from "@mui/icons-material"
 import {
@@ -15,7 +15,7 @@ import {
 } from "@mui/material"
 import { styled } from "@mui/system"
 import { globalHistory } from "@reach/router"
-import { BREAKPOINT } from "@theme"
+import { BREAKPOINT } from "src/theme"
 import { LocalizedLink } from "gatsby-theme-i18n"
 import React, { useEffect, useState } from "react"
 import LanguageSelectorLegacy from "./LanguageSelectorLegacy"

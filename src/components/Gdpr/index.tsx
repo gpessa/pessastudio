@@ -1,7 +1,7 @@
 import { t, Trans } from "@lingui/macro"
 import { Box, Button, ButtonProps, Link, Theme } from "@mui/material"
 import { makeStyles } from "@mui/styles"
-import { PRODUCT_GUTTER } from "@theme"
+import { PRODUCT_GUTTER } from "src/theme"
 import { LocalizedLink } from "gatsby-theme-i18n"
 import React from "react"
 import CookieConsent from "react-cookie-consent"

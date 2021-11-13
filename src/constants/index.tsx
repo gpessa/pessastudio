@@ -1,7 +1,7 @@
 import { t, Trans } from "@lingui/macro"
 import RemoveRedEyeOutlinedIcon from "@mui/icons-material/RemoveRedEyeOutlined"
 import { IconButton, Typography } from "@mui/material"
-import { PRODUCT_GUTTER } from "@theme"
+import { PRODUCT_GUTTER } from "src/theme"
 import React from "react"
 import Ul from "../components/Ul"
 

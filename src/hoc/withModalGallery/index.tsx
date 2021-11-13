@@ -1,4 +1,4 @@
-import { useGallery } from "@hooks"
+import { useGallery } from "src/hooks"
 import { Button, Dialog, Typography } from "@mui/material"
 import { styled } from "@mui/system"
 import React from "react"
@@ -30,7 +30,9 @@ const ButtonNextStyled = styled(Button)({
 })
 
 const withModalGallery =
-  <P extends object>(Component: React.ComponentType<P>): React.FC<P & WithModalGallery & WithInjectedModalGalleryProps> =>
+  <P extends object>(
+    Component: React.ComponentType<P>
+  ): React.FC<P & WithModalGallery & WithInjectedModalGalleryProps> =>
   ({ images, ...props }: WithModalGallery) => {
     const { showPreviousEnabled, showNextEnabled, showPrevious, showNext, active, close, open } = useGallery(images)
 

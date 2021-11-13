@@ -1,5 +1,5 @@
 import { ButtonBase, Stack, styled } from "@mui/material"
-import { BREAKPOINT } from "@theme"
+import { BREAKPOINT } from "src/theme"
 import { withPrefix } from "gatsby"
 import { LocalizedLink } from "gatsby-theme-i18n"
 import React from "react"

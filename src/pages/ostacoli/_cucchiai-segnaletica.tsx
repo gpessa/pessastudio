@@ -1,8 +1,8 @@
-import { Product, Title } from "@components"
-import { MATERIALS } from "@constants"
+import { Product, Title } from "src/components"
+import { MATERIALS } from "src/constants"
 import { t, Trans } from "@lingui/macro"
 import { Grid, Typography } from "@mui/material"
-import { PRODUCT_GUTTER } from "@theme"
+import { PRODUCT_GUTTER } from "src/theme"
 import { withPrefix } from "gatsby"
 import React from "react"
 

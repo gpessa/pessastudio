@@ -1,4 +1,4 @@
-import { TH } from "@components"
+import { TH } from "src/components"
 import { t } from "@lingui/macro"
 import { PictureAsPdf, Visibility } from "@mui/icons-material"
 import { Button, Paper, Table, TableBody, TableCell, TableContainer, TableRow } from "@mui/material"

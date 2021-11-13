@@ -1,4 +1,4 @@
-import { useGallery } from "@hooks"
+import { useGallery } from "src/hooks"
 import { t } from "@lingui/macro"
 import { NavigateBefore, NavigateNext } from "@mui/icons-material"
 import { Button, ButtonBase, Dialog, styled, Typography } from "@mui/material"

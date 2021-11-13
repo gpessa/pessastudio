@@ -1,4 +1,4 @@
-import { useTree } from "@hooks"
+import { useTree } from "src/hooks"
 import { useLingui } from "@lingui/react"
 import HomeIcon from "@mui/icons-material/Home"
 import { Breadcrumbs, Container, Link, Typography } from "@mui/material"

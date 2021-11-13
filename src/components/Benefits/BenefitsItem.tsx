@@ -1,4 +1,4 @@
-import { TH } from "@components"
+import { TH } from "src/components"
 import { Stack } from "@mui/material"
 import React from "react"
 import { Benefit } from "."

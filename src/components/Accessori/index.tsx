@@ -1,7 +1,7 @@
-import { Image, Section, TH } from "@components"
+import { Image, Section, TH } from "src/components"
 import { t } from "@lingui/macro"
 import { Box, Grid, GridSize, styled, Typography, Divider } from "@mui/material"
-import { BREAKPOINT, PRODUCT_GUTTER } from "@theme"
+import { BREAKPOINT, PRODUCT_GUTTER } from "src/theme"
 import React from "react"
 
 const AccessorioStyled = styled(Box)(({ theme }) => ({

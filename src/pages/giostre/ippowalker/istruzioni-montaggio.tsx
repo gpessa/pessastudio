@@ -1,4 +1,4 @@
-import { Path, Section, TH } from "@components"
+import { Path, Section, TH } from "src/components"
 import { Trans, t } from "@lingui/macro"
 import { Box, Typography } from "@mui/material"
 import React from "react"

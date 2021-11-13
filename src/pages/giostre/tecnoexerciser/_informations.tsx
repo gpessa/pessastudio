@@ -12,7 +12,7 @@ import {
   GIOSTRE_EXTRA_BIG,
   GIOSTRE_EXTRA_SMALL,
   IRRIGATION,
-} from "@constants"
+} from "src/constants"
 import { t, Trans } from "@lingui/macro"
 import { withPrefix } from "gatsby"
 import React from "react"

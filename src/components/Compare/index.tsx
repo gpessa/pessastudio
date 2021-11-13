@@ -1,4 +1,4 @@
-import { Caption, Section, TH } from "@components"
+import { Caption, Section, TH } from "src/components"
 import { t } from "@lingui/macro"
 import CloseIcon from "@mui/icons-material/Close"
 import {
@@ -13,7 +13,7 @@ import {
   TableRow,
   Typography,
 } from "@mui/material"
-import { BREAKPOINT, PRODUCT_GUTTER } from "@theme"
+import { BREAKPOINT, PRODUCT_GUTTER } from "src/theme"
 import React, { FunctionComponent, ReactElement } from "react"
 
 const TableCellStyled = styled(TableCell)<{ type?: string }>(({ type }) => ({

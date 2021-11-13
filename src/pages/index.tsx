@@ -1,4 +1,4 @@
-import { Benefits, Hero, Products, Testimonials } from "@components"
+import { Benefits, Hero, Products, Testimonials } from "src/components"
 import { t, Trans } from "@lingui/macro"
 import { AccountBalance, Apps, Architecture, Restore, TurnedInNot } from "@mui/icons-material"
 import { withPrefix } from "gatsby"

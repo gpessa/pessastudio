@@ -1,11 +1,11 @@
-import { Gallery, Section, TH } from "@components"
+import { Gallery, Section, TH } from "src/components"
 import {
   GIOSTRA_DESCRIZIONE_RECINZIONE_COMPENSATO_MARINO,
   GIOSTRA_DESCRIZIONE_RECINZIONE_TECONOFENCE,
-} from "@constants"
+} from "src/constants"
 import { t, Trans } from "@lingui/macro"
 import { Grid, Typography } from "@mui/material"
-import { BREAKPOINT, PRODUCT_GUTTER } from "@theme"
+import { BREAKPOINT, PRODUCT_GUTTER } from "src/theme"
 import { withPrefix } from "gatsby-link"
 import React from "react"
 
