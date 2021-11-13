@@ -1,5 +1,4 @@
 import { Trans } from "@lingui/macro"
-import { withPrefix } from "gatsby"
 import React from "react"
 import { Picture } from "src/components/ModalGallery"
 import {
@@ -32,9 +31,12 @@ export const IMAGES: Picture[] = [
   },
 ]
 
-export const DIMENSIONS = [4, 6].map(horses => ({
+export const DIMENSIONS = [
+  { horses: 4, file: require(`src/static/products/giostre/ippowalker/pdf/giostra-ippowalker-4.pdf`).default },
+  { horses: 6, file: require(`src/static/products/giostre/ippowalker/pdf/giostra-ippowalker-6.pdf`).default },
+].map(({ horses, file }) => ({
   label: <Trans id={`Giostra ${horses} cavalli`} />,
-  file: withPrefix(`/products/giostre/ippowalker/pdf/giostra-ippowalker-${horses}.pdf`),
+  file,
 }))
 
 const GIOSTRE_COOMON = {
@@ -147,6 +149,25 @@ export const ACCESSORI = {
           src: require("src/static/products/giostre/accessories/rete-02.jpg").default,
         },
       ],
+    },
+  ],
+}
+
+export const MANUALI_LOCALIZZATI = {
+  it: [
+    {
+      label: <Trans id="Manuale quadro di controllo" />,
+      file: require("src/static//products/giostre/ippowalker/pdf/manuale-quadro-ippowalker-it.pdf"),
+    },
+    {
+      label: <Trans id="Manuale collegamento elettrico" />,
+      file: require("src/static/products/giostre/pdf/giostra-collegamento-elettrico.pdf").default,
+    },
+  ],
+  fr: [
+    {
+      label: <Trans id="Manuale quadro di controllo" />,
+      file: require("src/static//products/giostre/ippowalker/pdf/manuale-quadro-ippowalker-fr.pdf"),
     },
   ],
 }

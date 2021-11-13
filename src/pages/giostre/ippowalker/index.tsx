@@ -1,29 +1,23 @@
-import { Accessori, Columns, Compare, ContentTable, Gallery, Section, TH, Video } from "src/components"
-import { GIOSTRE_ATTRIBUTES, PAGES } from "src/constants"
 import { t, Trans } from "@lingui/macro"
 import { Grid, Link, Typography } from "@mui/material"
-import { withPrefix } from "gatsby"
-import { LocalizedLink } from "gatsby-theme-i18n"
+import { LocalizedLink, useLocalization } from "gatsby-theme-i18n"
 import React from "react"
-import Copertura from "./_copertura"
+import { Accessori, Columns, Compare, ContentTable, Gallery, Section, TH, Video } from "src/components"
+import { GIOSTRE_ATTRIBUTES, PAGES } from "src/constants"
+import Copertura, { IMAGES } from "./_copertura"
 import Corridoi from "./_corridoi"
-import { ACCESSORI, DIMENSIONS, IMAGES, PRODUCTS } from "./_informations"
+import { ACCESSORI, DIMENSIONS, MANUALI_LOCALIZZATI, PRODUCTS } from "./_informations"
 
 const Ippowalker: React.FC = () => {
+  const { locale } = useLocalization()
+
   // This needs to be here otherwise translations for links breaks
   const MANUALI = [
-    {
-      label: <Trans id="Manuale quadro di controllo" />,
-      file: withPrefix(t`/products/giostre/ippowalker/pdf/manuale-quadro-ippowalker-it.pdf`),
-    },
-    {
-      label: <Trans id="Manuale collegamento elettrico" />,
-      file: withPrefix(t`/products/giostre/ippowalker/pdf/giostra-collegamento-elettrico.pdf`),
-    },
     {
       label: <Trans id={PAGES.GIOSTRE_IPPOWALKER_ISTRUZIONI_MONTAGGIO.url + ":title"} />,
       link: PAGES.GIOSTRE_IPPOWALKER_ISTRUZIONI_MONTAGGIO.url,
     },
+    ...(MANUALI_LOCALIZZATI[locale] || []),
   ]
 
   return (

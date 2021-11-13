@@ -1,5 +1,4 @@
 import { t, Trans } from "@lingui/macro"
-import { withPrefix } from "gatsby"
 import React from "react"
 import { Picture } from "src/components/ModalGallery"
 import {
@@ -50,19 +49,39 @@ export const IMAGES: Picture[] = [
 ]
 
 export const DIMENSIONS = [
-  { sides: 15, size: 12 },
-  { sides: 18, size: 14.4 },
-  { sides: 20, size: 16 },
-  { sides: 22, size: 17.5 },
-  { sides: 24, size: 19.2 },
-].map(({ sides, size }) => ({
+  {
+    sides: 15,
+    size: 12,
+    file: require(`src/static/products/giostre/tecnoexerciser/pdf/giostra-tecnoexerciser-15.pdf`).default,
+  },
+  {
+    sides: 18,
+    size: 14.4,
+    file: require(`src/static/products/giostre/tecnoexerciser/pdf/giostra-tecnoexerciser-18.pdf`).default,
+  },
+  {
+    sides: 20,
+    size: 16,
+    file: require(`src/static/products/giostre/tecnoexerciser/pdf/giostra-tecnoexerciser-20.pdf`).default,
+  },
+  {
+    sides: 22,
+    size: 17.5,
+    file: require(`src/static/products/giostre/tecnoexerciser/pdf/giostra-tecnoexerciser-22.pdf`).default,
+  },
+  {
+    sides: 24,
+    size: 19.2,
+    file: require(`src/static/products/giostre/tecnoexerciser/pdf/giostra-tecnoexerciser-24.pdf`).default,
+  },
+].map(({ sides, size, file }) => ({
   label: (
     <Trans
       id={`Dimensioni giostra {sides} pannelli {size} mt. e istruzioni preparazione fondo`}
       values={{ sides, size }}
     />
   ),
-  file: withPrefix(`/products/giostre/tecnoexerciser/pdf/giostra-tecnoexerciser-${sides}.pdf`),
+  file,
 }))
 
 const GIOSTRE_COOMON = {

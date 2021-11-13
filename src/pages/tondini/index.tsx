@@ -1,7 +1,6 @@
 import { t, Trans } from "@lingui/macro"
 import { AccountBalance, DomainDisabled, Lock, Visibility } from "@mui/icons-material"
 import { Grid } from "@mui/material"
-import { withPrefix } from "gatsby"
 import React from "react"
 import { Accessori, Benefits, ContentTable, Gallery, Hero, Section, TH } from "src/components"
 import { Picture } from "src/components/ModalGallery"
@@ -120,14 +119,14 @@ const Tondini: React.FC = () => {
   ]
 
   const DIMENSIONS = [
-    { sides: 16, size: 13.2 },
-    { sides: 18, size: 15.0 },
-    { sides: 20, size: 16.6 },
-    { sides: 22, size: 18.3 },
-    { sides: 24, size: 19.9 },
-  ].map(({ sides, size }) => ({
+    { sides: 16, size: 13.2, file: require("src/static/products/tondini/pdf/tondino-16.pdf").default },
+    { sides: 18, size: 15.0, file: require("src/static/products/tondini/pdf/tondino-18.pdf").default },
+    { sides: 20, size: 16.6, file: require("src/static/products/tondini/pdf/tondino-20.pdf").default },
+    { sides: 22, size: 18.3, file: require("src/static/products/tondini/pdf/tondino-22.pdf").default },
+    { sides: 24, size: 19.9, file: require("src/static/products/tondini/pdf/tondino-24.pdf").default },
+  ].map(({ sides, size, file }) => ({
     label: <Trans id={`Tondino coperto {sides} pannelli {size} mt.`} values={{ sides, size }} />,
-    file: withPrefix(`/products/tondini/pdf/tondino-${sides}.pdf`),
+    file,
   }))
 
   const MANUALS = [
