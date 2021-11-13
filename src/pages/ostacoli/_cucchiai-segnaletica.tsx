@@ -11,9 +11,9 @@ const CucchiaiSegnaletica: React.FC = () => {
       name: <Trans>Cucchiaio DE</Trans>,
       description: t`Il cucchiaio standard utilizzato al livello internazionale`,
       images: [
-        { src: require("src/static/products/ostacoli/cucchiaio-de-01.png").default },
-        { src: require("src/static/products/ostacoli/cucchiaio-de-02.png").default },
-        { src: require("src/static/products/ostacoli/cucchiaio-de-03.png").default },
+        { src: require("src/assets/products/ostacoli/cucchiaio-de-01.png").default },
+        { src: require("src/assets/products/ostacoli/cucchiaio-de-02.png").default },
+        { src: require("src/assets/products/ostacoli/cucchiaio-de-03.png").default },
       ],
       materials: [MATERIALS.TECNOPOLIMERO],
       depth: 20,
@@ -24,9 +24,9 @@ const CucchiaiSegnaletica: React.FC = () => {
       name: <Trans>Cucchiaio PS</Trans>,
       description: t`Il cucchiaio dotato del nostro sistema brevettato di aggancio`,
       images: [
-        { src: require("src/static/products/ostacoli/cucchiaio-ps-01.png").default },
-        { src: require("src/static/products/ostacoli/cucchiaio-ps-02.png").default },
-        { src: require("src/static/products/ostacoli/cucchiaio-ps-03.png").default },
+        { src: require("src/assets/products/ostacoli/cucchiaio-ps-01.png").default },
+        { src: require("src/assets/products/ostacoli/cucchiaio-ps-02.png").default },
+        { src: require("src/assets/products/ostacoli/cucchiaio-ps-03.png").default },
       ],
       materials: [MATERIALS.TECNOPOLIMERO],
       price: 3.5,
@@ -37,9 +37,9 @@ const CucchiaiSegnaletica: React.FC = () => {
         <Typography>{t`Supporti di sicurezza da applicare ai nostri cucchiai per salvaguardare l'integrità degli arti dei vostri cavalli in maniera efficace ed economica.`}</Typography>
       ),
       images: [
-        { src: require("src/static/products/ostacoli/supporto-di-sicurezza-01.png").default },
-        { src: require("src/static/products/ostacoli/supporto-di-sicurezza-03.png").default },
-        { src: require("src/static/products/ostacoli/supporto-di-sicurezza-04.png").default },
+        { src: require("src/assets/products/ostacoli/supporto-di-sicurezza-01.png").default },
+        { src: require("src/assets/products/ostacoli/supporto-di-sicurezza-03.png").default },
+        { src: require("src/assets/products/ostacoli/supporto-di-sicurezza-04.png").default },
       ],
       materials: [MATERIALS.PLASTICA],
       width: 37,

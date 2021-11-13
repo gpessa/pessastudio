@@ -19,31 +19,31 @@ import {
 
 export const IMAGES: Picture[] = [
   {
-    src: require("src/static/products/giostre/tecnoexerciser/gallery/giostra-1.jpg").default,
+    src: require("src/assets/products/giostre/tecnoexerciser/gallery/giostra-1.jpg").default,
     caption: <Trans id={"Giostra"} />,
   },
   {
-    src: require("src/static/products/giostre/tecnoexerciser/gallery/giostra-2.jpg").default,
+    src: require("src/assets/products/giostre/tecnoexerciser/gallery/giostra-2.jpg").default,
     caption: <Trans id={"Giostra"} />,
   },
   {
-    src: require("src/static/products/giostre/tecnoexerciser/gallery/motore-3.jpg").default,
+    src: require("src/assets/products/giostre/tecnoexerciser/gallery/motore-3.jpg").default,
     caption: <Trans id={"Motore"} />,
   },
   {
-    src: require("src/static/products/giostre/tecnoexerciser/gallery/solo-motore.jpg").default,
+    src: require("src/assets/products/giostre/tecnoexerciser/gallery/solo-motore.jpg").default,
     caption: <Trans id={"Giostra solo motore"} />,
   },
   {
-    src: require("src/static/products/giostre/tecnoexerciser/gallery/tecnofence-1.jpg").default,
+    src: require("src/assets/products/giostre/tecnoexerciser/gallery/tecnofence-1.jpg").default,
     caption: <Trans id={"Giostra con corridoio TECNOFENCE"} />,
   },
   {
-    src: require("src/static/products/giostre/tecnoexerciser/gallery/porta-mobile-1.jpg").default,
+    src: require("src/assets/products/giostre/tecnoexerciser/gallery/porta-mobile-1.jpg").default,
     caption: <Trans id={"Porta mobile"} />,
   },
   {
-    src: require("src/static/products/giostre/tecnoexerciser/gallery/porta-mobile-2.jpg").default,
+    src: require("src/assets/products/giostre/tecnoexerciser/gallery/porta-mobile-2.jpg").default,
     caption: <Trans id={"Porta mobile"} />,
   },
 ]
@@ -52,27 +52,27 @@ export const DIMENSIONS = [
   {
     sides: 15,
     size: 12,
-    file: require(`src/static/products/giostre/tecnoexerciser/pdf/giostra-tecnoexerciser-15.pdf`).default,
+    file: require(`src/assets/products/giostre/tecnoexerciser/pdf/giostra-tecnoexerciser-15.pdf`).default,
   },
   {
     sides: 18,
     size: 14.4,
-    file: require(`src/static/products/giostre/tecnoexerciser/pdf/giostra-tecnoexerciser-18.pdf`).default,
+    file: require(`src/assets/products/giostre/tecnoexerciser/pdf/giostra-tecnoexerciser-18.pdf`).default,
   },
   {
     sides: 20,
     size: 16,
-    file: require(`src/static/products/giostre/tecnoexerciser/pdf/giostra-tecnoexerciser-20.pdf`).default,
+    file: require(`src/assets/products/giostre/tecnoexerciser/pdf/giostra-tecnoexerciser-20.pdf`).default,
   },
   {
     sides: 22,
     size: 17.5,
-    file: require(`src/static/products/giostre/tecnoexerciser/pdf/giostra-tecnoexerciser-22.pdf`).default,
+    file: require(`src/assets/products/giostre/tecnoexerciser/pdf/giostra-tecnoexerciser-22.pdf`).default,
   },
   {
     sides: 24,
     size: 19.2,
-    file: require(`src/static/products/giostre/tecnoexerciser/pdf/giostra-tecnoexerciser-24.pdf`).default,
+    file: require(`src/assets/products/giostre/tecnoexerciser/pdf/giostra-tecnoexerciser-24.pdf`).default,
   },
 ].map(({ sides, size, file }) => ({
   label: (
@@ -164,13 +164,13 @@ export const ACCESSORI = {
       description: <Trans id={GIOSTRA_TONDINO_CHIUSURA_A_TERRA_DESCRIZIONE} />,
       images: [
         {
-          src: require("src/static/products/giostre/tecnoexerciser/accessori/chiusura-01.jpg").default,
+          src: require("src/assets/products/giostre/tecnoexerciser/accessori/chiusura-01.jpg").default,
           top: "25%",
           left: "50%",
           md: 3,
         },
         {
-          src: require("src/static/products/giostre/tecnoexerciser/accessori/chiusura-02.jpg").default,
+          src: require("src/assets/products/giostre/tecnoexerciser/accessori/chiusura-02.jpg").default,
           top: "50%",
           left: "50%",
           md: 4,
@@ -182,11 +182,11 @@ export const ACCESSORI = {
       description: <Trans id={GIOSTRA_ALVEOLO_DESCRIZIONE} />,
       images: [
         {
-          src: require("src/static/products/giostre/accessories/alveolo-02.jpg").default,
+          src: require("src/assets/products/giostre/accessories/alveolo-02.jpg").default,
           md: 3,
         },
         {
-          src: require("src/static/products/giostre/accessories/alveolo-01.jpg").default,
+          src: require("src/assets/products/giostre/accessories/alveolo-01.jpg").default,
           md: 4,
         },
       ],
@@ -199,13 +199,13 @@ export const ACCESSORI = {
           md: 3,
           top: "25%",
           left: "45%",
-          src: require("src/static/products/giostre/accessories/rete-01.jpg").default,
+          src: require("src/assets/products/giostre/accessories/rete-01.jpg").default,
         },
         {
           md: 4,
           top: "22%",
           left: "45%",
-          src: require("src/static/products/giostre/accessories/rete-02.jpg").default,
+          src: require("src/assets/products/giostre/accessories/rete-02.jpg").default,
         },
       ],
     },

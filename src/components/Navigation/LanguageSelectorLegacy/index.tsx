@@ -3,7 +3,6 @@ import { Button, Dialog, DialogTitle, IconButton, List, ListItem, Tooltip } from
 import { styled } from "@mui/system"
 import { useLocation } from "@reach/router"
 import { withPrefix } from "gatsby"
-import { useLocalization } from "gatsby-theme-i18n"
 import * as React from "react"
 import { useState } from "react"
 import gatsbyConfig from "../../../../gatsby-config.js"
@@ -33,7 +32,6 @@ const LANGUAGES = [
 ]
 
 const LanguageSelectorLegacy: React.FC = () => {
-  const { config } = useLocalization()
   const { i18n } = useLingui()
   const [show, setShow] = useState(false)
   const { pathname } = useLocation()
@@ -52,7 +50,7 @@ const LanguageSelectorLegacy: React.FC = () => {
             width={DIM}
             height={DIM}
             alt={i18n.locale}
-            src={withPrefix(`/flags/${i18n.locale}.svg`)}
+            src={withPrefix(`static/flags/${i18n.locale}.svg`)}
           />
         </IconButton>
       </Tooltip>

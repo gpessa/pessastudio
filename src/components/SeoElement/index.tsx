@@ -39,7 +39,7 @@ const Seo: React.FC<Props> = ({ title, description, keywords, meta = [] }) => {
           "@type": "Organization",
           "name": SEDE_OPERATIVA.name,
           "url": siteUrl,
-          "image": siteUrl + require("src/static/generals/logo.jpg").default,
+          "image": siteUrl + require("src/assets/generals/logo.jpg").default,
           "address": {
             "@type": "PostalAddress",
             "postalCode": SEDE_OPERATIVA.postalCode,

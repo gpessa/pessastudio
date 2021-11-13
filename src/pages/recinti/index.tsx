@@ -9,27 +9,27 @@ import Gamma from "./_gamma"
 const Recinti: React.FC = () => {
   const IMAGES: Picture[] = [
     {
-      src: require("src/static/products/recinti/gallery/recinti-image-7.jpg").default,
+      src: require("src/assets/products/recinti/gallery/recinti-image-7.jpg").default,
       caption: <Trans id="Recinzione 2 filagne" />,
     },
     {
-      src: require("src/static/products/recinti/gallery/recinti-image-8.jpg").default,
+      src: require("src/assets/products/recinti/gallery/recinti-image-8.jpg").default,
       caption: <Trans id="Recinzione 2 filagne" />,
     },
     {
-      src: require("src/static/products/recinti/gallery/recinti-image-2.jpg").default,
+      src: require("src/assets/products/recinti/gallery/recinti-image-2.jpg").default,
       caption: <Trans id="Recinzione 3 filagne" />,
     },
     {
-      src: require("src/static/products/recinti/gallery/recinti-image-4.jpg").default,
+      src: require("src/assets/products/recinti/gallery/recinti-image-4.jpg").default,
       caption: <Trans id="Recinzione 2 filagne" />,
     },
     {
-      src: require("src/static/products/recinti/gallery/recinti-image-5.jpg").default,
+      src: require("src/assets/products/recinti/gallery/recinti-image-5.jpg").default,
       caption: <Trans id="Recinzione 2 filagne" />,
     },
     {
-      src: require("src/static/products/recinti/gallery/recinti-image-6.jpg").default,
+      src: require("src/assets/products/recinti/gallery/recinti-image-6.jpg").default,
       caption: <Trans id="Recinzione 2 filagne" />,
     },
   ]
@@ -41,7 +41,7 @@ const Recinti: React.FC = () => {
     },
     {
       label: t`Istruzioni di montaggio`,
-      file: require("src/static/recinti-istruzioni-montaggio.pdf").default,
+      file: require("src/assets/recinti-istruzioni-montaggio.pdf").default,
     },
   ]
 

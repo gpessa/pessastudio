@@ -58,26 +58,26 @@ const BENEFITS = [
 
 const IMAGES: Picture[] = [
   {
-    src: require("src/static/products/giostre/gallery/giostra.jpg").default,
+    src: require("src/assets/products/giostre/gallery/giostra.jpg").default,
     caption: <Trans id="Giostra tecnoexercize" />,
   },
   {
-    src: require("src/static/products/giostre/gallery/giostra-con-alveolo.jpg").default,
+    src: require("src/assets/products/giostre/gallery/giostra-con-alveolo.jpg").default,
     caption: <Trans id="Interno giostra con alveolo" />,
   },
   {
-    src: require("src/static/products/giostre/gallery/porta.jpg").default,
+    src: require("src/assets/products/giostre/gallery/porta.jpg").default,
     caption: <Trans id="Ingresso" />,
   },
   {
-    src: require("src/static/products/giostre/gallery/quadro.jpg").default,
+    src: require("src/assets/products/giostre/gallery/quadro.jpg").default,
     caption: <Trans id="Quadro di comando" />,
   },
 ]
 
 const Giostre: React.FC = () => (
   <>
-    <Hero image={require("src/static/pages/giostre/background.jpg").default} text={t`Giostre`} />
+    <Hero image={require("src/assets/pages/giostre/background.jpg").default} text={t`Giostre`} />
 
     <Benefits
       title={t`Perché una giostra Pessastudio`}

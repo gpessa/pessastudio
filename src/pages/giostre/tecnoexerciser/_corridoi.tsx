@@ -11,11 +11,11 @@ import React from "react"
 
 export const IMAGES: Picture[] = [
   {
-    src: require("src/static/products/giostre/tecnoexerciser/corridoio/tecnofence.jpg").default,
+    src: require("src/assets/products/giostre/tecnoexerciser/corridoio/tecnofence.jpg").default,
     caption: <Trans id={"Corridoio TECNOFENCE"} />,
   },
   {
-    src: require("src/static/products/giostre/tecnoexerciser/corridoio/compensato-marino.jpg").default,
+    src: require("src/assets/products/giostre/tecnoexerciser/corridoio/compensato-marino.jpg").default,
     caption: <Trans id={"Corridoio in compensato marino"} />,
   },
 ]

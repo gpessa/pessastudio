@@ -18,22 +18,22 @@ import {
 
 export const IMAGES: Picture[] = [
   {
-    src: require("src/static/products/giostre/ippowalker/gallery/ingresso.jpg").default,
+    src: require("src/assets/products/giostre/ippowalker/gallery/ingresso.jpg").default,
     caption: <Trans id="Entrata" />,
   },
   {
-    src: require("src/static/products/giostre/ippowalker/gallery/giostra-01.jpg").default,
+    src: require("src/assets/products/giostre/ippowalker/gallery/giostra-01.jpg").default,
     caption: <Trans id="Giostra Ippowalker" />,
   },
   {
-    src: require("src/static/products/giostre/ippowalker/gallery/porte-elettrificate.jpg").default,
+    src: require("src/assets/products/giostre/ippowalker/gallery/porte-elettrificate.jpg").default,
     caption: <Trans id="Porte elettrificate" />,
   },
 ]
 
 export const DIMENSIONS = [
-  { horses: 4, file: require(`src/static/products/giostre/ippowalker/pdf/giostra-ippowalker-4.pdf`).default },
-  { horses: 6, file: require(`src/static/products/giostre/ippowalker/pdf/giostra-ippowalker-6.pdf`).default },
+  { horses: 4, file: require(`src/assets/products/giostre/ippowalker/pdf/giostra-ippowalker-4.pdf`).default },
+  { horses: 6, file: require(`src/assets/products/giostre/ippowalker/pdf/giostra-ippowalker-6.pdf`).default },
 ].map(({ horses, file }) => ({
   label: <Trans id={`Giostra ${horses} cavalli`} />,
   file,
@@ -105,13 +105,13 @@ export const ACCESSORI = {
       description: <Trans id={GIOSTRA_TONDINO_CHIUSURA_A_TERRA_DESCRIZIONE} />,
       images: [
         {
-          src: require("src/static/products/giostre/ippowalker/accessori/chiusura-01.jpg").default,
+          src: require("src/assets/products/giostre/ippowalker/accessori/chiusura-01.jpg").default,
           top: "62%",
           left: "42%",
           md: 3,
         },
         {
-          src: require("src/static/products/giostre/ippowalker/accessori/chiusura-02.jpg").default,
+          src: require("src/assets/products/giostre/ippowalker/accessori/chiusura-02.jpg").default,
           top: "54%",
           left: "22%",
           md: 4,
@@ -123,11 +123,11 @@ export const ACCESSORI = {
       description: <Trans id={GIOSTRA_ALVEOLO_DESCRIZIONE} />,
       images: [
         {
-          src: require("src/static/products/giostre/accessories/alveolo-02.jpg").default,
+          src: require("src/assets/products/giostre/accessories/alveolo-02.jpg").default,
           md: 3,
         },
         {
-          src: require("src/static/products/giostre/accessories/alveolo-01.jpg").default,
+          src: require("src/assets/products/giostre/accessories/alveolo-01.jpg").default,
           md: 4,
         },
       ],
@@ -140,13 +140,13 @@ export const ACCESSORI = {
           md: 3,
           top: "25%",
           left: "45%",
-          src: require("src/static/products/giostre/accessories/rete-01.jpg").default,
+          src: require("src/assets/products/giostre/accessories/rete-01.jpg").default,
         },
         {
           md: 4,
           top: "22%",
           left: "45%",
-          src: require("src/static/products/giostre/accessories/rete-02.jpg").default,
+          src: require("src/assets/products/giostre/accessories/rete-02.jpg").default,
         },
       ],
     },
@@ -157,17 +157,17 @@ export const MANUALI_LOCALIZZATI = {
   it: [
     {
       label: <Trans id="Manuale quadro di controllo" />,
-      file: require("src/static//products/giostre/ippowalker/pdf/manuale-quadro-ippowalker-it.pdf"),
+      file: require("src/assets//products/giostre/ippowalker/pdf/manuale-quadro-ippowalker-it.pdf"),
     },
     {
       label: <Trans id="Manuale collegamento elettrico" />,
-      file: require("src/static/products/giostre/pdf/giostra-collegamento-elettrico.pdf").default,
+      file: require("src/assets/products/giostre/pdf/giostra-collegamento-elettrico.pdf").default,
     },
   ],
   fr: [
     {
       label: <Trans id="Manuale quadro di controllo" />,
-      file: require("src/static//products/giostre/ippowalker/pdf/manuale-quadro-ippowalker-fr.pdf"),
+      file: require("src/assets//products/giostre/ippowalker/pdf/manuale-quadro-ippowalker-fr.pdf"),
     },
   ],
 }

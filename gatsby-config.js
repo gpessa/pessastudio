@@ -81,7 +81,7 @@ module.exports = {
         background_color: `#20232a`,
         theme_color: `#20232a`,
         display: `minimal-ui`,
-        icon: "src/static/generals/logo.jpg",
+        icon: "src/assets/generals/logo.jpg",
       },
     },
     `gatsby-plugin-material-ui`,

@@ -19,9 +19,9 @@ const PRODUCTS = [
     ),
     name: <Trans id={`Piede mobile`} />,
     images: [
-      { src: require("src/static/products/recinti/piede-mobile-2.png").default },
-      { src: require("src/static/products/recinti/piede-mobile-3.png").default },
-      { src: require("src/static/products/recinti/piede-mobile-4.jpg").default },
+      { src: require("src/assets/products/recinti/piede-mobile-2.png").default },
+      { src: require("src/assets/products/recinti/piede-mobile-3.png").default },
+      { src: require("src/assets/products/recinti/piede-mobile-4.jpg").default },
     ],
     diameter: 60,
     height: 300,

@@ -36,7 +36,7 @@ const LogoImgStyled = styled("img")(({ theme }) => ({
 const Logo: React.FC = props => (
   <ButtonBase component={LocalizedLink} to="/">
     <Stack direction="row" alignContent="center" alignItems="center">
-      <LogoImgStyled src={require("src/static/generals/logo.jpg").default} alt="Pessastudio" height={DIM} width={DIM} />
+      <LogoImgStyled src={require("src/assets/generals/logo.jpg").default} alt="Pessastudio" height={DIM} width={DIM} />
       <hgroup>
         <TitleStyled>Pessastudio</TitleStyled>
         <SubtitleStyled {...props}>Horse technology</SubtitleStyled>

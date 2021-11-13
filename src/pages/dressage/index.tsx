@@ -33,7 +33,7 @@ const Dressage: React.FC = () => {
   const TRAINING_PRODUCTS = [
     {
       name: t`Lettera dressage light`,
-      images: [{ src: require("src/static/products/dressage/training-lettera.jpg").default }],
+      images: [{ src: require("src/assets/products/dressage/training-lettera.jpg").default }],
       width: 200,
       height: 300,
       weight: 0.5,
@@ -43,7 +43,7 @@ const Dressage: React.FC = () => {
     },
     {
       name: t`Modulo dressage`,
-      images: [{ src: require("src/static/products/dressage/training-modulo-dressage.jpg").default }],
+      images: [{ src: require("src/assets/products/dressage/training-modulo-dressage.jpg").default }],
       width: 2000,
       weight: 3,
       height: 285,
@@ -52,19 +52,19 @@ const Dressage: React.FC = () => {
     {
       description: DESCRIPTION_20x60,
       name: t`Rettangolo dressage 20x60`,
-      images: [{ src: require("src/static/products/dressage/rettangolo-dressage-20x60.svg").default }],
+      images: [{ src: require("src/assets/products/dressage/rettangolo-dressage-20x60.svg").default }],
     },
     {
       description: DESCRIPTION_20x40,
       name: t`Rettangolo dressage 20x40`,
-      images: [{ src: require("src/static/products/dressage/rettangolo-dressage-20x40.svg").default }],
+      images: [{ src: require("src/assets/products/dressage/rettangolo-dressage-20x40.svg").default }],
     },
   ]
 
   const OLIMPIC_PRODUCTS = [
     {
       name: t`Lettera dressage`,
-      images: [{ src: require("src/static/products/dressage/olimpic-lettera.jpg").default }],
+      images: [{ src: require("src/assets/products/dressage/olimpic-lettera.jpg").default }],
       width: 390,
       height: 700,
       weight: 2.5,
@@ -73,7 +73,7 @@ const Dressage: React.FC = () => {
     },
     {
       name: t`Modulo dressage`,
-      images: [{ src: require("src/static/products/dressage/olimpic-modulo-dressage.jpg").default }],
+      images: [{ src: require("src/assets/products/dressage/olimpic-modulo-dressage.jpg").default }],
       width: 2000,
       height: 370,
       weight: 5,
@@ -83,12 +83,12 @@ const Dressage: React.FC = () => {
     {
       description: DESCRIPTION_20x60,
       name: t`Rettangolo dressage 20x60`,
-      images: [{ src: require("src/static/products/dressage/rettangolo-dressage-20x60.svg").default }],
+      images: [{ src: require("src/assets/products/dressage/rettangolo-dressage-20x60.svg").default }],
     },
     {
       description: DESCRIPTION_20x40,
       name: t`Rettangolo dressage 20x40`,
-      images: [{ src: require("src/static/products/dressage/rettangolo-dressage-20x40.svg").default }],
+      images: [{ src: require("src/assets/products/dressage/rettangolo-dressage-20x40.svg").default }],
     },
   ]
 

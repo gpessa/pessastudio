@@ -9,9 +9,9 @@ const PRODUCTS = [
   {
     name: <Trans>Cubi mini</Trans>,
     images: [
-      { src: require("src/static/products/ostacoli/cubi-mini-01.png").default },
-      { src: require("src/static/products/ostacoli/cubi-mini-02.png").default },
-      { src: require("src/static/products/ostacoli/cubi-mini-03.png").default },
+      { src: require("src/assets/products/ostacoli/cubi-mini-01.png").default },
+      { src: require("src/assets/products/ostacoli/cubi-mini-02.png").default },
+      { src: require("src/assets/products/ostacoli/cubi-mini-03.png").default },
     ],
     width: 350,
     length: 370,
@@ -23,9 +23,9 @@ const PRODUCTS = [
   {
     name: <Trans>Cubi maxi</Trans>,
     images: [
-      { src: require("src/static/products/ostacoli/cubi-maxi-01.png").default },
-      { src: require("src/static/products/ostacoli/cubi-maxi-02.png").default },
-      { src: require("src/static/products/ostacoli/cubi-maxi-03.png").default },
+      { src: require("src/assets/products/ostacoli/cubi-maxi-01.png").default },
+      { src: require("src/assets/products/ostacoli/cubi-maxi-02.png").default },
+      { src: require("src/assets/products/ostacoli/cubi-maxi-03.png").default },
     ],
     width: 370,
     length: 570,

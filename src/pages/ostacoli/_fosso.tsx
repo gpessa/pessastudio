@@ -5,7 +5,7 @@ import { Product, Title } from "src/components"
 import { PRODUCT_GUTTER } from "src/theme"
 
 const PRODUCT = {
-  images: [{ src: require("src/static/products/ostacoli/fosso.png").default }],
+  images: [{ src: require("src/assets/products/ostacoli/fosso.png").default }],
   name: <Trans>Fosso</Trans>,
   length: 1500,
   width: 2800,
