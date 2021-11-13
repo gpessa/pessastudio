@@ -19,7 +19,7 @@ const RECINTI = {
   name: t({ id: "/recinti/:title", message: `Recinti` }),
   description: t({
     id: "/recinti/:description",
-    message: `Un recinto adatto a durare nel tempo anche in presenza delle più avverse condizioni meteorologiche`,
+    message: `Un recinto da cavalli adatto a durare nel tempo anche in presenza delle più avverse condizioni meteorologiche`,
   }),
 }
 
@@ -28,7 +28,7 @@ const TONDINI = {
   name: t({ id: "/tondini/:title", message: `Tondini` }),
   description: t({
     id: "/tondini/:description",
-    message: `Addestrate puledri in libertà`,
+    message: `Tondini coperti per addestrate puledri in libertà`,
   }),
 }
 
@@ -37,7 +37,7 @@ const GIOSTRE = {
   name: t({ id: "/giostre/:title", message: `Giostre` }),
   description: t({
     id: "/giostre/:description",
-    message: `Un semplice ed affidabile strumento di lavoro  per allenare il vostro cavallo`,
+    message: `Scopri la nostra giostra per cavalli, lo strumento ideale di lavoro  per allenare il vostro cavallo`,
   }),
 }
 
@@ -46,13 +46,17 @@ const DRESSAGE = {
   name: t({ id: "/dressage/:title", message: `Dressage` }),
   description: t({
     id: "/dressage/:description",
-    message: `Rettangoli professionali per tutte le esigenze`,
+    message: `Rettangoli professionali da dressage per tutte le esigenze`,
   }),
 }
 
 const CONTATTI = {
   url: "/contatti/",
   name: t({ id: "/contatti/:title", message: `Contatti` }),
+  description: t({
+    id: "/contatti/:description",
+    message: `Contatta Pessastudio per un preventivo per giostre, ostacoli, tondini e attrezzature per cavalli`,
+  }),
 }
 
 const PAGE_404_DEV_404_PAGE = {
@@ -103,6 +107,10 @@ const TONDINI_COME_PREPARARE_IL_FONDO = {
 const GIOSTRE_IPPOWALKER = {
   name: t({ id: "/giostre/ippowalker/:title", message: `Ippowalker` }),
   url: "/giostre/ippowalker/",
+  description: t({
+    id: "/:description",
+    message: `Scopri la nostra giostra IPPOWALKER, lo strumento economico adatto ad allenare il tuo cavallo o il tuo puledro`,
+  }),
 }
 
 const GIOSTRE_IPPOWALKER_ISTRUZIONI_MONTAGGIO = {
@@ -116,6 +124,10 @@ const GIOSTRE_IPPOWALKER_ISTRUZIONI_MONTAGGIO = {
 const GIOSTRE_TECNOEXERCISER = {
   name: t({ id: "/giostre/tecnoexerciser/:title", message: "Tecnoexerciser" }),
   url: "/giostre/tecnoexerciser/",
+  description: t({
+    id: "/:description",
+    message: `Scopri la nostra giostra TECNOEXERCISER, lo strumento professionale adatto ad allenare il tuo cavallo o il tuo puledro`,
+  }),
 }
 
 const GIOSTRE_TECNOEXERCISER_ISTRUZIONI_MONTAGGIO = {

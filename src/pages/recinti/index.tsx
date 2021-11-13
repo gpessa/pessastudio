@@ -1,11 +1,10 @@
-import { Columns, ContentTable, Gallery, Section, TH } from "src/components"
 import { t, Trans } from "@lingui/macro"
 import { Typography } from "@mui/material"
-import { withPrefix } from "gatsby"
 import React from "react"
+import { Columns, ContentTable, Gallery, Section, TH } from "src/components"
+import { Picture } from "src/components/ModalGallery"
 import Accessori from "./_accessori"
 import Gamma from "./_gamma"
-import { Picture } from "src/components/ModalGallery"
 
 const Recinti: React.FC = () => {
   const IMAGES: Picture[] = [

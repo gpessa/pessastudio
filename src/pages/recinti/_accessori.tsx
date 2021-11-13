@@ -1,10 +1,9 @@
-import { Product, Section, TH } from "src/components"
-import { Colors } from "src/constants"
 import { t, Trans } from "@lingui/macro"
 import { Grid } from "@mui/material"
-import { PRODUCT_GUTTER } from "src/theme"
 import React from "react"
-import { withPrefix } from "gatsby"
+import { Product, Section, TH } from "src/components"
+import { Colors } from "src/constants"
+import { PRODUCT_GUTTER } from "src/theme"
 
 const PRODUCTS = [
   // {

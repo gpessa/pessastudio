@@ -1,10 +1,8 @@
-import { withPrefix } from "gatsby"
+import { graphql, useStaticQuery } from "gatsby"
 import React from "react"
 import Helmet from "react-helmet"
 import { helmetJsonLdProp } from "react-schemaorg"
 import { Organization } from "schema-dts"
-
-import { useStaticQuery, graphql } from "gatsby"
 import { ITALIA, SEDE_OPERATIVA } from "src/pages/contatti"
 import { SOCIALS } from "../Footer/Socials"
 

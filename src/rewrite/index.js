@@ -30,7 +30,7 @@ const languages = [
     # Redirect /it se lingua non selezionata
     RewriteEngine On
     RewriteRule ^$ /it [L,R=302]
-  `
+  `,
   //   `
   //   RewriteCond %{HTTP:Accept-Language} ^en [NC]
   //   RewriteRule ^$ /en/ [L,R=301]

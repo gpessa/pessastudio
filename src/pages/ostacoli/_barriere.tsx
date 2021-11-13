@@ -1,14 +1,13 @@
-import { Product, Title } from "src/components"
-import { Colors } from "src/constants"
 import { t, Trans } from "@lingui/macro"
 import { Typography } from "@mui/material"
-import { PRODUCT_GUTTER } from "src/theme"
-import { withPrefix } from "gatsby"
 import React from "react"
+import { Product, Title } from "src/components"
+import { Colors } from "src/constants"
+import { PRODUCT_GUTTER } from "src/theme"
 
 const PRODUCT = {
   description: <Trans>Costruisci la tua barriera personalizzata scegliendo tra i colori a disposizione</Trans>,
-  name: <Trans id={`Barriera 3 mt.`} />,
+  name: t`Barriera 3 mt.`,
   images: [
     { src: require("src/static/products/ostacoli/barriere-01.png").default },
     { src: require("src/static/products/ostacoli/barriere-02.png").default },

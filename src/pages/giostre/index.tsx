@@ -1,13 +1,12 @@
-import { Benefits, Columns, Gallery, Hero, Section, TH, Video } from "src/components"
-import { PAGES } from "src/constants"
 import { t, Trans } from "@lingui/macro"
 import { AccessibilityNew, Apps, DomainDisabled, VideogameAsset } from "@mui/icons-material"
 import { Box, Button, Link, Typography } from "@mui/material"
 import { styled } from "@mui/system"
-import { BREAKPOINT, SECTION_SPACING } from "src/theme"
-import { withPrefix } from "gatsby"
 import { LocalizedLink } from "gatsby-theme-i18n"
 import React from "react"
+import { Benefits, Columns, Gallery, Hero, Section, TH, Video } from "src/components"
+import { PAGES } from "src/constants"
+import { BREAKPOINT, SECTION_SPACING } from "src/theme"
 
 const GammaSectionStyled = styled(Section)({
   textAlign: "center",

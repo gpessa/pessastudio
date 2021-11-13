@@ -1,10 +1,9 @@
-import { Product, Section, TH, Ul } from "src/components"
-import { Colors, MATERIALS } from "src/constants"
 import { t, Trans } from "@lingui/macro"
 import { Box, Grid, Link, Typography } from "@mui/material"
-import { PRODUCT_GUTTER } from "src/theme"
-import { withPrefix } from "gatsby"
 import React from "react"
+import { Product, Section, TH, Ul } from "src/components"
+import { Colors, MATERIALS } from "src/constants"
+import { PRODUCT_GUTTER } from "src/theme"
 
 const Dressage: React.FC = () => {
   const DESCRIPTION_20x40 = (

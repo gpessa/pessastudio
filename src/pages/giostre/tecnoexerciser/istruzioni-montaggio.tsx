@@ -1,7 +1,6 @@
 import { Path, Section, TH } from "src/components"
 import { t } from "@lingui/macro"
 import { Box, Typography } from "@mui/material"
-import { withPrefix } from "gatsby"
 import React from "react"
 
 const STEPS = [

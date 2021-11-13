@@ -1,8 +1,7 @@
-import { Benefits, Hero, Products, Testimonials } from "src/components"
 import { t, Trans } from "@lingui/macro"
 import { AccountBalance, Apps, Architecture, Restore, TurnedInNot } from "@mui/icons-material"
-import { withPrefix } from "gatsby"
 import React from "react"
+import { Benefits, Hero, Products, Testimonials } from "src/components"
 
 const Index: React.FC = () => {
   const BENEFITS = [

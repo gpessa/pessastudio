@@ -1,9 +1,13 @@
+import { t, Trans } from "@lingui/macro"
+import { withPrefix } from "gatsby"
+import React from "react"
+import { Picture } from "src/components/ModalGallery"
 import {
   GIOSTRA_ALVEOLO_DESCRIZIONE,
-  GIOSTRA_TONDINO_CHIUSURA_A_TERRA_DESCRIZIONE,
   GIOSTRA_FENCE,
   GIOSTRA_FENCE_TYPE_TECNOFENCE,
   GIOSTRA_RETE_ANTIVENTO_DESCRIZIONE,
+  GIOSTRA_TONDINO_CHIUSURA_A_TERRA_DESCRIZIONE,
   GIOSTRE_CONTROL_PANEL_TECNOEXERCIZE,
   GIOSTRE_COPERTURA_PVC,
   GIOSTRE_DIAMETER_TECNOEXERCIZE,
@@ -13,9 +17,6 @@ import {
   GIOSTRE_EXTRA_SMALL,
   IRRIGATION,
 } from "src/constants"
-import { t, Trans } from "@lingui/macro"
-import { withPrefix } from "gatsby"
-import React from "react"
 
 export const IMAGES: Picture[] = [
   {
