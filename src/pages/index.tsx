@@ -57,7 +57,7 @@ const Index: React.FC = () => {
 
   return (
     <>
-      <Hero image={withPrefix("/pages/home/background.jpg")} text={t`Tradizione e qualità`} />
+      <Hero image={require("src/static/pages/home/background.jpg").default} text={t`Tradizione e qualità`} />
 
       <Benefits
         benefits={BENEFITS}

@@ -5,31 +5,32 @@ import { withPrefix } from "gatsby"
 import React from "react"
 import Accessori from "./_accessori"
 import Gamma from "./_gamma"
+import { Picture } from "src/components/ModalGallery"
 
 const Recinti: React.FC = () => {
   const IMAGES: Picture[] = [
     {
-      src: withPrefix("/products/recinti/gallery/recinti-image-7.jpg"),
+      src: require("src/static/products/recinti/gallery/recinti-image-7.jpg").default,
       caption: <Trans id="Recinzione 2 filagne" />,
     },
     {
-      src: withPrefix("/products/recinti/gallery/recinti-image-8.jpg"),
+      src: require("src/static/products/recinti/gallery/recinti-image-8.jpg").default,
       caption: <Trans id="Recinzione 2 filagne" />,
     },
     {
-      src: withPrefix("/products/recinti/gallery/recinti-image-2.jpg"),
+      src: require("src/static/products/recinti/gallery/recinti-image-2.jpg").default,
       caption: <Trans id="Recinzione 3 filagne" />,
     },
     {
-      src: withPrefix("/products/recinti/gallery/recinti-image-4.jpg"),
+      src: require("src/static/products/recinti/gallery/recinti-image-4.jpg").default,
       caption: <Trans id="Recinzione 2 filagne" />,
     },
     {
-      src: withPrefix("/products/recinti/gallery/recinti-image-5.jpg"),
+      src: require("src/static/products/recinti/gallery/recinti-image-5.jpg").default,
       caption: <Trans id="Recinzione 2 filagne" />,
     },
     {
-      src: withPrefix("/products/recinti/gallery/recinti-image-6.jpg"),
+      src: require("src/static/products/recinti/gallery/recinti-image-6.jpg").default,
       caption: <Trans id="Recinzione 2 filagne" />,
     },
   ]
@@ -41,7 +42,7 @@ const Recinti: React.FC = () => {
     },
     {
       label: t`Istruzioni di montaggio`,
-      file: withPrefix("/recinti-istruzioni-montaggio.pdf"),
+      file: require("src/static/recinti-istruzioni-montaggio.pdf").default,
     },
   ]
 

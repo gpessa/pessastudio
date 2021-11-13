@@ -1,9 +1,13 @@
+import { Trans } from "@lingui/macro"
+import { withPrefix } from "gatsby"
+import React from "react"
+import { Picture } from "src/components/ModalGallery"
 import {
   GIOSTRA_ALVEOLO_DESCRIZIONE,
-  GIOSTRA_TONDINO_CHIUSURA_A_TERRA_DESCRIZIONE,
   GIOSTRA_FENCE,
   GIOSTRA_FENCE_TYPE_TECNOFENCE,
   GIOSTRA_RETE_ANTIVENTO_DESCRIZIONE,
+  GIOSTRA_TONDINO_CHIUSURA_A_TERRA_DESCRIZIONE,
   GIOSTRE_CONTROL_PANEL_IPPOWALKER,
   GIOSTRE_COPERTURA_PVC,
   GIOSTRE_DIAMETER_IPPOWALKER,
@@ -12,21 +16,18 @@ import {
   GIOSTRE_EXTRA_BIG,
   GIOSTRE_EXTRA_SMALL,
 } from "src/constants"
-import { Trans } from "@lingui/macro"
-import { withPrefix } from "gatsby"
-import React from "react"
 
 export const IMAGES: Picture[] = [
   {
-    src: withPrefix("products/giostre/ippowalker/gallery/ingresso.jpg"),
+    src: require("src/static/products/giostre/ippowalker/gallery/ingresso.jpg").default,
     caption: <Trans id="Entrata" />,
   },
   {
-    src: withPrefix("products/giostre/ippowalker/gallery/giostra-01.jpg"),
+    src: require("src/static/products/giostre/ippowalker/gallery/giostra-01.jpg").default,
     caption: <Trans id="Giostra Ippowalker" />,
   },
   {
-    src: withPrefix("products/giostre/ippowalker/gallery/porte-elettrificate.jpg"),
+    src: require("src/static/products/giostre/ippowalker/gallery/porte-elettrificate.jpg").default,
     caption: <Trans id="Porte elettrificate" />,
   },
 ]
@@ -102,13 +103,13 @@ export const ACCESSORI = {
       description: <Trans id={GIOSTRA_TONDINO_CHIUSURA_A_TERRA_DESCRIZIONE} />,
       images: [
         {
-          src: withPrefix("/products/giostre/ippowalker/accessori/chiusura-01.jpg"),
+          src: require("src/static/products/giostre/ippowalker/accessori/chiusura-01.jpg").default,
           top: "62%",
           left: "42%",
           md: 3,
         },
         {
-          src: withPrefix("/products/giostre/ippowalker/accessori/chiusura-02.jpg"),
+          src: require("src/static/products/giostre/ippowalker/accessori/chiusura-02.jpg").default,
           top: "54%",
           left: "22%",
           md: 4,
@@ -120,11 +121,11 @@ export const ACCESSORI = {
       description: <Trans id={GIOSTRA_ALVEOLO_DESCRIZIONE} />,
       images: [
         {
-          src: withPrefix("/products/giostre/accessories/alveolo-02.jpg"),
+          src: require("src/static/products/giostre/accessories/alveolo-02.jpg").default,
           md: 3,
         },
         {
-          src: withPrefix("/products/giostre/accessories/alveolo-01.jpg"),
+          src: require("src/static/products/giostre/accessories/alveolo-01.jpg").default,
           md: 4,
         },
       ],
@@ -137,13 +138,13 @@ export const ACCESSORI = {
           md: 3,
           top: "25%",
           left: "45%",
-          src: withPrefix("/products/giostre/accessories/rete-01.jpg"),
+          src: require("src/static/products/giostre/accessories/rete-01.jpg").default,
         },
         {
           md: 4,
           top: "22%",
           left: "45%",
-          src: withPrefix("/products/giostre/accessories/rete-02.jpg"),
+          src: require("src/static/products/giostre/accessories/rete-02.jpg").default,
         },
       ],
     },

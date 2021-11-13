@@ -81,7 +81,7 @@ module.exports = {
         background_color: `#20232a`,
         theme_color: `#20232a`,
         display: `minimal-ui`,
-        icon: "static/generals/logo.jpg",
+        icon: "src/static/generals/logo.jpg",
       },
     },
     `gatsby-plugin-material-ui`,
@@ -100,13 +100,6 @@ module.exports = {
           ErrorDocument 403 /404.html
           ErrorDocument 404 /404.html
         `,
-        custom: `
-          <IfModule mod_headers.c>
-            <FilesMatch "\.(bmp|cur|gif|ico|jpe?g|png|svgz?|webp)$">
-                Header set Cache-Control "public, max-age=1209600, immutable"
-            </FilesMatch>
-          </IfModule>
-        `
       },
     },
   ],

@@ -6,7 +6,7 @@ import { withPrefix } from "gatsby"
 import React from "react"
 
 const PRODUCT = {
-  images: [{ src: withPrefix("/products/ostacoli/fosso.png") }],
+  images: [{ src: require("src/static/products/ostacoli/fosso.png").default }],
   name: <Trans>Fosso</Trans>,
   length: 1500,
   width: 2800,

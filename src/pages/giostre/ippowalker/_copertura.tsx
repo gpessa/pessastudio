@@ -8,11 +8,11 @@ import React from "react"
 
 export const IMAGES: Picture[] = [
   {
-    src: withPrefix("/products/giostre/ippowalker/copertura/copertura-pvc-1.jpg"),
+    src: require("src/static/products/giostre/ippowalker/copertura/copertura-pvc-1.jpg").default,
     caption: <Trans>Copertura in PVC</Trans>,
   },
   {
-    src: withPrefix("/products/giostre/ippowalker/copertura/copertura-pvc-2.jpg"),
+    src: require("src/static/products/giostre/ippowalker/copertura/copertura-pvc-2.jpg").default,
     caption: <Trans>Copertura in PVC</Trans>,
   },
 ]

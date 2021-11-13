@@ -9,7 +9,7 @@ import React from "react"
 const PRODUCTS = [
   {
     name: <Trans id={`Cavalletti caprilli`} />,
-    images: [{ src: withPrefix("/products/ostacoli/cavalletto-01.png") }],
+    images: [{ src: require("src/static/products/ostacoli/cavalletto-01.png").default }],
     thickness: 100,
     length: 500,
     height: 500,
@@ -19,7 +19,7 @@ const PRODUCTS = [
   },
   {
     name: <Trans id={`Kit cavalletti + barriera`} />,
-    images: [{ src: withPrefix("/products/ostacoli/cavalletto-barriera-01.png") }],
+    images: [{ src: require("src/static/products/ostacoli/cavalletto-barriera-01.png").default }],
     diameter: 85,
     length: 2000,
     weight: 5.3,

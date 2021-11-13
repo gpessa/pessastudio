@@ -25,11 +25,11 @@ const ACCESSORI = {
       ),
       images: [
         {
-          src: withPrefix("/products/tondini/accessori/antivento-1.jpg"),
+          src: require("src/static/products/tondini/accessori/antivento-1.jpg").default,
           md: 3,
         },
         {
-          src: withPrefix("/products/tondini/accessori/antivento-2.jpg"),
+          src: require("src/static/products/tondini/accessori/antivento-2.jpg").default,
           md: 4,
         },
       ],
@@ -39,7 +39,7 @@ const ACCESSORI = {
       description: <Trans>Un rosone posizionato nel centro ti permetterà di irrigare il tuo tondino.</Trans>,
       images: [
         {
-          src: withPrefix("/products/tondini/accessori/irrigazione-1.jpg"),
+          src: require("src/static/products/tondini/accessori/irrigazione-1.jpg").default,
           md: 3,
         },
       ],
@@ -54,11 +54,11 @@ const ACCESSORI = {
       ),
       images: [
         {
-          src: withPrefix("/products/tondini/accessori/antivento-port-ingresso-1.jpg"),
+          src: require("src/static/products/tondini/accessori/antivento-port-ingresso-1.jpg").default,
           md: 3,
         },
         {
-          src: withPrefix("/products/tondini/accessori/antivento-port-ingresso-2.jpg"),
+          src: require("src/static/products/tondini/accessori/antivento-port-ingresso-2.jpg").default,
           md: 4,
         },
       ],
@@ -68,7 +68,7 @@ const ACCESSORI = {
       description: <Trans id={GIOSTRA_TONDINO_CHIUSURA_A_TERRA_DESCRIZIONE} />,
       images: [
         {
-          src: withPrefix("/products/tondini/accessori/copertura-terra-1.jpg"),
+          src: require("src/static/products/tondini/accessori/copertura-terra-1.jpg").default,
           md: 4,
           top: "60%",
           left: "30%",
@@ -82,39 +82,39 @@ const Tondini: React.FC = () => {
   const IMAGES: Picture[] = [
     {
       caption: <Trans id={`Tondino coperto {sides} pannelli {size} mt.`} values={{ sides: 18, size: 15 }} />,
-      src: withPrefix("/products/tondini/gallery/tondino-0.jpg"),
+      src: require("src/static/products/tondini/gallery/tondino-0.jpg").default,
     },
     {
       caption: <Trans id={`Tondino coperto {sides} pannelli {size} mt.`} values={{ sides: 24, size: 13.2 }} />,
-      src: withPrefix("/products/tondini/gallery/tondino-1.jpg"),
+      src: require("src/static/products/tondini/gallery/tondino-1.jpg").default,
     },
     {
       caption: t`Interno tondino coperto`,
-      src: withPrefix("/products/tondini/gallery/tondino-2.jpg"),
+      src: require("src/static/products/tondini/gallery/tondino-2.jpg").default,
     },
     {
       caption: t`Interno tondino coperto`,
-      src: withPrefix("/products/tondini/gallery/tondino-3.jpg"),
+      src: require("src/static/products/tondini/gallery/tondino-3.jpg").default,
     },
     {
       caption: t`Tondino coperto`,
-      src: withPrefix("/products/tondini/gallery/tondino-4.jpg"),
+      src: require("src/static/products/tondini/gallery/tondino-4.jpg").default,
     },
     {
       caption: t`Copertura`,
-      src: withPrefix("/products/tondini/gallery/tondino-5.jpg"),
+      src: require("src/static/products/tondini/gallery/tondino-5.jpg").default,
     },
     {
       caption: t`Copertura`,
-      src: withPrefix("/products/tondini/gallery/tondino-6.jpg"),
+      src: require("src/static/products/tondini/gallery/tondino-6.jpg").default,
     },
     {
       caption: t`Copertura`,
-      src: withPrefix("/products/tondini/gallery/tondino-7.jpg"),
+      src: require("src/static/products/tondini/gallery/tondino-7.jpg").default,
     },
     {
       caption: t`Ingresso`,
-      src: withPrefix("/products/tondini/gallery/tondino-8.jpg"),
+      src: require("src/static/products/tondini/gallery/tondino-8.jpg").default,
     },
   ]
 
@@ -172,7 +172,7 @@ const Tondini: React.FC = () => {
 
   return (
     <>
-      <Hero image={withPrefix("/pages/tondini/background.jpg")} text={t`Tondini`} />
+      <Hero image={require("src/static/pages/tondini/background.jpg").default} text={t`Tondini`} />
 
       <Benefits
         benefits={BENEFITS}

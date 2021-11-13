@@ -8,19 +8,19 @@ import React from "react"
 
 export const IMAGES: Picture[] = [
   {
-    src: withPrefix("/products/giostre/tecnoexerciser/copertura/copertura-pvc-2.jpg"),
+    src: require("src/static/products/giostre/tecnoexerciser/copertura/copertura-pvc-2.jpg").default,
     caption: <Trans>Copertura in PVC</Trans>,
   },
   {
-    src: withPrefix("/products/giostre/tecnoexerciser/copertura/copertura-pvc-1.jpg"),
+    src: require("src/static/products/giostre/tecnoexerciser/copertura/copertura-pvc-1.jpg").default,
     caption: <Trans>Copertura in PVC</Trans>,
   },
   {
-    src: withPrefix("/products/giostre/tecnoexerciser/copertura/copertura-lastre-ondulate-1.jpg"),
+    src: require("src/static/products/giostre/tecnoexerciser/copertura/copertura-lastre-ondulate-1.jpg").default,
     caption: <Trans>Copertura rigida con lastre ondulate</Trans>,
   },
   {
-    src: withPrefix("/products/giostre/tecnoexerciser/copertura/copertura-lastre-ondulate-2.jpg"),
+    src: require("src/static/products/giostre/tecnoexerciser/copertura/copertura-lastre-ondulate-2.jpg").default,
     caption: <Trans>Copertura rigida con lastre ondulate</Trans>,
   },
 ]

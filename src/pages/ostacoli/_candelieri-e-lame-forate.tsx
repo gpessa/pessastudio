@@ -13,9 +13,9 @@ const PRODUCTS = [
       <Trans id="I candelieri sono costruiti con un montante di alluminio verniciato di colore bianco, muniti di 4 piedi, rivestiti con puntali di plastica che garantiscono, in caso di ribaltamento, l’incolumità vostra e dei vostri cavalli." />
     ),
     images: [
-      { md: 6, src: withPrefix("/products/ostacoli/candeliere-pvc-03.png") },
-      { md: 6, src: withPrefix("/products/ostacoli/candeliere-pvc-02.png") },
-      { md: 6, src: withPrefix("/products/ostacoli/candeliere-pvc-01.png") },
+      { md: 6, src: require("src/static/products/ostacoli/candeliere-pvc-03.png").default },
+      { md: 6, src: require("src/static/products/ostacoli/candeliere-pvc-02.png").default },
+      { md: 6, src: require("src/static/products/ostacoli/candeliere-pvc-01.png").default },
     ],
     width: 720,
     depth: 720,
@@ -30,9 +30,9 @@ const PRODUCTS = [
       <Trans id="Per consentirvi di realizzare ostacoli di vostra creazione possiamo fornirvi le lame forate in due diverse lunghezze." />
     ),
     images: [
-      { md: 6, src: withPrefix("/products/ostacoli/lama-de-02.png") },
-      { md: 6, src: withPrefix("/products/ostacoli/lama-de-01.png") },
-      { md: 6, src: withPrefix("/products/ostacoli/lama-de-03.png") },
+      { md: 6, src: require("src/static/products/ostacoli/lama-de-02.png").default },
+      { md: 6, src: require("src/static/products/ostacoli/lama-de-01.png").default },
+      { md: 6, src: require("src/static/products/ostacoli/lama-de-03.png").default },
     ],
     length: 500,
     thickness: 2,

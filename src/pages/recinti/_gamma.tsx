@@ -20,7 +20,7 @@ const Gamma = () => {
     {
       height: 1200,
       name: <Trans id={`Recinzione 1 filagna`} />,
-      image: withPrefix("/products/recinti/svg-1.svg"),
+      image: require("src/static/products/recinti/svg-1.svg").default,
       description: (
         <Trans
           id={`La recinzione ad una filagna viene utilizzata per delimitare campi da lavoro o gara poco adoperati e non è adatta per l'addestramento. Potete utilizzarla anche per delimitare un'area del vostro giardino di casa`}
@@ -30,7 +30,7 @@ const Gamma = () => {
     {
       height: 1350,
       name: <Trans id={`Recinzione 2 filagne`} />,
-      image: withPrefix("/products/recinti/svg-2.svg"),
+      image: require("src/static/products/recinti/svg-2.svg").default,
       description: (
         <Trans
           id={`La recinzione a due filagne genericamente viene utilizzata per delimitare campi da lavoro o per realizzare paddock dove i cavalli sono comunque osservati dal personale presente`}
@@ -40,7 +40,7 @@ const Gamma = () => {
     {
       height: 1600,
       name: <Trans id={`Recinzione 3 filagne`} />,
-      image: withPrefix("/products/recinti/svg-3.svg"),
+      image: require("src/static/products/recinti/svg-3.svg").default,
       description: (
         <Trans
           id={`La recinzione a tre filagne viene utilizzata per delimitare paddok per animali che rimangono per molte ore al giorno incustoditi, meglio se con impianto d'elettrificazione sulle filagne, oppure per confini di proprietà o aree`}
@@ -50,7 +50,7 @@ const Gamma = () => {
     {
       height: 1900,
       name: <Trans id={`Recinzione 4 filagne`} />,
-      image: withPrefix("/products/recinti/svg-4.svg"),
+      image: require("src/static/products/recinti/svg-4.svg").default,
       description: (
         <Trans
           id={`Le recinzione a quattro filagne utilizzate per delimitare paddock per stalloni, realizzare tondini per la doma e l'addestramento o per formare ovali per il salto in libertà`}

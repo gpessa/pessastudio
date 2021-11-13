@@ -10,13 +10,13 @@ const Segnaletica: React.FC = () => {
   const PRODUCTS = [
     {
       name: t`Bandierine`,
-      images: [{ src: withPrefix("/products/ostacoli/bandierine.jpg") }],
+      images: [{ src: require("src/static/products/ostacoli/bandierine.jpg").default }],
       materials: [MATERIALS.PLASTICA],
       price: 3.5,
     },
     {
       name: t`Numero per campo ostacoli professional`,
-      images: [{ src: withPrefix("/products/ostacoli/numero-professional.png") }],
+      images: [{ src: require("src/static/products/ostacoli/numero-professional.png").default }],
       materials: [MATERIALS.POLIETILENE],
       width: 200,
       height: 300,
@@ -25,7 +25,7 @@ const Segnaletica: React.FC = () => {
     },
     {
       name: t`Numero per campo ostacoli light`,
-      images: [{ src: withPrefix("/products/ostacoli/numero-light.png") }],
+      images: [{ src: require("src/static/products/ostacoli/numero-light.png").default }],
       materials: [MATERIALS.POLIPROPILENE],
       width: 330,
       height: 330,
