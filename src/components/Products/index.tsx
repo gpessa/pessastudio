@@ -39,7 +39,7 @@ const Products: React.FC = () => {
   // Life is difficult and those outsise break translations
   const PRODUCTS = Object.entries(PRODUCT_PAGES).map(([id, page]) => ({
     ...page,
-    image: withPrefix(`/icons/${id.toLowerCase()}.jpg`),
+    image: withPrefix(`static/icons/${id.toLowerCase()}.jpg`),
     name: t({ id: `${page.url}:title` }),
   }))
 

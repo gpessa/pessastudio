@@ -1,13 +1,13 @@
+import { t, Trans } from "@lingui/macro"
+import { Grid, Typography } from "@mui/material"
+import React from "react"
 import { Gallery, Section, TH } from "src/components"
+import { Picture } from "src/components/ModalGallery"
 import {
   GIOSTRA_DESCRIZIONE_RECINZIONE_COMPENSATO_MARINO,
   GIOSTRA_DESCRIZIONE_RECINZIONE_TECONOFENCE,
 } from "src/constants"
-import { t, Trans } from "@lingui/macro"
-import { Grid, Typography } from "@mui/material"
 import { BREAKPOINT, PRODUCT_GUTTER } from "src/theme"
-import { withPrefix } from "gatsby-link"
-import React from "react"
 
 export const IMAGES: Picture[] = [
   {

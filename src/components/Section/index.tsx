@@ -35,7 +35,7 @@ const SectionStyled = styled(Container)<Props>(({ theme, spacing = "medium", ima
     paddingBottom: `${SECTION_SPACING("md")(spacing)} `,
   },
   "&:before": {
-    backgroundImage: image && `url(${withPrefix(`/patterns/${image}.jpg`)})`,
+    backgroundImage: image && `url(${withPrefix(`static/patterns/${image}.jpg`)})`,
     backgroundColor: color && color,
     backgroundSize: "cover",
     position: "absolute",

@@ -1,41 +1,24 @@
-import { Accessori, Columns, Compare, ContentTable, Gallery, Section, TH, Ul, Video } from "src/components"
-import { GIOSTRE_ATTRIBUTES, PAGES } from "src/constants"
 import { t, Trans } from "@lingui/macro"
 import { Grid, Typography } from "@mui/material"
-import { PRODUCT_GUTTER } from "src/theme"
-import { withPrefix } from "gatsby-link"
 import React from "react"
+import { Accessori, Columns, Compare, ContentTable, Gallery, Section, TH, Ul, Video } from "src/components"
+import { GIOSTRE_ATTRIBUTES, PAGES } from "src/constants"
+import { PRODUCT_GUTTER } from "src/theme"
 import Copertura from "./_copertura"
 import Corridoi from "./_corridoi"
-import { ACCESSORI, DIMENSIONS, IMAGES, PRODUCTS } from "./_informations"
+import { ACCESSORI, DIMENSIONS, IMAGES, MANUALI_LOCALIZZATI, OTHERS_LOCALIZZATI, PRODUCTS } from "./_informations"
 
 const Tecnoexerciser: React.FC = () => {
   // This needs to be here otherwise translations for links breaks
-  const ATTACHMENTS = [
-    {
-      label: <Trans id="Manuale quadro di controllo" />,
-      file: withPrefix(t`/products/giostre/tecnoexerciser/pdf/manuale-quadro-tecnoexerciser-it.pdf`),
-    },
-    {
-      label: <Trans id="Manuale collegamento elettrico" />,
-      file: withPrefix(t`/products/giostre/pdf/giostra-collegamento-elettrico.pdf`),
-    },
+  const MANUALI = [
     {
       label: <Trans id={PAGES.GIOSTRE_TECNOEXERCISER_ISTRUZIONI_MONTAGGIO.url + ":title"} />,
       link: PAGES.GIOSTRE_TECNOEXERCISER_ISTRUZIONI_MONTAGGIO.url,
     },
-    {
-      label: <Trans id="Procedura di lubrificazione" />,
-      file: t`https://www.youtube.com/watch?v=QMA4wPxq_ow`,
-    },
+    ...(MANUALI_LOCALIZZATI[locale] || []),
   ]
 
-  const OTHERS = [
-    {
-      label: <Trans>Fac simile domanda installazione giostra</Trans>,
-      file: withPrefix(t`/products/giostre/tecnoexerciser/pdf/permessi-it.pdf`),
-    },
-  ]
+  const OTHERS = OTHERS_LOCALIZZATI[locale]
 
   return (
     <>
@@ -89,7 +72,7 @@ const Tecnoexerciser: React.FC = () => {
           </Grid>
 
           <Grid item xs={12} md>
-            <ContentTable rows={ATTACHMENTS} title={t`Manuale d'istruzioni`} sx={{ mb: PRODUCT_GUTTER }} />
+            <ContentTable rows={MANUALI} title={t`Manuale d'istruzioni`} sx={{ mb: PRODUCT_GUTTER }} />
           </Grid>
 
           <Grid item xs={12} md>

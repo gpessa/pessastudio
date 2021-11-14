@@ -1,10 +1,9 @@
-import { Product, Title } from "src/components"
-import { MATERIALS } from "src/constants"
 import { t, Trans } from "@lingui/macro"
 import { Grid } from "@mui/material"
-import { PRODUCT_GUTTER } from "src/theme"
-import { withPrefix } from "gatsby-link"
 import React from "react"
+import { Product, Title } from "src/components"
+import { MATERIALS } from "src/constants"
+import { PRODUCT_GUTTER } from "src/theme"
 
 const PRODUCTS = [
   {

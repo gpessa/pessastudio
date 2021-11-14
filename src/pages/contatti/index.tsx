@@ -1,9 +1,8 @@
-import { Columns, TH } from "src/components"
 import { t } from "@lingui/macro"
 import { Avatar, Box, styled } from "@mui/material"
-import { BREAKPOINT } from "src/theme"
-import { withPrefix } from "gatsby-link"
 import React from "react"
+import { Columns, TH } from "src/components"
+import { BREAKPOINT } from "src/theme"
 import Address from "./_address"
 import Bank from "./_bank"
 

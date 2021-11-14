@@ -211,3 +211,30 @@ export const ACCESSORI = {
     },
   ],
 }
+
+export const MANUALI_LOCALIZZATI = {
+  it: [
+    {
+      label: <Trans id="Manuale quadro di controllo" />,
+      file: require("src/assets/products/giostre/tecnoexerciser/pdf/manuale-quadro-tecnoexerciser-it.pdf").default,
+    },
+    {
+      label: <Trans id="Manuale collegamento elettrico" />,
+      file: require("src/assets/products/giostre/pdf/giostra-collegamento-elettrico.pdf").default,
+    },
+    {
+      label: <Trans id="Procedura di lubrificazione" />,
+      file: t`https://www.youtube.com/watch?v=QMA4wPxq_ow`,
+    },
+  ],
+  fr: [],
+}
+
+export const OTHERS_LOCALIZZATI = {
+  it: [
+    {
+      label: <Trans>Fac simile domanda installazione giostra</Trans>,
+      file: require("src/assets/products/giostre/tecnoexerciser/pdf/permessi-it.pdf").default,
+    },
+  ],
+}

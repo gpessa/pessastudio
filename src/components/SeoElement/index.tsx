@@ -1,3 +1,4 @@
+import { t } from "@lingui/macro"
 import { graphql, useStaticQuery } from "gatsby"
 import React from "react"
 import Helmet from "react-helmet"
@@ -39,7 +40,7 @@ const Seo: React.FC<Props> = ({ title, description, keywords, meta = [] }) => {
           "@type": "Organization",
           "name": SEDE_OPERATIVA.name,
           "url": siteUrl,
-          "image": siteUrl + require("src/assets/generals/logo.jpg").default,
+          "logo": siteUrl + require("src/assets/generals/logo.jpg").default,
           "address": {
             "@type": "PostalAddress",
             "postalCode": SEDE_OPERATIVA.postalCode,
@@ -50,6 +51,12 @@ const Seo: React.FC<Props> = ({ title, description, keywords, meta = [] }) => {
           },
           "telephone": ITALIA.telephone,
           "sameAs": [SOCIALS.facebook, SOCIALS.instagram],
+          "email": ITALIA.email,
+          "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": ITALIA.telephone,
+            "contactType": t`Supporto clienti`,
+          },
         }),
       ]}
       title={title}
