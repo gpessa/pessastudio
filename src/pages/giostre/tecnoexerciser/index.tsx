@@ -1,5 +1,6 @@
 import { t, Trans } from "@lingui/macro"
 import { Grid, Typography } from "@mui/material"
+import { useLocalization } from "gatsby-theme-i18n"
 import React from "react"
 import { Accessori, Columns, Compare, ContentTable, Gallery, Section, TH, Ul, Video } from "src/components"
 import { GIOSTRE_ATTRIBUTES, PAGES } from "src/constants"
@@ -9,6 +10,8 @@ import Corridoi from "./_corridoi"
 import { ACCESSORI, DIMENSIONS, IMAGES, MANUALI_LOCALIZZATI, OTHERS_LOCALIZZATI, PRODUCTS } from "./_informations"
 
 const Tecnoexerciser: React.FC = () => {
+  const { locale } = useLocalization()
+
   // This needs to be here otherwise translations for links breaks
   const MANUALI = [
     {

@@ -3,11 +3,12 @@ import { Theme } from "@emotion/react"
 import { useLingui } from "@lingui/react"
 import { CssBaseline } from "@mui/material"
 import { StyledEngineProvider, ThemeProvider } from "@mui/material/styles"
-import theme from "src/theme"
 import { navigate, PageProps } from "gatsby"
 import { useLocalization } from "gatsby-theme-i18n"
 import { intersection } from "lodash"
 import React, { useEffect } from "react"
+import { useTree } from "src/hooks"
+import theme from "src/theme"
 import Breadcrumb from "../Breadcrumb"
 import Footer from "../Footer"
 import Gdpr from "../Gdpr"
@@ -52,13 +53,20 @@ const getRedirectLanguage = (config, defaultLang) => {
   return intersection(preferredLocales, availableLocales)[0] || defaultLang
 }
 
-const Layout: React.FC<PageProps<object, { originalPath: string }>> = ({ children, pageResources, path }) => {
+const Layout: React.FC<PageProps<object, { originalPath: string }>> = ({
+  children,
+  pageResources,
+  pageContext,
+  path,
+}) => {
   const { defaultLang, prefixDefault, localizedPath, config, locale: currentLanguage } = useLocalization()
   const { i18n } = useLingui()
 
   const hasLocale = pageResources?.page?.path?.startsWith("/" + currentLanguage)
-  const originalPath = pageResources?.json?.pageContext?.originalPath
+  const originalPath = pageResources?.json?.pageContext?.originalPath || ""
   const isNotFoundPage = originalPath === "/404/"
+
+  const breadcrumb = useTree(pageContext.originalPath)
 
   useEffect(() => {
     if (hasLocale) return
@@ -84,9 +92,9 @@ const Layout: React.FC<PageProps<object, { originalPath: string }>> = ({ childre
     <StyledEngineProvider injectFirst>
       <ThemeProvider theme={theme}>
         <CssBaseline />
-        <SeoElement {...{ title, description }} />
+        <SeoElement {...{ title, description, breadcrumb }} />
         <Navigation />
-        {!isNotFoundPage && <Breadcrumb path={originalPath} />}
+        {!isNotFoundPage && <Breadcrumb {...{ breadcrumb }} />}
         <main>{children}</main>
         <Footer />
         <Gdpr />

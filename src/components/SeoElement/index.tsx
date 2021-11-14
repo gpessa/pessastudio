@@ -3,7 +3,8 @@ import { graphql, useStaticQuery } from "gatsby"
 import React from "react"
 import Helmet from "react-helmet"
 import { helmetJsonLdProp } from "react-schemaorg"
-import { Organization } from "schema-dts"
+import { BreadcrumbList, Organization } from "schema-dts"
+import { BreadcrumbList as BreadcrumbListType } from "src/hooks/useTree"
 import { ITALIA, SEDE_OPERATIVA } from "src/pages/contatti"
 import { SOCIALS } from "../Footer/Socials"
 
@@ -12,6 +13,7 @@ type Props = {
   description: string
   keywords?: string[]
   fragments?: unknown[]
+  breadcrumb: BreadcrumbListType
   meta?: { name: string; content: string }[]
 }
 
@@ -25,7 +27,7 @@ const query = graphql`
   }
 `
 
-const Seo: React.FC<Props> = ({ title, description, keywords, meta = [] }) => {
+const Seo: React.FC<Props> = ({ title, description, keywords, meta = [], breadcrumb }) => {
   const {
     site: {
       siteMetadata: { siteUrl },
@@ -44,10 +46,10 @@ const Seo: React.FC<Props> = ({ title, description, keywords, meta = [] }) => {
           "address": {
             "@type": "PostalAddress",
             "postalCode": SEDE_OPERATIVA.postalCode,
-            "addressLocality": SEDE_OPERATIVA.addressLocality,
+            "addressCountry": SEDE_OPERATIVA.country,
             "addressRegion": SEDE_OPERATIVA.addressRegion,
             "streetAddress": SEDE_OPERATIVA.streetAddress,
-            "addressCountry": SEDE_OPERATIVA.country,
+            "addressLocality": SEDE_OPERATIVA.addressLocality,
           },
           "telephone": ITALIA.telephone,
           "sameAs": [SOCIALS.facebook, SOCIALS.instagram],
@@ -57,6 +59,16 @@ const Seo: React.FC<Props> = ({ title, description, keywords, meta = [] }) => {
             "telephone": ITALIA.telephone,
             "contactType": t`Supporto clienti`,
           },
+        }),
+        helmetJsonLdProp<BreadcrumbList>({
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          "itemListElement": breadcrumb.map((b, index) => ({
+            "@type": "ListItem",
+            "position": index + 1,
+            "name": b.name,
+            "item": b.absoluteUrl,
+          })),
         }),
       ]}
       title={title}
