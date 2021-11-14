@@ -1,7 +1,7 @@
-import { Section } from "src/components"
-import { t, Trans } from "@lingui/macro"
+import { Trans } from "@lingui/macro"
 import { Box, Typography } from "@mui/material"
 import React from "react"
+import { Section } from "src/components"
 
 const NotFound: React.FC = () => (
   <Section spacing="big" color="warm1">
