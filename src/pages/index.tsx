@@ -8,17 +8,13 @@ const Index: React.FC = () => {
     {
       icon: TurnedInNot,
       title: <Trans>Innovativi</Trans>,
-      description: (
-        <Trans>L'innovazione tecnologica e la qualità sono le caratteristiche chiave dei nostri prodotti</Trans>
-      ),
+      description: <Trans>Innovazione tecnologica e qualità sono le caratteristiche chiave dei nostri prodotti</Trans>,
     },
     {
       icon: Architecture,
       title: <Trans>Personalizzabili</Trans>,
       description: (
-        <Trans>
-          I nostri prodotti sono MADE IN ITALY, costruiti da Pessastudio e personalizzabili (in dimensioni o colori)
-        </Trans>
+        <Trans>Prodotti MADE IN ITALY, costruiti da Pessastudio e personalizzabili (in dimensioni o colori)</Trans>
       ),
     },
     {

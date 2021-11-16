@@ -6,29 +6,27 @@ const ImageStyled = styled("img")(({ theme }) => ({
   width: "100%",
 }))
 
-const ImageWrapperStyled = styled("div")<Omit<Props, "src">>(
-  ({ theme, top, left }) => ({
-    "position": "relative",
-    "&:after": {
-      content: left && top && "''",
-      width: "30%",
-      paddingBottom: "30%",
-      borderRadius: "50%",
-      border: `3px solid ${theme.palette.error.main}`,
-      display: "block",
-      position: "absolute",
-      boxSizing: "content-box",
-      top,
-      left,
-    },
-  })
-)
+const ImageWrapperStyled = styled("div")<Omit<Props, "src">>(({ theme, top, left }) => ({
+  "position": "relative",
+  "&:after": {
+    content: left && top && "''",
+    width: "30%",
+    paddingBottom: "30%",
+    borderRadius: "50%",
+    border: `3px solid ${theme.palette.error.main}`,
+    display: "block",
+    position: "absolute",
+    boxSizing: "content-box",
+    top,
+    left,
+  },
+}))
 
-type Props = { src: string; top?: string; left?: string }
+type Props = { src: string; top?: string; left?: string; alt?: string }
 
-const Image: React.FC<Props> = ({ src, top, left }) => (
+const Image: React.FC<Props> = ({ src, top, left, alt }) => (
   <ImageWrapperStyled {...{ top, left }}>
-    <ImageStyled {...{ src }} />
+    <ImageStyled {...{ src }} alt={alt} />
   </ImageWrapperStyled>
 )
 

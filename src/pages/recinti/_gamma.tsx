@@ -18,42 +18,47 @@ const Gamma = () => {
   const PRODUCTS = [
     {
       height: 1200,
-      name: <Trans id={`Recinzione 1 filagna`} />,
+      name: t`Recinzione 1 filagna`,
       image: require("src/assets/products/recinti/svg-1.svg").default,
       description: (
-        <Trans
-          id={`La recinzione ad una filagna viene utilizzata per delimitare campi da lavoro o gara poco adoperati e non è adatta per l'addestramento. Potete utilizzarla anche per delimitare un'area del vostro giardino di casa`}
-        />
+        <Trans>
+          La recinzione ad una filagna viene utilizzata per delimitare campi da lavoro o gara poco adoperati e non è
+          adatta per l'addestramento. Potete utilizzarla anche per delimitare un'area del vostro giardino di casa
+        </Trans>
       ),
     },
     {
       height: 1350,
-      name: <Trans id={`Recinzione 2 filagne`} />,
+      name: t`Recinzione 2 filagne`,
       image: require("src/assets/products/recinti/svg-2.svg").default,
       description: (
-        <Trans
-          id={`La recinzione a due filagne genericamente viene utilizzata per delimitare campi da lavoro o per realizzare paddock dove i cavalli sono comunque osservati dal personale presente`}
-        />
+        <Trans>
+          La recinzione a due filagne genericamente viene utilizzata per delimitare campi da lavoro o per realizzare
+          paddock dove i cavalli sono comunque osservati dal personale presente
+        </Trans>
       ),
     },
     {
       height: 1600,
-      name: <Trans id={`Recinzione 3 filagne`} />,
+      name: t`Recinzione 3 filagne`,
       image: require("src/assets/products/recinti/svg-3.svg").default,
       description: (
-        <Trans
-          id={`La recinzione a tre filagne viene utilizzata per delimitare paddok per animali che rimangono per molte ore al giorno incustoditi, meglio se con impianto d'elettrificazione sulle filagne, oppure per confini di proprietà o aree`}
-        />
+        <Trans>
+          La recinzione a tre filagne viene utilizzata per delimitare paddok per animali che rimangono per molte ore al
+          giorno incustoditi oppure per delimitare confini di proprietà o aree. Per garantirne una maggiore sicurezza è
+          possibile installare un impianto d'elettrificazione sulle filagne
+        </Trans>
       ),
     },
     {
       height: 1900,
-      name: <Trans id={`Recinzione 4 filagne`} />,
+      name: t`Recinzione 4 filagne`,
       image: require("src/assets/products/recinti/svg-4.svg").default,
       description: (
-        <Trans
-          id={`Le recinzione a quattro filagne utilizzate per delimitare paddock per stalloni, realizzare tondini per la doma e l'addestramento o per formare ovali per il salto in libertà`}
-        />
+        <Trans>
+          Le recinzioni a quattro filagne sono utilizzate per delimitare paddock per stalloni, realizzare tondini per la
+          doma e l'addestramento o per formare ovali per il salto in libertà
+        </Trans>
       ),
     },
   ]

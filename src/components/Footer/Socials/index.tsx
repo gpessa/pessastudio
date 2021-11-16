@@ -4,7 +4,7 @@ import React from "react"
 
 export const SOCIALS = {
   facebook: "https://www.facebook.com/Pessastudio-HORSE-Tecnology-1050570271816027/",
-  instagram: "https://www.instagram.com/pessastudiohorsetecnology",
+  instagram: "https://www.instagram.com/pessastudiohorsetecnology/",
 }
 
 const Socials = () => (

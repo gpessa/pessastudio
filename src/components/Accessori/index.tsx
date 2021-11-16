@@ -14,7 +14,7 @@ const AccessorioStyled = styled(Box)(({ theme }) => ({
 type Props = {
   intro: Element | React.ReactElement
   accessories: {
-    name: Element | React.ReactElement
+    name: string
     description: Element | React.ReactElement
     images: {
       src: string
@@ -43,7 +43,7 @@ const Accessori: React.FC<Props> = ({ intro, accessories }) => (
           </Grid>
           {images.map(({ src, md = 6, top, left }) => (
             <Grid item md={md as GridSize} xs={6} key={src}>
-              <Image {...{ top, left, src }} />
+              <Image {...{ top, left, src }} alt={name} />
             </Grid>
           ))}
         </Grid>

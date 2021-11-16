@@ -1,84 +1,88 @@
 import { t, Trans } from "@lingui/macro"
 import { AccountBalance, DomainDisabled, Lock, Visibility } from "@mui/icons-material"
-import { Grid } from "@mui/material"
+import { Grid, Typography } from "@mui/material"
 import React from "react"
 import { Accessori, Benefits, ContentTable, Gallery, Hero, Section, TH } from "src/components"
 import { Picture } from "src/components/ModalGallery"
 import { GIOSTRA_TONDINO_CHIUSURA_A_TERRA_DESCRIZIONE } from "src/constants"
 import { PRODUCT_GUTTER } from "src/theme"
 
-const ACCESSORI = {
-  intro: (
-    <Trans>
-      Alcuni accessori possono essere acquistati separatamente e permettono di migliorare ulteriormente le condizioni
-      d'uso.
-    </Trans>
-  ),
-  accessories: [
-    {
-      name: <Trans>Rete antivento</Trans>,
-      description: (
-        <Trans>
-          La rete antivento protegge l'interno della tondino da correnti d'aria inoltre aiuta il cavallo a rimanere
-          concentrato mentre lo lavorate al suo interno.
-        </Trans>
-      ),
-      images: [
-        {
-          src: require("src/assets/products/tondini/accessori/antivento-1.jpg").default,
-          md: 3,
-        },
-        {
-          src: require("src/assets/products/tondini/accessori/antivento-2.jpg").default,
-          md: 4,
-        },
-      ],
-    },
-    {
-      name: <Trans>Irrigazione</Trans>,
-      description: <Trans>Un rosone posizionato nel centro ti permetterà di irrigare il tuo tondino.</Trans>,
-      images: [
-        {
-          src: require("src/assets/products/tondini/accessori/irrigazione-1.jpg").default,
-          md: 3,
-        },
-      ],
-    },
-    {
-      name: <Trans>Rete antivento ingresso</Trans>,
-      description: (
-        <Trans>
-          La rete antivento della porta è un’ulteriore protezione che offriamo per rendere ancora di più il tuo tondino
-          sicuro in caso di forte vendo e per garantire una maggiore concentrazione del tuo cavallo.
-        </Trans>
-      ),
-      images: [
-        {
-          src: require("src/assets/products/tondini/accessori/antivento-port-ingresso-1.jpg").default,
-          md: 3,
-        },
-        {
-          src: require("src/assets/products/tondini/accessori/antivento-port-ingresso-2.jpg").default,
-          md: 4,
-        },
-      ],
-    },
-    {
-      name: <Trans>Chiusura a terra</Trans>,
-      description: <Trans id={GIOSTRA_TONDINO_CHIUSURA_A_TERRA_DESCRIZIONE} />,
-      images: [
-        {
-          src: require("src/assets/products/tondini/accessori/copertura-terra-1.jpg").default,
-          md: 4,
-          top: "60%",
-          left: "30%",
-        },
-      ],
-    },
-  ],
-}
-
 const Tondini: React.FC = () => {
+  const ACCESSORI = {
+    intro: (
+      <Trans>
+        Alcuni accessori possono essere acquistati separatamente e permettono di migliorare ulteriormente le condizioni
+        d'uso.
+      </Trans>
+    ),
+    accessories: [
+      {
+        name: t`Rete antivento`,
+        description: (
+          <Trans>
+            La rete antivento protegge l'interno della tondino da correnti d'aria consentendo il cavallo a rimanere
+            concentrato durante l'allenamento.
+          </Trans>
+        ),
+        images: [
+          {
+            src: require("src/assets/products/tondini/accessori/antivento-1.jpg").default,
+            md: 3,
+          },
+          {
+            src: require("src/assets/products/tondini/accessori/antivento-2.jpg").default,
+            md: 4,
+          },
+        ],
+      },
+      {
+        name: t`Irrigazione`,
+        description: (
+          <Trans>
+            Il tondino può essere dotato rosone posizionato al centro ti permetterà di irrigare il tuo tondino.
+          </Trans>
+        ),
+        images: [
+          {
+            src: require("src/assets/products/tondini/accessori/irrigazione-1.jpg").default,
+            md: 3,
+          },
+        ],
+      },
+      {
+        name: t`Rete antivento ingresso`,
+        description: (
+          <Trans>
+            La rete antivento della porta è un’ulteriore protezione che offriamo per rendere ancora di più il tuo
+            tondino sicuro in caso di forte vento e per garantire una maggiore concentrazione del tuo cavallo.
+          </Trans>
+        ),
+        images: [
+          {
+            src: require("src/assets/products/tondini/accessori/antivento-port-ingresso-1.jpg").default,
+            md: 3,
+          },
+          {
+            src: require("src/assets/products/tondini/accessori/antivento-port-ingresso-2.jpg").default,
+            md: 4,
+          },
+        ],
+      },
+      {
+        name: t`Chiusura a terra`,
+        description: <Trans id={GIOSTRA_TONDINO_CHIUSURA_A_TERRA_DESCRIZIONE} />,
+        images: [
+          {
+            src: require("src/assets/products/tondini/accessori/copertura-terra-1.jpg").default,
+            md: 4,
+            top: "60%",
+            left: "30%",
+          },
+        ],
+      },
+    ],
+  }
+
   const IMAGES: Picture[] = [
     {
       caption: <Trans id={`Tondino coperto {sides} pannelli {size} mt.`} values={{ sides: 18, size: 15 }} />,
@@ -113,7 +117,7 @@ const Tondini: React.FC = () => {
       src: require("src/assets/products/tondini/gallery/tondino-7.jpg").default,
     },
     {
-      caption: t`Ingresso`,
+      caption: t`Ingresso di 2,05 mt. con catenaccio verticale`,
       src: require("src/assets/products/tondini/gallery/tondino-8.jpg").default,
     },
   ]
@@ -142,8 +146,8 @@ const Tondini: React.FC = () => {
       title: t`Materiali di qualità`,
       description: (
         <Trans>
-          Costituito da pannelli laterali in compensato marino, fissati a colonne in acciaio zincato. Copertura in telo
-          spalmato in PVC disponibile in bianco, verde o crema
+          È costituito da pannelli laterali in compensato marino fissati a colonne in acciaio zincato. La copertura in
+          telo spalmato in PVC, è disponibile in bianco, verde o crema
         </Trans>
       ),
     },
@@ -165,25 +169,27 @@ const Tondini: React.FC = () => {
       icon: Lock,
       title: t`Sicuro`,
       description: (
-        <Trans>Ampio ingresso di 2,05 mt. dotato di catenaccio verticale che garantisce l’assoluta sicurezza</Trans>
+        <Trans>
+          <br /> La struttura è stata progettata per garantire un carico neve fino a 120 kg/mq e la velocità del vento
+          fino a 110 km/h.
+        </Trans>
       ),
     },
   ]
 
   return (
     <>
-      <Hero image={require("src/assets/pages/tondini/background.jpg").default} text={t`Tondini`} />
+      <Hero image={require("src/assets/pages/tondini/background.jpg").default} text={t`Tondino`} />
 
       <Benefits
         benefits={BENEFITS}
         subtitle={t`Caratteristiche`}
-        title={t`Scopri il nostro tondino`}
+        title={t`Scopri il nostro tondino Tecnohalle`}
         text={
           <Trans>
-            Il tondino coperto è adatto a svolgere molteplici attività, per esempio è la migliore soluzione per
-            addestrare puledri in libertà o lavorare cavalli alla corda, aiuta a facilitare il controllo dei vostri
-            animali durante le lezioni ai principianti, nelle riprese dei pony ed è indispensabile per il longeur
-            durante le riprese di volteggi.
+            Il tondino coperto è adatto a svolgere molteplici attività. Rappresenta la migliore soluzione per addestrare
+            puledri in libertà o lavorare cavalli alla corda e aiuta a facilitare il controllo dei vostri animali
+            durante le lezioni ai principianti.
           </Trans>
         }
       />
