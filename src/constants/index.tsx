@@ -108,7 +108,7 @@ const GIOSTRE_IPPOWALKER = {
   name: t({ id: "/giostre/ippowalker/:title", message: `Ippowalker` }),
   url: "/giostre/ippowalker/",
   description: t({
-    id: "/:description",
+    id: "/giostre/ippowalker/:description",
     message: `Scopri la nostra giostra IPPOWALKER, lo strumento economico adatto ad allenare il tuo cavallo o il tuo puledro`,
   }),
 }
@@ -125,7 +125,7 @@ const GIOSTRE_TECNOEXERCISER = {
   name: t({ id: "/giostre/tecnoexerciser/:title", message: "Tecnoexerciser" }),
   url: "/giostre/tecnoexerciser/",
   description: t({
-    id: "/:description",
+    id: "/giostre/tecnoexerciser/:description",
     message: `Scopri la nostra giostra TECNOEXERCISER, lo strumento professionale adatto ad allenare il tuo cavallo o il tuo puledro`,
   }),
 }
