@@ -14,7 +14,6 @@ const Dressage: React.FC = () => {
         <li>60 moduli</li>
         <li>8 lettere</li>
       </Ul>
-      `
     </Trans>
   )
 
@@ -26,7 +25,6 @@ const Dressage: React.FC = () => {
         <li>80 moduli</li>
         <li>12 lettere</li>
       </Ul>
-      `
     </Trans>
   )
 
