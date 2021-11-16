@@ -1,12 +1,14 @@
-import { ButtonBase, Stack, styled } from "@mui/material"
+import { Stack, styled } from "@mui/material"
 import { LocalizedLink } from "gatsby-theme-i18n"
 import React from "react"
 import { BREAKPOINT } from "src/theme"
+import { Button } from "gatsby-material-ui-components"
 
 const DIM = 50
 
 const TitleStyled = styled("h1")(({ theme }) => ({
   fontFamily: theme.typography.slim.fontFamily,
+  color: theme.palette.common.black,
   lineHeight: `${28 * 0.7}px`,
   textTransform: "uppercase",
   margin: "3px 0 0 0",
@@ -18,6 +20,7 @@ const SubtitleStyled = styled("div")(({ theme }) => ({
   color: theme.palette.primary.main,
   lineHeight: `${12 * 0.7}px`,
   textTransform: "uppercase",
+  fontWeight: "normal",
   letterSpacing: 3.7,
   fontSize: 12,
   marginTop: 6,
@@ -33,8 +36,12 @@ const LogoImgStyled = styled("img")(({ theme }) => ({
   },
 }))
 
+const ButtonStyled = styled(Button)(({ theme }) => ({
+  padding: 0,
+}))
+
 const Logo: React.FC = props => (
-  <ButtonBase component={LocalizedLink} to="/">
+  <ButtonStyled component={LocalizedLink} to="/" variant="text">
     <Stack direction="row" alignContent="center" alignItems="center">
       <LogoImgStyled src={require("src/assets/generals/logo.jpg").default} alt="Pessastudio" height={DIM} width={DIM} />
       <hgroup>
@@ -42,7 +49,7 @@ const Logo: React.FC = props => (
         <SubtitleStyled {...props}>Horse technology</SubtitleStyled>
       </hgroup>
     </Stack>
-  </ButtonBase>
+  </ButtonStyled>
 )
 
 export default Logo

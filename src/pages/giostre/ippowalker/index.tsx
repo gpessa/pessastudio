@@ -1,5 +1,5 @@
 import { t, Trans } from "@lingui/macro"
-import { Grid, Link, Typography } from "@mui/material"
+import { Grid, Typography } from "@mui/material"
 import { LocalizedLink, useLocalization } from "gatsby-theme-i18n"
 import React from "react"
 import { Accessori, Columns, Compare, ContentTable, Gallery, Section, TH, Video } from "src/components"
@@ -7,6 +7,7 @@ import { GIOSTRE_ATTRIBUTES, PAGES } from "src/constants"
 import Copertura, { IMAGES } from "./_copertura"
 import Corridoi from "./_corridoi"
 import { ACCESSORI, DIMENSIONS, MANUALI_LOCALIZZATI, PRODUCTS } from "./_informations"
+import { Link } from "gatsby-material-ui-components"
 
 const Ippowalker: React.FC = () => {
   const { locale } = useLocalization()

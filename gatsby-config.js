@@ -37,11 +37,53 @@ module.exports = {
     `gatsby-plugin-typescript`,
     `gatsby-plugin-react-helmet`,
     {
+      "resolve": "gatsby-theme-material-ui",
+      options: {
+        webFontsConfig: {
+          fonts: {
+            google: [
+              {
+                family: `Roboto Condensed`,
+                variants: [`400`],
+              },
+              {
+                family: `Source Sans Pro`,
+                variants: [`400`, `700`],
+              },
+            ],
+          },
+        },
+      },
+    },
+    "gatsby-plugin-image",
+    "gatsby-plugin-react-helmet",
+    "gatsby-plugin-sitemap",
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `pessastudio`,
+        short_name: `pessastudio`,
+        start_url: `/`,
+        background_color: `#20232a`,
+        theme_color: `#20232a`,
+        display: `minimal-ui`,
+        icon: "src/assets/generals/logo.jpg",
+      },
+    },
+    {
       resolve: `gatsby-plugin-layout`,
       options: {
         component: require.resolve(`./src/components/Layout/index.tsx`),
       },
     },
+    {
+      resolve: "gatsby-plugin-mailchimp",
+      options: {
+        endpoint: "https://pessastudio.us4.list-manage.com/subscribe/post?u=9827f22cb9c00c4d7ff1c48ab&amp;id=199848d4fd",
+      },
+    },
+    "gatsby-plugin-sharp",
+    "gatsby-transformer-sharp",
     {
       resolve: `gatsby-theme-i18n`,
       options: {
@@ -57,35 +99,6 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-plugin-google-fonts`,
-      options: {
-        fonts: [
-          `roboto condensed\:400`,
-          `source sans pro\:400,700`
-        ],
-        display: 'swap'
-      }
-    },
-    {
-      resolve: "gatsby-plugin-mailchimp",
-      options: {
-        endpoint: "https://pessastudio.us4.list-manage.com/subscribe/post?u=9827f22cb9c00c4d7ff1c48ab&amp;id=199848d4fd",
-      },
-    },
-    {
-      resolve: `gatsby-plugin-manifest`,
-      options: {
-        name: `pessastudio`,
-        short_name: `pessastudio`,
-        start_url: `/`,
-        background_color: `#20232a`,
-        theme_color: `#20232a`,
-        display: `minimal-ui`,
-        icon: "src/assets/generals/logo.jpg",
-      },
-    },
-    `gatsby-plugin-material-ui`,
-    {
       resolve: 'gatsby-plugin-htaccess',
       options: {
         www: false,
@@ -100,4 +113,4 @@ module.exports = {
       },
     },
   ],
-}
+};

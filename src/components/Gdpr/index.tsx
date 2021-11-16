@@ -1,5 +1,5 @@
 import { t, Trans } from "@lingui/macro"
-import { Box, Button, ButtonProps, Link, Theme } from "@mui/material"
+import { Box, Button, ButtonProps, Theme } from "@mui/material"
 import { makeStyles } from "@mui/styles"
 import { PRODUCT_GUTTER } from "src/theme"
 import { LocalizedLink } from "gatsby-theme-i18n"
@@ -7,6 +7,7 @@ import React from "react"
 import CookieConsent from "react-cookie-consent"
 import { initializeAndTrack } from "gatsby-plugin-gdpr-cookies"
 import { useLocation } from "@reach/router"
+import { Link } from "gatsby-theme-material-ui"
 
 const useStyles = makeStyles((theme: Theme) => ({
   root: {

@@ -1,14 +1,11 @@
 /* global GATSBY_THEME_I18N_REACT_INTL */
 import { Theme } from "@emotion/react"
 import { useLingui } from "@lingui/react"
-import { CssBaseline } from "@mui/material"
-import { StyledEngineProvider, ThemeProvider } from "@mui/material/styles"
 import { navigate, PageProps } from "gatsby"
 import { useLocalization } from "gatsby-theme-i18n"
 import { intersection } from "lodash"
 import React, { useEffect } from "react"
 import { useTree } from "src/hooks"
-import theme from "src/theme"
 import Breadcrumb from "../Breadcrumb"
 import Footer from "../Footer"
 import Gdpr from "../Gdpr"
@@ -83,23 +80,20 @@ const Layout: React.FC<PageProps<object, { originalPath: string }>> = ({
     navigate(localizedUrl, { replace: true })
   }, [])
 
-  if (!hasLocale) return null
+  // if (!hasLocale) return null
 
   const title = i18n._(`${originalPath}:title`)
   const description = i18n._(`${originalPath}:description`)
 
   return (
-    <StyledEngineProvider injectFirst>
-      <ThemeProvider theme={theme}>
-        <CssBaseline />
-        <SeoElement {...{ title, description, breadcrumb }} />
-        <Navigation />
-        {!isNotFoundPage && <Breadcrumb {...{ breadcrumb }} />}
-        <main>{children}</main>
-        <Footer />
-        <Gdpr />
-      </ThemeProvider>
-    </StyledEngineProvider>
+    <>
+      <SeoElement {...{ title, description, breadcrumb }} />
+      <Navigation />
+      {!isNotFoundPage && <Breadcrumb {...{ breadcrumb }} />}
+      <main>{children}</main>
+      <Footer />
+      <Gdpr />
+    </>
   )
 }
 
