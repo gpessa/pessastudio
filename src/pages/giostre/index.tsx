@@ -5,8 +5,10 @@ import { styled } from "@mui/system"
 import { LocalizedLink } from "gatsby-theme-i18n"
 import React from "react"
 import { Benefits, Columns, Gallery, Hero, Section, TH, Video } from "src/components"
+import { Picture } from "src/components/ModalGallery"
 import { PAGES } from "src/constants"
 import { BREAKPOINT, SECTION_SPACING } from "src/theme"
+import { RemoveRedEyeOutlined } from "@mui/icons-material"
 
 const GammaSectionStyled = styled(Section)({
   textAlign: "center",
@@ -35,7 +37,7 @@ const BENEFITS = [
     icon: Apps,
     title: <Trans id="Ampia gamma" />,
     description: (
-      <Trans id="È possibile acquistare le nostre giostre in diverse versioni adatte al tuo budget e alle tue esigenze" />
+      <Trans id="È possibile acquistare le nostre giostre in diverse versioni adatte ad ogni budget ed esigenza" />
     ),
   },
   {
@@ -119,8 +121,14 @@ const Giostre: React.FC = () => (
     <Columns
       left={
         <Box textAlign="center">
-          <TH variant="h4" sans>{t`Tecnoexerciser`}</TH>
-          <Button component={LocalizedLink} to={PAGES.GIOSTRE_TECNOEXERCISER.url} color="warm2" size="large">
+          <TH variant="h3" sans>{t`Tecnoexerciser`}</TH>
+          <Button
+            component={LocalizedLink}
+            to={PAGES.GIOSTRE_TECNOEXERCISER.url}
+            color="warm2"
+            size="large"
+            startIcon={<RemoveRedEyeOutlined />}
+          >
             {t`Scopri di piú`}
           </Button>
         </Box>
@@ -128,7 +136,13 @@ const Giostre: React.FC = () => (
       right={
         <Box textAlign="center">
           <TH variant="h3" sans>{t`Ippowalker`}</TH>
-          <Button component={LocalizedLink} to={PAGES.GIOSTRE_IPPOWALKER.url} color="primary" size="large">
+          <Button
+            component={LocalizedLink}
+            to={PAGES.GIOSTRE_IPPOWALKER.url}
+            color="primary"
+            size="large"
+            endIcon={<RemoveRedEyeOutlined />}
+          >
             {t`Scopri di piú`}
           </Button>
         </Box>

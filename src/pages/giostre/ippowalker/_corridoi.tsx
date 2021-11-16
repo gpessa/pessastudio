@@ -28,9 +28,9 @@ const Corridoi = () => (
 
         <Typography paragraph>
           <Trans>
-            Anche in questo semplice modello di giostra potrai decidere di dotare la giostra di un corridoio scegliendo
-            tra il piú economico corridoio costituito dalla recinzione <strong>TECNOFENCE</strong> o il corridoio{" "}
-            <strong>EASY</strong> in pannelli in compensato marino.
+            Anche in questo semplice modello potrai decidere di dotare la tua giostra di un corridoio scegliendo tra il
+            piú economico corridoio costituito dalla recinzione <strong>TECNOFENCE</strong> o il corridoio{" "}
+            <strong>EASY</strong> in pannelli di compensato marino.
           </Trans>
         </Typography>
 
