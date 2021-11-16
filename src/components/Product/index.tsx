@@ -129,7 +129,7 @@ const Product = ({ images, vertical, price, url, name, description, ...attribute
               </TH>
 
               {description && (
-                <Typography paragraph property="schema:description">
+                <Typography paragraph component="div">
                   {description}
                 </Typography>
               )}
@@ -148,7 +148,7 @@ const Product = ({ images, vertical, price, url, name, description, ...attribute
 type Props = {
   vertical?: boolean
   images: Picture[]
-  name: string | JSX.Element
+  name: string
   description?: string | ReactNode
   price?: PriceProp["price"]
   url?: string
