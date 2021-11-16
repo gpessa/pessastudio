@@ -18,7 +18,7 @@ const rewrite = [
   ["^giostra-tecnoexerciser.php", "/it/giostre/tecnoexerciser/"],
   ["^tondini.php", "/it/tondini/"],
   ["^contatto.php", "/it/contatti/"],
-].map(([from, to]) => `RewriteRule ${from} ${to} `)
+].map(([from, to]) => `RewriteRule ${from} ${to} [R=301,L,NE]`)
 
 const languages = [
   `
