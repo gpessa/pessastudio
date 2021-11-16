@@ -1,9 +1,10 @@
 import { TH } from "src/components"
-import { Box, Link, styled, Typography } from "@mui/material"
+import { Box, styled, Typography } from "@mui/material"
 import { CarouselContext } from "pure-react-carousel"
 import React, { ReactElement, useContext, useEffect, useState } from "react"
 import { LocalizedLink } from "gatsby-theme-i18n"
 import { BREAKPOINT } from "src/theme"
+import { Link } from "gatsby-material-ui-components"
 
 type Props = {
   readonly index: number
@@ -44,7 +45,7 @@ const LinkStyled = styled(Link)<{ index: number; visible: boolean }>(({ theme, v
   },
 }))
 
-const ProductItem: React.FC<Props> = props => {
+const ProductsItem: React.FC<Props> = props => {
   const { index, name, description, image, url } = props
   const carouselContext = useContext(CarouselContext)
   const [currentSlide, setCurrentSlide] = useState(carouselContext.state.currentSlide)
@@ -71,4 +72,4 @@ const ProductItem: React.FC<Props> = props => {
   )
 }
 
-export default ProductItem
+export default ProductsItem
