@@ -40,8 +40,8 @@ const Price: React.FC<PriceProp> = ({ price }) => {
       </PriceStyled>
     )
 
-  return price.map(({ price, note }) => (
-    <React.Fragment key={note}>
+  return price.map(({ price, note }, index) => (
+    <React.Fragment key={index}>
       <PriceStyled as={"span"}>
         <Badge
           color="warm2"
