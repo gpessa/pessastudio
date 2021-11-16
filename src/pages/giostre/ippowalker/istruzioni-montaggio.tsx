@@ -5,43 +5,43 @@ import React from "react"
 
 const STEPS = [
   {
-    image: "/products/giostre/ippowalker/montaggio/step-01.jpg",
+    image: require("src/assets/products/giostre/ippowalker/montaggio/step-01.jpg").default,
     text: <Trans>Trovate e segnate il centro di ciò che sarà la vostra giostra</Trans>,
   },
   {
-    image: "/products/giostre/ippowalker/montaggio/step-02.jpg",
+    image: require("src/assets/products/giostre/ippowalker/montaggio/step-02.jpg").default,
     text: <Trans>Usate la base della giostra per trovare e segnare i punti dove saranno piantate i supporti</Trans>,
   },
   {
-    image: "/products/giostre/ippowalker/montaggio/step-04.jpg",
+    image: require("src/assets/products/giostre/ippowalker/montaggio/step-04.jpg").default,
     text: <Trans>Ancorate al suolo i supporti della giostra</Trans>,
   },
   {
-    image: "/products/giostre/ippowalker/montaggio/step-05.jpg",
+    image: require("src/assets/products/giostre/ippowalker/montaggio/step-05.jpg").default,
     text: <Trans>Montate il fondo della giostra</Trans>,
   },
   {
-    image: "/products/giostre/ippowalker/montaggio/step-06.jpg",
+    image: require("src/assets/products/giostre/ippowalker/montaggio/step-06.jpg").default,
     text: <Trans>Ancorate il gruppo motore</Trans>,
   },
   {
-    image: "/products/giostre/ippowalker/montaggio/step-07.jpg",
+    image: require("src/assets/products/giostre/ippowalker/montaggio/step-07.jpg").default,
     text: <Trans>Assicuratevi di bloccare la giostra alla giusta altezza e piana</Trans>,
   },
   {
-    image: "/products/giostre/ippowalker/montaggio/step-08.jpg",
+    image: require("src/assets/products/giostre/ippowalker/montaggio/step-08.jpg").default,
     text: <Trans>Montate le braccia di separazione</Trans>,
   },
   {
-    image: "/products/giostre/ippowalker/montaggio/step-09.jpg",
+    image: require("src/assets/products/giostre/ippowalker/montaggio/step-09.jpg").default,
     text: <Trans>Collegate le braccia di separazione attraverso i cavi</Trans>,
   },
   {
-    image: "/products/giostre/ippowalker/montaggio/step-10.jpg",
+    image: require("src/assets/products/giostre/ippowalker/montaggio/step-10.jpg").default,
     text: <Trans>Montate le porte di separazione</Trans>,
   },
   {
-    image: "/products/giostre/ippowalker/montaggio/step-11.jpg",
+    image: require("src/assets/products/giostre/ippowalker/montaggio/step-11.jpg").default,
     text: <Trans>Assicuratevi che le porte corrispondano alla figura</Trans>,
   },
 ]
