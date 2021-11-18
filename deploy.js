@@ -28,7 +28,7 @@ var config = {
     exclude: ["dist/**/*.map", "node_modules/**", "node_modules/**/.*", ".DS_Store", "*.mp4"],
     // set to true if you want it to delete all the existing remote
     // files first - I prefer not to
-    deleteRemote: false,
+    deleteRemote: true,
     forcePasv: true,
 };
 
