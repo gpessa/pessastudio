@@ -117,7 +117,7 @@ const Navigation: React.FC = () => {
           <Logo />
 
           <NavigationDesktop>
-            {Object.values(NAVIGATION_PAGES).map(({ url, name }) => (
+            {Object.values(NAVIGATION_PAGES).map(({ url, title }) => (
               <NavigationDesktopButtom
                 activeStyle={{
                   color: theme.palette.primary.main,
@@ -128,7 +128,7 @@ const Navigation: React.FC = () => {
                 key={url}
                 to={url}
               >
-                <Trans id={name} />
+                <Trans id={title} />
               </NavigationDesktopButtom>
             ))}
             <NavigationDesktopDivider />
@@ -146,7 +146,7 @@ const Navigation: React.FC = () => {
 
         {open && (
           <MenuMobileStyled>
-            {Object.values(NAVIGATION_PAGES).map(({ url, name }) => (
+            {Object.values(NAVIGATION_PAGES).map(({ url, title }) => (
               <ListItem
                 button
                 activeStyle={{
@@ -158,7 +158,7 @@ const Navigation: React.FC = () => {
                 key={url}
                 to={url}
               >
-                <Trans id={name} />
+                <Trans id={title} />
               </ListItem>
             ))}
           </MenuMobileStyled>

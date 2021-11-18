@@ -7,7 +7,7 @@ import Ul from "../components/Ul"
 
 const OSTACOLI = {
   url: "/ostacoli/",
-  name: t({ id: "/ostacoli/:title", message: `Ostacoli` }),
+  title: t({ id: "/ostacoli/:title", message: `Ostacoli` }),
   description: t({
     id: "/ostacoli/:description",
     message: `Ostacoli progettati e costruiti per durare nel tempo senza alcuna manutenzione`,
@@ -16,7 +16,7 @@ const OSTACOLI = {
 
 const RECINTI = {
   url: "/recinti/",
-  name: t({ id: "/recinti/:title", message: `Recinti` }),
+  title: t({ id: "/recinti/:title", message: `Recinti` }),
   description: t({
     id: "/recinti/:description",
     message: `Un recinto da cavalli adatto a durare nel tempo anche in presenza delle più avverse condizioni meteorologiche`,
@@ -25,7 +25,7 @@ const RECINTI = {
 
 const TONDINI = {
   url: "/tondini/",
-  name: t({ id: "/tondini/:title", message: `Tondini` }),
+  title: t({ id: "/tondini/:title", message: `Tondini` }),
   description: t({
     id: "/tondini/:description",
     message: `Tondini coperti per addestrate puledri in libertà`,
@@ -34,7 +34,7 @@ const TONDINI = {
 
 const GIOSTRE = {
   url: "/giostre/",
-  name: t({ id: "/giostre/:title", message: `Giostre` }),
+  title: t({ id: "/giostre/:title", message: `Giostre` }),
   description: t({
     id: "/giostre/:description",
     message: `Scopri la nostra giostra per cavalli, lo strumento ideale di lavoro  per allenare il vostro cavallo`,
@@ -43,7 +43,7 @@ const GIOSTRE = {
 
 const DRESSAGE = {
   url: "/dressage/",
-  name: t({ id: "/dressage/:title", message: `Dressage` }),
+  title: t({ id: "/dressage/:title", message: `Dressage` }),
   description: t({
     id: "/dressage/:description",
     message: `Rettangoli professionali da dressage per tutte le esigenze`,
@@ -52,35 +52,25 @@ const DRESSAGE = {
 
 const CONTATTI = {
   url: "/contatti/",
-  name: t({ id: "/contatti/:title", message: `Contatti` }),
+  title: t({ id: "/contatti/:title", message: `Contatti` }),
   description: t({
     id: "/contatti/:description",
     message: `Contatta Pessastudio per un preventivo per giostre, ostacoli, tondini e attrezzature per cavalli`,
   }),
 }
 
-const PAGE_404_DEV_404_PAGE = {
-  name: t({ id: "/dev-404-page/:title", message: `Pagina non trovata` }),
-  url: "/dev-404-page/",
-}
-
-const PAGE_404_HTML = {
-  name: t({ id: "/404.html:title", message: `Pagina non trovata` }),
-  url: "/404.html",
-}
-
 const PAGE_404 = {
-  name: t({ id: "/404/:title", message: `Pagina non trovata` }),
+  title: t({ id: "/404/:title", message: `Pagina non trovata` }),
   url: "/404/",
 }
 
 const COOKIE_POLICY = {
-  name: t({ id: "/cookie-policy/:title", message: `Cookie` }),
+  title: t({ id: "/cookie-policy/:title", message: `Cookie` }),
   url: "/cookie-policy/",
 }
 
 const HOME = {
-  name: t({ id: "/:title", message: `Home` }),
+  title: t({ id: "/:title", message: `Home` }),
   url: "/",
   description: t({
     id: "/:description",
@@ -89,7 +79,7 @@ const HOME = {
 }
 
 const RECINTI_COME_PREPARARE_IL_FONDO = {
-  name: t({
+  title: t({
     id: "/recinti/come-preparare-il-fondo/:title",
     message: "Come preparare il fondo",
   }),
@@ -97,7 +87,7 @@ const RECINTI_COME_PREPARARE_IL_FONDO = {
 }
 
 const TONDINI_COME_PREPARARE_IL_FONDO = {
-  name: t({
+  title: t({
     id: "/tondini/come-preparare-il-fondo/:title",
     message: `Come preparare il fondo`,
   }),
@@ -105,7 +95,7 @@ const TONDINI_COME_PREPARARE_IL_FONDO = {
 }
 
 const GIOSTRE_IPPOWALKER = {
-  name: t({ id: "/giostre/ippowalker/:title", message: `Ippowalker` }),
+  title: t({ id: "/giostre/ippowalker/:title", message: `Ippowalker` }),
   url: "/giostre/ippowalker/",
   description: t({
     id: "/giostre/ippowalker/:description",
@@ -114,7 +104,7 @@ const GIOSTRE_IPPOWALKER = {
 }
 
 const GIOSTRE_IPPOWALKER_ISTRUZIONI_MONTAGGIO = {
-  name: t({
+  title: t({
     id: "/giostre/ippowalker/istruzioni-montaggio/:title",
     message: `Istruzioni di montaggio`,
   }),
@@ -122,7 +112,7 @@ const GIOSTRE_IPPOWALKER_ISTRUZIONI_MONTAGGIO = {
 }
 
 const GIOSTRE_TECNOEXERCISER = {
-  name: t({ id: "/giostre/tecnoexerciser/:title", message: "Tecnoexerciser" }),
+  title: t({ id: "/giostre/tecnoexerciser/:title", message: "Tecnoexerciser" }),
   url: "/giostre/tecnoexerciser/",
   description: t({
     id: "/giostre/tecnoexerciser/:description",
@@ -131,7 +121,7 @@ const GIOSTRE_TECNOEXERCISER = {
 }
 
 const GIOSTRE_TECNOEXERCISER_ISTRUZIONI_MONTAGGIO = {
-  name: t({
+  title: t({
     id: "/giostre/tecnoexerciser/istruzioni-montaggio/:title",
     message: `Istruzioni di montaggio`,
   }),
@@ -140,7 +130,7 @@ const GIOSTRE_TECNOEXERCISER_ISTRUZIONI_MONTAGGIO = {
 
 export type Page = {
   url: string
-  name: string
+  title: string
   description?: string
 }
 
@@ -161,8 +151,6 @@ export const NAVIGATION_PAGES: Pages = { ...PRODUCT_PAGES, CONTATTI }
 export const PAGES: Pages = {
   ...PRODUCT_PAGES,
   ...NAVIGATION_PAGES,
-  PAGE_404_DEV_404_PAGE,
-  PAGE_404_HTML,
   PAGE_404,
   COOKIE_POLICY,
   HOME,
