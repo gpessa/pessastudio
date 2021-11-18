@@ -50,20 +50,18 @@ const getRedirectLanguage = (config, defaultLang) => {
   return intersection(preferredLocales, availableLocales)[0] || defaultLang
 }
 
-const Layout: React.FC<PageProps<object, { originalPath: string }>> = ({
-  children,
-  pageResources,
-  pageContext,
-  path,
-}) => {
+const Layout: React.FC<PageProps<object, { originalPath: string }>> = ({ children, pageResources, location }) => {
   const { defaultLang, prefixDefault, localizedPath, config, locale: currentLanguage } = useLocalization()
   const { i18n } = useLingui()
 
   const hasLocale = pageResources?.page?.path?.startsWith("/" + currentLanguage)
-  const originalPath = pageResources?.json?.pageContext?.originalPath || ""
-  const isNotFoundPage = originalPath === "/404/"
 
-  const breadcrumb = useTree(pageContext.originalPath)
+  var regExp = new RegExp(`^/${currentLanguage}`)
+  const path = location.pathname.replace(regExp, "")
+
+  const isNotFoundPage = path === "/404/"
+
+  const breadcrumb = useTree(path)
 
   useEffect(() => {
     if (hasLocale) return
@@ -80,10 +78,8 @@ const Layout: React.FC<PageProps<object, { originalPath: string }>> = ({
     navigate(localizedUrl, { replace: true })
   }, [])
 
-  // if (!hasLocale) return null
-
-  const title = i18n._(`${originalPath}:title`)
-  const description = i18n._(`${originalPath}:description`)
+  const title = i18n._(`${path}:title`)
+  const description = i18n._(`${path}:description`)
 
   return (
     <>

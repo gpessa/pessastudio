@@ -15,7 +15,7 @@ const Tecnoexerciser: React.FC = () => {
   // This needs to be here otherwise translations for links breaks
   const MANUALI = [
     {
-      label: <Trans id={PAGES.GIOSTRE_TECNOEXERCISER_ISTRUZIONI_MONTAGGIO.url + ":title"} />,
+      label: PAGES.GIOSTRE_TECNOEXERCISER_ISTRUZIONI_MONTAGGIO.title,
       link: PAGES.GIOSTRE_TECNOEXERCISER_ISTRUZIONI_MONTAGGIO.url,
     },
     ...(MANUALI_LOCALIZZATI[locale] || []),
