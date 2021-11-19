@@ -1,13 +1,13 @@
 import { t, Trans } from "@lingui/macro"
 import { Box, Button, ButtonProps, Theme } from "@mui/material"
 import { makeStyles } from "@mui/styles"
-import { PRODUCT_GUTTER } from "src/theme"
+import { useLocation } from "@reach/router"
+import { Link } from "gatsby-material-ui-components"
+import { initializeAndTrack } from "gatsby-plugin-gdpr-cookies"
 import { LocalizedLink } from "gatsby-theme-i18n"
 import React from "react"
 import CookieConsent from "react-cookie-consent"
-import { initializeAndTrack } from "gatsby-plugin-gdpr-cookies"
-import { useLocation } from "@reach/router"
-import { Link } from "gatsby-theme-material-ui"
+import { PRODUCT_GUTTER } from "src/theme"
 
 const useStyles = makeStyles((theme: Theme) => ({
   root: {

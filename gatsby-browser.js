@@ -8,3 +8,6 @@
 
 import 'pure-react-carousel/dist/react-carousel.es.css';
 
+import wrapWithProvider from './src/components/MuiWrapper';
+
+export const wrapRootElement = wrapWithProvider;

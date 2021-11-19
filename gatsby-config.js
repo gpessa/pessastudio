@@ -37,23 +37,21 @@ module.exports = {
     `gatsby-plugin-typescript`,
     `gatsby-plugin-react-helmet`,
     {
-      "resolve": "gatsby-theme-material-ui",
+      "resolve": "gatsby-plugin-webfonts",
       options: {
-        webFontsConfig: {
-          fonts: {
-            google: [
-              {
-                family: `Roboto Condensed`,
-                variants: [`400`],
-                fontDisplay: 'swap',
-              },
-              {
-                family: `Source Sans Pro`,
-                variants: [`400`, `700`],
-                fontDisplay: 'swap',
-              },
-            ],
-          },
+        fonts: {
+          google: [
+            {
+              family: `Roboto Condensed`,
+              variants: [`400`],
+              fontDisplay: 'swap',
+            },
+            {
+              family: `Source Sans Pro`,
+              variants: [`400`, `700`],
+              fontDisplay: 'swap',
+            },
+          ],
         },
       },
     },
