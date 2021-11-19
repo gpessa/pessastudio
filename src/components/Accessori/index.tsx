@@ -1,8 +1,8 @@
-import { Image, Section, TH } from "src/components"
 import { t } from "@lingui/macro"
-import { Box, Grid, GridSize, styled, Typography, Divider } from "@mui/material"
-import { BREAKPOINT, PRODUCT_GUTTER } from "src/theme"
+import { Box, Grid, GridSize, styled, Typography } from "@mui/material"
 import React from "react"
+import { Image, Section, TH } from "src/components"
+import { BREAKPOINT, PRODUCT_GUTTER } from "src/theme"
 
 const AccessorioStyled = styled(Box)(({ theme }) => ({
   marginBottom: theme.spacing(PRODUCT_GUTTER),

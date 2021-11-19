@@ -1,4 +1,4 @@
-import { createTheme, responsiveFontSizes } from "@mui/material/styles"
+import { createTheme, responsiveFontSizes, Theme } from "@mui/material/styles"
 
 export const BREAKPOINT = "md"
 
@@ -28,11 +28,46 @@ export const SECTION_SPACING = (breakingPoint: "xs" | "md") => {
   }
 }
 
-const theme = createTheme({
-  shape: {
-    borderRadius: 0,
+
+declare module "@mui/material/styles/createTypography" {
+  interface TypographyOptions {
+    small?: TypographyStyleOptions
+    slim?: TypographyStyleOptions
+  }
+  interface Typography {
+    small?: TypographyStyleOptions
+    slim?: TypographyStyleOptions
+  }
+}
+
+declare module "@mui/material/styles/createPalette" {
+  interface Palette {
+    warm1: Palette["primary"]
+    warm2: Palette["primary"]
+  }
+  interface PaletteOptions {
+    warm1: PaletteOptions["primary"]
+    warm2: PaletteOptions["primary"]
+  }
+}
+
+declare module "@mui/styles/defaultTheme" {
+  // eslint-disable-next-line @typescript-eslint/no-empty-interface
+  interface DefaultTheme extends Theme { }
+}
+
+declare module "@mui/styles/defaultTheme" {
+  // eslint-disable-next-line @typescript-eslint/no-empty-interface
+  interface DefaultTheme extends Theme { }
+}
+
+const themePalette = createTheme({
+  typography: {
+    fontFamily: "Source Sans Pro",
+    slim: {
+      fontFamily: "Roboto Condensed",
+    },
   },
-  spacing: (factor: number) => `${7 * factor}px`,
   palette: {
     primary: {
       main: "#356434",
@@ -45,20 +80,23 @@ const theme = createTheme({
       main: "#EBE6DE",
       contrastText: "rgba(0, 0, 0, 0.87)",
     },
+  }
+})
+
+const theme = createTheme(themePalette, {
+  shape: {
+    borderRadius: 0,
   },
+  spacing: (factor: number) => `${7 * factor}px`,
   typography: {
-    fontFamily: "Source Sans Pro",
-    slim: {
-      fontFamily: "Roboto Condensed",
+    small: {
+      fontSize: "0.9rem",
     },
     caption: {
       fontSize: "0.9rem",
       lineHeight: "1em",
-      color: "inherit",
-    },
-    small: {
-      fontSize: "0.8rem",
-      lineHeight: "1rem",
+      textTransform: "uppercase",
+      color: themePalette.palette.grey[600]
     },
     h1: {
       fontFamily: "serif",
@@ -136,10 +174,10 @@ const theme = createTheme({
       styleOverrides: {
         root: {
           "&:nth-of-type(even)": {
-            backgroundColor: "#fff",
+            backgroundColor: themePalette.palette.common.white,
           },
           "&:nth-of-type(odd)": {
-            backgroundColor: "#F6F4F0",
+            backgroundColor: themePalette.palette.warm1.main,
           },
         },
       },
@@ -157,4 +195,5 @@ const theme = createTheme({
   },
 })
 
+console.log(theme)
 export default responsiveFontSizes(theme)

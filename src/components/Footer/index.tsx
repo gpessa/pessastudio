@@ -1,9 +1,8 @@
-import { Section, Title, TSmall } from "src/components"
 import { t } from "@lingui/macro"
-import { Divider, Grid, useMediaQuery } from "@mui/material"
-import { styled } from "@mui/material"
-import theme, { BREAKPOINT } from "src/theme"
+import { Divider, Grid, styled, Typography, useMediaQuery } from "@mui/material"
 import React from "react"
+import { Section, Title } from "src/components"
+import theme, { BREAKPOINT } from "src/theme"
 import Map from "./Map"
 import Newsletter from "./Newsletter"
 import Socials from "./Socials"
@@ -54,7 +53,7 @@ const Footer: React.FC = () => {
       <Map />
 
       <BottomPartStyled spacing="small">
-        <TSmall>{t`COD. FISC. e Part: I.V.A. 04743610281 C.C.I.A.A. PD - R.E.A. 414822`}</TSmall>
+        <Typography variant="small">{t`COD. FISC. e Part: I.V.A. 04743610281 C.C.I.A.A. PD - R.E.A. 414822`}</Typography>
       </BottomPartStyled>
     </footer>
   )

@@ -120,6 +120,18 @@ const Tondini: React.FC = () => {
       caption: t`Ingresso di 2,05 mt. con catenaccio verticale`,
       src: require("src/assets/products/tondini/gallery/tondino-8.jpg").default,
     },
+    {
+      caption: t`Tondino`,
+      src: require("src/assets/products/tondini/gallery/tondino-9.jpg").default,
+    },
+    {
+      caption: t`Interno tondino coperto`,
+      src: require("src/assets/products/tondini/gallery/tondino-10.jpg").default,
+    },
+    {
+      caption: t`Tondino`,
+      src: require("src/assets/products/tondini/gallery/tondino-11.jpg").default,
+    },
   ]
 
   const DIMENSIONS = [
@@ -187,9 +199,9 @@ const Tondini: React.FC = () => {
         title={t`Scopri il nostro tondino Tecnohalle`}
         text={
           <Trans>
-            Il tondino coperto è adatto a svolgere molteplici attività. Rappresenta la migliore soluzione per addestrare
-            puledri in libertà o lavorare cavalli alla corda e aiuta a facilitare il controllo dei vostri animali
-            durante le lezioni ai principianti.
+            Il tondino coperto è adatto a svolgere molteplici attività, rappresenta la migliore soluzione per addestrare
+            puledri in libertà o lavorare cavalli alla corda. Inoltre facilita il controllo del cavallo durante le
+            lezioni ai principianti ed è indispensabile per il longeur durante le riprese di volteggi.
           </Trans>
         }
       />

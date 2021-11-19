@@ -2,7 +2,6 @@ import { Box, Typography, BoxProps } from "@mui/material"
 import { styled } from "@mui/material"
 import { BREAKPOINT } from "src/theme"
 import React from "react"
-import Caption from "../Caption"
 
 export type Props = {
   sx?: BoxProps
@@ -20,7 +19,11 @@ const StyledBox = styled(Box)(({ theme }) => ({
 
 const Title: React.FC<Props> = ({ title, sx, subtitle, text, className }) => (
   <StyledBox {...{ sx, className }}>
-    {subtitle && <Caption gutterBottom>{subtitle}</Caption>}
+    {subtitle && (
+      <Typography variant="caption" gutterBottom>
+        {subtitle}
+      </Typography>
+    )}
     <Typography variant="h3" dangerouslySetInnerHTML={{ __html: title }} gutterBottom />
     {text && <>{text}</>}
   </StyledBox>

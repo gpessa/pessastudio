@@ -1,4 +1,4 @@
-import { Caption, Section, TH } from "src/components"
+import { Section, TH } from "src/components"
 import { t } from "@lingui/macro"
 import CloseIcon from "@mui/icons-material/Close"
 import {
@@ -64,7 +64,7 @@ const CompareXS: React.FC<Omit<Props, "title">> = ({ attributes, products }) => 
                 .map(([type, label]) => (
                   <TableRow key={type}>
                     <TableCellStyled size="medium">
-                      <Caption>{label}</Caption>
+                      <Typography variant="caption">{label}</Typography>
                     </TableCellStyled>
                     <TableCellStyled key={`head_${index}`} size="medium" type={type}>
                       {product[type] || <CloseIcon />}
@@ -100,7 +100,7 @@ const CompareMD: React.FC<Omit<Props, "title">> = ({ attributes, products }) => 
         {Object.entries(attributes).map(([type, label]) => (
           <TableRow key={type}>
             <TableCellStyled size="medium">
-              <Caption>{label}</Caption>
+              <Typography variant="caption">{label}</Typography>
             </TableCellStyled>
             {products.map((product, index) => (
               <TableCellStyled key={`head_${index}`} size="medium" type={type}>

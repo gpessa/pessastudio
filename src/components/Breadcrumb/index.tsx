@@ -1,6 +1,5 @@
 import HomeIcon from "@mui/icons-material/Home"
-import { Breadcrumbs, Container, Link, Typography } from "@mui/material"
-import { styled } from "@mui/material"
+import { Breadcrumbs, Container, Link, styled, Typography } from "@mui/material"
 import { LocalizedLink } from "gatsby-theme-i18n"
 import React from "react"
 import { BreadcrumbList } from "src/hooks/useTree"
@@ -15,8 +14,8 @@ const HomeIconStyled = styled(HomeIcon)({
   marginBottom: -5,
 })
 
-const Breadcrumb: React.FC<{ breadcrumb: BreadcrumbList }> = ({ breadcrumb }) => {
-  return breadcrumb.length > 1 ? (
+const Breadcrumb: React.FC<{ breadcrumb: BreadcrumbList }> = ({ breadcrumb }) =>
+  breadcrumb.length > 1 ? (
     <RootStyled>
       <Breadcrumbs separator="›" gutterBottom={false} component={props => <Container {...props} component="nav" />}>
         {breadcrumb.map(({ name, url }, index) => {
@@ -46,6 +45,5 @@ const Breadcrumb: React.FC<{ breadcrumb: BreadcrumbList }> = ({ breadcrumb }) =>
       </Breadcrumbs>
     </RootStyled>
   ) : null
-}
 
 export default Breadcrumb

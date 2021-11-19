@@ -48,7 +48,7 @@ module.exports = {
             },
             {
               family: `Source Sans Pro`,
-              variants: [`400`, `700`],
+              variants: [`400`, `600`],
               fontDisplay: 'swap',
             },
           ],

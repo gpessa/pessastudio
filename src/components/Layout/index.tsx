@@ -12,38 +12,6 @@ import Gdpr from "../Gdpr"
 import Navigation from "../Navigation"
 import Seo from "../Seo"
 
-declare module "@mui/material/styles/createTypography" {
-  interface TypographyOptions {
-    small: TypographyStyleOptions
-    slim: TypographyStyleOptions
-  }
-  interface Typography {
-    small: TypographyStyleOptions
-    slim: TypographyStyleOptions
-  }
-}
-
-declare module "@mui/material/styles/createPalette" {
-  interface Palette {
-    warm1: Palette["primary"]
-    warm2: Palette["primary"]
-  }
-  interface PaletteOptions {
-    warm1: PaletteOptions["primary"]
-    warm2: PaletteOptions["primary"]
-  }
-}
-
-declare module "@mui/styles/defaultTheme" {
-  // eslint-disable-next-line @typescript-eslint/no-empty-interface
-  interface DefaultTheme extends Theme {}
-}
-
-declare module "@mui/styles/defaultTheme" {
-  // eslint-disable-next-line @typescript-eslint/no-empty-interface
-  interface DefaultTheme extends Theme {}
-}
-
 const getRedirectLanguage = (config, defaultLang) => {
   const availableLocales = config.map(({ code }) => code)
   const preferredLocales = navigator?.languages
