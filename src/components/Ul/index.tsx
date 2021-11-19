@@ -1,4 +1,4 @@
-import { styled } from "@mui/system"
+import { styled } from "@mui/material"
 
 const Ul = styled("ul")(({ theme }) => ({
   padding: 0,

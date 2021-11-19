@@ -4,7 +4,7 @@ import { BREAKPOINT } from "src/theme"
 import React from "react"
 import { useInView } from "react-intersection-observer"
 import TH from "../TH"
-import { styled } from "@mui/system"
+import { styled } from "@mui/material"
 
 interface Step {
   image: string

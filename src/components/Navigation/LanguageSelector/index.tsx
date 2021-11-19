@@ -1,6 +1,6 @@
 import { useLingui } from "@lingui/react"
 import { Button, Dialog, DialogTitle, IconButton, List, ListItem, Tooltip } from "@mui/material"
-import { styled } from "@mui/system"
+import { styled } from "@mui/material"
 import { withPrefix } from "gatsby"
 import { LocalizedLink, useLocalization } from "gatsby-theme-i18n"
 import * as React from "react"

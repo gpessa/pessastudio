@@ -1,6 +1,6 @@
 import { t, Trans } from "@lingui/macro"
 import { Grid, Typography } from "@mui/material"
-import { styled } from "@mui/system"
+import { styled } from "@mui/material"
 import React from "react"
 import { Section, TH } from "src/components"
 import { PRODUCT_GUTTER } from "src/theme"

@@ -1,5 +1,5 @@
 import { Container, ContainerProps } from "@mui/material"
-import { styled } from "@mui/system"
+import { styled } from "@mui/material"
 import { withPrefix } from "gatsby-link"
 import React from "react"
 import { BREAKPOINT, SECTION_SPACING } from "src/theme"

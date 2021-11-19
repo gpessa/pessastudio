@@ -13,7 +13,7 @@ import {
   useScrollTrigger,
   useTheme,
 } from "@mui/material"
-import { styled } from "@mui/system"
+import { styled } from "@mui/material"
 import { globalHistory } from "@reach/router"
 import { BREAKPOINT } from "src/theme"
 import { LocalizedLink } from "gatsby-theme-i18n"

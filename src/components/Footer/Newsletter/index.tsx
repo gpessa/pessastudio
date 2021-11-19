@@ -4,7 +4,7 @@ import { Send } from "@mui/icons-material"
 import { Alert, IconButton, InputAdornment, Input } from "@mui/material"
 import addToMailchimp from "gatsby-plugin-mailchimp"
 import React, { useState } from "react"
-import { styled } from "@mui/system"
+import { styled } from "@mui/material"
 
 const StyledAlert = styled(Alert)(({ theme }) => ({
   marginTop: theme.spacing(2),

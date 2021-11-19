@@ -1,6 +1,6 @@
 import { useGallery } from "src/hooks"
 import { Button, Dialog, Typography } from "@mui/material"
-import { styled } from "@mui/system"
+import { styled } from "@mui/material"
 import React from "react"
 
 interface WithModalGallery {

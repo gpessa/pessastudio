@@ -1,7 +1,7 @@
 import { Section, Title, TSmall } from "src/components"
 import { t } from "@lingui/macro"
 import { Divider, Grid, useMediaQuery } from "@mui/material"
-import { styled } from "@mui/system"
+import { styled } from "@mui/material"
 import theme, { BREAKPOINT } from "src/theme"
 import React from "react"
 import Map from "./Map"

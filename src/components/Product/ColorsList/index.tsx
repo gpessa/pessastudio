@@ -1,6 +1,6 @@
 import { Colors } from "src/constants"
 import { Box, Stack } from "@mui/material"
-import { styled } from "@mui/system"
+import { styled } from "@mui/material"
 import React from "react"
 
 const ColorStyled = styled(Box)<{ color: Colors }>(({ theme, color }) => ({

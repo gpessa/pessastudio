@@ -1,5 +1,4 @@
-import { Slider } from "@mui/material"
-import { Box, styled } from "@mui/system"
+import { Box, styled, Slider } from "@mui/material"
 import { CarouselContext } from "pure-react-carousel"
 import React, { useContext, useEffect, useState } from "react"
 
@@ -14,9 +13,7 @@ const TotalStyled = styled("span")(({ theme }) => ({
 
 const ProductSelector: React.FC<{ className?: string }> = ({ className }) => {
   const carouselContext = useContext(CarouselContext)
-  const [currentSlide, setCurrentSlide] = useState(
-    carouselContext.state.currentSlide
-  )
+  const [currentSlide, setCurrentSlide] = useState(carouselContext.state.currentSlide)
   const { totalSlides, visibleSlides } = carouselContext.state
 
   useEffect(() => {

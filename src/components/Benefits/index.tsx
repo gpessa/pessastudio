@@ -1,7 +1,7 @@
 import { Section, Title } from "src/components"
 import { Grid, SvgIconTypeMap } from "@mui/material"
 import { OverridableComponent } from "@mui/material/OverridableComponent"
-import { styled } from "@mui/system"
+import { styled } from "@mui/material"
 import { BREAKPOINT } from "src/theme"
 import React, { ReactElement } from "react"
 import BenefitsItem from "./BenefitsItem"

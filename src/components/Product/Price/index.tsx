@@ -1,7 +1,7 @@
 import { t, Trans } from "@lingui/macro"
 import { useLingui } from "@lingui/react"
 import { Badge, Typography } from "@mui/material"
-import { styled } from "@mui/system"
+import { styled } from "@mui/material"
 import React from "react"
 
 const PriceStyled = styled(Typography)(({ theme }) => ({

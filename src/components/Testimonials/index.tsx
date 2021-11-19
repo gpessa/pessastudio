@@ -2,7 +2,7 @@ import { Columns, Title } from "src/components"
 import { t, Trans } from "@lingui/macro"
 import FormatQuoteIcon from "@mui/icons-material/FormatQuote"
 import { Typography } from "@mui/material"
-import { styled } from "@mui/system"
+import { styled } from "@mui/material"
 import { CarouselProvider, CarouselProviderProps, DotGroup, Slide, Slider } from "pure-react-carousel"
 import React from "react"
 

@@ -1,7 +1,7 @@
 import { t, Trans } from "@lingui/macro"
 import { AccessibilityNew, Apps, DomainDisabled, VideogameAsset } from "@mui/icons-material"
 import { Box, Button, Link, Typography } from "@mui/material"
-import { styled } from "@mui/system"
+import { styled } from "@mui/material"
 import { LocalizedLink } from "gatsby-theme-i18n"
 import React from "react"
 import { Benefits, Columns, Gallery, Hero, Section, TH, Video } from "src/components"
