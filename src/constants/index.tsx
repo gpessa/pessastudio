@@ -128,17 +128,7 @@ const GIOSTRE_TECNOEXERCISER_ISTRUZIONI_MONTAGGIO = {
   url: "/giostre/tecnoexerciser/istruzioni-montaggio/",
 }
 
-export type Page = {
-  url: string
-  title: string
-  description?: string
-}
-
-export type Pages = {
-  [key: string]: Page
-}
-
-export const PRODUCT_PAGES: Pages = {
+export const PRODUCT_PAGES = {
   OSTACOLI,
   RECINTI,
   TONDINI,
@@ -146,9 +136,9 @@ export const PRODUCT_PAGES: Pages = {
   DRESSAGE,
 }
 
-export const NAVIGATION_PAGES: Pages = { ...PRODUCT_PAGES, CONTATTI }
+export const NAVIGATION_PAGES = { ...PRODUCT_PAGES, CONTATTI }
 
-export const PAGES: Pages = {
+export const PAGES = {
   ...PRODUCT_PAGES,
   ...NAVIGATION_PAGES,
   PAGE_404,
