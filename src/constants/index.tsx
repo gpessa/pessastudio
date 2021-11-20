@@ -5,7 +5,13 @@ import { PRODUCT_GUTTER } from "src/theme"
 import React from "react"
 import Ul from "../components/Ul"
 
-const OSTACOLI = {
+export type Page = {
+  url: string
+  title: string
+  description?: string
+}
+
+const OSTACOLI: Page = {
   url: "/ostacoli/",
   title: t({ id: "/ostacoli/:title", message: `Ostacoli` }),
   description: t({
@@ -14,7 +20,7 @@ const OSTACOLI = {
   }),
 }
 
-const RECINTI = {
+const RECINTI: Page = {
   url: "/recinti/",
   title: t({ id: "/recinti/:title", message: `Recinti` }),
   description: t({
@@ -23,7 +29,7 @@ const RECINTI = {
   }),
 }
 
-const TONDINI = {
+const TONDINI: Page = {
   url: "/tondini/",
   title: t({ id: "/tondini/:title", message: `Tondini` }),
   description: t({
@@ -32,7 +38,7 @@ const TONDINI = {
   }),
 }
 
-const GIOSTRE = {
+const GIOSTRE: Page = {
   url: "/giostre/",
   title: t({ id: "/giostre/:title", message: `Giostre` }),
   description: t({
@@ -41,7 +47,7 @@ const GIOSTRE = {
   }),
 }
 
-const DRESSAGE = {
+const DRESSAGE: Page = {
   url: "/dressage/",
   title: t({ id: "/dressage/:title", message: `Dressage` }),
   description: t({
@@ -50,7 +56,7 @@ const DRESSAGE = {
   }),
 }
 
-const CONTATTI = {
+const CONTATTI: Page = {
   url: "/contatti/",
   title: t({ id: "/contatti/:title", message: `Contatti` }),
   description: t({
@@ -59,17 +65,17 @@ const CONTATTI = {
   }),
 }
 
-const PAGE_404 = {
+const PAGE_404: Page = {
   title: t({ id: "/404/:title", message: `Pagina non trovata` }),
   url: "/404/",
 }
 
-const COOKIE_POLICY = {
+const COOKIE_POLICY: Page = {
   title: t({ id: "/cookie-policy/:title", message: `Cookie` }),
   url: "/cookie-policy/",
 }
 
-const HOME = {
+const HOME: Page = {
   title: t({ id: "/:title", message: `Home` }),
   url: "/",
   description: t({
@@ -78,7 +84,7 @@ const HOME = {
   }),
 }
 
-const RECINTI_COME_PREPARARE_IL_FONDO = {
+const RECINTI_COME_PREPARARE_IL_FONDO: Page = {
   title: t({
     id: "/recinti/come-preparare-il-fondo/:title",
     message: "Come preparare il fondo",
@@ -86,7 +92,7 @@ const RECINTI_COME_PREPARARE_IL_FONDO = {
   url: "/recinti/come-preparare-il-fondo/",
 }
 
-const TONDINI_COME_PREPARARE_IL_FONDO = {
+const TONDINI_COME_PREPARARE_IL_FONDO: Page = {
   title: t({
     id: "/tondini/come-preparare-il-fondo/:title",
     message: `Come preparare il fondo`,
@@ -94,7 +100,7 @@ const TONDINI_COME_PREPARARE_IL_FONDO = {
   url: "/tondini/come-preparare-il-fondo/",
 }
 
-const GIOSTRE_IPPOWALKER = {
+const GIOSTRE_IPPOWALKER: Page = {
   title: t({ id: "/giostre/ippowalker/:title", message: `Ippowalker` }),
   url: "/giostre/ippowalker/",
   description: t({
@@ -103,7 +109,7 @@ const GIOSTRE_IPPOWALKER = {
   }),
 }
 
-const GIOSTRE_IPPOWALKER_ISTRUZIONI_MONTAGGIO = {
+const GIOSTRE_IPPOWALKER_ISTRUZIONI_MONTAGGIO: Page = {
   title: t({
     id: "/giostre/ippowalker/istruzioni-montaggio/:title",
     message: `Istruzioni di montaggio`,
@@ -111,7 +117,7 @@ const GIOSTRE_IPPOWALKER_ISTRUZIONI_MONTAGGIO = {
   url: "/giostre/ippowalker/istruzioni-montaggio/",
 }
 
-const GIOSTRE_TECNOEXERCISER = {
+const GIOSTRE_TECNOEXERCISER: Page = {
   title: t({ id: "/giostre/tecnoexerciser/:title", message: "Tecnoexerciser" }),
   url: "/giostre/tecnoexerciser/",
   description: t({
@@ -120,7 +126,7 @@ const GIOSTRE_TECNOEXERCISER = {
   }),
 }
 
-const GIOSTRE_TECNOEXERCISER_ISTRUZIONI_MONTAGGIO = {
+const GIOSTRE_TECNOEXERCISER_ISTRUZIONI_MONTAGGIO: Page = {
   title: t({
     id: "/giostre/tecnoexerciser/istruzioni-montaggio/:title",
     message: `Istruzioni di montaggio`,

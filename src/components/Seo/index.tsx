@@ -1,21 +1,21 @@
-import { t } from "@lingui/macro";
-import { graphql, useStaticQuery } from "gatsby";
-import React from "react";
-import Helmet from "react-helmet";
-import { helmetJsonLdProp } from "react-schemaorg";
-import { BreadcrumbList, Organization } from "schema-dts";
-import { BreadcrumbList as BreadcrumbListType } from "src/hooks/useTree";
-import { ITALIA, SEDE_OPERATIVA } from "src/pages/contatti";
-import { SOCIALS } from "../Footer/Socials";
+import { t } from "@lingui/macro"
+import { graphql, useStaticQuery } from "gatsby"
+import React from "react"
+import Helmet from "react-helmet"
+import { helmetJsonLdProp } from "react-schemaorg"
+import { BreadcrumbList, Organization } from "schema-dts"
+import { BreadcrumbList as BreadcrumbListType } from "src/hooks/useTree"
+import { ITALIA, SEDE_OPERATIVA } from "src/pages/contatti"
+import { SOCIALS } from "../Footer/Socials"
 
 type Props = {
-  title: string;
-  description: string;
-  keywords?: string[];
-  fragments?: unknown[];
-  breadcrumb: BreadcrumbListType;
-  meta?: { name: string; content: string }[];
-};
+  title?: string
+  keywords?: string[]
+  description?: string
+  fragments?: unknown[]
+  breadcrumb: BreadcrumbListType
+  meta?: { name: string; content: string }[]
+}
 
 const query = graphql`
   query SEO {
@@ -25,20 +25,14 @@ const query = graphql`
       }
     }
   }
-`;
+`
 
-const Seo: React.FC<Props> = ({
-  title,
-  description,
-  keywords,
-  meta = [],
-  breadcrumb,
-}) => {
+const Seo: React.FC<Props> = ({ title, description, keywords, meta = [], breadcrumb }) => {
   const {
     site: {
       siteMetadata: { siteUrl },
     },
-  } = useStaticQuery(query);
+  } = useStaticQuery(query)
 
   return (
     <Helmet
@@ -46,34 +40,34 @@ const Seo: React.FC<Props> = ({
         helmetJsonLdProp<Organization>({
           "@context": "https://schema.org",
           "@type": "Organization",
-          name: SEDE_OPERATIVA.name,
-          url: siteUrl,
-          logo: siteUrl + require("src/assets/generals/logo.jpg").default,
-          address: {
+          "name": SEDE_OPERATIVA.name,
+          "url": siteUrl,
+          "logo": siteUrl + require("src/assets/generals/logo.jpg").default,
+          "address": {
             "@type": "PostalAddress",
-            postalCode: SEDE_OPERATIVA.postalCode,
-            addressCountry: SEDE_OPERATIVA.country,
-            addressRegion: SEDE_OPERATIVA.addressRegion,
-            streetAddress: SEDE_OPERATIVA.streetAddress,
-            addressLocality: SEDE_OPERATIVA.addressLocality,
+            "postalCode": SEDE_OPERATIVA.postalCode,
+            "addressCountry": SEDE_OPERATIVA.country,
+            "addressRegion": SEDE_OPERATIVA.addressRegion,
+            "streetAddress": SEDE_OPERATIVA.streetAddress,
+            "addressLocality": SEDE_OPERATIVA.addressLocality,
           },
-          telephone: ITALIA.telephone,
-          sameAs: [SOCIALS.facebook, SOCIALS.instagram],
-          email: ITALIA.email,
-          contactPoint: {
+          "telephone": ITALIA.telephone,
+          "sameAs": [SOCIALS.facebook, SOCIALS.instagram],
+          "email": ITALIA.email,
+          "contactPoint": {
             "@type": "ContactPoint",
-            telephone: ITALIA.telephone,
-            contactType: t`Supporto clienti`,
+            "telephone": ITALIA.telephone,
+            "contactType": t`Supporto clienti`,
           },
         }),
         helmetJsonLdProp<BreadcrumbList>({
           "@context": "https://schema.org",
           "@type": "BreadcrumbList",
-          itemListElement: breadcrumb.map((b, index) => ({
+          "itemListElement": breadcrumb.map((b, index) => ({
             "@type": "ListItem",
-            position: index + 1,
-            name: b.name,
-            item: b.absoluteUrl,
+            "position": index + 1,
+            "name": b.name,
+            "item": b.absoluteUrl,
           })),
         }),
       ]}
@@ -119,7 +113,7 @@ const Seo: React.FC<Props> = ({
         )
         .concat(meta)}
     />
-  );
-};
+  )
+}
 
-export default Seo;
+export default Seo
