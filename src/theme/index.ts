@@ -87,7 +87,7 @@ const theme = createTheme(themePalette, {
   shape: {
     borderRadius: 0,
   },
-  spacing: (factor: number) => `${7 * factor}px`,
+  spacing: (factor: number) => 7 * factor,
   typography: {
     small: {
       fontSize: "0.9rem",

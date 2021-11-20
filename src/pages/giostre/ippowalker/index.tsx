@@ -1,26 +1,18 @@
 import { t, Trans } from "@lingui/macro"
-import { Grid, Typography } from "@mui/material"
+import { Typography } from "@mui/material"
 import { Link } from "gatsby-material-ui-components"
-import { LocalizedLink, useLocalization } from "gatsby-theme-i18n"
+import { LocalizedLink } from "gatsby-theme-i18n"
 import React from "react"
-import { Accessori, Columns, Compare, ContentTable, Gallery, Section, TH, Video } from "src/components"
-import { GIOSTRE_ATTRIBUTES, PAGES } from "src/constants"
-import Copertura, { IMAGES } from "./_copertura"
-import Corridoi from "./_corridoi"
-import { ACCESSORI, DIMENSIONS, MANUALI_LOCALIZZATI, PRODUCTS } from "./_informations"
+import { Columns, TH, Video } from "src/components"
+import { PAGES } from "src/constants"
+import IppowalkerAccessori from "./_accessori"
+import IppowalkerCompare from "./_compare"
+import IppowalkerCopertura from "./_copertura"
+import IppowalkerCorridoi from "./_corridoi"
+import IppowalkerGallery from "./_gallery"
+import IppowalkerServizioClienti from "./_servizio_clienti"
 
 const Ippowalker: React.FC = () => {
-  const { locale } = useLocalization()
-
-  // This needs to be here otherwise translations for links breaks
-  const MANUALI = [
-    {
-      label: PAGES.GIOSTRE_IPPOWALKER_ISTRUZIONI_MONTAGGIO.title,
-      link: PAGES.GIOSTRE_IPPOWALKER_ISTRUZIONI_MONTAGGIO.url,
-    },
-    ...(MANUALI_LOCALIZZATI[locale] || []),
-  ]
-
   return (
     <>
       <Columns
@@ -61,32 +53,20 @@ const Ippowalker: React.FC = () => {
             </Trans>
           </>
         }
-        right={<Gallery images={IMAGES} />}
+        right={<IppowalkerGallery />}
       />
 
       <Video src={"https://www.youtube-nocookie.com/embed/slFfbd7kTzg"} title={t`Video giostra in movimento`} />
 
-      <Corridoi />
+      <IppowalkerCorridoi />
 
-      <Copertura />
+      <IppowalkerCopertura />
 
-      <Accessori {...ACCESSORI} />
+      <IppowalkerAccessori />
 
-      <Compare title={t`Gamma`} products={PRODUCTS} attributes={GIOSTRE_ATTRIBUTES} />
+      <IppowalkerCompare />
 
-      <Section>
-        <TH variant="h4">{t`Servizio clienti`}</TH>
-
-        <Grid container spacing={5}>
-          <Grid item xs={12} md={6}>
-            <ContentTable title={t`Dimensioni`} rows={DIMENSIONS} />
-          </Grid>
-
-          <Grid item xs={12} md={6}>
-            <ContentTable title={t`Manuale d'istruzioni`} rows={MANUALI} />
-          </Grid>
-        </Grid>
-      </Section>
+      <IppowalkerServizioClienti />
     </>
   )
 }

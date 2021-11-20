@@ -1,11 +1,9 @@
 import { useLingui } from "@lingui/react"
-import { Button, Dialog, DialogTitle, IconButton, List, ListItem, Tooltip } from "@mui/material"
-import { styled } from "@mui/material"
+import { Button, Dialog, DialogTitle, IconButton, List, ListItem, styled, Tooltip } from "@mui/material"
 import { useLocation } from "@reach/router"
 import { withPrefix } from "gatsby"
 import * as React from "react"
 import { useState } from "react"
-import gatsbyConfig from "../../../../gatsby-config.js"
 
 const DIM = 20
 
@@ -38,10 +36,6 @@ const LanguageSelectorLegacy: React.FC = () => {
 
   const handleModal = () => setShow(prevCount => !prevCount)
 
-  const to = pathname
-    .replace(gatsbyConfig.pathPrefix, ``) // remove the prefix
-    .replace(`/${i18n._locale}`, "") // remove the current language
-
   return (
     <>
       <Tooltip title="Change language">
@@ -65,7 +59,9 @@ const LanguageSelectorLegacy: React.FC = () => {
                 fullWidth
                 size="large"
                 variant="text"
-                startIcon={<LanguageIconStyled width={DIM} height={DIM} src={withPrefix(`/flags/${lang.code}.svg`)} />}
+                startIcon={
+                  <LanguageIconStyled width={DIM} height={DIM} src={withPrefix(`static/flags/${lang.code}.svg`)} />
+                }
               >
                 {lang.localName}
               </ButtonStyled>

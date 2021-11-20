@@ -16,3 +16,4 @@ declare module 'gatsby-plugin-mailchimp' {
 
     export default addToMailchimp;
 }
+

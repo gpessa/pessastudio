@@ -45,8 +45,8 @@ const CandelieriLameForate = () => {
       thickness: 2,
       width: 65,
       price: [
-        { price: 8.5, note: <Trans id="Lama 50 cm." /> },
-        { price: 15.5, note: <Trans id="Lama 150 cm." /> },
+        { price: 8.5, note: t`Lama 50 cm.` },
+        { price: 15.5, note: t`Lama 150 cm.` },
       ],
     },
   ]

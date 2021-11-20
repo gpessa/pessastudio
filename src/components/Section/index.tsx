@@ -1,5 +1,4 @@
-import { Container, ContainerProps } from "@mui/material"
-import { styled } from "@mui/material"
+import { Container, ContainerProps, styled } from "@mui/material"
 import { withPrefix } from "gatsby-link"
 import React from "react"
 import { BREAKPOINT, SECTION_SPACING } from "src/theme"
@@ -23,16 +22,16 @@ type Props = {
   type?: "vertical" | "horizontal"
   color?: "primary" | "warm1" | "warm2"
   spacing?: "small" | "medium" | "big" | "menu"
-} & Pick<ContainerProps, "maxWidth" | "children">
+} & Pick<ContainerProps, "maxWidth" | "children" | "sx">
 
 const SectionStyled = styled(Container)<Props>(({ theme, spacing = "medium", image, color, type }) => ({
   "overflow": "hidden",
   "position": "relative",
-  "paddingTop": `${SECTION_SPACING("xs")(spacing)}`,
-  "paddingBottom": `${SECTION_SPACING("xs")(spacing)}`,
+  "paddingTop": SECTION_SPACING("xs")(spacing),
+  "paddingBottom": SECTION_SPACING("xs")(spacing),
   [theme.breakpoints.up(BREAKPOINT)]: {
-    paddingTop: `${SECTION_SPACING("md")(spacing)}`,
-    paddingBottom: `${SECTION_SPACING("md")(spacing)} `,
+    paddingTop: SECTION_SPACING("md")(spacing),
+    paddingBottom: SECTION_SPACING("md")(spacing),
   },
   "&:before": {
     backgroundImage: image && `url(${withPrefix(`static/patterns/${image}.jpg`)})`,
@@ -61,11 +60,11 @@ const SectionStyledColored = styled(SectionStyled)<Props>(
           backgroundColor: theme.palette.primary.main,
         },
         warm1: {
-          color: theme.palette.warm1.contractText,
+          color: theme.palette.warm1.contrastText,
           backgroundColor: theme.palette.warm1.main,
         },
         warm2: {
-          color: theme.palette.warm2.contractText,
+          color: theme.palette.warm2.contrastText,
           backgroundColor: theme.palette.warm2.main,
         },
       }[color],

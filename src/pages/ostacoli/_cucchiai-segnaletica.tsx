@@ -8,7 +8,7 @@ import { PRODUCT_GUTTER } from "src/theme"
 const CucchiaiSegnaletica: React.FC = () => {
   const PRODUCTS = [
     {
-      name: <Trans>Cucchiaio DE</Trans>,
+      name: t`Cucchiaio DE`,
       description: t`Il cucchiaio standard utilizzato al livello internazionale`,
       images: [
         { src: require("src/assets/products/ostacoli/cucchiaio-de-01.png").default },
@@ -21,7 +21,7 @@ const CucchiaiSegnaletica: React.FC = () => {
       price: 3.5,
     },
     {
-      name: <Trans>Cucchiaio PS</Trans>,
+      name: t`Cucchiaio PS`,
       description: t`Il cucchiaio dotato del nostro sistema brevettato di aggancio`,
       images: [
         { src: require("src/assets/products/ostacoli/cucchiaio-ps-01.png").default },
@@ -32,7 +32,7 @@ const CucchiaiSegnaletica: React.FC = () => {
       price: 3.5,
     },
     {
-      name: <Trans>Supporto di sicurezza</Trans>,
+      name: t`Supporto di sicurezza`,
       description: (
         <Typography>{t`Supporti di sicurezza da applicare ai nostri cucchiai per salvaguardare l'integrità degli arti dei vostri cavalli in maniera efficace ed economica.`}</Typography>
       ),

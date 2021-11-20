@@ -1,44 +1,46 @@
-import { Gallery, Section, TH } from "src/components"
-import { GIOSTRE_COPERTURA_NOTE, GIOSTRA_COPERTURA_PVC_DESCRIZIONE } from "src/constants"
 import { t, Trans } from "@lingui/macro"
 import { Grid, Typography } from "@mui/material"
-import { PRODUCT_GUTTER } from "src/theme"
-import { withPrefix } from "gatsby-link"
 import React from "react"
+import { Gallery, Section, TH } from "src/components"
+import { Picture } from "src/components/ModalGallery"
+import { GIOSTRA_COPERTURA_PVC_DESCRIZIONE, GIOSTRE_COPERTURA_NOTE } from "src/constants"
+import { PRODUCT_GUTTER } from "src/theme"
 
-export const IMAGES: Picture[] = [
-  {
-    src: require("src/assets/products/giostre/ippowalker/copertura/copertura-pvc-1.jpg").default,
-    caption: <Trans>Copertura in PVC</Trans>,
-  },
-  {
-    src: require("src/assets/products/giostre/ippowalker/copertura/copertura-pvc-2.jpg").default,
-    caption: <Trans>Copertura in PVC</Trans>,
-  },
-]
+const IppowalkerCopertura = () => {
+  const IMAGES: Picture[] = [
+    {
+      src: require("src/assets/products/giostre/ippowalker/copertura/copertura-pvc-1.jpg").default,
+      caption: t`Copertura in PVC`,
+    },
+    {
+      src: require("src/assets/products/giostre/ippowalker/copertura/copertura-pvc-2.jpg").default,
+      caption: t`Copertura in PVC`,
+    },
+  ]
 
-const Copertura = () => (
-  <Section color="warm1">
-    <Grid container spacing={PRODUCT_GUTTER}>
-      <Grid md={6} item>
-        <TH variant="h3" sans>{t`La copertura`}</TH>
-        <Typography paragraph>
-          <Trans>
-            É possibile acquistare la giostra sprovvista di copertura ma se il vostro obbiettivo è quello di poter
-            lavorare 365 giorni all'anno, Pessastudio offre la possibilità di dotare la giostra, con corridoio EASY, di
-            una <strong>copertura in PVC</strong>.
-          </Trans>
-        </Typography>
+  return (
+    <Section color="warm1">
+      <Grid container spacing={PRODUCT_GUTTER}>
+        <Grid md={6} item>
+          <TH variant="h3" sans>{t`La copertura`}</TH>
+          <Typography paragraph>
+            <Trans>
+              É possibile acquistare la giostra sprovvista di copertura ma se il vostro obbiettivo è quello di poter
+              lavorare 365 giorni all'anno, Pessastudio offre la possibilità di dotare la giostra, con corridoio EASY,
+              di una <strong>copertura in PVC</strong>.
+            </Trans>
+          </Typography>
 
-        {GIOSTRA_COPERTURA_PVC_DESCRIZIONE}
+          {GIOSTRA_COPERTURA_PVC_DESCRIZIONE}
 
-        {GIOSTRE_COPERTURA_NOTE}
+          {GIOSTRE_COPERTURA_NOTE}
+        </Grid>
+        <Grid md={6} item>
+          <Gallery images={IMAGES} />
+        </Grid>
       </Grid>
-      <Grid md={6} item>
-        <Gallery images={IMAGES} />
-      </Grid>
-    </Grid>
-  </Section>
-)
+    </Section>
+  )
+}
 
-export default Copertura
+export default IppowalkerCopertura

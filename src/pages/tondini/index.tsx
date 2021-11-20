@@ -1,6 +1,6 @@
 import { t, Trans } from "@lingui/macro"
 import { AccountBalance, DomainDisabled, Lock, Visibility } from "@mui/icons-material"
-import { Grid, Typography } from "@mui/material"
+import { Grid } from "@mui/material"
 import React from "react"
 import { Accessori, Benefits, ContentTable, Gallery, Hero, Section, TH } from "src/components"
 import { Picture } from "src/components/ModalGallery"
@@ -85,11 +85,11 @@ const Tondini: React.FC = () => {
 
   const IMAGES: Picture[] = [
     {
-      caption: <Trans id={`Tondino coperto {sides} pannelli {size} mt.`} values={{ sides: 18, size: 15 }} />,
+      caption: t`Tondino coperto ${18} pannelli ${15} mt.`,
       src: require("src/assets/products/tondini/gallery/tondino-0.jpg").default,
     },
     {
-      caption: <Trans id={`Tondino coperto {sides} pannelli {size} mt.`} values={{ sides: 24, size: 13.2 }} />,
+      caption: t`Tondino coperto ${24} pannelli ${13.2} mt.`,
       src: require("src/assets/products/tondini/gallery/tondino-1.jpg").default,
     },
     {

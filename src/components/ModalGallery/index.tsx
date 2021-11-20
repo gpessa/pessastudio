@@ -1,8 +1,8 @@
-import { useGallery } from "src/hooks"
 import { t } from "@lingui/macro"
 import { NavigateBefore, NavigateNext } from "@mui/icons-material"
 import { Button, ButtonBase, Dialog, styled, Typography } from "@mui/material"
 import React from "react"
+import { useGallery } from "src/hooks"
 
 const ButtonBackStyled = styled(ButtonBase)({
   "position": "absolute",
@@ -45,7 +45,7 @@ const StyledCaption = styled(Typography)(({ theme }) => ({
 
 export type Picture = {
   src: string
-  caption?: string | Element | React.ReactElement
+  caption?: string
 }
 
 type Props = {

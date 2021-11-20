@@ -1,10 +1,10 @@
-import { TH } from "src/components"
 import { t } from "@lingui/macro"
 import { PictureAsPdf, Visibility } from "@mui/icons-material"
-import { Paper, Table, TableBody, TableCell, TableContainer, TableRow, Box, styled } from "@mui/material"
+import { Box, BoxProps, Paper, styled, Table, TableBody, TableCell, TableContainer, TableRow } from "@mui/material"
+import { Button } from "gatsby-material-ui-components"
 import { LocalizedLink } from "gatsby-theme-i18n"
 import React from "react"
-import { Button } from "gatsby-material-ui-components"
+import { TH } from "src/components"
 
 const ButtonStyled = styled(Button)(({ theme }) => ({
   "marginLeft": theme.spacing(1),
@@ -50,13 +50,13 @@ const ContentTable = ({ rows, title, ...props }: Props) => (
   </Box>
 )
 
-interface Props {
+type Props = {
   title: string | Element
   rows: {
     label: string | JSX.Element
     link?: string | JSX.Element
     file?: string
   }[]
-}
+} & Pick<BoxProps, "sx">
 
 export default ContentTable

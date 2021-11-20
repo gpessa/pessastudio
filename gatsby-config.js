@@ -35,6 +35,7 @@ module.exports = {
     `gatsby-plugin-sitemap`,
     "gatsby-plugin-robots-txt",
     `gatsby-plugin-typescript`,
+    // 'gatsby-plugin-ts-checker',
     `gatsby-plugin-react-helmet`,
     {
       "resolve": "gatsby-plugin-webfonts",
@@ -48,7 +49,7 @@ module.exports = {
             },
             {
               family: `Source Sans Pro`,
-              variants: [`400`, `600`],
+              variants: [`400`, `700`],
               fontDisplay: 'swap',
             },
           ],

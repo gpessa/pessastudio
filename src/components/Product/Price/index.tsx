@@ -1,7 +1,6 @@
 import { t, Trans } from "@lingui/macro"
 import { useLingui } from "@lingui/react"
-import { Badge, Typography } from "@mui/material"
-import { styled } from "@mui/material"
+import { Badge, styled, Typography } from "@mui/material"
 import React from "react"
 
 const PriceStyled = styled(Typography)(({ theme }) => ({
@@ -40,25 +39,29 @@ const Price: React.FC<PriceProp> = ({ price }) => {
       </PriceStyled>
     )
 
-  return price.map(({ price, note }, index) => (
-    <React.Fragment key={index}>
-      <PriceStyled as={"span"}>
-        <Badge
-          color="warm2"
-          badgeContent={t`+ IVA`}
-          anchorOrigin={{
-            vertical: "bottom",
-            horizontal: "right",
-          }}
-        >
-          {i18n.number(price, { style: "currency", currency: "EUR" })}
-        </Badge>
-        <Typography variant="small" ml={3}>
-          ({note})
-        </Typography>
-      </PriceStyled>
-    </React.Fragment>
-  ))
+  return (
+    <>
+      {price.map(({ price, note }, index) => (
+        <React.Fragment key={index}>
+          <PriceStyled as={"span"}>
+            <Badge
+              color="warm2"
+              badgeContent={t`+ IVA`}
+              anchorOrigin={{
+                vertical: "bottom",
+                horizontal: "right",
+              }}
+            >
+              {i18n.number(price, { style: "currency", currency: "EUR" })}
+            </Badge>
+            <Typography variant="small" ml={3}>
+              ({note})
+            </Typography>
+          </PriceStyled>
+        </React.Fragment>
+      ))}
+    </>
+  )
 }
 
 export default Price

@@ -1,10 +1,9 @@
-import { Step, StepContent, StepLabel, Stepper } from "@mui/material"
+import { Step, StepContent, StepLabel, Stepper, styled } from "@mui/material"
 import makeStyles from "@mui/styles/makeStyles"
-import { BREAKPOINT } from "src/theme"
 import React from "react"
 import { useInView } from "react-intersection-observer"
+import { BREAKPOINT } from "src/theme"
 import TH from "../TH"
-import { styled } from "@mui/material"
 
 interface Step {
   image: string
@@ -44,7 +43,7 @@ const Path = ({ steps }: Props) => {
         })
 
         return (
-          <Step key={text} active={inView} expanded={true} ref={ref}>
+          <Step key={index} active={inView} expanded={true} ref={ref}>
             <StepLabel>
               <TH
                 variant="h5"

@@ -12,15 +12,15 @@ import { BREAKPOINT, PRODUCT_GUTTER } from "src/theme"
 export const IMAGES: Picture[] = [
   {
     src: require("src/assets/products/giostre/tecnoexerciser/corridoio/tecnofence.jpg").default,
-    caption: <Trans id={"Corridoio TECNOFENCE"} />,
+    caption: t`Corridoio TECNOFENCE`,
   },
   {
     src: require("src/assets/products/giostre/tecnoexerciser/corridoio/compensato-marino.jpg").default,
-    caption: <Trans id={"Corridoio in compensato marino"} />,
+    caption: t`Corridoio in compensato marino`,
   },
 ]
 
-const Corridoi = () => (
+const TecnoexerciserCorridoi = () => (
   <Section>
     <Grid container spacing={PRODUCT_GUTTER} direction={{ [BREAKPOINT]: "row-reverse" }}>
       <Grid md={6} item>
@@ -45,4 +45,4 @@ const Corridoi = () => (
   </Section>
 )
 
-export default Corridoi
+export default TecnoexerciserCorridoi
