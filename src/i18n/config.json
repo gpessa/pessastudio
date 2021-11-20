@@ -6,13 +6,5 @@
       "localName": "Italiano",
       "langDir": "ltr",
       "dateFormat": "DD.MM.YYYY"
-    },
-    {
-      "code": "en",
-      "hrefLang": "en-UK",
-      "name": "Italian",
-      "localName": "Italiano",
-      "langDir": "ltr",
-      "dateFormat": "DD.MM.YYYY"
     }
   ]

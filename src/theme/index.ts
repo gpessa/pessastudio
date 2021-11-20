@@ -195,5 +195,4 @@ const theme = createTheme(themePalette, {
   },
 })
 
-console.log(theme)
 export default responsiveFontSizes(theme)
