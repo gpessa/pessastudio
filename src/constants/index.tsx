@@ -167,22 +167,22 @@ export enum Colors {
 }
 
 export const MATERIALS = {
-  ACCIAIO_ZINCATO: t`Acciaio zincato`,
-  POLIPROPILENE: t`Polipropilene`,
-  POLIETILENE: t`Polietilene`,
-  PLASTICA: t`Plastica`,
-  TECNOPOLIMERO: t`Tecnopolimero`,
+  ACCIAIO_ZINCATO: <Trans>Acciaio zincato</Trans>,
+  POLIPROPILENE: <Trans>Polipropilene</Trans>,
+  POLIETILENE: <Trans>Polietilene</Trans>,
+  PLASTICA: <Trans>Plastica</Trans>,
+  TECNOPOLIMERO: <Trans>Tecnopolimero</Trans>,
 }
 
 export const GIOSTRE_ATTRIBUTES = {
   name: undefined,
-  engine: t`Motore`,
-  diameter: t`Diametro`,
-  control_panel: t`Quadro di comando`,
-  irrigation: t`Irrigazione`,
-  doors: t`Porte`,
-  fence_type: t`Recinzione`,
-  cover: t`Copertura`,
+  engine: <Trans>Motore</Trans>,
+  diameter: <Trans>Diametro</Trans>,
+  control_panel: <Trans>Quadro di comando</Trans>,
+  irrigation: <Trans>Irrigazione</Trans>,
+  doors: <Trans>Porte</Trans>,
+  fence_type: <Trans>Recinzione</Trans>,
+  cover: <Trans>Copertura</Trans>,
   extra: (
     <Trans>
       <Typography>Accessori</Typography>
@@ -235,15 +235,22 @@ export const GIOSTRE_DOORS = (
   </Trans>
 )
 
-export const GIOSTRE_ENGINE_75 = t`Potenza motore 0.75 kw e cadenza regolabile fra 60 e 220 metri al minuto`
+export const GIOSTRE_ENGINE_75 = <Trans>Potenza motore 0.75 kw e cadenza regolabile fra 60 e 220 metri al minuto</Trans>
 
-export const GIOSTRE_ENGINE_37 = t`Potenza motore 0.37 kw e cadenza regolabile fra 60 e 220 metri al minuto`
+export const GIOSTRE_ENGINE_37 = <Trans>Potenza motore 0.37 kw e cadenza regolabile fra 60 e 220 metri al minuto</Trans>
 
-export const GIOSTRE_CONTROL_PANEL_TECNOEXERCIZE = t`Quadro di comando con programma manuale, periodico o automatico`
+export const GIOSTRE_CONTROL_PANEL_TECNOEXERCIZE = (
+  <Trans>Quadro di comando con programma manuale, periodico o automatico</Trans>
+)
 
-export const GIOSTRE_CONTROL_PANEL_IPPOWALKER = t`Quadro di comando con programma manuale, periodico`
+export const GIOSTRE_CONTROL_PANEL_IPPOWALKER = <Trans>Quadro di comando con programma manuale, periodico</Trans>
 
-export const IRRIGATION = t`Irrigazione del percorso controllabile dal quadro di comando. Aiuta a tenere la polvere sotto controllo e un terreno sempre perfetto`
+export const IRRIGATION = (
+  <Trans>
+    Irrigazione del percorso controllabile dal quadro di comando. Aiuta a tenere la polvere sotto controllo e un terreno
+    sempre perfetto
+  </Trans>
+)
 
 export const GIOSTRE_EXTRA_SMALL = (
   <Ul>
@@ -320,10 +327,28 @@ export const GIOSTRE_COPERTURA_NOTE = (
   </Typography>
 )
 
-export const GIOSTRE_COPERTURA_PVC = t`Copertura in PVC`
-export const GIOSTRA_TONDINO_CHIUSURA_A_TERRA_DESCRIZIONE = t`Sono la soluzione ideale per impedire alla sabbia di uscire dal percorso consentendo di ridurre il materiale disperso.`
-export const GIOSTRA_ALVEOLO_DESCRIZIONE = t`L'aveolo è la soluzione ottimale mantenere un fondo sempre perfetto in ogni condizione, permette di evitare buche o avvallamenti riducendo i costi di manutenzione.`
-export const GIOSTRA_RETE_ANTIVENTO_DESCRIZIONE = t`La rete antivento protegge l'interno della giostra da correnti d'aria inoltre aiuta il cavallo a rimanere concentrato sul percorso e lo rende più tranquillo.`
+export const GIOSTRE_COPERTURA_PVC = <Trans>Copertura in PVC</Trans>
+
+export const GIOSTRA_TONDINO_CHIUSURA_A_TERRA_DESCRIZIONE = (
+  <Trans>
+    Sono la soluzione ideale per impedire alla sabbia di uscire dal percorso consentendo di ridurre il materiale
+    disperso.
+  </Trans>
+)
+
+export const GIOSTRA_ALVEOLO_DESCRIZIONE = (
+  <Trans>
+    L'aveolo è la soluzione ottimale mantenere un fondo sempre perfetto in ogni condizione, permette di evitare buche o
+    avvallamenti riducendo i costi di manutenzione.
+  </Trans>
+)
+
+export const GIOSTRA_RETE_ANTIVENTO_DESCRIZIONE = (
+  <Trans>
+    La rete antivento protegge l'interno della giostra da correnti d'aria inoltre aiuta il cavallo a rimanere
+    concentrato sul percorso e lo rende più tranquillo.
+  </Trans>
+)
 
 export const GIOSTRA_DESCRIZIONE_RECINZIONE_TECONOFENCE = (
   <Trans>

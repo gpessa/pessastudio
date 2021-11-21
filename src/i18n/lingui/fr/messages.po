@@ -17,7 +17,7 @@ msgstr ""
 msgid ""
 msgstr ""
 
-#: src/constants/index.tsx:316
+#: src/constants/index.tsx:323
 msgid "* In presenza di nevicate che superino la portata consentita, sarà opportuno intervenire rimuovendo l’eccesso di neve e cospargendo di sale la copertura prima di introdurre i cavalli."
 msgstr ""
 
@@ -142,11 +142,11 @@ msgstr ""
 msgid "<0>Bianchi, rossi, blu o gialli, sono utilizzati nei maneggi sia come riempitivi sotto le barriere, sia per realizzare sequenze di piccoli salti.</0><1>Ottimi per indicare le traiettorie quando si predispongono esercizi per i principianti ma anche per preparare una successione di cavalletti quando si addestrano cavalli.</1><2>Sovrapponibili, costruiti con plastica resistente agli agenti atmosferici, nel caso di impatto accidentale garantiscono l'incolumità di cavalli e cavalieri.</2>"
 msgstr ""
 
-#: src/constants/index.tsx:296
+#: src/constants/index.tsx:303
 msgid "<0>Corridoio composto da recinzione TECNOFENCE</0><1>(corridoio interno 1,40 mt., esterno 1,60 mt.)</1>"
 msgstr ""
 
-#: src/constants/index.tsx:289
+#: src/constants/index.tsx:296
 msgid "<0>Corridoio {name} composto da pannelli laterali in compensato marino</0><1>(spessore {thickness} mm.)</1>"
 msgstr ""
 
@@ -162,11 +162,11 @@ msgstr ""
 msgid "<0>I nostri ostacoli sono progettati e costruiti per durare nel tempo non richiedono alcuna manutenzione e conservano, inalterata, la loro bellezza anche se lasciati nel campo per anni.</0><1>Se gli ostacoli per il professionista sono uno strumento di lavoro, per molti altri appassionati rappresentano la realizzazione di un sogno. Noi abbiamo deciso di rendere questi strumenti resistenti nel tempo per fare in modo che questo sogno duri.</1><2>Potrete scegliere le quantità e i colori nella nostra gamma di produzione e acquistare anche singoli pezzi di ricambio.</2>"
 msgstr ""
 
-#: src/constants/index.tsx:329
+#: src/constants/index.tsx:354
 msgid "<0>Il corridoio <1>TECNOFENCE</1> è una soluzione semplice ed economica che ti permetterà di avere una giostra completa, sicura e durevole ad un costo competitivo.</0><2>L'altezza della recinzione esterna è di 1,60 mt., a differenza del corridoio interno alto 1,40 mt.</2><3>L'innovativo materiale (PPO) che non richiede manutenzione ti consentirà di abbattere i costi di manutenzione che affliggono le classiche recinzioni in legno.</3><4>Uno dei vantaggi è inoltre quello di poter installare la giostra in piena autonomia.</4>"
 msgstr ""
 
-#: src/constants/index.tsx:352
+#: src/constants/index.tsx:377
 msgid "<0>Il corridoio <1>{name}</1> in compensato marino è realizzato con un multistrato <2>({thickness} mm. di spessore)</2> antigraffio, antiurto, resistente allo sporco e idrorepellente. L'obbiettivo di questa soluzione è quello di fornire un elevato grado di sicurezza forzando il cavallo a concentrarsi sul percorso durante l'allenamento.</0>"
 msgstr ""
 
@@ -178,7 +178,7 @@ msgstr ""
 msgid "<0>Ippowalker è una giostra di recente realizzazione, essa nasce dal sogno di poter fornire uno strumento di allenamento professionale anche a coloro che ne fanno un uso sporadico.</0><1>La giostra è disponibile in due diametri 12 mt. (4 cavalli) e 14.2 mt. (6 cavalli).</1><2>Costruita con la qualità e la robustezza che contraddistingue tutti i nostri prodotti essa rappresenta uno strumento semplice ed essenziale ma al contempo completo.</2><3>Malgrado Ippowalker sia una giostra più economica abbiamo mantenuto tutte le opzioni base per allenare il tuo cavallo.</3><4><5>Porte di separazione elettrificate</5> ottenute grazie a tubi di plastica elettroconduttiva.</4><6>Un <7>pannello di controllo</7> che ti permetterà di di scegliere tra un programma manuale e uno periodico.</6><8>Al contrario del modello <9>Tecnoexercize</9>, questo modello non dispone di irrigazione.</8>"
 msgstr ""
 
-#: src/constants/index.tsx:303
+#: src/constants/index.tsx:310
 msgid "<0>La <1>copertura in PVC</1> è composta da una struttura in acciaio zincato la quale sorregge un telo in tessuto di poliestere spalmato di colore verde o crema e in base alle esigenze del cliente anche in altre colorazioni.</0><2>Questa copertura è in grado di sorreggere un carico neve pari a 80 kg/mq * e una forza vento pari a 110 Km/h.</2>"
 msgstr ""
 
@@ -257,8 +257,8 @@ msgstr "Hauteur"
 msgid "Altro"
 msgstr ""
 
-#: src/constants/index.tsx:257
-#: src/constants/index.tsx:274
+#: src/constants/index.tsx:264
+#: src/constants/index.tsx:281
 #: src/pages/giostre/ippowalker/_accessori.tsx:35
 #: src/pages/giostre/tecnoexerciser/_accessori.tsx:38
 msgid "Alveolo sulla pesta"
@@ -344,8 +344,8 @@ msgstr ""
 msgid "Cavalletti Caprilli"
 msgstr ""
 
-#: src/constants/index.tsx:251
-#: src/constants/index.tsx:268
+#: src/constants/index.tsx:258
+#: src/constants/index.tsx:275
 #: src/pages/giostre/ippowalker/_accessori.tsx:17
 #: src/pages/giostre/tecnoexerciser/_accessori.tsx:20
 #: src/pages/tondini/index.tsx:72
@@ -410,7 +410,7 @@ msgstr "Coordonnées bancaires"
 msgid "Copertura"
 msgstr ""
 
-#: src/constants/index.tsx:323
+#: src/constants/index.tsx:330
 #: src/pages/giostre/ippowalker/_copertura.tsx:13
 #: src/pages/giostre/ippowalker/_copertura.tsx:17
 #: src/pages/giostre/tecnoexerciser/_copertura.tsx:13
@@ -710,7 +710,7 @@ msgstr "Ippowalker"
 msgid "Irrigazione"
 msgstr "Irrigation"
 
-#: src/constants/index.tsx:246
+#: src/constants/index.tsx:249
 msgid "Irrigazione del percorso controllabile dal quadro di comando. Aiuta a tenere la polvere sotto controllo e un terreno sempre perfetto"
 msgstr ""
 
@@ -742,7 +742,7 @@ msgid ""
 "lunghezza 2 mt."
 msgstr ""
 
-#: src/constants/index.tsx:325
+#: src/constants/index.tsx:340
 msgid "L'aveolo è la soluzione ottimale mantenere un fondo sempre perfetto in ogni condizione, permette di evitare buche o avvallamenti riducendo i costi di manutenzione."
 msgstr ""
 
@@ -779,7 +779,7 @@ msgstr "Clôtures avec une lisse est utilisé pour délimiter les champs de trav
 msgid "La rete antivento della porta è un’ulteriore protezione che offriamo per rendere ancora di più il tuo tondino sicuro in caso di forte vento e per garantire una maggiore concentrazione del tuo cavallo."
 msgstr ""
 
-#: src/constants/index.tsx:326
+#: src/constants/index.tsx:347
 msgid "La rete antivento protegge l'interno della giostra da correnti d'aria inoltre aiuta il cavallo a rimanere concentrato sul percorso e lo rende più tranquillo."
 msgstr ""
 
@@ -1021,11 +1021,11 @@ msgstr ""
 msgid "Quadro di comando"
 msgstr ""
 
-#: src/constants/index.tsx:244
+#: src/constants/index.tsx:246
 msgid "Quadro di comando con programma manuale, periodico"
 msgstr ""
 
-#: src/constants/index.tsx:242
+#: src/constants/index.tsx:243
 msgid "Quadro di comando con programma manuale, periodico o automatico"
 msgstr ""
 
@@ -1059,7 +1059,7 @@ msgstr "Clôtures avec trois lisse"
 msgid "Recinzione 4 filagne"
 msgstr "Clôtures avec quatre lisse"
 
-#: src/constants/index.tsx:280
+#: src/constants/index.tsx:287
 #: src/pages/giostre/ippowalker/_accessori.tsx:49
 #: src/pages/giostre/tecnoexerciser/_accessori.tsx:52
 #: src/pages/tondini/index.tsx:20
@@ -1174,7 +1174,7 @@ msgstr ""
 msgid "Socials"
 msgstr ""
 
-#: src/constants/index.tsx:324
+#: src/constants/index.tsx:333
 msgid "Sono la soluzione ideale per impedire alla sabbia di uscire dal percorso consentendo di ridurre il materiale disperso."
 msgstr ""
 
