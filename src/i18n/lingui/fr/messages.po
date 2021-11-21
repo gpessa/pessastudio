@@ -376,8 +376,8 @@ msgid "Avanti"
 msgstr ""
 
 #: src/pages/contatti/_address.tsx:72
-msgid "Banca"
-msgstr ""
+#~ msgid "Banca"
+#~ msgstr ""
 
 #: src/pages/ostacoli/_segnaletica.tsx:11
 msgid "Bandierine"
@@ -1061,6 +1061,10 @@ msgstr ""
 
 #: src/pages/giostre/index.tsx:77
 msgid "Perché una giostra Pessastudio"
+msgstr ""
+
+#: src/pages/index.tsx:59
+msgid "Perché?"
 msgstr ""
 
 #: src/pages/index.tsx:15

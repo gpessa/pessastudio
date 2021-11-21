@@ -68,8 +68,6 @@ const Address: React.FC<Props> = ({
           }
         />
       )}
-
-      {bank && <Data label={<Trans>Banca</Trans>} value={<Link underline="hover">{bank}</Link>} />}
     </div>
   )
 }
