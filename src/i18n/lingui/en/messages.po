@@ -26,9 +26,6 @@ msgstr ""
 msgid "+ IVA"
 msgstr "+ VAT"
 
-#~ msgid "/404.html:title"
-#~ msgstr "Page not found"
-
 #: src/constants/index.tsx:69
 msgid "/404/:title"
 msgstr "Page not found"
@@ -52,9 +49,6 @@ msgstr "Contacts us"
 #: src/constants/index.tsx:74
 msgid "/cookie-policy/:title"
 msgstr "Cookie policy"
-
-#~ msgid "/dev-404-page/:title"
-#~ msgstr "Page not found"
 
 #: src/constants/index.tsx:53
 msgid "/dressage/:description"
@@ -349,9 +343,6 @@ msgstr "Characteristic"
 #: src/pages/ostacoli/_cavalletti.tsx:37
 msgid "Cavalletti Caprilli"
 msgstr "Cavalletti Caprilli"
-
-#~ msgid "Cavalletti caprilli"
-#~ msgstr "Cavaletti caprilli"
 
 #: src/constants/index.tsx:251
 #: src/constants/index.tsx:268
@@ -745,9 +736,6 @@ msgstr "Assembly instructions"
 msgid "Kit Cavalletti Caprilli + barriera"
 msgstr ""
 
-#~ msgid "Kit cavalletti + barriera"
-#~ msgstr "Cavaletti + pole kit"
-
 #: src/pages/ostacoli/_cavalletti.tsx:23
 msgid ""
 "Kit comprensivo di 2 cavalletti e una barriera in PPO di colore bianco, diametro 95 mm.\n"
@@ -1118,9 +1106,6 @@ msgstr ""
 msgid "Scopri di piú"
 msgstr "Discover more"
 
-#~ msgid "Scopri il nostro tondino"
-#~ msgstr "Discover our  lunge pen"
-
 #: src/pages/tondini/index.tsx:199
 msgid "Scopri il nostro tondino Tecnohalle"
 msgstr ""
@@ -1237,9 +1222,6 @@ msgstr "You have already signed up"
 #: src/pages/cookie-policy.tsx:21
 msgid "Titolare del trattamento e dati di contatto"
 msgstr ""
-
-#~ msgid "Tondini"
-#~ msgstr "Lunge Pens"
 
 #: src/pages/tondini/index.tsx:124
 #: src/pages/tondini/index.tsx:132

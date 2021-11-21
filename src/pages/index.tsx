@@ -56,7 +56,7 @@ const Index: React.FC = () => {
 
       <Benefits
         benefits={BENEFITS}
-        subtitle={"Perché?"}
+        subtitle={t`Perché?`}
         title={t`Pessastudio, una scelta di qualità`}
         text={t`Scopri perché ogni anno centinaia di persone si affidano a Pessastudio per i loro articoli d'equitazione`}
       />

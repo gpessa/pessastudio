@@ -26,10 +26,6 @@ msgstr "* In presenza di nevicate che superino la portata consentita, sarà oppo
 msgid "+ IVA"
 msgstr "+ IVA"
 
-#: src/constants/index.tsx:68
-#~ msgid "/404.html:title"
-#~ msgstr "Pagina non trovata"
-
 #: src/constants/index.tsx:69
 msgid "/404/:title"
 msgstr "Pagina non trovata"
@@ -53,10 +49,6 @@ msgstr "Contatti"
 #: src/constants/index.tsx:74
 msgid "/cookie-policy/:title"
 msgstr "Cookie"
-
-#: src/constants/index.tsx:63
-#~ msgid "/dev-404-page/:title"
-#~ msgstr "Pagina non trovata"
 
 #: src/constants/index.tsx:53
 msgid "/dressage/:description"
@@ -106,30 +98,6 @@ msgstr "Ostacoli progettati e costruiti per durare nel tempo senza alcuna manute
 msgid "/ostacoli/:title"
 msgstr "Ostacoli"
 
-#: src/pages/giostre/ippowalker/index.tsx:21
-#~ msgid "/products/giostre/ippowalker/pdf/giostra-collegamento-elettrico.pdf"
-#~ msgstr "/products/giostre/ippowalker/pdf/giostra-collegamento-elettrico.pdf"
-
-#: src/pages/giostre/ippowalker/index.tsx:17
-#~ msgid "/products/giostre/ippowalker/pdf/manuale-quadro-ippowalker-it.pdf"
-#~ msgstr "/products/giostre/ippowalker/pdf/manuale-quadro-ippowalker-it.pdf"
-
-#: src/pages/giostre/tecnoexerciser/index.tsx:21
-#~ msgid "/products/giostre/pdf/giostra-collegamento-elettrico.pdf"
-#~ msgstr "/products/giostre/pdf/giostra-collegamento-elettrico.pdf"
-
-#: src/pages/giostre/tecnoexerciser/index.tsx:21
-#~ msgid "/products/giostre/tecnoexerciser/pdf/giostra-collegamento-elettrico.pdf"
-#~ msgstr "/products/giostre/tecnoexerciser/pdf/giostra-collegamento-elettrico.pdf"
-
-#: src/pages/giostre/tecnoexerciser/index.tsx:17
-#~ msgid "/products/giostre/tecnoexerciser/pdf/manuale-quadro-tecnoexerciser-it.pdf"
-#~ msgstr "/products/giostre/tecnoexerciser/pdf/manuale-quadro-tecnoexerciser-it.pdf"
-
-#: src/pages/giostre/tecnoexerciser/index.tsx:36
-#~ msgid "/products/giostre/tecnoexerciser/pdf/permessi-it.pdf"
-#~ msgstr "/products/giostre/tecnoexerciser/pdf/permessi-it.pdf"
-
 #: src/constants/index.tsx:26
 msgid "/recinti/:description"
 msgstr "Un recinto adatto a durare nel tempo anche in presenza delle più avverse condizioni meteorologiche"
@@ -158,10 +126,6 @@ msgstr "Come preparare il fondo"
 msgid "3.000 giostre installate"
 msgstr "3.000 giostre installate"
 
-#: src/pages/tondini/index.tsx:184
-#~ msgid "<0/> La struttura è stata progettata per garantire un carico neve fino a 120 kg/mq e la velocità del vento fino a 110 km/h."
-#~ msgstr "<0/> La struttura è stata progettata per garantire un carico neve fino a 120 kg/mq e la velocità del vento fino a 110 km/h."
-
 #: src/pages/recinti/come-preparare-il-fondo.tsx:8
 msgid "<0><1>Preparare la superficie spianandola a \"schiena d'asino\" con il centro più alto dei bordi (2%) per far si che la pioggia defluisca. Mantenere i bordi dell'area alla stessa altezza del terreno circostante e riportare materiale nel centro dell'area per alzarlo.</1><2>Stendere sull'area una \"rete di separazione\", ben tesa e trattenuta lungo i bordi in una canaletta scavata nel terreno impedendo così che la terra si mescoli alla sabbia.</2><3>Distendere uniformemente sopra la rete uno strato di 7/8 centimetri di sabbia ( diametro 1 mm.)</3><4>Distribuire sopra alla sabbia 3 kg di \"straccetti di geotessuto\" per mt quadro di superficie in modo da mantenere il fondo stabile e morbido. Distribuire successivamente dopo un paio di ingressi a cavallo altri 2 kg.</4><5>Tutti i giorni passare con una \"erpice livellatrice\" per eliminare le impronte lasciate dagli zoccoli.</5></0>"
 msgstr "<0><1>Preparare la superficie spianandola a \"schiena d'asino\" con il centro più alto dei bordi (2%) per far si che la pioggia defluisca. Mantenere i bordi dell'area alla stessa altezza del terreno circostante e riportare materiale nel centro dell'area per alzarlo.</1><2>Stendere sull'area una \"rete di separazione\", ben tesa e trattenuta lungo i bordi in una canaletta scavata nel terreno impedendo così che la terra si mescoli alla sabbia.</2><3>Distendere uniformemente sopra la rete uno strato di 7/8 centimetri di sabbia ( diametro 1 mm.)</3><4>Distribuire sopra alla sabbia 3 kg di \"straccetti di geotessuto\" per mt quadro di superficie in modo da mantenere il fondo stabile e morbido. Distribuire successivamente dopo un paio di ingressi a cavallo altri 2 kg.</4><5>Tutti i giorni passare con una \"erpice livellatrice\" per eliminare le impronte lasciate dagli zoccoli.</5></0>"
@@ -177,10 +141,6 @@ msgstr "<0>Ai sensi dell’art. 13, punto 2 del RE 679/2016, l'interessato puo' 
 #: src/pages/ostacoli/_cubi.tsx:46
 msgid "<0>Bianchi, rossi, blu o gialli, sono utilizzati nei maneggi sia come riempitivi sotto le barriere, sia per realizzare sequenze di piccoli salti.</0><1>Ottimi per indicare le traiettorie quando si predispongono esercizi per i principianti ma anche per preparare una successione di cavalletti quando si addestrano cavalli.</1><2>Sovrapponibili, costruiti con plastica resistente agli agenti atmosferici, nel caso di impatto accidentale garantiscono l'incolumità di cavalli e cavalieri.</2>"
 msgstr "<0>Bianchi, rossi, blu o gialli, sono utilizzati nei maneggi sia come riempitivi sotto le barriere, sia per realizzare sequenze di piccoli salti.</0><1>Ottimi per indicare le traiettorie quando si predispongono esercizi per i principianti ma anche per preparare una successione di cavalletti quando si addestrano cavalli.</1><2>Sovrapponibili, costruiti con plastica resistente agli agenti atmosferici, nel caso di impatto accidentale garantiscono l'incolumità di cavalli e cavalieri.</2>"
-
-#: src/pages/ostacoli/_cubi.tsx:45
-#~ msgid "<0>Bianchi, rossi, blu o gialli, sono utilizzati nei maneggi sia come riempitivi sotto le barriere, sia per realizzare sequenze di piccoli salti.</0><1>Ottimi per indicare le traiettorie quando si predispongono esercizi per i principianti, ma anche per preparare una successione di cavalletti quando si addestrano cavalli.</1><2>Sovrapponibili, costruiti con plastica resistente agli agenti atmosferici, nel caso di impatto accidentale garantiscono l'incolumità di cavalli e cavalieri.</2>"
-#~ msgstr "<0>Bianchi, rossi, blu o gialli, sono utilizzati nei maneggi sia come riempitivi sotto le barriere, sia per realizzare sequenze di piccoli salti.</0><1>Ottimi per indicare le traiettorie quando si predispongono esercizi per i principianti, ma anche per preparare una successione di cavalletti quando si addestrano cavalli.</1><2>Sovrapponibili, costruiti con plastica resistente agli agenti atmosferici, nel caso di impatto accidentale garantiscono l'incolumità di cavalli e cavalieri.</2>"
 
 #: src/constants/index.tsx:296
 msgid "<0>Corridoio composto da recinzione TECNOFENCE</0><1>(corridoio interno 1,40 mt., esterno 1,60 mt.)</1>"
@@ -209,14 +169,6 @@ msgstr "<0>Il corridoio <1>TECNOFENCE</1> è una soluzione semplice ed economica
 #: src/constants/index.tsx:352
 msgid "<0>Il corridoio <1>{name}</1> in compensato marino è realizzato con un multistrato <2>({thickness} mm. di spessore)</2> antigraffio, antiurto, resistente allo sporco e idrorepellente. L'obbiettivo di questa soluzione è quello di fornire un elevato grado di sicurezza forzando il cavallo a concentrarsi sul percorso durante l'allenamento.</0>"
 msgstr "<0>Il corridoio <1>{name}</1> in compensato marino è realizzato con un multistrato <2>({thickness} mm. di spessore)</2> antigraffio, antiurto, resistente allo sporco e idrorepellente. L'obbiettivo di questa soluzione è quello di fornire un elevato grado di sicurezza forzando il cavallo a concentrarsi sul percorso durante l'allenamento.</0>"
-
-#: src/pages/ostacoli/_fosso.tsx:22
-#~ msgid "<0>Il fosso ha il fondo in PVC di colore azzurro con un bordo saldato alto 6 cm.</0><1>Ottimo per insegnare ai vostri cavalli/puledri a saltarlo.</1>"
-#~ msgstr "<0>Il fosso ha il fondo in PVC di colore azzurro con un bordo saldato alto 6 cm.</0><1>Ottimo per insegnare ai vostri cavalli/puledri a saltarlo.</1>"
-
-#: src/pages/ostacoli/_cavalletti.tsx:35
-#~ msgid "<0>Il passaggio sui cavalletti, rinforza la schiena del cavallo, scioglie la muscolatura, lo induce a flettere le articolazioni.</0><1>Questo lavoro dovrà essere fatto in progressione, compatibilmente con le attitudini del cavallo.</1><2>Iniziare con passaggi successivi su barriere a terra, quindi su cavalletti di 20 centimetri, quindi aumentarne l'altezza fino a 30 centimetri.</2><3>Le distanze iniziali di 1,2 metri, vanno via via aumentate per arrivare a distanze fino a 1,7 metri.</3><4>Possono essere forniti completi della barriera in PPO di colore bianco, diametro 95 lunghezza 2 metri, oppure singolarmente, avendo più fori per inserimento di barriere diametro 90, 95, 100, 105 millimetri.</4><5>Lavati con idropulitrice riprendono i colori originari anche dopo 20 anni.</5>"
-#~ msgstr "<0>Il passaggio sui cavalletti, rinforza la schiena del cavallo, scioglie la muscolatura, lo induce a flettere le articolazioni.</0><1>Questo lavoro dovrà essere fatto in progressione, compatibilmente con le attitudini del cavallo.</1><2>Iniziare con passaggi successivi su barriere a terra, quindi su cavalletti di 20 centimetri, quindi aumentarne l'altezza fino a 30 centimetri.</2><3>Le distanze iniziali di 1,2 metri, vanno via via aumentate per arrivare a distanze fino a 1,7 metri.</3><4>Possono essere forniti completi della barriera in PPO di colore bianco, diametro 95 lunghezza 2 metri, oppure singolarmente, avendo più fori per inserimento di barriere diametro 90, 95, 100, 105 millimetri.</4><5>Lavati con idropulitrice riprendono i colori originari anche dopo 20 anni.</5>"
 
 #: src/pages/dressage/index.tsx:106
 msgid "<0>Il rettangolo della linea <1>training</1> è rivolto a quei maneggi, in cui lo spazio a disposizione è limitato e il rettangolo viene installato provvisoriamente e velocemente.</0><2>Facile da montare, è costituito da elementi modulari di 2 mt. in materiale plastico, non richiede alcuna manutenzione e occupa poco spazio quando non è utilizzato.</2>"
@@ -262,25 +214,13 @@ msgstr "<0>Sul sito sono presenti i cookie tecnici di terze parti di google anal
 msgid "<0>Tecnoexerciser è il modello di giostra attualmente più richiesto.</0><1>Oggi, grazie alle già note caratteristiche tecniche e alla grande affidabilità, abbiamo aggiunto anche alcune specifiche funzioni che fanno, di questo modello, la macchina <2>leader</2> del settore.</1><3>È possibile infatti:</3><4><5>Scegliere la forza che la porta mobile esercita sugli animali per invitarli ad avanzare</5><6>Mantenere un controllo costante sull'elettrificazione delle porte mobili</6><7>Beneficiare dell'innovativo sistema \"training program\" che vi consentirà di allenare i vostri cavalli fino ad ottenere performance atletiche.</7><8>Scegliere il programma di irrigazione pesta mentre la giostra sta girando</8></4><9>La struttura è fornita, a seconda delle esigenze, o con punte per l'ancoraggio al suolo o con tasselli nel caso in cui si desideri ancorarla ad un fondo di calcestruzzo.</9>"
 msgstr "<0>Tecnoexerciser è il modello di giostra attualmente più richiesto.</0><1>Oggi, grazie alle già note caratteristiche tecniche e alla grande affidabilità, abbiamo aggiunto anche alcune specifiche funzioni che fanno, di questo modello, la macchina <2>leader</2> del settore.</1><3>È possibile infatti:</3><4><5>Scegliere la forza che la porta mobile esercita sugli animali per invitarli ad avanzare</5><6>Mantenere un controllo costante sull'elettrificazione delle porte mobili</6><7>Beneficiare dell'innovativo sistema \"training program\" che vi consentirà di allenare i vostri cavalli fino ad ottenere performance atletiche.</7><8>Scegliere il programma di irrigazione pesta mentre la giostra sta girando</8></4><9>La struttura è fornita, a seconda delle esigenze, o con punte per l'ancoraggio al suolo o con tasselli nel caso in cui si desideri ancorarla ad un fondo di calcestruzzo.</9>"
 
-#: src/pages/dressage/index.tsx:11
-#~ msgid "<0>Un set per creare un circuito dressage standard da 20x40 mt.</0><1>Il set contiene:</1><2><3>60 moduli</3><4>12 lettere</4></2>`"
-#~ msgstr "<0>Un set per creare un circuito dressage standard da 20x40 mt.</0><1>Il set contiene:</1><2><3>60 moduli</3><4>12 lettere</4></2>`"
-
 #: src/pages/dressage/index.tsx:10
 msgid "<0>Un set per creare un circuito dressage standard da 20x40 mt.</0><1>Il set contiene:</1><2><3>60 moduli</3><4>8 lettere</4></2>"
 msgstr "<0>Un set per creare un circuito dressage standard da 20x40 mt.</0><1>Il set contiene:</1><2><3>60 moduli</3><4>8 lettere</4></2>"
 
-#: src/pages/dressage/index.tsx:11
-#~ msgid "<0>Un set per creare un circuito dressage standard da 20x40 mt.</0><1>Il set contiene:</1><2><3>60 moduli</3><4>8 lettere</4></2>`"
-#~ msgstr "<0>Un set per creare un circuito dressage standard da 20x40 mt.</0><1>Il set contiene:</1><2><3>60 moduli</3><4>8 lettere</4></2>`"
-
 #: src/pages/dressage/index.tsx:21
 msgid "<0>Un set per creare un circuito dressage standard da 20x60 mt.</0><1>Il set contiene:</1><2><3>80 moduli</3><4>12 lettere</4></2>"
 msgstr "<0>Un set per creare un circuito dressage standard da 20x60 mt.</0><1>Il set contiene:</1><2><3>80 moduli</3><4>12 lettere</4></2>"
-
-#: src/pages/dressage/index.tsx:23
-#~ msgid "<0>Un set per creare un circuito dressage standard da 20x60 mt.</0><1>Il set contiene:</1><2><3>80 moduli</3><4>12 lettere</4></2>`"
-#~ msgstr "<0>Un set per creare un circuito dressage standard da 20x60 mt.</0><1>Il set contiene:</1><2><3>80 moduli</3><4>12 lettere</4></2>`"
 
 #: src/constants/index.tsx:218
 msgid "<0>È possibile ordinare una giostra nei diametri:</0><1><2>12,0 mt. <3>(4 cavalli)</3></2><4>14,2 mt. <5>(6 cavalli)</5></4></1>"
@@ -328,14 +268,6 @@ msgstr "Alveolo sulla pesta"
 msgid "Ampia gamma"
 msgstr "Ampia gamma"
 
-#: src/pages/tondini/index.tsx:168
-#~ msgid "Ampio ingresso di 2,05 mt. dotato di catenaccio verticale che garantisce l’assoluta sicurezza"
-#~ msgstr "Ampio ingresso di 2,05 mt. dotato di catenaccio verticale che garantisce l’assoluta sicurezza"
-
-#: src/pages/giostre/ippowalker/_corridoi.tsx:30
-#~ msgid "Anche in questo semplice modello di giostra potrai decidere di dotare la giostra di un corridoio scegliendo tra il piú economico corridoio costituito dalla recinzione <0>TECNOFENCE</0> o il corridoio <1>EASY</1> in pannelli in compensato marino."
-#~ msgstr "Anche in questo semplice modello di giostra potrai decidere di dotare la giostra di un corridoio scegliendo tra il piú economico corridoio costituito dalla recinzione <0>TECNOFENCE</0> o il corridoio <1>EASY</1> in pannelli in compensato marino."
-
 #: src/pages/giostre/ippowalker/_corridoi.tsx:31
 msgid "Anche in questo semplice modello potrai decidere di dotare la tua giostra di un corridoio scegliendo tra il piú economico corridoio costituito dalla recinzione <0>TECNOFENCE</0> o il corridoio <1>EASY</1> in pannelli di compensato marino."
 msgstr "Anche in questo semplice modello potrai decidere di dotare la tua giostra di un corridoio scegliendo tra il piú economico corridoio costituito dalla recinzione <0>TECNOFENCE</0> o il corridoio <1>EASY</1> in pannelli di compensato marino."
@@ -375,10 +307,6 @@ msgstr "Assicuratevi di bloccare la giostra alla giusta altezza e piana"
 msgid "Avanti"
 msgstr "Avanti"
 
-#: src/pages/contatti/_address.tsx:72
-#~ msgid "Banca"
-#~ msgstr "Banca"
-
 #: src/pages/ostacoli/_segnaletica.tsx:11
 msgid "Bandierine"
 msgstr "Bandierine"
@@ -415,11 +343,6 @@ msgstr "Caratteristiche"
 #: src/pages/ostacoli/_cavalletti.tsx:37
 msgid "Cavalletti Caprilli"
 msgstr "Cavalletti Caprilli"
-
-#: src/pages/ostacoli/_cavalletti.tsx:10
-#: src/pages/ostacoli/_cavalletti.tsx:33
-#~ msgid "Cavalletti caprilli"
-#~ msgstr "Cavalletti caprilli"
 
 #: src/constants/index.tsx:251
 #: src/constants/index.tsx:268
@@ -468,10 +391,6 @@ msgstr "Contatto commerciale Belgio"
 msgid "Contatto commerciale Francia"
 msgstr "Contatto commerciale Francia"
 
-#: src/pages/contatti/index.tsx:105
-#~ msgid "Contatto commerciale Italia"
-#~ msgstr "Contatto commerciale Italia"
-
 #: src/pages/cookie-policy.tsx:11
 msgid "Cookie policy"
 msgstr "Cookie policy"
@@ -519,10 +438,6 @@ msgstr "Corridoio in compensato marino"
 msgid "Cosa dicono di noi"
 msgstr "Cosa dicono di noi"
 
-#: src/pages/tondini/index.tsx:144
-#~ msgid "Costituito da pannelli laterali in compensato marino, fissati a colonne in acciaio zincato. Copertura in telo spalmato in PVC disponibile in bianco, verde o crema"
-#~ msgstr "Costituito da pannelli laterali in compensato marino, fissati a colonne in acciaio zincato. Copertura in telo spalmato in PVC disponibile in bianco, verde o crema"
-
 #: src/pages/ostacoli/_barriere.tsx:9
 msgid "Costruisci la tua barriera personalizzata scegliendo tra i colori a disposizione"
 msgstr "Costruisci la tua barriera personalizzata scegliendo tra i colori a disposizione"
@@ -563,10 +478,6 @@ msgstr "Diametro"
 #: src/pages/recinti/_accessori.tsx:18
 msgid "Diamo la possibilità di montare nella vostra recinzione un piede mobile che vi consentirà di posizionarla e spostarla a seconda delle vostre esigenze"
 msgstr "Diamo la possibilità di montare nella vostra recinzione un piede mobile che vi consentirà di posizionarla e spostarla a seconda delle vostre esigenze"
-
-#: src/pages/recinti/_accessori.tsx:16
-#~ msgid "Diamo la possibilità di montare nella vostra recinzione un piede mobile che vi permetterà di posizionarla e spostarla dove e quando volete"
-#~ msgstr "Diamo la possibilità di montare nella vostra recinzione un piede mobile che vi permetterà di posizionarla e spostarla dove e quando volete"
 
 #: src/components/Testimonials/index.tsx:60
 msgid "Dicono di noi"
@@ -710,18 +621,10 @@ msgstr "Ho ricevuto questa mattina il materiale. I miei complimenti per la quali
 msgid "I candelieri sono costruiti con un montante di alluminio verniciato di colore bianco, muniti di 4 piedi, rivestiti con puntali di plastica che garantiscono, in caso di ribaltamento l’incolumità vostra e dei vostri cavalli."
 msgstr "I candelieri sono costruiti con un montante di alluminio verniciato di colore bianco, muniti di 4 piedi, rivestiti con puntali di plastica che garantiscono, in caso di ribaltamento l’incolumità vostra e dei vostri cavalli."
 
-#: src/pages/ostacoli/_candelieri-e-lame-forate.tsx:12
-#~ msgid "I candelieri sono costruiti con un montante di alluminio verniciato di colore bianco, muniti di 4 piedi, rivestiti con puntali di plastica che garantiscono, in caso di ribaltamento, l’incolumità vostra e dei vostri cavalli."
-#~ msgstr "I candelieri sono costruiti con un montante di alluminio verniciato di colore bianco, muniti di 4 piedi, rivestiti con puntali di plastica che garantiscono, in caso di ribaltamento, l’incolumità vostra e dei vostri cavalli."
-
 #: src/pages/giostre/ippowalker/_corridoi.tsx:28
 #: src/pages/giostre/tecnoexerciser/_corridoi.tsx:27
 msgid "I corridoi"
 msgstr "I corridoi"
-
-#: src/pages/index.tsx:19
-#~ msgid "I nostri prodotti sono MADE IN ITALY, costruiti da Pessastudio e personalizzabili (in dimensioni o colori)"
-#~ msgstr "I nostri prodotti sono MADE IN ITALY, costruiti da Pessastudio e personalizzabili (in dimensioni o colori)"
 
 #: src/pages/index.tsx:36
 msgid "I nostri prodotti sono pensati per resistere nel tempo, anche se soggetti a difficili condizioni climatiche"
@@ -755,17 +658,9 @@ msgstr "Il cucchiaio dotato del nostro sistema brevettato di aggancio"
 msgid "Il cucchiaio standard utilizzato al livello internazionale"
 msgstr "Il cucchiaio standard utilizzato al livello internazionale"
 
-#: src/pages/tondini/index.tsx:182
-#~ msgid "Il tondino coperto è adatto a svolgere molteplici attività, per esempio è la migliore soluzione per addestrare puledri in libertà o lavorare cavalli alla corda, aiuta a facilitare il controllo dei vostri animali durante le lezioni ai principianti, nelle riprese dei pony ed è indispensabile per il longeur durante le riprese di volteggi."
-#~ msgstr "Il tondino coperto è adatto a svolgere molteplici attività, per esempio è la migliore soluzione per addestrare puledri in libertà o lavorare cavalli alla corda, aiuta a facilitare il controllo dei vostri animali durante le lezioni ai principianti, nelle riprese dei pony ed è indispensabile per il longeur durante le riprese di volteggi."
-
 #: src/pages/tondini/index.tsx:201
 msgid "Il tondino coperto è adatto a svolgere molteplici attività, rappresenta la migliore soluzione per addestrare puledri in libertà o lavorare cavalli alla corda. Inoltre facilita il controllo del cavallo durante le lezioni ai principianti ed è indispensabile per il longeur durante le riprese di volteggi."
 msgstr "Il tondino coperto è adatto a svolgere molteplici attività, rappresenta la migliore soluzione per addestrare puledri in libertà o lavorare cavalli alla corda. Inoltre facilita il controllo del cavallo durante le lezioni ai principianti ed è indispensabile per il longeur durante le riprese di volteggi."
-
-#: src/pages/tondini/index.tsx:189
-#~ msgid "Il tondino coperto è adatto a svolgere molteplici attività. Rappresenta la migliore soluzione per addestrare puledri in libertà o lavorare cavalli alla corda e aiuta a facilitare il controllo dei vostri animali durante le lezioni ai principianti."
-#~ msgstr "Il tondino coperto è adatto a svolgere molteplici attività. Rappresenta la migliore soluzione per addestrare puledri in libertà o lavorare cavalli alla corda e aiuta a facilitare il controllo dei vostri animali durante le lezioni ai principianti."
 
 #: src/pages/tondini/index.tsx:41
 msgid "Il tondino può essere dotato rosone posizionato al centro ti permetterà di irrigare il tuo tondino."
@@ -841,10 +736,6 @@ msgstr "Istruzioni di montaggio"
 msgid "Kit Cavalletti Caprilli + barriera"
 msgstr "Kit Cavalletti Caprilli + barriera"
 
-#: src/pages/ostacoli/_cavalletti.tsx:20
-#~ msgid "Kit cavalletti + barriera"
-#~ msgstr "Kit cavalletti + barriera"
-
 #: src/pages/ostacoli/_cavalletti.tsx:23
 msgid ""
 "Kit comprensivo di 2 cavalletti e una barriera in PPO di colore bianco, diametro 95 mm.\n"
@@ -856,10 +747,6 @@ msgstr ""
 #: src/constants/index.tsx:325
 msgid "L'aveolo è la soluzione ottimale mantenere un fondo sempre perfetto in ogni condizione, permette di evitare buche o avvallamenti riducendo i costi di manutenzione."
 msgstr "L'aveolo è la soluzione ottimale mantenere un fondo sempre perfetto in ogni condizione, permette di evitare buche o avvallamenti riducendo i costi di manutenzione."
-
-#: src/pages/index.tsx:12
-#~ msgid "L'innovazione tecnologica e la qualità sono le caratteristiche chiave dei nostri prodotti"
-#~ msgstr "L'innovazione tecnologica e la qualità sono le caratteristiche chiave dei nostri prodotti"
 
 #: src/pages/giostre/ippowalker/_copertura.tsx:25
 #: src/pages/giostre/tecnoexerciser/_copertura.tsx:33
@@ -886,17 +773,9 @@ msgstr "La recinzione a due filagne genericamente viene utilizzata per delimitar
 msgid "La recinzione a tre filagne viene utilizzata per delimitare paddok per animali che rimangono per molte ore al giorno incustoditi oppure per delimitare confini di proprietà o aree. Per garantirne una maggiore sicurezza è possibile installare un impianto d'elettrificazione sulle filagne"
 msgstr "La recinzione a tre filagne viene utilizzata per delimitare paddok per animali che rimangono per molte ore al giorno incustoditi oppure per delimitare confini di proprietà o aree. Per garantirne una maggiore sicurezza è possibile installare un impianto d'elettrificazione sulle filagne"
 
-#: src/pages/recinti/_gamma.tsx:44
-#~ msgid "La recinzione a tre filagne viene utilizzata per delimitare paddok per animali che rimangono per molte ore al giorno incustoditi, meglio se con impianto d'elettrificazione sulle filagne, oppure per confini di proprietà o aree"
-#~ msgstr "La recinzione a tre filagne viene utilizzata per delimitare paddok per animali che rimangono per molte ore al giorno incustoditi, meglio se con impianto d'elettrificazione sulle filagne, oppure per confini di proprietà o aree"
-
 #: src/pages/recinti/_gamma.tsx:24
 msgid "La recinzione ad una filagna viene utilizzata per delimitare campi da lavoro o gara poco adoperati e non è adatta per l'addestramento. Potete utilizzarla anche per delimitare un'area del vostro giardino di casa"
 msgstr "La recinzione ad una filagna viene utilizzata per delimitare campi da lavoro o gara poco adoperati e non è adatta per l'addestramento. Potete utilizzarla anche per delimitare un'area del vostro giardino di casa"
-
-#: src/pages/tondini/index.tsx:50
-#~ msgid "La rete antivento della porta è un’ulteriore protezione che offriamo per rendere ancora di più il tuo tondino sicuro in caso di forte vendo e per garantire una maggiore concentrazione del tuo cavallo."
-#~ msgstr "La rete antivento della porta è un’ulteriore protezione che offriamo per rendere ancora di più il tuo tondino sicuro in caso di forte vendo e per garantire una maggiore concentrazione del tuo cavallo."
 
 #: src/pages/tondini/index.tsx:55
 msgid "La rete antivento della porta è un’ulteriore protezione che offriamo per rendere ancora di più il tuo tondino sicuro in caso di forte vento e per garantire una maggiore concentrazione del tuo cavallo."
@@ -909,10 +788,6 @@ msgstr "La rete antivento protegge l'interno della giostra da correnti d'aria in
 #: src/pages/tondini/index.tsx:22
 msgid "La rete antivento protegge l'interno della tondino da correnti d'aria consentendo il cavallo a rimanere concentrato durante l'allenamento."
 msgstr "La rete antivento protegge l'interno della tondino da correnti d'aria consentendo il cavallo a rimanere concentrato durante l'allenamento."
-
-#: src/pages/tondini/index.tsx:21
-#~ msgid "La rete antivento protegge l'interno della tondino da correnti d'aria inoltre aiuta il cavallo a rimanere concentrato mentre lo lavorate al suo interno."
-#~ msgstr "La rete antivento protegge l'interno della tondino da correnti d'aria inoltre aiuta il cavallo a rimanere concentrato mentre lo lavorate al suo interno."
 
 #: src/pages/tondini/index.tsx:184
 msgid "La struttura è stata progettata per garantire un carico neve fino a 120 kg/mq e la velocità del vento fino a 110 km/h."
@@ -937,10 +812,6 @@ msgstr "Larghezza"
 #: src/pages/giostre/index.tsx:39
 msgid "Le nostre giostre sono considerate strutture precarie. Non avrete bisogno di nessuna concessione edilizia"
 msgstr "Le nostre giostre sono considerate strutture precarie. Non avrete bisogno di nessuna concessione edilizia"
-
-#: src/pages/recinti/_gamma.tsx:54
-#~ msgid "Le recinzione a quattro filagne utilizzate per delimitare paddock per stalloni, realizzare tondini per la doma e l'addestramento o per formare ovali per il salto in libertà"
-#~ msgstr "Le recinzione a quattro filagne utilizzate per delimitare paddock per stalloni, realizzare tondini per la doma e l'addestramento o per formare ovali per il salto in libertà"
 
 #: src/pages/recinti/_gamma.tsx:58
 msgid "Le recinzioni a quattro filagne sono utilizzate per delimitare paddock per stalloni, realizzare tondini per la doma e l'addestramento o per formare ovali per il salto in libertà"
@@ -1081,17 +952,9 @@ msgstr "Peso"
 msgid "Pessastudio fornisce due soluzioni per trasformare il vostro terreno in un'arena da dressage: la gamma <0>training</0> e quella <1>olimpic</1>"
 msgstr "Pessastudio fornisce due soluzioni per trasformare il vostro terreno in un'arena da dressage: la gamma <0>training</0> e quella <1>olimpic</1>"
 
-#: src/pages/index.tsx:54
-#~ msgid "Pessastudio nasce 28 anni fa dalla famiglia Pessa, gente di cavalli da generazioni, oggi Luciano Pessa il fondatore si avvale della forza commerciale della figlia"
-#~ msgstr "Pessastudio nasce 28 anni fa dalla famiglia Pessa, gente di cavalli da generazioni, oggi Luciano Pessa il fondatore si avvale della forza commerciale della figlia"
-
 #: src/pages/index.tsx:45
 msgid "Pessastudio nasce 28 fa dall'ingegno e dalla passione per i cavalli del fondatore Luciano Pessa. Oggi, la figlia Anna, continua a portare avanti lo stesso sogno"
 msgstr "Pessastudio nasce 28 fa dall'ingegno e dalla passione per i cavalli del fondatore Luciano Pessa. Oggi, la figlia Anna, continua a portare avanti lo stesso sogno"
-
-#: src/pages/index.tsx:54
-#~ msgid "Pessastudio nasce 28 fa dalla passione per i cavalli e dall'ingegno del fondatore Luciano Pessa. Oggi, la figlia Anna, continua a portare avanti lo stesso sogno"
-#~ msgstr "Pessastudio nasce 28 fa dalla passione per i cavalli e dall'ingegno del fondatore Luciano Pessa. Oggi, la figlia Anna, continua a portare avanti lo stesso sogno"
 
 #: src/pages/index.tsx:60
 msgid "Pessastudio, una scelta di qualità"
@@ -1245,10 +1108,6 @@ msgstr "Scopo di questa Politica sulla privacy è di informarvi in merito ai dat
 msgid "Scopri di piú"
 msgstr "Scopri di piú"
 
-#: src/pages/tondini/index.tsx:180
-#~ msgid "Scopri il nostro tondino"
-#~ msgstr "Scopri il nostro tondino"
-
 #: src/pages/tondini/index.tsx:199
 msgid "Scopri il nostro tondino Tecnohalle"
 msgstr "Scopri il nostro tondino Tecnohalle"
@@ -1366,10 +1225,6 @@ msgstr "Ti sei già iscritto"
 msgid "Titolare del trattamento e dati di contatto"
 msgstr "Titolare del trattamento e dati di contatto"
 
-#: src/pages/tondini/index.tsx:175
-#~ msgid "Tondini"
-#~ msgstr "Tondini"
-
 #: src/pages/tondini/index.tsx:124
 #: src/pages/tondini/index.tsx:132
 #: src/pages/tondini/index.tsx:194
@@ -1379,10 +1234,6 @@ msgstr "Tondino"
 #: src/pages/tondini/index.tsx:104
 msgid "Tondino coperto"
 msgstr "Tondino coperto"
-
-#: src/pages/tondini/index.tsx:92
-#~ msgid "Tondino coperto {0} ee {1} mt."
-#~ msgstr "Tondino coperto {0} ee {1} mt."
 
 #: src/pages/tondini/index.tsx:88
 #: src/pages/tondini/index.tsx:92
@@ -1409,10 +1260,6 @@ msgstr "Trattamento e Diffusione dei dati"
 #: src/pages/giostre/tecnoexerciser/istruzioni-montaggio.tsx:9
 msgid "Trovate e segnate il centro di ciò che sarà la vostra giostra"
 msgstr "Trovate e segnate il centro di ciò che sarà la vostra giostra"
-
-#: src/pages/tondini/index.tsx:39
-#~ msgid "Un rosone posizionato nel centro ti permetterà di irrigare il tuo tondino."
-#~ msgstr "Un rosone posizionato nel centro ti permetterà di irrigare il tuo tondino."
 
 #: src/pages/index.tsx:43
 msgid "Una lunga storia"
@@ -1468,10 +1315,6 @@ msgstr "È possibile acquistare la giostra sprovvista di copertura ma se il vost
 #: src/pages/giostre/index.tsx:32
 msgid "È possibile acquistare le nostre giostre in diverse versioni adatte ad ogni budget ed esigenza"
 msgstr "È possibile acquistare le nostre giostre in diverse versioni adatte ad ogni budget ed esigenza"
-
-#: src/pages/giostre/index.tsx:38
-#~ msgid "È possibile acquistare le nostre giostre in diverse versioni adatte al tuo budget e alle tue esigenze"
-#~ msgstr "È possibile acquistare le nostre giostre in diverse versioni adatte al tuo budget e alle tue esigenze"
 
 #: src/pages/cookie-policy.tsx:66
 msgid "È sempre possibile richiedere dettagli sui vostri Dati Personali ed esercitare gli altri diritti previsti dall'art. 7 del Codice Privacy e, pertanto, chiedere in ogni momento l'origine dei dati, la correzione, l'aggiornamento o l'integrazione dei dati inesatti o incompleti."
