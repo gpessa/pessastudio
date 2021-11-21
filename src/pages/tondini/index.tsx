@@ -182,8 +182,8 @@ const Tondini: React.FC = () => {
       title: t`Sicuro`,
       description: (
         <Trans>
-          <br /> La struttura è stata progettata per garantire un carico neve fino a 120 kg/mq e la velocità del vento
-          fino a 110 km/h.
+          La struttura è stata progettata per garantire un carico neve fino a 120 kg/mq e la velocità del vento fino a
+          110 km/h.
         </Trans>
       ),
     },
