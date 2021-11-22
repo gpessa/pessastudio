@@ -1,11 +1,11 @@
 import { t, Trans } from "@lingui/macro"
 import { AccessibilityNew, Apps, DomainDisabled, RemoveRedEyeOutlined, VideogameAsset } from "@mui/icons-material"
 import { Box, Button, Link, styled, Typography } from "@mui/material"
-import { LocalizedLink } from "gatsby-theme-i18n"
-import React from "react"
 import { Benefits, Columns, Gallery, Hero, Section, TH, Video } from "components"
 import { Picture } from "components/ModalGallery"
-import { PAGES } from "utils/constants"
+import { LocalizedLink } from "gatsby-theme-i18n"
+import React from "react"
+import { PAGES } from "utils/pages"
 
 const GammaSectionStyled = styled(Section)({
   textAlign: "center",
