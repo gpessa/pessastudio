@@ -53,8 +53,8 @@ export const ITALIA = {
 
 const AvatarStyled = styled(Avatar)(({ theme }) => ({
   marginBottom: theme.spacing(2),
-  width: 150,
   height: 150,
+  width: 150,
 }))
 
 const RightColumnStyled = styled("div")(({ theme }) => ({

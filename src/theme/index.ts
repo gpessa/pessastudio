@@ -23,7 +23,6 @@ export const SECTION_SPACING = (breakingPoint: "xs" | "md") => {
     })
 
     const value = CONFIGURATION.get(breakingPoint)[spacing]
-
     return theme.spacing(value)
   }
 }
@@ -59,6 +58,12 @@ declare module "@mui/styles/defaultTheme" {
 declare module "@mui/styles/defaultTheme" {
   // eslint-disable-next-line @typescript-eslint/no-empty-interface
   interface DefaultTheme extends Theme { }
+}
+
+declare module '@mui/material/Button' {
+  interface ButtonPropsColorOverrides {
+    warm2: true;
+  }
 }
 
 const themePalette = createTheme({

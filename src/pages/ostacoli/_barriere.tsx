@@ -21,7 +21,7 @@ const PRODUCT = {
 }
 
 const Barriere = () => (
-  <div>
+  <>
     <Title
       sx={{ mb: PRODUCT_GUTTER }}
       title={t`Barriere`}
@@ -46,7 +46,7 @@ const Barriere = () => (
       }
     />
     <Product {...PRODUCT} />
-  </div>
+  </>
 )
 
 export default Barriere

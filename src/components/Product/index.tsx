@@ -1,12 +1,11 @@
-import { Data, ModalGallery, TH } from "src/components"
-import { Colors } from "src/constants"
 import { i18n } from "@lingui/core"
 import { t } from "@lingui/macro"
-import { ButtonBase, Grid, GridSize, Typography } from "@mui/material"
-import { styled } from "@mui/material"
-import { BREAKPOINT, PRODUCT_GUTTER } from "src/theme"
+import { ButtonBase, Grid, GridSize, styled, Typography } from "@mui/material"
 import { LocalizedLink } from "gatsby-theme-i18n"
 import React, { ReactNode } from "react"
+import { Data, ModalGallery, TH } from "src/components"
+import { Colors } from "src/constants"
+import { BREAKPOINT, PRODUCT_GUTTER } from "src/theme"
 import { Picture } from "../ModalGallery"
 import ColorsList from "./ColorsList"
 import Price, { PriceProp } from "./Price"
@@ -40,7 +39,7 @@ const DataStyled = styled(Grid)(({ theme }) => ({
 
 type Attributes = {
   colors?: Colors[]
-  materials?: string[]
+  materials?: JSX.Element[]
   depth?: number
   diameter?: number
   height?: number

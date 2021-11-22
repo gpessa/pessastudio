@@ -18,7 +18,7 @@ const TecnoexerciserAccessori = () => {
     accessories: [
       {
         name: t`Chiusura a terra`,
-        description: <Trans id={GIOSTRA_TONDINO_CHIUSURA_A_TERRA_DESCRIZIONE} />,
+        description: GIOSTRA_TONDINO_CHIUSURA_A_TERRA_DESCRIZIONE,
         images: [
           {
             src: require("src/assets/products/giostre/tecnoexerciser/accessori/chiusura-01.jpg").default,
@@ -36,7 +36,7 @@ const TecnoexerciserAccessori = () => {
       },
       {
         name: t`Alveolo sulla pesta`,
-        description: <Trans id={GIOSTRA_ALVEOLO_DESCRIZIONE} />,
+        description: GIOSTRA_ALVEOLO_DESCRIZIONE,
         images: [
           {
             src: require("src/assets/products/giostre/accessories/alveolo-02.jpg").default,
@@ -50,7 +50,7 @@ const TecnoexerciserAccessori = () => {
       },
       {
         name: t`Rete antivento`,
-        description: <Trans id={GIOSTRA_RETE_ANTIVENTO_DESCRIZIONE} />,
+        description: GIOSTRA_RETE_ANTIVENTO_DESCRIZIONE,
         images: [
           {
             md: 3,

@@ -11,13 +11,6 @@ const GammaSectionStyled = styled(Section)({
   textAlign: "center",
 })
 
-const GallerySectionStyled = styled(Section)(({ theme }) => ({
-  "backgroundColor": theme.palette.primary.main,
-  "& figcaption": {
-    color: theme.palette.common.white,
-  },
-}))
-
 const Giostre: React.FC = () => {
   const BENEFITS = [
     {
@@ -143,9 +136,9 @@ const Giostre: React.FC = () => {
 
       <Video src={"https://www.youtube.com/embed/1C7R5u270QE"} title={t`Video giostra in movimento`} />
 
-      <GallerySectionStyled>
+      <Section color="primary">
         <Gallery images={IMAGES} md={3} />
-      </GallerySectionStyled>
+      </Section>
     </>
   )
 }

@@ -715,7 +715,7 @@ msgstr "Assembly instructions"
 
 #: src/pages/ostacoli/_cavalletti.tsx:22
 msgid "Kit Cavalletti Caprilli + barriera"
-msgstr ""
+msgstr "Kit Cavalletti Caprilli + pole"
 
 #: src/pages/ostacoli/_cavalletti.tsx:23
 msgid ""

@@ -67,7 +67,7 @@ const TecnoexerciserCompare = () => {
         </Trans>
       ),
       fence_type: GIOSTRA_FENCE(18, "EXERCISER"),
-      cover: <Trans id={GIOSTRE_COPERTURA_PVC} />,
+      cover: GIOSTRE_COPERTURA_PVC,
       extra: GIOSTRE_EXTRA_BIG,
     },
     {

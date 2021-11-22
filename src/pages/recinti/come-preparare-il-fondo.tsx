@@ -1,6 +1,6 @@
-import { Section, TH, Ul } from "src/components"
 import { t, Trans } from "@lingui/macro"
 import React from "react"
+import { Section, TH, Ul } from "src/components"
 
 const ComePreparareIlFondo: React.FC = () => (
   <Section>
