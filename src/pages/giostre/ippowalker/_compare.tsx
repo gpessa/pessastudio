@@ -12,7 +12,7 @@ import {
   GIOSTRE_ENGINE_37,
   GIOSTRE_EXTRA_BIG,
   GIOSTRE_EXTRA_SMALL,
-} from "constants"
+} from "utils/constants"
 
 const IppowalkerCompare = () => {
   const GIOSTRE_COOMON = {

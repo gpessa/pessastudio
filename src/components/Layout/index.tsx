@@ -1,20 +1,28 @@
 /* global GATSBY_THEME_I18N_REACT_INTL */
 import { navigate, PageProps } from "gatsby"
 import { useLocalization } from "gatsby-theme-i18n"
+import { useTree } from "hooks"
 import { intersection } from "lodash"
 import React, { useEffect } from "react"
-import { PAGES } from "constants"
-import { useTree } from "hooks"
+import { PAGES } from "utils/constants"
 import Breadcrumb from "../Breadcrumb"
 import Footer from "../Footer"
 import Gdpr from "../Gdpr"
 import Navigation from "../Navigation"
 import Seo from "../Seo"
 
-const getRedirectLanguage = (config, defaultLang) => {
+type Language = {
+  code: string
+  dateFormat: string
+  hrefLang: string
+  langDir: string
+  localName: string
+  name: string
+}
+const getRedirectLanguage = (config: Language[], locale: string) => {
   const availableLocales = config.map(({ code }) => code)
   const preferredLocales = navigator?.languages
-  return intersection(preferredLocales, availableLocales)[0] || defaultLang
+  return intersection(preferredLocales, availableLocales)[0] || locale
 }
 
 const Layout: React.FC<PageProps<object, { originalPath: string }>> = ({ children, pageResources, location }) => {

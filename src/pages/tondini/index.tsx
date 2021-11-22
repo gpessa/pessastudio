@@ -1,11 +1,11 @@
 import { t, Trans } from "@lingui/macro"
 import { AccountBalance, DomainDisabled, Lock, Visibility } from "@mui/icons-material"
 import { Grid } from "@mui/material"
-import React from "react"
 import { Accessori, Benefits, ContentTable, Gallery, Hero, Section, TH } from "components"
 import { Picture } from "components/ModalGallery"
-import { GIOSTRA_TONDINO_CHIUSURA_A_TERRA_DESCRIZIONE } from "constants"
+import React from "react"
 import { PRODUCT_GUTTER } from "theme"
+import { GIOSTRA_TONDINO_CHIUSURA_A_TERRA_DESCRIZIONE } from "utils/constants"
 
 const Tondini: React.FC = () => {
   const ACCESSORI = {
@@ -70,7 +70,7 @@ const Tondini: React.FC = () => {
       },
       {
         name: t`Chiusura a terra`,
-        description: <Trans id={GIOSTRA_TONDINO_CHIUSURA_A_TERRA_DESCRIZIONE} />,
+        description: GIOSTRA_TONDINO_CHIUSURA_A_TERRA_DESCRIZIONE,
         images: [
           {
             src: require("assets/products/tondini/accessori/copertura-terra-1.jpg").default,

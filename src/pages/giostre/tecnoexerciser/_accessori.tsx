@@ -5,7 +5,7 @@ import {
   GIOSTRA_ALVEOLO_DESCRIZIONE,
   GIOSTRA_RETE_ANTIVENTO_DESCRIZIONE,
   GIOSTRA_TONDINO_CHIUSURA_A_TERRA_DESCRIZIONE,
-} from "constants"
+} from "utils/constants"
 
 const TecnoexerciserAccessori = () => {
   const ACCESSORI = {

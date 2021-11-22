@@ -13,7 +13,7 @@ import {
   GIOSTRE_EXTRA_BIG,
   GIOSTRE_EXTRA_SMALL,
   IRRIGATION,
-} from "constants"
+} from "utils/constants"
 
 const TecnoexerciserCompare = () => {
   const GIOSTRE_COOMON = {

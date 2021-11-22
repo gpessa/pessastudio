@@ -1,5 +1,5 @@
 import { Section, Title } from "components"
-import { PRODUCT_PAGES } from "constants"
+import { PRODUCT_PAGES } from "utils/constants"
 import { t } from "@lingui/macro"
 import { Grid, useMediaQuery, styled } from "@mui/material"
 import theme, { BREAKPOINT } from "theme"

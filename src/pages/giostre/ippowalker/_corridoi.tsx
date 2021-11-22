@@ -3,7 +3,10 @@ import { Grid, Typography } from "@mui/material"
 import React from "react"
 import { Gallery, Section, TH } from "components"
 import { Picture } from "components/ModalGallery"
-import { GIOSTRA_DESCRIZIONE_RECINZIONE_COMPENSATO_MARINO, GIOSTRA_DESCRIZIONE_RECINZIONE_TECONOFENCE } from "constants"
+import {
+  GIOSTRA_DESCRIZIONE_RECINZIONE_COMPENSATO_MARINO,
+  GIOSTRA_DESCRIZIONE_RECINZIONE_TECONOFENCE,
+} from "utils/constants"
 import { BREAKPOINT, PRODUCT_GUTTER } from "theme"
 
 const IppowalkerCorridoi = () => {

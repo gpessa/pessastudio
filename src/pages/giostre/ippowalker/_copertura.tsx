@@ -3,7 +3,7 @@ import { Grid, Typography } from "@mui/material"
 import React from "react"
 import { Gallery, Section, TH } from "components"
 import { Picture } from "components/ModalGallery"
-import { GIOSTRA_COPERTURA_PVC_DESCRIZIONE, GIOSTRE_COPERTURA_NOTE } from "constants"
+import { GIOSTRA_COPERTURA_PVC_DESCRIZIONE, GIOSTRE_COPERTURA_NOTE } from "utils/constants"
 import { PRODUCT_GUTTER } from "theme"
 
 const IppowalkerCopertura = () => {

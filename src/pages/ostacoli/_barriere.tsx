@@ -2,7 +2,7 @@ import { t, Trans } from "@lingui/macro"
 import { Typography } from "@mui/material"
 import React from "react"
 import { Product, Title } from "components"
-import { Colors } from "constants"
+import { Colors } from "utils/constants"
 import { PRODUCT_GUTTER } from "theme"
 
 const PRODUCT = {

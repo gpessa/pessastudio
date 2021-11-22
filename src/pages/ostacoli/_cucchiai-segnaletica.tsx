@@ -2,7 +2,7 @@ import { t, Trans } from "@lingui/macro"
 import { Grid, Typography } from "@mui/material"
 import React from "react"
 import { Product, Title } from "components"
-import { MATERIALS } from "constants"
+import { MATERIALS } from "utils/constants"
 import { PRODUCT_GUTTER } from "theme"
 
 const CucchiaiSegnaletica: React.FC = () => {

@@ -9,8 +9,8 @@ const IppowalkerServizioClienti = () => {
   const { locale } = useLocalization()
 
   const DIMENSIONS = [
-    { horses: 4, file: require(`src/assets/products/giostre/ippowalker/pdf/giostra-ippowalker-4.pdf`).default },
-    { horses: 6, file: require(`src/assets/products/giostre/ippowalker/pdf/giostra-ippowalker-6.pdf`).default },
+    { horses: 4, file: require("assets/products/giostre/ippowalker/pdf/giostra-ippowalker-4.pdf").default },
+    { horses: 6, file: require("assets/products/giostre/ippowalker/pdf/giostra-ippowalker-6.pdf").default },
   ].map(({ horses, file }) => ({
     label: <Trans id={`Giostra ${horses} cavalli`} />,
     file,

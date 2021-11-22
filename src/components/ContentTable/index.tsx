@@ -1,10 +1,10 @@
 import { t } from "@lingui/macro"
 import { PictureAsPdf, Visibility } from "@mui/icons-material"
 import { Box, BoxProps, Paper, styled, Table, TableBody, TableCell, TableContainer, TableRow } from "@mui/material"
+import { TH } from "components"
 import { Button } from "gatsby-material-ui-components"
 import { LocalizedLink } from "gatsby-theme-i18n"
 import React from "react"
-import { TH } from "components"
 
 const ButtonStyled = styled(Button)(({ theme }) => ({
   "marginLeft": theme.spacing(1),

@@ -2,7 +2,7 @@ import { t, Trans } from "@lingui/macro"
 import { Box, Grid, Link, Typography } from "@mui/material"
 import React from "react"
 import { Product, Section, TH, Ul } from "components"
-import { Colors, MATERIALS } from "constants"
+import { Colors, MATERIALS } from "utils/constants"
 import { PRODUCT_GUTTER } from "theme"
 
 const Dressage: React.FC = () => {

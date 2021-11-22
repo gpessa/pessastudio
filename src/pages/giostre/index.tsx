@@ -5,7 +5,7 @@ import { LocalizedLink } from "gatsby-theme-i18n"
 import React from "react"
 import { Benefits, Columns, Gallery, Hero, Section, TH, Video } from "components"
 import { Picture } from "components/ModalGallery"
-import { PAGES } from "constants"
+import { PAGES } from "utils/constants"
 
 const GammaSectionStyled = styled(Section)({
   textAlign: "center",

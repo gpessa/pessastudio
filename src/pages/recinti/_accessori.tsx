@@ -2,7 +2,7 @@ import { t, Trans } from "@lingui/macro"
 import { Grid } from "@mui/material"
 import React from "react"
 import { Product, Section, TH } from "components"
-import { Colors } from "constants"
+import { Colors } from "utils/constants"
 import { PRODUCT_GUTTER } from "theme"
 
 const Accessori = () => {

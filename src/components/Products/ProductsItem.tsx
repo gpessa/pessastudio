@@ -1,10 +1,10 @@
-import { TH } from "components"
 import { Box, styled, Typography } from "@mui/material"
+import { TH } from "components"
+import { Link } from "gatsby-material-ui-components"
+import { LocalizedLink } from "gatsby-theme-i18n"
 import { CarouselContext } from "pure-react-carousel"
 import React, { ReactElement, useContext, useEffect, useState } from "react"
-import { LocalizedLink } from "gatsby-theme-i18n"
 import { BREAKPOINT } from "theme"
-import { Link } from "gatsby-material-ui-components"
 
 type Props = {
   readonly index: number
