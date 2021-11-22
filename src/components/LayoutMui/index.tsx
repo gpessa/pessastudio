@@ -1,10 +1,9 @@
 import { CssBaseline } from "@mui/material"
 import { ThemeProvider } from "@mui/system"
-import React from "react"
-import theme from "theme"
-
 import "pure-react-carousel/dist/react-carousel.es.css"
+import React from "react"
 import { Helmet } from "react-helmet"
+import theme from "theme"
 
 export default function wrapRootElement({ element }) {
   return (
