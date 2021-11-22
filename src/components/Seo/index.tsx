@@ -1,11 +1,11 @@
 import { t } from "@lingui/macro"
 import { graphql, useStaticQuery } from "gatsby"
+import { BreadcrumbList as BreadcrumbListType } from "hooks/useTree"
+import { ITALIA, SEDE_OPERATIVA } from "pages/contatti"
 import React from "react"
 import Helmet from "react-helmet"
 import { helmetJsonLdProp } from "react-schemaorg"
-import { BreadcrumbList, Organization } from "schema-dts"
-import { BreadcrumbList as BreadcrumbListType } from "hooks/useTree"
-import { ITALIA, SEDE_OPERATIVA } from "pages/contatti"
+import { BreadcrumbList, Corporation } from "schema-dts"
 import { SOCIALS } from "../Footer/Socials"
 
 type Props = {
@@ -37,9 +37,9 @@ const Seo: React.FC<Props> = ({ title, description, keywords, meta = [], breadcr
   return (
     <Helmet
       script={[
-        helmetJsonLdProp<Organization>({
+        helmetJsonLdProp<Corporation>({
           "@context": "https://schema.org",
-          "@type": "Organization",
+          "@type": "Corporation",
           "name": SEDE_OPERATIVA.name,
           "url": siteUrl,
           "logo": siteUrl + require("assets/generals/logo.jpg").default,
