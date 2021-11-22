@@ -1,6 +1,6 @@
 import { Trans } from "@lingui/macro"
 import React from "react"
-import { Data } from "src/components"
+import { Data } from "components"
 
 const Bank: React.FC<Props> = ({ name, iban, swift, ...props }) => (
   <div {...props}>

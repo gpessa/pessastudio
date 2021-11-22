@@ -1,4 +1,4 @@
-import { Columns, Title } from "src/components"
+import { Columns, Title } from "components"
 import { t, Trans } from "@lingui/macro"
 import FormatQuoteIcon from "@mui/icons-material/FormatQuote"
 import { Typography } from "@mui/material"

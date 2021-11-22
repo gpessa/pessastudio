@@ -1,8 +1,8 @@
 import { Grid, styled, SvgIconTypeMap } from "@mui/material"
 import { OverridableComponent } from "@mui/material/OverridableComponent"
 import React, { ReactElement } from "react"
-import { Section, Title } from "src/components"
-import { BREAKPOINT } from "src/theme"
+import { Section, Title } from "components"
+import { BREAKPOINT } from "theme"
 import BenefitsItem from "./BenefitsItem"
 
 const IntroStyled = styled(Grid)(({ theme }) => ({

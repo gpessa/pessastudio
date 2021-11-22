@@ -1,18 +1,18 @@
 import { t, Trans } from "@lingui/macro"
 import { Grid, Typography } from "@mui/material"
 import React from "react"
-import { Product, Title } from "src/components"
-import { Colors } from "src/constants"
-import { PRODUCT_GUTTER } from "src/theme"
+import { Product, Title } from "components"
+import { Colors } from "constants"
+import { PRODUCT_GUTTER } from "theme"
 
 const Cubi: React.FC = () => {
   const PRODUCTS = [
     {
       name: t`Cubi mini`,
       images: [
-        { src: require("src/assets/products/ostacoli/cubi-mini-01.png").default },
-        { src: require("src/assets/products/ostacoli/cubi-mini-02.png").default },
-        { src: require("src/assets/products/ostacoli/cubi-mini-03.png").default },
+        { src: require("assets/products/ostacoli/cubi-mini-01.png").default },
+        { src: require("assets/products/ostacoli/cubi-mini-02.png").default },
+        { src: require("assets/products/ostacoli/cubi-mini-03.png").default },
       ],
       width: 350,
       length: 370,
@@ -24,9 +24,9 @@ const Cubi: React.FC = () => {
     {
       name: t`Cubi maxi`,
       images: [
-        { src: require("src/assets/products/ostacoli/cubi-maxi-01.png").default },
-        { src: require("src/assets/products/ostacoli/cubi-maxi-02.png").default },
-        { src: require("src/assets/products/ostacoli/cubi-maxi-03.png").default },
+        { src: require("assets/products/ostacoli/cubi-maxi-01.png").default },
+        { src: require("assets/products/ostacoli/cubi-maxi-02.png").default },
+        { src: require("assets/products/ostacoli/cubi-maxi-03.png").default },
       ],
       width: 370,
       length: 570,

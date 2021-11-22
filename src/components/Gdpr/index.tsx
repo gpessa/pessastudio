@@ -7,7 +7,7 @@ import { initializeAndTrack } from "gatsby-plugin-gdpr-cookies"
 import { LocalizedLink } from "gatsby-theme-i18n"
 import React from "react"
 import CookieConsent from "react-cookie-consent"
-import { PRODUCT_GUTTER } from "src/theme"
+import { PRODUCT_GUTTER } from "theme"
 
 const useStyles = makeStyles((theme: Theme) => ({
   root: {

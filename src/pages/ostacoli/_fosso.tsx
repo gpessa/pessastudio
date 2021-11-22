@@ -1,12 +1,12 @@
 import { t, Trans } from "@lingui/macro"
 import { Grid, Typography } from "@mui/material"
 import React from "react"
-import { Product, Title } from "src/components"
-import { PRODUCT_GUTTER } from "src/theme"
+import { Product, Title } from "components"
+import { PRODUCT_GUTTER } from "theme"
 
 const Fosso: React.FC = () => {
   const PRODUCT = {
-    images: [{ src: require("src/assets/products/ostacoli/fosso.png").default }],
+    images: [{ src: require("assets/products/ostacoli/fosso.png").default }],
     name: t`Fosso`,
     length: 1500,
     width: 2800,

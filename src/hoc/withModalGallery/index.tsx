@@ -1,4 +1,4 @@
-import { useGallery } from "src/hooks"
+import { useGallery } from "hooks"
 import { Button, Dialog, Typography } from "@mui/material"
 import { styled } from "@mui/material"
 import React from "react"

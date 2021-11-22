@@ -1,9 +1,9 @@
 import { t, Trans } from "@lingui/macro"
 import { Grid, Typography } from "@mui/material"
 import React from "react"
-import { Product, Title } from "src/components"
-import { MATERIALS } from "src/constants"
-import { PRODUCT_GUTTER } from "src/theme"
+import { Product, Title } from "components"
+import { MATERIALS } from "constants"
+import { PRODUCT_GUTTER } from "theme"
 
 const CucchiaiSegnaletica: React.FC = () => {
   const PRODUCTS = [
@@ -11,9 +11,9 @@ const CucchiaiSegnaletica: React.FC = () => {
       name: t`Cucchiaio DE`,
       description: t`Il cucchiaio standard utilizzato al livello internazionale`,
       images: [
-        { src: require("src/assets/products/ostacoli/cucchiaio-de-01.png").default },
-        { src: require("src/assets/products/ostacoli/cucchiaio-de-02.png").default },
-        { src: require("src/assets/products/ostacoli/cucchiaio-de-03.png").default },
+        { src: require("assets/products/ostacoli/cucchiaio-de-01.png").default },
+        { src: require("assets/products/ostacoli/cucchiaio-de-02.png").default },
+        { src: require("assets/products/ostacoli/cucchiaio-de-03.png").default },
       ],
       materials: [MATERIALS.TECNOPOLIMERO],
       depth: 20,
@@ -24,9 +24,9 @@ const CucchiaiSegnaletica: React.FC = () => {
       name: t`Cucchiaio PS`,
       description: t`Il cucchiaio dotato del nostro sistema brevettato di aggancio`,
       images: [
-        { src: require("src/assets/products/ostacoli/cucchiaio-ps-01.png").default },
-        { src: require("src/assets/products/ostacoli/cucchiaio-ps-02.png").default },
-        { src: require("src/assets/products/ostacoli/cucchiaio-ps-03.png").default },
+        { src: require("assets/products/ostacoli/cucchiaio-ps-01.png").default },
+        { src: require("assets/products/ostacoli/cucchiaio-ps-02.png").default },
+        { src: require("assets/products/ostacoli/cucchiaio-ps-03.png").default },
       ],
       materials: [MATERIALS.TECNOPOLIMERO],
       price: 3.5,
@@ -37,9 +37,9 @@ const CucchiaiSegnaletica: React.FC = () => {
         <Typography>{t`Supporti di sicurezza da applicare ai nostri cucchiai per salvaguardare l'integrità degli arti dei vostri cavalli in maniera efficace ed economica.`}</Typography>
       ),
       images: [
-        { src: require("src/assets/products/ostacoli/supporto-di-sicurezza-01.png").default },
-        { src: require("src/assets/products/ostacoli/supporto-di-sicurezza-03.png").default },
-        { src: require("src/assets/products/ostacoli/supporto-di-sicurezza-04.png").default },
+        { src: require("assets/products/ostacoli/supporto-di-sicurezza-01.png").default },
+        { src: require("assets/products/ostacoli/supporto-di-sicurezza-03.png").default },
+        { src: require("assets/products/ostacoli/supporto-di-sicurezza-04.png").default },
       ],
       materials: [MATERIALS.PLASTICA],
       width: 37,

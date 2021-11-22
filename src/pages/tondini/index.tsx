@@ -2,10 +2,10 @@ import { t, Trans } from "@lingui/macro"
 import { AccountBalance, DomainDisabled, Lock, Visibility } from "@mui/icons-material"
 import { Grid } from "@mui/material"
 import React from "react"
-import { Accessori, Benefits, ContentTable, Gallery, Hero, Section, TH } from "src/components"
-import { Picture } from "src/components/ModalGallery"
-import { GIOSTRA_TONDINO_CHIUSURA_A_TERRA_DESCRIZIONE } from "src/constants"
-import { PRODUCT_GUTTER } from "src/theme"
+import { Accessori, Benefits, ContentTable, Gallery, Hero, Section, TH } from "components"
+import { Picture } from "components/ModalGallery"
+import { GIOSTRA_TONDINO_CHIUSURA_A_TERRA_DESCRIZIONE } from "constants"
+import { PRODUCT_GUTTER } from "theme"
 
 const Tondini: React.FC = () => {
   const ACCESSORI = {
@@ -26,11 +26,11 @@ const Tondini: React.FC = () => {
         ),
         images: [
           {
-            src: require("src/assets/products/tondini/accessori/antivento-1.jpg").default,
+            src: require("assets/products/tondini/accessori/antivento-1.jpg").default,
             md: 3,
           },
           {
-            src: require("src/assets/products/tondini/accessori/antivento-2.jpg").default,
+            src: require("assets/products/tondini/accessori/antivento-2.jpg").default,
             md: 4,
           },
         ],
@@ -44,7 +44,7 @@ const Tondini: React.FC = () => {
         ),
         images: [
           {
-            src: require("src/assets/products/tondini/accessori/irrigazione-1.jpg").default,
+            src: require("assets/products/tondini/accessori/irrigazione-1.jpg").default,
             md: 3,
           },
         ],
@@ -59,11 +59,11 @@ const Tondini: React.FC = () => {
         ),
         images: [
           {
-            src: require("src/assets/products/tondini/accessori/antivento-port-ingresso-1.jpg").default,
+            src: require("assets/products/tondini/accessori/antivento-port-ingresso-1.jpg").default,
             md: 3,
           },
           {
-            src: require("src/assets/products/tondini/accessori/antivento-port-ingresso-2.jpg").default,
+            src: require("assets/products/tondini/accessori/antivento-port-ingresso-2.jpg").default,
             md: 4,
           },
         ],
@@ -73,7 +73,7 @@ const Tondini: React.FC = () => {
         description: <Trans id={GIOSTRA_TONDINO_CHIUSURA_A_TERRA_DESCRIZIONE} />,
         images: [
           {
-            src: require("src/assets/products/tondini/accessori/copertura-terra-1.jpg").default,
+            src: require("assets/products/tondini/accessori/copertura-terra-1.jpg").default,
             md: 4,
             top: "60%",
             left: "30%",
@@ -86,60 +86,60 @@ const Tondini: React.FC = () => {
   const IMAGES: Picture[] = [
     {
       caption: t`Tondino coperto ${18} pannelli ${15} mt.`,
-      src: require("src/assets/products/tondini/gallery/tondino-0.jpg").default,
+      src: require("assets/products/tondini/gallery/tondino-0.jpg").default,
     },
     {
       caption: t`Tondino coperto ${24} pannelli ${13.2} mt.`,
-      src: require("src/assets/products/tondini/gallery/tondino-1.jpg").default,
+      src: require("assets/products/tondini/gallery/tondino-1.jpg").default,
     },
     {
       caption: t`Interno tondino coperto`,
-      src: require("src/assets/products/tondini/gallery/tondino-2.jpg").default,
+      src: require("assets/products/tondini/gallery/tondino-2.jpg").default,
     },
     {
       caption: t`Interno tondino coperto`,
-      src: require("src/assets/products/tondini/gallery/tondino-3.jpg").default,
+      src: require("assets/products/tondini/gallery/tondino-3.jpg").default,
     },
     {
       caption: t`Tondino coperto`,
-      src: require("src/assets/products/tondini/gallery/tondino-4.jpg").default,
+      src: require("assets/products/tondini/gallery/tondino-4.jpg").default,
     },
     {
       caption: t`Copertura`,
-      src: require("src/assets/products/tondini/gallery/tondino-5.jpg").default,
+      src: require("assets/products/tondini/gallery/tondino-5.jpg").default,
     },
     {
       caption: t`Copertura`,
-      src: require("src/assets/products/tondini/gallery/tondino-6.jpg").default,
+      src: require("assets/products/tondini/gallery/tondino-6.jpg").default,
     },
     {
       caption: t`Copertura`,
-      src: require("src/assets/products/tondini/gallery/tondino-7.jpg").default,
+      src: require("assets/products/tondini/gallery/tondino-7.jpg").default,
     },
     {
       caption: t`Ingresso di 2,05 mt. con catenaccio verticale`,
-      src: require("src/assets/products/tondini/gallery/tondino-8.jpg").default,
+      src: require("assets/products/tondini/gallery/tondino-8.jpg").default,
     },
     {
       caption: t`Tondino`,
-      src: require("src/assets/products/tondini/gallery/tondino-9.jpg").default,
+      src: require("assets/products/tondini/gallery/tondino-9.jpg").default,
     },
     {
       caption: t`Interno tondino coperto`,
-      src: require("src/assets/products/tondini/gallery/tondino-10.jpg").default,
+      src: require("assets/products/tondini/gallery/tondino-10.jpg").default,
     },
     {
       caption: t`Tondino`,
-      src: require("src/assets/products/tondini/gallery/tondino-11.jpg").default,
+      src: require("assets/products/tondini/gallery/tondino-11.jpg").default,
     },
   ]
 
   const DIMENSIONS = [
-    { sides: 16, size: 13.2, file: require("src/assets/products/tondini/pdf/tondino-16.pdf").default },
-    { sides: 18, size: 15.0, file: require("src/assets/products/tondini/pdf/tondino-18.pdf").default },
-    { sides: 20, size: 16.6, file: require("src/assets/products/tondini/pdf/tondino-20.pdf").default },
-    { sides: 22, size: 18.3, file: require("src/assets/products/tondini/pdf/tondino-22.pdf").default },
-    { sides: 24, size: 19.9, file: require("src/assets/products/tondini/pdf/tondino-24.pdf").default },
+    { sides: 16, size: 13.2, file: require("assets/products/tondini/pdf/tondino-16.pdf").default },
+    { sides: 18, size: 15.0, file: require("assets/products/tondini/pdf/tondino-18.pdf").default },
+    { sides: 20, size: 16.6, file: require("assets/products/tondini/pdf/tondino-20.pdf").default },
+    { sides: 22, size: 18.3, file: require("assets/products/tondini/pdf/tondino-22.pdf").default },
+    { sides: 24, size: 19.9, file: require("assets/products/tondini/pdf/tondino-24.pdf").default },
   ].map(({ sides, size, file }) => ({
     label: <Trans id={`Tondino coperto {sides} pannelli {size} mt.`} values={{ sides, size }} />,
     file,
@@ -191,7 +191,7 @@ const Tondini: React.FC = () => {
 
   return (
     <>
-      <Hero image={require("src/assets/pages/tondini/background.jpg").default} text={t`Tondino`} />
+      <Hero image={require("assets/pages/tondini/background.jpg").default} text={t`Tondino`} />
 
       <Benefits
         benefits={BENEFITS}

@@ -1,8 +1,8 @@
 import { t, Trans } from "@lingui/macro"
 import { Grid, styled, Typography } from "@mui/material"
 import React from "react"
-import { Section, TH } from "src/components"
-import { PRODUCT_GUTTER } from "src/theme"
+import { Section, TH } from "components"
+import { PRODUCT_GUTTER } from "theme"
 
 const DivStyled = styled("div")(({ theme }) => ({
   marginBottom: theme.spacing(3),
@@ -18,7 +18,7 @@ const Gamma = () => {
     {
       height: 1200,
       name: t`Recinzione 1 filagna`,
-      image: require("src/assets/products/recinti/svg-1.svg").default,
+      image: require("assets/products/recinti/svg-1.svg").default,
       description: (
         <Trans>
           La recinzione ad una filagna viene utilizzata per delimitare campi da lavoro o gara poco adoperati e non è
@@ -29,7 +29,7 @@ const Gamma = () => {
     {
       height: 1350,
       name: t`Recinzione 2 filagne`,
-      image: require("src/assets/products/recinti/svg-2.svg").default,
+      image: require("assets/products/recinti/svg-2.svg").default,
       description: (
         <Trans>
           La recinzione a due filagne genericamente viene utilizzata per delimitare campi da lavoro o per realizzare
@@ -40,7 +40,7 @@ const Gamma = () => {
     {
       height: 1600,
       name: t`Recinzione 3 filagne`,
-      image: require("src/assets/products/recinti/svg-3.svg").default,
+      image: require("assets/products/recinti/svg-3.svg").default,
       description: (
         <Trans>
           La recinzione a tre filagne viene utilizzata per delimitare paddok per animali che rimangono per molte ore al
@@ -52,7 +52,7 @@ const Gamma = () => {
     {
       height: 1900,
       name: t`Recinzione 4 filagne`,
-      image: require("src/assets/products/recinti/svg-4.svg").default,
+      image: require("assets/products/recinti/svg-4.svg").default,
       description: (
         <Trans>
           Le recinzioni a quattro filagne sono utilizzate per delimitare paddock per stalloni, realizzare tondini per la

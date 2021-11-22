@@ -1,7 +1,7 @@
-import { Section, TH, Ul } from "src/components"
+import { Section, TH, Ul } from "components"
 import { t, Trans } from "@lingui/macro"
 import { Box, Link, Typography } from "@mui/material"
-import { PRODUCT_GUTTER } from "src/theme"
+import { PRODUCT_GUTTER } from "theme"
 import React from "react"
 import { ITALIA, SEDE_LEGALE } from "./contatti"
 

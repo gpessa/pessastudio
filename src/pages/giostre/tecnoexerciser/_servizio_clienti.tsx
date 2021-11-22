@@ -2,8 +2,8 @@ import { t, Trans } from "@lingui/macro"
 import { Grid } from "@mui/material"
 import { useLocalization } from "gatsby-theme-i18n"
 import React from "react"
-import { ContentTable, Section, TH } from "src/components"
-import { PRODUCT_GUTTER } from "src/theme"
+import { ContentTable, Section, TH } from "components"
+import { PRODUCT_GUTTER } from "theme"
 
 const TecnoexerciserServizioClienti = () => {
   const { locale } = useLocalization()
@@ -12,27 +12,27 @@ const TecnoexerciserServizioClienti = () => {
     {
       sides: 15,
       size: 12,
-      file: require(`src/assets/products/giostre/tecnoexerciser/pdf/giostra-tecnoexerciser-15.pdf`).default,
+      file: require("assets/products/giostre/tecnoexerciser/pdf/giostra-tecnoexerciser-15.pdf").default,
     },
     {
       sides: 18,
       size: 14.4,
-      file: require(`src/assets/products/giostre/tecnoexerciser/pdf/giostra-tecnoexerciser-18.pdf`).default,
+      file: require("assets/products/giostre/tecnoexerciser/pdf/giostra-tecnoexerciser-18.pdf").default,
     },
     {
       sides: 20,
       size: 16,
-      file: require(`src/assets/products/giostre/tecnoexerciser/pdf/giostra-tecnoexerciser-20.pdf`).default,
+      file: require("assets/products/giostre/tecnoexerciser/pdf/giostra-tecnoexerciser-20.pdf").default,
     },
     {
       sides: 22,
       size: 17.5,
-      file: require(`src/assets/products/giostre/tecnoexerciser/pdf/giostra-tecnoexerciser-22.pdf`).default,
+      file: require("assets/products/giostre/tecnoexerciser/pdf/giostra-tecnoexerciser-22.pdf").default,
     },
     {
       sides: 24,
       size: 19.2,
-      file: require(`src/assets/products/giostre/tecnoexerciser/pdf/giostra-tecnoexerciser-24.pdf`).default,
+      file: require("assets/products/giostre/tecnoexerciser/pdf/giostra-tecnoexerciser-24.pdf").default,
     },
   ].map(({ sides, size, file }) => ({
     label: (
@@ -48,11 +48,11 @@ const TecnoexerciserServizioClienti = () => {
     it: [
       {
         label: t`Manuale quadro di controllo`,
-        file: require("src/assets/products/giostre/tecnoexerciser/pdf/manuale-quadro-tecnoexerciser-it.pdf").default,
+        file: require("assets/products/giostre/tecnoexerciser/pdf/manuale-quadro-tecnoexerciser-it.pdf").default,
       },
       {
         label: t`Manuale collegamento elettrico`,
-        file: require("src/assets/products/giostre/pdf/giostra-collegamento-elettrico.pdf").default,
+        file: require("assets/products/giostre/pdf/giostra-collegamento-elettrico.pdf").default,
       },
       {
         label: t`Procedura di lubrificazione`,
@@ -66,7 +66,7 @@ const TecnoexerciserServizioClienti = () => {
     it: [
       {
         label: t`Fac simile domanda installazione giostra`,
-        file: require("src/assets/products/giostre/tecnoexerciser/pdf/permessi-it.pdf").default,
+        file: require("assets/products/giostre/tecnoexerciser/pdf/permessi-it.pdf").default,
       },
     ],
   }[locale]

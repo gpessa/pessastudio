@@ -1,11 +1,11 @@
 import { t, Trans } from "@lingui/macro"
 import React from "react"
-import { Accessori } from "src/components"
+import { Accessori } from "components"
 import {
   GIOSTRA_ALVEOLO_DESCRIZIONE,
   GIOSTRA_RETE_ANTIVENTO_DESCRIZIONE,
   GIOSTRA_TONDINO_CHIUSURA_A_TERRA_DESCRIZIONE,
-} from "src/constants"
+} from "constants"
 
 const TecnoexerciserAccessori = () => {
   const ACCESSORI = {
@@ -21,13 +21,13 @@ const TecnoexerciserAccessori = () => {
         description: GIOSTRA_TONDINO_CHIUSURA_A_TERRA_DESCRIZIONE,
         images: [
           {
-            src: require("src/assets/products/giostre/tecnoexerciser/accessori/chiusura-01.jpg").default,
+            src: require("assets/products/giostre/tecnoexerciser/accessori/chiusura-01.jpg").default,
             top: "25%",
             left: "50%",
             md: 3,
           },
           {
-            src: require("src/assets/products/giostre/tecnoexerciser/accessori/chiusura-02.jpg").default,
+            src: require("assets/products/giostre/tecnoexerciser/accessori/chiusura-02.jpg").default,
             top: "50%",
             left: "50%",
             md: 4,
@@ -39,11 +39,11 @@ const TecnoexerciserAccessori = () => {
         description: GIOSTRA_ALVEOLO_DESCRIZIONE,
         images: [
           {
-            src: require("src/assets/products/giostre/accessories/alveolo-02.jpg").default,
+            src: require("assets/products/giostre/accessories/alveolo-02.jpg").default,
             md: 3,
           },
           {
-            src: require("src/assets/products/giostre/accessories/alveolo-01.jpg").default,
+            src: require("assets/products/giostre/accessories/alveolo-01.jpg").default,
             md: 4,
           },
         ],
@@ -56,13 +56,13 @@ const TecnoexerciserAccessori = () => {
             md: 3,
             top: "25%",
             left: "45%",
-            src: require("src/assets/products/giostre/accessories/rete-01.jpg").default,
+            src: require("assets/products/giostre/accessories/rete-01.jpg").default,
           },
           {
             md: 4,
             top: "22%",
             left: "45%",
-            src: require("src/assets/products/giostre/accessories/rete-02.jpg").default,
+            src: require("assets/products/giostre/accessories/rete-02.jpg").default,
           },
         ],
       },

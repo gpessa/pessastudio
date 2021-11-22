@@ -1,21 +1,21 @@
 import { t } from "@lingui/macro"
 import { Grid } from "@mui/material"
 import React from "react"
-import { Product, Title } from "src/components"
-import { MATERIALS } from "src/constants"
-import { PRODUCT_GUTTER } from "src/theme"
+import { Product, Title } from "components"
+import { MATERIALS } from "constants"
+import { PRODUCT_GUTTER } from "theme"
 
 const Segnaletica: React.FC = () => {
   const PRODUCTS = [
     {
       name: t`Bandierine`,
-      images: [{ src: require("src/assets/products/ostacoli/bandierine.jpg").default }],
+      images: [{ src: require("assets/products/ostacoli/bandierine.jpg").default }],
       materials: [MATERIALS.PLASTICA],
       price: 3.5,
     },
     {
       name: t`Numero per campo ostacoli professional`,
-      images: [{ src: require("src/assets/products/ostacoli/numero-professional.png").default }],
+      images: [{ src: require("assets/products/ostacoli/numero-professional.png").default }],
       materials: [MATERIALS.POLIETILENE],
       width: 200,
       height: 300,
@@ -24,7 +24,7 @@ const Segnaletica: React.FC = () => {
     },
     {
       name: t`Numero per campo ostacoli light`,
-      images: [{ src: require("src/assets/products/ostacoli/numero-light.png").default }],
+      images: [{ src: require("assets/products/ostacoli/numero-light.png").default }],
       materials: [MATERIALS.POLIPROPILENE],
       width: 330,
       height: 330,

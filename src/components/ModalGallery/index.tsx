@@ -2,7 +2,7 @@ import { t } from "@lingui/macro"
 import { NavigateBefore, NavigateNext } from "@mui/icons-material"
 import { Button, ButtonBase, Dialog, styled, Typography } from "@mui/material"
 import React from "react"
-import { useGallery } from "src/hooks"
+import { useGallery } from "hooks"
 
 const ButtonBackStyled = styled(ButtonBase)({
   "position": "absolute",

@@ -1,22 +1,19 @@
 import { t, Trans } from "@lingui/macro"
 import { Grid, Typography } from "@mui/material"
 import React from "react"
-import { Gallery, Section, TH } from "src/components"
-import { Picture } from "src/components/ModalGallery"
-import {
-  GIOSTRA_DESCRIZIONE_RECINZIONE_COMPENSATO_MARINO,
-  GIOSTRA_DESCRIZIONE_RECINZIONE_TECONOFENCE,
-} from "src/constants"
-import { BREAKPOINT, PRODUCT_GUTTER } from "src/theme"
+import { Gallery, Section, TH } from "components"
+import { Picture } from "components/ModalGallery"
+import { GIOSTRA_DESCRIZIONE_RECINZIONE_COMPENSATO_MARINO, GIOSTRA_DESCRIZIONE_RECINZIONE_TECONOFENCE } from "constants"
+import { BREAKPOINT, PRODUCT_GUTTER } from "theme"
 
 const IppowalkerCorridoi = () => {
   const IMAGES: Picture[] = [
     {
-      src: require("src/assets/products/giostre/tecnoexerciser/corridoio/tecnofence.jpg").default,
+      src: require("assets/products/giostre/tecnoexerciser/corridoio/tecnofence.jpg").default,
       caption: t`Corridoio TECNOFENCE`,
     },
     {
-      src: require("src/assets/products/giostre/ippowalker/corridoio/compensato-marino.jpg").default,
+      src: require("assets/products/giostre/ippowalker/corridoio/compensato-marino.jpg").default,
       caption: t`Corridoio in compensato marino`,
     },
   ]

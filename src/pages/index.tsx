@@ -1,7 +1,7 @@
 import { t, Trans } from "@lingui/macro"
 import { AccountBalance, Apps, Architecture, Restore, TurnedInNot } from "@mui/icons-material"
 import React from "react"
-import { Benefits, Hero, Products, Testimonials } from "src/components"
+import { Benefits, Hero, Products, Testimonials } from "components"
 
 const Index: React.FC = () => {
   const BENEFITS = [
@@ -52,7 +52,7 @@ const Index: React.FC = () => {
 
   return (
     <>
-      <Hero image={require("src/assets/pages/home/background.jpg").default} text={t`Tradizione e qualità`} />
+      <Hero image={require("assets/pages/home/background.jpg").default} text={t`Tradizione e qualità`} />
 
       <Benefits
         benefits={BENEFITS}

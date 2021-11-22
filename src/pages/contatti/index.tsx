@@ -1,8 +1,8 @@
 import { t } from "@lingui/macro"
 import { Avatar, Box, styled } from "@mui/material"
 import React from "react"
-import { Columns, TH } from "src/components"
-import { BREAKPOINT } from "src/theme"
+import { Columns, TH } from "components"
+import { BREAKPOINT } from "theme"
 import Address from "./_address"
 import Bank from "./_bank"
 
@@ -102,7 +102,7 @@ const Contatti: React.FC = () => (
       <RightColumnStyled>
         <Box>
           <TH variant="h4">{t`Contatto commerciale`}</TH>
-          <AvatarStyled src={require("src/assets/pages/contatti/anna.jpg").default} alt="Anna Pessa" />
+          <AvatarStyled src={require("assets/pages/contatti/anna.jpg").default} alt="Anna Pessa" />
           <Address {...ITALIA} />
         </Box>
 

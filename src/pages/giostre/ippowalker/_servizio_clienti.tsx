@@ -2,8 +2,8 @@ import { t, Trans } from "@lingui/macro"
 import { Grid } from "@mui/material"
 import { useLocalization } from "gatsby-theme-i18n"
 import React from "react"
-import { ContentTable, Section, TH } from "src/components"
-import { PRODUCT_GUTTER } from "src/theme"
+import { ContentTable, Section, TH } from "components"
+import { PRODUCT_GUTTER } from "theme"
 
 const IppowalkerServizioClienti = () => {
   const { locale } = useLocalization()
@@ -20,17 +20,17 @@ const IppowalkerServizioClienti = () => {
     it: [
       {
         label: t`Manuale quadro di controllo`,
-        file: require("src/assets//products/giostre/ippowalker/pdf/manuale-quadro-ippowalker-it.pdf"),
+        file: require("assets//products/giostre/ippowalker/pdf/manuale-quadro-ippowalker-it.pdf"),
       },
       {
         label: t`Manuale collegamento elettrico`,
-        file: require("src/assets/products/giostre/pdf/giostra-collegamento-elettrico.pdf").default,
+        file: require("assets/products/giostre/pdf/giostra-collegamento-elettrico.pdf").default,
       },
     ],
     fr: [
       {
         label: t`Manuale quadro di controllo`,
-        file: require("src/assets//products/giostre/ippowalker/pdf/manuale-quadro-ippowalker-fr.pdf"),
+        file: require("assets//products/giostre/ippowalker/pdf/manuale-quadro-ippowalker-fr.pdf"),
       },
     ],
   }[locale]

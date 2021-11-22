@@ -1,5 +1,5 @@
 import { useState } from "react"
-import { Picture } from "src/components/ModalGallery"
+import { Picture } from "components/ModalGallery"
 
 const useGallery: (images: Picture[]) => {
   images: Picture[]

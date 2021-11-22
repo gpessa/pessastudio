@@ -1,19 +1,19 @@
 import { t, Trans } from "@lingui/macro"
 import { Grid, Typography } from "@mui/material"
 import React from "react"
-import { Gallery, Section, TH } from "src/components"
-import { Picture } from "src/components/ModalGallery"
-import { GIOSTRA_COPERTURA_PVC_DESCRIZIONE, GIOSTRE_COPERTURA_NOTE } from "src/constants"
-import { PRODUCT_GUTTER } from "src/theme"
+import { Gallery, Section, TH } from "components"
+import { Picture } from "components/ModalGallery"
+import { GIOSTRA_COPERTURA_PVC_DESCRIZIONE, GIOSTRE_COPERTURA_NOTE } from "constants"
+import { PRODUCT_GUTTER } from "theme"
 
 const IppowalkerCopertura = () => {
   const IMAGES: Picture[] = [
     {
-      src: require("src/assets/products/giostre/ippowalker/copertura/copertura-pvc-1.jpg").default,
+      src: require("assets/products/giostre/ippowalker/copertura/copertura-pvc-1.jpg").default,
       caption: t`Copertura in PVC`,
     },
     {
-      src: require("src/assets/products/giostre/ippowalker/copertura/copertura-pvc-2.jpg").default,
+      src: require("assets/products/giostre/ippowalker/copertura/copertura-pvc-2.jpg").default,
       caption: t`Copertura in PVC`,
     },
   ]

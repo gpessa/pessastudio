@@ -1,4 +1,4 @@
-import { Section } from "src/components"
+import { Section } from "components"
 import { styled } from "@mui/material"
 import React from "react"
 

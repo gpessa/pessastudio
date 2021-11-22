@@ -1,9 +1,9 @@
 import { t, Trans } from "@lingui/macro"
 import { Grid } from "@mui/material"
 import React from "react"
-import { Product, Title } from "src/components"
-import { MATERIALS } from "src/constants"
-import { PRODUCT_GUTTER } from "src/theme"
+import { Product, Title } from "components"
+import { MATERIALS } from "constants"
+import { PRODUCT_GUTTER } from "theme"
 
 const CandelieriLameForate = () => {
   const PRODUCTS = [
@@ -17,9 +17,9 @@ const CandelieriLameForate = () => {
         </Trans>
       ),
       images: [
-        { md: 6, src: require("src/assets/products/ostacoli/candeliere-pvc-03.png").default },
-        { md: 6, src: require("src/assets/products/ostacoli/candeliere-pvc-02.png").default },
-        { md: 6, src: require("src/assets/products/ostacoli/candeliere-pvc-01.png").default },
+        { md: 6, src: require("assets/products/ostacoli/candeliere-pvc-03.png").default },
+        { md: 6, src: require("assets/products/ostacoli/candeliere-pvc-02.png").default },
+        { md: 6, src: require("assets/products/ostacoli/candeliere-pvc-01.png").default },
       ],
       width: 720,
       depth: 720,
@@ -37,9 +37,9 @@ const CandelieriLameForate = () => {
         </Trans>
       ),
       images: [
-        { md: 6, src: require("src/assets/products/ostacoli/lama-de-02.png").default },
-        { md: 6, src: require("src/assets/products/ostacoli/lama-de-01.png").default },
-        { md: 6, src: require("src/assets/products/ostacoli/lama-de-03.png").default },
+        { md: 6, src: require("assets/products/ostacoli/lama-de-02.png").default },
+        { md: 6, src: require("assets/products/ostacoli/lama-de-01.png").default },
+        { md: 6, src: require("assets/products/ostacoli/lama-de-03.png").default },
       ],
       length: 500,
       thickness: 2,

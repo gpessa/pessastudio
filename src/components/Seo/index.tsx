@@ -4,8 +4,8 @@ import React from "react"
 import Helmet from "react-helmet"
 import { helmetJsonLdProp } from "react-schemaorg"
 import { BreadcrumbList, Organization } from "schema-dts"
-import { BreadcrumbList as BreadcrumbListType } from "src/hooks/useTree"
-import { ITALIA, SEDE_OPERATIVA } from "src/pages/contatti"
+import { BreadcrumbList as BreadcrumbListType } from "hooks/useTree"
+import { ITALIA, SEDE_OPERATIVA } from "pages/contatti"
 import { SOCIALS } from "../Footer/Socials"
 
 type Props = {
@@ -42,7 +42,7 @@ const Seo: React.FC<Props> = ({ title, description, keywords, meta = [], breadcr
           "@type": "Organization",
           "name": SEDE_OPERATIVA.name,
           "url": siteUrl,
-          "logo": siteUrl + require("src/assets/generals/logo.jpg").default,
+          "logo": siteUrl + require("assets/generals/logo.jpg").default,
           "address": {
             "@type": "PostalAddress",
             "postalCode": SEDE_OPERATIVA.postalCode,

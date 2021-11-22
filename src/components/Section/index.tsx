@@ -1,7 +1,7 @@
 import { Container, ContainerProps, styled } from "@mui/material"
 import { withPrefix } from "gatsby-link"
 import React from "react"
-import { BREAKPOINT, SECTION_SPACING } from "src/theme"
+import { BREAKPOINT, SECTION_SPACING } from "theme"
 
 const DIMENSION_CONFIGURATION = {
   vertical: {

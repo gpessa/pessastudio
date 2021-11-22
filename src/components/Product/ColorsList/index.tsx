@@ -1,4 +1,4 @@
-import { Colors } from "src/constants"
+import { Colors } from "constants"
 import { Box, Stack } from "@mui/material"
 import { styled } from "@mui/material"
 import React from "react"

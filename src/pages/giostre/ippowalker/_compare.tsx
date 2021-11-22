@@ -1,6 +1,6 @@
 import { t, Trans } from "@lingui/macro"
 import React from "react"
-import { Compare } from "src/components"
+import { Compare } from "components"
 import {
   GIOSTRA_FENCE,
   GIOSTRA_FENCE_TYPE_TECNOFENCE,
@@ -12,7 +12,7 @@ import {
   GIOSTRE_ENGINE_37,
   GIOSTRE_EXTRA_BIG,
   GIOSTRE_EXTRA_SMALL,
-} from "src/constants"
+} from "constants"
 
 const IppowalkerCompare = () => {
   const GIOSTRE_COOMON = {

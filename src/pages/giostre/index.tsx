@@ -3,9 +3,9 @@ import { AccessibilityNew, Apps, DomainDisabled, RemoveRedEyeOutlined, Videogame
 import { Box, Button, Link, styled, Typography } from "@mui/material"
 import { LocalizedLink } from "gatsby-theme-i18n"
 import React from "react"
-import { Benefits, Columns, Gallery, Hero, Section, TH, Video } from "src/components"
-import { Picture } from "src/components/ModalGallery"
-import { PAGES } from "src/constants"
+import { Benefits, Columns, Gallery, Hero, Section, TH, Video } from "components"
+import { Picture } from "components/ModalGallery"
+import { PAGES } from "constants"
 
 const GammaSectionStyled = styled(Section)({
   textAlign: "center",
@@ -45,26 +45,26 @@ const Giostre: React.FC = () => {
 
   const IMAGES: Picture[] = [
     {
-      src: require("src/assets/products/giostre/gallery/giostra.jpg").default,
+      src: require("assets/products/giostre/gallery/giostra.jpg").default,
       caption: t`Giostra tecnoexercize`,
     },
     {
-      src: require("src/assets/products/giostre/gallery/giostra-con-alveolo.jpg").default,
+      src: require("assets/products/giostre/gallery/giostra-con-alveolo.jpg").default,
       caption: t`Interno giostra con alveolo`,
     },
     {
-      src: require("src/assets/products/giostre/gallery/porta.jpg").default,
+      src: require("assets/products/giostre/gallery/porta.jpg").default,
       caption: t`Ingresso`,
     },
     {
-      src: require("src/assets/products/giostre/gallery/quadro.jpg").default,
+      src: require("assets/products/giostre/gallery/quadro.jpg").default,
       caption: t`Quadro di comando`,
     },
   ]
 
   return (
     <>
-      <Hero image={require("src/assets/pages/giostre/background.jpg").default} text={t`Giostre`} />
+      <Hero image={require("assets/pages/giostre/background.jpg").default} text={t`Giostre`} />
 
       <Benefits
         title={t`Perché una giostra Pessastudio`}

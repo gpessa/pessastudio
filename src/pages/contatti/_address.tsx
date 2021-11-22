@@ -1,4 +1,4 @@
-import { Data } from "src/components"
+import { Data } from "components"
 import { Trans } from "@lingui/macro"
 import { Box, Link, Typography } from "@mui/material"
 import React from "react"

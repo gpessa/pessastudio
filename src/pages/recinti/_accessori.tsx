@@ -1,9 +1,9 @@
 import { t, Trans } from "@lingui/macro"
 import { Grid } from "@mui/material"
 import React from "react"
-import { Product, Section, TH } from "src/components"
-import { Colors } from "src/constants"
-import { PRODUCT_GUTTER } from "src/theme"
+import { Product, Section, TH } from "components"
+import { Colors } from "constants"
+import { PRODUCT_GUTTER } from "theme"
 
 const Accessori = () => {
   const PRODUCTS = [
@@ -21,9 +21,9 @@ const Accessori = () => {
         </Trans>
       ),
       images: [
-        { src: require("src/assets/products/recinti/piede-mobile-2.png").default },
-        { src: require("src/assets/products/recinti/piede-mobile-3.png").default },
-        { src: require("src/assets/products/recinti/piede-mobile-4.jpg").default },
+        { src: require("assets/products/recinti/piede-mobile-2.png").default },
+        { src: require("assets/products/recinti/piede-mobile-3.png").default },
+        { src: require("assets/products/recinti/piede-mobile-4.jpg").default },
       ],
       height: 300,
       colors: [Colors.WHITE, Colors.GREEN],

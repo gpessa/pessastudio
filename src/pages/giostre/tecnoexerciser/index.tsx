@@ -1,7 +1,7 @@
 import { t, Trans } from "@lingui/macro"
 import { Typography } from "@mui/material"
 import React from "react"
-import { Columns, TH, Ul, Video } from "src/components"
+import { Columns, TH, Ul, Video } from "components"
 import TecnoexerciserAccessori from "./_accessori"
 import TecnoexerciserCompare from "./_compare"
 import TecnoexerciserCopertura from "./_copertura"

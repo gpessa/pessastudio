@@ -1,6 +1,6 @@
 import { Stack } from "@mui/material"
 import React from "react"
-import { TH } from "src/components"
+import { TH } from "components"
 import { Benefit } from "."
 
 const BenefitsItem: React.FC<Benefit> = ({ icon: Icon, title, description, ...props }) => (

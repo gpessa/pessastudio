@@ -2,7 +2,7 @@ import { Step, StepContent, StepLabel, Stepper, styled } from "@mui/material"
 import makeStyles from "@mui/styles/makeStyles"
 import React from "react"
 import { useInView } from "react-intersection-observer"
-import { BREAKPOINT } from "src/theme"
+import { BREAKPOINT } from "theme"
 import TH from "../TH"
 
 interface Step {

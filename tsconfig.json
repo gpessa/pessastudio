@@ -3,7 +3,7 @@
     "module": "commonjs",
     "strict": true,
     "esModuleInterop": true,
-    "baseUrl": ".",
+    "baseUrl": "./src",
     "jsx": "preserve",
     "target": "es2016"
   }

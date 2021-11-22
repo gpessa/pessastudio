@@ -1,9 +1,9 @@
-import { TH } from "src/components"
+import { TH } from "components"
 import { Box, styled, Typography } from "@mui/material"
 import { CarouselContext } from "pure-react-carousel"
 import React, { ReactElement, useContext, useEffect, useState } from "react"
 import { LocalizedLink } from "gatsby-theme-i18n"
-import { BREAKPOINT } from "src/theme"
+import { BREAKPOINT } from "theme"
 import { Link } from "gatsby-material-ui-components"
 
 type Props = {

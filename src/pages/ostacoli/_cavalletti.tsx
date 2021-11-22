@@ -1,16 +1,16 @@
 import { t, Trans } from "@lingui/macro"
 import { Grid, Typography } from "@mui/material"
 import React from "react"
-import { Product, Title } from "src/components"
-import { Colors } from "src/constants"
-import { PRODUCT_GUTTER } from "src/theme"
+import { Product, Title } from "components"
+import { Colors } from "constants"
+import { PRODUCT_GUTTER } from "theme"
 
 const Cavalletti: React.FC = () => {
   const PRODUCTS = [
     {
       name: t`Cavalletti Caprilli`,
       description: t`Singolo cavalletto abbinabile a barriere diametro 90, 95, 100, 105 mm.`,
-      images: [{ src: require("src/assets/products/ostacoli/cavalletto-01.png").default }],
+      images: [{ src: require("assets/products/ostacoli/cavalletto-01.png").default }],
       thickness: 100,
       length: 500,
       height: 500,
@@ -22,7 +22,7 @@ const Cavalletti: React.FC = () => {
       name: t`Kit Cavalletti Caprilli + barriera`,
       description: t`Kit comprensivo di 2 cavalletti e una barriera in PPO di colore bianco, diametro 95 mm.
       lunghezza 2 mt.`,
-      images: [{ src: require("src/assets/products/ostacoli/cavalletto-barriera-01.png").default }],
+      images: [{ src: require("assets/products/ostacoli/cavalletto-barriera-01.png").default }],
       diameter: 85,
       length: 2000,
       weight: 5.3,

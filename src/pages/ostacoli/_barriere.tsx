@@ -1,17 +1,17 @@
 import { t, Trans } from "@lingui/macro"
 import { Typography } from "@mui/material"
 import React from "react"
-import { Product, Title } from "src/components"
-import { Colors } from "src/constants"
-import { PRODUCT_GUTTER } from "src/theme"
+import { Product, Title } from "components"
+import { Colors } from "constants"
+import { PRODUCT_GUTTER } from "theme"
 
 const PRODUCT = {
   description: <Trans>Costruisci la tua barriera personalizzata scegliendo tra i colori a disposizione</Trans>,
   name: t`Barriera 3 mt.`,
   images: [
-    { src: require("src/assets/products/ostacoli/barriere-01.png").default },
-    { src: require("src/assets/products/ostacoli/barriere-02.png").default },
-    { src: require("src/assets/products/ostacoli/barriere-03.png").default },
+    { src: require("assets/products/ostacoli/barriere-01.png").default },
+    { src: require("assets/products/ostacoli/barriere-02.png").default },
+    { src: require("assets/products/ostacoli/barriere-03.png").default },
   ],
   price: 38,
   weight: 9.75,

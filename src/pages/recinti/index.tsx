@@ -1,35 +1,35 @@
 import { t, Trans } from "@lingui/macro"
 import { Typography } from "@mui/material"
 import React from "react"
-import { Columns, ContentTable, Gallery, Section, TH } from "src/components"
-import { Picture } from "src/components/ModalGallery"
+import { Columns, ContentTable, Gallery, Section, TH } from "components"
+import { Picture } from "components/ModalGallery"
 import Accessori from "./_accessori"
 import Gamma from "./_gamma"
 
 const Recinti: React.FC = () => {
   const IMAGES: Picture[] = [
     {
-      src: require("src/assets/products/recinti/gallery/recinti-image-7.jpg").default,
+      src: require("assets/products/recinti/gallery/recinti-image-7.jpg").default,
       caption: t`Recinzione 2 filagne`,
     },
     {
-      src: require("src/assets/products/recinti/gallery/recinti-image-8.jpg").default,
+      src: require("assets/products/recinti/gallery/recinti-image-8.jpg").default,
       caption: t`Recinzione 2 filagne`,
     },
     {
-      src: require("src/assets/products/recinti/gallery/recinti-image-2.jpg").default,
+      src: require("assets/products/recinti/gallery/recinti-image-2.jpg").default,
       caption: t`Recinzione 3 filagne`,
     },
     {
-      src: require("src/assets/products/recinti/gallery/recinti-image-4.jpg").default,
+      src: require("assets/products/recinti/gallery/recinti-image-4.jpg").default,
       caption: t`Recinzione 2 filagne`,
     },
     {
-      src: require("src/assets/products/recinti/gallery/recinti-image-5.jpg").default,
+      src: require("assets/products/recinti/gallery/recinti-image-5.jpg").default,
       caption: t`Recinzione 2 filagne`,
     },
     {
-      src: require("src/assets/products/recinti/gallery/recinti-image-6.jpg").default,
+      src: require("assets/products/recinti/gallery/recinti-image-6.jpg").default,
       caption: t`Recinzione 2 filagne`,
     },
   ]
@@ -41,7 +41,7 @@ const Recinti: React.FC = () => {
     },
     {
       label: t`Istruzioni di montaggio`,
-      file: require("src/assets/recinti-istruzioni-montaggio.pdf").default,
+      file: require("assets/recinti-istruzioni-montaggio.pdf").default,
     },
   ]
 

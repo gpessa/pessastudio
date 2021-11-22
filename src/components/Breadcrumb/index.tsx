@@ -2,7 +2,7 @@ import HomeIcon from "@mui/icons-material/Home"
 import { Breadcrumbs, Container, Link, styled, Typography } from "@mui/material"
 import { LocalizedLink } from "gatsby-theme-i18n"
 import React from "react"
-import { BreadcrumbList } from "src/hooks/useTree"
+import { BreadcrumbList } from "hooks/useTree"
 
 const RootStyled = styled("div")(({ theme }) => ({
   backgroundColor: theme.palette.warm2.main,
