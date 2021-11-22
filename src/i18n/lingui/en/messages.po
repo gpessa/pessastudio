@@ -17,7 +17,7 @@ msgstr ""
 msgid ""
 msgstr ""
 
-#: src/utils/constants.tsx:323
+#: src/utils/constants.tsx:170
 msgid "* In presenza di nevicate che superino la portata consentita, sarà opportuno intervenire rimuovendo l’eccesso di neve e cospargendo di sale la copertura prima di introdurre i cavalli."
 msgstr ""
 
@@ -26,99 +26,99 @@ msgstr ""
 msgid "+ IVA"
 msgstr "+ VAT"
 
-#: src/utils/constants.tsx:69
+#: src/utils/pages.tsx:67
 msgid "/404/:title"
 msgstr "Page not found"
 
-#: src/utils/constants.tsx:81
+#: src/utils/pages.tsx:79
 msgid "/:description"
 msgstr ""
 
-#: src/utils/constants.tsx:79
+#: src/utils/pages.tsx:77
 msgid "/:title"
 msgstr "Home page"
 
-#: src/utils/constants.tsx:62
+#: src/utils/pages.tsx:59
 msgid "/contatti/:description"
 msgstr ""
 
-#: src/utils/constants.tsx:61
+#: src/utils/pages.tsx:58
 msgid "/contatti/:title"
 msgstr "Contacts us"
 
-#: src/utils/constants.tsx:74
+#: src/utils/pages.tsx:72
 msgid "/cookie-policy/:title"
 msgstr "Cookie policy"
 
-#: src/utils/constants.tsx:53
+#: src/utils/pages.tsx:50
 msgid "/dressage/:description"
 msgstr ""
 
-#: src/utils/constants.tsx:52
+#: src/utils/pages.tsx:49
 msgid "/dressage/:title"
 msgstr "Dressage"
 
-#: src/utils/constants.tsx:44
+#: src/utils/pages.tsx:41
 msgid "/giostre/:description"
 msgstr ""
 
-#: src/utils/constants.tsx:43
+#: src/utils/pages.tsx:40
 msgid "/giostre/:title"
 msgstr "Horse walkers"
 
-#: src/utils/constants.tsx:106
+#: src/utils/pages.tsx:104
 msgid "/giostre/ippowalker/:description"
 msgstr ""
 
-#: src/utils/constants.tsx:104
+#: src/utils/pages.tsx:102
 msgid "/giostre/ippowalker/:title"
 msgstr "Ippowalker"
 
-#: src/utils/constants.tsx:113
+#: src/utils/pages.tsx:111
 msgid "/giostre/ippowalker/istruzioni-montaggio/:title"
 msgstr ""
 
-#: src/utils/constants.tsx:123
+#: src/utils/pages.tsx:121
 msgid "/giostre/tecnoexerciser/:description"
 msgstr ""
 
-#: src/utils/constants.tsx:121
+#: src/utils/pages.tsx:119
 msgid "/giostre/tecnoexerciser/:title"
 msgstr "Tecnoexerciser"
 
-#: src/utils/constants.tsx:130
+#: src/utils/pages.tsx:128
 msgid "/giostre/tecnoexerciser/istruzioni-montaggio/:title"
 msgstr ""
 
-#: src/utils/constants.tsx:17
+#: src/utils/pages.tsx:12
 msgid "/ostacoli/:description"
 msgstr ""
 
-#: src/utils/constants.tsx:16
+#: src/utils/pages.tsx:11
 msgid "/ostacoli/:title"
 msgstr "Jumps"
 
-#: src/utils/constants.tsx:26
+#: src/utils/pages.tsx:22
 msgid "/recinti/:description"
 msgstr "A durable fence solution designed to last through all weather conditions"
 
-#: src/utils/constants.tsx:25
+#: src/utils/pages.tsx:21
 msgid "/recinti/:title"
 msgstr "Fences"
 
-#: src/utils/constants.tsx:88
+#: src/utils/pages.tsx:86
 msgid "/recinti/come-preparare-il-fondo/:title"
 msgstr "How to prepare the ground"
 
-#: src/utils/constants.tsx:35
+#: src/utils/pages.tsx:32
 msgid "/tondini/:description"
 msgstr "Train foals outdoors"
 
-#: src/utils/constants.tsx:34
+#: src/utils/pages.tsx:31
 msgid "/tondini/:title"
 msgstr "Lunge Pens"
 
-#: src/utils/constants.tsx:96
+#: src/utils/pages.tsx:94
 msgid "/tondini/come-preparare-il-fondo/:title"
 msgstr "How to prepare the ground"
 
@@ -130,7 +130,7 @@ msgstr "3,000 horse walkers produced"
 msgid "<0><1>Preparare la superficie spianandola a \"schiena d'asino\" con il centro più alto dei bordi (2%) per far si che la pioggia defluisca. Mantenere i bordi dell'area alla stessa altezza del terreno circostante e riportare materiale nel centro dell'area per alzarlo.</1><2>Stendere sull'area una \"rete di separazione\", ben tesa e trattenuta lungo i bordi in una canaletta scavata nel terreno impedendo così che la terra si mescoli alla sabbia.</2><3>Distendere uniformemente sopra la rete uno strato di 7/8 centimetri di sabbia ( diametro 1 mm.)</3><4>Distribuire sopra alla sabbia 3 kg di \"straccetti di geotessuto\" per mt quadro di superficie in modo da mantenere il fondo stabile e morbido. Distribuire successivamente dopo un paio di ingressi a cavallo altri 2 kg.</4><5>Tutti i giorni passare con una \"erpice livellatrice\" per eliminare le impronte lasciate dagli zoccoli.</5></0>"
 msgstr ""
 
-#: src/utils/constants.tsx:187
+#: src/utils/constants.tsx:34
 msgid "<0>Accessori</0><1>(Ordinabili separatamente)</1>"
 msgstr "<0>Add ons</0> <1>(Can be ordered separately)</1>"
 
@@ -142,15 +142,15 @@ msgstr "<0>Pursuant to art. 13, point 2 of RE 679/2016, the interested party can
 msgid "<0>Bianchi, rossi, blu o gialli, sono utilizzati nei maneggi sia come riempitivi sotto le barriere, sia per realizzare sequenze di piccoli salti.</0><1>Ottimi per indicare le traiettorie quando si predispongono esercizi per i principianti ma anche per preparare una successione di cavalletti quando si addestrano cavalli.</1><2>Sovrapponibili, costruiti con plastica resistente agli agenti atmosferici, nel caso di impatto accidentale garantiscono l'incolumità di cavalli e cavalieri.</2>"
 msgstr ""
 
-#: src/utils/constants.tsx:303
+#: src/utils/constants.tsx:150
 msgid "<0>Corridoio composto da recinzione TECNOFENCE</0><1>(corridoio interno 1,40 mt., esterno 1,60 mt.)</1>"
 msgstr "<0>Corridor composed of TECNOFENCE fence</0> <1>(inner fence height 1.40 mt., outer fence height 1.60 mt.)</1>"
 
-#: src/utils/constants.tsx:296
+#: src/utils/constants.tsx:143
 msgid "<0>Corridoio {name} composto da pannelli laterali in compensato marino</0><1>(spessore {thickness} mm.)</1>"
 msgstr ""
 
-#: src/utils/constants.tsx:195
+#: src/utils/constants.tsx:42
 msgid "<0>E' possibile ordinare una giostra nei diametri:</0><1><2>12,0 mt. <3>(3 cavalli)</3></2><4>14,4 mt. <5>(4 cavalli)</5></4><6>16,0 mt. <7>(5 cavalli)</7></6><8>17,6 mt. <9>(6 cavalli)</9></8><10>19,2 mt. <11>(8 cavalli)</11></10></1>"
 msgstr ""
 
@@ -162,11 +162,11 @@ msgstr ""
 msgid "<0>I nostri ostacoli sono progettati e costruiti per durare nel tempo non richiedono alcuna manutenzione e conservano, inalterata, la loro bellezza anche se lasciati nel campo per anni.</0><1>Se gli ostacoli per il professionista sono uno strumento di lavoro, per molti altri appassionati rappresentano la realizzazione di un sogno. Noi abbiamo deciso di rendere questi strumenti resistenti nel tempo per fare in modo che questo sogno duri.</1><2>Potrete scegliere le quantità e i colori nella nostra gamma di produzione e acquistare anche singoli pezzi di ricambio.</2>"
 msgstr ""
 
-#: src/utils/constants.tsx:354
+#: src/utils/constants.tsx:201
 msgid "<0>Il corridoio <1>TECNOFENCE</1> è una soluzione semplice ed economica che ti permetterà di avere una giostra completa, sicura e durevole ad un costo competitivo.</0><2>L'altezza della recinzione esterna è di 1,60 mt., a differenza del corridoio interno alto 1,40 mt.</2><3>L'innovativo materiale (PPO) che non richiede manutenzione ti consentirà di abbattere i costi di manutenzione che affliggono le classiche recinzioni in legno.</3><4>Uno dei vantaggi è inoltre quello di poter installare la giostra in piena autonomia.</4>"
 msgstr ""
 
-#: src/utils/constants.tsx:377
+#: src/utils/constants.tsx:224
 msgid "<0>Il corridoio <1>{name}</1> in compensato marino è realizzato con un multistrato <2>({thickness} mm. di spessore)</2> antigraffio, antiurto, resistente allo sporco e idrorepellente. L'obbiettivo di questa soluzione è quello di fornire un elevato grado di sicurezza forzando il cavallo a concentrarsi sul percorso durante l'allenamento.</0>"
 msgstr ""
 
@@ -178,7 +178,7 @@ msgstr ""
 msgid "<0>Ippowalker è una giostra di recente realizzazione, essa nasce dal sogno di poter fornire uno strumento di allenamento professionale anche a coloro che ne fanno un uso sporadico.</0><1>La giostra è disponibile in due diametri 12 mt. (4 cavalli) e 14.2 mt. (6 cavalli).</1><2>Costruita con la qualità e la robustezza che contraddistingue tutti i nostri prodotti essa rappresenta uno strumento semplice ed essenziale ma al contempo completo.</2><3>Malgrado Ippowalker sia una giostra più economica abbiamo mantenuto tutte le opzioni base per allenare il tuo cavallo.</3><4><5>Porte di separazione elettrificate</5> ottenute grazie a tubi di plastica elettroconduttiva.</4><6>Un <7>pannello di controllo</7> che ti permetterà di di scegliere tra un programma manuale e uno periodico.</6><8>Al contrario del modello <9>Tecnoexercize</9>, questo modello non dispone di irrigazione.</8>"
 msgstr ""
 
-#: src/utils/constants.tsx:310
+#: src/utils/constants.tsx:157
 msgid "<0>La <1>copertura in PVC</1> è composta da una struttura in acciaio zincato la quale sorregge un telo in tessuto di poliestere spalmato di colore verde o crema e in base alle esigenze del cliente anche in altre colorazioni.</0><2>Questa copertura è in grado di sorreggere un carico neve pari a 80 kg/mq * e una forza vento pari a 110 Km/h.</2>"
 msgstr ""
 
@@ -198,7 +198,7 @@ msgstr ""
 msgid "<0>Ottimo per insegnare ai vostri cavalli/puledri a saltarlo.</0><1>Il fosso ha il fondo in PVC di colore azzurro con un bordo saldato alto 6 cm.</1>"
 msgstr ""
 
-#: src/utils/constants.tsx:232
+#: src/utils/constants.tsx:79
 msgid "<0>Porte di separazione.</0><1>(Elettrificatione 200-240 Volt monofase)</1>"
 msgstr ""
 
@@ -222,7 +222,7 @@ msgstr ""
 msgid "<0>Un set per creare un circuito dressage standard da 20x60 mt.</0><1>Il set contiene:</1><2><3>80 moduli</3><4>12 lettere</4></2>"
 msgstr ""
 
-#: src/utils/constants.tsx:218
+#: src/utils/constants.tsx:65
 msgid "<0>È possibile ordinare una giostra nei diametri:</0><1><2>12,0 mt. <3>(4 cavalli)</3></2><4>14,2 mt. <5>(6 cavalli)</5></4></1>"
 msgstr ""
 
@@ -235,7 +235,7 @@ msgstr "Affordable prices"
 msgid "Accessori"
 msgstr "Add ons"
 
-#: src/utils/constants.tsx:170
+#: src/utils/constants.tsx:17
 msgid "Acciaio zincato"
 msgstr "Galvanized steel"
 
@@ -259,8 +259,8 @@ msgstr "Other"
 
 #: src/pages/giostre/ippowalker/_accessori.tsx:35
 #: src/pages/giostre/tecnoexerciser/_accessori.tsx:38
-#: src/utils/constants.tsx:264
-#: src/utils/constants.tsx:281
+#: src/utils/constants.tsx:111
+#: src/utils/constants.tsx:128
 msgid "Alveolo sulla pesta"
 msgstr ""
 
@@ -347,8 +347,8 @@ msgstr "Cavalletti Caprilli"
 #: src/pages/giostre/ippowalker/_accessori.tsx:17
 #: src/pages/giostre/tecnoexerciser/_accessori.tsx:20
 #: src/pages/tondini/index.tsx:72
-#: src/utils/constants.tsx:258
-#: src/utils/constants.tsx:275
+#: src/utils/constants.tsx:105
+#: src/utils/constants.tsx:122
 msgid "Chiusura a terra"
 msgstr ""
 
@@ -406,7 +406,7 @@ msgstr "Bank account details"
 #: src/pages/tondini/index.tsx:108
 #: src/pages/tondini/index.tsx:112
 #: src/pages/tondini/index.tsx:116
-#: src/utils/constants.tsx:185
+#: src/utils/constants.tsx:32
 msgid "Copertura"
 msgstr "The roof"
 
@@ -414,7 +414,7 @@ msgstr "The roof"
 #: src/pages/giostre/ippowalker/_copertura.tsx:17
 #: src/pages/giostre/tecnoexerciser/_copertura.tsx:13
 #: src/pages/giostre/tecnoexerciser/_copertura.tsx:17
-#: src/utils/constants.tsx:330
+#: src/utils/constants.tsx:177
 msgid "Copertura in PVC"
 msgstr ""
 
@@ -471,7 +471,7 @@ msgid "Da anni Pessastudio è focalizzata nel produrre prodotti di qualità a co
 msgstr "For years, Pessastudio has focused on producing quality products at an affordable price"
 
 #: src/components/Product/index.tsx:61
-#: src/utils/constants.tsx:180
+#: src/utils/constants.tsx:27
 msgid "Diametro"
 msgstr "Diameter"
 
@@ -704,11 +704,11 @@ msgid "Ippowalker"
 msgstr "Ippowalker"
 
 #: src/pages/tondini/index.tsx:39
-#: src/utils/constants.tsx:182
+#: src/utils/constants.tsx:29
 msgid "Irrigazione"
 msgstr "Watering System"
 
-#: src/utils/constants.tsx:249
+#: src/utils/constants.tsx:96
 msgid "Irrigazione del percorso controllabile dal quadro di comando. Aiuta a tenere la polvere sotto controllo e un terreno sempre perfetto"
 msgstr ""
 
@@ -740,7 +740,7 @@ msgid ""
 "lunghezza 2 mt."
 msgstr ""
 
-#: src/utils/constants.tsx:340
+#: src/utils/constants.tsx:187
 msgid "L'aveolo è la soluzione ottimale mantenere un fondo sempre perfetto in ogni condizione, permette di evitare buche o avvallamenti riducendo i costi di manutenzione."
 msgstr ""
 
@@ -777,7 +777,7 @@ msgstr ""
 msgid "La rete antivento della porta è un’ulteriore protezione che offriamo per rendere ancora di più il tuo tondino sicuro in caso di forte vento e per garantire una maggiore concentrazione del tuo cavallo."
 msgstr ""
 
-#: src/utils/constants.tsx:347
+#: src/utils/constants.tsx:194
 msgid "La rete antivento protegge l'interno della giostra da correnti d'aria inoltre aiuta il cavallo a rimanere concentrato sul percorso e lo rende più tranquillo."
 msgstr ""
 
@@ -887,7 +887,7 @@ msgid "Montate le porte di separazione"
 msgstr ""
 
 #: src/pages/giostre/tecnoexerciser/_gallery.tsx:18
-#: src/utils/constants.tsx:179
+#: src/utils/constants.tsx:26
 msgid "Motore"
 msgstr "Engine"
 
@@ -964,15 +964,15 @@ msgstr ""
 msgid "Più' di 3.000 clienti europei hanno scelto Pessastudio per la loro giostra"
 msgstr ""
 
-#: src/utils/constants.tsx:173
+#: src/utils/constants.tsx:20
 msgid "Plastica"
 msgstr "Plastic"
 
-#: src/utils/constants.tsx:172
+#: src/utils/constants.tsx:19
 msgid "Polietilene"
 msgstr "Polyethylene"
 
-#: src/utils/constants.tsx:171
+#: src/utils/constants.tsx:18
 msgid "Polipropilene"
 msgstr "Polypropylene"
 
@@ -981,7 +981,7 @@ msgstr "Polypropylene"
 msgid "Porta mobile"
 msgstr "Pusher gate"
 
-#: src/utils/constants.tsx:183
+#: src/utils/constants.tsx:30
 msgid "Porte"
 msgstr "Pushers"
 
@@ -989,11 +989,11 @@ msgstr "Pushers"
 msgid "Porte elettrificate"
 msgstr "Electrified Pushers"
 
-#: src/utils/constants.tsx:240
+#: src/utils/constants.tsx:87
 msgid "Potenza motore 0.37 kw e cadenza regolabile fra 60 e 220 metri al minuto"
 msgstr ""
 
-#: src/utils/constants.tsx:238
+#: src/utils/constants.tsx:85
 msgid "Potenza motore 0.75 kw e cadenza regolabile fra 60 e 220 metri al minuto"
 msgstr ""
 
@@ -1014,15 +1014,15 @@ msgid "Profondità"
 msgstr "Depth"
 
 #: src/pages/giostre/index.tsx:61
-#: src/utils/constants.tsx:181
+#: src/utils/constants.tsx:28
 msgid "Quadro di comando"
 msgstr "Control panel"
 
-#: src/utils/constants.tsx:246
+#: src/utils/constants.tsx:93
 msgid "Quadro di comando con programma manuale, periodico"
 msgstr ""
 
-#: src/utils/constants.tsx:243
+#: src/utils/constants.tsx:90
 msgid "Quadro di comando con programma manuale, periodico o automatico"
 msgstr ""
 
@@ -1030,7 +1030,7 @@ msgstr ""
 msgid "Recinti"
 msgstr "Fencing"
 
-#: src/utils/constants.tsx:184
+#: src/utils/constants.tsx:31
 msgid "Recinzione"
 msgstr "Fence"
 
@@ -1059,7 +1059,7 @@ msgstr "4-rails fence"
 #: src/pages/giostre/ippowalker/_accessori.tsx:49
 #: src/pages/giostre/tecnoexerciser/_accessori.tsx:52
 #: src/pages/tondini/index.tsx:20
-#: src/utils/constants.tsx:287
+#: src/utils/constants.tsx:134
 msgid "Rete antivento"
 msgstr "Wind protection net"
 
@@ -1171,7 +1171,7 @@ msgstr "Single Cavalleto Caprillo"
 msgid "Socials"
 msgstr "Socials"
 
-#: src/utils/constants.tsx:333
+#: src/utils/constants.tsx:180
 msgid "Sono la soluzione ideale per impedire alla sabbia di uscire dal percorso consentendo di ridurre il materiale disperso."
 msgstr ""
 
@@ -1204,7 +1204,7 @@ msgstr "Swift"
 msgid "Tecnoexerciser"
 msgstr "Tecnoexerciser"
 
-#: src/utils/constants.tsx:174
+#: src/utils/constants.tsx:21
 msgid "Tecnopolimero"
 msgstr "Technopolymer"
 
