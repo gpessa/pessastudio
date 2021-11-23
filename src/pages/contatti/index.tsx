@@ -1,7 +1,10 @@
 import { t } from "@lingui/macro"
 import { Avatar, Box, styled } from "@mui/material"
-import React from "react"
 import { Columns, TH } from "components"
+import React from "react"
+import { Helmet } from "react-helmet"
+import { helmetJsonLdProp } from "react-schemaorg"
+import { ContactPage } from "schema-dts"
 import { BREAKPOINT } from "theme"
 import Address from "./_address"
 import Bank from "./_bank"
@@ -76,48 +79,58 @@ const StyledAddress = styled(Address)(({ theme }) => ({
 }))
 
 const Contatti: React.FC = () => (
-  <Columns
-    left={
-      <>
-        <TH variant="h1">{t`Contatti`}</TH>
+  <>
+    <Helmet
+      script={[
+        helmetJsonLdProp<ContactPage>({
+          "@context": "https://schema.org",
+          "@type": "ContactPage",
+        }),
+      ]}
+    />
+    <Columns
+      left={
+        <>
+          <TH variant="h1">{t`Contatti`}</TH>
 
-        <Box mt={6}>
-          <TH variant="h4">{t`Sede operativa`}</TH>
-          <StyledAddress {...SEDE_OPERATIVA} />
-        </Box>
+          <Box mt={6}>
+            <TH variant="h4">{t`Sede operativa`}</TH>
+            <StyledAddress {...SEDE_OPERATIVA} />
+          </Box>
 
-        <Box mt={6}>
-          <TH variant="h4">{t`Sede legale`}</TH>
-          <StyledAddress {...SEDE_LEGALE} />
-          <Box mt={2}>Capitale interamente versato € 10.000,00</Box>
-        </Box>
+          <Box mt={6}>
+            <TH variant="h4">{t`Sede legale`}</TH>
+            <StyledAddress {...SEDE_LEGALE} />
+            <Box mt={2}>Capitale interamente versato € 10.000,00</Box>
+          </Box>
 
-        <Box mt={6}>
-          <TH variant="h4">{t`Coordinate bancarie`}</TH>
-          <StyledBank {...BANCA} />
-        </Box>
-      </>
-    }
-    right={
-      <RightColumnStyled>
-        <Box>
-          <TH variant="h4">{t`Contatto commerciale`}</TH>
-          <AvatarStyled src={require("assets/pages/contatti/anna.jpg").default} alt="Anna Pessa" />
-          <Address {...ITALIA} />
-        </Box>
+          <Box mt={6}>
+            <TH variant="h4">{t`Coordinate bancarie`}</TH>
+            <StyledBank {...BANCA} />
+          </Box>
+        </>
+      }
+      right={
+        <RightColumnStyled>
+          <Box>
+            <TH variant="h4">{t`Contatto commerciale`}</TH>
+            <AvatarStyled src={require("assets/pages/contatti/anna.jpg").default} alt="Anna Pessa" />
+            <Address {...ITALIA} />
+          </Box>
 
-        <Box mt={6}>
-          <TH variant="h4">{t`Contatto commerciale Belgio`}</TH>
-          <Address {...BELGIO} />
-        </Box>
+          <Box mt={6}>
+            <TH variant="h4">{t`Contatto commerciale Belgio`}</TH>
+            <Address {...BELGIO} />
+          </Box>
 
-        <Box mt={6}>
-          <TH variant="h4">{t`Contatto commerciale Francia`}</TH>
-          <Address {...FRANCIA} />
-        </Box>
-      </RightColumnStyled>
-    }
-  />
+          <Box mt={6}>
+            <TH variant="h4">{t`Contatto commerciale Francia`}</TH>
+            <Address {...FRANCIA} />
+          </Box>
+        </RightColumnStyled>
+      }
+    />
+  </>
 )
 
 export default Contatti

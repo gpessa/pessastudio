@@ -59,6 +59,12 @@ const Seo: React.FC<Props> = ({ title, description, keywords, meta = [], breadcr
             "telephone": ITALIA.telephone,
             "contactType": t`Supporto clienti`,
           },
+          "founders": {
+            "@type": "Person",
+            "name": "Luciano Pessa",
+            "gender": "Male",
+            "nationality": "Italian",
+          },
         }),
         helmetJsonLdProp<BreadcrumbList>({
           "@context": "https://schema.org",
