@@ -14,10 +14,16 @@ const ImageStyled = styled("img")(() => ({
   borderRadius: 10,
 }))
 
-const FigcaptionStyled = styled("figcaption")(() => ({
+const FigcaptionStyled = styled("figcaption")(({ theme }) => ({
+  marginTop: theme.spacing(1) / 2,
   textTransform: "uppercase",
   fontSize: "0.8rem",
   lineHeight: 1,
+}))
+
+const FigureStyled = styled("figure")(() => ({
+  padding: 0,
+  margin: 0,
 }))
 
 type Props = {
@@ -32,10 +38,10 @@ const Gallery: React.FC<Props> = ({ images, xs = 6, md = 6 }) => (
         {images.map((image, index) => (
           <Grid item xs={xs} md={md} key={index}>
             <ButtonBaseStyled onClick={() => open(image)}>
-              <figure>
+              <FigureStyled>
                 <ImageStyled src={image.src} alt={image.caption} />
                 <FigcaptionStyled>{image.caption}</FigcaptionStyled>
-              </figure>
+              </FigureStyled>
             </ButtonBaseStyled>
           </Grid>
         ))}
