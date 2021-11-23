@@ -1,11 +1,11 @@
-import { Section, Title } from "components"
-import { PRODUCT_PAGES } from "utils/pages"
 import { t } from "@lingui/macro"
-import { Grid, useMediaQuery, styled } from "@mui/material"
-import theme, { BREAKPOINT } from "theme"
+import { Grid, styled, useMediaQuery } from "@mui/material"
+import { Section, Title } from "components"
 import { withPrefix } from "gatsby-link"
+import { usePages } from "hooks"
 import { CarouselProvider, Slide, Slider as Carousel } from "pure-react-carousel"
 import React from "react"
+import theme, { BREAKPOINT } from "theme"
 import ProductsItem from "./ProductsItem"
 import ProductsSelector from "./ProductsSelector"
 
@@ -33,11 +33,12 @@ const SliderSelectorStyled = styled(Grid)(({ theme }) => ({
 }))
 
 const Products: React.FC = () => {
+  const { PRODUCTS: SEO_PRODUCT } = usePages()
   const isTable = useMediaQuery(theme.breakpoints.up("sm"))
   const ITEM_TO_SHOW = isTable ? 2 : 1
 
   // Life is difficult and those outsise break translations
-  const PRODUCTS = Object.entries(PRODUCT_PAGES).map(([id, page]) => ({
+  const PRODUCTS = Object.entries(SEO_PRODUCT).map(([id, page]) => ({
     ...page,
     image: withPrefix(`static/icons/${id.toLowerCase()}.jpg`),
     name: t({ id: `${page.url}:title` }),

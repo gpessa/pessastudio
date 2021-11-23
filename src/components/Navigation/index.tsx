@@ -15,10 +15,10 @@ import {
 } from "@mui/material"
 import { globalHistory } from "@reach/router"
 import { LocalizedLink } from "gatsby-theme-i18n"
+import { usePages } from "hooks"
 import React, { useEffect, useState } from "react"
 import { BREAKPOINT } from "theme"
-import { NAVIGATION_PAGES } from "utils/pages"
-import LanguageSelectorLegacy from "./LanguageSelectorLegacy"
+import LanguageSelector from "./LanguageSelectorLegacy"
 import Logo from "./Logo"
 
 const MenuMobileStyled = styled(List)(({ theme }) => ({
@@ -94,6 +94,7 @@ const ElevationScroll: React.FC = ({ children }) => {
 
 const Navigation: React.FC = () => {
   const [open, setOpen] = useState(false)
+  const { NAVIGATION } = usePages()
   const theme = useTheme()
 
   useEffect(() => {
@@ -117,7 +118,7 @@ const Navigation: React.FC = () => {
           <Logo />
 
           <NavigationDesktop>
-            {Object.values(NAVIGATION_PAGES).map(({ url, title }) => (
+            {Object.values(NAVIGATION).map(({ url, title }) => (
               <NavigationDesktopButtom
                 activeStyle={{
                   color: theme.palette.primary.main,
@@ -132,11 +133,11 @@ const Navigation: React.FC = () => {
               </NavigationDesktopButtom>
             ))}
             <NavigationDesktopDivider />
-            <LanguageSelectorLegacy />
+            <LanguageSelector />
           </NavigationDesktop>
 
           <NavigationMobile>
-            <LanguageSelectorLegacy />
+            <LanguageSelector />
             <NavigationDesktopDivider />
             <IconButton edge="end" size="large" color="primary" aria-label="Main menu" onClick={handleMenuToggle}>
               <Menu />
@@ -146,7 +147,7 @@ const Navigation: React.FC = () => {
 
         {open && (
           <MenuMobileStyled>
-            {Object.values(NAVIGATION_PAGES).map(({ url, title }) => (
+            {Object.values(NAVIGATION).map(({ url, title }) => (
               <ListItem
                 button
                 activeStyle={{

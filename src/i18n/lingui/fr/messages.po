@@ -13,7 +13,7 @@ msgstr ""
 "Language-Team: \n"
 "Plural-Forms: \n"
 
-#: src/components/Products/index.tsx:43
+#: src/components/Products/index.tsx:44
 msgid ""
 msgstr ""
 
@@ -26,103 +26,52 @@ msgstr ""
 msgid "+ IVA"
 msgstr "+ TVA"
 
-#: src/utils/pages.tsx:67
-msgid "/404/:title"
-msgstr "Page non trouvée"
-
-#: src/utils/pages.tsx:79
+#: src/hooks/usePages/index.tsx:80
+#: src/utils/pages.tsx:80
 msgid "/:description"
 msgstr ""
 
-#: src/utils/pages.tsx:77
-msgid "/:title"
-msgstr "Page d’accueil"
-
-#: src/utils/pages.tsx:59
+#: src/hooks/usePages/index.tsx:60
+#: src/utils/pages.tsx:60
 msgid "/contatti/:description"
 msgstr ""
 
-#: src/utils/pages.tsx:58
-msgid "/contatti/:title"
-msgstr "Contact"
-
-#: src/utils/pages.tsx:72
-msgid "/cookie-policy/:title"
-msgstr "Cookie policy"
-
-#: src/utils/pages.tsx:50
+#: src/hooks/usePages/index.tsx:51
+#: src/utils/pages.tsx:51
 msgid "/dressage/:description"
 msgstr ""
 
-#: src/utils/pages.tsx:49
-msgid "/dressage/:title"
-msgstr "Dressage"
-
-#: src/utils/pages.tsx:41
+#: src/hooks/usePages/index.tsx:42
+#: src/utils/pages.tsx:42
 msgid "/giostre/:description"
 msgstr ""
 
-#: src/utils/pages.tsx:40
-msgid "/giostre/:title"
-msgstr "Marcheur pour chevaux"
-
-#: src/utils/pages.tsx:104
+#: src/hooks/usePages/index.tsx:99
+#: src/utils/pages.tsx:99
 msgid "/giostre/ippowalker/:description"
 msgstr ""
 
-#: src/utils/pages.tsx:102
-msgid "/giostre/ippowalker/:title"
-msgstr "Ippowalker"
-
-#: src/utils/pages.tsx:111
-msgid "/giostre/ippowalker/istruzioni-montaggio/:title"
-msgstr "Instructions de montage"
-
-#: src/utils/pages.tsx:121
+#: src/hooks/usePages/index.tsx:113
+#: src/utils/pages.tsx:113
 msgid "/giostre/tecnoexerciser/:description"
 msgstr ""
 
-#: src/utils/pages.tsx:119
-msgid "/giostre/tecnoexerciser/:title"
-msgstr "Tecnoexerciser"
-
-#: src/utils/pages.tsx:128
-msgid "/giostre/tecnoexerciser/istruzioni-montaggio/:title"
-msgstr "Instructions de montage"
-
-#: src/utils/pages.tsx:12
+#: src/hooks/usePages/index.tsx:13
+#: src/utils/pages.tsx:13
 msgid "/ostacoli/:description"
 msgstr ""
 
-#: src/utils/pages.tsx:11
-msgid "/ostacoli/:title"
-msgstr "Obstacles"
-
-#: src/utils/pages.tsx:22
+#: src/hooks/usePages/index.tsx:23
+#: src/utils/pages.tsx:23
 msgid "/recinti/:description"
 msgstr ""
 
-#: src/utils/pages.tsx:21
-msgid "/recinti/:title"
-msgstr "Clôtures"
-
-#: src/utils/pages.tsx:86
-msgid "/recinti/come-preparare-il-fondo/:title"
-msgstr "Preparation du fonds"
-
-#: src/utils/pages.tsx:32
+#: src/hooks/usePages/index.tsx:33
+#: src/utils/pages.tsx:33
 msgid "/tondini/:description"
 msgstr ""
 
-#: src/utils/pages.tsx:31
-msgid "/tondini/:title"
-msgstr "Rond de longe"
-
-#: src/utils/pages.tsx:94
-msgid "/tondini/come-preparare-il-fondo/:title"
-msgstr "Preparation du fonds"
-
-#: src/pages/giostre/index.tsx:18
+#: src/pages/giostre/index.tsx:20
 msgid "3.000 giostre installate"
 msgstr ""
 
@@ -174,7 +123,7 @@ msgstr ""
 msgid "<0>Il rettangolo della linea <1>training</1> è rivolto a quei maneggi, in cui lo spazio a disposizione è limitato e il rettangolo viene installato provvisoriamente e velocemente.</0><2>Facile da montare, è costituito da elementi modulari di 2 mt. in materiale plastico, non richiede alcuna manutenzione e occupa poco spazio quando non è utilizzato.</2>"
 msgstr ""
 
-#: src/pages/giostre/ippowalker/index.tsx:22
+#: src/pages/giostre/ippowalker/index.tsx:24
 msgid "<0>Ippowalker è una giostra di recente realizzazione, essa nasce dal sogno di poter fornire uno strumento di allenamento professionale anche a coloro che ne fanno un uso sporadico.</0><1>La giostra è disponibile in due diametri 12 mt. (4 cavalli) e 14.2 mt. (6 cavalli).</1><2>Costruita con la qualità e la robustezza che contraddistingue tutti i nostri prodotti essa rappresenta uno strumento semplice ed essenziale ma al contempo completo.</2><3>Malgrado Ippowalker sia una giostra più economica abbiamo mantenuto tutte le opzioni base per allenare il tuo cavallo.</3><4><5>Porte di separazione elettrificate</5> ottenute grazie a tubi di plastica elettroconduttiva.</4><6>Un <7>pannello di controllo</7> che ti permetterà di di scegliere tra un programma manuale e uno periodico.</6><8>Al contrario del modello <9>Tecnoexercize</9>, questo modello non dispone di irrigazione.</8>"
 msgstr ""
 
@@ -186,7 +135,7 @@ msgstr ""
 msgid "<0>La linea <1>olimpic</1>, presente sul mercato da oltre vent'anni, è rappresentata da un rettangolo professionale, dove il campo da dressage è utilizzato quotidianamente.</0><2>Il campo è delimitato da moduli accostabili tra di loro, ciascuno dei quali è lungo 2 mt. Ogni modulo è costruito in polietilene antiurto resistente anche alle basse temperature e che non ingiallisce sotto l'azione dei raggi ultravioletti.</2><3>Su ciascun modulo sono previste tre aree piane con superficie lucida di 50x12 cm. sulle quali possono essere applicati adesivi pubblicitari.</3>"
 msgstr ""
 
-#: src/pages/giostre/index.tsx:73
+#: src/pages/giostre/index.tsx:75
 msgid "<0>Le giostre rappresentano il punto di forza della nostra azienda.</0><1>Sono state create dalla ricerca di <2>Luciano Pessa</2> con l'intenzione di realizzare un semplice ed affidabile strumento di lavoro che vi consentirè di allenare il vostro cavallo anche quando non avete la possibilità di montarlo.</1><3>La giostra vi permetterè, non solo di raffreddare il vostro cavallo con una passeggiata post allenamento, ma anche di creare una vera sessione di lavoro passando da un'andatura all'altra e cambiando di mano.</3>"
 msgstr ""
 
@@ -264,7 +213,7 @@ msgstr ""
 msgid "Alveolo sulla pesta"
 msgstr ""
 
-#: src/pages/giostre/index.tsx:23
+#: src/pages/giostre/index.tsx:25
 msgid "Ampia gamma"
 msgstr ""
 
@@ -365,9 +314,13 @@ msgstr ""
 msgid "Colori"
 msgstr "Couleurs"
 
+#: src/hooks/usePages/index.tsx:87
+#: src/hooks/usePages/index.tsx:92
 #: src/pages/recinti/come-preparare-il-fondo.tsx:7
 #: src/pages/recinti/index.tsx:39
 #: src/pages/tondini/index.tsx:150
+#: src/utils/pages.tsx:87
+#: src/utils/pages.tsx:92
 msgid "Come preparare il fondo"
 msgstr "Preparation du fonds"
 
@@ -375,20 +328,27 @@ msgstr "Preparation du fonds"
 msgid "Complimenti! Ti sei iscritto"
 msgstr "Merci pour votre abonnement"
 
-#: src/pages/contatti/index.tsx:82
+#: src/hooks/usePages/index.tsx:59
+#: src/pages/contatti/index.tsx:94
+#: src/utils/pages.tsx:59
 msgid "Contatti"
 msgstr "Contact"
 
-#: src/pages/contatti/index.tsx:104
+#: src/pages/contatti/index.tsx:116
 msgid "Contatto commerciale"
 msgstr ""
 
-#: src/pages/contatti/index.tsx:110
+#: src/pages/contatti/index.tsx:122
 msgid "Contatto commerciale Belgio"
 msgstr "Contact pour le marché belge"
 
-#: src/pages/contatti/index.tsx:115
+#: src/pages/contatti/index.tsx:127
 msgid "Contatto commerciale Francia"
+msgstr ""
+
+#: src/hooks/usePages/index.tsx:73
+#: src/utils/pages.tsx:73
+msgid "Cookie"
 msgstr ""
 
 #: src/pages/cookie-policy.tsx:11
@@ -399,7 +359,7 @@ msgstr "Cookie policy"
 msgid "Cookie utilizzati dal presente sito"
 msgstr ""
 
-#: src/pages/contatti/index.tsx:96
+#: src/pages/contatti/index.tsx:108
 msgid "Coordinate bancarie"
 msgstr "Coordonnées bancaires"
 
@@ -501,11 +461,13 @@ msgstr ""
 msgid "Diritto di accesso ai dati personali"
 msgstr ""
 
+#: src/hooks/usePages/index.tsx:50
 #: src/pages/dressage/index.tsx:96
+#: src/utils/pages.tsx:50
 msgid "Dressage"
 msgstr "Dressage"
 
-#: src/pages/giostre/index.tsx:92
+#: src/pages/giostre/index.tsx:94
 msgid "Due sono i modelli di giostra che proponiamo: il modello <0>tecnoexerciser</0>, prodotta da oltre 20 anni, e il modello <1>ippowalker</1>, pensata per rispondere alle esigenze di un mercato che richiede un prodotto affidabile e al tempo stesso economico."
 msgstr ""
 
@@ -523,7 +485,7 @@ msgstr ""
 msgid "Fac simile domanda installazione giostra"
 msgstr ""
 
-#: src/pages/giostre/index.tsx:37
+#: src/pages/giostre/index.tsx:39
 msgid "Facile da usare"
 msgstr ""
 
@@ -536,7 +498,7 @@ msgstr ""
 msgid "Fosso"
 msgstr "Fossé"
 
-#: src/pages/giostre/index.tsx:90
+#: src/pages/giostre/index.tsx:92
 #: src/pages/giostre/ippowalker/_compare.tsx:74
 #: src/pages/giostre/tecnoexerciser/_compare.tsx:89
 #: src/pages/recinti/_gamma.tsx:67
@@ -573,8 +535,15 @@ msgstr ""
 msgid "Giostra <0/>corridoio TECNOFENCE"
 msgstr ""
 
+#: src/hooks/usePages/index.tsx:97
 #: src/pages/giostre/ippowalker/_gallery.tsx:14
+#: src/utils/pages.tsx:97
 msgid "Giostra Ippowalker"
+msgstr ""
+
+#: src/hooks/usePages/index.tsx:111
+#: src/utils/pages.tsx:111
+msgid "Giostra Tecnoexerciser"
 msgstr ""
 
 #: src/pages/giostre/ippowalker/_compare.tsx:29
@@ -590,12 +559,14 @@ msgstr "Marcheur Couloir Tecnofence"
 msgid "Giostra solo motore"
 msgstr ""
 
-#: src/pages/giostre/index.tsx:49
+#: src/pages/giostre/index.tsx:51
 msgid "Giostra tecnoexercize"
 msgstr ""
 
-#: src/pages/giostre/index.tsx:67
-#: src/pages/giostre/index.tsx:71
+#: src/hooks/usePages/index.tsx:41
+#: src/pages/giostre/index.tsx:69
+#: src/pages/giostre/index.tsx:73
+#: src/utils/pages.tsx:41
 msgid "Giostre"
 msgstr "Marcheur"
 
@@ -613,6 +584,11 @@ msgstr ""
 
 #: src/components/Testimonials/index.tsx:33
 msgid "Ho ricevuto questa mattina il materiale. I miei complimenti per la qualità dei prodotti, l'imballo ed il trasportatore"
+msgstr ""
+
+#: src/hooks/usePages/index.tsx:78
+#: src/utils/pages.tsx:78
+msgid "Home"
 msgstr ""
 
 #: src/pages/ostacoli/_candelieri-e-lame-forate.tsx:13
@@ -672,7 +648,7 @@ msgstr ""
 msgid "Indistruttibili"
 msgstr ""
 
-#: src/pages/giostre/index.tsx:57
+#: src/pages/giostre/index.tsx:59
 msgid "Ingresso"
 msgstr "Porte d’entrée"
 
@@ -688,7 +664,7 @@ msgstr ""
 msgid "Innovazione tecnologica e qualità sono le caratteristiche chiave dei nostri prodotti"
 msgstr ""
 
-#: src/pages/giostre/index.tsx:53
+#: src/pages/giostre/index.tsx:55
 msgid "Interno giostra con alveolo"
 msgstr ""
 
@@ -698,8 +674,8 @@ msgstr ""
 msgid "Interno tondino coperto"
 msgstr ""
 
-#: src/pages/giostre/index.tsx:123
-#: src/pages/giostre/ippowalker/index.tsx:21
+#: src/pages/giostre/index.tsx:125
+#: src/pages/giostre/ippowalker/index.tsx:23
 msgid "Ippowalker"
 msgstr "Ippowalker"
 
@@ -724,9 +700,13 @@ msgstr ""
 msgid "Istituto"
 msgstr ""
 
+#: src/hooks/usePages/index.tsx:106
+#: src/hooks/usePages/index.tsx:120
 #: src/pages/giostre/ippowalker/istruzioni-montaggio.tsx:53
 #: src/pages/giostre/tecnoexerciser/istruzioni-montaggio.tsx:80
 #: src/pages/recinti/index.tsx:43
+#: src/utils/pages.tsx:106
+#: src/utils/pages.tsx:120
 msgid "Istruzioni di montaggio"
 msgstr "Instructions de montage"
 
@@ -805,7 +785,7 @@ msgstr ""
 msgid "Larghezza"
 msgstr "Largeur"
 
-#: src/pages/giostre/index.tsx:32
+#: src/pages/giostre/index.tsx:34
 msgid "Le nostre giostre sono considerate strutture precarie. Non avrete bisogno di nessuna concessione edilizia"
 msgstr ""
 
@@ -891,7 +871,7 @@ msgstr ""
 msgid "Motore"
 msgstr "Moteur électrique"
 
-#: src/pages/giostre/index.tsx:30
+#: src/pages/giostre/index.tsx:32
 #: src/pages/tondini/index.tsx:168
 msgid "Nessuna concessione edilizia"
 msgstr ""
@@ -916,11 +896,15 @@ msgstr ""
 msgid "Olimpic"
 msgstr ""
 
+#: src/hooks/usePages/index.tsx:12
 #: src/pages/ostacoli/index.tsx:16
+#: src/utils/pages.tsx:12
 msgid "Ostacoli"
 msgstr "Obstacles"
 
+#: src/hooks/usePages/index.tsx:68
 #: src/pages/404.tsx:10
+#: src/utils/pages.tsx:68
 msgid "Pagina non trovata"
 msgstr "Le page que tu demandes n’existes pas"
 
@@ -928,7 +912,7 @@ msgstr "Le page que tu demandes n’existes pas"
 msgid "Per consentirvi di realizzare ostacoli di vostra creazione possiamo fornirvi le lame forate in due diverse lunghezze."
 msgstr ""
 
-#: src/pages/giostre/index.tsx:70
+#: src/pages/giostre/index.tsx:72
 msgid "Perché una giostra Pessastudio"
 msgstr ""
 
@@ -960,7 +944,7 @@ msgstr ""
 msgid "Piede mobile"
 msgstr "Clôture de pied"
 
-#: src/pages/giostre/index.tsx:19
+#: src/pages/giostre/index.tsx:21
 msgid "Più' di 3.000 clienti europei hanno scelto Pessastudio per la loro giostra"
 msgstr ""
 
@@ -1001,7 +985,7 @@ msgstr ""
 msgid "Procedura di lubrificazione"
 msgstr "Procedure per la lubrification"
 
-#: src/components/Products/index.tsx:59
+#: src/components/Products/index.tsx:60
 msgid "Prodotti"
 msgstr "Produits"
 
@@ -1013,7 +997,7 @@ msgstr ""
 msgid "Profondità"
 msgstr ""
 
-#: src/pages/giostre/index.tsx:61
+#: src/pages/giostre/index.tsx:63
 #: src/utils/constants.tsx:28
 msgid "Quadro di comando"
 msgstr ""
@@ -1026,7 +1010,9 @@ msgstr ""
 msgid "Quadro di comando con programma manuale, periodico o automatico"
 msgstr ""
 
+#: src/hooks/usePages/index.tsx:22
 #: src/pages/recinti/index.tsx:53
+#: src/utils/pages.tsx:22
 msgid "Recinti"
 msgstr "Clôtures"
 
@@ -1098,8 +1084,8 @@ msgstr "Télécharger un fichier"
 msgid "Scopo di questa Politica sulla privacy è di informarvi in merito ai dati che vengono raccolti su di voi, all’utilizzo che ne possiamo fare ed al modo in cui tali informazioni possono essere corrette o modificate."
 msgstr ""
 
-#: src/pages/giostre/index.tsx:117
-#: src/pages/giostre/index.tsx:131
+#: src/pages/giostre/index.tsx:119
+#: src/pages/giostre/index.tsx:133
 msgid "Scopri di piú"
 msgstr ""
 
@@ -1107,7 +1093,7 @@ msgstr ""
 msgid "Scopri il nostro tondino Tecnohalle"
 msgstr ""
 
-#: src/components/Products/index.tsx:59
+#: src/components/Products/index.tsx:60
 msgid "Scopri la nostra gamma di prodotti"
 msgstr ""
 
@@ -1119,11 +1105,11 @@ msgstr ""
 msgid "Scopri perché ogni anno centinaia di persone si affidano a Pessastudio per i loro articoli d'equitazione"
 msgstr ""
 
-#: src/pages/contatti/index.tsx:90
+#: src/pages/contatti/index.tsx:102
 msgid "Sede legale"
 msgstr "Siège social"
 
-#: src/pages/contatti/index.tsx:85
+#: src/pages/contatti/index.tsx:97
 msgid "Sede operativa"
 msgstr "Office operative"
 
@@ -1199,7 +1185,7 @@ msgstr "Support de sécurité"
 msgid "Swift"
 msgstr ""
 
-#: src/pages/giostre/index.tsx:109
+#: src/pages/giostre/index.tsx:111
 #: src/pages/giostre/tecnoexerciser/index.tsx:17
 msgid "Tecnoexerciser"
 msgstr "Tecnoexerciser"
@@ -1220,9 +1206,14 @@ msgstr ""
 msgid "Titolare del trattamento e dati di contatto"
 msgstr ""
 
+#: src/hooks/usePages/index.tsx:32
+#: src/pages/tondini/index.tsx:194
+#: src/utils/pages.tsx:32
+msgid "Tondini"
+msgstr ""
+
 #: src/pages/tondini/index.tsx:124
 #: src/pages/tondini/index.tsx:132
-#: src/pages/tondini/index.tsx:194
 msgid "Tondino"
 msgstr ""
 
@@ -1260,7 +1251,7 @@ msgstr ""
 msgid "Una lunga storia"
 msgstr ""
 
-#: src/pages/giostre/index.tsx:39
+#: src/pages/giostre/index.tsx:41
 msgid "Usa il nostro semplice pannello di controllo per scegliere uno dei nostri \"training programs\" o seleziona manualmente la velocità desiderata"
 msgstr ""
 
@@ -1281,8 +1272,8 @@ msgstr ""
 msgid "Vedi"
 msgstr ""
 
-#: src/pages/giostre/index.tsx:137
-#: src/pages/giostre/ippowalker/index.tsx:59
+#: src/pages/giostre/index.tsx:139
+#: src/pages/giostre/ippowalker/index.tsx:61
 #: src/pages/giostre/tecnoexerciser/index.tsx:44
 msgid "Video giostra in movimento"
 msgstr ""
@@ -1307,7 +1298,7 @@ msgstr ""
 msgid "È possibile acquistare la giostra sprovvista di copertura ma se il vostro obbiettivo è quello di poter lavorare 365 giorni all'anno, Pessastudio, offre due possibili soluzioni abbinabili al corridoio <0>Exerciser</0>."
 msgstr ""
 
-#: src/pages/giostre/index.tsx:25
+#: src/pages/giostre/index.tsx:27
 msgid "È possibile acquistare le nostre giostre in diverse versioni adatte ad ogni budget ed esigenza"
 msgstr ""
 

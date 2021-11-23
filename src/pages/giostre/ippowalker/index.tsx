@@ -3,8 +3,8 @@ import { Typography } from "@mui/material"
 import { Columns, TH, Video } from "components"
 import { Link } from "gatsby-material-ui-components"
 import { LocalizedLink } from "gatsby-theme-i18n"
+import { usePages } from "hooks"
 import React from "react"
-import { PAGES } from "utils/pages"
 import IppowalkerAccessori from "./_accessori"
 import IppowalkerCompare from "./_compare"
 import IppowalkerCopertura from "./_copertura"
@@ -13,6 +13,8 @@ import IppowalkerGallery from "./_gallery"
 import IppowalkerServizioClienti from "./_servizio_clienti"
 
 const Ippowalker: React.FC = () => {
+  const { PAGES } = usePages()
+
   return (
     <>
       <Columns

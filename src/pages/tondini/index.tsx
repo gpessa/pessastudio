@@ -191,7 +191,7 @@ const Tondini: React.FC = () => {
 
   return (
     <>
-      <Hero image={require("assets/pages/tondini/background.jpg").default} text={t`Tondino`} />
+      <Hero image={require("assets/pages/tondini/background.jpg").default} text={t`Tondini`} />
 
       <Benefits
         benefits={BENEFITS}

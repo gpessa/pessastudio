@@ -1,10 +1,9 @@
 /* global GATSBY_THEME_I18N_REACT_INTL */
 import { navigate, PageProps } from "gatsby"
 import { useLocalization } from "gatsby-theme-i18n"
-import { useTree } from "hooks"
+import { usePages, useTree } from "hooks"
 import { intersection } from "lodash"
 import React, { useEffect } from "react"
-import { PAGES } from "utils/pages"
 import Breadcrumb from "../Breadcrumb"
 import Footer from "../Footer"
 import Gdpr from "../Gdpr"
@@ -27,7 +26,7 @@ const getRedirectLanguage = (config: Language[], locale: string) => {
 
 const Layout: React.FC<PageProps<object, { originalPath: string }>> = ({ children, pageResources, location }) => {
   const { defaultLang, prefixDefault, localizedPath, config, locale: currentLanguage } = useLocalization()
-
+  const { PAGES } = usePages()
   const hasLocale = pageResources?.page?.path?.startsWith("/" + currentLanguage)
   const path = location.pathname.replace(new RegExp(`^/${currentLanguage}`), "")
   const page = Object.values(PAGES).find(page => page.url === path)

@@ -1,14 +1,15 @@
-import { t } from "@lingui/macro"
+import { t, Trans } from "@lingui/macro"
+import React from "react"
 
 export type Page = {
   url: string
-  title: string
+  title: JSX.Element
   description?: string
 }
 
 const OSTACOLI: Page = {
   url: "/ostacoli/",
-  title: t({ id: "/ostacoli/:title", message: `Ostacoli` }),
+  title: <Trans>Ostacoli</Trans>,
   description: t({
     id: "/ostacoli/:description",
     message:
@@ -18,17 +19,17 @@ const OSTACOLI: Page = {
 
 const RECINTI: Page = {
   url: "/recinti/",
-  title: t({ id: "/recinti/:title", message: `Recinti` }),
+  title: <Trans>Recinti</Trans>,
   description: t({
     id: "/recinti/:description",
     message:
-      "Un recinto da cavalli adatto a durare nel tempo anche in presenza delle più avverse condizioni meteorologiche",
+      "Un recinto da cavalli in PVC. Indistruttibile anche in presenza delle più avverse condizioni meteorologiche",
   }),
 }
 
 const TONDINI: Page = {
   url: "/tondini/",
-  title: t({ id: "/tondini/:title", message: `Tondini` }),
+  title: <Trans>Tondini</Trans>,
   description: t({
     id: "/tondini/:description",
     message: "Tondini coperti per addestrate puledri in libertà",
@@ -37,7 +38,7 @@ const TONDINI: Page = {
 
 const GIOSTRE: Page = {
   url: "/giostre/",
-  title: t({ id: "/giostre/:title", message: `Giostre` }),
+  title: <Trans>Giostre</Trans>,
   description: t({
     id: "/giostre/:description",
     message: "Scopri le nostre giostre per cavalli, lo strumento ideale di lavoro per allenare il vostro cavallo",
@@ -46,7 +47,7 @@ const GIOSTRE: Page = {
 
 const DRESSAGE: Page = {
   url: "/dressage/",
-  title: t({ id: "/dressage/:title", message: `Dressage` }),
+  title: <Trans>Dressage</Trans>,
   description: t({
     id: "/dressage/:description",
     message: "Rettangoli / Campi professionali da dressage per tutte le esigenze",
@@ -55,7 +56,7 @@ const DRESSAGE: Page = {
 
 const CONTATTI: Page = {
   url: "/contatti/",
-  title: t({ id: "/contatti/:title", message: `Contatti` }),
+  title: <Trans>Contatti</Trans>,
   description: t({
     id: "/contatti/:description",
     message:
@@ -64,17 +65,17 @@ const CONTATTI: Page = {
 }
 
 const PAGE_404: Page = {
-  title: t({ id: "/404/:title", message: `Pagina non trovata` }),
+  title: <Trans>Pagina non trovata</Trans>,
   url: "/404/",
 }
 
 const COOKIE_POLICY: Page = {
-  title: t({ id: "/cookie-policy/:title", message: `Cookie` }),
+  title: <Trans>Cookie</Trans>,
   url: "/cookie-policy/",
 }
 
 const HOME: Page = {
-  title: t({ id: "/:title", message: `Home` }),
+  title: <Trans>Home</Trans>,
   url: "/",
   description: t({
     id: "/:description",
@@ -83,23 +84,17 @@ const HOME: Page = {
 }
 
 const RECINTI_COME_PREPARARE_IL_FONDO: Page = {
-  title: t({
-    id: "/recinti/come-preparare-il-fondo/:title",
-    message: "Come preparare il fondo",
-  }),
+  title: <Trans>Come preparare il fondo</Trans>,
   url: "/recinti/come-preparare-il-fondo/",
 }
 
 const TONDINI_COME_PREPARARE_IL_FONDO: Page = {
-  title: t({
-    id: "/tondini/come-preparare-il-fondo/:title",
-    message: `Come preparare il fondo`,
-  }),
+  title: <Trans>Come preparare il fondo</Trans>,
   url: "/tondini/come-preparare-il-fondo/",
 }
 
 const GIOSTRE_IPPOWALKER: Page = {
-  title: t({ id: "/giostre/ippowalker/:title", message: `Ippowalker` }),
+  title: <Trans>Giostra Ippowalker</Trans>,
   url: "/giostre/ippowalker/",
   description: t({
     id: "/giostre/ippowalker/:description",
@@ -108,15 +103,12 @@ const GIOSTRE_IPPOWALKER: Page = {
 }
 
 const GIOSTRE_IPPOWALKER_ISTRUZIONI_MONTAGGIO: Page = {
-  title: t({
-    id: "/giostre/ippowalker/istruzioni-montaggio/:title",
-    message: `Istruzioni di montaggio`,
-  }),
+  title: <Trans>Istruzioni di montaggio</Trans>,
   url: "/giostre/ippowalker/istruzioni-montaggio/",
 }
 
 const GIOSTRE_TECNOEXERCISER: Page = {
-  title: t({ id: "/giostre/tecnoexerciser/:title", message: "Tecnoexerciser" }),
+  title: <Trans>Giostra Tecnoexerciser</Trans>,
   url: "/giostre/tecnoexerciser/",
   description: t({
     id: "/giostre/tecnoexerciser/:description",
@@ -125,10 +117,7 @@ const GIOSTRE_TECNOEXERCISER: Page = {
 }
 
 const GIOSTRE_TECNOEXERCISER_ISTRUZIONI_MONTAGGIO: Page = {
-  title: t({
-    id: "/giostre/tecnoexerciser/istruzioni-montaggio/:title",
-    message: `Istruzioni di montaggio`,
-  }),
+  title: <Trans>Istruzioni di montaggio</Trans>,
   url: "/giostre/tecnoexerciser/istruzioni-montaggio/",
 }
 

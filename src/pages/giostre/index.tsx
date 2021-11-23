@@ -4,14 +4,16 @@ import { Box, Button, Link, styled, Typography } from "@mui/material"
 import { Benefits, Columns, Gallery, Hero, Section, TH, Video } from "components"
 import { Picture } from "components/ModalGallery"
 import { LocalizedLink } from "gatsby-theme-i18n"
+import { usePages } from "hooks"
 import React from "react"
-import { PAGES } from "utils/pages"
 
 const GammaSectionStyled = styled(Section)({
   textAlign: "center",
 })
 
 const Giostre: React.FC = () => {
+  const { PAGES } = usePages()
+
   const BENEFITS = [
     {
       icon: AccessibilityNew,
