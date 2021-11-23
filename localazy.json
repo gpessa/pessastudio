@@ -5,30 +5,22 @@
   "upload": {  
     "filterSource": true,
     "type": "po",
-
-
     "files": [
       {
-        "pattern": "/src/i18n/lingui/it/messages.po",
-        "lang": "it",
-        "file": "source_strings.po"
+        "pattern": "src/i18n/lingui/it/messages.po",
+        "lang": "it"
       },
       {
-        "group": "fr",
-        "pattern": "/src/i18n/lingui/fr/messages.po",
-        "lang": "fr",
-        "file": "source_strings.po"
-      },
-      {
-        "group": "en",
-        "pattern": "/src/i18n/lingui/en/messages.po",
-        "lang": "en",
-        "file": "source_strings.po"
+        "group": "others",
+        "pattern": "src/i18n/lingui/*/messages.po",
+        "excludes": ["src/i18n/lingui/it/messages.po"],
+        "lang": "${autodetectLang}"
       }
     ]
   },
-  
+
   "download": {
-    "files": "/src/i18n/lingui/${lang}/messages.po"
-  }
+    "files": "src/i18n/lingui/${lang}/messages.po"
+  },
+
 }
