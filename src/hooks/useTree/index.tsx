@@ -36,11 +36,19 @@ const usTree = (path: string): BreadcrumbList => {
       (fragments, fragment) => {
         const last = fragments[fragments.length - 1]
         const url = `${last.url}${fragment}/`
-        const page = findPage(url)
-        console.log(url, page)
+        const page = {
+          ...findPage(url),
+          url,
+        }
+
         return [...fragments, page]
       },
-      [PAGES.HOME]
+      [
+        {
+          ...PAGES.HOME,
+          url: "/",
+        },
+      ]
     )
     .map(page => ({
       absoluteUrl: getAbsoluteUrl(page.url),
