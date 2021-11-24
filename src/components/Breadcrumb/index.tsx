@@ -1,8 +1,8 @@
 import HomeIcon from "@mui/icons-material/Home"
 import { Breadcrumbs, Container, Link, styled, Typography } from "@mui/material"
 import { LocalizedLink } from "gatsby-theme-i18n"
-import React from "react"
 import { BreadcrumbList } from "hooks/useTree"
+import React from "react"
 
 const RootStyled = styled("div")(({ theme }) => ({
   backgroundColor: theme.palette.warm2.main,
@@ -18,7 +18,7 @@ const Breadcrumb: React.FC<{ breadcrumb: BreadcrumbList }> = ({ breadcrumb }) =>
   breadcrumb.length > 1 ? (
     <RootStyled>
       <Breadcrumbs separator="›" gutterBottom={false} component={props => <Container {...props} component="nav" />}>
-        {breadcrumb.map(({ name, url }, index) => {
+        {breadcrumb.map(({ title, url }, index) => {
           switch (index) {
             case 0:
               return (
@@ -30,14 +30,14 @@ const Breadcrumb: React.FC<{ breadcrumb: BreadcrumbList }> = ({ breadcrumb }) =>
             case breadcrumb.length - 1:
               return (
                 <Typography gutterBottom={false} key={url}>
-                  {name}
+                  {title}
                 </Typography>
               )
 
             default:
               return (
                 <Link to={url} key={url} underline="hover" component={LocalizedLink}>
-                  {name}
+                  {title}
                 </Link>
               )
           }
