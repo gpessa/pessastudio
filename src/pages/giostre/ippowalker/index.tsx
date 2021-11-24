@@ -58,7 +58,7 @@ const Ippowalker: React.FC = () => {
         right={<IppowalkerGallery />}
       />
 
-      <Video src={"https://www.youtube-nocookie.com/embed/slFfbd7kTzg"} title={t`Video giostra in movimento`} />
+      <Video src={"https://www.youtube-nocookie.com/embed/slFfbd7kTzg"} title={t`Giostra Ippowalker in movimento`} />
 
       <IppowalkerCorridoi />
 
