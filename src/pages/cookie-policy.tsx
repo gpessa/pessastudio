@@ -73,7 +73,7 @@ const CookiePolicy: React.FC = () => (
 
       <Box my={PRODUCT_GUTTER}>
         <TH variant="h5" gutterBottom sans>
-          <Trans>Trattamento e Diffusione dei dati</Trans>
+          <Trans>Trattamento e diffusione dei dati</Trans>
         </TH>
         <Typography>
           <Trans>
