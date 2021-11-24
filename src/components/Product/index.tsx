@@ -124,6 +124,9 @@ const Product = ({ images, price, name, description, ...attributes }: Props) => 
                 "@context": "https://schema.org",
                 "@type": "Product",
                 "name": name,
+                "image": images.map(({ src }) => {
+                  return siteUrl + src
+                }),
                 "offers": {
                   "@type": "Offer",
                   "priceCurrency": "EUR",
