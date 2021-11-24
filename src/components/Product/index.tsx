@@ -1,13 +1,16 @@
 import { i18n } from "@lingui/core"
 import { t } from "@lingui/macro"
 import { ButtonBase, Grid, GridSize, styled, Typography } from "@mui/material"
+import { useLocation } from "@reach/router"
 import { Data, ModalGallery, TH } from "components"
-import { LocalizedLink } from "gatsby-theme-i18n"
+import { seoQuery } from "components/Seo"
+import { useStaticQuery } from "gatsby"
 import { SEDE_OPERATIVA } from "pages/contatti"
 import React, { ReactNode } from "react"
 import { Helmet } from "react-helmet"
 import { helmetJsonLdProp } from "react-schemaorg"
 import { Product as ProductSchema } from "schema-dts"
+import { snakeCase } from "snake-case"
 import { BREAKPOINT, PRODUCT_GUTTER } from "theme"
 import { Colors } from "utils/constants"
 import { Picture } from "../ModalGallery"
@@ -54,12 +57,10 @@ type Attributes = {
 }
 
 type Props = {
-  vertical?: boolean
   images: Picture[]
   name: string
   description?: string | ReactNode
   price?: PriceProp["price"]
-  url?: string
 } & Attributes
 
 const getDataLabel = (id: keyof Attributes) =>
@@ -104,26 +105,34 @@ const getData = (attributes: Attributes) => {
   }))
 }
 
-const Product = ({ images, vertical, price, url, name, description, ...attributes }: Props) => {
-  const Tag = url ? LocalizedLink : "div"
-  const span = (vertical ? 12 : 12 / (images.length + 1)) as GridSize
+const Product = ({ images, price, name, description, ...attributes }: Props) => {
+  const span = (12 / (images.length + 1)) as GridSize
   const data = getData(attributes)
+  const { pathname } = useLocation()
+  const id = snakeCase(name)
+  const siteUrl = useStaticQuery(seoQuery).site.siteMetadata.siteUrl
+  const itemUrl = `${siteUrl}${pathname}#${id}`
 
   return (
     <ModalGallery
       images={images}
       render={({ images, open }) => (
-        <Tag to={url}>
+        <div id={id}>
           <Helmet
             script={[
               helmetJsonLdProp<ProductSchema>({
                 "@context": "https://schema.org",
                 "@type": "Product",
                 "name": name,
-                "brand": SEDE_OPERATIVA.name,
                 "offers": {
                   "@type": "Offer",
-                  "availability": "InStock",
+                  "priceCurrency": "EUR",
+                  "availability": "https://schema.org/InStock",
+                },
+                "brand": {
+                  "@type": "Brand",
+                  "url": itemUrl,
+                  "name": SEDE_OPERATIVA.name,
                 },
               }),
             ]}
@@ -154,7 +163,7 @@ const Product = ({ images, vertical, price, url, name, description, ...attribute
               <Price price={price} />
             </DataStyled>
           </Grid>
-        </Tag>
+        </div>
       )}
     />
   )

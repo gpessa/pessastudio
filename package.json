@@ -35,7 +35,8 @@
     "react-helmet": "6.1.0",
     "react-intersection-observer": "8.32.3",
     "react-schemaorg": "2.0.0",
-    "schema-dts": "1.0.0"
+    "schema-dts": "1.0.0",
+    "snake-case": "^3.0.4"
   },
   "devDependencies": {
     "@lingui/babel-preset-react": "2.9.2",
