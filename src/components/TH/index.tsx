@@ -1,10 +1,8 @@
-import { Typography } from "@mui/material"
-import { styled } from "@mui/material"
+import { styled, Typography, TypographyProps } from "@mui/material"
 
 type Props = {
   sans?: boolean
-  variant: "h1" | "h2" | "h3" | "h4" | "h5" | "h6"
-}
+} & TypographyProps
 
 const TH = styled(Typography)<Props>(({ theme, sans }) => ({
   fontFamily: sans ? theme.typography.fontFamily : undefined,
