@@ -1,11 +1,11 @@
 import { i18n } from "@lingui/core"
 import { t } from "@lingui/macro"
 import { ButtonBase, Grid, GridSize, styled, Typography } from "@mui/material"
+import { Data, ModalGallery, TH } from "components"
 import { LocalizedLink } from "gatsby-theme-i18n"
 import React, { ReactNode } from "react"
-import { Data, ModalGallery, TH } from "components"
-import { Colors } from "utils/constants"
 import { BREAKPOINT, PRODUCT_GUTTER } from "theme"
+import { Colors } from "utils/constants"
 import { Picture } from "../ModalGallery"
 import ColorsList from "./ColorsList"
 import Price, { PriceProp } from "./Price"
@@ -49,36 +49,35 @@ type Attributes = {
   width?: number
 }
 
-const getDataLabel = (id: keyof Attributes) => {
-  switch (id) {
-    case "colors":
-      return t`Colori`
-    case "materials":
-      return t`Materiali`
-    case "depth":
-      return t`Profondità`
-    case "diameter":
-      return t`Diametro`
-    case "height":
-      return t`Altezza`
-    case "length":
-      return t`Lunghezza`
-    case "thickness":
-      return t`Spessore`
-    case "weight":
-      return t`Peso`
-    case "width":
-      return t`Larghezza`
-  }
-}
+type Props = {
+  vertical?: boolean
+  images: Picture[]
+  name: string
+  description?: string | ReactNode
+  price?: PriceProp["price"]
+  url?: string
+} & Attributes
 
-const getDataData = (id: keyof Attributes, attribute: number | Colors[] | string[]) => {
+const getDataLabel = (id: keyof Attributes) =>
+  ({
+    colors: t`Colori`,
+    materials: t`Materiali`,
+    depth: t`Profondità`,
+    diameter: t`Diametro`,
+    height: t`Altezza`,
+    length: t`Lunghezza`,
+    thickness: t`Spessore`,
+    weight: t`Peso`,
+    width: t`Larghezza`,
+  }[id])
+
+const getDataData = (id: keyof Attributes, attribute: number | Colors[] | string[] | JSX.Element[]) => {
   switch (id) {
     case "materials":
       return attribute
 
     case "weight":
-      return `${i18n.number(attribute)} kg.`
+      return `${i18n.number(attribute as number)} kg.`
 
     case "diameter":
     case "thickness":
@@ -86,10 +85,10 @@ const getDataData = (id: keyof Attributes, attribute: number | Colors[] | string
     case "length":
     case "depth":
     case "width":
-      return `${i18n.number(attribute / 10)} cm.`
+      return `${i18n.number((attribute as number) / 10)} cm.`
 
     case "colors":
-      return <ColorsList colors={attribute} />
+      return <ColorsList colors={attribute as Colors[]} />
   }
 }
 
@@ -143,14 +142,5 @@ const Product = ({ images, vertical, price, url, name, description, ...attribute
     />
   )
 }
-
-type Props = {
-  vertical?: boolean
-  images: Picture[]
-  name: string
-  description?: string | ReactNode
-  price?: PriceProp["price"]
-  url?: string
-} & Attributes
 
 export default Product
