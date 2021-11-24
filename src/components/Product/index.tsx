@@ -61,6 +61,7 @@ type Props = {
   name: string
   description?: string | ReactNode
   price?: PriceProp["price"]
+  vertical?: boolean
 } & Attributes
 
 const getDataLabel = (id: keyof Attributes) =>
@@ -105,8 +106,8 @@ const getData = (attributes: Attributes) => {
   }))
 }
 
-const Product = ({ images, price, name, description, ...attributes }: Props) => {
-  const span = (12 / (images.length + 1)) as GridSize
+const Product = ({ images, vertical, price, name, description, ...attributes }: Props) => {
+  const span = (vertical ? 12 : 12 / (images.length + 1)) as GridSize
   const data = getData(attributes)
   const { pathname } = useLocation()
   const id = snakeCase(name)

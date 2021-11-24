@@ -41,7 +41,6 @@ const Products: React.FC = () => {
   const PRODUCTS = Object.entries(SEO_PRODUCT).map(([id, page]) => ({
     ...page,
     image: withPrefix(`static/icons/${id.toLowerCase()}.jpg`),
-    name: t({ id: `${page.url}:title` }),
   }))
 
   const CAROUSEL_CONFIGURATION = {

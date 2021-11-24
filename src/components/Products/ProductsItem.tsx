@@ -10,7 +10,7 @@ type Props = {
   readonly index: number
   description?: ReactElement | string
   image: string
-  name: string
+  title: string
   url: string
 }
 
@@ -46,7 +46,7 @@ const LinkStyled = styled(Link)<{ index: number; visible: boolean }>(({ theme, v
 }))
 
 const ProductsItem: React.FC<Props> = props => {
-  const { index, name, description, image, url } = props
+  const { index, title, description, image, url } = props
   const carouselContext = useContext(CarouselContext)
   const [currentSlide, setCurrentSlide] = useState(carouselContext.state.currentSlide)
   const visible = index >= currentSlide
@@ -61,10 +61,10 @@ const ProductsItem: React.FC<Props> = props => {
 
   return (
     <LinkStyled to={url} visible={visible} underline="none" component={LocalizedLink}>
-      <ImgStyled src={image} alt={name} />
+      <ImgStyled src={image} alt={title} />
       <BoxStyled>
         <TH variant="h6" sans sx={{ textTransform: "uppercase" }}>
-          {name}
+          {title}
         </TH>
         <DescriptionStyled>{description}</DescriptionStyled>
       </BoxStyled>
