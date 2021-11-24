@@ -1,5 +1,5 @@
 import { t } from "@lingui/macro"
-import { graphql, useStaticQuery } from "gatsby"
+import { useStaticQuery } from "gatsby"
 import { BreadcrumbList as BreadcrumbListType } from "hooks/useTree"
 import { ITALIA, SEDE_OPERATIVA } from "pages/contatti"
 import React from "react"
@@ -7,6 +7,7 @@ import Helmet from "react-helmet"
 import { helmetJsonLdProp } from "react-schemaorg"
 import { BreadcrumbList, Corporation } from "schema-dts"
 import { SOCIALS } from "../Footer/Socials"
+import { graphql } from "gatsby"
 
 type Props = {
   title?: string
@@ -17,7 +18,7 @@ type Props = {
   meta?: { name: string; content: string }[]
 }
 
-const query = graphql`
+export const seoQuery = graphql`
   query SEO {
     site {
       siteMetadata {
@@ -28,11 +29,7 @@ const query = graphql`
 `
 
 const Seo: React.FC<Props> = ({ title, description, keywords, meta = [], breadcrumb }) => {
-  const {
-    site: {
-      siteMetadata: { siteUrl },
-    },
-  } = useStaticQuery(query)
+  const siteUrl = useStaticQuery(seoQuery).site.siteMetadata.siteUrl
 
   return (
     <Helmet

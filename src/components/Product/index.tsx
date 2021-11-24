@@ -3,7 +3,11 @@ import { t } from "@lingui/macro"
 import { ButtonBase, Grid, GridSize, styled, Typography } from "@mui/material"
 import { Data, ModalGallery, TH } from "components"
 import { LocalizedLink } from "gatsby-theme-i18n"
+import { SEDE_OPERATIVA } from "pages/contatti"
 import React, { ReactNode } from "react"
+import { Helmet } from "react-helmet"
+import { helmetJsonLdProp } from "react-schemaorg"
+import { Product as ProductSchema } from "schema-dts"
 import { BREAKPOINT, PRODUCT_GUTTER } from "theme"
 import { Colors } from "utils/constants"
 import { Picture } from "../ModalGallery"
@@ -93,26 +97,37 @@ const getDataData = (id: keyof Attributes, attribute: number | Colors[] | string
 }
 
 const getData = (attributes: Attributes) => {
-  const result = Object.entries(attributes)
-    .map(([id, attribute]) => ({
-      id,
-      label: getDataLabel(id as keyof Attributes),
-      value: getDataData(id as keyof Attributes, attribute),
-    }))
-    .map(attribute => <Data value={attribute.value} label={attribute.label} />)
-
-  return result
+  return Object.entries(attributes).map(([id, attribute]) => ({
+    id,
+    label: getDataLabel(id as keyof Attributes),
+    value: getDataData(id as keyof Attributes, attribute),
+  }))
 }
 
 const Product = ({ images, vertical, price, url, name, description, ...attributes }: Props) => {
   const Tag = url ? LocalizedLink : "div"
   const span = (vertical ? 12 : 12 / (images.length + 1)) as GridSize
+  const data = getData(attributes)
 
   return (
     <ModalGallery
       images={images}
       render={({ images, open }) => (
         <Tag to={url}>
+          <Helmet
+            script={[
+              helmetJsonLdProp<ProductSchema>({
+                "@context": "https://schema.org",
+                "@type": "Product",
+                "name": name,
+                "brand": SEDE_OPERATIVA.name,
+                "offers": {
+                  "@type": "Offer",
+                  "availability": "InStock",
+                },
+              }),
+            ]}
+          />
           <Grid container spacing={PRODUCT_GUTTER}>
             {images.map(image => (
               <Grid item xs={12} md={span} key={image.src} onClick={() => open(image)}>
@@ -132,7 +147,9 @@ const Product = ({ images, vertical, price, url, name, description, ...attribute
                 </Typography>
               )}
 
-              {getData(attributes)}
+              {data.map(item => (
+                <Data {...item} />
+              ))}
 
               <Price price={price} />
             </DataStyled>
