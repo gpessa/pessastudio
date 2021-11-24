@@ -1,4 +1,3 @@
-import { Section, TH } from "components"
 import { t } from "@lingui/macro"
 import CloseIcon from "@mui/icons-material/Close"
 import {
@@ -11,10 +10,11 @@ import {
   TableCell,
   TableContainer,
   TableRow,
-  Typography,
+  Typography
 } from "@mui/material"
-import { BREAKPOINT, PRODUCT_GUTTER } from "theme"
+import { Section, TH } from "components"
 import React, { FunctionComponent, ReactElement } from "react"
+import { BREAKPOINT, PRODUCT_GUTTER } from "theme"
 
 const TableCellStyled = styled(TableCell)<{ type?: string }>(({ type }) => ({
   display: "table-cell",
@@ -34,7 +34,7 @@ type Props = {
 }
 
 const Compare: React.FC<Props> = ({ title, ...rest }) => (
-  <Section maxWidth={false} disableGutters color="warm1">
+  <Section maxWidth={false} disableGutters={true} color="warm1">
     <Typography align="center" variant="h2" mb={3}>
       {title}
     </Typography>

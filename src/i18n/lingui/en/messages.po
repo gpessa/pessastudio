@@ -13,10 +13,6 @@ msgstr ""
 "Language-Team: \n"
 "Plural-Forms: \n"
 
-#: src/components/Products/index.tsx:44
-msgid ""
-msgstr ""
-
 #: src/utils/constants.tsx:170
 msgid "* In presenza di nevicate che superino la portata consentita, sarà opportuno intervenire rimuovendo l’eccesso di neve e cospargendo di sale la copertura prima di introdurre i cavalli."
 msgstr ""
@@ -26,48 +22,39 @@ msgstr ""
 msgid "+ IVA"
 msgstr "+ VAT"
 
-#: src/hooks/usePages/index.tsx:80
-#: src/utils/pages.tsx:80
+#: src/hooks/usePages/index.tsx:80 src/utils/pages.tsx:80
 msgid "/:description"
 msgstr ""
 
-#: src/hooks/usePages/index.tsx:60
-#: src/utils/pages.tsx:60
+#: src/hooks/usePages/index.tsx:60 src/utils/pages.tsx:60
 msgid "/contatti/:description"
 msgstr ""
 
-#: src/hooks/usePages/index.tsx:51
-#: src/utils/pages.tsx:51
+#: src/hooks/usePages/index.tsx:51 src/utils/pages.tsx:51
 msgid "/dressage/:description"
 msgstr ""
 
-#: src/hooks/usePages/index.tsx:42
-#: src/utils/pages.tsx:42
+#: src/hooks/usePages/index.tsx:42 src/utils/pages.tsx:42
 msgid "/giostre/:description"
 msgstr ""
 
-#: src/hooks/usePages/index.tsx:99
-#: src/utils/pages.tsx:99
+#: src/hooks/usePages/index.tsx:99 src/utils/pages.tsx:99
 msgid "/giostre/ippowalker/:description"
 msgstr ""
 
-#: src/hooks/usePages/index.tsx:113
-#: src/utils/pages.tsx:113
+#: src/hooks/usePages/index.tsx:113 src/utils/pages.tsx:113
 msgid "/giostre/tecnoexerciser/:description"
 msgstr ""
 
-#: src/hooks/usePages/index.tsx:13
-#: src/utils/pages.tsx:13
+#: src/hooks/usePages/index.tsx:13 src/utils/pages.tsx:13
 msgid "/ostacoli/:description"
 msgstr ""
 
-#: src/hooks/usePages/index.tsx:23
-#: src/utils/pages.tsx:23
+#: src/hooks/usePages/index.tsx:23 src/utils/pages.tsx:23
 msgid "/recinti/:description"
 msgstr "A durable fence solution designed to last through all weather conditions"
 
-#: src/hooks/usePages/index.tsx:33
-#: src/utils/pages.tsx:33
+#: src/hooks/usePages/index.tsx:33 src/utils/pages.tsx:33
 msgid "/tondini/:description"
 msgstr "Train foals outdoors"
 
@@ -179,8 +166,7 @@ msgstr ""
 msgid "Accessibili"
 msgstr "Affordable prices"
 
-#: src/components/Accessori/index.tsx:31
-#: src/pages/recinti/_accessori.tsx:40
+#: src/components/Accessori/index.tsx:31 src/pages/recinti/_accessori.tsx:40
 msgid "Accessori"
 msgstr "Add ons"
 
@@ -208,10 +194,9 @@ msgstr "Other"
 
 #: src/pages/giostre/ippowalker/_accessori.tsx:35
 #: src/pages/giostre/tecnoexerciser/_accessori.tsx:38
-#: src/utils/constants.tsx:111
-#: src/utils/constants.tsx:128
+#: src/utils/constants.tsx:111 src/utils/constants.tsx:128
 msgid "Alveolo sulla pesta"
-msgstr ""
+msgstr "Soil stabilization system"
 
 #: src/pages/giostre/index.tsx:25
 msgid "Ampia gamma"
@@ -278,7 +263,7 @@ msgstr "COD. FISC. e Part: I.V.A. 04743610281 C.C.I.A.A. PD - R.E.A. 414822"
 
 #: src/pages/ostacoli/_candelieri-e-lame-forate.tsx:11
 msgid "Candeliere 1,7 mt. con piede in PVC"
-msgstr ""
+msgstr "Aluminum Schooling Standard  1.7 mt. "
 
 #: src/pages/ostacoli/_candelieri-e-lame-forate.tsx:56
 msgid "Candelieri e lame forate"
@@ -288,15 +273,13 @@ msgstr "Jump standards and metal keyhole tracks"
 msgid "Caratteristiche"
 msgstr "Characteristic"
 
-#: src/pages/ostacoli/_cavalletti.tsx:11
-#: src/pages/ostacoli/_cavalletti.tsx:37
+#: src/pages/ostacoli/_cavalletti.tsx:11 src/pages/ostacoli/_cavalletti.tsx:37
 msgid "Cavalletti Caprilli"
 msgstr "Cavalletti Caprilli"
 
 #: src/pages/giostre/ippowalker/_accessori.tsx:17
 #: src/pages/giostre/tecnoexerciser/_accessori.tsx:20
-#: src/pages/tondini/index.tsx:72
-#: src/utils/constants.tsx:105
+#: src/pages/tondini/index.tsx:72 src/utils/constants.tsx:105
 #: src/utils/constants.tsx:122
 msgid "Chiusura a terra"
 msgstr ""
@@ -314,13 +297,10 @@ msgstr ""
 msgid "Colori"
 msgstr "Colors"
 
-#: src/hooks/usePages/index.tsx:87
-#: src/hooks/usePages/index.tsx:92
+#: src/hooks/usePages/index.tsx:87 src/hooks/usePages/index.tsx:92
 #: src/pages/recinti/come-preparare-il-fondo.tsx:7
-#: src/pages/recinti/index.tsx:39
-#: src/pages/tondini/index.tsx:150
-#: src/utils/pages.tsx:87
-#: src/utils/pages.tsx:92
+#: src/pages/recinti/index.tsx:39 src/pages/tondini/index.tsx:150
+#: src/utils/pages.tsx:87 src/utils/pages.tsx:92
 msgid "Come preparare il fondo"
 msgstr "How to prepare the ground"
 
@@ -328,8 +308,7 @@ msgstr "How to prepare the ground"
 msgid "Complimenti! Ti sei iscritto"
 msgstr "Well done! You signed up"
 
-#: src/hooks/usePages/index.tsx:59
-#: src/pages/contatti/index.tsx:94
+#: src/hooks/usePages/index.tsx:59 src/pages/contatti/index.tsx:94
 #: src/utils/pages.tsx:59
 msgid "Contatti"
 msgstr "Contacts us"
@@ -346,10 +325,9 @@ msgstr "Sales office Belgium"
 msgid "Contatto commerciale Francia"
 msgstr "Sales office France"
 
-#: src/hooks/usePages/index.tsx:73
-#: src/utils/pages.tsx:73
+#: src/hooks/usePages/index.tsx:73 src/utils/pages.tsx:73
 msgid "Cookie"
-msgstr ""
+msgstr "Cookie policy"
 
 #: src/pages/cookie-policy.tsx:11
 msgid "Cookie policy"
@@ -363,10 +341,8 @@ msgstr ""
 msgid "Coordinate bancarie"
 msgstr "Bank account details"
 
-#: src/pages/tondini/index.tsx:108
-#: src/pages/tondini/index.tsx:112
-#: src/pages/tondini/index.tsx:116
-#: src/utils/constants.tsx:32
+#: src/pages/tondini/index.tsx:108 src/pages/tondini/index.tsx:112
+#: src/pages/tondini/index.tsx:116 src/utils/constants.tsx:32
 msgid "Copertura"
 msgstr "The roof"
 
@@ -430,8 +406,7 @@ msgstr "Cup PS"
 msgid "Da anni Pessastudio è focalizzata nel produrre prodotti di qualità a costi accessibili"
 msgstr "For years, Pessastudio has focused on producing quality products at an affordable price"
 
-#: src/components/Product/index.tsx:61
-#: src/utils/constants.tsx:27
+#: src/components/Product/index.tsx:61 src/utils/constants.tsx:27
 msgid "Diametro"
 msgstr "Diameter"
 
@@ -461,8 +436,7 @@ msgstr ""
 msgid "Diritto di accesso ai dati personali"
 msgstr ""
 
-#: src/hooks/usePages/index.tsx:50
-#: src/pages/dressage/index.tsx:96
+#: src/hooks/usePages/index.tsx:50 src/pages/dressage/index.tsx:96
 #: src/utils/pages.tsx:50
 msgid "Dressage"
 msgstr "Dressage"
@@ -493,13 +467,11 @@ msgstr "Easy to use"
 msgid "Finalità del trattamento dei dati"
 msgstr ""
 
-#: src/pages/ostacoli/_fosso.tsx:10
-#: src/pages/ostacoli/_fosso.tsx:21
+#: src/pages/ostacoli/_fosso.tsx:10 src/pages/ostacoli/_fosso.tsx:21
 msgid "Fosso"
 msgstr "Water tray"
 
-#: src/pages/giostre/index.tsx:92
-#: src/pages/giostre/ippowalker/_compare.tsx:74
+#: src/pages/giostre/index.tsx:92 src/pages/giostre/ippowalker/_compare.tsx:74
 #: src/pages/giostre/tecnoexerciser/_compare.tsx:89
 #: src/pages/recinti/_gamma.tsx:67
 msgid "Gamma"
@@ -535,14 +507,12 @@ msgstr ""
 msgid "Giostra <0/>corridoio TECNOFENCE"
 msgstr ""
 
-#: src/hooks/usePages/index.tsx:97
-#: src/pages/giostre/ippowalker/_gallery.tsx:14
+#: src/hooks/usePages/index.tsx:97 src/pages/giostre/ippowalker/_gallery.tsx:14
 #: src/utils/pages.tsx:97
 msgid "Giostra Ippowalker"
 msgstr "Ippowalker horse walker"
 
-#: src/hooks/usePages/index.tsx:111
-#: src/utils/pages.tsx:111
+#: src/hooks/usePages/index.tsx:111 src/utils/pages.tsx:111
 msgid "Giostra Tecnoexerciser"
 msgstr ""
 
@@ -563,10 +533,8 @@ msgstr ""
 msgid "Giostra tecnoexercize"
 msgstr "Tecnoexercize horse Walker"
 
-#: src/hooks/usePages/index.tsx:41
-#: src/pages/giostre/index.tsx:69
-#: src/pages/giostre/index.tsx:73
-#: src/utils/pages.tsx:41
+#: src/hooks/usePages/index.tsx:41 src/pages/giostre/index.tsx:69
+#: src/pages/giostre/index.tsx:73 src/utils/pages.tsx:41
 msgid "Giostre"
 msgstr "Horse walkers"
 
@@ -586,8 +554,7 @@ msgstr "Google maps"
 msgid "Ho ricevuto questa mattina il materiale. I miei complimenti per la qualità dei prodotti, l'imballo ed il trasportatore"
 msgstr ""
 
-#: src/hooks/usePages/index.tsx:78
-#: src/utils/pages.tsx:78
+#: src/hooks/usePages/index.tsx:78 src/utils/pages.tsx:78
 msgid "Home"
 msgstr ""
 
@@ -668,19 +635,16 @@ msgstr ""
 msgid "Interno giostra con alveolo"
 msgstr ""
 
-#: src/pages/tondini/index.tsx:96
-#: src/pages/tondini/index.tsx:100
+#: src/pages/tondini/index.tsx:96 src/pages/tondini/index.tsx:100
 #: src/pages/tondini/index.tsx:128
 msgid "Interno tondino coperto"
 msgstr ""
 
-#: src/pages/giostre/index.tsx:125
-#: src/pages/giostre/ippowalker/index.tsx:23
+#: src/pages/giostre/index.tsx:125 src/pages/giostre/ippowalker/index.tsx:23
 msgid "Ippowalker"
 msgstr "Ippowalker"
 
-#: src/pages/tondini/index.tsx:39
-#: src/utils/constants.tsx:29
+#: src/pages/tondini/index.tsx:39 src/utils/constants.tsx:29
 msgid "Irrigazione"
 msgstr "Watering System"
 
@@ -700,12 +664,10 @@ msgstr "Sign up to our newsletter"
 msgid "Istituto"
 msgstr "Bank name"
 
-#: src/hooks/usePages/index.tsx:106
-#: src/hooks/usePages/index.tsx:120
+#: src/hooks/usePages/index.tsx:106 src/hooks/usePages/index.tsx:120
 #: src/pages/giostre/ippowalker/istruzioni-montaggio.tsx:53
 #: src/pages/giostre/tecnoexerciser/istruzioni-montaggio.tsx:80
-#: src/pages/recinti/index.tsx:43
-#: src/utils/pages.tsx:106
+#: src/pages/recinti/index.tsx:43 src/utils/pages.tsx:106
 #: src/utils/pages.tsx:120
 msgid "Istruzioni di montaggio"
 msgstr "Assembly instructions"
@@ -846,8 +808,7 @@ msgstr "Quality materials"
 msgid "Modalità del trattamento dei dati"
 msgstr ""
 
-#: src/pages/dressage/index.tsx:43
-#: src/pages/dressage/index.tsx:73
+#: src/pages/dressage/index.tsx:43 src/pages/dressage/index.tsx:73
 msgid "Modulo dressage"
 msgstr "Dressage module"
 
@@ -864,15 +825,13 @@ msgstr ""
 #: src/pages/giostre/ippowalker/istruzioni-montaggio.tsx:42
 #: src/pages/giostre/tecnoexerciser/istruzioni-montaggio.tsx:41
 msgid "Montate le porte di separazione"
-msgstr ""
+msgstr "Install the push fences"
 
-#: src/pages/giostre/tecnoexerciser/_gallery.tsx:18
-#: src/utils/constants.tsx:26
+#: src/pages/giostre/tecnoexerciser/_gallery.tsx:18 src/utils/constants.tsx:26
 msgid "Motore"
 msgstr "Engine"
 
-#: src/pages/giostre/index.tsx:32
-#: src/pages/tondini/index.tsx:168
+#: src/pages/giostre/index.tsx:32 src/pages/tondini/index.tsx:168
 msgid "Nessuna concessione edilizia"
 msgstr "No building permit needed"
 
@@ -896,21 +855,18 @@ msgstr ""
 msgid "Olimpic"
 msgstr "Olimpic"
 
-#: src/hooks/usePages/index.tsx:12
-#: src/pages/ostacoli/index.tsx:16
+#: src/hooks/usePages/index.tsx:12 src/pages/ostacoli/index.tsx:16
 #: src/utils/pages.tsx:12
 msgid "Ostacoli"
 msgstr "Jumps"
 
-#: src/hooks/usePages/index.tsx:68
-#: src/pages/404.tsx:10
-#: src/utils/pages.tsx:68
+#: src/hooks/usePages/index.tsx:68 src/pages/404.tsx:10 src/utils/pages.tsx:68
 msgid "Pagina non trovata"
 msgstr "Page not found"
 
 #: src/pages/ostacoli/_candelieri-e-lame-forate.tsx:34
 msgid "Per consentirvi di realizzare ostacoli di vostra creazione possiamo fornirvi le lame forate in due diverse lunghezze."
-msgstr ""
+msgstr "Metal keyhole tracks for jump cups. Tracks have predrilled holes so it’s easy to connect them to your post standards. Standard distance between tracks and post standard allows all pinless jump cups to settle perfectly into place."
 
 #: src/pages/giostre/index.tsx:72
 msgid "Perché una giostra Pessastudio"
@@ -997,8 +953,7 @@ msgstr "Equipment built and customised by Pessastudio in Italy"
 msgid "Profondità"
 msgstr "Depth"
 
-#: src/pages/giostre/index.tsx:63
-#: src/utils/constants.tsx:28
+#: src/pages/giostre/index.tsx:63 src/utils/constants.tsx:28
 msgid "Quadro di comando"
 msgstr "Control panel"
 
@@ -1010,8 +965,7 @@ msgstr ""
 msgid "Quadro di comando con programma manuale, periodico o automatico"
 msgstr ""
 
-#: src/hooks/usePages/index.tsx:22
-#: src/pages/recinti/index.tsx:53
+#: src/hooks/usePages/index.tsx:22 src/pages/recinti/index.tsx:53
 #: src/utils/pages.tsx:22
 msgid "Recinti"
 msgstr "Fencing"
@@ -1024,17 +978,13 @@ msgstr "Fence"
 msgid "Recinzione 1 filagna"
 msgstr "1-rail fence"
 
-#: src/pages/recinti/_gamma.tsx:31
-#: src/pages/recinti/index.tsx:13
-#: src/pages/recinti/index.tsx:17
-#: src/pages/recinti/index.tsx:25
-#: src/pages/recinti/index.tsx:29
-#: src/pages/recinti/index.tsx:33
+#: src/pages/recinti/_gamma.tsx:31 src/pages/recinti/index.tsx:13
+#: src/pages/recinti/index.tsx:17 src/pages/recinti/index.tsx:25
+#: src/pages/recinti/index.tsx:29 src/pages/recinti/index.tsx:33
 msgid "Recinzione 2 filagne"
 msgstr "2-rails fence"
 
-#: src/pages/recinti/_gamma.tsx:42
-#: src/pages/recinti/index.tsx:21
+#: src/pages/recinti/_gamma.tsx:42 src/pages/recinti/index.tsx:21
 msgid "Recinzione 3 filagne"
 msgstr "3-rails fence"
 
@@ -1044,8 +994,7 @@ msgstr "4-rails fence"
 
 #: src/pages/giostre/ippowalker/_accessori.tsx:49
 #: src/pages/giostre/tecnoexerciser/_accessori.tsx:52
-#: src/pages/tondini/index.tsx:20
-#: src/utils/constants.tsx:134
+#: src/pages/tondini/index.tsx:20 src/utils/constants.tsx:134
 msgid "Rete antivento"
 msgstr "Wind protection net"
 
@@ -1053,18 +1002,15 @@ msgstr "Wind protection net"
 msgid "Rete antivento ingresso"
 msgstr ""
 
-#: src/pages/dressage/index.tsx:57
-#: src/pages/dressage/index.tsx:88
+#: src/pages/dressage/index.tsx:57 src/pages/dressage/index.tsx:88
 msgid "Rettangolo dressage 20x40"
 msgstr "Dressage arena packages 20x40"
 
-#: src/pages/dressage/index.tsx:52
-#: src/pages/dressage/index.tsx:83
+#: src/pages/dressage/index.tsx:52 src/pages/dressage/index.tsx:83
 msgid "Rettangolo dressage 20x60"
 msgstr "Dressage arena packages 20x60"
 
-#: src/components/Compare/index.tsx:77
-#: src/components/Compare/index.tsx:117
+#: src/components/Compare/index.tsx:77 src/components/Compare/index.tsx:117
 msgid "Richiedi un preventivo"
 msgstr "Request a quote"
 
@@ -1084,8 +1030,7 @@ msgstr "Download"
 msgid "Scopo di questa Politica sulla privacy è di informarvi in merito ai dati che vengono raccolti su di voi, all’utilizzo che ne possiamo fare ed al modo in cui tali informazioni possono essere corrette o modificate."
 msgstr ""
 
-#: src/pages/giostre/index.tsx:119
-#: src/pages/giostre/index.tsx:133
+#: src/pages/giostre/index.tsx:119 src/pages/giostre/index.tsx:133
 msgid "Scopri di piú"
 msgstr "Discover more"
 
@@ -1132,8 +1077,7 @@ msgstr "Follow us on our social media"
 
 #: src/pages/giostre/ippowalker/_servizio_clienti.tsx:40
 #: src/pages/giostre/tecnoexerciser/_servizio_clienti.tsx:76
-#: src/pages/recinti/index.tsx:95
-#: src/pages/tondini/index.tsx:216
+#: src/pages/recinti/index.tsx:95 src/pages/tondini/index.tsx:216
 msgid "Servizio clienti"
 msgstr "Customer care"
 
@@ -1206,14 +1150,12 @@ msgstr "You have already signed up"
 msgid "Titolare del trattamento e dati di contatto"
 msgstr ""
 
-#: src/hooks/usePages/index.tsx:32
-#: src/pages/tondini/index.tsx:194
+#: src/hooks/usePages/index.tsx:32 src/pages/tondini/index.tsx:194
 #: src/utils/pages.tsx:32
 msgid "Tondini"
 msgstr "Lunge & Paddock Pens"
 
-#: src/pages/tondini/index.tsx:124
-#: src/pages/tondini/index.tsx:132
+#: src/pages/tondini/index.tsx:124 src/pages/tondini/index.tsx:132
 msgid "Tondino"
 msgstr "Lunge pen"
 
@@ -1221,8 +1163,7 @@ msgstr "Lunge pen"
 msgid "Tondino coperto"
 msgstr "Fully covered lunge pen"
 
-#: src/pages/tondini/index.tsx:88
-#: src/pages/tondini/index.tsx:92
+#: src/pages/tondini/index.tsx:88 src/pages/tondini/index.tsx:92
 msgid "Tondino coperto {0} pannelli {1} mt."
 msgstr ""
 
@@ -1272,8 +1213,7 @@ msgstr "We use cookies to ensure the proper functioning of the site. For more in
 msgid "Vedi"
 msgstr "View"
 
-#: src/pages/giostre/index.tsx:139
-#: src/pages/giostre/ippowalker/index.tsx:61
+#: src/pages/giostre/index.tsx:139 src/pages/giostre/ippowalker/index.tsx:61
 #: src/pages/giostre/tecnoexerciser/index.tsx:44
 msgid "Video giostra in movimento"
 msgstr ""

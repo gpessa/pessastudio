@@ -4,12 +4,13 @@ import { Button, ButtonBase, Dialog, styled, Typography } from "@mui/material"
 import React from "react"
 import { useGallery } from "hooks"
 
+
 const ButtonBackStyled = styled(ButtonBase)({
-  "position": "absolute",
   "top": 0,
   "left": 0,
-  "width": "50%",
   "bottom": 0,
+  "width": "50%",
+  "position": "absolute",
   "& > span": {
     position: "absolute",
     left: 0,
@@ -17,11 +18,11 @@ const ButtonBackStyled = styled(ButtonBase)({
 })
 
 const ButtonNextStyled = styled(ButtonBase)({
-  "position": "absolute",
   "top": 0,
   "right": 0,
-  "width": "50%",
   "bottom": 0,
+  "width": "50%",
+  "position": "absolute",
   "& > span": {
     position: "absolute",
     right: 0,

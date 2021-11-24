@@ -1,5 +1,5 @@
-import { Section } from "components"
 import { styled } from "@mui/material"
+import { Section } from "components"
 import React from "react"
 
 const VideoSectionStyled = styled(Section)(({ theme }) => ({
@@ -10,11 +10,11 @@ const VideoSectionStyled = styled(Section)(({ theme }) => ({
     rgba(0,0,0, 0) calc(100% - 150px)
   )`,
   "> *": {
-    position: "relative",
-    paddingBottom: "39.1%",
-    paddingTop: "30px",
     height: 0,
     overflow: "hidden",
+    paddingTop: "30px",
+    position: "relative",
+    paddingBottom: "39.1%",
     ["& iframe, .video-container object, .video-container embed"]: {
       position: "absolute",
       top: 0,
