@@ -3,7 +3,7 @@ import React from "react"
 
 type Props = {
   label: string
-  value: number | string | JSX.Element | JSX.Element[]
+  value: number | string | string[] | JSX.Element | JSX.Element[]
 }
 
 const Data: React.FC<Props> = ({ value, label }) => (
