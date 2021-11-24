@@ -69,6 +69,11 @@ const usePages = () => {
     url: "/404/",
   }
 
+  const PAGE_404_HTML: Page = {
+    title: PAGE_404.title,
+    url: "/404.html/",
+  }
+
   const COOKIE_POLICY: Page = {
     title: t`Cookie`,
     url: "/cookie-policy/",
@@ -135,6 +140,7 @@ const usePages = () => {
     ...PRODUCTS,
     ...NAVIGATION,
     PAGE_404,
+    PAGE_404_HTML,
     COOKIE_POLICY,
     HOME,
     RECINTI_COME_PREPARARE_IL_FONDO,

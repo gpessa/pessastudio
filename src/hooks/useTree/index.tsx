@@ -37,6 +37,7 @@ const usTree = (path: string): BreadcrumbList => {
         const last = fragments[fragments.length - 1]
         const url = `${last.url}${fragment}/`
         const page = findPage(url)
+        console.log(url, page)
         return [...fragments, page]
       },
       [PAGES.HOME]
