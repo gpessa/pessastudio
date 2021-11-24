@@ -1,8 +1,8 @@
-import { useLingui } from "@lingui/react"
-import { graphql, useStaticQuery, withPrefix } from "gatsby"
+import { graphql, useStaticQuery } from "gatsby"
 import { useLocalization } from "gatsby-theme-i18n"
+import usePages, { Page } from "hooks/usePages"
 
-export type BreadcrumbList = { name: string; url: string; absoluteUrl: string }[]
+export type BreadcrumbList = (Page & { absoluteUrl: string })[]
 
 const query = graphql`
   query SEOExtra {
@@ -15,52 +15,36 @@ const query = graphql`
 `
 
 const usTree = (path: string): BreadcrumbList => {
-  const urls = [...path.split("/").filter(f => f != "")]
-  const { i18n } = useLingui()
   const { defaultLang, prefixDefault, localizedPath, locale } = useLocalization()
+  const siteUrl = useStaticQuery(query).site.siteMetadata.siteUrl
+  const { PAGES } = usePages()
+  const urls = [...path.split("/").filter(f => f != "")]
 
-  const {
-    site: {
-      siteMetadata: { siteUrl },
-    },
-  } = useStaticQuery(query)
+  const findPage = (url: string): Page => Object.values(PAGES).find(page => page.url === url)!
 
-  const getUrl = (path: string) => {
-    return (
-      siteUrl +
-      localizedPath({
-        prefixDefault,
-        defaultLang,
-        locale,
-        path,
-      })
-    )
-  }
+  const getAbsoluteUrl = (path: string) =>
+    siteUrl +
+    localizedPath({
+      prefixDefault,
+      defaultLang,
+      locale,
+      path,
+    })
 
-  const fragments = urls.reduce(
-    (fragments, fragment) => {
-      const last = fragments[fragments.length - 1]
-      const url = `${last.url}${fragment}/`
-
-      const absoluteUrl = getUrl(url)
-
-      return [
-        ...fragments,
-        {
-          name: i18n._(`${url}:title`),
-          absoluteUrl,
-          url,
-        },
-      ]
-    },
-    [
-      {
-        name: i18n._(`/:title`),
-        url: "/",
-        absoluteUrl: getUrl(""),
+  const fragments = urls
+    .reduce(
+      (fragments, fragment) => {
+        const last = fragments[fragments.length - 1]
+        const url = `${last.url}${fragment}/`
+        const page = findPage(url)
+        return [...fragments, page]
       },
-    ]
-  )
+      [PAGES.HOME]
+    )
+    .map(page => ({
+      absoluteUrl: getAbsoluteUrl(page.url),
+      ...page,
+    }))
 
   return fragments
 }

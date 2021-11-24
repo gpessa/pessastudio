@@ -43,6 +43,7 @@ const Seo: React.FC<Props> = ({ title, description, keywords, meta = [], breadcr
           "name": SEDE_OPERATIVA.name,
           "url": siteUrl,
           "logo": siteUrl + require("assets/generals/logo.jpg").default,
+          "image": siteUrl + require("assets/products/tondini/gallery/tondino-10.jpg").default,
           "address": {
             "@type": "PostalAddress",
             "postalCode": SEDE_OPERATIVA.postalCode,
@@ -72,7 +73,7 @@ const Seo: React.FC<Props> = ({ title, description, keywords, meta = [], breadcr
           "itemListElement": breadcrumb.map((b, index) => ({
             "@type": "ListItem",
             "position": index + 1,
-            "name": b.name,
+            "name": b.title,
             "item": b.absoluteUrl,
           })),
         }),
