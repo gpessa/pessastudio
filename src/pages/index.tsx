@@ -1,9 +1,16 @@
 import { t, Trans } from "@lingui/macro"
 import { AccountBalance, Apps, Architecture, Restore, TurnedInNot } from "@mui/icons-material"
-import React from "react"
 import { Benefits, Hero, Products, Testimonials } from "components"
+import React from "react"
 
 const Index: React.FC = () => {
+  const TESTIMONIALS = [
+    t`Ho ricevuto questa mattina il materiale. I miei complimenti per la qualità dei prodotti, l'imballo ed il trasportatore`,
+    t`Ringrazio tutto il team per la professionalità, gentilezza, velocità e sopratutto per l'ottimo risultato`,
+    t`Splendido niente da dire! Il tondino è ben pensato e ingegnoso. Molto bene!`,
+    t`Gli ostacoli sono arrivati. Sono fantastici!`,
+  ]
+
   const BENEFITS = [
     {
       icon: TurnedInNot,
@@ -63,7 +70,12 @@ const Index: React.FC = () => {
 
       <Products />
 
-      <Testimonials />
+      <Testimonials
+        subtitle={t`Dicono di noi`}
+        title={t`Cosa dicono di noi`}
+        text={t`Scopri la qualità dei nostri prodotti attraverso la testimonianza dei clienti`}
+        testimonials={TESTIMONIALS}
+      />
     </>
   )
 }

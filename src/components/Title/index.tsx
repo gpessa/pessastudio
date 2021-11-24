@@ -1,15 +1,12 @@
-import { Box, Typography, BoxProps } from "@mui/material"
-import { styled } from "@mui/material"
-import { BREAKPOINT } from "theme"
+import { Box, BoxProps, styled, Typography } from "@mui/material"
 import React from "react"
+import { BREAKPOINT } from "theme"
 
 export type Props = {
-  sx?: BoxProps
   text?: any
   title: string
   subtitle?: string
-  className?: string
-}
+} & Pick<BoxProps, "sx" | "className">
 
 const StyledBox = styled(Box)(({ theme }) => ({
   [theme.breakpoints.up(BREAKPOINT)]: {

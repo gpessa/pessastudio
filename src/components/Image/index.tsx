@@ -1,24 +1,24 @@
 import { styled } from "@mui/material"
 import React from "react"
 
-const ImageStyled = styled("img")(({ theme }) => ({
+const ImageStyled = styled("img")(() => ({
   borderRadius: "50%",
   width: "100%",
 }))
 
 const ImageWrapperStyled = styled("div")<Omit<Props, "src">>(({ theme, top, left }) => ({
   "position": "relative",
-  "&:after": {
-    content: left && top && "''",
-    width: "30%",
-    paddingBottom: "30%",
-    borderRadius: "50%",
-    border: `3px solid ${theme.palette.error.main}`,
-    display: "block",
-    position: "absolute",
-    boxSizing: "content-box",
+  "&:after":  left && top && {
     top,
     left,
+    width: "30%",
+    content: "''",
+    display: "block",
+    borderRadius: "50%",
+    paddingBottom: "30%",
+    position: "absolute",
+    boxSizing: "content-box",
+    border: `3px solid ${theme.palette.error.main}`,
   },
 }))
 
