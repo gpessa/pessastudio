@@ -1,12 +1,10 @@
 import { useLingui } from "@lingui/react"
-import { Button, Dialog, DialogTitle, IconButton, List, ListItem, Tooltip } from "@mui/material"
-import { styled } from "@mui/material"
+import { Button, Dialog, DialogTitle, IconButton, List, ListItem, styled, Tooltip } from "@mui/material"
+import { useLocation } from "@reach/router"
 import { withPrefix } from "gatsby"
 import { LocalizedLink, useLocalization } from "gatsby-theme-i18n"
 import * as React from "react"
 import { useState } from "react"
-import { useLocation } from "@reach/router"
-import { graphql, useStaticQuery } from "gatsby"
 
 const DIM = 20
 
@@ -20,16 +18,6 @@ const ButtonStyled = styled(Button)(({ theme }) => ({
 }))
 
 const LanguageSelector: React.FC = () => {
-  const { site } = useStaticQuery(
-    graphql`
-      query {
-        site {
-          pathPrefix
-        }
-      }
-    `
-  )
-
   const { config } = useLocalization()
   const { i18n } = useLingui()
   const [show, setShow] = useState(false)
@@ -37,9 +25,7 @@ const LanguageSelector: React.FC = () => {
 
   const handleModal = () => setShow(prevCount => !prevCount)
 
-  const to = pathname
-    .replace(site.pathPrefix, ``) // remove the prefix
-    .replace(`/${i18n._locale}`, "") // remove the current language
+  const to = pathname.replace(`/${i18n._locale}`, "") // remove the current language
 
   return (
     <>
