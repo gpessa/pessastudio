@@ -13,7 +13,7 @@ export type PriceProps = {
     | undefined
     | number
     | {
-        price?: number
+        price: number
         note: string
       }[]
 }

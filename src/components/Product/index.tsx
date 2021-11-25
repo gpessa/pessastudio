@@ -89,6 +89,39 @@ const getData = (attributes: Attributes) => {
   }))
 }
 
+const getSeoPrice = (price: ProductProps["price"]) => {
+  if (!price) return undefined
+
+  const common = {
+    priceCurrency: "EUR",
+    availability: "https://schema.org/InStock",
+  }
+
+  if (typeof price === "number")
+    return {
+      ...common,
+      "@type": "Offer",
+      price,
+    }
+
+  if (typeof price === "object" && price.length === 1)
+    return {
+      ...common,
+      "@type": "Offer",
+      "price": price[0].price,
+    }
+
+  if (typeof price === "object" && price.length > 1) {
+    const order = price.sort((a, b) => a.price - b.price)
+    return {
+      ...common,
+      "@type": "AggregateOffer",
+      "lowPrice": order[0].price,
+      "highPrice": order[order.length - 1].price,
+    }
+  }
+}
+
 const Product = ({ images, vertical, price, name, description, ...attributes }: ProductProps) => {
   const md = (vertical ? 12 : 12 / (images.length + 1)) as GridSize
   const data = getData(attributes)
@@ -106,11 +139,7 @@ const Product = ({ images, vertical, price, name, description, ...attributes }: 
             "@type": "Product",
             "name": name,
             "image": images.map(({ src }) => siteUrl + src),
-            "offers": {
-              "@type": "Offer",
-              "priceCurrency": "EUR",
-              "availability": "https://schema.org/InStock",
-            },
+            "offers": getSeoPrice(price),
             "brand": {
               "@type": "Brand",
               "url": itemUrl,
