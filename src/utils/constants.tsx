@@ -19,6 +19,7 @@ export const MATERIALS = {
   POLIETILENE: <Trans>Polietilene</Trans>,
   PLASTICA: <Trans>Plastica</Trans>,
   TECNOPOLIMERO: <Trans>Tecnopolimero</Trans>,
+  PVC: <Trans>PVC</Trans>,
 }
 
 export const GIOSTRE_ATTRIBUTES = {

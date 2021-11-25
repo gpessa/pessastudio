@@ -1,24 +1,37 @@
 import { t, Trans } from "@lingui/macro"
-import { Grid, styled, Typography } from "@mui/material"
+import { Grid, styled } from "@mui/material"
+import { Product, Section, TH } from "components"
 import React from "react"
-import { Section, TH } from "components"
 import { PRODUCT_GUTTER } from "theme"
+import { Colors, MATERIALS } from "utils/constants"
 
-const DivStyled = styled("div")(({ theme }) => ({
-  marginBottom: theme.spacing(3),
-  backgroundRepeat: "no-repeat",
-  backgroundPosition: "bottom",
-  backgroundSize: "100%",
-  paddingBottom: "164%",
-  width: "100%",
+const ProductStyled = styled(Product)(({ theme }) => ({
+  "& button": {
+    backgroundColor: "transparent",
+    marginBottom: theme.spacing(3),
+    paddingBottom: "164%",
+    borderWidth: 0,
+    width: "100%",
+  },
+  "& button img": {
+    marginTop: "unset",
+    transform: "unset",
+    top: "unset",
+    bottom: 0,
+  },
+  "& caption": {
+    color: theme.palette.grey[400],
+  },
 }))
 
 const Gamma = () => {
   const PRODUCTS = [
     {
-      height: 1200,
+      height: 1250,
       name: t`Recinzione 1 filagna`,
-      image: require("assets/products/recinti/svg-1.svg").default,
+      images: [{ src: require("assets/products/recinti/svg-1.svg").default }],
+      colors: [Colors.WHITE],
+      materials: [MATERIALS.POLIPROPILENE],
       description: (
         <Trans>
           La recinzione ad una filagna viene utilizzata per delimitare campi da lavoro o gara poco adoperati e non è
@@ -27,9 +40,11 @@ const Gamma = () => {
       ),
     },
     {
-      height: 1350,
+      height: 1400,
       name: t`Recinzione 2 filagne`,
-      image: require("assets/products/recinti/svg-2.svg").default,
+      images: [{ src: require("assets/products/recinti/svg-2.svg").default }],
+      colors: [Colors.WHITE],
+      materials: [MATERIALS.POLIPROPILENE],
       description: (
         <Trans>
           La recinzione a due filagne genericamente viene utilizzata per delimitare campi da lavoro o per realizzare
@@ -38,9 +53,11 @@ const Gamma = () => {
       ),
     },
     {
-      height: 1600,
+      height: 1650,
       name: t`Recinzione 3 filagne`,
-      image: require("assets/products/recinti/svg-3.svg").default,
+      images: [{ src: require("assets/products/recinti/svg-3.svg").default }],
+      colors: [Colors.WHITE],
+      materials: [MATERIALS.POLIPROPILENE],
       description: (
         <Trans>
           La recinzione a tre filagne viene utilizzata per delimitare paddok per animali che rimangono per molte ore al
@@ -50,9 +67,11 @@ const Gamma = () => {
       ),
     },
     {
-      height: 1900,
+      height: 1950,
       name: t`Recinzione 4 filagne`,
-      image: require("assets/products/recinti/svg-4.svg").default,
+      images: [{ src: require("assets/products/recinti/svg-4.svg").default }],
+      colors: [Colors.WHITE],
+      materials: [MATERIALS.POLIPROPILENE],
       description: (
         <Trans>
           Le recinzioni a quattro filagne sono utilizzate per delimitare paddock per stalloni, realizzare tondini per la
@@ -66,13 +85,9 @@ const Gamma = () => {
     <Section color="primary">
       <TH variant="h2" align="center">{t`Gamma`}</TH>
       <Grid container spacing={PRODUCT_GUTTER * 2}>
-        {PRODUCTS.map(({ image, name, description }, index) => (
+        {PRODUCTS.map((item, index) => (
           <Grid item key={index} md={3}>
-            <DivStyled style={{ backgroundImage: `url(${image})` }} />
-            <TH variant="h6" sans>
-              {name}
-            </TH>
-            <Typography>{description}</Typography>
+            <ProductStyled {...item} vertical />
           </Grid>
         ))}
       </Grid>

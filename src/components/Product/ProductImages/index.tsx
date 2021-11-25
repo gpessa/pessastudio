@@ -6,19 +6,19 @@ import { ProductProps } from ".."
 
 const ButtonBaseStyled = styled(ButtonBase)(({ theme }) => ({
   backgroundColor: theme.palette.common.white,
-  overflow: "hidden",
-  borderRadius: 10,
   paddingBottom: "100%",
   position: "relative",
+  overflow: "hidden",
+  borderRadius: 10,
   width: "100%",
 }))
 
 const ImgStyled = styled("img")(({}) => ({
-  top: 0,
-  width: "100%",
-  marginTop: "50%",
-  position: "absolute",
   transform: "translateY(-50%)",
+  position: "absolute",
+  marginTop: "50%",
+  width: "100%",
+  top: 0,
 }))
 
 export type ProductImagesProps = {

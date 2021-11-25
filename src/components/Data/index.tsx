@@ -8,7 +8,7 @@ type Props = {
 
 const Data: React.FC<Props> = ({ value, label }) => (
   <Stack direction="row" alignItems="center" mb={0.5}>
-    <Typography sx={{ mr: 1 }} gutterBottom={false} variant="caption">
+    <Typography sx={{ mr: 1 }} gutterBottom={false} variant="caption" component="caption">
       {label}:
     </Typography>
     <span>{value}</span>

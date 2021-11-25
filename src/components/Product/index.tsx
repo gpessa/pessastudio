@@ -125,7 +125,7 @@ const getSeoPrice = (price: ProductProps["price"], url: string) => {
   }
 }
 
-const Product = ({ images, vertical, price, name, description, ...attributes }: ProductProps) => {
+const Product = ({ className, images, vertical, price, name, description, ...attributes }: ProductProps) => {
   const md = (vertical ? 12 : 12 / (images.length + 1)) as GridSize
   const data = getData(attributes)
   const { pathname } = useLocation()
@@ -134,7 +134,7 @@ const Product = ({ images, vertical, price, name, description, ...attributes }: 
   const itemUrl = `${siteUrl}${pathname}#${id}`
 
   return (
-    <Box id={id}>
+    <Box id={id} className={className}>
       <Helmet
         script={[
           helmetJsonLdProp<ProductSchema>({
