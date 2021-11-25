@@ -89,7 +89,7 @@ const getData = (attributes: Attributes) => {
   }))
 }
 
-const getSeoPrice = (price: ProductProps["price"]) => {
+const getSeoPrice = (price: ProductProps["price"], url: string) => {
   if (!price) return undefined
 
   const common = {
@@ -102,6 +102,7 @@ const getSeoPrice = (price: ProductProps["price"]) => {
       ...common,
       "@type": "Offer",
       price,
+      url,
     }
 
   if (typeof price === "object" && price.length === 1)
@@ -109,6 +110,7 @@ const getSeoPrice = (price: ProductProps["price"]) => {
       ...common,
       "@type": "Offer",
       "price": price[0].price,
+      url,
     }
 
   if (typeof price === "object" && price.length > 1) {
@@ -118,6 +120,7 @@ const getSeoPrice = (price: ProductProps["price"]) => {
       "@type": "AggregateOffer",
       "lowPrice": order[0].price,
       "highPrice": order[order.length - 1].price,
+      url,
     }
   }
 }
@@ -139,10 +142,9 @@ const Product = ({ images, vertical, price, name, description, ...attributes }: 
             "@type": "Product",
             "name": name,
             "image": images.map(({ src }) => siteUrl + src),
-            "offers": getSeoPrice(price),
+            "offers": getSeoPrice(price, itemUrl),
             "brand": {
               "@type": "Brand",
-              "url": itemUrl,
               "name": SEDE_OPERATIVA.name,
             },
           }),

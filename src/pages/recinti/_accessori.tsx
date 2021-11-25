@@ -27,6 +27,7 @@ const Accessori = () => {
       ],
       height: 300,
       colors: [Colors.WHITE, Colors.GREEN],
+      price: 35,
     },
     // {
     //   name: t({ id: "RECINTI__prodotto__recinzione-erpice-livellatrice__name" }),
