@@ -57,11 +57,11 @@ type Attributes = {
 }
 
 type Props = {
+  vertical?: boolean
   images: Picture[]
   name: string
   description?: string | ReactNode
   price?: PriceProp["price"]
-  vertical?: boolean
 } & Attributes
 
 const getDataLabel = (id: keyof Attributes) =>
@@ -125,9 +125,7 @@ const Product = ({ images, vertical, price, name, description, ...attributes }: 
                 "@context": "https://schema.org",
                 "@type": "Product",
                 "name": name,
-                "image": images.map(({ src }) => {
-                  return siteUrl + src
-                }),
+                "image": images.map(({ src }) => siteUrl + src),
                 "offers": {
                   "@type": "Offer",
                   "priceCurrency": "EUR",
