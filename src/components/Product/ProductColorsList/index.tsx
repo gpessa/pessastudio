@@ -1,9 +1,8 @@
-import { Colors } from "utils/constants"
-import { Box, Stack } from "@mui/material"
-import { styled } from "@mui/material"
+import { Box, Stack, styled } from "@mui/material"
 import React from "react"
+import { Colors } from "utils/constants"
 
-const ColorStyled = styled(Box)<{ color: Colors }>(({ theme, color }) => ({
+const ProductColorsList = styled(Box)<{ color: Colors }>(({ theme, color }) => ({
   width: 14,
   height: 14,
   borderRadius: "50%",
@@ -14,7 +13,7 @@ const ColorStyled = styled(Box)<{ color: Colors }>(({ theme, color }) => ({
 const ColorsList: React.FC<{ colors: Colors[] }> = ({ colors }) => (
   <Stack direction="row" spacing={1} sx={{ minHeight: "1.5rem" }} alignItems="center">
     {colors.sort().map(color => (
-      <ColorStyled color={color} key={color}></ColorStyled>
+      <ProductColorsList color={color} key={color}></ProductColorsList>
     ))}
   </Stack>
 )

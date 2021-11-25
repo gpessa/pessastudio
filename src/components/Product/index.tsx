@@ -1,8 +1,8 @@
 import { i18n } from "@lingui/core"
 import { t } from "@lingui/macro"
-import { ButtonBase, Grid, GridSize, styled, Typography } from "@mui/material"
+import { Box, Grid, GridSize, styled, Typography } from "@mui/material"
 import { useLocation } from "@reach/router"
-import { Data, ModalGallery, TH } from "components"
+import { Data, TH } from "components"
 import { seoQuery } from "components/Seo"
 import { useStaticQuery } from "gatsby"
 import { SEDE_OPERATIVA } from "pages/contatti"
@@ -13,26 +13,9 @@ import { Product as ProductSchema } from "schema-dts"
 import { snakeCase } from "snake-case"
 import { BREAKPOINT, PRODUCT_GUTTER } from "theme"
 import { Colors } from "utils/constants"
-import { Picture } from "../ModalGallery"
-import ColorsList from "./ColorsList"
-import Price, { PriceProp } from "./Price"
-
-const ButtonBaseStyled = styled(ButtonBase)(({ theme }) => ({
-  backgroundColor: theme.palette.common.white,
-  overflow: "hidden",
-  borderRadius: 10,
-  paddingBottom: "100%",
-  position: "relative",
-  width: "100%",
-}))
-
-const ImgStyled = styled("img")(({}) => ({
-  top: 0,
-  width: "100%",
-  marginTop: "50%",
-  position: "absolute",
-  transform: "translateY(-50%)",
-}))
+import ColorsList from "./ProductColorsList"
+import ProductImages, { ProductImagesProps } from "./ProductImages"
+import ProductPrice, { PriceProps } from "./ProductPrice"
 
 const DataStyled = styled(Grid)(({ theme }) => ({
   order: -1,
@@ -45,23 +28,23 @@ const DataStyled = styled(Grid)(({ theme }) => ({
 }))
 
 type Attributes = {
-  colors?: Colors[]
   materials?: JSX.Element[]
-  depth?: number
+  thickness?: number
   diameter?: number
+  colors?: Colors[]
   height?: number
   length?: number
-  thickness?: number
   weight?: number
+  depth?: number
   width?: number
 }
 
-type Props = {
-  vertical?: boolean
-  images: Picture[]
-  name: string
+export type ProductProps = {
+  images: ProductImagesProps["images"]
   description?: string | ReactNode
-  price?: PriceProp["price"]
+  price?: PriceProps["price"]
+  vertical?: boolean
+  name: string
 } & Attributes
 
 const getDataLabel = (id: keyof Attributes) =>
@@ -106,8 +89,8 @@ const getData = (attributes: Attributes) => {
   }))
 }
 
-const Product = ({ images, vertical, price, name, description, ...attributes }: Props) => {
-  const span = (vertical ? 12 : 12 / (images.length + 1)) as GridSize
+const Product = ({ images, vertical, price, name, description, ...attributes }: ProductProps) => {
+  const md = (vertical ? 12 : 12 / (images.length + 1)) as GridSize
   const data = getData(attributes)
   const { pathname } = useLocation()
   const id = snakeCase(name)
@@ -115,59 +98,49 @@ const Product = ({ images, vertical, price, name, description, ...attributes }: 
   const itemUrl = `${siteUrl}${pathname}#${id}`
 
   return (
-    <ModalGallery
-      images={images}
-      render={({ images, open }) => (
-        <div id={id}>
-          <Helmet
-            script={[
-              helmetJsonLdProp<ProductSchema>({
-                "@context": "https://schema.org",
-                "@type": "Product",
-                "name": name,
-                "image": images.map(({ src }) => siteUrl + src),
-                "offers": {
-                  "@type": "Offer",
-                  "priceCurrency": "EUR",
-                  "availability": "https://schema.org/InStock",
-                },
-                "brand": {
-                  "@type": "Brand",
-                  "url": itemUrl,
-                  "name": SEDE_OPERATIVA.name,
-                },
-              }),
-            ]}
-          />
-          <Grid container spacing={PRODUCT_GUTTER}>
-            {images.map(image => (
-              <Grid item xs={12} md={span} key={image.src} onClick={() => open(image)}>
-                <ButtonBaseStyled>
-                  <ImgStyled src={image.src} alt={image.caption || name} />
-                </ButtonBaseStyled>
-              </Grid>
-            ))}
-            <DataStyled item xs={12} md={span}>
-              <TH variant="h6" sans sx={{ textTransform: "uppercase" }}>
-                {name}
-              </TH>
+    <Box id={id}>
+      <Helmet
+        script={[
+          helmetJsonLdProp<ProductSchema>({
+            "@context": "https://schema.org",
+            "@type": "Product",
+            "name": name,
+            "image": images.map(({ src }) => siteUrl + src),
+            "offers": {
+              "@type": "Offer",
+              "priceCurrency": "EUR",
+              "availability": "https://schema.org/InStock",
+            },
+            "brand": {
+              "@type": "Brand",
+              "url": itemUrl,
+              "name": SEDE_OPERATIVA.name,
+            },
+          }),
+        ]}
+      />
+      <Grid container spacing={PRODUCT_GUTTER}>
+        <ProductImages {...{ images, md, name }} />
 
-              {description && (
-                <Typography paragraph component="div">
-                  {description}
-                </Typography>
-              )}
+        <DataStyled item xs={12} md={md}>
+          <TH variant="h6" sans sx={{ textTransform: "uppercase" }}>
+            {name}
+          </TH>
 
-              {data.map(item => (
-                <Data {...item} />
-              ))}
+          {description && (
+            <Typography paragraph component="div">
+              {description}
+            </Typography>
+          )}
 
-              <Price price={price} />
-            </DataStyled>
-          </Grid>
-        </div>
-      )}
-    />
+          {data.map(item => (
+            <Data {...item} />
+          ))}
+
+          <ProductPrice price={price} />
+        </DataStyled>
+      </Grid>
+    </Box>
   )
 }
 

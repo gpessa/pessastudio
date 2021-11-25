@@ -8,7 +8,7 @@ const PriceStyled = styled(Typography)(({ theme }) => ({
   fontWeight: "bold",
 }))
 
-export type PriceProp = {
+export type PriceProps = {
   price:
     | undefined
     | number
@@ -18,14 +18,14 @@ export type PriceProp = {
       }[]
 }
 
-const Price: React.FC<PriceProp> = ({ price }) => {
+const ProductPrice: React.FC<PriceProps> = ({ price }) => {
   const { i18n } = useLingui()
 
   if (!price) return null
 
   if (typeof price === "number")
     return (
-      <PriceStyled component={"span"}>
+      <PriceStyled>
         <Badge
           color="warm2"
           badgeContent={<Trans>+ IVA</Trans>}
@@ -64,4 +64,4 @@ const Price: React.FC<PriceProp> = ({ price }) => {
   )
 }
 
-export default Price
+export default ProductPrice
