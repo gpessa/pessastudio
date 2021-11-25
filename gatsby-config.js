@@ -1,35 +1,21 @@
 const redirect = require('./src/rewrite/index.js');
-const IS_PRODUCTION = process.env.ACTIVE_ENV === "PRODUCTION" ? true : false
-
-const siteUrl = IS_PRODUCTION ?
-  "https://pessastudio.eu" :
-  "https://gpessa.github.io"
-
-const pathPrefix = IS_PRODUCTION ?
-  undefined :
-  "/pessastudio"
-
-const googleTagManager = IS_PRODUCTION ?
-  {
-    trackingId: 'GTM-NTCR82T',
-    cookieName: 'gatsby-gdpr-google-tagmanager',
-  } :
-  undefined
 
 module.exports = {
-  pathPrefix,
   siteMetadata: {
-    siteUrl,
     title: `Pessastudio`,
-    author: `Pessastudio`
+    author: `Pessastudio`,
+    siteUrl: "https://pessastudio.eu",
   },
   plugins: [
     `gatsby-plugin-tsconfig-paths`,
     {
       resolve: `gatsby-plugin-gdpr-cookies`,
       options: {
-        googleTagManager,
-        environments: ['production', 'development']
+        googleTagManager: {
+          trackingId: 'GTM-NTCR82T',
+          cookieName: 'gatsby-gdpr-google-tagmanager',
+        },
+        environments: ['production']
       },
     },
     `gatsby-plugin-sitemap`,

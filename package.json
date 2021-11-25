@@ -60,12 +60,12 @@
     "extract": "lingui extract --clean",
     "compile": "lingui compile",
     "build": "gatsby build",
-    "develop": "export ACTIVE_ENV=DEVELOPMENT && gatsby develop -H 0.0.0.0 -p 8000",
+    "develop": "gatsby develop -H 0.0.0.0 -p 8000",
     "format": "prettier --write src/**/*.{js,ts,tsx}",
     "start": "yarn run develop",
     "serve": "gatsby serve",
-    "deploy:PRODUCTION": "export ACTIVE_ENV=PRODUCTION  && gatsby clean && gatsby build && node deploy",
-    "deploy:DEVELOPMENT": "export ACTIVE_ENV=DEVELOPMENT && gatsby clean && gatsby build --prefix-paths && gh-pages -d public",
+    "deploy:PRODUCTION": "Øgatsby clean && gatsby build && node deploy",
+    "deploy:DEVELOPMENT": "gatsby clean && gatsby build --prefix-paths && gh-pages -d public",
     "preinstall": "npx force-resolutions"
   },
   "resolutions": {
