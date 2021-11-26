@@ -15,7 +15,7 @@ msgstr ""
 
 #: src/utils/constants.tsx:171
 msgid "* In presenza di nevicate che superino la portata consentita, sarà opportuno intervenire rimuovendo l’eccesso di neve e cospargendo di sale la copertura prima di introdurre i cavalli."
-msgstr ""
+msgstr "* En présence de chutes de neige dépassant la portée prévue, il y aura lieu d’enlever l’excédent de neige et de saler la couverture avant de faire entrer les chevaux."
 
 #: src/components/Product/ProductPrice/index.tsx:31
 #: src/components/Product/ProductPrice/index.tsx:49
@@ -136,7 +136,7 @@ msgstr "<0>Excellente pour enseigner à vos chevaux/poulains à la sauter.</0><1
 
 #: src/utils/constants.tsx:80
 msgid "<0>Porte di separazione.</0><1>(Elettrificatione 200-240 Volt monofase)</1>"
-msgstr ""
+msgstr "<0>Portes de séparation.</0><1>(Électrification 200-240 volts monophasé).</1>"
 
 #: src/pages/ostacoli/_barriere.tsx:29
 msgid "<0>Sono le componenti dell'ostacolo più stressate, poiché, come i candelieri e i pilieri, sono perennemente sottoposte all'azione aggressiva degli agenti atmosferici (caldo, freddo, sole, pioggia). A questi si aggiungono anche gli urti degli zoccoli dei cavalli, frequenti ribaltamenti e le manipolazioni necessarie per aggiustarne le altezze.</0><1>Le barriere di abete, comunemente usate, richiedono una continua manutenzione perché si piegano, scoloriscono nel tempo e si rompono frequentemente.</1><2>Le barriere sintetiche di Pessastudio, invece, hanno lo stesso peso di quelle in abete, ma perdono il loro colore solamente dopo anni, non si scrostano e, solo raramente, si rompono sotto l'azione di un carico eccessivo.</2>"
@@ -160,7 +160,7 @@ msgstr "<0>Un kit pour créer un circuit de dressage standard de 20x60 m.</0><1>
 
 #: src/utils/constants.tsx:66
 msgid "<0>È possibile ordinare una giostra nei diametri:</0><1><2>12,0 mt. <3>(4 cavalli)</3></2><4>14,2 mt. <5>(6 cavalli)</5></4></1>"
-msgstr ""
+msgstr "<0>Commande possible de marcheur dans les diamètres:</0><1><2>12,0 m <3>(4 chevaux)</3></2><4>14,2 m <5>(6 chevaux)</5></4></1>"
 
 #: src/pages/index.tsx:29
 msgid "Accessibili"
@@ -180,7 +180,7 @@ msgstr "Vous acceptez"
 
 #: src/pages/giostre/ippowalker/_accessori.tsx:13
 msgid "Alcuni accessori possono essere acquistati separatamente e permettono di migliorare ulteriormente le condizioni d'uso della vostra giostra."
-msgstr ""
+msgstr "Certains accessoires peuvent être achetés séparément. Ils permettent d’améliorer encore les conditions d’utilisation."
 
 #: src/pages/giostre/tecnoexerciser/_accessori.tsx:13
 #: src/pages/tondini/index.tsx:13
@@ -274,7 +274,7 @@ msgstr "Chandeliers et lame en acier percée à visser"
 
 #: src/pages/tondini/index.tsx:198
 msgid "Caratteristiche"
-msgstr ""
+msgstr "Caractéristiques"
 
 #: src/pages/ostacoli/_cavalletti.tsx:11 src/pages/ostacoli/_cavalletti.tsx:37
 msgid "Cavalletti Caprilli"
@@ -285,7 +285,7 @@ msgstr ""
 #: src/pages/tondini/index.tsx:72 src/utils/constants.tsx:106
 #: src/utils/constants.tsx:123
 msgid "Chiusura a terra"
-msgstr ""
+msgstr "Fermeture au sol"
 
 #: src/pages/contatti/_address.tsx:37
 msgid "Codice Fiscale e Partita IVA"
@@ -345,7 +345,7 @@ msgstr "Coordonnées bancaires"
 #: src/pages/tondini/index.tsx:108 src/pages/tondini/index.tsx:112
 #: src/pages/tondini/index.tsx:116 src/utils/constants.tsx:33
 msgid "Copertura"
-msgstr ""
+msgstr "Couverture"
 
 #: src/pages/giostre/ippowalker/_copertura.tsx:13
 #: src/pages/giostre/ippowalker/_copertura.tsx:17
@@ -353,7 +353,7 @@ msgstr ""
 #: src/pages/giostre/tecnoexerciser/_copertura.tsx:17
 #: src/utils/constants.tsx:178
 msgid "Copertura in PVC"
-msgstr ""
+msgstr "Couverture en PVC"
 
 #: src/pages/giostre/tecnoexerciser/_compare.tsx:84
 #: src/pages/giostre/tecnoexerciser/_copertura.tsx:21
@@ -617,7 +617,7 @@ msgstr "Le rond de longe couvert se prête à de multiples activités, c’est l
 
 #: src/pages/tondini/index.tsx:41
 msgid "Il tondino può essere dotato rosone posizionato al centro ti permetterà di irrigare il tuo tondino."
-msgstr ""
+msgstr "Le rond de longe peut disposer d’une rosace placée au centre, qui permettra d’arroser votre rond de longe."
 
 #: src/components/ModalGallery/index.tsx:72
 msgid "Indietro"
@@ -633,7 +633,7 @@ msgstr "Porte d’entrée"
 
 #: src/pages/tondini/index.tsx:120
 msgid "Ingresso di 2,05 mt. con catenaccio verticale"
-msgstr ""
+msgstr "Entrée de 2,05 m."
 
 #: src/pages/index.tsx:17
 msgid "Innovativi"
@@ -650,7 +650,7 @@ msgstr ""
 #: src/pages/tondini/index.tsx:96 src/pages/tondini/index.tsx:100
 #: src/pages/tondini/index.tsx:128
 msgid "Interno tondino coperto"
-msgstr ""
+msgstr "Intérieur rond de longe couvert"
 
 #: src/pages/giostre/index.tsx:125 src/pages/giostre/ippowalker/index.tsx:23
 msgid "Ippowalker"
@@ -658,7 +658,7 @@ msgstr "Ippowalker"
 
 #: src/pages/tondini/index.tsx:39 src/utils/constants.tsx:30
 msgid "Irrigazione"
-msgstr "Irrigation"
+msgstr "Arrosage"
 
 #: src/utils/constants.tsx:97
 msgid "Irrigazione del percorso controllabile dal quadro di comando. Aiuta a tenere la polvere sotto controllo e un terreno sempre perfetto"
@@ -724,11 +724,11 @@ msgstr "La clôture à trois lices est utilisée pour délimiter les paddocks de
 
 #: src/pages/recinti/_gamma.tsx:36
 msgid "La recinzione ad una filagna viene utilizzata per delimitare campi da lavoro o gara poco adoperati e non è adatta per l'addestramento. Potete utilizzarla anche per delimitare un'area del vostro giardino di casa"
-msgstr "La clôture à une lice est utilisée pour délimiter les terrains de travail ou de compétition peu utilisés. Elle n’est donc pas adaptée pour le dressage. Vous pouvez également l’utiliser pour délimiter une partie de votre jardin, à la maison."
+msgstr "La clôture à une lice est utilisée pour délimiter les terrains de travail ou de compétition peu utilisés. Elle n’est donc pas adaptée pour le dressage. Vous pouvez également l’utiliser pour délimiter une partie de votre jardin, à la maison"
 
 #: src/pages/tondini/index.tsx:55
 msgid "La rete antivento della porta è un’ulteriore protezione che offriamo per rendere ancora di più il tuo tondino sicuro in caso di forte vento e per garantire una maggiore concentrazione del tuo cavallo."
-msgstr ""
+msgstr "Le filet brise-vent de la porte est une protection supplémentaire que nous offrons pour rendre votre rond de longe encore plus sûr en cas de vent violent, et pour garantir une plus grande concentration de votre cheval."
 
 #: src/utils/constants.tsx:195
 msgid "La rete antivento protegge l'interno della giostra da correnti d'aria inoltre aiuta il cavallo a rimanere concentrato sul percorso e lo rende più tranquillo."
@@ -736,7 +736,7 @@ msgstr ""
 
 #: src/pages/tondini/index.tsx:22
 msgid "La rete antivento protegge l'interno della tondino da correnti d'aria consentendo il cavallo a rimanere concentrato durante l'allenamento."
-msgstr ""
+msgstr "Le filet brise-vent protège l’intérieur du rond de longe contre les courants d’air, ce qui permet au cheval de rester concentré pendant l’entraînement."
 
 #: src/pages/tondini/index.tsx:184
 msgid "La struttura è stata progettata per garantire un carico neve fino a 120 kg/mq e la velocità del vento fino a 110 km/h."
@@ -945,11 +945,11 @@ msgstr ""
 
 #: src/utils/constants.tsx:88
 msgid "Potenza motore 0.37 kw e cadenza regolabile fra 60 e 220 metri al minuto"
-msgstr ""
+msgstr "Puissance moteur 0.37 kW et cadence réglable entre 60 et 220 mètres par minute"
 
 #: src/utils/constants.tsx:86
 msgid "Potenza motore 0.75 kw e cadenza regolabile fra 60 e 220 metri al minuto"
-msgstr ""
+msgstr "Puissance moteur 0.37 kW et cadence réglable entre 60 et 220 mètres par minute"
 
 #: src/pages/giostre/tecnoexerciser/_servizio_clienti.tsx:58
 msgid "Procedura di lubrificazione"
@@ -969,11 +969,11 @@ msgstr ""
 
 #: src/pages/giostre/index.tsx:63 src/utils/constants.tsx:29
 msgid "Quadro di comando"
-msgstr ""
+msgstr "Tableau de commande"
 
 #: src/utils/constants.tsx:94
 msgid "Quadro di comando con programma manuale, periodico"
-msgstr ""
+msgstr "Tableau de commande avec programme manuel, périodique"
 
 #: src/utils/constants.tsx:91
 msgid "Quadro di comando con programma manuale, periodico o automatico"
@@ -1009,11 +1009,11 @@ msgstr "Clôtures avec quatre lisse"
 #: src/pages/giostre/tecnoexerciser/_accessori.tsx:52
 #: src/pages/tondini/index.tsx:20 src/utils/constants.tsx:135
 msgid "Rete antivento"
-msgstr "Réseau du vent"
+msgstr "Filet brise-vent"
 
 #: src/pages/tondini/index.tsx:53
 msgid "Rete antivento ingresso"
-msgstr ""
+msgstr "Filet brise-vent entrée"
 
 #: src/pages/dressage/index.tsx:57 src/pages/dressage/index.tsx:88
 msgid "Rettangolo dressage 20x40"
@@ -1116,7 +1116,7 @@ msgstr "Réseaux sociaux"
 
 #: src/utils/constants.tsx:181
 msgid "Sono la soluzione ideale per impedire alla sabbia di uscire dal percorso consentendo di ridurre il materiale disperso."
-msgstr ""
+msgstr "C’est la solution idéale pour empêcher le sable de sortir de la piste, et permettre de réduire le matériau dispersé."
 
 #: src/components/Product/index.tsx:58
 msgid "Spessore"
@@ -1177,7 +1177,7 @@ msgstr "Ronde de longe"
 
 #: src/pages/tondini/index.tsx:88 src/pages/tondini/index.tsx:92
 msgid "Tondino coperto {0} pannelli {1} mt."
-msgstr ""
+msgstr "Rond de longe couvert {0} panneaux {1} m."
 
 #: src/pages/tondini/index.tsx:144
 msgid "Tondino coperto {sides} pannelli {size} mt."
