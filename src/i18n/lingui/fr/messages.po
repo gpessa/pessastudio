@@ -60,7 +60,7 @@ msgstr ""
 
 #: src/pages/giostre/index.tsx:20
 msgid "3.000 giostre installate"
-msgstr ""
+msgstr "3.000 marcheurs installés"
 
 #: src/pages/recinti/come-preparare-il-fondo.tsx:8
 msgid "<0><1>Preparare la superficie spianandola a \"schiena d'asino\" con il centro più alto dei bordi (2%) per far si che la pioggia defluisca. Mantenere i bordi dell'area alla stessa altezza del terreno circostante e riportare materiale nel centro dell'area per alzarlo.</1><2>Stendere sull'area una \"rete di separazione\", ben tesa e trattenuta lungo i bordi in una canaletta scavata nel terreno impedendo così che la terra si mescoli alla sabbia.</2><3>Distendere uniformemente sopra la rete uno strato di 7/8 centimetri di sabbia ( diametro 1 mm.)</3><4>Distribuire sopra alla sabbia 3 kg di \"straccetti di geotessuto\" per mt quadro di superficie in modo da mantenere il fondo stabile e morbido. Distribuire successivamente dopo un paio di ingressi a cavallo altri 2 kg.</4><5>Tutti i giorni passare con una \"erpice livellatrice\" per eliminare le impronte lasciate dagli zoccoli.</5></0>"
@@ -107,10 +107,12 @@ msgstr "<0>Nos obstacles sont conçus et construits pour résister au temps, ils
 #: src/utils/constants.tsx:202
 msgid "<0>Il corridoio <1>TECNOFENCE</1> è una soluzione semplice ed economica che ti permetterà di avere una giostra completa, sicura e durevole ad un costo competitivo.</0><2>L'altezza della recinzione esterna è di 1,60 mt., a differenza del corridoio interno alto 1,40 mt.</2><3>L'innovativo materiale (PPO) che non richiede manutenzione ti consentirà di abbattere i costi di manutenzione che affliggono le classiche recinzioni in legno.</3><4>Uno dei vantaggi è inoltre quello di poter installare la giostra in piena autonomia.</4>"
 msgstr ""
+"<0>Le couloir <1>TECNOFENCE</1> est une solution simple et économique qui vous permettra d’avoir un marcheur complet, sûr et durable, à un coût compétitif.</0><2>La hauteur de la clôture extérieure est de 1,60 m, celle du couloir intérieur est de 1,40 m.</2><3>Le matériau novateur (PPO) ne demande pas d’entretien et vous permettra de réduire les coûts d’entretien qui pèsent sur les clôtures classiques en bois.\n"
+"</3><4>L’un des avantages consiste à pouvoir installer le marcheur en toute autonomie.</4>"
 
 #: src/utils/constants.tsx:225
 msgid "<0>Il corridoio <1>{name}</1> in compensato marino è realizzato con un multistrato <2>({thickness} mm. di spessore)</2> antigraffio, antiurto, resistente allo sporco e idrorepellente. L'obbiettivo di questa soluzione è quello di fornire un elevato grado di sicurezza forzando il cavallo a concentrarsi sul percorso durante l'allenamento.</0>"
-msgstr ""
+msgstr "<0>Le couloir <1>{name}</1> en contreplaqué marine est réalisé dans un multicouche <2>({thickness} mm d’épaisseur)</2> anti-rayures, antichoc, résistant à la saleté et hydrofuge. L’objectif est de fournir un degré élevé de sécurité, en forçant le cheval à se concentrer sur la piste pendant l’entraînement.</0>"
 
 #: src/pages/dressage/index.tsx:106
 msgid "<0>Il rettangolo della linea <1>training</1> è rivolto a quei maneggi, in cui lo spazio a disposizione è limitato e il rettangolo viene installato provvisoriamente e velocemente.</0><2>Facile da montare, è costituito da elementi modulari di 2 mt. in materiale plastico, non richiede alcuna manutenzione e occupa poco spazio quando non è utilizzato.</2>"
@@ -122,7 +124,7 @@ msgstr ""
 
 #: src/utils/constants.tsx:158
 msgid "<0>La <1>copertura in PVC</1> è composta da una struttura in acciaio zincato la quale sorregge un telo in tessuto di poliestere spalmato di colore verde o crema e in base alle esigenze del cliente anche in altre colorazioni.</0><2>Questa copertura è in grado di sorreggere un carico neve pari a 80 kg/mq * e una forza vento pari a 110 Km/h.</2>"
-msgstr ""
+msgstr "<0>La <1>couverture en PVC</1> est composée d’une structure en acier galvanisé qui supporte une toile en tissu de polyester enduit, vert ou crème suivant les exigences du client, ou dans d’autres coloris.</0><2>Cette couverture peut supporter une charge de neige de 80 kg/m2* et une force de vent de 110 Km/h.</2>"
 
 #: src/pages/dressage/index.tsx:129
 msgid "<0>La linea <1>olimpic</1>, presente sul mercato da oltre vent'anni, è rappresentata da un rettangolo professionale, dove il campo da dressage è utilizzato quotidianamente.</0><2>Il campo è delimitato da moduli accostabili tra di loro, ciascuno dei quali è lungo 2 mt. Ogni modulo è costruito in polietilene antiurto resistente anche alle basse temperature e che non ingiallisce sotto l'azione dei raggi ultravioletti.</2><3>Su ciascun modulo sono previste tre aree piane con superficie lucida di 50x12 cm. sulle quali possono essere applicati adesivi pubblicitari.</3>"
@@ -131,6 +133,9 @@ msgstr "<0>La ligne <1>olimpic</1>, présente sur le marché depuis plus de 20 a
 #: src/pages/giostre/index.tsx:75
 msgid "<0>Le giostre rappresentano il punto di forza della nostra azienda.</0><1>Sono state create dalla ricerca di <2>Luciano Pessa</2> con l'intenzione di realizzare un semplice ed affidabile strumento di lavoro che vi consentirè di allenare il vostro cavallo anche quando non avete la possibilità di montarlo.</1><3>La giostra vi permetterè, non solo di raffreddare il vostro cavallo con una passeggiata post allenamento, ma anche di creare una vera sessione di lavoro passando da un'andatura all'altra e cambiando di mano.</3>"
 msgstr ""
+"<0>Les marcheurs sont le point fort de notre entreprise.</0><1>\n"
+"Ils sont issus de la recherche de <2>Luciano Pessa</2>, qui souhaitait réaliser un outil de travail simple et fiable. Le marcheur vous permettra d’entraîner votre cheval même lorsque vous n’avez pas la possibilité de le monter.</1><3>\n"
+"Le marcheur vous permet non seulement de refroidir votre cheval dans une promenade après l’entraînement, mais également de créer une véritable session de travail en passant d’un pas à l’autre et en changeant de main.</3>"
 
 #: src/pages/recinti/index.tsx:54
 msgid "<0>Le recinzioni <1>TECNOFENCE</1> sono realizzate con materiale particolarmente adatto a durare nel tempo anche in presenza delle più avverse condizioni meteorologiche.</0><2>Sono in grado di sopportare senza rompersi i calci e le spinte dei cavalli. A differenza del legno o di altri prodotti utilizzati per il medesimo scopo, gli animali non mordono la recinzione.</2><3><4>TECNOFENCE</4>, non presenta spigoli vivi e inoltre, essendo elastica, è in grado di assorbire gli urti senza rompersi evitando cosi di provocare infortuni a persone e animali.</3><5>Il materiale impiegato è lo stesso che viene utilizzato per la produzione di serramenti dove l’inalterabilità del colore e delle caratteristiche tecniche sono condizioni indispensabili per garantire un prodotto di qualità. L’inclusione di inibitori dei raggi ultravioletti consente anche di prevenire crepe e rotture e di resistere alla corrosione e allo sfogliamento mantenendo inalterate le caratteristiche originali anche con temperature variabili da +70 °C a -20 °C.</5><6>Principalmente prodotte nel colore bianco, possono essere fornite, a richiesta, anche nel colore verde.</6><7>In ogni recinzione inoltre si possono inserire uno o più cancelli scorrevoli in alluminio.</7><8>Tutte le nostre recinzioni sono personalizzate in base alle esigenze di metratura e di figura del cliente.</8>"
@@ -178,7 +183,7 @@ msgstr "Accessoires"
 
 #: src/utils/constants.tsx:17
 msgid "Acciaio zincato"
-msgstr ""
+msgstr "Acier galvanisé"
 
 #: src/components/Gdpr/index.tsx:49
 msgid "Acconsento"
@@ -209,7 +214,7 @@ msgstr "Dalle alvéolée sur la piste"
 
 #: src/pages/giostre/index.tsx:25
 msgid "Ampia gamma"
-msgstr ""
+msgstr "Vaste gamme"
 
 #: src/pages/giostre/ippowalker/_corridoi.tsx:31
 msgid "Anche in questo semplice modello potrai decidere di dotare la tua giostra di un corridoio scegliendo tra il piú economico corridoio costituito dalla recinzione <0>TECNOFENCE</0> o il corridoio <1>EASY</1> in pannelli di compensato marino."
@@ -365,7 +370,7 @@ msgstr "Couverture en PVC"
 #: src/pages/giostre/tecnoexerciser/_copertura.tsx:21
 #: src/pages/giostre/tecnoexerciser/_copertura.tsx:25
 msgid "Copertura rigida con lastre ondulate"
-msgstr ""
+msgstr "Couverture rigide avec tôles ondulées"
 
 #: src/pages/giostre/ippowalker/_corridoi.tsx:16
 #: src/pages/giostre/tecnoexerciser/_corridoi.tsx:16
@@ -379,7 +384,7 @@ msgstr ""
 
 #: src/pages/index.tsx:75
 msgid "Cosa dicono di noi"
-msgstr "Ils disent de nous"
+msgstr "Ce qu’ils disent de nous"
 
 #: src/pages/ostacoli/_barriere.tsx:9
 msgid "Costruisci la tua barriera personalizzata scegliendo tra i colori a disposizione"
@@ -423,7 +428,7 @@ msgstr "Ce pied mobile, monté dans votre clôture, vous permettra de positionne
 
 #: src/pages/index.tsx:74
 msgid "Dicono di noi"
-msgstr ""
+msgstr "Ils disent de nous"
 
 #: src/pages/giostre/ippowalker/_servizio_clienti.tsx:43
 #: src/pages/giostre/tecnoexerciser/_servizio_clienti.tsx:79
@@ -449,7 +454,7 @@ msgstr "Dressage"
 
 #: src/pages/giostre/index.tsx:94
 msgid "Due sono i modelli di giostra che proponiamo: il modello <0>tecnoexerciser</0>, prodotta da oltre 20 anni, e il modello <1>ippowalker</1>, pensata per rispondere alle esigenze di un mercato che richiede un prodotto affidabile e al tempo stesso economico."
-msgstr ""
+msgstr "Nous proposons deux modèles de marcheur : le modèle <0>tecnoexerciser</0>, fabriqué depuis plus de 20 ans, et le modèle <1>ippowalker</1>, conçu pour répondre aux exigences d’un marché en demande d’un produit fiable mais aussi économique."
 
 #: src/components/Footer/Newsletter/index.tsx:55
 #: src/components/Footer/Newsletter/index.tsx:56
@@ -467,7 +472,7 @@ msgstr ""
 
 #: src/pages/giostre/index.tsx:39
 msgid "Facile da usare"
-msgstr ""
+msgstr "Facile à utiliser"
 
 #: src/pages/cookie-policy.tsx:34
 msgid "Finalità del trattamento dei dati"
@@ -524,7 +529,7 @@ msgstr ""
 
 #: src/hooks/usePages/index.tsx:116
 msgid "Giostra Tecnoexerciser"
-msgstr ""
+msgstr "Marcheur tecnoexerciser"
 
 #: src/pages/giostre/tecnoexerciser/index.tsx:44
 msgid "Giostra Tecnoexerciser in movimento"
@@ -583,7 +588,7 @@ msgstr "Les chandeliers sont construits avec un montant en aluminium peint en bl
 #: src/pages/giostre/ippowalker/_corridoi.tsx:28
 #: src/pages/giostre/tecnoexerciser/_corridoi.tsx:28
 msgid "I corridoi"
-msgstr ""
+msgstr "Les couloirs"
 
 #: src/pages/index.tsx:43
 msgid "I nostri prodotti sono pensati per resistere nel tempo, anche se soggetti a difficili condizioni climatiche"
@@ -607,7 +612,7 @@ msgstr ""
 
 #: src/pages/contatti/_bank.tsx:8
 msgid "Iban"
-msgstr ""
+msgstr "Iban"
 
 #: src/pages/ostacoli/_cucchiai-segnaletica.tsx:25
 msgid "Il cucchiaio dotato del nostro sistema brevettato di aggancio"
@@ -706,11 +711,11 @@ msgstr ""
 #: src/pages/giostre/ippowalker/_copertura.tsx:25
 #: src/pages/giostre/tecnoexerciser/_copertura.tsx:33
 msgid "La copertura"
-msgstr ""
+msgstr "La couverture"
 
 #: src/pages/giostre/tecnoexerciser/_corridoi.tsx:31
 msgid "La giostra puo essere acquistata scegliendo tra il piú economico corridoio costituito dalla recinzione <0>TECNOFENCE</0> o il robusto corridoio <1>EXERCISER</1> in pannelli in compensato marino."
-msgstr ""
+msgstr "Le marcheur peut être équipé d’un couloir économique constitué par la clôture <0>TECNOFENCE</0>, ou du couloir solide <1>EXERCISER</1> en panneaux de contreplaqué marine."
 
 #: src/pages/404.tsx:13
 msgid "La pagina che stai cercando non esiste"
@@ -766,7 +771,7 @@ msgstr "Largeur"
 
 #: src/pages/giostre/index.tsx:34
 msgid "Le nostre giostre sono considerate strutture precarie. Non avrete bisogno di nessuna concessione edilizia"
-msgstr ""
+msgstr "Nos marcheurs sont considérés comme des structures temporaires. Ils n’ont besoin d’aucun permis de construire"
 
 #: src/pages/recinti/_gamma.tsx:76
 msgid "Le recinzioni a quattro filagne sono utilizzate per delimitare paddock per stalloni, realizzare tondini per la doma e l'addestramento o per formare ovali per il salto in libertà"
@@ -778,7 +783,7 @@ msgstr "Lettre de dressage"
 
 #: src/pages/dressage/index.tsx:33
 msgid "Lettera dressage light"
-msgstr ""
+msgstr "Nombre pour terrain d’obstacles light"
 
 #: src/components/Product/index.tsx:57
 msgid "Lunghezza"
@@ -786,7 +791,7 @@ msgstr "Longueur"
 
 #: src/pages/giostre/tecnoexerciser/_copertura.tsx:46
 msgid "L’alternativa alla copertura in PVC è la <0>copertura rigida</0> in lastre di vetroresina. le lastre vengono sorrette da una doppia struttura in acciaio zincato che permette di avere una migliore distribuzione del peso in caso di nevicata e una maggiore sicurezza in caso di forte vento. Una soluzione che ti permetterà senza opere murarie di avere una struttura robusta e durevole nel tempo."
-msgstr ""
+msgstr "L’alternative à la couverture en PVC est la <0>couverture rigide</0> composée de plaques en fibre de verre. Les plaques sont supportées par une double structure en acier galvanisé qui permet une meilleure répartition du poids en cas de chute de neige, et une plus grande sécurité en cas de vent violent. Une solution sans maçonnerie qui vous offrira une structure solide avec une longue durée de vie."
 
 #: src/pages/giostre/ippowalker/_servizio_clienti.tsx:26
 #: src/pages/giostre/tecnoexerciser/_servizio_clienti.tsx:54
@@ -862,7 +867,7 @@ msgstr "Numéro de champ de barrière Light"
 
 #: src/pages/ostacoli/_segnaletica.tsx:17
 msgid "Numero per campo ostacoli professional"
-msgstr "Numéro de champ de barrière professionnel"
+msgstr "Numéro de champ de barrière Professionnel"
 
 #: src/pages/ostacoli/_cucchiai-segnaletica.tsx:57
 msgid "Numerosi sono stati i test a cui abbiamo sottoposto i cucchiai per garantirne robustezza e durata nel tempo."
@@ -870,7 +875,7 @@ msgstr ""
 
 #: src/pages/dressage/index.tsx:127
 msgid "Olimpic"
-msgstr ""
+msgstr "Olimpic"
 
 #: src/hooks/usePages/index.tsx:12 src/pages/ostacoli/index.tsx:16
 msgid "Ostacoli"
@@ -878,7 +883,7 @@ msgstr "Obstacles"
 
 #: src/utils/constants.tsx:22
 msgid "PVC"
-msgstr ""
+msgstr "PVC"
 
 #: src/hooks/usePages/index.tsx:68 src/pages/404.tsx:10
 msgid "Pagina non trovata"
@@ -890,7 +895,7 @@ msgstr "Pour vous permettre de réaliser des obstacles selon vos créations, nou
 
 #: src/pages/giostre/index.tsx:72
 msgid "Perché una giostra Pessastudio"
-msgstr ""
+msgstr "Pourquoi un marcheur Pessastudio"
 
 #: src/pages/index.tsx:66
 msgid "Perché?"
@@ -922,15 +927,15 @@ msgstr "Clôture de pied"
 
 #: src/pages/giostre/index.tsx:21
 msgid "Più' di 3.000 clienti europei hanno scelto Pessastudio per la loro giostra"
-msgstr ""
+msgstr "Plus de 3 000 clients européens ont choisi Pessastudio pour leur marcheur"
 
 #: src/utils/constants.tsx:20
 msgid "Plastica"
-msgstr ""
+msgstr "Plastique"
 
 #: src/utils/constants.tsx:19
 msgid "Polietilene"
-msgstr ""
+msgstr "Polyéthylène"
 
 #: src/utils/constants.tsx:18
 msgid "Polipropilene"
@@ -991,7 +996,7 @@ msgstr "Clôtures"
 
 #: src/utils/constants.tsx:32
 msgid "Recinzione"
-msgstr ""
+msgstr "Clôture"
 
 #: src/pages/recinti/_gamma.tsx:31
 msgid "Recinzione 1 filagna"
@@ -1051,7 +1056,7 @@ msgstr ""
 
 #: src/pages/giostre/index.tsx:119 src/pages/giostre/index.tsx:133
 msgid "Scopri di piú"
-msgstr ""
+msgstr "En savoir plus"
 
 #: src/pages/tondini/index.tsx:199
 msgid "Scopri il nostro tondino Tecnohalle"
@@ -1079,7 +1084,7 @@ msgstr "Office operative"
 
 #: src/pages/ostacoli/_segnaletica.tsx:38
 msgid "Segnaletica"
-msgstr ""
+msgstr "Signalétique"
 
 #: src/pages/giostre/ippowalker/istruzioni-montaggio.tsx:54
 #: src/pages/giostre/tecnoexerciser/istruzioni-montaggio.tsx:81
@@ -1146,7 +1151,7 @@ msgstr "Support de sécurité"
 
 #: src/pages/contatti/_bank.tsx:9
 msgid "Swift"
-msgstr ""
+msgstr "Swift"
 
 #: src/pages/giostre/index.tsx:111
 #: src/pages/giostre/tecnoexerciser/index.tsx:17
@@ -1155,7 +1160,7 @@ msgstr "Tecnoexerciser"
 
 #: src/utils/constants.tsx:21
 msgid "Tecnopolimero"
-msgstr ""
+msgstr "Technopolymère"
 
 #: src/pages/contatti/_address.tsx:41
 msgid "Telefono"
@@ -1195,7 +1200,7 @@ msgstr "Tradition et qualité"
 
 #: src/pages/dressage/index.tsx:104
 msgid "Training"
-msgstr ""
+msgstr "Training"
 
 #: src/pages/cookie-policy.tsx:76
 msgid "Trattamento e diffusione dei dati"
@@ -1212,7 +1217,7 @@ msgstr "Une longue histoire"
 
 #: src/pages/giostre/index.tsx:41
 msgid "Usa il nostro semplice pannello di controllo per scegliere uno dei nostri \"training programs\" o seleziona manualmente la velocità desiderata"
-msgstr ""
+msgstr "Utilisez notre tableau de commande simple pour choisir l’un de nos « training programs », ou sélectionnez manuellement la vitesse souhaitée"
 
 #: src/pages/giostre/ippowalker/istruzioni-montaggio.tsx:14
 #: src/pages/giostre/tecnoexerciser/istruzioni-montaggio.tsx:13
@@ -1249,11 +1254,11 @@ msgstr "Il est constitué de panneaux latéraux en contreplaqué marine, fixés 
 
 #: src/pages/giostre/tecnoexerciser/_copertura.tsx:36
 msgid "È possibile acquistare la giostra sprovvista di copertura ma se il vostro obbiettivo è quello di poter lavorare 365 giorni all'anno, Pessastudio, offre due possibili soluzioni abbinabili al corridoio <0>Exerciser</0>."
-msgstr ""
+msgstr "Le marcheur peut être vendu sans couverture, mais si votre objectif est de pouvoir travailler 365 jours par an, Pessastudio vous offre deux solutions possibles, à combiner avec le couloir <0>Exerciser</0>."
 
 #: src/pages/giostre/index.tsx:27
 msgid "È possibile acquistare le nostre giostre in diverse versioni adatte ad ogni budget ed esigenza"
-msgstr ""
+msgstr "Nos marcheurs se présentent en plusieurs versions, adaptées à tous les budgets et besoins"
 
 #: src/pages/cookie-policy.tsx:66
 msgid "È sempre possibile richiedere dettagli sui vostri Dati Personali ed esercitare gli altri diritti previsti dall'art. 7 del Codice Privacy e, pertanto, chiedere in ogni momento l'origine dei dati, la correzione, l'aggiornamento o l'integrazione dei dati inesatti o incompleti."
