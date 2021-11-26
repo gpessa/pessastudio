@@ -191,7 +191,7 @@ msgstr "Certains accessoires peuvent être achetés séparément. Ils permettent
 #: src/pages/giostre/tecnoexerciser/_accessori.tsx:13
 #: src/pages/tondini/index.tsx:13
 msgid "Alcuni accessori possono essere acquistati separatamente e permettono di migliorare ulteriormente le condizioni d'uso."
-msgstr ""
+msgstr "Certains accessoires peuvent être achetés séparément. Ils permettent d’améliorer encore les conditions d’utilisation."
 
 #: src/components/Product/index.tsx:56
 msgid "Altezza"
