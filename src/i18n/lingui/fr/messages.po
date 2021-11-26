@@ -89,6 +89,12 @@ msgstr ""
 #: src/utils/constants.tsx:43
 msgid "<0>E' possibile ordinare una giostra nei diametri:</0><1><2>12,0 mt. <3>(3 cavalli)</3></2><4>14,4 mt. <5>(4 cavalli)</5></4><6>16,0 mt. <7>(5 cavalli)</7></6><8>17,6 mt. <9>(6 cavalli)</9></8><10>19,2 mt. <11>(8 cavalli)</11></10></1>"
 msgstr ""
+"<0>Commande possible de marcheur dans les diamètres :</0>\n"
+"<1><2>12,0 m <3>(3 chevaux)</3></2>\n"
+"<4>14,4 m <5>(4 chevaux)</5></4>\n"
+"<6>16,0 m <7>(5 chevaux)</7></6>\n"
+"<->17,6 m <9>(6 chevaux)</9></8>\n"
+"<10>19,2 m <11>(8 chevaux)</11></10></1>"
 
 #: src/pages/ostacoli/_cavalletti.tsx:39
 msgid "<0>I cavalletti Caprilli rappresentano uno strumento essenziale per l'allenamento del vostro animale, il passaggio sui cavalletti, rinforza la schiena del cavallo, scioglie la muscolatura e lo induce a flettere le articolazioni.</0><1>Lavati con idropulitrice riprendono i colori originari anche dopo 20 anni.</1>"
@@ -148,7 +154,7 @@ msgstr ""
 
 #: src/pages/giostre/tecnoexerciser/index.tsx:18
 msgid "<0>Tecnoexerciser è il modello di giostra attualmente più richiesto.</0><1>Oggi, grazie alle già note caratteristiche tecniche e alla grande affidabilità, abbiamo aggiunto anche alcune specifiche funzioni che fanno, di questo modello, la macchina <2>leader</2> del settore.</1><3>È possibile infatti:</3><4><5>Scegliere la forza che la porta mobile esercita sugli animali per invitarli ad avanzare</5><6>Mantenere un controllo costante sull'elettrificazione delle porte mobili</6><7>Beneficiare dell'innovativo sistema \"training program\" che vi consentirà di allenare i vostri cavalli fino ad ottenere performance atletiche.</7><8>Scegliere il programma di irrigazione pesta mentre la giostra sta girando</8></4><9>La struttura è fornita, a seconda delle esigenze, o con punte per l'ancoraggio al suolo o con tasselli nel caso in cui si desideri ancorarla ad un fondo di calcestruzzo.</9>"
-msgstr ""
+msgstr "<0>Tecnoexerciser est le modèle de marcheur le plus demandé actuellement.</0><1>Aujourd’hui, il possède non seulement les caractéristiques techniques et la grande fiabilité déjà connues, mais aussi d’autres fonctions spécifiques que nous avons ajoutées et qui font de ce modèle la machine <2>leader</2> du secteur.</1><3>Il est en effet possible de:</3><4><5>Choisir la force exercée par la séparation mobile sur les animaux, pour les inviter à avancer.</5><6>Maintenir un contrôle constant de l’électrification des séparations mobiles.</6><7>Bénéficier du système novateur « training program », qui vous permettra d’entraîner vos chevaux et d’obtenir des performances athlétiques.</7><8>Choisir le programme d’arrosage de la piste pendant que le marcheur tourne.</8></4><9>D’après vos exigences, la structure est fournie soit avec des piquets d’ancrage au sol, soit avec des chevilles si vous optez pour la pose sur béton.</9>"
 
 #: src/pages/dressage/index.tsx:10
 msgid "<0>Un set per creare un circuito dressage standard da 20x40 mt.</0><1>Il set contiene:</1><2><3>60 moduli</3><4>8 lettere</4></2>"
@@ -199,7 +205,7 @@ msgstr ""
 #: src/pages/giostre/tecnoexerciser/_accessori.tsx:38
 #: src/utils/constants.tsx:112 src/utils/constants.tsx:129
 msgid "Alveolo sulla pesta"
-msgstr ""
+msgstr "Dalle alvéolée sur la piste"
 
 #: src/pages/giostre/index.tsx:25
 msgid "Ampia gamma"
@@ -539,7 +545,7 @@ msgstr ""
 
 #: src/pages/giostre/tecnoexerciser/_gallery.tsx:22
 msgid "Giostra solo motore"
-msgstr ""
+msgstr "Marcheur uniquement moteur"
 
 #: src/pages/giostre/index.tsx:51
 msgid "Giostra tecnoexercize"
@@ -662,7 +668,7 @@ msgstr "Arrosage"
 
 #: src/utils/constants.tsx:97
 msgid "Irrigazione del percorso controllabile dal quadro di comando. Aiuta a tenere la polvere sotto controllo e un terreno sempre perfetto"
-msgstr ""
+msgstr "Arrosage de la piste contrôlable depuis le tableau de commande. Aide à garder la poussière sous contrôle et un terrain toujours parfait"
 
 #: src/components/Footer/Newsletter/index.tsx:59
 msgid "Iscriviti"
