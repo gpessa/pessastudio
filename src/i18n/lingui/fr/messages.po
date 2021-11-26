@@ -76,7 +76,7 @@ msgstr ""
 
 #: src/pages/ostacoli/_cubi.tsx:46
 msgid "<0>Bianchi, rossi, blu o gialli, sono utilizzati nei maneggi sia come riempitivi sotto le barriere, sia per realizzare sequenze di piccoli salti.</0><1>Ottimi per indicare le traiettorie quando si predispongono esercizi per i principianti ma anche per preparare una successione di cavalletti quando si addestrano cavalli.</1><2>Sovrapponibili, costruiti con plastica resistente agli agenti atmosferici, nel caso di impatto accidentale garantiscono l'incolumità di cavalli e cavalieri.</2>"
-msgstr ""
+msgstr "<0>Blancs, rouges, bleus ou jaunes, ils sont utilisés dans les marcheurs comme remplissage sous les barres d’obstacles, ou pour réaliser des séquences de petits sauts.</0><1>Excellents pour indiquer les trajectoires dans les exercices pour débutants, mais également pour préparer une suite de cavalettis lorsqu’on dresse les chevaux.</1><2>Superposables, construits en plastique résistant aux agents atmosphériques, ils garantissent la sécurité des chevaux et des cavaliers en cas d’impact accidentel.</2>"
 
 #: src/utils/constants.tsx:151
 msgid "<0>Corridoio composto da recinzione TECNOFENCE</0><1>(corridoio interno 1,40 mt., esterno 1,60 mt.)</1>"
@@ -128,7 +128,7 @@ msgstr ""
 
 #: src/pages/recinti/index.tsx:54
 msgid "<0>Le recinzioni <1>TECNOFENCE</1> sono realizzate con materiale particolarmente adatto a durare nel tempo anche in presenza delle più avverse condizioni meteorologiche.</0><2>Sono in grado di sopportare senza rompersi i calci e le spinte dei cavalli. A differenza del legno o di altri prodotti utilizzati per il medesimo scopo, gli animali non mordono la recinzione.</2><3><4>TECNOFENCE</4>, non presenta spigoli vivi e inoltre, essendo elastica, è in grado di assorbire gli urti senza rompersi evitando cosi di provocare infortuni a persone e animali.</3><5>Il materiale impiegato è lo stesso che viene utilizzato per la produzione di serramenti dove l’inalterabilità del colore e delle caratteristiche tecniche sono condizioni indispensabili per garantire un prodotto di qualità. L’inclusione di inibitori dei raggi ultravioletti consente anche di prevenire crepe e rotture e di resistere alla corrosione e allo sfogliamento mantenendo inalterate le caratteristiche originali anche con temperature variabili da +70 °C a -20 °C.</5><6>Principalmente prodotte nel colore bianco, possono essere fornite, a richiesta, anche nel colore verde.</6><7>In ogni recinzione inoltre si possono inserire uno o più cancelli scorrevoli in alluminio.</7><8>Tutte le nostre recinzioni sono personalizzate in base alle esigenze di metratura e di figura del cliente.</8>"
-msgstr ""
+msgstr "<0>Les clôtures <1>TECNOFENCE</1> sont réalisées en matériau particulièrement adapté pour résister au temps, y compris dans des conditions météorologiques extrêmes</0><2>Elles peuvent supporter sans se casser les ruades et les poussées des chevaux. Contrairement au bois ou à d’autres produits utilisés dans le même but, les animaux ne mordent pas la clôture.</2><3><4>TECNOFENCE</4> n’a pas d’arêtes vives ; étant élastique, elle absorbe les coups sans se casser et évite de provoquer des accidents aux personnes et aux animaux.</3><5>Le matériau employé est le même que pour la production d’huisseries, pour lesquelles la stabilité des couleurs et des caractéristiques techniques est une condition indispensable pour garantir un produit de qualité. Des inhibiteurs d’ultraviolets ont été installés afin de prévenir les fissures et les cassures, de résister à la corrosion et à l’écaillage, tout en conservant les caractéristiques d’origine y compris à des températures allant de +70 °C à -20 °C.</5><6>Elles sont principalement produites en blanc mais peuvent être fournies sur demande en vert.</6><7>Chaque clôture peut être équipée d’un ou de plusieurs portails coulissants en aluminium.</7><8>Toutes nos clôtures sont personnalisées en fonction des exigences de métrage et de figure du client.</8>"
 
 #: src/pages/ostacoli/_fosso.tsx:23
 msgid "<0>Ottimo per insegnare ai vostri cavalli/puledri a saltarlo.</0><1>Il fosso ha il fondo in PVC di colore azzurro con un bordo saldato alto 6 cm.</1>"
@@ -166,10 +166,9 @@ msgstr ""
 msgid "Accessibili"
 msgstr "Accessibles"
 
-#: src/components/Accessori/index.tsx:31
-#: src/pages/recinti/_accessori.tsx:41
+#: src/components/Accessori/index.tsx:31 src/pages/recinti/_accessori.tsx:41
 msgid "Accessori"
-msgstr ""
+msgstr "Accessoires"
 
 #: src/utils/constants.tsx:17
 msgid "Acciaio zincato"
@@ -198,8 +197,7 @@ msgstr ""
 
 #: src/pages/giostre/ippowalker/_accessori.tsx:35
 #: src/pages/giostre/tecnoexerciser/_accessori.tsx:38
-#: src/utils/constants.tsx:112
-#: src/utils/constants.tsx:129
+#: src/utils/constants.tsx:112 src/utils/constants.tsx:129
 msgid "Alveolo sulla pesta"
 msgstr ""
 
@@ -260,7 +258,7 @@ msgstr "Bars d’ostacle"
 
 #: src/pages/tondini/index.tsx:177
 msgid "Bello e funzionale"
-msgstr ""
+msgstr "Beau et fonctionnel"
 
 #: src/components/Footer/index.tsx:56
 msgid "COD. FISC. e Part: I.V.A. 04743610281 C.C.I.A.A. PD - R.E.A. 414822"
@@ -278,15 +276,13 @@ msgstr "Chandeliers et lame en acier percée à visser"
 msgid "Caratteristiche"
 msgstr ""
 
-#: src/pages/ostacoli/_cavalletti.tsx:11
-#: src/pages/ostacoli/_cavalletti.tsx:37
+#: src/pages/ostacoli/_cavalletti.tsx:11 src/pages/ostacoli/_cavalletti.tsx:37
 msgid "Cavalletti Caprilli"
 msgstr ""
 
 #: src/pages/giostre/ippowalker/_accessori.tsx:17
 #: src/pages/giostre/tecnoexerciser/_accessori.tsx:20
-#: src/pages/tondini/index.tsx:72
-#: src/utils/constants.tsx:106
+#: src/pages/tondini/index.tsx:72 src/utils/constants.tsx:106
 #: src/utils/constants.tsx:123
 msgid "Chiusura a terra"
 msgstr ""
@@ -304,11 +300,9 @@ msgstr ""
 msgid "Colori"
 msgstr "Couleurs"
 
-#: src/hooks/usePages/index.tsx:92
-#: src/hooks/usePages/index.tsx:97
+#: src/hooks/usePages/index.tsx:92 src/hooks/usePages/index.tsx:97
 #: src/pages/recinti/come-preparare-il-fondo.tsx:7
-#: src/pages/recinti/index.tsx:39
-#: src/pages/tondini/index.tsx:150
+#: src/pages/recinti/index.tsx:39 src/pages/tondini/index.tsx:150
 msgid "Come preparare il fondo"
 msgstr "Preparation du fonds"
 
@@ -316,8 +310,7 @@ msgstr "Preparation du fonds"
 msgid "Complimenti! Ti sei iscritto"
 msgstr "Merci pour votre abonnement"
 
-#: src/hooks/usePages/index.tsx:59
-#: src/pages/contatti/index.tsx:94
+#: src/hooks/usePages/index.tsx:59 src/pages/contatti/index.tsx:94
 msgid "Contatti"
 msgstr "Contact"
 
@@ -349,10 +342,8 @@ msgstr ""
 msgid "Coordinate bancarie"
 msgstr "Coordonnées bancaires"
 
-#: src/pages/tondini/index.tsx:108
-#: src/pages/tondini/index.tsx:112
-#: src/pages/tondini/index.tsx:116
-#: src/utils/constants.tsx:33
+#: src/pages/tondini/index.tsx:108 src/pages/tondini/index.tsx:112
+#: src/pages/tondini/index.tsx:116 src/utils/constants.tsx:33
 msgid "Copertura"
 msgstr ""
 
@@ -416,14 +407,13 @@ msgstr "Cuillère PS"
 msgid "Da anni Pessastudio è focalizzata nel produrre prodotti di qualità a costi accessibili"
 msgstr "Pessastudio se focalise depuis des années sur la fabrication de produits de qualité à des coûts accessibles"
 
-#: src/components/Product/index.tsx:55
-#: src/utils/constants.tsx:28
+#: src/components/Product/index.tsx:55 src/utils/constants.tsx:28
 msgid "Diametro"
 msgstr "Diamètre"
 
 #: src/pages/recinti/_accessori.tsx:18
 msgid "Diamo la possibilità di montare nella vostra recinzione un piede mobile che vi consentirà di posizionarla e spostarla a seconda delle vostre esigenze"
-msgstr ""
+msgstr "Ce pied mobile, monté dans votre clôture, vous permettra de positionner et de déplacer cette dernière selon vos besoins"
 
 #: src/pages/index.tsx:74
 msgid "Dicono di noi"
@@ -447,8 +437,7 @@ msgstr ""
 msgid "Diritto di accesso ai dati personali"
 msgstr ""
 
-#: src/hooks/usePages/index.tsx:50
-#: src/pages/dressage/index.tsx:96
+#: src/hooks/usePages/index.tsx:50 src/pages/dressage/index.tsx:96
 msgid "Dressage"
 msgstr "Dressage"
 
@@ -478,17 +467,15 @@ msgstr ""
 msgid "Finalità del trattamento dei dati"
 msgstr ""
 
-#: src/pages/ostacoli/_fosso.tsx:10
-#: src/pages/ostacoli/_fosso.tsx:21
+#: src/pages/ostacoli/_fosso.tsx:10 src/pages/ostacoli/_fosso.tsx:21
 msgid "Fosso"
 msgstr "Fossé"
 
-#: src/pages/giostre/index.tsx:92
-#: src/pages/giostre/ippowalker/_compare.tsx:74
+#: src/pages/giostre/index.tsx:92 src/pages/giostre/ippowalker/_compare.tsx:74
 #: src/pages/giostre/tecnoexerciser/_compare.tsx:89
 #: src/pages/recinti/_gamma.tsx:86
 msgid "Gamma"
-msgstr ""
+msgstr "Gamme"
 
 #: src/pages/giostre/tecnoexerciser/_gallery.tsx:10
 #: src/pages/giostre/tecnoexerciser/_gallery.tsx:14
@@ -558,8 +545,7 @@ msgstr ""
 msgid "Giostra tecnoexercize"
 msgstr ""
 
-#: src/hooks/usePages/index.tsx:41
-#: src/pages/giostre/index.tsx:69
+#: src/hooks/usePages/index.tsx:41 src/pages/giostre/index.tsx:69
 #: src/pages/giostre/index.tsx:73
 msgid "Giostre"
 msgstr "Marcheur"
@@ -586,7 +572,7 @@ msgstr ""
 
 #: src/pages/ostacoli/_candelieri-e-lame-forate.tsx:13
 msgid "I candelieri sono costruiti con un montante di alluminio verniciato di colore bianco, muniti di 4 piedi, rivestiti con puntali di plastica che garantiscono, in caso di ribaltamento l’incolumità vostra e dei vostri cavalli."
-msgstr ""
+msgstr "Les chandeliers sont construits avec un montant en aluminium peint en blanc, muni de 4 pieds revêtus d’embouts en plastique, qui garantissent votre sécurité et celle de vos chevaux en cas de renversement."
 
 #: src/pages/giostre/ippowalker/_corridoi.tsx:28
 #: src/pages/giostre/tecnoexerciser/_corridoi.tsx:28
@@ -599,7 +585,7 @@ msgstr "Nos produits sont conçus pour résister au temps, y compris lorsqu’il
 
 #: src/pages/tondini/index.tsx:170
 msgid "I nostri tondini sono considerati strutture precarie. Non avrete bisogno di nessuna concessione edilizia"
-msgstr ""
+msgstr "Nos ronds de longe sont considérés comme des structures temporaires. Ils n’ont besoin d’aucun permis de construire"
 
 #: src/pages/index.tsx:37
 msgid "I prodotti vengono venduti ed apprezzati sia in Italia che all'estero"
@@ -627,7 +613,7 @@ msgstr ""
 
 #: src/pages/tondini/index.tsx:201
 msgid "Il tondino coperto è adatto a svolgere molteplici attività, rappresenta la migliore soluzione per addestrare puledri in libertà o lavorare cavalli alla corda. Inoltre facilita il controllo del cavallo durante le lezioni ai principianti ed è indispensabile per il longeur durante le riprese di volteggi."
-msgstr ""
+msgstr "Le rond de longe couvert se prête à de multiples activités, c’est la meilleure solution pour entraîner les poulains en liberté ou travailler les chevaux à la longe. Il facilite le contrôle du cheval pendant les leçons aux débutants, et il est indispensable pour le longeur dans les reprises de voltiges."
 
 #: src/pages/tondini/index.tsx:41
 msgid "Il tondino può essere dotato rosone posizionato al centro ti permetterà di irrigare il tuo tondino."
@@ -661,19 +647,16 @@ msgstr ""
 msgid "Interno giostra con alveolo"
 msgstr ""
 
-#: src/pages/tondini/index.tsx:96
-#: src/pages/tondini/index.tsx:100
+#: src/pages/tondini/index.tsx:96 src/pages/tondini/index.tsx:100
 #: src/pages/tondini/index.tsx:128
 msgid "Interno tondino coperto"
 msgstr ""
 
-#: src/pages/giostre/index.tsx:125
-#: src/pages/giostre/ippowalker/index.tsx:23
+#: src/pages/giostre/index.tsx:125 src/pages/giostre/ippowalker/index.tsx:23
 msgid "Ippowalker"
 msgstr "Ippowalker"
 
-#: src/pages/tondini/index.tsx:39
-#: src/utils/constants.tsx:30
+#: src/pages/tondini/index.tsx:39 src/utils/constants.tsx:30
 msgid "Irrigazione"
 msgstr "Irrigation"
 
@@ -693,8 +676,7 @@ msgstr "S’inscrire à notre newsletter"
 msgid "Istituto"
 msgstr "Établissement"
 
-#: src/hooks/usePages/index.tsx:111
-#: src/hooks/usePages/index.tsx:125
+#: src/hooks/usePages/index.tsx:111 src/hooks/usePages/index.tsx:125
 #: src/pages/giostre/ippowalker/istruzioni-montaggio.tsx:53
 #: src/pages/giostre/tecnoexerciser/istruzioni-montaggio.tsx:80
 #: src/pages/recinti/index.tsx:43
@@ -734,15 +716,15 @@ msgstr ""
 
 #: src/pages/recinti/_gamma.tsx:49
 msgid "La recinzione a due filagne genericamente viene utilizzata per delimitare campi da lavoro o per realizzare paddock dove i cavalli sono comunque osservati dal personale presente"
-msgstr "Clôtures avec deux lisse est généralement utilisé pour délimiter les champs de travail ou pour réaliser des paddock, quand de toute manière les chevaux sont gardés par le personnel présent"
+msgstr "La clôture à deux lices est généralement utilisée pour délimiter les terrains de travail, ou bien pour réaliser des paddocks où les chevaux sont dans tous les cas surveillés par le personnel"
 
 #: src/pages/recinti/_gamma.tsx:62
 msgid "La recinzione a tre filagne viene utilizzata per delimitare paddok per animali che rimangono per molte ore al giorno incustoditi oppure per delimitare confini di proprietà o aree. Per garantirne una maggiore sicurezza è possibile installare un impianto d'elettrificazione sulle filagne"
-msgstr ""
+msgstr "La clôture à trois lices est utilisée pour délimiter les paddocks des animaux qui restent sans surveillance de nombreuses heures par jour, ou pour définir les limites de propriété ou de parcelles. Pour assurer une plus grande sécurité, il est possible d’installer un dispositif d’électrification sur les lices"
 
 #: src/pages/recinti/_gamma.tsx:36
 msgid "La recinzione ad una filagna viene utilizzata per delimitare campi da lavoro o gara poco adoperati e non è adatta per l'addestramento. Potete utilizzarla anche per delimitare un'area del vostro giardino di casa"
-msgstr "Clôtures avec une lisse est utilisé pour délimiter les champs de travail ou de compétition , donc peu utilisé et non adapté pour le dressage. Vous pouvez également l’utiliser pour délimiter une partie de votre jardin à la maison"
+msgstr "La clôture à une lice est utilisée pour délimiter les terrains de travail ou de compétition peu utilisés. Elle n’est donc pas adaptée pour le dressage. Vous pouvez également l’utiliser pour délimiter une partie de votre jardin, à la maison."
 
 #: src/pages/tondini/index.tsx:55
 msgid "La rete antivento della porta è un’ulteriore protezione che offriamo per rendere ancora di più il tuo tondino sicuro in caso di forte vento e per garantire una maggiore concentrazione del tuo cavallo."
@@ -758,7 +740,7 @@ msgstr ""
 
 #: src/pages/tondini/index.tsx:184
 msgid "La struttura è stata progettata per garantire un carico neve fino a 120 kg/mq e la velocità del vento fino a 110 km/h."
-msgstr ""
+msgstr "La structure a été conçue pour résister à une charge de neige jusqu’à 120 kg/m2 et à une vitesse du vent jusqu’à 110 km/h."
 
 #: src/pages/ostacoli/_candelieri-e-lame-forate.tsx:49
 msgid "Lama 150 cm."
@@ -782,7 +764,7 @@ msgstr ""
 
 #: src/pages/recinti/_gamma.tsx:76
 msgid "Le recinzioni a quattro filagne sono utilizzate per delimitare paddock per stalloni, realizzare tondini per la doma e l'addestramento o per formare ovali per il salto in libertà"
-msgstr ""
+msgstr "Les clôtures à quatre lices sont utilisées pour délimiter les paddocks pour les étalons, pour réaliser des ronds de longe pour le débourrage et le dressage, ou pour former des ovales pour le saut en liberté"
 
 #: src/pages/dressage/index.tsx:64
 msgid "Lettera dressage"
@@ -831,14 +813,13 @@ msgstr "Matériels"
 
 #: src/pages/tondini/index.tsx:158
 msgid "Materiali di qualità"
-msgstr ""
+msgstr "Matériau de qualité"
 
 #: src/pages/cookie-policy.tsx:51
 msgid "Modalità del trattamento dei dati"
 msgstr ""
 
-#: src/pages/dressage/index.tsx:43
-#: src/pages/dressage/index.tsx:73
+#: src/pages/dressage/index.tsx:43 src/pages/dressage/index.tsx:73
 msgid "Modulo dressage"
 msgstr ""
 
@@ -857,15 +838,13 @@ msgstr ""
 msgid "Montate le porte di separazione"
 msgstr ""
 
-#: src/pages/giostre/tecnoexerciser/_gallery.tsx:18
-#: src/utils/constants.tsx:27
+#: src/pages/giostre/tecnoexerciser/_gallery.tsx:18 src/utils/constants.tsx:27
 msgid "Motore"
 msgstr "Moteur électrique"
 
-#: src/pages/giostre/index.tsx:32
-#: src/pages/tondini/index.tsx:168
+#: src/pages/giostre/index.tsx:32 src/pages/tondini/index.tsx:168
 msgid "Nessuna concessione edilizia"
-msgstr ""
+msgstr "Aucun permis de construire"
 
 #: src/components/Footer/index.tsx:45
 msgid "Newsletters"
@@ -887,8 +866,7 @@ msgstr ""
 msgid "Olimpic"
 msgstr ""
 
-#: src/hooks/usePages/index.tsx:12
-#: src/pages/ostacoli/index.tsx:16
+#: src/hooks/usePages/index.tsx:12 src/pages/ostacoli/index.tsx:16
 msgid "Ostacoli"
 msgstr "Obstacles"
 
@@ -896,14 +874,13 @@ msgstr "Obstacles"
 msgid "PVC"
 msgstr ""
 
-#: src/hooks/usePages/index.tsx:68
-#: src/pages/404.tsx:10
+#: src/hooks/usePages/index.tsx:68 src/pages/404.tsx:10
 msgid "Pagina non trovata"
 msgstr "Le page que tu demandes n’existes pas"
 
 #: src/pages/ostacoli/_candelieri-e-lame-forate.tsx:34
 msgid "Per consentirvi di realizzare ostacoli di vostra creazione possiamo fornirvi le lame forate in due diverse lunghezze."
-msgstr ""
+msgstr "Pour vous permettre de réaliser des obstacles selon vos créations, nous pouvons vous fournir les joncs avec encoches en deux longueurs."
 
 #: src/pages/giostre/index.tsx:72
 msgid "Perché una giostra Pessastudio"
@@ -990,8 +967,7 @@ msgstr "Produits MADE IN ITALY, fabriqués par Pessastudio et personnalisables (
 msgid "Profondità"
 msgstr ""
 
-#: src/pages/giostre/index.tsx:63
-#: src/utils/constants.tsx:29
+#: src/pages/giostre/index.tsx:63 src/utils/constants.tsx:29
 msgid "Quadro di comando"
 msgstr ""
 
@@ -1003,8 +979,7 @@ msgstr ""
 msgid "Quadro di comando con programma manuale, periodico o automatico"
 msgstr ""
 
-#: src/hooks/usePages/index.tsx:22
-#: src/pages/recinti/index.tsx:53
+#: src/hooks/usePages/index.tsx:22 src/pages/recinti/index.tsx:53
 msgid "Recinti"
 msgstr "Clôtures"
 
@@ -1016,17 +991,13 @@ msgstr ""
 msgid "Recinzione 1 filagna"
 msgstr "Clôtures avec une lisse"
 
-#: src/pages/recinti/_gamma.tsx:44
-#: src/pages/recinti/index.tsx:13
-#: src/pages/recinti/index.tsx:17
-#: src/pages/recinti/index.tsx:25
-#: src/pages/recinti/index.tsx:29
-#: src/pages/recinti/index.tsx:33
+#: src/pages/recinti/_gamma.tsx:44 src/pages/recinti/index.tsx:13
+#: src/pages/recinti/index.tsx:17 src/pages/recinti/index.tsx:25
+#: src/pages/recinti/index.tsx:29 src/pages/recinti/index.tsx:33
 msgid "Recinzione 2 filagne"
 msgstr "Clôtures avec deux lisse"
 
-#: src/pages/recinti/_gamma.tsx:57
-#: src/pages/recinti/index.tsx:21
+#: src/pages/recinti/_gamma.tsx:57 src/pages/recinti/index.tsx:21
 msgid "Recinzione 3 filagne"
 msgstr "Clôtures avec trois lisse"
 
@@ -1036,8 +1007,7 @@ msgstr "Clôtures avec quatre lisse"
 
 #: src/pages/giostre/ippowalker/_accessori.tsx:49
 #: src/pages/giostre/tecnoexerciser/_accessori.tsx:52
-#: src/pages/tondini/index.tsx:20
-#: src/utils/constants.tsx:135
+#: src/pages/tondini/index.tsx:20 src/utils/constants.tsx:135
 msgid "Rete antivento"
 msgstr "Réseau du vent"
 
@@ -1045,18 +1015,15 @@ msgstr "Réseau du vent"
 msgid "Rete antivento ingresso"
 msgstr ""
 
-#: src/pages/dressage/index.tsx:57
-#: src/pages/dressage/index.tsx:88
+#: src/pages/dressage/index.tsx:57 src/pages/dressage/index.tsx:88
 msgid "Rettangolo dressage 20x40"
 msgstr "Rectangle de dressage 20x40"
 
-#: src/pages/dressage/index.tsx:52
-#: src/pages/dressage/index.tsx:83
+#: src/pages/dressage/index.tsx:52 src/pages/dressage/index.tsx:83
 msgid "Rettangolo dressage 20x60"
 msgstr "Rectangle de dressage 20x60"
 
-#: src/components/Compare/index.tsx:77
-#: src/components/Compare/index.tsx:117
+#: src/components/Compare/index.tsx:77 src/components/Compare/index.tsx:117
 msgid "Richiedi un preventivo"
 msgstr "Demander un devis"
 
@@ -1076,14 +1043,13 @@ msgstr "Télécharger un fichier"
 msgid "Scopo di questa Politica sulla privacy è di informarvi in merito ai dati che vengono raccolti su di voi, all’utilizzo che ne possiamo fare ed al modo in cui tali informazioni possono essere corrette o modificate."
 msgstr ""
 
-#: src/pages/giostre/index.tsx:119
-#: src/pages/giostre/index.tsx:133
+#: src/pages/giostre/index.tsx:119 src/pages/giostre/index.tsx:133
 msgid "Scopri di piú"
 msgstr ""
 
 #: src/pages/tondini/index.tsx:199
 msgid "Scopri il nostro tondino Tecnohalle"
-msgstr ""
+msgstr "Découvrir notre rond de longe Tecnohalle"
 
 #: src/components/Products/index.tsx:59
 msgid "Scopri la nostra gamma di prodotti"
@@ -1124,8 +1090,7 @@ msgstr "Nous suivre sur nos réseaux sociaux et découvrir les dernières nouvea
 
 #: src/pages/giostre/ippowalker/_servizio_clienti.tsx:40
 #: src/pages/giostre/tecnoexerciser/_servizio_clienti.tsx:76
-#: src/pages/recinti/index.tsx:95
-#: src/pages/tondini/index.tsx:216
+#: src/pages/recinti/index.tsx:95 src/pages/tondini/index.tsx:216
 msgid "Servizio clienti"
 msgstr ""
 
@@ -1135,7 +1100,7 @@ msgstr ""
 
 #: src/pages/tondini/index.tsx:182
 msgid "Sicuro"
-msgstr ""
+msgstr "Sûr"
 
 #: src/pages/ostacoli/_cavalletti.tsx:12
 msgid "Singolo cavalletto abbinabile a barriere diametro 90, 95, 100, 105 mm."
@@ -1198,22 +1163,19 @@ msgstr ""
 msgid "Titolare del trattamento e dati di contatto"
 msgstr ""
 
-#: src/hooks/usePages/index.tsx:32
-#: src/pages/tondini/index.tsx:194
+#: src/hooks/usePages/index.tsx:32 src/pages/tondini/index.tsx:194
 msgid "Tondini"
-msgstr ""
+msgstr "Ronds de longe"
 
-#: src/pages/tondini/index.tsx:124
-#: src/pages/tondini/index.tsx:132
+#: src/pages/tondini/index.tsx:124 src/pages/tondini/index.tsx:132
 msgid "Tondino"
-msgstr ""
+msgstr "Rond de longe"
 
 #: src/pages/tondini/index.tsx:104
 msgid "Tondino coperto"
 msgstr "Ronde de longe"
 
-#: src/pages/tondini/index.tsx:88
-#: src/pages/tondini/index.tsx:92
+#: src/pages/tondini/index.tsx:88 src/pages/tondini/index.tsx:92
 msgid "Tondino coperto {0} pannelli {1} mt."
 msgstr ""
 
@@ -1277,7 +1239,7 @@ msgstr ""
 
 #: src/pages/tondini/index.tsx:160
 msgid "È costituito da pannelli laterali in compensato marino fissati a colonne in acciaio zincato. La copertura in telo spalmato in PVC, è disponibile in bianco, verde o crema"
-msgstr ""
+msgstr "Il est constitué de panneaux latéraux en contreplaqué marine, fixés à des colonnes en acier galvanisé. La couverture est une toile enduite en PVC, disponible en blanc, vert ou crème"
 
 #: src/pages/giostre/tecnoexerciser/_copertura.tsx:36
 msgid "È possibile acquistare la giostra sprovvista di copertura ma se il vostro obbiettivo è quello di poter lavorare 365 giorni all'anno, Pessastudio, offre due possibili soluzioni abbinabili al corridoio <0>Exerciser</0>."
@@ -1297,4 +1259,4 @@ msgstr ""
 
 #: src/pages/tondini/index.tsx:178
 msgid "É una struttura semplice, leggera e piacevole alla vista"
-msgstr ""
+msgstr "C’est une structure simple, légère et esthétique"
