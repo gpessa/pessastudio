@@ -289,7 +289,7 @@ msgstr ""
 
 #: src/pages/contatti/_address.tsx:37
 msgid "Codice Fiscale e Partita IVA"
-msgstr ""
+msgstr "Numéro de code fiscal et de TVA"
 
 #: src/pages/giostre/ippowalker/istruzioni-montaggio.tsx:38
 #: src/pages/giostre/tecnoexerciser/istruzioni-montaggio.tsx:37
@@ -316,15 +316,15 @@ msgstr "Contact"
 
 #: src/pages/contatti/index.tsx:116
 msgid "Contatto commerciale"
-msgstr ""
+msgstr "Contact commercial"
 
 #: src/pages/contatti/index.tsx:122
 msgid "Contatto commerciale Belgio"
-msgstr "Contact pour le marché belge"
+msgstr "Contact commercial Belgique"
 
 #: src/pages/contatti/index.tsx:127
 msgid "Contatto commerciale Francia"
-msgstr ""
+msgstr "Contact commercial France"
 
 #: src/hooks/usePages/index.tsx:78
 msgid "Cookie"
@@ -674,7 +674,7 @@ msgstr "S’inscrire à notre newsletter"
 
 #: src/pages/contatti/_bank.tsx:7
 msgid "Istituto"
-msgstr ""
+msgstr "Établissement"
 
 #: src/hooks/usePages/index.tsx:111 src/hooks/usePages/index.tsx:125
 #: src/pages/giostre/ippowalker/istruzioni-montaggio.tsx:53
@@ -1149,7 +1149,7 @@ msgstr ""
 
 #: src/pages/contatti/_address.tsx:41
 msgid "Telefono"
-msgstr ""
+msgstr "Téléphone"
 
 #: src/components/Footer/Newsletter/index.tsx:70
 msgid "Ti sei già iscritto"
