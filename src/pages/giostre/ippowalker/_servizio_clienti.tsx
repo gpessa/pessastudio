@@ -37,7 +37,7 @@ const IppowalkerServizioClienti = () => {
 
   return (
     <Section>
-      <TH variant="h4">{t`Servizio clienti`}</TH>
+      <TH variant="h4">{t`Supporto clienti`}</TH>
 
       <Grid container spacing={PRODUCT_GUTTER}>
         <Grid item xs={12} md={6} component={ContentTable} title={t`Dimensioni`} rows={DIMENSIONS} />

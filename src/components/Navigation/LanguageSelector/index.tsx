@@ -35,7 +35,7 @@ const LanguageSelector: React.FC = () => {
             width={DIM}
             height={DIM}
             alt={i18n.locale}
-            src={withPrefix(`/flags/${i18n.locale}.svg`)}
+            src={withPrefix(`static/flags/${i18n.locale}.svg`)}
           />
         </IconButton>
       </Tooltip>
@@ -51,7 +51,9 @@ const LanguageSelector: React.FC = () => {
                 size="large"
                 variant="text"
                 language={lang.code}
-                startIcon={<LanguageIconStyled width={DIM} height={DIM} src={withPrefix(`/flags/${lang.code}.svg`)} />}
+                startIcon={
+                  <LanguageIconStyled width={DIM} height={DIM} src={withPrefix(`static/flags/${lang.code}.svg`)} />
+                }
                 component={LocalizedLink}
               >
                 {lang.localName}

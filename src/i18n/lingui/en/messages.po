@@ -22,42 +22,6 @@ msgstr ""
 msgid "+ IVA"
 msgstr "+ VAT"
 
-#: src/hooks/usePages/index.tsx:85
-msgid "/:description"
-msgstr ""
-
-#: src/hooks/usePages/index.tsx:60
-msgid "/contatti/:description"
-msgstr ""
-
-#: src/hooks/usePages/index.tsx:51
-msgid "/dressage/:description"
-msgstr ""
-
-#: src/hooks/usePages/index.tsx:42
-msgid "/giostre/:description"
-msgstr ""
-
-#: src/hooks/usePages/index.tsx:104
-msgid "/giostre/ippowalker/:description"
-msgstr ""
-
-#: src/hooks/usePages/index.tsx:118
-msgid "/giostre/tecnoexerciser/:description"
-msgstr ""
-
-#: src/hooks/usePages/index.tsx:13
-msgid "/ostacoli/:description"
-msgstr ""
-
-#: src/hooks/usePages/index.tsx:23
-msgid "/recinti/:description"
-msgstr "A durable fence solution designed to last through all weather conditions"
-
-#: src/hooks/usePages/index.tsx:33
-msgid "/tondini/:description"
-msgstr "Train foals outdoors"
-
 #: src/pages/giostre/index.tsx:20
 msgid "3.000 giostre installate"
 msgstr "3,000 horse walkers produced"
@@ -192,7 +156,7 @@ msgstr ""
 msgid "Altezza"
 msgstr "Height"
 
-#: src/pages/giostre/tecnoexerciser/_servizio_clienti.tsx:81
+#: src/pages/giostre/tecnoexerciser/_servizio_clienti.tsx:86
 msgid "Altro"
 msgstr "Other"
 
@@ -304,8 +268,8 @@ msgstr ""
 msgid "Colori"
 msgstr "Colors"
 
-#: src/hooks/usePages/index.tsx:92
-#: src/hooks/usePages/index.tsx:97
+#: src/hooks/usePages/index.tsx:68
+#: src/hooks/usePages/index.tsx:73
 #: src/pages/recinti/come-preparare-il-fondo.tsx:7
 #: src/pages/recinti/index.tsx:39
 #: src/pages/tondini/index.tsx:150
@@ -316,7 +280,15 @@ msgstr "How to prepare the ground"
 msgid "Complimenti! Ti sei iscritto"
 msgstr "Well done! You signed up"
 
-#: src/hooks/usePages/index.tsx:59
+#: src/hooks/usePages/index.tsx:64
+msgid "Contatta Pessastudio per preventivi di Giostre, ostacoli, tondini e attrezzature per cavalli"
+msgstr ""
+
+#: src/hooks/usePages/index.tsx:43
+msgid "Contattaci per un preventivo per ostacoli, recinti, tondini coperti, giostre, rettangoli da dressage e attrezzature per cavalli"
+msgstr ""
+
+#: src/hooks/usePages/index.tsx:42
 #: src/pages/contatti/index.tsx:94
 msgid "Contatti"
 msgstr "Contacts us"
@@ -333,7 +305,7 @@ msgstr "Sales office Belgium"
 msgid "Contatto commerciale Francia"
 msgstr "Sales office France"
 
-#: src/hooks/usePages/index.tsx:78
+#: src/hooks/usePages/index.tsx:57
 msgid "Cookie"
 msgstr "Cookie policy"
 
@@ -430,7 +402,7 @@ msgid "Dicono di noi"
 msgstr "About us"
 
 #: src/pages/giostre/ippowalker/_servizio_clienti.tsx:43
-#: src/pages/giostre/tecnoexerciser/_servizio_clienti.tsx:79
+#: src/pages/giostre/tecnoexerciser/_servizio_clienti.tsx:84
 #: src/pages/tondini/index.tsx:219
 msgid "Dimensioni"
 msgstr "Dimensions"
@@ -447,7 +419,7 @@ msgstr ""
 msgid "Diritto di accesso ai dati personali"
 msgstr ""
 
-#: src/hooks/usePages/index.tsx:50
+#: src/hooks/usePages/index.tsx:36
 #: src/pages/dressage/index.tsx:96
 msgid "Dressage"
 msgstr "Dressage"
@@ -466,7 +438,7 @@ msgstr "Email"
 msgid "Entrata"
 msgstr "Entrance"
 
-#: src/pages/giostre/tecnoexerciser/_servizio_clienti.tsx:68
+#: src/pages/giostre/tecnoexerciser/_servizio_clienti.tsx:73
 msgid "Fac simile domanda installazione giostra"
 msgstr ""
 
@@ -535,7 +507,7 @@ msgstr ""
 "Horse walker<0/>\n"
 "with TECNOFENCE fence"
 
-#: src/hooks/usePages/index.tsx:102
+#: src/hooks/usePages/index.tsx:78
 #: src/pages/giostre/ippowalker/_gallery.tsx:14
 msgid "Giostra Ippowalker"
 msgstr "Ippowalker horse walker"
@@ -544,7 +516,8 @@ msgstr "Ippowalker horse walker"
 msgid "Giostra Ippowalker in movimento"
 msgstr "Ippowalker horse walker"
 
-#: src/hooks/usePages/index.tsx:116
+#: src/hooks/usePages/index.tsx:89
+#: src/pages/giostre/index.tsx:51
 msgid "Giostra Tecnoexerciser"
 msgstr "Tecnoexerciser horse walker"
 
@@ -569,11 +542,7 @@ msgstr "Horse walker"
 msgid "Giostra solo motore"
 msgstr ""
 
-#: src/pages/giostre/index.tsx:51
-msgid "Giostra tecnoexercize"
-msgstr "Tecnoexercize horse Walker"
-
-#: src/hooks/usePages/index.tsx:41
+#: src/hooks/usePages/index.tsx:30
 #: src/pages/giostre/index.tsx:69
 #: src/pages/giostre/index.tsx:73
 msgid "Giostre"
@@ -595,7 +564,7 @@ msgstr "Google maps"
 msgid "Ho ricevuto questa mattina il materiale. I miei complimenti per la qualità dei prodotti, l'imballo ed il trasportatore"
 msgstr ""
 
-#: src/hooks/usePages/index.tsx:83
+#: src/hooks/usePages/index.tsx:62
 msgid "Home"
 msgstr ""
 
@@ -708,8 +677,8 @@ msgstr "Sign up to our newsletter"
 msgid "Istituto"
 msgstr "Bank name"
 
-#: src/hooks/usePages/index.tsx:111
-#: src/hooks/usePages/index.tsx:125
+#: src/hooks/usePages/index.tsx:84
+#: src/hooks/usePages/index.tsx:95
 #: src/pages/giostre/ippowalker/istruzioni-montaggio.tsx:53
 #: src/pages/giostre/tecnoexerciser/istruzioni-montaggio.tsx:80
 #: src/pages/recinti/index.tsx:43
@@ -821,7 +790,7 @@ msgid "Manuale collegamento elettrico"
 msgstr ""
 
 #: src/pages/giostre/ippowalker/_servizio_clienti.tsx:45
-#: src/pages/giostre/tecnoexerciser/_servizio_clienti.tsx:80
+#: src/pages/giostre/tecnoexerciser/_servizio_clienti.tsx:85
 #: src/pages/recinti/index.tsx:96
 msgid "Manuale d'istruzioni"
 msgstr "Handbook"
@@ -829,6 +798,7 @@ msgstr "Handbook"
 #: src/pages/giostre/ippowalker/_servizio_clienti.tsx:22
 #: src/pages/giostre/ippowalker/_servizio_clienti.tsx:32
 #: src/pages/giostre/tecnoexerciser/_servizio_clienti.tsx:50
+#: src/pages/giostre/tecnoexerciser/_servizio_clienti.tsx:64
 msgid "Manuale quadro di controllo"
 msgstr "Control panel manual"
 
@@ -911,7 +881,7 @@ msgstr "Jumps"
 msgid "PVC"
 msgstr ""
 
-#: src/hooks/usePages/index.tsx:68
+#: src/hooks/usePages/index.tsx:47
 #: src/pages/404.tsx:10
 msgid "Pagina non trovata"
 msgstr "Page not found"
@@ -1001,6 +971,10 @@ msgstr "Products"
 msgid "Prodotti MADE IN ITALY, costruiti da Pessastudio e personalizzabili (in dimensioni o colori)"
 msgstr "Equipment built and customised by Pessastudio in Italy"
 
+#: src/hooks/usePages/index.tsx:13
+msgid "Prodotti professionali, sono lo strumento di lavoro indispensabile in un centro ippico o un maneggio. Progettati e costruiti per durare nel tempo senza alcuna manutenzione"
+msgstr ""
+
 #: src/components/Product/index.tsx:54
 msgid "Profondità"
 msgstr "Depth"
@@ -1018,7 +992,7 @@ msgstr ""
 msgid "Quadro di comando con programma manuale, periodico o automatico"
 msgstr ""
 
-#: src/hooks/usePages/index.tsx:22
+#: src/hooks/usePages/index.tsx:18
 #: src/pages/recinti/index.tsx:53
 msgid "Recinti"
 msgstr "Fencing"
@@ -1059,6 +1033,10 @@ msgstr "Windscreen"
 #: src/pages/tondini/index.tsx:53
 msgid "Rete antivento ingresso"
 msgstr "Entrance windscreen"
+
+#: src/hooks/usePages/index.tsx:37
+msgid "Rettangoli / Campi professionali da dressage per tutte le esigenze"
+msgstr ""
 
 #: src/pages/dressage/index.tsx:57
 #: src/pages/dressage/index.tsx:88
@@ -1104,8 +1082,20 @@ msgstr ""
 msgid "Scopri la nostra gamma di prodotti"
 msgstr "Discover our range of products"
 
+#: src/hooks/usePages/index.tsx:80
+msgid "Scopri la nostra giostra IPPOWALKER, lo strumento economico adatto ad allenare il tuo cavallo o il tuo puledro"
+msgstr ""
+
+#: src/hooks/usePages/index.tsx:91
+msgid "Scopri la nostra giostra TECNOEXERCISER, lo strumento professionale adatto ad allenare il tuo cavallo o il tuo puledro"
+msgstr ""
+
 #: src/pages/index.tsx:76
 msgid "Scopri la qualità dei nostri prodotti attraverso la testimonianza dei clienti"
+msgstr ""
+
+#: src/hooks/usePages/index.tsx:31
+msgid "Scopri le nostre giostre per cavalli, lo strumento ideale di lavoro per allenare il vostro cavallo"
 msgstr ""
 
 #: src/pages/index.tsx:68
@@ -1136,13 +1126,6 @@ msgstr "Follow us"
 #: src/components/Footer/index.tsx:35
 msgid "Seguici sui nostra social e scopri le ultime novità"
 msgstr "Follow us on our social media"
-
-#: src/pages/giostre/ippowalker/_servizio_clienti.tsx:40
-#: src/pages/giostre/tecnoexerciser/_servizio_clienti.tsx:76
-#: src/pages/recinti/index.tsx:95
-#: src/pages/tondini/index.tsx:216
-msgid "Servizio clienti"
-msgstr "Customer care"
 
 #: src/components/Footer/Newsletter/index.tsx:74
 msgid "Si è verificato un problema, riprova"
@@ -1181,6 +1164,10 @@ msgid "Supporti di sicurezza da applicare ai nostri cucchiai per salvaguardare l
 msgstr ""
 
 #: src/components/Seo/index.tsx:58
+#: src/pages/giostre/ippowalker/_servizio_clienti.tsx:40
+#: src/pages/giostre/tecnoexerciser/_servizio_clienti.tsx:81
+#: src/pages/recinti/index.tsx:95
+#: src/pages/tondini/index.tsx:216
 msgid "Supporto clienti"
 msgstr "Customer service"
 
@@ -1213,10 +1200,14 @@ msgstr "You have already signed up"
 msgid "Titolare del trattamento e dati di contatto"
 msgstr ""
 
-#: src/hooks/usePages/index.tsx:32
+#: src/hooks/usePages/index.tsx:24
 #: src/pages/tondini/index.tsx:194
 msgid "Tondini"
 msgstr "Lunge & Paddock Pens"
+
+#: src/hooks/usePages/index.tsx:25
+msgid "Tondini coperti per addestrate puledri in libertà"
+msgstr ""
 
 #: src/pages/tondini/index.tsx:124
 #: src/pages/tondini/index.tsx:132
@@ -1251,6 +1242,10 @@ msgstr ""
 #: src/pages/giostre/ippowalker/istruzioni-montaggio.tsx:10
 #: src/pages/giostre/tecnoexerciser/istruzioni-montaggio.tsx:9
 msgid "Trovate e segnate il centro di ciò che sarà la vostra giostra"
+msgstr ""
+
+#: src/hooks/usePages/index.tsx:19
+msgid "Un recinto da cavalli in PVC. Indistruttibile anche in presenza delle più avverse condizioni meteorologiche"
 msgstr ""
 
 #: src/pages/index.tsx:50

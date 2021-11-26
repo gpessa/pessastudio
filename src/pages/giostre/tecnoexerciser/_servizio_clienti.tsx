@@ -59,7 +59,12 @@ const TecnoexerciserServizioClienti = () => {
         file: t`https://www.youtube.com/watch?v=QMA4wPxq_ow`,
       },
     ],
-    fr: [],
+    fr: [
+      {
+        label: t`Manuale quadro di controllo`,
+        file: require("assets/products/giostre/tecnoexerciser/pdf/manuale-quadro-tecnoexerciser-fr.pdf").default,
+      },
+    ],
   }[locale]
 
   const OTHERS = {
@@ -73,7 +78,7 @@ const TecnoexerciserServizioClienti = () => {
 
   return (
     <Section>
-      <TH variant="h4">{t`Servizio clienti`}</TH>
+      <TH variant="h4">{t`Supporto clienti`}</TH>
 
       <Grid container spacing={PRODUCT_GUTTER}>
         <Grid item xs={12} md component={ContentTable} rows={DIMENSIONS} title={t`Dimensioni`} />

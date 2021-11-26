@@ -18,7 +18,7 @@ import { LocalizedLink } from "gatsby-theme-i18n"
 import { usePages } from "hooks"
 import React, { useEffect, useState } from "react"
 import { BREAKPOINT } from "theme"
-import LanguageSelector from "./LanguageSelectorLegacy"
+import LanguageSelector from "./LanguageSelector"
 import Logo from "./Logo"
 
 const MenuMobileStyled = styled(List)(({ theme }) => ({

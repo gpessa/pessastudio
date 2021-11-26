@@ -92,7 +92,7 @@ const Recinti: React.FC = () => {
       <Accessori />
 
       <Section>
-        <TH variant="h2">{t`Servizio clienti`}</TH>
+        <TH variant="h2">{t`Supporto clienti`}</TH>
         <ContentTable title={t`Manuale d'istruzioni`} rows={FILES} />
       </Section>
     </>
