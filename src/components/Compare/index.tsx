@@ -10,7 +10,7 @@ import {
   TableCell,
   TableContainer,
   TableRow,
-  Typography
+  Typography,
 } from "@mui/material"
 import { Section, TH } from "components"
 import React, { FunctionComponent, ReactElement } from "react"
@@ -112,7 +112,7 @@ const CompareMD: React.FC<Omit<Props, "title">> = ({ attributes, products }) => 
         <TableRow>
           <TableCellStyled size="medium" />
           {products.map((_, index) => (
-            <TableCellStyled size="medium" align="center" key={index}>
+            <TableCellStyled size="medium" key={index}>
               <Button color="primary" href={`mailto:annapessa@pessastudio.eu?subject=Info Giostra`}>
                 {t`Richiedi un preventivo`}
               </Button>

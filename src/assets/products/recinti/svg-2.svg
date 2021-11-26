@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg width="1504px" height="1896px" viewBox="0 0 1504 1896" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <title>2</title>
-    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
         <g id="2" transform="translate(2.000000, 0.000000)">
             <g id="Fence" transform="translate(0.000000, 126.000000)" fill="#FFFFFF" stroke="#979797" stroke-width="4">
                 <rect id="Rectangle" x="2" y="61" width="1075" height="82"></rect>
@@ -10,7 +9,7 @@
                 <rect id="Rectangle" x="479" y="22" width="120" height="1396"></rect>
             </g>
             <g id="Dim" transform="translate(1073.000000, 0.000000)">
-                <text id="1400mm." font-family="Helvetica" font-size="80" font-weight="normal" letter-spacing="7.27272727" fill="#FFFFFF">
+                <text id="1400mm." font-family="Helvetica" font-size="80" font-weight="normal" letter-spacing="7.27272727" fill="#bdbdbd">
                     <tspan x="0" y="78">1400mm.</tspan>
                 </text>
                 <path d="M191,1548.13996 L191,1543.13996 L203,1543.139 L203,128.86 L191,128.860041 L191,123.860041 L220,123.860041 L220,128.860041 L208,128.86 L208,1543.139 L220,1543.13996 L220,1548.13996 L191,1548.13996 Z" fill="#979797" fill-rule="nonzero"></path>

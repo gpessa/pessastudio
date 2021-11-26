@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg width="1504px" height="2458px" viewBox="0 0 1504 2458" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <title>4</title>
-    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
         <g id="4" transform="translate(2.000000, 0.000000)">
             <g id="Fence" transform="translate(1.000000, 137.000000)" fill="#FFFFFF" stroke="#979797" stroke-width="4">
                 <rect id="Rectangle" x="2" y="59" width="1075" height="82"></rect>
@@ -12,7 +11,7 @@
                 <rect id="Rectangle" x="480" y="22" width="120" height="1946"></rect>
             </g>
             <g id="Dim" transform="translate(1114.000000, 0.000000)">
-                <text id="1950mm." font-family="Helvetica" font-size="80" font-weight="normal" letter-spacing="7.27272727" fill="#FFFFFF">
+                <text id="1950mm." font-family="Helvetica" font-size="80" font-weight="normal" letter-spacing="7.27272727" fill="#bdbdbd">
                     <tspan x="0" y="78">1950mm.</tspan>
                 </text>
                 <path d="M152,2110 L152,2105 L164,2105 L164,139 L152,139 L152,134 L181,134 L181,139 L169,139 L169,2105 L181,2105 L181,2110 L152,2110 Z" fill="#979797" fill-rule="nonzero"></path>

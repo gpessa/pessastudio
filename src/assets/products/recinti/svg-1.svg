@@ -1,52 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg width="1504px" height="1698px" viewBox="0 0 1504 1698" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-	<title>
-		1
-	</title>
-	<g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+	<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
 		<g id="1" transform="translate(2.000000, 0.000000)">
 			<g id="Fence" transform="translate(0.000000, 126.000000)" fill="#FFFFFF" stroke="#979797" stroke-width="4">
-				<rect id="Rectangle" x="2" y="60" width="1075" height="82">
-				</rect>
-				<ellipse id="Oval" cx="539" cy="19.5" rx="60" ry="17.5">
-				</ellipse>
-				<rect id="Rectangle" x="479" y="22" width="120" height="1196">
-				</rect>
+				<rect id="Rectangle" x="2" y="60" width="1075" height="82"></rect>
+				<ellipse id="Oval" cx="539" cy="19.5" rx="60" ry="17.5"></ellipse>
+				<rect id="Rectangle" x="479" y="22" width="120" height="1196"></rect>
 			</g>
 			<g id="Dim" transform="translate(1077.000000, 0.000000)">
-				<text id="1250mm." font-family="Helvetica" font-size="80" font-weight="normal" letter-spacing="7.27272727" fill="#FFFFFF">
-					<tspan x="0" y="78">
-						1250mm.
-					</tspan>
+				<text id="1250mm." font-family="Helvetica" font-size="80" font-weight="normal" letter-spacing="7.27272727" fill="#bdbdbd">
+					<tspan x="0" y="78">1250mm.</tspan>
 				</text>
-				<path d="M186,1350.19016 L186,1345.19016 L198,1345.19 L198,128.809 L186,128.809838 L186,123.809838 L215,123.809838 L215,128.809838 L203,128.809 L203,1345.19 L215,1345.19016 L215,1350.19016 L186,1350.19016 Z" fill="#979797" fill-rule="nonzero">
-				</path>
+				<path d="M186,1350.19016 L186,1345.19016 L198,1345.19 L198,128.809 L186,128.809838 L186,123.809838 L215,123.809838 L215,128.809838 L203,128.809 L203,1345.19 L215,1345.19016 L215,1350.19016 L186,1350.19016 Z" fill="#979797" fill-rule="nonzero"></path>
 			</g>
 			<g id="Ground" transform="translate(0.000000, 1348.000000)">
-				<rect id="Rectangle" stroke="#979797" stroke-width="1" fill="#D8D8D8" fill-rule="evenodd" x="1.5" y="0.5" width="1497" height="349">
-				</rect>
-				<line x1="0.5" y1="0.5" x2="1499.5" y2="0.5" id="Line" stroke="#939292" stroke-width="4" stroke-linecap="square">
-				</line>
-				<rect id="Rectangle" stroke="#979797" stroke-width="1" fill="#CACACA" fill-rule="evenodd" x="69.5" y="52.5" width="53" height="53" rx="26.5">
-				</rect>
-				<rect id="Rectangle" stroke="#979797" stroke-width="1" fill="#CACACA" fill-rule="evenodd" x="204.5" y="206.5" width="53" height="53" rx="26.5">
-				</rect>
-				<rect id="Rectangle" stroke="#979797" stroke-width="1" fill="#CACACA" fill-rule="evenodd" x="788.5" y="52.5" width="89" height="89" rx="44.5">
-				</rect>
-				<rect id="Rectangle" stroke="#979797" stroke-width="1" fill="#CACACA" fill-rule="evenodd" x="878.5" y="230.5" width="53" height="53" rx="26.5">
-				</rect>
-				<rect id="Rectangle" stroke="#979797" stroke-width="1" fill="#CACACA" fill-rule="evenodd" x="1254.5" y="233.5" width="53" height="53" rx="26.5">
-				</rect>
-				<rect id="Rectangle" stroke="#979797" stroke-width="1" fill="#CACACA" fill-rule="evenodd" x="580.5" y="260.5" width="53" height="53" rx="26.5">
-				</rect>
-				<rect id="Rectangle" stroke="#979797" stroke-width="1" fill="#CACACA" fill-rule="evenodd" x="302.5" y="58.5" width="64" height="64" rx="32">
-				</rect>
-				<rect id="Rectangle" stroke="#979797" stroke-width="1" fill="#CACACA" fill-rule="evenodd" x="1308.5" y="106.5" width="32" height="32" rx="16">
-				</rect>
-				<rect id="Rectangle" stroke="#979797" stroke-width="1" fill="#CACACA" fill-rule="evenodd" x="1148.5" y="126.5" width="32" height="32" rx="16">
-				</rect>
-				<rect id="Rectangle" stroke="#979797" stroke-width="1" fill="#CACACA" fill-rule="evenodd" x="461.5" y="142.5" width="32" height="32" rx="16">
-				</rect>
+				<rect id="Rectangle" stroke="#979797" stroke-width="1" fill="#D8D8D8" fill-rule="evenodd" x="1.5" y="0.5" width="1497" height="349"></rect>
+				<line x1="0.5" y1="0.5" x2="1499.5" y2="0.5" id="Line" stroke="#939292" stroke-width="4" stroke-linecap="square"></line>
+				<rect id="Rectangle" stroke="#979797" stroke-width="1" fill="#CACACA" fill-rule="evenodd" x="69.5" y="52.5" width="53" height="53" rx="26.5"></rect>
+				<rect id="Rectangle" stroke="#979797" stroke-width="1" fill="#CACACA" fill-rule="evenodd" x="204.5" y="206.5" width="53" height="53" rx="26.5"></rect>
+				<rect id="Rectangle" stroke="#979797" stroke-width="1" fill="#CACACA" fill-rule="evenodd" x="788.5" y="52.5" width="89" height="89" rx="44.5"></rect>
+				<rect id="Rectangle" stroke="#979797" stroke-width="1" fill="#CACACA" fill-rule="evenodd" x="878.5" y="230.5" width="53" height="53" rx="26.5"></rect>
+				<rect id="Rectangle" stroke="#979797" stroke-width="1" fill="#CACACA" fill-rule="evenodd" x="1254.5" y="233.5" width="53" height="53" rx="26.5"></rect>
+				<rect id="Rectangle" stroke="#979797" stroke-width="1" fill="#CACACA" fill-rule="evenodd" x="580.5" y="260.5" width="53" height="53" rx="26.5"></rect>
+				<rect id="Rectangle" stroke="#979797" stroke-width="1" fill="#CACACA" fill-rule="evenodd" x="302.5" y="58.5" width="64" height="64" rx="32"></rect>
+				<rect id="Rectangle" stroke="#979797" stroke-width="1" fill="#CACACA" fill-rule="evenodd" x="1308.5" y="106.5" width="32" height="32" rx="16"></rect>
+				<rect id="Rectangle" stroke="#979797" stroke-width="1" fill="#CACACA" fill-rule="evenodd" x="1148.5" y="126.5" width="32" height="32" rx="16"></rect>
+				<rect id="Rectangle" stroke="#979797" stroke-width="1" fill="#CACACA" fill-rule="evenodd" x="461.5" y="142.5" width="32" height="32" rx="16"></rect>
 			</g>
 		</g>
 	</g>

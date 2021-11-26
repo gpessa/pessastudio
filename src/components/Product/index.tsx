@@ -125,7 +125,7 @@ const getSeoPrice = (price: ProductProps["price"], url: string) => {
   }
 }
 
-const Product = ({ className, images, vertical, price, name, description, ...attributes }: ProductProps) => {
+const Product: React.FC<ProductProps> = ({ className, images, vertical, price, name, description, ...attributes }) => {
   const md = (vertical ? 12 : 12 / (images.length + 1)) as GridSize
   const data = getData(attributes)
   const { pathname } = useLocation()
