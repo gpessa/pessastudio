@@ -28,12 +28,11 @@ const StyledTitle = styled(Title)(({ theme }) => ({
 }))
 
 const Testimonials: React.FC<{
-  text?: any
-  title: string
-  subtitle?: string
-  testimonials: JSX.Element[] | string[],
+  text?: JSX.Element
+  title: JSX.Element
+  subtitle?: JSX.Element
+  testimonials: JSX.Element[] | string[]
 }> = ({ testimonials, title, subtitle, text }) => {
-
   const CAROUSEL_CONFIGURATION = {
     totalSlides: testimonials.length,
     isIntrinsicHeight: true,
@@ -47,9 +46,7 @@ const Testimonials: React.FC<{
 
   return (
     <Columns
-      left={
-        <StyledTitle {...{ title, subtitle, text }} />
-      }
+      left={<StyledTitle {...{ title, subtitle, text }} />}
       right={
         <CarouselProvider {...CAROUSEL_CONFIGURATION}>
           <Slider>

@@ -1,28 +1,32 @@
 import { t, Trans } from "@lingui/macro"
 import { Grid, Typography } from "@mui/material"
-import React from "react"
 import { Product, Title } from "components"
-import { Colors } from "utils/constants"
+import React from "react"
 import { PRODUCT_GUTTER } from "theme"
+import { Colors } from "utils/constants"
 
 const Cavalletti: React.FC = () => {
   const PRODUCTS = [
     {
       name: t`Cavalletti Caprilli`,
-      description: t`Singolo cavalletto abbinabile a barriere diametro 90, 95, 100, 105 mm.`,
+      description: <Trans>Singolo cavalletto abbinabile a barriere diametro 90, 95, 100, 105 mm.</Trans>,
       images: [{ src: require("assets/products/ostacoli/cavalletto-01.png").default }],
       thickness: 100,
       length: 500,
       height: 500,
       weight: 2,
-      price: [{ price: 36, note: t`Singolo cavvalleto` }],
+      price: [{ price: 36, note: <Trans>Singolo cavvalleto</Trans> }],
       colors: [Colors.WHITE, Colors.BLU, Colors.YELLOW, Colors.RED, Colors.GREEN],
     },
     {
       name: t`Kit Cavalletti Caprilli + barriera`,
-      description: t`Kit comprensivo di 2 cavalletti e una barriera in PPO di colore bianco, diametro 95 mm.
-      lunghezza 2 mt.`,
+      description: (
+        <Trans>
+          Kit comprensivo di 2 cavalletti e una barriera in PPO di colore bianco, diametro 95, lunghezza 2 mt.
+        </Trans>
+      ),
       images: [{ src: require("assets/products/ostacoli/cavalletto-barriera-01.png").default }],
+
       diameter: 85,
       length: 2000,
       weight: 5.3,
@@ -34,7 +38,7 @@ const Cavalletti: React.FC = () => {
     <Grid container spacing={PRODUCT_GUTTER}>
       <Grid item md={6}>
         <Title
-          title={t`Cavalletti Caprilli`}
+          title={<Trans>Cavalletti Caprilli</Trans>}
           text={
             <Trans>
               <Typography paragraph>

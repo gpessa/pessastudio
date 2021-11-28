@@ -1,4 +1,4 @@
-import { t } from "@lingui/macro"
+import { Trans } from "@lingui/macro"
 import { Grid, styled, useMediaQuery } from "@mui/material"
 import { Section, Title } from "components"
 import { withPrefix } from "gatsby-link"
@@ -56,7 +56,7 @@ const Products: React.FC = () => {
       <Section image="dots" type="horizontal">
         <Grid container justifyContent="space-between">
           <TextStyled item md={3} xs={12}>
-            <Title subtitle={t`Prodotti`} title={t`Scopri la nostra gamma di prodotti`} />
+            <Title subtitle={<Trans>Prodotti</Trans>} title={<Trans>Scopri la nostra gamma di prodotti</Trans>} />
           </TextStyled>
           <CarouselContainerStyled item md={8} xs={12} component={Carousel}>
             {PRODUCTS.map((product, index) => (

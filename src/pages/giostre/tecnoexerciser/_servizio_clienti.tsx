@@ -1,8 +1,8 @@
-import { t, Trans } from "@lingui/macro"
+import { Trans } from "@lingui/macro"
 import { Grid } from "@mui/material"
+import { ContentTable, Section, TH } from "components"
 import { useLocalization } from "gatsby-theme-i18n"
 import React from "react"
-import { ContentTable, Section, TH } from "components"
 import { PRODUCT_GUTTER } from "theme"
 
 const TecnoexerciserServizioClienti = () => {
@@ -47,21 +47,21 @@ const TecnoexerciserServizioClienti = () => {
   const MANUALI = {
     it: [
       {
-        label: t`Manuale quadro di controllo`,
+        label: <Trans>Manuale quadro di controllo</Trans>,
         file: require("assets/products/giostre/tecnoexerciser/pdf/manuale-quadro-tecnoexerciser-it.pdf").default,
       },
       {
-        label: t`Manuale collegamento elettrico`,
+        label: <Trans>Manuale collegamento elettrico</Trans>,
         file: require("assets/products/giostre/pdf/giostra-collegamento-elettrico.pdf").default,
       },
       {
-        label: t`Procedura di lubrificazione`,
-        file: t`https://www.youtube.com/watch?v=QMA4wPxq_ow`,
+        label: <Trans>Procedura di lubrificazione</Trans>,
+        file: "https://www.youtube.com/watch?v=QMA4wPxq_ow",
       },
     ],
     fr: [
       {
-        label: t`Manuale quadro di controllo`,
+        label: <Trans>Manuale quadro di controllo</Trans>,
         file: require("assets/products/giostre/tecnoexerciser/pdf/manuale-quadro-tecnoexerciser-fr.pdf").default,
       },
     ],
@@ -70,7 +70,7 @@ const TecnoexerciserServizioClienti = () => {
   const OTHERS = {
     it: [
       {
-        label: t`Fac simile domanda installazione giostra`,
+        label: <Trans>Fac simile domanda installazione giostra</Trans>,
         file: require("assets/products/giostre/tecnoexerciser/pdf/permessi-it.pdf").default,
       },
     ],
@@ -78,12 +78,14 @@ const TecnoexerciserServizioClienti = () => {
 
   return (
     <Section>
-      <TH variant="h4">{t`Supporto clienti`}</TH>
+      <TH variant="h4">{<Trans>Supporto clienti</Trans>}</TH>
 
       <Grid container spacing={PRODUCT_GUTTER}>
-        <Grid item xs={12} md component={ContentTable} rows={DIMENSIONS} title={t`Dimensioni`} />
-        {MANUALI && <Grid item xs={12} md component={ContentTable} rows={MANUALI} title={t`Manuale d'istruzioni`} />}
-        {OTHERS && <Grid item xs={12} md component={ContentTable} rows={OTHERS} title={t`Altro`} />}
+        <Grid item xs={12} md component={ContentTable} rows={DIMENSIONS} title={<Trans>Dimension</Trans>} />
+        {MANUALI && (
+          <Grid item xs={12} md component={ContentTable} rows={MANUALI} title={<Trans>Manuale d'istruzioni</Trans>} />
+        )}
+        {OTHERS && <Grid item xs={12} md component={ContentTable} rows={OTHERS} title={<Trans>Altro</Trans>} />}
       </Grid>
     </Section>
   )

@@ -1,10 +1,9 @@
-import { t } from "@lingui/macro"
+import { t, Trans } from "@lingui/macro"
 import { useLingui } from "@lingui/react"
 import { Send } from "@mui/icons-material"
-import { Alert, IconButton, InputAdornment, Input } from "@mui/material"
+import { Alert, IconButton, Input, InputAdornment, styled } from "@mui/material"
 import addToMailchimp from "gatsby-plugin-mailchimp"
 import React, { useState } from "react"
-import { styled } from "@mui/material"
 
 const StyledAlert = styled(Alert)(({ theme }) => ({
   marginTop: theme.spacing(2),
@@ -64,14 +63,22 @@ const NewsletterSubscription: React.FC = () => {
         />
       )}
 
-      {state.response === "success" && <StyledAlert severity="success">{t`Complimenti! Ti sei iscritto`}</StyledAlert>}
+      {state.response === "success" && (
+        <StyledAlert severity="success">
+          <Trans>Complimenti! Ti sei iscritto</Trans>
+        </StyledAlert>
+      )}
 
       {state.response === "error-already-subscribed" && (
-        <StyledAlert severity="error">{t`Ti sei già iscritto`} </StyledAlert>
+        <StyledAlert severity="error">
+          <Trans>Ti sei già iscritto</Trans>
+        </StyledAlert>
       )}
 
       {state.response === "error-generic" && (
-        <StyledAlert severity="error">{t`Si è verificato un problema, riprova`}</StyledAlert>
+        <StyledAlert severity="error">
+          <Trans>Si è verificato un problema, riprova</Trans>
+        </StyledAlert>
       )}
     </form>
   )

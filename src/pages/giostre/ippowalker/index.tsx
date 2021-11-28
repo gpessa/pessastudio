@@ -19,7 +19,7 @@ const Ippowalker: React.FC = () => {
       <Columns
         left={
           <>
-            <TH variant="h1">{t`Ippowalker`}</TH>
+            <TH variant="h1">{<Trans>Ippowalker</Trans>}</TH>
             <Trans>
               <Typography paragraph>
                 Ippowalker è una giostra di recente realizzazione, essa nasce dal sogno di poter fornire uno strumento

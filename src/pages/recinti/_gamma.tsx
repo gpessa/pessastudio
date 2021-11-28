@@ -83,7 +83,9 @@ const Gamma = () => {
 
   return (
     <Section color="primary">
-      <TH variant="h2" align="center">{t`Gamma`}</TH>
+      <TH variant="h2" align="center">
+        <Trans>Gamma</Trans>
+      </TH>
       <Grid container spacing={PRODUCT_GUTTER * 2}>
         {PRODUCTS.map((item, index) => (
           <Grid item key={index} md={3}>

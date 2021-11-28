@@ -1,8 +1,8 @@
 import { t, Trans } from "@lingui/macro"
 import { Typography } from "@mui/material"
-import React from "react"
 import { Columns, ContentTable, Gallery, Section, TH } from "components"
 import { Picture } from "components/ModalGallery"
+import React from "react"
 import Accessori from "./_accessori"
 import Gamma from "./_gamma"
 
@@ -36,11 +36,11 @@ const Recinti: React.FC = () => {
 
   const FILES = [
     {
-      label: t`Come preparare il fondo`,
+      label: <Trans>Come preparare il fondo</Trans>,
       link: "/recinti/come-preparare-il-fondo",
     },
     {
-      label: t`Istruzioni di montaggio`,
+      label: <Trans>Istruzioni di montaggio</Trans>,
       file: require("assets/recinti-istruzioni-montaggio.pdf").default,
     },
   ]
@@ -50,7 +50,7 @@ const Recinti: React.FC = () => {
       <Columns
         left={
           <>
-            <TH variant="h1">{t`Recinti`}</TH>
+            <TH variant="h1">{<Trans>Recinti</Trans>}</TH>
             <Trans>
               <Typography paragraph>
                 Le recinzioni <strong>TECNOFENCE</strong> sono realizzate con materiale particolarmente adatto a durare
@@ -92,8 +92,8 @@ const Recinti: React.FC = () => {
       <Accessori />
 
       <Section>
-        <TH variant="h2">{t`Supporto clienti`}</TH>
-        <ContentTable title={t`Manuale d'istruzioni`} rows={FILES} />
+        <TH variant="h2">{<Trans>Supporto clienti</Trans>}</TH>
+        <ContentTable title={<Trans>Manuale d'istruzioni</Trans>} rows={FILES} />
       </Section>
     </>
   )

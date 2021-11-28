@@ -1,4 +1,4 @@
-import { t } from "@lingui/macro"
+import { Trans } from "@lingui/macro"
 import { PictureAsPdf, Visibility } from "@mui/icons-material"
 import {
   Box,
@@ -42,13 +42,13 @@ const ContentTable = ({ rows, title, ...props }: Props) => (
               <TableCell align="right">
                 {link && (
                   <ButtonStyled to={link} color="inherit" component={LocalizedLink} endIcon={<Visibility />}>
-                    {t`Vedi`}
+                    <Trans>Vedi</Trans>
                   </ButtonStyled>
                 )}
 
                 {file && (
                   <ButtonStyled href={file} target="_blank" color="inherit" endIcon={<PictureAsPdf color="error" />}>
-                    {t`Scarica`}
+                    <Trans>Scarica</Trans>
                   </ButtonStyled>
                 )}
               </TableCell>
@@ -61,7 +61,7 @@ const ContentTable = ({ rows, title, ...props }: Props) => (
 )
 
 type Props = {
-  title: string | Element
+  title: string | JSX.Element
   rows: {
     label: string | JSX.Element
     link?: string | JSX.Element

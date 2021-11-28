@@ -1,9 +1,9 @@
 import { t, Trans } from "@lingui/macro"
 import { Typography } from "@mui/material"
-import React from "react"
 import { Product, Title } from "components"
-import { Colors } from "utils/constants"
+import React from "react"
 import { PRODUCT_GUTTER } from "theme"
+import { Colors } from "utils/constants"
 
 const PRODUCT = {
   description: <Trans>Costruisci la tua barriera personalizzata scegliendo tra i colori a disposizione</Trans>,
@@ -24,7 +24,7 @@ const Barriere = () => (
   <>
     <Title
       sx={{ mb: PRODUCT_GUTTER }}
-      title={t`Barriere`}
+      title={<Trans>Barriere</Trans>}
       text={
         <Trans>
           <Typography>

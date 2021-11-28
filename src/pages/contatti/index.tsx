@@ -1,4 +1,4 @@
-import { t } from "@lingui/macro"
+import { Trans } from "@lingui/macro"
 import { Avatar, Box, styled } from "@mui/material"
 import { Columns, TH } from "components"
 import React from "react"
@@ -91,21 +91,31 @@ const Contatti: React.FC = () => (
     <Columns
       left={
         <>
-          <TH variant="h1">{t`Contatti`}</TH>
+          <TH variant="h1">
+            <Trans>Contatti</Trans>
+          </TH>
 
           <Box mt={6}>
-            <TH variant="h4">{t`Sede operativa`}</TH>
+            <TH variant="h4">
+              <Trans>Sede operativa</Trans>
+            </TH>
             <StyledAddress {...SEDE_OPERATIVA} />
           </Box>
 
           <Box mt={6}>
-            <TH variant="h4">{t`Sede legale`}</TH>
+            <TH variant="h4">
+              <Trans>Sede legale</Trans>
+            </TH>
             <StyledAddress {...SEDE_LEGALE} />
-            <Box mt={2}>Capitale interamente versato € 10.000,00</Box>
+            <Box mt={2}>
+              <Trans>Capitale interamente versato € 10.000,00</Trans>
+            </Box>
           </Box>
 
           <Box mt={6}>
-            <TH variant="h4">{t`Coordinate bancarie`}</TH>
+            <TH variant="h4">
+              <Trans>Coordinate bancarie</Trans>
+            </TH>
             <StyledBank {...BANCA} />
           </Box>
         </>
@@ -113,18 +123,24 @@ const Contatti: React.FC = () => (
       right={
         <RightColumnStyled>
           <Box>
-            <TH variant="h4">{t`Contatto commerciale`}</TH>
+            <TH variant="h4">
+              <Trans>Contatto commerciale</Trans>
+            </TH>
             <AvatarStyled src={require("assets/pages/contatti/anna.jpg").default} alt="Anna Pessa" />
             <Address {...ITALIA} />
           </Box>
 
           <Box mt={6}>
-            <TH variant="h4">{t`Contatto commerciale Belgio`}</TH>
+            <TH variant="h4">
+              <Trans>Contatto commerciale Belgio</Trans>
+            </TH>
             <Address {...BELGIO} />
           </Box>
 
           <Box mt={6}>
-            <TH variant="h4">{t`Contatto commerciale Francia`}</TH>
+            <TH variant="h4">
+              <Trans>Contatto commerciale Francia</Trans>
+            </TH>
             <Address {...FRANCIA} />
           </Box>
         </RightColumnStyled>

@@ -17,7 +17,7 @@ const Tondini: React.FC = () => {
     ),
     accessories: [
       {
-        name: t`Rete antivento`,
+        name: <Trans>Rete antivento</Trans>,
         description: (
           <Trans>
             La rete antivento protegge l'interno della tondino da correnti d'aria consentendo il cavallo a rimanere
@@ -36,7 +36,7 @@ const Tondini: React.FC = () => {
         ],
       },
       {
-        name: t`Irrigazione`,
+        name: <Trans>Irrigazione</Trans>,
         description: (
           <Trans>
             Il tondino può essere dotato rosone posizionato al centro ti permetterà di irrigare il tuo tondino.
@@ -50,7 +50,7 @@ const Tondini: React.FC = () => {
         ],
       },
       {
-        name: t`Rete antivento ingresso`,
+        name: <Trans>Rete antivento ingresso</Trans>,
         description: (
           <Trans>
             La rete antivento della porta è un’ulteriore protezione che offriamo per rendere ancora di più il tuo
@@ -69,7 +69,7 @@ const Tondini: React.FC = () => {
         ],
       },
       {
-        name: t`Chiusura a terra`,
+        name: <Trans>Chiusura a terra</Trans>,
         description: GIOSTRA_TONDINO_CHIUSURA_A_TERRA_DESCRIZIONE,
         images: [
           {
@@ -147,7 +147,7 @@ const Tondini: React.FC = () => {
 
   const MANUALS = [
     {
-      label: t`Come preparare il fondo`,
+      label: <Trans>Come preparare il fondo</Trans>,
       link: "/tondini/come-preparare-il-fondo",
     },
   ]
@@ -155,7 +155,7 @@ const Tondini: React.FC = () => {
   const BENEFITS = [
     {
       icon: AccountBalance,
-      title: t`Materiali di qualità`,
+      title: <Trans>Materiali di qualità</Trans>,
       description: (
         <Trans>
           È costituito da pannelli laterali in compensato marino fissati a colonne in acciaio zincato. La copertura in
@@ -165,7 +165,7 @@ const Tondini: React.FC = () => {
     },
     {
       icon: DomainDisabled,
-      title: t`Nessuna concessione edilizia`,
+      title: <Trans>Nessuna concessione edilizia</Trans>,
       description: (
         <Trans>
           I nostri tondini sono considerati strutture precarie. Non avrete bisogno di nessuna concessione edilizia
@@ -174,12 +174,12 @@ const Tondini: React.FC = () => {
     },
     {
       icon: Visibility,
-      title: t`Bello e funzionale`,
+      title: <Trans>Bello e funzionale</Trans>,
       description: <Trans>É una struttura semplice, leggera e piacevole alla vista</Trans>,
     },
     {
       icon: Lock,
-      title: t`Sicuro`,
+      title: <Trans>Sicuro</Trans>,
       description: (
         <Trans>
           La struttura è stata progettata per garantire un carico neve fino a 120 kg/mq e la velocità del vento fino a
@@ -191,12 +191,12 @@ const Tondini: React.FC = () => {
 
   return (
     <>
-      <Hero image={require("assets/pages/tondini/background.jpg").default} text={t`Tondini`} />
+      <Hero image={require("assets/pages/tondini/background.jpg").default} text={<Trans>Tondini</Trans>} />
 
       <Benefits
         benefits={BENEFITS}
-        subtitle={t`Caratteristiche`}
-        title={t`Scopri il nostro tondino Tecnohalle`}
+        subtitle={<Trans>Caratteristiche</Trans>}
+        title={<Trans>Scopri il nostro tondino Tecnohalle</Trans>}
         text={
           <Trans>
             Il tondino coperto è adatto a svolgere molteplici attività, rappresenta la migliore soluzione per addestrare
@@ -213,13 +213,13 @@ const Tondini: React.FC = () => {
       <Accessori {...ACCESSORI} />
 
       <Section color="warm1">
-        <TH variant="h4">{t`Supporto clienti`}</TH>
+        <TH variant="h4">{<Trans>Supporto clienti</Trans>}</TH>
         <Grid container spacing={PRODUCT_GUTTER}>
           <Grid item xs={12} md={6}>
-            <ContentTable title={t`Dimensioni`} rows={DIMENSIONS} />
+            <ContentTable title={<Trans>Dimensioni</Trans>} rows={DIMENSIONS} />
           </Grid>
           <Grid item xs={12} md={6}>
-            <ContentTable title={t`Manuali`} rows={MANUALS} />
+            <ContentTable title={<Trans>Manuali</Trans>} rows={MANUALS} />
           </Grid>
         </Grid>
       </Section>

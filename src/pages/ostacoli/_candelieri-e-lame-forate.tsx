@@ -1,9 +1,9 @@
 import { t, Trans } from "@lingui/macro"
 import { Grid } from "@mui/material"
-import React from "react"
 import { Product, Title } from "components"
-import { MATERIALS } from "utils/constants"
+import React from "react"
 import { PRODUCT_GUTTER } from "theme"
+import { MATERIALS } from "utils/constants"
 
 const CandelieriLameForate = () => {
   const PRODUCTS = [
@@ -45,15 +45,15 @@ const CandelieriLameForate = () => {
       thickness: 2,
       width: 65,
       price: [
-        { price: 8.5, note: t`Lama 50 cm.` },
-        { price: 15.5, note: t`Lama 150 cm.` },
+        { price: 8.5, note: <Trans>Lama 50 cm.</Trans> },
+        { price: 15.5, note: <Trans>Lama 150 cm.</Trans> },
       ],
     },
   ]
 
   return (
     <>
-      <Title sx={{ mb: PRODUCT_GUTTER }} title={t`Candelieri e lame forate`} />
+      <Title sx={{ mb: PRODUCT_GUTTER }} title={<Trans>Candelieri e lame forate</Trans>} />
       <Grid container spacing={PRODUCT_GUTTER}>
         {PRODUCTS.map((product, index) => (
           <Grid item xs={12} key={`candelieri_lame_forate_${index}`}>

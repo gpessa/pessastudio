@@ -1,6 +1,6 @@
-import { t, Trans } from "@lingui/macro"
-import React from "react"
+import { Trans } from "@lingui/macro"
 import { Compare } from "components"
+import React from "react"
 import {
   GIOSTRA_FENCE,
   GIOSTRA_FENCE_TYPE_TECNOFENCE,
@@ -81,12 +81,12 @@ const TecnoexerciserCompare = () => {
         </Trans>
       ),
       fence_type: GIOSTRA_FENCE(18, "EXERCISER"),
-      cover: t`Copertura rigida con lastre ondulate`,
+      cover: <Trans>Copertura rigida con lastre ondulate</Trans>,
       extra: GIOSTRE_EXTRA_BIG,
     },
   ]
 
-  return <Compare title={t`Gamma`} products={PRODUCTS} attributes={GIOSTRE_ATTRIBUTES} />
+  return <Compare title={<Trans>Gamma</Trans>} products={PRODUCTS} attributes={GIOSTRE_ATTRIBUTES} />
 }
 
 export default TecnoexerciserCompare

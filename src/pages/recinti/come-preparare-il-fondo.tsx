@@ -1,10 +1,12 @@
-import { t, Trans } from "@lingui/macro"
-import React from "react"
+import { Trans } from "@lingui/macro"
 import { Section, TH, Ul } from "components"
+import React from "react"
 
 const ComePreparareIlFondo: React.FC = () => (
   <Section>
-    <TH variant="h2">{t`Come preparare il fondo`}</TH>
+    <TH variant="h2">
+      <Trans>Come preparare il fondo</Trans>
+    </TH>
     <Trans>
       <Ul>
         <li>

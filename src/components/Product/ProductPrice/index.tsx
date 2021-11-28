@@ -1,4 +1,4 @@
-import { t, Trans } from "@lingui/macro"
+import { Trans } from "@lingui/macro"
 import { useLingui } from "@lingui/react"
 import { Badge, styled, Typography } from "@mui/material"
 import React from "react"
@@ -14,7 +14,7 @@ export type PriceProps = {
     | number
     | {
         price: number
-        note: string
+        note: JSX.Element
       }[]
 }
 
@@ -46,7 +46,7 @@ const ProductPrice: React.FC<PriceProps> = ({ price }) => {
           <PriceStyled as={"span"}>
             <Badge
               color="warm2"
-              badgeContent={t`+ IVA`}
+              badgeContent={<Trans>+ IVA</Trans>}
               anchorOrigin={{
                 vertical: "bottom",
                 horizontal: "right",

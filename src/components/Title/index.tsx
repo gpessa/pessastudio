@@ -3,9 +3,9 @@ import React from "react"
 import { BREAKPOINT } from "theme"
 
 export type Props = {
-  text?: any
-  title: string
-  subtitle?: string
+  text?: JSX.Element
+  title: JSX.Element
+  subtitle?: JSX.Element
 } & Pick<BoxProps, "sx" | "className">
 
 const StyledBox = styled(Box)(({ theme }) => ({
@@ -21,7 +21,9 @@ const Title: React.FC<Props> = ({ title, sx, subtitle, text, className }) => (
         {subtitle}
       </Typography>
     )}
-    <Typography variant="h3" dangerouslySetInnerHTML={{ __html: title }} gutterBottom />
+    <Typography variant="h3" gutterBottom>
+      {title}
+    </Typography>
     {text && <>{text}</>}
   </StyledBox>
 )

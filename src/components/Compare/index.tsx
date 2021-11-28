@@ -1,4 +1,4 @@
-import { t } from "@lingui/macro"
+import { Trans } from "@lingui/macro"
 import CloseIcon from "@mui/icons-material/Close"
 import {
   Box,
@@ -24,7 +24,7 @@ const TableCellStyled = styled(TableCell)<{ type?: string }>(({ type }) => ({
 }))
 
 type Props = {
-  title: string
+  title: JSX.Element
   attributes: {
     [key: string]: FunctionComponent | Element | string | undefined | ReactElement
   }
@@ -74,7 +74,7 @@ const CompareXS: React.FC<Omit<Props, "title">> = ({ attributes, products }) => 
               <TableRow>
                 <TableCellStyled size="medium" align="center" key={index} colSpan={2}>
                   <Button color="primary" href={`mailto:annapessa@pessastudio.eu?subject=Info Giostra`}>
-                    {t`Richiedi un preventivo`}
+                    <Trans>Richiedi un preventivo</Trans>
                   </Button>
                 </TableCellStyled>
               </TableRow>
@@ -114,7 +114,7 @@ const CompareMD: React.FC<Omit<Props, "title">> = ({ attributes, products }) => 
           {products.map((_, index) => (
             <TableCellStyled size="medium" key={index}>
               <Button color="primary" href={`mailto:annapessa@pessastudio.eu?subject=Info Giostra`}>
-                {t`Richiedi un preventivo`}
+                <Trans>Richiedi un preventivo</Trans>
               </Button>
             </TableCellStyled>
           ))}

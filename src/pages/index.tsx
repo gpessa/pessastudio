@@ -1,14 +1,19 @@
-import { t, Trans } from "@lingui/macro"
+import { Trans } from "@lingui/macro"
 import { AccountBalance, Apps, Architecture, Restore, TurnedInNot } from "@mui/icons-material"
 import { Benefits, Hero, Products, Testimonials } from "components"
 import React from "react"
 
 const Index: React.FC = () => {
   const TESTIMONIALS = [
-    t`Ho ricevuto questa mattina il materiale. I miei complimenti per la qualità dei prodotti, l'imballo ed il trasportatore`,
-    t`Ringrazio tutto il team per la professionalità, gentilezza, velocità e sopratutto per l'ottimo risultato`,
-    t`Splendido niente da dire! Il tondino è ben pensato e ingegnoso. Molto bene!`,
-    t`Gli ostacoli sono arrivati. Sono fantastici!`,
+    <Trans>
+      Ho ricevuto questa mattina il materiale. I miei complimenti per la qualità dei prodotti, l'imballo ed il
+      trasportatore
+    </Trans>,
+    <Trans>
+      Ringrazio tutto il team per la professionalità, gentilezza, velocità e sopratutto per l'ottimo risultato
+    </Trans>,
+    <Trans>Splendido niente da dire! Il tondino è ben pensato e ingegnoso. Molto bene!</Trans>,
+    <Trans>Gli ostacoli sono arrivati. Sono fantastici!</Trans>,
   ]
 
   const BENEFITS = [
@@ -59,21 +64,25 @@ const Index: React.FC = () => {
 
   return (
     <>
-      <Hero image={require("assets/pages/home/background.jpg").default} text={t`Tradizione e qualità`} />
+      <Hero image={require("assets/pages/home/background.jpg").default} text={<Trans>Tradizione e qualità</Trans>} />
 
       <Benefits
         benefits={BENEFITS}
-        subtitle={t`Perché?`}
-        title={t`Pessastudio, una scelta di qualità`}
-        text={t`Scopri perché ogni anno centinaia di persone si affidano a Pessastudio per i loro articoli d'equitazione`}
+        subtitle={<Trans>Perché?</Trans>}
+        title={<Trans>Pessastudio, una scelta di qualità</Trans>}
+        text={
+          <Trans>
+            Scopri perché ogni anno centinaia di persone si affidano a Pessastudio per i loro articoli d'equitazione
+          </Trans>
+        }
       />
 
       <Products />
 
       <Testimonials
-        subtitle={t`Dicono di noi`}
-        title={t`Cosa dicono di noi`}
-        text={t`Scopri la qualità dei nostri prodotti attraverso la testimonianza dei clienti`}
+        subtitle={<Trans>Dicono di noi</Trans>}
+        title={<Trans>Cosa dicono di noi</Trans>}
+        text={<Trans>Scopri la qualità dei nostri prodotti attraverso la testimonianza dei clienti</Trans>}
         testimonials={TESTIMONIALS}
       />
     </>

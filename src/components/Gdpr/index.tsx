@@ -1,4 +1,4 @@
-import { t, Trans } from "@lingui/macro"
+import { Trans } from "@lingui/macro"
 import { Box, Button, ButtonProps, Link, Theme } from "@mui/material"
 import { makeStyles } from "@mui/styles"
 import { useLocation } from "@reach/router"
@@ -45,7 +45,7 @@ const Gdpr: React.FC = () => {
       onAccept={onAccept}
       disableStyles={true}
       ButtonComponent={Accept}
-      buttonText={t`Acconsento`}
+      buttonText={<Trans>Acconsento</Trans>}
       containerClasses={classes.root}
       overlayClasses={classes.overlay}
       cookieName="gatsby-gdpr-google-tagmanager"

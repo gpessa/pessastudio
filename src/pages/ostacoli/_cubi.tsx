@@ -1,9 +1,9 @@
 import { t, Trans } from "@lingui/macro"
 import { Grid, Typography } from "@mui/material"
-import React from "react"
 import { Product, Title } from "components"
-import { Colors } from "utils/constants"
+import React from "react"
 import { PRODUCT_GUTTER } from "theme"
+import { Colors } from "utils/constants"
 
 const Cubi: React.FC = () => {
   const PRODUCTS = [
@@ -41,7 +41,7 @@ const Cubi: React.FC = () => {
     <>
       <Title
         sx={{ mb: PRODUCT_GUTTER }}
-        title={t`Cubi`}
+        title={<Trans>Cubi</Trans>}
         text={
           <Trans>
             <Typography>

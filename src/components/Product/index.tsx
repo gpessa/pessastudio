@@ -1,5 +1,5 @@
 import { i18n } from "@lingui/core"
-import { t } from "@lingui/macro"
+import { Trans } from "@lingui/macro"
 import { Box, Grid, GridSize, styled, Typography } from "@mui/material"
 import { useLocation } from "@reach/router"
 import { Data, TH } from "components"
@@ -43,21 +43,22 @@ export type ProductProps = {
   images: ProductImagesProps["images"]
   description?: string | ReactNode
   price?: PriceProps["price"]
+  className?: string
   vertical?: boolean
   name: string
 } & Attributes
 
 const getDataLabel = (id: keyof Attributes) =>
   ({
-    colors: t`Colori`,
-    materials: t`Materiali`,
-    depth: t`Profondità`,
-    diameter: t`Diametro`,
-    height: t`Altezza`,
-    length: t`Lunghezza`,
-    thickness: t`Spessore`,
-    weight: t`Peso`,
-    width: t`Larghezza`,
+    colors: <Trans>Colori</Trans>,
+    materials: <Trans>Materiali</Trans>,
+    depth: <Trans>Profondità</Trans>,
+    diameter: <Trans>Diametro</Trans>,
+    height: <Trans>Altezza</Trans>,
+    length: <Trans>Lunghezza</Trans>,
+    thickness: <Trans>Spessore</Trans>,
+    weight: <Trans>Peso</Trans>,
+    width: <Trans>Larghezza</Trans>,
   }[id])
 
 const getDataData = (id: keyof Attributes, attribute: number | Colors[] | string[] | JSX.Element[]) => {

@@ -1,9 +1,9 @@
 import { t, Trans } from "@lingui/macro"
 import { Grid } from "@mui/material"
-import React from "react"
 import { Product, Section, TH } from "components"
-import { Colors } from "utils/constants"
+import React from "react"
 import { PRODUCT_GUTTER } from "theme"
+import { Colors } from "utils/constants"
 
 const Accessori = () => {
   const PRODUCTS = [
@@ -38,7 +38,9 @@ const Accessori = () => {
 
   return (
     <Section color="warm1">
-      <TH variant="h2">{t`Accessori`}</TH>
+      <TH variant="h2">
+        <Trans>Accessori</Trans>
+      </TH>
       <Grid container spacing={PRODUCT_GUTTER}>
         {PRODUCTS.map((product, index) => (
           <Grid key={index} xs={12} md={12} item>

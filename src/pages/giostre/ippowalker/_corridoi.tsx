@@ -1,13 +1,13 @@
 import { t, Trans } from "@lingui/macro"
 import { Grid, Typography } from "@mui/material"
-import React from "react"
 import { Gallery, Section, TH } from "components"
 import { Picture } from "components/ModalGallery"
+import React from "react"
+import { BREAKPOINT, PRODUCT_GUTTER } from "theme"
 import {
   GIOSTRA_DESCRIZIONE_RECINZIONE_COMPENSATO_MARINO,
   GIOSTRA_DESCRIZIONE_RECINZIONE_TECONOFENCE,
 } from "utils/constants"
-import { BREAKPOINT, PRODUCT_GUTTER } from "theme"
 
 const IppowalkerCorridoi = () => {
   const IMAGES: Picture[] = [
@@ -25,7 +25,9 @@ const IppowalkerCorridoi = () => {
     <Section>
       <Grid container spacing={PRODUCT_GUTTER} direction={{ [BREAKPOINT]: "row-reverse" }}>
         <Grid md={6} item>
-          <TH variant="h3" sans textAlign="right">{t`I corridoi`}</TH>
+          <TH variant="h3" sans textAlign="right">
+            <Trans>I corridoi</Trans>
+          </TH>
 
           <Typography paragraph>
             <Trans>

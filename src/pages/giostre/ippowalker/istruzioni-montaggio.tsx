@@ -1,7 +1,7 @@
-import { t, Trans } from "@lingui/macro"
+import { Trans } from "@lingui/macro"
 import { Box, Typography } from "@mui/material"
-import React from "react"
 import { Path, Section, TH } from "components"
+import React from "react"
 
 const IstruzioniMontaggio: React.FC = () => {
   const STEPS = [
@@ -50,8 +50,12 @@ const IstruzioniMontaggio: React.FC = () => {
   return (
     <Section>
       <Box mb={3} textAlign="center">
-        <TH variant="h2">{t`Istruzioni di montaggio`}</TH>
-        <Typography>{t`Segui le semplici istruzioni per montare la nostra giostra`}</Typography>
+        <TH variant="h2">
+          <Trans>Istruzioni di montaggio</Trans>
+        </TH>
+        <Typography>
+          <Trans>Segui le semplici istruzioni per montare la nostra giostra</Trans>
+        </Typography>
       </Box>
       <Path steps={STEPS} />
     </Section>

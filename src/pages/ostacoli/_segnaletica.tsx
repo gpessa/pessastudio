@@ -1,9 +1,9 @@
-import { t } from "@lingui/macro"
+import { t, Trans } from "@lingui/macro"
 import { Grid } from "@mui/material"
-import React from "react"
 import { Product, Title } from "components"
-import { MATERIALS } from "utils/constants"
+import React from "react"
 import { PRODUCT_GUTTER } from "theme"
+import { MATERIALS } from "utils/constants"
 
 const Segnaletica: React.FC = () => {
   const PRODUCTS = [
@@ -35,7 +35,7 @@ const Segnaletica: React.FC = () => {
 
   return (
     <>
-      <Title title={t`Segnaletica`} />
+      <Title title={<Trans>Segnaletica</Trans>} />
       <Grid container spacing={PRODUCT_GUTTER}>
         {PRODUCTS.map((product, index) => (
           <Grid xs={12} md={6} item key={`segnaletica_${index}`}>

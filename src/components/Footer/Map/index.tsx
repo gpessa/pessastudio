@@ -1,6 +1,5 @@
 import { t } from "@lingui/macro"
-import { Box } from "@mui/material"
-import { styled } from "@mui/material"
+import { Box, styled } from "@mui/material"
 import React from "react"
 
 const BoxStyled = styled(Box)({

@@ -1,7 +1,7 @@
 import { t, Trans } from "@lingui/macro"
 import { Grid, Typography } from "@mui/material"
-import React from "react"
 import { Product, Title } from "components"
+import React from "react"
 import { PRODUCT_GUTTER } from "theme"
 
 const Fosso: React.FC = () => {
@@ -18,7 +18,7 @@ const Fosso: React.FC = () => {
     <Grid container spacing={PRODUCT_GUTTER}>
       <Grid item xs={12} md={6}>
         <Title
-          title={t`Fosso`}
+          title={<Trans>Fosso</Trans>}
           text={
             <Trans>
               <Typography>Ottimo per insegnare ai vostri cavalli/puledri a saltarlo.</Typography>

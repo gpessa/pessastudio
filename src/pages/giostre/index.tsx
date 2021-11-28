@@ -17,30 +17,33 @@ const Giostre: React.FC = () => {
   const BENEFITS = [
     {
       icon: AccessibilityNew,
-      title: <Trans id="3.000 giostre installate" />,
-      description: <Trans id="Più' di 3.000 clienti europei hanno scelto Pessastudio per la loro giostra" />,
+      title: <Trans>3.000 giostre installate</Trans>,
+      description: <Trans>Più' di 3.000 clienti europei hanno scelto Pessastudio per la loro giostra</Trans>,
     },
     {
       icon: Apps,
-      title: <Trans id="Ampia gamma" />,
+      title: <Trans>Ampia gamma</Trans>,
       description: (
-        <Trans id="È possibile acquistare le nostre giostre in diverse versioni adatte ad ogni budget ed esigenza" />
+        <Trans>È possibile acquistare le nostre giostre in diverse versioni adatte ad ogni budget ed esigenz</Trans>
       ),
     },
     {
       icon: DomainDisabled,
-      title: <Trans id="Nessuna concessione edilizia" />,
+      title: <Trans>Nessuna concessione edilizia</Trans>,
       description: (
-        <Trans id="Le nostre giostre sono considerate strutture precarie. Non avrete bisogno di nessuna concessione edilizia" />
+        <Trans>
+          Le nostre giostre sono considerate strutture precarie. Non avrete bisogno di nessuna concessione edilizi
+        </Trans>
       ),
     },
     {
       icon: VideogameAsset,
-      title: <Trans id="Facile da usare" />,
+      title: <Trans>Facile da usare</Trans>,
       description: (
-        <Trans
-          id={`Usa il nostro semplice pannello di controllo per scegliere uno dei nostri "training programs" o seleziona manualmente la velocità desiderata`}
-        />
+        <Trans>
+          Usa il nostro semplice pannello di controllo per scegliere uno dei nostri "training programs" o seleziona
+          manualmente la velocità desiderata
+        </Trans>
       ),
     },
   ]
@@ -66,11 +69,11 @@ const Giostre: React.FC = () => {
 
   return (
     <>
-      <Hero image={require("assets/pages/giostre/background.jpg").default} text={t`Giostre`} />
+      <Hero image={require("assets/pages/giostre/background.jpg").default} text={<Trans>Giostre</Trans>} />
 
       <Benefits
-        title={t`Perché una giostra Pessastudio`}
-        subtitle={t`Giostre`}
+        title={<Trans>Perché una giostra Pessastudio</Trans>}
+        subtitle={<Trans>Giostre</Trans>}
         text={
           <Trans>
             <Typography paragraph>Le giostre rappresentano il punto di forza della nostra azienda.</Typography>
@@ -89,7 +92,9 @@ const Giostre: React.FC = () => {
       />
 
       <GammaSectionStyled maxWidth="md">
-        <TH variant="h2">{t`Gamma`}</TH>
+        <TH variant="h2">
+          <Trans>Gamma</Trans>
+        </TH>
 
         <Trans>
           Due sono i modelli di giostra che proponiamo: il modello{" "}
@@ -108,7 +113,9 @@ const Giostre: React.FC = () => {
       <Columns
         left={
           <Box textAlign="center">
-            <TH variant="h3" sans>{t`Tecnoexerciser`}</TH>
+            <TH variant="h3" sans>
+              <Trans>Tecnoexerciser</Trans>
+            </TH>
             <Button
               component={LocalizedLink}
               to={PAGES.GIOSTRE_TECNOEXERCISER.url}
@@ -116,13 +123,15 @@ const Giostre: React.FC = () => {
               size="large"
               startIcon={<RemoveRedEyeOutlined />}
             >
-              {t`Scopri di piú`}
+              <Trans>Scopri di piú</Trans>
             </Button>
           </Box>
         }
         right={
           <Box textAlign="center">
-            <TH variant="h3" sans>{t`Ippowalker`}</TH>
+            <TH variant="h3" sans>
+              <Trans>Ippowalker</Trans>
+            </TH>
             <Button
               component={LocalizedLink}
               to={PAGES.GIOSTRE_IPPOWALKER.url}
@@ -130,7 +139,7 @@ const Giostre: React.FC = () => {
               size="large"
               endIcon={<RemoveRedEyeOutlined />}
             >
-              {t`Scopri di piú`}
+              <Trans>Scopri di piú</Trans>
             </Button>
           </Box>
         }

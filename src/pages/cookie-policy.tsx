@@ -1,14 +1,16 @@
-import { Section, TH, Ul } from "components"
-import { t, Trans } from "@lingui/macro"
+import { Trans } from "@lingui/macro"
 import { Box, Link, Typography } from "@mui/material"
-import { PRODUCT_GUTTER } from "theme"
+import { Section, TH, Ul } from "components"
 import React from "react"
+import { PRODUCT_GUTTER } from "theme"
 import { ITALIA, SEDE_LEGALE } from "./contatti"
 
 const CookiePolicy: React.FC = () => (
   <>
     <Section>
-      <TH variant="h1" gutterBottom>{t`Cookie policy`}</TH>
+      <TH variant="h1" gutterBottom>
+        <Trans>Cookie policy</Trans>
+      </TH>
       <Typography>
         <Trans>
           Scopo di questa Politica sulla privacy è di informarvi in merito ai dati che vengono raccolti su di voi,
@@ -109,7 +111,9 @@ const CookiePolicy: React.FC = () => (
     </Section>
 
     <Section sx={{ paddingTop: "0!important" }}>
-      <Typography variant="h2">{t`Cookie utilizzati dal presente sito`}</Typography>
+      <Typography variant="h2">
+        <Trans>Cookie utilizzati dal presente sito</Trans>
+      </Typography>
 
       <Box my={PRODUCT_GUTTER}>
         <TH variant="h5" gutterBottom sans>

@@ -1,9 +1,9 @@
 import { t, Trans } from "@lingui/macro"
 import { Box, Grid, Link, Typography } from "@mui/material"
-import React from "react"
 import { Product, Section, TH, Ul } from "components"
-import { Colors, MATERIALS } from "utils/constants"
+import React from "react"
 import { PRODUCT_GUTTER } from "theme"
+import { Colors, MATERIALS } from "utils/constants"
 
 const Dressage: React.FC = () => {
   const DESCRIPTION_20x40 = (
@@ -93,7 +93,9 @@ const Dressage: React.FC = () => {
   return (
     <>
       <Section>
-        <TH variant="h1">{t`Dressage`}</TH>
+        <TH variant="h1">
+          <Trans>Dressage</Trans>
+        </TH>
         <Trans>
           Pessastudio fornisce due soluzioni per trasformare il vostro terreno in un'arena da dressage: la gamma{" "}
           <Link href="#dressage-training">training</Link> e quella <Link href="#dressage-olimpic">olimpic</Link>
@@ -101,7 +103,9 @@ const Dressage: React.FC = () => {
       </Section>
 
       <Section id="dressage-training" color="warm1">
-        <TH variant="h2">{t`Training`}</TH>
+        <TH variant="h2">
+          <Trans>Training</Trans>
+        </TH>
         <Box sx={{ mb: PRODUCT_GUTTER }}>
           <Trans>
             <Typography>
@@ -124,7 +128,9 @@ const Dressage: React.FC = () => {
       </Section>
 
       <Section id="dressage-olimpic">
-        <TH variant="h2">{t`Olimpic`}</TH>
+        <TH variant="h2">
+          <Trans>Olimpic</Trans>
+        </TH>
         <Box sx={{ mb: PRODUCT_GUTTER }}>
           <Trans>
             <Typography>

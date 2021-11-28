@@ -1,7 +1,7 @@
-import { t } from "@lingui/macro"
+import { Trans } from "@lingui/macro"
 import { Divider, Grid, styled, Typography, useMediaQuery } from "@mui/material"
-import React from "react"
 import { Section, Title } from "components"
+import React from "react"
 import theme, { BREAKPOINT } from "theme"
 import Map from "./Map"
 import Newsletter from "./Newsletter"
@@ -30,9 +30,9 @@ const Footer: React.FC = () => {
         <Grid container justifyContent="space-evenly">
           <Grid item md={4} xs={12}>
             <Title
-              title={t`Socials`}
-              subtitle={t`Seguici`}
-              text={t`Seguici sui nostra social e scopri le ultime novità`}
+              title={<Trans>Socials</Trans>}
+              subtitle={<Trans>Seguici</Trans>}
+              text={<Trans>Seguici sui nostra social e scopri le ultime novità</Trans>}
             />
             <Socials />
           </Grid>
@@ -41,9 +41,9 @@ const Footer: React.FC = () => {
 
           <Grid item md={4} xs={12}>
             <Title
-              title={t`Iscriviti alla nostra newsletter`}
-              subtitle={t`Newsletters`}
-              text={t`Rimani informato sui nostri sconti e gli eventi`}
+              title={<Trans>Iscriviti alla nostra newsletter</Trans>}
+              subtitle={<Trans>Newsletters</Trans>}
+              text={<Trans>Rimani informato sui nostri sconti e gli eventi</Trans>}
             />
             <Newsletter />
           </Grid>
@@ -53,7 +53,9 @@ const Footer: React.FC = () => {
       <Map />
 
       <BottomPartStyled spacing="small">
-        <Typography variant="small">{t`COD. FISC. e Part: I.V.A. 04743610281 C.C.I.A.A. PD - R.E.A. 414822`}</Typography>
+        <Typography variant="small">
+          {<Trans>COD. FISC. e Part: I.V.A. 04743610281 C.C.I.A.A. PD - R.E.A. 414822</Trans>}
+        </Typography>
       </BottomPartStyled>
     </footer>
   )

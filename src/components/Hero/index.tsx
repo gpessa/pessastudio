@@ -1,5 +1,4 @@
-import { Box, Container, Typography } from "@mui/material"
-import { styled } from "@mui/material"
+import { Box, Container, styled, Typography } from "@mui/material"
 import React from "react"
 
 const TypographyStyled = styled(Typography)(({ theme }) => ({
@@ -17,14 +16,14 @@ const BoxStyled = styled(Box)<{ image?: string }>(({ image }) => ({
 
 type Props = {
   image: string
-  text?: string
+  text?: JSX.Element
 } & React.HTMLAttributes<HTMLElement>
 
 const Hero = ({ text, image, className }: Props) => (
   <BoxStyled className={className} image={image}>
     {text && (
       <Container maxWidth="lg">
-        <TypographyStyled variant="h1" dangerouslySetInnerHTML={{ __html: text }} />
+        <TypographyStyled variant="h1">{text}</TypographyStyled>
       </Container>
     )}
   </BoxStyled>

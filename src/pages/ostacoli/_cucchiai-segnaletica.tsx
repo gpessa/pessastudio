@@ -1,15 +1,15 @@
 import { t, Trans } from "@lingui/macro"
 import { Grid, Typography } from "@mui/material"
-import React from "react"
 import { Product, Title } from "components"
-import { MATERIALS } from "utils/constants"
+import React from "react"
 import { PRODUCT_GUTTER } from "theme"
+import { MATERIALS } from "utils/constants"
 
 const CucchiaiSegnaletica: React.FC = () => {
   const PRODUCTS = [
     {
       name: t`Cucchiaio DE`,
-      description: t`Il cucchiaio standard utilizzato al livello internazionale`,
+      description: <Trans>Il cucchiaio standard utilizzato al livello internazionale</Trans>,
       images: [
         { src: require("assets/products/ostacoli/cucchiaio-de-01.png").default },
         { src: require("assets/products/ostacoli/cucchiaio-de-02.png").default },
@@ -22,7 +22,7 @@ const CucchiaiSegnaletica: React.FC = () => {
     },
     {
       name: t`Cucchiaio PS`,
-      description: t`Il cucchiaio dotato del nostro sistema brevettato di aggancio`,
+      description: <Trans>Il cucchiaio dotato del nostro sistema brevettato di aggancio</Trans>,
       images: [
         { src: require("assets/products/ostacoli/cucchiaio-ps-01.png").default },
         { src: require("assets/products/ostacoli/cucchiaio-ps-02.png").default },
@@ -34,7 +34,12 @@ const CucchiaiSegnaletica: React.FC = () => {
     {
       name: t`Supporto di sicurezza`,
       description: (
-        <Typography>{t`Supporti di sicurezza da applicare ai nostri cucchiai per salvaguardare l'integrità degli arti dei vostri cavalli in maniera efficace ed economica.`}</Typography>
+        <Typography>
+          <Trans>
+            Supporti di sicurezza da applicare ai nostri cucchiai per salvaguardare l'integrità degli arti dei vostri
+            cavalli in maniera efficace ed economica.
+          </Trans>
+        </Typography>
       ),
       images: [
         { src: require("assets/products/ostacoli/supporto-di-sicurezza-01.png").default },
@@ -52,9 +57,14 @@ const CucchiaiSegnaletica: React.FC = () => {
     <>
       <Title
         sx={{ mb: PRODUCT_GUTTER }}
-        title={t`Cucchiai`}
+        title={<Trans>Cucchiai</Trans>}
         text={
-          <Typography>{t`Numerosi sono stati i test a cui abbiamo sottoposto i cucchiai per garantirne robustezza e durata nel tempo.`}</Typography>
+          <Typography>
+            <Trans>
+              Numerosi sono stati i test a cui abbiamo sottoposto i cucchiai per garantirne robustezza e durata nel
+              tempo.
+            </Trans>
+          </Typography>
         }
       />
 

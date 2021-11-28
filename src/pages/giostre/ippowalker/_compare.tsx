@@ -1,6 +1,6 @@
-import { t, Trans } from "@lingui/macro"
-import React from "react"
+import { Trans } from "@lingui/macro"
 import { Compare } from "components"
+import React from "react"
 import {
   GIOSTRA_FENCE,
   GIOSTRA_FENCE_TYPE_TECNOFENCE,
@@ -71,7 +71,7 @@ const IppowalkerCompare = () => {
     },
   ]
 
-  return <Compare title={t`Gamma`} products={PRODUCTS} attributes={GIOSTRE_ATTRIBUTES} />
+  return <Compare title={<Trans>Gamma</Trans>} products={PRODUCTS} attributes={GIOSTRE_ATTRIBUTES} />
 }
 
 export default IppowalkerCompare

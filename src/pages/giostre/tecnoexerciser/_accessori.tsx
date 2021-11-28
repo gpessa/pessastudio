@@ -1,6 +1,6 @@
-import { t, Trans } from "@lingui/macro"
-import React from "react"
+import { Trans } from "@lingui/macro"
 import { Accessori } from "components"
+import React from "react"
 import {
   GIOSTRA_ALVEOLO_DESCRIZIONE,
   GIOSTRA_RETE_ANTIVENTO_DESCRIZIONE,
@@ -17,7 +17,7 @@ const TecnoexerciserAccessori = () => {
     ),
     accessories: [
       {
-        name: t`Chiusura a terra`,
+        name: <Trans>Chiusura a terra</Trans>,
         description: GIOSTRA_TONDINO_CHIUSURA_A_TERRA_DESCRIZIONE,
         images: [
           {
@@ -35,7 +35,7 @@ const TecnoexerciserAccessori = () => {
         ],
       },
       {
-        name: t`Alveolo sulla pesta`,
+        name: <Trans>Alveolo sulla pesta</Trans>,
         description: GIOSTRA_ALVEOLO_DESCRIZIONE,
         images: [
           {
@@ -49,7 +49,7 @@ const TecnoexerciserAccessori = () => {
         ],
       },
       {
-        name: t`Rete antivento`,
+        name: <Trans>Rete antivento</Trans>,
         description: GIOSTRA_RETE_ANTIVENTO_DESCRIZIONE,
         images: [
           {

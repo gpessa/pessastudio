@@ -1,7 +1,7 @@
 import { t, Trans } from "@lingui/macro"
 import { Typography } from "@mui/material"
-import React from "react"
 import { Columns, TH, Ul, Video } from "components"
+import React from "react"
 import TecnoexerciserAccessori from "./_accessori"
 import TecnoexerciserCompare from "./_compare"
 import TecnoexerciserCopertura from "./_copertura"
@@ -14,7 +14,9 @@ const Tecnoexerciser: React.FC = () => (
     <Columns
       left={
         <>
-          <TH variant="h1">{t`Tecnoexerciser`}</TH>
+          <TH variant="h1">
+            <Trans>Tecnoexerciser</Trans>
+          </TH>
           <Trans>
             <Typography paragraph>Tecnoexerciser è il modello di giostra attualmente più richiesto.</Typography>
             <Typography paragraph>

@@ -20,8 +20,8 @@ export type Benefit = {
 
 type Props = {
   text?: any
-  title: string
-  subtitle: string
+  title: JSX.Element
+  subtitle: JSX.Element
   benefits: Benefit[]
 }
 

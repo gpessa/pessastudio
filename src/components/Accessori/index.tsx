@@ -1,7 +1,7 @@
-import { t } from "@lingui/macro"
+import { Trans } from "@lingui/macro"
 import { Box, Grid, GridSize, styled, Typography } from "@mui/material"
-import React from "react"
 import { Image, Section, TH } from "components"
+import React from "react"
 import { BREAKPOINT, PRODUCT_GUTTER } from "theme"
 
 const AccessorioStyled = styled(Box)(({ theme }) => ({
@@ -14,7 +14,7 @@ const AccessorioStyled = styled(Box)(({ theme }) => ({
 type Props = {
   intro: Element | React.ReactElement
   accessories: {
-    name: string
+    name: JSX.Element
     description: Element | React.ReactElement
     images: {
       src: string
@@ -28,7 +28,7 @@ type Props = {
 const Accessori: React.FC<Props> = ({ intro, accessories }) => (
   <Section>
     <Box mb={10} textAlign="center">
-      <TH variant="h2">{t`Accessori`}</TH>
+      <TH variant="h2">{<Trans>Accessori</Trans>}</TH>
       <Typography mb={4}>{intro}</Typography>
     </Box>
 

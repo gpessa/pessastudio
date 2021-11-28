@@ -1,6 +1,6 @@
-import { Section, TH } from "components"
-import { t, Trans } from "@lingui/macro"
+import { Trans } from "@lingui/macro"
 import { Typography } from "@mui/material"
+import { Section, TH } from "components"
 import React from "react"
 import Barriere from "./_barriere"
 import CandelieriLameForate from "./_candelieri-e-lame-forate"
@@ -13,7 +13,9 @@ import Segnaletica from "./_segnaletica"
 const Ostacoli: React.FC = () => (
   <>
     <Section>
-      <TH variant="h1">{t`Ostacoli`}</TH>
+      <TH variant="h1">
+        <Trans>Ostacoli</Trans>
+      </TH>
       <Trans>
         <Typography>
           I nostri ostacoli sono progettati e costruiti per durare nel tempo non richiedono alcuna manutenzione e

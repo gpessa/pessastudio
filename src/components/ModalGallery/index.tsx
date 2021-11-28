@@ -1,9 +1,8 @@
-import { t } from "@lingui/macro"
+import { Trans } from "@lingui/macro"
 import { NavigateBefore, NavigateNext } from "@mui/icons-material"
 import { Button, ButtonBase, Dialog, styled, Typography } from "@mui/material"
-import React from "react"
 import { useGallery } from "hooks"
-
+import React from "react"
 
 const ButtonBackStyled = styled(ButtonBase)({
   "top": 0,
@@ -69,7 +68,7 @@ const ModalGallery: React.FC<Props> = ({ render, images }) => {
             {gallery.showPreviousEnabled && (
               <ButtonBackStyled onClick={gallery.showPrevious}>
                 <Button component="span" startIcon={<NavigateBefore />}>
-                  {t`Indietro`}
+                  <Trans>Indietro</Trans>
                 </Button>
               </ButtonBackStyled>
             )}
@@ -77,7 +76,7 @@ const ModalGallery: React.FC<Props> = ({ render, images }) => {
             {gallery.showNextEnabled && (
               <ButtonNextStyled onClick={gallery.showNext}>
                 <Button component="span" endIcon={<NavigateNext />}>
-                  {t`Avanti`}
+                  <Trans>Avanti</Trans>
                 </Button>
               </ButtonNextStyled>
             )}
