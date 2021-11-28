@@ -5390,11 +5390,6 @@ gatsby-link@^4.2.0:
     "@types/reach__router" "^1.3.9"
     prop-types "^15.7.2"
 
-gatsby-material-ui-components@5.1.0:
-  version "5.1.0"
-  resolved "https://registry.yarnpkg.com/gatsby-material-ui-components/-/gatsby-material-ui-components-5.1.0.tgz#d0ad503a748b9b3619a5d0406413353ef2bca6af"
-  integrity sha512-EauJOQSEp0rynPkcD07SnLB1LOu4fbTaeMCZHxCAq1iauAGkQleAJA1WrW5L9j7/RkLgvf2sr2GVinQ8GCjjCg==
-
 gatsby-page-utils@^2.2.0:
   version "2.2.0"
   resolved "https://registry.yarnpkg.com/gatsby-page-utils/-/gatsby-page-utils-2.2.0.tgz#efa6e3a0749efd9196e1ee705a110d238b8635fa"

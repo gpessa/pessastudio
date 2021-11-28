@@ -1,4 +1,5 @@
 /* global GATSBY_THEME_I18N_REACT_INTL */
+import LayoutMui from "components/LayoutMui"
 import { navigate, PageProps } from "gatsby"
 import { useLocalization } from "gatsby-theme-i18n"
 import { usePages, useTree } from "hooks"
@@ -49,14 +50,14 @@ const Layout: React.FC<PageProps<object, { originalPath: string }>> = ({ childre
   }, [])
 
   return (
-    <>
+    <LayoutMui>
       <Seo {...{ ...page, breadcrumb }} />
       <Navigation />
       {!isNotFoundPage && <Breadcrumb {...{ breadcrumb }} />}
       <main>{children}</main>
       <Footer />
       <Gdpr />
-    </>
+    </LayoutMui>
   )
 }
 

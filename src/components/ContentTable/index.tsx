@@ -1,8 +1,18 @@
 import { t } from "@lingui/macro"
 import { PictureAsPdf, Visibility } from "@mui/icons-material"
-import { Box, BoxProps, Paper, styled, Table, TableBody, TableCell, TableContainer, TableRow } from "@mui/material"
+import {
+  Box,
+  BoxProps,
+  Button,
+  Paper,
+  styled,
+  Table,
+  TableBody,
+  TableCell,
+  TableContainer,
+  TableRow,
+} from "@mui/material"
 import { TH } from "components"
-import { Button } from "gatsby-material-ui-components"
 import { LocalizedLink } from "gatsby-theme-i18n"
 import React from "react"
 

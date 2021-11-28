@@ -1,8 +1,7 @@
-import { Stack, styled } from "@mui/material"
+import { Button, Stack, styled } from "@mui/material"
 import { LocalizedLink } from "gatsby-theme-i18n"
 import React from "react"
 import { BREAKPOINT } from "theme"
-import { Button } from "gatsby-material-ui-components"
 
 const DIM = 50
 

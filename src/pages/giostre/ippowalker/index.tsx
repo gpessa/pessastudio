@@ -1,7 +1,6 @@
 import { t, Trans } from "@lingui/macro"
-import { Typography } from "@mui/material"
+import { Link, Typography } from "@mui/material"
 import { Columns, TH, Video } from "components"
-import { Link } from "gatsby-material-ui-components"
 import { LocalizedLink } from "gatsby-theme-i18n"
 import { usePages } from "hooks"
 import React from "react"

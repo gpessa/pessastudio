@@ -5,7 +5,7 @@ import React from "react"
 import { Helmet } from "react-helmet"
 import theme from "theme"
 
-export default function wrapRootElement({ element }) {
+const LayoutMui: React.FC = ({ children }) => {
   return (
     <>
       <Helmet>
@@ -15,8 +15,10 @@ export default function wrapRootElement({ element }) {
       <ThemeProvider theme={theme}>
         {/* CssBaseline kickstart an elegant, consistent, and simple baseline to build upon. */}
         <CssBaseline />
-        {element}
+        {children}
       </ThemeProvider>
     </>
   )
 }
+
+export default LayoutMui

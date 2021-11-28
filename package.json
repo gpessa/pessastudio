@@ -15,7 +15,6 @@
     "@mui/material": "5.2.1",
     "@mui/styles": "5.2.1",
     "gatsby": "4.2.0",
-    "gatsby-material-ui-components": "5.1.0",
     "gatsby-plugin-gdpr-cookies": "2.0.8",
     "gatsby-plugin-htaccess": "^1.4.0",
     "gatsby-plugin-layout": "3.2.0",
