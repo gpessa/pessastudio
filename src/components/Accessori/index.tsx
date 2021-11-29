@@ -34,7 +34,12 @@ const Accessori: React.FC<Props> = ({ intro, accessories }) => (
 
     {accessories.map(({ name, description, images }, index) => (
       <AccessorioStyled component="section" key={index}>
-        <Grid container alignItems="center" spacing={PRODUCT_GUTTER} direction={index % 2 == 0 ? "row" : "row-reverse"}>
+        <Grid
+          container
+          alignItems="center"
+          spacing={PRODUCT_GUTTER}
+          direction={{ md: index % 2 == 0 ? "row" : "row-reverse" }}
+        >
           <Grid item md sx={{ md: { textAlign: index % 2 == 0 ? "right" : "left" } }}>
             <TH variant="h4" sans>
               {name}
@@ -43,7 +48,7 @@ const Accessori: React.FC<Props> = ({ intro, accessories }) => (
           </Grid>
           {images.map(({ src, md = 6, top, left }) => (
             <Grid item md={md as GridSize} xs={6} key={src}>
-              <Image {...{ top, left, src }} alt={name} />
+              <Image {...{ top, left, src }} />
             </Grid>
           ))}
         </Grid>
