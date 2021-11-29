@@ -23,7 +23,7 @@ export const SECTION_SPACING = (breakingPoint: "xs" | "md") => {
     })
 
     const value = CONFIGURATION.get(breakingPoint)[spacing]
-    return theme.spacing(value)
+    return `${theme.spacing(value)}px`;
   }
 }
 
