@@ -3,6 +3,7 @@ import LayoutMui from "components/LayoutMui"
 import { navigate, PageProps } from "gatsby"
 import { useLocalization } from "gatsby-theme-i18n"
 import { usePages, useTree } from "hooks"
+import { Page } from "hooks/usePages"
 import { intersection } from "lodash"
 import React, { useEffect } from "react"
 import Breadcrumb from "../Breadcrumb"
@@ -25,14 +26,20 @@ const getRedirectLanguage = (config: Language[], locale: string) => {
   return intersection(preferredLocales, availableLocales)[0] || locale
 }
 
+const getPage = (pages: ReturnType<typeof usePages>["PAGES"], path: string): Page => {
+  const page = Object.values(pages).find(page => page.url === path)
+  return page ? page : pages.PAGE_404
+}
+
 const Layout: React.FC<PageProps<object, { originalPath: string }>> = ({ children, pageResources, location }) => {
   const { defaultLang, prefixDefault, localizedPath, config, locale: currentLanguage } = useLocalization()
   const { PAGES } = usePages()
+
   const hasLocale = pageResources?.page?.path?.startsWith("/" + currentLanguage)
   const path = location.pathname.replace(new RegExp(`^/${currentLanguage}`), "")
-  const page = Object.values(PAGES).find(page => page.url === path)
-  const isNotFoundPage = path === "/404/" || pageResources?.page?.path.includes("404")
+  const page = getPage(PAGES, path)
   const breadcrumb = useTree(path)
+  const isNotFoundPage = page === PAGES.PAGE_404
 
   useEffect(() => {
     if (hasLocale) return
