@@ -81,7 +81,7 @@ const TecnoexerciserServizioClienti = () => {
       <TH variant="h4">{<Trans>Supporto clienti</Trans>}</TH>
 
       <Grid container spacing={PRODUCT_GUTTER}>
-        <Grid item xs={12} md component={ContentTable} rows={DIMENSIONS} title={<Trans>Dimension</Trans>} />
+        <Grid item xs={12} md component={ContentTable} rows={DIMENSIONS} title={<Trans>Dimensioni</Trans>} />
         {MANUALI && (
           <Grid item xs={12} md component={ContentTable} rows={MANUALI} title={<Trans>Manuale d'istruzioni</Trans>} />
         )}
