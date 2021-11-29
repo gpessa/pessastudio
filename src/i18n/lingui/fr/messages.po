@@ -503,7 +503,7 @@ msgstr "Marcheur Ippowalker"
 
 #: src/pages/giostre/ippowalker/index.tsx:60
 msgid "Giostra Ippowalker in movimento"
-msgstr ""
+msgstr "Marcheur pour chevaux Ippowalker"
 
 #: src/hooks/usePages/index.tsx:89 src/pages/giostre/index.tsx:54
 msgid "Giostra Tecnoexerciser"
@@ -511,7 +511,7 @@ msgstr "Marcheur tecnoexerciser"
 
 #: src/pages/giostre/tecnoexerciser/index.tsx:46
 msgid "Giostra Tecnoexerciser in movimento"
-msgstr ""
+msgstr "Marcheur pour chevaux Tecnoexerciser"
 
 #: src/pages/giostre/ippowalker/_compare.tsx:29
 #: src/pages/giostre/tecnoexerciser/_compare.tsx:30
@@ -524,7 +524,7 @@ msgstr "Marcheur Couloir TECNOFENCE"
 
 #: src/pages/giostre/index.tsx:148
 msgid "Giostra in movimento"
-msgstr ""
+msgstr "Marcheur pour chevaux"
 
 #: src/pages/giostre/tecnoexerciser/_gallery.tsx:22
 msgid "Giostra solo motore"
