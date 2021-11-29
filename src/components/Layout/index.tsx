@@ -31,7 +31,7 @@ const Layout: React.FC<PageProps<object, { originalPath: string }>> = ({ childre
   const hasLocale = pageResources?.page?.path?.startsWith("/" + currentLanguage)
   const path = location.pathname.replace(new RegExp(`^/${currentLanguage}`), "")
   const page = Object.values(PAGES).find(page => page.url === path)
-  const isNotFoundPage = path === "/404/"
+  const isNotFoundPage = path === "/404/" || pageResources?.page?.path.includes("404")
   const breadcrumb = useTree(path)
 
   useEffect(() => {
