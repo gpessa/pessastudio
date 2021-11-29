@@ -19,7 +19,7 @@ const SectionStyled = styled(Section)(({ theme }) => ({
 const LeftColumn = styled(Grid)(({ theme }) => ({
   backgroundColor: theme.palette.primary.main,
   color: theme.palette.common.white,
-  padding: `${theme.spacing(5)}px ${theme.spacing(3)}px`,
+  padding: `${theme.spacing(5)} ${theme.spacing(3)}`,
   [theme.breakpoints.up(BREAKPOINT)]: {
     backgroundColor: "unset",
     paddingLeft: "0!important",
@@ -30,7 +30,7 @@ const LeftColumn = styled(Grid)(({ theme }) => ({
 const RightColumn = styled(Grid)(({ theme }) => ({
   backgroundColor: theme.palette.common.white,
   color: "inherit",
-  padding: `${theme.spacing(5)}px ${theme.spacing(3)}px`,
+  padding: `${theme.spacing(5)} ${theme.spacing(3)}`,
   [theme.breakpoints.up(BREAKPOINT)]: {
     backgroundColor: "unset",
     paddingRight: "0!important",

@@ -23,7 +23,7 @@ export const SECTION_SPACING = (breakingPoint: "xs" | "md") => {
     })
 
     const value = CONFIGURATION.get(breakingPoint)[spacing]
-    return `${theme.spacing(value)}px`;
+    return theme.spacing(value);
   }
 }
 
@@ -92,7 +92,7 @@ const theme = createTheme(themePalette, {
   shape: {
     borderRadius: 0,
   },
-  spacing: (factor: number) => 7 * factor,
+  spacing: (factor: number) => `${7 * factor}px `,
   typography: {
     small: {
       fontSize: "0.9rem",
