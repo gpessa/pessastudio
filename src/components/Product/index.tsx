@@ -9,7 +9,7 @@ import { SEDE_OPERATIVA } from "pages/contatti"
 import React, { ReactNode } from "react"
 import { Helmet } from "react-helmet"
 import { helmetJsonLdProp } from "react-schemaorg"
-import { Product as ProductSchema } from "schema-dts"
+import { AggregateOffer, Offer, OfferCatalog, OfferForPurchase, Product as ProductSchema } from "schema-dts"
 import { snakeCase } from "snake-case"
 import { BREAKPOINT, PRODUCT_GUTTER } from "theme"
 import { Colors } from "utils/constants"
@@ -93,36 +93,37 @@ const getData = (attributes: Attributes) => {
 const getSeoPrice = (price: ProductProps["price"], url: string) => {
   if (!price) return undefined
 
-  const common = {
-    priceCurrency: "EUR",
-    availability: "https://schema.org/InStock",
-  }
-
   if (typeof price === "number")
-    return {
-      ...common,
+    return helmetJsonLdProp<Offer>({
+      "priceCurrency": "EUR",
+      "@context": "https://schema.org",
+      "availability": "https://schema.org/InStock",
       "@type": "Offer",
       price,
       url,
-    }
+    })
 
   if (typeof price === "object" && price.length === 1)
-    return {
-      ...common,
+    return helmetJsonLdProp<Offer>({
+      "priceCurrency": "EUR",
+      "@context": "https://schema.org",
+      "availability": "https://schema.org/InStock",
       "@type": "Offer",
       "price": price[0].price,
       url,
-    }
+    })
 
   if (typeof price === "object" && price.length > 1) {
     const order = price.sort((a, b) => a.price - b.price)
-    return {
-      ...common,
+    return helmetJsonLdProp<AggregateOffer>({
+      "priceCurrency": "EUR",
+      "@context": "https://schema.org",
+      "availability": "https://schema.org/InStock",
       "@type": "AggregateOffer",
       "lowPrice": order[0].price,
       "highPrice": order[order.length - 1].price,
       url,
-    }
+    })
   }
 }
 
