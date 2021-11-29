@@ -166,7 +166,7 @@ const Product: React.FC<ProductProps> = ({ className, images, vertical, price, n
           )}
 
           {data.map(item => (
-            <Data {...item} />
+            <Data {...item} key={`${id}_${item.id}`} />
           ))}
 
           <ProductPrice price={price} />

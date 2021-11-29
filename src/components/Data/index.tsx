@@ -2,13 +2,13 @@ import { Stack, Typography } from "@mui/material"
 import React from "react"
 
 type Props = {
-  label: string
+  label: JSX.Element
   value: number | string | string[] | JSX.Element | JSX.Element[]
 }
 
-const Data: React.FC<Props> = ({ value, label }) => (
-  <Stack direction="row" alignItems="center" mb={0.5}>
-    <Typography sx={{ mr: 1 }} gutterBottom={false} variant="caption" component="caption">
+const Data: React.FC<Props> = ({ value, label, ...props }) => (
+  <Stack direction="row" alignItems="center" mb={0.5} {...props}>
+    <Typography sx={{ mr: 1 }} gutterBottom={false} variant="caption">
       {label}:
     </Typography>
     <span>{value}</span>
