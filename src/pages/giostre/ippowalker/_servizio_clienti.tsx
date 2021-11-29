@@ -20,7 +20,7 @@ const IppowalkerServizioClienti = () => {
     it: [
       {
         label: <Trans>Manuale quadro di controllo</Trans>,
-        file: require("assets//products/giostre/ippowalker/pdf/manuale-quadro-ippowalker-it.pdf"),
+        file: require("assets//products/giostre/ippowalker/pdf/manuale-quadro-ippowalker-it.pdf").default,
       },
       {
         label: <Trans>Manuale collegamento elettrico</Trans>,
@@ -30,7 +30,7 @@ const IppowalkerServizioClienti = () => {
     fr: [
       {
         label: <Trans>Manuale quadro di controllo</Trans>,
-        file: require("assets//products/giostre/ippowalker/pdf/manuale-quadro-ippowalker-fr.pdf"),
+        file: require("assets//products/giostre/ippowalker/pdf/manuale-quadro-ippowalker-fr.pdf").default,
       },
     ],
   }[locale]
