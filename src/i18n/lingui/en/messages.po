@@ -547,7 +547,7 @@ msgstr ""
 
 #: src/hooks/usePages/index.tsx:62
 msgid "Home"
-msgstr ""
+msgstr "Homepage"
 
 #: src/pages/ostacoli/_candelieri-e-lame-forate.tsx:13
 msgid "I candelieri sono costruiti con un montante di alluminio verniciato di colore bianco, muniti di 4 piedi, rivestiti con puntali di plastica che garantiscono, in caso di ribaltamento l’incolumità vostra e dei vostri cavalli."
@@ -842,7 +842,7 @@ msgstr "Jumps"
 
 #: src/utils/constants.tsx:22
 msgid "PVC"
-msgstr ""
+msgstr "PVC"
 
 #: src/hooks/usePages/index.tsx:47 src/pages/404.tsx:10
 msgid "Pagina non trovata"

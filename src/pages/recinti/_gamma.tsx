@@ -2,16 +2,18 @@ import { t, Trans } from "@lingui/macro"
 import { Grid, styled } from "@mui/material"
 import { Product, Section, TH } from "components"
 import React from "react"
-import { PRODUCT_GUTTER } from "theme"
+import { PRODUCT_GUTTER, BREAKPOINT } from "theme"
 import { Colors, MATERIALS } from "utils/constants"
 
 const ProductStyled = styled(Product)(({ theme }) => ({
   "& button": {
     backgroundColor: "transparent",
-    marginBottom: theme.spacing(3),
     paddingBottom: "164%",
     borderWidth: 0,
     width: "100%",
+    [theme.breakpoints.up(BREAKPOINT)]: {
+      marginBottom: theme.spacing(3),
+    },
   },
   "& button img": {
     marginTop: "unset",

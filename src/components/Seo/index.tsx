@@ -8,6 +8,7 @@ import { helmetJsonLdProp } from "react-schemaorg"
 import { BreadcrumbList, Corporation } from "schema-dts"
 import { SOCIALS } from "../Footer/Socials"
 import { graphql } from "gatsby"
+import { usePages } from "hooks"
 
 type Props = {
   title?: string
@@ -30,6 +31,7 @@ export const seoQuery = graphql`
 
 const Seo: React.FC<Props> = ({ title, description, keywords, meta = [], breadcrumb }) => {
   const siteUrl = useStaticQuery(seoQuery).site.siteMetadata.siteUrl
+  const { PAGES } = usePages()
 
   return (
     <Helmet
@@ -49,6 +51,7 @@ const Seo: React.FC<Props> = ({ title, description, keywords, meta = [], breadcr
             "streetAddress": SEDE_OPERATIVA.streetAddress,
             "addressLocality": SEDE_OPERATIVA.addressLocality,
           },
+          "description": PAGES.HOME.description,
           "telephone": ITALIA.telephone,
           "sameAs": [SOCIALS.facebook, SOCIALS.instagram],
           "email": ITALIA.email,
