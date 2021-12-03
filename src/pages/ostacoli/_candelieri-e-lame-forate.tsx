@@ -11,8 +11,8 @@ const CandelieriLameForate = () => {
       name: t`Candeliere 1,7 mt. con piede in PVC`,
       description: (
         <Trans>
-          I candelieri sono costruiti con un montante di alluminio verniciato di colore bianco, muniti di 4 piedi,
-          rivestiti con puntali di plastica che garantiscono, in caso di ribaltamento l’incolumità vostra e dei vostri
+          I candelieri sono costruiti con un montante di alluminio verniciato di colore bianco e sono muniti di 4 piedi
+          rivestiti con puntali di plastica che garantiscono, in caso di ribaltamento, l’incolumità vostra e dei vostri
           cavalli.
         </Trans>
       ),
