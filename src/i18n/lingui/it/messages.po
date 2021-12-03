@@ -465,7 +465,7 @@ msgstr "Funzione"
 #: src/pages/giostre/index.tsx:96
 #: src/pages/giostre/ippowalker/_compare.tsx:74
 #: src/pages/giostre/tecnoexerciser/_compare.tsx:89
-#: src/pages/recinti/_gamma.tsx:87
+#: src/pages/recinti/_gamma.tsx:89
 msgid "Gamma"
 msgstr "Gamma"
 
@@ -694,15 +694,15 @@ msgstr "La giostra puo essere acquistata scegliendo tra il piú economico corrid
 msgid "La pagina che stai cercando non esiste"
 msgstr "La pagina che stai cercando non esiste"
 
-#: src/pages/recinti/_gamma.tsx:49
+#: src/pages/recinti/_gamma.tsx:51
 msgid "La recinzione a due filagne genericamente viene utilizzata per delimitare campi da lavoro o per realizzare paddock dove i cavalli sono comunque osservati dal personale presente"
 msgstr "La recinzione a due filagne genericamente viene utilizzata per delimitare campi da lavoro o per realizzare paddock dove i cavalli sono comunque osservati dal personale presente"
 
-#: src/pages/recinti/_gamma.tsx:62
+#: src/pages/recinti/_gamma.tsx:64
 msgid "La recinzione a tre filagne viene utilizzata per delimitare paddok per animali che rimangono per molte ore al giorno incustoditi oppure per delimitare confini di proprietà o aree. Per garantirne una maggiore sicurezza è possibile installare un impianto d'elettrificazione sulle filagne"
 msgstr "La recinzione a tre filagne viene utilizzata per delimitare paddok per animali che rimangono per molte ore al giorno incustoditi oppure per delimitare confini di proprietà o aree. Per garantirne una maggiore sicurezza è possibile installare un impianto d'elettrificazione sulle filagne"
 
-#: src/pages/recinti/_gamma.tsx:36
+#: src/pages/recinti/_gamma.tsx:38
 msgid "La recinzione ad una filagna viene utilizzata per delimitare campi da lavoro o gara poco adoperati e non è adatta per l'addestramento. Potete utilizzarla anche per delimitare un'area del vostro giardino di casa"
 msgstr "La recinzione ad una filagna viene utilizzata per delimitare campi da lavoro o gara poco adoperati e non è adatta per l'addestramento. Potete utilizzarla anche per delimitare un'area del vostro giardino di casa"
 
@@ -742,7 +742,7 @@ msgstr "Larghezza"
 msgid "Le nostre giostre sono considerate strutture precarie. Non avrete bisogno di nessuna concessione edilizi"
 msgstr "Le nostre giostre sono considerate strutture precarie. Non avrete bisogno di nessuna concessione edilizi"
 
-#: src/pages/recinti/_gamma.tsx:76
+#: src/pages/recinti/_gamma.tsx:78
 msgid "Le recinzioni a quattro filagne sono utilizzate per delimitare paddock per stalloni, realizzare tondini per la doma e l'addestramento o per formare ovali per il salto in libertà"
 msgstr "Le recinzioni a quattro filagne sono utilizzate per delimitare paddock per stalloni, realizzare tondini per la doma e l'addestramento o per formare ovali per il salto in libertà"
 
@@ -987,11 +987,11 @@ msgstr "Recinti"
 msgid "Recinzione"
 msgstr "Recinzione"
 
-#: src/pages/recinti/_gamma.tsx:31
+#: src/pages/recinti/_gamma.tsx:33
 msgid "Recinzione 1 filagna"
 msgstr "Recinzione 1 filagna"
 
-#: src/pages/recinti/_gamma.tsx:44
+#: src/pages/recinti/_gamma.tsx:46
 #: src/pages/recinti/index.tsx:13
 #: src/pages/recinti/index.tsx:17
 #: src/pages/recinti/index.tsx:25
@@ -1000,12 +1000,12 @@ msgstr "Recinzione 1 filagna"
 msgid "Recinzione 2 filagne"
 msgstr "Recinzione 2 filagne"
 
-#: src/pages/recinti/_gamma.tsx:57
+#: src/pages/recinti/_gamma.tsx:59
 #: src/pages/recinti/index.tsx:21
 msgid "Recinzione 3 filagne"
 msgstr "Recinzione 3 filagne"
 
-#: src/pages/recinti/_gamma.tsx:71
+#: src/pages/recinti/_gamma.tsx:73
 msgid "Recinzione 4 filagne"
 msgstr "Recinzione 4 filagne"
 
@@ -1145,7 +1145,7 @@ msgstr "Splendido niente da dire! Il tondino è ben pensato e ingegnoso. Molto b
 msgid "Supporti di sicurezza da applicare ai nostri cucchiai per salvaguardare l'integrità degli arti dei vostri cavalli in maniera efficace ed economica."
 msgstr "Supporti di sicurezza da applicare ai nostri cucchiai per salvaguardare l'integrità degli arti dei vostri cavalli in maniera efficace ed economica."
 
-#: src/components/Seo/index.tsx:58
+#: src/components/Seo/index.tsx:61
 #: src/pages/giostre/ippowalker/_servizio_clienti.tsx:40
 #: src/pages/giostre/tecnoexerciser/_servizio_clienti.tsx:81
 #: src/pages/recinti/index.tsx:95

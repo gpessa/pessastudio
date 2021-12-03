@@ -450,7 +450,7 @@ msgstr "Function"
 
 #: src/pages/giostre/index.tsx:96 src/pages/giostre/ippowalker/_compare.tsx:74
 #: src/pages/giostre/tecnoexerciser/_compare.tsx:89
-#: src/pages/recinti/_gamma.tsx:87
+#: src/pages/recinti/_gamma.tsx:89
 msgid "Gamma"
 msgstr "Product range"
 
@@ -539,11 +539,11 @@ msgstr "Horse walkers"
 
 #: src/pages/index.tsx:16
 msgid "Gli ostacoli sono arrivati. Sono fantastici!"
-msgstr ""
+msgstr "The horse jumps have arrived. They are fantastic!"
 
 #: src/pages/index.tsx:8
 msgid "Ho ricevuto questa mattina il materiale. I miei complimenti per la qualità dei prodotti, l'imballo ed il trasportatore"
-msgstr ""
+msgstr "I received the equipment this morning. My compliments for the quality of the products, the packaging and the deliverer"
 
 #: src/hooks/usePages/index.tsx:62
 msgid "Home"
@@ -616,7 +616,7 @@ msgstr "Innovative"
 
 #: src/pages/index.tsx:23
 msgid "Innovazione tecnologica e qualità sono le caratteristiche chiave dei nostri prodotti"
-msgstr ""
+msgstr "Technological innovation and quality are the key features of our products"
 
 #: src/pages/giostre/index.tsx:58
 msgid "Interno giostra con alveolo"
@@ -687,15 +687,15 @@ msgstr ""
 msgid "La pagina che stai cercando non esiste"
 msgstr "The page you are looking for does not exist"
 
-#: src/pages/recinti/_gamma.tsx:49
+#: src/pages/recinti/_gamma.tsx:51
 msgid "La recinzione a due filagne genericamente viene utilizzata per delimitare campi da lavoro o per realizzare paddock dove i cavalli sono comunque osservati dal personale presente"
 msgstr ""
 
-#: src/pages/recinti/_gamma.tsx:62
+#: src/pages/recinti/_gamma.tsx:64
 msgid "La recinzione a tre filagne viene utilizzata per delimitare paddok per animali che rimangono per molte ore al giorno incustoditi oppure per delimitare confini di proprietà o aree. Per garantirne una maggiore sicurezza è possibile installare un impianto d'elettrificazione sulle filagne"
 msgstr ""
 
-#: src/pages/recinti/_gamma.tsx:36
+#: src/pages/recinti/_gamma.tsx:38
 msgid "La recinzione ad una filagna viene utilizzata per delimitare campi da lavoro o gara poco adoperati e non è adatta per l'addestramento. Potete utilizzarla anche per delimitare un'area del vostro giardino di casa"
 msgstr ""
 
@@ -735,7 +735,7 @@ msgstr "Width"
 msgid "Le nostre giostre sono considerate strutture precarie. Non avrete bisogno di nessuna concessione edilizi"
 msgstr ""
 
-#: src/pages/recinti/_gamma.tsx:76
+#: src/pages/recinti/_gamma.tsx:78
 msgid "Le recinzioni a quattro filagne sono utilizzate per delimitare paddock per stalloni, realizzare tondini per la doma e l'addestramento o per formare ovali per il salto in libertà"
 msgstr ""
 
@@ -858,7 +858,7 @@ msgstr "Why buy a Pessastudio horse walker"
 
 #: src/pages/index.tsx:71
 msgid "Perché?"
-msgstr ""
+msgstr "What sets us apart?"
 
 #: src/pages/index.tsx:27
 msgid "Personalizzabili"
@@ -878,7 +878,7 @@ msgstr "Pessastudio was founded 28 years ago by Luciano Pessa and his passion an
 
 #: src/pages/index.tsx:72
 msgid "Pessastudio, una scelta di qualità"
-msgstr ""
+msgstr "Pessastudio, a quality choice"
 
 #: src/pages/recinti/_accessori.tsx:16
 msgid "Piede mobile"
@@ -886,7 +886,7 @@ msgstr ""
 
 #: src/pages/giostre/index.tsx:21
 msgid "Più' di 3.000 clienti europei hanno scelto Pessastudio per la loro giostra"
-msgstr ""
+msgstr "More than 3,000 European customers have chosen Pessastudio for our horse walkers"
 
 #: src/utils/constants.tsx:20
 msgid "Plastica"
@@ -973,21 +973,21 @@ msgstr "Fencing"
 msgid "Recinzione"
 msgstr "Fence"
 
-#: src/pages/recinti/_gamma.tsx:31
+#: src/pages/recinti/_gamma.tsx:33
 msgid "Recinzione 1 filagna"
 msgstr "1-rail fence"
 
-#: src/pages/recinti/_gamma.tsx:44 src/pages/recinti/index.tsx:13
+#: src/pages/recinti/_gamma.tsx:46 src/pages/recinti/index.tsx:13
 #: src/pages/recinti/index.tsx:17 src/pages/recinti/index.tsx:25
 #: src/pages/recinti/index.tsx:29 src/pages/recinti/index.tsx:33
 msgid "Recinzione 2 filagne"
 msgstr "2-rails fence"
 
-#: src/pages/recinti/_gamma.tsx:57 src/pages/recinti/index.tsx:21
+#: src/pages/recinti/_gamma.tsx:59 src/pages/recinti/index.tsx:21
 msgid "Recinzione 3 filagne"
 msgstr "3-rails fence"
 
-#: src/pages/recinti/_gamma.tsx:71
+#: src/pages/recinti/_gamma.tsx:73
 msgid "Recinzione 4 filagne"
 msgstr "4-rails fence"
 
@@ -1023,7 +1023,7 @@ msgstr "Sign up for the newsletter and discover the latest arrivals and promotio
 
 #: src/pages/index.tsx:12
 msgid "Ringrazio tutto il team per la professionalità, gentilezza, velocità e sopratutto per l'ottimo risultato"
-msgstr ""
+msgstr "I thank the whole team for their professionalism, kindness, speed and above all: the excellent result"
 
 #: src/components/ContentTable/index.tsx:51
 msgid "Scarica"
@@ -1051,7 +1051,7 @@ msgstr ""
 
 #: src/pages/index.tsx:85
 msgid "Scopri la qualità dei nostri prodotti attraverso la testimonianza dei clienti"
-msgstr ""
+msgstr "Discover the quality of our products through our customer’s testimonials"
 
 #: src/hooks/usePages/index.tsx:31
 msgid "Scopri le nostre giostre per cavalli, lo strumento ideale di lavoro per allenare il vostro cavallo"
@@ -1116,13 +1116,13 @@ msgstr "Thickness"
 
 #: src/pages/index.tsx:15
 msgid "Splendido niente da dire! Il tondino è ben pensato e ingegnoso. Molto bene!"
-msgstr ""
+msgstr "Fantastic nothing else to add! The lunge pen  is well thought out and ingenious. Very good!"
 
 #: src/pages/ostacoli/_cucchiai-segnaletica.tsx:38
 msgid "Supporti di sicurezza da applicare ai nostri cucchiai per salvaguardare l'integrità degli arti dei vostri cavalli in maniera efficace ed economica."
 msgstr ""
 
-#: src/components/Seo/index.tsx:58
+#: src/components/Seo/index.tsx:61
 #: src/pages/giostre/ippowalker/_servizio_clienti.tsx:40
 #: src/pages/giostre/tecnoexerciser/_servizio_clienti.tsx:81
 #: src/pages/recinti/index.tsx:95 src/pages/tondini/index.tsx:216
