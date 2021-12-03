@@ -218,7 +218,7 @@ msgstr "3 mt. Poles"
 msgid "Barriere"
 msgstr "Poles"
 
-#: src/pages/tondini/index.tsx:177
+#: src/pages/tondini/index.tsx:182
 msgid "Bello e funzionale"
 msgstr "Well designed and functional"
 
@@ -238,14 +238,14 @@ msgstr "Jump standards and metal keyhole tracks"
 msgid "Capitale interamente versato € 10.000,00"
 msgstr ""
 
-#: src/pages/tondini/index.tsx:198
+#: src/pages/tondini/index.tsx:203
 msgid "Caratteristiche"
 msgstr "Characteristic"
 
 #: src/pages/ostacoli/_cavalletti.tsx:11
 #: src/pages/ostacoli/_cavalletti.tsx:41
 msgid "Cavalletti Caprilli"
-msgstr "Cavalletti Caprilli"
+msgstr "Cavaletti Caprilli"
 
 #: src/pages/cookie-policy.tsx:34
 msgid "Che cos'è un cookie?"
@@ -253,7 +253,7 @@ msgstr "What is a cookie?"
 
 #: src/pages/giostre/ippowalker/_accessori.tsx:17
 #: src/pages/giostre/tecnoexerciser/_accessori.tsx:20
-#: src/pages/tondini/index.tsx:72
+#: src/pages/tondini/index.tsx:77
 #: src/utils/constants.tsx:106
 #: src/utils/constants.tsx:123
 msgid "Chiusura a terra"
@@ -276,7 +276,7 @@ msgstr "Colors"
 #: src/hooks/usePages/index.tsx:73
 #: src/pages/recinti/come-preparare-il-fondo.tsx:8
 #: src/pages/recinti/index.tsx:39
-#: src/pages/tondini/index.tsx:150
+#: src/pages/tondini/index.tsx:155
 msgid "Come preparare il fondo"
 msgstr "How to prepare the ground"
 
@@ -332,9 +332,9 @@ msgstr "Cookie policy"
 msgid "Coordinate bancarie"
 msgstr "Bank account details"
 
-#: src/pages/tondini/index.tsx:108
-#: src/pages/tondini/index.tsx:112
-#: src/pages/tondini/index.tsx:116
+#: src/pages/tondini/index.tsx:113
+#: src/pages/tondini/index.tsx:117
+#: src/pages/tondini/index.tsx:121
 #: src/utils/constants.tsx:33
 msgid "Copertura"
 msgstr "The roof"
@@ -414,7 +414,7 @@ msgstr "About us"
 
 #: src/pages/giostre/ippowalker/_servizio_clienti.tsx:43
 #: src/pages/giostre/tecnoexerciser/_servizio_clienti.tsx:84
-#: src/pages/tondini/index.tsx:219
+#: src/pages/tondini/index.tsx:224
 msgid "Dimensioni"
 msgstr "Dimensions"
 
@@ -580,7 +580,7 @@ msgstr ""
 msgid "I nostri prodotti sono pensati per resistere nel tempo, anche se soggetti a difficili condizioni climatiche"
 msgstr "Our products are designed to withstand the test of time and any weather condition"
 
-#: src/pages/tondini/index.tsx:170
+#: src/pages/tondini/index.tsx:175
 msgid "I nostri tondini sono considerati strutture precarie. Non avrete bisogno di nessuna concessione edilizia"
 msgstr ""
 
@@ -604,12 +604,8 @@ msgstr "High quality, standard plastic pinless jump cup"
 msgid "Il nostro sito utilizza diverse tipologie di cookie di prima parte (predisposti e gestiti da {0}), cookie di terze parti (predisposti e gestiti da soggetti terzi in base alle proprie privacy policy e non sotto il controllo di {1}), ognuna delle quali ha una specifica funzione. Di seguito una tabella esplicativa."
 msgstr "Our website uses various types of first-party cookies (provided and managed by {0}), and third-party cookies (provided and managed by third parties based on their own individual privacy policies and not under the control of {1}), each of which has a specific function. The table below explains what they are for."
 
-#: src/pages/tondini/index.tsx:201
+#: src/pages/tondini/index.tsx:206
 msgid "Il tondino coperto è adatto a svolgere molteplici attività, rappresenta la migliore soluzione per addestrare puledri in libertà o lavorare cavalli alla corda. Inoltre facilita il controllo del cavallo durante le lezioni ai principianti ed è indispensabile per il longeur durante le riprese di volteggi."
-msgstr ""
-
-#: src/pages/tondini/index.tsx:41
-msgid "Il tondino può essere dotato rosone posizionato al centro ti permetterà di irrigare il tuo tondino."
 msgstr ""
 
 #: src/components/ModalGallery/index.tsx:71
@@ -624,7 +620,7 @@ msgstr "Indestructible"
 msgid "Ingresso"
 msgstr "Entrance"
 
-#: src/pages/tondini/index.tsx:120
+#: src/pages/tondini/index.tsx:125
 msgid "Ingresso di 2,05 mt. con catenaccio verticale"
 msgstr "Entrance"
 
@@ -640,9 +636,9 @@ msgstr "Technological innovation and quality are the key features of our product
 msgid "Interno giostra con alveolo"
 msgstr ""
 
-#: src/pages/tondini/index.tsx:96
-#: src/pages/tondini/index.tsx:100
-#: src/pages/tondini/index.tsx:128
+#: src/pages/tondini/index.tsx:101
+#: src/pages/tondini/index.tsx:105
+#: src/pages/tondini/index.tsx:133
 msgid "Interno tondino coperto"
 msgstr ""
 
@@ -682,11 +678,13 @@ msgstr "Assembly instructions"
 
 #: src/pages/ostacoli/_cavalletti.tsx:22
 msgid "Kit Cavalletti Caprilli + barriera"
-msgstr "Kit Cavalletti Caprilli + pole"
+msgstr "Kit Cavaletti Caprilli + pole"
 
 #: src/pages/ostacoli/_cavalletti.tsx:24
 msgid "Kit comprensivo di 2 cavalletti e una barriera in PPO di colore bianco, diametro 95, lunghezza 2 mt."
 msgstr ""
+"Cavaletti set with 2 mt. jump pole.\n"
+"This item includes a pole and 2 cavaletti."
 
 #: src/utils/constants.tsx:188
 msgid "L'aveolo è la soluzione ottimale mantenere un fondo sempre perfetto in ogni condizione, permette di evitare buche o avvallamenti riducendo i costi di manutenzione."
@@ -721,9 +719,9 @@ msgstr ""
 msgid "La recinzione ad una filagna viene utilizzata per delimitare campi da lavoro o gara poco adoperati e non è adatta per l'addestramento. Potete utilizzarla anche per delimitare un'area del vostro giardino di casa"
 msgstr ""
 
-#: src/pages/tondini/index.tsx:55
+#: src/pages/tondini/index.tsx:60
 msgid "La rete antivento della porta è un’ulteriore protezione che offriamo per rendere ancora di più il tuo tondino sicuro in caso di forte vento e per garantire una maggiore concentrazione del tuo cavallo."
-msgstr ""
+msgstr "The windproof net protects the inside of the pen from drafts allowing the horse to stay focused during training."
 
 #: src/utils/constants.tsx:195
 msgid "La rete antivento protegge l'interno della giostra da correnti d'aria inoltre aiuta il cavallo a rimanere concentrato sul percorso e lo rende più tranquillo."
@@ -733,7 +731,7 @@ msgstr ""
 msgid "La rete antivento protegge l'interno della tondino da correnti d'aria consentendo il cavallo a rimanere concentrato durante l'allenamento."
 msgstr ""
 
-#: src/pages/tondini/index.tsx:184
+#: src/pages/tondini/index.tsx:189
 msgid "La struttura è stata progettata per garantire un carico neve fino a 120 kg/mq e la velocità del vento fino a 110 km/h."
 msgstr "The structure has been designed to withstand a snow load of up to 120 kg/m² and wind speeds of up to 110 km/h."
 
@@ -795,7 +793,7 @@ msgstr "Handbook"
 msgid "Manuale quadro di controllo"
 msgstr "Control panel manual"
 
-#: src/pages/tondini/index.tsx:222
+#: src/pages/tondini/index.tsx:227
 msgid "Manuali"
 msgstr "Handbook"
 
@@ -807,7 +805,7 @@ msgstr "Map"
 msgid "Materiali"
 msgstr "Materials"
 
-#: src/pages/tondini/index.tsx:158
+#: src/pages/tondini/index.tsx:163
 msgid "Materiali di qualità"
 msgstr "Quality materials"
 
@@ -837,7 +835,7 @@ msgid "Motore"
 msgstr "Engine"
 
 #: src/pages/giostre/index.tsx:32
-#: src/pages/tondini/index.tsx:168
+#: src/pages/tondini/index.tsx:173
 msgid "Nessuna concessione edilizia"
 msgstr "No building permit needed"
 
@@ -979,11 +977,11 @@ msgstr "Control panel"
 
 #: src/utils/constants.tsx:94
 msgid "Quadro di comando con programma manuale, periodico"
-msgstr ""
+msgstr "Control panel with manual or periodic program"
 
 #: src/utils/constants.tsx:91
 msgid "Quadro di comando con programma manuale, periodico o automatico"
-msgstr ""
+msgstr "Control panel with manual, periodic or automatic program"
 
 #: src/pages/cookie-policy.tsx:49
 msgid "Quali cookie utilizziamo e per quali finalità?"
@@ -1031,7 +1029,7 @@ msgstr "4-rails fence"
 msgid "Rete antivento"
 msgstr "Windscreen"
 
-#: src/pages/tondini/index.tsx:53
+#: src/pages/tondini/index.tsx:58
 msgid "Rete antivento ingresso"
 msgstr "Entrance windscreen"
 
@@ -1071,7 +1069,7 @@ msgstr "Download"
 msgid "Scopri di piú"
 msgstr "Discover more"
 
-#: src/pages/tondini/index.tsx:199
+#: src/pages/tondini/index.tsx:204
 msgid "Scopri il nostro tondino Tecnohalle"
 msgstr ""
 
@@ -1128,7 +1126,7 @@ msgstr "Follow us on our social media"
 msgid "Si è verificato un problema, riprova"
 msgstr "There was a problem, please try again"
 
-#: src/pages/tondini/index.tsx:182
+#: src/pages/tondini/index.tsx:187
 msgid "Sicuro"
 msgstr "Safe"
 
@@ -1164,7 +1162,7 @@ msgstr ""
 #: src/pages/giostre/ippowalker/_servizio_clienti.tsx:40
 #: src/pages/giostre/tecnoexerciser/_servizio_clienti.tsx:81
 #: src/pages/recinti/index.tsx:95
-#: src/pages/tondini/index.tsx:216
+#: src/pages/tondini/index.tsx:221
 msgid "Supporto clienti"
 msgstr "Customer service"
 
@@ -1202,7 +1200,7 @@ msgid "Titolare del trattamento"
 msgstr "Data Controller"
 
 #: src/hooks/usePages/index.tsx:24
-#: src/pages/tondini/index.tsx:194
+#: src/pages/tondini/index.tsx:199
 msgid "Tondini"
 msgstr "Lunge & Paddock Pens"
 
@@ -1210,21 +1208,21 @@ msgstr "Lunge & Paddock Pens"
 msgid "Tondini coperti per addestrate puledri in libertà"
 msgstr ""
 
-#: src/pages/tondini/index.tsx:124
-#: src/pages/tondini/index.tsx:132
+#: src/pages/tondini/index.tsx:129
+#: src/pages/tondini/index.tsx:137
 msgid "Tondino"
 msgstr "Lunge pen"
 
-#: src/pages/tondini/index.tsx:104
+#: src/pages/tondini/index.tsx:109
 msgid "Tondino coperto"
 msgstr "Fully covered lunge pen"
 
-#: src/pages/tondini/index.tsx:88
-#: src/pages/tondini/index.tsx:92
+#: src/pages/tondini/index.tsx:93
+#: src/pages/tondini/index.tsx:97
 msgid "Tondino coperto {0} pannelli {1} mt."
-msgstr ""
+msgstr "Horse pen {0} panels, {1} mt."
 
-#: src/pages/tondini/index.tsx:144
+#: src/pages/tondini/index.tsx:149
 msgid "Tondino coperto {sides} pannelli {size} mt."
 msgstr "Lunge pen, {sides} panels, {size} mt."
 
@@ -1240,6 +1238,10 @@ msgstr "Training"
 #: src/pages/giostre/tecnoexerciser/istruzioni-montaggio.tsx:9
 msgid "Trovate e segnate il centro di ciò che sarà la vostra giostra"
 msgstr ""
+
+#: src/pages/tondini/index.tsx:41
+msgid "Tutti i cavalieri sanno quanto sia spiacevole cavalcare in un ambiente polveroso.<0/>La polvere può contribuire a problemi respiratori per te e per i tuoi cavalli e può indicare che il fondo non fornisce un adeguato un supporto allo zoccolo del cavallo. <1/>Per ovviare a questo problema, è possibile installare il nostro sistema di irrigazione. Un rosone verrà posizionato al centro del tondino e ti permetterà di irrigarlo facilmente."
+msgstr "All riders know dusty arenas are unpleasant. <0/>Dust can contribute to respiratory problems for you and your horses and can indicate that the footing is not providing proper support to the horses using it. <0/>That’s where arena watering comes in."
 
 #: src/pages/cookie-policy.tsx:37
 msgid "Un cookie è un file di piccole dimensioni che viene inviato al browser in uso e salvato sul tuo dispositivo quando visiti un sito internet come pessastudio.eu (‘il sito’). I cookie permettono un funzionamento efficiente del sito e ne migliorano le prestazioni, inoltre forniscono informazioni al proprietario del sito per fini statistici o pubblicitari, principalmente per personalizzare la tua esperienza di navigazione ricordando le tue preferenze (per esempio ricordare la lingua e la valuta che hai impostato, per riconoscerti alla visita successiva, ecc.)."
@@ -1274,7 +1276,7 @@ msgstr "View"
 msgid "WhatsApp"
 msgstr "WhatsApp"
 
-#: src/pages/tondini/index.tsx:160
+#: src/pages/tondini/index.tsx:165
 msgid "È costituito da pannelli laterali in compensato marino fissati a colonne in acciaio zincato. La copertura in telo spalmato in PVC, è disponibile in bianco, verde o crema"
 msgstr ""
 
@@ -1290,6 +1292,6 @@ msgstr ""
 msgid "É possibile acquistare la giostra sprovvista di copertura ma se il vostro obbiettivo è quello di poter lavorare 365 giorni all'anno, Pessastudio offre la possibilità di dotare la giostra, con corridoio EASY, di una <0>copertura in PVC</0>."
 msgstr ""
 
-#: src/pages/tondini/index.tsx:178
+#: src/pages/tondini/index.tsx:183
 msgid "É una struttura semplice, leggera e piacevole alla vista"
 msgstr "It is a simple, light and pleasing to the eye"

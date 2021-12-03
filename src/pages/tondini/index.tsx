@@ -39,7 +39,12 @@ const Tondini: React.FC = () => {
         name: <Trans>Irrigazione</Trans>,
         description: (
           <Trans>
-            Il tondino può essere dotato rosone posizionato al centro ti permetterà di irrigare il tuo tondino.
+            Tutti i cavalieri sanno quanto sia spiacevole cavalcare in un ambiente polveroso.
+            <br />
+            La polvere può contribuire a problemi respiratori per te e per i tuoi cavalli e può indicare che il fondo
+            non fornisce un adeguato un supporto allo zoccolo del cavallo. <br />
+            Per ovviare a questo problema, è possibile installare il nostro sistema di irrigazione. Un rosone verrà
+            posizionato al centro del tondino e ti permetterà di irrigarlo facilmente.
           </Trans>
         ),
         images: [
