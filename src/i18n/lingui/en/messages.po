@@ -15,7 +15,7 @@ msgstr ""
 
 #: src/utils/constants.tsx:171
 msgid "* In presenza di nevicate che superino la portata consentita, sarà opportuno intervenire rimuovendo l’eccesso di neve e cospargendo di sale la copertura prima di introdurre i cavalli."
-msgstr ""
+msgstr "* In the presence of snowfall that exceeds the maximum load, it is advisable to remove excess snow and to sprinkle the roof with salt before use."
 
 #: src/components/Product/ProductPrice/index.tsx:31
 #: src/components/Product/ProductPrice/index.tsx:49
@@ -56,7 +56,7 @@ msgstr ""
 
 #: src/pages/ostacoli/index.tsx:19
 msgid "<0>I nostri ostacoli sono progettati e costruiti per durare nel tempo non richiedono alcuna manutenzione e conservano, inalterata, la loro bellezza anche se lasciati nel campo per anni.</0><1>Se gli ostacoli per il professionista sono uno strumento di lavoro, per molti altri appassionati rappresentano la realizzazione di un sogno. Noi abbiamo deciso di rendere questi strumenti resistenti nel tempo per fare in modo che questo sogno duri.</1><2>Potrete scegliere le quantità e i colori nella nostra gamma di produzione e acquistare anche singoli pezzi di ricambio.</2>"
-msgstr ""
+msgstr "<0>Our jumps are designed and built to last over time.</0><1>They do not require any maintenance even after years in the field.</1>"
 
 #: src/utils/constants.tsx:202
 msgid "<0>Il corridoio <1>TECNOFENCE</1> è una soluzione semplice ed economica che ti permetterà di avere una giostra completa, sicura e durevole ad un costo competitivo.</0><2>L'altezza della recinzione esterna è di 1,60 mt., a differenza del corridoio interno alto 1,40 mt.</2><3>L'innovativo materiale (PPO) che non richiede manutenzione ti consentirà di abbattere i costi di manutenzione che affliggono le classiche recinzioni in legno.</3><4>Uno dei vantaggi è inoltre quello di poter installare la giostra in piena autonomia.</4>"
@@ -76,7 +76,7 @@ msgstr ""
 
 #: src/utils/constants.tsx:158
 msgid "<0>La <1>copertura in PVC</1> è composta da una struttura in acciaio zincato la quale sorregge un telo in tessuto di poliestere spalmato di colore verde o crema e in base alle esigenze del cliente anche in altre colorazioni.</0><2>Questa copertura è in grado di sorreggere un carico neve pari a 80 kg/mq * e una forza vento pari a 110 Km/h.</2>"
-msgstr ""
+msgstr "<0>The <1>PVC cover</1> is made of a galvanized steel structure over which a polyester fabric that has been specially coated. It comes in green or cream unless otherwise requested.</0><2>This cover can support a snow load of 80 kg / m2 * and a wind force of 110 km / h. </2>"
 
 #: src/pages/dressage/index.tsx:135
 msgid "<0>La linea <1>olimpic</1>, presente sul mercato da oltre vent'anni, è rappresentata da un rettangolo professionale, dove il campo da dressage è utilizzato quotidianamente.</0><2>Il campo è delimitato da moduli accostabili tra di loro, ciascuno dei quali è lungo 2 mt. Ogni modulo è costruito in polietilene antiurto resistente anche alle basse temperature e che non ingiallisce sotto l'azione dei raggi ultravioletti.</2><3>Su ciascun modulo sono previste tre aree piane con superficie lucida di 50x12 cm. sulle quali possono essere applicati adesivi pubblicitari.</3>"
@@ -101,6 +101,8 @@ msgstr ""
 #: src/pages/ostacoli/_barriere.tsx:29
 msgid "<0>Sono le componenti dell'ostacolo più stressate, poiché, come i candelieri e i pilieri, sono perennemente sottoposte all'azione aggressiva degli agenti atmosferici (caldo, freddo, sole, pioggia). A questi si aggiungono anche gli urti degli zoccoli dei cavalli, frequenti ribaltamenti e le manipolazioni necessarie per aggiustarne le altezze.</0><1>Le barriere di abete, comunemente usate, richiedono una continua manutenzione perché si piegano, scoloriscono nel tempo e si rompono frequentemente.</1><2>Le barriere sintetiche di Pessastudio, invece, hanno lo stesso peso di quelle in abete, ma perdono il loro colore solamente dopo anni, non si scrostano e, solo raramente, si rompono sotto l'azione di un carico eccessivo.</2>"
 msgstr ""
+"<0>These are the most overworked parts of a jump field, like the jump standards. They are constantly subjected to the elements (heat, cold, sun, rain), to constant contact from the horses’ hooves, and the frequent adjustment of the height of the poles.</0>\n"
+"<1/>The commonly used fir barriers require continuous maintenance because they bend, discolour over time and break frequently. </1> <2>Pessastudio’s synthetic barriers, on the other hand, have the same weight as those made in fir, but they maintain their colour even after years os use and do not peel. It is rare that they break in case of excessive load.</2>"
 
 #: src/pages/giostre/tecnoexerciser/index.tsx:20
 msgid "<0>Tecnoexerciser è il modello di giostra attualmente più richiesto.</0><1>Oggi, grazie alle già note caratteristiche tecniche e alla grande affidabilità, abbiamo aggiunto anche alcune specifiche funzioni che fanno, di questo modello, la macchina <2>leader</2> del settore.</1><3>È possibile infatti:</3><4><5>Scegliere la forza che la porta mobile esercita sugli animali per invitarli ad avanzare</5><6>Mantenere un controllo costante sull'elettrificazione delle porte mobili</6><7>Beneficiare dell'innovativo sistema \"training program\" che vi consentirà di allenare i vostri cavalli fino ad ottenere performance atletiche.</7><8>Scegliere il programma di irrigazione pesta mentre la giostra sta girando</8></4><9>La struttura è fornita, a seconda delle esigenze, o con punte per l'ancoraggio al suolo o con tasselli nel caso in cui si desideri ancorarla ad un fondo di calcestruzzo.</9>"
@@ -228,7 +230,7 @@ msgstr "COD. FISC. e Part: I.V.A. 04743610281 C.C.I.A.A. PD - R.E.A. 414822"
 
 #: src/pages/ostacoli/_candelieri-e-lame-forate.tsx:11
 msgid "Candeliere 1,7 mt. con piede in PVC"
-msgstr "Aluminum Schooling Standard  1.7 mt. "
+msgstr "Aluminum 1.7 mt. Schooling Standard "
 
 #: src/pages/ostacoli/_candelieri-e-lame-forate.tsx:56
 msgid "Candelieri e lame forate"
@@ -353,12 +355,15 @@ msgstr "PVC roof"
 msgid "Copertura rigida con lastre ondulate"
 msgstr ""
 
+#: src/pages/giostre/ippowalker/_corridoi.tsx:20
+msgid "Corridoio EASY in compensato marino"
+msgstr ""
+
 #: src/pages/giostre/ippowalker/_corridoi.tsx:16
 #: src/pages/giostre/tecnoexerciser/_corridoi.tsx:16
 msgid "Corridoio TECNOFENCE"
 msgstr ""
 
-#: src/pages/giostre/ippowalker/_corridoi.tsx:20
 #: src/pages/giostre/tecnoexerciser/_corridoi.tsx:20
 msgid "Corridoio in compensato marino"
 msgstr "Marine plywood fence"
@@ -385,7 +390,7 @@ msgstr "Cavaletti block mini"
 
 #: src/pages/ostacoli/_cucchiai-segnaletica.tsx:60
 msgid "Cucchiai"
-msgstr "Cups"
+msgstr "Horse Jump Cups"
 
 #: src/pages/ostacoli/_cucchiai-segnaletica.tsx:11
 msgid "Cucchiaio DE"
@@ -640,7 +645,7 @@ msgstr ""
 #: src/pages/tondini/index.tsx:105
 #: src/pages/tondini/index.tsx:133
 msgid "Interno tondino coperto"
-msgstr ""
+msgstr "Internal pen"
 
 #: src/pages/giostre/index.tsx:133
 #: src/pages/giostre/ippowalker/index.tsx:22
@@ -1290,7 +1295,7 @@ msgstr ""
 
 #: src/pages/giostre/ippowalker/_copertura.tsx:29
 msgid "É possibile acquistare la giostra sprovvista di copertura ma se il vostro obbiettivo è quello di poter lavorare 365 giorni all'anno, Pessastudio offre la possibilità di dotare la giostra, con corridoio EASY, di una <0>copertura in PVC</0>."
-msgstr ""
+msgstr "It is possible to buy the horse exerciser without a cover but if your goal is to be able to work 365 days a year, then Pessastudio offers the possibility of equipping EASY corridor with a <0> PVC cover </0>."
 
 #: src/pages/tondini/index.tsx:183
 msgid "É una struttura semplice, leggera e piacevole alla vista"

@@ -5,7 +5,7 @@ import { ITALIA, SEDE_OPERATIVA } from "pages/contatti"
 import React from "react"
 import Helmet from "react-helmet"
 import { helmetJsonLdProp } from "react-schemaorg"
-import { BreadcrumbList, Corporation } from "schema-dts"
+import { BreadcrumbList, Organization } from "schema-dts"
 import { SOCIALS } from "../Footer/Socials"
 import { graphql } from "gatsby"
 import { usePages } from "hooks"
@@ -36,9 +36,9 @@ const Seo: React.FC<Props> = ({ title, description, keywords, meta = [], breadcr
   return (
     <Helmet
       script={[
-        helmetJsonLdProp<Corporation>({
+        helmetJsonLdProp<Organization>({
           "@context": "https://schema.org",
-          "@type": "Corporation",
+          "@type": "Organization",
           "name": SEDE_OPERATIVA.name,
           "url": siteUrl,
           "logo": siteUrl + require("assets/generals/logo.jpg").default,
@@ -53,7 +53,7 @@ const Seo: React.FC<Props> = ({ title, description, keywords, meta = [], breadcr
           },
           "description": PAGES.HOME.description,
           "telephone": ITALIA.telephone,
-          "sameAs": [SOCIALS.facebook, SOCIALS.instagram],
+          "sameAs": [SOCIALS.facebook, SOCIALS.instagram, SOCIALS.youtube],
           "email": ITALIA.email,
           "contactPoint": {
             "@type": "ContactPoint",

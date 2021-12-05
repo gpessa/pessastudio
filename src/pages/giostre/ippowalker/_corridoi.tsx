@@ -17,7 +17,7 @@ const IppowalkerCorridoi = () => {
     },
     {
       src: require("assets/products/giostre/ippowalker/corridoio/compensato-marino.jpg").default,
-      caption: t`Corridoio in compensato marino`,
+      caption: t`Corridoio EASY in compensato marino`,
     },
   ]
 
