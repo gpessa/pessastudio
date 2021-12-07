@@ -729,7 +729,7 @@ msgid "La rete antivento della porta è un’ulteriore protezione che offriamo p
 msgstr "The windproof net protects the inside of the pen from drafts allowing the horse to stay focused during training."
 
 #: src/utils/constants.tsx:195
-msgid "La rete antivento protegge l'interno della giostra da correnti d'aria inoltre aiuta il cavallo a rimanere concentrato sul percorso e lo rende più tranquillo."
+msgid "La rete antivento protegge l'interno della giostra da correnti d'aria e aiuta il cavallo a rimanere concentrato sul percorso rendendolo più tranquillo."
 msgstr ""
 
 #: src/pages/tondini/index.tsx:22

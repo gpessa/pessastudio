@@ -723,7 +723,7 @@ msgid "La rete antivento della porta è un’ulteriore protezione che offriamo p
 msgstr "Le filet brise-vent de la porte est une protection supplémentaire que nous offrons pour rendre votre rond de longe encore plus sûr en cas de vent violent, et pour garantir une plus grande concentration de votre cheval."
 
 #: src/utils/constants.tsx:195
-msgid "La rete antivento protegge l'interno della giostra da correnti d'aria inoltre aiuta il cavallo a rimanere concentrato sul percorso e lo rende più tranquillo."
+msgid "La rete antivento protegge l'interno della giostra da correnti d'aria e aiuta il cavallo a rimanere concentrato sul percorso rendendolo più tranquillo."
 msgstr "Le filet brise-vent protège l’intérieur du marcheur contre les courants d’air, aide le cheval à rester concentré sur la piste, et le calme."
 
 #: src/pages/tondini/index.tsx:22

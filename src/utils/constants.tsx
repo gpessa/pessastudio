@@ -193,8 +193,8 @@ export const GIOSTRA_ALVEOLO_DESCRIZIONE = (
 
 export const GIOSTRA_RETE_ANTIVENTO_DESCRIZIONE = (
   <Trans>
-    La rete antivento protegge l'interno della giostra da correnti d'aria inoltre aiuta il cavallo a rimanere
-    concentrato sul percorso e lo rende più tranquillo.
+    La rete antivento protegge l'interno della giostra da correnti d'aria e aiuta il cavallo a rimanere concentrato sul
+    percorso rendendolo più tranquillo.
   </Trans>
 )
 
