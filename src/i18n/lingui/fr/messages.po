@@ -75,7 +75,7 @@ msgid "<0>Il corridoio <1>{name}</1> in compensato marino è realizzato con un m
 msgstr "<0>Le couloir <1>{name}</1> en contreplaqué marine est réalisé dans un multicouche <2>({thickness} mm d’épaisseur)</2> anti-rayures, antichoc, résistant à la saleté et hydrofuge. L’objectif est de fournir un degré élevé de sécurité, en forçant le cheval à se concentrer sur la piste pendant l’entraînement.</0>"
 
 #: src/pages/dressage/index.tsx:110
-msgid "<0>Il rettangolo della linea <1>training</1> è rivolto a quei maneggi, in cui lo spazio a disposizione è limitato e il rettangolo viene installato provvisoriamente e velocemente.</0><2>Facile da montare, è costituito da elementi modulari di 2 mt. in materiale plastico, non richiede alcuna manutenzione e occupa poco spazio quando non è utilizzato.</2>"
+msgid "<0>Il rettangolo della linea <1>training</1> è rivolto a quei maneggi in cui lo spazio a disposizione è limitato e il rettangolo viene installato provvisoriamente e velocemente.</0><2>Facile da montare, è costituito da elementi modulari di 2 mt. in materiale plastico, non richiede alcuna manutenzione e occupa poco spazio quando non è utilizzato.</2>"
 msgstr "<0>Le rectangle de la ligne <1>training</1> est destiné aux manèges qui ont peu de place disponible. Le rectangle est installé provisoirement et rapidement. </0><2>Facile à monter, il est constitué d’éléments modulaires de 2 m en matière plastique, il ne demande aucun entretien et présente un faible encombrement lorsqu’il n’est pas utilisé.</2>"
 
 #: src/pages/giostre/ippowalker/index.tsx:23

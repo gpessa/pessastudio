@@ -67,7 +67,7 @@ msgid "<0>Il corridoio <1>{name}</1> in compensato marino è realizzato con un m
 msgstr ""
 
 #: src/pages/dressage/index.tsx:110
-msgid "<0>Il rettangolo della linea <1>training</1> è rivolto a quei maneggi, in cui lo spazio a disposizione è limitato e il rettangolo viene installato provvisoriamente e velocemente.</0><2>Facile da montare, è costituito da elementi modulari di 2 mt. in materiale plastico, non richiede alcuna manutenzione e occupa poco spazio quando non è utilizzato.</2>"
+msgid "<0>Il rettangolo della linea <1>training</1> è rivolto a quei maneggi in cui lo spazio a disposizione è limitato e il rettangolo viene installato provvisoriamente e velocemente.</0><2>Facile da montare, è costituito da elementi modulari di 2 mt. in materiale plastico, non richiede alcuna manutenzione e occupa poco spazio quando non è utilizzato.</2>"
 msgstr ""
 
 #: src/pages/giostre/ippowalker/index.tsx:23

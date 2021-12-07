@@ -109,7 +109,7 @@ const Dressage: React.FC = () => {
         <Box sx={{ mb: PRODUCT_GUTTER }}>
           <Trans>
             <Typography>
-              Il rettangolo della linea <strong>training</strong> è rivolto a quei maneggi, in cui lo spazio a
+              Il rettangolo della linea <strong>training</strong> è rivolto a quei maneggi in cui lo spazio a
               disposizione è limitato e il rettangolo viene installato provvisoriamente e velocemente.
             </Typography>
             <Typography>
