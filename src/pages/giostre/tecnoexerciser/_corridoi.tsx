@@ -17,7 +17,7 @@ const TecnoexerciserCorridoi = () => {
     },
     {
       src: require("assets/products/giostre/tecnoexerciser/corridoio/compensato-marino.jpg").default,
-      caption: t`Corridoio in compensato marino`,
+      caption: t`Corridoio EXERCISER in compensato marino`,
     },
   ]
 

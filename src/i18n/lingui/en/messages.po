@@ -359,14 +359,14 @@ msgstr ""
 msgid "Corridoio EASY in compensato marino"
 msgstr ""
 
+#: src/pages/giostre/tecnoexerciser/_corridoi.tsx:20
+msgid "Corridoio EXERCISER in compensato marino"
+msgstr ""
+
 #: src/pages/giostre/ippowalker/_corridoi.tsx:16
 #: src/pages/giostre/tecnoexerciser/_corridoi.tsx:16
 msgid "Corridoio TECNOFENCE"
 msgstr ""
-
-#: src/pages/giostre/tecnoexerciser/_corridoi.tsx:20
-msgid "Corridoio in compensato marino"
-msgstr "Marine plywood fence"
 
 #: src/pages/index.tsx:84
 msgid "Cosa dicono di noi"
