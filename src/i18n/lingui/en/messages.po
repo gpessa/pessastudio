@@ -692,7 +692,7 @@ msgstr ""
 "This item includes a pole and 2 cavaletti."
 
 #: src/utils/constants.tsx:188
-msgid "L'aveolo è la soluzione ottimale mantenere un fondo sempre perfetto in ogni condizione, permette di evitare buche o avvallamenti riducendo i costi di manutenzione."
+msgid "L'aveolo è la soluzione ottimale per mantenere un fondo sempre perfetto in ogni condizione, permette di evitare buche o avvallamenti riducendo i costi di manutenzione."
 msgstr ""
 
 #: src/pages/cookie-policy.tsx:22

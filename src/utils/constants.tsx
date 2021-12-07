@@ -186,8 +186,8 @@ export const GIOSTRA_TONDINO_CHIUSURA_A_TERRA_DESCRIZIONE = (
 
 export const GIOSTRA_ALVEOLO_DESCRIZIONE = (
   <Trans>
-    L'aveolo è la soluzione ottimale mantenere un fondo sempre perfetto in ogni condizione, permette di evitare buche o
-    avvallamenti riducendo i costi di manutenzione.
+    L'aveolo è la soluzione ottimale per mantenere un fondo sempre perfetto in ogni condizione, permette di evitare
+    buche o avvallamenti riducendo i costi di manutenzione.
   </Trans>
 )
 
