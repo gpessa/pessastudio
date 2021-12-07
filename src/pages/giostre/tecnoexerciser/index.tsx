@@ -20,8 +20,8 @@ const Tecnoexerciser: React.FC = () => (
           <Trans>
             <Typography paragraph>Tecnoexerciser è il modello di giostra attualmente più richiesto.</Typography>
             <Typography paragraph>
-              Oggi, grazie alle già note caratteristiche tecniche e alla grande affidabilità, abbiamo aggiunto anche
-              alcune specifiche funzioni che fanno, di questo modello, la macchina <strong>leader</strong> del settore.
+              Oggi, grazie alle già note caratteristiche tecniche e alla grande affidabilità, abbiamo aggiunto alcune
+              specifiche funzioni che fanno, di questo modello, la macchina <strong>leader</strong> del settore.
             </Typography>
             <Typography paragraph>È possibile infatti:</Typography>
             <Ul sx={{ mb: 2 }}>

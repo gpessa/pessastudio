@@ -32,7 +32,7 @@ const Giostre: React.FC = () => {
       title: <Trans>Nessuna concessione edilizia</Trans>,
       description: (
         <Trans>
-          Le nostre giostre sono considerate strutture precarie. Non avrete bisogno di nessuna concessione edilizi
+          Le nostre giostre sono considerate strutture precarie. Non avrete bisogno di nessuna concessione edilizia
         </Trans>
       ),
     },
@@ -79,7 +79,7 @@ const Giostre: React.FC = () => {
             <Typography paragraph>Le giostre rappresentano il punto di forza della nostra azienda.</Typography>
             <Typography paragraph>
               Sono state create dalla ricerca di <strong>Luciano Pessa</strong> con l'intenzione di realizzare un
-              semplice ed affidabile strumento di lavoro che vi consentirè di allenare il vostro cavallo anche quando
+              semplice ed affidabile strumento di lavoro che vi consentirà di allenare il vostro cavallo anche quando
               non avete la possibilità di montarlo.
             </Typography>
             <Typography paragraph>
