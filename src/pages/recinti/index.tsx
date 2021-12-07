@@ -57,8 +57,8 @@ const Recinti: React.FC = () => {
                 nel tempo anche in presenza delle più avverse condizioni meteorologiche.
               </Typography>
               <Typography paragraph>
-                Sono in grado di sopportare senza rompersi i calci e le spinte dei cavalli. A differenza del legno o di
-                altri prodotti utilizzati per il medesimo scopo, gli animali non mordono la recinzione.
+                A differenza del legno o di altri prodotti utilizzati per il medesimo scopo, gli animali non mordono la
+                recinzione.
               </Typography>
               <Typography paragraph>
                 <strong>TECNOFENCE</strong>, non presenta spigoli vivi e inoltre, essendo elastica, è in grado di
