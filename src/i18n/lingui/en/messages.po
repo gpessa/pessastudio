@@ -376,10 +376,6 @@ msgstr "Testimonials"
 msgid "Costruisci la tua barriera personalizzata scegliendo tra i colori a disposizione"
 msgstr "Build your custom poles by choosing from the available colors"
 
-#: src/pages/ostacoli/_cubi.tsx:44
-msgid "Cubi per campo ostacoli"
-msgstr "Cavaletti block"
-
 #: src/pages/ostacoli/_cubi.tsx:25
 msgid "Cubi maxi"
 msgstr "Cavaletti block maxi"
@@ -387,6 +383,10 @@ msgstr "Cavaletti block maxi"
 #: src/pages/ostacoli/_cubi.tsx:11
 msgid "Cubi mini"
 msgstr "Cavaletti block mini"
+
+#: src/pages/ostacoli/_cubi.tsx:44
+msgid "Cubi per campo ostacoli"
+msgstr "Cavaletti block"
 
 #: src/pages/ostacoli/_cucchiai-segnaletica.tsx:60
 msgid "Cucchiai"
@@ -529,7 +529,6 @@ msgid "Giostra Ippowalker in movimento"
 msgstr "Ippowalker horse exerciser"
 
 #: src/hooks/usePages/index.tsx:89
-#: src/pages/giostre/index.tsx:54
 msgid "Giostra Tecnoexerciser"
 msgstr "Tecnoexerciser horse exerciser"
 
@@ -549,6 +548,10 @@ msgstr ""
 #: src/pages/giostre/index.tsx:148
 msgid "Giostra in movimento"
 msgstr "Horse exerciser"
+
+#: src/pages/giostre/index.tsx:54
+msgid "Giostra per cavalli Tecnoexerciser"
+msgstr "Tecnoexerciser horse exerciser"
 
 #: src/pages/giostre/tecnoexerciser/_gallery.tsx:22
 msgid "Giostra solo motore"

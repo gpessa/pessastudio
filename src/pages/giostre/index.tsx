@@ -51,7 +51,7 @@ const Giostre: React.FC = () => {
   const IMAGES: Picture[] = [
     {
       src: require("assets/products/giostre/gallery/giostra.jpg").default,
-      caption: t`Giostra Tecnoexerciser`,
+      caption: t`Giostra per cavalli Tecnoexerciser`,
     },
     {
       src: require("assets/products/giostre/gallery/giostra-con-alveolo.jpg").default,

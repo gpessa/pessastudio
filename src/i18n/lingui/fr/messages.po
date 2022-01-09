@@ -385,10 +385,6 @@ msgstr "Ce qu’ils disent de nous"
 msgid "Costruisci la tua barriera personalizzata scegliendo tra i colori a disposizione"
 msgstr "Construisez votre barre d’obstacle personnalisée en choisissant parmi les coloris disponibles"
 
-#: src/pages/ostacoli/_cubi.tsx:44
-msgid "Cubi per campo ostacoli"
-msgstr "Cubes"
-
 #: src/pages/ostacoli/_cubi.tsx:25
 msgid "Cubi maxi"
 msgstr "Cubes maxi"
@@ -396,6 +392,10 @@ msgstr "Cubes maxi"
 #: src/pages/ostacoli/_cubi.tsx:11
 msgid "Cubi mini"
 msgstr "Cubes mini"
+
+#: src/pages/ostacoli/_cubi.tsx:44
+msgid "Cubi per campo ostacoli"
+msgstr "Cubes"
 
 #: src/pages/ostacoli/_cucchiai-segnaletica.tsx:60
 msgid "Cucchiai"
@@ -525,7 +525,6 @@ msgid "Giostra Ippowalker in movimento"
 msgstr "Marcheur pour chevaux Ippowalker"
 
 #: src/hooks/usePages/index.tsx:89
-#: src/pages/giostre/index.tsx:54
 msgid "Giostra Tecnoexerciser"
 msgstr "Marcheur tecnoexerciser"
 
@@ -545,6 +544,10 @@ msgstr "Marcheur Couloir TECNOFENCE"
 #: src/pages/giostre/index.tsx:148
 msgid "Giostra in movimento"
 msgstr "Marcheur pour chevaux"
+
+#: src/pages/giostre/index.tsx:54
+msgid "Giostra per cavalli Tecnoexerciser"
+msgstr "Marcheur Tecnoexerciser"
 
 #: src/pages/giostre/tecnoexerciser/_gallery.tsx:22
 msgid "Giostra solo motore"
