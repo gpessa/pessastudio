@@ -15,8 +15,8 @@ const ImageStyled = styled("img")(() => ({
 }))
 
 const FigcaptionStyled = styled("figcaption")(({ theme }) => ({
-  marginTop: theme.spacing(1) / 2,
   fontSize: "0.8rem",
+  marginTop: "2px",
   lineHeight: 1,
 }))
 

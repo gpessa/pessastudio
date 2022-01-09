@@ -987,26 +987,20 @@ msgid "Recinzione"
 msgstr "Recinzione"
 
 #: src/pages/recinti/_gamma.tsx:33
-msgid "Recinzione 1 filagna"
-msgstr "Recinzione 1 filagna"
+msgid "Recinzione cavalli a {0} filagna"
+msgstr "Recinzione cavalli a {0} filagna"
 
 #: src/pages/recinti/_gamma.tsx:46
+#: src/pages/recinti/_gamma.tsx:59
+#: src/pages/recinti/_gamma.tsx:73
 #: src/pages/recinti/index.tsx:13
 #: src/pages/recinti/index.tsx:17
+#: src/pages/recinti/index.tsx:21
 #: src/pages/recinti/index.tsx:25
 #: src/pages/recinti/index.tsx:29
 #: src/pages/recinti/index.tsx:33
-msgid "Recinzione 2 filagne"
-msgstr "Recinzione 2 filagne"
-
-#: src/pages/recinti/_gamma.tsx:59
-#: src/pages/recinti/index.tsx:21
-msgid "Recinzione 3 filagne"
-msgstr "Recinzione 3 filagne"
-
-#: src/pages/recinti/_gamma.tsx:73
-msgid "Recinzione 4 filagne"
-msgstr "Recinzione 4 filagne"
+msgid "Recinzione cavalli a {0} filagne"
+msgstr "Recinzione cavalli a {0} filagne"
 
 #: src/pages/giostre/ippowalker/_accessori.tsx:49
 #: src/pages/giostre/tecnoexerciser/_accessori.tsx:52

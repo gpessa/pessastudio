@@ -1000,26 +1000,20 @@ msgid "Recinzione"
 msgstr "Clôture"
 
 #: src/pages/recinti/_gamma.tsx:33
-msgid "Recinzione 1 filagna"
+msgid "Recinzione cavalli a {0} filagna"
 msgstr "Clôtures avec une lisse"
 
 #: src/pages/recinti/_gamma.tsx:46
+#: src/pages/recinti/_gamma.tsx:59
+#: src/pages/recinti/_gamma.tsx:73
 #: src/pages/recinti/index.tsx:13
 #: src/pages/recinti/index.tsx:17
+#: src/pages/recinti/index.tsx:21
 #: src/pages/recinti/index.tsx:25
 #: src/pages/recinti/index.tsx:29
 #: src/pages/recinti/index.tsx:33
-msgid "Recinzione 2 filagne"
-msgstr "Clôtures avec deux lisse"
-
-#: src/pages/recinti/_gamma.tsx:59
-#: src/pages/recinti/index.tsx:21
-msgid "Recinzione 3 filagne"
-msgstr "Clôtures avec trois lisse"
-
-#: src/pages/recinti/_gamma.tsx:73
-msgid "Recinzione 4 filagne"
-msgstr "Clôtures avec quatre lisse"
+msgid "Recinzione cavalli a {0} filagne"
+msgstr "Clôtures avec {0} lisse"
 
 #: src/pages/giostre/ippowalker/_accessori.tsx:49
 #: src/pages/giostre/tecnoexerciser/_accessori.tsx:52

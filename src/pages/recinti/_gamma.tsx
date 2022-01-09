@@ -21,7 +21,7 @@ const ProductStyled = styled(Product)(({ theme }) => ({
     top: "unset",
     bottom: 0,
   },
-  "& caption": {
+  "& .MuiTypography-caption": {
     color: theme.palette.grey[400],
   },
 }))
@@ -30,7 +30,7 @@ const Gamma = () => {
   const PRODUCTS = [
     {
       height: 1250,
-      name: t`Recinzione 1 filagna`,
+      name: t`Recinzione cavalli a ${1} filagna`,
       images: [{ src: require("assets/products/recinti/svg-1.svg").default }],
       colors: [Colors.WHITE],
       materials: [MATERIALS.POLIPROPILENE],
@@ -43,7 +43,7 @@ const Gamma = () => {
     },
     {
       height: 1400,
-      name: t`Recinzione 2 filagne`,
+      name: t`Recinzione cavalli a ${2} filagne`,
       images: [{ src: require("assets/products/recinti/svg-2.svg").default }],
       colors: [Colors.WHITE],
       materials: [MATERIALS.POLIPROPILENE],
@@ -56,7 +56,7 @@ const Gamma = () => {
     },
     {
       height: 1650,
-      name: t`Recinzione 3 filagne`,
+      name: t`Recinzione cavalli a ${3} filagne`,
       images: [{ src: require("assets/products/recinti/svg-3.svg").default }],
       colors: [Colors.WHITE],
       materials: [MATERIALS.POLIPROPILENE],
@@ -70,7 +70,7 @@ const Gamma = () => {
     },
     {
       height: 1950,
-      name: t`Recinzione 4 filagne`,
+      name: t`Recinzione cavalli a ${4} filagne`,
       images: [{ src: require("assets/products/recinti/svg-4.svg").default }],
       colors: [Colors.WHITE],
       materials: [MATERIALS.POLIPROPILENE],
