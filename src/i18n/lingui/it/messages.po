@@ -375,7 +375,7 @@ msgid "Costruisci la tua barriera personalizzata scegliendo tra i colori a dispo
 msgstr "Costruisci la tua barriera personalizzata scegliendo tra i colori a disposizione"
 
 #: src/pages/ostacoli/_cubi.tsx:44
-msgid "Cubi"
+msgid "Cubi per campo ostacoli"
 msgstr "Cubi"
 
 #: src/pages/ostacoli/_cubi.tsx:25

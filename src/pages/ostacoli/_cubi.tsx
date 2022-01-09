@@ -41,7 +41,7 @@ const Cubi: React.FC = () => {
     <>
       <Title
         sx={{ mb: PRODUCT_GUTTER }}
-        title={<Trans>Cubi</Trans>}
+        title={<Trans>Cubi per campo ostacoli</Trans>}
         text={
           <Trans>
             <Typography>
