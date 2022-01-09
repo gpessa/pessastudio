@@ -1210,7 +1210,7 @@ msgid "Tondino"
 msgstr "Rond de longe"
 
 #: src/pages/tondini/index.tsx:109
-msgid "Tondino coperto"
+msgid "Tondino coperto per cavalli"
 msgstr "Ronde de longe"
 
 #: src/pages/tondini/index.tsx:93

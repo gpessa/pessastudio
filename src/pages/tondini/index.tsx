@@ -106,7 +106,7 @@ const Tondini: React.FC = () => {
       src: require("assets/products/tondini/gallery/tondino-3.jpg").default,
     },
     {
-      caption: t`Tondino coperto`,
+      caption: t`Tondino coperto per cavalli`,
       src: require("assets/products/tondini/gallery/tondino-4.jpg").default,
     },
     {

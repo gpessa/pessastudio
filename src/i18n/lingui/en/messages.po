@@ -1216,7 +1216,7 @@ msgid "Tondino"
 msgstr "Lunge pen"
 
 #: src/pages/tondini/index.tsx:109
-msgid "Tondino coperto"
+msgid "Tondino coperto per cavalli"
 msgstr "Fully covered lunge pen"
 
 #: src/pages/tondini/index.tsx:93

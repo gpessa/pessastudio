@@ -1197,8 +1197,8 @@ msgid "Tondino"
 msgstr "Tondino"
 
 #: src/pages/tondini/index.tsx:109
-msgid "Tondino coperto"
-msgstr "Tondino coperto"
+msgid "Tondino coperto per cavalli"
+msgstr "Tondino coperto per cavalli"
 
 #: src/pages/tondini/index.tsx:93
 #: src/pages/tondini/index.tsx:97
