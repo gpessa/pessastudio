@@ -53,7 +53,7 @@ const Seo: React.FC<Props> = ({ title, description, keywords, meta = [], breadcr
           },
           "description": PAGES.HOME.description,
           "telephone": ITALIA.telephone,
-          "sameAs": [SOCIALS.facebook, SOCIALS.instagram, SOCIALS.youtube],
+          "sameAs": [SOCIALS.facebook, SOCIALS.facebook_1, SOCIALS.instagram, SOCIALS.youtube],
           "email": ITALIA.email,
           "contactPoint": {
             "@type": "ContactPoint",
