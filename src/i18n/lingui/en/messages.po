@@ -899,7 +899,7 @@ msgstr "Weight"
 
 #: src/pages/dressage/index.tsx:99
 msgid "Pessastudio fornisce due soluzioni per trasformare il vostro terreno in un'arena da dressage: la gamma <0>training</0> e quella <1>olimpic</1>"
-msgstr ""
+msgstr "Pessastudio provides two solutions to transform your terrain into a dressage arena: the <0>training range</0> and the <1>olympic range</1>"
 
 #: src/pages/index.tsx:57
 msgid "Pessastudio nasce 28 fa dall'ingegno e dalla passione per i cavalli del fondatore Luciano Pessa. Oggi, la figlia Anna, continua a portare avanti lo stesso sogno"
