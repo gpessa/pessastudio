@@ -107,9 +107,6 @@ const Contatti: React.FC = () => (
               <Trans>Sede legale</Trans>
             </TH>
             <StyledAddress {...SEDE_LEGALE} />
-            <Box mt={2}>
-              <Trans>Capitale interamente versato € 10.000,00</Trans>
-            </Box>
           </Box>
 
           <Box mt={6}>

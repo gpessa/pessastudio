@@ -245,10 +245,6 @@ msgstr "Chandelier 1.7 mt. Pied en PVC"
 msgid "Candelieri e lame forate"
 msgstr "Chandeliers et lame en acier percée à visser"
 
-#: src/pages/contatti/index.tsx:111
-msgid "Capitale interamente versato € 10.000,00"
-msgstr ""
-
 #: src/pages/tondini/index.tsx:203
 msgid "Caratteristiche"
 msgstr "Caractéristiques"
@@ -308,15 +304,15 @@ msgstr ""
 msgid "Contatti"
 msgstr "Contact"
 
-#: src/pages/contatti/index.tsx:127
+#: src/pages/contatti/index.tsx:124
 msgid "Contatto commerciale"
 msgstr "Contact commercial"
 
-#: src/pages/contatti/index.tsx:135
+#: src/pages/contatti/index.tsx:132
 msgid "Contatto commerciale Belgio"
 msgstr "Contact commercial Belgique"
 
-#: src/pages/contatti/index.tsx:142
+#: src/pages/contatti/index.tsx:139
 msgid "Contatto commerciale Francia"
 msgstr "Contact commercial France"
 
@@ -339,7 +335,7 @@ msgstr "Cookie de navigation"
 msgid "Cookie policy"
 msgstr "Cookie policy"
 
-#: src/pages/contatti/index.tsx:117
+#: src/pages/contatti/index.tsx:114
 msgid "Coordinate bancarie"
 msgstr "Coordonnées bancaires"
 

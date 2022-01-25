@@ -236,10 +236,6 @@ msgstr "Aluminum 1.7 mt. Schooling Standard "
 msgid "Candelieri e lame forate"
 msgstr "Jump standards and metal keyhole tracks"
 
-#: src/pages/contatti/index.tsx:111
-msgid "Capitale interamente versato € 10.000,00"
-msgstr ""
-
 #: src/pages/tondini/index.tsx:203
 msgid "Caratteristiche"
 msgstr "Characteristic"
@@ -299,15 +295,15 @@ msgstr ""
 msgid "Contatti"
 msgstr "Contacts us"
 
-#: src/pages/contatti/index.tsx:127
+#: src/pages/contatti/index.tsx:124
 msgid "Contatto commerciale"
 msgstr "Sales office"
 
-#: src/pages/contatti/index.tsx:135
+#: src/pages/contatti/index.tsx:132
 msgid "Contatto commerciale Belgio"
 msgstr "Sales office Belgium"
 
-#: src/pages/contatti/index.tsx:142
+#: src/pages/contatti/index.tsx:139
 msgid "Contatto commerciale Francia"
 msgstr "Sales office France"
 
@@ -330,7 +326,7 @@ msgstr "Navigation cookies"
 msgid "Cookie policy"
 msgstr "Cookie policy"
 
-#: src/pages/contatti/index.tsx:117
+#: src/pages/contatti/index.tsx:114
 msgid "Coordinate bancarie"
 msgstr "Bank account details"
 
