@@ -110,11 +110,11 @@ msgstr ""
 
 #: src/pages/dressage/index.tsx:10
 msgid "<0>Un set per creare un circuito dressage standard da 20x40 mt.</0><1>Il set contiene:</1><2><3>60 moduli</3><4>8 lettere</4></2>"
-msgstr ""
+msgstr "<0>The package contains all the required module to build a 20 x 40 mt. short court.</0><1>The package include:</1><2><3>60 modules</3><4>8 dressage arena letters</4></2>"
 
 #: src/pages/dressage/index.tsx:21
 msgid "<0>Un set per creare un circuito dressage standard da 20x60 mt.</0><1>Il set contiene:</1><2><3>80 moduli</3><4>12 lettere</4></2>"
-msgstr ""
+msgstr "<0>The package contains all the required module to build a 20 x 60 mt. full size arena.</0></0><1>The package include:</1><2><3>80 modules</3><4>12 dressage arena letters</4></2>"
 
 #: src/utils/constants.tsx:66
 msgid "<0>È possibile ordinare una giostra nei diametri:</0><1><2>12,0 mt. <3>(4 cavalli)</3></2><4>14,2 mt. <5>(6 cavalli)</5></4></1>"
