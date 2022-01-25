@@ -1264,8 +1264,8 @@ msgid "È possibile acquistare la giostra sprovvista di copertura ma se il vostr
 msgstr "È possibile acquistare la giostra sprovvista di copertura ma se il vostro obbiettivo è quello di poter lavorare 365 giorni all'anno, Pessastudio, offre due possibili soluzioni abbinabili al corridoio <0>Exerciser</0>."
 
 #: src/pages/giostre/index.tsx:27
-msgid "È possibile acquistare le nostre giostre in diverse versioni adatte ad ogni budget ed esigenz"
-msgstr "È possibile acquistare le nostre giostre in diverse versioni adatte ad ogni budget ed esigenz"
+msgid "È possibile acquistare le nostre giostre in diverse versioni adatte ad ogni budget ed esigenza"
+msgstr "È possibile acquistare le nostre giostre in diverse versioni adatte ad ogni budget ed esigenza"
 
 #: src/pages/giostre/ippowalker/_copertura.tsx:29
 msgid "É possibile acquistare la giostra sprovvista di copertura ma se il vostro obbiettivo è quello di poter lavorare 365 giorni all'anno, Pessastudio offre la possibilità di dotare la giostra, con corridoio EASY, di una <0>copertura in PVC</0>."

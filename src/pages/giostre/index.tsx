@@ -24,7 +24,7 @@ const Giostre: React.FC = () => {
       icon: Apps,
       title: <Trans>Ampia gamma</Trans>,
       description: (
-        <Trans>È possibile acquistare le nostre giostre in diverse versioni adatte ad ogni budget ed esigenz</Trans>
+        <Trans>È possibile acquistare le nostre giostre in diverse versioni adatte ad ogni budget ed esigenza</Trans>
       ),
     },
     {

@@ -1283,7 +1283,7 @@ msgid "È possibile acquistare la giostra sprovvista di copertura ma se il vostr
 msgstr ""
 
 #: src/pages/giostre/index.tsx:27
-msgid "È possibile acquistare le nostre giostre in diverse versioni adatte ad ogni budget ed esigenz"
+msgid "È possibile acquistare le nostre giostre in diverse versioni adatte ad ogni budget ed esigenza"
 msgstr ""
 
 #: src/pages/giostre/ippowalker/_copertura.tsx:29

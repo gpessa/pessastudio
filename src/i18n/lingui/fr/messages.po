@@ -1277,7 +1277,7 @@ msgid "È possibile acquistare la giostra sprovvista di copertura ma se il vostr
 msgstr "Le marcheur peut être vendu sans couverture, mais si votre objectif est de pouvoir travailler 365 jours par an, Pessastudio vous offre deux solutions possibles, à combiner avec le couloir <0>Exerciser</0>."
 
 #: src/pages/giostre/index.tsx:27
-msgid "È possibile acquistare le nostre giostre in diverse versioni adatte ad ogni budget ed esigenz"
+msgid "È possibile acquistare le nostre giostre in diverse versioni adatte ad ogni budget ed esigenza"
 msgstr ""
 
 #: src/pages/giostre/ippowalker/_copertura.tsx:29
