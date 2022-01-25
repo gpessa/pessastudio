@@ -1188,8 +1188,8 @@ msgid "Tondini"
 msgstr "Tondini"
 
 #: src/hooks/usePages/index.tsx:25
-msgid "Tondini coperti per addestrate puledri in libertà"
-msgstr "Tondini coperti per addestrate puledri in libertà"
+msgid "Tondini coperti per addestrare puledri in libertà"
+msgstr "Tondini coperti per addestrare puledri in libertà"
 
 #: src/pages/tondini/index.tsx:129
 #: src/pages/tondini/index.tsx:137

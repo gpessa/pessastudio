@@ -22,7 +22,7 @@ const usePages = () => {
   const TONDINI: Page = {
     url: "/tondini/",
     title: t`Tondini`,
-    description: t`Tondini coperti per addestrate puledri in libertà`,
+    description: t`Tondini coperti per addestrare puledri in libertà`,
   }
 
   const GIOSTRE: Page = {
