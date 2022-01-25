@@ -2,11 +2,13 @@ import { Trans } from "@lingui/macro"
 import { Grid } from "@mui/material"
 import { ContentTable, Section, TH } from "components"
 import { useLocalization } from "gatsby-theme-i18n"
+import { usePages } from "hooks"
 import React from "react"
 import { PRODUCT_GUTTER } from "theme"
 
 const TecnoexerciserServizioClienti = () => {
   const { locale } = useLocalization()
+  const { PAGES } = usePages()
 
   const DIMENSIONS = [
     {
@@ -46,6 +48,10 @@ const TecnoexerciserServizioClienti = () => {
 
   const MANUALI = {
     it: [
+      {
+        label: PAGES.GIOSTRE_TECNOEXERCISER_ISTRUZIONI_MONTAGGIO.title,
+        link: PAGES.GIOSTRE_TECNOEXERCISER_ISTRUZIONI_MONTAGGIO.url,
+      },
       {
         label: <Trans>Manuale quadro di controllo</Trans>,
         file: require("assets/products/giostre/tecnoexerciser/pdf/manuale-quadro-tecnoexerciser-it.pdf").default,

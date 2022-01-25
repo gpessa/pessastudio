@@ -152,7 +152,7 @@ msgstr "Alcuni accessori possono essere acquistati separatamente e permettono di
 msgid "Altezza"
 msgstr "Altezza"
 
-#: src/pages/giostre/tecnoexerciser/_servizio_clienti.tsx:88
+#: src/pages/giostre/tecnoexerciser/_servizio_clienti.tsx:94
 msgid "Altro"
 msgstr "Altro"
 
@@ -171,36 +171,9 @@ msgstr "Ampia gamma"
 msgid "Anche in questo semplice modello potrai decidere di dotare la tua giostra di un corridoio scegliendo tra il piú economico corridoio costituito dalla recinzione <0>TECNOFENCE</0> o il corridoio <1>EASY</1> in pannelli di compensato marino."
 msgstr "Anche in questo semplice modello potrai decidere di dotare la tua giostra di un corridoio scegliendo tra il piú economico corridoio costituito dalla recinzione <0>TECNOFENCE</0> o il corridoio <1>EASY</1> in pannelli di compensato marino."
 
-#: src/pages/giostre/ippowalker/istruzioni-montaggio.tsx:18
-#: src/pages/giostre/tecnoexerciser/istruzioni-montaggio.tsx:17
-msgid "Ancorate al suolo i supporti della giostra"
-msgstr "Ancorate al suolo i supporti della giostra"
-
-#: src/pages/giostre/ippowalker/istruzioni-montaggio.tsx:26
-#: src/pages/giostre/tecnoexerciser/istruzioni-montaggio.tsx:25
-msgid "Ancorate il gruppo motore"
-msgstr "Ancorate il gruppo motore"
-
 #: src/pages/index.tsx:41
 msgid "Apprezzati"
 msgstr "Apprezzati"
-
-#: src/pages/giostre/ippowalker/istruzioni-montaggio.tsx:46
-#: src/pages/giostre/tecnoexerciser/istruzioni-montaggio.tsx:45
-#: src/pages/giostre/tecnoexerciser/istruzioni-montaggio.tsx:49
-#: src/pages/giostre/tecnoexerciser/istruzioni-montaggio.tsx:53
-#: src/pages/giostre/tecnoexerciser/istruzioni-montaggio.tsx:57
-#: src/pages/giostre/tecnoexerciser/istruzioni-montaggio.tsx:61
-#: src/pages/giostre/tecnoexerciser/istruzioni-montaggio.tsx:65
-#: src/pages/giostre/tecnoexerciser/istruzioni-montaggio.tsx:69
-#: src/pages/giostre/tecnoexerciser/istruzioni-montaggio.tsx:73
-msgid "Assicuratevi che le porte corrispondano alla figura"
-msgstr "Assicuratevi che le porte corrispondano alla figura"
-
-#: src/pages/giostre/ippowalker/istruzioni-montaggio.tsx:30
-#: src/pages/giostre/tecnoexerciser/istruzioni-montaggio.tsx:29
-msgid "Assicuratevi di bloccare la giostra alla giusta altezza e piana"
-msgstr "Assicuratevi di bloccare la giostra alla giusta altezza e piana"
 
 #: src/components/ModalGallery/index.tsx:79
 msgid "Avanti"
@@ -258,11 +231,6 @@ msgstr "Chiusura a terra"
 #: src/pages/contatti/_address.tsx:37
 msgid "Codice Fiscale e Partita IVA"
 msgstr "Codice Fiscale e Partita IVA"
-
-#: src/pages/giostre/ippowalker/istruzioni-montaggio.tsx:38
-#: src/pages/giostre/tecnoexerciser/istruzioni-montaggio.tsx:37
-msgid "Collegate le braccia di separazione attraverso i cavi"
-msgstr "Collegate le braccia di separazione attraverso i cavi"
 
 #: src/components/Product/index.tsx:53
 msgid "Colori"
@@ -411,13 +379,13 @@ msgstr "Diamo la possibilità di montare nella vostra recinzione un piede mobile
 msgid "Dicono di noi"
 msgstr "Dicono di noi"
 
-#: src/pages/giostre/ippowalker/_servizio_clienti.tsx:43
-#: src/pages/giostre/tecnoexerciser/_servizio_clienti.tsx:84
+#: src/pages/giostre/ippowalker/_servizio_clienti.tsx:49
+#: src/pages/giostre/tecnoexerciser/_servizio_clienti.tsx:90
 #: src/pages/tondini/index.tsx:224
 msgid "Dimensioni"
 msgstr "Dimensioni"
 
-#: src/pages/giostre/tecnoexerciser/_servizio_clienti.tsx:39
+#: src/pages/giostre/tecnoexerciser/_servizio_clienti.tsx:41
 msgid "Dimensioni giostra {sides} pannelli {size} mt. e istruzioni preparazione fondo"
 msgstr "Dimensioni giostra {sides} pannelli {size} mt. e istruzioni preparazione fondo"
 
@@ -440,7 +408,7 @@ msgstr "Email"
 msgid "Entrata"
 msgstr "Entrata"
 
-#: src/pages/giostre/tecnoexerciser/_servizio_clienti.tsx:73
+#: src/pages/giostre/tecnoexerciser/_servizio_clienti.tsx:79
 msgid "Fac simile domanda installazione giostra"
 msgstr "Fac simile domanda installazione giostra"
 
@@ -658,7 +626,7 @@ msgstr "Istituto"
 #: src/hooks/usePages/index.tsx:84
 #: src/hooks/usePages/index.tsx:95
 #: src/pages/giostre/ippowalker/istruzioni-montaggio.tsx:54
-#: src/pages/giostre/tecnoexerciser/istruzioni-montaggio.tsx:80
+#: src/pages/giostre/tecnoexerciser/istruzioni-montaggio.tsx:81
 #: src/pages/recinti/index.tsx:43
 msgid "Istruzioni di montaggio"
 msgstr "Istruzioni di montaggio"
@@ -760,21 +728,21 @@ msgstr "Lunghezza"
 msgid "L’alternativa alla copertura in PVC è la <0>copertura rigida</0> in lastre di vetroresina. le lastre vengono sorrette da una doppia struttura in acciaio zincato che permette di avere una migliore distribuzione del peso in caso di nevicata e una maggiore sicurezza in caso di forte vento. Una soluzione che ti permetterà senza opere murarie di avere una struttura robusta e durevole nel tempo."
 msgstr "L’alternativa alla copertura in PVC è la <0>copertura rigida</0> in lastre di vetroresina. le lastre vengono sorrette da una doppia struttura in acciaio zincato che permette di avere una migliore distribuzione del peso in caso di nevicata e una maggiore sicurezza in caso di forte vento. Una soluzione che ti permetterà senza opere murarie di avere una struttura robusta e durevole nel tempo."
 
-#: src/pages/giostre/ippowalker/_servizio_clienti.tsx:26
-#: src/pages/giostre/tecnoexerciser/_servizio_clienti.tsx:54
+#: src/pages/giostre/ippowalker/_servizio_clienti.tsx:32
+#: src/pages/giostre/tecnoexerciser/_servizio_clienti.tsx:60
 msgid "Manuale collegamento elettrico"
 msgstr "Manuale collegamento elettrico"
 
-#: src/pages/giostre/ippowalker/_servizio_clienti.tsx:50
-#: src/pages/giostre/tecnoexerciser/_servizio_clienti.tsx:86
+#: src/pages/giostre/ippowalker/_servizio_clienti.tsx:56
+#: src/pages/giostre/tecnoexerciser/_servizio_clienti.tsx:92
 #: src/pages/recinti/index.tsx:96
 msgid "Manuale d'istruzioni"
 msgstr "Manuale d'istruzioni"
 
-#: src/pages/giostre/ippowalker/_servizio_clienti.tsx:22
-#: src/pages/giostre/ippowalker/_servizio_clienti.tsx:32
-#: src/pages/giostre/tecnoexerciser/_servizio_clienti.tsx:50
-#: src/pages/giostre/tecnoexerciser/_servizio_clienti.tsx:64
+#: src/pages/giostre/ippowalker/_servizio_clienti.tsx:28
+#: src/pages/giostre/ippowalker/_servizio_clienti.tsx:38
+#: src/pages/giostre/tecnoexerciser/_servizio_clienti.tsx:56
+#: src/pages/giostre/tecnoexerciser/_servizio_clienti.tsx:70
 msgid "Manuale quadro di controllo"
 msgstr "Manuale quadro di controllo"
 
@@ -798,21 +766,6 @@ msgstr "Materiali di qualità"
 #: src/pages/dressage/index.tsx:73
 msgid "Modulo dressage"
 msgstr "Modulo dressage"
-
-#: src/pages/giostre/ippowalker/istruzioni-montaggio.tsx:22
-#: src/pages/giostre/tecnoexerciser/istruzioni-montaggio.tsx:21
-msgid "Montate il fondo della giostra"
-msgstr "Montate il fondo della giostra"
-
-#: src/pages/giostre/ippowalker/istruzioni-montaggio.tsx:34
-#: src/pages/giostre/tecnoexerciser/istruzioni-montaggio.tsx:33
-msgid "Montate le braccia di separazione"
-msgstr "Montate le braccia di separazione"
-
-#: src/pages/giostre/ippowalker/istruzioni-montaggio.tsx:42
-#: src/pages/giostre/tecnoexerciser/istruzioni-montaggio.tsx:41
-msgid "Montate le porte di separazione"
-msgstr "Montate le porte di separazione"
 
 #: src/pages/giostre/tecnoexerciser/_gallery.tsx:18
 #: src/utils/constants.tsx:27
@@ -931,7 +884,7 @@ msgstr "Potenza motore 0.37 kw e cadenza regolabile fra 60 e 220 metri al minuto
 msgid "Potenza motore 0.75 kw e cadenza regolabile fra 60 e 220 metri al minuto"
 msgstr "Potenza motore 0.75 kw e cadenza regolabile fra 60 e 220 metri al minuto"
 
-#: src/pages/giostre/tecnoexerciser/_servizio_clienti.tsx:58
+#: src/pages/giostre/tecnoexerciser/_servizio_clienti.tsx:64
 msgid "Procedura di lubrificazione"
 msgstr "Procedura di lubrificazione"
 
@@ -1088,11 +1041,6 @@ msgstr "Sede operativa"
 msgid "Segnaletica"
 msgstr "Segnaletica"
 
-#: src/pages/giostre/ippowalker/istruzioni-montaggio.tsx:57
-#: src/pages/giostre/tecnoexerciser/istruzioni-montaggio.tsx:81
-msgid "Segui le semplici istruzioni per montare la nostra giostra"
-msgstr "Segui le semplici istruzioni per montare la nostra giostra"
-
 #: src/components/Footer/index.tsx:34
 msgid "Seguici"
 msgstr "Seguici"
@@ -1138,8 +1086,8 @@ msgid "Supporti di sicurezza da applicare ai nostri cucchiai per salvaguardare l
 msgstr "Supporti di sicurezza da applicare ai nostri cucchiai per salvaguardare l'integrità degli arti dei vostri cavalli in maniera efficace ed economica."
 
 #: src/components/Seo/index.tsx:61
-#: src/pages/giostre/ippowalker/_servizio_clienti.tsx:40
-#: src/pages/giostre/tecnoexerciser/_servizio_clienti.tsx:81
+#: src/pages/giostre/ippowalker/_servizio_clienti.tsx:46
+#: src/pages/giostre/tecnoexerciser/_servizio_clienti.tsx:87
 #: src/pages/recinti/index.tsx:95
 #: src/pages/tondini/index.tsx:221
 msgid "Supporto clienti"
@@ -1213,11 +1161,6 @@ msgstr "Tradizione e qualità"
 msgid "Training"
 msgstr "Training"
 
-#: src/pages/giostre/ippowalker/istruzioni-montaggio.tsx:10
-#: src/pages/giostre/tecnoexerciser/istruzioni-montaggio.tsx:9
-msgid "Trovate e segnate il centro di ciò che sarà la vostra giostra"
-msgstr "Trovate e segnate il centro di ciò che sarà la vostra giostra"
-
 #: src/pages/tondini/index.tsx:41
 msgid "Tutti i cavalieri sanno quanto sia spiacevole cavalcare in un ambiente polveroso.<0/>La polvere può contribuire a problemi respiratori per te e per i tuoi cavalli e può indicare che il fondo non fornisce un adeguato un supporto allo zoccolo del cavallo. <1/>Per ovviare a questo problema, è possibile installare il nostro sistema di irrigazione. Un rosone verrà posizionato al centro del tondino e ti permetterà di irrigarlo facilmente."
 msgstr "Tutti i cavalieri sanno quanto sia spiacevole cavalcare in un ambiente polveroso.<0/>La polvere può contribuire a problemi respiratori per te e per i tuoi cavalli e può indicare che il fondo non fornisce un adeguato un supporto allo zoccolo del cavallo. <1/>Per ovviare a questo problema, è possibile installare il nostro sistema di irrigazione. Un rosone verrà posizionato al centro del tondino e ti permetterà di irrigarlo facilmente."
@@ -1237,11 +1180,6 @@ msgstr "Una lunga storia"
 #: src/pages/giostre/index.tsx:43
 msgid "Usa il nostro semplice pannello di controllo per scegliere uno dei nostri \"training programs\" o seleziona manualmente la velocità desiderata"
 msgstr "Usa il nostro semplice pannello di controllo per scegliere uno dei nostri \"training programs\" o seleziona manualmente la velocità desiderata"
-
-#: src/pages/giostre/ippowalker/istruzioni-montaggio.tsx:14
-#: src/pages/giostre/tecnoexerciser/istruzioni-montaggio.tsx:13
-msgid "Usate la base della giostra per trovare e segnare i punti dove saranno piantate i supporti"
-msgstr "Usate la base della giostra per trovare e segnare i punti dove saranno piantate i supporti"
 
 #: src/components/Gdpr/index.tsx:54
 msgid "Utilizziamo i cookie per garantire il corretto funzionamento del sito. Per ulteriori informazioni sul nostro utilizzo dei cookie, consultare la nostra <0>politica sui cookie</0>."

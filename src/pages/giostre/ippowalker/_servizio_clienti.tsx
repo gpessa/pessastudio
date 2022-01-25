@@ -2,11 +2,13 @@ import { Trans } from "@lingui/macro"
 import { Grid } from "@mui/material"
 import { ContentTable, Section, TH } from "components"
 import { useLocalization } from "gatsby-theme-i18n"
+import { usePages } from "hooks"
 import React from "react"
 import { PRODUCT_GUTTER } from "theme"
 
 const IppowalkerServizioClienti = () => {
   const { locale } = useLocalization()
+  const { PAGES } = usePages()
 
   const DIMENSIONS = [
     { horses: 4, file: require("assets/products/giostre/ippowalker/pdf/giostra-ippowalker-4.pdf").default },
@@ -18,6 +20,10 @@ const IppowalkerServizioClienti = () => {
 
   const MANUALI = {
     it: [
+      {
+        label: PAGES.GIOSTRE_IPPOWALKER_ISTRUZIONI_MONTAGGIO.title,
+        link: PAGES.GIOSTRE_IPPOWALKER_ISTRUZIONI_MONTAGGIO.url,
+      },
       {
         label: <Trans>Manuale quadro di controllo</Trans>,
         file: require("assets//products/giostre/ippowalker/pdf/manuale-quadro-ippowalker-it.pdf").default,
