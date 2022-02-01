@@ -83,9 +83,13 @@ export const GIOSTRE_DOORS = (
   </Trans>
 )
 
-export const GIOSTRE_ENGINE_75 = <Trans>Potenza motore 0.75 kw e cadenza regolabile fra 60 e 220 metri al minuto</Trans>
+export const GIOSTRE_ENGINE_75 = (
+  <Trans>Potenza motore {0.75} kw e cadenza regolabile fra 60 e 220 metri al minuto</Trans>
+)
 
-export const GIOSTRE_ENGINE_37 = <Trans>Potenza motore 0.37 kw e cadenza regolabile fra 60 e 220 metri al minuto</Trans>
+export const GIOSTRE_ENGINE_37 = (
+  <Trans>Potenza motore {0.37} kw e cadenza regolabile fra 60 e 220 metri al minuto</Trans>
+)
 
 export const GIOSTRE_CONTROL_PANEL_TECNOEXERCIZE = (
   <Trans>Quadro di comando con programma manuale, periodico o automatico</Trans>
