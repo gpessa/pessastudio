@@ -2,11 +2,16 @@ import { t, Trans } from "@lingui/macro"
 import { Typography } from "@mui/material"
 import { Columns, ContentTable, Gallery, Section, TH } from "components"
 import { Picture } from "components/ModalGallery"
+import { useLocalization } from "gatsby-theme-i18n"
+import { usePages } from "hooks"
 import React from "react"
 import Accessori from "./_accessori"
 import Gamma from "./_gamma"
 
 const Recinti: React.FC = () => {
+  const { PAGES } = usePages()
+  const { locale } = useLocalization()
+
   const IMAGES: Picture[] = [
     {
       src: require("assets/products/recinti/gallery/recinti-image-7.jpg").default,
@@ -34,16 +39,18 @@ const Recinti: React.FC = () => {
     },
   ]
 
-  const FILES = [
-    {
-      label: <Trans>Come preparare il fondo</Trans>,
-      link: "/recinti/come-preparare-il-fondo",
-    },
-    {
-      label: <Trans>Istruzioni di montaggio</Trans>,
-      file: require("assets/recinti-istruzioni-montaggio.pdf").default,
-    },
-  ]
+  const FILES = {
+    it: [
+      {
+        label: PAGES.RECINTI_COME_PREPARARE_IL_FONDO.title,
+        link: PAGES.RECINTI_COME_PREPARARE_IL_FONDO.url,
+      },
+      {
+        label: <Trans>Istruzioni di montaggio</Trans>,
+        file: require("assets/recinti-istruzioni-montaggio.pdf").default,
+      },
+    ],
+  }[locale]
 
   return (
     <>
@@ -91,10 +98,12 @@ const Recinti: React.FC = () => {
 
       <Accessori />
 
-      <Section>
-        <TH variant="h2">{<Trans>Supporto clienti</Trans>}</TH>
-        <ContentTable title={<Trans>Manuale d'istruzioni</Trans>} rows={FILES} />
-      </Section>
+      {FILES && (
+        <Section>
+          <TH variant="h2">{<Trans>Supporto clienti</Trans>}</TH>
+          <ContentTable title={<Trans>Manuale d'istruzioni</Trans>} rows={FILES} />
+        </Section>
+      )}
     </>
   )
 }

@@ -26,10 +26,6 @@ msgstr "+ IVA"
 msgid "3.000 giostre installate"
 msgstr "3.000 giostre installate"
 
-#: src/pages/recinti/come-preparare-il-fondo.tsx:10
-msgid "<0><1>Preparare la superficie spianandola a \"schiena d'asino\" con il centro più alto dei bordi (2%) per far si che la pioggia defluisca. Mantenere i bordi dell'area alla stessa altezza del terreno circostante e riportare materiale nel centro dell'area per alzarlo.</1><2>Stendere sull'area una \"rete di separazione\", ben tesa e trattenuta lungo i bordi in una canaletta scavata nel terreno impedendo così che la terra si mescoli alla sabbia.</2><3>Distendere uniformemente sopra la rete uno strato di 7/8 centimetri di sabbia ( diametro 1 mm.)</3><4>Distribuire sopra alla sabbia 3 kg di \"straccetti di geotessuto\" per mt quadro di superficie in modo da mantenere il fondo stabile e morbido. Distribuire successivamente dopo un paio di ingressi a cavallo altri 2 kg.</4><5>Tutti i giorni passare con una \"erpice livellatrice\" per eliminare le impronte lasciate dagli zoccoli.</5></0>"
-msgstr "<0><1>Preparare la superficie spianandola a \"schiena d'asino\" con il centro più alto dei bordi (2%) per far si che la pioggia defluisca. Mantenere i bordi dell'area alla stessa altezza del terreno circostante e riportare materiale nel centro dell'area per alzarlo.</1><2>Stendere sull'area una \"rete di separazione\", ben tesa e trattenuta lungo i bordi in una canaletta scavata nel terreno impedendo così che la terra si mescoli alla sabbia.</2><3>Distendere uniformemente sopra la rete uno strato di 7/8 centimetri di sabbia ( diametro 1 mm.)</3><4>Distribuire sopra alla sabbia 3 kg di \"straccetti di geotessuto\" per mt quadro di superficie in modo da mantenere il fondo stabile e morbido. Distribuire successivamente dopo un paio di ingressi a cavallo altri 2 kg.</4><5>Tutti i giorni passare con una \"erpice livellatrice\" per eliminare le impronte lasciate dagli zoccoli.</5></0>"
-
 #: src/utils/constants.tsx:35
 msgid "<0>Accessori</0><1>(Ordinabili separatamente)</1>"
 msgstr "<0>Accessori</0><1>(Ordinabili separatamente)</1>"
@@ -86,7 +82,7 @@ msgstr "<0>La linea <1>olimpic</1>, presente sul mercato da oltre vent'anni, è 
 msgid "<0>Le giostre rappresentano il punto di forza della nostra azienda.</0><1>Sono state create dalla ricerca di <2>Luciano Pessa</2> con l'intenzione di realizzare un semplice ed affidabile strumento di lavoro che vi consentirà di allenare il vostro cavallo anche quando non avete la possibilità di montarlo.</1><3>La giostra vi permetterè, non solo di raffreddare il vostro cavallo con una passeggiata post allenamento, ma anche di creare una vera sessione di lavoro passando da un'andatura all'altra e cambiando di mano.</3>"
 msgstr "<0>Le giostre rappresentano il punto di forza della nostra azienda.</0><1>Sono state create dalla ricerca di <2>Luciano Pessa</2> con l'intenzione di realizzare un semplice ed affidabile strumento di lavoro che vi consentirà di allenare il vostro cavallo anche quando non avete la possibilità di montarlo.</1><3>La giostra vi permetterè, non solo di raffreddare il vostro cavallo con una passeggiata post allenamento, ma anche di creare una vera sessione di lavoro passando da un'andatura all'altra e cambiando di mano.</3>"
 
-#: src/pages/recinti/index.tsx:54
+#: src/pages/recinti/index.tsx:61
 msgid "<0>Le recinzioni <1>TECNOFENCE</1> sono realizzate con materiale particolarmente adatto a durare nel tempo anche in presenza delle più avverse condizioni meteorologiche.</0><2>A differenza del legno o di altri prodotti utilizzati per il medesimo scopo, gli animali non mordono la recinzione.</2><3><4>TECNOFENCE</4>, non presenta spigoli vivi e inoltre, essendo elastica, è in grado di assorbire gli urti senza rompersi evitando cosi di provocare infortuni a persone e animali.</3><5>Il materiale impiegato è lo stesso che viene utilizzato per la produzione di serramenti dove l’inalterabilità del colore e delle caratteristiche tecniche sono condizioni indispensabili per garantire un prodotto di qualità. L’inclusione di inibitori dei raggi ultravioletti consente anche di prevenire crepe e rotture e di resistere alla corrosione e allo sfogliamento mantenendo inalterate le caratteristiche originali anche con temperature variabili da +70 °C a -20 °C.</5><6>Principalmente prodotte nel colore bianco, possono essere fornite, a richiesta, anche nel colore verde.</6><7>In ogni recinzione inoltre si possono inserire uno o più cancelli scorrevoli in alluminio.</7><8>Tutte le nostre recinzioni sono personalizzate in base alle esigenze di metratura e di figura del cliente.</8>"
 msgstr "<0>Le recinzioni <1>TECNOFENCE</1> sono realizzate con materiale particolarmente adatto a durare nel tempo anche in presenza delle più avverse condizioni meteorologiche.</0><2>A differenza del legno o di altri prodotti utilizzati per il medesimo scopo, gli animali non mordono la recinzione.</2><3><4>TECNOFENCE</4>, non presenta spigoli vivi e inoltre, essendo elastica, è in grado di assorbire gli urti senza rompersi evitando cosi di provocare infortuni a persone e animali.</3><5>Il materiale impiegato è lo stesso che viene utilizzato per la produzione di serramenti dove l’inalterabilità del colore e delle caratteristiche tecniche sono condizioni indispensabili per garantire un prodotto di qualità. L’inclusione di inibitori dei raggi ultravioletti consente anche di prevenire crepe e rotture e di resistere alla corrosione e allo sfogliamento mantenendo inalterate le caratteristiche originali anche con temperature variabili da +70 °C a -20 °C.</5><6>Principalmente prodotte nel colore bianco, possono essere fornite, a richiesta, anche nel colore verde.</6><7>In ogni recinzione inoltre si possono inserire uno o più cancelli scorrevoli in alluminio.</7><8>Tutte le nostre recinzioni sono personalizzate in base alle esigenze di metratura e di figura del cliente.</8>"
 
@@ -238,8 +234,6 @@ msgstr "Colori"
 
 #: src/hooks/usePages/index.tsx:68
 #: src/hooks/usePages/index.tsx:73
-#: src/pages/recinti/come-preparare-il-fondo.tsx:8
-#: src/pages/recinti/index.tsx:39
 #: src/pages/tondini/index.tsx:155
 msgid "Come preparare il fondo"
 msgstr "Come preparare il fondo"
@@ -627,7 +621,7 @@ msgstr "Istituto"
 #: src/hooks/usePages/index.tsx:95
 #: src/pages/giostre/ippowalker/istruzioni-montaggio.tsx:54
 #: src/pages/giostre/tecnoexerciser/istruzioni-montaggio.tsx:81
-#: src/pages/recinti/index.tsx:43
+#: src/pages/recinti/index.tsx:49
 msgid "Istruzioni di montaggio"
 msgstr "Istruzioni di montaggio"
 
@@ -735,7 +729,7 @@ msgstr "Manuale collegamento elettrico"
 
 #: src/pages/giostre/ippowalker/_servizio_clienti.tsx:56
 #: src/pages/giostre/tecnoexerciser/_servizio_clienti.tsx:92
-#: src/pages/recinti/index.tsx:96
+#: src/pages/recinti/index.tsx:104
 msgid "Manuale d'istruzioni"
 msgstr "Manuale d'istruzioni"
 
@@ -927,7 +921,7 @@ msgid "Questi cookie di prima parte, sono proprietà di {0} (Gestore del sito) e
 msgstr "Questi cookie di prima parte, sono proprietà di {0} (Gestore del sito) e sono impiegati per raccogliere dati in forma anonima e aggregata. Questi cookie sono utilizzati per elaborare analisi statistiche sulle modalità di navigazione degli utenti sul nostro sito. {1} tratta i risultati di queste analisi in maniera anonima ed esclusivamente per finalità statistiche."
 
 #: src/hooks/usePages/index.tsx:18
-#: src/pages/recinti/index.tsx:53
+#: src/pages/recinti/index.tsx:60
 msgid "Recinti"
 msgstr "Recinti"
 
@@ -942,12 +936,12 @@ msgstr "Recinzione cavalli a {0} filagna"
 #: src/pages/recinti/_gamma.tsx:46
 #: src/pages/recinti/_gamma.tsx:59
 #: src/pages/recinti/_gamma.tsx:73
-#: src/pages/recinti/index.tsx:13
-#: src/pages/recinti/index.tsx:17
-#: src/pages/recinti/index.tsx:21
-#: src/pages/recinti/index.tsx:25
-#: src/pages/recinti/index.tsx:29
-#: src/pages/recinti/index.tsx:33
+#: src/pages/recinti/index.tsx:18
+#: src/pages/recinti/index.tsx:22
+#: src/pages/recinti/index.tsx:26
+#: src/pages/recinti/index.tsx:30
+#: src/pages/recinti/index.tsx:34
+#: src/pages/recinti/index.tsx:38
 msgid "Recinzione cavalli a {0} filagne"
 msgstr "Recinzione cavalli a {0} filagne"
 
@@ -1085,7 +1079,7 @@ msgstr "Supporti di sicurezza da applicare ai nostri cucchiai per salvaguardare 
 #: src/components/Seo/index.tsx:61
 #: src/pages/giostre/ippowalker/_servizio_clienti.tsx:46
 #: src/pages/giostre/tecnoexerciser/_servizio_clienti.tsx:87
-#: src/pages/recinti/index.tsx:95
+#: src/pages/recinti/index.tsx:103
 #: src/pages/tondini/index.tsx:221
 msgid "Supporto clienti"
 msgstr "Supporto clienti"
