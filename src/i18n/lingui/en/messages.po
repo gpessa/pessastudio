@@ -203,7 +203,7 @@ msgstr "COD. FISC. e Part: I.V.A. 04743610281 C.C.I.A.A. PD - R.E.A. 414822"
 
 #: src/pages/ostacoli/_candelieri-e-lame-forate.tsx:11
 msgid "Candeliere 1,7 mt. con piede in PVC"
-msgstr "Aluminum 1.7 mt. Schooling Standard "
+msgstr "Aluminum 1.7 mt. Schooling Standard"
 
 #: src/pages/ostacoli/_candelieri-e-lame-forate.tsx:56
 msgid "Candelieri e lame forate"
@@ -554,7 +554,7 @@ msgstr "Our products are designed to withstand the test of time and any weather 
 
 #: src/pages/tondini/index.tsx:175
 msgid "I nostri tondini sono considerati strutture precarie. Non avrete bisogno di nessuna concessione edilizia"
-msgstr "You will not need any building permit to install our lunge pen."
+msgstr "You will not need any building permit to install our lunge pen"
 
 #: src/pages/index.tsx:42
 msgid "I prodotti vengono venduti ed apprezzati sia in Italia che all'estero"
@@ -725,7 +725,7 @@ msgstr "Width"
 
 #: src/pages/giostre/index.tsx:34
 msgid "Le nostre giostre sono considerate strutture precarie. Non avrete bisogno di nessuna concessione edilizia"
-msgstr "You will not need any building permit to install our horse walkers."
+msgstr "You will not need any building permit to install our horse walkers"
 
 #: src/pages/recinti/_gamma.tsx:78
 msgid "Le recinzioni a quattro filagne sono utilizzate per delimitare paddock per stalloni, realizzare tondini per la doma e l'addestramento o per formare ovali per il salto in libertà"
