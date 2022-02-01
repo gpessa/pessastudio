@@ -44,11 +44,11 @@ msgstr "<0>Corridor composed of TECNOFENCE fence</0> <1>(inner fence height 1.40
 
 #: src/utils/constants.tsx:144
 msgid "<0>Corridoio {name} composto da pannelli laterali in compensato marino</0><1>(spessore {thickness} mm.)</1>"
-msgstr ""
+msgstr "<0>Corridor {name} with marine plywood side panels</0> <1>(thickness {thickness} mm.)</1>"
 
 #: src/utils/constants.tsx:43
 msgid "<0>E' possibile ordinare una giostra nei diametri:</0><1><2>12,0 mt. <3>(3 cavalli)</3></2><4>14,4 mt. <5>(4 cavalli)</5></4><6>16,0 mt. <7>(5 cavalli)</7></6><8>17,6 mt. <9>(6 cavalli)</9></8><10>19,2 mt. <11>(8 cavalli)</11></10></1>"
-msgstr ""
+msgstr "<0>It is possible to order the horse walker in the diameters:</0><1><2>12,0 mt. <3>(3 horses)</3></2><4>14,4 mt. <5>(4 horses)</5></4><6>16,0 mt. <7>(5 horses)</7></6><8>17,6 mt. <9>(6 horses)</9></8><10>19,2 mt. <11>(8 horses)</11></10></1>"
 
 #: src/pages/ostacoli/_cavalletti.tsx:43
 msgid "<0>I cavalletti Caprilli rappresentano uno strumento essenziale per l'allenamento del vostro animale, il passaggio sui cavalletti, rinforza la schiena del cavallo, scioglie la muscolatura e lo induce a flettere le articolazioni.</0><1>Lavati con idropulitrice riprendono i colori originari anche dopo 20 anni.</1>"
@@ -118,7 +118,7 @@ msgstr "<0>The set contains all the required modules to build a 20 x 60 mt. full
 
 #: src/utils/constants.tsx:66
 msgid "<0>È possibile ordinare una giostra nei diametri:</0><1><2>12,0 mt. <3>(4 cavalli)</3></2><4>14,2 mt. <5>(6 cavalli)</5></4></1>"
-msgstr ""
+msgstr "<0>It is possible to order the horse walker in the diameters:</0> <1><2>12.0 mt. <3>(4 horses)</3></2> <4>14.2 m. <5>(6 horses)</5></4></1>"
 
 #: src/pages/index.tsx:34
 msgid "Accessibili"
@@ -252,7 +252,7 @@ msgstr "Well done! You signed up"
 
 #: src/hooks/usePages/index.tsx:64
 msgid "Contatta Pessastudio per preventivi di Giostre, ostacoli, tondini e attrezzature per cavalli"
-msgstr ""
+msgstr "Contact Pessastudio for quotes on horse walkers, horse exerciser, jumpers, lunge & paddock pens, and equipment for horses"
 
 #: src/hooks/usePages/index.tsx:43
 msgid "Contattaci per un preventivo per ostacoli, recinti, tondini coperti, giostre, rettangoli da dressage e attrezzature per cavalli"
