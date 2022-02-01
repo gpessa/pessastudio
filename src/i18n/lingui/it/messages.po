@@ -348,7 +348,7 @@ msgstr "Cubi mini"
 
 #: src/pages/ostacoli/_cubi.tsx:44
 msgid "Cubi per campo ostacoli"
-msgstr "Cubi"
+msgstr "Cubi per campo ostacoli"
 
 #: src/pages/ostacoli/_cucchiai-segnaletica.tsx:60
 msgid "Cucchiai"
