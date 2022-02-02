@@ -491,7 +491,7 @@ msgid "Giostra Tecnoexerciser"
 msgstr "Tecnoexerciser horse exerciser"
 
 #: src/pages/giostre/tecnoexerciser/index.tsx:46
-msgid "Giostra Tecnoexerciser in movimento"
+msgid "Giostra TECNOEXERCISER in movimento"
 msgstr ""
 
 #: src/pages/giostre/ippowalker/_compare.tsx:29

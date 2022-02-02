@@ -43,7 +43,7 @@ const Tecnoexerciser: React.FC = () => (
       right={<TecnoexerciserGallery />}
     />
 
-    <Video src={"https://www.youtube-nocookie.com/embed/mkB5ZPK9swA"} title={t`Giostra Tecnoexerciser in movimento`} />
+    <Video src={"https://www.youtube-nocookie.com/embed/mkB5ZPK9swA"} title={t`Giostra TECNOEXERCISER in movimento`} />
 
     <TecnoexerciserCorridoi />
 
