@@ -469,13 +469,13 @@ msgstr "Giostra Ippowalker"
 msgid "Giostra Ippowalker in movimento"
 msgstr "Giostra Ippowalker in movimento"
 
-#: src/hooks/usePages/index.tsx:89
-msgid "Giostra Tecnoexerciser"
-msgstr "Giostra Tecnoexerciser"
-
 #: src/pages/giostre/tecnoexerciser/index.tsx:46
 msgid "Giostra TECNOEXERCISER in movimento"
 msgstr "Giostra TECNOEXERCISER in movimento"
+
+#: src/hooks/usePages/index.tsx:89
+msgid "Giostra Tecnoexerciser"
+msgstr "Giostra Tecnoexerciser"
 
 #: src/pages/giostre/ippowalker/_compare.tsx:29
 #: src/pages/giostre/tecnoexerciser/_compare.tsx:30

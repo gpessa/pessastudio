@@ -48,7 +48,7 @@ msgstr "<0>It is possible to order the horse walker in the diameters:</0><1><2>1
 
 #: src/pages/ostacoli/_cavalletti.tsx:43
 msgid "<0>I cavalletti Caprilli rappresentano uno strumento essenziale per l'allenamento del vostro animale, il passaggio sui cavalletti, rinforza la schiena del cavallo, scioglie la muscolatura e lo induce a flettere le articolazioni.</0><1>Lavati con idropulitrice riprendono i colori originari anche dopo 20 anni.</1>"
-msgstr ""
+msgstr "<0>Balance, awareness of feet, and a lengthened topline are qualities that lead to improved movement for any horse, whether a jumper, dressage competitor, or a trail horse.</0><1>Cavaletti may be used to develop a lengthened stride, better bending, coordination, balance and strength in the horse.</1>"
 
 #: src/pages/ostacoli/index.tsx:19
 msgid "<0>I nostri ostacoli sono progettati e costruiti per durare nel tempo non richiedono alcuna manutenzione e conservano, inalterata, la loro bellezza anche se lasciati nel campo per anni.</0><1>Se gli ostacoli per il professionista sono uno strumento di lavoro, per molti altri appassionati rappresentano la realizzazione di un sogno. Noi abbiamo deciso di rendere questi strumenti resistenti nel tempo per fare in modo che questo sogno duri.</1><2>Potrete scegliere le quantità e i colori nella nostra gamma di produzione e acquistare anche singoli pezzi di ricambio.</2>"
@@ -486,13 +486,13 @@ msgstr "Ippowalker horse exerciser"
 msgid "Giostra Ippowalker in movimento"
 msgstr "Ippowalker horse exerciser"
 
-#: src/hooks/usePages/index.tsx:89
-msgid "Giostra Tecnoexerciser"
-msgstr "Tecnoexerciser horse exerciser"
-
 #: src/pages/giostre/tecnoexerciser/index.tsx:46
 msgid "Giostra TECNOEXERCISER in movimento"
 msgstr ""
+
+#: src/hooks/usePages/index.tsx:89
+msgid "Giostra Tecnoexerciser"
+msgstr "Tecnoexerciser horse exerciser"
 
 #: src/pages/giostre/ippowalker/_compare.tsx:29
 #: src/pages/giostre/tecnoexerciser/_compare.tsx:30
