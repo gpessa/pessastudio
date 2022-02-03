@@ -32,7 +32,7 @@ msgstr "<0>Add ons</0> <1>(Can be ordered separately)</1>"
 
 #: src/pages/ostacoli/_cubi.tsx:46
 msgid "<0>Bianchi, rossi, blu o gialli, sono utilizzati nei maneggi sia come riempitivi sotto le barriere, sia per realizzare sequenze di piccoli salti.</0><1>Ottimi per indicare le traiettorie quando si predispongono esercizi per i principianti ma anche per preparare una successione di cavalletti quando si addestrano cavalli.</1><2>Sovrapponibili, costruiti con plastica resistente agli agenti atmosferici, nel caso di impatto accidentale garantiscono l'incolumità di cavalli e cavalieri.</2>"
-msgstr ""
+msgstr "<0>The Horsecube obstacle blocks are the ideal tool for building jumping obstacles or ground training.</0><1>Practice has taught us that obstacle blocks can be used in several ways.First, you can use these blocks with a beam to practice making small jumps with your horse.</1><2>These blocks are also a handy accessory to have during lunging and general groundwork.</2>"
 
 #: src/utils/constants.tsx:155
 msgid "<0>Corridoio composto da recinzione TECNOFENCE</0><1>(corridoio interno 1,40 mt., esterno 1,60 mt.)</1>"
@@ -1069,7 +1069,7 @@ msgstr "Safe"
 
 #: src/pages/ostacoli/_cavalletti.tsx:12
 msgid "Singolo cavalletto abbinabile a barriere diametro 90, 95, 100, 105 mm."
-msgstr ""
+msgstr "A single cavaletto that can be used with 90, 95, 100, 105 mm. diameters poles"
 
 #: src/pages/ostacoli/_cavalletti.tsx:18
 msgid "Singolo cavvalleto"
