@@ -616,11 +616,11 @@ msgstr "Ippowalker"
 #: src/pages/tondini/index.tsx:39
 #: src/utils/constants.tsx:30
 msgid "Irrigazione"
-msgstr "Watering System"
+msgstr "Track irrigation"
 
 #: src/utils/constants.tsx:101
 msgid "Irrigazione del percorso controllabile dal quadro di comando. Aiuta a tenere la polvere sotto controllo e un terreno sempre perfetto"
-msgstr ""
+msgstr "The track irrigation keeps the track in the exerciser moist so that no dust is blown up when the horses walk in the exerciser. Irrigation also ensures a more stable soil."
 
 #: src/components/Footer/Newsletter/index.tsx:58
 msgid "Iscriviti"
