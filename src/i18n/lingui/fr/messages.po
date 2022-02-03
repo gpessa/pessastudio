@@ -647,7 +647,7 @@ msgid "Kit comprensivo di 2 cavalletti e una barriera in PPO di colore bianco, d
 msgstr ""
 
 #: src/utils/constants.tsx:192
-msgid "L'aveolo è la soluzione ottimale per mantenere un fondo sempre perfetto in ogni condizione, permette di evitare buche o avvallamenti riducendo i costi di manutenzione."
+msgid "L'alveolo è la soluzione ottimale per mantenere un fondo sempre perfetto in ogni condizione, permette di evitare buche o avvallamenti riducendo i costi di manutenzione."
 msgstr "La dalle alvéolée est la solution optimale pour conserver un sol toujours parfait en toutes conditions. Elle permet d’éviter les nids-de-poule ou les affaissements, et réduit les coûts d’entretien."
 
 #: src/pages/cookie-policy.tsx:22
