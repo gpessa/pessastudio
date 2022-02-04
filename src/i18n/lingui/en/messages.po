@@ -159,7 +159,7 @@ msgstr "Other"
 #: src/utils/constants.tsx:116
 #: src/utils/constants.tsx:133
 msgid "Alveolo sulla pesta"
-msgstr "Soil stabilization system"
+msgstr "Ground grid soil stabilization system"
 
 #: src/pages/giostre/index.tsx:25
 msgid "Ampia gamma"
@@ -183,7 +183,7 @@ msgstr "Jump flags"
 
 #: src/pages/ostacoli/_barriere.tsx:10
 msgid "Barriera 3 mt."
-msgstr "3 mt. Poles"
+msgstr "3 mt. poles"
 
 #: src/pages/ostacoli/_barriere.tsx:27
 msgid "Barriere"
@@ -600,7 +600,7 @@ msgstr "Technological innovation and quality are the key features of our product
 
 #: src/pages/giostre/index.tsx:58
 msgid "Interno giostra con alveolo"
-msgstr ""
+msgstr "A horse exerciser with ground grid soil stabilization system"
 
 #: src/pages/tondini/index.tsx:101
 #: src/pages/tondini/index.tsx:105
@@ -655,6 +655,8 @@ msgstr ""
 #: src/utils/constants.tsx:192
 msgid "L'alveolo è la soluzione ottimale per mantenere un fondo sempre perfetto in ogni condizione, permette di evitare buche o avvallamenti riducendo i costi di manutenzione."
 msgstr ""
+"The ground grid soil stabilization system is the solution to avoid mud & rutting problems by increasing soil stability & improving drainage.\n"
+"The grid ensure the stabilization of the surface and therefore the safety of its users. "
 
 #: src/pages/cookie-policy.tsx:22
 msgid "L'utilizzo di cookie e di tecnologie affini da parte di {0}, con sede {completeAddress}, rientra nella politica di privacy del Gestore, in conformità a quanto previsto dal D. Lgs 196/03 Codice in materia di protezione dei dati personali (Codice Privacy) e dal Provvedimento dell’8 maggio 2014 “Individuazione delle modalità semplificate per l’informativa e l’acquisizione del consenso per l’uso dei cookie” del Garante Privacy Italiano. {1}, in qualità di Titolare del trattamento agisce conformemente a quanto previsto dalla normativa in materia."
