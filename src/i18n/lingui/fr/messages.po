@@ -146,15 +146,6 @@ msgstr "Acier galvanisé"
 msgid "Acconsento"
 msgstr "Accepter tous les cookies"
 
-#: src/pages/giostre/ippowalker/_accessori.tsx:13
-msgid "Alcuni accessori possono essere acquistati separatamente e permettono di migliorare ulteriormente le condizioni d'uso della vostra giostra."
-msgstr "Certains accessoires peuvent être achetés séparément. Ils permettent d’améliorer encore les conditions d’utilisation."
-
-#: src/pages/giostre/tecnoexerciser/_accessori.tsx:13
-#: src/pages/tondini/index.tsx:13
-msgid "Alcuni accessori possono essere acquistati separatamente e permettono di migliorare ulteriormente le condizioni d'uso."
-msgstr "Certains accessoires peuvent être achetés séparément. Ils permettent d’améliorer encore les conditions d’utilisation."
-
 #: src/components/Product/index.tsx:57
 msgid "Altezza"
 msgstr "Hauteur"
@@ -163,8 +154,8 @@ msgstr "Hauteur"
 msgid "Altro"
 msgstr ""
 
-#: src/pages/giostre/ippowalker/_accessori.tsx:35
-#: src/pages/giostre/tecnoexerciser/_accessori.tsx:38
+#: src/pages/giostre/ippowalker/_accessori.tsx:32
+#: src/pages/giostre/tecnoexerciser/_accessori.tsx:32
 #: src/utils/constants.tsx:116
 #: src/utils/constants.tsx:133
 msgid "Alveolo sulla pesta"
@@ -198,7 +189,7 @@ msgstr "Bars 3 mt."
 msgid "Barriere"
 msgstr "Bars d’ostacle"
 
-#: src/pages/tondini/index.tsx:182
+#: src/pages/tondini/index.tsx:176
 msgid "Bello e funzionale"
 msgstr "Beau et fonctionnel"
 
@@ -214,7 +205,7 @@ msgstr "Chandelier 1.7 mt. Pied en PVC"
 msgid "Candelieri e lame forate"
 msgstr "Chandeliers et lame en acier percée à visser"
 
-#: src/pages/tondini/index.tsx:203
+#: src/pages/tondini/index.tsx:197
 msgid "Caratteristiche"
 msgstr "Caractéristiques"
 
@@ -227,9 +218,9 @@ msgstr "Cavaletti caprilli"
 msgid "Che cos'è un cookie?"
 msgstr "Qu’est-ce qu’un cookie et à quoi sert-il ?"
 
-#: src/pages/giostre/ippowalker/_accessori.tsx:17
-#: src/pages/giostre/tecnoexerciser/_accessori.tsx:20
-#: src/pages/tondini/index.tsx:77
+#: src/pages/giostre/ippowalker/_accessori.tsx:14
+#: src/pages/giostre/tecnoexerciser/_accessori.tsx:14
+#: src/pages/tondini/index.tsx:71
 #: src/utils/constants.tsx:110
 #: src/utils/constants.tsx:127
 msgid "Chiusura a terra"
@@ -245,7 +236,7 @@ msgstr "Couleurs"
 
 #: src/hooks/usePages/index.tsx:68
 #: src/hooks/usePages/index.tsx:73
-#: src/pages/tondini/index.tsx:155
+#: src/pages/tondini/index.tsx:149
 msgid "Come preparare il fondo"
 msgstr "Preparation du fonds"
 
@@ -301,9 +292,9 @@ msgstr "Cookie policy"
 msgid "Coordinate bancarie"
 msgstr "Coordonnées bancaires"
 
-#: src/pages/tondini/index.tsx:113
-#: src/pages/tondini/index.tsx:117
-#: src/pages/tondini/index.tsx:121
+#: src/pages/tondini/index.tsx:107
+#: src/pages/tondini/index.tsx:111
+#: src/pages/tondini/index.tsx:115
 #: src/utils/constants.tsx:33
 msgid "Copertura"
 msgstr "Couverture"
@@ -386,7 +377,7 @@ msgstr "Ils disent de nous"
 
 #: src/pages/giostre/ippowalker/_servizio_clienti.tsx:49
 #: src/pages/giostre/tecnoexerciser/_servizio_clienti.tsx:90
-#: src/pages/tondini/index.tsx:224
+#: src/pages/tondini/index.tsx:218
 msgid "Dimensioni"
 msgstr "Dimensions"
 
@@ -542,7 +533,7 @@ msgstr "Les couloirs"
 msgid "I nostri prodotti sono pensati per resistere nel tempo, anche se soggetti a difficili condizioni climatiche"
 msgstr "Nos produits sont conçus pour résister au temps, y compris lorsqu’ils sont soumis à des conditions climatiques difficiles"
 
-#: src/pages/tondini/index.tsx:175
+#: src/pages/tondini/index.tsx:169
 msgid "I nostri tondini sono considerati strutture precarie. Non avrete bisogno di nessuna concessione edilizia"
 msgstr "Nos ronds de longe sont considérés comme des structures temporaires. Ils n’ont besoin d’aucun permis de construire"
 
@@ -566,7 +557,7 @@ msgstr "Cuillère standard utilisée au niveau international"
 msgid "Il nostro sito utilizza diverse tipologie di cookie di prima parte (predisposti e gestiti da {0}), cookie di terze parti (predisposti e gestiti da soggetti terzi in base alle proprie privacy policy e non sotto il controllo di {1}), ognuna delle quali ha una specifica funzione. Di seguito una tabella esplicativa."
 msgstr "Notre site utilise différents types de cookies internes (déposés et gérés par {0}), cookies tiers (déposés et gérés par des sociétés tierces en fonction de leurs politiques de confidentialité et non soumis au contrôle de {1}), chacun desquels détient une fonction spécifique. Veuillez trouver ci-après un tableau explicatif."
 
-#: src/pages/tondini/index.tsx:206
+#: src/pages/tondini/index.tsx:200
 msgid "Il tondino coperto è adatto a svolgere molteplici attività, rappresenta la migliore soluzione per addestrare puledri in libertà o lavorare cavalli alla corda. Inoltre facilita il controllo del cavallo durante le lezioni ai principianti ed è indispensabile per il longeur durante le riprese di volteggi."
 msgstr "Le rond de longe couvert se prête à de multiples activités, c’est la meilleure solution pour entraîner les poulains en liberté ou travailler les chevaux à la longe. Il facilite le contrôle du cheval pendant les leçons aux débutants, et il est indispensable pour le longeur dans les reprises de voltiges."
 
@@ -582,7 +573,7 @@ msgstr "Indestructibles"
 msgid "Ingresso"
 msgstr "Porte d’entrée"
 
-#: src/pages/tondini/index.tsx:125
+#: src/pages/tondini/index.tsx:119
 msgid "Ingresso di 2,05 mt. con catenaccio verticale"
 msgstr "Entrée de 2,05 m."
 
@@ -598,9 +589,9 @@ msgstr "Innovation technologique et qualité : ce sont les caractéristiques cl�
 msgid "Interno giostra con alveolo"
 msgstr ""
 
-#: src/pages/tondini/index.tsx:101
-#: src/pages/tondini/index.tsx:105
-#: src/pages/tondini/index.tsx:133
+#: src/pages/tondini/index.tsx:95
+#: src/pages/tondini/index.tsx:99
+#: src/pages/tondini/index.tsx:127
 msgid "Interno tondino coperto"
 msgstr "Intérieur rond de longe couvert"
 
@@ -609,7 +600,7 @@ msgstr "Intérieur rond de longe couvert"
 msgid "Ippowalker"
 msgstr "Ippowalker"
 
-#: src/pages/tondini/index.tsx:39
+#: src/pages/tondini/index.tsx:33
 #: src/utils/constants.tsx:30
 msgid "Irrigazione"
 msgstr "Arrosage"
@@ -679,7 +670,7 @@ msgstr "La clôture à trois lices est utilisée pour délimiter les paddocks de
 msgid "La recinzione ad una filagna viene utilizzata per delimitare campi da lavoro o gara poco adoperati e non è adatta per l'addestramento. Potete utilizzarla anche per delimitare un'area del vostro giardino di casa"
 msgstr "La clôture à une lice est utilisée pour délimiter les terrains de travail ou de compétition peu utilisés. Elle n’est donc pas adaptée pour le dressage. Vous pouvez également l’utiliser pour délimiter une partie de votre jardin, à la maison"
 
-#: src/pages/tondini/index.tsx:60
+#: src/pages/tondini/index.tsx:54
 msgid "La rete antivento della porta è un’ulteriore protezione che offriamo per rendere ancora di più il tuo tondino sicuro in caso di forte vento e per garantire una maggiore concentrazione del tuo cavallo."
 msgstr "Le filet brise-vent de la porte est une protection supplémentaire que nous offrons pour rendre votre rond de longe encore plus sûr en cas de vent violent, et pour garantir une plus grande concentration de votre cheval."
 
@@ -687,11 +678,11 @@ msgstr "Le filet brise-vent de la porte est une protection supplémentaire que n
 msgid "La rete antivento protegge l'interno della giostra da correnti d'aria e aiuta il cavallo a rimanere concentrato sul percorso rendendolo più tranquillo."
 msgstr "Le filet brise-vent protège l’intérieur du marcheur contre les courants d’air, aide le cheval à rester concentré sur la piste, et le calme."
 
-#: src/pages/tondini/index.tsx:22
+#: src/pages/tondini/index.tsx:16
 msgid "La rete antivento protegge l'interno della tondino da correnti d'aria consentendo il cavallo a rimanere concentrato durante l'allenamento."
 msgstr "Le filet brise-vent protège l’intérieur du rond de longe contre les courants d’air, ce qui permet au cheval de rester concentré pendant l’entraînement."
 
-#: src/pages/tondini/index.tsx:189
+#: src/pages/tondini/index.tsx:183
 msgid "La struttura è stata progettata per garantire un carico neve fino a 120 kg/mq e la velocità del vento fino a 110 km/h."
 msgstr "La structure a été conçue pour résister à une charge de neige jusqu’à 120 kg/m2 et à une vitesse du vent jusqu’à 110 km/h."
 
@@ -753,7 +744,7 @@ msgstr "Instructions de montage"
 msgid "Manuale quadro di controllo"
 msgstr "Instructions pour utiliser le programmeur"
 
-#: src/pages/tondini/index.tsx:227
+#: src/pages/tondini/index.tsx:221
 msgid "Manuali"
 msgstr ""
 
@@ -765,7 +756,7 @@ msgstr "Carte"
 msgid "Materiali"
 msgstr "Matériels"
 
-#: src/pages/tondini/index.tsx:163
+#: src/pages/tondini/index.tsx:157
 msgid "Materiali di qualità"
 msgstr "Matériau de qualité"
 
@@ -780,7 +771,7 @@ msgid "Motore"
 msgstr "Moteur électrique"
 
 #: src/pages/giostre/index.tsx:32
-#: src/pages/tondini/index.tsx:173
+#: src/pages/tondini/index.tsx:167
 msgid "Nessuna concessione edilizia"
 msgstr "Aucun permis de construire"
 
@@ -958,14 +949,14 @@ msgstr "Clôtures avec une lisse"
 msgid "Recinzione cavalli a {0} filagne"
 msgstr "Clôtures avec {0} lisse"
 
-#: src/pages/giostre/ippowalker/_accessori.tsx:49
-#: src/pages/giostre/tecnoexerciser/_accessori.tsx:52
-#: src/pages/tondini/index.tsx:20
+#: src/pages/giostre/ippowalker/_accessori.tsx:46
+#: src/pages/giostre/tecnoexerciser/_accessori.tsx:46
+#: src/pages/tondini/index.tsx:14
 #: src/utils/constants.tsx:139
 msgid "Rete antivento"
 msgstr "Filet brise-vent"
 
-#: src/pages/tondini/index.tsx:58
+#: src/pages/tondini/index.tsx:52
 msgid "Rete antivento ingresso"
 msgstr "Filet brise-vent entrée"
 
@@ -1005,7 +996,7 @@ msgstr "Télécharger un fichier"
 msgid "Scopri di piú"
 msgstr "En savoir plus"
 
-#: src/pages/tondini/index.tsx:204
+#: src/pages/tondini/index.tsx:198
 msgid "Scopri il nostro tondino Tecnohalle"
 msgstr "Découvrir notre rond de longe Tecnohalle"
 
@@ -1057,7 +1048,7 @@ msgstr "Nous suivre sur nos réseaux sociaux et découvrir les dernières nouvea
 msgid "Si è verificato un problema, riprova"
 msgstr ""
 
-#: src/pages/tondini/index.tsx:187
+#: src/pages/tondini/index.tsx:181
 msgid "Sicuro"
 msgstr "Sûr"
 
@@ -1093,7 +1084,7 @@ msgstr "Supports de sécurité à utiliser sur nos fiches pour préserver l’in
 #: src/pages/giostre/ippowalker/_servizio_clienti.tsx:46
 #: src/pages/giostre/tecnoexerciser/_servizio_clienti.tsx:87
 #: src/pages/recinti/index.tsx:103
-#: src/pages/tondini/index.tsx:221
+#: src/pages/tondini/index.tsx:215
 msgid "Supporto clienti"
 msgstr ""
 
@@ -1131,7 +1122,7 @@ msgid "Titolare del trattamento"
 msgstr "Responsable du traitement"
 
 #: src/hooks/usePages/index.tsx:24
-#: src/pages/tondini/index.tsx:199
+#: src/pages/tondini/index.tsx:193
 msgid "Tondini"
 msgstr "Ronds de longe"
 
@@ -1139,21 +1130,21 @@ msgstr "Ronds de longe"
 msgid "Tondini coperti per addestrare puledri in libertà"
 msgstr "Ronds de longe couverts pour le dressage des jeunes chevaux en liberté"
 
-#: src/pages/tondini/index.tsx:129
-#: src/pages/tondini/index.tsx:137
+#: src/pages/tondini/index.tsx:123
+#: src/pages/tondini/index.tsx:131
 msgid "Tondino"
 msgstr "Rond de longe"
 
-#: src/pages/tondini/index.tsx:109
+#: src/pages/tondini/index.tsx:103
 msgid "Tondino coperto per cavalli"
 msgstr "Ronde de longe"
 
-#: src/pages/tondini/index.tsx:93
-#: src/pages/tondini/index.tsx:97
+#: src/pages/tondini/index.tsx:87
+#: src/pages/tondini/index.tsx:91
 msgid "Tondino coperto {0} pannelli {1} mt."
 msgstr "Rond de longe couvert {0} panneaux {1} m."
 
-#: src/pages/tondini/index.tsx:149
+#: src/pages/tondini/index.tsx:143
 msgid "Tondino coperto {sides} pannelli {size} mt."
 msgstr "{sides} côtés {size} mt."
 
@@ -1165,7 +1156,7 @@ msgstr "Tradition et qualité"
 msgid "Training"
 msgstr "Training"
 
-#: src/pages/tondini/index.tsx:41
+#: src/pages/tondini/index.tsx:35
 msgid "Tutti i cavalieri sanno quanto sia spiacevole cavalcare in un ambiente polveroso.<0/>La polvere può contribuire a problemi respiratori per te e per i tuoi cavalli e può indicare che il fondo non fornisce un adeguato un supporto allo zoccolo del cavallo. <1/>Per ovviare a questo problema, è possibile installare il nostro sistema di irrigazione. Un rosone verrà posizionato al centro del tondino e ti permetterà di irrigarlo facilmente."
 msgstr "Le rond de longe peut disposer d’une rosace placée au centre, qui permettra d’arroser votre rond de longe."
 
@@ -1197,7 +1188,7 @@ msgstr ""
 msgid "WhatsApp"
 msgstr "WhatsApp"
 
-#: src/pages/tondini/index.tsx:165
+#: src/pages/tondini/index.tsx:159
 msgid "È costituito da pannelli laterali in compensato marino fissati a colonne in acciaio zincato. La copertura in telo spalmato in PVC, è disponibile in bianco, verde o crema"
 msgstr "Il est constitué de panneaux latéraux en contreplaqué marine, fixés à des colonnes en acier galvanisé. La couverture est une toile enduite en PVC, disponible en blanc, vert ou crème"
 
@@ -1213,6 +1204,6 @@ msgstr ""
 msgid "É possibile acquistare la giostra sprovvista di copertura ma se il vostro obbiettivo è quello di poter lavorare 365 giorni all'anno, Pessastudio offre la possibilità di dotare la giostra, con corridoio EASY, di una <0>copertura in PVC</0>."
 msgstr "Le marcheur peut être vendu sans couverture, mais si votre objectif est de pouvoir travailler 365 jours par an, Pessastudio vous offre la possibilité d’équiper le marcheur, avec le couloir EASY, d’une <0>couverture en PVC</0>."
 
-#: src/pages/tondini/index.tsx:183
+#: src/pages/tondini/index.tsx:177
 msgid "É una struttura semplice, leggera e piacevole alla vista"
 msgstr "C’est une structure simple, légère et esthétique"

@@ -1,5 +1,5 @@
-import { Trans } from "@lingui/macro"
-import { Box, Grid, GridSize, styled, Typography } from "@mui/material"
+import { t } from "@lingui/macro"
+import { Box, Grid, GridSize, styled, Divider } from "@mui/material"
 import { Image, Section, TH } from "components"
 import React from "react"
 import { BREAKPOINT, PRODUCT_GUTTER } from "theme"
@@ -27,9 +27,8 @@ type Props = {
 
 const Accessori: React.FC<Props> = ({ intro, accessories }) => (
   <Section>
-    <Box mb={10} textAlign="center">
-      <TH variant="h2">{<Trans>Accessori</Trans>}</TH>
-      <Typography mb={4}>{intro}</Typography>
+    <Box mb={10} textAlign="center" mb={4}>
+      <TH variant="h2">{t`Accessori`}</TH>
     </Box>
 
     {accessories.map(({ name, description, images }, index) => (

@@ -9,9 +9,6 @@ import {
 
 const IppowalkerAccessori = () => {
   const ACCESSORI = {
-    intro: (
-      <Trans id="Alcuni accessori possono essere acquistati separatamente e permettono di migliorare ulteriormente le condizioni d'uso della vostra giostra." />
-    ),
     accessories: [
       {
         name: <Trans>Chiusura a terra</Trans>,

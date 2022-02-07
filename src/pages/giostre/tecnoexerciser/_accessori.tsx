@@ -9,12 +9,6 @@ import {
 
 const TecnoexerciserAccessori = () => {
   const ACCESSORI = {
-    intro: (
-      <Trans>
-        Alcuni accessori possono essere acquistati separatamente e permettono di migliorare ulteriormente le condizioni
-        d'uso.
-      </Trans>
-    ),
     accessories: [
       {
         name: <Trans>Chiusura a terra</Trans>,

@@ -137,15 +137,6 @@ msgstr "Galvanized steel"
 msgid "Acconsento"
 msgstr "Accept"
 
-#: src/pages/giostre/ippowalker/_accessori.tsx:13
-msgid "Alcuni accessori possono essere acquistati separatamente e permettono di migliorare ulteriormente le condizioni d'uso della vostra giostra."
-msgstr ""
-
-#: src/pages/giostre/tecnoexerciser/_accessori.tsx:13
-#: src/pages/tondini/index.tsx:13
-msgid "Alcuni accessori possono essere acquistati separatamente e permettono di migliorare ulteriormente le condizioni d'uso."
-msgstr ""
-
 #: src/components/Product/index.tsx:57
 msgid "Altezza"
 msgstr "Height"
@@ -154,8 +145,8 @@ msgstr "Height"
 msgid "Altro"
 msgstr "Other"
 
-#: src/pages/giostre/ippowalker/_accessori.tsx:35
-#: src/pages/giostre/tecnoexerciser/_accessori.tsx:38
+#: src/pages/giostre/ippowalker/_accessori.tsx:32
+#: src/pages/giostre/tecnoexerciser/_accessori.tsx:32
 #: src/utils/constants.tsx:116
 #: src/utils/constants.tsx:133
 msgid "Alveolo sulla pesta"
@@ -189,7 +180,7 @@ msgstr "3 mt. poles"
 msgid "Barriere"
 msgstr "Poles"
 
-#: src/pages/tondini/index.tsx:182
+#: src/pages/tondini/index.tsx:176
 msgid "Bello e funzionale"
 msgstr "Well designed and functional"
 
@@ -205,7 +196,7 @@ msgstr "Aluminum 1.7 mt. Schooling Standard"
 msgid "Candelieri e lame forate"
 msgstr "Jump standards and metal keyhole tracks"
 
-#: src/pages/tondini/index.tsx:203
+#: src/pages/tondini/index.tsx:197
 msgid "Caratteristiche"
 msgstr "Characteristic"
 
@@ -218,9 +209,9 @@ msgstr "Cavaletti Caprilli"
 msgid "Che cos'è un cookie?"
 msgstr "What is a cookie?"
 
-#: src/pages/giostre/ippowalker/_accessori.tsx:17
-#: src/pages/giostre/tecnoexerciser/_accessori.tsx:20
-#: src/pages/tondini/index.tsx:77
+#: src/pages/giostre/ippowalker/_accessori.tsx:14
+#: src/pages/giostre/tecnoexerciser/_accessori.tsx:14
+#: src/pages/tondini/index.tsx:71
 #: src/utils/constants.tsx:110
 #: src/utils/constants.tsx:127
 msgid "Chiusura a terra"
@@ -236,7 +227,7 @@ msgstr "Colors"
 
 #: src/hooks/usePages/index.tsx:68
 #: src/hooks/usePages/index.tsx:73
-#: src/pages/tondini/index.tsx:155
+#: src/pages/tondini/index.tsx:149
 msgid "Come preparare il fondo"
 msgstr "How to prepare the ground"
 
@@ -292,9 +283,9 @@ msgstr "Cookie policy"
 msgid "Coordinate bancarie"
 msgstr "Bank account details"
 
-#: src/pages/tondini/index.tsx:113
-#: src/pages/tondini/index.tsx:117
-#: src/pages/tondini/index.tsx:121
+#: src/pages/tondini/index.tsx:107
+#: src/pages/tondini/index.tsx:111
+#: src/pages/tondini/index.tsx:115
 #: src/utils/constants.tsx:33
 msgid "Copertura"
 msgstr "The roof"
@@ -377,7 +368,7 @@ msgstr "About us"
 
 #: src/pages/giostre/ippowalker/_servizio_clienti.tsx:49
 #: src/pages/giostre/tecnoexerciser/_servizio_clienti.tsx:90
-#: src/pages/tondini/index.tsx:224
+#: src/pages/tondini/index.tsx:218
 msgid "Dimensioni"
 msgstr "Dimensions"
 
@@ -546,7 +537,7 @@ msgstr ""
 msgid "I nostri prodotti sono pensati per resistere nel tempo, anche se soggetti a difficili condizioni climatiche"
 msgstr "Our products are designed to withstand the test of time and any weather condition"
 
-#: src/pages/tondini/index.tsx:175
+#: src/pages/tondini/index.tsx:169
 msgid "I nostri tondini sono considerati strutture precarie. Non avrete bisogno di nessuna concessione edilizia"
 msgstr "You will not need any building permit to install our lunge pen"
 
@@ -570,7 +561,7 @@ msgstr "High quality, standard plastic pinless jump cup"
 msgid "Il nostro sito utilizza diverse tipologie di cookie di prima parte (predisposti e gestiti da {0}), cookie di terze parti (predisposti e gestiti da soggetti terzi in base alle proprie privacy policy e non sotto il controllo di {1}), ognuna delle quali ha una specifica funzione. Di seguito una tabella esplicativa."
 msgstr "Our website uses various types of first-party cookies (provided and managed by {0}), and third-party cookies (provided and managed by third parties based on their own individual privacy policies and not under the control of {1}), each of which has a specific function. The table below explains what they are for."
 
-#: src/pages/tondini/index.tsx:206
+#: src/pages/tondini/index.tsx:200
 msgid "Il tondino coperto è adatto a svolgere molteplici attività, rappresenta la migliore soluzione per addestrare puledri in libertà o lavorare cavalli alla corda. Inoltre facilita il controllo del cavallo durante le lezioni ai principianti ed è indispensabile per il longeur durante le riprese di volteggi."
 msgstr ""
 
@@ -586,7 +577,7 @@ msgstr "Indestructible"
 msgid "Ingresso"
 msgstr "Entrance"
 
-#: src/pages/tondini/index.tsx:125
+#: src/pages/tondini/index.tsx:119
 msgid "Ingresso di 2,05 mt. con catenaccio verticale"
 msgstr "Entrance"
 
@@ -602,9 +593,9 @@ msgstr "Technological innovation and quality are the key features of our product
 msgid "Interno giostra con alveolo"
 msgstr "A horse exerciser with ground grid soil stabilization system"
 
-#: src/pages/tondini/index.tsx:101
-#: src/pages/tondini/index.tsx:105
-#: src/pages/tondini/index.tsx:133
+#: src/pages/tondini/index.tsx:95
+#: src/pages/tondini/index.tsx:99
+#: src/pages/tondini/index.tsx:127
 msgid "Interno tondino coperto"
 msgstr "Internal pen"
 
@@ -613,7 +604,7 @@ msgstr "Internal pen"
 msgid "Ippowalker"
 msgstr "Ippowalker"
 
-#: src/pages/tondini/index.tsx:39
+#: src/pages/tondini/index.tsx:33
 #: src/utils/constants.tsx:30
 msgid "Irrigazione"
 msgstr "Track irrigation"
@@ -687,7 +678,7 @@ msgstr ""
 msgid "La recinzione ad una filagna viene utilizzata per delimitare campi da lavoro o gara poco adoperati e non è adatta per l'addestramento. Potete utilizzarla anche per delimitare un'area del vostro giardino di casa"
 msgstr ""
 
-#: src/pages/tondini/index.tsx:60
+#: src/pages/tondini/index.tsx:54
 msgid "La rete antivento della porta è un’ulteriore protezione che offriamo per rendere ancora di più il tuo tondino sicuro in caso di forte vento e per garantire una maggiore concentrazione del tuo cavallo."
 msgstr "The windproof net protects the inside of the pen from drafts allowing the horse to stay focused during training."
 
@@ -695,11 +686,11 @@ msgstr "The windproof net protects the inside of the pen from drafts allowing th
 msgid "La rete antivento protegge l'interno della giostra da correnti d'aria e aiuta il cavallo a rimanere concentrato sul percorso rendendolo più tranquillo."
 msgstr "We all know how much discomfort the wind can cause to our horses while they are training. A windbreak is a great solution for that but there are several advantages extra to be obtained from assembling a windbreak around your horsewalker."
 
-#: src/pages/tondini/index.tsx:22
+#: src/pages/tondini/index.tsx:16
 msgid "La rete antivento protegge l'interno della tondino da correnti d'aria consentendo il cavallo a rimanere concentrato durante l'allenamento."
 msgstr ""
 
-#: src/pages/tondini/index.tsx:189
+#: src/pages/tondini/index.tsx:183
 msgid "La struttura è stata progettata per garantire un carico neve fino a 120 kg/mq e la velocità del vento fino a 110 km/h."
 msgstr "The structure has been designed to withstand a snow load of up to 120 kg/m² and wind speeds of up to 110 km/h."
 
@@ -761,7 +752,7 @@ msgstr "Handbook"
 msgid "Manuale quadro di controllo"
 msgstr "Control panel manual"
 
-#: src/pages/tondini/index.tsx:227
+#: src/pages/tondini/index.tsx:221
 msgid "Manuali"
 msgstr "Handbook"
 
@@ -773,7 +764,7 @@ msgstr "Map"
 msgid "Materiali"
 msgstr "Materials"
 
-#: src/pages/tondini/index.tsx:163
+#: src/pages/tondini/index.tsx:157
 msgid "Materiali di qualità"
 msgstr "Quality materials"
 
@@ -788,7 +779,7 @@ msgid "Motore"
 msgstr "Engine"
 
 #: src/pages/giostre/index.tsx:32
-#: src/pages/tondini/index.tsx:173
+#: src/pages/tondini/index.tsx:167
 msgid "Nessuna concessione edilizia"
 msgstr "No building permit needed"
 
@@ -966,14 +957,14 @@ msgstr "1-rail horse fence"
 msgid "Recinzione cavalli a {0} filagne"
 msgstr "{0}-rail horse fence"
 
-#: src/pages/giostre/ippowalker/_accessori.tsx:49
-#: src/pages/giostre/tecnoexerciser/_accessori.tsx:52
-#: src/pages/tondini/index.tsx:20
+#: src/pages/giostre/ippowalker/_accessori.tsx:46
+#: src/pages/giostre/tecnoexerciser/_accessori.tsx:46
+#: src/pages/tondini/index.tsx:14
 #: src/utils/constants.tsx:139
 msgid "Rete antivento"
 msgstr "Windscreen"
 
-#: src/pages/tondini/index.tsx:58
+#: src/pages/tondini/index.tsx:52
 msgid "Rete antivento ingresso"
 msgstr "Entrance windscreen"
 
@@ -1013,7 +1004,7 @@ msgstr "Download"
 msgid "Scopri di piú"
 msgstr "Discover more"
 
-#: src/pages/tondini/index.tsx:204
+#: src/pages/tondini/index.tsx:198
 msgid "Scopri il nostro tondino Tecnohalle"
 msgstr ""
 
@@ -1065,7 +1056,7 @@ msgstr "Follow us on our social media"
 msgid "Si è verificato un problema, riprova"
 msgstr "There was a problem, please try again"
 
-#: src/pages/tondini/index.tsx:187
+#: src/pages/tondini/index.tsx:181
 msgid "Sicuro"
 msgstr "Safe"
 
@@ -1101,7 +1092,7 @@ msgstr "The breakaway safety cups will literally break away from the safety adap
 #: src/pages/giostre/ippowalker/_servizio_clienti.tsx:46
 #: src/pages/giostre/tecnoexerciser/_servizio_clienti.tsx:87
 #: src/pages/recinti/index.tsx:103
-#: src/pages/tondini/index.tsx:221
+#: src/pages/tondini/index.tsx:215
 msgid "Supporto clienti"
 msgstr "Customer service"
 
@@ -1139,7 +1130,7 @@ msgid "Titolare del trattamento"
 msgstr "Data Controller"
 
 #: src/hooks/usePages/index.tsx:24
-#: src/pages/tondini/index.tsx:199
+#: src/pages/tondini/index.tsx:193
 msgid "Tondini"
 msgstr "Lunge & Paddock Pens"
 
@@ -1147,21 +1138,21 @@ msgstr "Lunge & Paddock Pens"
 msgid "Tondini coperti per addestrare puledri in libertà"
 msgstr ""
 
-#: src/pages/tondini/index.tsx:129
-#: src/pages/tondini/index.tsx:137
+#: src/pages/tondini/index.tsx:123
+#: src/pages/tondini/index.tsx:131
 msgid "Tondino"
 msgstr "Lunge pen"
 
-#: src/pages/tondini/index.tsx:109
+#: src/pages/tondini/index.tsx:103
 msgid "Tondino coperto per cavalli"
 msgstr "Fully covered lunge pen"
 
-#: src/pages/tondini/index.tsx:93
-#: src/pages/tondini/index.tsx:97
+#: src/pages/tondini/index.tsx:87
+#: src/pages/tondini/index.tsx:91
 msgid "Tondino coperto {0} pannelli {1} mt."
 msgstr "Horse pen {0} panels, {1} mt."
 
-#: src/pages/tondini/index.tsx:149
+#: src/pages/tondini/index.tsx:143
 msgid "Tondino coperto {sides} pannelli {size} mt."
 msgstr "Lunge pen, {sides} panels, {size} mt."
 
@@ -1173,7 +1164,7 @@ msgstr "Tradition and quality"
 msgid "Training"
 msgstr "Training"
 
-#: src/pages/tondini/index.tsx:41
+#: src/pages/tondini/index.tsx:35
 msgid "Tutti i cavalieri sanno quanto sia spiacevole cavalcare in un ambiente polveroso.<0/>La polvere può contribuire a problemi respiratori per te e per i tuoi cavalli e può indicare che il fondo non fornisce un adeguato un supporto allo zoccolo del cavallo. <1/>Per ovviare a questo problema, è possibile installare il nostro sistema di irrigazione. Un rosone verrà posizionato al centro del tondino e ti permetterà di irrigarlo facilmente."
 msgstr "All riders know dusty arenas are unpleasant. <0/>Dust can contribute to respiratory problems for you and your horses and can indicate that the footing is not providing proper support to the horses using it. <0/>That’s where arena watering comes in."
 
@@ -1205,7 +1196,7 @@ msgstr "View"
 msgid "WhatsApp"
 msgstr "WhatsApp"
 
-#: src/pages/tondini/index.tsx:165
+#: src/pages/tondini/index.tsx:159
 msgid "È costituito da pannelli laterali in compensato marino fissati a colonne in acciaio zincato. La copertura in telo spalmato in PVC, è disponibile in bianco, verde o crema"
 msgstr ""
 
@@ -1221,6 +1212,6 @@ msgstr ""
 msgid "É possibile acquistare la giostra sprovvista di copertura ma se il vostro obbiettivo è quello di poter lavorare 365 giorni all'anno, Pessastudio offre la possibilità di dotare la giostra, con corridoio EASY, di una <0>copertura in PVC</0>."
 msgstr "It is possible to buy the horse exerciser without a cover but if your goal is to be able to work 365 days a year, then Pessastudio offers the possibility of equipping EASY corridor with a <0> PVC cover </0>."
 
-#: src/pages/tondini/index.tsx:183
+#: src/pages/tondini/index.tsx:177
 msgid "É una struttura semplice, leggera e piacevole alla vista"
 msgstr "It is a simple, light and pleasing to the eye"
