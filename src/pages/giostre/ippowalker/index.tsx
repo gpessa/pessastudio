@@ -22,8 +22,8 @@ const Ippowalker: React.FC = () => {
             <TH variant="h1">{<Trans>Ippowalker</Trans>}</TH>
             <Trans>
               <Typography paragraph>
-                Ippowalker è una giostra di recente realizzazione, essa nasce dal sogno di poter fornire uno strumento
-                di allenamento professionale anche a coloro che ne fanno un uso sporadico.
+                Ippowalker è una giostra di recente realizzazione, nasce dal sogno di poter fornire uno strumento di
+                allenamento professionale anche a coloro che ne fanno un uso sporadico.
               </Typography>
               <Typography paragraph>
                 La giostra è disponibile in due diametri 12 mt. (4 cavalli) e 14.2 mt. (6 cavalli).
