@@ -522,7 +522,7 @@ msgstr "Homepage"
 
 #: src/pages/ostacoli/_candelieri-e-lame-forate.tsx:13
 msgid "I candelieri sono costruiti con un montante di alluminio verniciato di colore bianco e sono muniti di 4 piedi rivestiti con puntali di plastica che garantiscono, in caso di ribaltamento, l’incolumità vostra e dei vostri cavalli."
-msgstr ""
+msgstr "Upgrade to the best with our premium aluminum jumps. These 1.7 mt. tall schooling standards are made from powder-coated aluminum and come with a set of pinless jump cup tracks.  And, in addition to being light-weight and easy to move, everything is weather-proof and require almost no maintenance."
 
 #: src/pages/giostre/ippowalker/_corridoi.tsx:29
 #: src/pages/giostre/tecnoexerciser/_corridoi.tsx:29
