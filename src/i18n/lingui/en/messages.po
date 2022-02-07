@@ -527,7 +527,7 @@ msgstr ""
 #: src/pages/giostre/ippowalker/_corridoi.tsx:29
 #: src/pages/giostre/tecnoexerciser/_corridoi.tsx:29
 msgid "I corridoi"
-msgstr ""
+msgstr "The corridors"
 
 #: src/pages/index.tsx:48
 msgid "I nostri prodotti sono pensati per resistere nel tempo, anche se soggetti a difficili condizioni climatiche"
@@ -966,7 +966,7 @@ msgstr "Entrance windscreen"
 
 #: src/hooks/usePages/index.tsx:37
 msgid "Rettangoli / Campi professionali da dressage per tutte le esigenze"
-msgstr ""
+msgstr "Portable and easy to assemble dressage arenas. Here to help you put the finishing touches on your home or professional arena with markers, horse jumps and more"
 
 #: src/pages/dressage/index.tsx:57
 #: src/pages/dressage/index.tsx:88
