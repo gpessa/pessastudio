@@ -88,7 +88,7 @@ msgstr ""
 
 #: src/pages/ostacoli/_fosso.tsx:23
 msgid "<0>Ottimo per insegnare ai vostri cavalli/puledri a saltarlo.</0><1>Il fosso ha il fondo in PVC di colore azzurro con un bordo saldato alto 6 cm.</1>"
-msgstr ""
+msgstr "<0>A great way to desensitize your horse before you encounter the water jump in competition!</0><1>The horse water trays are manufactured from the best PVC material with properties to withstand years of use and all weathers.</1>"
 
 #: src/utils/constants.tsx:80
 msgid "<0>Porte di separazione.</0><1>(Elettrificatione 200-240 Volt monofase)</1>"
