@@ -110,7 +110,7 @@ const Dressage: React.FC = () => {
           <Trans>
             <Typography>
               Il rettangolo della linea <strong>training</strong> è rivolto a quei maneggi in cui lo spazio a
-              disposizione è limitato e il rettangolo viene installato provvisoriamente e velocemente.
+              disposizione è limitato e il rettangolo viene installato provvisoriamente.
             </Typography>
             <Typography>
               Facile da montare, è costituito da elementi modulari di 2 mt. in materiale plastico, non richiede alcuna
