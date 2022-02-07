@@ -346,7 +346,7 @@ msgstr "Cubes mini"
 msgid "Cubi per campo ostacoli"
 msgstr "Cubes"
 
-#: src/pages/ostacoli/_cucchiai-segnaletica.tsx:60
+#: src/pages/ostacoli/_cucchiai-segnaletica.tsx:58
 msgid "Cucchiai"
 msgstr "Cuillère"
 
@@ -782,10 +782,6 @@ msgstr "Numéro de champ de barrière Light"
 #: src/pages/ostacoli/_segnaletica.tsx:17
 msgid "Numero per campo ostacoli professional"
 msgstr "Numéro de champ de barrière Professionnel"
-
-#: src/pages/ostacoli/_cucchiai-segnaletica.tsx:63
-msgid "Numerosi sono stati i test a cui abbiamo sottoposto i cucchiai per garantirne robustezza e durata nel tempo."
-msgstr "Les cuillère ont été soumises à de nombreux essais afin de garantir leur solidité et leur longue durée de vie."
 
 #: src/pages/dressage/index.tsx:132
 msgid "Olimpic"

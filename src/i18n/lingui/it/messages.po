@@ -335,7 +335,7 @@ msgstr "Cubi mini"
 msgid "Cubi per campo ostacoli"
 msgstr "Cubi per campo ostacoli"
 
-#: src/pages/ostacoli/_cucchiai-segnaletica.tsx:60
+#: src/pages/ostacoli/_cucchiai-segnaletica.tsx:58
 msgid "Cucchiai"
 msgstr "Cucchiai"
 
@@ -769,10 +769,6 @@ msgstr "Numero per campo ostacoli light"
 #: src/pages/ostacoli/_segnaletica.tsx:17
 msgid "Numero per campo ostacoli professional"
 msgstr "Numero per campo ostacoli professional"
-
-#: src/pages/ostacoli/_cucchiai-segnaletica.tsx:63
-msgid "Numerosi sono stati i test a cui abbiamo sottoposto i cucchiai per garantirne robustezza e durata nel tempo."
-msgstr "Numerosi sono stati i test a cui abbiamo sottoposto i cucchiai per garantirne robustezza e durata nel tempo."
 
 #: src/pages/dressage/index.tsx:132
 msgid "Olimpic"

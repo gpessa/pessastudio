@@ -55,18 +55,7 @@ const CucchiaiSegnaletica: React.FC = () => {
 
   return (
     <>
-      <Title
-        sx={{ mb: PRODUCT_GUTTER }}
-        title={<Trans>Cucchiai</Trans>}
-        text={
-          <Typography>
-            <Trans>
-              Numerosi sono stati i test a cui abbiamo sottoposto i cucchiai per garantirne robustezza e durata nel
-              tempo.
-            </Trans>
-          </Typography>
-        }
-      />
+      <Title sx={{ mb: PRODUCT_GUTTER }} title={<Trans>Cucchiai</Trans>} />
 
       <Grid container spacing={PRODUCT_GUTTER}>
         {PRODUCTS.map((product, index) => (

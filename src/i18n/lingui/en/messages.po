@@ -337,7 +337,7 @@ msgstr "Cavaletti block mini"
 msgid "Cubi per campo ostacoli"
 msgstr "Cavaletti block"
 
-#: src/pages/ostacoli/_cucchiai-segnaletica.tsx:60
+#: src/pages/ostacoli/_cucchiai-segnaletica.tsx:58
 msgid "Cucchiai"
 msgstr "Horse Jump Cups"
 
@@ -790,10 +790,6 @@ msgstr "Number cone"
 #: src/pages/ostacoli/_segnaletica.tsx:17
 msgid "Numero per campo ostacoli professional"
 msgstr "Number cone Professional"
-
-#: src/pages/ostacoli/_cucchiai-segnaletica.tsx:63
-msgid "Numerosi sono stati i test a cui abbiamo sottoposto i cucchiai per garantirne robustezza e durata nel tempo."
-msgstr ""
 
 #: src/pages/dressage/index.tsx:132
 msgid "Olimpic"
