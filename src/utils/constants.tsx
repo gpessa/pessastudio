@@ -216,8 +216,8 @@ export const GIOSTRA_DESCRIZIONE_RECINZIONE_TECONOFENCE = (
       L'altezza della recinzione esterna è di 1,60 mt., a differenza del corridoio interno alto 1,40 mt.
     </Typography>
     <Typography textAlign="justify">
-      L'innovativo materiale (PPO) che non richiede manutenzione ti consentirà di abbattere i costi di manutenzione che
-      affliggono le classiche recinzioni in legno.
+      L'innovativo materiale utilizzato per la sua costruzione (PPO) è durevole nel tempoe e ti consentirà di abbattere
+      i costi di manutenzione che affliggono le classiche recinzioni in legno.
     </Typography>
     <Typography textAlign="justify" paragraph>
       Uno dei vantaggi è inoltre quello di poter installare la giostra in piena autonomia.
