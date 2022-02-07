@@ -182,10 +182,7 @@ export const GIOSTRE_COPERTURA_NOTE = (
 export const GIOSTRE_COPERTURA_PVC = <Trans>Copertura in PVC</Trans>
 
 export const GIOSTRA_TONDINO_CHIUSURA_A_TERRA_DESCRIZIONE = (
-  <Trans>
-    Sono la soluzione ideale per impedire alla sabbia di uscire dal percorso consentendo di ridurre il materiale
-    disperso.
-  </Trans>
+  <Trans>Impediscono alla sabbia di uscire dal tondino riducendo il materiale disperso.</Trans>
 )
 
 export const GIOSTRA_ALVEOLO_DESCRIZIONE = (

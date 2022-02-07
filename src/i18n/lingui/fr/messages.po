@@ -1057,7 +1057,7 @@ msgid "Socials"
 msgstr "Réseaux sociaux"
 
 #: src/utils/constants.tsx:185
-msgid "Sono la soluzione ideale per impedire alla sabbia di uscire dal percorso consentendo di ridurre il materiale disperso."
+msgid "Impediscono alla sabbia di uscire dal tondino riducendo il materiale disperso."
 msgstr "C’est la solution idéale pour empêcher le sable de sortir de la piste, et permettre de réduire le matériau dispersé."
 
 #: src/components/Product/index.tsx:59

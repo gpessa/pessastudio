@@ -1044,8 +1044,8 @@ msgid "Socials"
 msgstr "Socials"
 
 #: src/utils/constants.tsx:185
-msgid "Sono la soluzione ideale per impedire alla sabbia di uscire dal percorso consentendo di ridurre il materiale disperso."
-msgstr "Sono la soluzione ideale per impedire alla sabbia di uscire dal percorso consentendo di ridurre il materiale disperso."
+msgid "Impediscono alla sabbia di uscire dal tondino riducendo il materiale disperso."
+msgstr "Impediscono alla sabbia di uscire dal tondino riducendo il materiale disperso."
 
 #: src/components/Product/index.tsx:59
 msgid "Spessore"
