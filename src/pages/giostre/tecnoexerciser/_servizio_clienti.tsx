@@ -76,7 +76,7 @@ const TecnoexerciserServizioClienti = () => {
   const OTHERS = {
     it: [
       {
-        label: <Trans>Fac simile domanda installazione giostra</Trans>,
+        label: "Fac simile domanda installazione giostra",
         file: require("assets/products/giostre/tecnoexerciser/pdf/permessi-it.pdf").default,
       },
     ],

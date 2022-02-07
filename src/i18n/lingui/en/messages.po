@@ -315,7 +315,7 @@ msgstr ""
 #: src/pages/giostre/ippowalker/_corridoi.tsx:16
 #: src/pages/giostre/tecnoexerciser/_corridoi.tsx:16
 msgid "Corridoio TECNOFENCE"
-msgstr ""
+msgstr "TECNOFENCE corridor"
 
 #: src/pages/index.tsx:84
 msgid "Cosa dicono di noi"
@@ -394,10 +394,6 @@ msgstr "Email"
 #: src/pages/giostre/ippowalker/_gallery.tsx:10
 msgid "Entrata"
 msgstr "Entrance"
-
-#: src/pages/giostre/tecnoexerciser/_servizio_clienti.tsx:79
-msgid "Fac simile domanda installazione giostra"
-msgstr ""
 
 #: src/pages/giostre/index.tsx:41
 msgid "Facile da usare"

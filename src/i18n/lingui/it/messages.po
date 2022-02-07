@@ -393,10 +393,6 @@ msgstr "Email"
 msgid "Entrata"
 msgstr "Entrata"
 
-#: src/pages/giostre/tecnoexerciser/_servizio_clienti.tsx:79
-msgid "Fac simile domanda installazione giostra"
-msgstr "Fac simile domanda installazione giostra"
-
 #: src/pages/giostre/index.tsx:41
 msgid "Facile da usare"
 msgstr "Facile da usare"
