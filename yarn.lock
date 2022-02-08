@@ -5212,6 +5212,24 @@ gatsby-core-utils@^3.6.0:
     tmp "^0.2.1"
     xdg-basedir "^4.0.0"
 
+gatsby-core-utils@^3.7.0:
+  version "3.7.0"
+  resolved "https://registry.yarnpkg.com/gatsby-core-utils/-/gatsby-core-utils-3.7.0.tgz#edc928d948a3672d3166b914225a70369325818e"
+  integrity sha512-CboIzpEFbaD4+WrozKl3fMpxUetcaDq0aWPfrfzAtc8l0JMlD3GS2Q/uW7HpcvTAlSGv2ZomTzd2ySLV/AgpTQ==
+  dependencies:
+    "@babel/runtime" "^7.15.4"
+    ci-info "2.0.0"
+    configstore "^5.0.1"
+    fastq "^1.13.0"
+    file-type "^16.5.3"
+    fs-extra "^10.0.0"
+    got "^11.8.3"
+    lock "^1.1.0"
+    node-object-hash "^2.3.10"
+    proper-lockfile "^4.1.2"
+    tmp "^0.2.1"
+    xdg-basedir "^4.0.0"
+
 gatsby-graphiql-explorer@^2.6.0:
   version "2.6.0"
   resolved "https://registry.yarnpkg.com/gatsby-graphiql-explorer/-/gatsby-graphiql-explorer-2.6.0.tgz#e280ada722dda225bd25fff133b40a2b122112bd"
@@ -5279,6 +5297,17 @@ gatsby-plugin-mailchimp@5.2.2:
   dependencies:
     email-validator "^2.0.4"
     jsonp "^0.2.1"
+
+gatsby-plugin-manifest@^4.7.0:
+  version "4.7.0"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-manifest/-/gatsby-plugin-manifest-4.7.0.tgz#8ee8fcddec51154c04ccfab1e36f78e7880e3438"
+  integrity sha512-jZsR7sqvJsxTm2J01ymPsCXlEoYw9duVQUR3oNy9VxHyuPOXctk2Cnp/vnWDZpQ6g+i7ha1RhyJEQgQEj1jhcQ==
+  dependencies:
+    "@babel/runtime" "^7.15.4"
+    gatsby-core-utils "^3.7.0"
+    gatsby-plugin-utils "^3.1.0"
+    semver "^7.3.5"
+    sharp "^0.29.3"
 
 gatsby-plugin-page-creator@^4.6.0:
   version "4.6.0"
@@ -5360,6 +5389,14 @@ gatsby-plugin-utils@^3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-utils/-/gatsby-plugin-utils-3.0.0.tgz#2f19eaf5f43cacd74c1edfe4f46385f1694e8c79"
   integrity sha512-hZj64WQbs/KgAWez3oWMwlmhewUinXDJJdhj491vOWX2WVlH79m8JpAoklgrm9xaoIdhfbNkhQoMKPkRZKJpJQ==
+  dependencies:
+    "@babel/runtime" "^7.15.4"
+    joi "^17.4.2"
+
+gatsby-plugin-utils@^3.1.0:
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-utils/-/gatsby-plugin-utils-3.1.0.tgz#56abcc826786ae035a8edd0e652c492bd7b8f40e"
+  integrity sha512-OvRhIKzjaz3WOo/dxSI90ZlclsO2xaj1Dz7vigU2QGPAe8JtRJbNTpgfBZ+JOBeVnDONNbZulVn8S8F/Ra/BZA==
   dependencies:
     "@babel/runtime" "^7.15.4"
     joi "^17.4.2"

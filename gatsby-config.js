@@ -7,7 +7,7 @@ module.exports = {
     siteUrl: "https://pessastudio.eu",
   },
   plugins: [
-    `gatsby-plugin-tsconfig-paths`,
+    "gatsby-plugin-tsconfig-paths",
     {
       resolve: `gatsby-plugin-gdpr-cookies`,
       options: {
@@ -18,11 +18,11 @@ module.exports = {
         environments: ['production']
       },
     },
-    `gatsby-plugin-sitemap`,
+    "gatsby-plugin-sitemap",
     "gatsby-plugin-robots-txt",
-    `gatsby-plugin-typescript`,
+    "gatsby-plugin-typescript",
     // 'gatsby-plugin-ts-checker',
-    `gatsby-plugin-react-helmet`,
+    "gatsby-plugin-react-helmet",
     {
       "resolve": "gatsby-plugin-webfonts",
       options: {
@@ -42,7 +42,6 @@ module.exports = {
         },
       },
     },
-    "gatsby-plugin-sitemap",
     {
       resolve: `gatsby-plugin-layout`,
       options: {
@@ -83,5 +82,17 @@ module.exports = {
         `,
       },
     },
+    {
+      resolve: "gatsby-plugin-manifest",
+      options: {
+        name: "Pessastudio",
+        short_name: "Pessastudio",
+        start_url: "/ ",
+        background_color: "#fff",
+        theme_color: "#fff",
+        display: "standalone",
+        icon: "src/assets/generals/logo-hi.jpg"
+      },
+    },
   ],
-};
+}

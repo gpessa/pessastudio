@@ -54,11 +54,11 @@ msgstr "<0>I cavalletti Caprilli rappresentano uno strumento essenziale per l'al
 msgid "<0>I nostri ostacoli sono progettati e costruiti per durare nel tempo non richiedono alcuna manutenzione e conservano, inalterata, la loro bellezza anche se lasciati nel campo per anni.</0><1>Se gli ostacoli per il professionista sono uno strumento di lavoro, per molti altri appassionati rappresentano la realizzazione di un sogno. Noi abbiamo deciso di rendere questi strumenti resistenti nel tempo per fare in modo che questo sogno duri.</1><2>Potrete scegliere le quantità e i colori nella nostra gamma di produzione e acquistare anche singoli pezzi di ricambio.</2>"
 msgstr "<0>I nostri ostacoli sono progettati e costruiti per durare nel tempo non richiedono alcuna manutenzione e conservano, inalterata, la loro bellezza anche se lasciati nel campo per anni.</0><1>Se gli ostacoli per il professionista sono uno strumento di lavoro, per molti altri appassionati rappresentano la realizzazione di un sogno. Noi abbiamo deciso di rendere questi strumenti resistenti nel tempo per fare in modo che questo sogno duri.</1><2>Potrete scegliere le quantità e i colori nella nostra gamma di produzione e acquistare anche singoli pezzi di ricambio.</2>"
 
-#: src/utils/constants.tsx:206
+#: src/utils/constants.tsx:203
 msgid "<0>Il corridoio <1>TECNOFENCE</1> è una soluzione semplice ed economica che ti permetterà di avere una giostra completa, sicura e durevole ad un costo competitivo.</0><2>L'altezza della recinzione esterna è di 1,60 mt., a differenza del corridoio interno alto 1,40 mt.</2><3>L'innovativo materiale utilizzato per la sua costruzione (PPO) è durevole nel tempo e ti consentirà di abbattere i costi di manutenzione che affliggono le classiche recinzioni in legno.</3><4>Uno dei vantaggi è inoltre quello di poter installare la giostra in piena autonomia.</4>"
 msgstr "<0>Il corridoio <1>TECNOFENCE</1> è una soluzione semplice ed economica che ti permetterà di avere una giostra completa, sicura e durevole ad un costo competitivo.</0><2>L'altezza della recinzione esterna è di 1,60 mt., a differenza del corridoio interno alto 1,40 mt.</2><3>L'innovativo materiale utilizzato per la sua costruzione (PPO) è durevole nel tempo e ti consentirà di abbattere i costi di manutenzione che affliggono le classiche recinzioni in legno.</3><4>Uno dei vantaggi è inoltre quello di poter installare la giostra in piena autonomia.</4>"
 
-#: src/utils/constants.tsx:229
+#: src/utils/constants.tsx:226
 msgid "<0>Il corridoio <1>{name}</1> in compensato marino è realizzato con un multistrato <2>({thickness} mm. di spessore)</2> antigraffio, antiurto, resistente allo sporco e idrorepellente. L'obbiettivo di questa soluzione è quello di fornire un elevato grado di sicurezza forzando il cavallo a concentrarsi sul percorso durante l'allenamento.</0>"
 msgstr "<0>Il corridoio <1>{name}</1> in compensato marino è realizzato con un multistrato <2>({thickness} mm. di spessore)</2> antigraffio, antiurto, resistente allo sporco e idrorepellente. L'obbiettivo di questa soluzione è quello di fornire un elevato grado di sicurezza forzando il cavallo a concentrarsi sul percorso durante l'allenamento.</0>"
 
@@ -544,6 +544,10 @@ msgstr "Il nostro sito utilizza diverse tipologie di cookie di prima parte (pred
 msgid "Il tondino coperto è adatto a svolgere molteplici attività, rappresenta la migliore soluzione per addestrare puledri in libertà o lavorare cavalli alla corda. Inoltre facilita il controllo del cavallo durante le lezioni ai principianti ed è indispensabile per il longeur durante le riprese di volteggi."
 msgstr "Il tondino coperto è adatto a svolgere molteplici attività, rappresenta la migliore soluzione per addestrare puledri in libertà o lavorare cavalli alla corda. Inoltre facilita il controllo del cavallo durante le lezioni ai principianti ed è indispensabile per il longeur durante le riprese di volteggi."
 
+#: src/utils/constants.tsx:185
+msgid "Impediscono alla sabbia di uscire dal tondino riducendo il materiale disperso."
+msgstr "Impediscono alla sabbia di uscire dal tondino riducendo il materiale disperso."
+
 #: src/components/ModalGallery/index.tsx:71
 msgid "Indietro"
 msgstr "Indietro"
@@ -620,7 +624,7 @@ msgstr "Kit Cavalletti Caprilli + barriera"
 msgid "Kit comprensivo di 2 cavalletti e una barriera in PPO di colore bianco, diametro 95, lunghezza 2 mt."
 msgstr "Kit comprensivo di 2 cavalletti e una barriera in PPO di colore bianco, diametro 95, lunghezza 2 mt."
 
-#: src/utils/constants.tsx:192
+#: src/utils/constants.tsx:189
 msgid "L'alveolo è la soluzione ottimale per mantenere un fondo sempre perfetto in ogni condizione, permette di evitare buche o avvallamenti riducendo i costi di manutenzione."
 msgstr "L'alveolo è la soluzione ottimale per mantenere un fondo sempre perfetto in ogni condizione, permette di evitare buche o avvallamenti riducendo i costi di manutenzione."
 
@@ -657,7 +661,7 @@ msgstr "La recinzione ad una filagna viene utilizzata per delimitare campi da la
 msgid "La rete antivento della porta è un’ulteriore protezione che offriamo per rendere ancora di più il tuo tondino sicuro in caso di forte vento e per garantire una maggiore concentrazione del tuo cavallo."
 msgstr "La rete antivento della porta è un’ulteriore protezione che offriamo per rendere ancora di più il tuo tondino sicuro in caso di forte vento e per garantire una maggiore concentrazione del tuo cavallo."
 
-#: src/utils/constants.tsx:199
+#: src/utils/constants.tsx:196
 msgid "La rete antivento protegge l'interno della giostra da correnti d'aria e aiuta il cavallo a rimanere concentrato sul percorso rendendolo più tranquillo."
 msgstr "La rete antivento protegge l'interno della giostra da correnti d'aria e aiuta il cavallo a rimanere concentrato sul percorso rendendolo più tranquillo."
 
@@ -1042,10 +1046,6 @@ msgstr "Singolo cavvalleto"
 #: src/components/Footer/index.tsx:33
 msgid "Socials"
 msgstr "Socials"
-
-#: src/utils/constants.tsx:185
-msgid "Impediscono alla sabbia di uscire dal tondino riducendo il materiale disperso."
-msgstr "Impediscono alla sabbia di uscire dal tondino riducendo il materiale disperso."
 
 #: src/components/Product/index.tsx:59
 msgid "Spessore"

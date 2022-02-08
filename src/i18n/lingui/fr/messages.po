@@ -60,13 +60,13 @@ msgstr "<0>Les cavalettis Caprilli sont un équipement essentiel pour l’entra�
 msgid "<0>I nostri ostacoli sono progettati e costruiti per durare nel tempo non richiedono alcuna manutenzione e conservano, inalterata, la loro bellezza anche se lasciati nel campo per anni.</0><1>Se gli ostacoli per il professionista sono uno strumento di lavoro, per molti altri appassionati rappresentano la realizzazione di un sogno. Noi abbiamo deciso di rendere questi strumenti resistenti nel tempo per fare in modo che questo sogno duri.</1><2>Potrete scegliere le quantità e i colori nella nostra gamma di produzione e acquistare anche singoli pezzi di ricambio.</2>"
 msgstr "<0>Nos obstacles sont conçus et construits pour résister au temps, ils ne demandent aucun entretien et ils gardent leur beauté intacte, même après des années sur le terrain.</0><1>Si les obstacles sont un outil de travail pour le professionnel, pour de nombreux autres passionnés ils représentent la réalisation d’un rêve. Nous avons décidé de rendre ces outils résistants dans le temps, afin que ce rêve perdure.</1><2>Vous pourrez choisir les quantités et les coloris dans notre gamme de production, et acheter également des pièces détachées à l’unité.</2>"
 
-#: src/utils/constants.tsx:206
+#: src/utils/constants.tsx:203
 msgid "<0>Il corridoio <1>TECNOFENCE</1> è una soluzione semplice ed economica che ti permetterà di avere una giostra completa, sicura e durevole ad un costo competitivo.</0><2>L'altezza della recinzione esterna è di 1,60 mt., a differenza del corridoio interno alto 1,40 mt.</2><3>L'innovativo materiale utilizzato per la sua costruzione (PPO) è durevole nel tempo e ti consentirà di abbattere i costi di manutenzione che affliggono le classiche recinzioni in legno.</3><4>Uno dei vantaggi è inoltre quello di poter installare la giostra in piena autonomia.</4>"
 msgstr ""
 "<0>Le couloir <1>TECNOFENCE</1> est une solution simple et économique qui vous permettra d’avoir un marcheur complet, sûr et durable, à un coût compétitif.</0><2>La hauteur de la clôture extérieure est de 1,60 m, celle du couloir intérieur est de 1,40 m.</2><3>Le matériau novateur (PPO) ne demande pas d’entretien et vous permettra de réduire les coûts d’entretien qui pèsent sur les clôtures classiques en bois.\n"
 "</3><4>L’un des avantages consiste à pouvoir installer le marcheur en toute autonomie.</4>"
 
-#: src/utils/constants.tsx:229
+#: src/utils/constants.tsx:226
 msgid "<0>Il corridoio <1>{name}</1> in compensato marino è realizzato con un multistrato <2>({thickness} mm. di spessore)</2> antigraffio, antiurto, resistente allo sporco e idrorepellente. L'obbiettivo di questa soluzione è quello di fornire un elevato grado di sicurezza forzando il cavallo a concentrarsi sul percorso durante l'allenamento.</0>"
 msgstr "<0>Le couloir <1>{name}</1> en contreplaqué marine est réalisé dans un multicouche <2>({thickness} mm d’épaisseur)</2> anti-rayures, antichoc, résistant à la saleté et hydrofuge. L’objectif est de fournir un degré élevé de sécurité, en forçant le cheval à se concentrer sur la piste pendant l’entraînement.</0>"
 
@@ -557,6 +557,10 @@ msgstr "Notre site utilise différents types de cookies internes (déposés et g
 msgid "Il tondino coperto è adatto a svolgere molteplici attività, rappresenta la migliore soluzione per addestrare puledri in libertà o lavorare cavalli alla corda. Inoltre facilita il controllo del cavallo durante le lezioni ai principianti ed è indispensabile per il longeur durante le riprese di volteggi."
 msgstr "Le rond de longe couvert se prête à de multiples activités, c’est la meilleure solution pour entraîner les poulains en liberté ou travailler les chevaux à la longe. Il facilite le contrôle du cheval pendant les leçons aux débutants, et il est indispensable pour le longeur dans les reprises de voltiges."
 
+#: src/utils/constants.tsx:185
+msgid "Impediscono alla sabbia di uscire dal tondino riducendo il materiale disperso."
+msgstr "C’est la solution idéale pour empêcher le sable de sortir de la piste, et permettre de réduire le matériau dispersé."
+
 #: src/components/ModalGallery/index.tsx:71
 msgid "Indietro"
 msgstr "Précédent"
@@ -633,7 +637,7 @@ msgstr "Kit Cavaletti caprilli + Bar"
 msgid "Kit comprensivo di 2 cavalletti e una barriera in PPO di colore bianco, diametro 95, lunghezza 2 mt."
 msgstr ""
 
-#: src/utils/constants.tsx:192
+#: src/utils/constants.tsx:189
 msgid "L'alveolo è la soluzione ottimale per mantenere un fondo sempre perfetto in ogni condizione, permette di evitare buche o avvallamenti riducendo i costi di manutenzione."
 msgstr "La dalle alvéolée est la solution optimale pour conserver un sol toujours parfait en toutes conditions. Elle permet d’éviter les nids-de-poule ou les affaissements, et réduit les coûts d’entretien."
 
@@ -670,7 +674,7 @@ msgstr "La clôture à une lice est utilisée pour délimiter les terrains de tr
 msgid "La rete antivento della porta è un’ulteriore protezione che offriamo per rendere ancora di più il tuo tondino sicuro in caso di forte vento e per garantire una maggiore concentrazione del tuo cavallo."
 msgstr "Le filet brise-vent de la porte est une protection supplémentaire que nous offrons pour rendre votre rond de longe encore plus sûr en cas de vent violent, et pour garantir une plus grande concentration de votre cheval."
 
-#: src/utils/constants.tsx:199
+#: src/utils/constants.tsx:196
 msgid "La rete antivento protegge l'interno della giostra da correnti d'aria e aiuta il cavallo a rimanere concentrato sul percorso rendendolo più tranquillo."
 msgstr "Le filet brise-vent protège l’intérieur du marcheur contre les courants d’air, aide le cheval à rester concentré sur la piste, et le calme."
 
@@ -1055,10 +1059,6 @@ msgstr "Chaque cavaletti"
 #: src/components/Footer/index.tsx:33
 msgid "Socials"
 msgstr "Réseaux sociaux"
-
-#: src/utils/constants.tsx:185
-msgid "Impediscono alla sabbia di uscire dal tondino riducendo il materiale disperso."
-msgstr "C’est la solution idéale pour empêcher le sable de sortir de la piste, et permettre de réduire le matériau dispersé."
 
 #: src/components/Product/index.tsx:59
 msgid "Spessore"
