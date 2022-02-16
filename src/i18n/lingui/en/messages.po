@@ -64,11 +64,11 @@ msgstr "<0>The marine plywood corridor <1>{name}</1> is made of a plywood <2>({t
 
 #: src/pages/dressage/index.tsx:110
 msgid "<0>Il rettangolo della linea <1>training</1> è rivolto a quei maneggi in cui lo spazio a disposizione è limitato e il rettangolo viene installato provvisoriamente.</0><2>Facile da montare, è costituito da elementi modulari di 2 mt. in materiale plastico, non richiede alcuna manutenzione e occupa poco spazio quando non è utilizzato.</2>"
-msgstr ""
+msgstr "<0>The rectangles in the <1>Training</1> line are intended for stables with limited space, where the rectangles are installed temporarily.</0> <2>Easy to assemble, they consist of 2mt. modular elements made of plastic. They require no maintenance and occupy little space when not in use.</2>"
 
 #: src/pages/giostre/ippowalker/index.tsx:23
 msgid "<0>Ippowalker è una giostra di recente realizzazione, nasce dal sogno di poter fornire uno strumento di allenamento professionale anche a coloro che ne fanno un uso sporadico.</0><1>La giostra è disponibile in due diametri 12 mt. (4 cavalli) e 14.2 mt. (6 cavalli).</1><2>Costruita con la qualità e la robustezza che contraddistingue tutti i nostri prodotti essa rappresenta uno strumento semplice ed essenziale ma al contempo completo.</2><3>Malgrado Ippowalker sia una giostra più economica abbiamo mantenuto tutte le opzioni base per allenare il tuo cavallo.</3><4><5>Porte di separazione elettrificate</5> ottenute grazie a tubi di plastica elettroconduttiva.</4><6>Un <7>pannello di controllo</7> che ti permetterà di di scegliere tra un programma manuale e uno periodico.</6><8>Al contrario del modello <9>Tecnoexercize</9>, questo modello non dispone di irrigazione.</8>"
-msgstr ""
+msgstr "<0>The recently developed Ippowalker grew out of the dream of offering a professional training tool even to those who use it only sporadically.</0><1>The walker is available in two diameters: 12 m (4 horses) and 14.2 m (6 horses).</1> <2>Built with the same quality and robustness as all our products, it is a simple and essential, yet complete tool.</2> <3>Although the Ippowalker is a lower-cost exerciser, we have kept all the basic options for training your horse.</3><4><5>Electrified separation doors</5> made of electrically conductive plastic tubing.</4> <6>A <7>control panel</7> that allows you to choose either a manual or regular programme.</6> <8>In contrast to the <9>Tecnoexercise</9> model, this one has no irrigation.</8>"
 
 #: src/utils/constants.tsx:162
 msgid "<0>La <1>copertura in PVC</1> è composta da una struttura in acciaio zincato la quale sorregge un telo in tessuto di poliestere spalmato di colore verde o crema e in base alle esigenze del cliente anche in altre colorazioni.</0><2>Questa copertura è in grado di sorreggere un carico neve pari a 80 kg/mq * e una forza vento pari a 110 Km/h.</2>"
@@ -76,15 +76,15 @@ msgstr "<0>The <1>PVC cover</1> is made of a galvanized steel structure over whi
 
 #: src/pages/dressage/index.tsx:135
 msgid "<0>La linea <1>olimpic</1>, presente sul mercato da oltre vent'anni, è rappresentata da un rettangolo professionale, dove il campo da dressage è utilizzato quotidianamente.</0><2>Il campo è delimitato da moduli accostabili tra di loro, ciascuno dei quali è lungo 2 mt. Ogni modulo è costruito in polietilene antiurto resistente anche alle basse temperature e che non ingiallisce sotto l'azione dei raggi ultravioletti.</2><3>Su ciascun modulo sono previste tre aree piane con superficie lucida di 50x12 cm. sulle quali possono essere applicati adesivi pubblicitari.</3>"
-msgstr ""
+msgstr "<0>The <1>Olimpic</1> line, which has been on the market for over twenty years, consists of professional rectangles for when the dressage field is used on a daily basis.</0> <2>The field is delimited by 2-m modules that can be placed side by side. Each module is made of impact-resistant polyethylene (even at low temperatures) that will not yellow with exposure to UV radiation.</2> <3>Each module has three flat 50 cm x 12 cm areas with a glossy surface to apply advertising stickers.</3>"
 
 #: src/pages/giostre/index.tsx:78
 msgid "<0>Le giostre rappresentano il punto di forza della nostra azienda.</0><1>Sono state create dalla ricerca di <2>Luciano Pessa</2> con l'intenzione di realizzare un semplice ed affidabile strumento di lavoro che vi consentirà di allenare il vostro cavallo anche quando non avete la possibilità di montarlo.</1><3>La giostra vi permetterè, non solo di raffreddare il vostro cavallo con una passeggiata post allenamento, ma anche di creare una vera sessione di lavoro passando da un'andatura all'altra e cambiando di mano.</3>"
-msgstr ""
+msgstr "<0>Walkers represent the strong point of our company.</0> <1>They were developed through the research of <2>Luciano Pessa</2>, whose goal was to create a simple and reliable device that would allow you to train your horse even when you cannot ride it.</1> <3>The walkers allow you to not only cool down your horse with a walk after training, but also create a real exercise session by moving from one gait to another and changing rein.</3>"
 
 #: src/pages/recinti/index.tsx:61
 msgid "<0>Le recinzioni <1>TECNOFENCE</1> sono realizzate con materiale particolarmente adatto a durare nel tempo anche in presenza delle più avverse condizioni meteorologiche.</0><2>A differenza del legno o di altri prodotti utilizzati per il medesimo scopo, gli animali non mordono la recinzione.</2><3><4>TECNOFENCE</4>, non presenta spigoli vivi e inoltre, essendo elastica, è in grado di assorbire gli urti senza rompersi evitando cosi di provocare infortuni a persone e animali.</3><5>Il materiale impiegato è lo stesso che viene utilizzato per la produzione di serramenti dove l’inalterabilità del colore e delle caratteristiche tecniche sono condizioni indispensabili per garantire un prodotto di qualità. L’inclusione di inibitori dei raggi ultravioletti consente anche di prevenire crepe e rotture e di resistere alla corrosione e allo sfogliamento mantenendo inalterate le caratteristiche originali anche con temperature variabili da +70 °C a -20 °C.</5><6>Principalmente prodotte nel colore bianco, possono essere fornite, a richiesta, anche nel colore verde.</6><7>In ogni recinzione inoltre si possono inserire uno o più cancelli scorrevoli in alluminio.</7><8>Tutte le nostre recinzioni sono personalizzate in base alle esigenze di metratura e di figura del cliente.</8>"
-msgstr ""
+msgstr "<0>Our <1>TECNOFENCE</1> fencing is made of a material that is designed to last, even under the worst weather conditions.</0> <2>Unlike wood or other products used for the same purpose, the animals will not bite the fencing.</2> <3><4>TECNOFENCE</4> has no sharp corners and, since it is flexible, can absorb shocks without breaking, thus preventing injuries for people and animals.</3> <5>This material is also used for windows and doors, where the lasting colour and technical characteristics are necessary conditions for a quality product. The addition of UV-ray blockers also helps to prevent cracks and breakage and resist degradation and peeling while maintaining the original characteristics, even in extreme temperatures (–20°C to +70°C).</5> <6>Mainly coloured white, they are also available in green by request.</6> <7>Each fence can also be fitted with one or more sliding aluminium gates.</7> <8>All our fencing is customized based on your area and shape requirements.</8>"
 
 #: src/pages/ostacoli/_fosso.tsx:23
 msgid "<0>Ottimo per insegnare ai vostri cavalli/puledri a saltarlo.</0><1>Il fosso ha il fondo in PVC di colore azzurro con un bordo saldato alto 6 cm.</1>"
@@ -102,7 +102,7 @@ msgstr ""
 
 #: src/pages/giostre/tecnoexerciser/index.tsx:20
 msgid "<0>Tecnoexerciser è il modello di giostra attualmente più richiesto.</0><1>Oggi, grazie alle già note caratteristiche tecniche e alla grande affidabilità, abbiamo aggiunto alcune specifiche funzioni che fanno, di questo modello, la macchina <2>leader</2> del settore.</1><3>È possibile infatti:</3><4><5>Scegliere la forza che la porta mobile esercita sugli animali per invitarli ad avanzare</5><6>Mantenere un controllo costante sull'elettrificazione delle porte mobili</6><7>Beneficiare dell'innovativo sistema \"training program\" che vi consentirà di allenare i vostri cavalli fino ad ottenere performance atletiche.</7><8>Scegliere il programma di irrigazione pesta mentre la giostra sta girando</8></4><9>La struttura è fornita, a seconda delle esigenze, o con punte per l'ancoraggio al suolo o con tasselli nel caso in cui si desideri ancorarla ad un fondo di calcestruzzo.</9>"
-msgstr ""
+msgstr "<0>The Tecnoexerciser is currently our most popular walker.</0> <1>With its well-known technical characteristics and great reliability, we have now added some specific functions that make this model the <2>leading</2> machine in the sector.</1> <3>In fact, you can:</3> <4><5>Choose the force that the moving door exerts on the animals to invite them to move forward.</5> <6>Constantly control the electrification of the moving doors.</6> <7>Benefit from the innovative ‘training programme’, which allows you to train your horses for athletic performance.</7> <8>Choose the track irrigation programme while the walker is turning.</8></4> <9>Depending on your needs, the structure can be supplied either with spikes to attach the device to the ground or with anchors for installation on a concrete base.</9>"
 
 #: src/pages/dressage/index.tsx:10
 msgid "<0>Un set per creare un circuito dressage standard da 20x40 mt.</0><1>Il set contiene:</1><2><3>60 moduli</3><4>8 lettere</4></2>"
@@ -158,7 +158,7 @@ msgstr "Wide products range"
 
 #: src/pages/giostre/ippowalker/_corridoi.tsx:33
 msgid "Anche in questo semplice modello potrai decidere di dotare la tua giostra di un corridoio scegliendo tra il piú economico corridoio costituito dalla recinzione <0>TECNOFENCE</0> o il corridoio <1>EASY</1> in pannelli di compensato marino."
-msgstr ""
+msgstr "Even with this simple model, you can equip the walker with a corridor, using either the lower-cost <0>TECNOFENCE</0> fencing or the <1>EASY</1> corridor made of marine plywood panels."
 
 #: src/pages/index.tsx:41
 msgid "Apprezzati"
@@ -215,7 +215,7 @@ msgstr "What is a cookie?"
 #: src/utils/constants.tsx:110
 #: src/utils/constants.tsx:127
 msgid "Chiusura a terra"
-msgstr ""
+msgstr "Closed at the ground"
 
 #: src/pages/contatti/_address.tsx:37
 msgid "Codice Fiscale e Partita IVA"
@@ -241,7 +241,7 @@ msgstr "Contact Pessastudio for quotes on horse walkers, horse exerciser, jumper
 
 #: src/hooks/usePages/index.tsx:43
 msgid "Contattaci per un preventivo per ostacoli, recinti, tondini coperti, giostre, rettangoli da dressage e attrezzature per cavalli"
-msgstr ""
+msgstr "Contact us for a quote for obstacles, fences, covered round pens, walkers, dressage rectangles, and equestrian equipment"
 
 #: src/hooks/usePages/index.tsx:42
 #: src/pages/contatti/index.tsx:95
@@ -302,15 +302,15 @@ msgstr "PVC roof"
 #: src/pages/giostre/tecnoexerciser/_copertura.tsx:21
 #: src/pages/giostre/tecnoexerciser/_copertura.tsx:25
 msgid "Copertura rigida con lastre ondulate"
-msgstr ""
+msgstr "Rigid roof made of corrugated sheet metal"
 
 #: src/pages/giostre/ippowalker/_corridoi.tsx:20
 msgid "Corridoio EASY in compensato marino"
-msgstr ""
+msgstr "EASY corridor in marine plywood"
 
 #: src/pages/giostre/tecnoexerciser/_corridoi.tsx:20
 msgid "Corridoio EXERCISER in compensato marino"
-msgstr ""
+msgstr "EXERCISER corridor in marine plywood"
 
 #: src/pages/giostre/ippowalker/_corridoi.tsx:16
 #: src/pages/giostre/tecnoexerciser/_corridoi.tsx:16
@@ -360,7 +360,7 @@ msgstr "Diameter"
 
 #: src/pages/recinti/_accessori.tsx:18
 msgid "Diamo la possibilità di montare nella vostra recinzione un piede mobile che vi consentirà di posizionarla e spostarla a seconda delle vostre esigenze"
-msgstr ""
+msgstr "Movable feet can be installed on the fencing so it can be positioned and moved according to your needs"
 
 #: src/pages/index.tsx:83
 msgid "Dicono di noi"
@@ -374,7 +374,7 @@ msgstr "Dimensions"
 
 #: src/pages/giostre/tecnoexerciser/_servizio_clienti.tsx:41
 msgid "Dimensioni giostra {sides} pannelli {size} mt. e istruzioni preparazione fondo"
-msgstr ""
+msgstr "Walker dimensions {sides} panels {size} m and base preparation instructions"
 
 #: src/hooks/usePages/index.tsx:36
 #: src/pages/dressage/index.tsx:97
@@ -383,7 +383,7 @@ msgstr "Dressage"
 
 #: src/pages/giostre/index.tsx:99
 msgid "Due sono i modelli di giostra che proponiamo: il modello <0>tecnoexerciser</0>, prodotta da oltre 20 anni, e il modello <1>ippowalker</1>, pensata per rispondere alle esigenze di un mercato che richiede un prodotto affidabile e al tempo stesso economico."
-msgstr ""
+msgstr "We offer two walker models: the <0>Tecnoexerciser</0>, which we have produced for more than 20 years, and the <1>Ippowalker</1>, designed to meet market needs for a reliable yet low-cost product."
 
 #: src/components/Footer/Newsletter/index.tsx:54
 #: src/components/Footer/Newsletter/index.tsx:55
@@ -475,7 +475,7 @@ msgstr "Ippowalker horse exerciser"
 
 #: src/pages/giostre/tecnoexerciser/index.tsx:46
 msgid "Giostra TECNOEXERCISER in movimento"
-msgstr ""
+msgstr "TECNOEXERCISER walker in motion"
 
 #: src/hooks/usePages/index.tsx:89
 msgid "Giostra Tecnoexerciser"
@@ -488,7 +488,7 @@ msgstr "Horse Walker Base"
 
 #: src/pages/giostre/tecnoexerciser/_gallery.tsx:26
 msgid "Giostra con corridoio TECNOFENCE"
-msgstr ""
+msgstr "Walker with TECNOFENCE corridor"
 
 #: src/pages/giostre/index.tsx:148
 msgid "Giostra in movimento"
@@ -559,11 +559,11 @@ msgstr "Our website uses various types of first-party cookies (provided and mana
 
 #: src/pages/tondini/index.tsx:200
 msgid "Il tondino coperto è adatto a svolgere molteplici attività, rappresenta la migliore soluzione per addestrare puledri in libertà o lavorare cavalli alla corda. Inoltre facilita il controllo del cavallo durante le lezioni ai principianti ed è indispensabile per il longeur durante le riprese di volteggi."
-msgstr ""
+msgstr "The covered round pen is suitable for a variety of activities and is the best solution for training free-roaming foals or working horses on a line. It also facilitates control of the horse during lessons for beginners and is essential for longeurs during vaulting."
 
 #: src/utils/constants.tsx:185
 msgid "Impediscono alla sabbia di uscire dal tondino riducendo il materiale disperso."
-msgstr ""
+msgstr "Prevents sand from escaping from the pen, reducing the material lost."
 
 #: src/components/ModalGallery/index.tsx:71
 msgid "Indietro"
@@ -660,7 +660,7 @@ msgstr "The roof"
 
 #: src/pages/giostre/tecnoexerciser/_corridoi.tsx:33
 msgid "La giostra puo essere acquistata scegliendo tra il piú economico corridoio costituito dalla recinzione <0>TECNOFENCE</0> o il robusto corridoio <1>EXERCISER</1> in pannelli in compensato marino."
-msgstr ""
+msgstr "The walker can be purchased with the less expensive <0>TECNOFENCE</0> corridor or the more robust <1>EXERCISER</1> corridor made of marine plywood panels."
 
 #: src/pages/404.tsx:13
 msgid "La pagina che stai cercando non esiste"
@@ -668,15 +668,15 @@ msgstr "The page you are looking for does not exist"
 
 #: src/pages/recinti/_gamma.tsx:51
 msgid "La recinzione a due filagne genericamente viene utilizzata per delimitare campi da lavoro o per realizzare paddock dove i cavalli sono comunque osservati dal personale presente"
-msgstr ""
+msgstr "Two-rail fencing is generally used to delimit exercise areas or create paddocks where the horses are supervised by personnel"
 
 #: src/pages/recinti/_gamma.tsx:64
 msgid "La recinzione a tre filagne viene utilizzata per delimitare paddok per animali che rimangono per molte ore al giorno incustoditi oppure per delimitare confini di proprietà o aree. Per garantirne una maggiore sicurezza è possibile installare un impianto d'elettrificazione sulle filagne"
-msgstr ""
+msgstr "Three-rail fencing is used to delimit paddocks for animals that are left unattended for long periods during the day, or to mark out areas or property boundaries. An electrification system can be installed on the rails for greater safety"
 
 #: src/pages/recinti/_gamma.tsx:38
 msgid "La recinzione ad una filagna viene utilizzata per delimitare campi da lavoro o gara poco adoperati e non è adatta per l'addestramento. Potete utilizzarla anche per delimitare un'area del vostro giardino di casa"
-msgstr ""
+msgstr "Single-rail fencing is used to delimit exercise or competition areas that are not used regularly and it is not suitable for training. It can also be used to mark out an area of your home property"
 
 #: src/pages/tondini/index.tsx:54
 msgid "La rete antivento della porta è un’ulteriore protezione che offriamo per rendere ancora di più il tuo tondino sicuro in caso di forte vento e per garantire una maggiore concentrazione del tuo cavallo."
@@ -716,7 +716,7 @@ msgstr "You will not need any building permit to install our horse walkers"
 
 #: src/pages/recinti/_gamma.tsx:78
 msgid "Le recinzioni a quattro filagne sono utilizzate per delimitare paddock per stalloni, realizzare tondini per la doma e l'addestramento o per formare ovali per il salto in libertà"
-msgstr ""
+msgstr "Four-rail fencing is used to delimit paddocks for stallions, make round pens for taming and training, or create ovals for free jumping"
 
 #: src/pages/dressage/index.tsx:64
 msgid "Lettera dressage"
@@ -732,7 +732,7 @@ msgstr "Length"
 
 #: src/pages/giostre/tecnoexerciser/_copertura.tsx:48
 msgid "L’alternativa alla copertura in PVC è la <0>copertura rigida</0> in lastre di vetroresina. le lastre vengono sorrette da una doppia struttura in acciaio zincato che permette di avere una migliore distribuzione del peso in caso di nevicata e una maggiore sicurezza in caso di forte vento. Una soluzione che ti permetterà senza opere murarie di avere una struttura robusta e durevole nel tempo."
-msgstr ""
+msgstr "An alternative to PVC roofing is <0>rigid roofing</0> made of fibreglass sheets. The sheets are supported by a double galvanised steel structure which provides better weight distribution in the event of snow and greater safety in the event of strong winds. This solution ensures a strong, long-lasting structure without any masonry work."
 
 #: src/pages/giostre/ippowalker/_servizio_clienti.tsx:32
 #: src/pages/giostre/tecnoexerciser/_servizio_clienti.tsx:60
@@ -847,7 +847,7 @@ msgstr "Pessastudio, a quality choice"
 
 #: src/pages/recinti/_accessori.tsx:16
 msgid "Piede mobile"
-msgstr ""
+msgstr "Movable feet"
 
 #: src/pages/giostre/index.tsx:21
 msgid "Più' di 3.000 clienti europei hanno scelto Pessastudio per la loro giostra"
@@ -897,7 +897,7 @@ msgstr "Equipment built and customised by Pessastudio in Italy"
 
 #: src/hooks/usePages/index.tsx:13
 msgid "Prodotti professionali, sono lo strumento di lavoro indispensabile in un centro ippico o un maneggio. Progettati e costruiti per durare nel tempo senza alcuna manutenzione"
-msgstr ""
+msgstr "Professional products, these are essential tools in equestrian centres or riding schools. Designed and built to last, maintenance free"
 
 #: src/components/Product/index.tsx:55
 msgid "Profondità"
@@ -1002,7 +1002,7 @@ msgstr "Discover more"
 
 #: src/pages/tondini/index.tsx:198
 msgid "Scopri il nostro tondino Tecnohalle"
-msgstr ""
+msgstr "Learn about our Tecnohalle round pen"
 
 #: src/components/Products/index.tsx:59
 msgid "Scopri la nostra gamma di prodotti"
@@ -1010,11 +1010,11 @@ msgstr "Discover our range of products"
 
 #: src/hooks/usePages/index.tsx:80
 msgid "Scopri la nostra giostra IPPOWALKER, lo strumento economico adatto ad allenare il tuo cavallo o il tuo puledro"
-msgstr ""
+msgstr "Learn about our IPPOWALKER walker, the most inexpensive tool for training your horse or foal"
 
 #: src/hooks/usePages/index.tsx:91
 msgid "Scopri la nostra giostra TECNOEXERCISER, lo strumento professionale adatto ad allenare il tuo cavallo o il tuo puledro"
-msgstr ""
+msgstr "Learn about our TECNOEXERCISER walker, the professional tool for training your horse or foal"
 
 #: src/pages/index.tsx:85
 msgid "Scopri la qualità dei nostri prodotti attraverso la testimonianza dei clienti"
@@ -1022,7 +1022,7 @@ msgstr "Discover the quality of our products through our customer’s testimonia
 
 #: src/hooks/usePages/index.tsx:31
 msgid "Scopri le nostre giostre per cavalli, lo strumento ideale di lavoro per allenare il vostro cavallo"
-msgstr ""
+msgstr "Learn about our horse walkers, the ideal tools for training your horse"
 
 #: src/pages/index.tsx:74
 msgid "Scopri perché ogni anno centinaia di persone si affidano a Pessastudio per i loro articoli d'equitazione"
@@ -1128,7 +1128,7 @@ msgstr "Lunge & Paddock Pens"
 
 #: src/hooks/usePages/index.tsx:25
 msgid "Tondini coperti per addestrare puledri in libertà"
-msgstr ""
+msgstr "Covered round pens for training free-roaming foals"
 
 #: src/pages/tondini/index.tsx:123
 #: src/pages/tondini/index.tsx:131
@@ -1166,7 +1166,7 @@ msgstr "A cookie is a small file that is sent to the browser in use and saved on
 
 #: src/hooks/usePages/index.tsx:19
 msgid "Un recinto da cavalli in PVC. Indistruttibile anche in presenza delle più avverse condizioni meteorologiche"
-msgstr ""
+msgstr "Horse fence in PVC. Indestructible, even under the worst weather conditions"
 
 #: src/pages/index.tsx:55
 msgid "Una lunga storia"
@@ -1174,7 +1174,7 @@ msgstr "A long history"
 
 #: src/pages/giostre/index.tsx:43
 msgid "Usa il nostro semplice pannello di controllo per scegliere uno dei nostri \"training programs\" o seleziona manualmente la velocità desiderata"
-msgstr ""
+msgstr "Use our simple control panel to choose one of our ‘training programmes’ or manually select the desired speed"
 
 #: src/components/Gdpr/index.tsx:54
 msgid "Utilizziamo i cookie per garantire il corretto funzionamento del sito. Per ulteriori informazioni sul nostro utilizzo dei cookie, consultare la nostra <0>politica sui cookie</0>."
@@ -1190,15 +1190,15 @@ msgstr "WhatsApp"
 
 #: src/pages/tondini/index.tsx:159
 msgid "È costituito da pannelli laterali in compensato marino fissati a colonne in acciaio zincato. La copertura in telo spalmato in PVC, è disponibile in bianco, verde o crema"
-msgstr ""
+msgstr "Made of marine plywood panels attached to galvanised steel columns. The PVC-coated fabric cover is available in white, green, or cream"
 
 #: src/pages/giostre/tecnoexerciser/_copertura.tsx:38
 msgid "È possibile acquistare la giostra sprovvista di copertura ma se il vostro obbiettivo è quello di poter lavorare 365 giorni all'anno, Pessastudio, offre due possibili soluzioni abbinabili al corridoio <0>Exerciser</0>."
-msgstr ""
+msgstr "The exerciser may be purchased without a cover, but if you would like to work 365 days a year, Pessastudio offers two solutions that can be combined with the <0>Exerciser</0> corridor."
 
 #: src/pages/giostre/index.tsx:27
 msgid "È possibile acquistare le nostre giostre in diverse versioni adatte ad ogni budget ed esigenza"
-msgstr ""
+msgstr "Different versions of our walkers may be purchased to suit every budget and need"
 
 #: src/pages/giostre/ippowalker/_copertura.tsx:29
 msgid "É possibile acquistare la giostra sprovvista di copertura ma se il vostro obbiettivo è quello di poter lavorare 365 giorni all'anno, Pessastudio offre la possibilità di dotare la giostra, con corridoio EASY, di una <0>copertura in PVC</0>."
