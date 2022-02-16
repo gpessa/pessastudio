@@ -1,7 +1,7 @@
 [
     {
       "code": "it",
-      "hrefLang": "it-IT",
+      "hrefLang": "it",
       "name": "Italian",
       "localName": "Italiano",
       "langDir": "ltr",
@@ -9,7 +9,7 @@
     },
     {
       "code": "fr",
-      "hrefLang": "fr-FR",
+      "hrefLang": "fr",
       "name": "French",
       "localName": "Français",
       "langDir": "ltr",
