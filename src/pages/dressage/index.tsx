@@ -75,8 +75,7 @@ const Dressage: React.FC = () => {
       width: 2000,
       height: 370,
       weight: 5,
-      colors: [Colors.WHITE],
-      price: 74,
+      colors: [Colors.WHITE]
     },
     {
       description: DESCRIPTION_20x60,
