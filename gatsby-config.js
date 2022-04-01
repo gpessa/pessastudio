@@ -1,6 +1,9 @@
 const redirect = require('./src/rewrite/index.js');
 
 module.exports = {
+  flags: {
+    PARALLEL_QUERY_RUNNING: true
+  },
   siteMetadata: {
     title: `Pessastudio`,
     author: `Pessastudio`,
