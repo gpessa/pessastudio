@@ -3,7 +3,6 @@ import { CarouselContext } from "pure-react-carousel"
 import React, { useContext, useEffect, useState } from "react"
 
 const SliderStyled = styled(Slider)(({ theme }) => ({
-  marginRight: theme.spacing(5),
   flex: 1,
 }))
 

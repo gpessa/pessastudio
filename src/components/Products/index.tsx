@@ -27,7 +27,7 @@ const TextStyled = styled(Grid)({
 const SliderSelectorStyled = styled(Grid)(({ theme }) => ({
   [theme.breakpoints.up(BREAKPOINT)]: {
     position: "relative",
-    marginTop: -28,
+    marginTop: -50,
     zIndex: 1,
   },
 }))
@@ -37,7 +37,7 @@ const Products: React.FC = () => {
   const isTable = useMediaQuery(theme.breakpoints.up("sm"))
   const ITEM_TO_SHOW = isTable ? 2 : 1
 
-  // Life is difficult and those outsise break translations
+  // Life is difficult and those outside break translations
   const PRODUCTS = Object.entries(SEO_PRODUCT).map(([id, page]) => ({
     ...page,
     image: withPrefix(`static/icons/${id.toLowerCase()}.jpg`),
@@ -58,6 +58,7 @@ const Products: React.FC = () => {
           <TextStyled item md={3} xs={12}>
             <Title subtitle={<Trans>Prodotti</Trans>} title={<Trans>Scopri la nostra gamma di prodotti</Trans>} />
           </TextStyled>
+
           <CarouselContainerStyled item md={8} xs={12} component={Carousel}>
             {PRODUCTS.map((product, index) => (
               <Slide index={index} key={product.url}>
@@ -65,10 +66,11 @@ const Products: React.FC = () => {
               </Slide>
             ))}
           </CarouselContainerStyled>
+
+          <SliderSelectorStyled item md={3} xs={12}>
+            <ProductsSelector />
+          </SliderSelectorStyled>
         </Grid>
-        <SliderSelectorStyled item md={3} xs={12}>
-          <ProductsSelector />
-        </SliderSelectorStyled>
       </Section>
     </CarouselProvider>
   )

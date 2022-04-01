@@ -27,7 +27,7 @@ type Props = {
 
 const Accessori: React.FC<Props> = ({ intro, accessories }) => (
   <Section>
-    <Box mb={10} textAlign="center" mb={4}>
+    <Box textAlign="center" mb={4}>
       <TH variant="h2">{t`Accessori`}</TH>
     </Box>
 
@@ -39,7 +39,7 @@ const Accessori: React.FC<Props> = ({ intro, accessories }) => (
           spacing={PRODUCT_GUTTER}
           direction={{ md: index % 2 == 0 ? "row" : "row-reverse" }}
         >
-          <Grid item md sx={{ md: { textAlign: index % 2 == 0 ? "right" : "left" } }}>
+          <Grid item md sx={{ textAlign: { md: index % 2 == 0 ? "right" : "left" } }}>
             <TH variant="h4" sans>
               {name}
             </TH>
