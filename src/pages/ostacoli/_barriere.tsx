@@ -14,7 +14,7 @@ const PRODUCT = {
     { src: require("assets/products/ostacoli/barriere-02.png").default },
     { src: require("assets/products/ostacoli/barriere-03.png").default },
   ],
-  price: 45,
+  price: 48,
   weight: 9.75,
   length: 2990,
   diameter: 95,
