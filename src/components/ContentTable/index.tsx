@@ -1,5 +1,6 @@
 import { Trans } from "@lingui/macro"
-import { PictureAsPdf, Visibility } from "@mui/icons-material"
+import PictureAsPdf from "@mui/icons-material/PictureAsPdf";
+import Visibility from "@mui/icons-material/Visibility";
 import {
   Box,
   BoxProps,

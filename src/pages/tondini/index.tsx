@@ -1,5 +1,8 @@
 import { t, Trans } from "@lingui/macro"
-import { AccountBalance, DomainDisabled, Lock, Visibility } from "@mui/icons-material"
+import AccountBalance from "@mui/icons-material/AccountBalance";
+import DomainDisabled from "@mui/icons-material/DomainDisabled"; 
+import Lock from "@mui/icons-material/Lock";
+import Visibility from "@mui/icons-material/Visibility";
 import { Grid } from "@mui/material"
 import { Accessori, Benefits, ContentTable, Gallery, Hero, Section, TH } from "components"
 import { Picture } from "components/ModalGallery"

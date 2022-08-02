@@ -1,11 +1,15 @@
-import { t, Trans } from "@lingui/macro"
-import { AccessibilityNew, Apps, DomainDisabled, RemoveRedEyeOutlined, VideogameAsset } from "@mui/icons-material"
-import { Box, Button, Link, styled, Typography } from "@mui/material"
-import { Benefits, Columns, Gallery, Hero, Section, TH, Video } from "components"
-import { Picture } from "components/ModalGallery"
-import { LocalizedLink } from "gatsby-theme-i18n"
-import { usePages } from "hooks"
-import React from "react"
+import { t, Trans } from "@lingui/macro";
+import AccessibilityNew from "@mui/icons-material/AccessibilityNew";
+import Apps from "@mui/icons-material/Apps";
+import DomainDisabled from "@mui/icons-material/DomainDisabled";
+import RemoveRedEyeOutlined from "@mui/icons-material/RemoveRedEyeOutlined";
+import VideogameAsset from "@mui/icons-material/VideogameAsset";
+import { Box, Button, Link, styled, Typography } from "@mui/material";
+import { Benefits, Columns, Gallery, Hero, Section, TH, Video } from "components";
+import { Picture } from "components/ModalGallery";
+import { LocalizedLink } from "gatsby-theme-i18n";
+import { usePages } from "hooks";
+import React from "react";
 
 const GammaSectionStyled = styled(Section)({
   textAlign: "center",
@@ -64,6 +68,10 @@ const Giostre: React.FC = () => {
     {
       src: require("assets/products/giostre/gallery/quadro.jpg").default,
       caption: t`Quadro di comando`,
+    },
+    {
+      src: require("assets/products/giostre/gallery/giostra-drone.jpg").default,
+      caption: t`Giostra per cavalli Tecnoexerciser`,
     },
   ]
 

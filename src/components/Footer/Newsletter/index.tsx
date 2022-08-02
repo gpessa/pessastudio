@@ -1,6 +1,6 @@
 import { t, Trans } from "@lingui/macro"
 import { useLingui } from "@lingui/react"
-import { Send } from "@mui/icons-material"
+import Send from "@mui/icons-material/Send"
 import { Alert, IconButton, Input, InputAdornment, styled } from "@mui/material"
 import addToMailchimp from "gatsby-plugin-mailchimp"
 import React, { useState } from "react"

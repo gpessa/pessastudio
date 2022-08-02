@@ -1,4 +1,5 @@
-import { Facebook, Instagram } from "@mui/icons-material"
+import Facebook  from "@mui/icons-material/Facebook";
+import Instagram  from "@mui/icons-material/Instagram";
 import { IconButton } from "@mui/material"
 import React from "react"
 

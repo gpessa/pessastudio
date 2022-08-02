@@ -53,7 +53,7 @@ const IstruzioniMontaggio: React.FC = () => {
         <TH variant="h2">
           <Trans>Istruzioni di montaggio</Trans>
         </TH>
-        <Typography>Segui le semplici istruzioni per montare la nostra giostra∏</Typography>
+        <Typography>Segui le semplici istruzioni per montare la nostra giostra</Typography>
       </Box>
       <Path steps={STEPS} />
     </Section>

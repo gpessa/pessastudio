@@ -41,7 +41,7 @@ const Gdpr: React.FC = () => {
 
   return (
     <CookieConsent
-      overlay={true}
+      overlay={false}
       onAccept={onAccept}
       disableStyles={true}
       ButtonComponent={Accept}

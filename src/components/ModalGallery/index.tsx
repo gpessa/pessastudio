@@ -1,8 +1,10 @@
-import { Trans } from "@lingui/macro"
-import { NavigateBefore, NavigateNext } from "@mui/icons-material"
-import { Button, ButtonBase, Dialog, styled, Typography } from "@mui/material"
-import { useGallery } from "hooks"
-import React from "react"
+import { Trans } from "@lingui/macro";
+
+import NavigateBefore from "@mui/icons-material/NavigateBefore";
+import NavigateNext from "@mui/icons-material/NavigateNext";
+import { Button, ButtonBase, Dialog, styled, Typography } from "@mui/material";
+import { useGallery } from "hooks";
+import React from "react";
 
 const ButtonBackStyled = styled(ButtonBase)({
   "top": 0,
