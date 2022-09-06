@@ -215,7 +215,7 @@ msgstr "Che cos'è un cookie?"
 msgid "Chiusura a terra"
 msgstr "Chiusura a terra"
 
-#: src/pages/contatti/_address.tsx:37
+#: src/pages/contatti/_address.tsx:39
 msgid "Codice Fiscale e Partita IVA"
 msgstr "Codice Fiscale e Partita IVA"
 
@@ -242,21 +242,25 @@ msgid "Contattaci per un preventivo per ostacoli, recinti, tondini coperti, gios
 msgstr "Contattaci per un preventivo per ostacoli, recinti, tondini coperti, giostre, rettangoli da dressage e attrezzature per cavalli"
 
 #: src/hooks/usePages/index.tsx:42
-#: src/pages/contatti/index.tsx:95
+#: src/pages/contatti/index.tsx:105
 msgid "Contatti"
 msgstr "Contatti"
 
-#: src/pages/contatti/index.tsx:124
+#: src/pages/contatti/index.tsx:134
 msgid "Contatto commerciale"
 msgstr "Contatto commerciale"
 
-#: src/pages/contatti/index.tsx:132
+#: src/pages/contatti/index.tsx:142
 msgid "Contatto commerciale Belgio"
 msgstr "Contatto commerciale Belgio"
 
-#: src/pages/contatti/index.tsx:139
+#: src/pages/contatti/index.tsx:149
 msgid "Contatto commerciale Francia"
 msgstr "Contatto commerciale Francia"
+
+#: src/pages/contatti/index.tsx:156
+msgid "Contatto commerciale Germania & Medio Oriente"
+msgstr "Contatto commerciale Germania & Medio Oriente"
 
 #: src/hooks/usePages/index.tsx:57
 msgid "Cookie"
@@ -277,7 +281,7 @@ msgstr "Cookie di navigazione"
 msgid "Cookie policy"
 msgstr "Cookie policy"
 
-#: src/pages/contatti/index.tsx:114
+#: src/pages/contatti/index.tsx:124
 msgid "Coordinate bancarie"
 msgstr "Coordinate bancarie"
 
@@ -385,7 +389,7 @@ msgstr "Due sono i modelli di giostra che proponiamo: il modello <0>tecnoexercis
 
 #: src/components/Footer/Newsletter/index.tsx:54
 #: src/components/Footer/Newsletter/index.tsx:55
-#: src/pages/contatti/_address.tsx:63
+#: src/pages/contatti/_address.tsx:76
 msgid "Email"
 msgstr "Email"
 
@@ -1008,11 +1012,11 @@ msgstr "Scopri le nostre giostre per cavalli, lo strumento ideale di lavoro per 
 msgid "Scopri perché ogni anno centinaia di persone si affidano a Pessastudio per i loro articoli d'equitazione"
 msgstr "Scopri perché ogni anno centinaia di persone si affidano a Pessastudio per i loro articoli d'equitazione"
 
-#: src/pages/contatti/index.tsx:107
+#: src/pages/contatti/index.tsx:117
 msgid "Sede legale"
 msgstr "Sede legale"
 
-#: src/pages/contatti/index.tsx:100
+#: src/pages/contatti/index.tsx:110
 msgid "Sede operativa"
 msgstr "Sede operativa"
 
@@ -1085,7 +1089,8 @@ msgstr "Tecnoexerciser"
 msgid "Tecnopolimero"
 msgstr "Tecnopolimero"
 
-#: src/pages/contatti/_address.tsx:41
+#: src/pages/contatti/_address.tsx:43
+#: src/pages/contatti/_address.tsx:54
 msgid "Telefono"
 msgstr "Telefono"
 
@@ -1164,7 +1169,7 @@ msgstr "Utilizziamo i cookie per garantire il corretto funzionamento del sito. P
 msgid "Vedi"
 msgstr "Vedi"
 
-#: src/pages/contatti/_address.tsx:52
+#: src/pages/contatti/_address.tsx:65
 msgid "WhatsApp"
 msgstr "WhatsApp"
 

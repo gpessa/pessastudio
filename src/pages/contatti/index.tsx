@@ -6,10 +6,10 @@ import { Helmet } from "react-helmet"
 import { helmetJsonLdProp } from "react-schemaorg"
 import { ContactPage } from "schema-dts"
 import { BREAKPOINT } from "theme"
-import Address from "./_address"
-import Bank from "./_bank"
+import Address, { AddressProps } from "./_address"
+import Bank, { BankProps } from "./_bank"
 
-export const SEDE_LEGALE = {
+export const SEDE_LEGALE: AddressProps = {
   name: "Pessastudio Horse Tecnology srl",
   country: "Italy",
   postalCode: "35043",
@@ -19,13 +19,13 @@ export const SEDE_LEGALE = {
   id: "04743610281",
 }
 
-const BANCA = {
+const BANCA: BankProps = {
   name: "Cassa di Risparmio del Veneto filiale di Monselice",
   iban: "IT97 M030 6962 6691 0000 0004 400",
   swift: "BCITITMM",
 }
 
-export const SEDE_OPERATIVA = {
+export const SEDE_OPERATIVA: AddressProps = {
   name: "Pessastudio Horse Tecnology srl",
   country: "Italy",
   postalCode: "35044",
@@ -35,23 +35,33 @@ export const SEDE_OPERATIVA = {
   telephone: "+39 0429 805613",
 }
 
-const BELGIO = {
+const BELGIO: AddressProps = {
   name: "Roberto Della Bella",
   email: "magiccavallo@hotmail.com",
   telephone: "+32 475 96 5123",
 }
 
-const FRANCIA = {
+const FRANCIA: AddressProps = {
   name: "Théo Cardon",
   email: "commercial@equisea.fr",
   telephone: "+33 788044648",
 }
 
-export const ITALIA = {
+export const ITALIA: AddressProps = {
   name: "Anna Pessa",
   email: "annapessa@pessastudio.eu",
   telephone: "+39 349 0543098",
   whatsapp: "+39 349 0543098",
+}
+
+const GERMANIA_MEDIO_ORIENTE = {
+  name: "BEST Equine GmbH (Belinda Hitzler)",
+  country: "Germany",
+  postalCode: "89407",
+  streetAddress: "Priehlweg 7",
+  addressLocality: "Dillingen",
+  telephone: "+49 (0) 9071 7700256",
+  mobile: "+49 (0) 171 3661394"
 }
 
 const AvatarStyled = styled(Avatar)(({ theme }) => ({
@@ -139,6 +149,13 @@ const Contatti: React.FC = () => (
               <Trans>Contatto commerciale Francia</Trans>
             </TH>
             <Address {...FRANCIA} />
+          </Box>
+
+          <Box mt={6}>
+            <TH variant="h4">
+              <Trans>Contatto commerciale Germania &amp; Medio Oriente</Trans>
+            </TH>
+            <Address {...GERMANIA_MEDIO_ORIENTE} />
           </Box>
         </RightColumnStyled>
       }

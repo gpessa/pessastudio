@@ -2,7 +2,7 @@ import { Trans } from "@lingui/macro"
 import React from "react"
 import { Data } from "components"
 
-const Bank: React.FC<Props> = ({ name, iban, swift, ...props }) => (
+const Bank: React.FC<BankProps> = ({ name, iban, swift, ...props }) => (
   <div {...props}>
     {name && <Data label={<Trans>Istituto</Trans>} value={name} />}
     {iban && <Data label={<Trans>Iban</Trans>} value={iban} />}
@@ -10,7 +10,7 @@ const Bank: React.FC<Props> = ({ name, iban, swift, ...props }) => (
   </div>
 )
 
-type Props = {
+export type BankProps = {
   name: string
   iban: string
   swift: string

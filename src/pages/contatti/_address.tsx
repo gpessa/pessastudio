@@ -3,7 +3,8 @@ import { Trans } from "@lingui/macro"
 import { Box, Link, Typography } from "@mui/material"
 import React from "react"
 
-const Address: React.FC<Props> = ({
+
+const Address: React.FC<AddressProps> = ({
   name,
   country,
   addressLocality,
@@ -11,6 +12,7 @@ const Address: React.FC<Props> = ({
   bank,
   whatsapp,
   postalCode,
+  mobile,
   addressRegion,
   streetAddress,
   telephone,
@@ -35,6 +37,17 @@ const Address: React.FC<Props> = ({
       )}
 
       {id && <Data label={<Trans>Codice Fiscale e Partita IVA</Trans>} value={id} />}
+
+      {mobile && (
+        <Data
+          label={<Trans>Telefono</Trans>}
+          value={
+            <Link underline="hover" href={`tel:${mobile.replace(/ /g, "")}`}>
+              {mobile}
+            </Link>
+          }
+        />
+      )}
 
       {telephone && (
         <Data
@@ -72,7 +85,7 @@ const Address: React.FC<Props> = ({
   )
 }
 
-interface Props {
+export interface AddressProps {
   bank?: JSX.Element
   name?: string
   email?: string
@@ -84,6 +97,7 @@ interface Props {
   addressLocality?: string
   id?: string
   telephone?: string
+  mobile?: string
   className?: string
 }
 
