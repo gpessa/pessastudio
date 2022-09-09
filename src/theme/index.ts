@@ -30,12 +30,12 @@ export const SECTION_SPACING = (breakingPoint: "xs" | "md") => {
 
 declare module "@mui/material/styles/createTypography" {
   interface TypographyOptions {
-    small?: TypographyStyleOptions
-    slim?: TypographyStyleOptions
+    small: TypographyStyleOptions
+    slim: TypographyStyleOptions
   }
   interface Typography {
-    small?: TypographyStyleOptions
-    slim?: TypographyStyleOptions
+    small: TypographyStyleOptions
+    slim: TypographyStyleOptions
   }
 }
 

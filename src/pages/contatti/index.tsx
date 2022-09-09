@@ -54,14 +54,15 @@ export const ITALIA: AddressProps = {
   whatsapp: "+39 349 0543098",
 }
 
-const GERMANIA_MEDIO_ORIENTE = {
-  name: "BEST Equine GmbH (Belinda Hitzler)",
+const GERMANIA_MEDIO_ORIENTE: AddressProps = {
+  name: <>BEST Equine GmbH<br/>Training Facilities for Horses (Belinda Hitzler)</>,
   country: "Germany",
   postalCode: "89407",
   streetAddress: "Priehlweg 7",
   addressLocality: "Dillingen",
   telephone: "+49 (0) 9071 7700256",
-  mobile: "+49 (0) 171 3661394"
+  mobile: "+49 (0) 171 3661394",
+  email: "mail@belindahitzler.de"
 }
 
 const AvatarStyled = styled(Avatar)(({ theme }) => ({

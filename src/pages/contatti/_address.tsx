@@ -87,7 +87,7 @@ const Address: React.FC<AddressProps> = ({
 
 export interface AddressProps {
   bank?: JSX.Element
-  name?: string
+  name?:  JSX.Element | string
   email?: string
   country?: string
   whatsapp?: string

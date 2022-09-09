@@ -25,7 +25,7 @@ const CandelieriLameForate = () => {
       depth: 720,
       height: 1700,
       weight: 7,
-      price: 80,
+      price: 87,
     },
     {
       name: t`Lama DE da 50/150 cm.`,
