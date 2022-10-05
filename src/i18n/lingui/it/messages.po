@@ -242,23 +242,27 @@ msgid "Contattaci per un preventivo per ostacoli, recinti, tondini coperti, gios
 msgstr "Contattaci per un preventivo per ostacoli, recinti, tondini coperti, giostre, rettangoli da dressage e attrezzature per cavalli"
 
 #: src/hooks/usePages/index.tsx:42
-#: src/pages/contatti/index.tsx:105
+#: src/pages/contatti/index.tsx:132
 msgid "Contatti"
 msgstr "Contatti"
 
-#: src/pages/contatti/index.tsx:134
+#: src/pages/contatti/index.tsx:161
 msgid "Contatto commerciale"
 msgstr "Contatto commerciale"
 
-#: src/pages/contatti/index.tsx:142
+#: src/pages/contatti/index.tsx:30
 msgid "Contatto commerciale Belgio"
 msgstr "Contatto commerciale Belgio"
 
-#: src/pages/contatti/index.tsx:149
+#: src/pages/contatti/index.tsx:38
 msgid "Contatto commerciale Francia"
 msgstr "Contatto commerciale Francia"
 
-#: src/pages/contatti/index.tsx:156
+#: src/pages/contatti/index.tsx:46
+msgid "Contatto commerciale Germania"
+msgstr "Contatto commerciale Germania"
+
+#: src/pages/contatti/index.tsx:59
 msgid "Contatto commerciale Germania & Medio Oriente"
 msgstr "Contatto commerciale Germania & Medio Oriente"
 
@@ -281,7 +285,7 @@ msgstr "Cookie di navigazione"
 msgid "Cookie policy"
 msgstr "Cookie policy"
 
-#: src/pages/contatti/index.tsx:124
+#: src/pages/contatti/index.tsx:151
 msgid "Coordinate bancarie"
 msgstr "Coordinate bancarie"
 
@@ -1012,11 +1016,11 @@ msgstr "Scopri le nostre giostre per cavalli, lo strumento ideale di lavoro per 
 msgid "Scopri perché ogni anno centinaia di persone si affidano a Pessastudio per i loro articoli d'equitazione"
 msgstr "Scopri perché ogni anno centinaia di persone si affidano a Pessastudio per i loro articoli d'equitazione"
 
-#: src/pages/contatti/index.tsx:117
+#: src/pages/contatti/index.tsx:144
 msgid "Sede legale"
 msgstr "Sede legale"
 
-#: src/pages/contatti/index.tsx:110
+#: src/pages/contatti/index.tsx:137
 msgid "Sede operativa"
 msgstr "Sede operativa"
 

@@ -1,11 +1,11 @@
 import { Trans } from "@lingui/macro"
-import { Avatar, Box, styled } from "@mui/material"
+import { Avatar, Box, styled, Stack } from "@mui/material"
 import { Columns, TH } from "components"
 import React from "react"
 import { Helmet } from "react-helmet"
 import { helmetJsonLdProp } from "react-schemaorg"
 import { ContactPage } from "schema-dts"
-import { BREAKPOINT } from "theme"
+import { BREAKPOINT, PRODUCT_GUTTER } from "theme"
 import Address, { AddressProps } from "./_address"
 import Bank, { BankProps } from "./_bank"
 
@@ -25,6 +25,53 @@ const BANCA: BankProps = {
   swift: "BCITITMM",
 }
 
+const CONTATTI_COMMERCIALI = [
+  {
+    name: <Trans>Contatto commerciale Belgio</Trans>,
+    data: {
+      name: "Roberto Della Bella",
+      email: "magiccavallo@hotmail.com",
+      telephone: "+32 475 96 5123",
+    }
+  },
+  {
+    name: <Trans>Contatto commerciale Francia</Trans>,
+    data: {
+      name: "Théo Cardon",
+      email: "commercial@equisea.fr",
+      telephone: "+33 788044648",
+    }
+  },
+  {
+    name: <Trans>Contatto commerciale Germania</Trans>,
+    data: {
+      email: "office@bacherproducts.de",
+      telephone: "+49 6206 13445",
+      mobile: "+49 170 4574055",
+      name: "Bacher Products GmbH",
+      streetAddress: "Lorscher Straße 13",
+      postalCode: "68642",
+      addressLocality: "Bürstadt",
+      country: "Germany",
+      website: "https://bacherproducts.de"
+    }
+  },
+  {
+    name: <Trans>Contatto commerciale Germania &amp; Medio Oriente</Trans>,
+    data: {
+      name: "BEST Equine GmbH Training Facilities for Horses (Belinda Hitzler)",
+      country: "Germany",
+      postalCode: "89407",
+      streetAddress: "Priehlweg 7",
+      addressLocality: "Dillingen",
+      telephone: "+49 (0) 9071 7700256",
+      mobile: "+49 (0) 171 3661394",
+      email: "mail@belindahitzler.de"
+    }
+  },
+]
+
+
 export const SEDE_OPERATIVA: AddressProps = {
   name: "Pessastudio Horse Tecnology srl",
   country: "Italy",
@@ -35,17 +82,6 @@ export const SEDE_OPERATIVA: AddressProps = {
   telephone: "+39 0429 805613",
 }
 
-const BELGIO: AddressProps = {
-  name: "Roberto Della Bella",
-  email: "magiccavallo@hotmail.com",
-  telephone: "+32 475 96 5123",
-}
-
-const FRANCIA: AddressProps = {
-  name: "Théo Cardon",
-  email: "commercial@equisea.fr",
-  telephone: "+33 788044648",
-}
 
 export const ITALIA: AddressProps = {
   name: "Anna Pessa",
@@ -54,16 +90,7 @@ export const ITALIA: AddressProps = {
   whatsapp: "+39 349 0543098",
 }
 
-const GERMANIA_MEDIO_ORIENTE: AddressProps = {
-  name: <>BEST Equine GmbH<br/>Training Facilities for Horses (Belinda Hitzler)</>,
-  country: "Germany",
-  postalCode: "89407",
-  streetAddress: "Priehlweg 7",
-  addressLocality: "Dillingen",
-  telephone: "+49 (0) 9071 7700256",
-  mobile: "+49 (0) 171 3661394",
-  email: "mail@belindahitzler.de"
-}
+
 
 const AvatarStyled = styled(Avatar)(({ theme }) => ({
   marginBottom: theme.spacing(2),
@@ -106,58 +133,56 @@ const Contatti: React.FC = () => (
             <Trans>Contatti</Trans>
           </TH>
 
-          <Box mt={6}>
-            <TH variant="h4">
-              <Trans>Sede operativa</Trans>
-            </TH>
-            <StyledAddress {...SEDE_OPERATIVA} />
-          </Box>
+          <Stack spacing={PRODUCT_GUTTER}>
 
-          <Box mt={6}>
-            <TH variant="h4">
-              <Trans>Sede legale</Trans>
-            </TH>
-            <StyledAddress {...SEDE_LEGALE} />
-          </Box>
+            <Box>
+              <TH variant="h4">
+                <Trans>Sede operativa</Trans>
+              </TH>
+              <StyledAddress {...SEDE_OPERATIVA} />
+            </Box>
 
-          <Box mt={6}>
-            <TH variant="h4">
-              <Trans>Coordinate bancarie</Trans>
-            </TH>
-            <StyledBank {...BANCA} />
-          </Box>
+            <Box>
+              <TH variant="h4">
+                <Trans>Sede legale</Trans>
+              </TH>
+              <StyledAddress {...SEDE_LEGALE} />
+            </Box>
+
+            <Box>
+              <TH variant="h4">
+                <Trans>Coordinate bancarie</Trans>
+              </TH>
+              <StyledBank {...BANCA} />
+            </Box>
+
+          </Stack>
         </>
       }
       right={
         <RightColumnStyled>
-          <Box>
-            <TH variant="h4">
-              <Trans>Contatto commerciale</Trans>
-            </TH>
-            <AvatarStyled src={require("assets/pages/contatti/anna.jpg").default} alt="Anna Pessa" />
-            <Address {...ITALIA} />
-          </Box>
+          <Stack spacing={PRODUCT_GUTTER}>
 
-          <Box mt={6}>
-            <TH variant="h4">
-              <Trans>Contatto commerciale Belgio</Trans>
-            </TH>
-            <Address {...BELGIO} />
-          </Box>
+            <Box>
+              <TH variant="h4">
+                <Trans>Contatto commerciale</Trans>
+              </TH>
+              <AvatarStyled src={require("assets/pages/contatti/anna.jpg").default} alt="Anna Pessa" />
+              <Address {...ITALIA} />
+            </Box>
 
-          <Box mt={6}>
-            <TH variant="h4">
-              <Trans>Contatto commerciale Francia</Trans>
-            </TH>
-            <Address {...FRANCIA} />
-          </Box>
 
-          <Box mt={6}>
-            <TH variant="h4">
-              <Trans>Contatto commerciale Germania &amp; Medio Oriente</Trans>
-            </TH>
-            <Address {...GERMANIA_MEDIO_ORIENTE} />
-          </Box>
+            {CONTATTI_COMMERCIALI.map(({ name, data }) => (
+              <Box>
+                <TH variant="h5">
+                  {name}
+                </TH>
+                <Address {...data} />
+              </Box>
+            ))}
+
+          </Stack>
+
         </RightColumnStyled>
       }
     />
