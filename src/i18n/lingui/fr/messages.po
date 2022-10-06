@@ -226,7 +226,7 @@ msgstr "Qu’est-ce qu’un cookie et à quoi sert-il ?"
 msgid "Chiusura a terra"
 msgstr "Fermeture au sol"
 
-#: src/pages/contatti/_address.tsx:39
+#: src/pages/contatti/_address.tsx:42
 msgid "Codice Fiscale e Partita IVA"
 msgstr "Numéro de code fiscal et de TVA"
 
@@ -253,11 +253,11 @@ msgid "Contattaci per un preventivo per ostacoli, recinti, tondini coperti, gios
 msgstr "Contactez-nous pour un devis pour les obstacles, les clôtures, ronds de longe, les rectangles de dressage et l’équipement du cheval"
 
 #: src/hooks/usePages/index.tsx:42
-#: src/pages/contatti/index.tsx:132
+#: src/pages/contatti/index.tsx:133
 msgid "Contatti"
 msgstr "Contact"
 
-#: src/pages/contatti/index.tsx:161
+#: src/pages/contatti/index.tsx:168
 msgid "Contatto commerciale"
 msgstr "Contact commercial"
 
@@ -273,7 +273,7 @@ msgstr "Contact commercial France"
 msgid "Contatto commerciale Germania"
 msgstr "Contact commercial Allemagne"
 
-#: src/pages/contatti/index.tsx:59
+#: src/pages/contatti/index.tsx:60
 msgid "Contatto commerciale Germania & Medio Oriente"
 msgstr "Contact commercial Allemagne & Moyen-Orient"
 
@@ -296,7 +296,7 @@ msgstr "Cookie de navigation"
 msgid "Cookie policy"
 msgstr "Cookie policy"
 
-#: src/pages/contatti/index.tsx:151
+#: src/pages/contatti/index.tsx:154
 msgid "Coordinate bancarie"
 msgstr "Coordonnées bancaires"
 
@@ -404,7 +404,7 @@ msgstr "Nous proposons deux modèles de marcheur : le modèle <0>tecnoexerciser<
 
 #: src/components/Footer/Newsletter/index.tsx:54
 #: src/components/Footer/Newsletter/index.tsx:55
-#: src/pages/contatti/_address.tsx:76
+#: src/pages/contatti/_address.tsx:79
 msgid "Email"
 msgstr "Email"
 
@@ -523,7 +523,7 @@ msgstr "J’ai reçu le matériel ce matin. Félicitations pour la qualité des 
 
 #: src/hooks/usePages/index.tsx:62
 msgid "Home"
-msgstr ""
+msgstr "Page d’accueil"
 
 #: src/pages/ostacoli/_candelieri-e-lame-forate.tsx:13
 msgid "I candelieri sono costruiti con un montante di alluminio verniciato di colore bianco e sono muniti di 4 piedi rivestiti con puntali di plastica che garantiscono, in caso di ribaltamento, l’incolumità vostra e dei vostri cavalli."
@@ -992,6 +992,10 @@ msgstr "Restez informés sur nos remises et sur les événements"
 msgid "Ringrazio tutto il team per la professionalità, gentilezza, velocità e sopratutto per l'ottimo risultato"
 msgstr "Merci à toute l’équipe pour le professionnalisme, la gentillesse, la rapidité et surtout l’excellent résultat"
 
+#: src/pages/contatti/index.tsx:177
+msgid "Rivenditori"
+msgstr "Concessionnaires internationaux"
+
 #: src/components/ContentTable/index.tsx:52
 msgid "Scarica"
 msgstr "Télécharger un fichier"
@@ -1029,11 +1033,11 @@ msgstr "Découvrez notre marcheur pour chevaux, l’outil de travail idéal pour
 msgid "Scopri perché ogni anno centinaia di persone si affidano a Pessastudio per i loro articoli d'equitazione"
 msgstr "Découvrez pourquoi, chaque année, des centaines de personnes s’adressent à Pessastudio pour leurs articles d’équitation"
 
-#: src/pages/contatti/index.tsx:144
+#: src/pages/contatti/index.tsx:147
 msgid "Sede legale"
 msgstr "Siège social"
 
-#: src/pages/contatti/index.tsx:137
+#: src/pages/contatti/index.tsx:140
 msgid "Sede operativa"
 msgstr "Office operative"
 
@@ -1087,7 +1091,7 @@ msgstr "Supports de sécurité à utiliser sur nos fiches pour préserver l’in
 #: src/pages/recinti/index.tsx:103
 #: src/pages/tondini/index.tsx:218
 msgid "Supporto clienti"
-msgstr ""
+msgstr "Service client"
 
 #: src/pages/ostacoli/_cucchiai-segnaletica.tsx:35
 msgid "Supporto di sicurezza"
@@ -1106,8 +1110,8 @@ msgstr "Tecnoexerciser"
 msgid "Tecnopolimero"
 msgstr "Technopolymère"
 
-#: src/pages/contatti/_address.tsx:43
-#: src/pages/contatti/_address.tsx:54
+#: src/pages/contatti/_address.tsx:46
+#: src/pages/contatti/_address.tsx:57
 msgid "Telefono"
 msgstr "Téléphone"
 
@@ -1186,7 +1190,11 @@ msgstr "Nous utilisons des cookies pour assurer le bon fonctionnement du site. P
 msgid "Vedi"
 msgstr ""
 
-#: src/pages/contatti/_address.tsx:65
+#: src/pages/contatti/_address.tsx:90
+msgid "Website"
+msgstr "Site Internet"
+
+#: src/pages/contatti/_address.tsx:68
 msgid "WhatsApp"
 msgstr "WhatsApp"
 

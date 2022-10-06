@@ -217,7 +217,7 @@ msgstr "What is a cookie?"
 msgid "Chiusura a terra"
 msgstr "Closed at the ground"
 
-#: src/pages/contatti/_address.tsx:39
+#: src/pages/contatti/_address.tsx:42
 msgid "Codice Fiscale e Partita IVA"
 msgstr "VAT number"
 
@@ -244,11 +244,11 @@ msgid "Contattaci per un preventivo per ostacoli, recinti, tondini coperti, gios
 msgstr "Contact us for a quote for obstacles, fences, covered round pens, walkers, dressage rectangles, and equestrian equipment"
 
 #: src/hooks/usePages/index.tsx:42
-#: src/pages/contatti/index.tsx:132
+#: src/pages/contatti/index.tsx:133
 msgid "Contatti"
 msgstr "Contacts us"
 
-#: src/pages/contatti/index.tsx:161
+#: src/pages/contatti/index.tsx:168
 msgid "Contatto commerciale"
 msgstr "Sales office"
 
@@ -264,7 +264,7 @@ msgstr "Sales office France"
 msgid "Contatto commerciale Germania"
 msgstr "Sales office Germany "
 
-#: src/pages/contatti/index.tsx:59
+#: src/pages/contatti/index.tsx:60
 msgid "Contatto commerciale Germania & Medio Oriente"
 msgstr "Sales office Germany & Middle East"
 
@@ -287,7 +287,7 @@ msgstr "Navigation cookies"
 msgid "Cookie policy"
 msgstr "Cookie policy"
 
-#: src/pages/contatti/index.tsx:151
+#: src/pages/contatti/index.tsx:154
 msgid "Coordinate bancarie"
 msgstr "Bank account details"
 
@@ -395,7 +395,7 @@ msgstr "We offer two walker models: the <0>Tecnoexerciser</0>, which we have pro
 
 #: src/components/Footer/Newsletter/index.tsx:54
 #: src/components/Footer/Newsletter/index.tsx:55
-#: src/pages/contatti/_address.tsx:76
+#: src/pages/contatti/_address.tsx:79
 msgid "Email"
 msgstr "Email"
 
@@ -1000,6 +1000,10 @@ msgstr "Sign up for the newsletter and discover the latest arrivals and promotio
 msgid "Ringrazio tutto il team per la professionalità, gentilezza, velocità e sopratutto per l'ottimo risultato"
 msgstr "I thank the whole team for their professionalism, kindness, speed and above all: the excellent result"
 
+#: src/pages/contatti/index.tsx:177
+msgid "Rivenditori"
+msgstr "International Dealers"
+
 #: src/components/ContentTable/index.tsx:52
 msgid "Scarica"
 msgstr "Download"
@@ -1037,11 +1041,11 @@ msgstr "Learn about our horse walkers, the ideal tools for training your horse"
 msgid "Scopri perché ogni anno centinaia di persone si affidano a Pessastudio per i loro articoli d'equitazione"
 msgstr "Find out why hundreds of people rely on Pessastudio for their riding equipment every year"
 
-#: src/pages/contatti/index.tsx:144
+#: src/pages/contatti/index.tsx:147
 msgid "Sede legale"
 msgstr "Registered entity"
 
-#: src/pages/contatti/index.tsx:137
+#: src/pages/contatti/index.tsx:140
 msgid "Sede operativa"
 msgstr "Head office"
 
@@ -1114,8 +1118,8 @@ msgstr "Tecnoexerciser"
 msgid "Tecnopolimero"
 msgstr "Technopolymer"
 
-#: src/pages/contatti/_address.tsx:43
-#: src/pages/contatti/_address.tsx:54
+#: src/pages/contatti/_address.tsx:46
+#: src/pages/contatti/_address.tsx:57
 msgid "Telefono"
 msgstr "Phone"
 
@@ -1194,7 +1198,11 @@ msgstr "We use cookies to ensure the proper functioning of the site. For more in
 msgid "Vedi"
 msgstr "View"
 
-#: src/pages/contatti/_address.tsx:65
+#: src/pages/contatti/_address.tsx:90
+msgid "Website"
+msgstr "Website"
+
+#: src/pages/contatti/_address.tsx:68
 msgid "WhatsApp"
 msgstr "WhatsApp"
 

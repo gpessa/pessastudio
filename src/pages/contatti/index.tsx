@@ -1,5 +1,5 @@
 import { Trans } from "@lingui/macro"
-import { Avatar, Box, styled, Stack } from "@mui/material"
+import { Avatar, Box, styled, Stack, Paper } from "@mui/material"
 import { Columns, TH } from "components"
 import React from "react"
 import { Helmet } from "react-helmet"
@@ -172,16 +172,24 @@ const Contatti: React.FC = () => (
             </Box>
 
 
-            {CONTATTI_COMMERCIALI.map(({ name, data }) => (
-              <Box>
-                <TH variant="h5">
-                  {name}
-                </TH>
-                <Address {...data} />
-              </Box>
-            ))}
+            <Stack spacing={PRODUCT_GUTTER}>
+              <TH variant="h4" gutterBottom={false}>
+                <Trans>Rivenditori</Trans>
+              </TH>
+              {CONTATTI_COMMERCIALI.map(({ name, data }) => (
+                <Box>
+                  <TH variant="h5">
+                    {name}
+                  </TH>
+                  <Paper elevation={0} variant="outlined" sx={{ p: 2 }}>
+                    <Address {...data} />
+                  </Paper>
+                </Box>
+              ))}
+            </Stack>
 
           </Stack>
+
 
         </RightColumnStyled>
       }

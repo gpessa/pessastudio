@@ -215,7 +215,7 @@ msgstr "Che cos'è un cookie?"
 msgid "Chiusura a terra"
 msgstr "Chiusura a terra"
 
-#: src/pages/contatti/_address.tsx:39
+#: src/pages/contatti/_address.tsx:42
 msgid "Codice Fiscale e Partita IVA"
 msgstr "Codice Fiscale e Partita IVA"
 
@@ -242,11 +242,11 @@ msgid "Contattaci per un preventivo per ostacoli, recinti, tondini coperti, gios
 msgstr "Contattaci per un preventivo per ostacoli, recinti, tondini coperti, giostre, rettangoli da dressage e attrezzature per cavalli"
 
 #: src/hooks/usePages/index.tsx:42
-#: src/pages/contatti/index.tsx:132
+#: src/pages/contatti/index.tsx:133
 msgid "Contatti"
 msgstr "Contatti"
 
-#: src/pages/contatti/index.tsx:161
+#: src/pages/contatti/index.tsx:168
 msgid "Contatto commerciale"
 msgstr "Contatto commerciale"
 
@@ -262,7 +262,7 @@ msgstr "Contatto commerciale Francia"
 msgid "Contatto commerciale Germania"
 msgstr "Contatto commerciale Germania"
 
-#: src/pages/contatti/index.tsx:59
+#: src/pages/contatti/index.tsx:60
 msgid "Contatto commerciale Germania & Medio Oriente"
 msgstr "Contatto commerciale Germania & Medio Oriente"
 
@@ -285,7 +285,7 @@ msgstr "Cookie di navigazione"
 msgid "Cookie policy"
 msgstr "Cookie policy"
 
-#: src/pages/contatti/index.tsx:151
+#: src/pages/contatti/index.tsx:154
 msgid "Coordinate bancarie"
 msgstr "Coordinate bancarie"
 
@@ -393,7 +393,7 @@ msgstr "Due sono i modelli di giostra che proponiamo: il modello <0>tecnoexercis
 
 #: src/components/Footer/Newsletter/index.tsx:54
 #: src/components/Footer/Newsletter/index.tsx:55
-#: src/pages/contatti/_address.tsx:76
+#: src/pages/contatti/_address.tsx:79
 msgid "Email"
 msgstr "Email"
 
@@ -979,6 +979,10 @@ msgstr "Rimani informato sui nostri sconti e gli eventi"
 msgid "Ringrazio tutto il team per la professionalità, gentilezza, velocità e sopratutto per l'ottimo risultato"
 msgstr "Ringrazio tutto il team per la professionalità, gentilezza, velocità e sopratutto per l'ottimo risultato"
 
+#: src/pages/contatti/index.tsx:177
+msgid "Rivenditori"
+msgstr "Rivenditori"
+
 #: src/components/ContentTable/index.tsx:52
 msgid "Scarica"
 msgstr "Scarica"
@@ -1016,11 +1020,11 @@ msgstr "Scopri le nostre giostre per cavalli, lo strumento ideale di lavoro per 
 msgid "Scopri perché ogni anno centinaia di persone si affidano a Pessastudio per i loro articoli d'equitazione"
 msgstr "Scopri perché ogni anno centinaia di persone si affidano a Pessastudio per i loro articoli d'equitazione"
 
-#: src/pages/contatti/index.tsx:144
+#: src/pages/contatti/index.tsx:147
 msgid "Sede legale"
 msgstr "Sede legale"
 
-#: src/pages/contatti/index.tsx:137
+#: src/pages/contatti/index.tsx:140
 msgid "Sede operativa"
 msgstr "Sede operativa"
 
@@ -1093,8 +1097,8 @@ msgstr "Tecnoexerciser"
 msgid "Tecnopolimero"
 msgstr "Tecnopolimero"
 
-#: src/pages/contatti/_address.tsx:43
-#: src/pages/contatti/_address.tsx:54
+#: src/pages/contatti/_address.tsx:46
+#: src/pages/contatti/_address.tsx:57
 msgid "Telefono"
 msgstr "Telefono"
 
@@ -1173,7 +1177,11 @@ msgstr "Utilizziamo i cookie per garantire il corretto funzionamento del sito. P
 msgid "Vedi"
 msgstr "Vedi"
 
-#: src/pages/contatti/_address.tsx:65
+#: src/pages/contatti/_address.tsx:90
+msgid "Website"
+msgstr "Website"
+
+#: src/pages/contatti/_address.tsx:68
 msgid "WhatsApp"
 msgstr "WhatsApp"
 
