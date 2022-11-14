@@ -18,8 +18,10 @@ const rewrite = [
   ["^giostra-tecnoexerciser.php", "/it/giostre/tecnoexerciser/"],
   ["^tondini.php", "/it/tondini/"],
   ["^contatto.php", "/it/contatti/"],
-].map(([from, to]) => `
-    RewriteRule ${from} ${to} [R=301,L,NE]`)
+].map(
+  ([from, to]) => `
+    RewriteRule ${from} ${to} [R=301,L,NE]`
+)
 
 const languages = [
   `
@@ -35,7 +37,7 @@ const languages = [
   //   `
   //   RewriteCond %{HTTP:Accept-Language} ^en [NC]
   //   RewriteRule ^$ /en/ [L,R=301]
-  //   `, 
+  //   `,
 ]
 
 module.exports = [...rewrite, ...languages]

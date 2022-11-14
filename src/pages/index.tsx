@@ -1,9 +1,9 @@
 import { Trans } from "@lingui/macro"
-import AccountBalance from "@mui/icons-material/AccountBalance";
-import Apps from "@mui/icons-material/Apps";
-import Architecture from "@mui/icons-material/Architecture";
-import Restore from "@mui/icons-material/Restore";
-import TurnedInNot from "@mui/icons-material/TurnedInNot";
+import AccountBalance from "@mui/icons-material/AccountBalance"
+import Apps from "@mui/icons-material/Apps"
+import Architecture from "@mui/icons-material/Architecture"
+import Restore from "@mui/icons-material/Restore"
+import TurnedInNot from "@mui/icons-material/TurnedInNot"
 import { Benefits, Hero, Products, Testimonials } from "components"
 import React from "react"
 

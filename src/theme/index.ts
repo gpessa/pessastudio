@@ -23,10 +23,9 @@ export const SECTION_SPACING = (breakingPoint: "xs" | "md") => {
     })
 
     const value = CONFIGURATION.get(breakingPoint)[spacing]
-    return theme.spacing(value);
+    return theme.spacing(value)
   }
 }
-
 
 declare module "@mui/material/styles/createTypography" {
   interface TypographyOptions {
@@ -52,17 +51,17 @@ declare module "@mui/material/styles/createPalette" {
 
 declare module "@mui/styles/defaultTheme" {
   // eslint-disable-next-line @typescript-eslint/no-empty-interface
-  interface DefaultTheme extends Theme { }
+  interface DefaultTheme extends Theme {}
 }
 
 declare module "@mui/styles/defaultTheme" {
   // eslint-disable-next-line @typescript-eslint/no-empty-interface
-  interface DefaultTheme extends Theme { }
+  interface DefaultTheme extends Theme {}
 }
 
-declare module '@mui/material/Button' {
+declare module "@mui/material/Button" {
   interface ButtonPropsColorOverrides {
-    warm2: true;
+    warm2: true
   }
 }
 
@@ -85,7 +84,7 @@ const themePalette = createTheme({
       main: "#EBE6DE",
       contrastText: "rgba(0, 0, 0, 0.87)",
     },
-  }
+  },
 })
 
 const theme = createTheme(themePalette, {
@@ -101,7 +100,7 @@ const theme = createTheme(themePalette, {
       fontSize: "0.9rem",
       lineHeight: "1em",
       textTransform: "uppercase",
-      color: themePalette.palette.grey[600]
+      color: themePalette.palette.grey[600],
     },
     h1: {
       fontFamily: "serif",

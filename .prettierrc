@@ -6,7 +6,7 @@
   "trailingComma": "es5",
   "quoteProps": "consistent",
   "bracketSpacing": true,
-  "jsxBracketSameLine": false,
+  "bracketSameLine": false,
   "arrowParens": "avoid",
   "proseWrap": "preserve",
   "printWidth": 120
