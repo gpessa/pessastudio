@@ -1,5 +1,5 @@
 import { Trans } from "@lingui/react"
-import Menu from "@mui/icons-material/Menu";
+import Menu from "@mui/icons-material/Menu"
 import {
   AppBar,
   Box,
@@ -80,19 +80,12 @@ const NavigationMobile = styled(Box)(({ theme }) => ({
   },
 }))
 
-const ElevationScroll: React.FC = ({ children }) => {
+const Navigation: React.FC = () => {
   const trigger = useScrollTrigger({
-    disableHysteresis: true,
     target: typeof window !== `undefined` ? window : undefined,
+    disableHysteresis: true,
     threshold: 0,
   })
-
-  return React.cloneElement(children, {
-    elevation: trigger ? 4 : 0,
-  })
-}
-
-const Navigation: React.FC = () => {
   const [open, setOpen] = useState(false)
   const { NAVIGATION } = usePages()
   const theme = useTheme()
@@ -112,60 +105,58 @@ const Navigation: React.FC = () => {
   }
 
   return (
-    <ElevationScroll>
-      <AppBar position="sticky" color="inherit">
-        <ToolbarStyled>
-          <Logo />
+    <AppBar position="sticky" color="inherit" elevation={trigger ? 4 : 0}>
+      <ToolbarStyled>
+        <Logo />
 
-          <NavigationDesktop>
-            {Object.values(NAVIGATION).map(({ url, title }) => (
-              <NavigationDesktopButtom
-                activeStyle={{
-                  color: theme.palette.primary.main,
-                  fontWeight: "bold",
-                }}
-                component={LocalizedLink}
-                partiallyActive={true}
-                key={url}
-                to={url}
-              >
-                <Trans id={title} />
-              </NavigationDesktopButtom>
-            ))}
-            <NavigationDesktopDivider />
-            <LanguageSelector />
-          </NavigationDesktop>
+        <NavigationDesktop>
+          {Object.values(NAVIGATION).map(({ url, title }) => (
+            <NavigationDesktopButtom
+              activeStyle={{
+                color: theme.palette.primary.main,
+                fontWeight: "bold",
+              }}
+              component={LocalizedLink}
+              partiallyActive={true}
+              key={url}
+              to={url}
+            >
+              <Trans id={title} />
+            </NavigationDesktopButtom>
+          ))}
+          <NavigationDesktopDivider />
+          <LanguageSelector />
+        </NavigationDesktop>
 
-          <NavigationMobile>
-            <LanguageSelector />
-            <NavigationDesktopDivider />
-            <IconButton edge="end" size="large" color="primary" aria-label="Main menu" onClick={handleMenuToggle}>
-              <Menu />
-            </IconButton>
-          </NavigationMobile>
-        </ToolbarStyled>
+        <NavigationMobile>
+          <LanguageSelector />
+          <NavigationDesktopDivider />
+          <IconButton edge="end" size="large" color="primary" aria-label="Main menu" onClick={handleMenuToggle}>
+            <Menu />
+          </IconButton>
+        </NavigationMobile>
+      </ToolbarStyled>
 
-        {open && (
-          <MenuMobileStyled>
-            {Object.values(NAVIGATION).map(({ url, title }) => (
-              <ListItem
-                button
-                activeStyle={{
-                  color: theme.palette.primary.main,
-                  fontWeight: "bold",
-                }}
-                component={LocalizedLink}
-                partiallyActive={true}
-                key={url}
-                to={url}
-              >
-                <Trans id={title} />
-              </ListItem>
-            ))}
-          </MenuMobileStyled>
-        )}
-      </AppBar>
-    </ElevationScroll>
+      {open && (
+        <MenuMobileStyled>
+          {Object.values(NAVIGATION).map(({ url, title }) => (
+            <ListItem
+              button
+              activeStyle={{
+                color: theme.palette.primary.main,
+                fontWeight: "bold",
+              }}
+              component={LocalizedLink}
+              partiallyActive={true}
+              key={url}
+              to={url}
+            >
+              <Trans id={title} />
+            </ListItem>
+          ))}
+        </MenuMobileStyled>
+      )}
+    </AppBar>
   )
 }
 
