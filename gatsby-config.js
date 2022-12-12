@@ -10,7 +10,6 @@ module.exports = {
     siteUrl: "https://pessastudio.eu",
   },
   plugins: [
-    "gatsby-plugin-tsconfig-paths",
     {
       resolve: `gatsby-plugin-gdpr-cookies`,
       options: {
