@@ -1,5 +1,5 @@
 import { Trans } from "@lingui/macro"
-import { Avatar, Box, styled, Stack, Paper } from "@mui/material"
+import { Avatar, Box, Paper, Stack, styled } from "@mui/material"
 import { Columns, TH } from "components"
 import React from "react"
 import { Helmet } from "react-helmet"
@@ -32,7 +32,7 @@ const CONTATTI_COMMERCIALI = [
       name: "Roberto Della Bella",
       email: "magiccavallo@hotmail.com",
       telephone: "+32 475 96 5123",
-    }
+    },
   },
   {
     name: <Trans>Contatto commerciale Francia</Trans>,
@@ -40,21 +40,21 @@ const CONTATTI_COMMERCIALI = [
       name: "Théo Cardon",
       email: "commercial@equisea.fr",
       telephone: "+33 788044648",
-    }
+    },
   },
   {
     name: <Trans>Contatto commerciale Germania</Trans>,
     data: {
       email: "office@bacherproducts.de",
       telephone: "+49 6206 13445",
-      mobile: "+49 170 4574055",
       name: "Bacher Products GmbH",
       streetAddress: "Lorscher Straße 13",
       postalCode: "68642",
       addressLocality: "Bürstadt",
       country: "Germany",
-      website: "https://bacherproducts.de"
-    }
+      website: "https://bacherproducts.de",
+      whatsapp: "+49 6206 13445",
+    },
   },
   {
     name: <Trans>Contatto commerciale Germania &amp; Medio Oriente</Trans>,
@@ -66,11 +66,10 @@ const CONTATTI_COMMERCIALI = [
       addressLocality: "Dillingen",
       telephone: "+49 (0) 9071 7700256",
       mobile: "+49 (0) 171 3661394",
-      email: "mail@belindahitzler.de"
-    }
+      email: "mail@belindahitzler.de",
+    },
   },
 ]
-
 
 export const SEDE_OPERATIVA: AddressProps = {
   name: "Pessastudio Horse Tecnology srl",
@@ -82,15 +81,12 @@ export const SEDE_OPERATIVA: AddressProps = {
   telephone: "+39 0429 805613",
 }
 
-
 export const ITALIA: AddressProps = {
   name: "Anna Pessa",
   email: "annapessa@pessastudio.eu",
   telephone: "+39 349 0543098",
   whatsapp: "+39 349 0543098",
 }
-
-
 
 const AvatarStyled = styled(Avatar)(({ theme }) => ({
   marginBottom: theme.spacing(2),
@@ -134,7 +130,6 @@ const Contatti: React.FC = () => (
           </TH>
 
           <Stack spacing={PRODUCT_GUTTER}>
-
             <Box>
               <TH variant="h4">
                 <Trans>Sede operativa</Trans>
@@ -155,14 +150,12 @@ const Contatti: React.FC = () => (
               </TH>
               <StyledBank {...BANCA} />
             </Box>
-
           </Stack>
         </>
       }
       right={
         <RightColumnStyled>
           <Stack spacing={PRODUCT_GUTTER}>
-
             <Box>
               <TH variant="h4">
                 <Trans>Contatto commerciale</Trans>
@@ -171,26 +164,20 @@ const Contatti: React.FC = () => (
               <Address {...ITALIA} />
             </Box>
 
-
             <Stack spacing={PRODUCT_GUTTER}>
               <TH variant="h4" gutterBottom={false}>
                 <Trans>Rivenditori</Trans>
               </TH>
               {CONTATTI_COMMERCIALI.map(({ name, data }) => (
                 <Box>
-                  <TH variant="h5">
-                    {name}
-                  </TH>
+                  <TH variant="h5">{name}</TH>
                   <Paper elevation={0} variant="outlined" sx={{ p: 2 }}>
                     <Address {...data} />
                   </Paper>
                 </Box>
               ))}
             </Stack>
-
           </Stack>
-
-
         </RightColumnStyled>
       }
     />
