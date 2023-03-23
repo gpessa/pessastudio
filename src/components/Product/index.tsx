@@ -9,7 +9,7 @@ import { SEDE_OPERATIVA } from "pages/contatti"
 import React, { ReactNode } from "react"
 import { Helmet } from "react-helmet"
 import { helmetJsonLdProp } from "react-schemaorg"
-import { AggregateOffer, Offer, OfferCatalog, OfferForPurchase, Product as ProductSchema } from "schema-dts"
+import { ProductModel, Offer, Product as ProductSchema, WithContext } from "schema-dts"
 import { snakeCase } from "snake-case"
 import { BREAKPOINT, PRODUCT_GUTTER } from "theme"
 import { Colors } from "utils/constants"
@@ -90,40 +90,21 @@ const getData = (attributes: Attributes) => {
   }))
 }
 
-const getSeoPrice = (price: ProductProps["price"], url: string) => {
+const getSeoPrice = (price: ProductProps["price"], url: string): Offer | undefined => {
   if (!price) return undefined
 
-  if (typeof price === "number")
-    return helmetJsonLdProp<Offer>({
-      "priceCurrency": "EUR",
-      "@context": "https://schema.org",
-      "availability": "https://schema.org/InStock",
-      "@type": "Offer",
-      price,
-      url,
-    })
+  var date = new Date()
+  date.setFullYear(date.getFullYear() - 1)
+  const priceValidUntil = date.toISOString().slice(0, 10)
 
-  if (typeof price === "object" && price.length === 1)
-    return helmetJsonLdProp<Offer>({
-      "priceCurrency": "EUR",
-      "@context": "https://schema.org",
-      "availability": "https://schema.org/InStock",
-      "@type": "Offer",
-      "price": price[0].price,
-      url,
-    })
-
-  if (typeof price === "object" && price.length > 1) {
-    const order = price.sort((a, b) => a.price - b.price)
-    return helmetJsonLdProp<AggregateOffer>({
-      "priceCurrency": "EUR",
-      "@context": "https://schema.org",
-      "availability": "https://schema.org/InStock",
-      "@type": "AggregateOffer",
-      "lowPrice": order[0].price,
-      "highPrice": order[order.length - 1].price,
-      url,
-    })
+  return {
+    url,
+    priceValidUntil,
+    "@type": "Offer",
+    "priceCurrency": "EUR",
+    "availability": "https://schema.org/InStock",
+    "itemCondition": "https://schema.org/NewCondition",
+    "price": typeof price === "number" ? price : price[0].price,
   }
 }
 
@@ -135,23 +116,25 @@ const Product: React.FC<ProductProps> = ({ className, images, vertical, price, n
   const siteUrl = useStaticQuery(seoQuery).site.siteMetadata.siteUrl
   const itemUrl = `${siteUrl}${pathname}#${id}`
 
+  const jsonLd: WithContext<ProductModel> = {
+    "@context": "https://schema.org",
+    "@type": "ProductModel",
+    "name": name,
+    "image": images.map(({ src }) => siteUrl + src),
+    "brand": {
+      "@type": "Brand",
+      "name": SEDE_OPERATIVA.name as string,
+    },
+  }
+
+  const offers = getSeoPrice(price, itemUrl)
+  if (offers) {
+    jsonLd.offers = offers
+  }
+
   return (
     <Box id={id} className={className}>
-      <Helmet
-        script={[
-          helmetJsonLdProp<ProductSchema>({
-            "@context": "https://schema.org",
-            "@type": "Product",
-            "name": name,
-            "image": images.map(({ src }) => siteUrl + src),
-            "offers": getSeoPrice(price, itemUrl),
-            "brand": {
-              "@type": "Brand",
-              "name": SEDE_OPERATIVA.name,
-            },
-          }),
-        ]}
-      />
+      <Helmet script={[helmetJsonLdProp<ProductSchema>(jsonLd)]} />
       <Grid container spacing={PRODUCT_GUTTER}>
         <ProductImages {...{ images, md, name }} />
 
