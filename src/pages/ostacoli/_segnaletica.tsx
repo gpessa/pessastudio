@@ -11,7 +11,7 @@ const Segnaletica: React.FC = () => {
       name: t`Bandierine`,
       images: [{ src: require("assets/products/ostacoli/bandierine.jpg").default }],
       materials: [MATERIALS.PLASTICA],
-      price: 3.5,
+      price: 2.1,
     },
     {
       name: t`Numero per campo ostacoli professional`,
@@ -20,7 +20,7 @@ const Segnaletica: React.FC = () => {
       width: 200,
       height: 300,
       weight: 2.3,
-      price: 20,
+      price: 26,
     },
     {
       name: t`Numero per campo ostacoli light`,

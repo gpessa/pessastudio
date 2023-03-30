@@ -8,7 +8,7 @@ import { MATERIALS } from "utils/constants"
 const CandelieriLameForate = () => {
   const PRODUCTS = [
     {
-      name: t`Candeliere 1,7 mt. con piede in PVC`,
+      name: t`Candeliere con piede in PVC`,
       description: (
         <Trans>
           I candelieri sono costruiti con un montante di alluminio verniciato di colore bianco e sono muniti di 4 piedi
@@ -25,7 +25,10 @@ const CandelieriLameForate = () => {
       depth: 720,
       height: 1700,
       weight: 7,
-      price: 87,
+      price: [
+        { price: 89, note: <Trans>Altezza {170} cm.</Trans> },
+        { price: 96, note: <Trans>Lama {190} cm.</Trans> },
+      ],
     },
     {
       name: t`Lama DE da 50/150 cm.`,
@@ -45,8 +48,8 @@ const CandelieriLameForate = () => {
       thickness: 2,
       width: 65,
       price: [
-        { price: 8.5, note: <Trans>Lama 50 cm.</Trans> },
-        { price: 15.5, note: <Trans>Lama 150 cm.</Trans> },
+        { price: 8.5, note: <Trans>Lama {50} cm.</Trans> },
+        { price: 17.0, note: <Trans>Lama {150} cm.</Trans> },
       ],
     },
   ]

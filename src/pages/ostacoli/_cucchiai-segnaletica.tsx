@@ -29,7 +29,7 @@ const CucchiaiSegnaletica: React.FC = () => {
         { src: require("assets/products/ostacoli/cucchiaio-ps-03.png").default },
       ],
       materials: [MATERIALS.TECNOPOLIMERO],
-      price: 3.5,
+      price: 4.5,
     },
     {
       name: t`Supporto di sicurezza`,

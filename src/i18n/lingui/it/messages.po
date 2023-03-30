@@ -94,7 +94,7 @@ msgstr "<0>Ottimo per insegnare ai vostri cavalli/puledri a saltarlo.</0><1>Il f
 msgid "<0>Porte di separazione.</0><1>(Elettrificatione 200-240 Volt monofase)</1>"
 msgstr "<0>Porte di separazione.</0><1>(Elettrificatione 200-240 Volt monofase)</1>"
 
-#: src/pages/ostacoli/_barriere.tsx:30
+#: src/pages/ostacoli/_barriere.tsx:29
 msgid "<0>Sono le componenti dell'ostacolo più stressate, poiché, come i candelieri e i pilieri, sono perennemente sottoposte all'azione aggressiva degli agenti atmosferici (caldo, freddo, sole, pioggia). A questi si aggiungono anche gli urti degli zoccoli dei cavalli, frequenti ribaltamenti e le manipolazioni necessarie per aggiustarne le altezze.</0><1>Le barriere di abete, comunemente usate, richiedono una continua manutenzione perché si piegano, scoloriscono nel tempo e si rompono frequentemente.</1><2>Le barriere sintetiche di Pessastudio, invece, hanno lo stesso peso di quelle in abete, ma perdono il loro colore solamente dopo anni, non si scrostano e, solo raramente, si rompono sotto l'azione di un carico eccessivo.</2>"
 msgstr "<0>Sono le componenti dell'ostacolo più stressate, poiché, come i candelieri e i pilieri, sono perennemente sottoposte all'azione aggressiva degli agenti atmosferici (caldo, freddo, sole, pioggia). A questi si aggiungono anche gli urti degli zoccoli dei cavalli, frequenti ribaltamenti e le manipolazioni necessarie per aggiustarne le altezze.</0><1>Le barriere di abete, comunemente usate, richiedono una continua manutenzione perché si piegano, scoloriscono nel tempo e si rompono frequentemente.</1><2>Le barriere sintetiche di Pessastudio, invece, hanno lo stesso peso di quelle in abete, ma perdono il loro colore solamente dopo anni, non si scrostano e, solo raramente, si rompono sotto l'azione di un carico eccessivo.</2>"
 
@@ -139,6 +139,10 @@ msgstr "Acconsento"
 msgid "Altezza"
 msgstr "Altezza"
 
+#: src/pages/ostacoli/_candelieri-e-lame-forate.tsx:29
+msgid "Altezza {0} cm."
+msgstr "Altezza {0} cm."
+
 #: src/pages/giostre/tecnoexerciser/_servizio_clienti.tsx:94
 msgid "Altro"
 msgstr "Altro"
@@ -170,11 +174,11 @@ msgstr "Avanti"
 msgid "Bandierine"
 msgstr "Bandierine"
 
-#: src/pages/ostacoli/_barriere.tsx:11
+#: src/pages/ostacoli/_barriere.tsx:10
 msgid "Barriera 3 mt."
 msgstr "Barriera 3 mt."
 
-#: src/pages/ostacoli/_barriere.tsx:28
+#: src/pages/ostacoli/_barriere.tsx:27
 msgid "Barriere"
 msgstr "Barriere"
 
@@ -187,10 +191,10 @@ msgid "COD. FISC. e Part: I.V.A. 04743610281 C.C.I.A.A. PD - R.E.A. 414822"
 msgstr "COD. FISC. e Part: I.V.A. 04743610281 C.C.I.A.A. PD - R.E.A. 414822"
 
 #: src/pages/ostacoli/_candelieri-e-lame-forate.tsx:11
-msgid "Candeliere 1,7 mt. con piede in PVC"
-msgstr "Candeliere 1,7 mt. con piede in PVC"
+msgid "Candeliere con piede in PVC"
+msgstr "Candeliere con piede in PVC"
 
-#: src/pages/ostacoli/_candelieri-e-lame-forate.tsx:56
+#: src/pages/ostacoli/_candelieri-e-lame-forate.tsx:59
 msgid "Candelieri e lame forate"
 msgstr "Candelieri e lame forate"
 
@@ -242,11 +246,11 @@ msgid "Contattaci per un preventivo per ostacoli, recinti, tondini coperti, gios
 msgstr "Contattaci per un preventivo per ostacoli, recinti, tondini coperti, giostre, rettangoli da dressage e attrezzature per cavalli"
 
 #: src/hooks/usePages/index.tsx:42
-#: src/pages/contatti/index.tsx:133
+#: src/pages/contatti/index.tsx:129
 msgid "Contatti"
 msgstr "Contatti"
 
-#: src/pages/contatti/index.tsx:168
+#: src/pages/contatti/index.tsx:161
 msgid "Contatto commerciale"
 msgstr "Contatto commerciale"
 
@@ -285,7 +289,7 @@ msgstr "Cookie di navigazione"
 msgid "Cookie policy"
 msgstr "Cookie policy"
 
-#: src/pages/contatti/index.tsx:154
+#: src/pages/contatti/index.tsx:149
 msgid "Coordinate bancarie"
 msgstr "Coordinate bancarie"
 
@@ -327,7 +331,7 @@ msgstr "Corridoio TECNOFENCE"
 msgid "Cosa dicono di noi"
 msgstr "Cosa dicono di noi"
 
-#: src/pages/ostacoli/_barriere.tsx:10
+#: src/pages/ostacoli/_barriere.tsx:9
 msgid "Costruisci la tua barriera personalizzata scegliendo tra i colori a disposizione"
 msgstr "Costruisci la tua barriera personalizzata scegliendo tra i colori a disposizione"
 
@@ -682,17 +686,15 @@ msgstr "La rete antivento protegge l'interno della tondino da correnti d'aria co
 msgid "La struttura è stata progettata per garantire un carico neve fino a 120 kg/mq e la velocità del vento fino a 110 km/h."
 msgstr "La struttura è stata progettata per garantire un carico neve fino a 120 kg/mq e la velocità del vento fino a 110 km/h."
 
-#: src/pages/ostacoli/_candelieri-e-lame-forate.tsx:49
-msgid "Lama 150 cm."
-msgstr "Lama 150 cm."
-
-#: src/pages/ostacoli/_candelieri-e-lame-forate.tsx:48
-msgid "Lama 50 cm."
-msgstr "Lama 50 cm."
-
-#: src/pages/ostacoli/_candelieri-e-lame-forate.tsx:31
+#: src/pages/ostacoli/_candelieri-e-lame-forate.tsx:34
 msgid "Lama DE da 50/150 cm."
 msgstr "Lama DE da 50/150 cm."
+
+#: src/pages/ostacoli/_candelieri-e-lame-forate.tsx:30
+#: src/pages/ostacoli/_candelieri-e-lame-forate.tsx:51
+#: src/pages/ostacoli/_candelieri-e-lame-forate.tsx:52
+msgid "Lama {0} cm."
+msgstr "Lama {0} cm."
 
 #: src/components/Product/index.tsx:61
 msgid "Larghezza"
@@ -801,7 +803,7 @@ msgstr "PVC"
 msgid "Pagina non trovata"
 msgstr "Pagina non trovata"
 
-#: src/pages/ostacoli/_candelieri-e-lame-forate.tsx:34
+#: src/pages/ostacoli/_candelieri-e-lame-forate.tsx:37
 msgid "Per consentirvi di realizzare ostacoli di vostra creazione possiamo fornirvi le lame forate in due diverse lunghezze."
 msgstr "Per consentirvi di realizzare ostacoli di vostra creazione possiamo fornirvi le lame forate in due diverse lunghezze."
 
@@ -979,7 +981,7 @@ msgstr "Rimani informato sui nostri sconti e gli eventi"
 msgid "Ringrazio tutto il team per la professionalità, gentilezza, velocità e sopratutto per l'ottimo risultato"
 msgstr "Ringrazio tutto il team per la professionalità, gentilezza, velocità e sopratutto per l'ottimo risultato"
 
-#: src/pages/contatti/index.tsx:177
+#: src/pages/contatti/index.tsx:169
 msgid "Rivenditori"
 msgstr "Rivenditori"
 
@@ -1020,11 +1022,11 @@ msgstr "Scopri le nostre giostre per cavalli, lo strumento ideale di lavoro per 
 msgid "Scopri perché ogni anno centinaia di persone si affidano a Pessastudio per i loro articoli d'equitazione"
 msgstr "Scopri perché ogni anno centinaia di persone si affidano a Pessastudio per i loro articoli d'equitazione"
 
-#: src/pages/contatti/index.tsx:147
+#: src/pages/contatti/index.tsx:142
 msgid "Sede legale"
 msgstr "Sede legale"
 
-#: src/pages/contatti/index.tsx:140
+#: src/pages/contatti/index.tsx:135
 msgid "Sede operativa"
 msgstr "Sede operativa"
 

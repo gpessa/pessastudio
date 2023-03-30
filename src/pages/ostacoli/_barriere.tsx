@@ -1,10 +1,9 @@
-import { Product, Title } from 'components';
-import React from 'react';
-import { PRODUCT_GUTTER } from 'theme';
-import { Colors } from 'utils/constants';
-import { t, Trans } from '@lingui/macro';
-import { Typography } from '@mui/material';
-
+import { Product, Title } from "components"
+import React from "react"
+import { PRODUCT_GUTTER } from "theme"
+import { Colors } from "utils/constants"
+import { t, Trans } from "@lingui/macro"
+import { Typography } from "@mui/material"
 
 const PRODUCT = {
   description: <Trans>Costruisci la tua barriera personalizzata scegliendo tra i colori a disposizione</Trans>,
@@ -14,7 +13,7 @@ const PRODUCT = {
     { src: require("assets/products/ostacoli/barriere-02.png").default },
     { src: require("assets/products/ostacoli/barriere-03.png").default },
   ],
-  price: 48,
+  price: 50,
   weight: 9.75,
   length: 2990,
   diameter: 95,
