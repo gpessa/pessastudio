@@ -18,7 +18,7 @@ const Cubi: React.FC = () => {
       length: 370,
       height: 570,
       weight: 3,
-      price: 36,
+      price: 38.5,
       colors: [Colors.WHITE, Colors.BLU, Colors.YELLOW, Colors.RED, Colors.GREEN],
     },
     {
@@ -32,7 +32,7 @@ const Cubi: React.FC = () => {
       length: 570,
       height: 700,
       weight: 5,
-      price: 63,
+      price: 63.5,
       colors: [Colors.WHITE, Colors.BLU, Colors.YELLOW, Colors.RED, Colors.GREEN],
     },
   ]

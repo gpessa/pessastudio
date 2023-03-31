@@ -49,13 +49,15 @@ const Dressage: React.FC = () => {
     },
     {
       description: DESCRIPTION_20x60,
-      name: t`Rettangolo dressage 20x60`,
+      name: t({ message: `Rettangolo dressage {size}`, values: { size: "20x60" } }),
       images: [{ src: require("assets/products/dressage/rettangolo-dressage-20x60.svg").default }],
+      price: 1800,
     },
     {
       description: DESCRIPTION_20x40,
-      name: t`Rettangolo dressage 20x40`,
+      name: t({ message: `Rettangolo dressage {size}`, values: { size: "20x40" } }),
       images: [{ src: require("assets/products/dressage/rettangolo-dressage-20x40.svg").default }],
+      price: 1400,
     },
   ]
 
@@ -79,13 +81,15 @@ const Dressage: React.FC = () => {
     },
     {
       description: DESCRIPTION_20x60,
-      name: t`Rettangolo dressage 20x60`,
+      name: t({ message: `Rettangolo dressage {size}`, values: { size: "20x60" } }),
       images: [{ src: require("assets/products/dressage/rettangolo-dressage-20x60.svg").default }],
+      price: 7900,
     },
     {
       description: DESCRIPTION_20x40,
-      name: t`Rettangolo dressage 20x40`,
+      name: t({ message: `Rettangolo dressage {size}`, values: { size: "20x40" } }),
       images: [{ src: require("assets/products/dressage/rettangolo-dressage-20x40.svg").default }],
+      price: 5900,
     },
   ]
 

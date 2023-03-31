@@ -15,7 +15,7 @@ const Cavalletti: React.FC = () => {
       length: 500,
       height: 500,
       weight: 2,
-      price: [{ price: 36, note: <Trans>Singolo cavvalleto</Trans> }],
+      price: [{ price: 34, note: <Trans>Singolo cavvalleto</Trans> }],
       colors: [Colors.WHITE, Colors.BLU, Colors.YELLOW, Colors.RED, Colors.GREEN],
     },
     {

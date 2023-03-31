@@ -62,7 +62,7 @@ msgstr "<0>Il corridoio <1>TECNOFENCE</1> è una soluzione semplice ed economica
 msgid "<0>Il corridoio <1>{name}</1> in compensato marino è realizzato con un multistrato <2>({thickness} mm. di spessore)</2> antigraffio, antiurto, resistente allo sporco e idrorepellente. L'obbiettivo di questa soluzione è quello di fornire un elevato grado di sicurezza forzando il cavallo a concentrarsi sul percorso durante l'allenamento.</0>"
 msgstr "<0>Il corridoio <1>{name}</1> in compensato marino è realizzato con un multistrato <2>({thickness} mm. di spessore)</2> antigraffio, antiurto, resistente allo sporco e idrorepellente. L'obbiettivo di questa soluzione è quello di fornire un elevato grado di sicurezza forzando il cavallo a concentrarsi sul percorso durante l'allenamento.</0>"
 
-#: src/pages/dressage/index.tsx:109
+#: src/pages/dressage/index.tsx:113
 msgid "<0>Il rettangolo della linea <1>training</1> è rivolto a quei maneggi in cui lo spazio a disposizione è limitato e il rettangolo viene installato provvisoriamente.</0><2>Facile da montare, è costituito da elementi modulari di 2 mt. in materiale plastico, non richiede alcuna manutenzione e occupa poco spazio quando non è utilizzato.</2>"
 msgstr "<0>Il rettangolo della linea <1>training</1> è rivolto a quei maneggi in cui lo spazio a disposizione è limitato e il rettangolo viene installato provvisoriamente.</0><2>Facile da montare, è costituito da elementi modulari di 2 mt. in materiale plastico, non richiede alcuna manutenzione e occupa poco spazio quando non è utilizzato.</2>"
 
@@ -74,7 +74,7 @@ msgstr "<0>Ippowalker è una giostra di recente realizzazione, nasce dal sogno d
 msgid "<0>La <1>copertura in PVC</1> è composta da una struttura in acciaio zincato la quale sorregge un telo in tessuto di poliestere spalmato di colore verde o crema e in base alle esigenze del cliente anche in altre colorazioni.</0><2>Questa copertura è in grado di sorreggere un carico neve pari a 80 kg/mq * e una forza vento pari a 110 Km/h.</2>"
 msgstr "<0>La <1>copertura in PVC</1> è composta da una struttura in acciaio zincato la quale sorregge un telo in tessuto di poliestere spalmato di colore verde o crema e in base alle esigenze del cliente anche in altre colorazioni.</0><2>Questa copertura è in grado di sorreggere un carico neve pari a 80 kg/mq * e una forza vento pari a 110 Km/h.</2>"
 
-#: src/pages/dressage/index.tsx:134
+#: src/pages/dressage/index.tsx:138
 msgid "<0>La linea <1>olimpic</1>, presente sul mercato da oltre vent'anni, è rappresentata da un rettangolo professionale, dove il campo da dressage è utilizzato quotidianamente.</0><2>Il campo è delimitato da moduli accostabili tra di loro, ciascuno dei quali è lungo 2 mt. Ogni modulo è costruito in polietilene antiurto resistente anche alle basse temperature e che non ingiallisce sotto l'azione dei raggi ultravioletti.</2><3>Su ciascun modulo sono previste tre aree piane con superficie lucida di 50x12 cm. sulle quali possono essere applicati adesivi pubblicitari.</3>"
 msgstr "<0>La linea <1>olimpic</1>, presente sul mercato da oltre vent'anni, è rappresentata da un rettangolo professionale, dove il campo da dressage è utilizzato quotidianamente.</0><2>Il campo è delimitato da moduli accostabili tra di loro, ciascuno dei quali è lungo 2 mt. Ogni modulo è costruito in polietilene antiurto resistente anche alle basse temperature e che non ingiallisce sotto l'azione dei raggi ultravioletti.</2><3>Su ciascun modulo sono previste tre aree piane con superficie lucida di 50x12 cm. sulle quali possono essere applicati adesivi pubblicitari.</3>"
 
@@ -387,7 +387,7 @@ msgid "Dimensioni giostra {sides} pannelli {size} mt. e istruzioni preparazione 
 msgstr "Dimensioni giostra {sides} pannelli {size} mt. e istruzioni preparazione fondo"
 
 #: src/hooks/usePages/index.tsx:36
-#: src/pages/dressage/index.tsx:96
+#: src/pages/dressage/index.tsx:100
 msgid "Dressage"
 msgstr "Dressage"
 
@@ -708,7 +708,7 @@ msgstr "Le nostre giostre sono considerate strutture precarie. Non avrete bisogn
 msgid "Le recinzioni a quattro filagne sono utilizzate per delimitare paddock per stalloni, realizzare tondini per la doma e l'addestramento o per formare ovali per il salto in libertà"
 msgstr "Le recinzioni a quattro filagne sono utilizzate per delimitare paddock per stalloni, realizzare tondini per la doma e l'addestramento o per formare ovali per il salto in libertà"
 
-#: src/pages/dressage/index.tsx:64
+#: src/pages/dressage/index.tsx:66
 msgid "Lettera dressage"
 msgstr "Lettera dressage"
 
@@ -759,7 +759,7 @@ msgid "Materiali di qualità"
 msgstr "Materiali di qualità"
 
 #: src/pages/dressage/index.tsx:43
-#: src/pages/dressage/index.tsx:73
+#: src/pages/dressage/index.tsx:75
 msgid "Modulo dressage"
 msgstr "Modulo dressage"
 
@@ -785,7 +785,7 @@ msgstr "Numero per campo ostacoli light"
 msgid "Numero per campo ostacoli professional"
 msgstr "Numero per campo ostacoli professional"
 
-#: src/pages/dressage/index.tsx:131
+#: src/pages/dressage/index.tsx:135
 msgid "Olimpic"
 msgstr "Olimpic"
 
@@ -823,7 +823,7 @@ msgstr "Personalizzabili"
 msgid "Peso"
 msgstr "Peso"
 
-#: src/pages/dressage/index.tsx:98
+#: src/pages/dressage/index.tsx:102
 msgid "Pessastudio fornisce due soluzioni per trasformare il vostro terreno in un'arena da dressage: la gamma <0>training</0> e quella <1>olimpic</1>"
 msgstr "Pessastudio fornisce due soluzioni per trasformare il vostro terreno in un'arena da dressage: la gamma <0>training</0> e quella <1>olimpic</1>"
 
@@ -958,15 +958,12 @@ msgstr "Rete antivento ingresso"
 msgid "Rettangoli / Campi professionali da dressage per tutte le esigenze"
 msgstr "Rettangoli / Campi professionali da dressage per tutte le esigenze"
 
-#: src/pages/dressage/index.tsx:57
-#: src/pages/dressage/index.tsx:87
-msgid "Rettangolo dressage 20x40"
-msgstr "Rettangolo dressage 20x40"
-
 #: src/pages/dressage/index.tsx:52
-#: src/pages/dressage/index.tsx:82
-msgid "Rettangolo dressage 20x60"
-msgstr "Rettangolo dressage 20x60"
+#: src/pages/dressage/index.tsx:58
+#: src/pages/dressage/index.tsx:84
+#: src/pages/dressage/index.tsx:90
+msgid "Rettangolo dressage {size}"
+msgstr "Rettangolo dressage {size}"
 
 #: src/components/Compare/index.tsx:77
 #: src/components/Compare/index.tsx:117
@@ -1147,7 +1144,7 @@ msgstr "Tondino coperto {sides} pannelli {size} mt."
 msgid "Tradizione e qualità"
 msgstr "Tradizione e qualità"
 
-#: src/pages/dressage/index.tsx:106
+#: src/pages/dressage/index.tsx:110
 msgid "Training"
 msgstr "Training"
 
