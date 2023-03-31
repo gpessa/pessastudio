@@ -8,7 +8,7 @@ import { MATERIALS } from "utils/constants"
 const CucchiaiSegnaletica: React.FC = () => {
   const PRODUCTS = [
     {
-      name: t`Cucchiaio DE`,
+      name: t({ message: `Cucchiaio {type}`, values: { type: `DE` } }),
       description: <Trans>Il cucchiaio standard utilizzato al livello internazionale</Trans>,
       images: [
         { src: require("assets/products/ostacoli/cucchiaio-de-01.png").default },
@@ -21,7 +21,7 @@ const CucchiaiSegnaletica: React.FC = () => {
       price: 3.5,
     },
     {
-      name: t`Cucchiaio PS`,
+      name: t({ message: `Cucchiaio {type}`, values: { type: `PS` } }),
       description: <Trans>Il cucchiaio dotato del nostro sistema brevettato di aggancio</Trans>,
       images: [
         { src: require("assets/products/ostacoli/cucchiaio-ps-01.png").default },

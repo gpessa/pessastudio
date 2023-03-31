@@ -49,22 +49,22 @@ const Dressage: React.FC = () => {
     },
     {
       description: DESCRIPTION_20x60,
-      name: t({ message: `Rettangolo dressage {size}`, values: { size: "20x60" } }),
+      name: t({ message: `Rettangolo dressage {size} ({type})`, values: { size: "20x60", type: "TRAINING" } }),
       images: [{ src: require("assets/products/dressage/rettangolo-dressage-20x60.svg").default }],
       price: 1800,
     },
     {
       description: DESCRIPTION_20x40,
-      name: t({ message: `Rettangolo dressage {size}`, values: { size: "20x40" } }),
+      name: t({ message: `Rettangolo dressage {size} ({type})`, values: { size: "20x40", type: "TRAINING" } }),
       images: [{ src: require("assets/products/dressage/rettangolo-dressage-20x40.svg").default }],
       price: 1400,
     },
   ]
 
-  const OLIMPIC_PRODUCTS = [
+  const OLYMPIC_PRODUCTS = [
     {
       name: t`Lettera dressage`,
-      images: [{ src: require("assets/products/dressage/olimpic-lettera.jpg").default }],
+      images: [{ src: require("assets/products/dressage/olympic-lettera.jpg").default }],
       width: 390,
       height: 700,
       weight: 2.5,
@@ -73,7 +73,7 @@ const Dressage: React.FC = () => {
     },
     {
       name: t`Modulo dressage`,
-      images: [{ src: require("assets/products/dressage/olimpic-modulo-dressage.jpg").default }],
+      images: [{ src: require("assets/products/dressage/olympic-modulo-dressage.jpg").default }],
       width: 2000,
       height: 370,
       weight: 5,
@@ -81,13 +81,13 @@ const Dressage: React.FC = () => {
     },
     {
       description: DESCRIPTION_20x60,
-      name: t({ message: `Rettangolo dressage {size}`, values: { size: "20x60" } }),
+      name: t({ message: `Rettangolo dressage {size} ({type})`, values: { size: "20x60", type: "OLYMPIC" } }),
       images: [{ src: require("assets/products/dressage/rettangolo-dressage-20x60.svg").default }],
       price: 7900,
     },
     {
       description: DESCRIPTION_20x40,
-      name: t({ message: `Rettangolo dressage {size}`, values: { size: "20x40" } }),
+      name: t({ message: `Rettangolo dressage {size} ({type})`, values: { size: "20x40", type: "OLYMPIC" } }),
       images: [{ src: require("assets/products/dressage/rettangolo-dressage-20x40.svg").default }],
       price: 5900,
     },
@@ -101,7 +101,7 @@ const Dressage: React.FC = () => {
         </TH>
         <Trans>
           Pessastudio fornisce due soluzioni per trasformare il vostro terreno in un'arena da dressage: la gamma{" "}
-          <Link href="#dressage-training">training</Link> e quella <Link href="#dressage-olimpic">olimpic</Link>
+          <Link href="#dressage-training">training</Link> e quella <Link href="#dressage-olympic">olympic</Link>
         </Trans>
       </Section>
 
@@ -130,14 +130,14 @@ const Dressage: React.FC = () => {
         </Grid>
       </Section>
 
-      <Section id="dressage-olimpic">
+      <Section id="dressage-olympic">
         <TH variant="h2">
           <Trans>Olimpic</Trans>
         </TH>
         <Box sx={{ mb: PRODUCT_GUTTER }}>
           <Trans>
             <Typography>
-              La linea <strong>olimpic</strong>, presente sul mercato da oltre vent'anni, è rappresentata da un
+              La linea <strong>olympic</strong>, presente sul mercato da oltre vent'anni, è rappresentata da un
               rettangolo professionale, dove il campo da dressage è utilizzato quotidianamente.
             </Typography>
             <Typography>
@@ -152,7 +152,7 @@ const Dressage: React.FC = () => {
           </Trans>
         </Box>
         <Grid container spacing={PRODUCT_GUTTER}>
-          {OLIMPIC_PRODUCTS.map((product, index) => (
+          {OLYMPIC_PRODUCTS.map((product, index) => (
             <Grid item key={index} md={3} xs={12}>
               <Product vertical {...product} />
             </Grid>
