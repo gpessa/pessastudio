@@ -50,13 +50,13 @@ const Dressage: React.FC = () => {
     {
       description: DESCRIPTION_20x60,
       name: t({ message: `Rettangolo dressage {size} ({type})`, values: { size: "20x60", type: "TRAINING" } }),
-      images: [{ src: require("assets/products/dressage/rettangolo-dressage-20x60.svg").default }],
+      images: [{ src: require("assets/products/dressage/rettangolo-dressage-20x60.jpg").default }],
       price: 1800,
     },
     {
       description: DESCRIPTION_20x40,
       name: t({ message: `Rettangolo dressage {size} ({type})`, values: { size: "20x40", type: "TRAINING" } }),
-      images: [{ src: require("assets/products/dressage/rettangolo-dressage-20x40.svg").default }],
+      images: [{ src: require("assets/products/dressage/rettangolo-dressage-20x40.jpg").default }],
       price: 1400,
     },
   ]
