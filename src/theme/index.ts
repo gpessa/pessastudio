@@ -31,10 +31,12 @@ declare module "@mui/material/styles/createTypography" {
   interface TypographyOptions {
     small: TypographyStyleOptions
     slim: TypographyStyleOptions
+    strong: TypographyStyleOptions
   }
   interface Typography {
     small: TypographyStyleOptions
     slim: TypographyStyleOptions
+    strong: TypographyStyleOptions
   }
 }
 
@@ -70,6 +72,12 @@ const themePalette = createTheme({
     fontFamily: "Source Sans Pro",
     slim: {
       fontFamily: "Roboto Condensed",
+    },
+    small: {
+      fontSize: "80%",
+    },
+    strong: {
+      fontWeight: 600,
     },
   },
   palette: {

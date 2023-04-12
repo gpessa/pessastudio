@@ -4,8 +4,10 @@ import Apps from "@mui/icons-material/Apps"
 import Architecture from "@mui/icons-material/Architecture"
 import Restore from "@mui/icons-material/Restore"
 import TurnedInNot from "@mui/icons-material/TurnedInNot"
+import { Typography } from "@mui/material"
 import { Benefits, Hero, Products, Testimonials } from "components"
 import React from "react"
+import { NAME } from "utils/constants"
 
 const Index: React.FC = () => {
   const TESTIMONIALS = [
@@ -76,7 +78,15 @@ const Index: React.FC = () => {
         title={<Trans>Pessastudio, una scelta di qualità</Trans>}
         text={
           <Trans>
-            Scopri perché ogni anno centinaia di persone si affidano a Pessastudio per i loro articoli d'equitazione
+            <Typography paragraph>
+              {NAME} è un'azienda altamente affidabile e rinomata nel settore dell'equitazione. Ogni anno, centinaia di
+              persone scelgono i nostri articoli d'equitazione per la qualità superiore che li caratterizza.
+            </Typography>
+            <Typography paragraph>
+              La gamma di prodotti offerti è ampia e diversificata, con un'attenzione particolare alla funzionalità e al
+              design. La competenza e l'esperienza del team di {NAME} sono alla base del successo dell'azienda e della
+              sua reputazione di affidabilità e professionalità.
+            </Typography>
           </Trans>
         }
       />
