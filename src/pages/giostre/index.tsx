@@ -1,15 +1,16 @@
-import { t, Trans } from "@lingui/macro";
-import AccessibilityNew from "@mui/icons-material/AccessibilityNew";
-import Apps from "@mui/icons-material/Apps";
-import DomainDisabled from "@mui/icons-material/DomainDisabled";
-import RemoveRedEyeOutlined from "@mui/icons-material/RemoveRedEyeOutlined";
-import VideogameAsset from "@mui/icons-material/VideogameAsset";
-import { Box, Button, Link, styled, Typography } from "@mui/material";
-import { Benefits, Columns, Gallery, Hero, Section, TH, Video } from "components";
-import { Picture } from "components/ModalGallery";
-import { LocalizedLink } from "gatsby-theme-i18n";
-import { usePages } from "hooks";
-import React from "react";
+import { t, Trans } from "@lingui/macro"
+import AccessibilityNew from "@mui/icons-material/AccessibilityNew"
+import Apps from "@mui/icons-material/Apps"
+import DomainDisabled from "@mui/icons-material/DomainDisabled"
+import RemoveRedEyeOutlined from "@mui/icons-material/RemoveRedEyeOutlined"
+import VideogameAsset from "@mui/icons-material/VideogameAsset"
+import { Box, Button, Link, styled, Typography } from "@mui/material"
+import { Benefits, Columns, Gallery, Hero, Section, TH, Video } from "components"
+import { Picture } from "components/ModalGallery"
+import { LocalizedLink } from "gatsby-theme-i18n"
+import { usePages } from "hooks"
+import React from "react"
+import { NAME } from "utils/constants"
 
 const GammaSectionStyled = styled(Section)({
   textAlign: "center",
@@ -22,7 +23,11 @@ const Giostre: React.FC = () => {
     {
       icon: AccessibilityNew,
       title: <Trans>3.000 giostre installate</Trans>,
-      description: <Trans>Più' di 3.000 clienti europei hanno scelto Pessastudio per la loro giostra</Trans>,
+      description: (
+        <Trans>
+          {NAME} è stata scelta da oltre 3.000 clienti in tutto il mondo per la realizzazione della propria giostra.
+        </Trans>
+      ),
     },
     {
       icon: Apps,
@@ -84,15 +89,16 @@ const Giostre: React.FC = () => {
         subtitle={<Trans>Giostre</Trans>}
         text={
           <Trans>
-            <Typography paragraph>Le giostre rappresentano il punto di forza della nostra azienda.</Typography>
+            <Typography paragraph>La nostra azienda si distingue per le giostre, il nostro punto di forza. </Typography>
             <Typography paragraph>
-              Sono state create dalla ricerca di <strong>Luciano Pessa</strong> con l'intenzione di realizzare un
-              semplice ed affidabile strumento di lavoro che vi consentirà di allenare il vostro cavallo anche quando
-              non avete la possibilità di montarlo.
+              La loro creazione è stata il risultato della ricerca condotta da <strong>Luciano Pessa</strong>, con
+              l'intento di sviluppare uno strumento di lavoro affidabile e semplice da utilizzare per l'allenamento dei
+              cavalli anche in assenza del cavaliere.
             </Typography>
             <Typography paragraph>
-              La giostra vi permetterè, non solo di raffreddare il vostro cavallo con una passeggiata post allenamento,
-              ma anche di creare una vera sessione di lavoro passando da un'andatura all'altra e cambiando di mano.
+              La giostra consente non solo di raffreddare il cavallo dopo l'allenamento, ma anche di creare una vera e
+              propria sessione di lavoro, passando da un'andatura all'altra e cambiando di mano. Grazie alla sua
+              versatilità, rappresenta una soluzione pratica ed efficace per l'allenamento quotidiano dei cavalli.
             </Typography>
           </Trans>
         }

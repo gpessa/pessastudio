@@ -233,4 +233,4 @@ export const GIOSTRA_DESCRIZIONE_RECINZIONE_COMPENSATO_MARINO = (thickness: numb
   </Trans>
 )
 
-export const NAME = <Typography variant="strong">Pessastudio</Typography>
+export const NAME = <strong>Pessastudio</strong>

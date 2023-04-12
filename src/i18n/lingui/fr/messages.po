@@ -22,7 +22,7 @@ msgstr "* En présence de chutes de neige dépassant la portée prévue, il y au
 msgid "+ IVA"
 msgstr "+ TVA"
 
-#: src/pages/giostre/index.tsx:24
+#: src/pages/giostre/index.tsx:25
 msgid "3.000 giostre installate"
 msgstr "3.000 marcheurs installés"
 
@@ -40,7 +40,7 @@ msgstr "<0>Couloir composé de clôture TECNOFENCE</0><1>(couloir intérieur 1,4
 
 #: src/utils/constants.tsx:148
 msgid "<0>Corridoio {name} composto da pannelli laterali in compensato marino</0><1>(spessore {thickness} mm.)</1>"
-msgstr "<0>Couloir {name} composé de panneaux latéraux en contreplaqué marine</0><1> (épaisseur 18 mm.)</1>"
+msgstr "<0>Couloir {name} composé de panneaux latéraux en contreplaqué marine</0><1> (épaisseur {thickness} mm.)</1>"
 
 #: src/utils/constants.tsx:43
 msgid "<0>E' possibile ordinare una giostra nei diametri:</0><1><2>12,0 mt. <3>(3 cavalli)</3></2><4>14,4 mt. <5>(4 cavalli)</5></4><6>16,0 mt. <7>(5 cavalli)</7></6><8>17,6 mt. <9>(6 cavalli)</9></8><10>19,2 mt. <11>(8 cavalli)</11></10></1>"
@@ -86,12 +86,9 @@ msgstr "<0>La <1>couverture en PVC</1> est composée d’une structure en acier 
 msgid "<0>La linea <1>olympic</1>, presente sul mercato da oltre vent'anni, è rappresentata da un rettangolo professionale, dove il campo da dressage è utilizzato quotidianamente.</0><2>Il campo è delimitato da moduli accostabili tra di loro, ciascuno dei quali è lungo 2 mt. Ogni modulo è costruito in polietilene antiurto resistente anche alle basse temperature e che non ingiallisce sotto l'azione dei raggi ultravioletti.</2><3>Su ciascun modulo sono previste tre aree piane con superficie lucida di 50x12 cm. sulle quali possono essere applicati adesivi pubblicitari.</3>"
 msgstr "<0>La ligne <1>olympic</1>, présente sur le marché depuis plus de 20 ans, consiste en un rectangle professionnel, lorsque la piste de dressage est utilisée quotidiennement.</0><2>Le terrain est délimité par des modules emboîtables, chacun mesurant 2 mt. de long. Chaque module est en polyéthylène antichoc, résistant y compris aux basses températures, il ne jaunit pas sous l’action des rayons UV.</2><3>Chaque module présente trois surfaces planes brillantes de 50x12 cm sur lesquelles peuvent être appliqués des adhésifs publicitaires.</3>"
 
-#: src/pages/giostre/index.tsx:86
-msgid "<0>Le giostre rappresentano il punto di forza della nostra azienda.</0><1>Sono state create dalla ricerca di <2>Luciano Pessa</2> con l'intenzione di realizzare un semplice ed affidabile strumento di lavoro che vi consentirà di allenare il vostro cavallo anche quando non avete la possibilità di montarlo.</1><3>La giostra vi permetterè, non solo di raffreddare il vostro cavallo con una passeggiata post allenamento, ma anche di creare una vera sessione di lavoro passando da un'andatura all'altra e cambiando di mano.</3>"
-msgstr ""
-"<0>Les marcheurs sont le point fort de notre entreprise.</0><1>\n"
-"Ils sont issus de la recherche de <2>Luciano Pessa</2>, qui souhaitait réaliser un outil de travail simple et fiable. Le marcheur vous permettra d’entraîner votre cheval même lorsque vous n’avez pas la possibilité de le monter.</1><3>\n"
-"Le marcheur vous permet non seulement de refroidir votre cheval dans une promenade après l’entraînement, mais également de créer une véritable session de travail en passant d’un pas à l’autre et en changeant de main.</3>"
+#: src/pages/giostre/index.tsx:91
+msgid "<0>La nostra azienda si distingue per le giostre, il nostro punto di forza. </0><1>La loro creazione è stata il risultato della ricerca condotta da <2>Luciano Pessa</2>, con l'intento di sviluppare uno strumento di lavoro affidabile e semplice da utilizzare per l'allenamento dei cavalli anche in assenza del cavaliere.</1><3>La giostra consente non solo di raffreddare il cavallo dopo l'allenamento, ma anche di creare una vera e propria sessione di lavoro, passando da un'andatura all'altra e cambiando di mano. Grazie alla sua versatilità, rappresenta una soluzione pratica ed efficace per l'allenamento quotidiano dei cavalli.</3>"
+msgstr "<0>Les marcheurs représentent le point fort de notre entreprise. </0><1>Ils ont été créés à partir des recherches de <2>Luciano Pessa</2> avec l’intention de développer un outil simple et fiable qui vous permettra de travailler votre cheval même lorsque vous ne pouvez pas le monter.</1><3>Le marcheurs vous permettra non seulement de faire marcher votre cheval après l’entraînement pour le refroidir, mais aussi de créer une vraie séance d’entraînement en passant d’une allure à l’autre et en changeant de main.</3>"
 
 #: src/pages/recinti/index.tsx:61
 msgid "<0>Le recinzioni <1>TECNOFENCE</1> sono realizzate con materiale particolarmente adatto a durare nel tempo anche in presenza delle più avverse condizioni meteorologiche.</0><2>A differenza del legno o di altri prodotti utilizzati per il medesimo scopo, gli animali non mordono la recinzione.</2><3><4>TECNOFENCE</4>, non presenta spigoli vivi e inoltre, essendo elastica, è in grado di assorbire gli urti senza rompersi evitando cosi di provocare infortuni a persone e animali.</3><5>Il materiale impiegato è lo stesso che viene utilizzato per la produzione di serramenti dove l’inalterabilità del colore e delle caratteristiche tecniche sono condizioni indispensabili per garantire un prodotto di qualità. L’inclusione di inibitori dei raggi ultravioletti consente anche di prevenire crepe e rotture e di resistere alla corrosione e allo sfogliamento mantenendo inalterate le caratteristiche originali anche con temperature variabili da +70 °C a -20 °C.</5><6>Principalmente prodotte nel colore bianco, possono essere fornite, a richiesta, anche nel colore verde.</6><7>In ogni recinzione inoltre si possono inserire uno o più cancelli scorrevoli in alluminio.</7><8>Tutte le nostre recinzioni sono personalizzate in base alle esigenze di metratura e di figura del cliente.</8>"
@@ -167,7 +164,7 @@ msgstr ""
 msgid "Alveolo sulla pesta"
 msgstr "Dalle alvéolée sur la piste"
 
-#: src/pages/giostre/index.tsx:29
+#: src/pages/giostre/index.tsx:34
 msgid "Ampia gamma"
 msgstr "Vaste gamme"
 
@@ -391,7 +388,7 @@ msgstr "Dimensions du marcheur {sides} panneaux {size} mt. et instructions de pr
 msgid "Dressage"
 msgstr "Dressage"
 
-#: src/pages/giostre/index.tsx:107
+#: src/pages/giostre/index.tsx:113
 msgid "Due sono i modelli di giostra che proponiamo: il modello <0>tecnoexerciser</0>, prodotta da oltre 20 anni, e il modello <1>ippowalker</1>, pensata per rispondere alle esigenze di un mercato che richiede un prodotto affidabile e al tempo stesso economico."
 msgstr "Nous proposons deux modèles de marcheur : le modèle <0>tecnoexerciser</0>, fabriqué depuis plus de 20 ans, et le modèle <1>ippowalker</1>, conçu pour répondre aux exigences d’un marché en demande d’un produit fiable mais aussi économique."
 
@@ -405,7 +402,7 @@ msgstr "Email"
 msgid "Entrata"
 msgstr "Entrée"
 
-#: src/pages/giostre/index.tsx:45
+#: src/pages/giostre/index.tsx:50
 msgid "Facile da usare"
 msgstr "Facile à utiliser"
 
@@ -421,7 +418,7 @@ msgstr "Fossé"
 msgid "Funzione"
 msgstr "Fonction"
 
-#: src/pages/giostre/index.tsx:104 src/pages/giostre/ippowalker/_compare.tsx:74
+#: src/pages/giostre/index.tsx:110 src/pages/giostre/ippowalker/_compare.tsx:74
 #: src/pages/giostre/tecnoexerciser/_compare.tsx:89
 #: src/pages/recinti/_gamma.tsx:89
 msgid "Gamma"
@@ -484,11 +481,11 @@ msgstr "Marcheur base"
 msgid "Giostra con corridoio TECNOFENCE"
 msgstr "Marcheur Couloir TECNOFENCE"
 
-#: src/pages/giostre/index.tsx:156
+#: src/pages/giostre/index.tsx:162
 msgid "Giostra in movimento"
 msgstr "Marcheur pour chevaux"
 
-#: src/pages/giostre/index.tsx:58 src/pages/giostre/index.tsx:74
+#: src/pages/giostre/index.tsx:63 src/pages/giostre/index.tsx:79
 msgid "Giostra per cavalli Tecnoexerciser"
 msgstr "Marcheur Tecnoexerciser"
 
@@ -496,8 +493,8 @@ msgstr "Marcheur Tecnoexerciser"
 msgid "Giostra solo motore"
 msgstr "Marcheur uniquement moteur"
 
-#: src/hooks/usePages/index.tsx:30 src/pages/giostre/index.tsx:80
-#: src/pages/giostre/index.tsx:84
+#: src/hooks/usePages/index.tsx:30 src/pages/giostre/index.tsx:85
+#: src/pages/giostre/index.tsx:89
 msgid "Giostre"
 msgstr "Marcheur"
 
@@ -566,7 +563,7 @@ msgstr "Précédent"
 msgid "Indistruttibili"
 msgstr "Indestructibles"
 
-#: src/pages/giostre/index.tsx:66
+#: src/pages/giostre/index.tsx:71
 msgid "Ingresso"
 msgstr "Porte d’entrée"
 
@@ -582,16 +579,16 @@ msgstr "Innovants"
 msgid "Innovazione tecnologica e qualità sono le caratteristiche chiave dei nostri prodotti"
 msgstr "Innovation technologique et qualité : ce sont les caractéristiques clés de nos produits"
 
-#: src/pages/giostre/index.tsx:62
+#: src/pages/giostre/index.tsx:67
 msgid "Interno giostra con alveolo"
-msgstr ""
+msgstr "Intérieur de manège d’obstacles avec alvéole"
 
 #: src/pages/tondini/index.tsx:98 src/pages/tondini/index.tsx:102
 #: src/pages/tondini/index.tsx:130
 msgid "Interno tondino coperto"
 msgstr "Intérieur rond de longe couvert"
 
-#: src/pages/giostre/index.tsx:141 src/pages/giostre/ippowalker/index.tsx:22
+#: src/pages/giostre/index.tsx:147 src/pages/giostre/ippowalker/index.tsx:22
 msgid "Ippowalker"
 msgstr "Ippowalker"
 
@@ -693,7 +690,7 @@ msgstr "Lame {0} cm."
 msgid "Larghezza"
 msgstr "Largeur"
 
-#: src/pages/giostre/index.tsx:38
+#: src/pages/giostre/index.tsx:43
 msgid "Le nostre giostre sono considerate strutture precarie. Non avrete bisogno di nessuna concessione edilizia"
 msgstr "Nos manèges n’ont pas besoin de permis de construire"
 
@@ -759,7 +756,7 @@ msgstr "Module de Dressage"
 msgid "Motore"
 msgstr "Moteur électrique"
 
-#: src/pages/giostre/index.tsx:36 src/pages/tondini/index.tsx:170
+#: src/pages/giostre/index.tsx:41 src/pages/tondini/index.tsx:170
 msgid "Nessuna concessione edilizia"
 msgstr "Aucun permis de construire"
 
@@ -795,7 +792,7 @@ msgstr "Le page que tu demandes n’existes pas"
 msgid "Per consentirvi di realizzare ostacoli di vostra creazione possiamo fornirvi le lame forate in due diverse lunghezze."
 msgstr "Pour vous permettre de réaliser des obstacles selon vos créations, nous pouvons vous fournir les joncs avec encoches en deux longueurs."
 
-#: src/pages/giostre/index.tsx:83
+#: src/pages/giostre/index.tsx:88
 msgid "Perché una giostra Pessastudio"
 msgstr "Pourquoi un marcheur Pessastudio"
 
@@ -826,10 +823,6 @@ msgstr "Pessastudio, un choix de qualité"
 #: src/pages/recinti/_accessori.tsx:16
 msgid "Piede mobile"
 msgstr "Clôture de pied"
-
-#: src/pages/giostre/index.tsx:25
-msgid "Più' di 3.000 clienti europei hanno scelto Pessastudio per la loro giostra"
-msgstr "Plus de 3 000 clients européens ont choisi Pessastudio pour leur marcheur"
 
 #: src/utils/constants.tsx:20
 msgid "Plastica"
@@ -884,7 +877,7 @@ msgstr "Profondeur"
 msgid "Puoi in qualsiasi momento ricevere assistenza e spiegazioni su come esercitare il consenso o il diniego selettivo o su come cancellare i cookie e tecnologie affini dal tuo browser, inviando una e-mail al Servizio Clienti selezionando \"Privacy\" come argomento o con richiesta scritta rivolta a {completeAddressWithAnna} all'indirizzo postale della sede legale, daremo tempestivo riscontro."
 msgstr "Vous pouvez à tout moment recevoir de l’aide et des explications sur la façon de donner votre consentement ou votre refus sélectif, ou sur la façon de supprimer les cookies de votre navigateur, en envoyant un e-mail au Service Clients, en sélectionnant comme sujet “Confidentialité”, ou via un demande écrite adressée à {completeAddressWithAnna} à l’adresse postale du siège social. Nous vous répondrons rapidement."
 
-#: src/pages/giostre/index.tsx:70 src/utils/constants.tsx:29
+#: src/pages/giostre/index.tsx:75 src/utils/constants.tsx:29
 msgid "Quadro di comando"
 msgstr "Tableau de commande"
 
@@ -963,7 +956,7 @@ msgstr "Concessionnaires internationaux"
 msgid "Scarica"
 msgstr "Télécharger un fichier"
 
-#: src/pages/giostre/index.tsx:134 src/pages/giostre/index.tsx:150
+#: src/pages/giostre/index.tsx:140 src/pages/giostre/index.tsx:156
 msgid "Scopri di piú"
 msgstr "En savoir plus"
 
@@ -1058,7 +1051,7 @@ msgstr "Support de sécurité"
 msgid "Swift"
 msgstr "Swift"
 
-#: src/pages/giostre/index.tsx:125
+#: src/pages/giostre/index.tsx:131
 #: src/pages/giostre/tecnoexerciser/index.tsx:18
 msgid "Tecnoexerciser"
 msgstr "Tecnoexerciser"
@@ -1131,7 +1124,7 @@ msgstr "Un piste de dressage en PVC. Indestructible même en présence des condi
 msgid "Una lunga storia"
 msgstr "Une longue histoire"
 
-#: src/pages/giostre/index.tsx:47
+#: src/pages/giostre/index.tsx:52
 msgid "Usa il nostro semplice pannello di controllo per scegliere uno dei nostri \"training programs\" o seleziona manualmente la velocità desiderata"
 msgstr "Utilisez notre tableau de commande simple pour choisir l’un de nos « training programs », ou sélectionnez manuellement la vitesse souhaitée"
 
@@ -1151,6 +1144,10 @@ msgstr "Site Internet"
 msgid "WhatsApp"
 msgstr "WhatsApp"
 
+#: src/pages/giostre/index.tsx:27
+msgid "{NAME} è stata scelta da oltre 3.000 clienti in tutto il mondo per la realizzazione della propria giostra."
+msgstr "{NAME} a été choisie par plus de 3 000 clients dans le monde entier pour la construction de leurs marcheurs."
+
 #: src/pages/tondini/index.tsx:162
 msgid "È costituito da pannelli laterali in compensato marino fissati a colonne in acciaio zincato. La copertura in telo spalmato in PVC, è disponibile in bianco, verde o crema"
 msgstr "Il est constitué de panneaux latéraux en contreplaqué marine, fixés à des colonnes en acier galvanisé. La couverture est une toile enduite en PVC, disponible en blanc, vert ou crème"
@@ -1159,7 +1156,7 @@ msgstr "Il est constitué de panneaux latéraux en contreplaqué marine, fixés 
 msgid "È possibile acquistare la giostra sprovvista di copertura ma se il vostro obbiettivo è quello di poter lavorare 365 giorni all'anno, Pessastudio, offre due possibili soluzioni abbinabili al corridoio <0>Exerciser</0>."
 msgstr "Le marcheur peut être vendu sans couverture, mais si votre objectif est de pouvoir travailler 365 jours par an, Pessastudio vous offre deux solutions possibles, à combiner avec le couloir <0>Exerciser</0>."
 
-#: src/pages/giostre/index.tsx:31
+#: src/pages/giostre/index.tsx:36
 msgid "È possibile acquistare le nostre giostre in diverse versioni adatte ad ogni budget ed esigenza"
 msgstr "Il est possible d’acheter nos marcheur dans différentes versions adaptées à tous les budgets et besoins"
 

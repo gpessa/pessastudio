@@ -22,7 +22,7 @@ msgstr "* In the presence of snowfall that exceeds the maximum load, it is advis
 msgid "+ IVA"
 msgstr "+ VAT"
 
-#: src/pages/giostre/index.tsx:24
+#: src/pages/giostre/index.tsx:25
 msgid "3.000 giostre installate"
 msgstr "3,000 horse exercisers produced"
 
@@ -78,9 +78,9 @@ msgstr "<0>The <1>PVC cover</1> is made of a galvanized steel structure over whi
 msgid "<0>La linea <1>olympic</1>, presente sul mercato da oltre vent'anni, è rappresentata da un rettangolo professionale, dove il campo da dressage è utilizzato quotidianamente.</0><2>Il campo è delimitato da moduli accostabili tra di loro, ciascuno dei quali è lungo 2 mt. Ogni modulo è costruito in polietilene antiurto resistente anche alle basse temperature e che non ingiallisce sotto l'azione dei raggi ultravioletti.</2><3>Su ciascun modulo sono previste tre aree piane con superficie lucida di 50x12 cm. sulle quali possono essere applicati adesivi pubblicitari.</3>"
 msgstr "<0>The <1>olympic</1> line, which has been on the market for over twenty years, consists of professional rectangles for when the dressage field is used on a daily basis.</0> <2>The field is delimited by 2-m modules that can be placed side by side. Each module is made of impact-resistant polyethylene (even at low temperatures) that will not yellow with exposure to UV radiation.</2> <3>Each module has three flat 50 cm x 12 cm areas with a glossy surface to apply advertising stickers.</3>"
 
-#: src/pages/giostre/index.tsx:86
-msgid "<0>Le giostre rappresentano il punto di forza della nostra azienda.</0><1>Sono state create dalla ricerca di <2>Luciano Pessa</2> con l'intenzione di realizzare un semplice ed affidabile strumento di lavoro che vi consentirà di allenare il vostro cavallo anche quando non avete la possibilità di montarlo.</1><3>La giostra vi permetterè, non solo di raffreddare il vostro cavallo con una passeggiata post allenamento, ma anche di creare una vera sessione di lavoro passando da un'andatura all'altra e cambiando di mano.</3>"
-msgstr "<0>Walkers represent the strong point of our company.</0> <1>They were developed through the research of <2>Luciano Pessa</2>, whose goal was to create a simple and reliable device that would allow you to train your horse even when you cannot ride it.</1> <3>The walkers allow you to not only cool down your horse with a walk after training, but also create a real exercise session by moving from one gait to another and changing rein.</3>"
+#: src/pages/giostre/index.tsx:91
+msgid "<0>La nostra azienda si distingue per le giostre, il nostro punto di forza. </0><1>La loro creazione è stata il risultato della ricerca condotta da <2>Luciano Pessa</2>, con l'intento di sviluppare uno strumento di lavoro affidabile e semplice da utilizzare per l'allenamento dei cavalli anche in assenza del cavaliere.</1><3>La giostra consente non solo di raffreddare il cavallo dopo l'allenamento, ma anche di creare una vera e propria sessione di lavoro, passando da un'andatura all'altra e cambiando di mano. Grazie alla sua versatilità, rappresenta una soluzione pratica ed efficace per l'allenamento quotidiano dei cavalli.</3>"
+msgstr "<0>Walkers represent the strength of our company.</0><1>They were created through the research of <2>Luciano Pessa</2> with the intention of developing a simple and reliable tool that will allow you to train your horse even when you are unable to ride it.</1><3>The carousel will not only allow you to cool down your horse with a post-workout walk but also to create a proper training session by changing gaits and direction.</3>"
 
 #: src/pages/recinti/index.tsx:61
 msgid "<0>Le recinzioni <1>TECNOFENCE</1> sono realizzate con materiale particolarmente adatto a durare nel tempo anche in presenza delle più avverse condizioni meteorologiche.</0><2>A differenza del legno o di altri prodotti utilizzati per il medesimo scopo, gli animali non mordono la recinzione.</2><3><4>TECNOFENCE</4>, non presenta spigoli vivi e inoltre, essendo elastica, è in grado di assorbire gli urti senza rompersi evitando cosi di provocare infortuni a persone e animali.</3><5>Il materiale impiegato è lo stesso che viene utilizzato per la produzione di serramenti dove l’inalterabilità del colore e delle caratteristiche tecniche sono condizioni indispensabili per garantire un prodotto di qualità. L’inclusione di inibitori dei raggi ultravioletti consente anche di prevenire crepe e rotture e di resistere alla corrosione e allo sfogliamento mantenendo inalterate le caratteristiche originali anche con temperature variabili da +70 °C a -20 °C.</5><6>Principalmente prodotte nel colore bianco, possono essere fornite, a richiesta, anche nel colore verde.</6><7>In ogni recinzione inoltre si possono inserire uno o più cancelli scorrevoli in alluminio.</7><8>Tutte le nostre recinzioni sono personalizzate in base alle esigenze di metratura e di figura del cliente.</8>"
@@ -158,7 +158,7 @@ msgstr "Other"
 msgid "Alveolo sulla pesta"
 msgstr "Ground grid soil stabilization system"
 
-#: src/pages/giostre/index.tsx:29
+#: src/pages/giostre/index.tsx:34
 msgid "Ampia gamma"
 msgstr "Wide products range"
 
@@ -382,7 +382,7 @@ msgstr "Walker dimensions {sides} panels {size} m and base preparation instructi
 msgid "Dressage"
 msgstr "Dressage"
 
-#: src/pages/giostre/index.tsx:107
+#: src/pages/giostre/index.tsx:113
 msgid "Due sono i modelli di giostra che proponiamo: il modello <0>tecnoexerciser</0>, prodotta da oltre 20 anni, e il modello <1>ippowalker</1>, pensata per rispondere alle esigenze di un mercato che richiede un prodotto affidabile e al tempo stesso economico."
 msgstr "We offer two walker models: the <0>Tecnoexerciser</0>, which we have produced for more than 20 years, and the <1>Ippowalker</1>, designed to meet market needs for a reliable yet low-cost product."
 
@@ -396,7 +396,7 @@ msgstr "Email"
 msgid "Entrata"
 msgstr "Entrance"
 
-#: src/pages/giostre/index.tsx:45
+#: src/pages/giostre/index.tsx:50
 msgid "Facile da usare"
 msgstr "Easy to use"
 
@@ -412,7 +412,7 @@ msgstr "Water tray"
 msgid "Funzione"
 msgstr "Function"
 
-#: src/pages/giostre/index.tsx:104 src/pages/giostre/ippowalker/_compare.tsx:74
+#: src/pages/giostre/index.tsx:110 src/pages/giostre/ippowalker/_compare.tsx:74
 #: src/pages/giostre/tecnoexerciser/_compare.tsx:89
 #: src/pages/recinti/_gamma.tsx:89
 msgid "Gamma"
@@ -488,11 +488,11 @@ msgstr "Horse Walker Base"
 msgid "Giostra con corridoio TECNOFENCE"
 msgstr "Walker with TECNOFENCE corridor"
 
-#: src/pages/giostre/index.tsx:156
+#: src/pages/giostre/index.tsx:162
 msgid "Giostra in movimento"
 msgstr "Horse exerciser"
 
-#: src/pages/giostre/index.tsx:58 src/pages/giostre/index.tsx:74
+#: src/pages/giostre/index.tsx:63 src/pages/giostre/index.tsx:79
 msgid "Giostra per cavalli Tecnoexerciser"
 msgstr "Tecnoexerciser horse exerciser"
 
@@ -500,8 +500,8 @@ msgstr "Tecnoexerciser horse exerciser"
 msgid "Giostra solo motore"
 msgstr "Horse Walker (only engine)"
 
-#: src/hooks/usePages/index.tsx:30 src/pages/giostre/index.tsx:80
-#: src/pages/giostre/index.tsx:84
+#: src/hooks/usePages/index.tsx:30 src/pages/giostre/index.tsx:85
+#: src/pages/giostre/index.tsx:89
 msgid "Giostre"
 msgstr "Horse exercisers"
 
@@ -570,7 +570,7 @@ msgstr "Back"
 msgid "Indistruttibili"
 msgstr "Indestructible"
 
-#: src/pages/giostre/index.tsx:66
+#: src/pages/giostre/index.tsx:71
 msgid "Ingresso"
 msgstr "Entrance"
 
@@ -586,7 +586,7 @@ msgstr "Innovative"
 msgid "Innovazione tecnologica e qualità sono le caratteristiche chiave dei nostri prodotti"
 msgstr "Technological innovation and quality are the key features of our products"
 
-#: src/pages/giostre/index.tsx:62
+#: src/pages/giostre/index.tsx:67
 msgid "Interno giostra con alveolo"
 msgstr "A horse exerciser with ground grid soil stabilization system"
 
@@ -595,7 +595,7 @@ msgstr "A horse exerciser with ground grid soil stabilization system"
 msgid "Interno tondino coperto"
 msgstr "Internal pen"
 
-#: src/pages/giostre/index.tsx:141 src/pages/giostre/ippowalker/index.tsx:22
+#: src/pages/giostre/index.tsx:147 src/pages/giostre/ippowalker/index.tsx:22
 msgid "Ippowalker"
 msgstr "Ippowalker"
 
@@ -701,7 +701,7 @@ msgstr "Metal keyhole track {0} cm."
 msgid "Larghezza"
 msgstr "Width"
 
-#: src/pages/giostre/index.tsx:38
+#: src/pages/giostre/index.tsx:43
 msgid "Le nostre giostre sono considerate strutture precarie. Non avrete bisogno di nessuna concessione edilizia"
 msgstr "You will not need any building permit to install our horse walkers"
 
@@ -767,7 +767,7 @@ msgstr "Dressage module"
 msgid "Motore"
 msgstr "Engine"
 
-#: src/pages/giostre/index.tsx:36 src/pages/tondini/index.tsx:170
+#: src/pages/giostre/index.tsx:41 src/pages/tondini/index.tsx:170
 msgid "Nessuna concessione edilizia"
 msgstr "No building permit needed"
 
@@ -803,7 +803,7 @@ msgstr "Page not found"
 msgid "Per consentirvi di realizzare ostacoli di vostra creazione possiamo fornirvi le lame forate in due diverse lunghezze."
 msgstr "Metal keyhole tracks for jump cups. Tracks have predrilled holes so it’s easy to connect them to your post standards. Standard distance between tracks and post standard allows all pinless jump cups to settle perfectly into place."
 
-#: src/pages/giostre/index.tsx:83
+#: src/pages/giostre/index.tsx:88
 msgid "Perché una giostra Pessastudio"
 msgstr "Why buy a Pessastudio horse exerciser"
 
@@ -834,10 +834,6 @@ msgstr "Pessastudio, a quality choice"
 #: src/pages/recinti/_accessori.tsx:16
 msgid "Piede mobile"
 msgstr "Movable feet"
-
-#: src/pages/giostre/index.tsx:25
-msgid "Più' di 3.000 clienti europei hanno scelto Pessastudio per la loro giostra"
-msgstr "More than 3,000 European customers have chosen Pessastudio for our horse exercisers"
 
 #: src/utils/constants.tsx:20
 msgid "Plastica"
@@ -892,7 +888,7 @@ msgstr "Depth"
 msgid "Puoi in qualsiasi momento ricevere assistenza e spiegazioni su come esercitare il consenso o il diniego selettivo o su come cancellare i cookie e tecnologie affini dal tuo browser, inviando una e-mail al Servizio Clienti selezionando \"Privacy\" come argomento o con richiesta scritta rivolta a {completeAddressWithAnna} all'indirizzo postale della sede legale, daremo tempestivo riscontro."
 msgstr "You may at any time receive assistance and explanations on how to provide your consent or selective refusal, or on how to delete cookies from your browser, by sending an e-mail to Customer Care, selecting “Privacy” as the topic, or via a written request sent to {completeAddressWithAnna} at the mailing address of the registered office. We will reply to you promptly."
 
-#: src/pages/giostre/index.tsx:70 src/utils/constants.tsx:29
+#: src/pages/giostre/index.tsx:75 src/utils/constants.tsx:29
 msgid "Quadro di comando"
 msgstr "Control panel"
 
@@ -971,7 +967,7 @@ msgstr "International Dealers"
 msgid "Scarica"
 msgstr "Download"
 
-#: src/pages/giostre/index.tsx:134 src/pages/giostre/index.tsx:150
+#: src/pages/giostre/index.tsx:140 src/pages/giostre/index.tsx:156
 msgid "Scopri di piú"
 msgstr "Discover more"
 
@@ -1066,7 +1062,7 @@ msgstr "Breakaway cup adapter"
 msgid "Swift"
 msgstr "Swift"
 
-#: src/pages/giostre/index.tsx:125
+#: src/pages/giostre/index.tsx:131
 #: src/pages/giostre/tecnoexerciser/index.tsx:18
 msgid "Tecnoexerciser"
 msgstr "Tecnoexerciser"
@@ -1139,7 +1135,7 @@ msgstr "Horse fence in PVC. Indestructible, even under the worst weather conditi
 msgid "Una lunga storia"
 msgstr "A long history"
 
-#: src/pages/giostre/index.tsx:47
+#: src/pages/giostre/index.tsx:52
 msgid "Usa il nostro semplice pannello di controllo per scegliere uno dei nostri \"training programs\" o seleziona manualmente la velocità desiderata"
 msgstr "Use our simple control panel to choose one of our ‘training programmes’ or manually select the desired speed"
 
@@ -1159,6 +1155,10 @@ msgstr "Website"
 msgid "WhatsApp"
 msgstr "WhatsApp"
 
+#: src/pages/giostre/index.tsx:27
+msgid "{NAME} è stata scelta da oltre 3.000 clienti in tutto il mondo per la realizzazione della propria giostra."
+msgstr "{NAME} has been chosen by over 3,000 clients worldwide for the construction of their horse execiser."
+
 #: src/pages/tondini/index.tsx:162
 msgid "È costituito da pannelli laterali in compensato marino fissati a colonne in acciaio zincato. La copertura in telo spalmato in PVC, è disponibile in bianco, verde o crema"
 msgstr "Made of marine plywood panels attached to galvanised steel columns. The PVC-coated fabric cover is available in white, green, or cream"
@@ -1167,7 +1167,7 @@ msgstr "Made of marine plywood panels attached to galvanised steel columns. The 
 msgid "È possibile acquistare la giostra sprovvista di copertura ma se il vostro obbiettivo è quello di poter lavorare 365 giorni all'anno, Pessastudio, offre due possibili soluzioni abbinabili al corridoio <0>Exerciser</0>."
 msgstr "The exerciser may be purchased without a cover, but if you would like to work 365 days a year, Pessastudio offers two solutions that can be combined with the <0>Exerciser</0> corridor."
 
-#: src/pages/giostre/index.tsx:31
+#: src/pages/giostre/index.tsx:36
 msgid "È possibile acquistare le nostre giostre in diverse versioni adatte ad ogni budget ed esigenza"
 msgstr "Different versions of our walkers may be purchased to suit every budget and need"
 
