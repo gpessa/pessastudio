@@ -30,16 +30,19 @@ export const SECTION_SPACING = (breakingPoint: "xs" | "md") => {
 declare module "@mui/material/styles" {
   interface TypographyVariants {
     small: React.CSSProperties
+    slim: React.CSSProperties
   }
 
   interface TypographyVariantsOptions {
     small?: React.CSSProperties
+    slim?: React.CSSProperties
   }
 }
 
 declare module "@mui/material/Typography" {
   interface TypographyPropsVariantOverrides {
     small: true
+    slim: true
   }
 }
 
@@ -76,6 +79,9 @@ const themePalette = createTheme({
     small: {
       fontSize: "80%",
     },
+    slim: {
+      fontFamily: "Roboto Condensed",
+    },
   },
   palette: {
     primary: {
@@ -94,7 +100,7 @@ const themePalette = createTheme({
 
 const theme = createTheme(themePalette, {
   shape: {
-    borderRadius: 0,
+    borderRadius: 15,
   },
   spacing: (factor: number) => `${7 * factor}px `,
   typography: {
