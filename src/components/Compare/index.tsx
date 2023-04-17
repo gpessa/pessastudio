@@ -13,7 +13,7 @@ import {
   Typography,
 } from "@mui/material"
 import { Section, TH } from "components"
-import React, { FunctionComponent, ReactElement } from "react"
+import React from "react"
 import { BREAKPOINT, PRODUCT_GUTTER } from "theme"
 
 const TableCellStyled = styled(TableCell)<{ type?: string }>(({ type }) => ({
@@ -25,12 +25,16 @@ const TableCellStyled = styled(TableCell)<{ type?: string }>(({ type }) => ({
 
 type Props = {
   title: JSX.Element
-  attributes: {
-    [key: string]: FunctionComponent | Element | string | undefined | ReactElement
-  }
-  products: {
-    [key: keyof Props["attributes"]]: boolean | FunctionComponent | Element | string | undefined | ReactElement
-  }[]
+  attributes: Attribute
+  products: Product[]
+}
+
+type Attribute = {
+  [key: string]: JSX.Element | undefined
+}
+
+type Product = {
+  [key: keyof Props["attributes"]]: boolean | string | JSX.Element
 }
 
 const Compare: React.FC<Props> = ({ title, ...rest }) => (
