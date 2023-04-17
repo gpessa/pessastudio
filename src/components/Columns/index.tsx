@@ -3,6 +3,7 @@ import { styled } from "@mui/material"
 import { BREAKPOINT } from "theme"
 import React, { ReactNode } from "react"
 import Section from "../Section"
+
 interface Props {
   left: ReactNode
   right: ReactNode
