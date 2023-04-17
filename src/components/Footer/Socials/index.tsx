@@ -1,14 +1,7 @@
-import Facebook  from "@mui/icons-material/Facebook";
-import Instagram  from "@mui/icons-material/Instagram";
+import Facebook from "@mui/icons-material/Facebook"
+import Instagram from "@mui/icons-material/Instagram"
 import { IconButton } from "@mui/material"
-import React from "react"
-
-export const SOCIALS = {
-  facebook_1: "https://www.facebook.com/PessastudioHorseTecnology",
-  facebook: "https://www.facebook.com/Pessastudio-HORSE-Tecnology-1050570271816027",
-  youtube: "https://www.youtube.com/channel/UC_eIQlt5-iLt2KEVTK5DOPg",
-  instagram: "https://www.instagram.com/pessastudiohorsetecnology/",
-}
+import { SOCIALS } from "utils/constants"
 
 const Socials = () => (
   <>

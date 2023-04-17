@@ -234,3 +234,10 @@ export const GIOSTRA_DESCRIZIONE_RECINZIONE_COMPENSATO_MARINO = (thickness: numb
 )
 
 export const NAME = <strong>Pessastudio</strong>
+
+export const SOCIALS = {
+  facebook_1: "https://www.facebook.com/PessastudioHorseTecnology",
+  facebook: "https://www.facebook.com/Pessastudio-HORSE-Tecnology-1050570271816027",
+  youtube: "https://www.youtube.com/channel/UC_eIQlt5-iLt2KEVTK5DOPg",
+  instagram: "https://www.instagram.com/pessastudiohorsetecnology/",
+}

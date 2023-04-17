@@ -1,14 +1,13 @@
 import { t } from "@lingui/macro"
-import { useStaticQuery } from "gatsby"
+import { graphql, useStaticQuery } from "gatsby"
+import { usePages } from "hooks"
 import { BreadcrumbList as BreadcrumbListType } from "hooks/useTree"
 import { ITALIA, SEDE_OPERATIVA } from "pages/contatti"
 import React from "react"
 import Helmet from "react-helmet"
 import { helmetJsonLdProp } from "react-schemaorg"
 import { BreadcrumbList, Organization } from "schema-dts"
-import { SOCIALS } from "../Footer/Socials"
-import { graphql } from "gatsby"
-import { usePages } from "hooks"
+import { SOCIALS } from "utils/constants"
 
 type Props = {
   title?: string
