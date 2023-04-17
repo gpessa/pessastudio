@@ -34,10 +34,6 @@ const languages = [
     # Redirect /en se lingua non selezionata
     RewriteEngine On
     RewriteRule ^$ /en/ [L,R=302]`,
-  //   `
-  //   RewriteCond %{HTTP:Accept-Language} ^en [NC]
-  //   RewriteRule ^$ /en/ [L,R=301]
-  //   `,
 ]
 
 module.exports = [...rewrite, ...languages]
