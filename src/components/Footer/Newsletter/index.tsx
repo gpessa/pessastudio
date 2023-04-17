@@ -63,23 +63,27 @@ const NewsletterSubscription: React.FC = () => {
         />
       )}
 
-      {state.response === "success" && (
-        <StyledAlert severity="success">
-          <Trans>Complimenti! Ti sei iscritto</Trans>
-        </StyledAlert>
-      )}
+      {
+        {
+          "success": (
+            <StyledAlert severity="success">
+              <Trans>Complimenti! Ti sei iscritto</Trans>
+            </StyledAlert>
+          ),
 
-      {state.response === "error-already-subscribed" && (
-        <StyledAlert severity="error">
-          <Trans>Ti sei già iscritto</Trans>
-        </StyledAlert>
-      )}
+          "error-already-subscribed": (
+            <StyledAlert severity="error">
+              <Trans>Ti sei già iscritto</Trans>
+            </StyledAlert>
+          ),
 
-      {state.response === "error-generic" && (
-        <StyledAlert severity="error">
-          <Trans>Si è verificato un problema, riprova</Trans>
-        </StyledAlert>
-      )}
+          "error-generic": (
+            <StyledAlert severity="error">
+              <Trans>Si è verificato un problema, riprova</Trans>
+            </StyledAlert>
+          ),
+        }[state.response]
+      }
     </form>
   )
 }
