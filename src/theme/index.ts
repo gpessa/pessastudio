@@ -100,7 +100,7 @@ const themePalette = createTheme({
 
 const theme = createTheme(themePalette, {
   shape: {
-    borderRadius: 15,
+    borderRadius: 0,
   },
   spacing: (factor: number) => `${7 * factor}px `,
   typography: {

@@ -1,21 +1,28 @@
 import { useLingui } from "@lingui/react"
-import { Button, Dialog, DialogTitle, IconButton, List, ListItem, styled, Tooltip } from "@mui/material"
+import {
+  Avatar,
+  Dialog,
+  DialogTitle,
+  IconButton,
+  List,
+  ListItem,
+  ListItemAvatar,
+  ListItemButton,
+  ListItemText,
+  styled,
+  Tooltip,
+} from "@mui/material"
 import { useLocation } from "@reach/router"
 import { withPrefix } from "gatsby"
 import { LocalizedLink, useLocalization } from "gatsby-theme-i18n"
 import * as React from "react"
 import { useState } from "react"
 
-const DIM = 20
+const DIM = 30
 
 const LanguageIconStyled = styled("img")({
   width: 20,
 })
-
-const ButtonStyled = styled(Button)(({ theme }) => ({
-  fontSize: theme.typography.caption.fontSize,
-  fontWeight: "normal",
-}))
 
 const LanguageSelector: React.FC = () => {
   const { config } = useLocalization()
@@ -25,7 +32,7 @@ const LanguageSelector: React.FC = () => {
 
   const handleModal = () => setShow(prevCount => !prevCount)
 
-  const to = pathname.replace(`/${i18n._locale}`, "") // remove the current language
+  const to = pathname.replace(`/${i18n.locale}`, "") // remove the current language
 
   return (
     <>
@@ -44,20 +51,13 @@ const LanguageSelector: React.FC = () => {
         <DialogTitle>Choose a language</DialogTitle>
         <List disablePadding>
           {config.map(lang => (
-            <ListItem key={lang}>
-              <ButtonStyled
-                to={to}
-                fullWidth
-                size="large"
-                variant="text"
-                language={lang.code}
-                startIcon={
-                  <LanguageIconStyled width={DIM} height={DIM} src={withPrefix(`static/flags/${lang.code}.svg`)} />
-                }
-                component={LocalizedLink}
-              >
-                {lang.localName}
-              </ButtonStyled>
+            <ListItem disableGutters>
+              <ListItemButton component={LocalizedLink} to={to} language={lang.code}>
+                <ListItemAvatar>
+                  <Avatar src={withPrefix(`static/flags/${lang.code}.svg`)} sx={{ width: DIM, height: DIM }} />
+                </ListItemAvatar>
+                <ListItemText primary={lang.localName} />
+              </ListItemButton>
             </ListItem>
           ))}
         </List>

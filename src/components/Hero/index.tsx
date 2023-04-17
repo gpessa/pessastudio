@@ -3,6 +3,7 @@ import React from "react"
 
 const TypographyStyled = styled(Typography)(({ theme }) => ({
   backgroundColor: theme.palette.common.white,
+  borderRadius: theme.shape.borderRadius,
   padding: theme.spacing(3),
   display: "inline-block",
 }))
