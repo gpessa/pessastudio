@@ -27,14 +27,19 @@ export const SECTION_SPACING = (breakingPoint: "xs" | "md") => {
   }
 }
 
-declare module "@mui/material/styles/createTypography" {
-  interface TypographyOptions {
-    small: TypographyStyleOptions
-    slim: TypographyStyleOptions
+declare module "@mui/material/styles" {
+  interface TypographyVariants {
+    small: React.CSSProperties
   }
-  interface Typography {
-    small: TypographyStyleOptions
-    slim: TypographyStyleOptions
+
+  interface TypographyVariantsOptions {
+    small?: React.CSSProperties
+  }
+}
+
+declare module "@mui/material/Typography" {
+  interface TypographyPropsVariantOverrides {
+    small: true
   }
 }
 
@@ -68,9 +73,6 @@ declare module "@mui/material/Button" {
 const themePalette = createTheme({
   typography: {
     fontFamily: "Source Sans Pro",
-    slim: {
-      fontFamily: "Roboto Condensed",
-    },
     small: {
       fontSize: "80%",
     },
