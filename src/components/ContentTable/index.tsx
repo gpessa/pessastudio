@@ -1,6 +1,6 @@
 import { Trans } from "@lingui/macro"
-import PictureAsPdf from "@mui/icons-material/PictureAsPdf";
-import Visibility from "@mui/icons-material/Visibility";
+import PictureAsPdf from "@mui/icons-material/PictureAsPdf"
+import Visibility from "@mui/icons-material/Visibility"
 import {
   Box,
   BoxProps,
@@ -28,7 +28,7 @@ ButtonStyled.defaultProps = {
   variant: "text",
 }
 
-const ContentTable = ({ rows, title, ...props }: Props) => (
+const ContentTable: React.FC<Props> = ({ rows, title, ...props }: Props) => (
   <Box {...props}>
     <TH variant="h5" sans sx={{ mb: 2 }}>
       {title}
