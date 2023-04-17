@@ -1,7 +1,7 @@
 import { t } from "@lingui/macro"
 import { Box, Grid, GridSize, styled, Divider } from "@mui/material"
 import { Image, Section, TH } from "components"
-import React from "react"
+import React, { ReactNode } from "react"
 import { BREAKPOINT, PRODUCT_GUTTER } from "theme"
 
 const AccessorioStyled = styled(Box)(({ theme }) => ({
@@ -12,10 +12,9 @@ const AccessorioStyled = styled(Box)(({ theme }) => ({
 }))
 
 type Props = {
-  intro: Element | React.ReactElement
   accessories: {
     name: JSX.Element
-    description: Element | React.ReactElement
+    description: ReactNode
     images: {
       src: string
       md?: number
@@ -25,7 +24,7 @@ type Props = {
   }[]
 }
 
-const Accessori: React.FC<Props> = ({ intro, accessories }) => (
+const Accessori: React.FC<Props> = ({ accessories }) => (
   <Section>
     <Box textAlign="center" mb={4}>
       <TH variant="h2">{t`Accessori`}</TH>
