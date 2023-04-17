@@ -1,11 +1,11 @@
 import { CssBaseline } from "@mui/material"
 import { ThemeProvider } from "@mui/system"
 import "pure-react-carousel/dist/react-carousel.es.css"
-import React from "react"
+import React, { ReactNode } from "react"
 import { Helmet } from "react-helmet"
 import theme from "theme"
 
-const LayoutMui: React.FC<{ children: JSX.Element }> = ({ children }) => (
+const LayoutMui: React.FC<{ children: ReactNode }> = ({ children }) => (
   <>
     <Helmet>
       {/* To ensure proper rendering and touch zooming for all devices, add the responsive viewport meta tag to your <head> element. */}
