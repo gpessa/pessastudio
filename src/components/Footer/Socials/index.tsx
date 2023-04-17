@@ -2,8 +2,9 @@ import Facebook from "@mui/icons-material/Facebook"
 import Instagram from "@mui/icons-material/Instagram"
 import { IconButton } from "@mui/material"
 import { SOCIALS } from "utils/constants"
+import React from "react"
 
-const Socials = () => (
+const Socials: React.FC = () => (
   <>
     <IconButton
       edge="start"
