@@ -22,6 +22,7 @@ const IframeStyled = styled("iframe")({
   position: "absolute",
   height: "100%",
   width: "100%",
+  border: 0,
   left: 0,
   top: 0,
 })
@@ -32,7 +33,6 @@ const Video: React.FC<{ src: string; title: string }> = ({ src, title }) => (
       <IframeStyled
         src={`${src}?controls=0`}
         allowFullScreen
-        frameBorder="0"
         title={title}
         width="100%"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"

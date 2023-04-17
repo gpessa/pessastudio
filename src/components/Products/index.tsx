@@ -59,12 +59,14 @@ const Products: React.FC = () => {
             <Title subtitle={<Trans>Prodotti</Trans>} title={<Trans>Scopri la nostra gamma di prodotti</Trans>} />
           </TextStyled>
 
-          <CarouselContainerStyled item md={8} xs={12} component={Carousel}>
-            {PRODUCTS.map((product, index) => (
-              <Slide index={index} key={product.url}>
-                <ProductsItem index={index} {...product} />
-              </Slide>
-            ))}
+          <CarouselContainerStyled item md={8} xs={12}>
+            <Carousel>
+              {PRODUCTS.map((product, index) => (
+                <Slide index={index} key={product.url}>
+                  <ProductsItem index={index} {...product} />
+                </Slide>
+              ))}
+            </Carousel>
           </CarouselContainerStyled>
 
           <SliderSelectorStyled item md={3} xs={12}>
