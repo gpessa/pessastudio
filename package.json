@@ -23,7 +23,6 @@
     "gatsby-plugin-react-helmet": "6.8.0",
     "gatsby-plugin-robots-txt": "1.8.0",
     "gatsby-plugin-sitemap": "6.8.0",
-    "gatsby-plugin-ts-checker": "^1.1.0",
     "gatsby-plugin-webfonts": "2.3.2",
     "gatsby-theme-i18n": "3.0.0",
     "gatsby-theme-i18n-lingui": "3.0.0",

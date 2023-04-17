@@ -23,7 +23,6 @@ module.exports = {
     "gatsby-plugin-sitemap",
     "gatsby-plugin-robots-txt",
     "gatsby-plugin-typescript",
-    // 'gatsby-plugin-ts-checker',
     "gatsby-plugin-react-helmet",
     {
       "resolve": "gatsby-plugin-webfonts",
