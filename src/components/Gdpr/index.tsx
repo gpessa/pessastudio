@@ -1,14 +1,14 @@
-import { Trans } from "@lingui/macro"
-import { Box, Button, ButtonProps, Link, Theme } from "@mui/material"
-import { makeStyles } from "@mui/styles"
-import { useLocation } from "@reach/router"
-import { initializeAndTrack } from "gatsby-plugin-gdpr-cookies"
-import { LocalizedLink } from "gatsby-theme-i18n"
-import React from "react"
-import CookieConsent from "react-cookie-consent"
-import { PRODUCT_GUTTER } from "theme"
+/* eslint-disable react/no-children-prop */
+import { Trans } from "@lingui/macro";
+import { Box, Button, ButtonProps, Theme, Link } from "@mui/material";
+import { makeStyles } from "tss-react/mui";
+import NextLink from "next/link";
+import { useRouter } from "next/router";
+import React from "react";
+import CookieConsent from "react-cookie-consent";
+import { PRODUCT_GUTTER } from "theme";
 
-const useStyles = makeStyles((theme: Theme) => ({
+const useStyles = makeStyles()((theme) => ({
   root: {
     width: 350,
     position: "fixed",
@@ -27,41 +27,39 @@ const useStyles = makeStyles((theme: Theme) => ({
     zIndex: theme.zIndex.appBar + 1,
     backgroundColor: "rgba(0, 0, 0, 0.2)",
   },
-}))
+}));
 
-const Accept = (props: ButtonProps) => <Button {...props} color="primary" fullWidth />
+const Accept = (props: ButtonProps) => (
+  <Button {...props} color="primary" fullWidth />
+);
 
 const Gdpr: React.FC = () => {
-  const classes = useStyles()
-  const location = useLocation()
+  const classes = useStyles();
+  const isCookiePage = useRouter().route === "/cookie-policy";
 
-  const onAccept = () => {
-    initializeAndTrack(location)
-  }
-
-  return (
+  return isCookiePage ? null : (
     <CookieConsent
       overlay={false}
-      onAccept={onAccept}
       disableStyles={true}
       ButtonComponent={Accept}
       buttonText={<Trans>Acconsento</Trans>}
-      containerClasses={classes.root}
-      overlayClasses={classes.overlay}
-      cookieName="gatsby-gdpr-google-tagmanager"
+      containerClasses={classes.classes.root}
+      overlayClasses={classes.classes.overlay}
+      // FIXME
+      // cookieName="gatsby-gdpr-google-tagmanager"
     >
       <Box mb={3}>
         <Trans>
-          Utilizziamo i cookie per garantire il corretto funzionamento del sito. Per ulteriori informazioni sul nostro
-          utilizzo dei cookie, consultare la nostra{" "}
-          <Link component={LocalizedLink} to="/cookie-policy">
+          Utilizziamo i cookie per garantire il corretto funzionamento del sito.
+          Per ulteriori informazioni sul nostro utilizzo dei cookie, consultare
+          la nostra{" "}
+          <Link component={NextLink} href="/cookie-policy">
             politica sui cookie
           </Link>
-          .
         </Trans>
       </Box>
     </CookieConsent>
-  )
-}
+  );
+};
 
-export default Gdpr
+export default Gdpr;

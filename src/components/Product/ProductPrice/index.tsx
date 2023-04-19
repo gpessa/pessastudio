@@ -1,33 +1,33 @@
-import { Trans } from "@lingui/macro"
-import { useLingui } from "@lingui/react"
-import { Badge, styled, Typography } from "@mui/material"
-import React from "react"
+import { Trans } from "@lingui/macro";
+import { useLingui } from "@lingui/react";
+import { Badge, styled, Typography } from "@mui/material";
+import React from "react";
 
 const PriceStyled = styled(Typography)(({ theme }) => ({
   fontSize: theme.typography.h4.fontSize,
   fontWeight: "bold",
-}))
+}));
 
 export type PriceProps = {
   price:
     | undefined
     | number
     | {
-        price: number
-        note: JSX.Element
-      }[]
-}
+        price: number;
+        note: JSX.Element;
+      }[];
+};
 
 const ProductPrice: React.FC<PriceProps> = ({ price }) => {
-  const { i18n } = useLingui()
+  const { i18n } = useLingui();
 
-  if (!price) return null
+  if (!price) return null;
 
   if (typeof price === "number")
     return (
       <PriceStyled>
         <Badge
-          color="warm2"
+          color="primary"
           badgeContent={<Trans>+ IVA</Trans>}
           anchorOrigin={{
             vertical: "bottom",
@@ -37,7 +37,7 @@ const ProductPrice: React.FC<PriceProps> = ({ price }) => {
           {i18n.number(price, { style: "currency", currency: "EUR" })}
         </Badge>
       </PriceStyled>
-    )
+    );
 
   return (
     <>
@@ -45,7 +45,7 @@ const ProductPrice: React.FC<PriceProps> = ({ price }) => {
         <React.Fragment key={index}>
           <PriceStyled as={"span"}>
             <Badge
-              color="warm2"
+              color="primary"
               badgeContent={<Trans>+ IVA</Trans>}
               anchorOrigin={{
                 vertical: "bottom",
@@ -61,7 +61,7 @@ const ProductPrice: React.FC<PriceProps> = ({ price }) => {
         </React.Fragment>
       ))}
     </>
-  )
-}
+  );
+};
 
-export default ProductPrice
+export default ProductPrice;

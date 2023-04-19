@@ -1,63 +1,7 @@
-import { Trans } from "@lingui/macro"
-import { Box, Typography } from "@mui/material"
-import { Path, Section, TH } from "components"
-import React from "react"
+import GiostreIppowalkerIstruzioniMontaggioModule from "modules/GiostreIppowalkerIstruzioniDiMontaggio";
+export { getStaticProps } from "utils/lingui";
 
-const IstruzioniMontaggio: React.FC = () => {
-  const STEPS = [
-    {
-      image: require("assets/products/giostre/ippowalker/montaggio/step-01.jpg").default,
-      text: "Trovate e segnate il centro di ciò che sarà la vostra giostra",
-    },
-    {
-      image: require("assets/products/giostre/ippowalker/montaggio/step-02.jpg").default,
-      text: "Usate la base della giostra per trovare e segnare i punti dove saranno piantate i supporti",
-    },
-    {
-      image: require("assets/products/giostre/ippowalker/montaggio/step-04.jpg").default,
-      text: "Ancorate al suolo i supporti della giostra",
-    },
-    {
-      image: require("assets/products/giostre/ippowalker/montaggio/step-05.jpg").default,
-      text: "Montate il fondo della giostra",
-    },
-    {
-      image: require("assets/products/giostre/ippowalker/montaggio/step-06.jpg").default,
-      text: "Ancorate il gruppo motore",
-    },
-    {
-      image: require("assets/products/giostre/ippowalker/montaggio/step-07.jpg").default,
-      text: "Assicuratevi di bloccare la giostra alla giusta altezza e piana",
-    },
-    {
-      image: require("assets/products/giostre/ippowalker/montaggio/step-08.jpg").default,
-      text: "Montate le braccia di separazione",
-    },
-    {
-      image: require("assets/products/giostre/ippowalker/montaggio/step-09.jpg").default,
-      text: "Collegate le braccia di separazione attraverso i cavi",
-    },
-    {
-      image: require("assets/products/giostre/ippowalker/montaggio/step-10.jpg").default,
-      text: "Montate le porte di separazione",
-    },
-    {
-      image: require("assets/products/giostre/ippowalker/montaggio/step-11.jpg").default,
-      text: "Assicuratevi che le porte corrispondano alla figura",
-    },
-  ]
+const GiostreIppowalkerIstruzioniMontaggio =
+  GiostreIppowalkerIstruzioniMontaggioModule;
 
-  return (
-    <Section>
-      <Box mb={3} textAlign="center">
-        <TH variant="h2">
-          <Trans>Istruzioni di montaggio</Trans>
-        </TH>
-        <Typography>Segui le semplici istruzioni per montare la nostra giostra</Typography>
-      </Box>
-      <Path steps={STEPS} />
-    </Section>
-  )
-}
-
-export default IstruzioniMontaggio
+export default GiostreIppowalkerIstruzioniMontaggio;

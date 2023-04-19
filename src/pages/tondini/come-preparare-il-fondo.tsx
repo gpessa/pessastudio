@@ -1,2 +1,4 @@
-import ComePreparareIlFondo from "../recinti/come-preparare-il-fondo"
-export default ComePreparareIlFondo
+import TondiniComePreparareIlFondo from "modules/ComePreparareIlFondo";
+export { getStaticProps } from "utils/lingui";
+
+export default TondiniComePreparareIlFondo;

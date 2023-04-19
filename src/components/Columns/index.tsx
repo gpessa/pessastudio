@@ -1,12 +1,12 @@
-import { Container, Grid } from "@mui/material"
-import { styled } from "@mui/material"
-import { BREAKPOINT } from "theme"
-import React, { ReactNode } from "react"
-import Section from "../Section"
+import { Container, Grid } from "@mui/material";
+import { styled } from "@mui/material";
+import { BREAKPOINT } from "theme";
+import React, { ReactNode } from "react";
+import Section from "components/Section";
 
 interface Props {
-  left: ReactNode
-  right: ReactNode
+  left: ReactNode;
+  right: ReactNode;
 }
 
 const SectionStyled = styled(Section)(({ theme }) => ({
@@ -15,7 +15,7 @@ const SectionStyled = styled(Section)(({ theme }) => ({
   [theme.breakpoints.up(BREAKPOINT)]: {
     background: `linear-gradient(90deg, ${theme.palette.primary.main} 50%, ${theme.palette.common.white} 50%)`,
   },
-}))
+}));
 
 const LeftColumn = styled(Grid)(({ theme }) => ({
   backgroundColor: theme.palette.primary.main,
@@ -26,7 +26,7 @@ const LeftColumn = styled(Grid)(({ theme }) => ({
     paddingLeft: "0!important",
     padding: theme.spacing(6),
   },
-}))
+}));
 
 const RightColumn = styled(Grid)(({ theme }) => ({
   backgroundColor: theme.palette.common.white,
@@ -37,7 +37,7 @@ const RightColumn = styled(Grid)(({ theme }) => ({
     paddingRight: "0!important",
     padding: theme.spacing(6),
   },
-}))
+}));
 
 const Footer = ({ left, right }: Props) => (
   <SectionStyled spacing="small" disableGutters={true}>
@@ -52,6 +52,6 @@ const Footer = ({ left, right }: Props) => (
       </Grid>
     </Container>
   </SectionStyled>
-)
+);
 
-export default Footer
+export default Footer;

@@ -1,61 +1,33 @@
-import { graphql, useStaticQuery } from "gatsby"
-import { useLocalization } from "gatsby-theme-i18n"
-import usePages, { Page } from "hooks/usePages"
+import { WEBSITE } from "utils/constants";
+import usePages, { Page } from "../usePages";
 
-export type BreadcrumbList = (Page & { absoluteUrl: string })[]
+export type BreadcrumbList = (Page & { absoluteUrl: string })[];
 
-const query = graphql`
-  query SEOExtra {
-    site {
-      siteMetadata {
-        siteUrl
-      }
-    }
-  }
-`
+const useTree = (path: string): BreadcrumbList => {
+  const { PAGES } = usePages();
 
-const usTree = (path: string): BreadcrumbList => {
-  const { defaultLang, prefixDefault, localizedPath, locale } = useLocalization()
-  const siteUrl = useStaticQuery(query).site.siteMetadata.siteUrl
-  const { PAGES } = usePages()
-  const urls = [...path.split("/").filter(f => f != "")]
+  const fragments = [...path.split("/").filter((f) => f != "")];
 
-  const findPage = (url: string): Page => Object.values(PAGES).find(page => page.url === url)!
+  const findPage = (url: string): Page => {
+    const pages = Object.values(PAGES);
+    const page = pages.find((page) => page.url === url)!;
+    return page;
+  };
 
-  const getAbsoluteUrl = (path: string) =>
-    siteUrl +
-    localizedPath({
-      prefixDefault,
-      defaultLang,
-      locale,
-      path,
-    })
+  const urls = fragments.reduce(
+    (fragments, fragment) => {
+      const last = fragments[fragments.length - 1];
+      const href = last.url + "/" + fragment;
+      const page = findPage(href);
+      return [...fragments, page];
+    },
+    [PAGES.HOME]
+  );
 
-  const fragments = urls
-    .reduce(
-      (fragments, fragment) => {
-        const last = fragments[fragments.length - 1]
-        const url = `${last.url}${fragment}/`
-        const page = {
-          ...findPage(url),
-          url,
-        }
+  return urls.map((page) => ({
+    ...page,
+    absoluteUrl: WEBSITE + page.url,
+  }));
+};
 
-        return [...fragments, page]
-      },
-      [
-        {
-          ...PAGES.HOME,
-          url: "/",
-        },
-      ]
-    )
-    .map(page => ({
-      absoluteUrl: getAbsoluteUrl(page.url),
-      ...page,
-    }))
-
-  return fragments
-}
-
-export default usTree
+export default useTree;

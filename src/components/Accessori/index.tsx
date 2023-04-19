@@ -1,26 +1,28 @@
-import { t } from "@lingui/macro"
-import { Box, Grid, GridSize, Stack } from "@mui/material"
-import { Image, Section, TH } from "components"
-import React, { ReactNode } from "react"
-import { PRODUCT_GUTTER } from "theme"
+import { t } from "@lingui/macro";
+import { Box, Grid, GridSize, Stack } from "@mui/material";
+import { Picture } from "components/ModalGallery";
+import Section from "components/Section";
+import Th from "components/Th";
+import React, { ReactNode } from "react";
+import { PRODUCT_GUTTER } from "theme";
+import AccessoriImage from "./AccrssoriImage";
 
 type Props = {
   accessories: {
-    name: JSX.Element
-    description: ReactNode
-    images: {
-      src: string
-      md?: number
-      top?: string
-      left?: string
-    }[]
-  }[]
-}
+    name: JSX.Element;
+    description: ReactNode;
+    images: (Picture & {
+      md?: number;
+      top?: string;
+      left?: string;
+    })[];
+  }[];
+};
 
 const Accessori: React.FC<Props> = ({ accessories }) => (
   <Section>
     <Box textAlign="center" mb={4}>
-      <TH variant="h2">{t`Accessori`}</TH>
+      <Th variant="h2">{t`Accessori`}</Th>
     </Box>
 
     <Stack spacing={{ xs: PRODUCT_GUTTER, md: 0 }}>
@@ -32,15 +34,19 @@ const Accessori: React.FC<Props> = ({ accessories }) => (
             spacing={PRODUCT_GUTTER}
             direction={{ md: index % 2 == 0 ? "row" : "row-reverse" }}
           >
-            <Grid item md sx={{ textAlign: { md: index % 2 == 0 ? "right" : "left" } }}>
-              <TH variant="h4" sans>
+            <Grid
+              item
+              md
+              sx={{ textAlign: { md: index % 2 == 0 ? "right" : "left" } }}
+            >
+              <Th variant="h4" sans>
                 {name}
-              </TH>
+              </Th>
               {description}
             </Grid>
-            {images.map(({ src, md = 6, top, left }) => (
-              <Grid item md={md as GridSize} xs={6} key={src}>
-                <Image {...{ top, left, src }} />
+            {images.map(({ image, md = 6, top, left }) => (
+              <Grid item md={md as GridSize} xs={6} key={image.src}>
+                <AccessoriImage {...{ top, left, image }} />
               </Grid>
             ))}
           </Grid>
@@ -48,6 +54,6 @@ const Accessori: React.FC<Props> = ({ accessories }) => (
       ))}
     </Stack>
   </Section>
-)
+);
 
-export default Accessori
+export default Accessori;

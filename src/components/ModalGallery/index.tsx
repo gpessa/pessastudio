@@ -4,35 +4,36 @@ import NavigateBefore from "@mui/icons-material/NavigateBefore";
 import NavigateNext from "@mui/icons-material/NavigateNext";
 import { Button, ButtonBase, Dialog, styled, Typography } from "@mui/material";
 import { useGallery } from "hooks";
+import { StaticImageData } from "next/image";
 import React from "react";
 
 const ButtonBackStyled = styled(ButtonBase)({
-  "top": 0,
-  "left": 0,
-  "bottom": 0,
-  "width": "50%",
-  "position": "absolute",
+  top: 0,
+  left: 0,
+  bottom: 0,
+  width: "50%",
+  position: "absolute",
   "& > span": {
     position: "absolute",
     left: 0,
   },
-})
+});
 
 const ButtonNextStyled = styled(ButtonBase)({
-  "top": 0,
-  "right": 0,
-  "bottom": 0,
-  "width": "50%",
-  "position": "absolute",
+  top: 0,
+  right: 0,
+  bottom: 0,
+  width: "50%",
+  position: "absolute",
   "& > span": {
     position: "absolute",
     right: 0,
   },
-})
+});
 
 const ImageStyled = styled("img")({
   width: "100%",
-})
+});
 
 const StyledCaption = styled(Typography)(({ theme }) => ({
   backgroundColor: theme.palette.common.white,
@@ -43,20 +44,20 @@ const StyledCaption = styled(Typography)(({ theme }) => ({
   position: "absolute",
   bottom: 0,
   left: 0,
-}))
+}));
 
 export type Picture = {
-  src: string
-  caption?: string
-}
+  image: StaticImageData;
+  caption?: string;
+};
 
 type Props = {
-  render: (props: ReturnType<typeof useGallery>) => JSX.Element
-  images: Picture[]
-}
+  render: (props: ReturnType<typeof useGallery>) => JSX.Element;
+  images: Picture[];
+};
 
 const ModalGallery: React.FC<Props> = ({ render, images }) => {
-  const gallery = useGallery(images)
+  const gallery = useGallery(images);
 
   return (
     <>
@@ -65,7 +66,7 @@ const ModalGallery: React.FC<Props> = ({ render, images }) => {
       <Dialog open={!!gallery.active} onClose={gallery.close} maxWidth="md">
         {gallery.active && (
           <>
-            <ImageStyled src={gallery.active.src} />
+            <ImageStyled src={gallery.active.image.src} />
 
             {gallery.showPreviousEnabled && (
               <ButtonBackStyled onClick={gallery.showPrevious}>
@@ -83,12 +84,14 @@ const ModalGallery: React.FC<Props> = ({ render, images }) => {
               </ButtonNextStyled>
             )}
 
-            {gallery.active.caption && <StyledCaption>{gallery.active.caption}</StyledCaption>}
+            {gallery.active.caption && (
+              <StyledCaption>{gallery.active.caption}</StyledCaption>
+            )}
           </>
         )}
       </Dialog>
     </>
-  )
-}
+  );
+};
 
-export default ModalGallery
+export default ModalGallery;

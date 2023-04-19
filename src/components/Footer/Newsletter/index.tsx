@@ -1,91 +1,77 @@
-import { t, Trans } from "@lingui/macro"
-import { useLingui } from "@lingui/react"
-import Send from "@mui/icons-material/Send"
-import { Alert, IconButton, Input, InputAdornment, styled } from "@mui/material"
-import addToMailchimp from "gatsby-plugin-mailchimp"
-import React, { useState } from "react"
+import { t, Trans } from "@lingui/macro";
+import Send from "@mui/icons-material/Send";
+import {
+  Alert,
+  IconButton,
+  Input,
+  InputAdornment,
+  styled,
+} from "@mui/material";
+import React, { useState } from "react";
+import MailchimpSubscribe from "react-mailchimp-subscribe";
 
 const StyledAlert = styled(Alert)(({ theme }) => ({
   marginTop: theme.spacing(2),
-}))
+}));
 
 const NewsletterSubscription: React.FC = () => {
-  const { i18n } = useLingui()
-  const [state, setState] = useState({
-    showError: false,
-    response: "",
-  })
+  const [email, setEmail] = useState<string>();
 
-  const handleSubmit = async (event: any) => {
-    const data = new FormData(event.target)
-    const isValid = event.currentTarget.checkValidity()
-    const email = data.get("email") as string
-
-    event.preventDefault()
-    event.stopPropagation()
-
-    setState({
-      showError: true,
-      response: "",
-    })
-
-    if (!isValid) return
-
-    const { msg } = await addToMailchimp(email, { LOCALE: i18n.locale })
-
-    let response = "error-generic"
-    if (msg.indexOf("is already subscribed") != -1) response = "error-already-subscribed"
-    if (msg.indexOf("Thank you for subscribing!") != -1) response = "success"
-
-    setState({
-      showError: false,
-      response,
-    })
-  }
+  const url =
+    "https://pessastudio.us4.list-manage.com/subscribe/post?u=9827f22cb9c00c4d7ff1c48ab&amp;id=199848d4fd";
 
   return (
-    <form noValidate onSubmit={handleSubmit}>
-      {state.response !== "success" && (
-        <Input
-          required
-          fullWidth
-          type="email"
-          name="email"
-          placeholder={t`Email`}
-          inputProps={{ "aria-label": t`Email` }}
-          endAdornment={
-            <InputAdornment position="end">
-              <IconButton edge="end" type="submit" color="inherit" size="large" aria-label={t`Iscriviti`}>
-                <Send />
-              </IconButton>
-            </InputAdornment>
-          }
-        />
-      )}
+    <>
+      <MailchimpSubscribe
+        url={url}
+        render={({ subscribe, status }) => (
+          <>
+            {status !== "success" && (
+              <form
+                onSubmit={(e) => {
+                  e.preventDefault();
+                  email && subscribe({ EMAIL: email });
+                }}
+              >
+                <Input
+                  onChange={(e) => setEmail(e.currentTarget.value)}
+                  required
+                  fullWidth
+                  type="email"
+                  name="email"
+                  placeholder={t`Email`}
+                  inputProps={{ "aria-label": t`Email` }}
+                  endAdornment={
+                    <InputAdornment position="end">
+                      <IconButton
+                        edge="end"
+                        type="submit"
+                        color="inherit"
+                        size="large"
+                        aria-label={t`Iscriviti`}
+                      >
+                        <Send />
+                      </IconButton>
+                    </InputAdornment>
+                  }
+                />
+              </form>
+            )}
+            {status === "error" && (
+              <StyledAlert severity="error">
+                <Trans>Si è verificato un problema, riprova</Trans>
+              </StyledAlert>
+            )}
+            {status === "success" && (
+              <StyledAlert severity="success">
+                <Trans>Complimenti! Ti sei iscritto</Trans>
+              </StyledAlert>
+            )}
+          </>
+        )}
+      />
+    </>
+  );
+};
 
-      {
-        {
-          "success": (
-            <StyledAlert severity="success">
-              <Trans>Complimenti! Ti sei iscritto</Trans>
-            </StyledAlert>
-          ),
-
-          "error-already-subscribed": (
-            <StyledAlert severity="error">
-              <Trans>Ti sei già iscritto</Trans>
-            </StyledAlert>
-          ),
-
-          "error-generic": (
-            <StyledAlert severity="error">
-              <Trans>Si è verificato un problema, riprova</Trans>
-            </StyledAlert>
-          ),
-        }[state.response]
-      }
-    </form>
-  )
-}
-
-export default NewsletterSubscription
+export default NewsletterSubscription;

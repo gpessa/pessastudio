@@ -1,29 +1,30 @@
-import { Grid, styled, SvgIconTypeMap } from "@mui/material"
-import { OverridableComponent } from "@mui/material/OverridableComponent"
-import React, { ReactElement } from "react"
-import { Section, Title } from "components"
-import { BREAKPOINT } from "theme"
-import BenefitsItem from "./BenefitsItem"
+import { Grid, styled, SvgIconTypeMap } from "@mui/material";
+import { OverridableComponent } from "@mui/material/OverridableComponent";
+import React, { ReactElement } from "react";
+import { BREAKPOINT } from "theme";
+import Section from "components/Section";
+import Title from "components/Title";
+import BenefitsItem from "./BenefitsItem";
 
 const IntroStyled = styled(Grid)(({ theme }) => ({
   marginBottom: -20,
   [theme.breakpoints.up(BREAKPOINT)]: {
     marginBottom: 0,
   },
-}))
+}));
 
 export type Benefit = {
-  icon?: OverridableComponent<SvgIconTypeMap<{}, "svg">>
-  description: string | ReactElement
-  title: string | ReactElement
-}
+  icon?: OverridableComponent<SvgIconTypeMap<{}, "svg">>;
+  description: string | ReactElement;
+  title: string | ReactElement;
+};
 
 type Props = {
-  text?: any
-  title: JSX.Element
-  subtitle: JSX.Element
-  benefits: Benefit[]
-}
+  text?: any;
+  title: JSX.Element;
+  subtitle: JSX.Element;
+  benefits: Benefit[];
+};
 
 const Benefits: React.FC<Props> = ({ title, subtitle, text, benefits }) => (
   <Section>
@@ -42,6 +43,6 @@ const Benefits: React.FC<Props> = ({ title, subtitle, text, benefits }) => (
       </Grid>
     </Grid>
   </Section>
-)
+);
 
-export default Benefits
+export default Benefits;
