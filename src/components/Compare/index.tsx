@@ -1,5 +1,5 @@
-import { Trans } from "@lingui/macro"
-import CloseIcon from "@mui/icons-material/Close"
+import { Trans } from "@lingui/macro";
+import CloseIcon from "@mui/icons-material/Close";
 import {
   Box,
   Button,
@@ -11,31 +11,31 @@ import {
   TableContainer,
   TableRow,
   Typography,
-} from "@mui/material"
-import { Section, TH } from "components"
-import React from "react"
-import { BREAKPOINT, PRODUCT_GUTTER } from "theme"
+} from "@mui/material";
+import { Section, Th } from "components";
+import React from "react";
+import { BREAKPOINT, PRODUCT_GUTTER } from "theme";
 
 const TableCellStyled = styled(TableCell)<{ type?: string }>(({ type }) => ({
   display: "table-cell",
   verticalAlign: type === "name" ? "bottom" : "top",
   fontWeight: type === "name" ? "bold" : "inherit",
   textTransform: type === "name" ? "uppercase" : "inherit",
-}))
+}));
 
 type Props = {
-  title: JSX.Element
-  attributes: Attribute
-  products: Product[]
-}
+  title: JSX.Element;
+  attributes: Attribute;
+  products: Product[];
+};
 
 type Attribute = {
-  [key: string]: JSX.Element | undefined
-}
+  [key: string]: JSX.Element | undefined;
+};
 
 type Product = {
-  [key: keyof Props["attributes"]]: boolean | string | JSX.Element
-}
+  [key: keyof Props["attributes"]]: boolean | string | JSX.Element;
+};
 
 const Compare: React.FC<Props> = ({ title, ...rest }) => (
   <Section maxWidth={false} disableGutters={true} color="warm1">
@@ -45,21 +45,24 @@ const Compare: React.FC<Props> = ({ title, ...rest }) => (
     <CompareXS {...rest} />
     <CompareMD {...rest} />
   </Section>
-)
+);
 
 const ContainerXS = styled(Stack)(({ theme }) => ({
   [theme.breakpoints.up(BREAKPOINT)]: {
     display: "none",
   },
-}))
+}));
 
-const CompareXS: React.FC<Omit<Props, "title">> = ({ attributes, products }) => (
+const CompareXS: React.FC<Omit<Props, "title">> = ({
+  attributes,
+  products,
+}) => (
   <ContainerXS spacing={PRODUCT_GUTTER * 2}>
     {products.map((product, index) => (
       <Box key={index}>
-        <TH variant="h5" sans sx={{ paddingLeft: 2 }}>
+        <Th variant="h5" sans sx={{ paddingLeft: 2 }}>
           {product.name}
-        </TH>
+        </Th>
         <TableContainer>
           <Table>
             <TableBody>
@@ -70,14 +73,26 @@ const CompareXS: React.FC<Omit<Props, "title">> = ({ attributes, products }) => 
                     <TableCellStyled size="medium">
                       <Typography variant="caption">{label}</Typography>
                     </TableCellStyled>
-                    <TableCellStyled key={`head_${index}`} size="medium" type={type}>
+                    <TableCellStyled
+                      key={`head_${index}`}
+                      size="medium"
+                      type={type}
+                    >
                       {product[type] || <CloseIcon />}
                     </TableCellStyled>
                   </TableRow>
                 ))}
               <TableRow>
-                <TableCellStyled size="medium" align="center" key={index} colSpan={2}>
-                  <Button color="primary" href={`mailto:annapessa@pessastudio.eu?subject=Info Giostra`}>
+                <TableCellStyled
+                  size="medium"
+                  align="center"
+                  key={index}
+                  colSpan={2}
+                >
+                  <Button
+                    color="primary"
+                    href={`mailto:annapessa@pessastudio.eu?subject=Info Giostra`}
+                  >
                     <Trans>Richiedi un preventivo</Trans>
                   </Button>
                 </TableCellStyled>
@@ -88,16 +103,19 @@ const CompareXS: React.FC<Omit<Props, "title">> = ({ attributes, products }) => 
       </Box>
     ))}
   </ContainerXS>
-)
+);
 
 const ContainerMD = styled(TableContainer)(({ theme }) => ({
   display: "none",
   [theme.breakpoints.up(BREAKPOINT)]: {
     display: "unset",
   },
-}))
+}));
 
-const CompareMD: React.FC<Omit<Props, "title">> = ({ attributes, products }) => (
+const CompareMD: React.FC<Omit<Props, "title">> = ({
+  attributes,
+  products,
+}) => (
   <ContainerMD>
     <Table>
       <TableBody>
@@ -117,7 +135,10 @@ const CompareMD: React.FC<Omit<Props, "title">> = ({ attributes, products }) => 
           <TableCellStyled size="medium" />
           {products.map((_, index) => (
             <TableCellStyled size="medium" key={index}>
-              <Button color="primary" href={`mailto:annapessa@pessastudio.eu?subject=Info Giostra`}>
+              <Button
+                color="primary"
+                href={`mailto:annapessa@pessastudio.eu?subject=Info Giostra`}
+              >
                 <Trans>Richiedi un preventivo</Trans>
               </Button>
             </TableCellStyled>
@@ -126,6 +147,6 @@ const CompareMD: React.FC<Omit<Props, "title">> = ({ attributes, products }) => 
       </TableBody>
     </Table>
   </ContainerMD>
-)
+);
 
-export default Compare
+export default Compare;

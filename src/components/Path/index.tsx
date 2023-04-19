@@ -1,28 +1,17 @@
-import { Step, StepContent, StepLabel, Stepper, styled } from "@mui/material"
-import makeStyles from "@mui/styles/makeStyles"
-import React from "react"
-import { useInView } from "react-intersection-observer"
-import { BREAKPOINT } from "theme"
-import TH from "../TH"
+import { Step, StepContent, StepLabel, Stepper, styled } from "@mui/material";
+import Th from "components/Th";
+import Image, { StaticImageData } from "next/image";
+import { InView } from "react-intersection-observer";
+import { BREAKPOINT } from "theme";
 
 interface Step {
-  image: string
-  text: string | JSX.Element
+  image: StaticImageData;
+  text: string | JSX.Element;
 }
 
 interface Props {
-  steps: Step[]
+  steps: Step[];
 }
-
-const useStyles = makeStyles(theme => ({
-  even: {
-    [theme.breakpoints.up(BREAKPOINT)]: {
-      transform: "translateX(-100%)",
-      marginLeft: "-40px",
-      textAlign: "right",
-    },
-  },
-}))
 
 const StepperStyled = styled(Stepper)(({ theme }) => ({
   padding: 0,
@@ -30,39 +19,45 @@ const StepperStyled = styled(Stepper)(({ theme }) => ({
     transform: "translateX(-14px)",
     marginLeft: "50%",
   },
-}))
+}));
+
+const StyledTh = styled(Th)<{ even: boolean }>(({ theme, even }) => ({
+  [theme.breakpoints.up(BREAKPOINT)]: even && {
+    transform: "translateX(-100%)",
+    marginLeft: "-40px",
+    textAlign: "right",
+  },
+}));
+
+const StyledImage = styled(Image)<{ even: boolean }>(({ theme, even }) => ({
+  [theme.breakpoints.up(BREAKPOINT)]: even && {
+    transform: "translateX(-100%)",
+    marginLeft: "-40px",
+    textAlign: "right",
+  },
+}));
 
 const Path = ({ steps }: Props) => {
-  const classes = useStyles()
-
   return (
     <StepperStyled orientation="vertical">
-      {steps.map(({ text, image }, index) => {
-        const { ref, inView } = useInView({
-          threshold: 1,
-        })
-
-        return (
-          <Step key={index} active={inView} expanded={true} ref={ref}>
-            <StepLabel>
-              <TH
-                variant="h5"
-                sans
-                className={`
-                  ${index % 2 == 0 ? classes.even : undefined}
-                `}
-              >
-                {text}
-              </TH>
-            </StepLabel>
-            <StepContent>
-              <img src={image} className={index % 2 == 0 ? classes.even : undefined} />
-            </StepContent>
-          </Step>
-        )
-      })}
+      {steps.map(({ text, image }, index) => (
+        <InView key={index}>
+          {({ inView }) => (
+            <Step key={index} active={inView} expanded={true}>
+              <StepLabel>
+                <StyledTh variant="h5" sans even={index % 2 == 0}>
+                  {text}
+                </StyledTh>
+              </StepLabel>
+              <StepContent>
+                <StyledImage src={image} even={index % 2 == 0} alt="" />
+              </StepContent>
+            </Step>
+          )}
+        </InView>
+      ))}
     </StepperStyled>
-  )
-}
+  );
+};
 
-export default Path
+export default Path;
