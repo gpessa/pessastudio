@@ -1,10 +1,10 @@
-import { Stack } from "@mui/material"
-import React from "react"
+import { Box, Stack } from "@mui/material"
 import { TH } from "components"
+import React from "react"
 import { Benefit } from "."
 
 const BenefitsItem: React.FC<Benefit> = ({ icon: Icon, title, description, ...props }) => (
-  <div {...props}>
+  <Box {...props}>
     <Stack direction="row" spacing={{ xs: 1, md: 2 }} alignItems="center" mb={2}>
       {Icon && <Icon />}
       <TH variant="h6" sans>
@@ -12,7 +12,7 @@ const BenefitsItem: React.FC<Benefit> = ({ icon: Icon, title, description, ...pr
       </TH>
     </Stack>
     <div>{description}</div>
-  </div>
+  </Box>
 )
 
 export default BenefitsItem

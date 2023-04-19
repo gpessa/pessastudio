@@ -28,6 +28,15 @@ ButtonStyled.defaultProps = {
   variant: "text",
 }
 
+type Props = {
+  title: string | JSX.Element
+  rows: {
+    label: string | JSX.Element
+    link?: string | JSX.Element
+    file?: string
+  }[]
+} & Pick<BoxProps, "sx">
+
 const ContentTable: React.FC<Props> = ({ rows, title, ...props }: Props) => (
   <Box {...props}>
     <TH variant="h5" sans sx={{ mb: 2 }}>
@@ -60,14 +69,5 @@ const ContentTable: React.FC<Props> = ({ rows, title, ...props }: Props) => (
     </TableContainer>
   </Box>
 )
-
-type Props = {
-  title: string | JSX.Element
-  rows: {
-    label: string | JSX.Element
-    link?: string | JSX.Element
-    file?: string
-  }[]
-} & Pick<BoxProps, "sx">
 
 export default ContentTable

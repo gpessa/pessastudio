@@ -23,7 +23,7 @@ const BoxStyled = styled(Box)(({ theme }) => ({
 }))
 
 const DescriptionStyled = styled(Typography)(({ theme }) => ({
-  minHeight: `${theme.typography.body1.lineHeight * 3}rem`,
+  minHeight: `${(theme.typography.body1.lineHeight as number) * 3}rem`,
 }))
 
 const LinkStyled = styled(Link)<{ index: number; visible: boolean }>(({ theme, visible }) => ({

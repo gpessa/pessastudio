@@ -1,13 +1,14 @@
 import { Trans } from "@lingui/macro"
-import React from "react"
+import { Box } from "@mui/material"
 import { Data } from "components"
+import React from "react"
 
 const Bank: React.FC<BankProps> = ({ name, iban, swift, ...props }) => (
-  <div {...props}>
+  <Box {...props}>
     {name && <Data label={<Trans>Istituto</Trans>} value={name} />}
     {iban && <Data label={<Trans>Iban</Trans>} value={iban} />}
     {swift && <Data label={<Trans>Swift</Trans>} value={swift} />}
-  </div>
+  </Box>
 )
 
 export type BankProps = {

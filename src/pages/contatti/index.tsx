@@ -1,13 +1,13 @@
 import { Trans } from "@lingui/macro"
-import { Avatar, Box, Card, CardContent, Paper, Stack, styled } from "@mui/material"
-import { Columns, TH } from "components"
+import { Avatar, Box, Card, CardContent, Stack, styled } from "@mui/material"
+import { Address, Bank, Columns, TH } from "components"
+import { AddressProps } from "components/Address"
+import { BankProps } from "components/Bank"
 import React from "react"
 import { Helmet } from "react-helmet"
 import { helmetJsonLdProp } from "react-schemaorg"
 import { ContactPage } from "schema-dts"
 import { BREAKPOINT, PRODUCT_GUTTER } from "theme"
-import Address, { AddressProps } from "./_address"
-import Bank, { BankProps } from "./_bank"
 
 export const SEDE_LEGALE: AddressProps = {
   name: "Pessastudio Horse Tecnology srl",

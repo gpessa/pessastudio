@@ -1,5 +1,7 @@
 export { default as Section } from "./Section"
 export { default as Ul } from "./Ul"
+export { default as Address } from "./Address"
+export { default as Bank } from "./Bank"
 export { default as Benefits } from "./Benefits"
 export { default as Breadcrumb } from "./Breadcrumb"
 export { default as Columns } from "./Columns"
