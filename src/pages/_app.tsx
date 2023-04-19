@@ -10,20 +10,28 @@ import theme from "../theme";
 
 import Breadcrumb from "components/Breadcrumb";
 import { useLinguiInit } from "hooks/useLingui";
+import { Session } from "next-auth";
+import { SessionProvider } from "next-auth/react";
 import "pure-react-carousel/dist/react-carousel.es.css";
+import { useEffect } from "react";
 import TagManager from "react-gtm-module";
 import packageJson from "../../package.json";
-import { useEffect } from "react";
 
 export type MyAppProps = AppProps<{ messages: any }> & {
   emotionCache: EmotionCache;
+  session: Session;
 };
 
 // Client-side cache, shared for the whole session of the user in the browser.
 const clientSideEmotionCache = createEmotionCache();
 
 const MyApp = (props: MyAppProps) => {
-  const { Component, emotionCache = clientSideEmotionCache, pageProps } = props;
+  const {
+    Component,
+    session,
+    emotionCache = clientSideEmotionCache,
+    pageProps,
+  } = props;
 
   useEffect(() => {
     TagManager.initialize({ gtmId: "GTM-NTCR82T" });
@@ -32,19 +40,21 @@ const MyApp = (props: MyAppProps) => {
   useLinguiInit(pageProps.messages);
 
   return (
-    <I18nProvider i18n={i18n}>
-      <CacheProvider value={emotionCache}>
-        <Seo />
-        <ThemeProvider theme={theme}>
-          <CssBaseline />
-          <Header />
-          <Breadcrumb />
-          <Component {...pageProps} />
-          <Footer version={packageJson.version} />
-          <Gdpr />
-        </ThemeProvider>
-      </CacheProvider>
-    </I18nProvider>
+    <SessionProvider session={session}>
+      <I18nProvider i18n={i18n}>
+        <CacheProvider value={emotionCache}>
+          <Seo />
+          <ThemeProvider theme={theme}>
+            <CssBaseline />
+            <Header />
+            <Breadcrumb />
+            <Component {...pageProps} />
+            <Footer version={packageJson.version} />
+            <Gdpr />
+          </ThemeProvider>
+        </CacheProvider>
+      </I18nProvider>
+    </SessionProvider>
   );
 };
 
