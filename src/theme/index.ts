@@ -1,75 +1,79 @@
-import { createTheme, responsiveFontSizes, Theme } from "@mui/material/styles"
+import { createTheme, responsiveFontSizes } from "@mui/material/styles";
 
-export const BREAKPOINT = "md"
+export const BREAKPOINT = "md";
 
-export const PRODUCT_GUTTER = 5
+export const PRODUCT_GUTTER = 5;
+
+export enum Colors {
+  YELLOW = "#FEB00D",
+  GREEN = "#316330",
+  WHITE = "#FFFFFF",
+  BLU = "#264FD0",
+  RED = "#F41701",
+}
 
 export const SECTION_SPACING = (breakingPoint: "xs" | "md") => {
   return (spacing: "small" | "medium" | "big" | "menu") => {
-    const CONFIGURATION = new Map()
+    const CONFIGURATION = new Map();
 
     CONFIGURATION.set("xs", {
       small: 3,
       medium: 8,
       big: 10,
       menu: 13, // 130px
-    })
+    });
 
     CONFIGURATION.set("md", {
       small: 4,
       medium: 13,
       big: 20,
       menu: 30,
-    })
+    });
 
-    const value = CONFIGURATION.get(breakingPoint)[spacing]
-    return theme.spacing(value)
-  }
-}
+    const value = CONFIGURATION.get(breakingPoint)[spacing];
+    return theme.spacing(value);
+  };
+};
 
 declare module "@mui/material/styles" {
   interface TypographyVariants {
-    small: React.CSSProperties
-    slim: React.CSSProperties
+    small: React.CSSProperties;
+    slim: React.CSSProperties;
   }
 
   interface TypographyVariantsOptions {
-    small?: React.CSSProperties
-    slim?: React.CSSProperties
-  }
-}
-
-declare module "@mui/material/Typography" {
-  interface TypographyPropsVariantOverrides {
-    small: true
-    slim: true
+    small?: React.CSSProperties;
+    slim?: React.CSSProperties;
   }
 }
 
 declare module "@mui/material/styles/createPalette" {
   interface Palette {
-    warm1: Palette["primary"]
-    warm2: Palette["primary"]
+    warm1: Palette["primary"];
+    warm2: Palette["primary"];
   }
   interface PaletteOptions {
-    warm1: PaletteOptions["primary"]
-    warm2: PaletteOptions["primary"]
+    warm1: PaletteOptions["primary"];
+    warm2: PaletteOptions["primary"];
   }
 }
 
-declare module "@mui/styles/defaultTheme" {
-  // eslint-disable-next-line @typescript-eslint/no-empty-interface
-  interface DefaultTheme extends Theme {}
+declare module "@mui/material/Typography" {
+  interface TypographyPropsVariantOverrides {
+    small: true;
+    slim: true;
+  }
 }
 
-declare module "@mui/styles/defaultTheme" {
-  // eslint-disable-next-line @typescript-eslint/no-empty-interface
-  interface DefaultTheme extends Theme {}
+declare module "@mui/material/Badge" {
+  interface BadgePropsColorOverrides {
+    warm2: true;
+  }
 }
 
 declare module "@mui/material/Button" {
   interface ButtonPropsColorOverrides {
-    warm2: true
+    warm2: true;
   }
 }
 
@@ -96,7 +100,7 @@ const themePalette = createTheme({
       contrastText: "rgba(0, 0, 0, 0.87)",
     },
   },
-})
+});
 
 const theme = createTheme(themePalette, {
   shape: {
@@ -208,6 +212,6 @@ const theme = createTheme(themePalette, {
       },
     },
   },
-})
+});
 
-export default responsiveFontSizes(theme)
+export default responsiveFontSizes(theme);

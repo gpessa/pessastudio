@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://pessastudio.eu
+
+# Sitemaps
+Sitemap: https://pessastudio.eu/sitemap.xml
