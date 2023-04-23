@@ -1,5 +1,5 @@
 import RecintiModule from "modules/Recinti";
-export { getStaticProps } from "utils/lingui";
+export { getStaticProps } from "utils/i18n";
 
 const Recinti = RecintiModule;
 

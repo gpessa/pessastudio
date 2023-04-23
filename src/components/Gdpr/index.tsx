@@ -1,12 +1,12 @@
 /* eslint-disable react/no-children-prop */
-import { Trans } from "@lingui/macro";
-import { Box, Button, ButtonProps, Theme, Link } from "@mui/material";
-import { makeStyles } from "tss-react/mui";
+import { Box, Button, ButtonProps, Link } from "@mui/material";
+import { Trans } from "next-i18next";
 import NextLink from "next/link";
 import { useRouter } from "next/router";
 import React from "react";
 import CookieConsent from "react-cookie-consent";
 import { PRODUCT_GUTTER } from "theme";
+import { makeStyles } from "tss-react/mui";
 
 const useStyles = makeStyles()((theme) => ({
   root: {
@@ -42,14 +42,14 @@ const Gdpr: React.FC = () => {
       overlay={false}
       disableStyles={true}
       ButtonComponent={Accept}
-      buttonText={<Trans>Acconsento</Trans>}
+      buttonText={<Trans i18nKey="General.gdpr.agree">Acconsento</Trans>}
       containerClasses={classes.classes.root}
       overlayClasses={classes.classes.overlay}
       // FIXME
       // cookieName="gatsby-gdpr-google-tagmanager"
     >
       <Box mb={3}>
-        <Trans>
+        <Trans i18nKey="General.gdpr.text">
           Utilizziamo i cookie per garantire il corretto funzionamento del sito.
           Per ulteriori informazioni sul nostro utilizzo dei cookie, consultare
           la nostra{" "}

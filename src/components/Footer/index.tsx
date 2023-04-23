@@ -1,4 +1,3 @@
-import { Trans } from "@lingui/macro";
 import {
   Divider,
   Grid,
@@ -6,10 +5,11 @@ import {
   Typography,
   useMediaQuery,
 } from "@mui/material";
+import Section from "components/Section";
 import Title from "components/Title";
+import { Trans, useTranslation } from "next-i18next";
 import React from "react";
 import theme, { BREAKPOINT } from "theme";
-import Section from "components/Section";
 import Map from "./Map";
 import Newsletter from "./Newsletter";
 import Socials from "./Socials";
@@ -30,21 +30,36 @@ const DividerStyled = styled(Divider)(({ theme }) => ({
 
 const Footer: React.FC = () => {
   const isDesktop = useMediaQuery(theme.breakpoints.up(BREAKPOINT));
+  const { t } = useTranslation();
+
+  const SOCIALS = {
+    title: t("General.footer.socials.title", { defaultValue: "Socials" }),
+    subtitle: t("General.footer.socials.subtitle", {
+      defaultValue: "Seguici",
+    }),
+    text: t("General.footer.socials.text", {
+      defaultValue: "Seguici sui nostra social e scopri le ultime novità",
+    }),
+  };
+
+  const NEWSLETTER = {
+    title: t("General.footer.newsletter.title", {
+      defaultValue: "Iscriviti alla nostra newsletter",
+    }),
+    subtitle: t("General.footer.newsletter.subtitle", {
+      defaultValue: "Newsletters",
+    }),
+    text: t("General.footer.newsletter.text", {
+      defaultValue: "Rimani informato sui nostri sconti e gli eventi",
+    }),
+  };
 
   return (
     <footer>
       <Section color="warm2">
         <Grid container justifyContent="space-evenly">
           <Grid item md={4} xs={12}>
-            <Title
-              title={<Trans>Socials</Trans>}
-              subtitle={<Trans>Seguici</Trans>}
-              text={
-                <Trans>
-                  Seguici sui nostra social e scopri le ultime novità
-                </Trans>
-              }
-            />
+            <Title {...SOCIALS} />
             <Socials />
           </Grid>
 
@@ -54,13 +69,7 @@ const Footer: React.FC = () => {
           />
 
           <Grid item md={4} xs={12}>
-            <Title
-              title={<Trans>Iscriviti alla nostra newsletter</Trans>}
-              subtitle={<Trans>Newsletters</Trans>}
-              text={
-                <Trans>Rimani informato sui nostri sconti e gli eventi</Trans>
-              }
-            />
+            <Title {...NEWSLETTER} />
             <Newsletter />
           </Grid>
         </Grid>
@@ -71,7 +80,7 @@ const Footer: React.FC = () => {
       <BottomPartStyled spacing="small">
         <Typography variant="small">
           {
-            <Trans>
+            <Trans i18nKey="General.footer.text">
               COD. FISC. e Part: I.V.A. 04743610281 C.C.I.A.A. PD - R.E.A.
               414822
             </Trans>

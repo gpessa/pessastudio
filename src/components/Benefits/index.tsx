@@ -1,9 +1,9 @@
 import { Grid, styled, SvgIconTypeMap } from "@mui/material";
 import { OverridableComponent } from "@mui/material/OverridableComponent";
-import React, { ReactElement } from "react";
-import { BREAKPOINT } from "theme";
 import Section from "components/Section";
-import Title from "components/Title";
+import Title, { TitleProps } from "components/Title";
+import React from "react";
+import { BREAKPOINT } from "theme";
 import BenefitsItem from "./BenefitsItem";
 
 const IntroStyled = styled(Grid)(({ theme }) => ({
@@ -15,18 +15,20 @@ const IntroStyled = styled(Grid)(({ theme }) => ({
 
 export type Benefit = {
   icon?: OverridableComponent<SvgIconTypeMap<{}, "svg">>;
-  description: string | ReactElement;
-  title: string | ReactElement;
+  description: string;
+  title: string;
 };
 
-type Props = {
-  text?: any;
-  title: JSX.Element;
-  subtitle: JSX.Element;
+export type BenefitsProps = TitleProps & {
   benefits: Benefit[];
 };
 
-const Benefits: React.FC<Props> = ({ title, subtitle, text, benefits }) => (
+const Benefits: React.FC<BenefitsProps> = ({
+  title,
+  subtitle,
+  text,
+  benefits,
+}) => (
   <Section>
     <Grid container spacing={10} justifyContent="space-between">
       <IntroStyled item md={5} xs={12}>

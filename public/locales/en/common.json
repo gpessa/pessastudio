@@ -1,0 +1,317 @@
+{
+  "404": {
+    "title": "Pagina non trovata",
+    "description": "La pagina che stai cercando non esiste"
+  },
+  "500": {
+    "title": "Errore",
+    "description": "Il server non è stato in grado di inviarti il documento html a causa di un errore interno (software del server)"
+  },
+  "General": {
+    "addon": {
+      "title": "Accessori",
+      "windscreen": "Rete antivento",
+      "trackIrrigation": "Irrigazione",
+      "windscreenEntrance": "Rete antivento ingresso",
+      "closedAtTheGround": "Chiusura a terra"
+    },
+    "requireQuote": "Richiedi un preventivo",
+    "view": "Vedi",
+    "download": "Scarica",
+    "footer": {
+      "socials": {
+        "title": "Socials",
+        "subtitle": "Seguici",
+        "text": "Seguici sui nostra social e scopri le ultime novità"
+      },
+      "newsletter": {
+        "title": "Iscriviti alla nostra newsletter",
+        "subtitle": "Newsletters",
+        "text": "Rimani informato sui nostri sconti e gli eventi"
+      },
+      "text": "COD. FISC. e Part: I.V.A. 04743610281 C.C.I.A.A. PD - R.E.A. 414822"
+    },
+    "map": "Mappa",
+    "newsletter": {
+      "field": {
+        "placeolder": "Email",
+        "subscribe": "Iscriviti"
+      },
+      "response": {
+        "error": "Si è verificato un problema, riprova",
+        "success": "Complimenti! Ti sei iscritto"
+      }
+    },
+    "gdpr": {
+      "agree": "Acconsento",
+      "text": "Utilizziamo i cookie per garantire il corretto funzionamento del sito. Per ulteriori informazioni sul nostro utilizzo dei cookie, consultare la nostra <2>politica sui cookie</2>"
+    },
+    "gallery": {
+      "back": "Indietro",
+      "next": "Avanti"
+    },
+    "attributes": {
+      "color": "Colori",
+      "material": "Materiali",
+      "depth": "Profondità",
+      "diameter": "Diametro",
+      "height": "Altezza",
+      "lenght": "Lunghezza",
+      "tickness": "Spessore",
+      "weight": "Peso",
+      "width": "Larghezza"
+    },
+    "vat": "+ IVA",
+    "contacts": {
+      "clientSupport": "Supporto clienti",
+      "salesOffice": "Contatto commerciale",
+      "internationalDealers": "Rivenditori"
+    },
+    "size": "Dimensioni",
+    "manuals": "Manuali"
+  },
+  "Pages": {
+    "ostacoli": {
+      "title": "Ostacoli",
+      "description": "Prodotti professionali, sono lo strumento di lavoro indispensabile in un centro ippico o un maneggio. Progettati e costruiti per durare nel tempo senza alcuna manutenzione"
+    },
+    "recinti": {
+      "title": "Recinti",
+      "description": "Un recinto da cavalli in PVC. Indistruttibile anche in presenza delle più avverse condizioni meteorologiche"
+    },
+    "tondini": {
+      "title": "Tondini",
+      "description": "Tondini coperti per addestrare puledri in libertà"
+    },
+    "giostre": {
+      "title": "Giostre",
+      "description": "Scopri le nostre giostre per cavalli, lo strumento ideale di lavoro per allenare il vostro cavallo"
+    },
+    "dressage": {
+      "title": "Dressage",
+      "description": "Rettangoli / Campi professionali da dressage per tutte le esigenze"
+    },
+    "contatti": {
+      "title": "Contatti",
+      "description": "Contattaci per un preventivo per ostacoli, recinti, tondini coperti, giostre, rettangoli da dressage e attrezzature per cavalli"
+    },
+    "page_404": {
+      "title": "Pagina non trovata"
+    },
+    "page_500": {
+      "title": "Error"
+    },
+    "cookiePolicy": {
+      "title": "Cookie"
+    },
+    "home": {
+      "title": "Home",
+      "description": "Contatta Pessastudio per preventivi di Giostre, ostacoli, tondini e attrezzature per cavalli"
+    },
+    "recintiComePreparareIlFondo": {
+      "title": "Come preparare il fondo"
+    },
+    "tondiniComePreparareIlFondo": {
+      "title": "Come preparare il fondo"
+    },
+    "giostreIppowalker": {
+      "title": "Giostra Ippowalker",
+      "description": "Scopri la nostra giostra IPPOWALKER, lo strumento economico adatto ad allenare il tuo cavallo o il tuo puledro"
+    },
+    "giostreIppowalkerIstruzioniMontaggio": {
+      "title": "Istruzioni di montaggio"
+    },
+    "giostreTecnoexerciser": {
+      "title": "Giostra Tecnoexerciser",
+      "description": "Scopri la nostra giostra TECNOEXERCISER, lo strumento professionale adatto ad allenare il tuo cavallo o il tuo puledro"
+    },
+    "giostreTecnoexerciserIstruzioniMontaggio": {
+      "title": "Istruzioni di montaggio"
+    }
+  },
+  "ComePreparareIlFondo": {
+    "title": "Come preparare il fondo",
+    "text": "<0><0>Preparare la superficie spianandola a \"schiena d'asino\" con il centro più alto dei bordi (2%) per far si che la pioggia defluisca. Mantenere i bordi dell'area alla stessa altezza del terreno circostante e riportare materiale nel centro dell'area per alzarlo.</0><1>Stendere sull'area una \"rete di separazione\", ben tesa e trattenuta lungo i bordi in una canaletta scavata nel terreno impedendo così che la terra si mescoli alla sabbia.</1><2>Distendere uniformemente sopra la rete uno strato di 7/8 centimetri di sabbia ( diametro 1 mm.)</2><3>Distribuire sopra alla sabbia 3 kg di \"straccetti di geotessuto\" per mt quadro di superficie in modo da mantenere il fondo stabile e morbido. Distribuire successivamente dopo un paio di ingressi a cavallo altri 2 kg.</3><4>Tutti i giorni passare con una \"erpice livellatrice\" per eliminare le impronte lasciate dagli zoccoli.</4></0>"
+  },
+  "Contacts": {
+    "address": {
+      "id": "Codice Fiscale e Partita IVA",
+      "telefono": "Telefono",
+      "phone": "Telefono",
+      "whatsApp": "WhatsApp",
+      "email": "Email",
+      "website": "Website"
+    },
+    "bank": {
+      "istituto": "Istituto",
+      "iban": "Iban",
+      "swift": "Swift"
+    },
+    "resellers": {
+      "belgium": "Contatto commerciale Belgio",
+      "france": "Contatto commerciale Francia",
+      "germany": "Contatto commerciale Germania",
+      "germanyAndMiddleEast": "Contatto commerciale Germania & Medio Oriente"
+    },
+    "contacts": "Contatti",
+    "headOffice": "Sede operativa",
+    "registeredEntity": "Sede legale",
+    "bankAccountDetails": "Coordinate bancarie"
+  },
+  "cookiePolicy": {
+    "title": "Cookie policy",
+    "owner": {
+      "title": "Titolare del trattamento",
+      "text": "L'utilizzo di cookie e di tecnologie affini da parte di {{name}}, con sede {{completeAddress}}, rientra nella politica di privacy del Gestore, in conformità a quanto previsto dal D. Lgs 196/03 Codice in materia di protezione dei dati personali (Codice Privacy) e dal Provvedimento dell’8 maggio 2014 “Individuazione delle modalità semplificate per l’informativa e l’acquisizione del consenso per l’uso dei cookie” del Garante Privacy Italiano. {{name}}, in qualità di Titolare del trattamento agisce conformemente a quanto previsto dalla normativa in materia"
+    },
+    "whatIs": {
+      "title": "Che cos'è un cookie?",
+      "text": "Un cookie è un file di piccole dimensioni che viene inviato al browser in uso e salvato sul tuo dispositivo quando visiti un sito internet come pessastudio.eu (‘il sito’). I cookie permettono un funzionamento efficiente del sito e ne migliorano le prestazioni, inoltre forniscono informazioni al proprietario del sito per fini statistici o pubblicitari, principalmente per personalizzare la tua esperienza di navigazione ricordando le tue preferenze (per esempio ricordare la lingua e la valuta che hai impostato, per riconoscerti alla visita successiva, ecc.)"
+    },
+    "whichOnes": {
+      "title": "Quali cookie utilizziamo e per quali finalità?",
+      "text": "Il nostro sito utilizza diverse tipologie di cookie di prima parte (predisposti e gestiti da {{name}}), cookie di terze parti (predisposti e gestiti da soggetti terzi in base alle proprie privacy policy e non sotto il controllo di {{name}}), ognuna delle quali ha una specifica funzione. Di seguito una tabella esplicativa"
+    },
+    "table1": {
+      "header": {
+        "typology": "Tipologia di cookie",
+        "function": "Funzione"
+      }
+    },
+    "type": {
+      "navigation": {
+        "name": "Cookie di navigazione",
+        "text": "Fin dal primo accesso questi cookie permettono al sito di funzionare correttamente e ti consentono di visualizzare i contenuti sul tuo dispositivo riconoscendo la lingua e il mercato del Paese dal quale scegli di connetterti. Se sei un utente registrato, permetteranno di riconoscerti e di accedere ai servizi delle aree dedicate. I cookie di navigazione sono cookie tecnici e sono necessari al funzionamento del sito."
+      },
+      "analytics": {
+        "name": "Cookie Analitici",
+        "text": "Questi cookie di prima parte, sono proprietà di {{name}} (Gestore del sito) e sono impiegati per raccogliere dati in forma anonima e aggregata. Questi cookie sono utilizzati per elaborare analisi statistiche sulle modalità di navigazione degli utenti sul nostro sito. {{name}} tratta i risultati di queste analisi in maniera anonima ed esclusivamente per finalità statistiche."
+      }
+    },
+    "table2": {
+      "header": {
+        "name": "Name",
+        "vendor": "Vendor",
+        "category": "Category"
+      }
+    },
+    "access": {
+      "title": "Accesso ai dati e Servizio Clienti",
+      "text": "Puoi in qualsiasi momento ricevere assistenza e spiegazioni su come esercitare il consenso o il diniego selettivo o su come cancellare i cookie e tecnologie affini dal tuo browser, inviando una e-mail al Servizio Clienti selezionando \"Privacy\" come argomento o con richiesta scritta rivolta a {{completeAddressWithAnna}} all'indirizzo postale della sede legale, daremo tempestivo riscontro"
+    }
+  },
+  "Dressage": {
+    "products": {
+      "description_20x40": "<0>Un set per creare un circuito dressage standard da 20x40 mt.</0><1>Il set contiene:</1><2><0>60 moduli</0><1>8 lettere</1></2>",
+      "description_20x60": "<0>Un set per creare un circuito dressage standard da 20x60 mt.</0><1>Il set contiene:</1><2><0>80 moduli</0><1>12 lettere</1></2>",
+      "letter": "Lettera dressage ({{type}})",
+      "module": "Modulo dressage ({{type}})",
+      "set": {
+        "name": "Rettangolo dressage {{size}} ({{type}})"
+      }
+    },
+    "intro": {
+      "title": "Dressage",
+      "text": "Pessastudio fornisce due soluzioni per trasformare il vostro terreno in un'arena da dressage: la gamma <2>training</2> e quella <5>olympic</5>"
+    },
+    "training": {
+      "title": "Training",
+      "text": "<0>Il rettangolo della linea <1>training</1> è rivolto a quei maneggi in cui lo spazio a disposizione è limitato e il rettangolo viene installato provvisoriamente.</0><1>Facile da montare, è costituito da elementi modulari di 2 mt. in materiale plastico, non richiede alcuna manutenzione e occupa poco spazio quando non è utilizzato.</1>"
+    },
+    "olimpic": {
+      "title": "Olimpic",
+      "text": "<0>La linea <1>olympic</1>, presente sul mercato da oltre vent'anni, è rappresentata da un rettangolo professionale, dove il campo da dressage è utilizzato quotidianamente.</0><1>Il campo è delimitato da moduli accostabili tra di loro, ciascuno dei quali è lungo 2 mt. Ogni modulo è costruito in polietilene antiurto resistente anche alle basse temperature e che non ingiallisce sotto l'azione dei raggi ultravioletti.</1><2>Su ciascun modulo sono previste tre aree piane con superficie lucida di 50x12 cm. sulle quali possono essere applicati adesivi pubblicitari.</2>"
+    }
+  },
+  "Index": {
+    "products": {
+      "subtitle": "Prodotti",
+      "title": "Scopri la nostra gamma di prodotti"
+    },
+    "testimonials": {
+      "subtitle": "Dicono di noi",
+      "title": "Cosa dicono di noi",
+      "text": "Scopri la qualità dei nostri prodotti attraverso la testimonianza dei clienti",
+      "list": {
+        "item_1": "Ho ricevuto questa mattina il materiale. I miei complimenti per la qualità dei prodotti, l'imballo ed il trasportatore",
+        "item_2": "Ringrazio tutto il team per la professionalità, gentilezza, velocità e sopratutto per l'ottimo risultato",
+        "item_3": "Splendido niente da dire! Il tondino è ben pensato e ingegnoso. Molto bene!",
+        "item_4": "Gli ostacoli sono arrivati. Sono fantastici!"
+      }
+    },
+    "hero": {
+      "text": "Tradizione e qualità"
+    },
+    "benefits": {
+      "subtitle": "Perché?",
+      "title": "Pessastudio, una scelta di qualità",
+      "text": "<0>Pessastudio è un'azienda altamente affidabile e rinomata nel settore dell'equitazione. Ogni anno, centinaia di persone scelgono i nostri articoli d'equitazione per la qualità superiore che li caratterizza.</0><1>La gamma di prodotti offerti è ampia e diversificata, con un'attenzione particolare alla funzionalità e al design. La competenza e l'esperienza del team di Pessastudio sono alla base del successo dell'azienda e della sua reputazione di affidabilità e professionalità.</1>",
+      "innovative": {
+        "title": "Innovativi",
+        "text": "Innovazione tecnologica e qualità sono le caratteristiche chiave dei nostri prodotti"
+      },
+      "customisable": {
+        "title": "Personalizzabili",
+        "text": "Prodotti MADE IN ITALY, costruiti da Pessastudio e personalizzabili (in dimensioni o colori)"
+      },
+      "affordable": {
+        "title": "Accessibili",
+        "text": "Da anni Pessastudio è focalizzata nel produrre prodotti di qualità a costi accessibili"
+      },
+      "renowned": {
+        "title": "Apprezzati",
+        "text": "I prodotti vengono venduti ed apprezzati sia in Italia che all'estero"
+      },
+      "indestructible": {
+        "title": "Indistruttibili",
+        "text": "I nostri prodotti sono pensati per resistere nel tempo, anche se soggetti a difficili condizioni climatiche"
+      },
+      "history": {
+        "title": "Una lunga storia",
+        "text": "Pessastudio nasce 28 fa dall'ingegno e dalla passione per i cavalli del fondatore Luciano Pessa. Oggi, la figlia Anna, continua a portare avanti lo stesso sogno"
+      }
+    }
+  },
+  "Tondini": {
+    "addon": {
+      "windscreen": {
+        "description": "La rete antivento protegge l'interno della tondino da correnti d'aria consentendo il cavallo a rimanere concentrato durante l'allenamento."
+      },
+      "trackIrrigation": {
+        "description": "<0>Tutti i cavalieri sanno quanto sia spiacevole cavalcare in un ambiente polveroso.</0><1>La polvere può contribuire a problemi respiratori per te e per i tuoi cavalli e può indicare che il fondo non fornisce un adeguato un supporto allo zoccolo del cavallo.</1><2>Per ovviare a questo problema, è possibile installare il nostro sistema di irrigazione. Un rosone verrà posizionato al centro del tondino e ti permetterà di irrigarlo facilmente.</2>"
+      },
+      "windscreenEntrance": {
+        "description": "La rete antivento della porta è un’ulteriore protezione che offriamo per rendere ancora di più il tuo tondino sicuro in caso di forte vento e per garantire una maggiore concentrazione del tuo cavallo."
+      }
+    },
+    "models": "Tondino coperto {{sides}} pannelli {{size}} mt.",
+    "gallery": {
+      "inside": "Tondino coperto per cavalli",
+      "roof": "Copertura",
+      "image_8": "Ingresso di 2,05 mt. con catenaccio verticale",
+      "image_9": "Tondino",
+      "image_10": "Interno tondino coperto"
+    },
+    "benefits": {
+      "subtitle": "Caratteristiche",
+      "title": "Scopri il nostro tondino Tecnohalle",
+      "text": "Il tondino coperto è adatto a svolgere molteplici attività, rappresenta la migliore soluzione per addestrare puledri in libertà o lavorare cavalli alla corda. Inoltre facilita il controllo del cavallo durante le lezioni ai principianti ed è indispensabile per il longeur durante le riprese di volteggi.",
+      "good": {
+        "title": "Materiali di qualità",
+        "description": "È costituito da pannelli laterali in compensato marino fissati a colonne in acciaio zincato. La copertura in telo spalmato in PVC, è disponibile in bianco, verde o crema"
+      },
+      "easy": {
+        "title": "Nessuna concessione edilizia",
+        "description": "I nostri tondini sono considerati strutture precarie. Non avrete bisogno di nessuna concessione edilizia"
+      },
+      "beautiful": {
+        "title": "Bello e funzionale",
+        "description": "É una struttura semplice, leggera e piacevole alla vista"
+      },
+      "safe": {
+        "title": "Sicuro",
+        "description": "La struttura è stata progettata per garantire un carico neve fino a 120 kg/mq e la velocità del vento fino a 110 km/h."
+      }
+    }
+  }
+}

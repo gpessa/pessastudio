@@ -14,20 +14,21 @@ const useTree = (path: string): BreadcrumbList => {
     return page;
   };
 
-  const urls = fragments.reduce(
-    (fragments, fragment) => {
-      const last = fragments[fragments.length - 1];
-      const href = last.url + "/" + fragment;
-      const page = findPage(href);
-      return [...fragments, page];
-    },
-    [PAGES.HOME]
-  );
-
-  return urls.map((page) => ({
+  const addAbsolutePath = (page: Page) => ({
     ...page,
     absoluteUrl: WEBSITE + page.url,
-  }));
+  });
+
+  return fragments
+    .reduce(
+      (result, _, index) => {
+        const page = "/" + fragments.slice(0, index + 1).join("/");
+        return [...result, page];
+      },
+      ["/"]
+    )
+    .map(findPage)
+    .map(addAbsolutePath);
 };
 
 export default useTree;

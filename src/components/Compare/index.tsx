@@ -1,4 +1,3 @@
-import { Trans } from "@lingui/macro";
 import CloseIcon from "@mui/icons-material/Close";
 import {
   Box,
@@ -13,6 +12,7 @@ import {
   Typography,
 } from "@mui/material";
 import { Section, Th } from "components";
+import { Trans } from "next-i18next";
 import React from "react";
 import { BREAKPOINT, PRODUCT_GUTTER } from "theme";
 
@@ -93,7 +93,9 @@ const CompareXS: React.FC<Omit<Props, "title">> = ({
                     color="primary"
                     href={`mailto:annapessa@pessastudio.eu?subject=Info Giostra`}
                   >
-                    <Trans>Richiedi un preventivo</Trans>
+                    <Trans i18nKey={"General.requireQuote"}>
+                      Richiedi un preventivo
+                    </Trans>
                   </Button>
                 </TableCellStyled>
               </TableRow>
@@ -139,7 +141,9 @@ const CompareMD: React.FC<Omit<Props, "title">> = ({
                 color="primary"
                 href={`mailto:annapessa@pessastudio.eu?subject=Info Giostra`}
               >
-                <Trans>Richiedi un preventivo</Trans>
+                <Trans i18nKey={"General.requireQuote"}>
+                  Richiedi un preventivo
+                </Trans>
               </Button>
             </TableCellStyled>
           ))}

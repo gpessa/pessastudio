@@ -1,5 +1,5 @@
 import OstacoliModule from "modules/Ostacoli";
-export { getStaticProps } from "utils/lingui";
+export { getStaticProps } from "utils/i18n";
 
 const Ostacoli = OstacoliModule;
 

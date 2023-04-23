@@ -1,5 +1,5 @@
 import DressageModule from "modules/Dressage";
-export { getStaticProps } from "utils/lingui";
+export { getStaticProps } from "utils/i18n";
 
 const Dressage = DressageModule;
 

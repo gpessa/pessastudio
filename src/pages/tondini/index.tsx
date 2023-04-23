@@ -1,5 +1,5 @@
 import TondiniModule from "modules/Tondini";
-export { getStaticProps } from "utils/lingui";
+export { getStaticProps } from "utils/i18n";
 
 const Tondini = TondiniModule;
 

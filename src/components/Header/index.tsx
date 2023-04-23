@@ -1,4 +1,3 @@
-import { Trans } from "@lingui/react";
 import Menu from "@mui/icons-material/Menu";
 import {
   AppBar,
@@ -112,9 +111,7 @@ const Header: React.FC = () => {
         <HeaderDesktop>
           {Object.values(NAVIGATION).map(({ url, title }) => (
             <Link passHref key={url} href={url} legacyBehavior>
-              <HeaderDesktopButtom>
-                <Trans id={title} />
-              </HeaderDesktopButtom>
+              <HeaderDesktopButtom>{title}</HeaderDesktopButtom>
             </Link>
           ))}
           <HeaderDesktopDivider />
@@ -140,9 +137,7 @@ const Header: React.FC = () => {
         <MenuMobileStyled>
           {Object.values(NAVIGATION).map(({ url, title }) => (
             <Link key={url} href={url} legacyBehavior>
-              <ListItem>
-                <Trans id={title} />
-              </ListItem>
+              <ListItem>{title}</ListItem>
             </Link>
           ))}
         </MenuMobileStyled>

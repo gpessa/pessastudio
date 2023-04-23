@@ -1,6 +1,3 @@
-// FIXME
-/* eslint-disable react/no-unescaped-entities */
-import { t, Trans } from "@lingui/macro";
 import { Box, Grid, Link, Typography } from "@mui/material";
 import productsDressageOlympicLettera from "assets/products/dressage/olympic-lettera.jpg";
 import productsDressageOlympicModuloDressage from "assets/products/dressage/olympic-modulo-dressage.jpg";
@@ -10,13 +7,16 @@ import productsDressageTrainingLettera from "assets/products/dressage/training-l
 import productsDressageTrainingModuloDressage from "assets/products/dressage/training-modulo-dressage.jpg";
 import { Product, Section, Th, Ul } from "components";
 import { ProductData } from "components/Product";
+import { Trans, useTranslation } from "next-i18next";
 import React from "react";
 import { Colors, PRODUCT_GUTTER } from "theme";
 import { MATERIALS } from "utils/constants";
 
 const Dressage: React.FC = () => {
+  const { t } = useTranslation();
+
   const DESCRIPTION_20x40 = (
-    <Trans>
+    <Trans i18nKey="Dressage.products.description_20x40">
       <Typography paragraph>
         Un set per creare un circuito dressage standard da 20x40 mt.
       </Typography>
@@ -29,7 +29,7 @@ const Dressage: React.FC = () => {
   );
 
   const DESCRIPTION_20x60 = (
-    <Trans>
+    <Trans i18nKey="Dressage.products.description_20x60">
       <Typography paragraph>
         Un set per creare un circuito dressage standard da 20x60 mt.
       </Typography>
@@ -43,7 +43,10 @@ const Dressage: React.FC = () => {
 
   const TRAINING_PRODUCTS: ProductData[] = [
     {
-      name: t`Lettera dressage light`,
+      name: t("Dressage.products.letter", {
+        defaultValue: `Lettera dressage ({{type}})`,
+        type: "TRAINING",
+      }),
       pictures: [productsDressageTrainingLettera],
       width: 200,
       height: 300,
@@ -53,7 +56,10 @@ const Dressage: React.FC = () => {
       price: 20,
     },
     {
-      name: t`Modulo dressage`,
+      name: t("Dressage.products.module", {
+        defaultValue: `Modulo dressage ({{type}})`,
+        type: "TRAINING",
+      }),
       pictures: [productsDressageTrainingModuloDressage],
       width: 2000,
       weight: 3,
@@ -62,18 +68,20 @@ const Dressage: React.FC = () => {
     },
     {
       description: DESCRIPTION_20x60,
-      name: t({
-        message: `Rettangolo dressage {size} ({type})`,
-        values: { size: "20x60", type: "TRAINING" },
+      name: t("Dressage.products.set.name", {
+        defaultValue: "Rettangolo dressage {{size}} ({{type}})",
+        type: "TRAINING",
+        size: "20x60",
       }),
       pictures: [productsDressageRettangoloDressage20x60],
       price: 1800,
     },
     {
       description: DESCRIPTION_20x40,
-      name: t({
-        message: `Rettangolo dressage {size} ({type})`,
-        values: { size: "20x40", type: "TRAINING" },
+      name: t("Dressage.products.set.name", {
+        defaultValue: "Rettangolo dressage {{size}} ({{type}})",
+        type: "TRAINING",
+        size: "20x40",
       }),
       pictures: [productsDressageRettangoloDressage20x40],
       price: 1400,
@@ -82,7 +90,10 @@ const Dressage: React.FC = () => {
 
   const OLYMPIC_PRODUCTS: ProductData[] = [
     {
-      name: t`Lettera dressage`,
+      name: t("Dressage.products.letter", {
+        defaultValue: `Lettera dressage ({{type}})`,
+        type: "OLYMPIC",
+      }),
       pictures: [productsDressageOlympicLettera],
       width: 390,
       height: 700,
@@ -91,7 +102,10 @@ const Dressage: React.FC = () => {
       price: 51,
     },
     {
-      name: t`Modulo dressage`,
+      name: t("Dressage.products.module", {
+        defaultValue: `Modulo dressage ({{type}})`,
+        type: "OLYMPIC",
+      }),
       pictures: [productsDressageOlympicModuloDressage],
       width: 2000,
       height: 370,
@@ -100,18 +114,20 @@ const Dressage: React.FC = () => {
     },
     {
       description: DESCRIPTION_20x60,
-      name: t({
-        message: `Rettangolo dressage {size} ({type})`,
-        values: { size: "20x60", type: "OLYMPIC" },
+      name: t("Dressage.products.set.name", {
+        defaultValue: "Rettangolo dressage {{size}} ({{type}})",
+        type: "OLYMPIC",
+        size: "20x60",
       }),
       pictures: [productsDressageRettangoloDressage20x60],
       price: 7900,
     },
     {
       description: DESCRIPTION_20x40,
-      name: t({
-        message: `Rettangolo dressage {size} ({type})`,
-        values: { size: "20x40", type: "OLYMPIC" },
+      name: t("Dressage.products.set.name", {
+        defaultValue: "Rettangolo dressage {{size}} ({{type}})",
+        type: "OLYMPIC",
+        size: "20x40",
       }),
       pictures: [productsDressageRettangoloDressage20x40],
       price: 5900,
@@ -122,9 +138,9 @@ const Dressage: React.FC = () => {
     <>
       <Section>
         <Th variant="h1">
-          <Trans>Dressage</Trans>
+          <Trans i18nKey="Dressage.intro.title">Dressage</Trans>
         </Th>
-        <Trans>
+        <Trans i18nKey="Dressage.intro.text">
           Pessastudio fornisce due soluzioni per trasformare il vostro terreno
           in un'arena da dressage: la gamma{" "}
           <Link href="#dressage-training">training</Link> e quella{" "}
@@ -134,10 +150,10 @@ const Dressage: React.FC = () => {
 
       <Section id="dressage-training" color="warm1">
         <Th variant="h2">
-          <Trans>Training</Trans>
+          <Trans i18nKey="Dressage.training.title">Training</Trans>
         </Th>
         <Box sx={{ mb: PRODUCT_GUTTER }}>
-          <Trans>
+          <Trans i18nKey="Dressage.training.text">
             <Typography>
               Il rettangolo della linea <strong>training</strong> è rivolto a
               quei maneggi in cui lo spazio a disposizione è limitato e il
@@ -161,10 +177,10 @@ const Dressage: React.FC = () => {
 
       <Section id="dressage-olympic">
         <Th variant="h2">
-          <Trans>Olimpic</Trans>
+          <Trans i18nKey="Dressage.olimpic.title">Olimpic</Trans>
         </Th>
         <Box sx={{ mb: PRODUCT_GUTTER }}>
-          <Trans>
+          <Trans i18nKey="Dressage.olimpic.text">
             <Typography>
               La linea <strong>olympic</strong>, presente sul mercato da oltre
               vent'anni, è rappresentata da un rettangolo professionale, dove il

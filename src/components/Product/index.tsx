@@ -1,5 +1,3 @@
-import { i18n } from "@lingui/core";
-import { Trans } from "@lingui/macro";
 import { Box, Grid, GridSize, styled, Typography } from "@mui/material";
 
 import Data from "components/Data";
@@ -17,6 +15,7 @@ import { SEDE_OPERATIVA, WEBSITE } from "utils/constants";
 import ColorsList from "./ProductColorsList";
 import ProductImages from "./ProductImages";
 import ProductPrice, { PriceProps } from "./ProductPrice";
+import { Trans, useTranslation } from "next-i18next";
 
 const DataStyled = styled(Grid)(({ theme }) => ({
   order: -1,
@@ -52,27 +51,29 @@ export type ProductProps = ProductData & { className?: string };
 
 const getDataLabel = (id: keyof Attributes) =>
   ({
-    colors: <Trans>Colori</Trans>,
-    materials: <Trans>Materiali</Trans>,
-    depth: <Trans>Profondità</Trans>,
-    diameter: <Trans>Diametro</Trans>,
-    height: <Trans>Altezza</Trans>,
-    length: <Trans>Lunghezza</Trans>,
-    thickness: <Trans>Spessore</Trans>,
-    weight: <Trans>Peso</Trans>,
-    width: <Trans>Larghezza</Trans>,
+    colors: <Trans i18nKey="General.attributes.color">Colori</Trans>,
+    materials: <Trans i18nKey="General.attributes.material">Materiali</Trans>,
+    depth: <Trans i18nKey="General.attributes.depth">Profondità</Trans>,
+    diameter: <Trans i18nKey="General.attributes.diameter">Diametro</Trans>,
+    height: <Trans i18nKey="General.attributes.height">Altezza</Trans>,
+    length: <Trans i18nKey="General.attributes.lenght">Lunghezza</Trans>,
+    thickness: <Trans i18nKey="General.attributes.tickness">Spessore</Trans>,
+    weight: <Trans i18nKey="General.attributes.weight">Peso</Trans>,
+    width: <Trans i18nKey="General.attributes.width">Larghezza</Trans>,
   }[id]);
 
 const getDataData = (
   id: keyof Attributes,
   attribute: number | Colors[] | string[] | JSX.Element[]
 ) => {
+  const { t } = useTranslation();
+
   switch (id) {
     case "materials":
       return attribute;
 
     case "weight":
-      return `${i18n.number(attribute as number)} kg.`;
+      return Intl.NumberFormat().format(attribute as number) + " kg.";
 
     case "diameter":
     case "thickness":
@@ -80,7 +81,7 @@ const getDataData = (
     case "length":
     case "depth":
     case "width":
-      return `${i18n.number((attribute as number) / 10)} cm.`;
+      return Intl.NumberFormat().format((attribute as number) / 10) + " cm.";
 
     case "colors":
       return <ColorsList colors={attribute as Colors[]} />;

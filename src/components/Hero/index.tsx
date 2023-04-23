@@ -9,19 +9,19 @@ const TypographyStyled = styled(Typography)(({ theme }) => ({
   display: "inline-block",
 }));
 
-const BoxStyled = styled(Box)<{ image?: Props["image"] }>(({ image }) => ({
+const BoxStyled = styled(Box)<{ image?: HeroProps["image"] }>(({ image }) => ({
   backgroundImage: `url(${image?.src})`,
   backgroundPosition: "center",
   backgroundSize: "cover",
   padding: "6% 0 20%",
 }));
 
-type Props = {
+export type HeroProps = {
   image: StaticImageData;
-  text?: JSX.Element;
+  text?: string;
 } & React.HTMLAttributes<HTMLElement>;
 
-const Hero = ({ text, image, className }: Props) => (
+const Hero = ({ text, image, className }: HeroProps) => (
   <BoxStyled className={className} image={image}>
     {text && (
       <Container maxWidth="lg">

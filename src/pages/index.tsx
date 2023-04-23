@@ -1,5 +1,5 @@
 import IndexModule from "modules/Index";
-export { getStaticProps } from "utils/lingui";
+export { getStaticProps } from "utils/i18n";
 
 const Index = IndexModule;
 

@@ -1,5 +1,5 @@
 import GiostreTecnoexerciserModule from "modules/GiostreTecnoexerciser";
-export { getStaticProps } from "utils/lingui";
+export { getStaticProps } from "utils/i18n";
 
 const GiostreIppowalker = GiostreTecnoexerciserModule;
 

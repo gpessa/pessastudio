@@ -1,7 +1,7 @@
 import { Trans } from "@lingui/macro";
 import { Compare } from "components";
 import {
-  GIOSTRA_FENCE,
+  GIOSTRA_FENCE_TYPE_WOOD,
   GIOSTRA_FENCE_TYPE_TECNOFENCE,
   GIOSTRE_ATTRIBUTES,
   GIOSTRE_CONTROL_PANEL_IPPOWALKER,
@@ -18,7 +18,7 @@ const IppowalkerCompare = () => {
     engine: GIOSTRE_ENGINE_37,
     control_panel: GIOSTRE_CONTROL_PANEL_IPPOWALKER,
     irrigation: false,
-    diameter: GIOSTRE_DIAMETER_IPPOWALKER,
+    diameter: GIOSTRE_DIAMETER_IPPOWALKER(),
     doors: GIOSTRE_DOORS,
   };
 
@@ -40,7 +40,7 @@ const IppowalkerCompare = () => {
       ),
       fence_type: GIOSTRA_FENCE_TYPE_TECNOFENCE,
       cover: false,
-      extra: GIOSTRE_EXTRA_SMALL,
+      extra: GIOSTRE_EXTRA_SMALL(),
     },
     {
       ...GIOSTRE_COOMON,
@@ -50,9 +50,9 @@ const IppowalkerCompare = () => {
           corridoio EASY
         </Trans>
       ),
-      fence_type: GIOSTRA_FENCE(15, "EASY"),
+      fence_type: GIOSTRA_FENCE_TYPE_WOOD(15, "EASY"),
       cover: false,
-      extra: GIOSTRE_EXTRA_SMALL,
+      extra: GIOSTRE_EXTRA_SMALL(),
     },
     {
       ...GIOSTRE_COOMON,
@@ -64,9 +64,9 @@ const IppowalkerCompare = () => {
           copertura PVC
         </Trans>
       ),
-      fence_type: GIOSTRA_FENCE(15, "EASY"),
+      fence_type: GIOSTRA_FENCE_TYPE_WOOD(15, "EASY"),
       cover: GIOSTRE_COPERTURA_PVC,
-      extra: GIOSTRE_EXTRA_BIG,
+      extra: GIOSTRE_EXTRA_BIG(),
     },
   ];
 

@@ -1,11 +1,11 @@
-import { Trans } from "@lingui/macro";
 import { Box, Link, Stack, Typography } from "@mui/material";
 import Data from "components/Data";
+import { Trans } from "next-i18next";
 import React from "react";
 
 const ContattiAddress: React.FC<AddressProps> = ({
   name,
-  country,
+  addressCountry,
   addressLocality,
   id,
   bank,
@@ -31,21 +31,25 @@ const ContattiAddress: React.FC<AddressProps> = ({
           <span>{addressLocality}</span>
           <br />
           <span>{postalCode}</span>, <span>{addressRegion}</span> (
-          <span>{country}</span>)
+          <span>{addressCountry}</span>)
         </Box>
       )}
 
       <Box>
         {id && (
           <Data
-            label={<Trans>Codice Fiscale e Partita IVA</Trans>}
+            label={
+              <Trans i18nKey="Contacts.address.id">
+                Codice Fiscale e Partita IVA
+              </Trans>
+            }
             value={id}
           />
         )}
 
         {mobile && (
           <Data
-            label={<Trans>Telefono</Trans>}
+            label={<Trans i18nKey="Contacts.address.telefono">Telefono</Trans>}
             value={
               <Link underline="hover" href={`tel:${mobile.replace(/ /g, "")}`}>
                 {mobile}
@@ -56,7 +60,7 @@ const ContattiAddress: React.FC<AddressProps> = ({
 
         {telephone && (
           <Data
-            label={<Trans>Telefono</Trans>}
+            label={<Trans i18nKey="Contacts.address.phone">Telefono</Trans>}
             value={
               <Link
                 underline="hover"
@@ -70,7 +74,7 @@ const ContattiAddress: React.FC<AddressProps> = ({
 
         {whatsapp && (
           <Data
-            label={<Trans>WhatsApp</Trans>}
+            label={<Trans i18nKey="Contacts.address.whatsApp">WhatsApp</Trans>}
             value={
               <Link
                 underline="hover"
@@ -84,7 +88,7 @@ const ContattiAddress: React.FC<AddressProps> = ({
 
         {email && (
           <Data
-            label={<Trans>Email</Trans>}
+            label={<Trans i18nKey="Contacts.address.email">Email</Trans>}
             value={
               <Link underline="hover" href={`mailto:${email}`}>
                 {email}
@@ -95,7 +99,7 @@ const ContattiAddress: React.FC<AddressProps> = ({
 
         {website && (
           <Data
-            label={<Trans>Website</Trans>}
+            label={<Trans i18nKey="Contacts.address.website">Website</Trans>}
             value={
               <Link underline="hover" href={website} target="_blank">
                 {website}
@@ -112,7 +116,7 @@ export interface AddressProps {
   bank?: JSX.Element;
   name?: JSX.Element | string;
   email?: string;
-  country?: string;
+  addressCountry?: string;
   whatsapp?: string;
   postalCode?: string;
   addressRegion?: string;

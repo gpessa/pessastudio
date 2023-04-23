@@ -1,11 +1,15 @@
-import { Trans } from "@lingui/macro";
 import { Error } from "components";
 import React from "react";
+import { Trans } from "next-i18next";
 
 const Page404: React.FC = () => (
   <Error
-    title={<Trans>Pagina non trovata</Trans>}
-    description={<Trans>La pagina che stai cercando non esiste</Trans>}
+    title={<Trans i18nKey="404.title">Pagina non trovata</Trans>}
+    description={
+      <Trans i18nKey="404.description">
+        La pagina che stai cercando non esiste
+      </Trans>
+    }
   />
 );
 

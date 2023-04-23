@@ -16,7 +16,7 @@ import { useRouter } from "next/router";
 import * as React from "react";
 import { useState } from "react";
 
-const DIM = 25;
+const DIM = 20;
 
 const LANGAUGES: { [index: string]: string } = {
   en: "English",

@@ -1,5 +1,5 @@
 import GiostreIppowalkerIstruzioniMontaggioModule from "modules/GiostreIppowalkerIstruzioniDiMontaggio";
-export { getStaticProps } from "utils/lingui";
+export { getStaticProps } from "utils/i18n";
 
 const GiostreIppowalkerIstruzioniMontaggio =
   GiostreIppowalkerIstruzioniMontaggioModule;

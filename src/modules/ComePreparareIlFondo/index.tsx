@@ -1,13 +1,15 @@
-import { Trans } from "@lingui/macro";
 import { Section, Th, Ul } from "components";
+import { Trans } from "next-i18next";
 import React from "react";
 
 const ComePreparareIlFondo: React.FC = () => (
   <Section>
     <Th variant="h2">
-      <Trans>Come preparare il fondo</Trans>
+      <Trans i18nKey="ComePreparareIlFondo.title">
+        Come preparare il fondo
+      </Trans>
     </Th>
-    <Trans>
+    <Trans i18nKey="ComePreparareIlFondo.text">
       <Ul>
         <li>
           Preparare la superficie spianandola a "schiena d'asino" con il centro

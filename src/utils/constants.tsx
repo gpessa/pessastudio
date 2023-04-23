@@ -1,10 +1,10 @@
-import { Trans } from "@lingui/macro";
 import { RemoveRedEyeOutlined } from "@mui/icons-material";
 import { IconButton, Typography } from "@mui/material";
 import { Ul } from "components";
+import { Trans } from "next-i18next";
 import { PRODUCT_GUTTER } from "theme";
 
-export const NAME = <strong>Pessastudio</strong>;
+export const NAME = "Pessastudio";
 
 export const SOCIALS = {
   facebook_1: "https://www.facebook.com/PessastudioHorseTecnology",
@@ -15,17 +15,25 @@ export const SOCIALS = {
 };
 
 export const MATERIALS = {
-  ACCIAIO_ZINCATO: <Trans>Acciaio zincato</Trans>,
-  POLIPROPILENE: <Trans>Polipropilene</Trans>,
-  POLIETILENE: <Trans>Polietilene</Trans>,
-  PLASTICA: <Trans>Plastica</Trans>,
-  TECNOPOLIMERO: <Trans>Tecnopolimero</Trans>,
-  PVC: <Trans>PVC</Trans>,
+  ACCIAIO_ZINCATO: (
+    <Trans i18nKey="General.materials.galvanizedSteel">Acciaio zincato</Trans>
+  ),
+  POLIPROPILENE: (
+    <Trans i18nKey="General.materials.polypropylene">Polipropilene</Trans>
+  ),
+  POLIETILENE: (
+    <Trans i18nKey="General.materials.polyethylene">Polietilene</Trans>
+  ),
+  PLASTICA: <Trans i18nKey="General.materials.plastic">Plastica</Trans>,
+  TECNOPOLIMERO: (
+    <Trans i18nKey="General.materials.technopolymer">Tecnopolimero</Trans>
+  ),
+  PVC: <Trans i18nKey="General.materials.pvc">PVC</Trans>,
 };
 
 export const SEDE_LEGALE = {
   name: "Pessastudio Horse Tecnology srl",
-  country: "Italy",
+  addressCountry: "Italy",
   postalCode: "35043",
   streetAddress: "Via Garibaldi, 28",
   addressLocality: "Monselice",
@@ -39,55 +47,9 @@ export const BANCA = {
   swift: "BCITITMM",
 };
 
-export const CONTATTI_COMMERCIALI = [
-  {
-    name: <Trans>Contatto commerciale Belgio</Trans>,
-    data: {
-      name: "Roberto Della Bella",
-      email: "magiccavallo@hotmail.com",
-      telephone: "+32 475 96 5123",
-    },
-  },
-  {
-    name: <Trans>Contatto commerciale Francia</Trans>,
-    data: {
-      name: "Théo Cardon",
-      email: "commercial@equisea.fr",
-      telephone: "+33 788044648",
-    },
-  },
-  {
-    name: <Trans>Contatto commerciale Germania</Trans>,
-    data: {
-      email: "office@bacherproducts.de",
-      telephone: "+49 6206 13445",
-      name: "Bacher Products GmbH",
-      streetAddress: "Lorscher Straße 13",
-      postalCode: "68642",
-      addressLocality: "Bürstadt",
-      country: "Germany",
-      website: "https://bacherproducts.de",
-      whatsapp: "+49 6206 13445",
-    },
-  },
-  {
-    name: <Trans>Contatto commerciale Germania &amp; Medio Oriente</Trans>,
-    data: {
-      name: "BEST Equine GmbH Training Facilities for Horses (Belinda Hitzler)",
-      country: "Germany",
-      postalCode: "89407",
-      streetAddress: "Priehlweg 7",
-      addressLocality: "Dillingen",
-      telephone: "+49 (0) 9071 7700256",
-      mobile: "+49 (0) 171 3661394",
-      email: "mail@belindahitzler.de",
-    },
-  },
-];
-
 export const SEDE_OPERATIVA = {
   name: "Pessastudio Horse Tecnology srl",
-  country: "Italy",
+  addressCountry: "Italy",
   postalCode: "35044",
   streetAddress: "Via Cà Megliadino, 35",
   addressLocality: "Montagnana",
@@ -105,14 +67,14 @@ export const ITALIA = {
 export const WEBSITE = process.env.NEXT_PUBLIC_WEBISTE_URL;
 
 export const GIOSTRA_TONDINO_CHIUSURA_A_TERRA_DESCRIZIONE = (
-  <Trans>
+  <Trans i18nKey="General.addon.chiusuraATerraDescrizione">
     Impediscono alla sabbia di uscire dal tondino riducendo il materiale
     disperso.
   </Trans>
 );
 
 export const GIOSTRA_ALVEOLO_DESCRIZIONE = (
-  <Trans>
+  <Trans i18nKey="General.addon.alveoloDescrizione">
     L'alveolo è la soluzione ottimale per mantenere un fondo sempre perfetto in
     ogni condizione, permette di evitare buche o avvallamenti riducendo i costi
     di manutenzione.
@@ -120,15 +82,15 @@ export const GIOSTRA_ALVEOLO_DESCRIZIONE = (
 );
 
 export const GIOSTRA_RETE_ANTIVENTO_DESCRIZIONE = (
-  <Trans>
+  <Trans i18nKey="General.addon.reteAntiventoDescrizione">
     La rete antivento protegge l'interno della giostra da correnti d'aria e
     aiuta il cavallo a rimanere concentrato sul percorso rendendolo più
     tranquillo.
   </Trans>
 );
 
-export const GIOSTRE_DIAMETER_TECNOEXERCIZE = (
-  <Trans>
+export const GIOSTRE_DIAMETER_TECNOEXERCIZE = () => (
+  <Trans i18nKey="Giostre.Diameter.tecnoexercize">
     <Typography>E' possibile ordinare una giostra nei diametri:</Typography>
     <Ul>
       <li>
@@ -150,8 +112,8 @@ export const GIOSTRE_DIAMETER_TECNOEXERCIZE = (
   </Trans>
 );
 
-export const GIOSTRE_DIAMETER_IPPOWALKER = (
-  <Trans>
+export const GIOSTRE_DIAMETER_IPPOWALKER = () => (
+  <Trans i18nKey="Giostre.Diameter.ippowalker">
     <Typography>È possibile ordinare una giostra nei diametri:</Typography>
     <Ul>
       <li>
@@ -165,49 +127,55 @@ export const GIOSTRE_DIAMETER_IPPOWALKER = (
 );
 
 export const GIOSTRE_DOORS = (
-  <Trans>
+  <Trans i18nKey="Giostre.doors">
     <Typography>Porte di separazione.</Typography>
     <small>(Elettrificatione 200-240 Volt monofase)</small>
   </Trans>
 );
 
 export const GIOSTRE_ENGINE_75 = (
-  <Trans>
+  <Trans i18nKey="Giostre.engine">
     Potenza motore {0.75} kw e cadenza regolabile fra 60 e 220 metri al minuto
   </Trans>
 );
 
 export const GIOSTRE_ENGINE_37 = (
-  <Trans>
+  <Trans i18nKey="Giostre.engine">
     Potenza motore {0.37} kw e cadenza regolabile fra 60 e 220 metri al minuto
   </Trans>
 );
 
 export const GIOSTRE_CONTROL_PANEL_TECNOEXERCIZE = (
-  <Trans>Quadro di comando con programma manuale, periodico o automatico</Trans>
+  <Trans i18nKey="Giostre.controlPanel.tecnoexercize">
+    Quadro di comando con programma manuale, periodico o automatico
+  </Trans>
 );
 
 export const GIOSTRE_CONTROL_PANEL_IPPOWALKER = (
-  <Trans>Quadro di comando con programma manuale, periodico</Trans>
+  <Trans i18nKey="Giostre.controlPanel.ippowalker">
+    Quadro di comando con programma manuale, periodico
+  </Trans>
 );
 
 export const IRRIGATION = (
-  <Trans>
+  <Trans i18nKey="Giostre.addon.irrigation.description">
     Irrigazione del percorso controllabile dal quadro di comando. Aiuta a tenere
     la polvere sotto controllo e un terreno sempre perfetto
   </Trans>
 );
 
-export const GIOSTRE_EXTRA_SMALL = (
+export const GIOSTRE_EXTRA_SMALL = () => (
   <Ul>
     <li>
-      <Trans id={"Chiusura a terra"} />
+      <Trans i18nKey={"General.addon.closedAtTheGround"}>
+        Chiusura a terra
+      </Trans>
       <IconButton href="#chiusura_a_terra" size="small" color="primary">
         <RemoveRedEyeOutlined />
       </IconButton>
     </li>
     <li>
-      <Trans id={"Alveolo sulla pesta"} />
+      <Trans i18nKey={"General.addon.alveolo"}>Alveolo sulla pesta</Trans>
       <IconButton href="#alveolo_sulla_pesta" size="small" color="primary">
         <RemoveRedEyeOutlined />
       </IconButton>
@@ -215,22 +183,24 @@ export const GIOSTRE_EXTRA_SMALL = (
   </Ul>
 );
 
-export const GIOSTRE_EXTRA_BIG = (
+export const GIOSTRE_EXTRA_BIG = () => (
   <Ul>
     <li>
-      <Trans id={"Chiusura a terra"} />
+      <Trans i18nKey={"General.addon.closedAtTheGround"}>
+        Chiusura a terra
+      </Trans>
       <IconButton href="#chiusura_a_terra" size="small" color="primary">
         <RemoveRedEyeOutlined />
       </IconButton>
     </li>
     <li>
-      <Trans id={"Alveolo sulla pesta"} />
+      <Trans i18nKey={"General.addon.alveolo"}>Alveolo sulla pesta</Trans>
       <IconButton href="#alveolo_sulla_pesta" size="small" color="primary">
         <RemoveRedEyeOutlined />
       </IconButton>
     </li>
     <li>
-      <Trans id={"Rete antivento"} />
+      <Trans i18nKey={"General.addon.windscreen"}>Rete antivento</Trans>
       <IconButton href="#rete_antivento" size="small" color="primary">
         <RemoveRedEyeOutlined />
       </IconButton>
@@ -238,8 +208,8 @@ export const GIOSTRE_EXTRA_BIG = (
   </Ul>
 );
 
-export const GIOSTRA_FENCE = (thickness: number, name: string) => (
-  <Trans values={{ thickness, name }}>
+export const GIOSTRA_FENCE_TYPE_WOOD = (thickness: number, name: string) => (
+  <Trans values={{ thickness, name }} i18nKey="Giostre.fence.wood.description">
     <Typography>
       Corridoio {name} composto da pannelli laterali in compensato marino
     </Typography>
@@ -248,14 +218,14 @@ export const GIOSTRA_FENCE = (thickness: number, name: string) => (
 );
 
 export const GIOSTRA_FENCE_TYPE_TECNOFENCE = (
-  <Trans>
+  <Trans i18nKey="Giostre.fence.tecnofence.description">
     <Typography>Corridoio composto da recinzione TECNOFENCE</Typography>
     <small>(corridoio interno 1,40 mt., esterno 1,60 mt.)</small>
   </Trans>
 );
 
 export const GIOSTRA_COPERTURA_PVC_DESCRIZIONE = (
-  <Trans>
+  <Trans i18nKey="Giostre.roof.pvc">
     <Typography>
       La <strong>copertura in PVC</strong> è composta da una struttura in
       acciaio zincato la quale sorregge un telo in tessuto di poliestere
@@ -268,9 +238,10 @@ export const GIOSTRA_COPERTURA_PVC_DESCRIZIONE = (
     </Typography>
   </Trans>
 );
+
 export const GIOSTRE_COPERTURA_NOTE = (
   <Typography variant="small" component="div" mt={PRODUCT_GUTTER}>
-    <Trans>
+    <Trans i18nKey="Giostre.note">
       * In presenza di nevicate che superino la portata consentita, sarà
       opportuno intervenire rimuovendo l’eccesso di neve e cospargendo di sale
       la copertura prima di introdurre i cavalli.
@@ -278,10 +249,10 @@ export const GIOSTRE_COPERTURA_NOTE = (
   </Typography>
 );
 
-export const GIOSTRE_COPERTURA_PVC = <Trans>Copertura in PVC</Trans>;
+export const GIOSTRE_COPERTURA_PVC = <Trans i18nKey="">Copertura in PVC</Trans>;
 
 export const GIOSTRA_DESCRIZIONE_RECINZIONE_TECONOFENCE = (
-  <Trans>
+  <Trans i18nKey="Giostre.fence.teconofence">
     <Typography textAlign="justify">
       Il corridoio{" "}
       <Typography component="strong" fontWeight="bold">
@@ -310,28 +281,38 @@ export const GIOSTRA_DESCRIZIONE_RECINZIONE_COMPENSATO_MARINO = (
   thickness: number,
   name: string
 ) => (
-  <Trans>
-    <Typography textAlign="justify">
+  <Typography textAlign="justify">
+    <Trans i18nKey="Giostre.fence.wood">
       Il corridoio <strong>{name}</strong> in compensato marino è realizzato con
       un multistrato <small>({thickness} mm. di spessore)</small> antigraffio,
       antiurto, resistente allo sporco e idrorepellente. L'obbiettivo di questa
       soluzione è quello di fornire un elevato grado di sicurezza forzando il
       cavallo a concentrarsi sul percorso durante l'allenamento.
-    </Typography>
-  </Trans>
+    </Trans>
+  </Typography>
 );
 
 export const GIOSTRE_ATTRIBUTES = {
   name: undefined,
-  engine: <Trans>Motore</Trans>,
-  diameter: <Trans>Diametro</Trans>,
-  control_panel: <Trans>Quadro di comando</Trans>,
-  irrigation: <Trans>Irrigazione</Trans>,
-  doors: <Trans>Porte</Trans>,
-  fence_type: <Trans>Recinzione</Trans>,
-  cover: <Trans>Copertura</Trans>,
+  engine: <Trans i18nKey="General.Giostre.attributes.engine">Motore</Trans>,
+  diameter: (
+    <Trans i18nKey="General.Giostre.attributes.diameter">Diametro</Trans>
+  ),
+  control_panel: (
+    <Trans i18nKey="General.Giostre.attributes.control_panel">
+      Quadro di comando
+    </Trans>
+  ),
+  irrigation: (
+    <Trans i18nKey="General.Giostre.attributes.irrigation">Irrigazione</Trans>
+  ),
+  doors: <Trans i18nKey="General.Giostre.attributes.doors">Porte</Trans>,
+  fence_type: (
+    <Trans i18nKey="General.Giostre.attributes.fence_type">Recinzione</Trans>
+  ),
+  cover: <Trans i18nKey="General.Giostre.attributes.cover">Copertura</Trans>,
   extra: (
-    <Trans>
+    <Trans i18nKey="General.Giostre.attributes.addOn">
       <Typography>Accessori</Typography>
       <small>(Ordinabili separatamente)</small>
     </Trans>

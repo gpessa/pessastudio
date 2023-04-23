@@ -1,9 +1,8 @@
-import { Trans } from "@lingui/macro";
-
 import NavigateBefore from "@mui/icons-material/NavigateBefore";
 import NavigateNext from "@mui/icons-material/NavigateNext";
 import { Button, ButtonBase, Dialog, styled, Typography } from "@mui/material";
 import { useGallery } from "hooks";
+import { Trans } from "next-i18next";
 import { StaticImageData } from "next/image";
 import React from "react";
 
@@ -48,7 +47,7 @@ const StyledCaption = styled(Typography)(({ theme }) => ({
 
 export type Picture = {
   image: StaticImageData;
-  caption?: string;
+  caption?: string | null;
 };
 
 type Props = {
@@ -71,7 +70,7 @@ const ModalGallery: React.FC<Props> = ({ render, images }) => {
             {gallery.showPreviousEnabled && (
               <ButtonBackStyled onClick={gallery.showPrevious}>
                 <Button component="span" startIcon={<NavigateBefore />}>
-                  <Trans>Indietro</Trans>
+                  <Trans i18nKey="General.gallery.back">Indietro</Trans>
                 </Button>
               </ButtonBackStyled>
             )}
@@ -79,7 +78,7 @@ const ModalGallery: React.FC<Props> = ({ render, images }) => {
             {gallery.showNextEnabled && (
               <ButtonNextStyled onClick={gallery.showNext}>
                 <Button component="span" endIcon={<NavigateNext />}>
-                  <Trans>Avanti</Trans>
+                  <Trans i18nKey="General.gallery.next">Avanti</Trans>
                 </Button>
               </ButtonNextStyled>
             )}

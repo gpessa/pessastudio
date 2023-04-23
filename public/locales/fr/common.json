@@ -1,0 +1,317 @@
+{
+  "404": {
+    "title": "Le page que tu demandes n’existes pas",
+    "description": "La page que vous recherchez n’existe pas"
+  },
+  "500": {
+    "title": "Erreur interne du serveur",
+    "description": "Le serveur n'a pu vous envoyer le document HTML à cause d'une erreur interne (logiciel du serveur)"
+  },
+  "General": {
+    "addon": {
+      "title": "Accessori",
+      "windscreen": "Rete antivento",
+      "trackIrrigation": "Arrosage",
+      "windscreenEntrance": "Filet brise-vent entrée",
+      "closedAtTheGround": "Fermeture au sol"
+    },
+    "requireQuote": "Demander un devis",
+    "view": "Vedi",
+    "download": "Télécharger un fichier",
+    "footer": {
+      "socials": {
+        "title": "Réseaux sociaux",
+        "subtitle": "Nous suivre",
+        "text": "Nous suivre sur nos réseaux sociaux et découvrir les dernières nouveautés"
+      },
+      "newsletter": {
+        "title": "S’inscrire à notre newsletter",
+        "subtitle": "Newsletters",
+        "text": "Nous suivre sur nos réseaux sociaux et découvrir les dernières nouveautés"
+      },
+      "text": "COD. FISC. e Part: I.V.A. 04743610281 C.C.I.A.A. PD - R.E.A. 414822"
+    },
+    "map": "Mappa",
+    "newsletter": {
+      "field": {
+        "placeolder": "Email",
+        "subscribe": "Enregistre-moi"
+      },
+      "response": {
+        "error": "Il y a eu un problème, veuillez réessayer",
+        "success": "Merci pour votre abonnement"
+      }
+    },
+    "gdpr": {
+      "agree": "Accepter tous les cookies",
+      "text": "Nous utilisons des cookies pour assurer le bon fonctionnement du site. Pour plus d’informations sur notre utilisation des cookies, veuillez consulter notre <2>politique relative aux cookies</2>."
+    },
+    "gallery": {
+      "back": "Indietro",
+      "next": "Avanti"
+    },
+    "attributes": {
+      "color": "Couleur",
+      "material": "Matériau",
+      "depth": "Profondeur",
+      "diameter": "Diamètre",
+      "height": "Hauteur",
+      "lenght": "Longueur",
+      "tickness": "Épaisseur",
+      "weight": "Poids",
+      "width": "Largeur"
+    },
+    "vat": "+ IVA",
+    "contacts": {
+      "clientSupport": "Service client",
+      "salesOffice": "Contact commercial",
+      "internationalDealers": "Concessionnaires internationaux"
+    },
+    "size": "Dimensions",
+    "manuals": "Instructions de montage"
+  },
+  "Pages": {
+    "ostacoli": {
+      "title": "Obstacles",
+      "description": "Produits professionnels, ils sont l’outil de travail indispensable dans un centre équestre ou une écurie. Conçu et construit pour durer dans le temps sans aucun entretien"
+    },
+    "recinti": {
+      "title": "Clôtures",
+      "description": "Un piste de dressage en PVC. Indestructible même en présence des conditions météorologiques les plus défavorables"
+    },
+    "tondini": {
+      "title": "Ronds de longe",
+      "description": "Ronds de longe couverts pour le dressage des jeunes chevaux en liberté"
+    },
+    "giostre": {
+      "title": "Marcheur",
+      "description": "Découvrez notre marcheur pour chevaux, l’outil de travail idéal pour entraîner votre cheval"
+    },
+    "dressage": {
+      "title": "Dressage",
+      "description": "Rectangles professionnels de dressage pour toutes les exigences"
+    },
+    "contatti": {
+      "title": "Contact",
+      "description": "Contactez-nous pour un devis pour les obstacles, les clôtures, ronds de longe, les rectangles de dressage et l’équipement du cheval"
+    },
+    "page_404": {
+      "title": "Le page que tu demandes n’existes pas"
+    },
+    "page_500": {
+      "title": "Error"
+    },
+    "cookiePolicy": {
+      "title": "Cookie"
+    },
+    "home": {
+      "title": "Page d’accueil",
+      "description": "Contactez Pessastudio pour devis de marcheurs pour chevaux, obstacles, clôturés, ronds de longe"
+    },
+    "recintiComePreparareIlFondo": {
+      "title": "Come preparare il fondo"
+    },
+    "tondiniComePreparareIlFondo": {
+      "title": "Come preparare il fondo"
+    },
+    "giostreIppowalker": {
+      "title": "Marcheur Ippowalker",
+      "description": "Découvrez notre marcheur TECNOEXERCISER, l’outil économique adapté à l’entraînement de votre cheval"
+    },
+    "giostreIppowalkerIstruzioniMontaggio": {
+      "title": "Instructions de montage"
+    },
+    "giostreTecnoexerciser": {
+      "title": "Marcheur pour chevaux Tecnoexerciser",
+      "description": "Découvrez notre marcheur TECNOEXERCISER, l’outil professionnel adapté à l’entraînement de votre cheval"
+    },
+    "giostreTecnoexerciserIstruzioniMontaggio": {
+      "title": "Instructions de montage"
+    }
+  },
+  "ComePreparareIlFondo": {
+    "title": "Preparation du fonds",
+    "text": "<0><0>Preparare la superficie spianandola a \"schiena d'asino\" con il centro più alto dei bordi (2%) per far si che la pioggia defluisca. Mantenere i bordi dell'area alla stessa altezza del terreno circostante e riportare materiale nel centro dell'area per alzarlo.</0><1>Stendere sull'area una \"rete di separazione\", ben tesa e trattenuta lungo i bordi in una canaletta scavata nel terreno impedendo così che la terra si mescoli alla sabbia.</1><2>Distendere uniformemente sopra la rete uno strato di 7/8 centimetri di sabbia ( diametro 1 mm.)</2><3>Distribuire sopra alla sabbia 3 kg di \"straccetti di geotessuto\" per mt quadro di superficie in modo da mantenere il fondo stabile e morbido. Distribuire successivamente dopo un paio di ingressi a cavallo altri 2 kg.</3><4>Tutti i giorni passare con una \"erpice livellatrice\" per eliminare le impronte lasciate dagli zoccoli.</4></0>"
+  },
+  "Contacts": {
+    "address": {
+      "id": "Numéro de code fiscal et de TVA",
+      "telefono": "Téléphone",
+      "phone": "Téléphone",
+      "whatsApp": "WhatsApp",
+      "email": "Email",
+      "website": "Site Internet"
+    },
+    "bank": {
+      "istituto": "Istituto",
+      "iban": "Iban",
+      "swift": "Swift"
+    },
+    "resellers": {
+      "belgium": "Contact commercial Belgique",
+      "france": "Contact commercial France",
+      "germany": "Contact commercial Allemagne",
+      "germanyAndMiddleEast": "Contact commercial Allemagne & Moyen-Orient"
+    },
+    "contacts": "Contact",
+    "headOffice": "Sede operativa",
+    "registeredEntity": "Sede legale",
+    "bankAccountDetails": "Coordinate bancarie"
+  },
+  "cookiePolicy": {
+    "title": "Cookie policy",
+    "owner": {
+      "title": "Responsable du traitement",
+      "text": "L'utilisation de cookies et de technologies similaires par {{name}}, situé {{completeAddress}}, fait partie de la politique de confidentialité du Gestionnaire, conformément à ce qui est prévu par le décret législatif 196/03 Code en matière de protection des données personnelles (Code de la vie privée) et par la Décision du 8 mai 2014 “Identification des modalités simplifiées pour l'information et l'acquisition du consentement pour l'utilisation des cookies“ du Garant de la vie privée italien. {{name}}, en tant que responsable du traitement, agit conformément à la législation en vigueur"
+    },
+    "whatIs": {
+      "title": "Qu’est-ce qu’un cookie et à quoi sert-il?",
+      "text": "Un cookie est un fichier de petite taille qui est envoyé au navigateur et enregistré sur votre appareil lorsque vous visitez un site Internet tel que yoox.com (« le site »). Les cookies permettent au site de fonctionner efficacement et améliorent ses performances. Ils fournissent en outre des informations au propriétaire du site à des fins statistiques ou publicitaires, principalement pour personnaliser votre expérience de navigation, en se souvenant de vos préférences (en rappelant par exemple la langue et la devise que vous avez paramétrées, ou pour vous reconnaître lors de votre prochaine visite, etc.)"
+    },
+    "whichOnes": {
+      "title": "Quels cookies utilisons-nous et dans quel but?",
+      "text": "Notre site utilise différents types de cookies internes (déposés et gérés par {{name}}), cookies tiers (déposés et gérés par des sociétés tierces en fonction de leurs politiques de confidentialité et non soumis au contrôle de {{name}}), chacun desquels détient une fonction spécifique. Veuillez trouver ci-après un tableau explicatif"
+    },
+    "table1": {
+      "header": {
+        "typology": "Type de cookie",
+        "function": "Fonction"
+      }
+    },
+    "type": {
+      "navigation": {
+        "name": "Cookie de navigation",
+        "text": "Dès le premier accès, ces cookies permettent au site de fonctionner correctement et vous aident à visualiser les contenus sur votre appareil, en reconnaissant votre langue et le marché du Pays depuis lequel vous avez choisi de vous connecter. Si vous êtes un utilisateur inscrit, ils permettront de vous reconnaître et d’accéder aux services proposés dans les espaces dédiés. Les cookies de navigation sont des cookies techniques, nécessaires au fonctionnement du site"
+      },
+      "analytics": {
+        "name": "Cookies analytiques",
+        "text": "Ces cookies internes appartiennent à {{name}} (Gestionnaire du site) et sont utilisés afin de collecter des données sous une forme anonyme et agrégée. Ces cookies sont utilisés en vue d’élaborer des analyses statistiques sur les modalités de navigation des usagers de notre site. {{name}} traite les résultats de ces analyses de manière anonyme et à des fins exclusivement statistiques"
+      }
+    },
+    "table2": {
+      "header": {
+        "name": "Nom",
+        "vendor": "Émetteur",
+        "category": "Catégorie"
+      }
+    },
+    "access": {
+      "title": "Accès aux données et au Service Client",
+      "text": "Vous pouvez à tout moment recevoir de l’aide et des explications sur la façon de donner votre consentement ou votre refus sélectif, ou sur la façon de supprimer les cookies de votre navigateur, en envoyant un e-mail au Service Clients, en sélectionnant comme sujet “Confidentialité”, ou via un demande écrite adressée à {{completeAddressWithAnna}} à l’adresse postale du siège social. Nous vous répondrons rapidement."
+    }
+  },
+  "Dressage": {
+    "products": {
+      "description_20x40": "<0>Un kit pour créer un circuit de dressage standard de 20x40 m.</0><1>Le kit contient:</1><2><0>60 modules</0><1>8 lettres</1></2>",
+      "description_20x60": "<0>Un kit pour créer un circuit de dressage standard de 20x60 m.</0><1>Le kit contient:</1><2><0>80 modules</0><1>12 lettres</1></2>",
+      "letter": "Lettre de dressage ({{type}})",
+      "module": "Module de Dressage ({{type}})",
+      "set": {
+        "name": "Rectangle de dressage {{size}} ({{type}})"
+      }
+    },
+    "intro": {
+      "title": "Dressage",
+      "text": "Pessastudio fournit deux solutions pour transformer votre terrain en piste de dressage : la gamme  <2>training</2> et la gamme <5>olympic</5>"
+    },
+    "training": {
+      "title": "Training",
+      "text": "<0>Le rectangle de la ligne <1>training</1> est destiné aux manèges qui ont peu de place disponible. Le rectangle est installé provisoirement et rapidement. </0><1>Facile à monter, il est constitué d’éléments modulaires de 2 m en matière plastique, il ne demande aucun entretien et présente un faible encombrement lorsqu’il n’est pas utilisé.</1>"
+    },
+    "olimpic": {
+      "title": "Olimpic",
+      "text": "<0>La ligne <1>olympic</1>, présente sur le marché depuis plus de 20 ans, consiste en un rectangle professionnel, lorsque la piste de dressage est utilisée quotidiennement.</0><1>Le terrain est délimité par des modules emboîtables, chacun mesurant 2 mt. de long. Chaque module est en polyéthylène antichoc, résistant y compris aux basses températures, il ne jaunit pas sous l’action des rayons UV.</1><2>Chaque module présente trois surfaces planes brillantes de 50x12 cm sur lesquelles peuvent être appliqués des adhésifs publicitaires.</2>"
+    }
+  },
+  "Index": {
+    "products": {
+      "subtitle": "Produits",
+      "title": "Découvrez notre gamme de produits"
+    },
+    "testimonials": {
+      "subtitle": "Ils disent de nous",
+      "title": "Ce qu’ils disent de nous",
+      "text": "Découvrez la qualité de nos produits à travers les témoignages de nos clients",
+      "list": {
+        "item_1": "J’ai reçu le matériel ce matin. Félicitations pour la qualité des produits, l’emballage et le transporteur",
+        "item_2": "Merci à toute l’équipe pour le professionnalisme, la gentillesse, la rapidité et surtout l’excellent résultat",
+        "item_3": "Magnifique, rien à dire ! Le rond de longe est bien conçu et ingénieux. Très bien!",
+        "item_4": "Les obstacles sont arrivés. Ils sont fantastiques!"
+      }
+    },
+    "hero": {
+      "text": "Tradition et qualité"
+    },
+    "benefits": {
+      "subtitle": "Pourquoi?",
+      "title": "Pessastudio, un choix de qualité",
+      "text": "<0>Pessastudio est une entreprise hautement fiable et renommée dans le secteur équestre. Chaque année, des centaines de personnes choisissent nos articles équestres pour leur qualité supérieure.</0><1>La gamme de produits proposée est large et diversifiée, avec une attention particulière portée à la fonctionnalité et au design. L’expertise et l’expérience de l’équipe de Pessastudio sont à la base du succès de l’entreprise et de sa réputation en termes de fiabilité et de professionnalisme.</1>",
+      "innovative": {
+        "title": "Innovants",
+        "text": "Innovation technologique et qualité : ce sont les caractéristiques clés de nos produits"
+      },
+      "customisable": {
+        "title": "Personnalisables",
+        "text": "Produits MADE IN ITALY, fabriqués par Pessastudio et personnalisables (dans les dimensions ou les coloris)"
+      },
+      "affordable": {
+        "title": "Accessibles",
+        "text": "Pessastudio se focalise depuis des années sur la fabrication de produits de qualité à des coûts accessibles"
+      },
+      "renowned": {
+        "title": "Appréciés",
+        "text": "Les produits sont vendus et appréciés tant en Italie qu’à l’étranger"
+      },
+      "indestructible": {
+        "title": "Indestructibles",
+        "text": "Nos produits sont conçus pour résister au temps, y compris lorsqu’ils sont soumis à des conditions climatiques difficiles"
+      },
+      "history": {
+        "title": "Une longue histoire",
+        "text": "Pessastudio a été fondé il y a 28 ans, grâce au talent et à la passion du fondateur Luciano Pessa pour les chevaux. Aujourd’hui, sa fille Anna continue à porter le même rêve"
+      }
+    }
+  },
+  "Tondini": {
+    "addon": {
+      "windscreen": {
+        "description": "Le filet brise-vent protège l’intérieur du marcheur contre les courants d’air, aide le cheval à rester concentré sur la piste, et le calme."
+      },
+      "trackIrrigation": {
+        "description": "<0>Tous les chevaliers savent à quel point il est désagréable de monter à cheval dans un environnement poussiéreux.</0><1>La poussière peut contribuer à des problèmes respiratoires pour toi et tes chevaux et peut indiquer que le sol ne fournit pas un soutien adéquat au sabot du cheval.</1><2>Pour remédier à ce problème, il est possible d'installer notre système d'irrigation. Un arroseur sera placé au centre du cercle et te permettra de l'arroser facilement.</2>"
+      },
+      "windscreenEntrance": {
+        "description": "Le filet brise-vent de la porte est une protection supplémentaire que nous offrons pour rendre votre rond de longe encore plus sûr en cas de vent violent, et pour garantir une plus grande concentration de votre cheval."
+      }
+    },
+    "models": "Rond de longe couvert {{sides}} panneaux {{size}} m.",
+    "gallery": {
+      "inside": "Ronde de longe",
+      "roof": "Couverture",
+      "image_8": "Entrée de 2,05 m.",
+      "image_9": "Ronde de longe",
+      "image_10": "Ronde de longe"
+    },
+    "benefits": {
+      "subtitle": "Caractéristiques",
+      "title": "Découvrir notre rond de longe Tecnohalle",
+      "text": "Le rond de longe couvert se prête à de multiples activités, c’est la meilleure solution pour entraîner les poulains en liberté ou travailler les chevaux à la longe. Il facilite le contrôle du cheval pendant les leçons aux débutants, et il est indispensable pour le longeur dans les reprises de voltiges.",
+      "good": {
+        "title": "Matériau de qualité",
+        "description": "Il est constitué de panneaux latéraux en contreplaqué marine, fixés à des colonnes en acier galvanisé. La couverture est une toile enduite en PVC, disponible en blanc, vert ou crème"
+      },
+      "easy": {
+        "title": "Nos manèges n’ont pas besoin de permis de construire",
+        "description": "Nos ronds de longe sont considérés comme des structures temporaires. Ils n’ont besoin d’aucun permis de construire"
+      },
+      "beautiful": {
+        "title": "Beau et fonctionnel",
+        "description": "C’est une structure simple, légère et esthétique"
+      },
+      "safe": {
+        "title": "Sûr",
+        "description": "La structure a été conçue pour résister à une charge de neige jusqu’à 120 kg/m2 et à une vitesse du vent jusqu’à 110 km/h."
+      }
+    }
+  }
+}

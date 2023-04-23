@@ -1,9 +1,8 @@
-import { t, Trans } from "@lingui/macro";
 import AccountBalance from "@mui/icons-material/AccountBalance";
 import DomainDisabled from "@mui/icons-material/DomainDisabled";
 import Lock from "@mui/icons-material/Lock";
 import Visibility from "@mui/icons-material/Visibility";
-import { Grid } from "@mui/material";
+import { Grid, Typography } from "@mui/material";
 import {
   Accessori,
   Benefits,
@@ -18,7 +17,6 @@ import React from "react";
 import { PRODUCT_GUTTER } from "theme";
 import { GIOSTRA_TONDINO_CHIUSURA_A_TERRA_DESCRIZIONE } from "utils/constants";
 
-import pagesTondiniBackground from "./assets/background.jpg";
 import productsTondiniAccessoriAntivento_1 from "assets/products/tondini/accessori/antivento-1.jpg";
 import productsTondiniAccessoriAntivento_2 from "assets/products/tondini/accessori/antivento-2.jpg";
 import productsTondiniAccessoriAntiventoPortIngresso_1 from "assets/products/tondini/accessori/antivento-port-ingresso-1.jpg";
@@ -37,14 +35,20 @@ import productsTondiniGalleryTondino_6 from "assets/products/tondini/gallery/ton
 import productsTondiniGalleryTondino_7 from "assets/products/tondini/gallery/tondino-7.jpg";
 import productsTondiniGalleryTondino_8 from "assets/products/tondini/gallery/tondino-8.jpg";
 import productsTondiniGalleryTondino_9 from "assets/products/tondini/gallery/tondino-9.jpg";
+import { usePages } from "hooks";
+import { Trans, useTranslation } from "next-i18next";
+import pagesTondiniBackground from "./assets/background.jpg";
 
 const Tondini: React.FC = () => {
+  const { PAGES } = usePages();
+  const { t } = useTranslation();
+
   const ACCESSORI = {
     accessories: [
       {
-        name: <Trans>Rete antivento</Trans>,
+        name: <Trans i18nKey="General.addon.windscreen">Rete antivento</Trans>,
         description: (
-          <Trans>
+          <Trans i18nKey="Tondini.addon.windscreen.description">
             La rete antivento protegge l'interno della tondino da correnti
             d'aria consentendo il cavallo a rimanere concentrato durante
             l'allenamento.
@@ -62,18 +66,25 @@ const Tondini: React.FC = () => {
         ],
       },
       {
-        name: <Trans>Irrigazione</Trans>,
+        name: (
+          <Trans i18nKey="General.addon.trackIrrigation">Irrigazione</Trans>
+        ),
         description: (
-          <Trans>
-            Tutti i cavalieri sanno quanto sia spiacevole cavalcare in un
-            ambiente polveroso.
-            <br />
-            La polvere può contribuire a problemi respiratori per te e per i
-            tuoi cavalli e può indicare che il fondo non fornisce un adeguato un
-            supporto allo zoccolo del cavallo. <br />
-            Per ovviare a questo problema, è possibile installare il nostro
-            sistema di irrigazione. Un rosone verrà posizionato al centro del
-            tondino e ti permetterà di irrigarlo facilmente.
+          <Trans i18nKey="Tondini.addon.trackIrrigation.description">
+            <Typography>
+              Tutti i cavalieri sanno quanto sia spiacevole cavalcare in un
+              ambiente polveroso.
+            </Typography>
+            <Typography>
+              La polvere può contribuire a problemi respiratori per te e per i
+              tuoi cavalli e può indicare che il fondo non fornisce un adeguato
+              un supporto allo zoccolo del cavallo.
+            </Typography>
+            <Typography>
+              Per ovviare a questo problema, è possibile installare il nostro
+              sistema di irrigazione. Un rosone verrà posizionato al centro del
+              tondino e ti permetterà di irrigarlo facilmente.
+            </Typography>
           </Trans>
         ),
         images: [
@@ -84,9 +95,13 @@ const Tondini: React.FC = () => {
         ],
       },
       {
-        name: <Trans>Rete antivento ingresso</Trans>,
+        name: (
+          <Trans i18nKey="General.addon.windscreenEntrance">
+            Rete antivento ingresso
+          </Trans>
+        ),
         description: (
-          <Trans>
+          <Trans i18nKey="Tondini.addon.windscreenEntrance.description">
             La rete antivento della porta è un’ulteriore protezione che offriamo
             per rendere ancora di più il tuo tondino sicuro in caso di forte
             vento e per garantire una maggiore concentrazione del tuo cavallo.
@@ -104,7 +119,11 @@ const Tondini: React.FC = () => {
         ],
       },
       {
-        name: <Trans>Chiusura a terra</Trans>,
+        name: (
+          <Trans i18nKey="General.addon.closedAtTheGround">
+            Chiusura a terra
+          </Trans>
+        ),
         description: GIOSTRA_TONDINO_CHIUSURA_A_TERRA_DESCRIZIONE,
         images: [
           {
@@ -120,51 +139,69 @@ const Tondini: React.FC = () => {
 
   const IMAGES: Picture[] = [
     {
-      caption: t`Tondino coperto ${18} pannelli ${15} mt.`,
+      caption: t("Tondini.models", {
+        defaultValue: `Tondino coperto {{sides}} pannelli {{size}} mt.`,
+        sides: 18,
+        size: 15,
+      }),
       image: productsTondiniGalleryTondino_0,
     },
     {
-      caption: t`Tondino coperto ${24} pannelli ${13.2} mt.`,
+      caption: t("Tondini.models", {
+        defaultValue: `Tondino coperto {{sides}} pannelli {{size}} mt.`,
+        sides: 24,
+        size: 13.2,
+      }),
       image: productsTondiniGalleryTondino_1,
     },
     {
-      caption: t`Interno tondino coperto`,
+      caption: t("Tondini.gallery.inside", {
+        defaultValue: `Interno tondino coperto`,
+      }),
       image: productsTondiniGalleryTondino_2,
     },
     {
-      caption: t`Interno tondino coperto`,
+      caption: t("Tondini.gallery.inside", {
+        defaultValue: `Interno tondino coperto`,
+      }),
       image: productsTondiniGalleryTondino_3,
     },
     {
-      caption: t`Tondino coperto per cavalli`,
+      caption: t("Tondini.gallery.inside", {
+        defaultValue: `Interno tondino coperto`,
+      }),
       image: productsTondiniGalleryTondino_4,
     },
     {
-      caption: t`Copertura`,
+      caption: t("Tondini.gallery.roof", { defaultValue: `Copertura` }),
       image: productsTondiniGalleryTondino_5,
     },
     {
-      caption: t`Copertura`,
+      caption: t("Tondini.gallery.roof", { defaultValue: `Copertura` }),
       image: productsTondiniGalleryTondino_6,
     },
     {
-      caption: t`Copertura`,
+      caption: t("Tondini.gallery.roof", { defaultValue: `Copertura` }),
       image: productsTondiniGalleryTondino_7,
     },
     {
-      caption: t`Ingresso di 2,05 mt. con catenaccio verticale`,
+      caption: t("Tondini.gallery.image_8", {
+        defaultValue: `Ingresso di 2,05 mt. con catenaccio verticale`,
+      }),
       image: productsTondiniGalleryTondino_8,
     },
     {
-      caption: t`Tondino`,
+      caption: t("Tondini.gallery.image_9", { defaultValue: `Tondino` }),
       image: productsTondiniGalleryTondino_9,
     },
     {
-      caption: t`Interno tondino coperto`,
+      caption: t("Tondini.gallery.image_10", {
+        defaultValue: `Interno tondino coperto`,
+      }),
       image: productsTondiniGalleryTondino_10,
     },
     {
-      caption: t`Tondino`,
+      caption: PAGES.TONDINI.title,
       image: productsTondiniGalleryTondino_11,
     },
   ];
@@ -196,81 +233,88 @@ const Tondini: React.FC = () => {
       file: "/products/tondini/tondino-24.pdf",
     },
   ].map(({ sides, size, file }) => ({
-    label: (
-      <Trans
-        id={`Tondino coperto {sides} pannelli {size} mt.`}
-        values={{ sides, size }}
-      />
-    ),
+    label: t("Tondini.models", {
+      defaultValue: `Tondino coperto {{sides}} pannelli {{size}} mt.`,
+      sides,
+      size,
+    }),
     file,
   }));
 
   const MANUALS = [
     {
-      label: <Trans>Come preparare il fondo</Trans>,
+      label: PAGES.TONDINI_COME_PREPARARE_IL_FONDO.title,
       link: "/tondini/come-preparare-il-fondo",
     },
   ];
 
-  const BENEFITS = [
-    {
-      icon: AccountBalance,
-      title: <Trans>Materiali di qualità</Trans>,
-      description: (
-        <Trans>
-          È costituito da pannelli laterali in compensato marino fissati a
-          colonne in acciaio zincato. La copertura in telo spalmato in PVC, è
-          disponibile in bianco, verde o crema
-        </Trans>
-      ),
-    },
-    {
-      icon: DomainDisabled,
-      title: <Trans>Nessuna concessione edilizia</Trans>,
-      description: (
-        <Trans>
-          I nostri tondini sono considerati strutture precarie. Non avrete
-          bisogno di nessuna concessione edilizia
-        </Trans>
-      ),
-    },
-    {
-      icon: Visibility,
-      title: <Trans>Bello e funzionale</Trans>,
-      description: (
-        <Trans>É una struttura semplice, leggera e piacevole alla vista</Trans>
-      ),
-    },
-    {
-      icon: Lock,
-      title: <Trans>Sicuro</Trans>,
-      description: (
-        <Trans>
-          La struttura è stata progettata per garantire un carico neve fino a
-          120 kg/mq e la velocità del vento fino a 110 km/h.
-        </Trans>
-      ),
-    },
-  ];
+  const BENEFITS = {
+    subtitle: t("Tondini.benefits.subtitle", {
+      defaultValue: "Caratteristiche",
+    }),
+    title: t("Tondini.benefits.title", {
+      defaultValue: "Scopri il nostro tondino Tecnohalle",
+    }),
+    text: (
+      <Trans i18nKey="Tondini.benefits.text">
+        Il tondino coperto è adatto a svolgere molteplici attività, rappresenta
+        la migliore soluzione per addestrare puledri in libertà o lavorare
+        cavalli alla corda. Inoltre facilita il controllo del cavallo durante le
+        lezioni ai principianti ed è indispensabile per il longeur durante le
+        riprese di volteggi.
+      </Trans>
+    ),
+    benefits: [
+      {
+        icon: AccountBalance,
+        title: t("Tondini.benefits.good.title", {
+          defaultValue: "Materiali di qualità",
+        }),
+        description: t("Tondini.benefits.good.description", {
+          defaultValue:
+            "È costituito da pannelli laterali in compensato marino fissati a colonne in acciaio zincato. La copertura in telo spalmato in PVC, è disponibile in bianco, verde o crema",
+        }),
+      },
+      {
+        icon: DomainDisabled,
+        title: t("Tondini.benefits.easy.title", {
+          defaultValue: "Nessuna concessione edilizia",
+        }),
+        description: t("Tondini.benefits.easy.description", {
+          defaultValue:
+            "I nostri tondini sono considerati strutture precarie. Non avrete bisogno di nessuna concessione edilizia",
+        }),
+      },
+      {
+        icon: Visibility,
+        title: t("Tondini.benefits.beautiful.title", {
+          defaultValue: "Bello e funzionale",
+        }),
+        description: t("Tondini.benefits.beautiful.description", {
+          defaultValue:
+            "É una struttura semplice, leggera e piacevole alla vista",
+        }),
+      },
+      {
+        icon: Lock,
+        title: t("Tondini.benefits.safe.title", { defaultValue: "Sicuro" }),
+        description: t("Tondini.benefits.safe.description", {
+          defaultValue:
+            "La struttura è stata progettata per garantire un carico neve fino a 120 kg/mq e la velocità del vento fino a 110 km/h.",
+        }),
+      },
+    ],
+  };
+
+  const HERO = {
+    image: pagesTondiniBackground,
+    text: PAGES.TONDINI.title,
+  };
 
   return (
     <>
-      <Hero image={pagesTondiniBackground} text={<Trans>Tondini</Trans>} />
-
-      <Benefits
-        benefits={BENEFITS}
-        subtitle={<Trans>Caratteristiche</Trans>}
-        title={<Trans>Scopri il nostro tondino Tecnohalle</Trans>}
-        text={
-          <Trans>
-            Il tondino coperto è adatto a svolgere molteplici attività,
-            rappresenta la migliore soluzione per addestrare puledri in libertà
-            o lavorare cavalli alla corda. Inoltre facilita il controllo del
-            cavallo durante le lezioni ai principianti ed è indispensabile per
-            il longeur durante le riprese di volteggi.
-          </Trans>
-        }
-      />
+      <Hero {...HERO} />
+      <Benefits {...BENEFITS} />
 
       <Section color="primary">
         <Gallery images={IMAGES} md={3} />
@@ -279,13 +323,25 @@ const Tondini: React.FC = () => {
       <Accessori {...ACCESSORI} />
 
       <Section color="warm1">
-        <Th variant="h4">{<Trans>Supporto clienti</Trans>}</Th>
+        <Th variant="h4">
+          {
+            <Trans i18nKey="General.contacts.clientSupport">
+              Supporto clienti
+            </Trans>
+          }
+        </Th>
         <Grid container spacing={PRODUCT_GUTTER}>
           <Grid item xs={12} md={6}>
-            <ContentTable title={<Trans>Dimensioni</Trans>} rows={DIMENSIONS} />
+            <ContentTable
+              title={<Trans i18nKey="General.size">Dimensioni</Trans>}
+              rows={DIMENSIONS}
+            />
           </Grid>
           <Grid item xs={12} md={6}>
-            <ContentTable title={<Trans>Manuali</Trans>} rows={MANUALS} />
+            <ContentTable
+              title={<Trans i18nKey="General.manuals">Manuali</Trans>}
+              rows={MANUALS}
+            />
           </Grid>
         </Grid>
       </Section>

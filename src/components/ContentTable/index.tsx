@@ -1,4 +1,3 @@
-import { Trans } from "@lingui/macro";
 import PictureAsPdf from "@mui/icons-material/PictureAsPdf";
 import Visibility from "@mui/icons-material/Visibility";
 import {
@@ -14,6 +13,7 @@ import {
   TableRow,
 } from "@mui/material";
 import { Th } from "components";
+import { Trans } from "next-i18next";
 import Link from "next/link";
 import React from "react";
 
@@ -53,7 +53,7 @@ const ContentTable: React.FC<Props> = ({ rows, title, ...props }: Props) => (
                 {link && (
                   <Link href={link} legacyBehavior passHref>
                     <ButtonStyled color="inherit" endIcon={<Visibility />}>
-                      <Trans>Vedi</Trans>
+                      <Trans i18nKey="General.view">Vedi</Trans>
                     </ButtonStyled>
                   </Link>
                 )}
@@ -66,7 +66,7 @@ const ContentTable: React.FC<Props> = ({ rows, title, ...props }: Props) => (
                     color="inherit"
                     endIcon={<PictureAsPdf color="error" />}
                   >
-                    <Trans>Scarica</Trans>
+                    <Trans i18nKey="General.download">Scarica</Trans>
                   </ButtonStyled>
                 )}
               </TableCell>

@@ -1,15 +1,19 @@
-import { styled, Typography, TypographyProps } from "@mui/material";
+import { Typography, TypographyProps, useTheme } from "@mui/material";
 
 type Props = {
-  sans?: boolean;
+  sans?: any;
 } & TypographyProps;
 
-const Th = styled(Typography)<Props>(({ theme, sans }) => ({
-  fontFamily: sans ? theme.typography.fontFamily : undefined,
-}));
+const Th: React.FC<Props> = ({ sans, ...props }) => {
+  const theme = useTheme();
 
-Th.defaultProps = {
-  gutterBottom: true,
+  return (
+    <Typography
+      {...props}
+      gutterBottom
+      fontFamily={sans ? theme.typography.fontFamily : undefined}
+    />
+  );
 };
 
 export default Th;

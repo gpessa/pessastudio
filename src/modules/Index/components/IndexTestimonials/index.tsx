@@ -1,7 +1,7 @@
 import FormatQuoteIcon from "@mui/icons-material/FormatQuote";
 import { styled, Typography } from "@mui/material";
 import Columns from "components/Columns";
-import Title from "components/Title";
+import Title, { TitleProps } from "components/Title";
 import {
   CarouselProvider,
   CarouselProviderProps,
@@ -34,12 +34,11 @@ const StyledTitle = styled(Title)(({ theme }) => ({
   },
 }));
 
-const IndexTestimonials: React.FC<{
-  text?: JSX.Element;
-  title: JSX.Element;
-  subtitle?: JSX.Element;
-  testimonials: JSX.Element[] | string[];
-}> = ({ testimonials, title, subtitle, text }) => {
+const IndexTestimonials: React.FC<
+  TitleProps & {
+    testimonials: string[];
+  }
+> = ({ testimonials, title, subtitle, text }) => {
   const CAROUSEL_CONFIGURATION = {
     totalSlides: testimonials.length,
     isIntrinsicHeight: true,

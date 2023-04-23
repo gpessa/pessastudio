@@ -1,6 +1,6 @@
-import { Trans } from "@lingui/macro";
-import { useLingui } from "@lingui/react";
 import { Badge, styled, Typography } from "@mui/material";
+import { Trans } from "next-i18next";
+import { useRouter } from "next/router";
 import React from "react";
 
 const PriceStyled = styled(Typography)(({ theme }) => ({
@@ -19,22 +19,29 @@ export type PriceProps = {
 };
 
 const ProductPrice: React.FC<PriceProps> = ({ price }) => {
-  const { i18n } = useLingui();
+  const badgeContent = <Trans i18nKey="General.vat">+ IVA</Trans>;
+  const { locale } = useRouter();
 
   if (!price) return null;
+
+  const priceFormatted = (price: number) =>
+    new Intl.NumberFormat(locale, {
+      style: "currency",
+      currency: "EUR",
+    }).format(price);
 
   if (typeof price === "number")
     return (
       <PriceStyled>
         <Badge
           color="primary"
-          badgeContent={<Trans>+ IVA</Trans>}
+          badgeContent={badgeContent}
           anchorOrigin={{
             vertical: "bottom",
             horizontal: "right",
           }}
         >
-          {i18n.number(price, { style: "currency", currency: "EUR" })}
+          {priceFormatted(price)}
         </Badge>
       </PriceStyled>
     );
@@ -46,13 +53,13 @@ const ProductPrice: React.FC<PriceProps> = ({ price }) => {
           <PriceStyled as={"span"}>
             <Badge
               color="primary"
-              badgeContent={<Trans>+ IVA</Trans>}
+              badgeContent={badgeContent}
               anchorOrigin={{
                 vertical: "bottom",
                 horizontal: "right",
               }}
             >
-              {i18n.number(price, { style: "currency", currency: "EUR" })}
+              {priceFormatted(price)}
             </Badge>
             <Typography variant="small" ml={3}>
               ({note})

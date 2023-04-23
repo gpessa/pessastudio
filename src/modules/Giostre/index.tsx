@@ -1,4 +1,3 @@
-import { t, Trans } from "@lingui/macro";
 import AccessibilityNew from "@mui/icons-material/AccessibilityNew";
 import Apps from "@mui/icons-material/Apps";
 import DomainDisabled from "@mui/icons-material/DomainDisabled";
@@ -25,6 +24,9 @@ import productsGiostreGalleryGiostraDrone from "assets/products/giostre/gallery/
 import productsGiostreGalleryGiostra from "assets/products/giostre/gallery/giostra.jpg";
 import productsGiostreGalleryPorta from "assets/products/giostre/gallery/porta.jpg";
 import productsGiostreGalleryQuadro from "assets/products/giostre/gallery/quadro.jpg";
+import { BenefitsProps } from "components/Benefits";
+import { HeroProps } from "components/Hero";
+import { Trans, useTranslation } from "next-i18next";
 import background from "./assets/background.jpg";
 
 const GammaSectionStyled = styled(Section)({
@@ -33,104 +35,117 @@ const GammaSectionStyled = styled(Section)({
 
 const Giostre: React.FC = () => {
   const { PAGES } = usePages();
+  const { t } = useTranslation();
 
-  const BENEFITS = [
-    {
-      icon: AccessibilityNew,
-      title: <Trans>3.000 giostre installate</Trans>,
-      description: (
-        <Trans>
-          {NAME} è stata scelta da oltre 3.000 clienti in tutto il mondo per la
-          realizzazione della propria giostra.
-        </Trans>
-      ),
-    },
-    {
-      icon: Apps,
-      title: <Trans>Ampia gamma</Trans>,
-      description: (
-        <Trans>
-          È possibile acquistare le nostre giostre in diverse versioni adatte ad
-          ogni budget ed esigenza
-        </Trans>
-      ),
-    },
-    {
-      icon: DomainDisabled,
-      title: <Trans>Nessuna concessione edilizia</Trans>,
-      description: (
-        <Trans>
-          Le nostre giostre sono considerate strutture precarie. Non avrete
-          bisogno di nessuna concessione edilizia
-        </Trans>
-      ),
-    },
-    {
-      icon: VideogameAsset,
-      title: <Trans>Facile da usare</Trans>,
-      description: (
-        <Trans>
-          Usa il nostro semplice pannello di controllo per scegliere uno dei
-          nostri "training programs" o seleziona manualmente la velocità
-          desiderata
-        </Trans>
-      ),
-    },
-  ];
+  const BENEFITS: BenefitsProps = {
+    title: t("Giostre.benefits.title", {
+      defaultValue: "Perché una giostra Pessastudi",
+    })!,
+    subtitle: t("Giostre.benefits.subtitle", {
+      subtitle: "Giostrei",
+    })!,
+    text: (
+      <Trans i18nKey="Giostre.benefits.text">
+        <Typography paragraph>
+          La nostra azienda si distingue per le giostre, il nostro punto di
+          forza.{" "}
+        </Typography>
+        <Typography paragraph>
+          La loro creazione è stata il risultato della ricerca condotta da{" "}
+          <strong>Luciano Pessa</strong>, con l'intento di sviluppare uno
+          strumento di lavoro affidabile e semplice da utilizzare per
+          l'allenamento dei cavalli anche in assenza del cavaliere.
+        </Typography>
+        <Typography paragraph>
+          La giostra consente non solo di raffreddare il cavallo dopo
+          l'allenamento, ma anche di creare una vera e propria sessione di
+          lavoro, passando da un'andatura all'altra e cambiando di mano. Grazie
+          alla sua versatilità, rappresenta una soluzione pratica ed efficace
+          per l'allenamento quotidiano dei cavalli.
+        </Typography>
+      </Trans>
+    ),
+    benefits: [
+      {
+        icon: AccessibilityNew,
+        title: t("Giostre.benefits.many.title", {
+          defaultValue: "3.000 giostre installate",
+        }),
+        description: t("Giostre.benefits.many.description", {
+          defaultValue: `{{ ${NAME} }} è stata scelta da oltre 3.000 clienti in tutto il mondo per la realizzazione della propria giostra.`,
+        }),
+      },
+      {
+        icon: Apps,
+        title: t("Giostre.benefits.wideProductsRange.title", {
+          defaultValue: "Ampia gamma",
+        }),
+        description: t("Giostre.benefits.wideProductsRange.description", {
+          defaultValue: `È possibile acquistare le nostre giostre in diverse versioni adatte ad ogni budget ed esigenza`,
+        }),
+      },
+      {
+        icon: DomainDisabled,
+        title: t("Giostre.benefits.easyToBuild.title", {
+          defaultValue: "Nessuna concessione edilizia",
+        }),
+        description: t("Giostre.benefits.easyToBuild.description", {
+          defaultValue: `Le nostre giostre sono considerate strutture precarie. Non avrete bisogno di nessuna concessione edilizia`,
+        }),
+      },
+      {
+        icon: VideogameAsset,
+        title: t("Giostre.benefits.easy.title", {
+          defaultValue: "Facile da usare",
+        }),
+        description: t("Giostre.benefits.easy.description", {
+          defaultValue: `Usa il nostro semplice pannello di controllo per scegliere uno dei nostri "training programs" o seleziona manualmente la velocità desiderata`,
+        }),
+      },
+    ],
+  };
 
   const IMAGES: Picture[] = [
     {
       image: productsGiostreGalleryGiostra,
-      caption: t`Giostra per cavalli Tecnoexerciser`,
+      caption: t("Giostre.gallery.image_1", {
+        defaultValue: `Giostra per cavalli Tecnoexerciser`,
+      }),
     },
     {
       image: productsGiostreGalleryGiostraConAlveolo,
-      caption: t`Interno giostra con alveolo`,
+      caption: t("Giostre.gallery.image_2", {
+        defaultValue: `Interno giostra con alveolo`,
+      }),
     },
     {
       image: productsGiostreGalleryPorta,
-      caption: t`Ingresso`,
+      caption: t("Giostre.gallery.image_3", { defaultValue: `Ingresso` }),
     },
     {
       image: productsGiostreGalleryQuadro,
-      caption: t`Quadro di comando`,
+      caption: t("Giostre.gallery.image_4", {
+        defaultValue: `Quadro di comando`,
+      }),
     },
     {
       image: productsGiostreGalleryGiostraDrone,
-      caption: t`Giostra per cavalli Tecnoexerciser`,
+      caption: t("Giostre.gallery.image_5", {
+        defaultValue: `Giostra per cavalli Tecnoexerciser`,
+      }),
     },
   ];
 
+  const HERO: HeroProps = {
+    text: PAGES.GIOSTRE.title,
+    image: background,
+  };
+
   return (
     <>
-      <Hero image={background} text={<Trans>Giostre</Trans>} />
+      <Hero {...HERO} />
 
-      <Benefits
-        title={<Trans>Perché una giostra Pessastudio</Trans>}
-        subtitle={<Trans>Giostre</Trans>}
-        text={
-          <Trans>
-            <Typography paragraph>
-              La nostra azienda si distingue per le giostre, il nostro punto di
-              forza.{" "}
-            </Typography>
-            <Typography paragraph>
-              La loro creazione è stata il risultato della ricerca condotta da{" "}
-              <strong>Luciano Pessa</strong>, con l'intento di sviluppare uno
-              strumento di lavoro affidabile e semplice da utilizzare per
-              l'allenamento dei cavalli anche in assenza del cavaliere.
-            </Typography>
-            <Typography paragraph>
-              La giostra consente non solo di raffreddare il cavallo dopo
-              l'allenamento, ma anche di creare una vera e propria sessione di
-              lavoro, passando da un'andatura all'altra e cambiando di mano.
-              Grazie alla sua versatilità, rappresenta una soluzione pratica ed
-              efficace per l'allenamento quotidiano dei cavalli.
-            </Typography>
-          </Trans>
-        }
-        benefits={BENEFITS}
-      />
+      <Benefits {...BENEFITS} />
 
       <GammaSectionStyled maxWidth="md">
         <Th variant="h2">

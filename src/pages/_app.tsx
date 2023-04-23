@@ -5,6 +5,7 @@ import CssBaseline from "@mui/material/CssBaseline";
 import { ThemeProvider } from "@mui/material/styles";
 import { Footer, Gdpr, Header, Seo } from "components";
 import { en, fr, it } from "make-plural/plurals";
+import { appWithTranslation } from "next-i18next";
 import { AppProps } from "next/app";
 import { useRouter } from "next/router";
 import { createEmotionCache } from "utils/emotion";
@@ -14,6 +15,7 @@ import Breadcrumb from "components/Breadcrumb";
 import { usePages, useTree } from "hooks";
 import { GoogleAnalytics } from "nextjs-google-analytics";
 import "pure-react-carousel/dist/react-carousel.es.css";
+import nextI18NextConfig from "../../next-i18next.config";
 
 export type MyAppProps = AppProps<{ messages: any }> & {
   emotionCache: EmotionCache;
@@ -61,4 +63,5 @@ const MyApp = (props: MyAppProps) => {
   );
 };
 
-export default MyApp;
+// https://github.com/i18next/next-i18next#unserializable-configs
+export default appWithTranslation(MyApp, nextI18NextConfig);

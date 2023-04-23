@@ -1,4 +1,3 @@
-import { Trans } from "@lingui/macro";
 import { Box, Typography } from "@mui/material";
 import Section from "components/Section";
 import React from "react";
@@ -9,12 +8,8 @@ const NotFound: React.FC<{
 }> = ({ title, description }) => (
   <Section spacing="big" color="warm1">
     <Box textAlign="center">
-      <Typography variant="h2">
-        <Trans>{title}</Trans>
-      </Typography>
-      <Typography>
-        <Trans>{description}</Trans>
-      </Typography>
+      <Typography variant="h2">{title}</Typography>
+      <Typography>{description}</Typography>
     </Box>
   </Section>
 );

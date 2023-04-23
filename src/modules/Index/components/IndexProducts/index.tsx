@@ -1,4 +1,3 @@
-import { Trans } from "@lingui/macro";
 import { Grid, styled, useMediaQuery } from "@mui/material";
 import Section from "components/Section";
 import Title from "components/Title";
@@ -10,9 +9,10 @@ import {
   Slide,
 } from "pure-react-carousel";
 import React from "react";
+import { useTranslation } from "next-i18next";
 import theme, { BREAKPOINT } from "theme";
-import ProductsItem from "../ProductsItem";
-import ProductsSelector from "../ProductsSelector";
+import IndexProductsItem from "../IndexProductsItem";
+import ProductsSelector from "../IndexProductsSelector";
 
 const CarouselContainerStyled = styled(Grid)(({ theme }) => ({
   overflow: "visible!important",
@@ -37,8 +37,9 @@ const SliderSelectorStyled = styled(Grid)(({ theme }) => ({
   },
 }));
 
-const Products: React.FC = () => {
+const IndexProducts: React.FC = () => {
   const isTable = useMediaQuery(theme.breakpoints.up("sm"));
+  const { t } = useTranslation();
   const ITEM_TO_SHOW = isTable ? 2 : 1;
   const { PRODUCTS } = usePages();
   const product = Object.values(PRODUCTS);
@@ -57,8 +58,16 @@ const Products: React.FC = () => {
         <Grid container justifyContent="space-between">
           <TextStyled item md={3} xs={12}>
             <Title
-              subtitle={<Trans>Prodotti</Trans>}
-              title={<Trans>Scopri la nostra gamma di prodotti</Trans>}
+              subtitle={
+                t("Index.products.subtitle", {
+                  defaultValue: "Prodotti",
+                })!
+              }
+              title={
+                t("Index.products.title", {
+                  defaultValue: "Scopri la nostra gamma di prodotti",
+                })!
+              }
             />
           </TextStyled>
 
@@ -66,12 +75,12 @@ const Products: React.FC = () => {
             <Carousel>
               {product.map(({ url, title, description, image }, index) => (
                 <Slide index={index} key={url}>
-                  <ProductsItem
+                  <IndexProductsItem
+                    description={description}
+                    image={image!}
                     index={index}
                     title={title}
                     url={url}
-                    description={description}
-                    image={image!}
                   />
                 </Slide>
               ))}
@@ -87,4 +96,4 @@ const Products: React.FC = () => {
   );
 };
 
-export default Products;
+export default IndexProducts;

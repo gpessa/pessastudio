@@ -8,7 +8,7 @@ import { BREAKPOINT } from "theme";
 
 type Props = {
   readonly index: number;
-  description?: ReactElement | string;
+  description?: ReactElement | string | null;
   image: StaticImageData;
   title: string;
   url: string;
@@ -54,7 +54,7 @@ const LinkStyled = styled(Link)<{ index: number; visible: boolean }>(
   })
 );
 
-const ProductsItem: React.FC<Props> = (props) => {
+const IndexProductsItem: React.FC<Props> = (props) => {
   const { index, title, description, image, url } = props;
   const carouselContext = useContext(CarouselContext);
   const [currentSlide, setCurrentSlide] = useState(
@@ -85,4 +85,4 @@ const ProductsItem: React.FC<Props> = (props) => {
   );
 };
 
-export default ProductsItem;
+export default IndexProductsItem;

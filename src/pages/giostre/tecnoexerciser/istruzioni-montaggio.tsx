@@ -1,5 +1,5 @@
 import GiostreTecnoexerciserIstruzioniMontaggioModule from "modules/GiostreTecnoexerciserIstruzioniDiMontaggio";
-export { getStaticProps } from "utils/lingui";
+export { getStaticProps } from "utils/i18n";
 
 const GiostreTecnoexerciserIstruzioniMontaggio =
   GiostreTecnoexerciserIstruzioniMontaggioModule;
