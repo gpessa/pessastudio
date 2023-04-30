@@ -5,16 +5,16 @@ import CssBaseline from "@mui/material/CssBaseline";
 import { ThemeProvider } from "@mui/material/styles";
 import { Footer, Gdpr, Header, Seo } from "components";
 import { AppProps } from "next/app";
-import { useRouter } from "next/router";
 import { createEmotionCache } from "utils/emotion";
 import theme from "../theme";
 
+import { ApolloProvider } from "@apollo/client";
 import Breadcrumb from "components/Breadcrumb";
-import { usePages, useTree } from "hooks";
+import { useLinguiInit } from "hooks/useLingui";
 import { GoogleAnalytics } from "nextjs-google-analytics";
 import "pure-react-carousel/dist/react-carousel.es.css";
+import client from "utils/apollo";
 import packageJson from "../../package.json";
-import { useLinguiInit } from "hooks/useLingui";
 
 export type MyAppProps = AppProps<{ messages: any }> & {
   emotionCache: EmotionCache;
@@ -30,6 +30,7 @@ const MyApp = (props: MyAppProps) => {
   useLinguiInit(pageProps.messages);
 
   return (
+    <ApolloProvider client={client}>
     <I18nProvider i18n={i18n}>
       <CacheProvider value={emotionCache}>
         <Seo />
@@ -44,6 +45,7 @@ const MyApp = (props: MyAppProps) => {
         </ThemeProvider>
       </CacheProvider>
     </I18nProvider>
+    </ApolloProvider>
   );
 };
 

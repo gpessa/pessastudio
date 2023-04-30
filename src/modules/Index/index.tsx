@@ -1,3 +1,4 @@
+import { gql, useQuery } from "@apollo/client";
 import { Trans, t } from "@lingui/macro";
 import AccountBalance from "@mui/icons-material/AccountBalance";
 import Apps from "@mui/icons-material/Apps";
@@ -14,6 +15,16 @@ import IndexProducts from "./components/IndexProducts";
 import IndexTestimonials from "./components/IndexTestimonials";
 
 const Index: React.FC = () => {
+  const data = useQuery(gql`
+    query NextLaunch {
+      getBooks {
+        name
+      }
+    }
+  `);
+
+  console.log(data);
+
   const TESTIMONIALS = [
     <Trans key="test_1">
       Ho ricevuto questa mattina il materiale. I miei complimenti per la qualità
