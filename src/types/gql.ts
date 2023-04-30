@@ -13,7 +13,7 @@ import { TypedDocumentNode as DocumentNode } from '@graphql-typed-document-node/
  * Therefore it is highly recommended to use the babel or swc plugin for production.
  */
 const documents = {
-    "\n    query NextLaunch {\n      getBooks {\n        name\n      }\n    }\n  ": types.NextLaunchDocument,
+    "\n    query ExampleQuery($numDice: Int!, $numSides: Int, $color: AllowedColor!) {\n      rollDice(numDice: $numDice, numSides: $numSides, color: $color)\n    }\n  ": types.ExampleQueryDocument,
 };
 
 /**
@@ -33,7 +33,7 @@ export function gql(source: string): unknown;
 /**
  * The gql function is used to parse GraphQL queries into a document that can be used by GraphQL clients.
  */
-export function gql(source: "\n    query NextLaunch {\n      getBooks {\n        name\n      }\n    }\n  "): (typeof documents)["\n    query NextLaunch {\n      getBooks {\n        name\n      }\n    }\n  "];
+export function gql(source: "\n    query ExampleQuery($numDice: Int!, $numSides: Int, $color: AllowedColor!) {\n      rollDice(numDice: $numDice, numSides: $numSides, color: $color)\n    }\n  "): (typeof documents)["\n    query ExampleQuery($numDice: Int!, $numSides: Int, $color: AllowedColor!) {\n      rollDice(numDice: $numDice, numSides: $numSides, color: $color)\n    }\n  "];
 
 export function gql(source: string) {
   return (documents as any)[source] ?? {};

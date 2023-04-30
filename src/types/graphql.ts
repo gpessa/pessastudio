@@ -14,21 +14,32 @@ export type Scalars = {
   Float: number;
 };
 
-export type Book = {
-  __typename?: 'Book';
-  id: Scalars['ID'];
-  name?: Maybe<Scalars['String']>;
-};
+export enum AllowedColor {
+  Blue = 'BLUE',
+  Green = 'GREEN',
+  Red = 'RED'
+}
 
 export type Query = {
   __typename?: 'Query';
-  getBooks?: Maybe<Array<Maybe<Book>>>;
+  rollDice?: Maybe<Scalars['String']>;
 };
 
-export type NextLaunchQueryVariables = Exact<{ [key: string]: never; }>;
+
+export type QueryRollDiceArgs = {
+  color?: InputMaybe<AllowedColor>;
+  numDice: Scalars['Int'];
+  numSides?: InputMaybe<Scalars['Int']>;
+};
+
+export type ExampleQueryQueryVariables = Exact<{
+  numDice: Scalars['Int'];
+  numSides?: InputMaybe<Scalars['Int']>;
+  color: AllowedColor;
+}>;
 
 
-export type NextLaunchQuery = { __typename?: 'Query', getBooks?: Array<{ __typename?: 'Book', name?: string | null } | null> | null };
+export type ExampleQueryQuery = { __typename?: 'Query', rollDice?: string | null };
 
 
-export const NextLaunchDocument = {"kind":"Document","definitions":[{"kind":"OperationDefinition","operation":"query","name":{"kind":"Name","value":"NextLaunch"},"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"Field","name":{"kind":"Name","value":"getBooks"},"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"Field","name":{"kind":"Name","value":"name"}}]}}]}}]} as unknown as DocumentNode<NextLaunchQuery, NextLaunchQueryVariables>;
+export const ExampleQueryDocument = {"kind":"Document","definitions":[{"kind":"OperationDefinition","operation":"query","name":{"kind":"Name","value":"ExampleQuery"},"variableDefinitions":[{"kind":"VariableDefinition","variable":{"kind":"Variable","name":{"kind":"Name","value":"numDice"}},"type":{"kind":"NonNullType","type":{"kind":"NamedType","name":{"kind":"Name","value":"Int"}}}},{"kind":"VariableDefinition","variable":{"kind":"Variable","name":{"kind":"Name","value":"numSides"}},"type":{"kind":"NamedType","name":{"kind":"Name","value":"Int"}}},{"kind":"VariableDefinition","variable":{"kind":"Variable","name":{"kind":"Name","value":"color"}},"type":{"kind":"NonNullType","type":{"kind":"NamedType","name":{"kind":"Name","value":"AllowedColor"}}}}],"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"Field","name":{"kind":"Name","value":"rollDice"},"arguments":[{"kind":"Argument","name":{"kind":"Name","value":"numDice"},"value":{"kind":"Variable","name":{"kind":"Name","value":"numDice"}}},{"kind":"Argument","name":{"kind":"Name","value":"numSides"},"value":{"kind":"Variable","name":{"kind":"Name","value":"numSides"}}},{"kind":"Argument","name":{"kind":"Name","value":"color"},"value":{"kind":"Variable","name":{"kind":"Name","value":"color"}}}]}]}}]} as unknown as DocumentNode<ExampleQueryQuery, ExampleQueryQueryVariables>;

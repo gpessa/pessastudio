@@ -16,10 +16,8 @@ import IndexTestimonials from "./components/IndexTestimonials";
 
 const Index: React.FC = () => {
   const data = useQuery(gql`
-    query NextLaunch {
-      getBooks {
-        name
-      }
+    query ExampleQuery($numDice: Int!, $numSides: Int, $color: AllowedColor!) {
+      rollDice(numDice: $numDice, numSides: $numSides, color: $color)
     }
   `);
 
