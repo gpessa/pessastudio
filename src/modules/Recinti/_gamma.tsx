@@ -10,7 +10,7 @@ import assetsProductsRecintiSvg2 from "assets/products/recinti/svg-2.svg";
 import assetsProductsRecintiSvg3 from "assets/products/recinti/svg-3.svg";
 import assetsProductsRecintiSvg4 from "assets/products/recinti/svg-4.svg";
 import { ProductData } from "components/Product";
-import { ProductId } from "utils/products";
+import { ProductId } from "types/graphql";
 
 const ProductStyled = styled(Product)(({ theme }) => ({
   "& button": {

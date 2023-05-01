@@ -8,7 +8,7 @@ import assetsProductsRecintiPiedeMobile2 from "assets/products/recinti/piede-mob
 import assetsProductsRecintiPiedeMobile3 from "assets/products/recinti/piede-mobile-3.png";
 import assetsProductsRecintiPiedeMobile4 from "assets/products/recinti/piede-mobile-4.jpg";
 import { ProductData } from "components/Product";
-import { ProductId } from "utils/products";
+import { ProductId } from "types/graphql";
 
 const Accessori = () => {
   useLingui(); // Fix on locale change

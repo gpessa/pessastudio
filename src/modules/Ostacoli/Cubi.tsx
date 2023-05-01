@@ -12,7 +12,7 @@ import assetsProductsOstacoliCubiMaxi_03 from "assets/products/ostacoli/cubi-max
 import assetsProductsOstacoliCubiMini_01 from "assets/products/ostacoli/cubi-mini-01.png";
 import assetsProductsOstacoliCubiMini_02 from "assets/products/ostacoli/cubi-mini-02.png";
 import assetsProductsOstacoliCubiMini_03 from "assets/products/ostacoli/cubi-mini-03.png";
-import { ProductId } from "utils/products";
+import { ProductId } from "types/graphql";
 
 const Cubi: React.FC = () => {
   useLingui(); // Fix on locale change

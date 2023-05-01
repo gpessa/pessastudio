@@ -1,2 +1,9 @@
+import { ProductId } from "types/graphql";
+import { getServerSidePropsWithProdcuts } from "utils/lingui";
+
 export { default } from "modules/Dressage";
-export { getStaticProps } from "utils/lingui";
+
+export const getServerSideProps = getServerSidePropsWithProdcuts([
+  ProductId.RettangoloDressage_20X60Olympic,
+  ProductId.RettangoloDressage_20X40Training,
+]);

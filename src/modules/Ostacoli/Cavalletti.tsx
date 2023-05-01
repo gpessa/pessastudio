@@ -8,7 +8,7 @@ import { useLingui } from "@lingui/react";
 import productsOstacoliCavalletto_01 from "assets/products/ostacoli/cavalletto-01.png";
 import productsOstacoliCavallettoBarriera_01 from "assets/products/ostacoli/cavalletto-barriera-01.png";
 import { ProductData } from "components/Product";
-import { ProductId } from "utils/products";
+import { ProductId } from "types/graphql";
 
 const Cavalletti: React.FC = () => {
   useLingui(); // Fix on locale change

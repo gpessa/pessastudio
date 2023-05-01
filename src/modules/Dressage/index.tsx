@@ -14,10 +14,14 @@ import { ProductData } from "components/Product";
 import { usePages } from "hooks";
 import React from "react";
 import { Colors, PRODUCT_GUTTER } from "theme";
+import { ProductId, ProductRemoteData } from "types/graphql";
 import { MATERIALS } from "utils/constants";
-import { ProductId } from "utils/products";
 
-const Dressage: React.FC = () => {
+const Dressage: React.FC<{
+  products: {
+    [key in ProductId]?: ProductRemoteData;
+  };
+}> = ({ products }) => {
   const { PAGES } = usePages();
   useLingui(); // Fix on locale change
 
@@ -81,14 +85,14 @@ const Dressage: React.FC = () => {
       id: ProductId.RettangoloDressage_20X60Training,
       name: t`Rettangolo dressage ${SIZE_20x60.size} (${MODELS.TRAINING})`,
       pictures: [productsDressageRettangoloDressage20x60],
-      price: 1800,
+      price: products.RETTANGOLO_DRESSAGE_20X40_TRAINING?.price,
     },
     {
       description: DESCRIPTION_20x40,
       id: ProductId.RettangoloDressage_20X40Training,
       name: t`Rettangolo dressage ${SIZE_20x40.size} (${MODELS.TRAINING})`,
       pictures: [productsDressageRettangoloDressage20x40],
-      price: 1400,
+      price: products.RETTANGOLO_DRESSAGE_20X60_OLYMPIC?.price,
     },
   ];
 

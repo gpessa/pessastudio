@@ -6,7 +6,7 @@ import { Product, Title } from "components";
 import { ProductData } from "components/Product";
 import React from "react";
 import { PRODUCT_GUTTER } from "theme";
-import { ProductId } from "utils/products";
+import { ProductId } from "types/graphql";
 
 const Fosso: React.FC = () => {
   useLingui(); // Fix on locale change

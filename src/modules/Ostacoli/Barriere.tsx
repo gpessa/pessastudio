@@ -8,7 +8,7 @@ import productsOstacoliBarriere_01 from "assets/products/ostacoli/barriere-01.pn
 import productsOstacoliBarriere_02 from "assets/products/ostacoli/barriere-02.png";
 import productsOstacoliBarriere_03 from "assets/products/ostacoli/barriere-03.png";
 import { ProductData } from "components/Product";
-import { ProductId } from "utils/products";
+import { ProductId } from "types/graphql";
 
 const Barriere = () => {
   useLingui(); // Fix on locale change

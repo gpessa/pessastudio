@@ -9,7 +9,7 @@ import { ProductData } from "components/Product";
 import React from "react";
 import { PRODUCT_GUTTER } from "theme";
 import { MATERIALS } from "utils/constants";
-import { ProductId } from "utils/products";
+import { ProductId } from "types/graphql";
 
 const Segnaletica: React.FC = () => {
   useLingui(); // Fix on locale change

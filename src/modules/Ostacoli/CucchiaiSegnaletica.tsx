@@ -16,7 +16,7 @@ import assetsProductsOstacoliCucchiaioPs_03 from "assets/products/ostacoli/cucch
 import assetsProductsOstacoliSupportoDiSicurezza_01 from "assets/products/ostacoli/supporto-di-sicurezza-01.png";
 import assetsProductsOstacoliSupportoDiSicurezza_03 from "assets/products/ostacoli/supporto-di-sicurezza-03.png";
 import assetsProductsOstacoliSupportoDiSicurezza_04 from "assets/products/ostacoli/supporto-di-sicurezza-04.png";
-import { ProductId } from "utils/products";
+import { ProductId } from "types/graphql";
 
 const CucchiaiSegnaletica: React.FC = () => {
   useLingui(); // Fix on locale change

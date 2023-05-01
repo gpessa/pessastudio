@@ -1,5 +1,4 @@
-import { gql, useQuery } from "@apollo/client";
-import { Trans, t } from "@lingui/macro";
+import { Trans } from "@lingui/macro";
 import AccountBalance from "@mui/icons-material/AccountBalance";
 import Apps from "@mui/icons-material/Apps";
 import Architecture from "@mui/icons-material/Architecture";
@@ -15,14 +14,6 @@ import IndexProducts from "./components/IndexProducts";
 import IndexTestimonials from "./components/IndexTestimonials";
 
 const Index: React.FC = () => {
-  const data = useQuery(gql`
-    query ExampleQuery($numDice: Int!, $numSides: Int, $color: AllowedColor!) {
-      rollDice(numDice: $numDice, numSides: $numSides, color: $color)
-    }
-  `);
-
-  console.log(data);
-
   const TESTIMONIALS = [
     <Trans key="test_1">
       Ho ricevuto questa mattina il materiale. I miei complimenti per la qualità

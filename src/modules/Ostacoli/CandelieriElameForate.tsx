@@ -12,7 +12,7 @@ import productsOstacoliCandelierePvc_03 from "assets/products/ostacoli/candelier
 import productsOstacoliLamaDe_01 from "assets/products/ostacoli/lama-de-01.png";
 import productsOstacoliLamaDe_02 from "assets/products/ostacoli/lama-de-02.png";
 import productsOstacoliLamaDe_03 from "assets/products/ostacoli/lama-de-03.png";
-import { ProductId } from "utils/products";
+import { ProductId } from "types/graphql";
 
 const CandelieriLameForate = () => {
   useLingui(); // Fix on locale change
