@@ -68,7 +68,6 @@ const Dressage: React.FC<{
       materials: [MATERIALS.POLIETILENE],
       name: t`Lettera dressage ${MODELS.TRAINING}`,
       pictures: [productsDressageTrainingLettera],
-      // price: 20,
       weight: 0.5,
       width: 200,
     },
@@ -88,7 +87,6 @@ const Dressage: React.FC<{
       price: products[ProductId.RettangoloDressage_20X60Training]?.price,
       name: t`Rettangolo dressage ${SIZE_20x60.size} (${MODELS.TRAINING})`,
       pictures: [productsDressageRettangoloDressage20x60],
-      // price: products.RETTANGOLO_DRESSAGE_20X40_TRAINING?.price,
     },
     {
       description: DESCRIPTION_20x40,
@@ -96,7 +94,6 @@ const Dressage: React.FC<{
       price: products[ProductId.RettangoloDressage_20X40Training]?.price,
       name: t`Rettangolo dressage ${SIZE_20x40.size} (${MODELS.TRAINING})`,
       pictures: [productsDressageRettangoloDressage20x40],
-      // price: products.RETTANGOLO_DRESSAGE_20X60_OLYMPIC?.price,
     },
   ];
 
@@ -108,7 +105,6 @@ const Dressage: React.FC<{
       price: products[ProductId.LetteraDressageOlympic]?.price,
       name: t`Lettera dressage ${MODELS.OLYMPIC}`,
       pictures: [productsDressageOlympicLettera],
-      // price: 51,
       weight: 2.5,
       width: 390,
     },
@@ -128,7 +124,6 @@ const Dressage: React.FC<{
       price: products[ProductId.RettangoloDressage_20X60Olympic]?.price,
       name: t`Rettangolo dressage ${SIZE_20x60.size} (${MODELS.OLYMPIC})`,
       pictures: [productsDressageRettangoloDressage20x60],
-      // price: 1800,
     },
     {
       description: DESCRIPTION_20x40,
@@ -136,7 +131,6 @@ const Dressage: React.FC<{
       price: products[ProductId.RettangoloDressage_20X40Olympic]?.price,
       name: t`Rettangolo dressage ${SIZE_20x40.size} (${MODELS.OLYMPIC})`,
       pictures: [productsDressageRettangoloDressage20x40],
-      // price: 5900,
     },
   ];
 

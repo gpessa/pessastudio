@@ -61,7 +61,7 @@ const typeDefs = gql`
 
   type ProductRemoteData {
     id: ProductId!
-    price: Float!
+    price: Float
   }
 
   type Query {
