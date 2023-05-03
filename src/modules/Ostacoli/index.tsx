@@ -1,7 +1,10 @@
-import { Trans } from "@lingui/macro";
+import { Trans, t } from "@lingui/macro";
 import { Typography } from "@mui/material";
 import { Section, Th } from "components";
+import { usePages } from "hooks";
 import React from "react";
+import { ProductId } from "types/graphql";
+import { getServerSidePropsWithProdcuts } from "utils/getProps";
 import Barriere from "./Barriere";
 import CandelieriLameForate from "./CandelieriElameForate";
 import Cavalletti from "./Cavalletti";
@@ -9,10 +12,61 @@ import Cubi from "./Cubi";
 import Cucchiai from "./CucchiaiSegnaletica";
 import Fosso from "./Fosso";
 import Segnaletica from "./Segnaletica";
-import { usePages } from "hooks";
 
-const Ostacoli: React.FC = () => {
+import assetsProductsOstacoliCubiMaxi_01 from "assets/products/ostacoli/cubi-maxi-01.png";
+import assetsProductsOstacoliCubiMaxi_02 from "assets/products/ostacoli/cubi-maxi-02.png";
+import assetsProductsOstacoliCubiMaxi_03 from "assets/products/ostacoli/cubi-maxi-03.png";
+import assetsProductsOstacoliCubiMini_01 from "assets/products/ostacoli/cubi-mini-01.png";
+import assetsProductsOstacoliCubiMini_02 from "assets/products/ostacoli/cubi-mini-02.png";
+import assetsProductsOstacoliCubiMini_03 from "assets/products/ostacoli/cubi-mini-03.png";
+
+import { ProductData } from "components/Product";
+import { Colors } from "theme";
+
+export const getServerSideProps = getServerSidePropsWithProdcuts([
+  ProductId.CubiMaxi,
+  ProductId.CubiMini,
+]);
+
+type Props = Awaited<ReturnType<typeof getServerSideProps>>["props"];
+
+const Ostacoli: React.FC<Props> = ({ products }) => {
   const { PAGES } = usePages();
+
+  const CUBI: ProductData[] = [
+    {
+      ...products[ProductId.CubiMini],
+      name: t`Cubi mini`,
+      pictures: [
+        assetsProductsOstacoliCubiMini_01,
+        assetsProductsOstacoliCubiMini_02,
+        assetsProductsOstacoliCubiMini_03,
+      ],
+      colors: [
+        Colors.WHITE,
+        Colors.BLU,
+        Colors.YELLOW,
+        Colors.RED,
+        Colors.GREEN,
+      ],
+    },
+    {
+      ...products[ProductId.CubiMaxi],
+      name: t`Cubi maxi`,
+      pictures: [
+        assetsProductsOstacoliCubiMaxi_01,
+        assetsProductsOstacoliCubiMaxi_02,
+        assetsProductsOstacoliCubiMaxi_03,
+      ],
+      colors: [
+        Colors.WHITE,
+        Colors.BLU,
+        Colors.YELLOW,
+        Colors.RED,
+        Colors.GREEN,
+      ],
+    },
+  ];
 
   return (
     <>
@@ -50,7 +104,7 @@ const Ostacoli: React.FC = () => {
       </Section>
 
       <Section id="cubi">
-        <Cubi />
+        <Cubi products={CUBI} />
       </Section>
 
       <Section id="candelierilameforate" color="warm1">

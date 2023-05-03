@@ -41,7 +41,7 @@ type Attributes = {
 export type ProductData = Attributes & {
   pictures: StaticImageData[];
   description?: string | ReactNode;
-  price?: PriceProps["price"];
+  price?: PriceProps["price"] | null;
   vertical?: boolean;
   name: string;
   id: string;
@@ -87,11 +87,14 @@ const getDataData = (
 };
 
 const getData = (attributes: Attributes) => {
-  return Object.entries(attributes).map(([id, attribute]) => ({
-    key: id,
-    label: getDataLabel(id as keyof Attributes),
-    value: getDataData(id as keyof Attributes, attribute),
-  }));
+  return Object.entries(attributes)
+    .filter(([_, attribute]) => attribute != null)
+    .map(([id, attribute]) => ({
+      key: id,
+      label: getDataLabel(id as keyof Attributes),
+      value: getDataData(id as keyof Attributes, attribute),
+    }))
+    .filter((item) => item.value != undefined);
 };
 
 const getSeoPrice = (
@@ -156,17 +159,14 @@ const Product: React.FC<ProductProps> = ({
           <Th variant="h6" sans sx={{ textTransform: "uppercase" }}>
             {name}
           </Th>
-
           {description && (
             <Typography paragraph component="div">
               {description}
             </Typography>
           )}
-
           {data.map(({ key, ...item }) => (
             <Data {...item} key={key} />
           ))}
-
           <ProductPrice price={price} />
         </DataStyled>
       </Grid>

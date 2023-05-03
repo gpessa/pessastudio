@@ -1,2 +1,1 @@
-export { default } from "modules/Ostacoli";
-export { getStaticProps } from "utils/lingui";
+export { default, getServerSideProps } from "modules/Ostacoli";

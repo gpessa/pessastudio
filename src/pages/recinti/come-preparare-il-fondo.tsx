@@ -1,2 +1,2 @@
 export { default } from "modules/ComePreparareIlFondo";
-export { getStaticProps } from "utils/lingui";
+export { getStaticProps } from "utils/getProps";

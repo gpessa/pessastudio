@@ -38,13 +38,17 @@ const typeDefs = gql`
     CUBI_MINI
     CUCCHIAIO_DE
     CUCCHIAIO_PS
+    DRESSAGE_OLYMPIC_LETTERA
+    DRESSAGE_OLYMPIC_MODULO
+    DRESSAGE_OLYMPIC_RETTANGOLO_20X40
+    DRESSAGE_OLYMPIC_RETTANGOLO_20X60
+    DRESSAGE_TRAINING_LETTERA
+    DRESSAGE_TRAINING_MODULO
+    DRESSAGE_TRAINING_RETTANGOLO_20X40
+    DRESSAGE_TRAINING_RETTANGOLO_20X60
     FOSSO
     KIT_CAVALLETTI_CAPRILLI_BARRIERA
     LAMA_DE_50_150_CM
-    LETTERA_DRESSAGE_OLYMPIC
-    LETTERA_DRESSAGE_TRAINING
-    MODULO_DRESSAGE_OLYMPIC
-    MODULO_DRESSAGE_TRAINING
     NUMERO_CAMPO_OSTACOLI_LIGHT
     NUMERO_CAMPO_OSTACOLI_PROFESSIONAL
     PIEDE_MOBILE
@@ -52,16 +56,16 @@ const typeDefs = gql`
     RECINZIONE_2_FILAGNE
     RECINZIONE_3_FILAGNE
     RECINZIONE_4_FILAGNE
-    RETTANGOLO_DRESSAGE_20X40_OLYMPIC
-    RETTANGOLO_DRESSAGE_20X40_TRAINING
-    RETTANGOLO_DRESSAGE_20X60_OLYMPIC
-    RETTANGOLO_DRESSAGE_20X60_TRAINING
     SUPPORTO_SICUREZZA
   }
 
   type ProductRemoteData {
     id: ProductId!
     price: Float
+    width: Float
+    length: Float
+    height: Float
+    weight: Float
   }
 
   type Query {
@@ -81,7 +85,14 @@ const resolvers = {
       const rows = await sheet.getRows();
 
       const result = rows.reduce((all, current) => {
-        const [id, price] = current._rawData;
+        const {
+          Nome: id,
+          Altezza,
+          Lunghezza,
+          Larghezza,
+          Peso,
+          Prezzo,
+        } = current;
 
         if (!productIds.includes(id)) return all;
 
@@ -89,7 +100,11 @@ const resolvers = {
           ...all,
           {
             id,
-            price,
+            price: Prezzo && Prezzo != "" ? Prezzo : undefined,
+            width: Larghezza && Larghezza != "" ? Larghezza : undefined,
+            length: Lunghezza && Lunghezza != "" ? Lunghezza : undefined,
+            height: Altezza && Altezza != "" ? Altezza : undefined,
+            weight: Peso && Peso != "" ? Peso : undefined,
           },
         ];
       }, [] as ProductRemoteData[]);

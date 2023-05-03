@@ -14,14 +14,24 @@ import { ProductData } from "components/Product";
 import { usePages } from "hooks";
 import React from "react";
 import { Colors, PRODUCT_GUTTER } from "theme";
-import { ProductId, ProductRemoteData } from "types/graphql";
+import { ProductId } from "types/graphql";
 import { MATERIALS } from "utils/constants";
+import { getServerSidePropsWithProdcuts } from "utils/getProps";
 
-const Dressage: React.FC<{
-  products: {
-    [key in ProductId]?: ProductRemoteData;
-  };
-}> = ({ products }) => {
+export const getServerSideProps = getServerSidePropsWithProdcuts([
+  ProductId.DressageTrainingLettera,
+  ProductId.DressageTrainingModulo,
+  ProductId.DressageTrainingRettangolo_20X40,
+  ProductId.DressageTrainingRettangolo_20X60,
+  ProductId.DressageOlympicLettera,
+  ProductId.DressageOlympicModulo,
+  ProductId.DressageOlympicRettangolo_20X60,
+  ProductId.DressageOlympicRettangolo_20X40,
+]);
+
+type Props = Awaited<ReturnType<typeof getServerSideProps>>["props"];
+
+const Dressage: React.FC<Props> = ({ products }) => {
   const { PAGES } = usePages();
   useLingui(); // Fix on locale change
 
@@ -29,8 +39,8 @@ const Dressage: React.FC<{
   const SIZE_20x60 = { size: "20x40", modules: 60, letters: 80 };
 
   const MODELS = {
-    TRAINING: "TRAINING",
-    OLYMPIC: "OLYMPIC",
+    TRAINING: "Training",
+    OLYMPIC: "Olympic",
   };
 
   const DESCRIPTION_20x40 = (
@@ -61,76 +71,56 @@ const Dressage: React.FC<{
 
   const TRAINING_PRODUCTS: ProductData[] = [
     {
+      ...products[ProductId.DressageTrainingLettera],
       colors: [Colors.WHITE],
-      height: 300,
-      id: ProductId.LetteraDressageTraining,
-      price: products[ProductId.LetteraDressageTraining]?.price,
       materials: [MATERIALS.POLIETILENE],
       name: t`Lettera dressage ${MODELS.TRAINING}`,
       pictures: [productsDressageTrainingLettera],
-      weight: 0.5,
-      width: 200,
     },
     {
+      ...products[ProductId.DressageTrainingModulo],
       colors: [Colors.WHITE],
-      height: 285,
-      id: ProductId.ModuloDressageTraining,
-      price: products[ProductId.ModuloDressageTraining]?.price,
       name: t`Modulo dressage ${MODELS.TRAINING}`,
       pictures: [productsDressageTrainingModuloDressage],
-      weight: 3,
-      width: 2000,
     },
     {
-      description: DESCRIPTION_20x60,
-      id: ProductId.RettangoloDressage_20X60Training,
-      price: products[ProductId.RettangoloDressage_20X60Training]?.price,
-      name: t`Rettangolo dressage ${SIZE_20x60.size} (${MODELS.TRAINING})`,
-      pictures: [productsDressageRettangoloDressage20x60],
-    },
-    {
+      ...products[ProductId.DressageTrainingRettangolo_20X40],
       description: DESCRIPTION_20x40,
-      id: ProductId.RettangoloDressage_20X40Training,
-      price: products[ProductId.RettangoloDressage_20X40Training]?.price,
       name: t`Rettangolo dressage ${SIZE_20x40.size} (${MODELS.TRAINING})`,
       pictures: [productsDressageRettangoloDressage20x40],
+    },
+    {
+      ...products[ProductId.DressageTrainingRettangolo_20X60],
+      description: DESCRIPTION_20x60,
+      name: t`Rettangolo dressage ${SIZE_20x60.size} (${MODELS.TRAINING})`,
+      pictures: [productsDressageRettangoloDressage20x60],
     },
   ];
 
   const OLYMPIC_PRODUCTS: ProductData[] = [
     {
+      ...products[ProductId.DressageOlympicLettera],
       colors: [Colors.WHITE],
-      height: 700,
-      id: ProductId.LetteraDressageOlympic,
-      price: products[ProductId.LetteraDressageOlympic]?.price,
       name: t`Lettera dressage ${MODELS.OLYMPIC}`,
       pictures: [productsDressageOlympicLettera],
-      weight: 2.5,
-      width: 390,
     },
     {
+      ...products[ProductId.DressageOlympicModulo],
       colors: [Colors.WHITE],
-      height: 370,
-      id: ProductId.ModuloDressageOlympic,
-      price: products[ProductId.ModuloDressageOlympic]?.price,
       name: t`Modulo dressage ${MODELS.OLYMPIC}`,
       pictures: [productsDressageOlympicModuloDressage],
-      weight: 5,
-      width: 2000,
     },
     {
-      description: DESCRIPTION_20x60,
-      id: ProductId.RettangoloDressage_20X60Olympic,
-      price: products[ProductId.RettangoloDressage_20X60Olympic]?.price,
-      name: t`Rettangolo dressage ${SIZE_20x60.size} (${MODELS.OLYMPIC})`,
-      pictures: [productsDressageRettangoloDressage20x60],
-    },
-    {
+      ...products[ProductId.DressageOlympicRettangolo_20X40],
       description: DESCRIPTION_20x40,
-      id: ProductId.RettangoloDressage_20X40Olympic,
-      price: products[ProductId.RettangoloDressage_20X40Olympic]?.price,
       name: t`Rettangolo dressage ${SIZE_20x40.size} (${MODELS.OLYMPIC})`,
       pictures: [productsDressageRettangoloDressage20x40],
+    },
+    {
+      ...products[ProductId.DressageOlympicRettangolo_20X60],
+      description: DESCRIPTION_20x60,
+      name: t`Rettangolo dressage ${SIZE_20x60.size} (${MODELS.OLYMPIC})`,
+      pictures: [productsDressageRettangoloDressage20x60],
     },
   ];
 

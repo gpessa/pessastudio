@@ -1,10 +1,6 @@
 import { gql } from "@apollo/client";
 import { GetStaticPropsContext } from "next";
-import {
-  ExampleQueryQuery,
-  ExampleQueryQueryVariables,
-  ProductId,
-} from "types/graphql";
+import { ProductId, ProductRemoteData } from "types/graphql";
 import client from "./apollo";
 
 export const getStaticProps = async ({ locale }: GetStaticPropsContext) => {
@@ -15,18 +11,51 @@ export const getStaticProps = async ({ locale }: GetStaticPropsContext) => {
   };
 };
 
-export const getServerSidePropsWithProdcuts = (productIds: ProductId[]) => {
+export const getServerSidePropsWithProdcuts = <T extends ProductId>(
+  productIds: T[]
+) => {
+  type QueryResponse = {
+    get: (ProductRemoteData & {
+      id: T;
+    })[];
+  };
+
+  const getProducts = <T extends string>(
+    array: {
+      id: T;
+      price: Number;
+    }[]
+  ): {
+    [key in T]: ProductRemoteData;
+  } =>
+    array.reduce(
+      (total, item) => {
+        return {
+          ...total,
+          [item.id]: item,
+        };
+      },
+      {} as {
+        [key in T]: ProductRemoteData;
+      }
+    );
+
   return async ({ locale }: GetStaticPropsContext) => {
     const messages = await loadCatalog(locale!);
 
     const {
       data: { get },
-    } = await client.query<ExampleQueryQuery, ExampleQueryQueryVariables>({
+    } = await client.query<QueryResponse>({
       query: gql`
         query Products($productIds: [ProductId]) {
           get(productIds: $productIds) {
             id
             price
+            price
+            width
+            length
+            height
+            weight
           }
         }
       `,
@@ -35,18 +64,10 @@ export const getServerSidePropsWithProdcuts = (productIds: ProductId[]) => {
       },
     });
 
-    const products = get?.reduce(
-      (total, single) => ({
-        ...total,
-        [single.id]: single,
-      }),
-      {}
-    );
-
     return {
       props: {
+        products: getProducts(get),
         messages,
-        products,
       },
     };
   };

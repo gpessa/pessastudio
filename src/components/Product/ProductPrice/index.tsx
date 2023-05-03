@@ -9,7 +9,7 @@ const PriceStyled = styled(Typography)(({ theme }) => ({
 }));
 
 export type PriceProps = {
-  price: undefined | number | PriceSingle[];
+  price: undefined | null | number | PriceSingle[];
 };
 
 type PriceSingle = {

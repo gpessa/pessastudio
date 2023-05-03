@@ -1,66 +1,14 @@
 import { t, Trans } from "@lingui/macro";
 import { Grid, Typography } from "@mui/material";
 import { Product, Title } from "components";
-import { ProductData } from "components/Product";
 import React from "react";
-import { Colors, PRODUCT_GUTTER } from "theme";
+import { PRODUCT_GUTTER } from "theme";
 
 import { useLingui } from "@lingui/react";
-import assetsProductsOstacoliCubiMaxi_01 from "assets/products/ostacoli/cubi-maxi-01.png";
-import assetsProductsOstacoliCubiMaxi_02 from "assets/products/ostacoli/cubi-maxi-02.png";
-import assetsProductsOstacoliCubiMaxi_03 from "assets/products/ostacoli/cubi-maxi-03.png";
-import assetsProductsOstacoliCubiMini_01 from "assets/products/ostacoli/cubi-mini-01.png";
-import assetsProductsOstacoliCubiMini_02 from "assets/products/ostacoli/cubi-mini-02.png";
-import assetsProductsOstacoliCubiMini_03 from "assets/products/ostacoli/cubi-mini-03.png";
-import { ProductId } from "types/graphql";
+import { ProductData } from "components/Product";
 
-const Cubi: React.FC = () => {
+const Cubi: React.FC<{ products: ProductData[] }> = ({ products }) => {
   useLingui(); // Fix on locale change
-
-  const PRODUCTS: ProductData[] = [
-    {
-      id: ProductId.CubiMini,
-      name: t`Cubi mini`,
-      pictures: [
-        assetsProductsOstacoliCubiMini_01,
-        assetsProductsOstacoliCubiMini_02,
-        assetsProductsOstacoliCubiMini_03,
-      ],
-      width: 350,
-      length: 370,
-      height: 570,
-      weight: 3,
-      price: 38.5,
-      colors: [
-        Colors.WHITE,
-        Colors.BLU,
-        Colors.YELLOW,
-        Colors.RED,
-        Colors.GREEN,
-      ],
-    },
-    {
-      id: ProductId.CubiMaxi,
-      name: t`Cubi maxi`,
-      pictures: [
-        assetsProductsOstacoliCubiMaxi_01,
-        assetsProductsOstacoliCubiMaxi_02,
-        assetsProductsOstacoliCubiMaxi_03,
-      ],
-      width: 370,
-      length: 570,
-      height: 700,
-      weight: 5,
-      price: 63.5,
-      colors: [
-        Colors.WHITE,
-        Colors.BLU,
-        Colors.YELLOW,
-        Colors.RED,
-        Colors.GREEN,
-      ],
-    },
-  ];
 
   return (
     <>
@@ -89,7 +37,7 @@ const Cubi: React.FC = () => {
       />
 
       <Grid container spacing={PRODUCT_GUTTER}>
-        {PRODUCTS.map((product, index) => (
+        {products.map((product, index) => (
           <Grid item xs={12} key={`cubi_${index}`}>
             <Product {...product} />
           </Grid>

@@ -22,13 +22,17 @@ export enum ProductId {
   CubiMini = 'CUBI_MINI',
   CucchiaioDe = 'CUCCHIAIO_DE',
   CucchiaioPs = 'CUCCHIAIO_PS',
+  DressageOlympicLettera = 'DRESSAGE_OLYMPIC_LETTERA',
+  DressageOlympicModulo = 'DRESSAGE_OLYMPIC_MODULO',
+  DressageOlympicRettangolo_20X40 = 'DRESSAGE_OLYMPIC_RETTANGOLO_20X40',
+  DressageOlympicRettangolo_20X60 = 'DRESSAGE_OLYMPIC_RETTANGOLO_20X60',
+  DressageTrainingLettera = 'DRESSAGE_TRAINING_LETTERA',
+  DressageTrainingModulo = 'DRESSAGE_TRAINING_MODULO',
+  DressageTrainingRettangolo_20X40 = 'DRESSAGE_TRAINING_RETTANGOLO_20X40',
+  DressageTrainingRettangolo_20X60 = 'DRESSAGE_TRAINING_RETTANGOLO_20X60',
   Fosso = 'FOSSO',
   KitCavallettiCaprilliBarriera = 'KIT_CAVALLETTI_CAPRILLI_BARRIERA',
   LamaDe_50_150Cm = 'LAMA_DE_50_150_CM',
-  LetteraDressageOlympic = 'LETTERA_DRESSAGE_OLYMPIC',
-  LetteraDressageTraining = 'LETTERA_DRESSAGE_TRAINING',
-  ModuloDressageOlympic = 'MODULO_DRESSAGE_OLYMPIC',
-  ModuloDressageTraining = 'MODULO_DRESSAGE_TRAINING',
   NumeroCampoOstacoliLight = 'NUMERO_CAMPO_OSTACOLI_LIGHT',
   NumeroCampoOstacoliProfessional = 'NUMERO_CAMPO_OSTACOLI_PROFESSIONAL',
   PiedeMobile = 'PIEDE_MOBILE',
@@ -36,17 +40,13 @@ export enum ProductId {
   Recinzione_2Filagne = 'RECINZIONE_2_FILAGNE',
   Recinzione_3Filagne = 'RECINZIONE_3_FILAGNE',
   Recinzione_4Filagne = 'RECINZIONE_4_FILAGNE',
-  RettangoloDressage_20X40Olympic = 'RETTANGOLO_DRESSAGE_20X40_OLYMPIC',
-  RettangoloDressage_20X40Training = 'RETTANGOLO_DRESSAGE_20X40_TRAINING',
-  RettangoloDressage_20X60Olympic = 'RETTANGOLO_DRESSAGE_20X60_OLYMPIC',
-  RettangoloDressage_20X60Training = 'RETTANGOLO_DRESSAGE_20X60_TRAINING',
   SupportoSicurezza = 'SUPPORTO_SICUREZZA'
 }
 
 export type ProductRemoteData = {
   __typename?: 'ProductRemoteData';
   id: ProductId;
-  price: Scalars['Float'];
+  price?: Maybe<Scalars['Float']>;
 };
 
 export type Query = {
