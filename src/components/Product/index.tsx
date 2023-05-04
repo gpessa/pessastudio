@@ -15,6 +15,7 @@ import { SEDE_OPERATIVA, WEBSITE } from "utils/constants";
 import ColorsList from "./ProductColorsList";
 import ProductImages from "./ProductImages";
 import ProductPrice, { PriceProps } from "./ProductPrice";
+import { Maybe } from "graphql/jsutils/Maybe";
 
 const DataStyled = styled(Grid)(({ theme }) => ({
   order: -1,
@@ -27,15 +28,15 @@ const DataStyled = styled(Grid)(({ theme }) => ({
 }));
 
 type Attributes = {
-  materials?: JSX.Element[];
-  thickness?: number;
-  diameter?: number;
-  colors?: Colors[];
-  height?: number;
-  length?: number;
-  weight?: number;
-  depth?: number;
-  width?: number;
+  materials?: Maybe<JSX.Element[]>;
+  thickness?: Maybe<number>;
+  diameter?: Maybe<number>;
+  colors?: Maybe<Colors[]>;
+  height?: Maybe<number>;
+  length?: Maybe<number>;
+  weight?: Maybe<number>;
+  depth?: Maybe<number>;
+  width?: Maybe<number>;
 };
 
 export type ProductData = Attributes & {

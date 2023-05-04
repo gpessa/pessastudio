@@ -13,19 +13,30 @@ import Cucchiai from "./CucchiaiSegnaletica";
 import Fosso from "./Fosso";
 import Segnaletica from "./Segnaletica";
 
-import assetsProductsOstacoliCubiMaxi_01 from "assets/products/ostacoli/cubi-maxi-01.png";
-import assetsProductsOstacoliCubiMaxi_02 from "assets/products/ostacoli/cubi-maxi-02.png";
-import assetsProductsOstacoliCubiMaxi_03 from "assets/products/ostacoli/cubi-maxi-03.png";
-import assetsProductsOstacoliCubiMini_01 from "assets/products/ostacoli/cubi-mini-01.png";
-import assetsProductsOstacoliCubiMini_02 from "assets/products/ostacoli/cubi-mini-02.png";
-import assetsProductsOstacoliCubiMini_03 from "assets/products/ostacoli/cubi-mini-03.png";
+import productsOstacoliBarriere_01 from "assets/products/ostacoli/barriere-01.png";
+import productsOstacoliBarriere_02 from "assets/products/ostacoli/barriere-02.png";
+import productsOstacoliBarriere_03 from "assets/products/ostacoli/barriere-03.png";
+import productsOstacoliCavalletto_01 from "assets/products/ostacoli/cavalletto-01.png";
+import productsOstacoliCavallettoBarriera_01 from "assets/products/ostacoli/cavalletto-barriera-01.png";
+import productsOstacoliCubiMaxi_01 from "assets/products/ostacoli/cubi-maxi-01.png";
+import productsOstacoliCubiMaxi_02 from "assets/products/ostacoli/cubi-maxi-02.png";
+import productsOstacoliCubiMaxi_03 from "assets/products/ostacoli/cubi-maxi-03.png";
+import productsOstacoliCubiMini_01 from "assets/products/ostacoli/cubi-mini-01.png";
+import productsOstacoliCubiMini_02 from "assets/products/ostacoli/cubi-mini-02.png";
+import productsOstacoliCubiMini_03 from "assets/products/ostacoli/cubi-mini-03.png";
+import productsOstacoliFosso from "assets/products/ostacoli/fosso.png";
+
+import { Colors } from "theme";
 
 import { ProductData } from "components/Product";
-import { Colors } from "theme";
 
 export const getServerSideProps = getServerSidePropsWithProdcuts([
   ProductId.CubiMaxi,
   ProductId.CubiMini,
+  ProductId.Barriera_3Mt,
+  ProductId.Fosso,
+  ProductId.CavallettiCaprilli,
+  ProductId.CavallettiCaprilliBarrieraKit,
 ]);
 
 type Props = Awaited<ReturnType<typeof getServerSideProps>>["props"];
@@ -35,12 +46,12 @@ const Ostacoli: React.FC<Props> = ({ products }) => {
 
   const CUBI: ProductData[] = [
     {
-      ...products[ProductId.CubiMini],
+      ...products.CUBI_MINI,
       name: t`Cubi mini`,
       pictures: [
-        assetsProductsOstacoliCubiMini_01,
-        assetsProductsOstacoliCubiMini_02,
-        assetsProductsOstacoliCubiMini_03,
+        productsOstacoliCubiMini_01,
+        productsOstacoliCubiMini_02,
+        productsOstacoliCubiMini_03,
       ],
       colors: [
         Colors.WHITE,
@@ -51,12 +62,12 @@ const Ostacoli: React.FC<Props> = ({ products }) => {
       ],
     },
     {
-      ...products[ProductId.CubiMaxi],
+      ...products.CUBI_MAXI,
       name: t`Cubi maxi`,
       pictures: [
-        assetsProductsOstacoliCubiMaxi_01,
-        assetsProductsOstacoliCubiMaxi_02,
-        assetsProductsOstacoliCubiMaxi_03,
+        productsOstacoliCubiMaxi_01,
+        productsOstacoliCubiMaxi_02,
+        productsOstacoliCubiMaxi_03,
       ],
       colors: [
         Colors.WHITE,
@@ -65,6 +76,46 @@ const Ostacoli: React.FC<Props> = ({ products }) => {
         Colors.RED,
         Colors.GREEN,
       ],
+    },
+  ];
+
+  const FOSSO: ProductData = {
+    ...products.FOSSO,
+    pictures: [productsOstacoliFosso],
+    name: t`Fosso`,
+  };
+
+  const BARRIERE: ProductData = {
+    ...products.BARRIERA_3_MT,
+    name: t`Barriera 3 mt.`,
+    description: `Costruisci la tua barriera personalizzata scegliendo tra i colori a disposizione`,
+    pictures: [
+      productsOstacoliBarriere_01,
+      productsOstacoliBarriere_02,
+      productsOstacoliBarriere_03,
+    ],
+    colors: [Colors.BLU, Colors.GREEN, Colors.RED, Colors.WHITE, Colors.YELLOW],
+  };
+
+  const CAVALLETTI: ProductData[] = [
+    {
+      ...products.CAVALLETTI_CAPRILLI,
+      name: t`Cavalletti Caprilli`,
+      description: t`Singolo cavalletto abbinabile a barriere diametro 90, 95, 100, 105 mm.`,
+      pictures: [productsOstacoliCavalletto_01],
+      colors: [
+        Colors.WHITE,
+        Colors.BLU,
+        Colors.YELLOW,
+        Colors.RED,
+        Colors.GREEN,
+      ],
+    },
+    {
+      ...products.CAVALLETTI_CAPRILLI_BARRIERA_KIT,
+      name: t`Kit Cavalletti Caprilli + barriera`,
+      description: t`Kit comprensivo di 2 cavalletti e una barriera in PPO di colore bianco, diametro 95, lunghezza 2 mt.`,
+      pictures: [productsOstacoliCavallettoBarriera_01],
     },
   ];
 
@@ -92,15 +143,15 @@ const Ostacoli: React.FC<Props> = ({ products }) => {
       </Section>
 
       <Section id="barriere" color="warm1">
-        <Barriere />
+        <Barriere product={BARRIERE} />
       </Section>
 
       <Section id="fosso">
-        <Fosso />
+        <Fosso product={FOSSO} />
       </Section>
 
       <Section id="cavalletti" color="warm1">
-        <Cavalletti />
+        <Cavalletti products={CAVALLETTI} />
       </Section>
 
       <Section id="cubi">

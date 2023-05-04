@@ -18,6 +18,7 @@ export enum ProductId {
   Barriera_3Mt = 'BARRIERA_3_MT',
   CandeliereConPiedeInPvc = 'CANDELIERE_CON_PIEDE_IN_PVC',
   CavallettiCaprilli = 'CAVALLETTI_CAPRILLI',
+  CavallettiCaprilliBarrieraKit = 'CAVALLETTI_CAPRILLI_BARRIERA_KIT',
   CubiMaxi = 'CUBI_MAXI',
   CubiMini = 'CUBI_MINI',
   CucchiaioDe = 'CUCCHIAIO_DE',
@@ -31,7 +32,6 @@ export enum ProductId {
   DressageTrainingRettangolo_20X40 = 'DRESSAGE_TRAINING_RETTANGOLO_20X40',
   DressageTrainingRettangolo_20X60 = 'DRESSAGE_TRAINING_RETTANGOLO_20X60',
   Fosso = 'FOSSO',
-  KitCavallettiCaprilliBarriera = 'KIT_CAVALLETTI_CAPRILLI_BARRIERA',
   LamaDe_50_150Cm = 'LAMA_DE_50_150_CM',
   NumeroCampoOstacoliLight = 'NUMERO_CAMPO_OSTACOLI_LIGHT',
   NumeroCampoOstacoliProfessional = 'NUMERO_CAMPO_OSTACOLI_PROFESSIONAL',
@@ -45,8 +45,12 @@ export enum ProductId {
 
 export type ProductRemoteData = {
   __typename?: 'ProductRemoteData';
+  height?: Maybe<Scalars['Float']>;
   id: ProductId;
+  length?: Maybe<Scalars['Float']>;
   price?: Maybe<Scalars['Float']>;
+  weight?: Maybe<Scalars['Float']>;
+  width?: Maybe<Scalars['Float']>;
 };
 
 export type Query = {
