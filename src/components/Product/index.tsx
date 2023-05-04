@@ -90,12 +90,12 @@ const getDataData = (
 const getData = (attributes: Attributes) => {
   return Object.entries(attributes)
     .filter(([_, attribute]) => attribute != null)
+    .filter(([_, attribute]) => attribute != undefined)
     .map(([id, attribute]) => ({
       key: id,
       label: getDataLabel(id as keyof Attributes),
-      value: getDataData(id as keyof Attributes, attribute),
-    }))
-    .filter((item) => item.value != undefined);
+      value: getDataData(id as keyof Attributes, attribute!),
+    }));
 };
 
 const getSeoPrice = (
