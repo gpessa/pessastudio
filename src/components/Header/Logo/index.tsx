@@ -13,12 +13,16 @@ const ButtonStyled = styled(Button)(({ theme }) => ({
     width: 300 * 0.7,
     height: 75 * 0.7,
   },
+  "& img": {
+    maxWidth: "100%",
+    height: "auto",
+  },
 }));
 
 const Logo: React.FC = () => (
   <Link passHref href="/">
     <ButtonStyled variant="text">
-      <Image src={logo} alt="Pessastudio" fill />
+      <Image src={logo} alt="Pessastudio" width={300} height={75} />
     </ButtonStyled>
   </Link>
 );
