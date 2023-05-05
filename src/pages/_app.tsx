@@ -25,11 +25,11 @@ const clientSideEmotionCache = createEmotionCache();
 const MyApp = (props: MyAppProps) => {
   const { Component, emotionCache = clientSideEmotionCache, pageProps } = props;
 
-  useLinguiInit(pageProps.messages);
-
   useEffect(() => {
     TagManager.initialize({ gtmId: "GTM-NTCR82T" });
   }, []);
+
+  useLinguiInit(pageProps.messages);
 
   return (
     <I18nProvider i18n={i18n}>
