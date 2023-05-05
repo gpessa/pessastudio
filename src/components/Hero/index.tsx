@@ -1,26 +1,27 @@
-import { Box, Container, styled, Typography } from "@mui/material"
-import React from "react"
+import { Box, Container, styled, Typography } from "@mui/material";
+import { StaticImageData } from "next/image";
+import React from "react";
 
 const TypographyStyled = styled(Typography)(({ theme }) => ({
   backgroundColor: theme.palette.common.white,
   borderRadius: theme.shape.borderRadius,
   padding: theme.spacing(3),
   display: "inline-block",
-}))
+}));
 
-const BoxStyled = styled(Box)<{ image?: string }>(({ image }) => ({
-  backgroundImage: `url(${image})`,
+const BoxStyled = styled(Box)<{ image?: HeroProps["image"] }>(({ image }) => ({
+  backgroundImage: `url(${image?.src})`,
   backgroundPosition: "center",
   backgroundSize: "cover",
   padding: "6% 0 20%",
-}))
+}));
 
-type Props = {
-  image: string
-  text?: JSX.Element
-} & React.HTMLAttributes<HTMLElement>
+export type HeroProps = {
+  image: StaticImageData;
+  text?: JSX.Element | string;
+} & React.HTMLAttributes<HTMLElement>;
 
-const Hero = ({ text, image, className }: Props) => (
+const Hero = ({ text, image, className }: HeroProps) => (
   <BoxStyled className={className} image={image}>
     {text && (
       <Container maxWidth="lg">
@@ -28,6 +29,6 @@ const Hero = ({ text, image, className }: Props) => (
       </Container>
     )}
   </BoxStyled>
-)
+);
 
-export default Hero
+export default Hero;

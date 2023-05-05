@@ -1,3 +1,5 @@
+.next
+
 # Logs
 logs
 *.log
@@ -53,10 +55,8 @@ typings/
 
 # dotenv environment variables file
 .env
-
-# gatsby files
-.cache/
-public
+.env.development
+.env.production
 
 # Mac files
 .DS_Store
@@ -67,6 +67,3 @@ yarn-error.log
 .pnp.js
 # Yarn Integrity file
 .yarn-integrity
-
-
-tutorial.md

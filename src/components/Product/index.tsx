@@ -1,21 +1,20 @@
-import { i18n } from "@lingui/core"
-import { Trans } from "@lingui/macro"
-import { Box, Grid, GridSize, styled, Typography } from "@mui/material"
-import { useLocation } from "@reach/router"
-import { Data, TH } from "components"
-import { seoQuery } from "components/Seo"
-import { useStaticQuery } from "gatsby"
-import { SEDE_OPERATIVA } from "pages/contatti"
-import React, { ReactNode } from "react"
-import { Helmet } from "react-helmet"
-import { helmetJsonLdProp } from "react-schemaorg"
-import { ProductModel, Offer, Product as ProductSchema, WithContext } from "schema-dts"
-import { snakeCase } from "snake-case"
-import { BREAKPOINT, PRODUCT_GUTTER } from "theme"
-import { Colors } from "utils/constants"
-import ColorsList from "./ProductColorsList"
-import ProductImages, { ProductImagesProps } from "./ProductImages"
-import ProductPrice, { PriceProps } from "./ProductPrice"
+import { i18n } from "@lingui/core";
+import { Trans } from "@lingui/macro";
+import { Box, Grid, GridSize, styled, Typography } from "@mui/material";
+
+import Data from "components/Data";
+import Th from "components/Th";
+import { ProductJsonLd } from "next-seo";
+import React, { ReactNode } from "react";
+import { BREAKPOINT, Colors, PRODUCT_GUTTER } from "theme";
+
+import { Offers } from "next-seo/lib/types";
+import { StaticImageData } from "next/image";
+import { useRouter } from "next/router";
+import { SEDE_OPERATIVA, WEBSITE } from "utils/constants";
+import ColorsList from "./ProductColorsList";
+import ProductImages from "./ProductImages";
+import ProductPrice, { PriceProps } from "./ProductPrice";
 
 const DataStyled = styled(Grid)(({ theme }) => ({
   order: -1,
@@ -25,28 +24,30 @@ const DataStyled = styled(Grid)(({ theme }) => ({
   [theme.breakpoints.up(BREAKPOINT)]: {
     order: "unset",
   },
-}))
+}));
 
 type Attributes = {
-  materials?: JSX.Element[]
-  thickness?: number
-  diameter?: number
-  colors?: Colors[]
-  height?: number
-  length?: number
-  weight?: number
-  depth?: number
-  width?: number
-}
+  materials?: JSX.Element[];
+  thickness?: number;
+  diameter?: number;
+  colors?: Colors[];
+  height?: number;
+  length?: number;
+  weight?: number;
+  depth?: number;
+  width?: number;
+};
 
-export type ProductProps = {
-  images: ProductImagesProps["images"]
-  description?: string | ReactNode
-  price?: PriceProps["price"]
-  className?: string
-  vertical?: boolean
-  name: string
-} & Attributes
+export type ProductData = Attributes & {
+  pictures: StaticImageData[];
+  description?: string | ReactNode;
+  price?: PriceProps["price"];
+  vertical?: boolean;
+  name: string;
+  id: string;
+};
+
+export type ProductProps = ProductData & { className?: string };
 
 const getDataLabel = (id: keyof Attributes) =>
   ({
@@ -59,15 +60,18 @@ const getDataLabel = (id: keyof Attributes) =>
     thickness: <Trans>Spessore</Trans>,
     weight: <Trans>Peso</Trans>,
     width: <Trans>Larghezza</Trans>,
-  }[id])
+  }[id]);
 
-const getDataData = (id: keyof Attributes, attribute: number | Colors[] | string[] | JSX.Element[]) => {
+const getDataData = (
+  id: keyof Attributes,
+  attribute: number | Colors[] | JSX.Element[]
+) => {
   switch (id) {
     case "materials":
-      return attribute
+      return attribute;
 
     case "weight":
-      return `${i18n.number(attribute as number)} kg.`
+      return `${i18n.number(attribute as number)} kg.`;
 
     case "diameter":
     case "thickness":
@@ -75,73 +79,83 @@ const getDataData = (id: keyof Attributes, attribute: number | Colors[] | string
     case "length":
     case "depth":
     case "width":
-      return `${i18n.number((attribute as number) / 10)} cm.`
+      return `${i18n.number((attribute as number) / 10)} cm.`;
 
     case "colors":
-      return <ColorsList colors={attribute as Colors[]} />
+      return <ColorsList colors={attribute as Colors[]} />;
   }
-}
+};
 
 const getData = (attributes: Attributes) => {
   return Object.entries(attributes).map(([id, attribute]) => ({
-    id,
+    key: id,
     label: getDataLabel(id as keyof Attributes),
     value: getDataData(id as keyof Attributes, attribute),
-  }))
-}
+  }));
+};
 
-const getSeoPrice = (price: ProductProps["price"], url: string): Offer | undefined => {
-  if (!price) return undefined
+const getSeoPrice = (
+  price: ProductProps["price"],
+  url: string
+): Offers | undefined => {
+  if (!price) return undefined;
 
-  var date = new Date()
-  date.setFullYear(date.getFullYear() - 1)
-  const priceValidUntil = date.toISOString().slice(0, 10)
+  var date = new Date();
+  date.setFullYear(date.getFullYear() - 1);
+  const priceValidUntil = date.toISOString().slice(0, 10);
 
   return {
     url,
     priceValidUntil,
-    "@type": "Offer",
-    "priceCurrency": "EUR",
-    "availability": "https://schema.org/InStock",
-    "itemCondition": "https://schema.org/NewCondition",
-    "price": typeof price === "number" ? price : price[0].price,
-  }
-}
+    priceCurrency: "EUR",
+    availability: "https://schema.org/InStock",
+    itemCondition: "https://schema.org/NewCondition",
+    seller: { name: "Pessastudio" },
+    price: String(typeof price === "number" ? price : price[0].price),
+  };
+};
 
-const Product: React.FC<ProductProps> = ({ className, images, vertical, price, name, description, ...attributes }) => {
-  const md = (vertical ? 12 : 12 / (images.length + 1)) as GridSize
-  const data = getData(attributes)
-  const { pathname } = useLocation()
-  const id = snakeCase(name)
-  const siteUrl = useStaticQuery(seoQuery).site.siteMetadata.siteUrl
-  const itemUrl = `${siteUrl}${pathname}#${id}`
+const Product: React.FC<ProductProps> = ({
+  description,
+  className,
+  pictures,
+  vertical,
+  price,
+  name,
+  id,
+  ...attributes
+}) => {
+  const md = (vertical ? 12 : 12 / (pictures.length + 1)) as GridSize;
+  const data = getData(attributes);
+  const { pathname } = useRouter();
 
-  const jsonLd: WithContext<ProductModel> = {
-    "@context": "https://schema.org",
-    "@type": "ProductModel",
-    "name": name,
-    "image": images.map(({ src }) => siteUrl + src),
-    "brand": {
-      "@type": "Brand",
-      "name": SEDE_OPERATIVA.name as string,
-    },
-  }
+  const itemUrl = `${WEBSITE}${pathname}#${id}`;
 
-  const offers = getSeoPrice(price, itemUrl)
-  if (offers) {
-    jsonLd.offers = offers
-  }
+  const offers = getSeoPrice(price, itemUrl);
+
+  const images = pictures.map(
+    (image): Picture => ({
+      caption: name,
+      image,
+    })
+  );
 
   return (
     <Box id={id} className={className}>
-      <Helmet script={[helmetJsonLdProp<ProductSchema>(jsonLd)]} />
+      <ProductJsonLd
+        productName={name}
+        images={pictures.map(({ src }) => WEBSITE + src)}
+        brand={SEDE_OPERATIVA.name}
+        offers={offers ? offers : undefined}
+      />
+
       <Grid container spacing={PRODUCT_GUTTER}>
         <ProductImages {...{ images, md, name }} />
 
         <DataStyled item xs={12} md={md}>
-          <TH variant="h6" sans sx={{ textTransform: "uppercase" }}>
+          <Th variant="h6" sans sx={{ textTransform: "uppercase" }}>
             {name}
-          </TH>
+          </Th>
 
           {description && (
             <Typography paragraph component="div">
@@ -149,15 +163,15 @@ const Product: React.FC<ProductProps> = ({ className, images, vertical, price, n
             </Typography>
           )}
 
-          {data.map(item => (
-            <Data {...item} key={`${id}_${item.id}`} />
+          {data.map(({ key, ...item }) => (
+            <Data {...item} key={key} />
           ))}
 
           <ProductPrice price={price} />
         </DataStyled>
       </Grid>
     </Box>
-  )
-}
+  );
+};
 
-export default Product
+export default Product;

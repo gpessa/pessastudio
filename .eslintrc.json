@@ -1,13 +1,8 @@
 {
-  "import/no-unresolved": 2,
-  "import/resolver": {
-    "node": {
-      "moduleDirectory": [
-        "node_modules",
-        "src"
-      ]
-    }
-  },
-  "react/jsx-max-props-per-line": [2, {"maximum": 1, "when": "always" }] 
-  
+  "extends": [
+    "next/core-web-vitals"
+  ],
+  "rules": { 
+    "react/no-unescaped-entities": 0
+  }
 }

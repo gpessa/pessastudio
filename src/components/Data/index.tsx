@@ -1,18 +1,18 @@
-import { Stack, Typography } from "@mui/material"
-import React from "react"
+import { Stack, Typography } from "@mui/material";
+import React from "react";
 
 type Props = {
-  label: JSX.Element
-  value: number | string | string[] | JSX.Element | JSX.Element[]
-}
+  label: JSX.Element;
+  value: number | string | string[] | JSX.Element | JSX.Element[];
+};
 
 const Data: React.FC<Props> = ({ value, label, ...props }) => (
   <Stack direction="row" alignItems="center" mb={0.5} {...props}>
     <Typography sx={{ mr: 1 }} gutterBottom={false} variant="caption">
       {label}:
     </Typography>
-    <span>{value}</span>
+    {value}
   </Stack>
-)
+);
 
-export default Data
+export default Data;
