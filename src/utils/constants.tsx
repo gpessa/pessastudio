@@ -6,11 +6,11 @@ import { PRODUCT_GUTTER } from "theme";
 export const NAME = <strong>Pessastudio</strong>;
 
 export const SOCIALS = {
+  instagram: "https://www.instagram.com/pessastudiohorsetecnology/",
+  youtube: "https://www.youtube.com/channel/UC_eIQlt5-iLt2KEVTK5DOPg",
   facebook_1: "https://www.facebook.com/PessastudioHorseTecnology",
   facebook_2:
     "https://www.facebook.com/Pessastudio-HORSE-Tecnology-1050570271816027",
-  instagram: "https://www.instagram.com/pessastudiohorsetecnology/",
-  youtube: "https://www.youtube.com/channel/UC_eIQlt5-iLt2KEVTK5DOPg",
 };
 
 export const MATERIALS = {
