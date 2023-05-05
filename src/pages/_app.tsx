@@ -10,9 +10,10 @@ import theme from "../theme";
 
 import Breadcrumb from "components/Breadcrumb";
 import { useLinguiInit } from "hooks/useLingui";
-import { GoogleAnalytics } from "nextjs-google-analytics";
 import "pure-react-carousel/dist/react-carousel.es.css";
+import TagManager from "react-gtm-module";
 import packageJson from "../../package.json";
+import { useEffect } from "react";
 
 export type MyAppProps = AppProps<{ messages: any }> & {
   emotionCache: EmotionCache;
@@ -23,15 +24,17 @@ const clientSideEmotionCache = createEmotionCache();
 
 const MyApp = (props: MyAppProps) => {
   const { Component, emotionCache = clientSideEmotionCache, pageProps } = props;
-  const isProduction = process.env.NODE_EN === "production";
 
   useLinguiInit(pageProps.messages);
+
+  useEffect(() => {
+    TagManager.initialize({ gtmId: "GTM-NTCR82T" });
+  }, []);
 
   return (
     <I18nProvider i18n={i18n}>
       <CacheProvider value={emotionCache}>
         <Seo />
-        <GoogleAnalytics trackPageViews />
         <ThemeProvider theme={theme}>
           <CssBaseline />
           <Header />
