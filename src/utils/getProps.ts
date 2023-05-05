@@ -21,20 +21,15 @@ export const getServerSidePropsWithProdcuts = <T extends ProductId>(
   };
 
   const getProducts = <T extends string>(
-    array: {
-      id: T;
-      price: Number;
-    }[]
+    array: ProductRemoteData[]
   ): {
     [key in T]: ProductRemoteData;
   } =>
     array.reduce(
-      (total, item) => {
-        return {
-          ...total,
-          [item.id]: item,
-        };
-      },
+      (total, item) => ({
+        ...total,
+        [item.id]: item,
+      }),
       {} as {
         [key in T]: ProductRemoteData;
       }
