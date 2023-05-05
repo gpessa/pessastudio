@@ -4,6 +4,5 @@
   ],
   "rules": { 
     "react/no-unescaped-entities": 0
-  },
-  "ignorePatterns": ["gql.ts"]
+  }
 }
