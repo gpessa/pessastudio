@@ -138,6 +138,7 @@ const CompareMD: React.FC<Omit<Props, "title">> = ({
               <Button
                 color="primary"
                 href={`mailto:annapessa@pessastudio.eu?subject=Info Giostra`}
+                id="ask-quote"
               >
                 <Trans>Richiedi un preventivo</Trans>
               </Button>
