@@ -20,7 +20,7 @@ export type AccessoriProps = {
 };
 
 const Accessori: React.FC<AccessoriProps> = ({ accessories }) => (
-  <Section id>
+  <Section>
     <Box textAlign="center" mb={4}>
       <Th variant="h2">
         <Trans>Accessori</Trans>
