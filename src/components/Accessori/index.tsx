@@ -8,6 +8,7 @@ import AccessoriImage from "./AccessoriImage";
 
 export type AccessoriProps = {
   accessories: {
+    id?: string;
     name: JSX.Element;
     description: JSX.Element;
     pictures: (Picture & {
@@ -19,7 +20,7 @@ export type AccessoriProps = {
 };
 
 const Accessori: React.FC<AccessoriProps> = ({ accessories }) => (
-  <Section>
+  <Section id>
     <Box textAlign="center" mb={4}>
       <Th variant="h2">
         <Trans>Accessori</Trans>
@@ -27,8 +28,8 @@ const Accessori: React.FC<AccessoriProps> = ({ accessories }) => (
     </Box>
 
     <Stack spacing={{ xs: PRODUCT_GUTTER, md: 0 }}>
-      {accessories.map(({ name, description, pictures }, index) => (
-        <Box component="section" key={index}>
+      {accessories.map(({ name, description, pictures, id }, index) => (
+        <Box component="section" key={index} id={id}>
           <Grid
             container
             alignItems="center"

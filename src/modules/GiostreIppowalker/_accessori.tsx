@@ -18,6 +18,7 @@ const IppowalkerAccessori = () => {
   const ACCESSORI: AccessoriProps = {
     accessories: [
       {
+        id: "chiusura_a_terra",
         name: <Trans>Chiusura a terra</Trans>,
         description: GIOSTRA_TONDINO_CHIUSURA_A_TERRA_DESCRIZIONE,
         pictures: [
@@ -36,6 +37,7 @@ const IppowalkerAccessori = () => {
         ],
       },
       {
+        id: "alveolo_sulla_pesta",
         name: <Trans>Alveolo sulla pesta</Trans>,
         description: GIOSTRA_ALVEOLO_DESCRIZIONE,
         pictures: [
@@ -50,6 +52,7 @@ const IppowalkerAccessori = () => {
         ],
       },
       {
+        id: "rete_antivento",
         name: <Trans>Rete antivento</Trans>,
         description: GIOSTRA_RETE_ANTIVENTO_DESCRIZIONE,
         pictures: [
