@@ -24,11 +24,12 @@ export async function loadCatalog(locale: string) {
 
 export async function getServerSideProps(context: GetServerSidePropsContext) {
   // const messages = await loadCatalog(context.locale!);
+  const session = await getServerSession(context.req, context.res, authOptions);
 
   return {
     props: {
       // messages,
-      session: await getServerSession(context.req, context.res, authOptions),
+      session,
     },
   };
 }
