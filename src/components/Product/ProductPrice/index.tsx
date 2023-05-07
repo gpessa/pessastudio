@@ -1,6 +1,7 @@
 import { Trans } from "@lingui/macro";
 import { useLingui } from "@lingui/react";
 import { Badge, styled, Typography } from "@mui/material";
+import { ProductData } from "..";
 import React from "react";
 
 const PriceStyled = styled(Typography)(({ theme }) => ({
@@ -9,7 +10,7 @@ const PriceStyled = styled(Typography)(({ theme }) => ({
 }));
 
 export type PriceProps = {
-  price: undefined | number;
+  price: ProductData["price"];
 };
 
 const ProductPrice: React.FC<PriceProps> = ({ price }) => {

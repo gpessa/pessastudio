@@ -1,6 +1,8 @@
+import { ProductData, ProductId } from "gql/graphql";
 import { GetStaticPropsContext } from "next";
 
-import type { GetServerSidePropsContext } from "next";
+import { gql } from "@apollo/client";
+import client from "./apollo";
 
 export const getStaticProps = async (context: GetStaticPropsContext) => {
   const messages = await loadCatalog(context);
@@ -19,12 +21,59 @@ export async function loadCatalog({ locale }: GetStaticPropsContext) {
   return (await import(`/src/i18n/${locale}/messages.po`)).messages;
 }
 
-export async function getServerSideProps(context: GetServerSidePropsContext) {
-  const messages = await loadCatalog(context);
-
-  return {
-    props: {
-      messages,
-    },
+export const getServerSidePropsWithProducts = <T extends ProductId>(
+  productIds: T[]
+) => {
+  type QueryResponse = {
+    products: (ProductData & {
+      id: T;
+    })[];
   };
-}
+
+  const getProducts = <T extends string>(
+    array: ProductData[]
+  ): {
+    [key in T]: ProductData;
+  } =>
+    array.reduce(
+      (total, item) => ({
+        ...total,
+        [item.id]: item,
+      }),
+      {} as {
+        [key in T]: ProductData;
+      }
+    );
+
+  return async (context: GetStaticPropsContext) => {
+    const messages = await loadCatalog(context);
+    const { data } = await client.query<QueryResponse>({
+      query: gql`
+        query GetPageProducts($productIds: [ProductId]) {
+          products(productIds: $productIds) {
+            depth
+            diameter
+            height
+            id
+            length
+            price
+            weight
+            width
+          }
+        }
+      `,
+      variables: {
+        productIds,
+      },
+    });
+
+    const products = getProducts(data.products);
+
+    return {
+      props: {
+        products,
+        messages,
+      },
+    };
+  };
+};

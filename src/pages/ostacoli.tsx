@@ -1,1 +1,1 @@
-export { default, getStaticProps } from "modules/Ostacoli";
+export { default, getServerSideProps } from "modules/Ostacoli";

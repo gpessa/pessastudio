@@ -1,3 +1,6 @@
+-- CreateEnum
+CREATE TYPE "ProductId" AS ENUM ('RECINZIONE_1_FILAGNA', 'RECINZIONE_2_FILAGNE', 'RECINZIONE_3_FILAGNE', 'RECINZIONE_4_FILAGNE', 'DRESSAGE_OLYMPIC_LETTERA', 'DRESSAGE_OLYMPIC_MODULO', 'DRESSAGE_OLYMPIC_RETTANGOLO_20X40', 'DRESSAGE_OLYMPIC_RETTANGOLO_20X60', 'DRESSAGE_TRAINING_LETTERA', 'DRESSAGE_TRAINING_MODULO', 'DRESSAGE_TRAINING_RETTANGOLO_20X40', 'DRESSAGE_TRAINING_RETTANGOLO_20X60');
+
 -- CreateTable
 CREATE TABLE "Account" (
     "id" TEXT NOT NULL,
@@ -44,6 +47,17 @@ CREATE TABLE "VerificationToken" (
     "expires" TIMESTAMP(3) NOT NULL
 );
 
+-- CreateTable
+CREATE TABLE "Product" (
+    "id" "ProductId" NOT NULL,
+    "price" DOUBLE PRECISION,
+    "width" DOUBLE PRECISION,
+    "height" DOUBLE PRECISION,
+    "length" DOUBLE PRECISION,
+
+    CONSTRAINT "Product_pkey" PRIMARY KEY ("id")
+);
+
 -- CreateIndex
 CREATE UNIQUE INDEX "Account_provider_providerAccountId_key" ON "Account"("provider", "providerAccountId");
 
@@ -58,6 +72,9 @@ CREATE UNIQUE INDEX "VerificationToken_token_key" ON "VerificationToken"("token"
 
 -- CreateIndex
 CREATE UNIQUE INDEX "VerificationToken_identifier_token_key" ON "VerificationToken"("identifier", "token");
+
+-- CreateIndex
+CREATE UNIQUE INDEX "Product_id_key" ON "Product"("id");
 
 -- AddForeignKey
 ALTER TABLE "Account" ADD CONSTRAINT "Account_userId_fkey" FOREIGN KEY ("userId") REFERENCES "User"("id") ON DELETE CASCADE ON UPDATE CASCADE;

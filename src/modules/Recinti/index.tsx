@@ -8,6 +8,7 @@ import Accessori from "./_accessori";
 import Gamma from "./_gamma";
 
 import { useLingui } from "@lingui/react";
+import { ProductId } from "@prisma/client";
 import productsRecintiGalleryRecintiImage2 from "assets/products/recinti/gallery/recinti-image-2.jpg";
 import productsRecintiGalleryRecintiImage4 from "assets/products/recinti/gallery/recinti-image-4.jpg";
 import productsRecintiGalleryRecintiImage5 from "assets/products/recinti/gallery/recinti-image-5.jpg";
@@ -24,13 +25,24 @@ import productsRecintiSvg4 from "assets/products/recinti/svg-4.svg";
 import { ProductData } from "components/Product";
 import { Colors } from "theme";
 import { Material } from "utils/constants";
-import { ProductId } from "utils/products";
-export { getStaticProps } from "utils/getProps";
+import { getServerSidePropsWithProducts } from "utils/getProps";
 
-const Recinti: React.FC = () => {
+export const getServerSideProps = getServerSidePropsWithProducts([
+  ProductId.RECINZIONE_1_FILAGNA,
+  ProductId.RECINZIONE_2_FILAGNE,
+  ProductId.RECINZIONE_3_FILAGNE,
+  ProductId.RECINZIONE_4_FILAGNE,
+  ProductId.RECINZIONE_PIEDE_MOBILE,
+]);
+
+type DressageProps = Awaited<ReturnType<typeof getServerSideProps>>["props"];
+
+const Recinti: React.FC<DressageProps> = ({ products }) => {
   useLingui(); // Fix on locale change
   const { PAGES } = usePages();
   const { locale } = useRouter();
+
+  console.log(products);
 
   const IMAGES: Picture[] = [
     {
@@ -74,56 +86,50 @@ const Recinti: React.FC = () => {
 
   const PRODUCTS: ProductData[] = [
     {
-      height: 1250,
-      name: t`Recinzione cavalli a ${1} filagna`,
-      id: ProductId.RECINZIONE_1_FILAGNA,
-      pictures: [productsRecintiSvg1],
+      ...products.RECINZIONE_1_FILAGNA,
       colors: [Colors.WHITE],
       materials: [Material.POLIPROPILENE],
       description: t`La recinzione ad una filagna viene utilizzata per delimitare campi da lavoro o gara poco adoperati e non è adatta per l'addestramento. Potete utilizzarla anche per delimitare un'area del vostro giardino di casa`,
+      name: t`Recinzione cavalli a ${1} filagna`,
+      pictures: [productsRecintiSvg1],
     },
     {
-      height: 1400,
-      name: t`Recinzione cavalli a ${2} filagne`,
-      id: ProductId.RECINZIONE_2_FILAGNE,
-      pictures: [productsRecintiSvg2],
+      ...products.RECINZIONE_2_FILAGNE,
       colors: [Colors.WHITE],
       materials: [Material.POLIPROPILENE],
       description: t`La recinzione a due filagne genericamente viene utilizzata per delimitare campi da lavoro o per realizzare paddock dove i cavalli sono comunque osservati dal personale presente`,
+      name: t`Recinzione cavalli a ${2} filagne`,
+      pictures: [productsRecintiSvg2],
     },
     {
-      height: 1650,
-      name: t`Recinzione cavalli a ${3} filagne`,
-      id: ProductId.RECINZIONE_3_FILAGNE,
-      pictures: [productsRecintiSvg3],
+      ...products.RECINZIONE_3_FILAGNE,
       colors: [Colors.WHITE],
       materials: [Material.POLIPROPILENE],
       description: t`La recinzione a tre filagne viene utilizzata per delimitare paddok per animali che rimangono per molte ore al giorno incustoditi oppure per delimitare confini di proprietà o aree. Per garantirne una maggiore sicurezza è possibile installare un impianto d'elettrificazione sulle filagne`,
+      name: t`Recinzione cavalli a ${3} filagne`,
+      pictures: [productsRecintiSvg3],
     },
     {
-      height: 1950,
-      name: t`Recinzione cavalli a ${4} filagne`,
-      id: ProductId.RECINZIONE_4_FILAGNE,
-      pictures: [productsRecintiSvg4],
+      ...products.RECINZIONE_4_FILAGNE,
       colors: [Colors.WHITE],
       materials: [Material.POLIPROPILENE],
       description: t`Le recinzioni a quattro filagne sono utilizzate per delimitare paddock per stalloni, realizzare tondini per la doma e l'addestramento o per formare ovali per il salto in libertà`,
+      name: t`Recinzione cavalli a ${4} filagne`,
+      pictures: [productsRecintiSvg4],
     },
   ];
 
   const ACCESSORI: ProductData[] = [
     {
+      ...products.RECINZIONE_PIEDE_MOBILE,
       colors: [Colors.WHITE, Colors.GREEN],
       description: t`Diamo la possibilità di montare nella vostra recinzione un piede mobile che vi consentirà di posizionarla e spostarla a seconda delle vostre esigenze`,
       name: t`Piede mobile`,
-      height: 300,
-      id: ProductId.RECINZIONE_PIEDE_MOBILE,
       pictures: [
         productsRecintiPiedeMobile2,
         productsRecintiPiedeMobile3,
         productsRecintiPiedeMobile4,
       ],
-      price: 35,
     },
   ];
 

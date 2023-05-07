@@ -16,6 +16,8 @@ import "pure-react-carousel/dist/react-carousel.es.css";
 import { useEffect } from "react";
 import TagManager from "react-gtm-module";
 import packageJson from "../../package.json";
+import client from "utils/apollo";
+import { ApolloProvider } from "@apollo/client";
 
 export type MyAppProps = AppProps<{ messages: any }> & {
   emotionCache: EmotionCache;
@@ -40,21 +42,23 @@ const MyApp = (props: MyAppProps) => {
   useLinguiInit(pageProps.messages);
 
   return (
-    <SessionProvider session={session}>
-      <I18nProvider i18n={i18n}>
-        <CacheProvider value={emotionCache}>
-          <Seo />
-          <ThemeProvider theme={theme}>
-            <CssBaseline />
-            <Header />
-            <Breadcrumb />
-            <Component {...pageProps} />
-            <Footer version={packageJson.version} />
-            <Gdpr />
-          </ThemeProvider>
-        </CacheProvider>
-      </I18nProvider>
-    </SessionProvider>
+    <ApolloProvider client={client}>
+      <SessionProvider session={session}>
+        <I18nProvider i18n={i18n}>
+          <CacheProvider value={emotionCache}>
+            <Seo />
+            <ThemeProvider theme={theme}>
+              <CssBaseline />
+              <Header />
+              <Breadcrumb />
+              <Component {...pageProps} />
+              <Footer version={packageJson.version} />
+              <Gdpr />
+            </ThemeProvider>
+          </CacheProvider>
+        </I18nProvider>
+      </SessionProvider>
+    </ApolloProvider>
   );
 };
 

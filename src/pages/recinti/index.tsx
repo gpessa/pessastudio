@@ -1,1 +1,1 @@
-export { default, getStaticProps } from "modules/Recinti";
+export { default, getServerSideProps } from "modules/Recinti";
