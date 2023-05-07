@@ -1,5 +1,5 @@
 import { Trans } from "@lingui/macro";
-import { RemoveRedEyeOutlined } from "@mui/icons-material";
+import RemoveRedEyeRounded from "@mui/icons-material/RemoveRedEyeRounded";
 import { IconButton, Typography } from "@mui/material";
 import { PRODUCT_GUTTER } from "theme";
 
@@ -145,13 +145,13 @@ export const GIOSTRE_EXTRA_SMALL = (
     <li>
       <Trans>Chiusura a terra</Trans>
       <IconButton href="#chiusura_a_terra" size="small" color="primary">
-        <RemoveRedEyeOutlined />
+        <RemoveRedEyeRounded />
       </IconButton>
     </li>
     <li>
       <Trans>Alveolo sulla pesta</Trans>
       <IconButton href="#alveolo_sulla_pesta" size="small" color="primary">
-        <RemoveRedEyeOutlined />
+        <RemoveRedEyeRounded />
       </IconButton>
     </li>
   </ul>
@@ -162,19 +162,19 @@ export const GIOSTRE_EXTRA_BIG = (
     <li>
       <Trans>Chiusura a terra</Trans>
       <IconButton href="#chiusura_a_terra" size="small" color="primary">
-        <RemoveRedEyeOutlined />
+        <RemoveRedEyeRounded />
       </IconButton>
     </li>
     <li>
       <Trans>Alveolo sulla pesta</Trans>
       <IconButton href="#alveolo_sulla_pesta" size="small" color="primary">
-        <RemoveRedEyeOutlined />
+        <RemoveRedEyeRounded />
       </IconButton>
     </li>
     <li>
       <Trans>Rete antivento</Trans>
       <IconButton href="#rete_antivento" size="small" color="primary">
-        <RemoveRedEyeOutlined />
+        <RemoveRedEyeRounded />
       </IconButton>
     </li>
   </ul>
