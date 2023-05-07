@@ -28,7 +28,7 @@ export async function getServerSideProps(context: GetServerSidePropsContext) {
   return {
     props: {
       messages,
-      session: await getServerSession(context.req, context.res, authOptions),
+      // session: await getServerSession(context.req, context.res, authOptions),
     },
   };
 }

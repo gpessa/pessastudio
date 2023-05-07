@@ -2,7 +2,7 @@ import { Avatar, Button, Grid, Link } from "@mui/material";
 import { Section, Title } from "components";
 // import { signIn, signOut, useSession } from "next-auth/react";
 
-// export { getServerSideProps, getStaticProps } from "utils/getProps";
+export { getServerSideProps, getStaticProps } from "utils/getProps";
 
 const Admin = () => {
   return <>dts</>;
