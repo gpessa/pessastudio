@@ -23,11 +23,11 @@ export async function loadCatalog(locale: string) {
 }
 
 export async function getServerSideProps(context: GetServerSidePropsContext) {
-  const messages = await loadCatalog(context.locale!);
+  // const messages = await loadCatalog(context.locale!);
 
   return {
     props: {
-      messages,
+      // messages,
       // session: await getServerSession(context.req, context.res, authOptions),
     },
   };
