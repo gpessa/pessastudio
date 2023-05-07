@@ -22,12 +22,12 @@ export async function loadCatalog(locale: string) {
   return (await import(`../i18n/${locale}/messages.po`)).messages;
 }
 
-export function getServerSideProps(context: GetServerSidePropsContext) {
-  // const messages = await loadCatalog(context.locale!);
+export async function getServerSideProps(context: GetServerSidePropsContext) {
+  const messages = await loadCatalog(context.locale!);
 
   return {
     props: {
-      // messages,
+      messages,
       // session: await getServerSession(context.req, context.res, authOptions),
     },
   };
