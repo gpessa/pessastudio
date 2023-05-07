@@ -111,6 +111,11 @@ const usePages = () => {
     title: t`Istruzioni di montaggio`,
   };
 
+  const ADMIN: Page = {
+    url: "/admin",
+    title: t`Admin`,
+  };
+
   const PRODUCTS = { OSTACOLI, RECINTI, TONDINI, GIOSTRE, DRESSAGE };
 
   const NAVIGATION = { ...PRODUCTS, CONTATTI };
@@ -118,6 +123,7 @@ const usePages = () => {
   const PAGES = {
     ...PRODUCTS,
     ...NAVIGATION,
+    ADMIN,
     PAGE_404,
     PAGE_500,
     COOKIE_POLICY,
