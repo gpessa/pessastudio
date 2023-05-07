@@ -22,7 +22,7 @@ export async function loadCatalog(locale: string) {
   return (await import(`../i18n/${locale}/messages.po`)).messages;
 }
 
-export async function getServerSideProps(context: GetServerSidePropsContext) {
+export function getServerSideProps(context: GetServerSidePropsContext) {
   // const messages = await loadCatalog(context.locale!);
 
   return {

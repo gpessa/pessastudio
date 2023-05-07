@@ -2,7 +2,7 @@
 // import { Section, Title } from "components";
 // import { signIn, signOut, useSession } from "next-auth/react";
 
-// export { getServerSideProps } from "utils/getProps";
+export { getServerSideProps } from "utils/getProps";
 
 const Admin = () => {
   return <div>test</div>;

@@ -1,1 +1,1 @@
-export { default } from "modules/Admin";
+export { default, getServerSideProps } from "modules/Admin";
