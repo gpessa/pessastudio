@@ -22,8 +22,8 @@ const Dressage: React.FC = () => {
   const { PAGES } = usePages();
   useLingui(); // Fix on locale change
 
-  const SIZE_20x40 = { size: "20x40", modules: 60, letters: 80 };
-  const SIZE_20x60 = { size: "20x40", modules: 60, letters: 80 };
+  const SIZE_20x40 = { size: "20x40", modules: 60, letters: 8 };
+  const SIZE_20x60 = { size: "20x60", modules: 80, letters: 12 };
 
   const MODELS = {
     TRAINING: "Training",
@@ -64,7 +64,7 @@ const Dressage: React.FC = () => {
       materials: [MATERIALS.POLIETILENE],
       name: t`Lettera dressage ${MODELS.TRAINING}`,
       pictures: [productsDressageTrainingLettera],
-      price: 20,
+      price: 25.5,
       weight: 0.5,
       width: 200,
     },
@@ -78,18 +78,18 @@ const Dressage: React.FC = () => {
       width: 2000,
     },
     {
-      description: DESCRIPTION_20x60,
-      id: ProductId.DressageTrainingRettangolo_20X60,
-      name: t`Rettangolo dressage ${SIZE_20x60.size} (${MODELS.TRAINING})`,
-      pictures: [productsDressageRettangoloDressage20x60],
-      price: 1800,
-    },
-    {
       description: DESCRIPTION_20x40,
       id: ProductId.DressageTrainingRettangolo_20X40,
       name: t`Rettangolo dressage ${SIZE_20x40.size} (${MODELS.TRAINING})`,
       pictures: [productsDressageRettangoloDressage20x40],
       price: 1400,
+    },
+    {
+      description: DESCRIPTION_20x60,
+      id: ProductId.DressageTrainingRettangolo_20X60,
+      name: t`Rettangolo dressage ${SIZE_20x60.size} (${MODELS.TRAINING})`,
+      pictures: [productsDressageRettangoloDressage20x60],
+      price: 1800,
     },
   ];
 
@@ -100,7 +100,7 @@ const Dressage: React.FC = () => {
       id: ProductId.DressageOlympicLettera,
       name: t`Lettera dressage ${MODELS.OLYMPIC}`,
       pictures: [productsDressageOlympicLettera],
-      price: 51,
+      price: 62,
       weight: 2.5,
       width: 390,
     },
@@ -114,18 +114,18 @@ const Dressage: React.FC = () => {
       width: 2000,
     },
     {
-      description: DESCRIPTION_20x60,
-      id: ProductId.DressageOlympicRettangolo_20X60,
-      name: t`Rettangolo dressage ${SIZE_20x60.size} (${MODELS.OLYMPIC})`,
-      pictures: [productsDressageRettangoloDressage20x60],
-      price: 1800,
-    },
-    {
       description: DESCRIPTION_20x40,
       id: ProductId.DressageOlympicRettangolo_20X40,
       name: t`Rettangolo dressage ${SIZE_20x40.size} (${MODELS.OLYMPIC})`,
       pictures: [productsDressageRettangoloDressage20x40],
-      price: 5900,
+      price: 5940,
+    },
+    {
+      description: DESCRIPTION_20x60,
+      id: ProductId.DressageOlympicRettangolo_20X60,
+      name: t`Rettangolo dressage ${SIZE_20x60.size} (${MODELS.OLYMPIC})`,
+      pictures: [productsDressageRettangoloDressage20x60],
+      price: 7920,
     },
   ];
 
