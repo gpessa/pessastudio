@@ -44,7 +44,7 @@ const HeaderDesktop = styled(Box)(({ theme }) => ({
 const HeaderDesktopButtom = styled(Button)(({ theme, href }) => {
   const { pathname } = useRouter();
   const selected =
-    pathname.startsWith(href!.substring(3)) || pathname.startsWith(href);
+    pathname.startsWith(href!.substring(3)) || pathname.startsWith(href!);
 
   return {
     fontFamily: theme.typography.slim.fontFamily,
