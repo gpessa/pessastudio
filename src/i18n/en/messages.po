@@ -115,7 +115,8 @@ msgstr ""
 msgid "<0>Tecnoexerciser è il modello di giostra attualmente più richiesto.</0><1>Oggi, grazie alle già note caratteristiche tecniche e alla grande affidabilità, abbiamo aggiunto alcune specifiche funzioni che fanno, di questo modello, la macchina <2>leader</2> del settore.</1><3>È possibile infatti:</3><4><5>Scegliere la forza che la porta mobile esercita sugli animali per invitarli ad avanzare</5><6>Mantenere un controllo costante sull'elettrificazione delle porte mobili</6><7>Beneficiare dell'innovativo sistema \"training program\" che vi consentirà di allenare i vostri cavalli fino ad ottenere performance atletiche.</7><8>Scegliere il programma di irrigazione pesta mentre la giostra sta girando</8></4><9>La struttura è fornita, a seconda delle esigenze, o con punte per l'ancoraggio al suolo o con tasselli nel caso in cui si desideri ancorarla ad un fondo di calcestruzzo.</9>"
 msgstr "<0>The Tecnoexerciser is currently our most popular walker.</0> <1>With its well-known technical characteristics and great reliability, we have now added some specific functions that make this model the <2>leading</2> machine in the sector.</1> <3>In fact, you can:</3> <4><5>Choose the force that the moving door exerts on the animals to invite them to move forward.</5> <6>Constantly control the electrification of the moving doors.</6> <7>Benefit from the innovative ‘training programme’, which allows you to train your horses for athletic performance.</7> <8>Choose the track irrigation programme while the walker is turning.</8></4> <9>Depending on your needs, the structure can be supplied either with spikes to attach the device to the ground or with anchors for installation on a concrete base.</9>"
 
-#: src/modules/Dressage/index.tsx:34 src/modules/Dressage/index.tsx:47
+#: src/modules/Dressage/index.tsx:34
+#: src/modules/Dressage/index.tsx:47
 msgid "<0>Un set per creare un circuito dressage standard da {0} mt.</0><1>Il set contiene:</1><2><3>{1} moduli</3><4>{2} lettere</4></2>"
 msgstr "<0>The set contains all the required modules to build a {0} mt. short court.</0><1>The package include:</1><2><3>{1} modules</3><4>{2} dressage arena letters</4></2>"
 
@@ -131,7 +132,8 @@ msgstr "Affordable prices"
 msgid "Accesso ai dati e Servizio Clienti"
 msgstr "Access to Data and Customer Care"
 
-#: src/components/Accessori/index.tsx:26 src/modules/Recinti/_accessori.tsx:41
+#: src/components/Accessori/index.tsx:26
+#: src/modules/Recinti/_accessori.tsx:41
 msgid "Accessori"
 msgstr "Add ons"
 
@@ -161,7 +163,8 @@ msgstr "Other"
 
 #: src/modules/GiostreIppowalker/_accessori.tsx:41
 #: src/modules/GiostreTecnoexerciser/_accessori.tsx:41
-#: src/utils/constants.tsx:152 src/utils/constants.tsx:169
+#: src/utils/constants.tsx:152
+#: src/utils/constants.tsx:169
 msgid "Alveolo sulla pesta"
 msgstr "Ground grid soil stabilization system"
 
@@ -239,7 +242,8 @@ msgstr "What is a cookie?"
 
 #: src/modules/GiostreIppowalker/_accessori.tsx:22
 #: src/modules/GiostreTecnoexerciser/_accessori.tsx:22
-#: src/modules/Tondini/index.tsx:114 src/utils/constants.tsx:146
+#: src/modules/Tondini/index.tsx:114
+#: src/utils/constants.tsx:146
 #: src/utils/constants.tsx:163
 msgid "Chiusura a terra"
 msgstr "Closed at the ground"
@@ -260,7 +264,8 @@ msgstr ""
 msgid "Colori"
 msgstr "Colors"
 
-#: src/hooks/usePages/index.tsx:84 src/hooks/usePages/index.tsx:89
+#: src/hooks/usePages/index.tsx:84
+#: src/hooks/usePages/index.tsx:89
 #: src/modules/ComePreparareIlFondo/index.tsx:9
 #: src/modules/Tondini/index.tsx:212
 msgid "Come preparare il fondo"
@@ -317,8 +322,10 @@ msgstr "Navigation cookies"
 msgid "Coordinate bancarie"
 msgstr "Bank account details"
 
-#: src/modules/Tondini/index.tsx:150 src/modules/Tondini/index.tsx:154
-#: src/modules/Tondini/index.tsx:158 src/utils/constants.tsx:268
+#: src/modules/Tondini/index.tsx:150
+#: src/modules/Tondini/index.tsx:154
+#: src/modules/Tondini/index.tsx:158
+#: src/utils/constants.tsx:268
 msgid "Copertura"
 msgstr "The roof"
 
@@ -382,7 +389,8 @@ msgstr "Cup {0}"
 msgid "Da anni Pessastudio è focalizzata nel produrre prodotti di qualità a costi accessibili"
 msgstr "For years, Pessastudio has focused on producing quality products at an affordable price"
 
-#: src/components/Product/index.tsx:57 src/utils/constants.tsx:269
+#: src/components/Product/index.tsx:57
+#: src/utils/constants.tsx:269
 msgid "Diametro"
 msgstr "Diameter"
 
@@ -442,7 +450,8 @@ msgstr "Email"
 msgid "Entrata"
 msgstr "Entrance"
 
-#: src/hooks/usePages/index.tsx:68 src/modules/500/index.tsx:8
+#: src/hooks/usePages/index.tsx:68
+#: src/modules/500/index.tsx:8
 msgid "Errore"
 msgstr "Error"
 
@@ -454,7 +463,8 @@ msgstr "Easy to use"
 msgid "Fin dal primo accesso questi cookie permettono al sito di funzionare correttamente e ti consentono di visualizzare i contenuti sul tuo dispositivo riconoscendo la lingua e il mercato del Paese dal quale scegli di connetterti. Se sei un utente registrato, permetteranno di riconoscerti e di accedere ai servizi delle aree dedicate. I cookie di navigazione sono cookie tecnici e sono necessari al funzionamento del sito."
 msgstr "From first access, these cookies allow the Website to function correctly and allow you to view content on your device by recognising the language and market of the country from which you’ve chosen to connect. If you are a registered user, they will allow you to be recognised and to access the services offered from the dedicated areas. Navigation cookies are technical cookies and are needed for the functioning of the Website."
 
-#: src/modules/Ostacoli/Fosso.tsx:17 src/modules/Ostacoli/Fosso.tsx:28
+#: src/modules/Ostacoli/Fosso.tsx:17
+#: src/modules/Ostacoli/Fosso.tsx:28
 msgid "Fosso"
 msgstr "Water tray"
 
@@ -541,7 +551,8 @@ msgstr "Horse exerciser"
 msgid "Giostra Ippowalker"
 msgstr "Ippowalker horse exerciser"
 
-#: src/modules/Giostre/index.tsx:118 src/modules/Giostre/index.tsx:134
+#: src/modules/Giostre/index.tsx:118
+#: src/modules/Giostre/index.tsx:134
 msgid "Giostra per cavalli Tecnoexerciser"
 msgstr "Tecnoexerciser horse exerciser"
 
@@ -646,12 +657,14 @@ msgstr "Technological innovation and quality are the key features of our product
 msgid "Interno giostra con alveolo"
 msgstr "A horse exerciser with ground grid soil stabilization system"
 
-#: src/modules/Tondini/index.tsx:138 src/modules/Tondini/index.tsx:142
+#: src/modules/Tondini/index.tsx:138
+#: src/modules/Tondini/index.tsx:142
 #: src/modules/Tondini/index.tsx:170
 msgid "Interno tondino coperto"
 msgstr "Internal pen"
 
-#: src/modules/Tondini/index.tsx:72 src/utils/constants.tsx:279
+#: src/modules/Tondini/index.tsx:72
+#: src/utils/constants.tsx:279
 msgid "Irrigazione"
 msgstr "Track irrigation"
 
@@ -671,7 +684,8 @@ msgstr "Sign up to our newsletter"
 msgid "Istituto"
 msgstr "Bank name"
 
-#: src/hooks/usePages/index.tsx:100 src/hooks/usePages/index.tsx:111
+#: src/hooks/usePages/index.tsx:100
+#: src/hooks/usePages/index.tsx:111
 #: src/modules/GiostreIppowalkerIstruzioniDiMontaggio/index.tsx:66
 #: src/modules/GiostreTecnoexerciserIstruzioniDiMontaggio/index.tsx:114
 #: src/modules/Recinti/index.tsx:58
@@ -765,7 +779,8 @@ msgstr "You will not need any building permit to install our horse walkers"
 msgid "Le recinzioni a quattro filagne sono utilizzate per delimitare paddock per stalloni, realizzare tondini per la doma e l'addestramento o per formare ovali per il salto in libertà"
 msgstr "Four-rail fencing is used to delimit paddocks for stallions, make round pens for taming and training, or create ovals for free jumping"
 
-#: src/modules/Dressage/index.tsx:65 src/modules/Dressage/index.tsx:101
+#: src/modules/Dressage/index.tsx:65
+#: src/modules/Dressage/index.tsx:101
 msgid "Lettera dressage ({0})"
 msgstr "Letter cone ({0})"
 
@@ -807,7 +822,8 @@ msgstr "Materials"
 msgid "Materiali di qualità"
 msgstr "Quality materials"
 
-#: src/modules/Dressage/index.tsx:75 src/modules/Dressage/index.tsx:111
+#: src/modules/Dressage/index.tsx:75
+#: src/modules/Dressage/index.tsx:111
 msgid "Modulo dressage ({0})"
 msgstr "Dressage module ({0})"
 
@@ -828,7 +844,8 @@ msgstr ""
 msgid "Motore"
 msgstr "Engine"
 
-#: src/modules/Giostre/index.tsx:93 src/modules/Tondini/index.tsx:243
+#: src/modules/Giostre/index.tsx:93
+#: src/modules/Tondini/index.tsx:243
 msgid "Nessuna concessione edilizia"
 msgstr "No building permit needed"
 
@@ -845,7 +862,8 @@ msgstr "Number cone {0}"
 msgid "Ostacoli"
 msgstr "Jumps"
 
-#: src/hooks/usePages/index.tsx:63 src/modules/404/index.tsx:8
+#: src/hooks/usePages/index.tsx:63
+#: src/modules/404/index.tsx:8
 msgid "Pagina non trovata"
 msgstr "Page not found"
 
@@ -943,7 +961,8 @@ msgstr "You may at any time receive assistance and explanations on how to provid
 msgid "PVC"
 msgstr "PVC"
 
-#: src/modules/Giostre/index.tsx:130 src/utils/constants.tsx:267
+#: src/modules/Giostre/index.tsx:130
+#: src/utils/constants.tsx:267
 msgid "Quadro di comando"
 msgstr "Control panel"
 
@@ -975,17 +994,22 @@ msgstr "Fence"
 msgid "Recinzione cavalli a {0} filagna"
 msgstr "1-rail horse fence"
 
-#: src/modules/Recinti/_gamma.tsx:58 src/modules/Recinti/_gamma.tsx:73
-#: src/modules/Recinti/_gamma.tsx:90 src/modules/Recinti/index.tsx:27
-#: src/modules/Recinti/index.tsx:31 src/modules/Recinti/index.tsx:35
-#: src/modules/Recinti/index.tsx:39 src/modules/Recinti/index.tsx:43
+#: src/modules/Recinti/_gamma.tsx:58
+#: src/modules/Recinti/_gamma.tsx:73
+#: src/modules/Recinti/_gamma.tsx:90
+#: src/modules/Recinti/index.tsx:27
+#: src/modules/Recinti/index.tsx:31
+#: src/modules/Recinti/index.tsx:35
+#: src/modules/Recinti/index.tsx:39
+#: src/modules/Recinti/index.tsx:43
 #: src/modules/Recinti/index.tsx:47
 msgid "Recinzione cavalli a {0} filagne"
 msgstr "{0}-rail horse fence"
 
 #: src/modules/GiostreIppowalker/_accessori.tsx:56
 #: src/modules/GiostreTecnoexerciser/_accessori.tsx:56
-#: src/modules/Tondini/index.tsx:52 src/utils/constants.tsx:175
+#: src/modules/Tondini/index.tsx:52
+#: src/utils/constants.tsx:175
 msgid "Rete antivento"
 msgstr "Windscreen"
 
@@ -997,12 +1021,15 @@ msgstr "Entrance windscreen"
 msgid "Rettangoli / Campi professionali da dressage per tutte le esigenze"
 msgstr "Portable and easy to assemble dressage arenas. Here to help you put the finishing touches on your home or professional arena with markers, horse jumps and more"
 
-#: src/modules/Dressage/index.tsx:83 src/modules/Dressage/index.tsx:90
-#: src/modules/Dressage/index.tsx:119 src/modules/Dressage/index.tsx:126
+#: src/modules/Dressage/index.tsx:83
+#: src/modules/Dressage/index.tsx:90
+#: src/modules/Dressage/index.tsx:119
+#: src/modules/Dressage/index.tsx:126
 msgid "Rettangolo dressage {0} ({1})"
 msgstr "Dressage arena package {0} ({1})"
 
-#: src/components/Compare/index.tsx:96 src/components/Compare/index.tsx:143
+#: src/components/Compare/index.tsx:96
+#: src/components/Compare/index.tsx:143
 msgid "Richiedi un preventivo"
 msgstr "Request a quote"
 
@@ -1026,7 +1053,8 @@ msgstr "International Dealers"
 msgid "Scarica"
 msgstr "Download"
 
-#: src/modules/Giostre/index.tsx:181 src/modules/Giostre/index.tsx:197
+#: src/modules/Giostre/index.tsx:181
+#: src/modules/Giostre/index.tsx:197
 msgid "Scopri di piú"
 msgstr "Discover more"
 
@@ -1108,7 +1136,8 @@ msgstr "The breakaway safety cups will literally break away from the safety adap
 
 #: src/modules/GiostreIppowalker/_servizio_clienti.tsx:43
 #: src/modules/GiostreTecnoexerciser/_servizio_clienti.tsx:81
-#: src/modules/Recinti/index.tsx:120 src/modules/Tondini/index.tsx:291
+#: src/modules/Recinti/index.tsx:120
+#: src/modules/Tondini/index.tsx:291
 msgid "Supporto clienti"
 msgstr "Customer service"
 
@@ -1145,11 +1174,13 @@ msgstr "Lunge & Paddock Pens"
 msgid "Tondini coperti per addestrare puledri in libertà"
 msgstr "Covered round pens for training free-roaming foals"
 
-#: src/modules/Tondini/index.tsx:166 src/modules/Tondini/index.tsx:174
+#: src/modules/Tondini/index.tsx:166
+#: src/modules/Tondini/index.tsx:174
 msgid "Tondino"
 msgstr "Lunge pen"
 
-#: src/modules/Tondini/index.tsx:130 src/modules/Tondini/index.tsx:134
+#: src/modules/Tondini/index.tsx:130
+#: src/modules/Tondini/index.tsx:134
 msgid "Tondino coperto {0} pannelli {1} mt."
 msgstr "Horse pen {0} panels, {1} mt."
 
