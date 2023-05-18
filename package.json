@@ -1,6 +1,6 @@
 {
   "name": "pessastudio",
-  "version": "3.0.29",
+  "version": "3.0.32",
   "private": true,
   "description": "Pessastudio",
   "author": "Gaetano Pessa",
@@ -9,14 +9,17 @@
     "@emotion/react": "^11.11.0",
     "@emotion/server": "^11.11.0",
     "@emotion/styled": "^11.11.0",
-    "@lingui/cli": "4.1.0",
-    "@lingui/core": "4.1.0",
-    "@lingui/loader": "^4.1.0",
-    "@lingui/macro": "^4.1.0",
-    "@lingui/react": "4.1.0",
+    "@lingui/cli": "4.1.2",
+    "@lingui/core": "4.1.2",
+    "@lingui/loader": "^4.1.2",
+    "@lingui/macro": "^4.1.2",
+    "@lingui/react": "4.1.2",
     "@mui/icons-material": "^5.11.16",
-    "@mui/material": "^5.13.0",
+    "@mui/material": "^5.13.1",
+    "@next-auth/prisma-adapter": "^1.0.6",
+    "@prisma/client": "^4.14.1",
     "@types/react-gtm-module": "^2.0.1",
+    "@vercel/postgres": "^0.3.0",
     "babel-plugin-macros": "^3.1.0",
     "eslint": "8.40.0",
     "eslint-config-next": "13.4.2",
@@ -37,21 +40,23 @@
   },
   "devDependencies": {
     "@lingui/swc-plugin": "^4.0.0",
-    "@types/node": "18.16.3",
+    "@types/node": "20.2.0",
     "@types/react": "18.2.0",
     "@types/react-dom": "18.2.1",
     "@types/react-mailchimp-subscribe": "^2.1.1",
-    "husky": "^8.0.3"
+    "husky": "^8.0.3",
+    "prisma": "^4.14.1"
   },
   "license": "MIT",
   "scripts": {
-    "extract": "NODE_ENV=development lingui extract --clean",
-    "compile": "lingui compile",
-    "dev": "next dev",
     "build": "next build",
-    "start": "next start",
+    "dev": "next dev",
+    "lingui:compile": "lingui compile",
+    "lingui:extract": "NODE_ENV=development lingui extract --clean",
     "lint": "next lint",
     "postbuild": "next-sitemap",
-    "prepare": "husky install"
+    "postinstall": "npm run prisma:generate",
+    "prepare": "husky install",
+    "start": "next start"
   }
 }

@@ -1,36 +1,33 @@
-import { Avatar, Button, Grid, Link } from "@mui/material";
-import { Section, Title } from "components";
-import { signIn, signOut, useSession } from "next-auth/react";
+import { Avatar, Grid, LinearProgress, Link } from "@mui/material";
+import { Section } from "components";
+import { signOut, useSession } from "next-auth/react";
 
 export { getServerSideProps } from "utils/getProps";
 
 const Admin = () => {
   const { data: session } = useSession();
 
-  return session?.user ? (
-    <>
-      <Section spacing="small">
-        <Grid container alignItems="center" gap={1}>
-          <Grid>
-            <Avatar
-              src={session?.user?.image!}
-              alt={(session.user.name || session.user.email)!}
-            />
-          </Grid>
-          <Grid>
-            Ciao <strong>{session?.user?.name || session?.user?.email}</strong>{" "}
-            (<Link onClick={() => signOut()}>Esci</Link>)
-          </Grid>
-        </Grid>
-      </Section>
-      <Section spacing="small">
-        <Title title={"Puoi modificare i prezzi"} />
-      </Section>
-    </>
-  ) : (
+  return (
     <Section spacing="small">
-      <Title title={"Amministrazione"} />
-      <Button onClick={() => signIn()}>Entra</Button>
+      {!session?.user ? (
+        <LinearProgress />
+      ) : (
+        <>
+          <Grid container alignItems="center" gap={1}>
+            <Grid>
+              <Avatar
+                src={session?.user?.image!}
+                alt={(session.user.name || session.user.email)!}
+              />
+            </Grid>
+            <Grid>
+              Ciao{" "}
+              <strong>{session?.user?.name || session?.user?.email}</strong> (
+              <Link onClick={() => signOut()}>Esci</Link>)
+            </Grid>
+          </Grid>
+        </>
+      )}
     </Section>
   );
 };

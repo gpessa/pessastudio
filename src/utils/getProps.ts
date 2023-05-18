@@ -1,8 +1,5 @@
 import { GetStaticPropsContext } from "next";
 
-import { getServerSession } from "next-auth/next";
-import { authOptions } from "pages/api/auth/[...nextauth]";
-
 import type { GetServerSidePropsContext } from "next";
 
 export const getStaticProps = async ({ locale }: GetStaticPropsContext) => {
@@ -28,7 +25,6 @@ export async function getServerSideProps(context: GetServerSidePropsContext) {
   return {
     props: {
       messages,
-      session: await getServerSession(context.req, context.res, authOptions),
     },
   };
 }

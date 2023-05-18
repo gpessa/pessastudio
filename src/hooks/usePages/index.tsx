@@ -113,7 +113,12 @@ const usePages = () => {
 
   const ADMIN: Page = {
     url: "/admin",
-    title: t`Admin`,
+    title: t`Amministrazione`,
+  };
+
+  const ADMIN_SIGNIN: Page = {
+    url: "/admin/signin",
+    title: t`Amministrazione Login`,
   };
 
   const PRODUCTS = { OSTACOLI, RECINTI, TONDINI, GIOSTRE, DRESSAGE };
@@ -124,6 +129,7 @@ const usePages = () => {
     ...PRODUCTS,
     ...NAVIGATION,
     ADMIN,
+    ADMIN_SIGNIN,
     PAGE_404,
     PAGE_500,
     COOKIE_POLICY,
