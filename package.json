@@ -1,6 +1,6 @@
 {
   "name": "pessastudio",
-  "version": "3.0.32",
+  "version": "3.0.33",
   "private": true,
   "description": "Pessastudio",
   "author": "Gaetano Pessa",
@@ -57,6 +57,7 @@
     "postbuild": "next-sitemap",
     "postinstall": "npm run prisma:generate",
     "prepare": "husky install",
+    "prisma:generate": "npx prisma generate",
     "start": "next start"
   }
 }
