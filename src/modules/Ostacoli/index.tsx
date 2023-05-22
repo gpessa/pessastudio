@@ -8,6 +8,8 @@ import productsOstacoliBarriere_03 from "assets/products/ostacoli/barriere-03.pn
 import productsOstacoliCandelierePvc_01 from "assets/products/ostacoli/candeliere-pvc-01.png";
 import productsOstacoliCandelierePvc_02 from "assets/products/ostacoli/candeliere-pvc-02.png";
 import productsOstacoliCandelierePvc_03 from "assets/products/ostacoli/candeliere-pvc-03.png";
+import productsOstacoliCavalletto_01 from "assets/products/ostacoli/cavalletto-01.png";
+import productsOstacoliCavallettoBarriera_01 from "assets/products/ostacoli/cavalletto-barriera-01.png";
 import productsOstacoliCubiMaxi_01 from "assets/products/ostacoli/cubi-maxi-01.png";
 import productsOstacoliCubiMaxi_02 from "assets/products/ostacoli/cubi-maxi-02.png";
 import productsOstacoliCubiMaxi_03 from "assets/products/ostacoli/cubi-maxi-03.png";
@@ -34,6 +36,7 @@ import { ProductData } from "components/Product";
 import { usePages } from "hooks";
 import React from "react";
 import { Colors } from "theme";
+import { MATERIALS } from "utils/constants";
 import { ProductId } from "utils/products";
 import Barriere from "./Barriere";
 import CandelieriLameForate from "./CandelieriElameForate";
@@ -43,10 +46,6 @@ import Cucchiai from "./CucchiaiSegnaletica";
 import Fosso from "./Fosso";
 import Segnaletica from "./Segnaletica";
 export { getStaticProps } from "utils/getProps";
-
-import productsOstacoliCavalletto_01 from "assets/products/ostacoli/cavalletto-01.png";
-import productsOstacoliCavallettoBarriera_01 from "assets/products/ostacoli/cavalletto-barriera-01.png";
-import { MATERIALS } from "utils/constants";
 
 const Ostacoli: React.FC = () => {
   const { PAGES } = usePages();
