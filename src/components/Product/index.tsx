@@ -1,7 +1,6 @@
 import { i18n } from "@lingui/core";
-import { Trans } from "@lingui/macro";
-import { Box, Grid, GridSize, styled, Typography } from "@mui/material";
-
+import { t } from "@lingui/macro";
+import { Box, Grid, styled, Typography } from "@mui/material";
 import Data from "components/Data";
 import Th from "components/Th";
 import { ProductJsonLd } from "next-seo";
@@ -27,14 +26,14 @@ const DataStyled = styled(Grid)(({ theme }) => ({
 }));
 
 type Attributes = {
-  materials?: JSX.Element[];
-  thickness?: number;
-  diameter?: number;
   colors?: Colors[];
+  depth?: number;
+  diameter?: number;
   height?: number;
   length?: number;
+  materials?: string[];
+  thickness?: number;
   weight?: number;
-  depth?: number;
   width?: number;
 };
 
@@ -48,51 +47,6 @@ export type ProductData = Attributes & {
 };
 
 export type ProductProps = ProductData & { className?: string };
-
-const getDataLabel = (id: keyof Attributes) =>
-  ({
-    colors: <Trans>Colori</Trans>,
-    materials: <Trans>Materiali</Trans>,
-    depth: <Trans>Profondità</Trans>,
-    diameter: <Trans>Diametro</Trans>,
-    height: <Trans>Altezza</Trans>,
-    length: <Trans>Lunghezza</Trans>,
-    thickness: <Trans>Spessore</Trans>,
-    weight: <Trans>Peso</Trans>,
-    width: <Trans>Larghezza</Trans>,
-  }[id]);
-
-const getDataData = (
-  id: keyof Attributes,
-  attribute: number | Colors[] | JSX.Element[]
-) => {
-  switch (id) {
-    case "materials":
-      return attribute;
-
-    case "weight":
-      return `${i18n.number(attribute as number)} kg.`;
-
-    case "diameter":
-    case "thickness":
-    case "height":
-    case "length":
-    case "depth":
-    case "width":
-      return `${i18n.number((attribute as number) / 10)} cm.`;
-
-    case "colors":
-      return <ColorsList colors={attribute as Colors[]} />;
-  }
-};
-
-const getData = (attributes: Attributes) => {
-  return Object.entries(attributes).map(([id, attribute]) => ({
-    key: id,
-    label: getDataLabel(id as keyof Attributes),
-    value: getDataData(id as keyof Attributes, attribute),
-  }));
-};
 
 const getSeoPrice = (
   price: ProductProps["price"],
@@ -108,45 +62,50 @@ const getSeoPrice = (
     url,
     priceValidUntil,
     priceCurrency: "EUR",
+    seller: { name: "Pessastudio" },
     availability: "https://schema.org/InStock",
     itemCondition: "https://schema.org/NewCondition",
-    seller: { name: "Pessastudio" },
     price: String(typeof price === "number" ? price : price[0].price),
   };
 };
 
+const formatSize = (value: number) => `${i18n.number(value / 10)} cm.`;
+
 const Product: React.FC<ProductProps> = ({
-  description,
   className,
-  pictures,
-  vertical,
-  price,
-  name,
+  colors,
+  depth,
+  description,
+  diameter,
+  height,
   id,
-  ...attributes
+  length,
+  materials,
+  name,
+  pictures,
+  price,
+  thickness,
+  vertical,
+  weight,
+  width,
 }) => {
-  const md = (vertical ? 12 : 12 / (pictures.length + 1)) as GridSize;
-  const data = getData(attributes);
   const { pathname } = useRouter();
-
+  const md = vertical ? 12 : 12 / (pictures.length + 1);
   const itemUrl = `${WEBSITE}${pathname}#${id}`;
-
   const offers = getSeoPrice(price, itemUrl);
 
-  const images = pictures.map(
-    (image): Picture => ({
-      caption: name,
-      image,
-    })
-  );
+  const images = pictures.map((image) => ({
+    caption: name,
+    image,
+  }));
 
   return (
     <Box id={id} className={className}>
       <ProductJsonLd
-        productName={name}
         images={pictures.map(({ src }) => WEBSITE + src)}
         brand={SEDE_OPERATIVA.name}
-        offers={offers ? offers : undefined}
+        productName={name}
+        offers={offers}
       />
 
       <Grid container spacing={PRODUCT_GUTTER}>
@@ -156,16 +115,26 @@ const Product: React.FC<ProductProps> = ({
           <Th variant="h6" sans sx={{ textTransform: "uppercase" }}>
             {name}
           </Th>
-
           {description && (
             <Typography paragraph component="div">
               {description}
             </Typography>
           )}
-
-          {data.map(({ key, ...item }) => (
-            <Data {...item} key={key} />
-          ))}
+          {width && <Data value={formatSize(width)} label={t`Larghezza`} />}
+          {height && <Data value={formatSize(height)} label={t`Altezza`} />}
+          {length && <Data value={formatSize(length)} label={t`Lunghezza`} />}
+          {depth && <Data value={formatSize(depth)} label={t`Profondità`} />}
+          {weight && <Data value={formatSize(weight)} label={t`Peso`} />}
+          {thickness && (
+            <Data value={formatSize(thickness)} label={t`Spessore`} />
+          )}
+          {diameter && (
+            <Data value={formatSize(diameter)} label={t`Diametro`} />
+          )}
+          {materials && <Data value={materials} label={t`Materiali`} />}
+          {colors && (
+            <Data value={<ColorsList colors={colors} />} label={t`Colori`} />
+          )}
 
           <ProductPrice price={price} />
         </DataStyled>

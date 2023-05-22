@@ -2,7 +2,7 @@ import { Stack, Typography } from "@mui/material";
 import React from "react";
 
 type Props = {
-  label: JSX.Element;
+  label: JSX.Element | string;
   value: number | string | string[] | JSX.Element | JSX.Element[];
 };
 
