@@ -1,36 +1,36 @@
 import { Trans, t } from "@lingui/macro";
 import { useLingui } from "@lingui/react";
 import { Typography } from "@mui/material";
-import productsOstacoliBandierine from "assets/products/ostacoli/bandierine.jpg";
-import productsOstacoliBarriere_01 from "assets/products/ostacoli/barriere-01.png";
-import productsOstacoliBarriere_02 from "assets/products/ostacoli/barriere-02.png";
-import productsOstacoliBarriere_03 from "assets/products/ostacoli/barriere-03.png";
-import productsOstacoliCandelierePvc_01 from "assets/products/ostacoli/candeliere-pvc-01.png";
-import productsOstacoliCandelierePvc_02 from "assets/products/ostacoli/candeliere-pvc-02.png";
-import productsOstacoliCandelierePvc_03 from "assets/products/ostacoli/candeliere-pvc-03.png";
-import productsOstacoliCavalletto_01 from "assets/products/ostacoli/cavalletto-01.png";
-import productsOstacoliCavallettoBarriera_01 from "assets/products/ostacoli/cavalletto-barriera-01.png";
-import productsOstacoliCubiMaxi_01 from "assets/products/ostacoli/cubi-maxi-01.png";
-import productsOstacoliCubiMaxi_02 from "assets/products/ostacoli/cubi-maxi-02.png";
-import productsOstacoliCubiMaxi_03 from "assets/products/ostacoli/cubi-maxi-03.png";
-import productsOstacoliCubiMini_01 from "assets/products/ostacoli/cubi-mini-01.png";
-import productsOstacoliCubiMini_02 from "assets/products/ostacoli/cubi-mini-02.png";
-import productsOstacoliCubiMini_03 from "assets/products/ostacoli/cubi-mini-03.png";
-import productsOstacoliCucchiaioDe_01 from "assets/products/ostacoli/cucchiaio-de-01.png";
-import productsOstacoliCucchiaioDe_02 from "assets/products/ostacoli/cucchiaio-de-02.png";
-import productsOstacoliCucchiaioDe_03 from "assets/products/ostacoli/cucchiaio-de-03.png";
-import productsOstacoliCucchiaioPs_01 from "assets/products/ostacoli/cucchiaio-ps-01.png";
-import productsOstacoliCucchiaioPs_02 from "assets/products/ostacoli/cucchiaio-ps-02.png";
-import productsOstacoliCucchiaioPs_03 from "assets/products/ostacoli/cucchiaio-ps-03.png";
-import productsOstacoliFosso from "assets/products/ostacoli/fosso.png";
-import productsOstacoliLamaDe_01 from "assets/products/ostacoli/lama-de-01.png";
-import productsOstacoliLamaDe_02 from "assets/products/ostacoli/lama-de-02.png";
-import productsOstacoliLamaDe_03 from "assets/products/ostacoli/lama-de-03.png";
-import productsOstacoliNumeroLight from "assets/products/ostacoli/numero-light.png";
-import productsOstacoliNumeroProfessional from "assets/products/ostacoli/numero-professional.png";
-import productsOstacoliSupportoDiSicurezza_01 from "assets/products/ostacoli/supporto-di-sicurezza-01.png";
-import productsOstacoliSupportoDiSicurezza_03 from "assets/products/ostacoli/supporto-di-sicurezza-03.png";
-import productsOstacoliSupportoDiSicurezza_04 from "assets/products/ostacoli/supporto-di-sicurezza-04.png";
+import ostacoliBandierine from "assets/products/ostacoli/bandierine.jpg";
+import ostacoliBarriere_01 from "assets/products/ostacoli/barriere-01.png";
+import ostacoliBarriere_02 from "assets/products/ostacoli/barriere-02.png";
+import ostacoliBarriere_03 from "assets/products/ostacoli/barriere-03.png";
+import ostacoliCandelierePvc_01 from "assets/products/ostacoli/candeliere-pvc-01.png";
+import ostacoliCandelierePvc_02 from "assets/products/ostacoli/candeliere-pvc-02.png";
+import ostacoliCandelierePvc_03 from "assets/products/ostacoli/candeliere-pvc-03.png";
+import ostacoliCavalletto_01 from "assets/products/ostacoli/cavalletto-01.png";
+import ostacoliCavallettoBarriera_01 from "assets/products/ostacoli/cavalletto-barriera-01.png";
+import ostacoliCubiMaxi_01 from "assets/products/ostacoli/cubi-maxi-01.png";
+import ostacoliCubiMaxi_02 from "assets/products/ostacoli/cubi-maxi-02.png";
+import ostacoliCubiMaxi_03 from "assets/products/ostacoli/cubi-maxi-03.png";
+import ostacoliCubiMini_01 from "assets/products/ostacoli/cubi-mini-01.png";
+import ostacoliCubiMini_02 from "assets/products/ostacoli/cubi-mini-02.png";
+import ostacoliCubiMini_03 from "assets/products/ostacoli/cubi-mini-03.png";
+import ostacoliCucchiaioDe_01 from "assets/products/ostacoli/cucchiaio-de-01.png";
+import ostacoliCucchiaioDe_02 from "assets/products/ostacoli/cucchiaio-de-02.png";
+import ostacoliCucchiaioDe_03 from "assets/products/ostacoli/cucchiaio-de-03.png";
+import ostacoliCucchiaioPs_01 from "assets/products/ostacoli/cucchiaio-ps-01.png";
+import ostacoliCucchiaioPs_02 from "assets/products/ostacoli/cucchiaio-ps-02.png";
+import ostacoliCucchiaioPs_03 from "assets/products/ostacoli/cucchiaio-ps-03.png";
+import ostacoliFosso from "assets/products/ostacoli/fosso.png";
+import ostacoliLamaDe_01 from "assets/products/ostacoli/lama-de-01.png";
+import ostacoliLamaDe_02 from "assets/products/ostacoli/lama-de-02.png";
+import ostacoliLamaDe_03 from "assets/products/ostacoli/lama-de-03.png";
+import ostacoliNumeroLight from "assets/products/ostacoli/numero-light.png";
+import ostacoliNumeroProfessional from "assets/products/ostacoli/numero-professional.png";
+import ostacoliSupportoDiSicurezza_01 from "assets/products/ostacoli/supporto-di-sicurezza-01.png";
+import ostacoliSupportoDiSicurezza_03 from "assets/products/ostacoli/supporto-di-sicurezza-03.png";
+import ostacoliSupportoDiSicurezza_04 from "assets/products/ostacoli/supporto-di-sicurezza-04.png";
 import { Section, Th } from "components";
 import { ProductData } from "components/Product";
 import { usePages } from "hooks";
@@ -50,36 +50,27 @@ export { getStaticProps } from "utils/getProps";
 const Ostacoli: React.FC = () => {
   const { PAGES } = usePages();
   useLingui(); // Fix on locale change
+  const { YELLOW, GREEN, WHITE, BLU, RED } = Colors;
 
   const BARRIERE: ProductData[] = [
     {
       id: ProductId.Barriera_3Mt,
       name: t`Barriera 3 mt.`,
       description: t`Costruisci la tua barriera personalizzata scegliendo tra i colori a disposizione`,
-      pictures: [
-        productsOstacoliBarriere_01,
-        productsOstacoliBarriere_02,
-        productsOstacoliBarriere_03,
-      ],
+      pictures: [ostacoliBarriere_01, ostacoliBarriere_02, ostacoliBarriere_03],
       price: 50,
       weight: 9.75,
       length: 2990,
       diameter: 95,
-      colors: [
-        Colors.BLU,
-        Colors.GREEN,
-        Colors.RED,
-        Colors.WHITE,
-        Colors.YELLOW,
-      ],
+      colors: [BLU, GREEN, RED, WHITE, YELLOW],
     },
   ];
 
   const FOSSI: ProductData[] = [
     {
       id: ProductId.Fosso,
-      pictures: [productsOstacoliFosso],
       name: t`Fosso`,
+      pictures: [ostacoliFosso],
       length: 1500,
       width: 2800,
       price: 440,
@@ -92,25 +83,19 @@ const Ostacoli: React.FC = () => {
       id: ProductId.CavallettiCaprilli,
       name: t`Cavalletti Caprilli`,
       description: t`Singolo cavalletto abbinabile a barriere diametro 90, 95, 100, 105 mm.`,
-      pictures: [productsOstacoliCavalletto_01],
+      pictures: [ostacoliCavalletto_01],
       thickness: 100,
       length: 500,
       height: 500,
       weight: 2,
       price: [{ price: 34, note: <Trans>Singolo cavvalleto</Trans> }],
-      colors: [
-        Colors.WHITE,
-        Colors.BLU,
-        Colors.YELLOW,
-        Colors.RED,
-        Colors.GREEN,
-      ],
+      colors: [WHITE, BLU, YELLOW, RED, GREEN],
     },
     {
       id: ProductId.CavallettiCaprilliBarrieraKit,
       name: t`Kit Cavalletti Caprilli + barriera`,
       description: t`Kit comprensivo di 2 cavalletti e una barriera in PPO di colore bianco, diametro 95, lunghezza 2 mt.`,
-      pictures: [productsOstacoliCavallettoBarriera_01],
+      pictures: [ostacoliCavallettoBarriera_01],
       diameter: 85,
       length: 2000,
       weight: 5.3,
@@ -122,44 +107,24 @@ const Ostacoli: React.FC = () => {
     {
       id: ProductId.CubiMini,
       name: t`Cubi mini`,
-      pictures: [
-        productsOstacoliCubiMini_01,
-        productsOstacoliCubiMini_02,
-        productsOstacoliCubiMini_03,
-      ],
+      pictures: [ostacoliCubiMini_01, ostacoliCubiMini_02, ostacoliCubiMini_03],
       width: 350,
       length: 370,
       height: 570,
       weight: 3,
       price: 38.5,
-      colors: [
-        Colors.WHITE,
-        Colors.BLU,
-        Colors.YELLOW,
-        Colors.RED,
-        Colors.GREEN,
-      ],
+      colors: [WHITE, BLU, YELLOW, RED, GREEN],
     },
     {
       id: ProductId.CubiMaxi,
       name: t`Cubi maxi`,
-      pictures: [
-        productsOstacoliCubiMaxi_01,
-        productsOstacoliCubiMaxi_02,
-        productsOstacoliCubiMaxi_03,
-      ],
+      pictures: [ostacoliCubiMaxi_01, ostacoliCubiMaxi_02, ostacoliCubiMaxi_03],
       width: 370,
       length: 570,
       height: 700,
       weight: 5,
       price: 63.5,
-      colors: [
-        Colors.WHITE,
-        Colors.BLU,
-        Colors.YELLOW,
-        Colors.RED,
-        Colors.GREEN,
-      ],
+      colors: [WHITE, BLU, YELLOW, RED, GREEN],
     },
   ];
 
@@ -169,9 +134,9 @@ const Ostacoli: React.FC = () => {
       id: ProductId.CandeliereConPiedeInPvc,
       description: t`I candelieri sono costruiti con un montante di alluminio verniciato di colore bianco e sono muniti di 4 piedi rivestiti con puntali di plastica che garantiscono, in caso di ribaltamento, l’incolumità vostra e dei vostri cavalli.`,
       pictures: [
-        productsOstacoliCandelierePvc_03,
-        productsOstacoliCandelierePvc_02,
-        productsOstacoliCandelierePvc_01,
+        ostacoliCandelierePvc_03,
+        ostacoliCandelierePvc_02,
+        ostacoliCandelierePvc_01,
       ],
       width: 720,
       depth: 720,
@@ -183,15 +148,11 @@ const Ostacoli: React.FC = () => {
       ],
     },
     {
-      name: t`Lama DE da 50/150 cm.`,
       id: ProductId.LamaDe_50_150Cm,
+      name: t`Lama DE da 50/150 cm.`,
       materials: [MATERIALS.ACCIAIO_ZINCATO],
       description: t`Per consentirvi di realizzare ostacoli di vostra creazione possiamo fornirvi le lame forate in due diverse lunghezze.`,
-      pictures: [
-        productsOstacoliLamaDe_02,
-        productsOstacoliLamaDe_01,
-        productsOstacoliLamaDe_03,
-      ],
+      pictures: [ostacoliLamaDe_02, ostacoliLamaDe_01, ostacoliLamaDe_03],
       length: 500,
       thickness: 2,
       width: 65,
@@ -213,9 +174,9 @@ const Ostacoli: React.FC = () => {
       name: t`Cucchiaio ${CUCCHIAI_MODELS.DE}`,
       description: t`Il cucchiaio standard utilizzato al livello internazionale`,
       pictures: [
-        productsOstacoliCucchiaioDe_01,
-        productsOstacoliCucchiaioDe_02,
-        productsOstacoliCucchiaioDe_03,
+        ostacoliCucchiaioDe_01,
+        ostacoliCucchiaioDe_02,
+        ostacoliCucchiaioDe_03,
       ],
       materials: [MATERIALS.TECNOPOLIMERO],
       depth: 20,
@@ -227,9 +188,9 @@ const Ostacoli: React.FC = () => {
       name: t`Cucchiaio ${CUCCHIAI_MODELS.PS}`,
       description: t`Il cucchiaio dotato del nostro sistema brevettato di aggancio`,
       pictures: [
-        productsOstacoliCucchiaioPs_01,
-        productsOstacoliCucchiaioPs_02,
-        productsOstacoliCucchiaioPs_03,
+        ostacoliCucchiaioPs_01,
+        ostacoliCucchiaioPs_02,
+        ostacoliCucchiaioPs_03,
       ],
       materials: [MATERIALS.TECNOPOLIMERO],
       price: 4.5,
@@ -239,9 +200,9 @@ const Ostacoli: React.FC = () => {
       name: t`Supporto di sicurezza`,
       description: t`Supporti di sicurezza da applicare ai nostri cucchiai per salvaguardare l'integrità degli arti dei vostri cavalli in maniera efficace ed economica.`,
       pictures: [
-        productsOstacoliSupportoDiSicurezza_01,
-        productsOstacoliSupportoDiSicurezza_03,
-        productsOstacoliSupportoDiSicurezza_04,
+        ostacoliSupportoDiSicurezza_01,
+        ostacoliSupportoDiSicurezza_03,
+        ostacoliSupportoDiSicurezza_04,
       ],
       materials: [MATERIALS.PLASTICA],
       width: 37,
@@ -259,14 +220,14 @@ const Ostacoli: React.FC = () => {
     {
       id: ProductId.Bandierine,
       name: t`Bandierine`,
-      pictures: [productsOstacoliBandierine],
+      pictures: [ostacoliBandierine],
       materials: [MATERIALS.PLASTICA],
       price: 2.1,
     },
     {
       id: ProductId.NumeroCampoOstacoliProfessional,
       name: t`Numero per campo ostacoli ${SEGNALETICA_MODELS.PROFESSIONAL}`,
-      pictures: [productsOstacoliNumeroProfessional],
+      pictures: [ostacoliNumeroProfessional],
       materials: [MATERIALS.POLIETILENE],
       width: 200,
       height: 300,
@@ -276,7 +237,7 @@ const Ostacoli: React.FC = () => {
     {
       id: ProductId.NumeroCampoOstacoliLight,
       name: t`Numero per campo ostacoli ${SEGNALETICA_MODELS.LIGHT}`,
-      pictures: [productsOstacoliNumeroLight],
+      pictures: [ostacoliNumeroLight],
       materials: [MATERIALS.POLIPROPILENE],
       width: 330,
       height: 330,

@@ -14,12 +14,12 @@ export const SOCIALS = {
 };
 
 export const MATERIALS = {
-  ACCIAIO_ZINCATO: t`Acciaio zincato`,
-  PLASTICA: t`Plastica`,
-  POLIETILENE: t`Polietilene`,
-  POLIPROPILENE: t`Polipropilene`,
-  PVC: t`PVC`,
-  TECNOPOLIMERO: t`Tecnopolimero`,
+  ACCIAIO_ZINCATO: <Trans>Acciaio zincato</Trans>,
+  PLASTICA: <Trans>Plastica</Trans>,
+  POLIETILENE: <Trans>Polietilene</Trans>,
+  POLIPROPILENE: <Trans>Polipropilene</Trans>,
+  PVC: <Trans>PVC</Trans>,
+  TECNOPOLIMERO: <Trans>Tecnopolimero</Trans>,
 };
 
 export const SEDE_LEGALE = {

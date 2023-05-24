@@ -3,14 +3,14 @@ import { t } from "@lingui/macro";
 import { Box, Grid, styled, Typography } from "@mui/material";
 import Data from "components/Data";
 import Th from "components/Th";
-import { ProductJsonLd } from "next-seo";
+import { ProductJsonLd, ProductJsonLdProps } from "next-seo";
 import React, { ReactNode } from "react";
 import { BREAKPOINT, Colors, PRODUCT_GUTTER } from "theme";
 
 import { Offers } from "next-seo/lib/types";
 import { StaticImageData } from "next/image";
 import { useRouter } from "next/router";
-import { SEDE_OPERATIVA, WEBSITE } from "utils/constants";
+import { WEBSITE } from "utils/constants";
 import ColorsList from "./ProductColorsList";
 import ProductImages from "./ProductImages";
 import ProductPrice, { PriceProps } from "./ProductPrice";
@@ -31,7 +31,7 @@ type Attributes = {
   diameter?: number;
   height?: number;
   length?: number;
-  materials?: string[];
+  materials?: JSX.Element[];
   thickness?: number;
   weight?: number;
   width?: number;
@@ -48,7 +48,7 @@ export type ProductData = Attributes & {
 
 export type ProductProps = ProductData & { className?: string };
 
-const getSeoPrice = (
+const getSeoOffer = (
   price: ProductProps["price"],
   url: string
 ): Offers | undefined => {
@@ -69,44 +69,69 @@ const getSeoPrice = (
   };
 };
 
-const formatSize = (value: number) => `${i18n.number(value / 10)} cm.`;
-
-const Product: React.FC<ProductProps> = ({
-  className,
-  colors,
-  depth,
+const useSeoProps = ({
+  name: productName,
   description,
-  diameter,
-  height,
-  id,
-  length,
-  materials,
-  name,
   pictures,
   price,
-  thickness,
-  vertical,
-  weight,
-  width,
-}) => {
+  id,
+}: ProductData): ProductJsonLdProps => {
   const { pathname } = useRouter();
-  const md = vertical ? 12 : 12 / (pictures.length + 1);
-  const itemUrl = `${WEBSITE}${pathname}#${id}`;
-  const offers = getSeoPrice(price, itemUrl);
 
+  const images = pictures.map(({ src }) => `${WEBSITE}${src}`);
+  const itemUrl = `${WEBSITE}${pathname}#${id}`;
+  const brand = "Pessastudio";
+  const offers = getSeoOffer(price, itemUrl);
+
+  let result: ProductJsonLdProps = {
+    productName,
+    itemUrl,
+    offers,
+    images,
+    brand,
+  };
+
+  if (typeof description === "string") {
+    result.disambiguatingDescription = description;
+  }
+
+  return result;
+};
+
+const formatSize = (value: number) => `${i18n.number(value / 10)} cm.`;
+
+const Product: React.FC<ProductProps> = (product) => {
+  const {
+    className,
+    colors,
+    depth,
+    description,
+    diameter,
+    height,
+    id,
+    length,
+    materials,
+    name,
+    pictures,
+    price,
+    thickness,
+    vertical,
+    weight,
+    width,
+  } = product;
+
+  const md = vertical ? 12 : 12 / (pictures.length + 1);
+  const jsonld = useSeoProps(product);
   const images = pictures.map((image) => ({
     caption: name,
     image,
   }));
 
+  console.log(<ProductJsonLd {...jsonld} />);
+
   return (
     <Box id={id} className={className}>
-      <ProductJsonLd
-        images={pictures.map(({ src }) => WEBSITE + src)}
-        brand={SEDE_OPERATIVA.name}
-        productName={name}
-        offers={offers}
-      />
+      <ProductJsonLd {...jsonld} keyOverride={product.id} />
 
       <Grid container spacing={PRODUCT_GUTTER}>
         <ProductImages {...{ images, md, name }} />
