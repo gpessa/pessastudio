@@ -8,12 +8,23 @@ import Accessori from "./_accessori";
 import Gamma from "./_gamma";
 
 import { useLingui } from "@lingui/react";
-import assetsProductsRecintiGalleryRecintiImage2 from "assets/products/recinti/gallery/recinti-image-2.jpg";
-import assetsProductsRecintiGalleryRecintiImage4 from "assets/products/recinti/gallery/recinti-image-4.jpg";
-import assetsProductsRecintiGalleryRecintiImage5 from "assets/products/recinti/gallery/recinti-image-5.jpg";
-import assetsProductsRecintiGalleryRecintiImage6 from "assets/products/recinti/gallery/recinti-image-6.jpg";
-import assetsProductsRecintiGalleryRecintiImage7 from "assets/products/recinti/gallery/recinti-image-7.jpg";
-import assetsProductsRecintiGalleryRecintiImage8 from "assets/products/recinti/gallery/recinti-image-8.jpg";
+import { ProductId } from "@prisma/client";
+import productsRecintiGalleryRecintiImage2 from "assets/products/recinti/gallery/recinti-image-2.jpg";
+import productsRecintiGalleryRecintiImage4 from "assets/products/recinti/gallery/recinti-image-4.jpg";
+import productsRecintiGalleryRecintiImage5 from "assets/products/recinti/gallery/recinti-image-5.jpg";
+import productsRecintiGalleryRecintiImage6 from "assets/products/recinti/gallery/recinti-image-6.jpg";
+import productsRecintiGalleryRecintiImage7 from "assets/products/recinti/gallery/recinti-image-7.jpg";
+import productsRecintiGalleryRecintiImage8 from "assets/products/recinti/gallery/recinti-image-8.jpg";
+import productsRecintiPiedeMobile2 from "assets/products/recinti/piede-mobile-2.png";
+import productsRecintiPiedeMobile3 from "assets/products/recinti/piede-mobile-3.png";
+import productsRecintiPiedeMobile4 from "assets/products/recinti/piede-mobile-4.jpg";
+import productsRecintiSvg1 from "assets/products/recinti/svg-1.svg";
+import productsRecintiSvg2 from "assets/products/recinti/svg-2.svg";
+import productsRecintiSvg3 from "assets/products/recinti/svg-3.svg";
+import productsRecintiSvg4 from "assets/products/recinti/svg-4.svg";
+import { ProductData } from "components/Product";
+import { Colors } from "theme";
+import { MATERIALS } from "utils/constants";
 export { getStaticProps } from "utils/getProps";
 
 const Recinti: React.FC = () => {
@@ -23,27 +34,27 @@ const Recinti: React.FC = () => {
 
   const IMAGES: Picture[] = [
     {
-      image: assetsProductsRecintiGalleryRecintiImage7,
+      image: productsRecintiGalleryRecintiImage7,
       caption: t`Recinzione cavalli a ${2} filagne`,
     },
     {
-      image: assetsProductsRecintiGalleryRecintiImage8,
+      image: productsRecintiGalleryRecintiImage8,
       caption: t`Recinzione cavalli a ${2} filagne`,
     },
     {
-      image: assetsProductsRecintiGalleryRecintiImage2,
+      image: productsRecintiGalleryRecintiImage2,
       caption: t`Recinzione cavalli a ${3} filagne`,
     },
     {
-      image: assetsProductsRecintiGalleryRecintiImage4,
+      image: productsRecintiGalleryRecintiImage4,
       caption: t`Recinzione cavalli a ${2} filagne`,
     },
     {
-      image: assetsProductsRecintiGalleryRecintiImage5,
+      image: productsRecintiGalleryRecintiImage5,
       caption: t`Recinzione cavalli a ${2} filagne`,
     },
     {
-      image: assetsProductsRecintiGalleryRecintiImage6,
+      image: productsRecintiGalleryRecintiImage6,
       caption: t`Recinzione cavalli a ${2} filagne`,
     },
   ];
@@ -55,11 +66,66 @@ const Recinti: React.FC = () => {
         link: PAGES.RECINTI_COME_PREPARARE_IL_FONDO.url,
       },
       {
-        label: <Trans>Istruzioni di montaggio</Trans>,
+        label: t`Istruzioni di montaggio`,
         file: "/products/recinti/recinti-istruzioni-montaggio.pdf",
       },
     ],
   }[locale!];
+
+  const PRODUCTS: ProductData[] = [
+    {
+      height: 1250,
+      name: t`Recinzione cavalli a ${1} filagna`,
+      id: ProductId.RECINZIONE_1_FILAGNA,
+      pictures: [productsRecintiSvg1],
+      colors: [Colors.WHITE],
+      materials: [MATERIALS.POLIPROPILENE],
+      description: t`La recinzione ad una filagna viene utilizzata per delimitare campi da lavoro o gara poco adoperati e non è adatta per l'addestramento. Potete utilizzarla anche per delimitare un'area del vostro giardino di casa`,
+    },
+    {
+      height: 1400,
+      name: t`Recinzione cavalli a ${2} filagne`,
+      id: ProductId.RECINZIONE_2_FILAGNE,
+      pictures: [productsRecintiSvg2],
+      colors: [Colors.WHITE],
+      materials: [MATERIALS.POLIPROPILENE],
+      description: t`La recinzione a due filagne genericamente viene utilizzata per delimitare campi da lavoro o per realizzare paddock dove i cavalli sono comunque osservati dal personale presente`,
+    },
+    {
+      height: 1650,
+      name: t`Recinzione cavalli a ${3} filagne`,
+      id: ProductId.RECINZIONE_3_FILAGNE,
+      pictures: [productsRecintiSvg3],
+      colors: [Colors.WHITE],
+      materials: [MATERIALS.POLIPROPILENE],
+      description: t`La recinzione a tre filagne viene utilizzata per delimitare paddok per animali che rimangono per molte ore al giorno incustoditi oppure per delimitare confini di proprietà o aree. Per garantirne una maggiore sicurezza è possibile installare un impianto d'elettrificazione sulle filagne`,
+    },
+    {
+      height: 1950,
+      name: t`Recinzione cavalli a ${4} filagne`,
+      id: ProductId.RECINZIONE_4_FILAGNE,
+      pictures: [productsRecintiSvg4],
+      colors: [Colors.WHITE],
+      materials: [MATERIALS.POLIPROPILENE],
+      description: t`Le recinzioni a quattro filagne sono utilizzate per delimitare paddock per stalloni, realizzare tondini per la doma e l'addestramento o per formare ovali per il salto in libertà`,
+    },
+  ];
+
+  const ACCESSORI: ProductData[] = [
+    {
+      colors: [Colors.WHITE, Colors.GREEN],
+      description: t`Diamo la possibilità di montare nella vostra recinzione un piede mobile che vi consentirà di posizionarla e spostarla a seconda delle vostre esigenze`,
+      name: t`Piede mobile`,
+      height: 300,
+      id: ProductId.RECINZIONE_PIEDE_MOBILE,
+      pictures: [
+        productsRecintiPiedeMobile2,
+        productsRecintiPiedeMobile3,
+        productsRecintiPiedeMobile4,
+      ],
+      price: 35,
+    },
+  ];
 
   return (
     <>
@@ -111,9 +177,9 @@ const Recinti: React.FC = () => {
         right={<Gallery images={IMAGES} />}
       />
 
-      <Gamma />
+      <Gamma products={PRODUCTS} />
 
-      <Accessori />
+      <Accessori products={ACCESSORI} />
 
       {FILES && (
         <Section>
