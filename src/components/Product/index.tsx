@@ -99,6 +99,7 @@ const useSeoProps = ({
 };
 
 const formatSize = (value: number) => `${i18n.number(value / 10)} cm.`;
+const formatWeight = (value: number) => `${i18n.number(value)} kg.`;
 
 const Product: React.FC<ProductProps> = (product) => {
   const {
@@ -149,13 +150,13 @@ const Product: React.FC<ProductProps> = (product) => {
           {height && <Data value={formatSize(height)} label={t`Altezza`} />}
           {length && <Data value={formatSize(length)} label={t`Lunghezza`} />}
           {depth && <Data value={formatSize(depth)} label={t`Profondità`} />}
-          {weight && <Data value={formatSize(weight)} label={t`Peso`} />}
           {thickness && (
             <Data value={formatSize(thickness)} label={t`Spessore`} />
           )}
           {diameter && (
             <Data value={formatSize(diameter)} label={t`Diametro`} />
           )}
+          {weight && <Data value={formatWeight(weight)} label={t`Peso`} />}
           {materials && <Data value={materials} label={t`Materiali`} />}
           {colors && (
             <Data value={<ColorsList colors={colors} />} label={t`Colori`} />
