@@ -9,19 +9,16 @@ const PriceStyled = styled(Typography)(({ theme }) => ({
 }));
 
 export type PriceProps = {
-  price: undefined | number | PriceSingle[];
+  price: undefined | number;
 };
 
-type PriceSingle = {
-  price: number;
-  note?: JSX.Element;
-};
-
-const ProductPriceItem: React.FC<PriceSingle> = ({ price, note }) => {
+const ProductPrice: React.FC<PriceProps> = ({ price }) => {
   const { i18n } = useLingui();
 
+  if (!price) return null;
+
   return (
-    <>
+    <PriceStyled>
       <Badge
         color="warm2"
         badgeContent={<Trans>+ IVA</Trans>}
@@ -32,35 +29,7 @@ const ProductPriceItem: React.FC<PriceSingle> = ({ price, note }) => {
       >
         {i18n.number(price, { style: "currency", currency: "EUR" })}
       </Badge>
-      {note && (
-        <Typography variant="small" ml={3}>
-          ({note})
-        </Typography>
-      )}
-    </>
-  );
-};
-
-const ProductPrice: React.FC<PriceProps> = ({ price }) => {
-  if (!price) return null;
-
-  if (typeof price === "number")
-    return (
-      <PriceStyled>
-        <ProductPriceItem price={price} />
-      </PriceStyled>
-    );
-
-  return (
-    <>
-      {price.map(({ price, note }, index) => (
-        <React.Fragment key={index}>
-          <PriceStyled as={"span"}>
-            <ProductPriceItem price={price} note={note} />
-          </PriceStyled>
-        </React.Fragment>
-      ))}
-    </>
+    </PriceStyled>
   );
 };
 

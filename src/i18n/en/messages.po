@@ -21,7 +21,7 @@ msgstr "{NAME} has been chosen by over 3,000 clients worldwide for the construct
 msgid "* In presenza di nevicate che superino la portata consentita, sarà opportuno intervenire rimuovendo l’eccesso di neve e cospargendo di sale la copertura prima di introdurre i cavalli."
 msgstr "* In the presence of snowfall that exceeds the maximum load, it is advisable to remove excess snow and to sprinkle the roof with salt before use."
 
-#: src/components/Product/ProductPrice/index.tsx:27
+#: src/components/Product/ProductPrice/index.tsx:24
 msgid "+ IVA"
 msgstr "+ VAT"
 
@@ -61,7 +61,7 @@ msgstr "<0>It is possible to order the horse walker in the diameters:</0><1><2>1
 msgid "<0>I cavalletti Caprilli rappresentano uno strumento essenziale per l'allenamento del vostro animale, il passaggio sui cavalletti, rinforza la schiena del cavallo, scioglie la muscolatura e lo induce a flettere le articolazioni.</0><1>Lavati con idropulitrice riprendono i colori originari anche dopo 20 anni.</1>"
 msgstr "<0>Balance, awareness of feet, and a lengthened topline are qualities that lead to improved movement for any horse, whether a jumper, dressage competitor, or a trail horse.</0><1>Cavaletti may be used to develop a lengthened stride, better bending, coordination, balance and strength in the horse.</1>"
 
-#: src/modules/Ostacoli/index.tsx:258
+#: src/modules/Ostacoli/index.tsx:272
 msgid "<0>I nostri ostacoli sono progettati e costruiti per durare nel tempo non richiedono alcuna manutenzione e conservano, inalterata, la loro bellezza anche se lasciati nel campo per anni.</0><1>Se gli ostacoli per il professionista sono uno strumento di lavoro, per molti altri appassionati rappresentano la realizzazione di un sogno. Noi abbiamo deciso di rendere questi strumenti resistenti nel tempo per fare in modo che questo sogno duri.</1><2>Potrete scegliere le quantità e i colori nella nostra gamma di produzione e acquistare anche singoli pezzi di ricambio.</2>"
 msgstr "<0>Our jumps are designed and built to last over time.</0><1>They do not require any maintenance even after years in the field.</1>"
 
@@ -143,13 +143,9 @@ msgstr "Galvanized steel"
 msgid "Acconsento"
 msgstr "Accept"
 
-#: src/components/Product/index.tsx:150
+#: src/components/Product/index.tsx:146
 msgid "Altezza"
 msgstr "Height"
-
-#: src/modules/Ostacoli/index.tsx:151
-msgid "Altezza {0} cm."
-msgstr "Height {0} cm."
 
 #: src/modules/GiostreTecnoexerciser/_servizio_clienti.tsx:109
 msgid "Altro"
@@ -208,11 +204,11 @@ msgstr ""
 msgid "Avanti"
 msgstr "Next"
 
-#: src/modules/Ostacoli/index.tsx:227
+#: src/modules/Ostacoli/index.tsx:241
 msgid "Bandierine"
 msgstr "Jump flags"
 
-#: src/modules/Ostacoli/index.tsx:58
+#: src/modules/Ostacoli/index.tsx:60
 msgid "Barriera 3 mt."
 msgstr "3 mt. poles"
 
@@ -224,15 +220,19 @@ msgstr "Poles"
 msgid "Bello e funzionale"
 msgstr "Well designed and functional"
 
-#: src/modules/Ostacoli/index.tsx:138
-msgid "Candeliere con piede in PVC"
-msgstr "Aluminum Schooling Standard"
+#: src/modules/Ostacoli/index.tsx:140 src/modules/Ostacoli/index.tsx:151
+msgid "Candeliere da {0} con piede in PVC"
+msgstr "Aluminum schooling standard {0}"
+
+#: src/modules/Ostacoli/CandelieriElameForate.tsx:11
+msgid "Candelieri e lame forate"
+msgstr "Aluminum schooling standard and metal keyhole track"
 
 #: src/modules/Tondini/index.tsx:218
 msgid "Caratteristiche"
 msgstr "Characteristic"
 
-#: src/modules/Ostacoli/Cavalletti.tsx:12 src/modules/Ostacoli/index.tsx:84
+#: src/modules/Ostacoli/Cavalletti.tsx:12 src/modules/Ostacoli/index.tsx:86
 msgid "Cavalletti Caprilli"
 msgstr "Cavaletti Caprilli"
 
@@ -259,7 +259,7 @@ msgstr "VAT number"
 msgid "Collegate le braccia di separazione attraverso i cavi"
 msgstr ""
 
-#: src/components/Product/index.tsx:162
+#: src/components/Product/index.tsx:158
 msgid "Colori"
 msgstr "Colors"
 
@@ -356,15 +356,15 @@ msgstr "TECNOFENCE corridor"
 msgid "Cosa dicono di noi"
 msgstr "Testimonials"
 
-#: src/modules/Ostacoli/index.tsx:59
+#: src/modules/Ostacoli/index.tsx:61
 msgid "Costruisci la tua barriera personalizzata scegliendo tra i colori a disposizione"
 msgstr "Build your custom poles by choosing from the available colors"
 
-#: src/modules/Ostacoli/index.tsx:125
+#: src/modules/Ostacoli/index.tsx:127
 msgid "Cubi maxi"
 msgstr "Cavaletti block maxi"
 
-#: src/modules/Ostacoli/index.tsx:114
+#: src/modules/Ostacoli/index.tsx:116
 msgid "Cubi mini"
 msgstr "Cavaletti block mini"
 
@@ -376,7 +376,7 @@ msgstr "Cavaletti block"
 msgid "Cucchiai"
 msgstr "Horse Jump Cups"
 
-#: src/modules/Ostacoli/index.tsx:179 src/modules/Ostacoli/index.tsx:193
+#: src/modules/Ostacoli/index.tsx:193 src/modules/Ostacoli/index.tsx:207
 msgid "Cucchiaio {0}"
 msgstr "Cup {0}"
 
@@ -384,7 +384,7 @@ msgstr "Cup {0}"
 msgid "Da anni Pessastudio è focalizzata nel produrre prodotti di qualità a costi accessibili"
 msgstr "For years, Pessastudio has focused on producing quality products at an affordable price"
 
-#: src/components/Product/index.tsx:157 src/utils/constants.tsx:269
+#: src/components/Product/index.tsx:153 src/utils/constants.tsx:269
 msgid "Diametro"
 msgstr "Diameter"
 
@@ -456,7 +456,7 @@ msgstr "Easy to use"
 msgid "Fin dal primo accesso questi cookie permettono al sito di funzionare correttamente e ti consentono di visualizzare i contenuti sul tuo dispositivo riconoscendo la lingua e il mercato del Paese dal quale scegli di connetterti. Se sei un utente registrato, permetteranno di riconoscerti e di accedere ai servizi delle aree dedicate. I cookie di navigazione sono cookie tecnici e sono necessari al funzionamento del sito."
 msgstr "From first access, these cookies allow the Website to function correctly and allow you to view content on your device by recognising the language and market of the country from which you’ve chosen to connect. If you are a registered user, they will allow you to be recognised and to access the services offered from the dedicated areas. Navigation cookies are technical cookies and are needed for the functioning of the Website."
 
-#: src/modules/Ostacoli/Fosso.tsx:12 src/modules/Ostacoli/index.tsx:72
+#: src/modules/Ostacoli/Fosso.tsx:12 src/modules/Ostacoli/index.tsx:74
 msgid "Fosso"
 msgstr "Water tray"
 
@@ -571,7 +571,7 @@ msgstr "I received the equipment this morning. My compliments for the quality of
 msgid "Home"
 msgstr "Homepage"
 
-#: src/modules/Ostacoli/index.tsx:140
+#: src/modules/Ostacoli/index.tsx:142 src/modules/Ostacoli/index.tsx:153
 msgid "I candelieri sono costruiti con un montante di alluminio verniciato di colore bianco e sono muniti di 4 piedi rivestiti con puntali di plastica che garantiscono, in caso di ribaltamento, l’incolumità vostra e dei vostri cavalli."
 msgstr "Upgrade to the best with our premium aluminum jumps. These 1.7 mt. tall schooling standards are made from powder-coated aluminum and come with a set of pinless jump cup tracks.  And, in addition to being light-weight and easy to move, everything is weather-proof and require almost no maintenance."
 
@@ -596,11 +596,11 @@ msgstr "Our products are sold and appreciated in Italy and abroad"
 msgid "Iban"
 msgstr "Iban"
 
-#: src/modules/Ostacoli/index.tsx:194
+#: src/modules/Ostacoli/index.tsx:208
 msgid "Il cucchiaio dotato del nostro sistema brevettato di aggancio"
 msgstr "High quality, Pessastudio plastic jump cup"
 
-#: src/modules/Ostacoli/index.tsx:180
+#: src/modules/Ostacoli/index.tsx:194
 msgid "Il cucchiaio standard utilizzato al livello internazionale"
 msgstr "High quality, standard plastic pinless jump cup"
 
@@ -680,11 +680,11 @@ msgstr "Bank name"
 msgid "Istruzioni di montaggio"
 msgstr "Assembly instructions"
 
-#: src/modules/Ostacoli/index.tsx:101
+#: src/modules/Ostacoli/index.tsx:103
 msgid "Kit Cavalletti Caprilli + barriera"
 msgstr "Kit Cavaletti Caprilli + pole"
 
-#: src/modules/Ostacoli/index.tsx:102
+#: src/modules/Ostacoli/index.tsx:104
 msgid "Kit comprensivo di 2 cavalletti e una barriera in PPO di colore bianco, diametro 95, lunghezza 2 mt."
 msgstr ""
 "Cavaletti set with 2 mt. jump pole.\n"
@@ -745,16 +745,11 @@ msgstr "The windproof net protects the inside of the horse walker from drafts al
 msgid "La struttura è stata progettata per garantire un carico neve fino a 120 kg/mq e la velocità del vento fino a 110 km/h."
 msgstr "The structure has been designed to withstand a snow load of up to 120 kg/m² and wind speeds of up to 110 km/h."
 
-#: src/modules/Ostacoli/index.tsx:152 src/modules/Ostacoli/index.tsx:165
-#: src/modules/Ostacoli/index.tsx:166
-msgid "Lama {0} cm."
-msgstr "Metal keyhole track {0} cm."
+#: src/modules/Ostacoli/index.tsx:163 src/modules/Ostacoli/index.tsx:174
+msgid "Lama DE da {0}"
+msgstr "Metal keyhole track DE {0}"
 
-#: src/modules/Ostacoli/index.tsx:157
-msgid "Lama DE da 50/150 cm."
-msgstr "Metal keyhole track 50/150 cm."
-
-#: src/components/Product/index.tsx:149
+#: src/components/Product/index.tsx:145
 msgid "Larghezza"
 msgstr "Width"
 
@@ -770,7 +765,7 @@ msgstr "Four-rail fencing is used to delimit paddocks for stallions, make round 
 msgid "Lettera dressage ({0})"
 msgstr "Letter cone ({0})"
 
-#: src/components/Product/index.tsx:151
+#: src/components/Product/index.tsx:147
 msgid "Lunghezza"
 msgstr "Length"
 
@@ -800,7 +795,7 @@ msgstr "Handbook"
 msgid "Mappa"
 msgstr "Map"
 
-#: src/components/Product/index.tsx:160
+#: src/components/Product/index.tsx:156
 msgid "Materiali"
 msgstr "Materials"
 
@@ -837,7 +832,7 @@ msgstr "No building permit needed"
 msgid "Newsletters"
 msgstr "Newsletters"
 
-#: src/modules/Ostacoli/index.tsx:234 src/modules/Ostacoli/index.tsx:244
+#: src/modules/Ostacoli/index.tsx:248 src/modules/Ostacoli/index.tsx:258
 msgid "Numero per campo ostacoli {0}"
 msgstr "Number cone {0}"
 
@@ -849,7 +844,7 @@ msgstr "Jumps"
 msgid "Pagina non trovata"
 msgstr "Page not found"
 
-#: src/modules/Ostacoli/index.tsx:159
+#: src/modules/Ostacoli/index.tsx:165 src/modules/Ostacoli/index.tsx:176
 msgid "Per consentirvi di realizzare ostacoli di vostra creazione possiamo fornirvi le lame forate in due diverse lunghezze."
 msgstr "Metal keyhole tracks for jump cups. Tracks have predrilled holes so it’s easy to connect them to your post standards. Standard distance between tracks and post standard allows all pinless jump cups to settle perfectly into place."
 
@@ -865,7 +860,7 @@ msgstr "What sets us apart?"
 msgid "Personalizzabili"
 msgstr "Customisable"
 
-#: src/components/Product/index.tsx:159
+#: src/components/Product/index.tsx:155
 msgid "Peso"
 msgstr "Weight"
 
@@ -931,7 +926,7 @@ msgstr "Equipment built and customised by Pessastudio in Italy"
 msgid "Prodotti professionali, sono lo strumento di lavoro indispensabile in un centro ippico o un maneggio. Progettati e costruiti per durare nel tempo senza alcuna manutenzione"
 msgstr "Professional products, these are essential tools in equestrian centres or riding schools. Designed and built to last, maintenance free"
 
-#: src/components/Product/index.tsx:152
+#: src/components/Product/index.tsx:148
 msgid "Profondità"
 msgstr "Depth"
 
@@ -1082,7 +1077,7 @@ msgstr "There was a problem, please try again"
 msgid "Sicuro"
 msgstr "Safe"
 
-#: src/modules/Ostacoli/index.tsx:86
+#: src/modules/Ostacoli/index.tsx:88
 msgid "Singolo cavalletto abbinabile a barriere diametro 90, 95, 100, 105 mm. <0>(il prezzo é per un singolo cavalletto)</0>"
 msgstr "A single cavaletto that can be used with 90, 95, 100, 105 mm. diameters poles <0>(the price is for a single cavaletto)</0>"
 
@@ -1090,7 +1085,7 @@ msgstr "A single cavaletto that can be used with 90, 95, 100, 105 mm. diameters 
 msgid "Socials"
 msgstr "Socials"
 
-#: src/components/Product/index.tsx:154
+#: src/components/Product/index.tsx:150
 msgid "Spessore"
 msgstr "Thickness"
 
@@ -1098,7 +1093,7 @@ msgstr "Thickness"
 msgid "Splendido niente da dire! Il tondino è ben pensato e ingegnoso. Molto bene!"
 msgstr "Fantastic nothing else to add! The lunge pen  is well thought out and ingenious. Very good!"
 
-#: src/modules/Ostacoli/index.tsx:206
+#: src/modules/Ostacoli/index.tsx:220
 msgid "Supporti di sicurezza da applicare ai nostri cucchiai per salvaguardare l'integrità degli arti dei vostri cavalli in maniera efficace ed economica."
 msgstr "The breakaway safety cups will literally break away from the safety adapter under downwards pressure. Is designed to help to prevent serious injury to the rider from a rotational fall of the horse."
 
@@ -1108,7 +1103,7 @@ msgstr "The breakaway safety cups will literally break away from the safety adap
 msgid "Supporto clienti"
 msgstr "Customer service"
 
-#: src/modules/Ostacoli/index.tsx:205
+#: src/modules/Ostacoli/index.tsx:219
 msgid "Supporto di sicurezza"
 msgstr "Breakaway cup adapter"
 

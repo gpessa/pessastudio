@@ -14,6 +14,7 @@ import { WEBSITE } from "utils/constants";
 import ColorsList from "./ProductColorsList";
 import ProductImages from "./ProductImages";
 import ProductPrice, { PriceProps } from "./ProductPrice";
+import { formatSize, formatWeight } from "utils/format";
 
 const DataStyled = styled(Grid)(({ theme }) => ({
   order: -1,
@@ -61,11 +62,11 @@ const getSeoOffer = (
   return {
     url,
     priceValidUntil,
+    price: String(price),
     priceCurrency: "EUR",
     seller: { name: "Pessastudio" },
     availability: "https://schema.org/InStock",
     itemCondition: "https://schema.org/NewCondition",
-    price: String(typeof price === "number" ? price : price[0].price),
   };
 };
 
@@ -98,9 +99,6 @@ const useSeoProps = ({
   return result;
 };
 
-const formatSize = (value: number) => `${i18n.number(value / 10)} cm.`;
-const formatWeight = (value: number) => `${i18n.number(value)} kg.`;
-
 const Product: React.FC<ProductProps> = (product) => {
   const {
     className,
@@ -127,8 +125,6 @@ const Product: React.FC<ProductProps> = (product) => {
     caption: name,
     image,
   }));
-
-  console.log(<ProductJsonLd {...jsonld} />);
 
   return (
     <Box id={id} className={className}>

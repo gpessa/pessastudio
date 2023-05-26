@@ -1,3 +1,4 @@
+import { t } from "@lingui/macro";
 import { Grid } from "@mui/material";
 import { Product, Title } from "components";
 import { ProductData } from "components/Product";
@@ -7,11 +8,11 @@ const CandelieriLameForate: React.FC<{ products: ProductData[] }> = ({
   products,
 }) => (
   <>
-    <Title sx={{ mb: PRODUCT_GUTTER }} title={`Candelieri e lame forate`} />
+    <Title sx={{ mb: PRODUCT_GUTTER }} title={t`Candelieri e lame forate`} />
     <Grid container spacing={PRODUCT_GUTTER}>
       {products.map((product, index) => (
-        <Grid item xs={12} key={`candelieri_lame_forate_${index}`}>
-          <Product {...product} />
+        <Grid item xs={12} md={3} key={`candelieri_lame_forate_${index}`}>
+          <Product {...product} vertical />
         </Grid>
       ))}
     </Grid>

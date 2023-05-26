@@ -7,7 +7,8 @@ import ostacoliBarriere_02 from "assets/products/ostacoli/barriere-02.png";
 import ostacoliBarriere_03 from "assets/products/ostacoli/barriere-03.png";
 import ostacoliCandelierePvc_01 from "assets/products/ostacoli/candeliere-pvc-01.png";
 import ostacoliCandelierePvc_02 from "assets/products/ostacoli/candeliere-pvc-02.png";
-import ostacoliCandelierePvc_03 from "assets/products/ostacoli/candeliere-pvc-03.png";
+// import ostacoliCandelierePvc_03 from "assets/products/ostacoli/candeliere-pvc-03.png";
+// import ostacoliCandelierePvc_04 from "assets/products/ostacoli/candeliere-pvc-04.jpg";
 import ostacoliCavalletto_01 from "assets/products/ostacoli/cavalletto-01.png";
 import ostacoliCavallettoBarriera_01 from "assets/products/ostacoli/cavalletto-barriera-01.png";
 import ostacoliCubiMaxi_01 from "assets/products/ostacoli/cubi-maxi-01.png";
@@ -23,9 +24,9 @@ import ostacoliCucchiaioPs_01 from "assets/products/ostacoli/cucchiaio-ps-01.png
 import ostacoliCucchiaioPs_02 from "assets/products/ostacoli/cucchiaio-ps-02.png";
 import ostacoliCucchiaioPs_03 from "assets/products/ostacoli/cucchiaio-ps-03.png";
 import ostacoliFosso from "assets/products/ostacoli/fosso.png";
-import ostacoliLamaDe_01 from "assets/products/ostacoli/lama-de-01.png";
-import ostacoliLamaDe_02 from "assets/products/ostacoli/lama-de-02.png";
-import ostacoliLamaDe_03 from "assets/products/ostacoli/lama-de-03.png";
+// import ostacoliLamaDe_01 from "assets/products/ostacoli/lama-de-01.png";
+import ostacoliLamaDe_50 from "assets/products/ostacoli/lama-de-50.png";
+import ostacoliLamaDe_150 from "assets/products/ostacoli/lama-de-150.png";
 import ostacoliNumeroLight from "assets/products/ostacoli/numero-light.png";
 import ostacoliNumeroProfessional from "assets/products/ostacoli/numero-professional.png";
 import ostacoliSupportoDiSicurezza_01 from "assets/products/ostacoli/supporto-di-sicurezza-01.png";
@@ -45,6 +46,7 @@ import Cubi from "./Cubi";
 import Cucchiai from "./CucchiaiSegnaletica";
 import Fosso from "./Fosso";
 import Segnaletica from "./Segnaletica";
+import { formatSize } from "utils/format";
 export { getStaticProps } from "utils/getProps";
 
 const Ostacoli: React.FC = () => {
@@ -135,36 +137,48 @@ const Ostacoli: React.FC = () => {
 
   const CANDELIERI_LAME_FORATE: ProductData[] = [
     {
-      name: t`Candeliere con piede in PVC`,
+      name: t`Candeliere da ${formatSize(1700)} con piede in PVC`,
       id: ProductId.CandeliereConPiedeInPvc,
       description: t`I candelieri sono costruiti con un montante di alluminio verniciato di colore bianco e sono muniti di 4 piedi rivestiti con puntali di plastica che garantiscono, in caso di ribaltamento, l’incolumità vostra e dei vostri cavalli.`,
-      pictures: [
-        ostacoliCandelierePvc_03,
-        ostacoliCandelierePvc_02,
-        ostacoliCandelierePvc_01,
-      ],
+      pictures: [ostacoliCandelierePvc_02],
       width: 720,
       depth: 720,
       height: 1700,
       weight: 7,
-      price: [
-        { price: 89, note: <Trans>Altezza {170} cm.</Trans> },
-        { price: 96, note: <Trans>Lama {190} cm.</Trans> },
-      ],
+      price: 89,
     },
     {
-      id: ProductId.LamaDe_50_150Cm,
-      name: t`Lama DE da 50/150 cm.`,
+      name: t`Candeliere da ${formatSize(1900)} con piede in PVC`,
+      id: ProductId.CandeliereConPiedeInPvc,
+      description: t`I candelieri sono costruiti con un montante di alluminio verniciato di colore bianco e sono muniti di 4 piedi rivestiti con puntali di plastica che garantiscono, in caso di ribaltamento, l’incolumità vostra e dei vostri cavalli.`,
+      pictures: [ostacoliCandelierePvc_01],
+      width: 720,
+      depth: 720,
+      height: 1900,
+      weight: 7,
+      price: 96,
+    },
+    {
+      id: ProductId.LamaDe_50,
+      name: t`Lama DE da ${formatSize(500)}`,
       materials: [MATERIALS.ACCIAIO_ZINCATO],
       description: t`Per consentirvi di realizzare ostacoli di vostra creazione possiamo fornirvi le lame forate in due diverse lunghezze.`,
-      pictures: [ostacoliLamaDe_02, ostacoliLamaDe_01, ostacoliLamaDe_03],
+      pictures: [ostacoliLamaDe_50],
       length: 500,
       thickness: 2,
       width: 65,
-      price: [
-        { price: 8.5, note: <Trans>Lama {50} cm.</Trans> },
-        { price: 17.0, note: <Trans>Lama {150} cm.</Trans> },
-      ],
+      price: 8.5,
+    },
+    {
+      id: ProductId.LamaDe_150,
+      name: t`Lama DE da ${formatSize(1500)}`,
+      materials: [MATERIALS.ACCIAIO_ZINCATO],
+      description: t`Per consentirvi di realizzare ostacoli di vostra creazione possiamo fornirvi le lame forate in due diverse lunghezze.`,
+      pictures: [ostacoliLamaDe_150],
+      length: 1500,
+      thickness: 2,
+      width: 65,
+      price: 17,
     },
   ];
 

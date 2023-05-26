@@ -21,7 +21,7 @@ msgstr "{NAME} è stata scelta da oltre 3.000 clienti in tutto il mondo per la r
 msgid "* In presenza di nevicate che superino la portata consentita, sarà opportuno intervenire rimuovendo l’eccesso di neve e cospargendo di sale la copertura prima di introdurre i cavalli."
 msgstr "* In presenza di nevicate che superino la portata consentita, sarà opportuno intervenire rimuovendo l’eccesso di neve e cospargendo di sale la copertura prima di introdurre i cavalli."
 
-#: src/components/Product/ProductPrice/index.tsx:27
+#: src/components/Product/ProductPrice/index.tsx:24
 msgid "+ IVA"
 msgstr "+ IVA"
 
@@ -61,7 +61,7 @@ msgstr "<0>E' possibile ordinare una giostra nei diametri:</0><1><2>12,0 mt. <3>
 msgid "<0>I cavalletti Caprilli rappresentano uno strumento essenziale per l'allenamento del vostro animale, il passaggio sui cavalletti, rinforza la schiena del cavallo, scioglie la muscolatura e lo induce a flettere le articolazioni.</0><1>Lavati con idropulitrice riprendono i colori originari anche dopo 20 anni.</1>"
 msgstr "<0>I cavalletti Caprilli rappresentano uno strumento essenziale per l'allenamento del vostro animale, il passaggio sui cavalletti, rinforza la schiena del cavallo, scioglie la muscolatura e lo induce a flettere le articolazioni.</0><1>Lavati con idropulitrice riprendono i colori originari anche dopo 20 anni.</1>"
 
-#: src/modules/Ostacoli/index.tsx:258
+#: src/modules/Ostacoli/index.tsx:272
 msgid "<0>I nostri ostacoli sono progettati e costruiti per durare nel tempo non richiedono alcuna manutenzione e conservano, inalterata, la loro bellezza anche se lasciati nel campo per anni.</0><1>Se gli ostacoli per il professionista sono uno strumento di lavoro, per molti altri appassionati rappresentano la realizzazione di un sogno. Noi abbiamo deciso di rendere questi strumenti resistenti nel tempo per fare in modo che questo sogno duri.</1><2>Potrete scegliere le quantità e i colori nella nostra gamma di produzione e acquistare anche singoli pezzi di ricambio.</2>"
 msgstr "<0>I nostri ostacoli sono progettati e costruiti per durare nel tempo non richiedono alcuna manutenzione e conservano, inalterata, la loro bellezza anche se lasciati nel campo per anni.</0><1>Se gli ostacoli per il professionista sono uno strumento di lavoro, per molti altri appassionati rappresentano la realizzazione di un sogno. Noi abbiamo deciso di rendere questi strumenti resistenti nel tempo per fare in modo che questo sogno duri.</1><2>Potrete scegliere le quantità e i colori nella nostra gamma di produzione e acquistare anche singoli pezzi di ricambio.</2>"
 
@@ -143,13 +143,9 @@ msgstr "Acciaio zincato"
 msgid "Acconsento"
 msgstr "Acconsento"
 
-#: src/components/Product/index.tsx:150
+#: src/components/Product/index.tsx:146
 msgid "Altezza"
 msgstr "Altezza"
-
-#: src/modules/Ostacoli/index.tsx:151
-msgid "Altezza {0} cm."
-msgstr "Altezza {0} cm."
 
 #: src/modules/GiostreTecnoexerciser/_servizio_clienti.tsx:109
 msgid "Altro"
@@ -209,11 +205,11 @@ msgstr "Assicuratevi di bloccare la giostra alla giusta altezza e piana"
 msgid "Avanti"
 msgstr "Avanti"
 
-#: src/modules/Ostacoli/index.tsx:227
+#: src/modules/Ostacoli/index.tsx:241
 msgid "Bandierine"
 msgstr "Bandierine"
 
-#: src/modules/Ostacoli/index.tsx:58
+#: src/modules/Ostacoli/index.tsx:60
 msgid "Barriera 3 mt."
 msgstr "Barriera 3 mt."
 
@@ -225,16 +221,21 @@ msgstr "Barriere"
 msgid "Bello e funzionale"
 msgstr "Bello e funzionale"
 
-#: src/modules/Ostacoli/index.tsx:138
-msgid "Candeliere con piede in PVC"
-msgstr "Candeliere con piede in PVC"
+#: src/modules/Ostacoli/index.tsx:140
+#: src/modules/Ostacoli/index.tsx:151
+msgid "Candeliere da {0} con piede in PVC"
+msgstr "Candeliere da {0} con piede in PVC"
+
+#: src/modules/Ostacoli/CandelieriElameForate.tsx:11
+msgid "Candelieri e lame forate"
+msgstr "Candelieri e lame forate"
 
 #: src/modules/Tondini/index.tsx:218
 msgid "Caratteristiche"
 msgstr "Caratteristiche"
 
 #: src/modules/Ostacoli/Cavalletti.tsx:12
-#: src/modules/Ostacoli/index.tsx:84
+#: src/modules/Ostacoli/index.tsx:86
 msgid "Cavalletti Caprilli"
 msgstr "Cavalletti Caprilli"
 
@@ -262,7 +263,7 @@ msgstr "Codice Fiscale e Partita IVA"
 msgid "Collegate le braccia di separazione attraverso i cavi"
 msgstr "Collegate le braccia di separazione attraverso i cavi"
 
-#: src/components/Product/index.tsx:162
+#: src/components/Product/index.tsx:158
 msgid "Colori"
 msgstr "Colori"
 
@@ -362,15 +363,15 @@ msgstr "Corridoio TECNOFENCE"
 msgid "Cosa dicono di noi"
 msgstr "Cosa dicono di noi"
 
-#: src/modules/Ostacoli/index.tsx:59
+#: src/modules/Ostacoli/index.tsx:61
 msgid "Costruisci la tua barriera personalizzata scegliendo tra i colori a disposizione"
 msgstr "Costruisci la tua barriera personalizzata scegliendo tra i colori a disposizione"
 
-#: src/modules/Ostacoli/index.tsx:125
+#: src/modules/Ostacoli/index.tsx:127
 msgid "Cubi maxi"
 msgstr "Cubi maxi"
 
-#: src/modules/Ostacoli/index.tsx:114
+#: src/modules/Ostacoli/index.tsx:116
 msgid "Cubi mini"
 msgstr "Cubi mini"
 
@@ -382,8 +383,8 @@ msgstr "Cubi per campo ostacoli"
 msgid "Cucchiai"
 msgstr "Cucchiai"
 
-#: src/modules/Ostacoli/index.tsx:179
 #: src/modules/Ostacoli/index.tsx:193
+#: src/modules/Ostacoli/index.tsx:207
 msgid "Cucchiaio {0}"
 msgstr "Cucchiaio {0}"
 
@@ -391,7 +392,7 @@ msgstr "Cucchiaio {0}"
 msgid "Da anni Pessastudio è focalizzata nel produrre prodotti di qualità a costi accessibili"
 msgstr "Da anni Pessastudio è focalizzata nel produrre prodotti di qualità a costi accessibili"
 
-#: src/components/Product/index.tsx:157
+#: src/components/Product/index.tsx:153
 #: src/utils/constants.tsx:269
 msgid "Diametro"
 msgstr "Diametro"
@@ -466,7 +467,7 @@ msgid "Fin dal primo accesso questi cookie permettono al sito di funzionare corr
 msgstr "Fin dal primo accesso questi cookie permettono al sito di funzionare correttamente e ti consentono di visualizzare i contenuti sul tuo dispositivo riconoscendo la lingua e il mercato del Paese dal quale scegli di connetterti. Se sei un utente registrato, permetteranno di riconoscerti e di accedere ai servizi delle aree dedicate. I cookie di navigazione sono cookie tecnici e sono necessari al funzionamento del sito."
 
 #: src/modules/Ostacoli/Fosso.tsx:12
-#: src/modules/Ostacoli/index.tsx:72
+#: src/modules/Ostacoli/index.tsx:74
 msgid "Fosso"
 msgstr "Fosso"
 
@@ -567,7 +568,8 @@ msgstr "Ho ricevuto questa mattina il materiale. I miei complimenti per la quali
 msgid "Home"
 msgstr "Home"
 
-#: src/modules/Ostacoli/index.tsx:140
+#: src/modules/Ostacoli/index.tsx:142
+#: src/modules/Ostacoli/index.tsx:153
 msgid "I candelieri sono costruiti con un montante di alluminio verniciato di colore bianco e sono muniti di 4 piedi rivestiti con puntali di plastica che garantiscono, in caso di ribaltamento, l’incolumità vostra e dei vostri cavalli."
 msgstr "I candelieri sono costruiti con un montante di alluminio verniciato di colore bianco e sono muniti di 4 piedi rivestiti con puntali di plastica che garantiscono, in caso di ribaltamento, l’incolumità vostra e dei vostri cavalli."
 
@@ -592,11 +594,11 @@ msgstr "I prodotti vengono venduti ed apprezzati sia in Italia che all'estero"
 msgid "Iban"
 msgstr "Iban"
 
-#: src/modules/Ostacoli/index.tsx:194
+#: src/modules/Ostacoli/index.tsx:208
 msgid "Il cucchiaio dotato del nostro sistema brevettato di aggancio"
 msgstr "Il cucchiaio dotato del nostro sistema brevettato di aggancio"
 
-#: src/modules/Ostacoli/index.tsx:180
+#: src/modules/Ostacoli/index.tsx:194
 msgid "Il cucchiaio standard utilizzato al livello internazionale"
 msgstr "Il cucchiaio standard utilizzato al livello internazionale"
 
@@ -679,11 +681,11 @@ msgstr "Istituto"
 msgid "Istruzioni di montaggio"
 msgstr "Istruzioni di montaggio"
 
-#: src/modules/Ostacoli/index.tsx:101
+#: src/modules/Ostacoli/index.tsx:103
 msgid "Kit Cavalletti Caprilli + barriera"
 msgstr "Kit Cavalletti Caprilli + barriera"
 
-#: src/modules/Ostacoli/index.tsx:102
+#: src/modules/Ostacoli/index.tsx:104
 msgid "Kit comprensivo di 2 cavalletti e una barriera in PPO di colore bianco, diametro 95, lunghezza 2 mt."
 msgstr "Kit comprensivo di 2 cavalletti e una barriera in PPO di colore bianco, diametro 95, lunghezza 2 mt."
 
@@ -740,17 +742,12 @@ msgstr "La rete antivento protegge l'interno della tondino da correnti d'aria co
 msgid "La struttura è stata progettata per garantire un carico neve fino a 120 kg/mq e la velocità del vento fino a 110 km/h."
 msgstr "La struttura è stata progettata per garantire un carico neve fino a 120 kg/mq e la velocità del vento fino a 110 km/h."
 
-#: src/modules/Ostacoli/index.tsx:152
-#: src/modules/Ostacoli/index.tsx:165
-#: src/modules/Ostacoli/index.tsx:166
-msgid "Lama {0} cm."
-msgstr "Lama {0} cm."
+#: src/modules/Ostacoli/index.tsx:163
+#: src/modules/Ostacoli/index.tsx:174
+msgid "Lama DE da {0}"
+msgstr "Lama DE da {0}"
 
-#: src/modules/Ostacoli/index.tsx:157
-msgid "Lama DE da 50/150 cm."
-msgstr "Lama DE da 50/150 cm."
-
-#: src/components/Product/index.tsx:149
+#: src/components/Product/index.tsx:145
 msgid "Larghezza"
 msgstr "Larghezza"
 
@@ -767,7 +764,7 @@ msgstr "Le recinzioni a quattro filagne sono utilizzate per delimitare paddock p
 msgid "Lettera dressage ({0})"
 msgstr "Lettera dressage ({0})"
 
-#: src/components/Product/index.tsx:151
+#: src/components/Product/index.tsx:147
 msgid "Lunghezza"
 msgstr "Lunghezza"
 
@@ -797,7 +794,7 @@ msgstr "Manuali"
 msgid "Mappa"
 msgstr "Mappa"
 
-#: src/components/Product/index.tsx:160
+#: src/components/Product/index.tsx:156
 msgid "Materiali"
 msgstr "Materiali"
 
@@ -836,8 +833,8 @@ msgstr "Nessuna concessione edilizia"
 msgid "Newsletters"
 msgstr "Newsletters"
 
-#: src/modules/Ostacoli/index.tsx:234
-#: src/modules/Ostacoli/index.tsx:244
+#: src/modules/Ostacoli/index.tsx:248
+#: src/modules/Ostacoli/index.tsx:258
 msgid "Numero per campo ostacoli {0}"
 msgstr "Numero per campo ostacoli {0}"
 
@@ -850,7 +847,8 @@ msgstr "Ostacoli"
 msgid "Pagina non trovata"
 msgstr "Pagina non trovata"
 
-#: src/modules/Ostacoli/index.tsx:159
+#: src/modules/Ostacoli/index.tsx:165
+#: src/modules/Ostacoli/index.tsx:176
 msgid "Per consentirvi di realizzare ostacoli di vostra creazione possiamo fornirvi le lame forate in due diverse lunghezze."
 msgstr "Per consentirvi di realizzare ostacoli di vostra creazione possiamo fornirvi le lame forate in due diverse lunghezze."
 
@@ -866,7 +864,7 @@ msgstr "Perché?"
 msgid "Personalizzabili"
 msgstr "Personalizzabili"
 
-#: src/components/Product/index.tsx:159
+#: src/components/Product/index.tsx:155
 msgid "Peso"
 msgstr "Peso"
 
@@ -932,7 +930,7 @@ msgstr "Prodotti MADE IN ITALY, costruiti da Pessastudio e personalizzabili (in 
 msgid "Prodotti professionali, sono lo strumento di lavoro indispensabile in un centro ippico o un maneggio. Progettati e costruiti per durare nel tempo senza alcuna manutenzione"
 msgstr "Prodotti professionali, sono lo strumento di lavoro indispensabile in un centro ippico o un maneggio. Progettati e costruiti per durare nel tempo senza alcuna manutenzione"
 
-#: src/components/Product/index.tsx:152
+#: src/components/Product/index.tsx:148
 msgid "Profondità"
 msgstr "Profondità"
 
@@ -1093,7 +1091,7 @@ msgstr "Si è verificato un problema, riprova"
 msgid "Sicuro"
 msgstr "Sicuro"
 
-#: src/modules/Ostacoli/index.tsx:86
+#: src/modules/Ostacoli/index.tsx:88
 msgid "Singolo cavalletto abbinabile a barriere diametro 90, 95, 100, 105 mm. <0>(il prezzo é per un singolo cavalletto)</0>"
 msgstr "Singolo cavalletto abbinabile a barriere diametro 90, 95, 100, 105 mm. <0>(il prezzo é per un singolo cavalletto)</0>"
 
@@ -1101,7 +1099,7 @@ msgstr "Singolo cavalletto abbinabile a barriere diametro 90, 95, 100, 105 mm. <
 msgid "Socials"
 msgstr "Socials"
 
-#: src/components/Product/index.tsx:154
+#: src/components/Product/index.tsx:150
 msgid "Spessore"
 msgstr "Spessore"
 
@@ -1109,7 +1107,7 @@ msgstr "Spessore"
 msgid "Splendido niente da dire! Il tondino è ben pensato e ingegnoso. Molto bene!"
 msgstr "Splendido niente da dire! Il tondino è ben pensato e ingegnoso. Molto bene!"
 
-#: src/modules/Ostacoli/index.tsx:206
+#: src/modules/Ostacoli/index.tsx:220
 msgid "Supporti di sicurezza da applicare ai nostri cucchiai per salvaguardare l'integrità degli arti dei vostri cavalli in maniera efficace ed economica."
 msgstr "Supporti di sicurezza da applicare ai nostri cucchiai per salvaguardare l'integrità degli arti dei vostri cavalli in maniera efficace ed economica."
 
@@ -1120,7 +1118,7 @@ msgstr "Supporti di sicurezza da applicare ai nostri cucchiai per salvaguardare 
 msgid "Supporto clienti"
 msgstr "Supporto clienti"
 
-#: src/modules/Ostacoli/index.tsx:205
+#: src/modules/Ostacoli/index.tsx:219
 msgid "Supporto di sicurezza"
 msgstr "Supporto di sicurezza"
 
