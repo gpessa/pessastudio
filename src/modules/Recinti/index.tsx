@@ -8,7 +8,6 @@ import Accessori from "./_accessori";
 import Gamma from "./_gamma";
 
 import { useLingui } from "@lingui/react";
-import { ProductId } from "@prisma/client";
 import productsRecintiGalleryRecintiImage2 from "assets/products/recinti/gallery/recinti-image-2.jpg";
 import productsRecintiGalleryRecintiImage4 from "assets/products/recinti/gallery/recinti-image-4.jpg";
 import productsRecintiGalleryRecintiImage5 from "assets/products/recinti/gallery/recinti-image-5.jpg";
@@ -25,6 +24,7 @@ import productsRecintiSvg4 from "assets/products/recinti/svg-4.svg";
 import { ProductData } from "components/Product";
 import { Colors } from "theme";
 import { MATERIALS } from "utils/constants";
+import { ProductId } from "utils/products";
 export { getStaticProps } from "utils/getProps";
 
 const Recinti: React.FC = () => {
