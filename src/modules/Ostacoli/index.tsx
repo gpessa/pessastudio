@@ -82,13 +82,18 @@ const Ostacoli: React.FC = () => {
     {
       id: ProductId.CavallettiCaprilli,
       name: t`Cavalletti Caprilli`,
-      description: t`Singolo cavalletto abbinabile a barriere diametro 90, 95, 100, 105 mm.`,
+      description: (
+        <Trans>
+          Singolo cavalletto abbinabile a barriere diametro 90, 95, 100, 105 mm.{" "}
+          <small>(il prezzo é per un singolo cavalletto)</small>
+        </Trans>
+      ),
       pictures: [ostacoliCavalletto_01],
       thickness: 100,
       length: 500,
       height: 500,
       weight: 2,
-      price: [{ price: 34, note: <Trans>Singolo cavvalleto</Trans> }],
+      price: 34,
       colors: [WHITE, BLU, YELLOW, RED, GREEN],
     },
     {
