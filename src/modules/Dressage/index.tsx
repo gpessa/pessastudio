@@ -60,7 +60,7 @@ const Dressage: React.FC = () => {
     {
       colors: [Colors.WHITE],
       height: 300,
-      id: ProductId.DressageTrainingLettera,
+      id: ProductId.DRESSAGE_TRAINING_LETTERA,
       materials: [MATERIALS.POLIETILENE],
       name: t`Lettera dressage (${MODELS.TRAINING})`,
       pictures: [productsDressageTrainingLettera],
@@ -71,7 +71,7 @@ const Dressage: React.FC = () => {
     {
       colors: [Colors.WHITE],
       height: 285,
-      id: ProductId.DressageTrainingModulo,
+      id: ProductId.DRESSAGE_TRAINING_MODULO,
       name: t`Modulo dressage (${MODELS.TRAINING})`,
       pictures: [productsDressageTrainingModuloDressage],
       weight: 3,
@@ -79,14 +79,14 @@ const Dressage: React.FC = () => {
     },
     {
       description: DESCRIPTION_20x40,
-      id: ProductId.DressageTrainingRettangolo_20X40,
+      id: ProductId.DRESSAGE_TRAINING_RETTANGOLO_20X40,
       name: t`Rettangolo dressage ${SIZE_20x40.size} (${MODELS.TRAINING})`,
       pictures: [productsDressageRettangoloDressage20x40],
       price: 1400,
     },
     {
       description: DESCRIPTION_20x60,
-      id: ProductId.DressageTrainingRettangolo_20X60,
+      id: ProductId.DRESSAGE_TRAINING_RETTANGOLO_20X60,
       name: t`Rettangolo dressage ${SIZE_20x60.size} (${MODELS.TRAINING})`,
       pictures: [productsDressageRettangoloDressage20x60],
       price: 1800,
@@ -97,7 +97,7 @@ const Dressage: React.FC = () => {
     {
       colors: [Colors.WHITE],
       height: 700,
-      id: ProductId.DressageOlympicLettera,
+      id: ProductId.DRESSAGE_OLYMPIC_LETTERA,
       name: t`Lettera dressage (${MODELS.OLYMPIC})`,
       pictures: [productsDressageOlympicLettera],
       price: 62,
@@ -107,7 +107,7 @@ const Dressage: React.FC = () => {
     {
       colors: [Colors.WHITE],
       height: 370,
-      id: ProductId.DressageOlympicModulo,
+      id: ProductId.DRESSAGE_OLYMPIC_MODULO,
       name: t`Modulo dressage (${MODELS.OLYMPIC})`,
       pictures: [productsDressageOlympicModuloDressage],
       weight: 5,
@@ -115,14 +115,14 @@ const Dressage: React.FC = () => {
     },
     {
       description: DESCRIPTION_20x40,
-      id: ProductId.DressageOlympicRettangolo_20X40,
+      id: ProductId.DRESSAGE_OLYMPIC_RETTANGOLO_20X40,
       name: t`Rettangolo dressage ${SIZE_20x40.size} (${MODELS.OLYMPIC})`,
       pictures: [productsDressageRettangoloDressage20x40],
       price: 5940,
     },
     {
       description: DESCRIPTION_20x60,
-      id: ProductId.DressageOlympicRettangolo_20X60,
+      id: ProductId.DRESSAGE_OLYMPIC_RETTANGOLO_20X60,
       name: t`Rettangolo dressage ${SIZE_20x60.size} (${MODELS.OLYMPIC})`,
       pictures: [productsDressageRettangoloDressage20x60],
       price: 7920,
