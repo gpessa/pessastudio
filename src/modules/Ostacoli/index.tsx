@@ -56,7 +56,7 @@ const Ostacoli: React.FC = () => {
 
   const BARRIERE: ProductData[] = [
     {
-      id: ProductId.Barriera_3Mt,
+      id: ProductId.BARRIERA_3_MT,
       name: t`Barriera 3 mt.`,
       description: t`Costruisci la tua barriera personalizzata scegliendo tra i colori a disposizione`,
       pictures: [ostacoliBarriere_01, ostacoliBarriere_02, ostacoliBarriere_03],
@@ -70,7 +70,7 @@ const Ostacoli: React.FC = () => {
 
   const FOSSI: ProductData[] = [
     {
-      id: ProductId.Fosso,
+      id: ProductId.FOSSO,
       name: t`Fosso`,
       pictures: [ostacoliFosso],
       length: 1500,
@@ -82,7 +82,7 @@ const Ostacoli: React.FC = () => {
 
   const CAVALLETTI: ProductData[] = [
     {
-      id: ProductId.CavallettiCaprilli,
+      id: ProductId.CAVALLETTI_CAPRILLI,
       name: t`Cavalletti Caprilli`,
       description: (
         <Trans>
@@ -99,7 +99,7 @@ const Ostacoli: React.FC = () => {
       colors: [WHITE, BLU, YELLOW, RED, GREEN],
     },
     {
-      id: ProductId.CavallettiCaprilliBarrieraKit,
+      id: ProductId.CAVALLETTI_CAPRILLI_BARRIERA_KIT,
       name: t`Kit Cavalletti Caprilli + barriera`,
       description: t`Kit comprensivo di 2 cavalletti e una barriera in PPO di colore bianco, diametro 95, lunghezza 2 mt.`,
       pictures: [ostacoliCavallettoBarriera_01],
@@ -112,7 +112,7 @@ const Ostacoli: React.FC = () => {
 
   const CUBI: ProductData[] = [
     {
-      id: ProductId.CubiMini,
+      id: ProductId.CUBI_MINI,
       name: t`Cubi mini`,
       pictures: [ostacoliCubiMini_01, ostacoliCubiMini_02, ostacoliCubiMini_03],
       width: 350,
@@ -123,7 +123,7 @@ const Ostacoli: React.FC = () => {
       colors: [WHITE, BLU, YELLOW, RED, GREEN],
     },
     {
-      id: ProductId.CubiMaxi,
+      id: ProductId.CUBI_MAXI,
       name: t`Cubi maxi`,
       pictures: [ostacoliCubiMaxi_01, ostacoliCubiMaxi_02, ostacoliCubiMaxi_03],
       width: 370,
@@ -138,7 +138,7 @@ const Ostacoli: React.FC = () => {
   const CANDELIERI_LAME_FORATE: ProductData[] = [
     {
       name: t`Candeliere da ${formatSize(1700)} con piede in PVC`,
-      id: ProductId.CandeliereConPiedeInPvc,
+      id: ProductId.CANDELIERE_CON_PIEDE_IN_PVC_170,
       description: t`I candelieri sono costruiti con un montante di alluminio verniciato di colore bianco e sono muniti di 4 piedi rivestiti con puntali di plastica che garantiscono, in caso di ribaltamento, l’incolumità vostra e dei vostri cavalli.`,
       pictures: [ostacoliCandelierePvc_02],
       width: 720,
@@ -149,7 +149,7 @@ const Ostacoli: React.FC = () => {
     },
     {
       name: t`Candeliere da ${formatSize(1900)} con piede in PVC`,
-      id: ProductId.CandeliereConPiedeInPvc,
+      id: ProductId.CANDELIERE_CON_PIEDE_IN_PVC_190,
       description: t`I candelieri sono costruiti con un montante di alluminio verniciato di colore bianco e sono muniti di 4 piedi rivestiti con puntali di plastica che garantiscono, in caso di ribaltamento, l’incolumità vostra e dei vostri cavalli.`,
       pictures: [ostacoliCandelierePvc_01],
       width: 720,
@@ -159,7 +159,7 @@ const Ostacoli: React.FC = () => {
       price: 96,
     },
     {
-      id: ProductId.LamaDe_50,
+      id: ProductId.LAMA_DE_50,
       name: t`Lama DE da ${formatSize(500)}`,
       materials: [MATERIALS.ACCIAIO_ZINCATO],
       description: t`Per consentirvi di realizzare ostacoli di vostra creazione possiamo fornirvi le lame forate in due diverse lunghezze.`,
@@ -170,7 +170,7 @@ const Ostacoli: React.FC = () => {
       price: 8.5,
     },
     {
-      id: ProductId.LamaDe_150,
+      id: ProductId.LAMA_DE_150,
       name: t`Lama DE da ${formatSize(1500)}`,
       materials: [MATERIALS.ACCIAIO_ZINCATO],
       description: t`Per consentirvi di realizzare ostacoli di vostra creazione possiamo fornirvi le lame forate in due diverse lunghezze.`,
@@ -189,7 +189,7 @@ const Ostacoli: React.FC = () => {
 
   const CUCCHIAI: ProductData[] = [
     {
-      id: ProductId.CucchiaioDe,
+      id: ProductId.CUCCHIAIO_DE,
       name: t`Cucchiaio ${CUCCHIAI_MODELS.DE}`,
       description: t`Il cucchiaio standard utilizzato al livello internazionale`,
       pictures: [
@@ -203,7 +203,7 @@ const Ostacoli: React.FC = () => {
       price: 3.5,
     },
     {
-      id: ProductId.CucchiaioPs,
+      id: ProductId.CUCCHIAIO_PS,
       name: t`Cucchiaio ${CUCCHIAI_MODELS.PS}`,
       description: t`Il cucchiaio dotato del nostro sistema brevettato di aggancio`,
       pictures: [
@@ -215,7 +215,7 @@ const Ostacoli: React.FC = () => {
       price: 4.5,
     },
     {
-      id: ProductId.SupportoSicurezza,
+      id: ProductId.SUPPORTO_SICUREZZA,
       name: t`Supporto di sicurezza`,
       description: t`Supporti di sicurezza da applicare ai nostri cucchiai per salvaguardare l'integrità degli arti dei vostri cavalli in maniera efficace ed economica.`,
       pictures: [
@@ -237,14 +237,14 @@ const Ostacoli: React.FC = () => {
 
   const SEGNALETICA: ProductData[] = [
     {
-      id: ProductId.Bandierine,
+      id: ProductId.BANDIERINE,
       name: t`Bandierine`,
       pictures: [ostacoliBandierine],
       materials: [MATERIALS.PLASTICA],
       price: 2.1,
     },
     {
-      id: ProductId.NumeroCampoOstacoliProfessional,
+      id: ProductId.NUMERO_CAMPO_OSTACOLI_PROFESSIONAL,
       name: t`Numero per campo ostacoli ${SEGNALETICA_MODELS.PROFESSIONAL}`,
       pictures: [ostacoliNumeroProfessional],
       materials: [MATERIALS.POLIETILENE],
@@ -254,7 +254,7 @@ const Ostacoli: React.FC = () => {
       price: 26,
     },
     {
-      id: ProductId.NumeroCampoOstacoliLight,
+      id: ProductId.NUMERO_CAMPO_OSTACOLI_LIGHT,
       name: t`Numero per campo ostacoli ${SEGNALETICA_MODELS.LIGHT}`,
       pictures: [ostacoliNumeroLight],
       materials: [MATERIALS.POLIPROPILENE],
