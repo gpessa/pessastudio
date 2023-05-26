@@ -1,4 +1,3 @@
-import { i18n } from "@lingui/core";
 import { t } from "@lingui/macro";
 import { Box, Grid, styled, Typography } from "@mui/material";
 import Data from "components/Data";
@@ -11,10 +10,11 @@ import { Offers } from "next-seo/lib/types";
 import { StaticImageData } from "next/image";
 import { useRouter } from "next/router";
 import { WEBSITE } from "utils/constants";
+import { formatSize, formatWeight } from "utils/format";
+import { ProductId } from "utils/products";
 import ColorsList from "./ProductColorsList";
 import ProductImages from "./ProductImages";
 import ProductPrice, { PriceProps } from "./ProductPrice";
-import { formatSize, formatWeight } from "utils/format";
 
 const DataStyled = styled(Grid)(({ theme }) => ({
   order: -1,
@@ -44,7 +44,7 @@ export type ProductData = Attributes & {
   price?: PriceProps["price"];
   vertical?: boolean;
   name: string;
-  id: string;
+  id: ProductId;
 };
 
 export type ProductProps = ProductData & { className?: string };
@@ -127,7 +127,7 @@ const Product: React.FC<ProductProps> = (product) => {
   }));
 
   return (
-    <Box id={id} className={className}>
+    <Box id={String(id)} className={className}>
       <ProductJsonLd {...jsonld} keyOverride={product.id} />
 
       <Grid container spacing={PRODUCT_GUTTER}>
