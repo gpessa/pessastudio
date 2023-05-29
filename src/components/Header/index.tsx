@@ -54,6 +54,7 @@ const HeaderDesktopButtom = styled(Button)(({ theme, href }) => {
     marginLeft: theme.spacing(3),
     textTransform: "uppercase",
     color: selected ? theme.palette.primary.main : theme.palette.common.black,
+    lineHeight: 1,
     fontWeight: selected
       ? theme.typography.fontWeightBold
       : theme.typography.fontWeightRegular,
