@@ -16,7 +16,7 @@ export const getStaticProps = async ({ locale }: GetStaticPropsContext) => {
  * many ways how to load messages — from REST API, from file, from cache, etc.
  */
 export async function loadCatalog(locale: string) {
-  return (await import(`../i18n/${locale}/messages.po`)).messages;
+  return (await import(`/src/i18n/${locale}/messages.po`)).messages;
 }
 
 export async function getServerSideProps(context: GetServerSidePropsContext) {
