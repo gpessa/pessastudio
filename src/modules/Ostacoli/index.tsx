@@ -37,7 +37,7 @@ import { ProductData } from "components/Product";
 import { usePages } from "hooks";
 import React from "react";
 import { Colors } from "theme";
-import { MATERIALS } from "utils/constants";
+import { Material } from "utils/constants";
 import { ProductId } from "utils/products";
 import Barriere from "./Barriere";
 import CandelieriLameForate from "./CandelieriElameForate";
@@ -161,7 +161,7 @@ const Ostacoli: React.FC = () => {
     {
       id: ProductId.OSTACOLI_LAMA_DE_50,
       name: t`Lama DE da ${formatSize(500)}`,
-      materials: [MATERIALS.ACCIAIO_ZINCATO],
+      materials: [Material.ACCIAIO_ZINCATO],
       description: t`Per consentirvi di realizzare ostacoli di vostra creazione possiamo fornirvi le lame forate in due diverse lunghezze.`,
       pictures: [ostacoliLamaDe_50],
       length: 500,
@@ -172,7 +172,7 @@ const Ostacoli: React.FC = () => {
     {
       id: ProductId.OSTACOLI_LAMA_DE_150,
       name: t`Lama DE da ${formatSize(1500)}`,
-      materials: [MATERIALS.ACCIAIO_ZINCATO],
+      materials: [Material.ACCIAIO_ZINCATO],
       description: t`Per consentirvi di realizzare ostacoli di vostra creazione possiamo fornirvi le lame forate in due diverse lunghezze.`,
       pictures: [ostacoliLamaDe_150],
       length: 1500,
@@ -197,7 +197,7 @@ const Ostacoli: React.FC = () => {
         ostacoliCucchiaioDe_02,
         ostacoliCucchiaioDe_03,
       ],
-      materials: [MATERIALS.TECNOPOLIMERO],
+      materials: [Material.TECNOPOLIMERO],
       depth: 20,
       weight: 0.15,
       price: 3.5,
@@ -211,7 +211,7 @@ const Ostacoli: React.FC = () => {
         ostacoliCucchiaioPs_02,
         ostacoliCucchiaioPs_03,
       ],
-      materials: [MATERIALS.TECNOPOLIMERO],
+      materials: [Material.TECNOPOLIMERO],
       price: 4.5,
     },
     {
@@ -223,7 +223,7 @@ const Ostacoli: React.FC = () => {
         ostacoliSupportoDiSicurezza_03,
         ostacoliSupportoDiSicurezza_04,
       ],
-      materials: [MATERIALS.PLASTICA],
+      materials: [Material.PLASTICA],
       width: 37,
       weight: 0.05,
       price: 4,
@@ -240,14 +240,14 @@ const Ostacoli: React.FC = () => {
       id: ProductId.OSTACOLI_BANDIERINE,
       name: t`Bandierine`,
       pictures: [ostacoliBandierine],
-      materials: [MATERIALS.PLASTICA],
+      materials: [Material.PLASTICA],
       price: 2.1,
     },
     {
       id: ProductId.OSTACOLI_NUMERO_CAMPO_OSTACOLI_PROFESSIONAL,
       name: t`Numero per campo ostacoli ${SEGNALETICA_MODELS.PROFESSIONAL}`,
       pictures: [ostacoliNumeroProfessional],
-      materials: [MATERIALS.POLIETILENE],
+      materials: [Material.POLIETILENE],
       width: 200,
       height: 300,
       weight: 2.3,
@@ -257,7 +257,7 @@ const Ostacoli: React.FC = () => {
       id: ProductId.OSTACOLI_NUMERO_CAMPO_OSTACOLI_LIGHT,
       name: t`Numero per campo ostacoli ${SEGNALETICA_MODELS.LIGHT}`,
       pictures: [ostacoliNumeroLight],
-      materials: [MATERIALS.POLIPROPILENE],
+      materials: [Material.POLIPROPILENE],
       width: 330,
       height: 330,
       weight: 1.25,

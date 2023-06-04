@@ -9,11 +9,12 @@ import { BREAKPOINT, Colors, PRODUCT_GUTTER } from "theme";
 import { Offers } from "next-seo/lib/types";
 import { StaticImageData } from "next/image";
 import { useRouter } from "next/router";
-import { WEBSITE } from "utils/constants";
+import { Material, WEBSITE } from "utils/constants";
 import { formatSize, formatWeight } from "utils/format";
 import { ProductId } from "utils/products";
-import ColorsList from "./ProductColorsList";
+import ProductColorsList from "./ProductColorsList";
 import ProductImages from "./ProductImages";
+import ProductMaterialsList from "./ProductMaterialsList";
 import ProductPrice, { PriceProps } from "./ProductPrice";
 
 const DataStyled = styled(Grid)(({ theme }) => ({
@@ -32,7 +33,7 @@ type Attributes = {
   diameter?: number;
   height?: number;
   length?: number;
-  materials?: JSX.Element[];
+  materials?: Material[];
   thickness?: number;
   weight?: number;
   width?: number;
@@ -153,9 +154,17 @@ const Product: React.FC<ProductProps> = (product) => {
             <Data value={formatSize(diameter)} label={t`Diametro`} />
           )}
           {weight && <Data value={formatWeight(weight)} label={t`Peso`} />}
-          {materials && <Data value={materials} label={t`Materiali`} />}
+          {materials && (
+            <Data
+              value={<ProductMaterialsList materials={materials} />}
+              label={t`Materiali`}
+            />
+          )}
           {colors && (
-            <Data value={<ColorsList colors={colors} />} label={t`Colori`} />
+            <Data
+              value={<ProductColorsList colors={colors} />}
+              label={t`Colori`}
+            />
           )}
 
           <ProductPrice price={price} />

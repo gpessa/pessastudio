@@ -14,7 +14,7 @@ import { ProductData } from "components/Product";
 import { usePages } from "hooks";
 import React from "react";
 import { Colors, PRODUCT_GUTTER } from "theme";
-import { MATERIALS } from "utils/constants";
+import { Material } from "utils/constants";
 import { ProductId } from "utils/products";
 export { getStaticProps } from "utils/getProps";
 
@@ -61,7 +61,7 @@ const Dressage: React.FC = () => {
       colors: [Colors.WHITE],
       height: 300,
       id: ProductId.DRESSAGE_TRAINING_LETTERA,
-      materials: [MATERIALS.POLIETILENE],
+      materials: [Material.POLIETILENE],
       name: t`Lettera dressage (${MODELS.TRAINING})`,
       pictures: [productsDressageTrainingLettera],
       price: 25.5,

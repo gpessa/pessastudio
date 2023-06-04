@@ -23,7 +23,7 @@ import productsRecintiSvg3 from "assets/products/recinti/svg-3.svg";
 import productsRecintiSvg4 from "assets/products/recinti/svg-4.svg";
 import { ProductData } from "components/Product";
 import { Colors } from "theme";
-import { MATERIALS } from "utils/constants";
+import { Material } from "utils/constants";
 import { ProductId } from "utils/products";
 export { getStaticProps } from "utils/getProps";
 
@@ -79,7 +79,7 @@ const Recinti: React.FC = () => {
       id: ProductId.RECINZIONE_1_FILAGNA,
       pictures: [productsRecintiSvg1],
       colors: [Colors.WHITE],
-      materials: [MATERIALS.POLIPROPILENE],
+      materials: [Material.POLIPROPILENE],
       description: t`La recinzione ad una filagna viene utilizzata per delimitare campi da lavoro o gara poco adoperati e non è adatta per l'addestramento. Potete utilizzarla anche per delimitare un'area del vostro giardino di casa`,
     },
     {
@@ -88,7 +88,7 @@ const Recinti: React.FC = () => {
       id: ProductId.RECINZIONE_2_FILAGNE,
       pictures: [productsRecintiSvg2],
       colors: [Colors.WHITE],
-      materials: [MATERIALS.POLIPROPILENE],
+      materials: [Material.POLIPROPILENE],
       description: t`La recinzione a due filagne genericamente viene utilizzata per delimitare campi da lavoro o per realizzare paddock dove i cavalli sono comunque osservati dal personale presente`,
     },
     {
@@ -97,7 +97,7 @@ const Recinti: React.FC = () => {
       id: ProductId.RECINZIONE_3_FILAGNE,
       pictures: [productsRecintiSvg3],
       colors: [Colors.WHITE],
-      materials: [MATERIALS.POLIPROPILENE],
+      materials: [Material.POLIPROPILENE],
       description: t`La recinzione a tre filagne viene utilizzata per delimitare paddok per animali che rimangono per molte ore al giorno incustoditi oppure per delimitare confini di proprietà o aree. Per garantirne una maggiore sicurezza è possibile installare un impianto d'elettrificazione sulle filagne`,
     },
     {
@@ -106,7 +106,7 @@ const Recinti: React.FC = () => {
       id: ProductId.RECINZIONE_4_FILAGNE,
       pictures: [productsRecintiSvg4],
       colors: [Colors.WHITE],
-      materials: [MATERIALS.POLIPROPILENE],
+      materials: [Material.POLIPROPILENE],
       description: t`Le recinzioni a quattro filagne sono utilizzate per delimitare paddock per stalloni, realizzare tondini per la doma e l'addestramento o per formare ovali per il salto in libertà`,
     },
   ];

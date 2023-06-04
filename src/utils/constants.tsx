@@ -1,4 +1,4 @@
-import { Trans, t } from "@lingui/macro";
+import { Trans } from "@lingui/macro";
 import RemoveRedEyeRounded from "@mui/icons-material/RemoveRedEyeRounded";
 import { IconButton, Typography } from "@mui/material";
 import { PRODUCT_GUTTER } from "theme";
@@ -13,14 +13,14 @@ export const SOCIALS = {
   youtube: "https://www.youtube.com/channel/UC_eIQlt5-iLt2KEVTK5DOPg",
 };
 
-export const MATERIALS = {
-  ACCIAIO_ZINCATO: <Trans>Acciaio zincato</Trans>,
-  PLASTICA: <Trans>Plastica</Trans>,
-  POLIETILENE: <Trans>Polietilene</Trans>,
-  POLIPROPILENE: <Trans>Polipropilene</Trans>,
-  PVC: <Trans>PVC</Trans>,
-  TECNOPOLIMERO: <Trans>Tecnopolimero</Trans>,
-};
+export enum Material {
+  ACCIAIO_ZINCATO,
+  PLASTICA,
+  POLIETILENE,
+  POLIPROPILENE,
+  PVC,
+  TECNOPOLIMERO,
+}
 
 export const SEDE_LEGALE = {
   addressLocality: "Monselice",
