@@ -44,6 +44,9 @@ const typeDefs = gql`
 const resolvers: Resolvers<{}> = {
   Query: {
     products: async (_, { productIds }) => {
+      console.log("------------");
+      console.log("PROCESS");
+
       return await prisma.product.findMany({
         where: {
           id: { in: productIds as ProductId[] },
