@@ -45,8 +45,7 @@ const Gdpr: React.FC = () => {
       buttonText={<Trans>Acconsento</Trans>}
       containerClasses={classes.classes.root}
       overlayClasses={classes.classes.overlay}
-      // FIXME
-      // cookieName="gatsby-gdpr-google-tagmanager"
+      cookieName="CookieConsent"
     >
       <Box mb={3}>
         <Trans>
