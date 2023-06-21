@@ -6,7 +6,7 @@ export { default } from "modules/Admin";
 
 export async function getServerSideProps(context: GetServerSidePropsContext) {
   const session = await getServerSession(context.req, context.res, authOptions);
-  const messages = await loadCatalog(context.locale!);
+  const messages = await loadCatalog(context);
 
   // If the user is already logged in, redirect.
   // Note: Make sure not to redirect to the same page
