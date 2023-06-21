@@ -42,8 +42,6 @@ const Recinti: React.FC<DressageProps> = ({ products }) => {
   const { PAGES } = usePages();
   const { locale } = useRouter();
 
-  console.log(products);
-
   const IMAGES: Picture[] = [
     {
       image: productsRecintiGalleryRecintiImage7,
