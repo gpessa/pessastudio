@@ -1,9 +1,22 @@
 {
   "name": "pessastudio",
-  "version": "3.0.55",
+  "version": "3.0.56",
   "private": true,
   "description": "Pessastudio",
+  "license": "MIT",
   "author": "Gaetano Pessa",
+  "scripts": {
+    "build": "next build",
+    "postbuild": "next-sitemap",
+    "dev": "next dev",
+    "postinstall": "npm run prisma:generate",
+    "lingui:compile": "lingui compile",
+    "lingui:extract": "NODE_ENV=development lingui extract --clean",
+    "lint": "next lint",
+    "prepare": "husky install",
+    "prisma:generate": "npx prisma generate",
+    "start": "next start"
+  },
   "dependencies": {
     "@emotion/react": "^11.11.1",
     "@emotion/server": "^11.11.0",
@@ -45,18 +58,5 @@
     "eslint-config-next": "13.4.5",
     "husky": "^8.0.3",
     "prisma": "^4.15.0"
-  },
-  "license": "MIT",
-  "scripts": {
-    "build": "next build",
-    "dev": "next dev",
-    "lingui:compile": "lingui compile",
-    "lingui:extract": "NODE_ENV=development lingui extract --clean",
-    "lint": "next lint",
-    "postbuild": "next-sitemap",
-    "postinstall": "npm run prisma:generate",
-    "prepare": "husky install",
-    "prisma:generate": "npx prisma generate",
-    "start": "next start"
   }
 }
