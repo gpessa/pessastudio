@@ -1,8 +1,8 @@
 import { Step, StepContent, StepLabel, Stepper, styled } from "@mui/material";
 import Th from "components/Th";
 import Image, { StaticImageData } from "next/image";
-import { BREAKPOINT } from "theme";
 import { InView } from "react-intersection-observer";
+import { BREAKPOINT } from "theme";
 
 interface Step {
   image: StaticImageData;
