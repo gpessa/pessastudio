@@ -41,8 +41,8 @@ type Attributes = {
 
 export type ProductData = Attributes & {
   pictures: StaticImageData[];
-  description?: string | ReactNode;
   price?: PriceProps["price"];
+  description?: string | ReactNode;
   vertical?: boolean;
   name: string;
   id: ProductId;
