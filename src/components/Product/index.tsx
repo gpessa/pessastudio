@@ -6,16 +6,16 @@ import { ProductJsonLd, ProductJsonLdProps } from "next-seo";
 import React, { ReactNode } from "react";
 import { BREAKPOINT, Colors, PRODUCT_GUTTER } from "theme";
 
+import { ProductData as ProductDataGraphQL } from "gql/graphql";
 import { Offers } from "next-seo/lib/types";
 import { StaticImageData } from "next/image";
 import { useRouter } from "next/router";
 import { Material, WEBSITE } from "utils/constants";
 import { formatSize, formatWeight } from "utils/format";
-import { ProductId } from "utils/products";
 import ProductColorsList from "./ProductColorsList";
 import ProductImages from "./ProductImages";
 import ProductMaterialsList from "./ProductMaterialsList";
-import ProductPrice, { PriceProps } from "./ProductPrice";
+import ProductPrice from "./ProductPrice";
 
 const DataStyled = styled(Grid)(({ theme }) => ({
   order: -1,
@@ -27,28 +27,18 @@ const DataStyled = styled(Grid)(({ theme }) => ({
   },
 }));
 
-type Attributes = {
+export type ProductData = ProductDataGraphQL & {
   colors?: Colors[];
-  depth?: number;
-  diameter?: number;
-  height?: number;
-  length?: number;
-  materials?: Material[];
-  thickness?: number;
-  weight?: number;
-  width?: number;
-};
-
-export type ProductData = Attributes & {
   pictures: StaticImageData[];
   description?: string | ReactNode;
-  price?: PriceProps["price"];
-  vertical?: boolean;
+  materials?: Material[];
   name: string;
-  id: ProductId;
+  vertical?: boolean;
 };
 
-export type ProductProps = ProductData & { className?: string };
+export type ProductProps = ProductData & {
+  className?: string;
+};
 
 const getSeoOffer = (
   price: ProductProps["price"],
@@ -63,8 +53,8 @@ const getSeoOffer = (
   return {
     url,
     priceValidUntil,
-    price: String(price),
     priceCurrency: "EUR",
+    price: String(price),
     seller: { name: "Pessastudio" },
     availability: "https://schema.org/InStock",
     itemCondition: "https://schema.org/NewCondition",
@@ -114,7 +104,6 @@ const Product: React.FC<ProductProps> = (product) => {
     name,
     pictures,
     price,
-    thickness,
     vertical,
     weight,
     width,
@@ -147,9 +136,6 @@ const Product: React.FC<ProductProps> = (product) => {
           {height && <Data value={formatSize(height)} label={t`Altezza`} />}
           {length && <Data value={formatSize(length)} label={t`Lunghezza`} />}
           {depth && <Data value={formatSize(depth)} label={t`Profondità`} />}
-          {thickness && (
-            <Data value={formatSize(thickness)} label={t`Spessore`} />
-          )}
           {diameter && (
             <Data value={formatSize(diameter)} label={t`Diametro`} />
           )}

@@ -1,1 +1,1 @@
-export { default, getStaticProps } from "modules/Dressage";
+export { default, getServerSideProps } from "modules/Dressage";
