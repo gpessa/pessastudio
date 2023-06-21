@@ -20,7 +20,7 @@ export async function loadCatalog({ locale }: GetStaticPropsContext) {
 }
 
 export async function getServerSideProps(context: GetServerSidePropsContext) {
-  const messages = await loadCatalog(context.locale!);
+  const messages = await loadCatalog(context);
 
   return {
     props: {
