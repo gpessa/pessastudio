@@ -24,7 +24,6 @@ import {
   UpdateProductsMutationVariables,
 } from "gql/graphql";
 import { signOut, useSession } from "next-auth/react";
-import { PRODUCT_ATTRIBUTES } from "utils/constants";
 import * as Yup from "yup";
 import getProductsQuery from "./graphql/getProductsQuery";
 import updateProductsMutation from "./graphql/updateProductsMutation";
@@ -114,9 +113,8 @@ const Admin: React.FC = () => {
         >
           {({ values, submitForm, errors }) => (
             <Form>
-              {JSON.stringify(errors, null, 2)}
               <FieldArray name="products">
-                {({ insert, push }) => (
+                {() => (
                   <Table>
                     <TableBody>
                       {values.products?.map((product, index) => (
@@ -145,7 +143,7 @@ const Admin: React.FC = () => {
                                 as={TextField}
                                 name={`products.${index}.${id}`}
                                 disabled={loading}
-                                label={PRODUCT_ATTRIBUTES[id]}
+                                label={id}
                                 fullWidth
                               />
                             </TableCell>
