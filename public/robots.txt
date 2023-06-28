@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Host
-Host: https://pessastudio.eu
+Host: http://localhost:3000
 
 # Sitemaps
-Sitemap: https://pessastudio.eu/sitemap.xml
+Sitemap: http://localhost:3000/sitemap.xml

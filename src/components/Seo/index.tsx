@@ -21,10 +21,9 @@ import { useRouter } from "next/router";
 const Seo: React.FC = () => {
   const { PAGES } = usePages();
   const { pathname, locales, locale } = useRouter();
-  const { title, description } = Object.values(PAGES).find(
-    ({ url }) => url === pathname
-  )!;
   const breadcrumb = useTree(pathname);
+
+  const page = Object.values(PAGES).find(({ url }) => url === pathname);
 
   const languageAlternates: NextSeoProps["languageAlternates"] = (
     locales || []
@@ -32,15 +31,14 @@ const Seo: React.FC = () => {
     (metas, hrefLang) => [
       ...metas,
       {
-        hrefLang: `${process.env
-          .NEXT_PUBLIC_WEBISTE_URL!}/${hrefLang}${pathname}`,
-        href: hrefLang,
+        href: `${process.env.NEXT_PUBLIC_WEBISTE_URL!}/${hrefLang}${pathname}`,
+        hrefLang,
       },
     ],
     [
       {
-        hrefLang: `${process.env.NEXT_PUBLIC_WEBISTE_URL!}${pathname}`,
-        href: "en",
+        href: `${process.env.NEXT_PUBLIC_WEBISTE_URL!}${pathname}`,
+        hrefLang: "en",
       },
     ]
   );
@@ -48,13 +46,13 @@ const Seo: React.FC = () => {
   return (
     <>
       <Head>
-        <meta itemProp="name" content={title} />
-        <meta itemProp="description" content={description} />
+        <meta itemProp="name" content={page?.title} />
+        <meta itemProp="description" content={page?.description} />
         <meta property="og:locale" content={locale} />
       </Head>
       <NextSeo
-        title={`${title} | Pessastudio`}
-        description={description}
+        title={`${page?.title} | Pessastudio`}
+        description={page?.description}
         languageAlternates={languageAlternates}
       />
       <OrganizationJsonLd

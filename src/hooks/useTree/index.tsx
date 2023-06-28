@@ -31,6 +31,7 @@ const useTree = (path: string): BreadcrumbList => {
     ...page,
     absoluteUrl: WEBSITE + page.url,
   }));
+  // return [];
 };
 
 export default useTree;
