@@ -48,7 +48,6 @@ const MyApp = (props: MyAppProps) => {
           <CacheProvider value={emotionCache}>
             <Seo />
             <ThemeProvider theme={theme}>
-              <h1>test</h1>
               <CssBaseline />
               <Header />
               <Breadcrumb />
