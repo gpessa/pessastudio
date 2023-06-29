@@ -77,8 +77,8 @@ const resolvers: Resolvers<{}> = {
             where: {
               id: product.id,
             },
-            update: product,
             create: product,
+            update: product,
           })
       );
     },
