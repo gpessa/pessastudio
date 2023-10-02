@@ -13,7 +13,7 @@ const BoxStyled = styled(Box)<{ image?: HeroProps["image"] }>(({ image }) => ({
   backgroundImage: `url(${image?.src})`,
   backgroundPosition: "center",
   backgroundSize: "cover",
-  padding: "6% 0 20%",
+  padding: "6% 0 25%",
 }));
 
 export type HeroProps = {
