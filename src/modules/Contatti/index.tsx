@@ -6,7 +6,7 @@ import Image from "next/image";
 import React from "react";
 import { BREAKPOINT, PRODUCT_GUTTER } from "theme";
 import {
-  BANCA,
+  BANCHE,
   CONTATTI_COMMERCIALI,
   ITALIA,
   SEDE_LEGALE,
@@ -70,7 +70,11 @@ const Contatti: React.FC = () => {
               <Th variant="h4">
                 <Trans>Coordinate bancarie</Trans>
               </Th>
-              <StyledBank {...BANCA} />
+              <Stack spacing={PRODUCT_GUTTER}>
+                {BANCHE.map((bank) => (
+                  <StyledBank {...bank} key={bank.name} />
+                ))}
+              </Stack>
             </Box>
           </Stack>
         </>

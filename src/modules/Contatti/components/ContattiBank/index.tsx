@@ -5,8 +5,8 @@ import React from "react";
 
 const ContattiBank: React.FC<BankProps> = ({ name, iban, swift, ...props }) => (
   <Box {...props}>
-    {name && <Data label={<Trans>Istituto</Trans>} value={name} />}
-    {iban && <Data label={<Trans>Iban</Trans>} value={iban} />}
+    <Data label={<Trans>Istituto</Trans>} value={name} />
+    <Data label={<Trans>Iban</Trans>} value={iban} />
     {swift && <Data label={<Trans>Swift</Trans>} value={swift} />}
   </Box>
 );
@@ -14,7 +14,7 @@ const ContattiBank: React.FC<BankProps> = ({ name, iban, swift, ...props }) => (
 export type BankProps = {
   name: string;
   iban: string;
-  swift: string;
+  swift?: string;
 };
 
 export default ContattiBank;

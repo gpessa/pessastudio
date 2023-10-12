@@ -32,11 +32,17 @@ export const SEDE_LEGALE = {
   streetAddress: "Via Garibaldi, 28",
 };
 
-export const BANCA = {
-  iban: "IT97 M030 6962 6691 0000 0004 400",
-  name: "Cassa di Risparmio del Veneto filiale di Monselice",
-  swift: "BCITITMM",
-};
+export const BANCHE = [
+  {
+    iban: "IT97 M030 6962 6691 0000 0004 400",
+    name: "Cassa di Risparmio del Veneto filiale di Monselice",
+    swift: "BCITITMM",
+  },
+  {
+    iban: "IT78O0890462562031000001730",
+    name: "Banca Prealpi Sanbiagio (Filiale di Este)",
+  },
+];
 
 export const CONTATTI_COMMERCIALI = [
   {
