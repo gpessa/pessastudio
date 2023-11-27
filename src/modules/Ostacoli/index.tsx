@@ -119,7 +119,7 @@ const Ostacoli: React.FC = () => {
       length: 370,
       height: 570,
       weight: 3,
-      price: 38.5,
+      price: 40,
       colors: [WHITE, BLU, YELLOW, RED, GREEN],
     },
     {
@@ -130,7 +130,7 @@ const Ostacoli: React.FC = () => {
       length: 570,
       height: 700,
       weight: 5,
-      price: 63.5,
+      price: 70,
       colors: [WHITE, BLU, YELLOW, RED, GREEN],
     },
   ];
