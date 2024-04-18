@@ -14,7 +14,7 @@ import { Section, Th } from "components";
 import { usePages } from "hooks";
 import React from "react";
 import { PRODUCT_GUTTER } from "theme";
-import { ITALIA, SEDE_LEGALE } from "utils/constants";
+import { ITALIA, SEDE_LEGALE, WEBSITE } from "utils/constants";
 export { getStaticProps } from "utils/getProps";
 
 const completeAddress = `${SEDE_LEGALE.streetAddress}, ${SEDE_LEGALE.addressLocality} (${SEDE_LEGALE.country})`;
@@ -54,7 +54,7 @@ const CookiePolicy: React.FC = () => {
           <Trans>
             Un cookie è un file di piccole dimensioni che viene inviato al
             browser in uso e salvato sul tuo dispositivo quando visiti un sito
-            internet come pessastudio.eu (‘il sito’). I cookie permettono un
+            internet come {WEBSITE} (‘il sito’). I cookie permettono un
             funzionamento efficiente del sito e ne migliorano le prestazioni,
             inoltre forniscono informazioni al proprietario del sito per fini
             statistici o pubblicitari, principalmente per personalizzare la tua
