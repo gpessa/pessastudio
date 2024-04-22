@@ -46,22 +46,23 @@ export const BANCHE = [
 
 export const CONTATTI_COMMERCIALI = [
   {
+    name: <Trans>Contatto commerciale Belgio</Trans>,
     data: {
       email: "magiccavallo@hotmail.com",
       name: "Roberto Della Bella",
       telephone: "+32 475 96 5123",
     },
-    name: <Trans>Contatto commerciale Belgio</Trans>,
   },
   {
-    data: {
-      email: "commercial@equisea.fr",
-      name: "Théo Cardon",
-      telephone: "+33 788044648",
-    },
     name: <Trans>Contatto commerciale Francia</Trans>,
+    data: {
+      email: "equi-bride@orange.fr",
+      name: "Société Equi Bride (Sébastien Mugnier)",
+      telephone: "+33 682369614",
+    },
   },
   {
+    name: <Trans>Contatto commerciale Germania</Trans>,
     data: {
       addressLocality: "Bürstadt",
       country: "Germany",
@@ -73,9 +74,9 @@ export const CONTATTI_COMMERCIALI = [
       website: "https://bacherproducts.de",
       whatsapp: "+49 6206 13445",
     },
-    name: <Trans>Contatto commerciale Germania</Trans>,
   },
   {
+    name: <Trans>Contatto commerciale Germania &amp; Medio Oriente</Trans>,
     data: {
       addressLocality: "Dillingen",
       country: "Germany",
@@ -86,7 +87,6 @@ export const CONTATTI_COMMERCIALI = [
       streetAddress: "Priehlweg 7",
       telephone: "+49 (0) 9071 7700256",
     },
-    name: <Trans>Contatto commerciale Germania &amp; Medio Oriente</Trans>,
   },
 ];
 
