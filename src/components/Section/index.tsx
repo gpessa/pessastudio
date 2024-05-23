@@ -4,13 +4,13 @@ import React from "react";
 import { BREAKPOINT, SECTION_SPACING } from "theme";
 
 const DIMENSION_CONFIGURATION = {
-  vertical: {
-    height: 530,
-    width: "100%",
-  },
   horizontal: {
     height: "100%",
     width: "50%",
+  },
+  vertical: {
+    height: 530,
+    width: "100%",
   },
 };
 
@@ -26,32 +26,32 @@ type Props = {
 
 const SectionStyled = styled(Container)<Props>(
   ({ theme, spacing = "medium", image, color, type }) => ({
-    overflow: "hidden",
-    position: "relative",
-    paddingTop: SECTION_SPACING("xs")(spacing),
-    paddingBottom: SECTION_SPACING("xs")(spacing),
-    [theme.breakpoints.up(BREAKPOINT)]: {
-      paddingTop: SECTION_SPACING("md")(spacing),
-      paddingBottom: SECTION_SPACING("md")(spacing),
-    },
     "&:before": {
       // FIXME
       // backgroundImage:
       //   image && `url(${withPrefix(`static/patterns/${image}.jpg`)})`,
       backgroundColor: color && color,
       backgroundSize: "cover",
-      position: "absolute",
       content: "''",
-      width: "100%",
       height: "100%",
-      zIndex: -1,
+      position: "absolute",
       right: 0,
       top: 0,
+      width: "100%",
+      zIndex: -1,
       [theme.breakpoints.up(BREAKPOINT)]: {
         height: type ? DIMENSION_CONFIGURATION[type].height : "100%",
         width: type ? DIMENSION_CONFIGURATION[type].width : "100%",
       },
     },
+    overflow: "hidden",
+    paddingBottom: SECTION_SPACING("xs")(spacing),
+    paddingTop: SECTION_SPACING("xs")(spacing),
+    [theme.breakpoints.up(BREAKPOINT)]: {
+      paddingBottom: SECTION_SPACING("md")(spacing),
+      paddingTop: SECTION_SPACING("md")(spacing),
+    },
+    position: "relative",
   })
 );
 
@@ -60,16 +60,16 @@ const SectionStyledColored = styled(SectionStyled)<Props>(
     color && {
       ...{
         primary: {
-          color: theme.palette.common.white,
           backgroundColor: theme.palette.primary.main,
+          color: theme.palette.common.white,
         },
         warm1: {
-          color: theme.palette.warm1.contrastText,
           backgroundColor: theme.palette.warm1.main,
+          color: theme.palette.warm1.contrastText,
         },
         warm2: {
-          color: theme.palette.warm2.contrastText,
           backgroundColor: theme.palette.warm2.main,
+          color: theme.palette.warm2.contrastText,
         },
       }[color],
     }

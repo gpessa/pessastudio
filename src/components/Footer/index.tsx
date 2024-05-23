@@ -23,8 +23,8 @@ const DividerStyled = styled(Divider)(({ theme }) => ({
   margin: theme.spacing(4),
   width: 300,
   [theme.breakpoints.up(BREAKPOINT)]: {
-    width: 1,
     margin: "unset",
+    width: 1,
   },
 }));
 

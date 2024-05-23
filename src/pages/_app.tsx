@@ -16,6 +16,7 @@ import "pure-react-carousel/dist/react-carousel.es.css";
 import { useEffect } from "react";
 import TagManager from "react-gtm-module";
 import packageJson from "../../package.json";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 export type MyAppProps = AppProps<{ messages: any }> & {
   emotionCache: EmotionCache;
@@ -41,6 +42,7 @@ const MyApp = (props: MyAppProps) => {
 
   return (
     <SessionProvider session={session}>
+      <SpeedInsights />
       <I18nProvider i18n={i18n}>
         <CacheProvider value={emotionCache}>
           <Seo />

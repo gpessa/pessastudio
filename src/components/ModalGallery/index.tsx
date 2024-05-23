@@ -4,31 +4,30 @@ import NavigateBefore from "@mui/icons-material/NavigateBefore";
 import NavigateNext from "@mui/icons-material/NavigateNext";
 import { Button, ButtonBase, Dialog, styled, Typography } from "@mui/material";
 import { useGallery } from "hooks";
-import { StaticImageData } from "next/image";
 import React from "react";
 
 const ButtonBackStyled = styled(ButtonBase)({
-  top: 0,
-  left: 0,
-  bottom: 0,
-  width: "50%",
-  position: "absolute",
   "& > span": {
-    position: "absolute",
     left: 0,
+    position: "absolute",
   },
+  bottom: 0,
+  left: 0,
+  position: "absolute",
+  top: 0,
+  width: "50%",
 });
 
 const ButtonNextStyled = styled(ButtonBase)({
-  top: 0,
-  right: 0,
-  bottom: 0,
-  width: "50%",
-  position: "absolute",
   "& > span": {
     position: "absolute",
     right: 0,
   },
+  bottom: 0,
+  position: "absolute",
+  right: 0,
+  top: 0,
+  width: "50%",
 });
 
 const ImageStyled = styled("img")({
@@ -37,13 +36,13 @@ const ImageStyled = styled("img")({
 
 const StyledCaption = styled(Typography)(({ theme }) => ({
   backgroundColor: theme.palette.common.white,
-  fontSize: theme.typography.small.fontSize,
-  paddingRight: theme.spacing(2),
-  paddingLeft: theme.spacing(2),
-  padding: theme.spacing(1),
-  position: "absolute",
   bottom: 0,
+  fontSize: theme.typography.small.fontSize,
   left: 0,
+  padding: theme.spacing(1),
+  paddingLeft: theme.spacing(2),
+  paddingRight: theme.spacing(2),
+  position: "absolute",
 }));
 
 type Props = {

@@ -6,22 +6,21 @@ import { ProductJsonLd, ProductJsonLdProps } from "next-seo";
 import React, { ReactNode } from "react";
 import { BREAKPOINT, Colors, PRODUCT_GUTTER } from "theme";
 
+import { ProductId } from "hooks/useProducts";
 import { Offers } from "next-seo/lib/types";
-import { StaticImageData } from "next/image";
 import { useRouter } from "next/router";
 import { Material, WEBSITE } from "utils/constants";
 import { formatSize, formatWeight } from "utils/format";
-import { ProductId } from "utils/products";
 import ProductColorsList from "./ProductColorsList";
 import ProductImages from "./ProductImages";
 import ProductMaterialsList from "./ProductMaterialsList";
 import ProductPrice, { PriceProps } from "./ProductPrice";
 
 const DataStyled = styled(Grid)(({ theme }) => ({
-  order: -1,
   display: "flex",
-  minHeight: "100%",
   flexDirection: "column",
+  minHeight: "100%",
+  order: -1,
   [theme.breakpoints.up(BREAKPOINT)]: {
     order: "unset",
   },
@@ -29,7 +28,6 @@ const DataStyled = styled(Grid)(({ theme }) => ({
 
 type Attributes = {
   colors?: Colors[];
-  depth?: number;
   diameter?: number;
   height?: number;
   length?: number;
@@ -40,11 +38,12 @@ type Attributes = {
 };
 
 export type ProductData = Attributes & {
-  pictures: StaticImageData[];
+  pictures: any[];
   price?: PriceProps["price"];
   description?: string | ReactNode;
   vertical?: boolean;
   name: string;
+  category: string;
   id: ProductId;
 };
 
@@ -61,13 +60,13 @@ const getSeoOffer = (
   const priceValidUntil = date.toISOString().slice(0, 10);
 
   return {
-    url,
-    priceValidUntil,
-    price: String(price),
-    priceCurrency: "EUR",
-    seller: { name: "Pessastudio" },
     availability: "https://schema.org/InStock",
     itemCondition: "https://schema.org/NewCondition",
+    price: String(price),
+    priceCurrency: "EUR",
+    priceValidUntil,
+    seller: { name: "Pessastudio" },
+    url,
   };
 };
 
@@ -86,11 +85,11 @@ const useSeoProps = ({
   const offers = getSeoOffer(price, itemUrl);
 
   let result: ProductJsonLdProps = {
-    productName,
+    brand,
+    images,
     itemUrl,
     offers,
-    images,
-    brand,
+    productName,
   };
 
   if (typeof description === "string") {
@@ -104,7 +103,6 @@ const Product: React.FC<ProductProps> = (product) => {
   const {
     className,
     colors,
-    depth,
     description,
     diameter,
     height,
@@ -146,7 +144,6 @@ const Product: React.FC<ProductProps> = (product) => {
           {width && <Data value={formatSize(width)} label={t`Larghezza`} />}
           {height && <Data value={formatSize(height)} label={t`Altezza`} />}
           {length && <Data value={formatSize(length)} label={t`Lunghezza`} />}
-          {depth && <Data value={formatSize(depth)} label={t`Profondità`} />}
           {thickness && (
             <Data value={formatSize(thickness)} label={t`Spessore`} />
           )}

@@ -18,20 +18,20 @@ const TecnoexerciserCopertura = () => {
 
   const IMAGES: Picture[] = [
     {
+      caption: t`Copertura in PVC`,
       image: productsGiostreTecnoexerciserCoperturaCoperturaPvc_2,
-      caption: t`Copertura in PVC`,
     },
     {
+      caption: t`Copertura in PVC`,
       image: productsGiostreTecnoexerciserCoperturaCoperturaPvc_1,
-      caption: t`Copertura in PVC`,
     },
     {
+      caption: t`Copertura rigida con lastre ondulate`,
       image: productsGiostreTecnoexerciserCoperturaCoperturaLastreOndulate_1,
-      caption: t`Copertura rigida con lastre ondulate`,
     },
     {
-      image: productsGiostreTecnoexerciserCoperturaCoperturaLastreOndulate_2,
       caption: t`Copertura rigida con lastre ondulate`,
+      image: productsGiostreTecnoexerciserCoperturaCoperturaLastreOndulate_2,
     },
   ];
 

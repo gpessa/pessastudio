@@ -20,11 +20,11 @@ const useTree = (path: string): BreadcrumbList => {
       const page = findPage(last);
 
       return {
-        urls: [...urls, page],
         last,
+        urls: [...urls, page],
       };
     },
-    { urls: [PAGES.HOME], last: "" }
+    { last: "", urls: [PAGES.HOME] }
   );
 
   return urls.map((page) => ({

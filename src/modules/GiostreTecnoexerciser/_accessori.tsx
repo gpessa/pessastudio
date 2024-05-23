@@ -18,28 +18,28 @@ const TecnoexerciserAccessori = () => {
   const ACCESSORI: AccessoriProps = {
     accessories: [
       {
+        description: GIOSTRA_TONDINO_CHIUSURA_A_TERRA_DESCRIZIONE,
         id: "chiusura_a_terra",
         name: <Trans>Chiusura a terra</Trans>,
-        description: GIOSTRA_TONDINO_CHIUSURA_A_TERRA_DESCRIZIONE,
         pictures: [
           {
             image: assetsProductsGiostreTecnoexerciserAccessoriChiusura_01,
-            top: "25%",
             left: "50%",
             md: 3,
+            top: "25%",
           },
           {
             image: assetsProductsGiostreTecnoexerciserAccessoriChiusura_02,
-            top: "50%",
             left: "50%",
             md: 4,
+            top: "50%",
           },
         ],
       },
       {
+        description: GIOSTRA_ALVEOLO_DESCRIZIONE,
         id: "alveolo_sulla_pesta",
         name: <Trans>Alveolo sulla pesta</Trans>,
-        description: GIOSTRA_ALVEOLO_DESCRIZIONE,
         pictures: [
           {
             image: assetsProductsGiostreAccessoriesAlveolo_02,
@@ -52,21 +52,21 @@ const TecnoexerciserAccessori = () => {
         ],
       },
       {
+        description: GIOSTRA_RETE_ANTIVENTO_DESCRIZIONE,
         id: "rete_antivento",
         name: <Trans>Rete antivento</Trans>,
-        description: GIOSTRA_RETE_ANTIVENTO_DESCRIZIONE,
         pictures: [
           {
+            image: assetsProductsGiostreAccessoriesRete_01,
+            left: "45%",
             md: 3,
             top: "25%",
-            left: "45%",
-            image: assetsProductsGiostreAccessoriesRete_01,
           },
           {
+            image: assetsProductsGiostreAccessoriesRete_02,
+            left: "45%",
             md: 4,
             top: "22%",
-            left: "45%",
-            image: assetsProductsGiostreAccessoriesRete_02,
           },
         ],
       },

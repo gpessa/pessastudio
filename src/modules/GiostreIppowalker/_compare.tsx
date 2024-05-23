@@ -13,16 +13,9 @@ import {
 
 const IppowalkerCompare = () => {
   const GIOSTRE_COOMON = {
-    engine: (
-      <Trans>
-        Potenza motore {0.37} kw e cadenza regolabile fra 60 e 220 metri al
-        minuto
-      </Trans>
-    ),
     control_panel: (
       <Trans>Quadro di comando con programma manuale, periodico</Trans>
     ),
-    irrigation: false,
     diameter: (
       <Trans>
         <Typography>È possibile ordinare una giostra nei diametri:</Typography>
@@ -37,42 +30,52 @@ const IppowalkerCompare = () => {
       </Trans>
     ),
     doors: GIOSTRE_DOORS,
+    engine: (
+      <Trans>
+        Potenza motore {0.37} kw e cadenza regolabile fra 60 e 220 metri al
+        minuto
+      </Trans>
+    ),
+    irrigation: false,
   };
 
   const PRODUCTS = [
     {
       ...GIOSTRE_COOMON,
-      name: <Trans>Giostra base</Trans>,
-      fence_type: false,
       cover: false,
       extra: false,
+      fence_type: false,
+      name: <Trans>Giostra base</Trans>,
     },
     {
       ...GIOSTRE_COOMON,
+      cover: false,
+      extra: GIOSTRE_EXTRA_SMALL,
+      fence_type: GIOSTRA_FENCE_TYPE_TECNOFENCE,
       name: (
         <Trans>
           Giostra <br />
           corridoio TECNOFENCE
         </Trans>
       ),
-      fence_type: GIOSTRA_FENCE_TYPE_TECNOFENCE,
-      cover: false,
-      extra: GIOSTRE_EXTRA_SMALL,
     },
     {
       ...GIOSTRE_COOMON,
+      cover: false,
+      extra: GIOSTRE_EXTRA_SMALL,
+      fence_type: GIOSTRA_FENCE(15, "EASY"),
       name: (
         <Trans>
           Giostra <br />
           corridoio EASY
         </Trans>
       ),
-      fence_type: GIOSTRA_FENCE(15, "EASY"),
-      cover: false,
-      extra: GIOSTRE_EXTRA_SMALL,
     },
     {
       ...GIOSTRE_COOMON,
+      cover: GIOSTRE_COPERTURA_PVC,
+      extra: GIOSTRE_EXTRA_BIG,
+      fence_type: GIOSTRA_FENCE(15, "EASY"),
       name: (
         <Trans>
           Giostra <br />
@@ -81,9 +84,6 @@ const IppowalkerCompare = () => {
           copertura PVC
         </Trans>
       ),
-      fence_type: GIOSTRA_FENCE(15, "EASY"),
-      cover: GIOSTRE_COPERTURA_PVC,
-      extra: GIOSTRE_EXTRA_BIG,
     },
   ];
 

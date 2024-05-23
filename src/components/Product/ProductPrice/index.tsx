@@ -1,7 +1,7 @@
 import { Trans } from "@lingui/macro";
-import { useLingui } from "@lingui/react";
 import { Badge, styled, Typography } from "@mui/material";
 import React from "react";
+import { formatPrice } from "utils/format";
 
 const PriceStyled = styled(Typography)(({ theme }) => ({
   fontSize: theme.typography.h4.fontSize,
@@ -13,8 +13,6 @@ export type PriceProps = {
 };
 
 const ProductPrice: React.FC<PriceProps> = ({ price }) => {
-  const { i18n } = useLingui();
-
   if (!price) return null;
 
   return (
@@ -23,11 +21,11 @@ const ProductPrice: React.FC<PriceProps> = ({ price }) => {
         color="warm2"
         badgeContent={<Trans>+ IVA</Trans>}
         anchorOrigin={{
-          vertical: "bottom",
           horizontal: "right",
+          vertical: "bottom",
         }}
       >
-        {i18n.number(price, { style: "currency", currency: "EUR" })}
+        {formatPrice(price)}
       </Badge>
     </PriceStyled>
   );

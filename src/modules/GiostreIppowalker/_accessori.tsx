@@ -18,28 +18,28 @@ const IppowalkerAccessori = () => {
   const ACCESSORI: AccessoriProps = {
     accessories: [
       {
+        description: GIOSTRA_TONDINO_CHIUSURA_A_TERRA_DESCRIZIONE,
         id: "chiusura_a_terra",
         name: <Trans>Chiusura a terra</Trans>,
-        description: GIOSTRA_TONDINO_CHIUSURA_A_TERRA_DESCRIZIONE,
         pictures: [
           {
             image: productsGiostreIppowalkerAccessoriChiusura01,
-            top: "62%",
             left: "42%",
             md: 3,
+            top: "62%",
           },
           {
             image: productsGiostreIppowalkerAccessoriChiusura02,
-            top: "54%",
             left: "22%",
             md: 4,
+            top: "54%",
           },
         ],
       },
       {
+        description: GIOSTRA_ALVEOLO_DESCRIZIONE,
         id: "alveolo_sulla_pesta",
         name: <Trans>Alveolo sulla pesta</Trans>,
-        description: GIOSTRA_ALVEOLO_DESCRIZIONE,
         pictures: [
           {
             image: productsGiostreAccessoriesAlveolo02,
@@ -52,21 +52,21 @@ const IppowalkerAccessori = () => {
         ],
       },
       {
+        description: GIOSTRA_RETE_ANTIVENTO_DESCRIZIONE,
         id: "rete_antivento",
         name: <Trans>Rete antivento</Trans>,
-        description: GIOSTRA_RETE_ANTIVENTO_DESCRIZIONE,
         pictures: [
           {
+            image: productsGiostreAccessoriesRete01,
+            left: "45%",
             md: 3,
             top: "25%",
-            left: "45%",
-            image: productsGiostreAccessoriesRete01,
           },
           {
+            image: productsGiostreAccessoriesRete02,
+            left: "45%",
             md: 4,
             top: "22%",
-            left: "45%",
-            image: productsGiostreAccessoriesRete02,
           },
         ],
       },

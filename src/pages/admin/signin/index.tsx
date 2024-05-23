@@ -20,8 +20,8 @@ export async function getServerSideProps(context: GetServerSidePropsContext) {
 
   return {
     props: {
-      providers: providers ?? [],
       messages,
+      providers: providers ?? [],
     },
   };
 }

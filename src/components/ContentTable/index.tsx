@@ -18,15 +18,11 @@ import Link from "next/link";
 import React from "react";
 
 const ButtonStyled = styled(Button)(({ theme }) => ({
-  marginLeft: theme.spacing(1),
   "&.file": {
     color: theme.palette.error.main,
   },
+  marginLeft: theme.spacing(1),
 }));
-
-ButtonStyled.defaultProps = {
-  variant: "text",
-};
 
 type Props = {
   title: string | JSX.Element;
@@ -52,7 +48,11 @@ const ContentTable: React.FC<Props> = ({ rows, title, ...props }: Props) => (
               <TableCell align="right">
                 {link && (
                   <Link href={link} legacyBehavior passHref>
-                    <ButtonStyled color="inherit" endIcon={<Visibility />}>
+                    <ButtonStyled
+                      color="inherit"
+                      endIcon={<Visibility />}
+                      variant="text"
+                    >
                       <Trans>Vedi</Trans>
                     </ButtonStyled>
                   </Link>
@@ -65,6 +65,7 @@ const ContentTable: React.FC<Props> = ({ rows, title, ...props }: Props) => (
                     target="_blank"
                     color="inherit"
                     endIcon={<PictureAsPdf color="error" />}
+                    variant="text"
                   >
                     <Trans>Scarica</Trans>
                   </ButtonStyled>

@@ -9,23 +9,23 @@ import CookieConsent from "react-cookie-consent";
 import { PRODUCT_GUTTER } from "theme";
 
 const useStyles = makeStyles()((theme) => ({
-  root: {
-    width: 350,
-    position: "fixed",
-    boxShadow: theme.shadows[10],
-    right: theme.spacing(4),
-    padding: theme.spacing(PRODUCT_GUTTER),
-    bottom: `${theme.spacing(4)}!important`,
-    background: theme.palette.common.white,
-  },
   overlay: {
-    top: 0,
-    left: 0,
-    right: 0,
-    bottom: 0,
-    position: "fixed",
-    zIndex: theme.zIndex.appBar + 1,
     backgroundColor: "rgba(0, 0, 0, 0.2)",
+    bottom: 0,
+    left: 0,
+    position: "fixed",
+    right: 0,
+    top: 0,
+    zIndex: theme.zIndex.appBar + 1,
+  },
+  root: {
+    background: theme.palette.common.white,
+    bottom: `${theme.spacing(4)}!important`,
+    boxShadow: theme.shadows[10],
+    padding: theme.spacing(PRODUCT_GUTTER),
+    position: "fixed",
+    right: theme.spacing(4),
+    width: 350,
   },
 }));
 

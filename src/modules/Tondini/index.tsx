@@ -36,6 +36,7 @@ import productsTondiniGalleryTondino_6 from "assets/products/tondini/gallery/ton
 import productsTondiniGalleryTondino_7 from "assets/products/tondini/gallery/tondino-7.jpg";
 import productsTondiniGalleryTondino_8 from "assets/products/tondini/gallery/tondino-8.jpg";
 import productsTondiniGalleryTondino_9 from "assets/products/tondini/gallery/tondino-9.jpg";
+import productsTondiniGalleryTondino_12 from "assets/products/tondini/gallery/tondino-12.jpg";
 import { AccessoriProps } from "components/Accessori";
 import { BeneftisProps } from "components/Benefits";
 import { usePages } from "hooks";
@@ -49,7 +50,6 @@ const Tondini: React.FC = () => {
   const ACCESSORI: AccessoriProps = {
     accessories: [
       {
-        name: <Trans>Rete antivento</Trans>,
         description: (
           <Trans>
             La rete antivento protegge l'interno della tondino da correnti
@@ -57,6 +57,7 @@ const Tondini: React.FC = () => {
             l'allenamento.
           </Trans>
         ),
+        name: <Trans>Rete antivento</Trans>,
         pictures: [
           {
             image: productsTondiniAccessoriAntivento_1,
@@ -69,7 +70,6 @@ const Tondini: React.FC = () => {
         ],
       },
       {
-        name: <Trans>Irrigazione</Trans>,
         description: (
           <Trans>
             Tutti i cavalieri sanno quanto sia spiacevole cavalcare in un
@@ -83,6 +83,7 @@ const Tondini: React.FC = () => {
             tondino e ti permetterà di irrigarlo facilmente.
           </Trans>
         ),
+        name: <Trans>Irrigazione</Trans>,
         pictures: [
           {
             image: productsTondiniAccessoriIrrigazione_1,
@@ -91,7 +92,6 @@ const Tondini: React.FC = () => {
         ],
       },
       {
-        name: <Trans>Rete antivento ingresso</Trans>,
         description: (
           <Trans>
             La rete antivento della porta è un’ulteriore protezione che offriamo
@@ -99,6 +99,7 @@ const Tondini: React.FC = () => {
             vento e per garantire una maggiore concentrazione del tuo cavallo.
           </Trans>
         ),
+        name: <Trans>Rete antivento ingresso</Trans>,
         pictures: [
           {
             image: productsTondiniAccessoriAntiventoPortIngresso_1,
@@ -111,14 +112,14 @@ const Tondini: React.FC = () => {
         ],
       },
       {
-        name: <Trans>Chiusura a terra</Trans>,
         description: GIOSTRA_TONDINO_CHIUSURA_A_TERRA_DESCRIZIONE,
+        name: <Trans>Chiusura a terra</Trans>,
         pictures: [
           {
             image: productsTondiniAccessoriCoperturaTerra_1,
+            left: "30%",
             md: 4,
             top: "60%",
-            left: "30%",
           },
         ],
       },
@@ -174,49 +175,94 @@ const Tondini: React.FC = () => {
       caption: t`Tondino`,
       image: productsTondiniGalleryTondino_11,
     },
+    {
+      caption: t`Tondino`,
+      image: productsTondiniGalleryTondino_12,
+    },
   ];
 
   const DIMENSIONS = [
     {
+      file: "/products/tondini/tondino-16.pdf",
       sides: 16,
       size: 13.2,
-      file: "/products/tondini/tondino-16.pdf",
     },
     {
+      file: "/products/tondini/tondino-18.pdf",
       sides: 18,
       size: 15.0,
-      file: "/products/tondini/tondino-18.pdf",
     },
     {
+      file: "/products/tondini/tondino-20.pdf",
       sides: 20,
       size: 16.6,
-      file: "/products/tondini/tondino-20.pdf",
     },
     {
+      file: "/products/tondini/tondino-22.pdf",
       sides: 22,
       size: 18.3,
-      file: "/products/tondini/tondino-22.pdf",
     },
     {
+      file: "/products/tondini/tondino-24.pdf",
       sides: 24,
       size: 19.9,
-      file: "/products/tondini/tondino-24.pdf",
     },
   ].map(({ sides, size, file }) => ({
-    label: t`Tondino coperto ${sides} pannelli ${size} mt.`,
     file,
+    label: t`Tondino coperto ${sides} pannelli ${size} mt.`,
   }));
 
   const MANUALS = [
     {
-      label: <Trans>Come preparare il fondo</Trans>,
+      label: t`Come preparare il fondo`,
       link: "/tondini/come-preparare-il-fondo",
     },
   ];
 
   const BENEFITS: BeneftisProps = {
+    benefits: [
+      {
+        description: (
+          <Trans>
+            È costituito da pannelli laterali in compensato marino fissati a
+            colonne in acciaio zincato. La copertura in telo spalmato in PVC, è
+            disponibile in bianco, verde o crema
+          </Trans>
+        ),
+        icon: AccountBalance,
+        title: <Trans>Materiali di qualità</Trans>,
+      },
+      {
+        description: (
+          <Trans>
+            I nostri tondini sono considerati strutture precarie. Non avrete
+            bisogno di nessuna concessione edilizia
+          </Trans>
+        ),
+        icon: DomainDisabled,
+        title: <Trans>Nessuna concessione edilizia</Trans>,
+      },
+      {
+        description: (
+          <Trans>
+            É una struttura semplice, leggera e piacevole alla vista
+          </Trans>
+        ),
+        icon: Visibility,
+        title: <Trans>Bello e funzionale</Trans>,
+      },
+      {
+        description: (
+          <Trans>
+            La struttura è stata progettata per garantire un carico neve fino a
+            120 kg/mq e la velocità del vento fino a 110 km/h.
+          </Trans>
+        ),
+        icon: Lock,
+        title: <Trans>Sicuro</Trans>,
+      },
+    ],
     subtitle: t`Caratteristiche`,
-    title: t`Scopri il nostro tondino Tecnohalle`,
     text: (
       <Trans>
         Il tondino coperto è adatto a svolgere molteplici attività, rappresenta
@@ -226,53 +272,12 @@ const Tondini: React.FC = () => {
         riprese di volteggi.
       </Trans>
     ),
-    benefits: [
-      {
-        icon: AccountBalance,
-        title: <Trans>Materiali di qualità</Trans>,
-        description: (
-          <Trans>
-            È costituito da pannelli laterali in compensato marino fissati a
-            colonne in acciaio zincato. La copertura in telo spalmato in PVC, è
-            disponibile in bianco, verde o crema
-          </Trans>
-        ),
-      },
-      {
-        icon: DomainDisabled,
-        title: <Trans>Nessuna concessione edilizia</Trans>,
-        description: (
-          <Trans>
-            I nostri tondini sono considerati strutture precarie. Non avrete
-            bisogno di nessuna concessione edilizia
-          </Trans>
-        ),
-      },
-      {
-        icon: Visibility,
-        title: <Trans>Bello e funzionale</Trans>,
-        description: (
-          <Trans>
-            É una struttura semplice, leggera e piacevole alla vista
-          </Trans>
-        ),
-      },
-      {
-        icon: Lock,
-        title: <Trans>Sicuro</Trans>,
-        description: (
-          <Trans>
-            La struttura è stata progettata per garantire un carico neve fino a
-            120 kg/mq e la velocità del vento fino a 110 km/h.
-          </Trans>
-        ),
-      },
-    ],
+    title: t`Scopri il nostro tondino Tecnohalle`,
   };
 
   const HERO = {
-    text: PAGES.TONDINI.title,
     image,
+    text: PAGES.TONDINI.title,
   };
 
   return (

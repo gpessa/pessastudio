@@ -21,7 +21,7 @@ const Title: React.FC<TitleProps> = ({
   text,
   className,
 }) => (
-  <StyledBox {...{ sx, className }}>
+  <StyledBox {...{ className, sx }}>
     {subtitle && (
       <Typography variant="caption" gutterBottom>
         {subtitle}

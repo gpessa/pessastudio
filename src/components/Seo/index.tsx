@@ -79,9 +79,9 @@ const Seo: React.FC = () => {
       />
       <BreadcrumbJsonLd
         itemListElements={breadcrumb.map((b, index) => ({
-          position: index + 1,
-          name: b.title,
           item: b.absoluteUrl,
+          name: b.title,
+          position: index + 1,
         }))}
       />
     </>

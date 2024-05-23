@@ -29,14 +29,14 @@ const useGallery: (images: Picture[]) => {
   const active = selected != null ? images[selected] : null;
 
   return {
-    showPreviousEnabled,
-    showNextEnabled,
-    showPrevious,
-    showNext,
-    images,
     active,
     close,
+    images,
     open,
+    showNext,
+    showNextEnabled,
+    showPrevious,
+    showPreviousEnabled,
   };
 };
 

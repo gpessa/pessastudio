@@ -20,9 +20,9 @@ import fiera2023_fr from "./assets/fiera2023/fr.png";
 import { useRouter } from "next/router";
 
 const FIERA_2023 = {
-  it: fiera2023_it,
   en: fiera2023_en,
   fr: fiera2023_fr,
+  it: fiera2023_it,
 };
 
 type FieraVersions = keyof typeof FIERA_2023;
@@ -49,57 +49,55 @@ const Index: React.FC = () => {
 
   const BENEFITS = [
     {
-      icon: TurnedInNot,
-      title: <Trans>Innovativi</Trans>,
       description: (
         <Trans>
           Innovazione tecnologica e qualità sono le caratteristiche chiave dei
           nostri prodotti
         </Trans>
       ),
+      icon: TurnedInNot,
+      title: <Trans>Innovativi</Trans>,
     },
     {
-      icon: Architecture,
-      title: <Trans>Personalizzabili</Trans>,
       description: (
         <Trans>
           Prodotti MADE IN ITALY, costruiti da Pessastudio e personalizzabili
           (in dimensioni o colori)
         </Trans>
       ),
+      icon: Architecture,
+      title: <Trans>Personalizzabili</Trans>,
     },
     {
-      icon: AccountBalance,
-      title: <Trans>Accessibili</Trans>,
       description: (
         <Trans>
           Da anni Pessastudio è focalizzata nel produrre prodotti di qualità a
           costi accessibili
         </Trans>
       ),
+      icon: AccountBalance,
+      title: <Trans>Accessibili</Trans>,
     },
     {
-      icon: Restore,
-      title: <Trans>Apprezzati</Trans>,
       description: (
         <Trans>
           I prodotti vengono venduti ed apprezzati sia in Italia che all'estero
         </Trans>
       ),
+      icon: Restore,
+      title: <Trans>Apprezzati</Trans>,
     },
     {
-      icon: Apps,
-      title: <Trans>Indistruttibili</Trans>,
       description: (
         <Trans>
           I nostri prodotti sono pensati per resistere nel tempo, anche se
           soggetti a difficili condizioni climatiche
         </Trans>
       ),
+      icon: Apps,
+      title: <Trans>Indistruttibili</Trans>,
     },
     {
-      icon: Apps,
-      title: <Trans>Una lunga storia</Trans>,
       description: (
         <Trans>
           Pessastudio nasce 28 fa dall'ingegno e dalla passione per i cavalli
@@ -107,12 +105,14 @@ const Index: React.FC = () => {
           avanti lo stesso sogno
         </Trans>
       ),
+      icon: Apps,
+      title: <Trans>Una lunga storia</Trans>,
     },
   ];
 
   const HERO: HeroProps = {
-    text: isFieraTime ? undefined : <Trans>Tradizione e qualità</Trans>,
     image: isFieraTime ? FIERA_2023[locale as FieraVersions] : image,
+    text: isFieraTime ? undefined : <Trans>Tradizione e qualità</Trans>,
   };
 
   return (

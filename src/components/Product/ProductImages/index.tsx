@@ -7,20 +7,20 @@ import { styled } from "@mui/material";
 
 const ButtonBaseStyled = styled(ButtonBase)(({ theme }) => ({
   backgroundColor: theme.palette.common.white,
+  borderRadius: 10,
+  overflow: "hidden",
   paddingBottom: "100%",
   position: "relative",
-  overflow: "hidden",
-  borderRadius: 10,
   width: "100%",
 }));
 
 const ImgStyled = styled(Image)(({}) => ({
-  transform: "translateY(-50%)",
-  position: "absolute",
-  marginTop: "50%",
-  width: "100%",
   height: "auto",
+  marginTop: "50%",
+  position: "absolute",
   top: 0,
+  transform: "translateY(-50%)",
+  width: "100%",
 }));
 
 export type ProductImagesProps = {
@@ -45,6 +45,7 @@ const ProductImages: React.FC<ProductImagesProps> = ({ images, md }) => (
           >
             <ButtonBaseStyled>
               <ImgStyled
+                placeholder="blur"
                 src={image.image}
                 alt={image.caption || ""}
                 width={DIM}

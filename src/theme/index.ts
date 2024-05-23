@@ -17,17 +17,17 @@ export const SECTION_SPACING = (breakingPoint: "xs" | "md") => {
     const CONFIGURATION = new Map();
 
     CONFIGURATION.set("xs", {
-      small: 3,
-      medium: 8,
       big: 10,
-      menu: 13, // 130px
+      medium: 8,
+      menu: 13,
+      small: 3, // 130px
     });
 
     CONFIGURATION.set("md", {
-      small: 4,
-      medium: 13,
       big: 20,
+      medium: 13,
       menu: 30,
+      small: 4,
     });
 
     const value = CONFIGURATION.get(breakingPoint)[spacing];
@@ -78,84 +78,53 @@ declare module "@mui/material/Button" {
 }
 
 const themePalette = createTheme({
-  typography: {
-    fontFamily: "Source Sans Pro",
-    small: {
-      fontSize: "80%",
-    },
-    slim: {
-      fontFamily: "Roboto Condensed",
-    },
-  },
   palette: {
     primary: {
       main: "#356434",
     },
     warm1: {
-      main: "#F6F4F0",
       contrastText: "rgba(0, 0, 0, 0.87)",
+      main: "#F6F4F0",
     },
     warm2: {
-      main: "#EBE6DE",
       contrastText: "rgba(0, 0, 0, 0.87)",
+      main: "#EBE6DE",
+    },
+  },
+  typography: {
+    fontFamily: "Source Sans Pro",
+    slim: {
+      fontFamily: "Roboto Condensed",
+    },
+    small: {
+      fontSize: "80%",
     },
   },
 });
 
 const theme = createTheme(themePalette, {
-  shape: {
-    borderRadius: 0,
-  },
-  spacing: (factor: number) => `${7 * factor}px `,
-  typography: {
-    small: {
-      fontSize: "0.9rem",
-    },
-    caption: {
-      fontSize: "0.9rem",
-      lineHeight: "1em",
-      textTransform: "uppercase",
-      color: themePalette.palette.grey[600],
-    },
-    h1: {
-      fontFamily: "serif",
-      fontWeight: "bold",
-      textTransform: "none",
-      fontSize: 78,
-      lineHeight: 74 / 91,
-    },
-    h2: {
-      fontFamily: "serif",
-      fontWeight: "bold",
-      fontSize: 57,
-      lineHeight: 56 / 57,
-    },
-    h3: {
-      fontFamily: "serif",
-      fontWeight: "bold",
-      lineHeight: 1,
-      fontSize: 35,
-    },
-    h4: {
-      fontFamily: "serif",
-      fontWeight: "bold",
-      lineHeight: 1.1,
-      fontSize: 28,
-    },
-    h5: {
-      fontFamily: "serif",
-      fontWeight: "bold",
-      lineHeight: 1.1,
-      fontSize: 23,
-    },
-    h6: {
-      fontFamily: "serif",
-      fontWeight: "bold",
-      lineHeight: 1.1,
-      fontSize: 18,
-    },
-  },
   components: {
+    MuiButton: {
+      defaultProps: {
+        disableElevation: true,
+        variant: "contained",
+      },
+      styleOverrides: {
+        root: {
+          fontWeight: "bold",
+        },
+      },
+    },
+    MuiLink: {
+      defaultProps: {
+        color: "inherit",
+      },
+      styleOverrides: {
+        root: {
+          fontWeight: "bold",
+        },
+      },
+    },
     MuiTableCell: {
       defaultProps: {
         size: "small",
@@ -163,6 +132,18 @@ const theme = createTheme(themePalette, {
       styleOverrides: {
         root: {
           fontSize: "1rem",
+        },
+      },
+    },
+    MuiTableRow: {
+      styleOverrides: {
+        root: {
+          "&:nth-of-type(even)": {
+            backgroundColor: themePalette.palette.common.white,
+          },
+          "&:nth-of-type(odd)": {
+            backgroundColor: themePalette.palette.warm1.main,
+          },
         },
       },
     },
@@ -178,38 +159,57 @@ const theme = createTheme(themePalette, {
         },
       },
     },
-    MuiButton: {
-      styleOverrides: {
-        root: {
-          fontWeight: "bold",
-        },
-      },
-      defaultProps: {
-        disableElevation: true,
-        variant: "contained",
-      },
+  },
+  shape: {
+    borderRadius: 0,
+  },
+  spacing: (factor: number) => `${7 * factor}px `,
+  typography: {
+    caption: {
+      color: themePalette.palette.grey[600],
+      fontSize: "0.9rem",
+      lineHeight: "1em",
+      textTransform: "uppercase",
     },
-    MuiTableRow: {
-      styleOverrides: {
-        root: {
-          "&:nth-of-type(even)": {
-            backgroundColor: themePalette.palette.common.white,
-          },
-          "&:nth-of-type(odd)": {
-            backgroundColor: themePalette.palette.warm1.main,
-          },
-        },
-      },
+    h1: {
+      fontFamily: "serif",
+      fontSize: 78,
+      fontWeight: "bold",
+      lineHeight: 74 / 91,
+      textTransform: "none",
     },
-    MuiLink: {
-      styleOverrides: {
-        root: {
-          fontWeight: "bold",
-        },
-      },
-      defaultProps: {
-        color: "inherit",
-      },
+    h2: {
+      fontFamily: "serif",
+      fontSize: 57,
+      fontWeight: "bold",
+      lineHeight: 56 / 57,
+    },
+    h3: {
+      fontFamily: "serif",
+      fontSize: 35,
+      fontWeight: "bold",
+      lineHeight: 1,
+    },
+    h4: {
+      fontFamily: "serif",
+      fontSize: 28,
+      fontWeight: "bold",
+      lineHeight: 1.1,
+    },
+    h5: {
+      fontFamily: "serif",
+      fontSize: 23,
+      fontWeight: "bold",
+      lineHeight: 1.1,
+    },
+    h6: {
+      fontFamily: "serif",
+      fontSize: 18,
+      fontWeight: "bold",
+      lineHeight: 1.1,
+    },
+    small: {
+      fontSize: "0.9rem",
     },
   },
 });

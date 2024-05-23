@@ -1,6 +1,6 @@
 /** @type {import('next-sitemap').IConfig} */
 module.exports = {
-    siteUrl: process.env.NEXT_PUBLIC_WEBISTE_URL,
+    exclude: ['/404', '/500', '/admin'],
     generateRobotsTxt: true,
-    exclude: ['/404', '/500', '/admin']
+    siteUrl: process.env.NEXT_PUBLIC_WEBISTE_URL
 }

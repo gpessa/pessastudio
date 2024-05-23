@@ -19,8 +19,8 @@ import ContattiBank from "./components/ContattiBank";
 export { getStaticProps } from "utils/getProps";
 
 const AvatarStyled = styled(Avatar)(({ theme }) => ({
-  marginBottom: theme.spacing(2),
   height: 150,
+  marginBottom: theme.spacing(2),
   width: 150,
 }));
 

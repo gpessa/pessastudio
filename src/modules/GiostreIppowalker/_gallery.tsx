@@ -11,16 +11,16 @@ const IppowalkerGallery = () => {
 
   const IMAGES: Picture[] = [
     {
-      image: assetsProductsGiostreIppowalkerGalleryIngresso,
       caption: t`Entrata`,
+      image: assetsProductsGiostreIppowalkerGalleryIngresso,
     },
     {
-      image: assetsProductsGiostreIppowalkerGalleryGiostra_01,
       caption: t`Giostra Ippowalker`,
+      image: assetsProductsGiostreIppowalkerGalleryGiostra_01,
     },
     {
-      image: assetsProductsGiostreIppowalkerGalleryPorteElettrificate,
       caption: t`Porte elettrificate`,
+      image: assetsProductsGiostreIppowalkerGalleryPorteElettrificate,
     },
   ];
 

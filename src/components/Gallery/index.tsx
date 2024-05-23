@@ -5,15 +5,15 @@ import React from "react";
 import { PRODUCT_GUTTER } from "theme";
 
 const ButtonBaseStyled = styled(ButtonBase)(() => ({
-  textAlign: "left",
   display: "block",
+  textAlign: "left",
 }));
 
 const ImageStyled = styled(Image)(() => ({
   borderRadius: 10,
+  height: "auto",
   maxWidth: "100%",
   width: "100%",
-  height: "auto",
 }));
 
 const FigcaptionStyled = styled("figcaption")(() => ({
@@ -23,8 +23,8 @@ const FigcaptionStyled = styled("figcaption")(() => ({
 }));
 
 const FigureStyled = styled("figure")(() => ({
-  padding: 0,
   margin: 0,
+  padding: 0,
 }));
 
 type Props = {
@@ -51,6 +51,7 @@ const Gallery: React.FC<Props> = ({ images, xs = 6, md = 6 }) => (
                 src={item.image}
                 height={200}
                 width={200}
+                placeholder="blur"
               />
               <FigcaptionStyled>{item.caption}</FigcaptionStyled>
             </FigureStyled>

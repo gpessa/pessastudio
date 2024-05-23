@@ -3,6 +3,10 @@
     "next/core-web-vitals"
   ],
   "rules": { 
-    "react/no-unescaped-entities": 0
-  }
+    "react/no-unescaped-entities": 0,
+    "sort-keys-fix/sort-keys-fix": "error"
+  },
+  "plugins": [
+    "sort-keys-fix"
+  ]
 }

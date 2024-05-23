@@ -1,4 +1,4 @@
-import { Trans } from "@lingui/macro";
+import { t, Trans } from "@lingui/macro";
 import { Grid } from "@mui/material";
 import { ContentTable, Section, Th } from "components";
 import { usePages } from "hooks";
@@ -31,38 +31,38 @@ const TecnoexerciserServizioClienti = () => {
       size: 19.2,
     },
   ].map(({ sides, size }) => ({
+    file: `/products/giostre/tecnoexerciser/pdf/giostra-tecnoexerciser-${sides}.pdf`,
     label: (
       <Trans>
         Dimensioni giostra {sides} pannelli {size} mt. e istruzioni preparazione
         fondo
       </Trans>
     ),
-    file: `/products/giostre/tecnoexerciser/pdf/giostra-tecnoexerciser-${sides}.pdf`,
   }));
 
   const MANUALI = {
+    fr: [
+      {
+        file: "/products/giostre/tecnoexerciser/pdf/manuale-quadro-tecnoexerciser-fr.pdf",
+        label: t`Manuale quadro di controllo`,
+      },
+    ],
     it: [
       {
         label: PAGES.GIOSTRE_TECNOEXERCISER_ISTRUZIONI_MONTAGGIO.title,
         link: PAGES.GIOSTRE_TECNOEXERCISER_ISTRUZIONI_MONTAGGIO.url,
       },
       {
-        label: <Trans>Manuale quadro di controllo</Trans>,
         file: "/products/giostre/tecnoexerciser/pdf/manuale-quadro-tecnoexerciser-it.pdf",
+        label: t`Manuale quadro di controllo`,
       },
       {
-        label: <Trans>Manuale collegamento elettrico</Trans>,
         file: "/products/giostre/giostra-collegamento-elettrico.pdf",
+        label: t`Manuale collegamento elettrico`,
       },
       {
-        label: <Trans>Procedura di lubrificazione</Trans>,
         file: "https://www.youtube.com/watch?v=QMA4wPxq_ow",
-      },
-    ],
-    fr: [
-      {
-        label: <Trans>Manuale quadro di controllo</Trans>,
-        file: "/products/giostre/tecnoexerciser/pdf/manuale-quadro-tecnoexerciser-fr.pdf",
+        label: t`Procedura di lubrificazione`,
       },
     ],
   }[locale!];
@@ -70,8 +70,8 @@ const TecnoexerciserServizioClienti = () => {
   const OTHERS = {
     it: [
       {
-        label: "Fac simile domanda installazione giostra",
         file: "/products/giostre/tecnoexerciser/pdf/permessi-it.pdf",
+        label: "Fac simile domanda installazione giostra",
       },
     ],
   }[locale!];

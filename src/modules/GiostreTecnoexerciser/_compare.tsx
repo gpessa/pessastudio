@@ -15,12 +15,9 @@ import {
 
 const TecnoexerciserCompare = () => {
   const GIOSTRE_COOMON = {
-    doors: GIOSTRE_DOORS,
-    irrigation: IRRIGATION,
-    engine: (
+    control_panel: (
       <Trans>
-        Potenza motore {0.75} kw e cadenza regolabile fra 60 e 220 metri al
-        minuto
+        Quadro di comando con programma manuale, periodico o automatico
       </Trans>
     ),
     diameter: (
@@ -45,47 +42,53 @@ const TecnoexerciserCompare = () => {
         </ul>
       </Trans>
     ),
-    control_panel: (
+    doors: GIOSTRE_DOORS,
+    engine: (
       <Trans>
-        Quadro di comando con programma manuale, periodico o automatico
+        Potenza motore {0.75} kw e cadenza regolabile fra 60 e 220 metri al
+        minuto
       </Trans>
     ),
+    irrigation: IRRIGATION,
   };
 
   const PRODUCTS = [
     {
       ...GIOSTRE_COOMON,
-      name: <Trans>Giostra base</Trans>,
-      fence_type: false,
       cover: false,
       extra: false,
+      fence_type: false,
+      name: <Trans>Giostra base</Trans>,
     },
     {
       ...GIOSTRE_COOMON,
+      cover: false,
+      extra: GIOSTRE_EXTRA_SMALL,
+      fence_type: GIOSTRA_FENCE_TYPE_TECNOFENCE,
       name: (
         <Trans>
           Giostra <br />
           corridoio TECNOFENCE
         </Trans>
       ),
-      fence_type: GIOSTRA_FENCE_TYPE_TECNOFENCE,
-      cover: false,
-      extra: GIOSTRE_EXTRA_SMALL,
     },
     {
       ...GIOSTRE_COOMON,
+      cover: false,
+      extra: GIOSTRE_EXTRA_SMALL,
+      fence_type: GIOSTRA_FENCE(18, "EXERCISER"),
       name: (
         <Trans>
           Giostra <br />
           corridoio EXERCISER
         </Trans>
       ),
-      fence_type: GIOSTRA_FENCE(18, "EXERCISER"),
-      cover: false,
-      extra: GIOSTRE_EXTRA_SMALL,
     },
     {
       ...GIOSTRE_COOMON,
+      cover: GIOSTRE_COPERTURA_PVC,
+      extra: GIOSTRE_EXTRA_BIG,
+      fence_type: GIOSTRA_FENCE(18, "EXERCISER"),
       name: (
         <Trans>
           Giostra <br />
@@ -94,12 +97,12 @@ const TecnoexerciserCompare = () => {
           copertura PVC
         </Trans>
       ),
-      fence_type: GIOSTRA_FENCE(18, "EXERCISER"),
-      cover: GIOSTRE_COPERTURA_PVC,
-      extra: GIOSTRE_EXTRA_BIG,
     },
     {
       ...GIOSTRE_COOMON,
+      cover: <Trans>Copertura rigida con lastre ondulate</Trans>,
+      extra: GIOSTRE_EXTRA_BIG,
+      fence_type: GIOSTRA_FENCE(18, "EXERCISER"),
       name: (
         <Trans>
           Giostra <br />
@@ -108,9 +111,6 @@ const TecnoexerciserCompare = () => {
           copertura Rigida
         </Trans>
       ),
-      fence_type: GIOSTRA_FENCE(18, "EXERCISER"),
-      cover: <Trans>Copertura rigida con lastre ondulate</Trans>,
-      extra: GIOSTRE_EXTRA_BIG,
     },
   ];
 

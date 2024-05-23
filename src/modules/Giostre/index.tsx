@@ -22,7 +22,8 @@ import { NAME } from "utils/constants";
 import { useLingui } from "@lingui/react";
 import productsGiostreGalleryGiostraConAlveolo from "assets/products/giostre/gallery/giostra-con-alveolo.jpg";
 import productsGiostreGalleryGiostraDrone from "assets/products/giostre/gallery/giostra-drone.jpg";
-import productsGiostreGalleryGiostra from "assets/products/giostre/gallery/giostra.jpg";
+import productsGiostreGalleryGiostra1 from "assets/products/giostre/gallery/giostra-1.jpg";
+import productsGiostreGalleryGiostra2 from "assets/products/giostre/gallery/giostra-2.jpg";
 import productsGiostreGalleryPorta from "assets/products/giostre/gallery/porta.jpg";
 import productsGiostreGalleryQuadro from "assets/products/giostre/gallery/quadro.jpg";
 import { BeneftisProps } from "components/Benefits";
@@ -44,7 +45,49 @@ const Giostre: React.FC = () => {
   const { PAGES } = usePages();
 
   const BENEFITS: BeneftisProps = {
-    title: <Trans>Perché una giostra Pessastudio</Trans>,
+    benefits: [
+      {
+        description: (
+          <Trans>
+            {NAME} è stata scelta da oltre 3.000 clienti in tutto il mondo per
+            la realizzazione della propria giostra.
+          </Trans>
+        ),
+        icon: AccessibilityNew,
+        title: <Trans>3.000 giostre installate</Trans>,
+      },
+      {
+        description: (
+          <Trans>
+            È possibile acquistare le nostre giostre in diverse versioni adatte
+            ad ogni budget ed esigenza
+          </Trans>
+        ),
+        icon: Apps,
+        title: <Trans>Ampia gamma</Trans>,
+      },
+      {
+        description: (
+          <Trans>
+            Le nostre giostre sono considerate strutture precarie. Non avrete
+            bisogno di nessuna concessione edilizia
+          </Trans>
+        ),
+        icon: DomainDisabled,
+        title: <Trans>Nessuna concessione edilizia</Trans>,
+      },
+      {
+        description: (
+          <Trans>
+            Usa il nostro semplice pannello di controllo per scegliere uno dei
+            nostri "training programs" o seleziona manualmente la velocità
+            desiderata
+          </Trans>
+        ),
+        icon: VideogameAsset,
+        title: <Trans>Facile da usare</Trans>,
+      },
+    ],
     subtitle: PAGES.GIOSTRE.title,
     text: (
       <Trans>
@@ -67,77 +110,39 @@ const Giostre: React.FC = () => {
         </Typography>
       </Trans>
     ),
-    benefits: [
-      {
-        icon: AccessibilityNew,
-        title: <Trans>3.000 giostre installate</Trans>,
-        description: (
-          <Trans>
-            {NAME} è stata scelta da oltre 3.000 clienti in tutto il mondo per
-            la realizzazione della propria giostra.
-          </Trans>
-        ),
-      },
-      {
-        icon: Apps,
-        title: <Trans>Ampia gamma</Trans>,
-        description: (
-          <Trans>
-            È possibile acquistare le nostre giostre in diverse versioni adatte
-            ad ogni budget ed esigenza
-          </Trans>
-        ),
-      },
-      {
-        icon: DomainDisabled,
-        title: <Trans>Nessuna concessione edilizia</Trans>,
-        description: (
-          <Trans>
-            Le nostre giostre sono considerate strutture precarie. Non avrete
-            bisogno di nessuna concessione edilizia
-          </Trans>
-        ),
-      },
-      {
-        icon: VideogameAsset,
-        title: <Trans>Facile da usare</Trans>,
-        description: (
-          <Trans>
-            Usa il nostro semplice pannello di controllo per scegliere uno dei
-            nostri "training programs" o seleziona manualmente la velocità
-            desiderata
-          </Trans>
-        ),
-      },
-    ],
+    title: <Trans>Perché una giostra Pessastudio</Trans>,
   };
 
   const IMAGES: Picture[] = [
     {
-      image: productsGiostreGalleryGiostra,
       caption: t`Giostra per cavalli Tecnoexerciser`,
+      image: productsGiostreGalleryGiostra1,
     },
     {
-      image: productsGiostreGalleryGiostraConAlveolo,
-      caption: t`Interno giostra con alveolo`,
-    },
-    {
-      image: productsGiostreGalleryPorta,
       caption: t`Ingresso`,
+      image: productsGiostreGalleryPorta,
     },
     {
-      image: productsGiostreGalleryQuadro,
       caption: t`Quadro di comando`,
+      image: productsGiostreGalleryQuadro,
     },
     {
-      image: productsGiostreGalleryGiostraDrone,
       caption: t`Giostra per cavalli Tecnoexerciser`,
+      image: productsGiostreGalleryGiostraDrone,
+    },
+    {
+      caption: t`Interno giostra con alveolo`,
+      image: productsGiostreGalleryGiostraConAlveolo,
+    },
+    {
+      caption: t`Giostra per cavalli Tecnoexerciser`,
+      image: productsGiostreGalleryGiostra2,
     },
   ];
 
   const HERO: HeroProps = {
-    text: PAGES.GIOSTRE.title,
     image,
+    text: PAGES.GIOSTRE.title,
   };
 
   return (

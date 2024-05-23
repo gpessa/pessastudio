@@ -16,12 +16,12 @@ const TecnoexerciserCorridoi = () => {
 
   const IMAGES: Picture[] = [
     {
-      image: productsGiostreTecnoexerciserCorridoioTecnofence,
       caption: t`Corridoio TECNOFENCE`,
+      image: productsGiostreTecnoexerciserCorridoioTecnofence,
     },
     {
-      image: productsGiostreTecnoexerciserCorridoioCompensatoMarino,
       caption: t`Corridoio EXERCISER in compensato marino`,
+      image: productsGiostreTecnoexerciserCorridoioCompensatoMarino,
     },
   ];
 

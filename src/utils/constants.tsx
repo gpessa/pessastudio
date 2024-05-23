@@ -3,7 +3,24 @@ import RemoveRedEyeRounded from "@mui/icons-material/RemoveRedEyeRounded";
 import { IconButton, Typography } from "@mui/material";
 import { PRODUCT_GUTTER } from "theme";
 
-export const NAME = <strong>Pessastudio</strong>;
+export const NAME_STRING = "Pessastudio";
+export const NAME_LEGAL_STRING = `${NAME_STRING} Horse Tecnology srl`;
+export const NAME = <strong>{NAME_STRING}</strong>;
+
+export const DRESSAGE_MODELS = {
+  OLYMPIC: "Olympic",
+  TRAINING: "Training",
+};
+
+export const CUCCHIAI_MODELS = {
+  DE: "DE",
+  PS: "PS",
+};
+
+export const SEGNALETICA_MODELS = {
+  LIGHT: "Light",
+  PROFESSIONAL: "Professional",
+};
 
 export const SOCIALS = {
   facebook_1: "https://www.facebook.com/PessastudioHorseTecnology",
@@ -27,7 +44,7 @@ export const SEDE_LEGALE = {
   addressRegion: "Padova",
   country: "Italy",
   id: "04743610281",
-  name: "Pessastudio Horse Tecnology srl",
+  name: NAME_LEGAL_STRING,
   postalCode: "35043",
   streetAddress: "Via Garibaldi, 28",
 };
@@ -46,23 +63,22 @@ export const BANCHE = [
 
 export const CONTATTI_COMMERCIALI = [
   {
-    name: <Trans>Contatto commerciale Belgio</Trans>,
     data: {
       email: "magiccavallo@hotmail.com",
       name: "Roberto Della Bella",
       telephone: "+32 475 96 5123",
     },
+    name: <Trans>Contatto commerciale Belgio</Trans>,
   },
   {
-    name: <Trans>Contatto commerciale Francia</Trans>,
     data: {
       email: "equi-bride@orange.fr",
       name: "Société Equi Bride (Sébastien Mugnier)",
       telephone: "+33 682369614",
     },
+    name: <Trans>Contatto commerciale Francia</Trans>,
   },
   {
-    name: <Trans>Contatto commerciale Germania</Trans>,
     data: {
       addressLocality: "Bürstadt",
       country: "Germany",
@@ -74,9 +90,9 @@ export const CONTATTI_COMMERCIALI = [
       website: "https://bacherproducts.de",
       whatsapp: "+49 6206 13445",
     },
+    name: <Trans>Contatto commerciale Germania</Trans>,
   },
   {
-    name: <Trans>Contatto commerciale Germania &amp; Medio Oriente</Trans>,
     data: {
       addressLocality: "Dillingen",
       country: "Germany",
@@ -87,6 +103,7 @@ export const CONTATTI_COMMERCIALI = [
       streetAddress: "Priehlweg 7",
       telephone: "+49 (0) 9071 7700256",
     },
+    name: <Trans>Contatto commerciale Germania &amp; Medio Oriente</Trans>,
   },
 ];
 
@@ -94,7 +111,7 @@ export const SEDE_OPERATIVA = {
   addressLocality: "Montagnana",
   addressRegion: "Padova",
   country: "Italy",
-  name: "Pessastudio Horse Tecnology srl",
+  name: NAME_LEGAL_STRING,
   postalCode: "35044",
   streetAddress: "Via Cà Megliadino, 35",
   telephone: "+39 0429 805613",

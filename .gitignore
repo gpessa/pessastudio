@@ -71,3 +71,7 @@ yarn-error.log
 .env.development
 .env.production
 .vercel
+
+public/sitemap.xml
+public/sitemap-0.xml
+public/robot.txt

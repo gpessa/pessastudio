@@ -14,4 +14,9 @@ module.exports = {
 
     return config;
   },
+  experimental: {
+    swcPlugins: [
+      ['@lingui/swc-plugin', {}],
+    ],
+  },
 }

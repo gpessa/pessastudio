@@ -12,7 +12,7 @@ const BenefitsItem: React.FC<Benefit> = ({
   <Box {...props}>
     <Stack
       direction="row"
-      spacing={{ xs: 1, md: 2 }}
+      spacing={{ md: 2, xs: 1 }}
       alignItems="center"
       mb={2}
     >

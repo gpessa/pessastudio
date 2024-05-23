@@ -33,21 +33,21 @@ const DescriptionStyled = styled(Typography)(({ theme }) => ({
 }));
 
 const LinkStyled = styled(Link)<{ index: number }>(({ theme }) => ({
-  transition: theme.transitions.create(["opacity", "transform"], {
-    duration: theme.transitions.duration.short,
-  }),
-  justifyContent: "flex-end",
-  flexDirection: "column",
-  position: "relative",
-  display: "flex",
-  marginRight: 30,
-  height: "100%",
   "&:hover": {
     transform: "scale(1.03)",
   },
+  display: "flex",
+  flexDirection: "column",
+  height: "100%",
+  justifyContent: "flex-end",
+  marginRight: 30,
+  position: "relative",
+  transition: theme.transitions.create(["opacity", "transform"], {
+    duration: theme.transitions.duration.short,
+  }),
   [theme.breakpoints.up(BREAKPOINT)]: {
-    marginRight: 0,
     marginLeft: 30,
+    marginRight: 0,
   },
 }));
 

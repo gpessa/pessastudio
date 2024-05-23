@@ -16,24 +16,24 @@ interface Props {
 const StepperStyled = styled(Stepper)(({ theme }) => ({
   padding: 0,
   [theme.breakpoints.up(BREAKPOINT)]: {
-    transform: "translateX(-14px)",
     marginLeft: "50%",
+    transform: "translateX(-14px)",
   },
 }));
 
 const StyledTh = styled(Th)<{ even: boolean }>(({ theme, even }) => ({
   [theme.breakpoints.up(BREAKPOINT)]: even && {
-    transform: "translateX(-100%)",
     marginLeft: "-40px",
     textAlign: "right",
+    transform: "translateX(-100%)",
   },
 }));
 
 const StyledImage = styled(Image)<{ even: boolean }>(({ theme, even }) => ({
   [theme.breakpoints.up(BREAKPOINT)]: even && {
-    transform: "translateX(-100%)",
     marginLeft: "-40px",
     textAlign: "right",
+    transform: "translateX(-100%)",
   },
 }));
 

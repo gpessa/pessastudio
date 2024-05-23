@@ -15,32 +15,32 @@ const TecnoexerciserGallery = () => {
 
   const IMAGES: Picture[] = [
     {
+      caption: t`Giostra`,
       image: productsGiostreTecnoexerciserGalleryGiostra_1,
-      caption: t`Giostra`,
     },
     {
+      caption: t`Giostra`,
       image: productsGiostreTecnoexerciserGalleryGiostra_2,
-      caption: t`Giostra`,
     },
     {
-      image: productsGiostreTecnoexerciserGalleryMotore_3,
       caption: t`Motore`,
+      image: productsGiostreTecnoexerciserGalleryMotore_3,
     },
     {
-      image: productsGiostreTecnoexerciserGallerySoloMotore,
       caption: t`Giostra solo motore`,
+      image: productsGiostreTecnoexerciserGallerySoloMotore,
     },
     {
-      image: productsGiostreTecnoexerciserGalleryTecnofence_1,
       caption: t`Giostra con corridoio TECNOFENCE`,
+      image: productsGiostreTecnoexerciserGalleryTecnofence_1,
     },
     {
+      caption: t`Porta mobile`,
       image: productsGiostreTecnoexerciserGalleryPortaMobile_1,
-      caption: t`Porta mobile`,
     },
     {
-      image: productsGiostreTecnoexerciserGalleryPortaMobile_2,
       caption: t`Porta mobile`,
+      image: productsGiostreTecnoexerciserGalleryPortaMobile_2,
     },
   ];
 

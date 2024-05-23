@@ -27,7 +27,7 @@ const Accessori: React.FC<AccessoriProps> = ({ accessories }) => (
       </Th>
     </Box>
 
-    <Stack spacing={{ xs: PRODUCT_GUTTER, md: 0 }}>
+    <Stack spacing={{ md: 0, xs: PRODUCT_GUTTER }}>
       {accessories.map(({ name, description, pictures, id }, index) => (
         <Box component="section" key={index} id={id}>
           <Grid
@@ -48,7 +48,7 @@ const Accessori: React.FC<AccessoriProps> = ({ accessories }) => (
             </Grid>
             {pictures.map(({ image, md = 6, top, left }) => (
               <Grid item md={md as GridSize} xs={6} key={image.src}>
-                <AccessoriImage {...{ top, left, image }} />
+                <AccessoriImage {...{ image, left, top }} />
               </Grid>
             ))}
           </Grid>

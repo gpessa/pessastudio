@@ -10,20 +10,20 @@ const ImageStyled = styled(NextImage)(() => ({
 
 const ImageWrapperStyled = styled("div")<Pick<Props, "top" | "left">>(
   ({ theme, top, left }) => ({
-    position: "relative",
     "&:after": left &&
       top && {
-        top,
-        left,
-        width: "30%",
+        border: `3px solid ${theme.palette.error.main}`,
+        borderRadius: "50%",
+        boxSizing: "content-box",
         content: "''",
         display: "block",
-        borderRadius: "50%",
+        left,
         paddingBottom: "30%",
         position: "absolute",
-        boxSizing: "content-box",
-        border: `3px solid ${theme.palette.error.main}`,
+        top,
+        width: "30%",
       },
+    position: "relative",
   })
 );
 
@@ -35,7 +35,7 @@ type Props = {
 };
 
 const AccessoriImage: React.FC<Props> = ({ image, top, left, alt }) => (
-  <ImageWrapperStyled {...{ top, left }}>
+  <ImageWrapperStyled {...{ left, top }}>
     <ImageStyled src={image} alt={alt || ""} width={300} height={300} />
   </ImageWrapperStyled>
 );

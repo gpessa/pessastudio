@@ -34,8 +34,8 @@ const ToolbarStyled = styled(Toolbar)(() => ({
 
 const HeaderDesktop = styled(Box)(({ theme }) => ({
   alignItems: "center",
-  width: "fit-content",
   display: "none",
+  width: "fit-content",
   [theme.breakpoints.up(BREAKPOINT)]: {
     display: "flex",
   },
@@ -47,44 +47,34 @@ const HeaderDesktopButtom = styled(Button)(({ theme, href }) => {
     pathname.startsWith(href!.substring(3)) || pathname.startsWith(href!);
 
   return {
+    color: selected ? theme.palette.primary.main : theme.palette.common.black,
     fontFamily: theme.typography.slim.fontFamily,
     fontSize: theme.typography.h6.fontSize,
-    paddingBottom: theme.spacing(3),
-    paddingTop: theme.spacing(3),
-    marginLeft: theme.spacing(3),
-    textTransform: "uppercase",
-    color: selected ? theme.palette.primary.main : theme.palette.common.black,
-    lineHeight: 1,
     fontWeight: selected
       ? theme.typography.fontWeightBold
       : theme.typography.fontWeightRegular,
+    lineHeight: 1,
+    marginLeft: theme.spacing(3),
+    paddingBottom: theme.spacing(3),
+    paddingTop: theme.spacing(3),
+    textTransform: "uppercase",
   };
 });
 
-HeaderDesktopButtom.defaultProps = {
-  color: "inherit",
-  variant: "text",
-};
-
 const HeaderDesktopDivider = styled(Divider)(({ theme }) => ({
+  display: "none",
+  margin: theme.spacing(3),
   marginBottom: theme.spacing(2),
   marginTop: theme.spacing(2),
-  margin: theme.spacing(3),
-  display: "none",
   [theme.breakpoints.up(BREAKPOINT)]: {
     display: "unset",
   },
 }));
 
-HeaderDesktopDivider.defaultProps = {
-  orientation: "vertical",
-  flexItem: true,
-};
-
 const HeaderMobile = styled(Box)(({ theme }) => ({
   alignItems: "center",
-  width: "fit-content",
   display: "flex",
+  width: "fit-content",
   [theme.breakpoints.up(BREAKPOINT)]: {
     display: "none",
   },
@@ -92,8 +82,8 @@ const HeaderMobile = styled(Box)(({ theme }) => ({
 
 const Header: React.FC = () => {
   const trigger = useScrollTrigger({
-    target: typeof window !== `undefined` ? window : undefined,
     disableHysteresis: true,
+    target: typeof window !== `undefined` ? window : undefined,
     threshold: 0,
   });
   const [open, setOpen] = useState(false);
@@ -120,12 +110,12 @@ const Header: React.FC = () => {
         <HeaderDesktop>
           {Object.values(NAVIGATION).map(({ url, title }) => (
             <Link passHref key={url} href={url} legacyBehavior>
-              <HeaderDesktopButtom>
+              <HeaderDesktopButtom variant="text" color="inherit">
                 <Trans id={title} />
               </HeaderDesktopButtom>
             </Link>
           ))}
-          <HeaderDesktopDivider />
+          <HeaderDesktopDivider orientation="vertical" flexItem />
           <LanguageSelector />
         </HeaderDesktop>
 

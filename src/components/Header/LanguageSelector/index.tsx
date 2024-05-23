@@ -38,7 +38,7 @@ const LanguageSelector: React.FC = () => {
     <>
       <Tooltip title="Change language">
         <IconButton onClick={handleModal}>
-          <Avatar sx={{ width: DIM, height: DIM }}>
+          <Avatar sx={{ height: DIM, width: DIM }}>
             <Image
               src={`/flags/${locale}.svg`}
               alt={locale!}
@@ -57,7 +57,7 @@ const LanguageSelector: React.FC = () => {
               <Link href={pathname} locale={locale} passHref legacyBehavior>
                 <ListItemButton component="a">
                   <ListItemAvatar>
-                    <Avatar sx={{ width: DIM, height: DIM }}>
+                    <Avatar sx={{ height: DIM, width: DIM }}>
                       <Image
                         src={`/flags/${locale}.svg`}
                         alt={locale}

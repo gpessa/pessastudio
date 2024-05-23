@@ -16,12 +16,12 @@ const IppowalkerCopertura = () => {
 
   const IMAGES: Picture[] = [
     {
-      image: productsGiostreIppowalkerCoperturaCoperturaPvc1,
       caption: t`Copertura in PVC`,
+      image: productsGiostreIppowalkerCoperturaCoperturaPvc1,
     },
     {
-      image: productsGiostreIppowalkerCoperturaCoperturaPvc2,
       caption: t`Copertura in PVC`,
+      image: productsGiostreIppowalkerCoperturaCoperturaPvc2,
     },
   ];
 

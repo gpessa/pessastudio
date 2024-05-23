@@ -18,9 +18,9 @@ import { BREAKPOINT, PRODUCT_GUTTER } from "theme";
 
 const TableCellStyled = styled(TableCell)<{ type?: string }>(({ type }) => ({
   display: "table-cell",
-  verticalAlign: type === "name" ? "bottom" : "top",
   fontWeight: type === "name" ? "bold" : "inherit",
   textTransform: type === "name" ? "uppercase" : "inherit",
+  verticalAlign: type === "name" ? "bottom" : "top",
 }));
 
 type Props = {

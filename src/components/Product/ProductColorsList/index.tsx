@@ -4,11 +4,11 @@ import { Colors } from "theme";
 
 const ProductColorsList = styled(Box)<{ color: Colors }>(
   ({ theme, color }) => ({
-    width: 14,
-    height: 14,
-    borderRadius: "50%",
     backgroundColor: color,
     border: `1px solid ${theme.palette.divider}`,
+    borderRadius: "50%",
+    height: 14,
+    width: 14,
   })
 );
 

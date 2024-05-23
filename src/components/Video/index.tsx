@@ -12,19 +12,19 @@ const VideoSectionStyled = styled(Section)(({ theme }) => ({
 }))
 
 const BoxStyled = styled(Box)(() => ({
-  position: "relative",
+  height: 0,
   overflow: "hidden",
   paddingTop: "55%",
-  height: 0,
+  position: "relative",
 }))
 
 const IframeStyled = styled("iframe")({
-  position: "absolute",
-  height: "100%",
-  width: "100%",
   border: 0,
+  height: "100%",
   left: 0,
+  position: "absolute",
   top: 0,
+  width: "100%",
 })
 
 const Video: React.FC<{ src: string; title: string }> = ({ src, title }) => (

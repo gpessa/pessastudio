@@ -6,23 +6,23 @@ import { BREAKPOINT, PRODUCT_GUTTER } from "theme";
 import { ProductData } from "components/Product";
 
 const ProductStyled = styled(Product)(({ theme }) => ({
+  "& .MuiTypography-caption": {
+    color: theme.palette.grey[400],
+  },
   "& button": {
     backgroundColor: "transparent",
-    paddingBottom: "164%",
     borderWidth: 0,
+    paddingBottom: "164%",
     width: "100%",
     [theme.breakpoints.up(BREAKPOINT)]: {
       marginBottom: theme.spacing(3),
     },
   },
   "& button img": {
-    marginTop: "unset",
-    transform: "unset",
-    top: "unset",
     bottom: 0,
-  },
-  "& .MuiTypography-caption": {
-    color: theme.palette.grey[400],
+    marginTop: "unset",
+    top: "unset",
+    transform: "unset",
   },
 }));
 

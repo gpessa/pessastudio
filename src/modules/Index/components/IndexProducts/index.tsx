@@ -26,16 +26,16 @@ const CarouselStyled = styled(Carousel)(({ theme }) => ({
 }));
 
 const TextStyled = styled(Grid)({
-  justifyContent: "space-between",
-  flexDirection: "column",
   display: "flex",
+  flexDirection: "column",
+  justifyContent: "space-between",
   zIndex: 1,
 });
 
 const SliderSelectorStyled = styled(Grid)(({ theme }) => ({
   [theme.breakpoints.up(BREAKPOINT)]: {
-    position: "relative",
     marginTop: -50,
+    position: "relative",
     zIndex: 1,
   },
 }));
@@ -47,11 +47,11 @@ const IndexProducts: React.FC = () => {
   const product = Object.values(PRODUCTS);
 
   const CAROUSEL_CONFIGURATION = {
-    totalSlides: product.length,
+    currentSlide: 0,
     naturalSlideHeight: 500,
     naturalSlideWidth: 400,
-    currentSlide: 0,
     step: 2,
+    totalSlides: product.length,
   };
 
   return (

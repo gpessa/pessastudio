@@ -12,20 +12,20 @@ import {
 import React from "react";
 
 const DotGroupStyled = styled(DotGroup)(({ theme }) => ({
-  textAlign: "center",
-  marginTop: theme.spacing(3),
   "& .carousel__dot": {
     backgroundColor: theme.palette.warm1.main,
-    margin: theme.spacing(1),
-    display: "inline-block",
-    borderRadius: "50%",
     border: "none",
+    borderRadius: "50%",
+    display: "inline-block",
     height: 14,
+    margin: theme.spacing(1),
     width: 14,
   },
   ".carousel__dot--selected": {
     backgroundColor: theme.palette.primary.main,
   },
+  marginTop: theme.spacing(3),
+  textAlign: "center",
 }));
 
 const StyledTitle = styled(Title)(({ theme }) => ({
@@ -40,19 +40,19 @@ const IndexTestimonials: React.FC<
   }
 > = ({ testimonials, title, subtitle, text }) => {
   const CAROUSEL_CONFIGURATION = {
-    totalSlides: testimonials.length,
-    isIntrinsicHeight: true,
-    visibleSlides: 1,
     currentSlide: 0,
-    isPlaying: true,
     infinite: true,
     interval: 3000,
+    isIntrinsicHeight: true,
+    isPlaying: true,
     step: 1,
+    totalSlides: testimonials.length,
+    visibleSlides: 1,
   } as CarouselProviderProps;
 
   return (
     <Columns
-      left={<StyledTitle {...{ title, subtitle, text }} />}
+      left={<StyledTitle {...{ subtitle, text, title }} />}
       right={
         <CarouselProvider {...CAROUSEL_CONFIGURATION}>
           <Slider>

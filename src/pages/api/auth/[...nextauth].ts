@@ -4,17 +4,7 @@ import GoogleProvider from "next-auth/providers/google";
 import prisma from "utils/prisma";
 
 export const authOptions = {
-  secret: process.env.AUTH_SECRET,
   adapter: PrismaAdapter(prisma),
-  pages: {
-    signIn: "/admin/signin",
-  },
-  providers: [
-    GoogleProvider({
-      clientSecret: process.env.NEXT_PUBLIC_GOOGLE_CLIENT_SECRET!,
-      clientId: process.env.NEXT_PUBLIC_GOOGLE_CLIENT_ID!,
-    }),
-  ],
   callbacks: {
     async signIn(response: any) {
       const ADMINS =
@@ -28,6 +18,16 @@ export const authOptions = {
       }
     },
   },
+  pages: {
+    signIn: "/admin/signin",
+  },
+  providers: [
+    GoogleProvider({
+      clientId: process.env.NEXT_PUBLIC_GOOGLE_CLIENT_ID!,
+      clientSecret: process.env.NEXT_PUBLIC_GOOGLE_CLIENT_SECRET!,
+    }),
+  ],
+  secret: process.env.AUTH_SECRET,
 };
 
 export default NextAuth(authOptions);
