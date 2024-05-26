@@ -4,7 +4,7 @@ import Apps from "@mui/icons-material/Apps";
 import DomainDisabled from "@mui/icons-material/DomainDisabled";
 import RemoveRedEyeOutlined from "@mui/icons-material/RemoveRedEyeOutlined";
 import VideogameAsset from "@mui/icons-material/VideogameAsset";
-import { Box, Button, Typography } from "@mui/material";
+import { Box, Button, Link, styled, Typography } from "@mui/material";
 import {
   Benefits,
   Columns,
@@ -20,10 +20,10 @@ import React from "react";
 import { NAME } from "utils/constants";
 
 import { useLingui } from "@lingui/react";
-import productsGiostreGalleryGiostra1 from "assets/products/giostre/gallery/giostra-1.jpg";
-import productsGiostreGalleryGiostra2 from "assets/products/giostre/gallery/giostra-2.jpg";
 import productsGiostreGalleryGiostraConAlveolo from "assets/products/giostre/gallery/giostra-con-alveolo.jpg";
 import productsGiostreGalleryGiostraDrone from "assets/products/giostre/gallery/giostra-drone.jpg";
+import productsGiostreGalleryGiostra1 from "assets/products/giostre/gallery/giostra-1.jpg";
+import productsGiostreGalleryGiostra2 from "assets/products/giostre/gallery/giostra-2.jpg";
 import productsGiostreGalleryPorta from "assets/products/giostre/gallery/porta.jpg";
 import productsGiostreGalleryQuadro from "assets/products/giostre/gallery/quadro.jpg";
 import { BeneftisProps } from "components/Benefits";
@@ -143,9 +143,9 @@ const Giostre: React.FC = () => {
 
   return (
     <>
-      {/* <Hero {...HERO} />
+      <Hero {...HERO} />
 
-      <Benefits {...BENEFITS} /> */}
+      <Benefits {...BENEFITS} />
 
       <Section
         maxWidth="md"
@@ -182,7 +182,7 @@ const Giostre: React.FC = () => {
         </Trans>
       </Section>
 
-      {/* <Columns
+      <Columns
         left={
           <Box textAlign="center">
             <Th variant="h3" sans>
@@ -224,7 +224,7 @@ const Giostre: React.FC = () => {
 
       <Section color="primary">
         <Gallery images={IMAGES} md={3} />
-      </Section> */}
+      </Section>
     </>
   );
 };

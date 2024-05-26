@@ -10,10 +10,6 @@ export default class MyDocument extends Document {
           {/* @ts-ignore */}
           {this.props.emotionStyleTags}
           <link
-            href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400&family=Source+Sans+Pro:wght@400;700&display=swap"
-            rel="stylesheet"
-          />
-          <link
             rel="apple-touch-icon"
             sizes="180x180"
             href="/favicon/apple-touch-icon.png"

@@ -1,4 +1,15 @@
 import { createTheme, responsiveFontSizes } from "@mui/material/styles";
+import { Source_Sans_3, Roboto_Condensed } from "next/font/google";
+
+const sourceCodePro = Source_Sans_3({
+  subsets: ["latin"],
+  weight: ["400", "700"],
+});
+
+const robotoCondensed = Roboto_Condensed({
+  subsets: ["latin"],
+  weight: ["400"],
+});
 
 export const BREAKPOINT = "md";
 
@@ -92,9 +103,9 @@ const themePalette = createTheme({
     },
   },
   typography: {
-    fontFamily: "Source Sans Pro",
+    fontFamily: sourceCodePro.style.fontFamily,
     slim: {
-      fontFamily: "Roboto Condensed",
+      fontFamily: robotoCondensed.style.fontFamily!,
     },
     small: {
       fontSize: "80%",
