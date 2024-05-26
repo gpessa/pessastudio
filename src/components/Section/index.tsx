@@ -25,11 +25,8 @@ type Props = {
 } & Pick<ContainerProps, "maxWidth" | "children" | "sx">;
 
 const SectionStyled = styled(Container)<Props>(
-  ({ theme, spacing = "medium", image, color, type }) => ({
+  ({ theme, spacing = "medium", color, type }) => ({
     "&:before": {
-      // FIXME
-      // backgroundImage:
-      //   image && `url(${withPrefix(`static/patterns/${image}.jpg`)})`,
       backgroundColor: color && color,
       backgroundSize: "cover",
       content: "''",

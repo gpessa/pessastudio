@@ -31,10 +31,6 @@ import { HeroProps } from "components/Hero";
 import image from "./assets/background.jpg";
 export { getStaticProps } from "utils/getProps";
 
-const GammaSectionStyled = styled(Section)({
-  textAlign: "center",
-});
-
 export enum GiostraModels {
   Tecnoexerciser = "Tecnoexerciser",
   Ippowalker = "Ippowalker",
@@ -151,12 +147,31 @@ const Giostre: React.FC = () => {
 
       <Benefits {...BENEFITS} />
 
-      <GammaSectionStyled maxWidth="md">
+      <Section
+        maxWidth="md"
+        sx={{
+          textAlign: "center",
+        }}
+      >
         <Th variant="h2">
           <Trans>Gamma</Trans>
         </Th>
 
         <div>
+          <Trans>
+            Il nostro modello di punta, il{" "}
+            <strong>{GiostraModels.Tecnoexerciser}</strong>, rappresenta lo
+            strumento più avanzato nel suo campo. Frutto di oltre 20 anni di
+            esperienza e studi, il{" "}
+            <strong>{GiostraModels.Tecnoexerciser}</strong> offre prestazioni
+            professionali senza pari, garantendo il massimo in termini di
+            qualità e innovazione. Per chi cerca una soluzione più economica ma
+            comunque affidabile, proponiamo l'
+            <strong>{GiostraModels.Ippowalker}</strong>. Questo modello base è
+            perfetto per chi desidera un'opzione conveniente senza compromettere
+            la sicurezza e l'efficacia. Qualunque sia la vostra esigenza, siamo
+            certi di avere il prodotto giusto per voi e i vostri cavalli.
+          </Trans>
           <Trans>
             <Typography paragraph>
               Il nostro modello di punta, il{" "}
@@ -181,7 +196,7 @@ const Giostre: React.FC = () => {
             </Typography>
           </Trans>
         </div>
-      </GammaSectionStyled>
+      </Section>
 
       <Columns
         left={
