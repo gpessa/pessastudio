@@ -13,7 +13,7 @@ msgstr ""
 "Plural-Forms: \n"
 "X-Generator: Poedit 3.4.4\n"
 
-#: src/modules/Giostre/index.tsx:51
+#: src/modules/Giostre/index.tsx:47
 msgid "{NAME} è stata scelta da oltre 3.000 clienti in tutto il mondo per la realizzazione della propria giostra."
 msgstr "{NAME} a été choisie par plus de 3 000 clients dans le monde entier pour la construction de leurs marcheurs."
 
@@ -81,7 +81,7 @@ msgstr ""
 "<0>Le couloir <1>TECNOFENCE</1> est une solution simple et économique qui vous permettra d’avoir un marcheur complet, sûr et durable, à un coût compétitif.</0><2>La hauteur de la clôture extérieure est de 1,60 m, celle du couloir intérieur est de 1,40 m.</2><3>Le matériau novateur (PPO) ne demande pas d’entretien et vous permettra de réduire les coûts d’entretien qui pèsent sur les clôtures classiques en bois.\n"
 "</3><4>L’un des avantages consiste à pouvoir installer le marcheur en toute autonomie.</4>"
 
-#: src/modules/Giostre/index.tsx:159
+#: src/modules/Giostre/index.tsx:160
 msgid "<0>Il nostro modello di punta, il <1>{0}</1>, rappresenta lo strumento più avanzato nel suo campo. Frutto di oltre 20 anni di esperienza e studi, il <2>{1}</2> offre prestazioni professionali senza pari, garantendo il massimo in termini di qualità e innovazione.</0><3>Per chi cerca una soluzione più economica ma comunque affidabile, proponiamo l'<4>{2}</4>. Questo modello base è perfetto per chi desidera un'opzione conveniente senza compromettere la sicurezza e l'efficacia.</3><5>Qualunque sia la vostra esigenza, siamo certi di avere il prodotto giusto per voi e i vostri cavalli.</5>"
 msgstr "<0>Notre modèle phare, le <1>{0}</1>, représente l’outil le plus avancé dans son domaine. Fruit de plus de 20 ans d’expérience et d’études, le <2>{1}</2> offre des performances professionnelles inégalées, garantissant la plus haute qualité et innovation.</0><3>Pour ceux qui recherchent une solution plus économique mais néanmoins fiable, nous proposons le <4>{2}</4>. Ce modèle de base est parfait pour ceux qui souhaitent une option économique sans compromettre la sécurité et l’efficacité.</3><5>Quelles que soient vos besoins, nous sommes certains d’avoir le produit idéal pour vous et vos chevaux.</5>"
 
@@ -101,7 +101,7 @@ msgstr "<0>La <1>couverture en PVC</1> est composée d’une structure en acier 
 msgid "<0>La linea <1>olympic</1>, presente sul mercato da oltre vent'anni, è rappresentata da un rettangolo professionale, dove il campo da dressage è utilizzato quotidianamente.</0><2>Il campo è delimitato da moduli accostabili tra di loro, ciascuno dei quali è lungo 2 mt. Ogni modulo è costruito in polietilene antiurto resistente anche alle basse temperature e che non ingiallisce sotto l'azione dei raggi ultravioletti.</2><3>Su ciascun modulo sono previste tre aree piane con superficie lucida di 50x12 cm. sulle quali possono essere applicati adesivi pubblicitari.</3>"
 msgstr "<0>La ligne <1>olympic</1>, présente sur le marché depuis plus de 20 ans, consiste en un rectangle professionnel, lorsque la piste de dressage est utilisée quotidiennement.</0><2>Le terrain est délimité par des modules emboîtables, chacun mesurant 2 mt. de long. Chaque module est en polyéthylène antichoc, résistant y compris aux basses températures, il ne jaunit pas sous l’action des rayons UV.</2><3>Chaque module présente trois surfaces planes brillantes de 50x12 cm sur lesquelles peuvent être appliqués des adhésifs publicitaires.</3>"
 
-#: src/modules/Giostre/index.tsx:93
+#: src/modules/Giostre/index.tsx:89
 msgid "<0>La nostra azienda si distingue per le giostre, il nostro punto di forza. </0><1>La loro creazione è stata il risultato della ricerca condotta da <2>Luciano Pessa</2>, con l'intento di sviluppare uno strumento di lavoro affidabile e semplice da utilizzare per l'allenamento dei cavalli anche in assenza del cavaliere.</1><3>La giostra consente non solo di raffreddare il cavallo dopo l'allenamento, ma anche di creare una vera e propria sessione di lavoro, passando da un'andatura all'altra e cambiando di mano. Grazie alla sua versatilità, rappresenta una soluzione pratica ed efficace per l'allenamento quotidiano dei cavalli.</3>"
 msgstr "<0>Les marcheurs représentent le point fort de notre entreprise. </0><1>Ils ont été créés à partir des recherches de <2>Luciano Pessa</2> avec l’intention de développer un outil simple et fiable qui vous permettra de travailler votre cheval même lorsque vous ne pouvez pas le monter.</1><3>Le marcheurs vous permettra non seulement de faire marcher votre cheval après l’entraînement pour le refroidir, mais aussi de créer une vraie séance d’entraînement en passant d’une allure à l’autre et en changeant de main.</3>"
 
@@ -130,7 +130,7 @@ msgstr "<0>Tecnoexerciser est le modèle de marcheur le plus demandé actuelleme
 msgid "<0>Un set per creare un circuito dressage standard da {0} mt.</0><1>Il set contiene:</1><2><3>{1} moduli</3><4>{2} lettere</4></2>"
 msgstr "<0>Un kit pour créer un circuit de dressage standard de {0} m.</0><1>Le kit contient:</1><2><3>{1} modules</3><4>{2} lettres</4></2>"
 
-#: src/modules/Giostre/index.tsx:57
+#: src/modules/Giostre/index.tsx:53
 msgid "3.000 giostre installate"
 msgstr "3.000 marcheurs installés"
 
@@ -178,7 +178,7 @@ msgstr ""
 msgid "Amministrazione Login"
 msgstr ""
 
-#: src/modules/Giostre/index.tsx:67
+#: src/modules/Giostre/index.tsx:63
 msgid "Ampia gamma"
 msgstr "Vaste gamme"
 
@@ -443,7 +443,7 @@ msgstr "Le marcheur peut être vendu sans couverture, mais si votre objectif est
 msgid "È possibile acquistare la giostra sprovvista di copertura ma se il vostro obbiettivo è quello di poter lavorare 365 giorni all'anno, Pessastudio, offre due possibili soluzioni abbinabili al corridoio <0>Exerciser</0>."
 msgstr "Le marcheur peut être vendu sans couverture, mais si votre objectif est de pouvoir travailler 365 jours par an, Pessastudio vous offre deux solutions possibles, à combiner avec le couloir <0>Exerciser</0>."
 
-#: src/modules/Giostre/index.tsx:61
+#: src/modules/Giostre/index.tsx:57
 msgid "È possibile acquistare le nostre giostre in diverse versioni adatte ad ogni budget ed esigenza"
 msgstr "Il est possible d’acheter nos marcheur dans différentes versions adaptées à tous les budgets et besoins"
 
@@ -466,7 +466,7 @@ msgstr "Entrée"
 msgid "Errore"
 msgstr "Erreur"
 
-#: src/modules/Giostre/index.tsx:88
+#: src/modules/Giostre/index.tsx:84
 msgid "Facile da usare"
 msgstr "Facile à utiliser"
 
@@ -483,7 +483,7 @@ msgstr "Fossé"
 msgid "Funzione"
 msgstr "Fonction"
 
-#: src/modules/Giostre/index.tsx:156
+#: src/modules/Giostre/index.tsx:157
 #: src/modules/GiostreIppowalker/_compare.tsx:92
 #: src/modules/GiostreTecnoexerciser/_compare.tsx:119
 #: src/modules/Recinti/_gamma.tsx:32
@@ -540,7 +540,7 @@ msgstr "Marcheur base"
 msgid "Giostra con corridoio TECNOFENCE"
 msgstr "Marcheur Couloir TECNOFENCE"
 
-#: src/modules/Giostre/index.tsx:221
+#: src/modules/Giostre/index.tsx:222
 msgid "Giostra in movimento"
 msgstr "Marcheur pour chevaux"
 
@@ -549,9 +549,9 @@ msgstr "Marcheur pour chevaux"
 msgid "Giostra Ippowalker"
 msgstr "Marcheur Ippowalker"
 
-#: src/modules/Giostre/index.tsx:118
-#: src/modules/Giostre/index.tsx:130
-#: src/modules/Giostre/index.tsx:138
+#: src/modules/Giostre/index.tsx:114
+#: src/modules/Giostre/index.tsx:126
+#: src/modules/Giostre/index.tsx:134
 msgid "Giostra per cavalli Tecnoexerciser"
 msgstr "Marcheur Tecnoexerciser"
 
@@ -637,13 +637,13 @@ msgstr "Indestructibles"
 msgid "Informativa sui Cookie"
 msgstr "Votre Vie Privée"
 
-#: src/modules/Giostre/index.tsx:122
+#: src/modules/Giostre/index.tsx:118
 msgid "Ingresso"
 msgstr "Porte d’entrée"
 
 #: src/modules/Tondini/index.tsx:163
 msgid "Ingresso di 2,05 mt. con catenaccio verticale"
-msgstr "Entrée de 2,05 m."
+msgstr "Entrée de 2,05 mt."
 
 #: src/modules/Index/index.tsx:59
 msgid "Innovativi"
@@ -653,7 +653,7 @@ msgstr "Innovants"
 msgid "Innovazione tecnologica e qualità sono le caratteristiche chiave dei nostri prodotti"
 msgstr "Innovation technologique et qualité : ce sont les caractéristiques clés de nos produits"
 
-#: src/modules/Giostre/index.tsx:134
+#: src/modules/Giostre/index.tsx:130
 msgid "Interno giostra con alveolo"
 msgstr "Intérieur de manège d’obstacles avec alvéole"
 
@@ -762,7 +762,7 @@ msgstr "Lame de {0}"
 msgid "Larghezza"
 msgstr "Largeur"
 
-#: src/modules/Giostre/index.tsx:71
+#: src/modules/Giostre/index.tsx:67
 msgid "Le nostre giostre sono considerate strutture precarie. Non avrete bisogno di nessuna concessione edilizia"
 msgstr "Nos manèges n’ont pas besoin de permis de construire"
 
@@ -835,7 +835,7 @@ msgstr ""
 msgid "Motore"
 msgstr "Moteur électrique"
 
-#: src/modules/Giostre/index.tsx:77
+#: src/modules/Giostre/index.tsx:73
 #: src/modules/Tondini/index.tsx:243
 msgid "Nessuna concessione edilizia"
 msgstr "Aucun permis de construire"
@@ -863,7 +863,7 @@ msgstr "Le page que tu demandes n’existes pas"
 msgid "Per consentirvi di realizzare ostacoli di vostra creazione possiamo fornirvi le lame forate in due diverse lunghezze."
 msgstr "Pour vous permettre de réaliser des obstacles selon vos créations, nous pouvons vous fournir les joncs avec encoches en deux longueurs."
 
-#: src/modules/Giostre/index.tsx:113
+#: src/modules/Giostre/index.tsx:109
 msgid "Perché una giostra Pessastudio"
 msgstr "Pourquoi un marcheur Pessastudio"
 
@@ -949,7 +949,7 @@ msgstr "Vous pouvez à tout moment recevoir de l’aide et des explications sur 
 msgid "PVC"
 msgstr "PVC"
 
-#: src/modules/Giostre/index.tsx:126
+#: src/modules/Giostre/index.tsx:122
 #: src/utils/constants.tsx:290
 msgid "Quadro di comando"
 msgstr "Tableau de commande"
@@ -1041,8 +1041,8 @@ msgstr "Concessionnaires internationaux"
 msgid "Scarica"
 msgstr "Télécharger un fichier"
 
-#: src/modules/Giostre/index.tsx:197
-#: src/modules/Giostre/index.tsx:213
+#: src/modules/Giostre/index.tsx:198
+#: src/modules/Giostre/index.tsx:214
 msgid "Scopri di piú"
 msgstr "En savoir plus"
 
@@ -1201,7 +1201,7 @@ msgstr "Un piste de dressage en PVC. Indestructible même en présence des condi
 msgid "Una lunga storia"
 msgstr "Une longue histoire"
 
-#: src/modules/Giostre/index.tsx:81
+#: src/modules/Giostre/index.tsx:77
 msgid "Usa il nostro semplice pannello di controllo per scegliere uno dei nostri \"training programs\" o seleziona manualmente la velocità desiderata"
 msgstr "Utilisez notre tableau de commande simple pour choisir l’un de nos « training programs », ou sélectionnez manuellement la vitesse souhaitée"
 

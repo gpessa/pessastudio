@@ -3,7 +3,7 @@ import { useLingui } from "@lingui/react";
 import { Typography } from "@mui/material";
 import { Columns, Th, Ul, Video } from "components";
 import { usePages } from "hooks";
-import { GiostraModels } from "modules/Giostre";
+import { GIOSTRE_MODELS } from "modules/Giostre";
 import React from "react";
 import TecnoexerciserAccessori from "./_accessori";
 import TecnoexerciserCompare from "./_compare";
@@ -67,7 +67,7 @@ const GiostreTecnoexerciser: React.FC = () => {
 
       <Video
         src={"https://www.youtube-nocookie.com/embed/mkB5ZPK9swA"}
-        title={t`Giostra ${GiostraModels.Tecnoexerciser} in movimento`}
+        title={t`Giostra ${GIOSTRE_MODELS.TECNOEXERCISER} in movimento`}
       />
 
       <TecnoexerciserCorridoi />

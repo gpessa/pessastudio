@@ -1,19 +1,19 @@
 msgid ""
 msgstr ""
-"POT-Creation-Date: 2021-10-13 18:45+0200\n"
-"MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
-"Content-Transfer-Encoding: 8bit\n"
-"X-Generator: @lingui/cli\n"
-"Language: it\n"
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-10-13 18:45+0200\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
+"Language: it\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: \n"
+"X-Generator: Poedit 3.4.4\n"
 
-#: src/modules/Giostre/index.tsx:51
+#: src/modules/Giostre/index.tsx:47
 msgid "{NAME} è stata scelta da oltre 3.000 clienti in tutto il mondo per la realizzazione della propria giostra."
 msgstr "{NAME} è stata scelta da oltre 3.000 clienti in tutto il mondo per la realizzazione della propria giostra."
 
@@ -73,7 +73,7 @@ msgstr "<0>Il corridoio <1>{name}</1> in compensato marino è realizzato con un 
 msgid "<0>Il corridoio <1>TECNOFENCE</1> è una soluzione semplice ed economica che ti permetterà di avere una giostra completa, sicura e durevole ad un costo competitivo.</0><2>L'altezza della recinzione esterna è di 1,60 mt., a differenza del corridoio interno alto 1,40 mt.</2><3>L'innovativo materiale utilizzato per la sua costruzione (PPO) è durevole nel tempo e ti consentirà di abbattere i costi di manutenzione che affliggono le classiche recinzioni in legno.</3><4>Uno dei vantaggi è inoltre quello di poter installare la giostra in piena autonomia.</4>"
 msgstr "<0>Il corridoio <1>TECNOFENCE</1> è una soluzione semplice ed economica che ti permetterà di avere una giostra completa, sicura e durevole ad un costo competitivo.</0><2>L'altezza della recinzione esterna è di 1,60 mt., a differenza del corridoio interno alto 1,40 mt.</2><3>L'innovativo materiale utilizzato per la sua costruzione (PPO) è durevole nel tempo e ti consentirà di abbattere i costi di manutenzione che affliggono le classiche recinzioni in legno.</3><4>Uno dei vantaggi è inoltre quello di poter installare la giostra in piena autonomia.</4>"
 
-#: src/modules/Giostre/index.tsx:159
+#: src/modules/Giostre/index.tsx:160
 msgid "<0>Il nostro modello di punta, il <1>{0}</1>, rappresenta lo strumento più avanzato nel suo campo. Frutto di oltre 20 anni di esperienza e studi, il <2>{1}</2> offre prestazioni professionali senza pari, garantendo il massimo in termini di qualità e innovazione.</0><3>Per chi cerca una soluzione più economica ma comunque affidabile, proponiamo l'<4>{2}</4>. Questo modello base è perfetto per chi desidera un'opzione conveniente senza compromettere la sicurezza e l'efficacia.</3><5>Qualunque sia la vostra esigenza, siamo certi di avere il prodotto giusto per voi e i vostri cavalli.</5>"
 msgstr "<0>Il nostro modello di punta, il <1>{0}</1>, rappresenta lo strumento più avanzato nel suo campo. Frutto di oltre 20 anni di esperienza e studi, il <2>{1}</2> offre prestazioni professionali senza pari, garantendo il massimo in termini di qualità e innovazione.</0><3>Per chi cerca una soluzione più economica ma comunque affidabile, proponiamo l'<4>{2}</4>. Questo modello base è perfetto per chi desidera un'opzione conveniente senza compromettere la sicurezza e l'efficacia.</3><5>Qualunque sia la vostra esigenza, siamo certi di avere il prodotto giusto per voi e i vostri cavalli.</5>"
 
@@ -93,7 +93,7 @@ msgstr "<0>La <1>copertura in PVC</1> è composta da una struttura in acciaio zi
 msgid "<0>La linea <1>olympic</1>, presente sul mercato da oltre vent'anni, è rappresentata da un rettangolo professionale, dove il campo da dressage è utilizzato quotidianamente.</0><2>Il campo è delimitato da moduli accostabili tra di loro, ciascuno dei quali è lungo 2 mt. Ogni modulo è costruito in polietilene antiurto resistente anche alle basse temperature e che non ingiallisce sotto l'azione dei raggi ultravioletti.</2><3>Su ciascun modulo sono previste tre aree piane con superficie lucida di 50x12 cm. sulle quali possono essere applicati adesivi pubblicitari.</3>"
 msgstr "<0>La linea <1>olympic</1>, presente sul mercato da oltre vent'anni, è rappresentata da un rettangolo professionale, dove il campo da dressage è utilizzato quotidianamente.</0><2>Il campo è delimitato da moduli accostabili tra di loro, ciascuno dei quali è lungo 2 mt. Ogni modulo è costruito in polietilene antiurto resistente anche alle basse temperature e che non ingiallisce sotto l'azione dei raggi ultravioletti.</2><3>Su ciascun modulo sono previste tre aree piane con superficie lucida di 50x12 cm. sulle quali possono essere applicati adesivi pubblicitari.</3>"
 
-#: src/modules/Giostre/index.tsx:93
+#: src/modules/Giostre/index.tsx:89
 msgid "<0>La nostra azienda si distingue per le giostre, il nostro punto di forza. </0><1>La loro creazione è stata il risultato della ricerca condotta da <2>Luciano Pessa</2>, con l'intento di sviluppare uno strumento di lavoro affidabile e semplice da utilizzare per l'allenamento dei cavalli anche in assenza del cavaliere.</1><3>La giostra consente non solo di raffreddare il cavallo dopo l'allenamento, ma anche di creare una vera e propria sessione di lavoro, passando da un'andatura all'altra e cambiando di mano. Grazie alla sua versatilità, rappresenta una soluzione pratica ed efficace per l'allenamento quotidiano dei cavalli.</3>"
 msgstr "<0>La nostra azienda si distingue per le giostre, il nostro punto di forza. </0><1>La loro creazione è stata il risultato della ricerca condotta da <2>Luciano Pessa</2>, con l'intento di sviluppare uno strumento di lavoro affidabile e semplice da utilizzare per l'allenamento dei cavalli anche in assenza del cavaliere.</1><3>La giostra consente non solo di raffreddare il cavallo dopo l'allenamento, ma anche di creare una vera e propria sessione di lavoro, passando da un'andatura all'altra e cambiando di mano. Grazie alla sua versatilità, rappresenta una soluzione pratica ed efficace per l'allenamento quotidiano dei cavalli.</3>"
 
@@ -122,7 +122,7 @@ msgstr "<0>Tecnoexerciser è il modello di giostra attualmente più richiesto.</
 msgid "<0>Un set per creare un circuito dressage standard da {0} mt.</0><1>Il set contiene:</1><2><3>{1} moduli</3><4>{2} lettere</4></2>"
 msgstr "<0>Un set per creare un circuito dressage standard da {0} mt.</0><1>Il set contiene:</1><2><3>{1} moduli</3><4>{2} lettere</4></2>"
 
-#: src/modules/Giostre/index.tsx:57
+#: src/modules/Giostre/index.tsx:53
 msgid "3.000 giostre installate"
 msgstr "3.000 giostre installate"
 
@@ -170,7 +170,7 @@ msgstr "Amministrazione"
 msgid "Amministrazione Login"
 msgstr "Amministrazione Login"
 
-#: src/modules/Giostre/index.tsx:67
+#: src/modules/Giostre/index.tsx:63
 msgid "Ampia gamma"
 msgstr "Ampia gamma"
 
@@ -435,7 +435,7 @@ msgstr "É possibile acquistare la giostra sprovvista di copertura ma se il vost
 msgid "È possibile acquistare la giostra sprovvista di copertura ma se il vostro obbiettivo è quello di poter lavorare 365 giorni all'anno, Pessastudio, offre due possibili soluzioni abbinabili al corridoio <0>Exerciser</0>."
 msgstr "È possibile acquistare la giostra sprovvista di copertura ma se il vostro obbiettivo è quello di poter lavorare 365 giorni all'anno, Pessastudio, offre due possibili soluzioni abbinabili al corridoio <0>Exerciser</0>."
 
-#: src/modules/Giostre/index.tsx:61
+#: src/modules/Giostre/index.tsx:57
 msgid "È possibile acquistare le nostre giostre in diverse versioni adatte ad ogni budget ed esigenza"
 msgstr "È possibile acquistare le nostre giostre in diverse versioni adatte ad ogni budget ed esigenza"
 
@@ -458,7 +458,7 @@ msgstr "Entrata"
 msgid "Errore"
 msgstr "Errore"
 
-#: src/modules/Giostre/index.tsx:88
+#: src/modules/Giostre/index.tsx:84
 msgid "Facile da usare"
 msgstr "Facile da usare"
 
@@ -475,7 +475,7 @@ msgstr "Fosso"
 msgid "Funzione"
 msgstr "Funzione"
 
-#: src/modules/Giostre/index.tsx:156
+#: src/modules/Giostre/index.tsx:157
 #: src/modules/GiostreIppowalker/_compare.tsx:92
 #: src/modules/GiostreTecnoexerciser/_compare.tsx:119
 #: src/modules/Recinti/_gamma.tsx:32
@@ -530,7 +530,7 @@ msgstr "Giostra base"
 msgid "Giostra con corridoio TECNOFENCE"
 msgstr "Giostra con corridoio TECNOFENCE"
 
-#: src/modules/Giostre/index.tsx:221
+#: src/modules/Giostre/index.tsx:222
 msgid "Giostra in movimento"
 msgstr "Giostra in movimento"
 
@@ -539,9 +539,9 @@ msgstr "Giostra in movimento"
 msgid "Giostra Ippowalker"
 msgstr "Giostra Ippowalker"
 
-#: src/modules/Giostre/index.tsx:118
-#: src/modules/Giostre/index.tsx:130
-#: src/modules/Giostre/index.tsx:138
+#: src/modules/Giostre/index.tsx:114
+#: src/modules/Giostre/index.tsx:126
+#: src/modules/Giostre/index.tsx:134
 msgid "Giostra per cavalli Tecnoexerciser"
 msgstr "Giostra per cavalli Tecnoexerciser"
 
@@ -627,7 +627,7 @@ msgstr "Indistruttibili"
 msgid "Informativa sui Cookie"
 msgstr "Informativa sui Cookie"
 
-#: src/modules/Giostre/index.tsx:122
+#: src/modules/Giostre/index.tsx:118
 msgid "Ingresso"
 msgstr "Ingresso"
 
@@ -643,7 +643,7 @@ msgstr "Innovativi"
 msgid "Innovazione tecnologica e qualità sono le caratteristiche chiave dei nostri prodotti"
 msgstr "Innovazione tecnologica e qualità sono le caratteristiche chiave dei nostri prodotti"
 
-#: src/modules/Giostre/index.tsx:134
+#: src/modules/Giostre/index.tsx:130
 msgid "Interno giostra con alveolo"
 msgstr "Interno giostra con alveolo"
 
@@ -752,7 +752,7 @@ msgstr "Lama DE da {0}"
 msgid "Larghezza"
 msgstr "Larghezza"
 
-#: src/modules/Giostre/index.tsx:71
+#: src/modules/Giostre/index.tsx:67
 msgid "Le nostre giostre sono considerate strutture precarie. Non avrete bisogno di nessuna concessione edilizia"
 msgstr "Le nostre giostre sono considerate strutture precarie. Non avrete bisogno di nessuna concessione edilizia"
 
@@ -825,7 +825,7 @@ msgstr "Montate le porte di separazione"
 msgid "Motore"
 msgstr "Motore"
 
-#: src/modules/Giostre/index.tsx:77
+#: src/modules/Giostre/index.tsx:73
 #: src/modules/Tondini/index.tsx:243
 msgid "Nessuna concessione edilizia"
 msgstr "Nessuna concessione edilizia"
@@ -853,7 +853,7 @@ msgstr "Pagina non trovata"
 msgid "Per consentirvi di realizzare ostacoli di vostra creazione possiamo fornirvi le lame forate in due diverse lunghezze."
 msgstr "Per consentirvi di realizzare ostacoli di vostra creazione possiamo fornirvi le lame forate in due diverse lunghezze."
 
-#: src/modules/Giostre/index.tsx:113
+#: src/modules/Giostre/index.tsx:109
 msgid "Perché una giostra Pessastudio"
 msgstr "Perché una giostra Pessastudio"
 
@@ -939,7 +939,7 @@ msgstr "Puoi in qualsiasi momento ricevere assistenza e spiegazioni su come eser
 msgid "PVC"
 msgstr "PVC"
 
-#: src/modules/Giostre/index.tsx:126
+#: src/modules/Giostre/index.tsx:122
 #: src/utils/constants.tsx:290
 msgid "Quadro di comando"
 msgstr "Quadro di comando"
@@ -1031,8 +1031,8 @@ msgstr "Rivenditori"
 msgid "Scarica"
 msgstr "Scarica"
 
-#: src/modules/Giostre/index.tsx:197
-#: src/modules/Giostre/index.tsx:213
+#: src/modules/Giostre/index.tsx:198
+#: src/modules/Giostre/index.tsx:214
 msgid "Scopri di piú"
 msgstr "Scopri di piú"
 
@@ -1191,7 +1191,7 @@ msgstr "Un recinto da cavalli in PVC. Indistruttibile anche in presenza delle pi
 msgid "Una lunga storia"
 msgstr "Una lunga storia"
 
-#: src/modules/Giostre/index.tsx:81
+#: src/modules/Giostre/index.tsx:77
 msgid "Usa il nostro semplice pannello di controllo per scegliere uno dei nostri \"training programs\" o seleziona manualmente la velocità desiderata"
 msgstr "Usa il nostro semplice pannello di controllo per scegliere uno dei nostri \"training programs\" o seleziona manualmente la velocità desiderata"
 

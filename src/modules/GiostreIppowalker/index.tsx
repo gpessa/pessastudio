@@ -11,7 +11,7 @@ import IppowalkerCorridoi from "./_corridoi";
 import IppowalkerGallery from "./_gallery";
 import IppowalkerServizioClienti from "./_servizio_clienti";
 import { useLingui } from "@lingui/react";
-import { GiostraModels } from "modules/Giostre";
+import { GIOSTRE_MODELS } from "modules/Giostre";
 export { getStaticProps } from "utils/getProps";
 
 const GiostreIppowalker: React.FC = () => {
@@ -69,7 +69,7 @@ const GiostreIppowalker: React.FC = () => {
 
       <Video
         src={"https://www.youtube-nocookie.com/embed/slFfbd7kTzg"}
-        title={t`Giostra ${GiostraModels.Ippowalker} in movimento`}
+        title={t`Giostra ${GIOSTRE_MODELS.IPPOWALKER} in movimento`}
       />
 
       <IppowalkerCorridoi />
