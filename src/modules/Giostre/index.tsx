@@ -41,8 +41,8 @@ export enum GiostraModels {
 }
 
 const Giostre: React.FC = () => {
-  useLingui(); // Fix on locale change
   const { PAGES } = usePages();
+  useLingui(); // Fix on locale change
 
   const BENEFITS: BeneftisProps = {
     benefits: [
