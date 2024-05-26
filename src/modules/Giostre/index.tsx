@@ -143,9 +143,9 @@ const Giostre: React.FC = () => {
 
   return (
     <>
-      <Hero {...HERO} />
+      {/* <Hero {...HERO} />
 
-      <Benefits {...BENEFITS} />
+      <Benefits {...BENEFITS} /> */}
 
       <Section
         maxWidth="md"
@@ -182,14 +182,7 @@ const Giostre: React.FC = () => {
         </Trans>
       </Section>
 
-      <Trans>
-        <Typography>
-          Qualunque sia la vostra esigenza, siamo certi di avere il prodotto
-          giusto per voi e i vostri cavalli.
-        </Typography>
-      </Trans>
-
-      <Columns
+      {/* <Columns
         left={
           <Box textAlign="center">
             <Th variant="h3" sans>
@@ -231,7 +224,7 @@ const Giostre: React.FC = () => {
 
       <Section color="primary">
         <Gallery images={IMAGES} md={3} />
-      </Section>
+      </Section> */}
     </>
   );
 };
