@@ -121,7 +121,8 @@ const usePages = () => {
     url: "/admin/signin",
   };
 
-  const PRODUCTS = { DRESSAGE, GIOSTRE, OSTACOLI, RECINTI, TONDINI };
+  // eslint-disable-next-line sort-keys-fix/sort-keys-fix
+  const PRODUCTS = { GIOSTRE, TONDINI, OSTACOLI, RECINTI, DRESSAGE };
 
   const NAVIGATION = { ...PRODUCTS, CONTATTI };
 
