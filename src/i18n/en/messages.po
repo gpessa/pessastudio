@@ -11,7 +11,7 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: \n"
-"X-Generator: Poedit 3.3.1\n"
+"X-Generator: Poedit 3.4.4\n"
 
 #: src/modules/Giostre/index.tsx:51
 msgid "{NAME} è stata scelta da oltre 3.000 clienti in tutto il mondo per la realizzazione della propria giostra."
@@ -72,6 +72,10 @@ msgstr "<0>The marine plywood corridor <1>{name}</1> is made of a plywood <2>({t
 #: src/utils/constants.tsx:249
 msgid "<0>Il corridoio <1>TECNOFENCE</1> è una soluzione semplice ed economica che ti permetterà di avere una giostra completa, sicura e durevole ad un costo competitivo.</0><2>L'altezza della recinzione esterna è di 1,60 mt., a differenza del corridoio interno alto 1,40 mt.</2><3>L'innovativo materiale utilizzato per la sua costruzione (PPO) è durevole nel tempo e ti consentirà di abbattere i costi di manutenzione che affliggono le classiche recinzioni in legno.</3><4>Uno dei vantaggi è inoltre quello di poter installare la giostra in piena autonomia.</4>"
 msgstr "<0>The <1>TECNOFENCE</1> corridor is a simple and economical solution for a complete, safe and durable horse exerciser at a competitive price.</0><2>The height of the external fence is 1.60 meters, the internal corridor is 1.40 meters high.</2><3>The innovative material used for its construction (PPO) is durable over time and it reduce the maintenance costs that afflict the classic wooden fences.</3><4>The <1>TECNOFENCE</1> corridor can also being able installed in full autonomy.</4>"
+
+#: src/modules/Giostre/index.tsx:159
+msgid "<0>Il nostro modello di punta, il <1>{0}</1>, rappresenta lo strumento più avanzato nel suo campo. Frutto di oltre 20 anni di esperienza e studi, il <2>{1}</2> offre prestazioni professionali senza pari, garantendo il massimo in termini di qualità e innovazione.</0><3>Per chi cerca una soluzione più economica ma comunque affidabile, proponiamo l'<4>{2}</4>. Questo modello base è perfetto per chi desidera un'opzione conveniente senza compromettere la sicurezza e l'efficacia.</3><5>Qualunque sia la vostra esigenza, siamo certi di avere il prodotto giusto per voi e i vostri cavalli.</5>"
+msgstr "<0>Our flagship model, the <1>{0}</1>, represents the most advanced tool in its field. The result of over 20 years of experience and studies, the <2>{1}</2> offers unparalleled professional performance, ensuring the highest quality and innovation.</0><3>For those seeking a more economical yet reliable solution, we offer the <4>{2}</4>. This basic model is perfect for those who want a cost-effective option without compromising on safety and efficiency.</3><5>Whatever your needs, we are confident we have the right product for you and your horses.</5>"
 
 #: src/modules/Dressage/index.tsx:40
 msgid "<0>Il rettangolo della linea <1>training</1> è rivolto a quei maneggi in cui lo spazio a disposizione è limitato e il rettangolo viene installato provvisoriamente.</0><2>Facile da montare, è costituito da elementi modulari di 2 mt. in materiale plastico, non richiede alcuna manutenzione e occupa poco spazio quando non è utilizzato.</2>"
@@ -421,10 +425,6 @@ msgstr "Walker dimensions {sides} panels {size} m and base preparation instructi
 msgid "Dressage"
 msgstr "Dressage"
 
-#: src/modules/Giostre/index.tsx:159
-msgid "Due sono i modelli di giostra che proponiamo: il modello <0>{0}</0>, prodotta da oltre 20 anni, e il modello <1>{1}</1>, pensata per rispondere alle esigenze di un mercato che richiede un prodotto affidabile e al tempo stesso economico."
-msgstr "We offer two walker models: the <0>{0}</0>, which we have produced for more than 20 years, and the  <1>{1}</1>, designed to meet market needs for a reliable yet low-cost product."
-
 #: src/modules/Tondini/index.tsx:226
 msgid "È costituito da pannelli laterali in compensato marino fissati a colonne in acciaio zincato. La copertura in telo spalmato in PVC, è disponibile in bianco, verde o crema"
 msgstr "Made of marine plywood panels attached to galvanised steel columns. The PVC-coated fabric cover is available in white, green, or cream"
@@ -547,7 +547,7 @@ msgstr "Horse Walker Base"
 msgid "Giostra con corridoio TECNOFENCE"
 msgstr "Walker with TECNOFENCE corridor"
 
-#: src/modules/Giostre/index.tsx:210
+#: src/modules/Giostre/index.tsx:221
 msgid "Giostra in movimento"
 msgstr "Horse exerciser"
 
@@ -1052,8 +1052,8 @@ msgstr "International Dealers"
 msgid "Scarica"
 msgstr "Download"
 
-#: src/modules/Giostre/index.tsx:186
-#: src/modules/Giostre/index.tsx:202
+#: src/modules/Giostre/index.tsx:197
+#: src/modules/Giostre/index.tsx:213
 msgid "Scopri di piú"
 msgstr "Discover more"
 

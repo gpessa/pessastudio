@@ -11,7 +11,7 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: \n"
-"X-Generator: Poedit 3.3.1\n"
+"X-Generator: Poedit 3.4.4\n"
 
 #: src/modules/Giostre/index.tsx:51
 msgid "{NAME} è stata scelta da oltre 3.000 clienti in tutto il mondo per la realizzazione della propria giostra."
@@ -80,6 +80,10 @@ msgid "<0>Il corridoio <1>TECNOFENCE</1> è una soluzione semplice ed economica 
 msgstr ""
 "<0>Le couloir <1>TECNOFENCE</1> est une solution simple et économique qui vous permettra d’avoir un marcheur complet, sûr et durable, à un coût compétitif.</0><2>La hauteur de la clôture extérieure est de 1,60 m, celle du couloir intérieur est de 1,40 m.</2><3>Le matériau novateur (PPO) ne demande pas d’entretien et vous permettra de réduire les coûts d’entretien qui pèsent sur les clôtures classiques en bois.\n"
 "</3><4>L’un des avantages consiste à pouvoir installer le marcheur en toute autonomie.</4>"
+
+#: src/modules/Giostre/index.tsx:159
+msgid "<0>Il nostro modello di punta, il <1>{0}</1>, rappresenta lo strumento più avanzato nel suo campo. Frutto di oltre 20 anni di esperienza e studi, il <2>{1}</2> offre prestazioni professionali senza pari, garantendo il massimo in termini di qualità e innovazione.</0><3>Per chi cerca una soluzione più economica ma comunque affidabile, proponiamo l'<4>{2}</4>. Questo modello base è perfetto per chi desidera un'opzione conveniente senza compromettere la sicurezza e l'efficacia.</3><5>Qualunque sia la vostra esigenza, siamo certi di avere il prodotto giusto per voi e i vostri cavalli.</5>"
+msgstr "<0>Notre modèle phare, le <1>{0}</1>, représente l’outil le plus avancé dans son domaine. Fruit de plus de 20 ans d’expérience et d’études, le <2>{1}</2> offre des performances professionnelles inégalées, garantissant la plus haute qualité et innovation.</0><3>Pour ceux qui recherchent une solution plus économique mais néanmoins fiable, nous proposons le <4>{2}</4>. Ce modèle de base est parfait pour ceux qui souhaitent une option économique sans compromettre la sécurité et l’efficacité.</3><5>Quelles que soient vos besoins, nous sommes certains d’avoir le produit idéal pour vous et vos chevaux.</5>"
 
 #: src/modules/Dressage/index.tsx:40
 msgid "<0>Il rettangolo della linea <1>training</1> è rivolto a quei maneggi in cui lo spazio a disposizione è limitato e il rettangolo viene installato provvisoriamente.</0><2>Facile da montare, è costituito da elementi modulari di 2 mt. in materiale plastico, non richiede alcuna manutenzione e occupa poco spazio quando non è utilizzato.</2>"
@@ -427,10 +431,6 @@ msgstr "Dimensions du marcheur {sides} panneaux {size} mt. et instructions de pr
 msgid "Dressage"
 msgstr "Dressage"
 
-#: src/modules/Giostre/index.tsx:159
-msgid "Due sono i modelli di giostra che proponiamo: il modello <0>{0}</0>, prodotta da oltre 20 anni, e il modello <1>{1}</1>, pensata per rispondere alle esigenze di un mercato che richiede un prodotto affidabile e al tempo stesso economico."
-msgstr "Nous proposons deux modèles de marcheur : le modèle <0>{0}</0>, fabriqué depuis plus de 20 ans, et le modèle <1>{1}</1>, conçu pour répondre aux exigences d’un marché en demande d’un produit fiable mais aussi économique."
-
 #: src/modules/Tondini/index.tsx:226
 msgid "È costituito da pannelli laterali in compensato marino fissati a colonne in acciaio zincato. La copertura in telo spalmato in PVC, è disponibile in bianco, verde o crema"
 msgstr "Il est constitué de panneaux latéraux en contreplaqué marine, fixés à des colonnes en acier galvanisé. La couverture est une toile enduite en PVC, disponible en blanc, vert ou crème"
@@ -540,7 +540,7 @@ msgstr "Marcheur base"
 msgid "Giostra con corridoio TECNOFENCE"
 msgstr "Marcheur Couloir TECNOFENCE"
 
-#: src/modules/Giostre/index.tsx:210
+#: src/modules/Giostre/index.tsx:221
 msgid "Giostra in movimento"
 msgstr "Marcheur pour chevaux"
 
@@ -1041,8 +1041,8 @@ msgstr "Concessionnaires internationaux"
 msgid "Scarica"
 msgstr "Télécharger un fichier"
 
-#: src/modules/Giostre/index.tsx:186
-#: src/modules/Giostre/index.tsx:202
+#: src/modules/Giostre/index.tsx:197
+#: src/modules/Giostre/index.tsx:213
 msgid "Scopri di piú"
 msgstr "En savoir plus"
 

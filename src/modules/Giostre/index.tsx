@@ -157,16 +157,27 @@ const Giostre: React.FC = () => {
         </Th>
 
         <Trans>
-          Due sono i modelli di giostra che proponiamo: il modello{" "}
-          <Link href={PAGES.GIOSTRE_TECNOEXERCISER.url} component={NextLink}>
-            {GiostraModels.Tecnoexerciser}
-          </Link>
-          , prodotta da oltre 20 anni, e il modello{" "}
-          <Link href={PAGES.GIOSTRE_IPPOWALKER.url} component={NextLink}>
-            {GiostraModels.Ippowalker}
-          </Link>
-          , pensata per rispondere alle esigenze di un mercato che richiede un
-          prodotto affidabile e al tempo stesso economico.
+          <Typography paragraph>
+            Il nostro modello di punta, il{" "}
+            <strong>{GiostraModels.Tecnoexerciser}</strong>, rappresenta lo
+            strumento più avanzato nel suo campo. Frutto di oltre 20 anni di
+            esperienza e studi, il{" "}
+            <strong>{GiostraModels.Tecnoexerciser}</strong> offre prestazioni
+            professionali senza pari, garantendo il massimo in termini di
+            qualità e innovazione.
+          </Typography>
+
+          <Typography paragraph>
+            Per chi cerca una soluzione più economica ma comunque affidabile,
+            proponiamo l'<strong>{GiostraModels.Ippowalker}</strong>. Questo
+            modello base è perfetto per chi desidera un'opzione conveniente
+            senza compromettere la sicurezza e l'efficacia.
+          </Typography>
+
+          <Typography>
+            Qualunque sia la vostra esigenza, siamo certi di avere il prodotto
+            giusto per voi e i vostri cavalli.
+          </Typography>
         </Trans>
       </GammaSectionStyled>
 
