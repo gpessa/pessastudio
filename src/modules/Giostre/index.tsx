@@ -182,6 +182,13 @@ const Giostre: React.FC = () => {
         </Trans>
       </Section>
 
+      <Trans>
+        <Typography>
+          Qualunque sia la vostra esigenza, siamo certi di avere il prodotto
+          giusto per voi e i vostri cavalli.
+        </Typography>
+      </Trans>
+
       <Columns
         left={
           <Box textAlign="center">
