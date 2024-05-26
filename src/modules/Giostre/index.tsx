@@ -156,29 +156,31 @@ const Giostre: React.FC = () => {
           <Trans>Gamma</Trans>
         </Th>
 
-        <Trans>
-          <Typography paragraph>
-            Il nostro modello di punta, il{" "}
-            <strong>{GiostraModels.Tecnoexerciser}</strong>, rappresenta lo
-            strumento più avanzato nel suo campo. Frutto di oltre 20 anni di
-            esperienza e studi, il{" "}
-            <strong>{GiostraModels.Tecnoexerciser}</strong> offre prestazioni
-            professionali senza pari, garantendo il massimo in termini di
-            qualità e innovazione.
-          </Typography>
+        <div>
+          <Trans>
+            <Typography paragraph>
+              Il nostro modello di punta, il{" "}
+              <strong>{GiostraModels.Tecnoexerciser}</strong>, rappresenta lo
+              strumento più avanzato nel suo campo. Frutto di oltre 20 anni di
+              esperienza e studi, il{" "}
+              <strong>{GiostraModels.Tecnoexerciser}</strong> offre prestazioni
+              professionali senza pari, garantendo il massimo in termini di
+              qualità e innovazione.
+            </Typography>
 
-          <Typography paragraph>
-            Per chi cerca una soluzione più economica ma comunque affidabile,
-            proponiamo l'<strong>{GiostraModels.Ippowalker}</strong>. Questo
-            modello base è perfetto per chi desidera un'opzione conveniente
-            senza compromettere la sicurezza e l'efficacia.
-          </Typography>
+            <Typography paragraph>
+              Per chi cerca una soluzione più economica ma comunque affidabile,
+              proponiamo l'<strong>{GiostraModels.Ippowalker}</strong>. Questo
+              modello base è perfetto per chi desidera un'opzione conveniente
+              senza compromettere la sicurezza e l'efficacia.
+            </Typography>
 
-          <Typography>
-            Qualunque sia la vostra esigenza, siamo certi di avere il prodotto
-            giusto per voi e i vostri cavalli.
-          </Typography>
-        </Trans>
+            <Typography>
+              Qualunque sia la vostra esigenza, siamo certi di avere il prodotto
+              giusto per voi e i vostri cavalli.
+            </Typography>
+          </Trans>
+        </div>
       </GammaSectionStyled>
 
       <Columns
