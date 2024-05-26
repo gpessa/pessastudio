@@ -2,11 +2,13 @@ import { createTheme, responsiveFontSizes } from "@mui/material/styles";
 import { Source_Sans_3, Roboto_Condensed } from "next/font/google";
 
 const sourceCodePro = Source_Sans_3({
+  display: "swap",
   subsets: ["latin"],
   weight: ["400", "700"],
 });
 
 const robotoCondensed = Roboto_Condensed({
+  display: "swap",
   subsets: ["latin"],
   weight: ["400"],
 });

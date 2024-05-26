@@ -1,13 +1,13 @@
-import { CacheProvider, EmotionCache } from "@emotion/react";
 import { i18n } from "@lingui/core";
 import { I18nProvider } from "@lingui/react";
 import CssBaseline from "@mui/material/CssBaseline";
 import { ThemeProvider } from "@mui/material/styles";
 import { Footer, Gdpr, Header, Seo } from "components";
 import { AppProps } from "next/app";
-import { createEmotionCache } from "utils/emotion";
 import theme from "../theme";
 
+import { AppCacheProvider } from "@mui/material-nextjs/v13-pagesRouter";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import Breadcrumb from "components/Breadcrumb";
 import { useLinguiInit } from "hooks/useLingui";
 import { Session } from "next-auth";
@@ -16,23 +16,13 @@ import "pure-react-carousel/dist/react-carousel.es.css";
 import { useEffect } from "react";
 import TagManager from "react-gtm-module";
 import packageJson from "../../package.json";
-import { SpeedInsights } from "@vercel/speed-insights/next";
 
 export type MyAppProps = AppProps<{ messages: any }> & {
-  emotionCache: EmotionCache;
   session: Session;
 };
 
-// Client-side cache, shared for the whole session of the user in the browser.
-const clientSideEmotionCache = createEmotionCache();
-
 const MyApp = (props: MyAppProps) => {
-  const {
-    Component,
-    session,
-    emotionCache = clientSideEmotionCache,
-    pageProps,
-  } = props;
+  const { Component, session, pageProps } = props;
 
   useEffect(() => {
     TagManager.initialize({ gtmId: "GTM-NTCR82T" });
@@ -41,10 +31,10 @@ const MyApp = (props: MyAppProps) => {
   useLinguiInit(pageProps.messages);
 
   return (
-    <SessionProvider session={session}>
-      <SpeedInsights />
-      <I18nProvider i18n={i18n}>
-        <CacheProvider value={emotionCache}>
+    <AppCacheProvider {...props}>
+      <SessionProvider session={session}>
+        <SpeedInsights />
+        <I18nProvider i18n={i18n}>
           <Seo />
           <ThemeProvider theme={theme}>
             <CssBaseline />
@@ -54,9 +44,9 @@ const MyApp = (props: MyAppProps) => {
             <Footer version={packageJson.version} />
             <Gdpr />
           </ThemeProvider>
-        </CacheProvider>
-      </I18nProvider>
-    </SessionProvider>
+        </I18nProvider>
+      </SessionProvider>
+    </AppCacheProvider>
   );
 };
 
