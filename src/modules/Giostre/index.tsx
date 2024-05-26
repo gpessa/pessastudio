@@ -4,7 +4,7 @@ import Apps from "@mui/icons-material/Apps";
 import DomainDisabled from "@mui/icons-material/DomainDisabled";
 import RemoveRedEyeOutlined from "@mui/icons-material/RemoveRedEyeOutlined";
 import VideogameAsset from "@mui/icons-material/VideogameAsset";
-import { Box, Button, Link, styled, Typography } from "@mui/material";
+import { Box, Button, Typography } from "@mui/material";
 import {
   Benefits,
   Columns,
@@ -20,10 +20,10 @@ import React from "react";
 import { NAME } from "utils/constants";
 
 import { useLingui } from "@lingui/react";
-import productsGiostreGalleryGiostraConAlveolo from "assets/products/giostre/gallery/giostra-con-alveolo.jpg";
-import productsGiostreGalleryGiostraDrone from "assets/products/giostre/gallery/giostra-drone.jpg";
 import productsGiostreGalleryGiostra1 from "assets/products/giostre/gallery/giostra-1.jpg";
 import productsGiostreGalleryGiostra2 from "assets/products/giostre/gallery/giostra-2.jpg";
+import productsGiostreGalleryGiostraConAlveolo from "assets/products/giostre/gallery/giostra-con-alveolo.jpg";
+import productsGiostreGalleryGiostraDrone from "assets/products/giostre/gallery/giostra-drone.jpg";
 import productsGiostreGalleryPorta from "assets/products/giostre/gallery/porta.jpg";
 import productsGiostreGalleryQuadro from "assets/products/giostre/gallery/quadro.jpg";
 import { BeneftisProps } from "components/Benefits";
@@ -157,45 +157,29 @@ const Giostre: React.FC = () => {
           <Trans>Gamma</Trans>
         </Th>
 
-        <div>
-          <Trans>
+        <Trans>
+          <Typography paragraph>
             Il nostro modello di punta, il{" "}
             <strong>{GiostraModels.Tecnoexerciser}</strong>, rappresenta lo
             strumento più avanzato nel suo campo. Frutto di oltre 20 anni di
             esperienza e studi, il{" "}
             <strong>{GiostraModels.Tecnoexerciser}</strong> offre prestazioni
             professionali senza pari, garantendo il massimo in termini di
-            qualità e innovazione. Per chi cerca una soluzione più economica ma
-            comunque affidabile, proponiamo l'
-            <strong>{GiostraModels.Ippowalker}</strong>. Questo modello base è
-            perfetto per chi desidera un'opzione conveniente senza compromettere
-            la sicurezza e l'efficacia. Qualunque sia la vostra esigenza, siamo
-            certi di avere il prodotto giusto per voi e i vostri cavalli.
-          </Trans>
-          <Trans>
-            <Typography paragraph>
-              Il nostro modello di punta, il{" "}
-              <strong>{GiostraModels.Tecnoexerciser}</strong>, rappresenta lo
-              strumento più avanzato nel suo campo. Frutto di oltre 20 anni di
-              esperienza e studi, il{" "}
-              <strong>{GiostraModels.Tecnoexerciser}</strong> offre prestazioni
-              professionali senza pari, garantendo il massimo in termini di
-              qualità e innovazione.
-            </Typography>
+            qualità e innovazione.
+          </Typography>
 
-            <Typography paragraph>
-              Per chi cerca una soluzione più economica ma comunque affidabile,
-              proponiamo l'<strong>{GiostraModels.Ippowalker}</strong>. Questo
-              modello base è perfetto per chi desidera un'opzione conveniente
-              senza compromettere la sicurezza e l'efficacia.
-            </Typography>
+          <Typography paragraph>
+            Per chi cerca una soluzione più economica ma comunque affidabile,
+            proponiamo l'<strong>{GiostraModels.Ippowalker}</strong>. Questo
+            modello base è perfetto per chi desidera un'opzione conveniente
+            senza compromettere la sicurezza e l'efficacia.
+          </Typography>
 
-            <Typography>
-              Qualunque sia la vostra esigenza, siamo certi di avere il prodotto
-              giusto per voi e i vostri cavalli.
-            </Typography>
-          </Trans>
-        </div>
+          <Typography>
+            Qualunque sia la vostra esigenza, siamo certi di avere il prodotto
+            giusto per voi e i vostri cavalli.
+          </Typography>
+        </Trans>
       </Section>
 
       <Columns
