@@ -121,6 +121,16 @@ const usePages = () => {
     url: "/admin/signin",
   };
 
+  const PRODUCT: Page = {
+    title: t`Prodotti`,
+    url: "/products",
+  };
+
+  const ID: Page = {
+    title: t`Dettaglio`,
+    url: "/products/[id]",
+  };
+
   // eslint-disable-next-line sort-keys-fix/sort-keys-fix
   const PRODUCTS = { GIOSTRE, TONDINI, OSTACOLI, RECINTI, DRESSAGE };
 
@@ -137,8 +147,10 @@ const usePages = () => {
     GIOSTRE_TECNOEXERCISER,
     GIOSTRE_TECNOEXERCISER_ISTRUZIONI_MONTAGGIO,
     HOME,
+    ID,
     PAGE_404,
     PAGE_500,
+    PRODUCT,
     RECINTI_COME_PREPARARE_IL_FONDO,
     TONDINI_COME_PREPARARE_IL_FONDO,
   };
