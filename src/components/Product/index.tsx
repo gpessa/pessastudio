@@ -1,32 +1,21 @@
-import { t } from "@lingui/macro";
-import { Box, Grid, styled, Typography } from "@mui/material";
-import Data from "components/Data";
-import Th from "components/Th";
-import { ProductJsonLd, ProductJsonLdProps } from "next-seo";
+import { Box, Grid } from "@mui/material";
 import React, { ReactNode } from "react";
-import { BREAKPOINT, Colors, PRODUCT_GUTTER } from "theme";
+import { Colors, PRODUCT_GUTTER } from "theme";
 
 import { ProductId } from "hooks/useProducts";
-import { Offers } from "next-seo/lib/types";
-import { useRouter } from "next/router";
-import { Material, WEBSITE } from "utils/constants";
-import { formatSize, formatWeight } from "utils/format";
-import ProductColorsList from "./ProductColorsList";
+import { Material } from "utils/constants";
 import ProductImages from "./ProductImages";
-import ProductMaterialsList from "./ProductMaterialsList";
-import ProductPrice, { PriceProps } from "./ProductPrice";
+import ProductInformations from "./ProductInformations";
+import { PriceProps } from "./ProductPrice";
+import ProductSeo from "./ProductSeo";
 
-const DataStyled = styled(Grid)(({ theme }) => ({
-  display: "flex",
-  flexDirection: "column",
-  minHeight: "100%",
-  order: -1,
-  [theme.breakpoints.up(BREAKPOINT)]: {
-    order: "unset",
-  },
-}));
-
-type Attributes = {
+export type ProductData = {
+  pictures: any[];
+  price?: PriceProps["price"];
+  description?: string | ReactNode;
+  name: string;
+  category: string;
+  id: ProductId;
   colors?: Colors[];
   diameter?: number;
   height?: number;
@@ -37,137 +26,32 @@ type Attributes = {
   width?: number;
 };
 
-export type ProductData = Attributes & {
-  pictures: any[];
-  price?: PriceProps["price"];
-  description?: string | ReactNode;
+export type ProductProps = ProductData & {
+  className?: string;
   vertical?: boolean;
-  name: string;
-  category: string;
-  id: ProductId;
-};
-
-export type ProductProps = ProductData & { className?: string };
-
-const getSeoOffer = (
-  price: ProductProps["price"],
-  url: string
-): Offers | undefined => {
-  if (!price) return undefined;
-
-  var date = new Date();
-  date.setFullYear(date.getFullYear() - 1);
-  const priceValidUntil = date.toISOString().slice(0, 10);
-
-  return {
-    availability: "https://schema.org/InStock",
-    itemCondition: "https://schema.org/NewCondition",
-    price: String(price),
-    priceCurrency: "EUR",
-    priceValidUntil,
-    seller: { name: "Pessastudio" },
-    url,
-  };
-};
-
-const useSeoProps = ({
-  name: productName,
-  description,
-  pictures,
-  price,
-  id,
-}: ProductData): ProductJsonLdProps => {
-  const { pathname } = useRouter();
-
-  const images = pictures.map(({ src }) => `${WEBSITE}${src}`);
-  const itemUrl = `${WEBSITE}${pathname}#${id}`;
-  const brand = "Pessastudio";
-  const offers = getSeoOffer(price, itemUrl);
-
-  let result: ProductJsonLdProps = {
-    brand,
-    images,
-    itemUrl,
-    offers,
-    productName,
-  };
-
-  if (typeof description === "string") {
-    result.disambiguatingDescription = description;
-  }
-
-  return result;
 };
 
 const Product: React.FC<ProductProps> = (product) => {
-  const {
-    className,
-    colors,
-    description,
-    diameter,
-    height,
-    id,
-    length,
-    materials,
-    name,
-    pictures,
-    price,
-    thickness,
-    vertical,
-    weight,
-    width,
-  } = product;
-
+  const { className, id, name, pictures, vertical } = product;
   const md = vertical ? 12 : 12 / (pictures.length + 1);
-  const jsonld = useSeoProps(product);
+
   const images = pictures.map((image) => ({
     caption: name,
     image,
   }));
 
   return (
-    <Box id={String(id)} className={className}>
-      <ProductJsonLd {...jsonld} keyOverride={product.id} />
-
-      <Grid container spacing={PRODUCT_GUTTER}>
-        <ProductImages {...{ images, md, name }} />
-
-        <DataStyled item xs={12} md={md}>
-          <Th variant="h6" sans sx={{ textTransform: "uppercase" }}>
-            {name}
-          </Th>
-          {description && (
-            <Typography paragraph component="div">
-              {description}
-            </Typography>
-          )}
-          {width && <Data value={formatSize(width)} label={t`Larghezza`} />}
-          {height && <Data value={formatSize(height)} label={t`Altezza`} />}
-          {length && <Data value={formatSize(length)} label={t`Lunghezza`} />}
-          {thickness && (
-            <Data value={formatSize(thickness)} label={t`Spessore`} />
-          )}
-          {diameter && (
-            <Data value={formatSize(diameter)} label={t`Diametro`} />
-          )}
-          {weight && <Data value={formatWeight(weight)} label={t`Peso`} />}
-          {materials && (
-            <Data
-              value={<ProductMaterialsList materials={materials} />}
-              label={t`Materiali`}
-            />
-          )}
-          {colors && (
-            <Data
-              value={<ProductColorsList colors={colors} />}
-              label={t`Colori`}
-            />
-          )}
-
-          <ProductPrice price={price} />
-        </DataStyled>
-      </Grid>
-    </Box>
+    <>
+      <ProductSeo {...product} />
+      <Box id={String(id)} className={className}>
+        <Grid container spacing={PRODUCT_GUTTER}>
+          <ProductImages {...{ images, md }} />
+          <Grid item xs={12} md={md}>
+            <ProductInformations {...product} />
+          </Grid>
+        </Grid>
+      </Box>
+    </>
   );
 };
 
