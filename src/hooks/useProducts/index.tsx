@@ -264,6 +264,7 @@ const useProducts = (): ProductList => {
     },
     {
       category: CATEGORIES.EQUESTRIAN,
+      description: t`Bandierine realizzate in plastica resistente agli urti. Ideali per allenamenti e competizioni, offrono una visibilità eccellente e una lunga durata nel tempo.`,
       id: ProductId.OSTACOLI_BANDIERINE,
       materials: [Material.PLASTICA],
       name: t`Bandierine`,

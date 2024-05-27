@@ -155,7 +155,7 @@ msgstr "Acier galvanisé"
 msgid "Acconsento"
 msgstr "Accepter tous les cookies"
 
-#: src/components/Product/index.tsx:145
+#: src/components/Product/ProductInformations/index.tsx:37
 msgid "Altezza"
 msgstr "Hauteur"
 
@@ -217,9 +217,13 @@ msgstr ""
 msgid "Avanti"
 msgstr "Suivante"
 
-#: src/hooks/useProducts/index.tsx:269
+#: src/hooks/useProducts/index.tsx:270
 msgid "Bandierine"
 msgstr "Drapeaux"
+
+#: src/hooks/useProducts/index.tsx:267
+msgid "Bandierine realizzate in plastica resistente agli urti. Ideali per allenamenti e competizioni, offrono una visibilità eccellente e una lunga durata nel tempo."
+msgstr ""
 
 #: src/hooks/useProducts/index.tsx:97
 msgid "Barriera 3 mt."
@@ -275,7 +279,7 @@ msgstr "Numéro de code fiscal et de TVA"
 msgid "Collegate le braccia di separazione attraverso i cavi"
 msgstr ""
 
-#: src/components/Product/index.tsx:163
+#: src/components/Product/ProductInformations/index.tsx:49
 msgid "Colori"
 msgstr "Couleurs"
 
@@ -404,12 +408,12 @@ msgstr "Cuillère {0}"
 msgid "Da anni Pessastudio è focalizzata nel produrre prodotti di qualità a costi accessibili"
 msgstr "Pessastudio se focalise depuis des années sur la fabrication de produits de qualité à des coûts accessibles"
 
-#: src/components/Product/index.tsx:151
+#: src/components/Product/ProductInformations/index.tsx:40
 #: src/utils/constants.tsx:292
 msgid "Diametro"
 msgstr "Diamètre"
 
-#: src/hooks/useProducts/index.tsx:339
+#: src/hooks/useProducts/index.tsx:340
 msgid "Diamo la possibilità di montare nella vostra recinzione un piede mobile che vi consentirà di posizionarla e spostarla a seconda delle vostre esigenze"
 msgstr "Ce pied mobile, monté dans votre clôture, vous permettra de positionner et de déplacer cette dernière selon vos besoins"
 
@@ -725,15 +729,15 @@ msgstr "Le marcheur peut être équipé d’un couloir économique constitué pa
 msgid "La pagina che stai cercando non esiste"
 msgstr "La page que vous recherchez n’existe pas"
 
-#: src/hooks/useProducts/index.tsx:309
+#: src/hooks/useProducts/index.tsx:310
 msgid "La recinzione a due filagne genericamente viene utilizzata per delimitare campi da lavoro o per realizzare paddock dove i cavalli sono comunque osservati dal personale presente"
 msgstr "La clôture à deux lices est généralement utilisée pour délimiter les terrains de travail, ou bien pour réaliser des paddocks où les chevaux sont dans tous les cas surveillés par le personnel"
 
-#: src/hooks/useProducts/index.tsx:319
+#: src/hooks/useProducts/index.tsx:320
 msgid "La recinzione a tre filagne viene utilizzata per delimitare paddok per animali che rimangono per molte ore al giorno incustoditi oppure per delimitare confini di proprietà o aree. Per garantirne una maggiore sicurezza è possibile installare un impianto d'elettrificazione sulle filagne"
 msgstr "La clôture à trois lices est utilisée pour délimiter les paddocks des animaux qui restent sans surveillance de nombreuses heures par jour, ou pour définir les limites de propriété ou de parcelles. Pour assurer une plus grande sécurité, il est possible d’installer un dispositif d’électrification sur les lices"
 
-#: src/hooks/useProducts/index.tsx:299
+#: src/hooks/useProducts/index.tsx:300
 msgid "La recinzione ad una filagna viene utilizzata per delimitare campi da lavoro o gara poco adoperati e non è adatta per l'addestramento. Potete utilizzarla anche per delimitare un'area del vostro giardino di casa"
 msgstr "La clôture à une lice est utilisée pour délimiter les terrains de travail ou de compétition peu utilisés. Elle n’est donc pas adaptée pour le dressage. Vous pouvez également l’utiliser pour délimiter une partie de votre jardin, à la maison"
 
@@ -758,7 +762,7 @@ msgstr "La structure a été conçue pour résister à une charge de neige jusqu
 msgid "Lama DE da {0}"
 msgstr "Lame de {0}"
 
-#: src/components/Product/index.tsx:144
+#: src/components/Product/ProductInformations/index.tsx:36
 msgid "Larghezza"
 msgstr "Largeur"
 
@@ -766,16 +770,16 @@ msgstr "Largeur"
 msgid "Le nostre giostre sono considerate strutture precarie. Non avrete bisogno di nessuna concessione edilizia"
 msgstr "Nos manèges n’ont pas besoin de permis de construire"
 
-#: src/hooks/useProducts/index.tsx:329
+#: src/hooks/useProducts/index.tsx:330
 msgid "Le recinzioni a quattro filagne sono utilizzate per delimitare paddock per stalloni, realizzare tondini per la doma e l'addestramento o per formare ovali per il salto in libertà"
 msgstr "Les clôtures à quatre lices sont utilisées pour délimiter les paddocks pour les étalons, pour réaliser des ronds de longe pour le débourrage et le dressage, ou pour former des ovales pour le saut en liberté"
 
-#: src/hooks/useProducts/index.tsx:357
-#: src/hooks/useProducts/index.tsx:401
+#: src/hooks/useProducts/index.tsx:358
+#: src/hooks/useProducts/index.tsx:402
 msgid "Lettera dressage ({0})"
 msgstr "Lettre de Dressage ({0})"
 
-#: src/components/Product/index.tsx:146
+#: src/components/Product/ProductInformations/index.tsx:38
 msgid "Lunghezza"
 msgstr "Longueur"
 
@@ -805,7 +809,7 @@ msgstr "Manuels d'utilisation"
 msgid "Mappa"
 msgstr "Carte"
 
-#: src/components/Product/index.tsx:157
+#: src/components/Product/ProductInformations/index.tsx:45
 msgid "Materiali"
 msgstr "Matériels"
 
@@ -813,8 +817,8 @@ msgstr "Matériels"
 msgid "Materiali di qualità"
 msgstr "Matériau de qualité"
 
-#: src/hooks/useProducts/index.tsx:368
-#: src/hooks/useProducts/index.tsx:412
+#: src/hooks/useProducts/index.tsx:369
+#: src/hooks/useProducts/index.tsx:413
 msgid "Modulo dressage ({0})"
 msgstr "Module de Dressage ({0})"
 
@@ -844,8 +848,8 @@ msgstr "Aucun permis de construire"
 msgid "Newsletters"
 msgstr "Newsletters"
 
-#: src/hooks/useProducts/index.tsx:278
-#: src/hooks/useProducts/index.tsx:289
+#: src/hooks/useProducts/index.tsx:279
+#: src/hooks/useProducts/index.tsx:290
 msgid "Numero per campo ostacoli {0}"
 msgstr "Numéro de champ de barrière {0}"
 
@@ -875,7 +879,7 @@ msgstr "Pourquoi?"
 msgid "Personalizzabili"
 msgstr "Personnalisables"
 
-#: src/components/Product/index.tsx:153
+#: src/components/Product/ProductInformations/index.tsx:41
 msgid "Peso"
 msgstr "Poids"
 
@@ -891,7 +895,7 @@ msgstr "Pessastudio a été fondé il y a 28 ans, grâce au talent et à la pass
 msgid "Pessastudio, una scelta di qualità"
 msgstr "Pessastudio, un choix de qualité"
 
-#: src/hooks/useProducts/index.tsx:342
+#: src/hooks/useProducts/index.tsx:343
 msgid "Piede mobile"
 msgstr "Clôture de pied"
 
@@ -978,13 +982,13 @@ msgstr "Clôtures"
 msgid "Recinzione"
 msgstr "Clôture"
 
-#: src/hooks/useProducts/index.tsx:303
+#: src/hooks/useProducts/index.tsx:304
 msgid "Recinzione cavalli a {0} filagna"
 msgstr "Clôtures avec une lisse"
 
-#: src/hooks/useProducts/index.tsx:313
-#: src/hooks/useProducts/index.tsx:323
-#: src/hooks/useProducts/index.tsx:333
+#: src/hooks/useProducts/index.tsx:314
+#: src/hooks/useProducts/index.tsx:324
+#: src/hooks/useProducts/index.tsx:334
 #: src/modules/Recinti/index.tsx:25
 #: src/modules/Recinti/index.tsx:29
 #: src/modules/Recinti/index.tsx:33
@@ -1009,10 +1013,10 @@ msgstr "Filet brise-vent entrée"
 msgid "Rettangoli / Campi professionali da dressage per tutte le esigenze"
 msgstr "Rectangles professionnels de dressage pour toutes les exigences"
 
-#: src/hooks/useProducts/index.tsx:379
-#: src/hooks/useProducts/index.tsx:389
-#: src/hooks/useProducts/index.tsx:423
-#: src/hooks/useProducts/index.tsx:433
+#: src/hooks/useProducts/index.tsx:380
+#: src/hooks/useProducts/index.tsx:390
+#: src/hooks/useProducts/index.tsx:424
+#: src/hooks/useProducts/index.tsx:434
 msgid "Rettangolo dressage {0} ({1})"
 msgstr "Rectangle de dressage {0} ({1})"
 
@@ -1106,7 +1110,7 @@ msgstr "Chaque cavaletti peut être couplé à des barres d’obstacles de 90, 9
 msgid "Socials"
 msgstr "Réseaux sociaux"
 
-#: src/components/Product/index.tsx:148
+#: src/components/Product/ProductInformations/index.tsx:39
 msgid "Spessore"
 msgstr "Epaisseur"
 
