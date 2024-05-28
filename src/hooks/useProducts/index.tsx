@@ -143,7 +143,7 @@ const useProducts = (): ProductList => {
     {
       category: CATEGORIES.EQUESTRIAN,
       colors: [WHITE, BLU, YELLOW, RED, GREEN],
-      description: t`I cubi sono progettati in maniera da poterli incastrare tra di lor. Questo rende questi blocchi da salto più sicuri, stabili e versatili di qualsiasi cosa tu abbia usato prima. Impila i blocchi in una varietà quasi illimitata di posizioni e configurazioni. Raggiungi l'altezza desiderata con più coppie.`,
+      description: t`I cubi sono progettati in maniera da poterli incastrare tra di loro. Questo rende questi blocchi da salto più sicuri, stabili e versatili di qualsiasi cosa tu abbia usato prima. Impila i blocchi in una varietà quasi illimitata di posizioni e configurazioni. Raggiungi l'altezza desiderata con più coppie.`,
       height: 570,
       id: ProductId.CUBI_MINI,
       length: 370,
@@ -160,7 +160,7 @@ const useProducts = (): ProductList => {
     {
       category: CATEGORIES.EQUESTRIAN,
       colors: [WHITE, BLU, YELLOW, RED, GREEN],
-      description: t`I cubi sono progettati in maniera da poterli incastrare tra di lor. Questo rende questi blocchi da salto più sicuri, stabili e versatili di qualsiasi cosa tu abbia usato prima. Impila i blocchi in una varietà quasi illimitata di posizioni e configurazioni. Raggiungi l'altezza desiderata con più coppie.`,
+      description: t`I cubi sono progettati in maniera da poterli incastrare tra di loro. Questo rende questi blocchi da salto più sicuri, stabili e versatili di qualsiasi cosa tu abbia usato prima. Impila i blocchi in una varietà quasi illimitata di posizioni e configurazioni. Raggiungi l'altezza desiderata con più coppie.`,
       height: 700,
       id: ProductId.CUBI_MAXI,
       length: 570,
