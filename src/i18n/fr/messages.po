@@ -588,7 +588,10 @@ msgid "Newsletters"
 msgstr "Newsletters"
 
 msgid "Numero per campo ostacoli {0}"
-msgstr "Numéro de champ de barrière {0}"
+msgstr "Plot pour parcours d'obstacles {0}"
+
+msgid "Numero per campo ostacoli costruito in materiali robusti e leggeri. La forma piramidale ne assicurano la stabilitá. Perfetto per essere utilizzato in percorsi di salto ostacoli per cavalli."
+msgstr "Pion pour parcours d'obstacles construit en matériaux robustes et légers. Sa forme pyramidale assure sa stabilité. Parfait pour être utilisé dans les parcours de saut d'obstacles pour chevaux."
 
 msgid "Ostacoli"
 msgstr "Obstacles"

@@ -276,6 +276,7 @@ const useProducts = (): ProductList => {
     },
     {
       category: CATEGORIES.EQUESTRIAN,
+      description: t`Numero per campo ostacoli costruito in materiali robusti e leggeri. La forma piramidale ne assicurano la stabilitá. Perfetto per essere utilizzato in percorsi di salto ostacoli per cavalli.`,
       height: 300,
       id: ProductId.NUMERO_CAMPO_OSTACOLI_PROFESSIONAL,
       materials: [Material.POLIETILENE],
@@ -287,6 +288,7 @@ const useProducts = (): ProductList => {
     },
     {
       category: CATEGORIES.EQUESTRIAN,
+      description: t`Numero per campo ostacoli costruito in materiali robusti e leggeri. La forma piramidale ne assicurano la stabilitá. Perfetto per essere utilizzato in percorsi di salto ostacoli per cavalli.`,
       height: 330,
       id: ProductId.NUMERO_CAMPO_OSTACOLI_LIGHT,
       materials: [Material.POLIPROPILENE],

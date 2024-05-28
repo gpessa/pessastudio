@@ -580,6 +580,9 @@ msgstr "Newsletters"
 msgid "Numero per campo ostacoli {0}"
 msgstr "Numero per campo ostacoli {0}"
 
+msgid "Numero per campo ostacoli costruito in materiali robusti e leggeri. La forma piramidale ne assicurano la stabilitá. Perfetto per essere utilizzato in percorsi di salto ostacoli per cavalli."
+msgstr "Numero per campo ostacoli costruito in materiali robusti e leggeri. La forma piramidale ne assicurano la stabilitá. Perfetto per essere utilizzato in percorsi di salto ostacoli per cavalli."
+
 msgid "Ostacoli"
 msgstr "Ostacoli"
 

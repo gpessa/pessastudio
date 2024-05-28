@@ -601,6 +601,9 @@ msgstr "Newsletters"
 msgid "Numero per campo ostacoli {0}"
 msgstr "Number cone {0}"
 
+msgid "Numero per campo ostacoli costruito in materiali robusti e leggeri. La forma piramidale ne assicurano la stabilitá. Perfetto per essere utilizzato in percorsi di salto ostacoli per cavalli."
+msgstr "Number cone made from strong and lightweight materials. The pyramid shape ensures stability. Perfect for use in horse jumping courses."
+
 msgid "Ostacoli"
 msgstr "Jumps"
 
