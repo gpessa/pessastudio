@@ -26,6 +26,7 @@ const MyApp = (props: MyAppProps) => {
   const { Component, session, pageProps } = props;
 
   useEffect(() => {
+    // We add Tag manager only in production so the tracking happen only there
     isProduction && TagManager.initialize({ gtmId: "GTM-NTCR82T" });
   }, []);
 
