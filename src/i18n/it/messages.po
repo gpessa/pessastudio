@@ -157,8 +157,8 @@ msgstr "Bandierine"
 msgid "Bandierine realizzate in plastica resistente agli urti. Ideali per allenamenti e competizioni, offrono una visibilità eccellente e una lunga durata nel tempo."
 msgstr "Bandierine realizzate in plastica resistente agli urti. Ideali per allenamenti e competizioni, offrono una visibilità eccellente e una lunga durata nel tempo."
 
-msgid "Barriera 3 mt."
-msgstr "Barriera 3 mt."
+msgid "Barriera per campo ostacoli (3 mt.)"
+msgstr "Barriera per campo ostacoli (3 mt.)"
 
 msgid "Barriere"
 msgstr "Barriere"

@@ -94,7 +94,7 @@ const useProducts = (): ProductList => {
       diameter: 95,
       id: ProductId.BARRIERA_3_MT,
       length: 2990,
-      name: t`Barriera 3 mt.`,
+      name: t`Barriera per campo ostacoli (3 mt.)`,
       pictures: [
         require("assets/products/ostacoli/barriere-01.png"),
         require("assets/products/ostacoli/barriere-02.png"),

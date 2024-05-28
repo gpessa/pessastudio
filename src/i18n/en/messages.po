@@ -159,8 +159,8 @@ msgstr "Jump flags"
 msgid "Bandierine realizzate in plastica resistente agli urti. Ideali per allenamenti e competizioni, offrono una visibilità eccellente e una lunga durata nel tempo."
 msgstr "Jump flags made from impact-resistant plastic. Ideal for training and competitions, they offer excellent visibility and long-lasting durability."
 
-msgid "Barriera 3 mt."
-msgstr "3 mt. poles"
+msgid "Barriera per campo ostacoli (3 mt.)"
+msgstr "Show jump poles (3 mt.)"
 
 msgid "Barriere"
 msgstr "Poles"
