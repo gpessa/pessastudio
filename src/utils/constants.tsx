@@ -3,6 +3,8 @@ import RemoveRedEyeRounded from "@mui/icons-material/RemoveRedEyeRounded";
 import { IconButton, Typography } from "@mui/material";
 import { PRODUCT_GUTTER } from "theme";
 
+export const isProduction = !!process && process.env.NODE_ENV === "production";
+
 export const NAME_STRING = "Pessastudio";
 export const NAME_LEGAL_STRING = `${NAME_STRING} Horse Tecnology srl`;
 export const NAME = <strong>{NAME_STRING}</strong>;

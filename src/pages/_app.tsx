@@ -16,6 +16,7 @@ import "pure-react-carousel/dist/react-carousel.es.css";
 import { useEffect } from "react";
 import TagManager from "react-gtm-module";
 import packageJson from "../../package.json";
+import { isProduction } from "utils/constants";
 
 export type MyAppProps = AppProps<{ messages: any }> & {
   session: Session;
@@ -25,7 +26,7 @@ const MyApp = (props: MyAppProps) => {
   const { Component, session, pageProps } = props;
 
   useEffect(() => {
-    TagManager.initialize({ gtmId: "GTM-NTCR82T" });
+    isProduction && TagManager.initialize({ gtmId: "GTM-NTCR82T" });
   }, []);
 
   useLinguiInit(pageProps.messages);
