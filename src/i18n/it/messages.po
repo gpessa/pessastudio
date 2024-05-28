@@ -259,11 +259,8 @@ msgstr "Cosa dicono di noi"
 msgid "Costruisci la tua barriera personalizzata scegliendo tra i colori a disposizione"
 msgstr "Costruisci la tua barriera personalizzata scegliendo tra i colori a disposizione"
 
-msgid "Cubi maxi"
-msgstr "Cubi maxi"
-
-msgid "Cubi mini"
-msgstr "Cubi mini"
+msgid "Cubi {0}"
+msgstr "Cubi {0}"
 
 msgid "Cubi per campo ostacoli"
 msgstr "Cubi per campo ostacoli"
@@ -399,6 +396,9 @@ msgstr "I candelieri sono costruiti con un montante di alluminio verniciato di c
 
 msgid "I corridoi"
 msgstr "I corridoi"
+
+msgid "I cubi sono progettati in maniera da poterli incastrare tra di lor. Questo rende questi blocchi da salto più sicuri, stabili e versatili di qualsiasi cosa tu abbia usato prima. Impila i blocchi in una varietà quasi illimitata di posizioni e configurazioni. Raggiungi l'altezza desiderata con più coppie."
+msgstr "I cubi sono progettati in maniera da poterli incastrare tra di lor. Questo rende questi blocchi da salto più sicuri, stabili e versatili di qualsiasi cosa tu abbia usato prima. Impila i blocchi in una varietà quasi illimitata di posizioni e configurazioni. Raggiungi l'altezza desiderata con più coppie."
 
 msgid "I nostri prodotti sono pensati per resistere nel tempo, anche se soggetti a difficili condizioni climatiche"
 msgstr "I nostri prodotti sono pensati per resistere nel tempo, anche se soggetti a difficili condizioni climatiche"

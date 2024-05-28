@@ -14,6 +14,11 @@ export const DRESSAGE_MODELS = {
   TRAINING: "Training",
 };
 
+export const CUBI_MODELS = {
+  MAXI: "Maxi",
+  MINI: "Mini",
+};
+
 export const CUCCHIAI_MODELS = {
   DE: "DE",
   PS: "PS",

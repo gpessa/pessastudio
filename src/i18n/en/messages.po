@@ -261,11 +261,8 @@ msgstr "Testimonials"
 msgid "Costruisci la tua barriera personalizzata scegliendo tra i colori a disposizione"
 msgstr "Build your custom poles by choosing from the available colors"
 
-msgid "Cubi maxi"
-msgstr "Cavaletti block maxi"
-
-msgid "Cubi mini"
-msgstr "Cavaletti block mini"
+msgid "Cubi {0}"
+msgstr "Cavalletti block {0}"
 
 msgid "Cubi per campo ostacoli"
 msgstr "Cavaletti block"
@@ -416,6 +413,9 @@ msgstr "Upgrade to the best with our premium aluminum jumps. These 1.7 mt. tall 
 
 msgid "I corridoi"
 msgstr "The corridors"
+
+msgid "I cubi sono progettati in maniera da poterli incastrare tra di lor. Questo rende questi blocchi da salto più sicuri, stabili e versatili di qualsiasi cosa tu abbia usato prima. Impila i blocchi in una varietà quasi illimitata di posizioni e configurazioni. Raggiungi l'altezza desiderata con più coppie."
+msgstr "The block is designed with modern styling that features the peg-in-hole stacking feature. This makes these jump blocks more secure, stable and versatile than anything you have used before. Stack the blocks in nearly an unlimited variety of positions and configurations. Achieve your desired height with multiple pairs"
 
 msgid "I nostri prodotti sono pensati per resistere nel tempo, anche se soggetti a difficili condizioni climatiche"
 msgstr "Our products are designed to withstand the test of time and any weather condition"

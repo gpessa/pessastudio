@@ -267,11 +267,8 @@ msgstr "Ce qu’ils disent de nous"
 msgid "Costruisci la tua barriera personalizzata scegliendo tra i colori a disposizione"
 msgstr "Construisez votre barre d’obstacle personnalisée en choisissant parmi les coloris disponibles"
 
-msgid "Cubi maxi"
-msgstr "Cubes maxi"
-
-msgid "Cubi mini"
-msgstr "Cubes mini"
+msgid "Cubi {0}"
+msgstr "Cube d'obstacle {0}"
 
 msgid "Cubi per campo ostacoli"
 msgstr "Cubes"
@@ -409,6 +406,9 @@ msgstr "Les chandeliers sont construits avec un montant en aluminium peint en bl
 
 msgid "I corridoi"
 msgstr "Les couloirs"
+
+msgid "I cubi sono progettati in maniera da poterli incastrare tra di lor. Questo rende questi blocchi da salto più sicuri, stabili e versatili di qualsiasi cosa tu abbia usato prima. Impila i blocchi in una varietà quasi illimitata di posizioni e configurazioni. Raggiungi l'altezza desiderata con più coppie."
+msgstr "Le cube d'obstacle est conçu avec un style moderne qui inclut la caractéristique de l'empilement par tenon et mortaise. Cela rend ces cubes d'obstacle plus sécurisés, stables et polyvalents que tout ce que vous avez utilisé auparavant. Empilez les cubes d'obstacle dans une variété presque illimitée de positions et de configurations. Atteignez la hauteur désirée avec plusieurs paires."
 
 msgid "I nostri prodotti sono pensati per resistere nel tempo, anche se soggetti a difficili condizioni climatiche"
 msgstr "Nos produits sont conçus pour résister au temps, y compris lorsqu’ils sont soumis à des conditions climatiques difficiles"

@@ -6,6 +6,7 @@ import { Colors } from "theme";
 import {
   CUCCHIAI_MODELS,
   DRESSAGE_MODELS,
+  CUBI_MODELS,
   Material,
   SEGNALETICA_MODELS,
 } from "utils/constants";
@@ -142,10 +143,11 @@ const useProducts = (): ProductList => {
     {
       category: CATEGORIES.EQUESTRIAN,
       colors: [WHITE, BLU, YELLOW, RED, GREEN],
+      description: t`I cubi sono progettati in maniera da poterli incastrare tra di lor. Questo rende questi blocchi da salto più sicuri, stabili e versatili di qualsiasi cosa tu abbia usato prima. Impila i blocchi in una varietà quasi illimitata di posizioni e configurazioni. Raggiungi l'altezza desiderata con più coppie.`,
       height: 570,
       id: ProductId.CUBI_MINI,
       length: 370,
-      name: t`Cubi mini`,
+      name: t`Cubi ${CUBI_MODELS.MINI}`,
       pictures: [
         require("assets/products/ostacoli/cubi-mini-01.png"),
         require("assets/products/ostacoli/cubi-mini-02.png"),
@@ -158,10 +160,11 @@ const useProducts = (): ProductList => {
     {
       category: CATEGORIES.EQUESTRIAN,
       colors: [WHITE, BLU, YELLOW, RED, GREEN],
+      description: t`I cubi sono progettati in maniera da poterli incastrare tra di lor. Questo rende questi blocchi da salto più sicuri, stabili e versatili di qualsiasi cosa tu abbia usato prima. Impila i blocchi in una varietà quasi illimitata di posizioni e configurazioni. Raggiungi l'altezza desiderata con più coppie.`,
       height: 700,
       id: ProductId.CUBI_MAXI,
       length: 570,
-      name: t`Cubi maxi`,
+      name: t`Cubi ${CUBI_MODELS.MAXI}`,
       pictures: [
         require("assets/products/ostacoli/cubi-maxi-01.png"),
         require("assets/products/ostacoli/cubi-maxi-02.png"),
