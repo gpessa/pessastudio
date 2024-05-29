@@ -14,7 +14,6 @@ export type ProductData = {
   price?: PriceProps["price"];
   description?: string | ReactNode;
   name: string;
-  category: string;
   id: ProductId;
   colors?: Colors[];
   diameter?: number;
@@ -24,6 +23,7 @@ export type ProductData = {
   thickness?: number;
   weight?: number;
   width?: number;
+  link: string;
 };
 
 export type ProductProps = ProductData & {
@@ -43,7 +43,7 @@ const Product: React.FC<ProductProps> = (product) => {
   return (
     <>
       <ProductSeo {...product} />
-      <Box id={String(id)} className={className}>
+      <Box id={id} className={className}>
         <Grid container spacing={PRODUCT_GUTTER}>
           <ProductImages {...{ images, md }} />
           <Grid item xs={12} md={md}>

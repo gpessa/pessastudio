@@ -3,6 +3,7 @@ import { renderToStaticMarkup } from "react-dom/server";
 
 import { i18n } from "@lingui/core";
 import { I18nProvider, useLingui } from "@lingui/react";
+import type { GetServerSidePropsContext } from "next";
 import { pd } from "pretty-data";
 import { NAME_LEGAL_STRING, NAME_STRING } from "utils/constants";
 import { formatPriceFeed, formatSize, formatWeight } from "utils/format";
@@ -12,7 +13,9 @@ import { create } from "xmlbuilder2";
 const SitemapIndex = () => null;
 
 const Sitemap = () => {
-  useLingui();
+  const {
+    i18n: { locale },
+  } = useLingui();
   const products = useProducts();
 
   const getPictureUrl = (picture: any) =>
@@ -29,17 +32,17 @@ const Sitemap = () => {
         channel: {
           description: "",
           item: Object.values(products)
-            .filter((product) => typeof product.price !== undefined)
+            .filter(({ price }) => typeof price !== undefined)
             .map(
               ({
                 description,
                 name,
-                category,
                 price,
                 id,
                 pictures: [picture, ...pictures],
                 diameter,
                 height,
+                link,
                 length,
                 thickness,
                 weight,
@@ -53,9 +56,10 @@ const Sitemap = () => {
                 "g:id": `PESSASTUDIO_${id}`,
                 "g:identifier_exists": "no",
                 "g:image_link": getPictureUrl(picture),
-                "g:link": process.env.NEXT_PUBLIC_WEBISTE_URL,
+                "g:link": `${process.env.NEXT_PUBLIC_WEBISTE_URL}/${locale}${link}?cs=product_cards`,
                 "g:price": price && formatPriceFeed(price),
-                "g:product_category": category,
+                "g:product_category":
+                  "Sporting Goods > Outdoor Recreation > Equestrian",
                 "g:product_diameter": diameter && formatSize(diameter),
                 "g:product_height": height && formatSize(height),
                 "g:product_length": length && formatSize(length),
@@ -82,9 +86,9 @@ const Sitemap = () => {
   return <div dangerouslySetInnerHTML={{ __html: pd.xml(doc) }} />;
 };
 
-export const getServerSideProps = async (a: any) => {
-  const messages = await loadCatalog({ locale: a.locale });
-  i18n.loadAndActivate({ locale: a.locale, messages });
+export const getServerSideProps = async (ctx: GetServerSidePropsContext) => {
+  const messages = await loadCatalog({ locale: ctx.locale! });
+  i18n.loadAndActivate({ locale: ctx.locale!, messages });
 
   const renderToStaticMarkupResult = renderToStaticMarkup(
     <I18nProvider i18n={i18n}>
@@ -92,13 +96,14 @@ export const getServerSideProps = async (a: any) => {
     </I18nProvider>
   );
 
+  // Horrible hack to remove the unnecassery div
   const result = renderToStaticMarkupResult
     .replace("<div>", "")
     .replace("</div>", "");
 
-  a.res.setHeader("Content-Type", "text/xml");
-  a.res.write(result);
-  a.res.end();
+  ctx.res.setHeader("Content-Type", "text/xml");
+  ctx.res.write(result);
+  ctx.res.end();
 
   return { props: {} };
 };

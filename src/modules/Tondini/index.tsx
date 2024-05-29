@@ -24,19 +24,6 @@ import productsTondiniAccessoriAntiventoPortIngresso_1 from "assets/products/ton
 import productsTondiniAccessoriAntiventoPortIngresso_2 from "assets/products/tondini/accessori/antivento-port-ingresso-2.jpg";
 import productsTondiniAccessoriCoperturaTerra_1 from "assets/products/tondini/accessori/copertura-terra-1.jpg";
 import productsTondiniAccessoriIrrigazione_1 from "assets/products/tondini/accessori/irrigazione-1.jpg";
-import productsTondiniGalleryTondino_0 from "assets/products/tondini/gallery/tondino-0.jpg";
-import productsTondiniGalleryTondino_1 from "assets/products/tondini/gallery/tondino-1.jpg";
-import productsTondiniGalleryTondino_10 from "assets/products/tondini/gallery/tondino-10.jpg";
-import productsTondiniGalleryTondino_11 from "assets/products/tondini/gallery/tondino-11.jpg";
-import productsTondiniGalleryTondino_2 from "assets/products/tondini/gallery/tondino-2.jpg";
-import productsTondiniGalleryTondino_3 from "assets/products/tondini/gallery/tondino-3.jpg";
-import productsTondiniGalleryTondino_4 from "assets/products/tondini/gallery/tondino-4.jpg";
-import productsTondiniGalleryTondino_5 from "assets/products/tondini/gallery/tondino-5.jpg";
-import productsTondiniGalleryTondino_6 from "assets/products/tondini/gallery/tondino-6.jpg";
-import productsTondiniGalleryTondino_7 from "assets/products/tondini/gallery/tondino-7.jpg";
-import productsTondiniGalleryTondino_8 from "assets/products/tondini/gallery/tondino-8.jpg";
-import productsTondiniGalleryTondino_9 from "assets/products/tondini/gallery/tondino-9.jpg";
-import productsTondiniGalleryTondino_12 from "assets/products/tondini/gallery/tondino-12.jpg";
 import { AccessoriProps } from "components/Accessori";
 import { BeneftisProps } from "components/Benefits";
 import { usePages } from "hooks";
@@ -129,86 +116,81 @@ const Tondini: React.FC = () => {
   const IMAGES: Picture[] = [
     {
       caption: t`Tondino coperto ${18} pannelli ${15} mt.`,
-      image: productsTondiniGalleryTondino_0,
+      image: require("assets/products/tondini/gallery/tondino-0.jpg"),
     },
     {
-      caption: t`Tondino coperto ${24} pannelli ${13.2} mt.`,
-      image: productsTondiniGalleryTondino_1,
-    },
-    {
-      caption: t`Interno tondino coperto`,
-      image: productsTondiniGalleryTondino_2,
+      caption: t`Tondino coperto ${24} pannelli ${19.9} mt.`,
+      image: require("assets/products/tondini/gallery/tondino-1.jpg"),
     },
     {
       caption: t`Interno tondino coperto`,
-      image: productsTondiniGalleryTondino_3,
+      image: require("assets/products/tondini/gallery/tondino-2.jpg"),
+    },
+    {
+      caption: t`Interno tondino coperto`,
+      image: require("assets/products/tondini/gallery/tondino-3.jpg"),
     },
     {
       caption: t`Tondino coperto per cavalli`,
-      image: productsTondiniGalleryTondino_4,
+      image: require("assets/products/tondini/gallery/tondino-4.jpg"),
     },
     {
       caption: t`Copertura`,
-      image: productsTondiniGalleryTondino_5,
+      image: require("assets/products/tondini/gallery/tondino-5.jpg"),
     },
     {
       caption: t`Copertura`,
-      image: productsTondiniGalleryTondino_6,
+      image: require("assets/products/tondini/gallery/tondino-6.jpg"),
     },
     {
       caption: t`Copertura`,
-      image: productsTondiniGalleryTondino_7,
+      image: require("assets/products/tondini/gallery/tondino-7.jpg"),
     },
     {
       caption: t`Ingresso di 2,05 mt. con catenaccio verticale`,
-      image: productsTondiniGalleryTondino_8,
+      image: require("assets/products/tondini/gallery/tondino-8.jpg"),
     },
     {
       caption: t`Tondino`,
-      image: productsTondiniGalleryTondino_9,
+      image: require("assets/products/tondini/gallery/tondino-9.jpg"),
     },
     {
       caption: t`Interno tondino coperto`,
-      image: productsTondiniGalleryTondino_10,
+      image: require("assets/products/tondini/gallery/tondino-10.jpg"),
     },
     {
       caption: t`Tondino`,
-      image: productsTondiniGalleryTondino_11,
+      image: require("assets/products/tondini/gallery/tondino-11.jpg"),
     },
     {
       caption: t`Tondino`,
-      image: productsTondiniGalleryTondino_12,
+      image: require("assets/products/tondini/gallery/tondino-12.jpg"),
     },
   ];
 
   const DIMENSIONS = [
     {
-      file: "/products/tondini/tondino-16.pdf",
       sides: 16,
       size: 13.2,
     },
     {
-      file: "/products/tondini/tondino-18.pdf",
       sides: 18,
       size: 15.0,
     },
     {
-      file: "/products/tondini/tondino-20.pdf",
       sides: 20,
       size: 16.6,
     },
     {
-      file: "/products/tondini/tondino-22.pdf",
       sides: 22,
       size: 18.3,
     },
     {
-      file: "/products/tondini/tondino-24.pdf",
       sides: 24,
       size: 19.9,
     },
-  ].map(({ sides, size, file }) => ({
-    file,
+  ].map(({ sides, size }) => ({
+    file: `/products/tondini/tondino-${sides}.pdf`,
     label: t`Tondino coperto ${sides} pannelli ${size} mt.`,
   }));
 

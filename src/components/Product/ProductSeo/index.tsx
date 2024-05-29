@@ -1,7 +1,7 @@
 import { ProductJsonLd, ProductJsonLdProps } from "next-seo";
 import { Offers } from "next-seo/lib/types";
 import { useRouter } from "next/router";
-import { WEBSITE } from "utils/constants";
+import { NAME_STRING, WEBSITE } from "utils/constants";
 import { ProductData, ProductProps } from "../index";
 
 const getSeoOffer = (
@@ -30,13 +30,14 @@ const useSeoProps = ({
   description,
   pictures,
   price,
+  link,
   id,
 }: ProductData): ProductJsonLdProps => {
-  const { pathname } = useRouter();
+  const { locale } = useRouter();
 
   const images = pictures.map(({ src }) => `${WEBSITE}${src}`);
-  const itemUrl = `${WEBSITE}${pathname}#${id}`;
-  const brand = "Pessastudio";
+  const itemUrl = `${process.env.NEXT_PUBLIC_WEBISTE_URL}/${locale}${link}`;
+  const brand = NAME_STRING;
   const offers = getSeoOffer(price, itemUrl);
 
   let result: ProductJsonLdProps = {
