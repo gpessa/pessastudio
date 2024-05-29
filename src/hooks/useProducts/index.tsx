@@ -102,7 +102,6 @@ const useProducts = (): ProductList => {
         diameter: 95,
         id: ProductId.BARRIERA_3_MT,
         length: 2990,
-        link: getUrl([PRODUCTS.OSTACOLI.url, `#${ProductId.BARRIERA_3_MT}`]),
         name: t`Barriera per campo ostacoli (3 mt.)`,
         pictures: [
           require("assets/products/ostacoli/barriere-01.png"),
@@ -293,7 +292,10 @@ const useProducts = (): ProductList => {
       },
     ].map((product) => ({
       ...product,
-      link: getUrl([PRODUCTS.OSTACOLI.url, `#${product.id}`]),
+      link: getUrl([
+        PRODUCTS.OSTACOLI.url + "?cs=product_cards",
+        `#${product.id}`,
+      ]),
     })),
 
     // RECINTI
@@ -349,7 +351,7 @@ const useProducts = (): ProductList => {
       },
     ].map((product) => ({
       ...product,
-      link: PRODUCTS.RECINTI.url,
+      link: PRODUCTS.RECINTI.url + "?cs=product_cards",
     })),
 
     // DRESSAGE
@@ -444,7 +446,7 @@ const useProducts = (): ProductList => {
       },
     ].map((product) => ({
       ...product,
-      link: PRODUCTS.DRESSAGE.url,
+      link: PRODUCTS.DRESSAGE.url + "?cs=product_cards",
     })),
 
     // TONDINI
@@ -478,7 +480,7 @@ const useProducts = (): ProductList => {
     ].map(({ sides, size }) => ({
       description: t`Tondino per cavalli coperto, ideale per allenamenti e addestramenti in ogni stagione. Realizzato con struttura robusta e materiali resistenti, offre protezione dagli agenti atmosferici. Facile da montare, garantisce sicurezza e comfort per cavalli e cavalieri, migliorando le prestazioni in un ambiente controllato.`,
       id: ProductId.TONDINO_1320,
-      link: PRODUCTS.TONDINI.url,
+      link: PRODUCTS.TONDINI.url + "?cs=product_cards",
       name: t`Tondino coperto ${sides} pannelli ${size} mt.`,
       pictures: [require("assets/products/tondini/gallery/tondino-1.jpg")],
     })),

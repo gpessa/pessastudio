@@ -56,7 +56,7 @@ const Sitemap = () => {
                 "g:id": `PESSASTUDIO_${id}`,
                 "g:identifier_exists": "no",
                 "g:image_link": getPictureUrl(picture),
-                "g:link": `${process.env.NEXT_PUBLIC_WEBISTE_URL}/${locale}${link}?cs=product_cards`,
+                "g:link": `${process.env.NEXT_PUBLIC_WEBISTE_URL}/${locale}${link}`,
                 "g:price": price && formatPriceFeed(price),
                 "g:product_category":
                   "Sporting Goods > Outdoor Recreation > Equestrian",
