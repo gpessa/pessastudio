@@ -751,6 +751,9 @@ msgstr "Seguici sui nostra social e scopri le ultime novità"
 msgid "Si è verificato un problema, riprova"
 msgstr "Si è verificato un problema, riprova"
 
+msgid "Siamo qui per aiutarti! Se hai domande sui nostri prodotti per cavalli, necessiti di assistenza con un ordine o desideri maggiori informazioni, non esitare a contattarci."
+msgstr "Siamo qui per aiutarti! Se hai domande sui nostri prodotti per cavalli, necessiti di assistenza con un ordine o desideri maggiori informazioni, non esitare a contattarci."
+
 msgid "Sicuro"
 msgstr "Sicuro"
 

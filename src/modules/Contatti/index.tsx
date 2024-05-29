@@ -1,10 +1,21 @@
 import { Trans } from "@lingui/macro";
-import { Avatar, Box, Card, CardContent, Stack, styled } from "@mui/material";
-import { Columns, Th } from "components";
+import {
+  Avatar,
+  Box,
+  Card,
+  CardContent,
+  CardHeader,
+  Divider,
+  Grid,
+  Stack,
+  Typography,
+  styled,
+} from "@mui/material";
+import { Columns, Section, Th } from "components";
 import { usePages } from "hooks";
 import Image from "next/image";
 import React from "react";
-import { BREAKPOINT, PRODUCT_GUTTER } from "theme";
+import { PRODUCT_GUTTER } from "theme";
 import {
   BANCHE,
   CONTATTI_COMMERCIALI,
@@ -24,21 +35,9 @@ const AvatarStyled = styled(Avatar)(({ theme }) => ({
   width: 150,
 }));
 
-const RightColumnStyled = styled("div")(({ theme }) => ({
-  [theme.breakpoints.up(BREAKPOINT)]: {
-    marginTop: 110,
-  },
-}));
-
-const StyledBank = styled(ContattiBank)(({ theme }) => ({
-  [".MuiTypography-caption"]: {
-    color: theme.palette.grey[400],
-  },
-}));
-
-const StyledAddress = styled(ContattiAddress)(({ theme }) => ({
-  [".MuiTypography-caption"]: {
-    color: theme.palette.grey[400],
+const ContattiAddressStyled = styled(ContattiAddress)(({ theme }) => ({
+  ".MuiTypography-caption": {
+    color: theme.palette.primary.contrastText,
   },
 }));
 
@@ -46,69 +45,79 @@ const Contatti: React.FC = () => {
   const { PAGES } = usePages();
 
   return (
-    <Columns
-      left={
-        <>
-          <Th variant="h1">{PAGES.CONTATTI.title}</Th>
-
-          <Stack spacing={PRODUCT_GUTTER}>
+    <>
+      <Columns
+        left={
+          <>
+            <Th variant="h1">{PAGES.CONTATTI.title}</Th>
+            <Typography paragraph>
+              <Trans>
+                Siamo qui per aiutarti! Se hai domande sui nostri prodotti per
+                cavalli, necessiti di assistenza con un ordine o desideri
+                maggiori informazioni, non esitare a contattarci.
+              </Trans>
+            </Typography>
+            <Th variant="h4">
+              <Trans>Contatto commerciale</Trans>
+            </Th>
+            <AvatarStyled alt="Anna Pessa">
+              <Image src={anna} height={150} width={150} alt={ITALIA.name} />
+            </AvatarStyled>
+            <ContattiAddressStyled {...ITALIA} />
+          </>
+        }
+        right={
+          <Stack direction="column" gap={PRODUCT_GUTTER}>
             <Box>
-              <Th variant="h4">
+              <Th variant="h5" sans>
                 <Trans>Sede operativa</Trans>
               </Th>
-              <StyledAddress {...SEDE_OPERATIVA} />
+              <ContattiAddress {...SEDE_OPERATIVA} />
             </Box>
 
+            <Divider />
+
             <Box>
-              <Th variant="h4">
+              <Th variant="h5" sans>
                 <Trans>Sede legale</Trans>
               </Th>
-              <StyledAddress {...SEDE_LEGALE} />
+              <ContattiAddress {...SEDE_LEGALE} />
             </Box>
 
+            <Divider />
+
             <Box>
-              <Th variant="h4">
+              <Th variant="h5" sans>
                 <Trans>Coordinate bancarie</Trans>
               </Th>
               <Stack spacing={PRODUCT_GUTTER}>
                 {BANCHE.map((bank) => (
-                  <StyledBank {...bank} key={bank.name} />
+                  <ContattiBank {...bank} key={bank.name} />
                 ))}
               </Stack>
             </Box>
           </Stack>
-        </>
-      }
-      right={
-        <RightColumnStyled>
-          <Stack spacing={PRODUCT_GUTTER}>
-            <Box>
-              <Th variant="h4">
-                <Trans>Contatto commerciale</Trans>
-              </Th>
-              <AvatarStyled alt="Anna Pessa">
-                <Image src={anna} height={150} width={150} alt={ITALIA.name} />
-              </AvatarStyled>
-              <ContattiAddress {...ITALIA} />
-            </Box>
+        }
+      />
 
-            <Stack spacing={PRODUCT_GUTTER}>
-              <Th variant="h4" gutterBottom={false}>
-                <Trans>Rivenditori</Trans>
-              </Th>
-              {CONTATTI_COMMERCIALI.map(({ name, data }, index) => (
-                <Card key={index}>
-                  <CardContent>
-                    <Th variant="h5">{name}</Th>
-                    <ContattiAddress {...data} />
-                  </CardContent>
-                </Card>
-              ))}
-            </Stack>
-          </Stack>
-        </RightColumnStyled>
-      }
-    />
+      <Section color="warm1">
+        <Th variant="h4">
+          <Trans>Rivenditori</Trans>
+        </Th>
+        <Grid container spacing={PRODUCT_GUTTER} alignItems="stretch">
+          {CONTATTI_COMMERCIALI.map(({ name, data }, index) => (
+            <Grid item md={3} key={index}>
+              <Card sx={{ minHeight: "100%" }}>
+                <CardContent>
+                  <Th variant="h5">{name}</Th>
+                  <ContattiAddress {...data} />
+                </CardContent>
+              </Card>
+            </Grid>
+          ))}
+        </Grid>
+      </Section>
+    </>
   );
 };
 

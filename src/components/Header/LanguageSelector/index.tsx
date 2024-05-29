@@ -14,8 +14,15 @@ import linguiConfig from "i18n/config.json";
 import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/router";
+import { ImageProps } from "pure-react-carousel";
 import * as React from "react";
 import { useEffect, useState } from "react";
+
+const LOCALE_ICONS: { [key: string]: ImageProps["src"] } = {
+  en: require(`flag-icons/flags/1x1/gb.svg`),
+  fr: require(`flag-icons/flags/1x1/fr.svg`),
+  it: require(`flag-icons/flags/1x1/it.svg`),
+};
 
 const DIM = 20;
 
@@ -40,7 +47,7 @@ const LanguageSelector: React.FC = () => {
         <IconButton onClick={handleModal}>
           <Avatar sx={{ height: DIM, width: DIM }}>
             <Image
-              src={`/flags/${locale}.svg`}
+              src={LOCALE_ICONS[locale!]}
               alt={locale!}
               width={DIM}
               height={DIM}
@@ -59,7 +66,7 @@ const LanguageSelector: React.FC = () => {
                   <ListItemAvatar>
                     <Avatar sx={{ height: DIM, width: DIM }}>
                       <Image
-                        src={`/flags/${locale}.svg`}
+                        src={LOCALE_ICONS[locale!]}
                         alt={locale}
                         width={DIM}
                         height={DIM}

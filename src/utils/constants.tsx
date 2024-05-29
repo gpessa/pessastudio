@@ -71,22 +71,6 @@ export const BANCHE = [
 export const CONTATTI_COMMERCIALI = [
   {
     data: {
-      email: "magiccavallo@hotmail.com",
-      name: "Roberto Della Bella",
-      telephone: "+32 475 96 5123",
-    },
-    name: <Trans>Contatto commerciale Belgio</Trans>,
-  },
-  {
-    data: {
-      email: "equi-bride@orange.fr",
-      name: "Société Equi Bride (Sébastien Mugnier)",
-      telephone: "+33 682369614",
-    },
-    name: <Trans>Contatto commerciale Francia</Trans>,
-  },
-  {
-    data: {
       addressLocality: "Bürstadt",
       country: "Germany",
       email: "office@bacherproducts.de",
@@ -111,6 +95,22 @@ export const CONTATTI_COMMERCIALI = [
       telephone: "+49 (0) 9071 7700256",
     },
     name: <Trans>Contatto commerciale Germania &amp; Medio Oriente</Trans>,
+  },
+  {
+    data: {
+      email: "magiccavallo@hotmail.com",
+      name: "Roberto Della Bella",
+      telephone: "+32 475 96 5123",
+    },
+    name: <Trans>Contatto commerciale Belgio</Trans>,
+  },
+  {
+    data: {
+      email: "equi-bride@orange.fr",
+      name: "Société Equi Bride (Sébastien Mugnier)",
+      telephone: "+33 682369614",
+    },
+    name: <Trans>Contatto commerciale Francia</Trans>,
   },
 ];
 

@@ -1,6 +1,6 @@
 {
   "name": "pessastudio",
-  "version": "3.1.63",
+  "version": "3.1.64",
   "private": true,
   "description": "Pessastudio",
   "license": "MIT",
@@ -34,6 +34,7 @@
     "@vercel/postgres": "^0.8.0",
     "@vercel/speed-insights": "^1.0.10",
     "eslint-plugin-sort-keys-fix": "^1.1.2",
+    "flag-icons": "^7.2.2",
     "next": "14.2.3",
     "next-auth": "^4.24.7",
     "next-seo": "^6.5.0",

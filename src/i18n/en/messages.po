@@ -772,6 +772,9 @@ msgstr "Follow us on our social media"
 msgid "Si è verificato un problema, riprova"
 msgstr "There was a problem, please try again"
 
+msgid "Siamo qui per aiutarti! Se hai domande sui nostri prodotti per cavalli, necessiti di assistenza con un ordine o desideri maggiori informazioni, non esitare a contattarci."
+msgstr "We are here to help! If you have any questions about our horse products, need assistance with an order, or would like more information, please don't hesitate to contact us."
+
 msgid "Sicuro"
 msgstr "Safe"
 

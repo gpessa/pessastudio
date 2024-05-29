@@ -15,7 +15,7 @@ const robotoCondensed = Roboto_Condensed({
 
 export const BREAKPOINT = "md";
 
-export const PRODUCT_GUTTER = 5;
+export const PRODUCT_GUTTER = 4;
 
 export enum Colors {
   YELLOW = "#FEB00D",
