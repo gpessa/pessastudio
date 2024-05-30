@@ -292,10 +292,7 @@ const useProducts = (): ProductList => {
       },
     ].map((product) => ({
       ...product,
-      link: getUrl([
-        PRODUCTS.OSTACOLI.url + "?cs=product_cards",
-        `#${product.id}`,
-      ]),
+      link: getUrl([PRODUCTS.OSTACOLI.url, `#${product.id}`]),
     })),
 
     // RECINTI
@@ -351,7 +348,7 @@ const useProducts = (): ProductList => {
       },
     ].map((product) => ({
       ...product,
-      link: PRODUCTS.RECINTI.url + "?cs=product_cards",
+      link: PRODUCTS.RECINTI.url,
     })),
 
     // DRESSAGE
@@ -446,7 +443,7 @@ const useProducts = (): ProductList => {
       },
     ].map((product) => ({
       ...product,
-      link: PRODUCTS.DRESSAGE.url + "?cs=product_cards",
+      link: PRODUCTS.DRESSAGE.url,
     })),
 
     // TONDINI
@@ -480,7 +477,7 @@ const useProducts = (): ProductList => {
     ].map(({ sides, size }) => ({
       description: t`Tondino per cavalli coperto, ideale per allenamenti e addestramenti in ogni stagione. Realizzato con struttura robusta e materiali resistenti, offre protezione dagli agenti atmosferici. Facile da montare, garantisce sicurezza e comfort per cavalli e cavalieri, migliorando le prestazioni in un ambiente controllato.`,
       id: ProductId.TONDINO_1320,
-      link: PRODUCTS.TONDINI.url + "?cs=product_cards",
+      link: PRODUCTS.TONDINI.url,
       name: t`Tondino coperto ${sides} pannelli ${size} mt.`,
       pictures: [require("assets/products/tondini/gallery/tondino-1.jpg")],
     })),
