@@ -57,7 +57,7 @@ const Feed = () => {
                 "g:identifier_exists": "no",
                 "g:image_link": getPictureUrl(picture),
                 "g:link": `${process.env.NEXT_PUBLIC_WEBISTE_URL}/${locale}${link}`,
-                "g:price": formatPriceFeed(price),
+                "g:price": formatPriceFeed(price!),
                 "g:product_category":
                   "Sporting Goods > Outdoor Recreation > Equestrian",
                 "g:product_diameter": diameter && formatSize(diameter),
