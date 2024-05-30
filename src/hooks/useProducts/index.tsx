@@ -474,12 +474,13 @@ const useProducts = (): ProductList => {
         sides: 24,
         size: 19.9,
       },
-    ].map(({ sides, size }) => ({
+    ].map(({ sides, size, price }) => ({
       description: t`Tondino per cavalli coperto, ideale per allenamenti e addestramenti in ogni stagione. Realizzato con struttura robusta e materiali resistenti, offre protezione dagli agenti atmosferici. Facile da montare, garantisce sicurezza e comfort per cavalli e cavalieri, migliorando le prestazioni in un ambiente controllato.`,
       id: ProductId.TONDINO_1320,
       link: PRODUCTS.TONDINI.url,
       name: t`Tondino coperto ${sides} pannelli ${size} mt.`,
       pictures: [require("assets/products/tondini/gallery/tondino-1.jpg")],
+      price,
     })),
   ];
 
