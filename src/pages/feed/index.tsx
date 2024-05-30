@@ -5,7 +5,7 @@ import { i18n } from "@lingui/core";
 import { I18nProvider, useLingui } from "@lingui/react";
 import type { GetServerSidePropsContext } from "next";
 import { pd } from "pretty-data";
-import { NAME_LEGAL_STRING, NAME_STRING } from "utils/constants";
+import { NAME_STRING } from "utils/constants";
 import { formatPriceFeed, formatSize, formatWeight } from "utils/format";
 import { loadCatalog } from "utils/getProps";
 import { create } from "xmlbuilder2";
@@ -50,7 +50,7 @@ const Feed = () => {
               }) => ({
                 "g:additional_image_link": pictures.map(getPictureUrl),
                 "g:availability": "in stock",
-                "g:brand": NAME_LEGAL_STRING,
+                "g:brand": NAME_STRING,
                 "g:condition": "new",
                 "g:description": typeof description === "string" && description,
                 "g:id": `PESSASTUDIO_${id}`,
