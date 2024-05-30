@@ -12,7 +12,7 @@ import { create } from "xmlbuilder2";
 
 const SitemapIndex = () => null;
 
-const Sitemap = () => {
+const Feed = () => {
   const {
     i18n: { locale },
   } = useLingui();
@@ -32,7 +32,7 @@ const Sitemap = () => {
         channel: {
           description: "",
           item: Object.values(products)
-            .filter(({ price }) => typeof price !== undefined)
+            .filter(({ price }) => Boolean(price))
             .map(
               ({
                 description,
@@ -57,7 +57,7 @@ const Sitemap = () => {
                 "g:identifier_exists": "no",
                 "g:image_link": getPictureUrl(picture),
                 "g:link": `${process.env.NEXT_PUBLIC_WEBISTE_URL}/${locale}${link}`,
-                "g:price": price && formatPriceFeed(price),
+                "g:price": formatPriceFeed(price),
                 "g:product_category":
                   "Sporting Goods > Outdoor Recreation > Equestrian",
                 "g:product_diameter": diameter && formatSize(diameter),
@@ -92,7 +92,7 @@ export const getServerSideProps = async (ctx: GetServerSidePropsContext) => {
 
   const renderToStaticMarkupResult = renderToStaticMarkup(
     <I18nProvider i18n={i18n}>
-      <Sitemap />
+      <Feed />
     </I18nProvider>
   );
 
