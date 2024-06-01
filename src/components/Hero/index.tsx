@@ -1,6 +1,7 @@
 import { Box, Container, styled, Typography } from "@mui/material";
-import { StaticImageData } from "next/image";
+import Image, { StaticImageData } from "next/image";
 import React from "react";
+import { BREAKPOINT } from "theme";
 
 const TypographyStyled = styled(Typography)(({ theme }) => ({
   backgroundColor: theme.palette.common.white,
@@ -9,11 +10,25 @@ const TypographyStyled = styled(Typography)(({ theme }) => ({
   padding: theme.spacing(3),
 }));
 
-const BoxStyled = styled(Box)<{ image?: HeroProps["image"] }>(({ image }) => ({
-  backgroundImage: `url(${image?.src})`,
-  backgroundPosition: "center",
-  backgroundSize: "cover",
-  padding: "6% 0 25%",
+const BoxStyled = styled(Box)(({ theme }) => ({
+  overflow: "hidden",
+  padding: "23% 0 25%",
+  position: "relative",
+  [theme.breakpoints.up(BREAKPOINT)]: {
+    padding: "13% 0 15%",
+  },
+}));
+
+const ImageStyled = styled(Image)(({ theme }) => ({
+  height: "100%",
+  position: "absolute",
+  top: 0,
+  width: "auto",
+  zIndex: -1,
+  [theme.breakpoints.up(BREAKPOINT)]: {
+    height: "auto",
+    width: "100%",
+  },
 }));
 
 export type HeroProps = {
@@ -23,6 +38,7 @@ export type HeroProps = {
 
 const Hero = ({ text, image, className }: HeroProps) => (
   <BoxStyled className={className} image={image}>
+    <ImageStyled src={image} alt="" />
     {text && (
       <Container maxWidth="lg">
         <TypographyStyled variant="h1">{text}</TypographyStyled>
