@@ -469,7 +469,7 @@ msgid "Interno giostra con alveolo"
 msgstr "A horse exerciser with ground grid soil stabilization system"
 
 msgid "Interno tondino coperto"
-msgstr "Internal pen"
+msgstr "Internal covered lunge pen"
 
 msgid "Irrigazione"
 msgstr "Track irrigation"
@@ -812,16 +812,16 @@ msgid "Titolare del trattamento"
 msgstr "Data Controller"
 
 msgid "Tondini"
-msgstr "Lunge & Paddock Pens"
+msgstr "Covered lunge & Paddock Pens"
 
 msgid "Tondini coperti per addestrare puledri in libertà"
 msgstr "Covered round pens for training free-roaming foals"
 
 msgid "Tondino"
-msgstr "Lunge pen"
+msgstr "Covered lunge pen"
 
 msgid "Tondino coperto {sides} pannelli {size} mt."
-msgstr "Lunge pen, {sides} panels, {size} mt."
+msgstr "Covered lunge pen, {sides} panels, {size} mt."
 
 msgid "Tondino coperto per cavalli"
 msgstr "Fully covered lunge pen"
