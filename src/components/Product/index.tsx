@@ -16,7 +16,6 @@ export type ProductData = {
   name: string;
   id: ProductId;
   colors?: Colors[];
-  diameter?: number;
   height?: number;
   length?: number;
   materials?: Material[];

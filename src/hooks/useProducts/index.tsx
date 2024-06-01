@@ -99,7 +99,6 @@ const useProducts = (): ProductList => {
       {
         colors: [BLU, GREEN, RED, WHITE, YELLOW],
         description: t`Costruisci la tua barriera personalizzata scegliendo tra i colori a disposizione`,
-        diameter: 95,
         id: ProductId.BARRIERA_3_MT,
         length: 2990,
         name: t`Barriera per campo ostacoli (3 mt.)`,
@@ -133,7 +132,6 @@ const useProducts = (): ProductList => {
       },
       {
         description: t`Kit comprensivo di 2 cavalletti e una barriera in PPO di colore bianco, diametro 95, lunghezza 2 mt.`,
-        diameter: 85,
         id: ProductId.CAVALLETTI_CAPRILLI_BARRIERA_KIT,
         length: 2000,
         name: t`Kit Cavalletti Caprilli + barriera`,

@@ -11,7 +11,6 @@ import { ProductData } from "../index";
 const ProductInformations = ({
   colors,
   description,
-  diameter,
   height,
   length,
   materials,
@@ -35,7 +34,6 @@ const ProductInformations = ({
     {width && <Data value={formatSize(width)} label={t`Larghezza`} />}
     {height && <Data value={formatSize(height)} label={t`Altezza`} />}
     {length && <Data value={formatSize(length)} label={t`Lunghezza`} />}
-    {diameter && <Data value={formatSize(diameter)} label={t`Diametro`} />}
     {weight && <Data value={formatWeight(weight)} label={t`Peso`} />}
     {materials && (
       <Data
