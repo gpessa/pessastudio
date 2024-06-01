@@ -51,7 +51,10 @@ const Feed = () => {
                 "g:availability": "in stock",
                 "g:brand": NAME_STRING,
                 "g:condition": "new",
-                "g:description": description ? description : undefined,
+                "g:description":
+                  description && typeof description === "string"
+                    ? description
+                    : null,
                 "g:id": `PESSASTUDIO_${id}`,
                 "g:identifier_exists": "no",
                 "g:image_link": getPictureUrl(picture),
