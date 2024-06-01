@@ -773,9 +773,6 @@ msgstr "Chaque cavaletti peut être couplé à des barres d’obstacles de 90, 9
 msgid "Socials"
 msgstr "Réseaux sociaux"
 
-msgid "Spessore"
-msgstr "Epaisseur"
-
 msgid "Splendido niente da dire! Il tondino è ben pensato e ingegnoso. Molto bene!"
 msgstr "Magnifique, rien à dire ! Le rond de longe est bien conçu et ingénieux. Très bien!"
 
@@ -804,7 +801,7 @@ msgid "Titolare del trattamento"
 msgstr "Responsable du traitement"
 
 msgid "Tondini"
-msgstr "Ronds de longe"
+msgstr "Ronds de longe couvert"
 
 msgid "Tondini coperti per addestrare puledri in libertà"
 msgstr "Ronds de longe couverts pour le dressage des jeunes chevaux en liberté"
@@ -812,14 +809,14 @@ msgstr "Ronds de longe couverts pour le dressage des jeunes chevaux en liberté"
 msgid "Tondino"
 msgstr "Rond de longe"
 
-msgid "Tondino coperto {0} pannelli {1} mt."
-msgstr "Rond de longe couvert {0} panneaux {1} m."
-
 msgid "Tondino coperto {sides} pannelli {size} mt."
-msgstr "{sides} côtés {size} mt."
+msgstr "Rond de longe couvert {size} mt."
 
 msgid "Tondino coperto per cavalli"
-msgstr "Ronde de longe"
+msgstr "Rond de longe couvert"
+
+msgid "Tondino per cavalli coperto, ideale per allenamenti e addestramenti in ogni stagione. Realizzato con struttura robusta e materiali resistenti, offre protezione dagli agenti atmosferici. Facile da montare, garantisce sicurezza e comfort per cavalli e cavalieri, migliorando le prestazioni in un ambiente controllato."
+msgstr "Rond de longe couvert pour chevaux, idéal pour les entraînements et le dressage en toute saison. Construit avec une structure robuste et des matériaux résistants, il offre une protection contre les intempéries. Facile à monter, il garantit sécurité et confort pour les chevaux et les cavaliers, améliorant les performances dans un environnement contrôlé."
 
 msgid "Tradizione e qualità"
 msgstr "Tradition et qualité"

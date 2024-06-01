@@ -114,14 +114,21 @@ const Tondini: React.FC = () => {
   };
 
   const IMAGES: Picture[] = [
-    {
-      caption: t`Tondino coperto ${18} pannelli ${15} mt.`,
-      image: require("assets/products/tondini/gallery/tondino-0.jpg"),
-    },
-    {
-      caption: t`Tondino coperto ${24} pannelli ${19.9} mt.`,
-      image: require("assets/products/tondini/gallery/tondino-1.jpg"),
-    },
+    ...[
+      {
+        image: require("assets/products/tondini/gallery/tondino-0.jpg"),
+        sides: 22,
+        size: 18.3,
+      },
+      {
+        image: require("assets/products/tondini/gallery/tondino-1.jpg"),
+        sides: 24,
+        size: 19.9,
+      },
+    ].map(({ sides, size, image }) => ({
+      caption: t`Tondino coperto ${sides} pannelli ${size} mt.`,
+      image,
+    })),
     {
       caption: t`Interno tondino coperto`,
       image: require("assets/products/tondini/gallery/tondino-2.jpg"),

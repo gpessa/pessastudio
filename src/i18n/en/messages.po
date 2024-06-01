@@ -784,9 +784,6 @@ msgstr "A single cavaletto that can be used with 90, 95, 100, 105 mm. diameters 
 msgid "Socials"
 msgstr "Socials"
 
-msgid "Spessore"
-msgstr "Thickness"
-
 msgid "Splendido niente da dire! Il tondino è ben pensato e ingegnoso. Molto bene!"
 msgstr "Fantastic nothing else to add! The lunge pen  is well thought out and ingenious. Very good!"
 
@@ -823,14 +820,14 @@ msgstr "Covered round pens for training free-roaming foals"
 msgid "Tondino"
 msgstr "Lunge pen"
 
-msgid "Tondino coperto {0} pannelli {1} mt."
-msgstr "Horse pen {0} panels, {1} mt."
-
 msgid "Tondino coperto {sides} pannelli {size} mt."
 msgstr "Lunge pen, {sides} panels, {size} mt."
 
 msgid "Tondino coperto per cavalli"
 msgstr "Fully covered lunge pen"
+
+msgid "Tondino per cavalli coperto, ideale per allenamenti e addestramenti in ogni stagione. Realizzato con struttura robusta e materiali resistenti, offre protezione dagli agenti atmosferici. Facile da montare, garantisce sicurezza e comfort per cavalli e cavalieri, migliorando le prestazioni in un ambiente controllato."
+msgstr "Covered round pen for horses, ideal for training and schooling in any season. Built with a sturdy structure and durable materials, it provides protection from the elements. Easy to assemble, it ensures safety and comfort for horses and riders, enhancing performance in a controlled environment."
 
 msgid "Tradizione e qualità"
 msgstr "Tradition and quality"

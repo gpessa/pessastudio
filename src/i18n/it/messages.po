@@ -763,9 +763,6 @@ msgstr "Singolo cavalletto abbinabile a barriere diametro 90, 95, 100, 105 mm."
 msgid "Socials"
 msgstr "Socials"
 
-msgid "Spessore"
-msgstr "Spessore"
-
 msgid "Splendido niente da dire! Il tondino è ben pensato e ingegnoso. Molto bene!"
 msgstr "Splendido niente da dire! Il tondino è ben pensato e ingegnoso. Molto bene!"
 
@@ -802,14 +799,14 @@ msgstr "Tondini coperti per addestrare puledri in libertà"
 msgid "Tondino"
 msgstr "Tondino"
 
-msgid "Tondino coperto {0} pannelli {1} mt."
-msgstr "Tondino coperto {0} pannelli {1} mt."
-
 msgid "Tondino coperto {sides} pannelli {size} mt."
 msgstr "Tondino coperto {sides} pannelli {size} mt."
 
 msgid "Tondino coperto per cavalli"
 msgstr "Tondino coperto per cavalli"
+
+msgid "Tondino per cavalli coperto, ideale per allenamenti e addestramenti in ogni stagione. Realizzato con struttura robusta e materiali resistenti, offre protezione dagli agenti atmosferici. Facile da montare, garantisce sicurezza e comfort per cavalli e cavalieri, migliorando le prestazioni in un ambiente controllato."
+msgstr "Tondino per cavalli coperto, ideale per allenamenti e addestramenti in ogni stagione. Realizzato con struttura robusta e materiali resistenti, offre protezione dagli agenti atmosferici. Facile da montare, garantisce sicurezza e comfort per cavalli e cavalieri, migliorando le prestazioni in un ambiente controllato."
 
 msgid "Tradizione e qualità"
 msgstr "Tradizione e qualità"
