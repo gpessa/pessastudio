@@ -54,13 +54,12 @@ const Feed = () => {
                   description && typeof description === "string"
                     ? description
                     : null,
+                "g:google_product_category": "1031", // Sporting Goods > Outdoor Recreation > Equestrian (check here https://www.google.com/basepages/producttype/taxonomy-with-ids.en-US.txt)
                 "g:id": `PESSASTUDIO_${id}`,
                 "g:identifier_exists": "no",
                 "g:image_link": getPictureUrl(picture),
                 "g:link": `${process.env.NEXT_PUBLIC_WEBISTE_URL}/${locale}${link}`,
                 "g:price": formatPriceFeed(price!),
-                "g:product_category":
-                  "Sporting Goods > Outdoor Recreation > Equestrian",
                 "g:product_height": height && formatSize(height),
                 "g:product_length": length && formatSize(length),
                 "g:product_weight": weight && formatWeight(weight),
