@@ -37,7 +37,7 @@ export type HeroProps = {
 } & React.HTMLAttributes<HTMLElement>;
 
 const Hero = ({ text, image, className }: HeroProps) => (
-  <BoxStyled className={className} image={image}>
+  <BoxStyled className={className}>
     <ImageStyled src={image} alt="" />
     {text && (
       <Container maxWidth="lg">
