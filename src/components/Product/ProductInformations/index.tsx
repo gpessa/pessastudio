@@ -17,7 +17,6 @@ const ProductInformations = ({
   materials,
   name,
   price,
-  thickness,
   weight,
   width,
   className,
@@ -36,7 +35,6 @@ const ProductInformations = ({
     {width && <Data value={formatSize(width)} label={t`Larghezza`} />}
     {height && <Data value={formatSize(height)} label={t`Altezza`} />}
     {length && <Data value={formatSize(length)} label={t`Lunghezza`} />}
-    {thickness && <Data value={formatSize(thickness)} label={t`Spessore`} />}
     {diameter && <Data value={formatSize(diameter)} label={t`Diametro`} />}
     {weight && <Data value={formatWeight(weight)} label={t`Peso`} />}
     {materials && (

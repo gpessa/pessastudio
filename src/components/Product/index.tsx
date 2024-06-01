@@ -20,7 +20,6 @@ export type ProductData = {
   height?: number;
   length?: number;
   materials?: Material[];
-  thickness?: number;
   weight?: number;
   width?: number;
   link: string;

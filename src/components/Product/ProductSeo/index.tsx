@@ -31,7 +31,6 @@ const useSeoProps = ({
   pictures,
   price,
   link,
-  id,
 }: ProductData): ProductJsonLdProps => {
   const { locale } = useRouter();
 
