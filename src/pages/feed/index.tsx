@@ -23,8 +23,6 @@ const Feed = () => {
       ? `${process.env.NEXT_PUBLIC_WEBISTE_URL}/_next/image?url=${picture.default.src}&w=640&q=75`
       : undefined;
 
-  console.log(products);
-
   const doc = create(
     { version: "1.0" },
     {
