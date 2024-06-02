@@ -100,6 +100,7 @@ const useProducts = (): ProductList => {
       {
         colors: [BLU, GREEN, RED, WHITE, YELLOW],
         description: t`Costruisci la tua barriera personalizzata scegliendo tra i colori a disposizione`,
+        height: 95,
         id: ProductId.BARRIERA_3_MT,
         length: 2990,
         name: t`Barriera per campo ostacoli (3 mt.)`,
@@ -110,6 +111,7 @@ const useProducts = (): ProductList => {
         ],
         price: 50,
         weight: 9.75,
+        width: 95,
       },
       {
         description: t`Fosso in PVC di alta qualità, progettato per allenamenti e competizioni equestri. Resistente agli agenti atmosferici, leggero e facile da spostare, questo ostacolo garantisce durabilità e sicurezza. Ideale per preparare i cavalli alle sfide di salto più impegnative.`,
