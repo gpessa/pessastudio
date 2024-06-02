@@ -129,12 +129,6 @@ msgstr ""
 msgid "Alveolo sulla pesta"
 msgstr "Dalle alvéolée sur la piste"
 
-msgid "Amministrazione"
-msgstr ""
-
-msgid "Amministrazione Login"
-msgstr ""
-
 msgid "Ampia gamma"
 msgstr "Vaste gamme"
 

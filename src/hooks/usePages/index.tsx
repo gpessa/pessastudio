@@ -112,12 +112,12 @@ const usePages = () => {
   };
 
   const ADMIN: Page = {
-    title: t`Amministrazione`,
+    title: `Amministrazione`,
     url: "/admin",
   };
 
   const ADMIN_SIGNIN: Page = {
-    title: t`Amministrazione Login`,
+    title: `Amministrazione Login`,
     url: "/admin/signin",
   };
 

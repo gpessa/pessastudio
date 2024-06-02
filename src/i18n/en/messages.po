@@ -123,12 +123,6 @@ msgstr "Other"
 msgid "Alveolo sulla pesta"
 msgstr "Ground grid soil stabilization system"
 
-msgid "Amministrazione"
-msgstr ""
-
-msgid "Amministrazione Login"
-msgstr ""
-
 msgid "Ampia gamma"
 msgstr "Wide products range"
 
@@ -608,7 +602,7 @@ msgid "Numero per campo ostacoli costruito in materiali robusti e leggeri. La fo
 msgstr "Number cone made from strong and lightweight materials. The pyramid shape ensures stability. Perfect for use in horse jumping courses."
 
 msgid "Ostacoli"
-msgstr "Jumps"
+msgstr "Show jumps"
 
 msgid "Pagina non trovata"
 msgstr "Page not found"

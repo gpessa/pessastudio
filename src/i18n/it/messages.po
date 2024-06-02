@@ -121,12 +121,6 @@ msgstr "Altro"
 msgid "Alveolo sulla pesta"
 msgstr "Alveolo sulla pesta"
 
-msgid "Amministrazione"
-msgstr "Amministrazione"
-
-msgid "Amministrazione Login"
-msgstr "Amministrazione Login"
-
 msgid "Ampia gamma"
 msgstr "Ampia gamma"
 
