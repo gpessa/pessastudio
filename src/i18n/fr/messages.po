@@ -160,10 +160,10 @@ msgid "Avanti"
 msgstr "Suivante"
 
 msgid "Bandierine"
-msgstr "Drapeaux"
+msgstr "Fanions et Portes Fanions"
 
 msgid "Bandierine realizzate in plastica resistente agli urti. Ideali per allenamenti e competizioni, offrono una visibilità eccellente e una lunga durata nel tempo."
-msgstr ""
+msgstr "Fanions réalisés en plastique résistant aux chocs. Idéals pour les entraînements et les compétitions, ils offrent une excellente visibilité et une longue durée de vie."
 
 msgid "Barriera per campo ostacoli (3 mt.)"
 msgstr "Barres d'obstacles pour Chevaux (3 mètres)"
@@ -274,10 +274,10 @@ msgid "Cubi per campo ostacoli"
 msgstr "Cubes"
 
 msgid "Cucchiai"
-msgstr "Cuillère"
+msgstr "Fiche pour chandelier"
 
 msgid "Cucchiaio {0}"
-msgstr "Cuillère {0}"
+msgstr "Fiche pour chandelier {0}"
 
 msgid "Da anni Pessastudio è focalizzata nel produrre prodotti di qualità a costi accessibili"
 msgstr "Pessastudio se focalise depuis des années sur la fabrication de produits de qualité à des coûts accessibles"
@@ -531,7 +531,7 @@ msgid "La struttura è stata progettata per garantire un carico neve fino a 120 
 msgstr "La structure a été conçue pour résister à une charge de neige jusqu’à 120 kg/m2 et à une vitesse du vent jusqu’à 110 km/h."
 
 msgid "Lama DE da {0}"
-msgstr "Lame de {0}"
+msgstr "Jonc metallique DE {0}"
 
 msgid "Larghezza"
 msgstr "Largeur"
