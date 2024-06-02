@@ -1,4 +1,5 @@
 import { Trans, t } from "@lingui/macro";
+import { Description } from "@mui/icons-material";
 import { Typography } from "@mui/material";
 import { Ul } from "components";
 import { ProductData } from "components/Product";
@@ -111,6 +112,7 @@ const useProducts = (): ProductList => {
         weight: 9.75,
       },
       {
+        description: t`Fosso in PVC di alta qualità, progettato per allenamenti e competizioni equestri. Resistente agli agenti atmosferici, leggero e facile da spostare, questo ostacolo garantisce durabilità e sicurezza. Ideale per preparare i cavalli alle sfide di salto più impegnative.`,
         height: 80,
         id: ProductId.FOSSO,
         length: 1500,

@@ -325,6 +325,9 @@ msgstr "Fin dal primo accesso questi cookie permettono al sito di funzionare cor
 msgid "Fosso"
 msgstr "Fosso"
 
+msgid "Fosso in PVC di alta qualità, progettato per allenamenti e competizioni equestri. Resistente agli agenti atmosferici, leggero e facile da spostare, questo ostacolo garantisce durabilità e sicurezza. Ideale per preparare i cavalli alle sfide di salto più impegnative."
+msgstr "Fosso in PVC di alta qualità, progettato per allenamenti e competizioni equestri. Resistente agli agenti atmosferici, leggero e facile da spostare, questo ostacolo garantisce durabilità e sicurezza. Ideale per preparare i cavalli alle sfide di salto più impegnative."
+
 msgid "Funzione"
 msgstr "Funzione"
 

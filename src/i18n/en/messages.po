@@ -325,7 +325,10 @@ msgid "Fin dal primo accesso questi cookie permettono al sito di funzionare corr
 msgstr "From first access, these cookies allow the Website to function correctly and allow you to view content on your device by recognising the language and market of the country from which you’ve chosen to connect. If you are a registered user, they will allow you to be recognised and to access the services offered from the dedicated areas. Navigation cookies are technical cookies and are needed for the functioning of the Website."
 
 msgid "Fosso"
-msgstr "Water tray"
+msgstr "Liverpool Water Jump"
+
+msgid "Fosso in PVC di alta qualità, progettato per allenamenti e competizioni equestri. Resistente agli agenti atmosferici, leggero e facile da spostare, questo ostacolo garantisce durabilità e sicurezza. Ideale per preparare i cavalli alle sfide di salto più impegnative."
+msgstr "High-quality PVC Liverpool Water Jump, designed for equestrian training and competitions. Weather-resistant, lightweight, and easy to move, this obstacle ensures durability and safety. Ideal for preparing horses for the most challenging jumps."
 
 msgid "Funzione"
 msgstr "Function"

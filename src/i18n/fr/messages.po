@@ -331,7 +331,10 @@ msgid "Fin dal primo accesso questi cookie permettono al sito di funzionare corr
 msgstr "Dès le premier accès, ces cookies permettent au site de fonctionner correctement et vous aident à visualiser les contenus sur votre appareil, en reconnaissant votre langue et le marché du Pays depuis lequel vous avez choisi de vous connecter. Si vous êtes un utilisateur inscrit, ils permettront de vous reconnaître et d’accéder aux services proposés dans les espaces dédiés. Les cookies de navigation sont des cookies techniques, nécessaires au fonctionnement du site."
 
 msgid "Fosso"
-msgstr "Fossé"
+msgstr "Riviere d'obstacle"
+
+msgid "Fosso in PVC di alta qualità, progettato per allenamenti e competizioni equestri. Resistente agli agenti atmosferici, leggero e facile da spostare, questo ostacolo garantisce durabilità e sicurezza. Ideale per preparare i cavalli alle sfide di salto più impegnative."
+msgstr "Rivière d'obstacle en PVC de haute qualité, conçue pour l'entraînement et les compétitions équestres. Résistante aux intempéries, légère et facile à déplacer, cet obstacle garantit durabilité et sécurité. Idéale pour préparer les chevaux aux sauts les plus exigeants."
 
 msgid "Funzione"
 msgstr "Fonction"
