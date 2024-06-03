@@ -228,9 +228,9 @@ const useProducts = (): ProductList => {
         materials: [Material.TECNOPOLIMERO],
         name: t`Cucchiaio ${CUCCHIAI_MODELS.DE}`,
         pictures: [
-          require("assets/products/ostacoli/cucchiaio-ps-01.png"),
-          require("assets/products/ostacoli/cucchiaio-ps-02.png"),
-          require("assets/products/ostacoli/cucchiaio-ps-03.png"),
+          require("assets/products/ostacoli/cucchiaio-de-01.png"),
+          require("assets/products/ostacoli/cucchiaio-de-02.png"),
+          require("assets/products/ostacoli/cucchiaio-de-03.png"),
         ],
         price: 3.5,
         weight: 0.15,
