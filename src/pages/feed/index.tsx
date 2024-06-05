@@ -40,11 +40,8 @@ const Feed = () => {
                 price,
                 id,
                 pictures: [picture, ...pictures],
-                height,
                 link,
-                length,
-                weight,
-                width,
+                dimensions: { height, length, weight, width },
               }) => ({
                 "g:additional_image_link": pictures.map(getPictureUrl),
                 "g:availability": "in stock",
