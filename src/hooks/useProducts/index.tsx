@@ -480,7 +480,11 @@ const useProducts = (): ProductList => {
       id,
       link: PRODUCTS.TONDINI.url,
       name: t`Tondino coperto ${sides} pannelli ${size} mt.`,
-      pictures: [require("assets/products/tondini/gallery/tondino-1.jpg")],
+      pictures: [
+        require("assets/products/tondini/gallery/tondino-1.jpg"),
+        require("assets/products/tondini/gallery/tondino-2.jpg"),
+        require("assets/products/tondini/gallery/tondino-3.jpg"),
+      ],
       price,
     })),
   ];
