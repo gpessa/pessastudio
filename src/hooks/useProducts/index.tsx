@@ -95,10 +95,10 @@ const useProducts = (): ProductList => {
       colors: [BLU, GREEN, RED, WHITE, YELLOW],
       description: t`Costruisci la tua barriera personalizzata scegliendo tra i colori a disposizione`,
       dimensions: {
-        height: 95,
-        length: 2990,
+        height: 9.5,
+        length: 299,
         weight: 9.75,
-        width: 95,
+        width: 9.5,
       },
       id: ProductId.BARRIERA_3_MT,
       link: `${PRODUCTS.OSTACOLI.url}#${ProductId.BARRIERA_3_MT}`,
@@ -113,9 +113,9 @@ const useProducts = (): ProductList => {
     {
       description: t`Fosso in PVC di alta qualità, progettato per allenamenti e competizioni equestri. Resistente agli agenti atmosferici, leggero e facile da spostare, questo ostacolo garantisce durabilità e sicurezza. Ideale per preparare i cavalli alle sfide di salto più impegnative.`,
       dimensions: {
-        height: 80,
-        length: 1500,
-        width: 2800,
+        height: 8,
+        length: 150,
+        width: 280,
       },
       id: ProductId.FOSSO,
       link: `${PRODUCTS.OSTACOLI.url}#${ProductId.FOSSO}`,
@@ -127,10 +127,10 @@ const useProducts = (): ProductList => {
       colors: [WHITE, BLU, YELLOW, RED, GREEN],
       description: t`Singolo cavalletto abbinabile a barriere diametro 90, 95, 100, 105 mm.`,
       dimensions: {
-        height: 500,
-        length: 500,
+        height: 50,
+        length: 50,
         weight: 2,
-        width: 2000,
+        width: 200,
       },
       id: ProductId.CAVALLETTI_CAPRILLI,
       link: `${PRODUCTS.OSTACOLI.url}#${ProductId.CAVALLETTI_CAPRILLI}`,
@@ -141,10 +141,10 @@ const useProducts = (): ProductList => {
     {
       description: t`Kit comprensivo di 2 cavalletti e una barriera in PPO di colore bianco, diametro 95, lunghezza 2 mt.`,
       dimensions: {
-        height: 500,
-        length: 500,
+        height: 50,
+        length: 50,
         weight: 5.3,
-        width: 2000,
+        width: 200,
       },
       id: ProductId.CAVALLETTI_CAPRILLI_BARRIERA_KIT,
       link: `${PRODUCTS.OSTACOLI.url}#${ProductId.CAVALLETTI_CAPRILLI_BARRIERA_KIT}`,
@@ -158,10 +158,10 @@ const useProducts = (): ProductList => {
       colors: [WHITE, BLU, YELLOW, RED, GREEN],
       description: t`I cubi sono progettati in maniera da poterli incastrare tra di loro. Questo rende questi blocchi da salto più sicuri, stabili e versatili di qualsiasi cosa tu abbia usato prima. Impila i blocchi in una varietà quasi illimitata di posizioni e configurazioni. Raggiungi l'altezza desiderata con più coppie.`,
       dimensions: {
-        height: 570,
-        length: 370,
+        height: 57,
+        length: 37,
         weight: 3,
-        width: 350,
+        width: 35,
       },
       id: ProductId.CUBI_MINI,
       link: `${PRODUCTS.OSTACOLI.url}#${ProductId.CUBI_MINI}`,
@@ -177,10 +177,10 @@ const useProducts = (): ProductList => {
       colors: [WHITE, BLU, YELLOW, RED, GREEN],
       description: t`I cubi sono progettati in maniera da poterli incastrare tra di loro. Questo rende questi blocchi da salto più sicuri, stabili e versatili di qualsiasi cosa tu abbia usato prima. Impila i blocchi in una varietà quasi illimitata di posizioni e configurazioni. Raggiungi l'altezza desiderata con più coppie.`,
       dimensions: {
-        height: 700,
-        length: 570,
+        height: 70,
+        length: 57,
         weight: 5,
-        width: 370,
+        width: 37,
       },
 
       id: ProductId.CUBI_MAXI,
@@ -196,10 +196,10 @@ const useProducts = (): ProductList => {
     {
       description: t`I candelieri sono costruiti con un montante di alluminio verniciato di colore bianco e sono muniti di 4 piedi rivestiti con puntali di plastica che garantiscono, in caso di ribaltamento, l’incolumità vostra e dei vostri cavalli.`,
       dimensions: {
-        height: 1700,
-        length: 720,
+        height: 170,
+        length: 72,
         weight: 7,
-        width: 720,
+        width: 72,
       },
 
       id: ProductId.CANDELIERE_CON_PIEDE_IN_PVC_170,
@@ -211,10 +211,10 @@ const useProducts = (): ProductList => {
     {
       description: t`I candelieri sono costruiti con un montante di alluminio verniciato di colore bianco e sono muniti di 4 piedi rivestiti con puntali di plastica che garantiscono, in caso di ribaltamento, l’incolumità vostra e dei vostri cavalli.`,
       dimensions: {
-        height: 1900,
-        length: 720,
+        height: 190,
+        length: 72,
         weight: 7,
-        width: 720,
+        width: 72,
       },
       id: ProductId.CANDELIERE_CON_PIEDE_IN_PVC_190,
       link: `${PRODUCTS.OSTACOLI.url}#${ProductId.CANDELIERE_CON_PIEDE_IN_PVC_190}`,
@@ -226,8 +226,8 @@ const useProducts = (): ProductList => {
       description: t`Per consentirvi di realizzare ostacoli di vostra creazione possiamo fornirvi le lame forate in due diverse lunghezze.`,
       dimensions: {
         height: 2,
-        length: 500,
-        width: 65,
+        length: 50,
+        width: 6.5,
       },
       id: ProductId.LAMA_DE_50,
       link: `${PRODUCTS.OSTACOLI.url}#${ProductId.LAMA_DE_50}`,
@@ -240,8 +240,8 @@ const useProducts = (): ProductList => {
       description: t`Per consentirvi di realizzare ostacoli di vostra creazione possiamo fornirvi le lame forate in due diverse lunghezze.`,
       dimensions: {
         height: 2,
-        length: 1500,
-        width: 65,
+        length: 150,
+        width: 6.5,
       },
       id: ProductId.LAMA_DE_150,
       link: `${PRODUCTS.OSTACOLI.url}#${ProductId.LAMA_DE_150}`,
@@ -253,10 +253,10 @@ const useProducts = (): ProductList => {
     {
       description: t`Il cucchiaio standard utilizzato al livello internazionale`,
       dimensions: {
-        height: 110,
-        length: 110,
+        height: 11,
+        length: 11,
         weight: 0.15,
-        width: 110,
+        width: 11,
       },
       id: ProductId.CUCCHIAIO_DE,
       link: `${PRODUCTS.OSTACOLI.url}#${ProductId.CUCCHIAIO_DE}`,
@@ -272,10 +272,10 @@ const useProducts = (): ProductList => {
     {
       description: t`Il cucchiaio dotato del nostro sistema brevettato di aggancio`,
       dimensions: {
-        height: 110,
-        length: 110,
+        height: 11,
+        length: 11,
         weight: 0.15,
-        width: 110,
+        width: 11,
       },
       id: ProductId.CUCCHIAIO_PS,
       link: `${PRODUCTS.OSTACOLI.url}#${ProductId.CUCCHIAIO_PS}`,
@@ -291,10 +291,10 @@ const useProducts = (): ProductList => {
     {
       description: t`Supporti di sicurezza da applicare ai nostri cucchiai per salvaguardare l'integrità degli arti dei vostri cavalli in maniera efficace ed economica.`,
       dimensions: {
-        height: 100,
-        length: 30,
+        height: 10,
+        length: 3,
         weight: 0.05,
-        width: 70,
+        width: 7,
       },
       id: ProductId.SUPPORTO_SICUREZZA,
       link: `${PRODUCTS.OSTACOLI.url}#${ProductId.SUPPORTO_SICUREZZA}`,
@@ -320,10 +320,10 @@ const useProducts = (): ProductList => {
     {
       description: t`Numero per campo ostacoli costruito in materiali robusti e leggeri. La forma piramidale ne assicurano la stabilitá. Perfetto per essere utilizzato in percorsi di salto ostacoli per cavalli.`,
       dimensions: {
-        height: 300,
-        length: 300,
+        height: 30,
+        length: 30,
         weight: 2.3,
-        width: 200,
+        width: 20,
       },
       id: ProductId.NUMERO_CAMPO_OSTACOLI_PROFESSIONAL,
       link: `${PRODUCTS.OSTACOLI.url}#${ProductId.NUMERO_CAMPO_OSTACOLI_PROFESSIONAL}`,
@@ -335,10 +335,10 @@ const useProducts = (): ProductList => {
     {
       description: t`Numero per campo ostacoli costruito in materiali robusti e leggeri. La forma piramidale ne assicurano la stabilitá. Perfetto per essere utilizzato in percorsi di salto ostacoli per cavalli.`,
       dimensions: {
-        height: 330,
-        length: 300,
+        height: 33,
+        length: 30,
         weight: 1.25,
-        width: 330,
+        width: 33,
       },
       id: ProductId.NUMERO_CAMPO_OSTACOLI_LIGHT,
       link: `${PRODUCTS.OSTACOLI.url}#${ProductId.NUMERO_CAMPO_OSTACOLI_LIGHT}`,
@@ -353,7 +353,7 @@ const useProducts = (): ProductList => {
       colors: [Colors.WHITE],
       description: t`La recinzione ad una filagna viene utilizzata per delimitare campi da lavoro o gara poco adoperati e non è adatta per l'addestramento. Potete utilizzarla anche per delimitare un'area del vostro giardino di casa`,
       dimensions: {
-        height: 1250,
+        height: 125,
       },
       id: ProductId.RECINZIONE_1_FILAGNA,
       link: PRODUCTS.RECINTI.url,
@@ -365,7 +365,7 @@ const useProducts = (): ProductList => {
       colors: [Colors.WHITE],
       description: t`La recinzione a due filagne genericamente viene utilizzata per delimitare campi da lavoro o per realizzare paddock dove i cavalli sono comunque osservati dal personale presente`,
       dimensions: {
-        height: 1400,
+        height: 140,
       },
       id: ProductId.RECINZIONE_2_FILAGNE,
       link: PRODUCTS.RECINTI.url,
@@ -377,7 +377,7 @@ const useProducts = (): ProductList => {
       colors: [Colors.WHITE],
       description: t`La recinzione a tre filagne viene utilizzata per delimitare paddok per animali che rimangono per molte ore al giorno incustoditi oppure per delimitare confini di proprietà o aree. Per garantirne una maggiore sicurezza è possibile installare un impianto d'elettrificazione sulle filagne`,
       dimensions: {
-        height: 1650,
+        height: 165,
       },
       id: ProductId.RECINZIONE_3_FILAGNE,
       link: PRODUCTS.RECINTI.url,
@@ -389,7 +389,7 @@ const useProducts = (): ProductList => {
       colors: [Colors.WHITE],
       description: t`Le recinzioni a quattro filagne sono utilizzate per delimitare paddock per stalloni, realizzare tondini per la doma e l'addestramento o per formare ovali per il salto in libertà`,
       dimensions: {
-        height: 1950,
+        height: 195,
       },
       id: ProductId.RECINZIONE_4_FILAGNE,
       link: PRODUCTS.RECINTI.url,
@@ -401,7 +401,7 @@ const useProducts = (): ProductList => {
       colors: [Colors.WHITE, Colors.GREEN],
       description: t`Diamo la possibilità di montare nella vostra recinzione un piede mobile che vi consentirà di posizionarla e spostarla a seconda delle vostre esigenze`,
       dimensions: {
-        height: 300,
+        height: 30,
       },
       id: ProductId.RECINZIONE_PIEDE_MOBILE,
       link: PRODUCTS.RECINTI.url,
@@ -417,7 +417,11 @@ const useProducts = (): ProductList => {
     // DRESSAGE
     {
       colors: [Colors.WHITE],
-      dimensions: { height: 300, weight: 0.5, width: 200 },
+      dimensions: {
+        height: 30,
+        weight: 0.5,
+        width: 20,
+      },
       id: ProductId.DRESSAGE_TRAINING_LETTERA,
       link: PRODUCTS.DRESSAGE.url,
       materials: [Material.POLIETILENE],
@@ -428,9 +432,9 @@ const useProducts = (): ProductList => {
     {
       colors: [Colors.WHITE],
       dimensions: {
-        height: 285,
+        height: 28.5,
         weight: 3,
-        width: 2000,
+        width: 200,
       },
       id: ProductId.DRESSAGE_TRAINING_MODULO,
       link: PRODUCTS.DRESSAGE.url,
@@ -464,9 +468,9 @@ const useProducts = (): ProductList => {
     {
       colors: [Colors.WHITE],
       dimensions: {
-        height: 700,
+        height: 70,
         weight: 2.5,
-        width: 390,
+        width: 39,
       },
       id: ProductId.DRESSAGE_OLYMPIC_LETTERA,
       link: PRODUCTS.DRESSAGE.url,
@@ -477,9 +481,9 @@ const useProducts = (): ProductList => {
     {
       colors: [Colors.WHITE],
       dimensions: {
-        height: 370,
+        height: 37,
         weight: 5,
-        width: 2000,
+        width: 200,
       },
       id: ProductId.DRESSAGE_OLYMPIC_MODULO,
       link: PRODUCTS.DRESSAGE.url,

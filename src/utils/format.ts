@@ -1,7 +1,7 @@
 import { i18n } from "@lingui/core";
 
 export const formatSize = (v: number) =>
-  i18n.number(v / 10, {
+  i18n.number(v, {
     notation: "compact",
     style: "unit",
     unit: "centimeter",
