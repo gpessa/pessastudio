@@ -16,12 +16,14 @@ export type ProductData = {
   name: string;
   id: ProductId;
   colors?: Colors[];
-  height?: number;
-  length?: number;
   materials?: Material[];
-  weight?: number;
-  width?: number;
   link: string;
+  dimensions: {
+    height?: number;
+    length?: number;
+    weight?: number;
+    width?: number;
+  };
 };
 
 export type ProductProps = ProductData & {

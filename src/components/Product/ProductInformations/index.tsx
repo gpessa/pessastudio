@@ -11,13 +11,10 @@ import { ProductData } from "../index";
 const ProductInformations = ({
   colors,
   description,
-  height,
-  length,
   materials,
   name,
   price,
-  weight,
-  width,
+  dimensions: { width, height, length, weight },
   className,
 }: ProductData & {
   className?: string;
