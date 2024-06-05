@@ -126,7 +126,7 @@ const Tondini: React.FC = () => {
         size: 19.9,
       },
     ].map(({ sides, size, image }) => ({
-      caption: t`Tondino coperto ${sides} pannelli ${size} mt.`,
+      caption: t`Tondino coperto ${sides} pannelli ${size}`,
       image,
     })),
     {
@@ -198,7 +198,7 @@ const Tondini: React.FC = () => {
     },
   ].map(({ sides, size }) => ({
     file: `/products/tondini/tondino-${sides}.pdf`,
-    label: t`Tondino coperto ${sides} pannelli ${size} mt.`,
+    label: t`Tondino coperto ${sides} pannelli ${size}`,
   }));
 
   const MANUALS = [

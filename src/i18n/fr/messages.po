@@ -806,8 +806,11 @@ msgstr "Ronds de longe couverts pour le dressage des jeunes chevaux en liberté"
 msgid "Tondino"
 msgstr "Rond de longe"
 
-msgid "Tondino coperto {sides} pannelli {size} mt."
-msgstr "Rond de longe couvert {size} mt."
+msgid "Tondino coperto {sides} pannelli {0}"
+msgstr "Rond de longe couvert {0}"
+
+msgid "Tondino coperto {sides} pannelli {size}"
+msgstr "Rond de longe couvert {size}"
 
 msgid "Tondino coperto per cavalli"
 msgstr "Rond de longe couvert"

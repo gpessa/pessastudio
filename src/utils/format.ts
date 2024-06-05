@@ -4,7 +4,7 @@ export const formatSize = (v: number) =>
   i18n.number(v, {
     notation: "compact",
     style: "unit",
-    unit: "centimeter",
+    unit: v > 1000 ? "meter" : "centimeter",
     unitDisplay: "short",
   });
 

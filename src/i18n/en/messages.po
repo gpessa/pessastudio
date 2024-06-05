@@ -817,7 +817,10 @@ msgstr "Covered round pens for training free-roaming foals"
 msgid "Tondino"
 msgstr "Covered lunge pen"
 
-msgid "Tondino coperto {sides} pannelli {size} mt."
+msgid "Tondino coperto {sides} pannelli {0}"
+msgstr "Covered lunge pen, {sides} panels, {0} mt."
+
+msgid "Tondino coperto {sides} pannelli {size}"
 msgstr "Covered lunge pen, {sides} panels, {size} mt."
 
 msgid "Tondino coperto per cavalli"
