@@ -1,5 +1,5 @@
 import { t } from "@lingui/macro";
-import { Typography, Box } from "@mui/material";
+import { Box, Typography } from "@mui/material";
 import Data from "components/Data";
 import Th from "components/Th";
 import { formatSize, formatWeight } from "utils/format";
@@ -24,7 +24,7 @@ const ProductInformations = ({
       {name}
     </Th>
     {description && (
-      <Typography paragraph component="div">
+      <Typography paragraph sx={{ fontSize: "96%" }}>
         {description}
       </Typography>
     )}
