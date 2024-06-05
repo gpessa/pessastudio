@@ -202,6 +202,9 @@ msgstr "Contatta Pessastudio per preventivi di Giostre, ostacoli, tondini e attr
 msgid "Contattaci per un preventivo per ostacoli, recinti, tondini coperti, giostre, rettangoli da dressage e attrezzature per cavalli"
 msgstr "Contattaci per un preventivo per ostacoli, recinti, tondini coperti, giostre, rettangoli da dressage e attrezzature per cavalli"
 
+msgid "Contattaci usando l'email <0>{0}</0> <1/>o chiamaci al numero: <2>{1}</2>"
+msgstr "Contattaci usando l'email <0>{0}</0> <1/>o chiamaci al numero: <2>{1}</2>"
+
 msgid "Contatti"
 msgstr "Contatti"
 
@@ -580,6 +583,9 @@ msgstr "Numero per campo ostacoli {0}"
 msgid "Numero per campo ostacoli costruito in materiali robusti e leggeri. La forma piramidale ne assicurano la stabilitá. Perfetto per essere utilizzato in percorsi di salto ostacoli per cavalli."
 msgstr "Numero per campo ostacoli costruito in materiali robusti e leggeri. La forma piramidale ne assicurano la stabilitá. Perfetto per essere utilizzato in percorsi di salto ostacoli per cavalli."
 
+msgid "Oppure visita la nostra pagina dei <0>contatti</0> per scoprire i rivenditori nella tua zona."
+msgstr "Oppure visita la nostra pagina dei <0>contatti</0> per scoprire i rivenditori nella tua zona."
+
 msgid "Ostacoli"
 msgstr "Ostacoli"
 
@@ -837,6 +843,9 @@ msgstr "Utilizziamo i cookie per garantire il corretto funzionamento del sito. P
 
 msgid "Vedi"
 msgstr "Vedi"
+
+msgid "Vuoi maggiori informazioni?"
+msgstr "Vuoi maggiori informazioni?"
 
 msgid "Website"
 msgstr "Website"

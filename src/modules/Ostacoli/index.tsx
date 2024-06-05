@@ -1,7 +1,7 @@
 import { Trans } from "@lingui/macro";
 import { useLingui } from "@lingui/react";
 import { Typography } from "@mui/material";
-import { Section, Th } from "components";
+import { ContactUs, Section, Th } from "components";
 
 import { usePages, useProducts } from "hooks";
 import React from "react";
@@ -102,6 +102,8 @@ const Ostacoli: React.FC = () => {
           ]}
         />
       </Section>
+
+      <ContactUs />
     </>
   );
 };

@@ -2,7 +2,7 @@ import { i18n } from "@lingui/core";
 import { I18nProvider } from "@lingui/react";
 import CssBaseline from "@mui/material/CssBaseline";
 import { ThemeProvider } from "@mui/material/styles";
-import { Footer, Gdpr, Header, Seo } from "components";
+import { ContactUs, Footer, Gdpr, Header, Seo } from "components";
 import { AppProps } from "next/app";
 import theme from "../theme";
 

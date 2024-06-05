@@ -17,4 +17,5 @@ export { default as Seo } from "./Seo";
 export { default as Th } from "./Th";
 export { default as Title } from "./Title";
 export { default as Ul } from "./Ul";
+export { default as ContactUs } from "./ContactUs";
 export { default as Video } from "./Video";

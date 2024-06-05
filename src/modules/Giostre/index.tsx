@@ -8,6 +8,7 @@ import { Box, Button, Typography } from "@mui/material";
 import {
   Benefits,
   Columns,
+  ContactUs,
   Gallery,
   Hero,
   Section,
@@ -225,6 +226,8 @@ const Giostre: React.FC = () => {
       <Section color="primary">
         <Gallery images={IMAGES} md={3} />
       </Section>
+
+      <ContactUs color="warm1" />
     </>
   );
 };

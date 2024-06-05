@@ -22,6 +22,7 @@ type Props = {
   type?: "vertical" | "horizontal";
   color?: "primary" | "warm1" | "warm2";
   spacing?: "small" | "medium" | "big" | "menu";
+  textAlign?: "center" | "justify";
 } & Pick<ContainerProps, "maxWidth" | "children" | "sx">;
 
 const SectionStyled = styled(Container)<Props>(
@@ -72,13 +73,16 @@ const SectionStyledColored = styled(SectionStyled)<Props>(
     }
 );
 
-const StyledContainer = styled(Container)(() => ({
+const StyledContainer = styled(Container)<{
+  textAlign?: "center" | "justify";
+}>(({ textAlign }) => ({
   position: "relative",
+  textAlign,
 }));
 
-const Section: React.FC<Props> = ({ maxWidth, ...props }) => (
+const Section: React.FC<Props> = ({ maxWidth, textAlign, ...props }) => (
   <SectionStyledColored {...props} maxWidth={false}>
-    <StyledContainer disableGutters maxWidth={maxWidth}>
+    <StyledContainer disableGutters {...{ maxWidth, textAlign }}>
       {props.children}
     </StyledContainer>
   </SectionStyledColored>

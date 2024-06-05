@@ -210,6 +210,9 @@ msgstr "Contactez Pessastudio pour devis de marcheurs pour chevaux, obstacles, c
 msgid "Contattaci per un preventivo per ostacoli, recinti, tondini coperti, giostre, rettangoli da dressage e attrezzature per cavalli"
 msgstr "Contactez-nous pour un devis pour les obstacles, les clôtures, ronds de longe, les rectangles de dressage et l’équipement du cheval"
 
+msgid "Contattaci usando l'email <0>{0}</0> <1/>o chiamaci al numero: <2>{1}</2>"
+msgstr "Contactez-nous par email à <0>{0}</0> <1/>ou appelez-nous au numéro : <2>{1}</2>"
+
 msgid "Contatti"
 msgstr "Contact"
 
@@ -590,6 +593,9 @@ msgstr "Plot pour parcours d'obstacles {0}"
 msgid "Numero per campo ostacoli costruito in materiali robusti e leggeri. La forma piramidale ne assicurano la stabilitá. Perfetto per essere utilizzato in percorsi di salto ostacoli per cavalli."
 msgstr "Pion pour parcours d'obstacles construit en matériaux robustes et légers. Sa forme pyramidale assure sa stabilité. Parfait pour être utilisé dans les parcours de saut d'obstacles pour chevaux."
 
+msgid "Oppure visita la nostra pagina dei <0>contatti</0> per scoprire i rivenditori nella tua zona."
+msgstr "Ou visitez notre page de <0>contacts</0> pour découvrir les revendeurs dans votre région."
+
 msgid "Ostacoli"
 msgstr "Obstacle cheval"
 
@@ -847,6 +853,9 @@ msgstr "Nous utilisons des cookies pour assurer le bon fonctionnement du site. P
 
 msgid "Vedi"
 msgstr ""
+
+msgid "Vuoi maggiori informazioni?"
+msgstr "Vous souhaitez plus d'informations?"
 
 msgid "Website"
 msgstr "Site Internet"

@@ -204,6 +204,9 @@ msgstr "Contact Pessastudio for quotes on horse walkers, horse exerciser, jumper
 msgid "Contattaci per un preventivo per ostacoli, recinti, tondini coperti, giostre, rettangoli da dressage e attrezzature per cavalli"
 msgstr "Contact us for a quote for obstacles, fences, covered round pens, walkers, dressage rectangles, and equestrian equipment"
 
+msgid "Contattaci usando l'email <0>{0}</0> <1/>o chiamaci al numero: <2>{1}</2>"
+msgstr "Contact us via email at <0>{0}</0> <1/>or call us at: <2>{1}</2>"
+
 msgid "Contatti"
 msgstr "Contacts us"
 
@@ -601,6 +604,9 @@ msgstr "Number cone {0}"
 msgid "Numero per campo ostacoli costruito in materiali robusti e leggeri. La forma piramidale ne assicurano la stabilitá. Perfetto per essere utilizzato in percorsi di salto ostacoli per cavalli."
 msgstr "Number cone made from strong and lightweight materials. The pyramid shape ensures stability. Perfect for use in horse jumping courses."
 
+msgid "Oppure visita la nostra pagina dei <0>contatti</0> per scoprire i rivenditori nella tua zona."
+msgstr "Or visit our <0>contact</0> page to find resellers in your area."
+
 msgid "Ostacoli"
 msgstr "Show jumps"
 
@@ -858,6 +864,9 @@ msgstr "We use cookies to ensure the proper functioning of the site. For more in
 
 msgid "Vedi"
 msgstr "View"
+
+msgid "Vuoi maggiori informazioni?"
+msgstr "Do you want more information?"
 
 msgid "Website"
 msgstr "Website"

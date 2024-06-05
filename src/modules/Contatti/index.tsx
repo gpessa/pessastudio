@@ -107,7 +107,7 @@ const Contatti: React.FC = () => {
         <Grid container spacing={PRODUCT_GUTTER} alignItems="stretch">
           {CONTATTI_COMMERCIALI.map(({ name, data }, index) => (
             <Grid item md={3} key={index}>
-              <Card sx={{ minHeight: "100%" }}>
+              <Card sx={{ minHeight: "100%" }} elevation={0}>
                 <CardContent>
                   <Th variant="h5">{name}</Th>
                   <ContattiAddress {...data} />

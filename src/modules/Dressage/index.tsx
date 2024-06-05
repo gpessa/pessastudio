@@ -1,7 +1,7 @@
 import { Trans } from "@lingui/macro";
 import { useLingui } from "@lingui/react";
 import { Box, Grid, Link, Typography } from "@mui/material";
-import { Product, Section, Th, Ul } from "components";
+import { ContactUs, Product, Section, Th, Ul } from "components";
 import { usePages, useProducts } from "hooks";
 import React from "react";
 import { PRODUCT_GUTTER } from "theme";
@@ -99,6 +99,8 @@ const Dressage: React.FC = () => {
           ))}
         </Grid>
       </Section>
+
+      <ContactUs color="warm1" />
     </>
   );
 };

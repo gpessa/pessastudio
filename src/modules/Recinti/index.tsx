@@ -1,6 +1,13 @@
 import { t, Trans } from "@lingui/macro";
 import { Typography } from "@mui/material";
-import { Columns, ContentTable, Gallery, Section, Th } from "components";
+import {
+  Columns,
+  ContactUs,
+  ContentTable,
+  Gallery,
+  Section,
+  Th,
+} from "components";
 import { usePages, useProducts } from "hooks";
 import { useRouter } from "next/router";
 import React from "react";
@@ -130,6 +137,8 @@ const Recinti: React.FC = () => {
           />
         </Section>
       )}
+
+      <ContactUs />
     </>
   );
 };

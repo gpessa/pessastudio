@@ -7,6 +7,7 @@ import { Grid } from "@mui/material";
 import {
   Accessori,
   Benefits,
+  ContactUs,
   ContentTable,
   Gallery,
   Hero,
@@ -292,6 +293,8 @@ const Tondini: React.FC = () => {
           </Grid>
         </Grid>
       </Section>
+
+      <ContactUs />
     </>
   );
 };
