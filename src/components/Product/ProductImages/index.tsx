@@ -14,7 +14,7 @@ const ButtonBaseStyled = styled(ButtonBase)(({ theme }) => ({
   width: "100%",
 }));
 
-const ImgStyled = styled(Image)(({}) => ({
+const ImgStyled = styled(Image)(() => ({
   height: "auto",
   marginTop: "50%",
   position: "absolute",

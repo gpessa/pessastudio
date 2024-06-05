@@ -5,6 +5,7 @@ import NavigateNext from "@mui/icons-material/NavigateNext";
 import { Button, ButtonBase, Dialog, styled, Typography } from "@mui/material";
 import { useGallery } from "hooks";
 import React from "react";
+import Image from "next/image";
 
 const ButtonBackStyled = styled(ButtonBase)({
   "& > span": {
@@ -30,14 +31,14 @@ const ButtonNextStyled = styled(ButtonBase)({
   width: "50%",
 });
 
-const ImageStyled = styled("img")({
+const ImageStyled = styled(Image)({
   width: "100%",
 });
 
 const StyledCaption = styled(Typography)(({ theme }) => ({
-  backgroundColor: theme.palette.common.white,
+  backgroundColor: theme.palette.warm2.main,
   bottom: 0,
-  fontSize: theme.typography.small.fontSize,
+  color: theme.palette.common.black,
   left: 0,
   padding: theme.spacing(1),
   paddingLeft: theme.spacing(2),
@@ -53,6 +54,8 @@ type Props = {
 const ModalGallery: React.FC<Props> = ({ render, images }) => {
   const gallery = useGallery(images);
 
+  console.log(gallery.active);
+
   return (
     <>
       {render(gallery)}
@@ -60,7 +63,7 @@ const ModalGallery: React.FC<Props> = ({ render, images }) => {
       <Dialog open={!!gallery.active} onClose={gallery.close} maxWidth="md">
         {gallery.active && (
           <>
-            <ImageStyled src={gallery.active.image.src} />
+            <ImageStyled src={gallery.active.image} alt="" />
 
             {gallery.showPreviousEnabled && (
               <ButtonBackStyled onClick={gallery.showPrevious}>
@@ -79,7 +82,9 @@ const ModalGallery: React.FC<Props> = ({ render, images }) => {
             )}
 
             {gallery.active.caption && (
-              <StyledCaption>{gallery.active.caption}</StyledCaption>
+              <StyledCaption variant="caption">
+                {gallery.active.caption}
+              </StyledCaption>
             )}
           </>
         )}
