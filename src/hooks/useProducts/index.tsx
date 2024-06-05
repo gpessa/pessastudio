@@ -3,7 +3,6 @@ import { Typography } from "@mui/material";
 import { Ul } from "components";
 import { ProductData } from "components/Product";
 import usePages from "hooks/usePages";
-import { get } from "http";
 import { Colors } from "theme";
 import {
   CUBI_MODELS,
@@ -54,14 +53,9 @@ export enum ProductId {
   TONDINO_1500 = "TONDINO_1500",
 }
 
-const useUrlGenerator = () => ({
-  getUrl: (fragments: string[]) => fragments.join("/"),
-});
-
 type ProductList = { [key in keyof typeof ProductId]: ProductData };
 
 const useProducts = (): ProductList => {
-  const { getUrl } = useUrlGenerator();
   const { PRODUCTS } = usePages();
   const { BLU, GREEN, RED, WHITE, YELLOW } = Colors;
 
@@ -107,7 +101,7 @@ const useProducts = (): ProductList => {
         width: 95,
       },
       id: ProductId.BARRIERA_3_MT,
-      link: getUrl([PRODUCTS.OSTACOLI.url, "#" + ProductId.BARRIERA_3_MT]),
+      link: `${PRODUCTS.OSTACOLI.url}#${ProductId.BARRIERA_3_MT}`,
       name: t`Barriera per campo ostacoli (3 mt.)`,
       pictures: [
         require("assets/products/ostacoli/barriere-01.png"),
@@ -124,7 +118,7 @@ const useProducts = (): ProductList => {
         width: 2800,
       },
       id: ProductId.FOSSO,
-      link: getUrl([PRODUCTS.OSTACOLI.url, "#" + ProductId.FOSSO]),
+      link: `${PRODUCTS.OSTACOLI.url}#${ProductId.FOSSO}`,
       name: t`Fosso`,
       pictures: [require("assets/products/ostacoli/fosso.png")],
       price: 440,
@@ -139,10 +133,7 @@ const useProducts = (): ProductList => {
         width: 2000,
       },
       id: ProductId.CAVALLETTI_CAPRILLI,
-      link: getUrl([
-        PRODUCTS.OSTACOLI.url,
-        "#" + ProductId.CAVALLETTI_CAPRILLI,
-      ]),
+      link: `${PRODUCTS.OSTACOLI.url}#${ProductId.CAVALLETTI_CAPRILLI}`,
       name: t`Cavalletti Caprilli`,
       pictures: [require("assets/products/ostacoli/cavalletto-01.png")],
       price: 34,
@@ -156,10 +147,7 @@ const useProducts = (): ProductList => {
         width: 2000,
       },
       id: ProductId.CAVALLETTI_CAPRILLI_BARRIERA_KIT,
-      link: getUrl([
-        PRODUCTS.OSTACOLI.url,
-        "#" + ProductId.CAVALLETTI_CAPRILLI_BARRIERA_KIT,
-      ]),
+      link: `${PRODUCTS.OSTACOLI.url}#${ProductId.CAVALLETTI_CAPRILLI_BARRIERA_KIT}`,
       name: t`Kit Cavalletti Caprilli + barriera`,
       pictures: [
         require("assets/products/ostacoli/cavalletto-barriera-01.png"),
@@ -176,7 +164,7 @@ const useProducts = (): ProductList => {
         width: 350,
       },
       id: ProductId.CUBI_MINI,
-      link: getUrl([PRODUCTS.OSTACOLI.url, "#" + ProductId.CUBI_MINI]),
+      link: `${PRODUCTS.OSTACOLI.url}#${ProductId.CUBI_MINI}`,
       name: t`Cubi ${CUBI_MODELS.MINI}`,
       pictures: [
         require("assets/products/ostacoli/cubi-mini-01.png"),
@@ -196,7 +184,7 @@ const useProducts = (): ProductList => {
       },
 
       id: ProductId.CUBI_MAXI,
-      link: getUrl([PRODUCTS.OSTACOLI.url, "#" + ProductId.CUBI_MAXI]),
+      link: `${PRODUCTS.OSTACOLI.url}#${ProductId.CUBI_MAXI}`,
       name: t`Cubi ${CUBI_MODELS.MAXI}`,
       pictures: [
         require("assets/products/ostacoli/cubi-maxi-01.png"),
@@ -215,10 +203,7 @@ const useProducts = (): ProductList => {
       },
 
       id: ProductId.CANDELIERE_CON_PIEDE_IN_PVC_170,
-      link: getUrl([
-        PRODUCTS.OSTACOLI.url,
-        "#" + ProductId.CANDELIERE_CON_PIEDE_IN_PVC_170,
-      ]),
+      link: `${PRODUCTS.OSTACOLI.url}#${ProductId.CANDELIERE_CON_PIEDE_IN_PVC_170}`,
       name: t`Candeliere da ${formatSize(1700)} con piede in PVC`,
       pictures: [require("assets/products/ostacoli/candeliere-pvc-02.png")],
       price: 89,
@@ -232,10 +217,7 @@ const useProducts = (): ProductList => {
         width: 720,
       },
       id: ProductId.CANDELIERE_CON_PIEDE_IN_PVC_190,
-      link: getUrl([
-        PRODUCTS.OSTACOLI.url,
-        "#" + ProductId.CANDELIERE_CON_PIEDE_IN_PVC_190,
-      ]),
+      link: `${PRODUCTS.OSTACOLI.url}#${ProductId.CANDELIERE_CON_PIEDE_IN_PVC_190}`,
       name: t`Candeliere da ${formatSize(1900)} con piede in PVC`,
       pictures: [require("assets/products/ostacoli/candeliere-pvc-01.png")],
       price: 96,
@@ -248,7 +230,7 @@ const useProducts = (): ProductList => {
         width: 65,
       },
       id: ProductId.LAMA_DE_50,
-      link: getUrl([PRODUCTS.OSTACOLI.url, "#" + ProductId.LAMA_DE_50]),
+      link: `${PRODUCTS.OSTACOLI.url}#${ProductId.LAMA_DE_50}`,
       materials: [Material.ACCIAIO_ZINCATO],
       name: t`Lama DE da ${formatSize(500)}`,
       pictures: [require("assets/products/ostacoli/lama-de-150.png")],
@@ -262,7 +244,7 @@ const useProducts = (): ProductList => {
         width: 65,
       },
       id: ProductId.LAMA_DE_150,
-      link: getUrl([PRODUCTS.OSTACOLI.url, "#" + ProductId.LAMA_DE_150]),
+      link: `${PRODUCTS.OSTACOLI.url}#${ProductId.LAMA_DE_150}`,
       materials: [Material.ACCIAIO_ZINCATO],
       name: t`Lama DE da ${formatSize(1500)}`,
       pictures: [require("assets/products/ostacoli/lama-de-50.png")],
@@ -277,7 +259,7 @@ const useProducts = (): ProductList => {
         width: 110,
       },
       id: ProductId.CUCCHIAIO_DE,
-      link: getUrl([PRODUCTS.OSTACOLI.url, "#" + ProductId.CUCCHIAIO_DE]),
+      link: `${PRODUCTS.OSTACOLI.url}#${ProductId.CUCCHIAIO_DE}`,
       materials: [Material.TECNOPOLIMERO],
       name: t`Cucchiaio ${CUCCHIAI_MODELS.DE}`,
       pictures: [
@@ -296,7 +278,7 @@ const useProducts = (): ProductList => {
         width: 110,
       },
       id: ProductId.CUCCHIAIO_PS,
-      link: getUrl([PRODUCTS.OSTACOLI.url, "#" + ProductId.CUCCHIAIO_PS]),
+      link: `${PRODUCTS.OSTACOLI.url}#${ProductId.CUCCHIAIO_PS}`,
       materials: [Material.TECNOPOLIMERO],
       name: t`Cucchiaio ${CUCCHIAI_MODELS.PS}`,
       pictures: [
@@ -309,12 +291,13 @@ const useProducts = (): ProductList => {
     {
       description: t`Supporti di sicurezza da applicare ai nostri cucchiai per salvaguardare l'integrità degli arti dei vostri cavalli in maniera efficace ed economica.`,
       dimensions: {
-        height: 10,
-        length: 3,
-        width: 7,
+        height: 100,
+        length: 30,
+        weight: 0.05,
+        width: 70,
       },
       id: ProductId.SUPPORTO_SICUREZZA,
-      link: getUrl([PRODUCTS.OSTACOLI.url, "#" + ProductId.SUPPORTO_SICUREZZA]),
+      link: `${PRODUCTS.OSTACOLI.url}#${ProductId.SUPPORTO_SICUREZZA}`,
       materials: [Material.PLASTICA],
       name: t`Supporto di sicurezza`,
       pictures: [
@@ -323,17 +306,12 @@ const useProducts = (): ProductList => {
         require("assets/products/ostacoli/supporto-di-sicurezza-04.png"),
       ],
       price: 4,
-      weight: 0.05,
-      width: 37,
     },
     {
       description: t`Bandierine realizzate in plastica resistente agli urti. Ideali per allenamenti e competizioni, offrono una visibilità eccellente e una lunga durata nel tempo.`,
       dimensions: {},
       id: ProductId.OSTACOLI_BANDIERINE,
-      link: getUrl([
-        PRODUCTS.OSTACOLI.url,
-        "#" + ProductId.OSTACOLI_BANDIERINE,
-      ]),
+      link: `${PRODUCTS.OSTACOLI.url}#${ProductId.OSTACOLI_BANDIERINE}`,
       materials: [Material.PLASTICA],
       name: t`Bandierine`,
       pictures: [require("assets/products/ostacoli/bandierine.jpg")],
@@ -348,10 +326,7 @@ const useProducts = (): ProductList => {
         width: 200,
       },
       id: ProductId.NUMERO_CAMPO_OSTACOLI_PROFESSIONAL,
-      link: getUrl([
-        PRODUCTS.OSTACOLI.url,
-        "#" + ProductId.NUMERO_CAMPO_OSTACOLI_PROFESSIONAL,
-      ]),
+      link: `${PRODUCTS.OSTACOLI.url}#${ProductId.NUMERO_CAMPO_OSTACOLI_PROFESSIONAL}`,
       materials: [Material.POLIETILENE],
       name: t`Numero per campo ostacoli ${SEGNALETICA_MODELS.PROFESSIONAL}`,
       pictures: [require("assets/products/ostacoli/numero-professional.png")],
@@ -366,10 +341,7 @@ const useProducts = (): ProductList => {
         width: 330,
       },
       id: ProductId.NUMERO_CAMPO_OSTACOLI_LIGHT,
-      link: getUrl([
-        PRODUCTS.OSTACOLI.url,
-        "#" + ProductId.NUMERO_CAMPO_OSTACOLI_LIGHT,
-      ]),
+      link: `${PRODUCTS.OSTACOLI.url}#${ProductId.NUMERO_CAMPO_OSTACOLI_LIGHT}`,
       materials: [Material.POLIPROPILENE],
       name: t`Numero per campo ostacoli ${SEGNALETICA_MODELS.LIGHT}`,
       pictures: [require("assets/products/ostacoli/numero-light.png")],
