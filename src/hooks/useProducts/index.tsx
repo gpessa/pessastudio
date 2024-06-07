@@ -531,27 +531,27 @@ const useProducts = (): ProductList => {
         id: ProductId.TONDINO_1320,
         price: 20000,
         sides: 16,
-        size: 13.2,
+        size: 13200,
       },
       {
         id: ProductId.TONDINO_1500,
         sides: 18,
-        size: 15.0,
+        size: 15000,
       },
       {
         id: ProductId.TONDINO_1660,
         sides: 20,
-        size: 16.6,
+        size: 16600,
       },
       {
         id: ProductId.TONDINO_1830,
         sides: 22,
-        size: 18.3,
+        size: 18300,
       },
       {
         id: ProductId.TONDINO_1990,
         sides: 24,
-        size: 19.9,
+        size: 19900,
       },
     ].map(({ sides, size, price, id }) => ({
       description: t`Tondino per cavalli coperto, ideale per allenamenti e addestramenti in ogni stagione. Realizzato con struttura robusta e materiali resistenti, offre protezione dagli agenti atmosferici. Facile da montare, garantisce sicurezza e comfort per cavalli e cavalieri, migliorando le prestazioni in un ambiente controllato.`,
