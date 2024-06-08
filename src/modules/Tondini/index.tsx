@@ -27,13 +27,21 @@ import productsTondiniAccessoriCoperturaTerra_1 from "assets/products/tondini/ac
 import productsTondiniAccessoriIrrigazione_1 from "assets/products/tondini/accessori/irrigazione-1.jpg";
 import { AccessoriProps } from "components/Accessori";
 import { BeneftisProps } from "components/Benefits";
-import { usePages } from "hooks";
+import { usePages, useProducts } from "hooks";
+import { formatSizeMeter } from "utils/format";
 import image from "./assets/background.jpg";
 export { getStaticProps } from "utils/getProps";
 
 const Tondini: React.FC = () => {
   useLingui(); // Fix on locale change
   const { PAGES } = usePages();
+  const {
+    TONDINO_1320,
+    TONDINO_1500,
+    TONDINO_1660,
+    TONDINO_1830,
+    TONDINO_1990,
+  } = useProducts();
 
   const ACCESSORI: AccessoriProps = {
     accessories: [
@@ -177,29 +185,14 @@ const Tondini: React.FC = () => {
   ];
 
   const DIMENSIONS = [
-    {
-      sides: 16,
-      size: 13.2,
-    },
-    {
-      sides: 18,
-      size: 15.0,
-    },
-    {
-      sides: 20,
-      size: 16.6,
-    },
-    {
-      sides: 22,
-      size: 18.3,
-    },
-    {
-      sides: 24,
-      size: 19.9,
-    },
-  ].map(({ sides, size }) => ({
-    file: `/products/tondini/tondino-${sides}.pdf`,
-    label: t`Tondino coperto ${sides} pannelli ${size}`,
+    TONDINO_1320,
+    TONDINO_1500,
+    TONDINO_1660,
+    TONDINO_1830,
+    TONDINO_1990,
+  ].map(({ dimensions: { width } }) => ({
+    file: `/products/tondini/tondino-${width!}.pdf`,
+    label: t`Tondino coperto ${formatSizeMeter(width!)}`,
   }));
 
   const MANUALS = [

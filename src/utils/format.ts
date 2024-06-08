@@ -1,21 +1,18 @@
 import { i18n } from "@lingui/core";
 
-export const formatSize = (v: number) => {
-  const isBigNumber = v > 1000;
-  const value = isBigNumber ? v / 1000 : v;
+export const formatSize = (v: number) =>
+  i18n.number(v, {
+    notation: "standard",
+    style: "unit",
+    unit: "centimeter",
+  });
 
-  return isBigNumber
-    ? i18n.number(value, {
-        notation: "standard",
-        style: "unit",
-        unit: "meter",
-      }) + "t"
-    : i18n.number(value, {
-        notation: "standard",
-        style: "unit",
-        unit: "centimeter",
-      });
-};
+export const formatSizeMeter = (v: number) =>
+  i18n.number(v / 1000, {
+    notation: "standard",
+    style: "unit",
+    unit: "meter",
+  }) + "t";
 
 export const formatWeight = (v: number) =>
   i18n.number(v, {

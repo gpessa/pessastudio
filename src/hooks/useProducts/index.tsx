@@ -11,7 +11,7 @@ import {
   Material,
   SEGNALETICA_MODELS,
 } from "utils/constants";
-import { formatSize } from "utils/format";
+import { formatSize, formatSizeMeter } from "utils/format";
 
 export enum ProductId {
   DRESSAGE_OLYMPIC_LETTERA = "DRESSAGE_OLYMPIC_LETTERA",
@@ -561,7 +561,7 @@ const useProducts = (): ProductList => {
       },
       id,
       link: PRODUCTS.TONDINI.url,
-      name: t`Tondino coperto ${sides} pannelli ${formatSize(size)}`,
+      name: t`Tondino coperto ${sides} pannelli ${formatSizeMeter(size)}`,
       pictures: [
         require("assets/products/tondini/gallery/tondino-1.jpg"),
         require("assets/products/tondini/gallery/tondino-2.jpg"),

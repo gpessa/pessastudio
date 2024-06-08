@@ -802,6 +802,9 @@ msgstr "Tondini coperti per addestrare puledri in libertà"
 msgid "Tondino"
 msgstr "Tondino"
 
+msgid "Tondino coperto {0}"
+msgstr "Tondino coperto {0}"
+
 msgid "Tondino coperto {sides} pannelli {0}"
 msgstr "Tondino coperto {sides} pannelli {0}"
 
