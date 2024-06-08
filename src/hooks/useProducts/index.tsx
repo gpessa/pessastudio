@@ -566,6 +566,7 @@ const useProducts = (): ProductList => {
         require("assets/products/tondini/gallery/tondino-1.jpg"),
         require("assets/products/tondini/gallery/tondino-2.jpg"),
         require("assets/products/tondini/gallery/tondino-3.jpg"),
+        require("assets/products/tondini/gallery/tondino-4.jpg"),
       ],
       price,
     })),
