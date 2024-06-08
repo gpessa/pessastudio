@@ -54,8 +54,6 @@ type Props = {
 const ModalGallery: React.FC<Props> = ({ render, images }) => {
   const gallery = useGallery(images);
 
-  console.log(gallery.active);
-
   return (
     <>
       {render(gallery)}
