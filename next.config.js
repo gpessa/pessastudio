@@ -1,11 +1,17 @@
 /** @type {import('next').NextConfig} */
 
 module.exports = {
-  reactStrictMode: true,
-  i18n: {
-    locales: ['it', 'fr', 'en'],
-    defaultLocale: 'en'
+  experimental: {
+    legacyBrowsers: false,
+    swcPlugins: [
+      ['@lingui/swc-plugin', {}],
+    ],
   },
+  i18n: {
+    defaultLocale: 'en',
+    locales: ['it', 'fr', 'en']
+  },
+  reactStrictMode: true,
   webpack: (config) => {
     config.module.rules.push({
       test: /\.po/,
@@ -13,10 +19,5 @@ module.exports = {
     })
 
     return config;
-  },
-  experimental: {
-    swcPlugins: [
-      ['@lingui/swc-plugin', {}],
-    ],
   },
 }
