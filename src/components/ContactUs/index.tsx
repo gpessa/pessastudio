@@ -1,5 +1,5 @@
 import { Trans, t } from "@lingui/macro";
-import { Typography, Link, Divider, Stack } from "@mui/material";
+import { Link, Stack, Typography } from "@mui/material";
 import { sendGAEvent } from "@next/third-parties/google";
 import { Title } from "components";
 import Section from "components/Section";
@@ -21,7 +21,12 @@ const ContactUs: React.FC<Pick<Parameters<typeof Section>[0], "color">> = ({
           <Trans>
             Contattaci usando l'email{" "}
             <Link
-              onClick={() => sendGAEvent({ event: "click_on_contact" })}
+              onClick={() =>
+                sendGAEvent({
+                  event: "click_on_contact",
+                  value: "click_on_contact",
+                })
+              }
               underline="hover"
               href={`mailto:${ITALIA.email}`}
             >
@@ -29,7 +34,12 @@ const ContactUs: React.FC<Pick<Parameters<typeof Section>[0], "color">> = ({
             </Link>{" "}
             <br />o chiamaci al numero:{" "}
             <Link
-              onClick={() => sendGAEvent({ event: "click_on_contact" })}
+              onClick={() =>
+                sendGAEvent({
+                  event: "click_on_contact",
+                  value: "click_on_contact",
+                })
+              }
               underline="hover"
               href={`tel:${ITALIA.telephone.replace(/ /g, "")}`}
             >
@@ -42,7 +52,12 @@ const ContactUs: React.FC<Pick<Parameters<typeof Section>[0], "color">> = ({
           <Trans>
             Oppure visita la nostra pagina dei{" "}
             <Link
-              onClick={() => sendGAEvent({ event: "click_on_contact" })}
+              onClick={() =>
+                sendGAEvent({
+                  event: "click_on_contact",
+                  value: "click_on_contact",
+                })
+              }
               href={NAVIGATION.CONTATTI.url}
               component={LinkNext}
             >
