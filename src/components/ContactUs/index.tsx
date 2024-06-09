@@ -1,5 +1,6 @@
 import { Trans, t } from "@lingui/macro";
 import { Typography, Link, Divider, Stack } from "@mui/material";
+import { sendGAEvent } from "@next/third-parties/google";
 import { Title } from "components";
 import Section from "components/Section";
 import { usePages } from "hooks";
@@ -19,11 +20,16 @@ const ContactUs: React.FC<Pick<Parameters<typeof Section>[0], "color">> = ({
         <Typography fontSize="120%">
           <Trans>
             Contattaci usando l'email{" "}
-            <Link underline="hover" href={`mailto:${ITALIA.email}`}>
+            <Link
+              onClick={() => sendGAEvent({ event: "click_on_contact" })}
+              underline="hover"
+              href={`mailto:${ITALIA.email}`}
+            >
               {ITALIA.email}
             </Link>{" "}
             <br />o chiamaci al numero:{" "}
             <Link
+              onClick={() => sendGAEvent({ event: "click_on_contact" })}
               underline="hover"
               href={`tel:${ITALIA.telephone.replace(/ /g, "")}`}
             >
@@ -35,7 +41,11 @@ const ContactUs: React.FC<Pick<Parameters<typeof Section>[0], "color">> = ({
         <Typography fontSize="120%">
           <Trans>
             Oppure visita la nostra pagina dei{" "}
-            <Link href={NAVIGATION.CONTATTI.url} component={LinkNext}>
+            <Link
+              onClick={() => sendGAEvent({ event: "click_on_contact" })}
+              href={NAVIGATION.CONTATTI.url}
+              component={LinkNext}
+            >
               contatti
             </Link>{" "}
             per scoprire i rivenditori nella tua zona.

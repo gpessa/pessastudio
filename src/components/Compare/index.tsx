@@ -15,6 +15,7 @@ import {
 import { Section, Th } from "components";
 import React from "react";
 import { BREAKPOINT, PRODUCT_GUTTER } from "theme";
+import { sendGAEvent } from "@next/third-parties/google";
 
 const TableCellStyled = styled(TableCell)<{ type?: string }>(({ type }) => ({
   display: "table-cell",
@@ -138,7 +139,7 @@ const CompareMD: React.FC<Omit<Props, "title">> = ({
               <Button
                 color="primary"
                 href={`mailto:annapessa@pessastudio.eu?subject=Info Giostra`}
-                id="ask-quote"
+                onClick={() => sendGAEvent({ event: "request_quote" })}
               >
                 <Trans>Richiedi un preventivo</Trans>
               </Button>
