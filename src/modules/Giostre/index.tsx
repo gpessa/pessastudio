@@ -218,10 +218,7 @@ const Giostre: React.FC = () => {
         }
       />
 
-      <Video
-        src={"https://www.youtube.com/embed/1C7R5u270QE"}
-        title={t`Giostra in movimento`}
-      />
+      <Video videoid="1C7R5u270QE" />
 
       <Section color="primary">
         <Gallery images={IMAGES} md={3} />

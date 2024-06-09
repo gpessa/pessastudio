@@ -1,4 +1,5 @@
-import { Box, styled } from "@mui/material";
+import { Box, makeStyles, styled } from "@mui/material";
+import { YouTubeEmbed } from "@next/third-parties/google";
 import { Section } from "components";
 import React from "react";
 
@@ -11,33 +12,14 @@ const VideoSectionStyled = styled(Section)(({ theme }) => ({
   )`,
 }));
 
-const BoxStyled = styled(Box)(() => ({
-  height: 0,
-  overflow: "hidden",
-  paddingTop: "55%",
-  position: "relative",
-}));
-
-const IframeStyled = styled("iframe")({
-  border: 0,
-  height: "100%",
-  left: 0,
-  position: "absolute",
-  top: 0,
-  width: "100%",
-});
-
-const Video: React.FC<{ src: string; title: string }> = ({ src, title }) => (
+const Video: React.FC<{ videoid: string }> = ({ videoid }) => (
   <VideoSectionStyled>
-    <BoxStyled>
-      <IframeStyled
-        src={`${src}?controls=0`}
-        allowFullScreen
-        title={title}
-        width="100%"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-      ></IframeStyled>
-    </BoxStyled>
+    <YouTubeEmbed
+      videoid={videoid}
+      style={
+        "width: 80%; max-width: 80%; justify-content: center; margin-left: 10%"
+      }
+    />
   </VideoSectionStyled>
 );
 

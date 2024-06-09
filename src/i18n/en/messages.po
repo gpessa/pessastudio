@@ -336,9 +336,6 @@ msgstr "Product range"
 msgid "Giostra"
 msgstr "Horse exerciser"
 
-msgid "Giostra {0} in movimento"
-msgstr "{0} horse exerciser"
-
 msgid "Giostra {horses} cavalli"
 msgstr ""
 
@@ -380,9 +377,6 @@ msgstr "Horse Walker Base"
 
 msgid "Giostra con corridoio TECNOFENCE"
 msgstr "Walker with TECNOFENCE corridor"
-
-msgid "Giostra in movimento"
-msgstr "Horse exerciser"
 
 msgid "Giostra Ippowalker"
 msgstr "Ippowalker horse exerciser"

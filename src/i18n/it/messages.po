@@ -334,9 +334,6 @@ msgstr "Gamma"
 msgid "Giostra"
 msgstr "Giostra"
 
-msgid "Giostra {0} in movimento"
-msgstr "Giostra {0} in movimento"
-
 msgid "Giostra {horses} cavalli"
 msgstr "Giostra {horses} cavalli"
 
@@ -363,9 +360,6 @@ msgstr "Giostra base"
 
 msgid "Giostra con corridoio TECNOFENCE"
 msgstr "Giostra con corridoio TECNOFENCE"
-
-msgid "Giostra in movimento"
-msgstr "Giostra in movimento"
 
 msgid "Giostra Ippowalker"
 msgstr "Giostra Ippowalker"

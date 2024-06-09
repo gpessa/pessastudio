@@ -67,10 +67,7 @@ const GiostreIppowalker: React.FC = () => {
         right={<IppowalkerGallery />}
       />
 
-      <Video
-        src={"https://www.youtube-nocookie.com/embed/slFfbd7kTzg"}
-        title={t`Giostra ${GIOSTRE_MODELS.IPPOWALKER} in movimento`}
-      />
+      <Video videoid="slFfbd7kTzg" />
 
       <IppowalkerCorridoi />
 

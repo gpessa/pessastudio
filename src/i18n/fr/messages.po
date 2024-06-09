@@ -342,9 +342,6 @@ msgstr "Gamme"
 msgid "Giostra"
 msgstr "Marcheur"
 
-msgid "Giostra {0} in movimento"
-msgstr "Marcheur pour chevaux {0}"
-
 msgid "Giostra {horses} cavalli"
 msgstr "Marcheur ({horses} chevaux)"
 
@@ -373,9 +370,6 @@ msgstr "Marcheur base"
 
 msgid "Giostra con corridoio TECNOFENCE"
 msgstr "Marcheur Couloir TECNOFENCE"
-
-msgid "Giostra in movimento"
-msgstr "Marcheur pour chevaux"
 
 msgid "Giostra Ippowalker"
 msgstr "Marcheur Ippowalker"

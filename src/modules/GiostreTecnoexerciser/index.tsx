@@ -65,10 +65,7 @@ const GiostreTecnoexerciser: React.FC = () => {
         right={<TecnoexerciserGallery />}
       />
 
-      <Video
-        src={"https://www.youtube-nocookie.com/embed/mkB5ZPK9swA"}
-        title={t`Giostra ${GIOSTRE_MODELS.TECNOEXERCISER} in movimento`}
-      />
+      <Video videoid="mkB5ZPK9swA" />
 
       <TecnoexerciserCorridoi />
 
