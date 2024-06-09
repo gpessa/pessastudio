@@ -21,11 +21,7 @@ const ContactUs: React.FC<Pick<Parameters<typeof Section>[0], "color">> = ({
           <Trans>
             Contattaci usando l'email{" "}
             <Link
-              onClick={() =>
-                sendGAEvent({
-                  event: "click_on_contact",
-                })
-              }
+              onClick={() => sendGAEvent("event", "click_on_contact")}
               underline="hover"
               href={`mailto:${ITALIA.email}`}
             >
@@ -33,11 +29,7 @@ const ContactUs: React.FC<Pick<Parameters<typeof Section>[0], "color">> = ({
             </Link>{" "}
             <br />o chiamaci al numero:{" "}
             <Link
-              onClick={() =>
-                sendGAEvent({
-                  event: "click_on_contact",
-                })
-              }
+              onClick={() => sendGAEvent("event", "click_on_contact")}
               underline="hover"
               href={`tel:${ITALIA.telephone.replace(/ /g, "")}`}
             >
@@ -50,11 +42,7 @@ const ContactUs: React.FC<Pick<Parameters<typeof Section>[0], "color">> = ({
           <Trans>
             Oppure visita la nostra pagina dei{" "}
             <Link
-              onClick={() =>
-                sendGAEvent({
-                  event: "click_on_contact",
-                })
-              }
+              onClick={() => sendGAEvent("event", "click_on_contact")}
               href={NAVIGATION.CONTATTI.url}
               component={LinkNext}
             >
