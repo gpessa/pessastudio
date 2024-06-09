@@ -24,7 +24,6 @@ const ContactUs: React.FC<Pick<Parameters<typeof Section>[0], "color">> = ({
               onClick={() =>
                 sendGAEvent({
                   event: "click_on_contact",
-                  value: "click_on_contact",
                 })
               }
               underline="hover"
@@ -37,7 +36,6 @@ const ContactUs: React.FC<Pick<Parameters<typeof Section>[0], "color">> = ({
               onClick={() =>
                 sendGAEvent({
                   event: "click_on_contact",
-                  value: "click_on_contact",
                 })
               }
               underline="hover"
@@ -55,7 +53,6 @@ const ContactUs: React.FC<Pick<Parameters<typeof Section>[0], "color">> = ({
               onClick={() =>
                 sendGAEvent({
                   event: "click_on_contact",
-                  value: "click_on_contact",
                 })
               }
               href={NAVIGATION.CONTATTI.url}
