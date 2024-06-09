@@ -2,21 +2,20 @@ import { i18n } from "@lingui/core";
 import { I18nProvider } from "@lingui/react";
 import CssBaseline from "@mui/material/CssBaseline";
 import { ThemeProvider } from "@mui/material/styles";
-import { ContactUs, Footer, Gdpr, Header, Seo } from "components";
+import { Footer, Gdpr, Header, Seo } from "components";
 import { AppProps } from "next/app";
 import theme from "../theme";
 
 import { AppCacheProvider } from "@mui/material-nextjs/v13-pagesRouter";
+import { GoogleAnalytics } from "@next/third-parties/google";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import Breadcrumb from "components/Breadcrumb";
 import { useLinguiInit } from "hooks/useLingui";
 import { Session } from "next-auth";
 import { SessionProvider } from "next-auth/react";
 import "pure-react-carousel/dist/react-carousel.es.css";
-import { useEffect } from "react";
-import TagManager from "react-gtm-module";
-import packageJson from "../../package.json";
 import { isProduction } from "utils/constants";
+import packageJson from "../../package.json";
 
 export type MyAppProps = AppProps<{ messages: any }> & {
   session: Session;
@@ -24,11 +23,6 @@ export type MyAppProps = AppProps<{ messages: any }> & {
 
 const MyApp = (props: MyAppProps) => {
   const { Component, session, pageProps } = props;
-
-  useEffect(() => {
-    // We add Tag manager only in production so the tracking happen only there
-    isProduction && TagManager.initialize({ gtmId: "GTM-NTCR82T" });
-  }, []);
 
   useLinguiInit(pageProps.messages);
 
@@ -48,6 +42,7 @@ const MyApp = (props: MyAppProps) => {
           </ThemeProvider>
         </I18nProvider>
       </SessionProvider>
+      {isProduction && <GoogleAnalytics gaId="G-11DED996WJ" />}
     </AppCacheProvider>
   );
 };
