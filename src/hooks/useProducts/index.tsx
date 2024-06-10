@@ -46,11 +46,15 @@ export enum ProductId {
   RECINZIONE_4_FILAGNE = "RECINZIONE_4_FILAGNE",
   RECINZIONE_PIEDE_MOBILE = "RECINZIONE_PIEDE_MOBILE",
   TONDINO_1320 = "TONDINO_1320",
-  TONDINO_15m0 = "TONDINO_1500",
+  TONDINO_1500 = "TONDINO_1500",
   TONDINO_1660 = "TONDINO_1660",
   TONDINO_1830 = "TONDINO_1830",
   TONDINO_1990 = "TONDINO_1990",
-  TONDINO_1500 = "TONDINO_1500",
+  GIOSTRA_4_CAVALLI_1200 = "GIOSTRA_4_CAVALLI_1200",
+  GIOSTRA_6_CAVALLI_1440 = "GIOSTRA_6_CAVALLI_1440",
+  GIOSTRA_6_CAVALLI_1600 = "GIOSTRA_6_CAVALLI_1600",
+  GIOSTRA_6_CAVALLI_1760 = "GIOSTRA_6_CAVALLI_1760",
+  GIOSTRA_8_CAVALLI_1920 = "GIOSTRA_8_CAVALLI_1920",
 }
 
 type ProductList = { [key in keyof typeof ProductId]: ProductData };
@@ -529,6 +533,55 @@ const useProducts = (): ProductList => {
       price: 7920,
     },
 
+    // GIOSTRE
+    ...[
+      {
+        horses: 4,
+        id: ProductId.GIOSTRA_4_CAVALLI_1200,
+        price: 5900,
+        width: 12000,
+      },
+      {
+        horses: 6,
+        id: ProductId.GIOSTRA_6_CAVALLI_1440,
+        price: 7300,
+        width: 14400,
+      },
+      {
+        horses: 6,
+        id: ProductId.GIOSTRA_6_CAVALLI_1600,
+        price: 7800,
+        width: 16000,
+      },
+      {
+        horses: 6,
+        id: ProductId.GIOSTRA_6_CAVALLI_1760,
+        price: 7900,
+        width: 17600,
+      },
+      {
+        horses: 8,
+        id: ProductId.GIOSTRA_8_CAVALLI_1920,
+        price: 9100,
+        width: 19200,
+      },
+    ].map(({ id, price, horses, width }) => ({
+      description: "",
+      dimensions: {
+        length: width,
+        width,
+      },
+      id,
+      link: PRODUCTS.GIOSTRE.url,
+      name: t`Giostra per ${horses} cavalli, solo motore (${formatSize(
+        width
+      )})`,
+      pictures: [
+        require("assets/products/giostre/gallery/giostra-solo-motore.jpg"),
+      ],
+      price,
+    })),
+
     // TONDINI
     ...[
       {
@@ -574,8 +627,6 @@ const useProducts = (): ProductList => {
       ],
       price,
     })),
-
-    // GIOSTRE
   ];
 
   return PRODUCTS_LIST.reduce(
