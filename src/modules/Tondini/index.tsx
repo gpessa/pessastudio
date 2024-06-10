@@ -33,7 +33,9 @@ import image from "./assets/background.jpg";
 export { getStaticProps } from "utils/getProps";
 
 const Tondini: React.FC = () => {
-  useLingui(); // Fix on locale change
+  const {
+    i18n: { locale },
+  } = useLingui(); // Fix on locale change
   const { PAGES } = usePages();
   const {
     TONDINO_1320,
@@ -185,15 +187,11 @@ const Tondini: React.FC = () => {
   ];
 
   const DIMENSIONS = [
-    TONDINO_1320,
-    TONDINO_1500,
-    TONDINO_1660,
-    TONDINO_1830,
-    TONDINO_1990,
-  ].map(({ dimensions: { width } }) => ({
-    file: `/products/tondini/tondino-${width!}.pdf`,
-    label: t`Tondino coperto ${formatSizeMeter(width!)}`,
-  }));
+    {
+      file: `/products/tondini/scheda-techina-tondino-${locale!}.pdf`,
+      label: t`Tondino coperto`,
+    },
+  ];
 
   const MANUALS = [
     {

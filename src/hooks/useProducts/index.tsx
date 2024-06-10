@@ -308,7 +308,11 @@ const useProducts = (): ProductList => {
     },
     {
       description: t`Bandierine realizzate in plastica resistente agli urti. Ideali per allenamenti e competizioni, offrono una visibilità eccellente e una lunga durata nel tempo.`,
-      dimensions: {},
+      dimensions: {
+        height: 25,
+        length: 1.5,
+        width: 20,
+      },
       id: ProductId.OSTACOLI_BANDIERINE,
       link: `${PRODUCTS.OSTACOLI.url}#${ProductId.OSTACOLI_BANDIERINE}`,
       materials: [Material.PLASTICA],
@@ -344,7 +348,7 @@ const useProducts = (): ProductList => {
       materials: [Material.POLIPROPILENE],
       name: t`Numero per campo ostacoli ${SEGNALETICA_MODELS.LIGHT}`,
       pictures: [require("assets/products/ostacoli/numero-light.png")],
-      price: 16,
+      price: 22,
     },
 
     // RECINTI
@@ -570,6 +574,8 @@ const useProducts = (): ProductList => {
       ],
       price,
     })),
+
+    // GIOSTRE
   ];
 
   return PRODUCTS_LIST.reduce(
