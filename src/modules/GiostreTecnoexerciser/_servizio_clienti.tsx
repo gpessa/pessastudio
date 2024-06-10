@@ -11,34 +11,10 @@ const TecnoexerciserServizioClienti = () => {
 
   const DIMENSIONS = [
     {
-      sides: 15,
-      size: 12,
+      file: `/products/giostre/pdf/scheda-techina-giostra-${locale}.pdf`,
+      label: t`Dimensioni giostra cavalli`,
     },
-    {
-      sides: 18,
-      size: 14.4,
-    },
-    {
-      sides: 20,
-      size: 16,
-    },
-    {
-      sides: 22,
-      size: 17.5,
-    },
-    {
-      sides: 24,
-      size: 19.2,
-    },
-  ].map(({ sides, size }) => ({
-    file: `/products/giostre/tecnoexerciser/pdf/giostra-tecnoexerciser-${sides}.pdf`,
-    label: (
-      <Trans>
-        Dimensioni giostra {sides} pannelli {size} mt. e istruzioni preparazione
-        fondo
-      </Trans>
-    ),
-  }));
+  ];
 
   const MANUALI = {
     fr: [

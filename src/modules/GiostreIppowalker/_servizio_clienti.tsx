@@ -9,10 +9,12 @@ const IppowalkerServizioClienti = () => {
   const { locale } = useRouter();
   const { PAGES } = usePages();
 
-  const DIMENSIONS = [4, 6].map((horses) => ({
-    file: `/products/giostre/ippowalker/pdf/giostra-ippowalker-${horses}.pdf`,
-    label: t`Giostra {horses} cavalli`,
-  }));
+  const DIMENSIONS = [
+    {
+      file: `/products/giostre/pdf/scheda-techina-giostra-${locale}.pdf`,
+      label: t`Dimensioni giostra cavalli`,
+    },
+  ];
 
   const MANUALI = {
     fr: [
@@ -29,7 +31,6 @@ const IppowalkerServizioClienti = () => {
       {
         // FIXME check it works
         file: "/products/giostre/ippowalker/pdf/manuale-quadro-ippowalker-it.pdf",
-
         label: t`Manuale quadro di controllo`,
       },
       {

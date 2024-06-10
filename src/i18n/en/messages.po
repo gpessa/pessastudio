@@ -285,8 +285,8 @@ msgstr "About us"
 msgid "Dimensioni"
 msgstr "Dimensions"
 
-msgid "Dimensioni giostra {sides} pannelli {size} mt. e istruzioni preparazione fondo"
-msgstr "Walker dimensions {sides} panels {size} m and base preparation instructions"
+msgid "Dimensioni giostra cavalli"
+msgstr "Horse exerciser dimensions"
 
 msgid "Dressage"
 msgstr "Dressage"
@@ -335,9 +335,6 @@ msgstr "Product range"
 
 msgid "Giostra"
 msgstr "Horse exerciser"
-
-msgid "Giostra {horses} cavalli"
-msgstr ""
 
 msgid "Giostra <0/>corridoio EASY"
 msgstr ""
@@ -817,8 +814,8 @@ msgstr "Covered round pens for training free-roaming foals"
 msgid "Tondino"
 msgstr "Covered lunge pen"
 
-msgid "Tondino coperto {0}"
-msgstr "Covered lunge pen {0}"
+msgid "Tondino coperto"
+msgstr ""
 
 msgid "Tondino coperto {sides} pannelli {0}"
 msgstr "Covered lunge pen, {sides} panels, {0} mt."

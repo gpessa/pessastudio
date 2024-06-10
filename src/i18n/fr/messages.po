@@ -291,8 +291,8 @@ msgstr "Ils disent de nous"
 msgid "Dimensioni"
 msgstr "Dimensions"
 
-msgid "Dimensioni giostra {sides} pannelli {size} mt. e istruzioni preparazione fondo"
-msgstr "Dimensions du marcheur {sides} panneaux {size} mt. et instructions de préparation du fond"
+msgid "Dimensioni giostra cavalli"
+msgstr ""
 
 msgid "Dressage"
 msgstr "Dressage"
@@ -341,9 +341,6 @@ msgstr "Gamme"
 
 msgid "Giostra"
 msgstr "Marcheur"
-
-msgid "Giostra {horses} cavalli"
-msgstr "Marcheur ({horses} chevaux)"
 
 msgid "Giostra <0/>corridoio EASY"
 msgstr "Marcheur<0/>couloir EASY"
@@ -806,8 +803,8 @@ msgstr "Ronds de longe couverts pour le dressage des jeunes chevaux en liberté"
 msgid "Tondino"
 msgstr "Rond de longe"
 
-msgid "Tondino coperto {0}"
-msgstr "Rond de longe {0}"
+msgid "Tondino coperto"
+msgstr "Covered lunge pen"
 
 msgid "Tondino coperto {sides} pannelli {0}"
 msgstr "Rond de longe couvert {0}"

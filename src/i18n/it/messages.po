@@ -283,8 +283,8 @@ msgstr "Dicono di noi"
 msgid "Dimensioni"
 msgstr "Dimensioni"
 
-msgid "Dimensioni giostra {sides} pannelli {size} mt. e istruzioni preparazione fondo"
-msgstr "Dimensioni giostra {sides} pannelli {size} mt. e istruzioni preparazione fondo"
+msgid "Dimensioni giostra cavalli"
+msgstr "Dimensioni giostra cavalli"
 
 msgid "Dressage"
 msgstr "Dressage"
@@ -333,9 +333,6 @@ msgstr "Gamma"
 
 msgid "Giostra"
 msgstr "Giostra"
-
-msgid "Giostra {horses} cavalli"
-msgstr "Giostra {horses} cavalli"
 
 msgid "Giostra <0/>corridoio EASY"
 msgstr "Giostra <0/>corridoio EASY"
@@ -796,8 +793,8 @@ msgstr "Tondini coperti per addestrare puledri in libertà"
 msgid "Tondino"
 msgstr "Tondino"
 
-msgid "Tondino coperto {0}"
-msgstr "Tondino coperto {0}"
+msgid "Tondino coperto"
+msgstr "Tondino coperto"
 
 msgid "Tondino coperto {sides} pannelli {0}"
 msgstr "Tondino coperto {sides} pannelli {0}"
