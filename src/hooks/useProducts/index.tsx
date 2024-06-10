@@ -573,7 +573,7 @@ const useProducts = (): ProductList => {
       },
       id,
       link: PRODUCTS.GIOSTRE.url,
-      name: t`Giostra per ${horses} cavalli, solo motore (${formatSize(
+      name: t`Giostra per ${horses} cavalli, solo motore (${formatSizeMeter(
         width
       )})`,
       pictures: [
