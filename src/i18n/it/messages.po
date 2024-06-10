@@ -361,6 +361,9 @@ msgstr "Giostra con corridoio TECNOFENCE"
 msgid "Giostra Ippowalker"
 msgstr "Giostra Ippowalker"
 
+msgid "Giostra per {horses} cavalli, solo motore ({0})"
+msgstr "Giostra per {horses} cavalli, solo motore ({0})"
+
 msgid "Giostra per cavalli Tecnoexerciser"
 msgstr "Giostra per cavalli Tecnoexerciser"
 

@@ -292,7 +292,7 @@ msgid "Dimensioni"
 msgstr "Dimensions"
 
 msgid "Dimensioni giostra cavalli"
-msgstr ""
+msgstr "Dimensions du marcheur pour chevaux"
 
 msgid "Dressage"
 msgstr "Dressage"
@@ -370,6 +370,9 @@ msgstr "Marcheur Couloir TECNOFENCE"
 
 msgid "Giostra Ippowalker"
 msgstr "Marcheur Ippowalker"
+
+msgid "Giostra per {horses} cavalli, solo motore ({0})"
+msgstr "Marcheur pour {horses} chevaux, moteur seulement ({0})"
 
 msgid "Giostra per cavalli Tecnoexerciser"
 msgstr "Marcheur Tecnoexerciser"
