@@ -379,7 +379,7 @@ msgid "Giostra Ippowalker"
 msgstr "Ippowalker horse exerciser"
 
 msgid "Giostra per {horses} cavalli, solo motore ({0})"
-msgstr "Horse Walker {horses} horses (only engine)({0})"
+msgstr "Horse Walker {horses} horses, only engine ({0})"
 
 msgid "Giostra per cavalli Tecnoexerciser"
 msgstr "Tecnoexerciser horse exerciser"
