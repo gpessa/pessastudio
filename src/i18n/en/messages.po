@@ -818,13 +818,13 @@ msgid "Tondino"
 msgstr "Covered lunge pen"
 
 msgid "Tondino coperto"
-msgstr ""
+msgstr "Covered lunge pen"
 
 msgid "Tondino coperto {sides} pannelli {0}"
-msgstr "Covered lunge pen, {sides} panels, {0} mt."
+msgstr "Covered lunge pen, {sides} panels, {0}"
 
 msgid "Tondino coperto {sides} pannelli {size}"
-msgstr "Covered lunge pen, {sides} panels, {size} mt."
+msgstr "Covered lunge pen, {sides} panels, {size}"
 
 msgid "Tondino coperto per cavalli"
 msgstr "Fully covered lunge pen"

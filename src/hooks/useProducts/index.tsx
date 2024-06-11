@@ -536,45 +536,62 @@ const useProducts = (): ProductList => {
     // GIOSTRE
     ...[
       {
+        dimensions: {
+          height: 220,
+          length: 1200,
+          width: 1200,
+        },
         horses: 4,
         id: ProductId.GIOSTRA_4_CAVALLI_1200,
         price: 5900,
-        width: 12000,
       },
       {
+        dimensions: {
+          height: 220,
+          length: 1440,
+          width: 1440,
+        },
         horses: 6,
         id: ProductId.GIOSTRA_6_CAVALLI_1440,
         price: 7300,
-        width: 14400,
       },
       {
+        dimensions: {
+          height: 220,
+          length: 1600,
+          width: 1600,
+        },
         horses: 6,
         id: ProductId.GIOSTRA_6_CAVALLI_1600,
         price: 7800,
-        width: 16000,
       },
       {
+        dimensions: {
+          height: 220,
+          length: 1760,
+          width: 1760,
+        },
         horses: 6,
         id: ProductId.GIOSTRA_6_CAVALLI_1760,
         price: 7900,
-        width: 17600,
       },
       {
+        dimensions: {
+          height: 220,
+          length: 1920,
+          width: 1920,
+        },
         horses: 8,
         id: ProductId.GIOSTRA_8_CAVALLI_1920,
         price: 9100,
-        width: 19200,
       },
-    ].map(({ id, price, horses, width }) => ({
+    ].map(({ id, price, horses, dimensions }) => ({
       description: "",
-      dimensions: {
-        length: width,
-        width,
-      },
+      dimensions,
       id,
       link: PRODUCTS.GIOSTRE.url,
       name: t`Giostra per ${horses} cavalli, solo motore (${formatSizeMeter(
-        width
+        dimensions.width
       )})`,
       pictures: [
         require("assets/products/giostre/gallery/giostra-solo-motore.jpg"),
@@ -585,40 +602,59 @@ const useProducts = (): ProductList => {
     // TONDINI
     ...[
       {
+        dimensions: {
+          height: 475.4,
+          length: 1320,
+          width: 1320,
+        },
         id: ProductId.TONDINO_1320,
         price: 20000,
         sides: 16,
-        size: 13200,
       },
       {
+        dimensions: {
+          height: 475.4,
+          length: 1500,
+          width: 1500,
+        },
         id: ProductId.TONDINO_1500,
         sides: 18,
-        size: 15000,
       },
       {
+        dimensions: {
+          height: 6500,
+          length: 1660,
+          width: 1660,
+        },
         id: ProductId.TONDINO_1660,
         sides: 20,
-        size: 16600,
       },
       {
+        dimensions: {
+          height: 6500,
+          length: 1830,
+          width: 1830,
+        },
         id: ProductId.TONDINO_1830,
         sides: 22,
-        size: 18300,
       },
       {
+        dimensions: {
+          height: 6567,
+          length: 1990,
+          width: 1990,
+        },
         id: ProductId.TONDINO_1990,
         sides: 24,
-        size: 19900,
       },
-    ].map(({ sides, size, price, id }) => ({
+    ].map(({ sides, dimensions, price, id }) => ({
       description: t`Tondino per cavalli coperto, ideale per allenamenti e addestramenti in ogni stagione. Realizzato con struttura robusta e materiali resistenti, offre protezione dagli agenti atmosferici. Facile da montare, garantisce sicurezza e comfort per cavalli e cavalieri, migliorando le prestazioni in un ambiente controllato.`,
-      dimensions: {
-        length: size,
-        width: size,
-      },
+      dimensions,
       id,
       link: PRODUCTS.TONDINI.url,
-      name: t`Tondino coperto ${sides} pannelli ${formatSizeMeter(size)}`,
+      name: t`Tondino coperto ${sides} pannelli ${formatSizeMeter(
+        dimensions.width
+      )}`,
       pictures: [
         require("assets/products/tondini/gallery/tondino-1.jpg"),
         require("assets/products/tondini/gallery/tondino-2.jpg"),
