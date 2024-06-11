@@ -4,19 +4,17 @@ export const formatSize = (v: number, round?: boolean) => {
   // The feed require integer
   const value = round ? Math.round(v) : v;
 
-  return i18n.number(v, {
-    notation: "standard",
-    style: "unit",
-    unit: "centimeter",
-  });
+  return (
+    i18n.number(value, {
+      notation: "standard",
+    }) + " cm."
+  );
 };
 
 export const formatSizeMeter = (v: number) =>
   i18n.number(v / 100, {
     notation: "standard",
-    style: "unit",
-    unit: "meter",
-  }) + "t";
+  }) + " mt.";
 
 export const formatWeight = (v: number) =>
   i18n.number(v, {

@@ -68,27 +68,27 @@ const useProducts = (): ProductList => {
 
   const DESCRIPTION_20x40 = (
     <Trans>
-      <Typography paragraph>
+      <p>
         Un set per creare un circuito dressage standard da {SIZE_20x40.size} mt.
-      </Typography>
-      <Typography paragraph>Il set contiene:</Typography>
-      <Ul>
+      </p>
+      <p>Il set contiene:</p>
+      <ul>
         <li>{SIZE_20x40.modules} moduli</li>
         <li>{SIZE_20x40.letters} lettere</li>
-      </Ul>
+      </ul>
     </Trans>
   );
 
   const DESCRIPTION_20x60 = (
     <Trans>
-      <Typography paragraph>
+      <p>
         Un set per creare un circuito dressage standard da {SIZE_20x60.size} mt.
-      </Typography>
-      <Typography paragraph>Il set contiene:</Typography>
-      <Ul>
+      </p>
+      <p>Il set contiene:</p>
+      <ul>
         <li>{SIZE_20x60.modules} moduli</li>
         <li>{SIZE_20x60.letters} lettere</li>
-      </Ul>
+      </ul>
     </Trans>
   );
 

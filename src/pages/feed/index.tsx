@@ -47,10 +47,7 @@ const Feed = () => {
                 "g:availability": "in stock",
                 "g:brand": NAME_STRING,
                 "g:condition": "new",
-                "g:description":
-                  description && typeof description === "string"
-                    ? description
-                    : null,
+                "g:description": renderNodeToString(() => <>{description}</>),
                 "g:google_product_category": "1031", // Sporting Goods > Outdoor Recreation > Equestrian (check here https://www.google.com/basepages/producttype/taxonomy-with-ids.en-US.txt)
                 "g:id": `PESSASTUDIO_${id}`,
                 "g:identifier_exists": "no",
@@ -77,6 +74,22 @@ const Feed = () => {
   });
 
   return <div dangerouslySetInnerHTML={{ __html: pd.xml(doc) }} />;
+};
+
+const renderNodeToString = (Node: () => JSX.Element) => {
+  const renderToStaticMarkupResult = renderToStaticMarkup(
+    <I18nProvider i18n={i18n}>
+      <Node />
+    </I18nProvider>
+  );
+
+  console.log(renderToStaticMarkupResult);
+
+  const result = renderToStaticMarkupResult
+    .replace("<div>", "")
+    .replace("</div>", "");
+
+  return result;
 };
 
 export const getServerSideProps = async (ctx: GetServerSidePropsContext) => {
