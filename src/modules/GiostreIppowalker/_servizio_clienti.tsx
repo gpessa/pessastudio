@@ -29,7 +29,6 @@ const IppowalkerServizioClienti = () => {
         link: PAGES.GIOSTRE_IPPOWALKER_ISTRUZIONI_MONTAGGIO.url,
       },
       {
-        // FIXME check it works
         file: "/products/giostre/ippowalker/pdf/manuale-quadro-ippowalker-it.pdf",
         label: t`Manuale quadro di controllo`,
       },
