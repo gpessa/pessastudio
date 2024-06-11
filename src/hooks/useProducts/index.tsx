@@ -458,6 +458,8 @@ const useProducts = (): ProductList => {
       name: t`Rettangolo dressage ${SIZE_20x40.size} (${DRESSAGE_MODELS.TRAINING})`,
       pictures: [
         require("assets/products/dressage/rettangolo-dressage-20x40.jpg"),
+        require("assets/products/dressage/training-lettera.jpg"),
+        require("assets/products/dressage/training-modulo-dressage.jpg"),
       ],
       price: 1400,
     },
@@ -469,6 +471,8 @@ const useProducts = (): ProductList => {
       name: t`Rettangolo dressage ${SIZE_20x60.size} (${DRESSAGE_MODELS.TRAINING})`,
       pictures: [
         require("assets/products/dressage/rettangolo-dressage-20x60.jpg"),
+        require("assets/products/dressage/training-lettera.jpg"),
+        require("assets/products/dressage/training-modulo-dressage.jpg"),
       ],
       price: 1800,
     },
@@ -507,6 +511,8 @@ const useProducts = (): ProductList => {
       name: t`Rettangolo dressage ${SIZE_20x40.size} (${DRESSAGE_MODELS.OLYMPIC})`,
       pictures: [
         require("assets/products/dressage/rettangolo-dressage-20x40.jpg"),
+        require("assets/products/dressage/olympic-lettera.jpg"),
+        require("assets/products/dressage/olympic-modulo-dressage.jpg"),
       ],
       price: 5940,
     },
@@ -518,6 +524,8 @@ const useProducts = (): ProductList => {
       name: t`Rettangolo dressage ${SIZE_20x60.size} (${DRESSAGE_MODELS.OLYMPIC})`,
       pictures: [
         require("assets/products/dressage/rettangolo-dressage-20x60.jpg"),
+        require("assets/products/dressage/olympic-lettera.jpg"),
+        require("assets/products/dressage/olympic-modulo-dressage.jpg"),
       ],
       price: 7920,
     },
