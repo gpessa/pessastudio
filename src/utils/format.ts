@@ -8,7 +8,7 @@ export const formatSize = (v: number) =>
   });
 
 export const formatSizeMeter = (v: number) =>
-  i18n.number(v / 1000, {
+  i18n.number(v / 100, {
     notation: "standard",
     style: "unit",
     unit: "meter",
