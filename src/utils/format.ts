@@ -7,14 +7,14 @@ export const formatSize = (v: number, round?: boolean) => {
   return (
     i18n.number(value, {
       notation: "standard",
-    }) + " cm."
+    }) + " cm"
   );
 };
 
 export const formatSizeMeter = (v: number) =>
   i18n.number(v / 100, {
     notation: "standard",
-  }) + " mt.";
+  }) + " mt";
 
 export const formatWeight = (v: number) =>
   i18n.number(v, {
