@@ -594,7 +594,24 @@ const useProducts = (): ProductList => {
         price: 9100,
       },
     ].map(({ id, price, horses, dimensions }) => ({
-      description: "",
+      description: (
+        <Trans>
+          <p>La parte meccanica per una giostra movimento cavalli.</p>
+          <p>
+            Il lotto comprende il motore centrale, le braccia, le porte mobili
+            di separazione e la centralina elettrica.
+          </p>
+          <p>
+            Porte mobili di separazioni comprensive di irrigazione e
+            elettrificazione.
+          </p>
+          <p>
+            Centralina elettrica con display, programma manuale, periodico e
+            automatico.
+          </p>
+          <p>Ancoraggio a terra senza obbligo di plinto in cemento.</p>
+        </Trans>
+      ),
       dimensions,
       id,
       link: PRODUCTS.GIOSTRE.url,

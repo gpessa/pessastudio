@@ -21,12 +21,6 @@ import React from "react";
 import { NAME } from "utils/constants";
 
 import { useLingui } from "@lingui/react";
-import productsGiostreGalleryGiostra1 from "assets/products/giostre/gallery/giostra-1.jpg";
-import productsGiostreGalleryGiostra2 from "assets/products/giostre/gallery/giostra-2.jpg";
-import productsGiostreGalleryGiostraConAlveolo from "assets/products/giostre/gallery/giostra-con-alveolo.jpg";
-import productsGiostreGalleryGiostraDrone from "assets/products/giostre/gallery/giostra-drone.jpg";
-import productsGiostreGalleryPorta from "assets/products/giostre/gallery/porta.jpg";
-import productsGiostreGalleryQuadro from "assets/products/giostre/gallery/quadro.jpg";
 import { BeneftisProps } from "components/Benefits";
 import { HeroProps } from "components/Hero";
 import image from "./assets/background.jpg";
@@ -113,27 +107,31 @@ const Giostre: React.FC = () => {
   const IMAGES: Picture[] = [
     {
       caption: t`Giostra per cavalli Tecnoexerciser`,
-      image: productsGiostreGalleryGiostra1,
+      image: require("assets/products/giostre/gallery/giostra-1.jpg"),
     },
     {
       caption: t`Ingresso`,
-      image: productsGiostreGalleryPorta,
+      image: require("assets/products/giostre/gallery/giostra-2.jpg"),
     },
     {
       caption: t`Quadro di comando`,
-      image: productsGiostreGalleryQuadro,
+      image: require("assets/products/giostre/gallery/quadro.jpg"),
     },
     {
       caption: t`Giostra per cavalli Tecnoexerciser`,
-      image: productsGiostreGalleryGiostraDrone,
+      image: require("assets/products/giostre/gallery/giostra-drone.jpg"),
     },
     {
       caption: t`Interno giostra con alveolo`,
-      image: productsGiostreGalleryGiostraConAlveolo,
+      image: require("assets/products/giostre/gallery/giostra-drone.jpg"),
     },
     {
       caption: t`Giostra per cavalli Tecnoexerciser`,
-      image: productsGiostreGalleryGiostra2,
+      image: require("assets/products/giostre/gallery/giostra-2.jpg"),
+    },
+    {
+      caption: t`Porta mobile`,
+      image: require("assets/products/giostre/gallery/porta-mobile.jpg"),
     },
   ];
 
