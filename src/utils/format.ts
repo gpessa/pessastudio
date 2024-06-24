@@ -1,10 +1,7 @@
 import { i18n } from "@lingui/core";
 
 export const formatSizeFeed = (value: number) => {
-  return (
-    new Intl.NumberFormat("en-US", { notation: "standard" }).format(value) +
-    " cm"
-  );
+  return Math.round(value) + " cm";
 };
 
 export const formatSize = (value: number) =>
