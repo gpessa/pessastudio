@@ -618,7 +618,10 @@ const useProducts = (): ProductList => {
       name: t`Giostra per ${horses} cavalli, solo motore (${formatSizeMeter(
         dimensions.width
       )})`,
-      pictures: [require("assets/products/giostre/gallery/giostra-3.jpg")],
+      pictures: [
+        require("assets/products/giostre/gallery/giostra-3.jpg"),
+        require("assets/products/giostre/gallery/porta-mobile.jpg"),
+      ],
       price,
     })),
 
