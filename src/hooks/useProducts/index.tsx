@@ -50,11 +50,11 @@ export enum ProductId {
   TONDINO_1660 = "TONDINO_1660",
   TONDINO_1830 = "TONDINO_1830",
   TONDINO_1990 = "TONDINO_1990",
-  GIOSTRA_4_CAVALLI_1200 = "GIOSTRA_4_CAVALLI_1200",
-  GIOSTRA_6_CAVALLI_1440 = "GIOSTRA_6_CAVALLI_1440",
-  GIOSTRA_6_CAVALLI_1600 = "GIOSTRA_6_CAVALLI_1600",
-  GIOSTRA_6_CAVALLI_1760 = "GIOSTRA_6_CAVALLI_1760",
-  GIOSTRA_8_CAVALLI_1920 = "GIOSTRA_8_CAVALLI_1920",
+  GIOSTRA_4_CAVALLI_1200_SOLO_MOTORE = "GIOSTRA_4_CAVALLI_1200_SOLO_MOTORE",
+  GIOSTRA_6_CAVALLI_1440_SOLO_MOTORE = "GIOSTRA_6_CAVALLI_1440_SOLO_MOTORE",
+  GIOSTRA_6_CAVALLI_1600_SOLO_MOTORE = "GIOSTRA_6_CAVALLI_1600_SOLO_MOTORE",
+  GIOSTRA_6_CAVALLI_1760_SOLO_MOTORE = "GIOSTRA_6_CAVALLI_1760_SOLO_MOTORE",
+  GIOSTRA_8_CAVALLI_1920_SOLO_MOTORE = "GIOSTRA_8_CAVALLI_1920_SOLO_MOTORE",
 }
 
 type ProductList = { [key in keyof typeof ProductId]: ProductData };
@@ -550,7 +550,7 @@ const useProducts = (): ProductList => {
           width: 1200,
         },
         horses: 4,
-        id: ProductId.GIOSTRA_4_CAVALLI_1200,
+        id: ProductId.GIOSTRA_4_CAVALLI_1200_SOLO_MOTORE,
         price: 5900,
       },
       {
@@ -560,7 +560,7 @@ const useProducts = (): ProductList => {
           width: 1440,
         },
         horses: 6,
-        id: ProductId.GIOSTRA_6_CAVALLI_1440,
+        id: ProductId.GIOSTRA_6_CAVALLI_1440_SOLO_MOTORE,
         price: 7300,
       },
       {
@@ -570,7 +570,7 @@ const useProducts = (): ProductList => {
           width: 1600,
         },
         horses: 6,
-        id: ProductId.GIOSTRA_6_CAVALLI_1600,
+        id: ProductId.GIOSTRA_6_CAVALLI_1600_SOLO_MOTORE,
         price: 7800,
       },
       {
@@ -580,7 +580,7 @@ const useProducts = (): ProductList => {
           width: 1760,
         },
         horses: 6,
-        id: ProductId.GIOSTRA_6_CAVALLI_1760,
+        id: ProductId.GIOSTRA_6_CAVALLI_1760_SOLO_MOTORE,
         price: 7900,
       },
       {
@@ -590,7 +590,7 @@ const useProducts = (): ProductList => {
           width: 1920,
         },
         horses: 8,
-        id: ProductId.GIOSTRA_8_CAVALLI_1920,
+        id: ProductId.GIOSTRA_8_CAVALLI_1920_SOLO_MOTORE,
         price: 9100,
       },
     ].map(({ id, price, horses, dimensions }) => ({
@@ -601,9 +601,7 @@ const useProducts = (): ProductList => {
       name: t`Giostra per ${horses} cavalli, solo motore (${formatSizeMeter(
         dimensions.width
       )})`,
-      pictures: [
-        require("assets/products/giostre/gallery/giostra-solo-motore.jpg"),
-      ],
+      pictures: [require("assets/products/giostre/gallery/giostra-3.jpg")],
       price,
     })),
 
