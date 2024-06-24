@@ -6,7 +6,8 @@ import { I18nProvider, useLingui } from "@lingui/react";
 import type { GetServerSidePropsContext } from "next";
 import { pd } from "pretty-data";
 import { NAME_STRING } from "utils/constants";
-import { formatPriceFeed, formatSize, formatWeight } from "utils/format";
+
+import { formatPriceFeed, formatSizeFeed, formatWeight } from "utils/format";
 import { loadCatalog } from "utils/getProps";
 import { create } from "xmlbuilder2";
 
@@ -54,14 +55,14 @@ const Feed = () => {
                 "g:image_link": getPictureUrl(picture),
                 "g:link": `${process.env.NEXT_PUBLIC_WEBISTE_URL}/${locale}${link}`,
                 "g:price": formatPriceFeed(price!),
-                "g:product_height": height && formatSize(height, true),
-                "g:product_length": length && formatSize(length, true),
+                "g:product_height": height && formatSizeFeed(height),
+                "g:product_length": length && formatSizeFeed(length),
                 "g:product_weight": weight && formatWeight(weight),
-                "g:product_width": width && formatSize(width, true),
-                "g:shipping_height": height && formatSize(height, true),
-                "g:shipping_length": length && formatSize(length, true),
+                "g:product_width": width && formatSizeFeed(width),
+                "g:shipping_height": height && formatSizeFeed(height),
+                "g:shipping_length": length && formatSizeFeed(length),
                 "g:shipping_weight": weight && formatWeight(weight),
-                "g:shipping_width": width && formatSize(width, true),
+                "g:shipping_width": width && formatSizeFeed(width),
                 "g:title": name,
               })
             ),

@@ -1,15 +1,16 @@
 import { i18n } from "@lingui/core";
 
-export const formatSize = (v: number, round?: boolean) => {
-  // The feed require integer
-  const value = round ? Math.round(v) : v;
-
+export const formatSizeFeed = (value: number) => {
   return (
-    i18n.number(value, {
-      notation: "standard",
-    }) + " cm"
+    new Intl.NumberFormat("en-US", { notation: "standard" }).format(value) +
+    " cm"
   );
 };
+
+export const formatSize = (value: number) =>
+  i18n.number(value, {
+    notation: "standard",
+  }) + " cm";
 
 export const formatSizeMeter = (v: number) =>
   i18n.number(v / 100, {
