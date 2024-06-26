@@ -54,8 +54,16 @@ const Dressage: React.FC = () => {
           {[
             DRESSAGE_TRAINING_LETTERA,
             DRESSAGE_TRAINING_MODULO,
-            DRESSAGE_TRAINING_RETTANGOLO_20X40,
-            DRESSAGE_TRAINING_RETTANGOLO_20X60,
+            {
+              ...DRESSAGE_TRAINING_RETTANGOLO_20X40,
+              // We need to print only the first images
+              pictures: [DRESSAGE_TRAINING_RETTANGOLO_20X40.pictures[0]],
+            },
+            {
+              ...DRESSAGE_TRAINING_RETTANGOLO_20X60,
+              // We need to print only the first images
+              pictures: [DRESSAGE_TRAINING_RETTANGOLO_20X60.pictures[0]],
+            },
           ].map((product, index) => (
             <Grid item key={index} md={3} xs={12}>
               <Product vertical {...product} />
@@ -90,8 +98,16 @@ const Dressage: React.FC = () => {
           {[
             DRESSAGE_OLYMPIC_LETTERA,
             DRESSAGE_OLYMPIC_MODULO,
-            DRESSAGE_OLYMPIC_RETTANGOLO_20X40,
-            DRESSAGE_OLYMPIC_RETTANGOLO_20X60,
+            {
+              ...DRESSAGE_OLYMPIC_RETTANGOLO_20X40,
+              // We need to print only the first images
+              pictures: [DRESSAGE_OLYMPIC_RETTANGOLO_20X40.pictures[0]],
+            },
+            {
+              ...DRESSAGE_OLYMPIC_RETTANGOLO_20X60,
+              // We need to print only the first images
+              pictures: [DRESSAGE_OLYMPIC_RETTANGOLO_20X60.pictures[0]],
+            },
           ].map((product, index) => (
             <Grid item key={index} md={3} xs={12}>
               <Product vertical {...product} />

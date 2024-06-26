@@ -426,6 +426,7 @@ const useProducts = (): ProductList => {
       colors: [Colors.WHITE],
       dimensions: {
         height: 30,
+        length: 20,
         weight: 0.5,
         width: 20,
       },
@@ -439,7 +440,8 @@ const useProducts = (): ProductList => {
     {
       colors: [Colors.WHITE],
       dimensions: {
-        height: 28.5,
+        height: 29,
+        length: 40,
         weight: 3,
         width: 200,
       },
@@ -452,7 +454,11 @@ const useProducts = (): ProductList => {
     },
     {
       description: DESCRIPTION_20x40,
-      dimensions: {},
+      dimensions: {
+        height: 30,
+        length: 200,
+        width: 400,
+      },
       id: ProductId.DRESSAGE_TRAINING_RETTANGOLO_20X40,
       link: PRODUCTS.DRESSAGE.url,
       name: t`Rettangolo dressage ${SIZE_20x40.size} (${DRESSAGE_MODELS.TRAINING})`,
@@ -465,7 +471,11 @@ const useProducts = (): ProductList => {
     },
     {
       description: DESCRIPTION_20x60,
-      dimensions: {},
+      dimensions: {
+        height: 30,
+        length: 200,
+        width: 600,
+      },
       id: ProductId.DRESSAGE_TRAINING_RETTANGOLO_20X60,
       link: PRODUCTS.DRESSAGE.url,
       name: t`Rettangolo dressage ${SIZE_20x60.size} (${DRESSAGE_MODELS.TRAINING})`,
@@ -480,6 +490,7 @@ const useProducts = (): ProductList => {
       colors: [Colors.WHITE],
       dimensions: {
         height: 70,
+        length: 39,
         weight: 2.5,
         width: 39,
       },
@@ -492,7 +503,8 @@ const useProducts = (): ProductList => {
     {
       colors: [Colors.WHITE],
       dimensions: {
-        height: 37,
+        height: 40,
+        length: 40,
         weight: 5,
         width: 200,
       },
@@ -505,7 +517,11 @@ const useProducts = (): ProductList => {
     },
     {
       description: DESCRIPTION_20x40,
-      dimensions: {},
+      dimensions: {
+        height: 70,
+        length: 200,
+        width: 400,
+      },
       id: ProductId.DRESSAGE_OLYMPIC_RETTANGOLO_20X40,
       link: PRODUCTS.DRESSAGE.url,
       name: t`Rettangolo dressage ${SIZE_20x40.size} (${DRESSAGE_MODELS.OLYMPIC})`,
@@ -518,7 +534,11 @@ const useProducts = (): ProductList => {
     },
     {
       description: DESCRIPTION_20x60,
-      dimensions: {},
+      dimensions: {
+        height: 70,
+        length: 200,
+        width: 600,
+      },
       id: ProductId.DRESSAGE_OLYMPIC_RETTANGOLO_20X60,
       link: PRODUCTS.DRESSAGE.url,
       name: t`Rettangolo dressage ${SIZE_20x60.size} (${DRESSAGE_MODELS.OLYMPIC})`,
