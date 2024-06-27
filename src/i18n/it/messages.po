@@ -397,6 +397,12 @@ msgstr "I corridoi"
 msgid "I cubi sono progettati in maniera da poterli incastrare tra di loro. Questo rende questi blocchi da salto più sicuri, stabili e versatili di qualsiasi cosa tu abbia usato prima. Impila i blocchi in una varietà quasi illimitata di posizioni e configurazioni. Raggiungi l'altezza desiderata con più coppie."
 msgstr "I cubi sono progettati in maniera da poterli incastrare tra di loro. Questo rende questi blocchi da salto più sicuri, stabili e versatili di qualsiasi cosa tu abbia usato prima. Impila i blocchi in una varietà quasi illimitata di posizioni e configurazioni. Raggiungi l'altezza desiderata con più coppie."
 
+msgid "I moduli premium in PVC, con una finitura superiore e resistente ai raggi solari, combinano leggerezza e facilità di assemblaggio con una robustezza e un'estetica senza pari, ideali per arene di alta qualità."
+msgstr "I moduli premium in PVC, con una finitura superiore e resistente ai raggi solari, combinano leggerezza e facilità di assemblaggio con una robustezza e un'estetica senza pari, ideali per arene di alta qualità."
+
+msgid "I nostri moduli economici in PVC resistente ai raggi solari sono leggeri e facili da assemblare, offrendo una soluzione pratica e robusta per delimitare l'area di dressage."
+msgstr "I nostri moduli economici in PVC resistente ai raggi solari sono leggeri e facili da assemblare, offrendo una soluzione pratica e robusta per delimitare l'area di dressage."
+
 msgid "I nostri prodotti sono pensati per resistere nel tempo, anche se soggetti a difficili condizioni climatiche"
 msgstr "I nostri prodotti sono pensati per resistere nel tempo, anche se soggetti a difficili condizioni climatiche"
 
@@ -520,8 +526,14 @@ msgstr "Lama DE da {0}"
 msgid "Larghezza"
 msgstr "Larghezza"
 
+msgid "Le lettere premium in PVC, con una finitura di alta qualità e resistente ai raggi solari, garantiscono massima durabilità e un'estetica superiore. Perfette per chi cerca eccellenza e professionalità nell'arena."
+msgstr "Le lettere premium in PVC, con una finitura di alta qualità e resistente ai raggi solari, garantiscono massima durabilità e un'estetica superiore. Perfette per chi cerca eccellenza e professionalità nell'arena."
+
 msgid "Le nostre giostre sono considerate strutture precarie. Non avrete bisogno di nessuna concessione edilizia"
 msgstr "Le nostre giostre sono considerate strutture precarie. Non avrete bisogno di nessuna concessione edilizia"
+
+msgid "Le nostre lettere in PVC resistente ai raggi solari sono durevoli e leggibili in tutte le condizioni climatiche. Facili da posizionare, offrono un'ottima resistenza agli agenti atmosferici a un prezzo conveniente."
+msgstr "Le nostre lettere in PVC resistente ai raggi solari sono durevoli e leggibili in tutte le condizioni climatiche. Facili da posizionare, offrono un'ottima resistenza agli agenti atmosferici a un prezzo conveniente."
 
 msgid "Le recinzioni a quattro filagne sono utilizzate per delimitare paddock per stalloni, realizzare tondini per la doma e l'addestramento o per formare ovali per il salto in libertà"
 msgstr "Le recinzioni a quattro filagne sono utilizzate per delimitare paddock per stalloni, realizzare tondini per la doma e l'addestramento o per formare ovali per il salto in libertà"

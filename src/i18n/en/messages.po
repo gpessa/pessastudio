@@ -414,6 +414,12 @@ msgstr "The corridors"
 msgid "I cubi sono progettati in maniera da poterli incastrare tra di loro. Questo rende questi blocchi da salto più sicuri, stabili e versatili di qualsiasi cosa tu abbia usato prima. Impila i blocchi in una varietà quasi illimitata di posizioni e configurazioni. Raggiungi l'altezza desiderata con più coppie."
 msgstr "The block is designed with modern styling that features the peg-in-hole stacking feature. This makes these jump blocks more secure, stable and versatile than anything you have used before. Stack the blocks in nearly an unlimited variety of positions and configurations. Achieve your desired height with multiple pairs"
 
+msgid "I moduli premium in PVC, con una finitura superiore e resistente ai raggi solari, combinano leggerezza e facilità di assemblaggio con una robustezza e un'estetica senza pari, ideali per arene di alta qualità."
+msgstr "Our premium PVC modules, with superior sun-resistant finish, combine lightness and ease of assembly with unmatched robustness and aesthetics, ideal for high-quality arenas."
+
+msgid "I nostri moduli economici in PVC resistente ai raggi solari sono leggeri e facili da assemblare, offrendo una soluzione pratica e robusta per delimitare l'area di dressage."
+msgstr "Our economical sun-resistant PVC modules are lightweight and easy to assemble, offering a practical and robust solution for marking the dressage area."
+
 msgid "I nostri prodotti sono pensati per resistere nel tempo, anche se soggetti a difficili condizioni climatiche"
 msgstr "Our products are designed to withstand the test of time and any weather condition"
 
@@ -541,8 +547,14 @@ msgstr "Metal keyhole track DE {0}"
 msgid "Larghezza"
 msgstr "Width"
 
+msgid "Le lettere premium in PVC, con una finitura di alta qualità e resistente ai raggi solari, garantiscono massima durabilità e un'estetica superiore. Perfette per chi cerca eccellenza e professionalità nell'arena."
+msgstr "Our premium PVC letters, with high-quality sun-resistant finish, ensure maximum durability and superior aesthetics. Perfect for those seeking excellence and professionalism in the arena."
+
 msgid "Le nostre giostre sono considerate strutture precarie. Non avrete bisogno di nessuna concessione edilizia"
 msgstr "You will not need any building permit to install our horse walkers"
+
+msgid "Le nostre lettere in PVC resistente ai raggi solari sono durevoli e leggibili in tutte le condizioni climatiche. Facili da posizionare, offrono un'ottima resistenza agli agenti atmosferici a un prezzo conveniente."
+msgstr "Our sun-resistant PVC letters are durable and readable in all weather conditions. Easy to position, they offer great weather resistance at an affordable price."
 
 msgid "Le recinzioni a quattro filagne sono utilizzate per delimitare paddock per stalloni, realizzare tondini per la doma e l'addestramento o per formare ovali per il salto in libertà"
 msgstr "Four-rail fencing is used to delimit paddocks for stallions, make round pens for taming and training, or create ovals for free jumping"

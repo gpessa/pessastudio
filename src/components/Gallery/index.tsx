@@ -36,12 +36,12 @@ const Gallery: React.FC<Props> = ({ images, xs = 6, md = 6 }) => (
     images={images}
     render={({ open, images }) => (
       <Grid container spacing={PRODUCT_GUTTER}>
-        {images.map((item, index) => (
+        {images.map((item) => (
           <Grid
             item
             xs={xs}
             md={md}
-            key={index}
+            key={item.image.src}
             onClick={() => open(item)}
             component={ButtonBaseStyled}
           >

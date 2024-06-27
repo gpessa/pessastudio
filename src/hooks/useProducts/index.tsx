@@ -424,6 +424,7 @@ const useProducts = (): ProductList => {
     // DRESSAGE
     {
       colors: [Colors.WHITE],
+      description: t`Le nostre lettere in PVC resistente ai raggi solari sono durevoli e leggibili in tutte le condizioni climatiche. Facili da posizionare, offrono un'ottima resistenza agli agenti atmosferici a un prezzo conveniente.`,
       dimensions: {
         height: 30,
         length: 20,
@@ -439,6 +440,7 @@ const useProducts = (): ProductList => {
     },
     {
       colors: [Colors.WHITE],
+      description: t`I nostri moduli economici in PVC resistente ai raggi solari sono leggeri e facili da assemblare, offrendo una soluzione pratica e robusta per delimitare l'area di dressage.`,
       dimensions: {
         height: 29,
         length: 40,
@@ -488,6 +490,7 @@ const useProducts = (): ProductList => {
     },
     {
       colors: [Colors.WHITE],
+      description: t`Le lettere premium in PVC, con una finitura di alta qualità e resistente ai raggi solari, garantiscono massima durabilità e un'estetica superiore. Perfette per chi cerca eccellenza e professionalità nell'arena.`,
       dimensions: {
         height: 70,
         length: 39,
@@ -502,6 +505,7 @@ const useProducts = (): ProductList => {
     },
     {
       colors: [Colors.WHITE],
+      description: t`I moduli premium in PVC, con una finitura superiore e resistente ai raggi solari, combinano leggerezza e facilità di assemblaggio con una robustezza e un'estetica senza pari, ideali per arene di alta qualità.`,
       dimensions: {
         height: 40,
         length: 40,

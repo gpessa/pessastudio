@@ -407,6 +407,12 @@ msgstr "Les couloirs"
 msgid "I cubi sono progettati in maniera da poterli incastrare tra di loro. Questo rende questi blocchi da salto più sicuri, stabili e versatili di qualsiasi cosa tu abbia usato prima. Impila i blocchi in una varietà quasi illimitata di posizioni e configurazioni. Raggiungi l'altezza desiderata con più coppie."
 msgstr "Le cube d'obstacle est conçu avec un style moderne qui inclut la caractéristique de l'empilement par tenon et mortaise. Cela rend ces cubes d'obstacle plus sécurisés, stables et polyvalents que tout ce que vous avez utilisé auparavant. Empilez les cubes d'obstacle dans une variété presque illimitée de positions et de configurations. Atteignez la hauteur désirée avec plusieurs paires."
 
+msgid "I moduli premium in PVC, con una finitura superiore e resistente ai raggi solari, combinano leggerezza e facilità di assemblaggio con una robustezza e un'estetica senza pari, ideali per arene di alta qualità."
+msgstr "Nos modules premium en PVC, avec une finition supérieure résistante aux rayons solaires, combinent légèreté et facilité d'assemblage avec une robustesse et une esthétique inégalées, idéales pour les arènes de haute qualité."
+
+msgid "I nostri moduli economici in PVC resistente ai raggi solari sono leggeri e facili da assemblare, offrendo una soluzione pratica e robusta per delimitare l'area di dressage."
+msgstr "Nos modules économiques en PVC résistant aux rayons solaires sont légers et faciles à assembler, offrant une solution pratique et robuste pour délimiter l'aire de dressage."
+
 msgid "I nostri prodotti sono pensati per resistere nel tempo, anche se soggetti a difficili condizioni climatiche"
 msgstr "Nos produits sont conçus pour résister au temps, y compris lorsqu’ils sont soumis à des conditions climatiques difficiles"
 
@@ -530,8 +536,14 @@ msgstr "Jonc metallique DE {0}"
 msgid "Larghezza"
 msgstr "Largeur"
 
+msgid "Le lettere premium in PVC, con una finitura di alta qualità e resistente ai raggi solari, garantiscono massima durabilità e un'estetica superiore. Perfette per chi cerca eccellenza e professionalità nell'arena."
+msgstr "Nos lettres premium en PVC, avec une finition de haute qualité résistante aux rayons solaires, garantissent une durabilité maximale et une esthétique supérieure. Parfaites pour ceux qui recherchent l'excellence et le professionnalisme dans l'arène."
+
 msgid "Le nostre giostre sono considerate strutture precarie. Non avrete bisogno di nessuna concessione edilizia"
 msgstr "Nos manèges n’ont pas besoin de permis de construire"
+
+msgid "Le nostre lettere in PVC resistente ai raggi solari sono durevoli e leggibili in tutte le condizioni climatiche. Facili da posizionare, offrono un'ottima resistenza agli agenti atmosferici a un prezzo conveniente."
+msgstr "Nos lettres en PVC résistant aux rayons solaires sont durables et lisibles par tous les temps. Faciles à positionner, elles offrent une excellente résistance aux intempéries à un prix abordable."
 
 msgid "Le recinzioni a quattro filagne sono utilizzate per delimitare paddock per stalloni, realizzare tondini per la doma e l'addestramento o per formare ovali per il salto in libertà"
 msgstr "Les clôtures à quatre lices sont utilisées pour délimiter les paddocks pour les étalons, pour réaliser des ronds de longe pour le débourrage et le dressage, ou pour former des ovales pour le saut en liberté"
