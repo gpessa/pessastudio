@@ -577,46 +577,49 @@ const useProducts = (): ProductList => {
         id: ProductId.GIOSTRA_4_CAVALLI_1200_SOLO_MOTORE,
         price: 5900,
       },
-      {
-        dimensions: {
-          height: 220,
-          length: 1440,
-          width: 1440,
-        },
-        horses: 6,
-        id: ProductId.GIOSTRA_6_CAVALLI_1440_SOLO_MOTORE,
-        price: 7300,
-      },
-      {
-        dimensions: {
-          height: 220,
-          length: 1600,
-          width: 1600,
-        },
-        horses: 6,
-        id: ProductId.GIOSTRA_6_CAVALLI_1600_SOLO_MOTORE,
-        price: 7800,
-      },
-      {
-        dimensions: {
-          height: 220,
-          length: 1760,
-          width: 1760,
-        },
-        horses: 6,
-        id: ProductId.GIOSTRA_6_CAVALLI_1760_SOLO_MOTORE,
-        price: 7900,
-      },
-      {
-        dimensions: {
-          height: 220,
-          length: 1920,
-          width: 1920,
-        },
-        horses: 8,
-        id: ProductId.GIOSTRA_8_CAVALLI_1920_SOLO_MOTORE,
-        price: 9100,
-      },
+      /**
+       * Commento perché vogliamo mostrare solo quello piu economico
+       */
+      // {
+      //   dimensions: {
+      //     height: 220,
+      //     length: 1440,
+      //     width: 1440,
+      //   },
+      //   horses: 6,
+      //   id: ProductId.GIOSTRA_6_CAVALLI_1440_SOLO_MOTORE,
+      //   price: 7300,
+      // },
+      // {
+      //   dimensions: {
+      //     height: 220,
+      //     length: 1600,
+      //     width: 1600,
+      //   },
+      //   horses: 6,
+      //   id: ProductId.GIOSTRA_6_CAVALLI_1600_SOLO_MOTORE,
+      //   price: 7800,
+      // },
+      // {
+      //   dimensions: {
+      //     height: 220,
+      //     length: 1760,
+      //     width: 1760,
+      //   },
+      //   horses: 6,
+      //   id: ProductId.GIOSTRA_6_CAVALLI_1760_SOLO_MOTORE,
+      //   price: 7900,
+      // },
+      // {
+      //   dimensions: {
+      //     height: 220,
+      //     length: 1920,
+      //     width: 1920,
+      //   },
+      //   horses: 8,
+      //   id: ProductId.GIOSTRA_8_CAVALLI_1920_SOLO_MOTORE,
+      //   price: 9100,
+      // },
     ].map(({ id, price, horses, dimensions }) => ({
       description: (
         <Trans>
@@ -661,42 +664,45 @@ const useProducts = (): ProductList => {
         price: 20000,
         sides: 16,
       },
-      {
-        dimensions: {
-          height: 475.4,
-          length: 1500,
-          width: 1500,
-        },
-        id: ProductId.TONDINO_1500,
-        sides: 18,
-      },
-      {
-        dimensions: {
-          height: 6500,
-          length: 1660,
-          width: 1660,
-        },
-        id: ProductId.TONDINO_1660,
-        sides: 20,
-      },
-      {
-        dimensions: {
-          height: 6500,
-          length: 1830,
-          width: 1830,
-        },
-        id: ProductId.TONDINO_1830,
-        sides: 22,
-      },
-      {
-        dimensions: {
-          height: 6567,
-          length: 1990,
-          width: 1990,
-        },
-        id: ProductId.TONDINO_1990,
-        sides: 24,
-      },
+      /**
+       * Commento perché vogliamo mostrare solo quello piu economico
+       */
+      // {
+      //   dimensions: {
+      //     height: 475.4,
+      //     length: 1500,
+      //     width: 1500,
+      //   },
+      //   id: ProductId.TONDINO_1500,
+      //   sides: 18,
+      // },
+      // {
+      //   dimensions: {
+      //     height: 6500,
+      //     length: 1660,
+      //     width: 1660,
+      //   },
+      //   id: ProductId.TONDINO_1660,
+      //   sides: 20,
+      // },
+      // {
+      //   dimensions: {
+      //     height: 6500,
+      //     length: 1830,
+      //     width: 1830,
+      //   },
+      //   id: ProductId.TONDINO_1830,
+      //   sides: 22,
+      // },
+      // {
+      //   dimensions: {
+      //     height: 6567,
+      //     length: 1990,
+      //     width: 1990,
+      //   },
+      //   id: ProductId.TONDINO_1990,
+      //   sides: 24,
+      // },
     ].map(({ sides, dimensions, price, id }) => ({
       description: t`Tondino per cavalli coperto, ideale per allenamenti e addestramenti in ogni stagione. Realizzato con struttura robusta e materiali resistenti, offre protezione dagli agenti atmosferici. Facile da montare, garantisce sicurezza e comfort per cavalli e cavalieri, migliorando le prestazioni in un ambiente controllato.`,
       dimensions,
