@@ -3,6 +3,7 @@ import { Typography } from "@mui/material";
 import { Ul } from "components";
 import { ProductData } from "components/Product";
 import usePages from "hooks/usePages";
+import { useRouter } from "next/router";
 import { Colors } from "theme";
 import {
   CUBI_MODELS,
@@ -61,6 +62,7 @@ type ProductList = { [key in keyof typeof ProductId]: ProductData };
 
 const useProducts = (): ProductList => {
   const { PRODUCTS } = usePages();
+  const { locale } = useRouter();
   const { BLU, GREEN, RED, WHITE, YELLOW } = Colors;
 
   const SIZE_20x40 = { letters: 8, modules: 60, size: "20x40" };
@@ -721,7 +723,11 @@ const useProducts = (): ProductList => {
     })),
   ];
 
-  return PRODUCTS_LIST.reduce(
+  return PRODUCTS_LIST.map((product) => ({
+    ...product,
+    // Transoform in an absolute link
+    link: `${process.env.NEXT_PUBLIC_WEBISTE_URL}/${locale}${product.link}`,
+  })).reduce(
     (products, product) => ({
       ...products,
       [product.id]: product,

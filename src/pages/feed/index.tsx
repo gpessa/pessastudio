@@ -2,27 +2,20 @@ import { useProducts } from "hooks";
 import { renderToStaticMarkup } from "react-dom/server";
 
 import { i18n } from "@lingui/core";
-import { I18nProvider, useLingui } from "@lingui/react";
+import { I18nProvider } from "@lingui/react";
 import type { GetServerSidePropsContext } from "next";
 import { pd } from "pretty-data";
 import { NAME_STRING } from "utils/constants";
 
 import { formatPriceFeed, formatSizeFeed, formatWeight } from "utils/format";
+import { getImageUrl } from "utils/getImageUrl";
 import { loadCatalog } from "utils/getProps";
 import { create } from "xmlbuilder2";
 
 const SitemapIndex = () => null;
 
 const Feed = () => {
-  const {
-    i18n: { locale },
-  } = useLingui();
   const products = useProducts();
-
-  const getPictureUrl = (picture: any) =>
-    picture
-      ? `${process.env.NEXT_PUBLIC_WEBISTE_URL}/_next/image?url=${picture.default.src}&w=640&q=75`
-      : undefined;
 
   const doc = create(
     { version: "1.0" },
@@ -44,7 +37,7 @@ const Feed = () => {
                 link,
                 dimensions: { height, length, weight, width },
               }) => ({
-                "g:additional_image_link": pictures.map(getPictureUrl),
+                "g:additional_image_link": pictures.map(getImageUrl),
                 "g:availability": "in stock",
                 "g:brand": NAME_STRING,
                 "g:condition": "new",
@@ -52,8 +45,8 @@ const Feed = () => {
                 "g:google_product_category": "1031", // Sporting Goods > Outdoor Recreation > Equestrian (check here https://www.google.com/basepages/producttype/taxonomy-with-ids.en-US.txt)
                 "g:id": `PESSASTUDIO_${id}`,
                 "g:identifier_exists": "no",
-                "g:image_link": getPictureUrl(picture),
-                "g:link": `${process.env.NEXT_PUBLIC_WEBISTE_URL}/${locale}${link}`,
+                "g:image_link": getImageUrl(picture),
+                "g:link": link,
                 "g:price": formatPriceFeed(price!),
                 "g:product_height": height && formatSizeFeed(height),
                 "g:product_length": length && formatSizeFeed(length),
