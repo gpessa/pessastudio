@@ -47,7 +47,7 @@ const useSeoProps = (props: ProductData): ProductJsonLdProps => {
   };
 
   if (typeof description === "string") {
-    result.disambiguatingDescription = description;
+    result.description = description;
   }
 
   return result;
