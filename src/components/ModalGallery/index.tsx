@@ -6,6 +6,7 @@ import { Button, ButtonBase, Dialog, styled, Typography } from "@mui/material";
 import { useGallery } from "hooks";
 import React from "react";
 import Image from "next/image";
+import { BREAKPOINT } from "theme";
 
 const ButtonBackStyled = styled(ButtonBase)({
   "& > span": {
@@ -31,9 +32,10 @@ const ButtonNextStyled = styled(ButtonBase)({
   width: "50%",
 });
 
-const ImageStyled = styled(Image)({
+const ImageStyled = styled(Image)(({ theme }) => ({
+  height: "auto",
   width: "100%",
-});
+}));
 
 const StyledCaption = styled(Typography)(({ theme }) => ({
   backgroundColor: theme.palette.warm2.main,
@@ -58,10 +60,15 @@ const ModalGallery: React.FC<Props> = ({ render, images }) => {
     <>
       {render(gallery)}
 
-      <Dialog open={!!gallery.active} onClose={gallery.close} maxWidth="md">
-        {gallery.active && (
+      {gallery.active && (
+        <Dialog open={!!gallery.active} onClose={gallery.close} maxWidth="md">
           <>
-            <ImageStyled src={gallery.active.image} alt="" />
+            <ImageStyled
+              src={gallery.active.image}
+              alt=""
+              width={1000}
+              height={1000}
+            />
 
             {gallery.showPreviousEnabled && (
               <ButtonBackStyled onClick={gallery.showPrevious}>
@@ -85,8 +92,8 @@ const ModalGallery: React.FC<Props> = ({ render, images }) => {
               </StyledCaption>
             )}
           </>
-        )}
-      </Dialog>
+        </Dialog>
+      )}
     </>
   );
 };

@@ -8,6 +8,10 @@ const TypographyStyled = styled(Typography)(({ theme }) => ({
   borderRadius: theme.shape.borderRadius,
   display: "inline-block",
   padding: theme.spacing(3),
+  [theme.breakpoints.down("sm")]: {
+    fontSize: theme.typography.h2.fontSize,
+    padding: theme.spacing(2),
+  },
 }));
 
 const BoxStyled = styled(Box)(({ theme }) => ({
