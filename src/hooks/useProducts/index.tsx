@@ -1,4 +1,5 @@
 import { Trans, t } from "@lingui/macro";
+import { useLingui } from "@lingui/react";
 import { Typography } from "@mui/material";
 import { Ul } from "components";
 import { ProductData } from "components/Product";
@@ -62,7 +63,10 @@ type ProductList = { [key in keyof typeof ProductId]: ProductData };
 
 const useProducts = (): ProductList => {
   const { PRODUCTS } = usePages();
-  const { locale } = useRouter();
+  const {
+    i18n: { locale },
+  } = useLingui(); // Fix on locale change
+
   const { BLU, GREEN, RED, WHITE, YELLOW } = Colors;
 
   const SIZE_20x40 = { letters: 8, modules: 60, size: "20x40" };
