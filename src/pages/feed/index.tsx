@@ -53,7 +53,7 @@ const Feed = () => {
                 "g:product_weight": weight && formatWeight(weight),
                 "g:product_width": width && formatSizeFeed(width),
                 "g:shipping_height":
-                  weight && formatSizeFeed(weight > 400 ? 400 : weight),
+                  height && formatSizeFeed(height > 400 ? 400 : height),
                 "g:shipping_length":
                   length && formatSizeFeed(length > 400 ? 400 : length),
                 "g:shipping_weight":
