@@ -81,8 +81,6 @@ const renderNodeToString = (Node: () => JSX.Element) => {
     </I18nProvider>
   );
 
-  console.log(renderToStaticMarkupResult);
-
   const result = renderToStaticMarkupResult
     .replace("<div>", "")
     .replace("</div>", "");
