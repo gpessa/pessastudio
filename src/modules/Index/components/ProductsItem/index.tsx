@@ -15,15 +15,13 @@ type Props = {
 };
 
 const ImgStyled = styled(Image)(() => ({
-  // position: "absolute",
   height: "auto",
   width: "100%",
-  // top: 0,
 }));
 
 const BoxStyled = styled(Box)(({ theme }) => ({
   backgroundColor: theme.palette.common.white,
-  padding: theme.spacing(3),
+  paddingTop: theme.spacing(3),
   position: "relative",
   zIndex: 1,
 }));
@@ -38,7 +36,6 @@ const LinkStyled = styled(Link)<{ index: number }>(({ theme }) => ({
   },
   display: "flex",
   flexDirection: "column",
-  height: "100%",
   justifyContent: "flex-end",
   marginRight: 30,
   position: "relative",

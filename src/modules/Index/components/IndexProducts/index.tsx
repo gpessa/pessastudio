@@ -14,35 +14,23 @@ import theme, { BREAKPOINT } from "theme";
 import ProductsItem from "../ProductsItem";
 import ProductsSelector from "../ProductsSelector";
 
-const CarouselContainerStyled = styled(Grid)(({ theme }) => ({
-  margin: `${theme.spacing(5)} 0`,
+const CarouselStyled = styled(Carousel)(({ theme }) => ({
   [theme.breakpoints.up(BREAKPOINT)]: {
-    margin: "unset",
+    overflow: "visible!important",
   },
 }));
 
-const CarouselStyled = styled(Carousel)(({ theme }) => ({
-  overflow: "visible!important",
-}));
-
-const TextStyled = styled(Grid)({
-  display: "flex",
-  flexDirection: "column",
-  justifyContent: "space-between",
-  zIndex: 1,
-});
-
 const SliderSelectorStyled = styled(Grid)(({ theme }) => ({
   [theme.breakpoints.up(BREAKPOINT)]: {
-    marginTop: -50,
-    position: "relative",
-    zIndex: 1,
+    position: "absolute",
+    top: "50%",
+    width: "100%",
   },
 }));
 
 const IndexProducts: React.FC = () => {
   const isTable = useMediaQuery(theme.breakpoints.up("sm"));
-  const ITEM_TO_SHOW = isTable ? 2 : 1;
+  const ITEM_TO_SHOW = isTable ? 2.1 : 1.1;
   const { PRODUCTS } = usePages();
   const product = Object.values(PRODUCTS);
 
@@ -58,14 +46,14 @@ const IndexProducts: React.FC = () => {
     <CarouselProvider {...CAROUSEL_CONFIGURATION} visibleSlides={ITEM_TO_SHOW}>
       <Section image="dots" type="horizontal">
         <Grid container justifyContent="space-between">
-          <TextStyled item md={3} xs={12}>
+          <Grid item md={3} xs={12}>
             <Title
               subtitle={<Trans>Prodotti</Trans>}
               title={<Trans>Scopri la nostra gamma di prodotti</Trans>}
             />
-          </TextStyled>
+          </Grid>
 
-          <CarouselContainerStyled item md={8} xs={12}>
+          <Grid item md={8} xs={12}>
             <CarouselStyled>
               {product.map(({ url, title, description, image }, index) => (
                 <Slide index={index} key={url}>
@@ -79,7 +67,7 @@ const IndexProducts: React.FC = () => {
                 </Slide>
               ))}
             </CarouselStyled>
-          </CarouselContainerStyled>
+          </Grid>
 
           <SliderSelectorStyled item md={3} xs={12}>
             <ProductsSelector />
