@@ -1,4 +1,4 @@
-import { Box, makeStyles, styled } from "@mui/material";
+import { styled } from "@mui/material";
 import { YouTubeEmbed } from "@next/third-parties/google";
 import { Section } from "components";
 import React from "react";
