@@ -1,9 +1,8 @@
-import { t, Trans } from "@lingui/macro";
+import { Trans } from "@lingui/macro";
 import { useLingui } from "@lingui/react";
 import { Typography } from "@mui/material";
 import { Columns, Th, Ul, Video } from "components";
 import { usePages } from "hooks";
-import { GIOSTRE_MODELS } from "modules/Giostre";
 import React from "react";
 import TecnoexerciserAccessori from "./_accessori";
 import TecnoexerciserCompare from "./_compare";

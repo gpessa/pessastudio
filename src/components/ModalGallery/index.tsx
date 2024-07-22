@@ -4,9 +4,8 @@ import NavigateBefore from "@mui/icons-material/NavigateBefore";
 import NavigateNext from "@mui/icons-material/NavigateNext";
 import { Button, ButtonBase, Dialog, styled, Typography } from "@mui/material";
 import { useGallery } from "hooks";
-import React from "react";
 import Image from "next/image";
-import { BREAKPOINT } from "theme";
+import React from "react";
 
 const ButtonBackStyled = styled(ButtonBase)({
   "& > span": {
@@ -32,7 +31,7 @@ const ButtonNextStyled = styled(ButtonBase)({
   width: "50%",
 });
 
-const ImageStyled = styled(Image)(({ theme }) => ({
+const ImageStyled = styled(Image)(() => ({
   height: "auto",
   width: "100%",
 }));

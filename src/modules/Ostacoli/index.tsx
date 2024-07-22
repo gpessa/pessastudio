@@ -1,5 +1,4 @@
 import { Trans } from "@lingui/macro";
-import { useLingui } from "@lingui/react";
 import { Typography } from "@mui/material";
 import { ContactUs, Section, Th } from "components";
 

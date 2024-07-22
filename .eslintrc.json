@@ -4,9 +4,12 @@
   ],
   "rules": { 
     "react/no-unescaped-entities": 0,
-    "sort-keys-fix/sort-keys-fix": "error"
+    "sort-keys-fix/sort-keys-fix": "error",
+    "@typescript-eslint/no-unused-vars": "off",
+    "unused-imports/no-unused-imports": "error"
   },
   "plugins": [
-    "sort-keys-fix"
+    "sort-keys-fix",
+    "unused-imports"
   ]
 }

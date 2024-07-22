@@ -1,4 +1,3 @@
-import { Trans } from "@lingui/macro";
 import { Box, Typography } from "@mui/material";
 import Section from "components/Section";
 import React from "react";

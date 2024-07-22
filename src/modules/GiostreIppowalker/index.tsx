@@ -1,4 +1,4 @@
-import { t, Trans } from "@lingui/macro";
+import { Trans } from "@lingui/macro";
 import { Link, Typography } from "@mui/material";
 import { Columns, Th, Video } from "components";
 import { usePages } from "hooks";
@@ -11,7 +11,6 @@ import IppowalkerCorridoi from "./_corridoi";
 import IppowalkerGallery from "./_gallery";
 import IppowalkerServizioClienti from "./_servizio_clienti";
 import { useLingui } from "@lingui/react";
-import { GIOSTRE_MODELS } from "modules/Giostre";
 export { getStaticProps } from "utils/getProps";
 
 const GiostreIppowalker: React.FC = () => {

@@ -1,10 +1,7 @@
 import { Trans, t } from "@lingui/macro";
 import { useLingui } from "@lingui/react";
-import { Typography } from "@mui/material";
-import { Ul } from "components";
 import { ProductData } from "components/Product";
 import usePages from "hooks/usePages";
-import { useRouter } from "next/router";
 import { Colors } from "theme";
 import {
   CUBI_MODELS,

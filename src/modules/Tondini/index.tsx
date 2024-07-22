@@ -28,7 +28,6 @@ import productsTondiniAccessoriIrrigazione_1 from "assets/products/tondini/acces
 import { AccessoriProps } from "components/Accessori";
 import { BeneftisProps } from "components/Benefits";
 import { usePages, useProducts } from "hooks";
-import { formatSizeMeter } from "utils/format";
 import image from "./assets/background.jpg";
 export { getStaticProps } from "utils/getProps";
 

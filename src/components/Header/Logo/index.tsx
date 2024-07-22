@@ -1,4 +1,4 @@
-import { Button, Stack, styled } from "@mui/material";
+import { Button, styled } from "@mui/material";
 import Link from "next/link";
 import Image from "next/image";
 import React from "react";
