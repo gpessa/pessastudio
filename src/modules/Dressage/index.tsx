@@ -1,7 +1,7 @@
 import { Trans } from "@lingui/macro";
 import { useLingui } from "@lingui/react";
 import { Box, Grid, Link, Typography } from "@mui/material";
-import { ContactUs, Product, Section, Th } from "components";
+import { Columns, ContactUs, Gallery, Product, Section, Th } from "components";
 import { usePages, useProducts } from "hooks";
 import React from "react";
 import { PRODUCT_GUTTER } from "theme";
@@ -22,17 +22,29 @@ const Dressage: React.FC = () => {
   } = useProducts();
   useLingui(); // Fix on locale change
 
+  const IMAGES: Picture[] = [
+    {
+      caption: DRESSAGE_TRAINING_RETTANGOLO_20X40.name,
+      image: require("assets/products/dressage/gallery/rettangolo.jpg"),
+    },
+  ];
+
   return (
     <>
-      <Section>
-        <Th variant="h1">{PAGES.DRESSAGE.title}</Th>
-        <Trans>
-          Pessastudio fornisce due soluzioni per trasformare il vostro terreno
-          in un'arena da dressage: la gamma{" "}
-          <Link href="#dressage-training">training</Link> e quella{" "}
-          <Link href="#dressage-olympic">olympic</Link>
-        </Trans>
-      </Section>
+      <Columns
+        left={
+          <>
+            <Th variant="h1">{PAGES.DRESSAGE.title}</Th>
+            <Trans>
+              Pessastudio fornisce due soluzioni per trasformare il vostro
+              terreno in un'arena da dressage: la gamma{" "}
+              <Link href="#dressage-training">training</Link> e quella{" "}
+              <Link href="#dressage-olympic">olympic</Link>
+            </Trans>
+          </>
+        }
+        right={<Gallery images={IMAGES} />}
+      />
 
       <Section id="dressage-training" color="warm1">
         <Th variant="h2">{DRESSAGE_MODELS.TRAINING}</Th>
