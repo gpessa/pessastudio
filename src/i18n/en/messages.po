@@ -246,6 +246,9 @@ msgstr "PVC roof"
 msgid "Copertura rigida con lastre ondulate"
 msgstr "Rigid roof made of corrugated sheet metal"
 
+msgid "Corridoio coperto per accesso giostra {0}"
+msgstr "Covered walkway for {0} horse walker access"
+
 msgid "Corridoio EASY in compensato marino"
 msgstr "EASY corridor in marine plywood"
 

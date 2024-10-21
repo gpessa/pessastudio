@@ -244,6 +244,9 @@ msgstr "Copertura in PVC"
 msgid "Copertura rigida con lastre ondulate"
 msgstr "Copertura rigida con lastre ondulate"
 
+msgid "Corridoio coperto per accesso giostra {0}"
+msgstr "Corridoio coperto per accesso giostra {0}"
+
 msgid "Corridoio EASY in compensato marino"
 msgstr "Corridoio EASY in compensato marino"
 

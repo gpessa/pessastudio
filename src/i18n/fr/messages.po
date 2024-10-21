@@ -252,6 +252,9 @@ msgstr "Couverture en PVC"
 msgid "Copertura rigida con lastre ondulate"
 msgstr "Couverture rigide avec tôles ondulées"
 
+msgid "Corridoio coperto per accesso giostra {0}"
+msgstr "Couloir couvert pour accès au manège {0}"
+
 msgid "Corridoio EASY in compensato marino"
 msgstr "Couloir EASY en contreplaqué marine"
 

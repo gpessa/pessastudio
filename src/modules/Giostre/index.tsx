@@ -111,7 +111,7 @@ const Giostre: React.FC = () => {
     },
     {
       caption: t`Ingresso`,
-      image: require("assets/products/giostre/gallery/giostra-2.jpg"),
+      image: require("assets/products/giostre/gallery/porta.jpg"),
     },
     {
       caption: t`Quadro di comando`,
@@ -123,7 +123,7 @@ const Giostre: React.FC = () => {
     },
     {
       caption: t`Interno giostra con alveolo`,
-      image: require("assets/products/giostre/gallery/giostra-drone.jpg"),
+      image: require("assets/products/giostre/gallery/giostra-con-alveolo.jpg"),
     },
     {
       caption: t`Giostra per cavalli Tecnoexerciser`,
@@ -132,6 +132,10 @@ const Giostre: React.FC = () => {
     {
       caption: t`Porta mobile`,
       image: require("assets/products/giostre/gallery/porta-mobile.jpg"),
+    },
+    {
+      caption: t`Corridoio coperto per accesso giostra ${GIOSTRE_MODELS.TECNOEXERCISER}`,
+      image: require("assets/products/giostre/gallery/corridoio-coperto.jpg"),
     },
   ];
 
