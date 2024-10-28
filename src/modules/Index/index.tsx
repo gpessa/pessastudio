@@ -14,22 +14,12 @@ import IndexProducts from "./components/IndexProducts";
 import IndexTestimonials from "./components/IndexTestimonials";
 export { getStaticProps } from "utils/getProps";
 
-import fiera2023_it from "./assets/fiera2023/it.png";
-import fiera2023_en from "./assets/fiera2023/en.png";
-import fiera2023_fr from "./assets/fiera2023/fr.png";
+import fiera2024_it from "./assets/fiera2024/it.jpg";
+
 import { useRouter } from "next/router";
-
-const FIERA_2023 = {
-  en: fiera2023_en,
-  fr: fiera2023_fr,
-  it: fiera2023_it,
-};
-
-type FieraVersions = keyof typeof FIERA_2023;
 
 const Index: React.FC = () => {
   const { locale } = useRouter();
-  const isFieraTime = new Date() < new Date("11/13/2023");
 
   const TESTIMONIALS = [
     <Trans key="test_1">
@@ -110,9 +100,12 @@ const Index: React.FC = () => {
     },
   ];
 
+  const isFieraTime = new Date() < new Date("11/10/2024");
+  const isFieraMode = isFieraTime && locale === "it";
+
   const HERO: HeroProps = {
-    image: isFieraTime ? FIERA_2023[locale as FieraVersions] : image,
-    text: isFieraTime ? undefined : <Trans>Tradizione e qualità</Trans>,
+    image: isFieraMode ? fiera2024_it : image,
+    text: isFieraMode ? undefined : <Trans>Tradizione e qualità</Trans>,
   };
 
   return (
