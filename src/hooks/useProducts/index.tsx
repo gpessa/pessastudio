@@ -77,7 +77,6 @@ const useProducts = (): ProductList => {
       <p>Il set contiene:</p>
       <ul>
         <li>{SIZE_20x40.modules} moduli</li>
-        <li>{SIZE_20x40.letters} lettere</li>
       </ul>
     </Trans>
   );
@@ -90,7 +89,6 @@ const useProducts = (): ProductList => {
       <p>Il set contiene:</p>
       <ul>
         <li>{SIZE_20x60.modules} moduli</li>
-        <li>{SIZE_20x60.letters} lettere</li>
       </ul>
     </Trans>
   );
@@ -558,7 +556,11 @@ const useProducts = (): ProductList => {
     },
     {
       description: DESCRIPTION_20x60,
-      dimensions: {},
+      dimensions: {
+        height: 70,
+        length: 200,
+        width: 600,
+      },
       id: ProductId.DRESSAGE_OLYMPIC_RETTANGOLO_20X60,
       link: PRODUCTS.DRESSAGE.url,
       name: t`Rettangolo dressage ${SIZE_20x60.size} (${DRESSAGE_MODELS.OLYMPIC})`,
