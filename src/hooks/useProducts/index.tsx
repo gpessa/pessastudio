@@ -113,7 +113,7 @@ const useProducts = (): ProductList => {
         require("assets/products/ostacoli/barriere-02.png"),
         require("assets/products/ostacoli/barriere-03.png"),
       ],
-      price: 50,
+      price: 55,
     },
     {
       description: t`Fosso in PVC di alta qualità, progettato per allenamenti e competizioni equestri. Resistente agli agenti atmosferici, leggero e facile da spostare, questo ostacolo garantisce durabilità e sicurezza. Ideale per preparare i cavalli alle sfide di salto più impegnative.`,
@@ -141,7 +141,7 @@ const useProducts = (): ProductList => {
       link: `${PRODUCTS.OSTACOLI.url}#${ProductId.CAVALLETTI_CAPRILLI}`,
       name: t`Cavalletti Caprilli`,
       pictures: [require("assets/products/ostacoli/cavalletto-01.png")],
-      price: 34,
+      price: 41.9,
     },
     {
       description: t`Kit comprensivo di 2 cavalletti e una barriera in PPO di colore bianco, diametro 95, lunghezza 2 mt.`,
@@ -157,7 +157,7 @@ const useProducts = (): ProductList => {
       pictures: [
         require("assets/products/ostacoli/cavalletto-barriera-01.png"),
       ],
-      price: 92,
+      price: 81,
     },
     {
       colors: [WHITE, BLU, YELLOW, RED, GREEN],
@@ -176,7 +176,7 @@ const useProducts = (): ProductList => {
         require("assets/products/ostacoli/cubi-mini-02.png"),
         require("assets/products/ostacoli/cubi-mini-03.png"),
       ],
-      price: 40,
+      price: 47.5,
     },
     {
       colors: [WHITE, BLU, YELLOW, RED, GREEN],
@@ -210,7 +210,7 @@ const useProducts = (): ProductList => {
       link: `${PRODUCTS.OSTACOLI.url}#${ProductId.CANDELIERE_CON_PIEDE_IN_PVC_170}`,
       name: t`Candeliere da ${formatSize(170)} con piede in PVC`,
       pictures: [require("assets/products/ostacoli/candeliere-pvc-02.png")],
-      price: 89,
+      price: 99,
     },
     {
       description: t`I candelieri sono costruiti con un montante di alluminio verniciato di colore bianco e sono muniti di 4 piedi rivestiti con puntali di plastica che garantiscono, in caso di ribaltamento, l’incolumità vostra e dei vostri cavalli.`,
@@ -224,7 +224,7 @@ const useProducts = (): ProductList => {
       link: `${PRODUCTS.OSTACOLI.url}#${ProductId.CANDELIERE_CON_PIEDE_IN_PVC_190}`,
       name: t`Candeliere da ${formatSize(190)} con piede in PVC`,
       pictures: [require("assets/products/ostacoli/candeliere-pvc-01.png")],
-      price: 96,
+      price: 108,
     },
     {
       description: t`Per consentirvi di realizzare ostacoli di vostra creazione possiamo fornirvi le lame forate in due diverse lunghezze.`,
@@ -238,7 +238,7 @@ const useProducts = (): ProductList => {
       materials: [Material.ACCIAIO_ZINCATO],
       name: t`Lama DE da ${formatSize(50)}`,
       pictures: [require("assets/products/ostacoli/lama-de-150.png")],
-      price: 8.5,
+      price: 9.6,
     },
     {
       description: t`Per consentirvi di realizzare ostacoli di vostra creazione possiamo fornirvi le lame forate in due diverse lunghezze.`,
@@ -252,7 +252,7 @@ const useProducts = (): ProductList => {
       materials: [Material.ACCIAIO_ZINCATO],
       name: t`Lama DE da ${formatSize(1500)}`,
       pictures: [require("assets/products/ostacoli/lama-de-50.png")],
-      price: 17,
+      price: 19.2,
     },
     {
       description: t`Il cucchiaio standard utilizzato al livello internazionale`,
@@ -271,7 +271,7 @@ const useProducts = (): ProductList => {
         require("assets/products/ostacoli/cucchiaio-de-02.png"),
         require("assets/products/ostacoli/cucchiaio-de-03.png"),
       ],
-      price: 3.5,
+      price: 4.3,
     },
     {
       description: t`Il cucchiaio dotato del nostro sistema brevettato di aggancio`,
@@ -290,7 +290,7 @@ const useProducts = (): ProductList => {
         require("assets/products/ostacoli/cucchiaio-ps-02.png"),
         require("assets/products/ostacoli/cucchiaio-ps-03.png"),
       ],
-      price: 4.5,
+      price: 5.1,
     },
     {
       description: t`Supporti di sicurezza da applicare ai nostri cucchiai per salvaguardare l'integrità degli arti dei vostri cavalli in maniera efficace ed economica.`,
@@ -309,7 +309,7 @@ const useProducts = (): ProductList => {
         require("assets/products/ostacoli/supporto-di-sicurezza-03.png"),
         require("assets/products/ostacoli/supporto-di-sicurezza-04.png"),
       ],
-      price: 4,
+      price: 6.5,
     },
     {
       description: t`Bandierine realizzate in plastica resistente agli urti. Ideali per allenamenti e competizioni, offrono una visibilità eccellente e una lunga durata nel tempo.`,
