@@ -32,7 +32,6 @@ const Ostacoli: React.FC = () => {
     CANDELIERE_CON_PIEDE_IN_PVC_170,
     CANDELIERE_CON_PIEDE_IN_PVC_190,
     OSTACOLI_BANDIERINE,
-    NUMERO_CAMPO_OSTACOLI_LIGHT,
     NUMERO_CAMPO_OSTACOLI_PROFESSIONAL,
   } = useProducts();
 
@@ -94,11 +93,7 @@ const Ostacoli: React.FC = () => {
 
       <Section color="warm1">
         <Segnaletica
-          products={[
-            OSTACOLI_BANDIERINE,
-            NUMERO_CAMPO_OSTACOLI_LIGHT,
-            NUMERO_CAMPO_OSTACOLI_PROFESSIONAL,
-          ]}
+          products={[OSTACOLI_BANDIERINE, NUMERO_CAMPO_OSTACOLI_PROFESSIONAL]}
         />
       </Section>
 

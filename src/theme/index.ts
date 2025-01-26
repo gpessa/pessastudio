@@ -23,6 +23,10 @@ export enum Colors {
   WHITE = "#FFFFFF",
   BLU = "#264FD0",
   RED = "#F41701",
+  ORANGE = "#FFA500",
+  LIGHT_BLUE = "#00FFFF",
+  BROWN = "#8B4513",
+  BLACK = "#000000",
 }
 
 export const SECTION_SPACING = (breakingPoint: "xs" | "md") => {

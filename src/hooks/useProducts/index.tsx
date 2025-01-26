@@ -36,7 +36,6 @@ export enum ProductId {
   LAMA_DE_150 = "LAMA_DE_150",
   LAMA_DE_50_150_CM = "LAMA_DE_50_150_CM",
   LAMA_DE_50 = "LAMA_DE_50",
-  NUMERO_CAMPO_OSTACOLI_LIGHT = "NUMERO_CAMPO_OSTACOLI_LIGHT",
   NUMERO_CAMPO_OSTACOLI_PROFESSIONAL = "NUMERO_CAMPO_OSTACOLI_PROFESSIONAL",
   SUPPORTO_SICUREZZA = "SUPPORTO_SICUREZZA",
   RECINZIONE_1_FILAGNA = "RECINZIONE_1_FILAGNA",
@@ -64,7 +63,8 @@ const useProducts = (): ProductList => {
     i18n: { locale },
   } = useLingui(); // Fix on locale change
 
-  const { BLU, GREEN, RED, WHITE, YELLOW } = Colors;
+  const { BLU, GREEN, RED, WHITE, YELLOW, ORANGE, LIGHT_BLUE, BROWN, BLACK } =
+    Colors;
 
   const SIZE_20x40 = { letters: 8, modules: 60, size: "20x40" };
   const SIZE_20x60 = { letters: 12, modules: 80, size: "20x60" };
@@ -97,7 +97,17 @@ const useProducts = (): ProductList => {
     // OSTACOLI
 
     {
-      colors: [BLU, GREEN, RED, WHITE, YELLOW],
+      colors: [
+        BLU,
+        GREEN,
+        RED,
+        WHITE,
+        YELLOW,
+        ORANGE,
+        LIGHT_BLUE,
+        BROWN,
+        BLACK,
+      ],
       description: t`Costruisci la tua barriera personalizzata scegliendo tra i colori a disposizione`,
       dimensions: {
         height: 9.5,
