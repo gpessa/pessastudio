@@ -465,7 +465,7 @@ const useProducts = (): ProductList => {
         require("assets/products/dressage/training-lettera.jpg"),
         require("assets/products/dressage/training-modulo-dressage.jpg"),
       ],
-      price: 1400,
+      price: 1450,
     },
     {
       description: DESCRIPTION_20x60,
@@ -482,7 +482,7 @@ const useProducts = (): ProductList => {
         require("assets/products/dressage/training-lettera.jpg"),
         require("assets/products/dressage/training-modulo-dressage.jpg"),
       ],
-      price: 1800,
+      price: 1900,
     },
     {
       colors: [Colors.WHITE],
