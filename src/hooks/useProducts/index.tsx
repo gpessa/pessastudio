@@ -323,7 +323,7 @@ const useProducts = (): ProductList => {
       materials: [Material.PLASTICA],
       name: t`Bandierine`,
       pictures: [require("assets/products/ostacoli/bandierine.jpg")],
-      price: 2.1,
+      price: 2.5,
     },
     {
       description: t`Numero per campo ostacoli costruito in materiali robusti e leggeri. La forma piramidale ne assicurano la stabilitá. Perfetto per essere utilizzato in percorsi di salto ostacoli per cavalli.`,
@@ -338,22 +338,7 @@ const useProducts = (): ProductList => {
       materials: [Material.POLIETILENE],
       name: t`Numero per campo ostacoli ${SEGNALETICA_MODELS.PROFESSIONAL}`,
       pictures: [require("assets/products/ostacoli/numero-professional.png")],
-      price: 26,
-    },
-    {
-      description: t`Numero per campo ostacoli costruito in materiali robusti e leggeri. La forma piramidale ne assicurano la stabilitá. Perfetto per essere utilizzato in percorsi di salto ostacoli per cavalli.`,
-      dimensions: {
-        height: 33,
-        length: 30,
-        weight: 1.25,
-        width: 33,
-      },
-      id: ProductId.NUMERO_CAMPO_OSTACOLI_LIGHT,
-      link: `${PRODUCTS.OSTACOLI.url}#${ProductId.NUMERO_CAMPO_OSTACOLI_LIGHT}`,
-      materials: [Material.POLIPROPILENE],
-      name: t`Numero per campo ostacoli ${SEGNALETICA_MODELS.LIGHT}`,
-      pictures: [require("assets/products/ostacoli/numero-light.png")],
-      price: 22,
+      price: 29.5,
     },
 
     // RECINTI
