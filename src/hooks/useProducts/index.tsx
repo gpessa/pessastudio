@@ -17,7 +17,8 @@ export enum ProductId {
   DRESSAGE_OLYMPIC_MODULO = "DRESSAGE_OLYMPIC_MODULO",
   DRESSAGE_OLYMPIC_RETTANGOLO_20X40 = "DRESSAGE_OLYMPIC_RETTANGOLO_20X40",
   DRESSAGE_OLYMPIC_RETTANGOLO_20X60 = "DRESSAGE_OLYMPIC_RETTANGOLO_20X60",
-  DRESSAGE_TRAINING_LETTERA = "DRESSAGE_TRAINING_LETTERA",
+  DRESSAGE_TRAINING_LETTERE_8_KIT = "DRESSAGE_TRAINING_LETTERE_8_KIT",
+  DRESSAGE_TRAINING_LETTERE_12_KIT = "DRESSAGE_TRAINING_LETTERE_12_KIT",
   DRESSAGE_TRAINING_MODULO = "DRESSAGE_TRAINING_MODULO",
   DRESSAGE_TRAINING_RETTANGOLO_20X40 = "DRESSAGE_TRAINING_RETTANGOLO_20X40",
   DRESSAGE_TRAINING_RETTANGOLO_20X60 = "DRESSAGE_TRAINING_RETTANGOLO_20X60",
@@ -420,19 +421,39 @@ const useProducts = (): ProductList => {
     // DRESSAGE
     {
       colors: [Colors.WHITE],
-      description: t`Le nostre lettere in PVC resistente ai raggi solari sono durevoli e leggibili in tutte le condizioni climatiche. Facili da posizionare, offrono un'ottima resistenza agli agenti atmosferici a un prezzo conveniente.`,
+      description:
+        t`Trasforma qualsiasi terreno in un'arena da dressage con questi coni da dressage. Facili da posizionare, leggeri e anche sicuri per il tuo cavallo.` +
+        t`Le nostre lettere in PVC resistente ai raggi solari sono durevoli e leggibili in tutte le condizioni climatiche. Facili da posizionare, offrono un'ottima resistenza agli agenti atmosferici a un prezzo conveniente.`,
       dimensions: {
         height: 30,
         length: 20,
         weight: 0.5,
         width: 20,
       },
-      id: ProductId.DRESSAGE_TRAINING_LETTERA,
+      id: ProductId.DRESSAGE_TRAINING_LETTERE_8_KIT,
       link: PRODUCTS.DRESSAGE.url,
       materials: [Material.POLIETILENE],
-      name: t`Lettera dressage (${DRESSAGE_MODELS.TRAINING})`,
+      name: t`Kit ${8} Lettere Dressage (${DRESSAGE_MODELS.TRAINING})`,
       pictures: [require("assets/products/dressage/training-lettera.jpg")],
-      price: 26,
+      price: 236,
+    },
+    {
+      colors: [Colors.WHITE],
+      description:
+        t`Trasforma qualsiasi terreno in un'arena da dressage con questi coni da dressage. Facili da posizionare, leggeri e anche sicuri per il tuo cavallo.` +
+        t`Le nostre lettere in PVC resistente ai raggi solari sono durevoli e leggibili in tutte le condizioni climatiche. Facili da posizionare, offrono un'ottima resistenza agli agenti atmosferici a un prezzo conveniente.`,
+      dimensions: {
+        height: 30,
+        length: 20,
+        weight: 0.5,
+        width: 20,
+      },
+      id: ProductId.DRESSAGE_TRAINING_LETTERE_12_KIT,
+      link: PRODUCTS.DRESSAGE.url,
+      materials: [Material.POLIETILENE],
+      name: t`Kit ${12} Lettere Dressage (${DRESSAGE_MODELS.TRAINING})`,
+      pictures: [require("assets/products/dressage/training-lettera.jpg")],
+      price: 354,
     },
     {
       colors: [Colors.WHITE],

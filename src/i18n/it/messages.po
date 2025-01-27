@@ -478,6 +478,9 @@ msgstr "Istituto"
 msgid "Istruzioni di montaggio"
 msgstr "Istruzioni di montaggio"
 
+msgid "Kit {0} Lettere Dressage ({1})"
+msgstr "Kit {0} Lettere Dressage ({1})"
+
 msgid "Kit Cavalletti Caprilli + barriera"
 msgstr "Kit Cavalletti Caprilli + barriera"
 
@@ -831,6 +834,9 @@ msgstr "Tondino per cavalli coperto, ideale per allenamenti e addestramenti in o
 
 msgid "Tradizione e qualità"
 msgstr "Tradizione e qualità"
+
+msgid "Trasforma qualsiasi terreno in un'arena da dressage con questi coni da dressage. Facili da posizionare, leggeri e anche sicuri per il tuo cavallo."
+msgstr "Trasforma qualsiasi terreno in un'arena da dressage con questi coni da dressage. Facili da posizionare, leggeri e anche sicuri per il tuo cavallo."
 
 msgid "Trovate e segnate il centro di ciò che sarà la vostra giostra"
 msgstr "Trovate e segnate il centro di ciò che sarà la vostra giostra"

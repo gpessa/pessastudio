@@ -11,7 +11,7 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: \n"
-"X-Generator: Poedit 3.4.4\n"
+"X-Generator: Poedit 3.5\n"
 
 msgid "{NAME} è stata scelta da oltre 3.000 clienti in tutto il mondo per la realizzazione della propria giostra."
 msgstr "{NAME} has been chosen by over 3,000 clients worldwide for the construction of their horse execiser."
@@ -415,7 +415,7 @@ msgid "I corridoi"
 msgstr "The corridors"
 
 msgid "I cubi sono progettati in maniera da poterli incastrare tra di loro. Questo rende questi blocchi da salto più sicuri, stabili e versatili di qualsiasi cosa tu abbia usato prima. Impila i blocchi in una varietà quasi illimitata di posizioni e configurazioni. Raggiungi l'altezza desiderata con più coppie."
-msgstr "The block is designed with modern styling that features the peg-in-hole stacking feature. This makes these jump blocks more secure, stable and versatile than anything you have used before. Stack the blocks in nearly an unlimited variety of positions and configurations. Achieve your desired height with multiple pairs"
+msgstr "The block is designed with modern styling that features the peg-in-hole stacking feature. This makes these jump blocks more secure, stable and versatile than anything you have used before. Stack the blocks in nearly an unlimited variety of positions and configurations. Achieve your desired height with multiple pairs."
 
 msgid "I moduli premium in PVC, con una finitura superiore e resistente ai raggi solari, combinano leggerezza e facilità di assemblaggio con una robustezza e un'estetica senza pari, ideali per arene di alta qualità."
 msgstr "Our premium PVC modules, with superior sun-resistant finish, combine lightness and ease of assembly with unmatched robustness and aesthetics, ideal for high-quality arenas."
@@ -494,6 +494,9 @@ msgstr "Bank name"
 
 msgid "Istruzioni di montaggio"
 msgstr "Assembly instructions"
+
+msgid "Kit {0} Lettere Dressage ({1})"
+msgstr "Kit {0} Dressage Letters ({1})"
 
 msgid "Kit Cavalletti Caprilli + barriera"
 msgstr "Kit Cavaletti Caprilli + pole"
@@ -713,7 +716,7 @@ msgid "Recinzione"
 msgstr "Fence"
 
 msgid "Recinzione cavalli a {0} filagna"
-msgstr "1-rail horse fence"
+msgstr "{0}-rail horse fence"
 
 msgid "Recinzione cavalli a {0} filagne"
 msgstr "{0}-rail horse fence"
@@ -852,6 +855,9 @@ msgstr "Covered round pen for horses, ideal for training and schooling in any se
 
 msgid "Tradizione e qualità"
 msgstr "Tradition and quality"
+
+msgid "Trasforma qualsiasi terreno in un'arena da dressage con questi coni da dressage. Facili da posizionare, leggeri e anche sicuri per il tuo cavallo."
+msgstr "Transform any ground into a dressage arena with these dressage cones. Easy to set up, lightweight, and safe for your horse."
 
 msgid "Trovate e segnate il centro di ciò che sarà la vostra giostra"
 msgstr ""

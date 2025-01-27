@@ -11,7 +11,8 @@ export { getStaticProps } from "utils/getProps";
 const Dressage: React.FC = () => {
   const { PAGES } = usePages();
   const {
-    DRESSAGE_TRAINING_LETTERA,
+    DRESSAGE_TRAINING_LETTERE_8_KIT,
+    DRESSAGE_TRAINING_LETTERE_12_KIT,
     DRESSAGE_TRAINING_MODULO,
     DRESSAGE_TRAINING_RETTANGOLO_20X40,
     DRESSAGE_TRAINING_RETTANGOLO_20X60,
@@ -64,8 +65,6 @@ const Dressage: React.FC = () => {
         </Box>
         <Grid container spacing={PRODUCT_GUTTER}>
           {[
-            DRESSAGE_TRAINING_LETTERA,
-            DRESSAGE_TRAINING_MODULO,
             {
               ...DRESSAGE_TRAINING_RETTANGOLO_20X40,
               // We need to print only the first images
@@ -76,6 +75,9 @@ const Dressage: React.FC = () => {
               // We need to print only the first images
               pictures: [DRESSAGE_TRAINING_RETTANGOLO_20X60.pictures[0]],
             },
+            DRESSAGE_TRAINING_LETTERE_8_KIT,
+            DRESSAGE_TRAINING_LETTERE_12_KIT,
+            DRESSAGE_TRAINING_MODULO,
           ].map((product, index) => (
             <Grid item key={index} md={3} xs={12}>
               <Product vertical {...product} />

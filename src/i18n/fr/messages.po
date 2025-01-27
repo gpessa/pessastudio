@@ -11,7 +11,7 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: \n"
-"X-Generator: Poedit 3.4.4\n"
+"X-Generator: Poedit 3.5\n"
 
 msgid "{NAME} è stata scelta da oltre 3.000 clienti in tutto il mondo per la realizzazione della propria giostra."
 msgstr "{NAME} a été choisie par plus de 3 000 clients dans le monde entier pour la construction de leurs marcheurs."
@@ -488,6 +488,9 @@ msgstr "Établissement"
 msgid "Istruzioni di montaggio"
 msgstr "Instructions de montage"
 
+msgid "Kit {0} Lettere Dressage ({1})"
+msgstr "Kit {0} Lettres de Dressage ({1})"
+
 msgid "Kit Cavalletti Caprilli + barriera"
 msgstr "Kit Cavaletti caprilli + Bar"
 
@@ -729,7 +732,7 @@ msgid "Ringrazio tutto il team per la professionalità, gentilezza, velocità e 
 msgstr "Merci à toute l’équipe pour le professionnalisme, la gentillesse, la rapidité et surtout l’excellent résultat"
 
 msgid "Riprova piú tardi"
-msgstr ""
+msgstr "Réessayez plus tard"
 
 msgid "Rivenditori"
 msgstr "Concessionnaires internationaux"
@@ -841,6 +844,9 @@ msgstr "Rond de longe couvert pour chevaux, idéal pour les entraînements et le
 
 msgid "Tradizione e qualità"
 msgstr "Tradition et qualité"
+
+msgid "Trasforma qualsiasi terreno in un'arena da dressage con questi coni da dressage. Facili da posizionare, leggeri e anche sicuri per il tuo cavallo."
+msgstr "Transformez n’importe quel terrain en une carrière de dressage avec ces cônes de dressage. Faciles à installer, légers et sûrs pour votre cheval."
 
 msgid "Trovate e segnate il centro di ciò che sarà la vostra giostra"
 msgstr ""
