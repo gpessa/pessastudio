@@ -1,4 +1,3 @@
-import { Trans } from "@lingui/macro";
 import { Box, Typography } from "@mui/material";
 import productsGiostreTecnoexerciserMontaggioStep_01 from "assets/products/giostre/tecnoexerciser/montaggio/step-01.jpg";
 import productsGiostreTecnoexerciserMontaggioStep_02 from "assets/products/giostre/tecnoexerciser/montaggio/step-02.jpg";
