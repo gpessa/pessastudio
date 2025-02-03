@@ -112,6 +112,22 @@ export const CONTATTI_COMMERCIALI = [
     },
     name: <Trans>Contatto commerciale Francia</Trans>,
   },
+  {
+    data: {
+      email: "aleshorses@gmail.com",
+      name: "Marco Accardo",
+      telephone: "+39 333 9481810",
+    },
+    name: <Trans>Contatto commerciale Italia</Trans>,
+  },
+  {
+    data: {
+      email: "equi-bride@orange.fr",
+      name: "Société Equi Bride (Sébastien Mugnier)",
+      telephone: "+33 682369614",
+    },
+    name: <Trans>Contatto commerciale Francia</Trans>,
+  },
 ];
 
 export const SEDE_OPERATIVA = {

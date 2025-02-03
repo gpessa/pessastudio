@@ -25,9 +25,6 @@ msgstr "+ TVA"
 msgid "<0>{NAME} è un'azienda altamente affidabile e rinomata nel settore dell'equitazione. Ogni anno, centinaia di persone scelgono i nostri articoli d'equitazione per la qualità superiore che li caratterizza.</0><1>La gamma di prodotti offerti è ampia e diversificata, con un'attenzione particolare alla funzionalità e al design. La competenza e l'esperienza del team di {NAME} sono alla base del successo dell'azienda e della sua reputazione di affidabilità e professionalità.</1>"
 msgstr "<0>{NAME}  est une entreprise hautement fiable et renommée dans le secteur équestre. Chaque année, des centaines de personnes choisissent nos articles équestres pour leur qualité supérieure.</0><1>La gamme de produits proposée est large et diversifiée, avec une attention particulière portée à la fonctionnalité et au design. L’expertise et l’expérience de l’équipe de  {NAME} sont à la base du succès de l’entreprise et de sa réputation en termes de fiabilité et de professionnalisme.</1>"
 
-msgid "<0><1>Preparare la superficie spianandola a \"schiena d'asino\" con il centro più alto dei bordi (2%) per far si che la pioggia defluisca. Mantenere i bordi dell'area alla stessa altezza del terreno circostante e riportare materiale nel centro dell'area per alzarlo.</1><2>Stendere sull'area una \"rete di separazione\", ben tesa e trattenuta lungo i bordi in una canaletta scavata nel terreno impedendo così che la terra si mescoli alla sabbia.</2><3>Distendere uniformemente sopra la rete uno strato di 7/8 centimetri di sabbia (diametro 1 mm.)</3><4>Distribuire sopra alla sabbia 3 kg di \"straccetti di geotessuto\" per mt quadro di superficie in modo da mantenere il fondo stabile e morbido. Distribuire successivamente dopo un paio di ingressi a cavallo altri 2 kg.</4><5>Tutti i giorni passare con una \"erpice livellatrice\" per eliminare le impronte lasciate dagli zoccoli.</5></0>"
-msgstr ""
-
 msgid "<0>Accessori</0><1>(Ordinabili separatamente)</1>"
 msgstr "<0>Accessoires</0><1>(Commandables séparément)</1>"
 
@@ -138,20 +135,8 @@ msgstr "Vaste gamme"
 msgid "Anche in questo semplice modello potrai decidere di dotare la tua giostra di un corridoio scegliendo tra il piú economico corridoio costituito dalla recinzione <0>TECNOFENCE</0> o il corridoio <1>EASY</1> in pannelli di compensato marino."
 msgstr "Même avec ce modèle simple, vous pourrez décider d’équiper votre marcheur d’un couloir en choisissant le couloir le plus économique avec la clôture <0>TECNOFENCE</0>, ou le couloir <1>EASY</1> en panneaux de contreplaqué marine."
 
-msgid "Ancorate al suolo i supporti della giostra"
-msgstr ""
-
-msgid "Ancorate il gruppo motore"
-msgstr ""
-
 msgid "Apprezzati"
 msgstr "Appréciés"
-
-msgid "Assicuratevi che le porte corrispondano alla figura"
-msgstr ""
-
-msgid "Assicuratevi di bloccare la giostra alla giusta altezza e piana"
-msgstr ""
 
 msgid "Avanti"
 msgstr "Suivante"
@@ -195,9 +180,6 @@ msgstr "COD. FISC. e Part: I.V.A. 04743610281 C.C.I.A.A. PD - R.E.A. 414822"
 msgid "Codice Fiscale e Partita IVA"
 msgstr "Numéro de code fiscal et de TVA"
 
-msgid "Collegate le braccia di separazione attraverso i cavi"
-msgstr ""
-
 msgid "Colori"
 msgstr "Couleurs"
 
@@ -233,6 +215,9 @@ msgstr "Contact commercial Allemagne"
 
 msgid "Contatto commerciale Germania & Medio Oriente"
 msgstr "Contact commercial Allemagne & Moyen-Orient"
+
+msgid "Contatto commerciale Italia"
+msgstr "Contact commercial Italie"
 
 msgid "Cookie Analitici"
 msgstr "Cookies analytiques"
@@ -584,15 +569,6 @@ msgstr "Matériau de qualité"
 msgid "Modulo dressage ({0})"
 msgstr "Module de Dressage ({0})"
 
-msgid "Montate il fondo della giostra"
-msgstr ""
-
-msgid "Montate le braccia di separazione"
-msgstr ""
-
-msgid "Montate le porte di separazione"
-msgstr ""
-
 msgid "Motore"
 msgstr "Moteur électrique"
 
@@ -848,9 +824,6 @@ msgstr "Tradition et qualité"
 msgid "Trasforma qualsiasi terreno in un'arena da dressage con questi coni da dressage. Facili da posizionare, leggeri e anche sicuri per il tuo cavallo."
 msgstr "Transformez n’importe quel terrain en une carrière de dressage avec ces cônes de dressage. Faciles à installer, légers et sûrs pour votre cheval."
 
-msgid "Trovate e segnate il centro di ciò che sarà la vostra giostra"
-msgstr ""
-
 msgid "Tutti i cavalieri sanno quanto sia spiacevole cavalcare in un ambiente polveroso.<0/>La polvere può contribuire a problemi respiratori per te e per i tuoi cavalli e può indicare che il fondo non fornisce un adeguato un supporto allo zoccolo del cavallo. <1/>Per ovviare a questo problema, è possibile installare il nostro sistema di irrigazione. Un rosone verrà posizionato al centro del tondino e ti permetterà di irrigarlo facilmente."
 msgstr "Le rond de longe peut disposer d’une rosace placée au centre, qui permettra d’arroser votre rond de longe."
 
@@ -865,9 +838,6 @@ msgstr "Une longue histoire"
 
 msgid "Usa il nostro semplice pannello di controllo per scegliere uno dei nostri \"training programs\" o seleziona manualmente la velocità desiderata"
 msgstr "Utilisez notre tableau de commande simple pour choisir l’un de nos « training programs », ou sélectionnez manuellement la vitesse souhaitée"
-
-msgid "Usate la base della giostra per trovare e segnare i punti dove saranno piantate i supporti"
-msgstr ""
 
 msgid "Utilizziamo i cookie per garantire il corretto funzionamento del sito. Per ulteriori informazioni sul nostro utilizzo dei cookie, consultare la nostra <0>politica sui cookie</0>"
 msgstr "Nous utilisons des cookies pour assurer le bon fonctionnement du site. Pour plus d’informations sur notre utilisation des cookies, veuillez consulter notre <0>politique relative aux cookies</0>"

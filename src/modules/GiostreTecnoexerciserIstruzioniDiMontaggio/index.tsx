@@ -25,93 +25,85 @@ const IstruzioniMontaggio: React.FC = () => {
   const STEPS = [
     {
       image: productsGiostreTecnoexerciserMontaggioStep_01,
-      text: (
-        <Trans>
-          Trovate e segnate il centro di ciò che sarà la vostra giostra
-        </Trans>
-      ),
+      text: <>Trovate e segnate il centro di ciò che sarà la vostra giostra</>,
     },
     {
       image: productsGiostreTecnoexerciserMontaggioStep_02,
       text: (
-        <Trans>
+        <>
           Usate la base della giostra per trovare e segnare i punti dove saranno
           piantate i supporti
-        </Trans>
+        </>
       ),
     },
     {
       image: productsGiostreTecnoexerciserMontaggioStep_04,
-      text: <Trans>Ancorate al suolo i supporti della giostra</Trans>,
+      text: <>Ancorate al suolo i supporti della giostra</>,
     },
     {
       image: productsGiostreTecnoexerciserMontaggioStep_05,
-      text: <Trans>Montate il fondo della giostra</Trans>,
+      text: <>Montate il fondo della giostra</>,
     },
     {
       image: productsGiostreTecnoexerciserMontaggioStep_06,
-      text: <Trans>Ancorate il gruppo motore</Trans>,
+      text: <>Ancorate il gruppo motore</>,
     },
     {
       image: productsGiostreTecnoexerciserMontaggioStep_07,
       text: (
-        <Trans>
-          Assicuratevi di bloccare la giostra alla giusta altezza e piana
-        </Trans>
+        <>Assicuratevi di bloccare la giostra alla giusta altezza e piana</>
       ),
     },
     {
       image: productsGiostreTecnoexerciserMontaggioStep_08,
-      text: <Trans>Montate le braccia di separazione</Trans>,
+      text: <>Montate le braccia di separazione</>,
     },
     {
       image: productsGiostreTecnoexerciserMontaggioStep_09,
-      text: (
-        <Trans>Collegate le braccia di separazione attraverso i cavi</Trans>
-      ),
+      text: <>Collegate le braccia di separazione attraverso i cavi</>,
     },
     {
       image: productsGiostreTecnoexerciserMontaggioStep_10,
-      text: <Trans>Montate le porte di separazione</Trans>,
+      text: <>Montate le porte di separazione</>,
     },
     {
       image: productsGiostreTecnoexerciserMontaggioStep_11,
-      text: <Trans>Assicuratevi che le porte corrispondano alla figura</Trans>,
+      text: <>Assicuratevi che le porte corrispondano alla figura</>,
     },
     {
       image: productsGiostreTecnoexerciserMontaggioStep_12,
-      text: <Trans>Assicuratevi che le porte corrispondano alla figura</Trans>,
+      text: <>Assicuratevi che le porte corrispondano alla figura</>,
     },
     {
       image: productsGiostreTecnoexerciserMontaggioStep_13,
-      text: <Trans>Assicuratevi che le porte corrispondano alla figura</Trans>,
+      text: <>Assicuratevi che le porte corrispondano alla figura</>,
     },
     {
       image: productsGiostreTecnoexerciserMontaggioStep_14,
-      text: <Trans>Assicuratevi che le porte corrispondano alla figura</Trans>,
+      text: <>Assicuratevi che le porte corrispondano alla figura</>,
     },
     {
       image: productsGiostreTecnoexerciserMontaggioStep_15,
-      text: <Trans>Assicuratevi che le porte corrispondano alla figura</Trans>,
+      text: <>Assicuratevi che le porte corrispondano alla figura</>,
     },
     {
       image: productsGiostreTecnoexerciserMontaggioStep_16,
-      text: <Trans>Assicuratevi che le porte corrispondano alla figura</Trans>,
+      text: <>Assicuratevi che le porte corrispondano alla figura</>,
     },
     {
       image: productsGiostreTecnoexerciserMontaggioStep_17,
-      text: <Trans>Assicuratevi che le porte corrispondano alla figura</Trans>,
+      text: <>Assicuratevi che le porte corrispondano alla figura</>,
     },
     {
       image: productsGiostreTecnoexerciserMontaggioStep_18,
-      text: <Trans>Assicuratevi che le porte corrispondano alla figura</Trans>,
+      text: <>Assicuratevi che le porte corrispondano alla figura</>,
     },
   ];
 
   return (
     <Section>
       <Box mb={3} textAlign="center">
-        <Th variant="h2">{<Trans>Istruzioni di montaggio</Trans>}</Th>
+        <Th variant="h2">{<>Istruzioni di montaggio</>}</Th>
         <Typography>
           Segui le semplici istruzioni per montare la nostra giostra
         </Typography>

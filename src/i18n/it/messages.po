@@ -25,9 +25,6 @@ msgstr "+ IVA"
 msgid "<0>{NAME} è un'azienda altamente affidabile e rinomata nel settore dell'equitazione. Ogni anno, centinaia di persone scelgono i nostri articoli d'equitazione per la qualità superiore che li caratterizza.</0><1>La gamma di prodotti offerti è ampia e diversificata, con un'attenzione particolare alla funzionalità e al design. La competenza e l'esperienza del team di {NAME} sono alla base del successo dell'azienda e della sua reputazione di affidabilità e professionalità.</1>"
 msgstr "<0>{NAME} è un'azienda altamente affidabile e rinomata nel settore dell'equitazione. Ogni anno, centinaia di persone scelgono i nostri articoli d'equitazione per la qualità superiore che li caratterizza.</0><1>La gamma di prodotti offerti è ampia e diversificata, con un'attenzione particolare alla funzionalità e al design. La competenza e l'esperienza del team di {NAME} sono alla base del successo dell'azienda e della sua reputazione di affidabilità e professionalità.</1>"
 
-msgid "<0><1>Preparare la superficie spianandola a \"schiena d'asino\" con il centro più alto dei bordi (2%) per far si che la pioggia defluisca. Mantenere i bordi dell'area alla stessa altezza del terreno circostante e riportare materiale nel centro dell'area per alzarlo.</1><2>Stendere sull'area una \"rete di separazione\", ben tesa e trattenuta lungo i bordi in una canaletta scavata nel terreno impedendo così che la terra si mescoli alla sabbia.</2><3>Distendere uniformemente sopra la rete uno strato di 7/8 centimetri di sabbia (diametro 1 mm.)</3><4>Distribuire sopra alla sabbia 3 kg di \"straccetti di geotessuto\" per mt quadro di superficie in modo da mantenere il fondo stabile e morbido. Distribuire successivamente dopo un paio di ingressi a cavallo altri 2 kg.</4><5>Tutti i giorni passare con una \"erpice livellatrice\" per eliminare le impronte lasciate dagli zoccoli.</5></0>"
-msgstr "<0><1>Preparare la superficie spianandola a \"schiena d'asino\" con il centro più alto dei bordi (2%) per far si che la pioggia defluisca. Mantenere i bordi dell'area alla stessa altezza del terreno circostante e riportare materiale nel centro dell'area per alzarlo.</1><2>Stendere sull'area una \"rete di separazione\", ben tesa e trattenuta lungo i bordi in una canaletta scavata nel terreno impedendo così che la terra si mescoli alla sabbia.</2><3>Distendere uniformemente sopra la rete uno strato di 7/8 centimetri di sabbia (diametro 1 mm.)</3><4>Distribuire sopra alla sabbia 3 kg di \"straccetti di geotessuto\" per mt quadro di superficie in modo da mantenere il fondo stabile e morbido. Distribuire successivamente dopo un paio di ingressi a cavallo altri 2 kg.</4><5>Tutti i giorni passare con una \"erpice livellatrice\" per eliminare le impronte lasciate dagli zoccoli.</5></0>"
-
 msgid "<0>Accessori</0><1>(Ordinabili separatamente)</1>"
 msgstr "<0>Accessori</0><1>(Ordinabili separatamente)</1>"
 
@@ -130,20 +127,8 @@ msgstr "Ampia gamma"
 msgid "Anche in questo semplice modello potrai decidere di dotare la tua giostra di un corridoio scegliendo tra il piú economico corridoio costituito dalla recinzione <0>TECNOFENCE</0> o il corridoio <1>EASY</1> in pannelli di compensato marino."
 msgstr "Anche in questo semplice modello potrai decidere di dotare la tua giostra di un corridoio scegliendo tra il piú economico corridoio costituito dalla recinzione <0>TECNOFENCE</0> o il corridoio <1>EASY</1> in pannelli di compensato marino."
 
-msgid "Ancorate al suolo i supporti della giostra"
-msgstr "Ancorate al suolo i supporti della giostra"
-
-msgid "Ancorate il gruppo motore"
-msgstr "Ancorate il gruppo motore"
-
 msgid "Apprezzati"
 msgstr "Apprezzati"
-
-msgid "Assicuratevi che le porte corrispondano alla figura"
-msgstr "Assicuratevi che le porte corrispondano alla figura"
-
-msgid "Assicuratevi di bloccare la giostra alla giusta altezza e piana"
-msgstr "Assicuratevi di bloccare la giostra alla giusta altezza e piana"
 
 msgid "Avanti"
 msgstr "Avanti"
@@ -187,9 +172,6 @@ msgstr "COD. FISC. e Part: I.V.A. 04743610281 C.C.I.A.A. PD - R.E.A. 414822"
 msgid "Codice Fiscale e Partita IVA"
 msgstr "Codice Fiscale e Partita IVA"
 
-msgid "Collegate le braccia di separazione attraverso i cavi"
-msgstr "Collegate le braccia di separazione attraverso i cavi"
-
 msgid "Colori"
 msgstr "Colori"
 
@@ -225,6 +207,9 @@ msgstr "Contatto commerciale Germania"
 
 msgid "Contatto commerciale Germania & Medio Oriente"
 msgstr "Contatto commerciale Germania & Medio Oriente"
+
+msgid "Contatto commerciale Italia"
+msgstr "Contatto commerciale Italia"
 
 msgid "Cookie Analitici"
 msgstr "Cookie Analitici"
@@ -574,15 +559,6 @@ msgstr "Materiali di qualità"
 msgid "Modulo dressage ({0})"
 msgstr "Modulo dressage ({0})"
 
-msgid "Montate il fondo della giostra"
-msgstr "Montate il fondo della giostra"
-
-msgid "Montate le braccia di separazione"
-msgstr "Montate le braccia di separazione"
-
-msgid "Montate le porte di separazione"
-msgstr "Montate le porte di separazione"
-
 msgid "Motore"
 msgstr "Motore"
 
@@ -838,9 +814,6 @@ msgstr "Tradizione e qualità"
 msgid "Trasforma qualsiasi terreno in un'arena da dressage con questi coni da dressage. Facili da posizionare, leggeri e anche sicuri per il tuo cavallo."
 msgstr "Trasforma qualsiasi terreno in un'arena da dressage con questi coni da dressage. Facili da posizionare, leggeri e anche sicuri per il tuo cavallo."
 
-msgid "Trovate e segnate il centro di ciò che sarà la vostra giostra"
-msgstr "Trovate e segnate il centro di ciò che sarà la vostra giostra"
-
 msgid "Tutti i cavalieri sanno quanto sia spiacevole cavalcare in un ambiente polveroso.<0/>La polvere può contribuire a problemi respiratori per te e per i tuoi cavalli e può indicare che il fondo non fornisce un adeguato un supporto allo zoccolo del cavallo. <1/>Per ovviare a questo problema, è possibile installare il nostro sistema di irrigazione. Un rosone verrà posizionato al centro del tondino e ti permetterà di irrigarlo facilmente."
 msgstr "Tutti i cavalieri sanno quanto sia spiacevole cavalcare in un ambiente polveroso.<0/>La polvere può contribuire a problemi respiratori per te e per i tuoi cavalli e può indicare che il fondo non fornisce un adeguato un supporto allo zoccolo del cavallo. <1/>Per ovviare a questo problema, è possibile installare il nostro sistema di irrigazione. Un rosone verrà posizionato al centro del tondino e ti permetterà di irrigarlo facilmente."
 
@@ -855,9 +828,6 @@ msgstr "Una lunga storia"
 
 msgid "Usa il nostro semplice pannello di controllo per scegliere uno dei nostri \"training programs\" o seleziona manualmente la velocità desiderata"
 msgstr "Usa il nostro semplice pannello di controllo per scegliere uno dei nostri \"training programs\" o seleziona manualmente la velocità desiderata"
-
-msgid "Usate la base della giostra per trovare e segnare i punti dove saranno piantate i supporti"
-msgstr "Usate la base della giostra per trovare e segnare i punti dove saranno piantate i supporti"
 
 msgid "Utilizziamo i cookie per garantire il corretto funzionamento del sito. Per ulteriori informazioni sul nostro utilizzo dei cookie, consultare la nostra <0>politica sui cookie</0>"
 msgstr "Utilizziamo i cookie per garantire il corretto funzionamento del sito. Per ulteriori informazioni sul nostro utilizzo dei cookie, consultare la nostra <0>politica sui cookie</0>"
