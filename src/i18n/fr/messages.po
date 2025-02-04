@@ -205,19 +205,19 @@ msgid "Contatto commerciale"
 msgstr "Contact commercial"
 
 msgid "Contatto commerciale Belgio"
-msgstr "Contact commercial Belgique"
+msgstr "Revendeur agréé Belgique"
 
 msgid "Contatto commerciale Francia"
-msgstr "Contact commercial France"
+msgstr "Revendeur agréé France"
 
 msgid "Contatto commerciale Germania"
-msgstr "Contact commercial Allemagne"
+msgstr "Revendeur agréé Allemagne"
 
 msgid "Contatto commerciale Germania & Medio Oriente"
-msgstr "Contact commercial Allemagne & Moyen-Orient"
+msgstr "Revendeur agréé Allemagne & Moyen-Orient"
 
-msgid "Contatto commerciale Italia"
-msgstr "Contact commercial Italie"
+msgid "Contatto commerciale Roma"
+msgstr "Revendeur agréé Rome"
 
 msgid "Cookie Analitici"
 msgstr "Cookies analytiques"

@@ -199,19 +199,19 @@ msgid "Contatto commerciale"
 msgstr "Sales office"
 
 msgid "Contatto commerciale Belgio"
-msgstr "Sales office Belgium"
+msgstr "Authorized dealer Belgium"
 
 msgid "Contatto commerciale Francia"
-msgstr "Sales office France"
+msgstr "Authorized dealer France"
 
 msgid "Contatto commerciale Germania"
-msgstr "Sales office Germany"
+msgstr "Authorized dealer Germany"
 
 msgid "Contatto commerciale Germania & Medio Oriente"
-msgstr "Sales office Germany & Middle East"
+msgstr "Authorized dealer Germany & Middle East"
 
-msgid "Contatto commerciale Italia"
-msgstr "Business contact Italy"
+msgid "Contatto commerciale Roma"
+msgstr "Authorized dealer Rome"
 
 msgid "Cookie Analitici"
 msgstr "Analytical cookies"

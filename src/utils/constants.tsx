@@ -118,7 +118,7 @@ export const CONTATTI_COMMERCIALI = [
       name: "Marco Accardo",
       telephone: "+39 333 9481810",
     },
-    name: <Trans>Contatto commerciale Italia</Trans>,
+    name: <Trans>Contatto commerciale Roma</Trans>,
   },
   {
     data: {

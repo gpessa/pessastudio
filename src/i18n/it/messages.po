@@ -208,8 +208,8 @@ msgstr "Contatto commerciale Germania"
 msgid "Contatto commerciale Germania & Medio Oriente"
 msgstr "Contatto commerciale Germania & Medio Oriente"
 
-msgid "Contatto commerciale Italia"
-msgstr "Contatto commerciale Italia"
+msgid "Contatto commerciale Roma"
+msgstr "Contatto commerciale Roma"
 
 msgid "Cookie Analitici"
 msgstr "Cookie Analitici"
