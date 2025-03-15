@@ -1,4 +1,4 @@
-import { ButtonBase, Grid, GridSize } from "@mui/material";
+import { ButtonBase, Grid, GridProps } from "@mui/material";
 import ModalGallery from "components/ModalGallery";
 import Image from "next/image";
 import React from "react";
@@ -25,7 +25,7 @@ const ImgStyled = styled(Image)(() => ({
 
 export type ProductImagesProps = {
   images: Picture[];
-  md: GridSize;
+  md?: GridProps["md"];
 };
 
 const DIM = 300;

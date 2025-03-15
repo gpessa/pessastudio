@@ -1,5 +1,5 @@
 import { Trans } from "@lingui/macro";
-import { Box, Grid, GridSize, Stack } from "@mui/material";
+import { Box, Grid, GridProps, Stack } from "@mui/material";
 import Section from "components/Section";
 import Th from "components/Th";
 import React from "react";
@@ -12,7 +12,7 @@ export type AccessoriProps = {
     name: JSX.Element;
     description: JSX.Element;
     pictures: (Picture & {
-      md?: number;
+      md?: GridProps["md"];
       top?: string;
       left?: string;
     })[];
@@ -47,7 +47,7 @@ const Accessori: React.FC<AccessoriProps> = ({ accessories }) => (
               {description}
             </Grid>
             {pictures.map(({ image, md = 6, top, left }) => (
-              <Grid item md={md as GridSize} xs={6} key={image.src}>
+              <Grid item md={md} xs={6} key={image.src}>
                 <AccessoriImage {...{ image, left, top }} />
               </Grid>
             ))}
