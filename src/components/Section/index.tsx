@@ -73,7 +73,9 @@ const SectionStyledColored = styled(SectionStyled)<Props>(
     }
 );
 
-const StyledContainer = styled(Container)<{
+const StyledContainer = styled(Container, {
+  shouldForwardProp: (props) => props !== "textAlign",
+})<{
   textAlign?: "center" | "justify";
 }>(({ textAlign }) => ({
   position: "relative",
