@@ -1,6 +1,6 @@
 {
   "name": "pessastudio",
-  "version": "3.1.165",
+  "version": "3.1.166",
   "private": true,
   "description": "Pessastudio",
   "license": "MIT",
@@ -16,10 +16,10 @@
     "start": "next start"
   },
   "dependencies": {
-    "@emotion/cache": "^11.13.1",
-    "@emotion/react": "^11.13.3",
+    "@emotion/cache": "^11.14.0",
+    "@emotion/react": "^11.14.0",
     "@emotion/server": "^11.11.0",
-    "@emotion/styled": "^11.13.0",
+    "@emotion/styled": "^11.14.0",
     "@lingui/core": "^4.13.0",
     "@lingui/macro": "4.13.0",
     "@lingui/react": "4.13.0",
