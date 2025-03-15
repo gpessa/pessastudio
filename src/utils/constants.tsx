@@ -120,14 +120,6 @@ export const CONTATTI_COMMERCIALI = [
     },
     name: <Trans>Contatto commerciale Roma</Trans>,
   },
-  {
-    data: {
-      email: "equi-bride@orange.fr",
-      name: "Société Equi Bride (Sébastien Mugnier)",
-      telephone: "+33 682369614",
-    },
-    name: <Trans>Contatto commerciale Francia</Trans>,
-  },
 ];
 
 export const SEDE_OPERATIVA = {
