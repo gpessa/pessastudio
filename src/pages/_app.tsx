@@ -11,37 +11,31 @@ import { GoogleAnalytics } from "@next/third-parties/google";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import Breadcrumb from "components/Breadcrumb";
 import { useLinguiInit } from "hooks/useLingui";
-import { Session } from "next-auth";
-import { SessionProvider } from "next-auth/react";
 import "pure-react-carousel/dist/react-carousel.es.css";
 import { isProduction } from "utils/constants";
 import packageJson from "../../package.json";
 
-export type MyAppProps = AppProps<{ messages: any }> & {
-  session: Session;
-};
+export type MyAppProps = AppProps<{ messages: any }>;
 
 const MyApp = (props: MyAppProps) => {
-  const { Component, session, pageProps } = props;
+  const { Component, pageProps } = props;
 
   useLinguiInit(pageProps.messages);
 
   return (
     <AppCacheProvider {...props}>
-      <SessionProvider session={session}>
-        <SpeedInsights />
-        <I18nProvider i18n={i18n}>
-          <Seo />
-          <ThemeProvider theme={theme}>
-            <CssBaseline />
-            <Header />
-            <Breadcrumb />
-            <Component {...pageProps} />
-            <Footer version={packageJson.version} />
-            <Gdpr />
-          </ThemeProvider>
-        </I18nProvider>
-      </SessionProvider>
+      <SpeedInsights />
+      <I18nProvider i18n={i18n}>
+        <Seo />
+        <ThemeProvider theme={theme}>
+          <CssBaseline />
+          <Header />
+          <Breadcrumb />
+          <Component {...pageProps} />
+          <Footer version={packageJson.version} />
+          <Gdpr />
+        </ThemeProvider>
+      </I18nProvider>
       {isProduction && <GoogleAnalytics gaId="G-11DED996WJ" />}
     </AppCacheProvider>
   );
