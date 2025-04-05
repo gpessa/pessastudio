@@ -9,8 +9,8 @@ const Fosso: React.FC<{ products: ProductData[] }> = ({ products }) => (
   <Grid container spacing={PRODUCT_GUTTER}>
     <Grid
       size={{
-        xs: 12,
-        md: 6
+        md: 6,
+        xs: 12
       }}>
       <Title
         title={<Trans>Fosso</Trans>}
@@ -29,8 +29,8 @@ const Fosso: React.FC<{ products: ProductData[] }> = ({ products }) => (
     </Grid>
     <Grid
       size={{
-        xs: 12,
-        md: 6
+        md: 6,
+        xs: 12
       }}>
       <Product {...products[0]} />
     </Grid>

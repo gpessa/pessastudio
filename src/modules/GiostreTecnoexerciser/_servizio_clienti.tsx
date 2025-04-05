@@ -61,8 +61,8 @@ const TecnoexerciserServizioClienti = () => {
           rows={DIMENSIONS}
           title={<Trans>Dimensioni</Trans>}
           size={{
-            xs: 12,
-            md: "grow"
+            md: "grow",
+            xs: 12
           }} />
         {MANUALI && (
           <Grid
@@ -70,8 +70,8 @@ const TecnoexerciserServizioClienti = () => {
             rows={MANUALI}
             title={<Trans>Manuale d'istruzioni</Trans>}
             size={{
-              xs: 12,
-              md: "grow"
+              md: "grow",
+              xs: 12
             }} />
         )}
         {OTHERS && (
@@ -80,8 +80,8 @@ const TecnoexerciserServizioClienti = () => {
             rows={OTHERS}
             title={<Trans>Altro</Trans>}
             size={{
-              xs: 12,
-              md: "grow"
+              md: "grow",
+              xs: 12
             }} />
         )}
       </Grid>

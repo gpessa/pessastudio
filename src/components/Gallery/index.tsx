@@ -43,8 +43,8 @@ const Gallery: React.FC<Props> = ({ images, xs = 6, md = 6 }) => (
             onClick={() => open(item)}
             component={ButtonBaseStyled}
             size={{
-              xs: xs,
               md: md,
+              xs: xs,
             }}
           >
             <FigureStyled>

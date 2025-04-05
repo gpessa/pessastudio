@@ -13,8 +13,8 @@ const Segnaletica: React.FC<{ products: ProductData[] }> = ({ products }) => (
         <Grid
           key={`segnaletica_${index}`}
           size={{
-            xs: 12,
-            md: 6
+            md: 6,
+            xs: 12
           }}>
           <Product {...product} />
         </Grid>

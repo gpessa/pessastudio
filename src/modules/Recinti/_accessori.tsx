@@ -15,8 +15,8 @@ const Accessori: React.FC<{ products: ProductData[] }> = ({ products }) => (
         <Grid
           key={index}
           size={{
-            xs: 12,
-            md: 12
+            md: 12,
+            xs: 12
           }}>
           <Product {...product} />
         </Grid>

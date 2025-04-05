@@ -48,8 +48,8 @@ const IppowalkerServizioClienti = () => {
           title={<Trans>Dimensioni</Trans>}
           rows={DIMENSIONS}
           size={{
-            xs: 12,
-            md: 6
+            md: 6,
+            xs: 12
           }} />
         {MANUALI && (
           <Grid
@@ -57,8 +57,8 @@ const IppowalkerServizioClienti = () => {
             title={<Trans>Manuale d'istruzioni</Trans>}
             rows={MANUALI}
             size={{
-              xs: 12,
-              md: 6
+              md: 6,
+              xs: 12
             }} />
         )}
       </Grid>

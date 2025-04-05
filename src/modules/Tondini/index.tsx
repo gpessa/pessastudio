@@ -273,15 +273,15 @@ const Tondini: React.FC = () => {
         <Grid container spacing={PRODUCT_GUTTER}>
           <Grid
             size={{
-              xs: 12,
-              md: 6
+              md: 6,
+              xs: 12
             }}>
             <ContentTable title={<Trans>Dimensioni</Trans>} rows={DIMENSIONS} />
           </Grid>
           <Grid
             size={{
-              xs: 12,
-              md: 6
+              md: 6,
+              xs: 12
             }}>
             <ContentTable title={<Trans>Manuali</Trans>} rows={MANUALS} />
           </Grid>

@@ -48,8 +48,8 @@ const Product: React.FC<ProductProps> = (product) => {
           <ProductImages {...{ images, md }} />
           <Grid
             size={{
-              xs: 12,
-              md: md
+              md: md,
+              xs: 12
             }}>
             <ProductInformations {...product} />
           </Grid>

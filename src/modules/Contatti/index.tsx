@@ -107,8 +107,8 @@ const Contatti: React.FC = () => {
             <Grid
               key={index}
               size={{
-                xs: 12,
                 md: 3,
+                xs: 12,
               }}
             >
               <Card sx={{ minHeight: "100%" }} elevation={0}>

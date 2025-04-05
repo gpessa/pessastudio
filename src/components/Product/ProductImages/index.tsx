@@ -39,8 +39,8 @@ const ProductImages: React.FC<ProductImagesProps> = ({ images, md }) => (
             key={image.image.src}
             onClick={() => open(image)}
             size={{
-              xs: 12,
               md: md,
+              xs: 12,
             }}
           >
             <ButtonBaseStyled>
