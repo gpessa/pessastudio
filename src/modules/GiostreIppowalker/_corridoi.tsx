@@ -41,7 +41,7 @@ const IppowalkerCorridoi = () => {
             <Trans>I corridoi</Trans>
           </Th>
 
-          <Typography component="p">
+          <Typography mx={{ marginBottom: 2 }}>
             <Trans>
               Anche in questo semplice modello potrai decidere di dotare la tua
               giostra di un corridoio scegliendo tra il piú economico corridoio

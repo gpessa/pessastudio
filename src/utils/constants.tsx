@@ -242,7 +242,7 @@ export const GIOSTRA_COPERTURA_PVC_DESCRIZIONE = (
       spalmato di colore verde o crema e in base alle esigenze del cliente anche
       in altre colorazioni.
     </Typography>
-    <Typography component="p">
+    <Typography mx={{ marginBottom: 2 }}>
       Questa copertura è in grado di sorreggere un carico neve pari a 80 kg/mq *
       e una forza vento pari a 110 Km/h.
     </Typography>
@@ -279,7 +279,7 @@ export const GIOSTRA_DESCRIZIONE_RECINZIONE_TECONOFENCE = (
       nel tempo e ti consentirà di abbattere i costi di manutenzione che
       affliggono le classiche recinzioni in legno.
     </Typography>
-    <Typography textAlign="justify" component="p">
+    <Typography textAlign="justify" mx={{ marginBottom: 2 }}>
       Uno dei vantaggi è inoltre quello di poter installare la giostra in piena
       autonomia.
     </Typography>

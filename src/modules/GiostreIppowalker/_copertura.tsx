@@ -36,7 +36,7 @@ const IppowalkerCopertura = () => {
           <Th variant="h3" sans>
             <Trans>La copertura</Trans>
           </Th>
-          <Typography component="p">
+          <Typography mx={{ marginBottom: 2 }}>
             <Trans>
               É possibile acquistare la giostra sprovvista di copertura ma se il
               vostro obbiettivo è quello di poter lavorare 365 giorni all'anno,

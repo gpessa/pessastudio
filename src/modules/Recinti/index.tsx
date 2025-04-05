@@ -74,22 +74,22 @@ const Recinti: React.FC = () => {
           <>
             <Th variant="h1">{PAGES.RECINTI.title}</Th>
             <Trans>
-              <Typography component="p">
+              <Typography mx={{ marginBottom: 2 }}>
                 Le recinzioni <strong>TECNOFENCE</strong> sono realizzate con
                 materiale particolarmente adatto a durare nel tempo anche in
                 presenza delle più avverse condizioni meteorologiche.
               </Typography>
-              <Typography component="p">
+              <Typography mx={{ marginBottom: 2 }}>
                 A differenza del legno o di altri prodotti utilizzati per il
                 medesimo scopo, gli animali non mordono la recinzione.
               </Typography>
-              <Typography component="p">
+              <Typography mx={{ marginBottom: 2 }}>
                 <strong>TECNOFENCE</strong>, non presenta spigoli vivi e
                 inoltre, essendo elastica, è in grado di assorbire gli urti
                 senza rompersi evitando cosi di provocare infortuni a persone e
                 animali.
               </Typography>
-              <Typography component="p">
+              <Typography mx={{ marginBottom: 2 }}>
                 Il materiale impiegato è lo stesso che viene utilizzato per la
                 produzione di serramenti dove l’inalterabilità del colore e
                 delle caratteristiche tecniche sono condizioni indispensabili
@@ -99,15 +99,15 @@ const Recinti: React.FC = () => {
                 mantenendo inalterate le caratteristiche originali anche con
                 temperature variabili da +70 °C a -20 °C.
               </Typography>
-              <Typography component="p">
+              <Typography mx={{ marginBottom: 2 }}>
                 Principalmente prodotte nel colore bianco, possono essere
                 fornite, a richiesta, anche nel colore verde.
               </Typography>
-              <Typography component="p">
+              <Typography mx={{ marginBottom: 2 }}>
                 In ogni recinzione inoltre si possono inserire uno o più
                 cancelli scorrevoli in alluminio.
               </Typography>
-              <Typography component="p">
+              <Typography mx={{ marginBottom: 2 }}>
                 Tutte le nostre recinzioni sono personalizzate in base alle
                 esigenze di metratura e di figura del cliente.
               </Typography>

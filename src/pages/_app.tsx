@@ -6,7 +6,7 @@ import { Footer, Gdpr, Header, Seo } from "components";
 import { AppProps } from "next/app";
 import theme from "../theme";
 
-import { AppCacheProvider } from "@mui/material-nextjs/v14-pagesRouter";
+import { AppCacheProvider } from "@mui/material-nextjs/v15-pagesRouter";
 import { GoogleAnalytics } from "@next/third-parties/google";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import Breadcrumb from "components/Breadcrumb";
