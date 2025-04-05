@@ -82,17 +82,17 @@ const Giostre: React.FC = () => {
     subtitle: PAGES.GIOSTRE.title,
     text: (
       <Trans>
-        <Typography component="p">
+        <Typography mx={{ marginBottom: 2 }}>
           La nostra azienda si distingue per le giostre, il nostro punto di
           forza.{" "}
         </Typography>
-        <Typography component="p">
+        <Typography mx={{ marginBottom: 2 }}>
           La loro creazione è stata il risultato della ricerca condotta da{" "}
           <strong>Luciano Pessa</strong>, con l'intento di sviluppare uno
           strumento di lavoro affidabile e semplice da utilizzare per
           l'allenamento dei cavalli anche in assenza del cavaliere.
         </Typography>
-        <Typography component="p">
+        <Typography mx={{ marginBottom: 2 }}>
           La giostra consente non solo di raffreddare il cavallo dopo
           l'allenamento, ma anche di creare una vera e propria sessione di
           lavoro, passando da un'andatura all'altra e cambiando di mano. Grazie
@@ -161,7 +161,7 @@ const Giostre: React.FC = () => {
         </Th>
 
         <Trans>
-          <Typography component="p">
+          <Typography mx={{ marginBottom: 2 }}>
             Il nostro modello di punta, il{" "}
             <strong>{GIOSTRE_MODELS.TECNOEXERCISER}</strong>, rappresenta lo
             strumento più avanzato nel suo campo. Frutto di oltre 20 anni di
@@ -171,7 +171,7 @@ const Giostre: React.FC = () => {
             qualità e innovazione.
           </Typography>
 
-          <Typography component="p">
+          <Typography mx={{ marginBottom: 2 }}>
             Per chi cerca una soluzione più economica ma comunque affidabile,
             proponiamo l'<strong>{GIOSTRE_MODELS.IPPOWALKER}</strong>. Questo
             modello base è perfetto per chi desidera un'opzione conveniente
