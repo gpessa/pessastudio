@@ -28,11 +28,15 @@ const IppowalkerCopertura = () => {
   return (
     <Section color="warm1">
       <Grid container spacing={PRODUCT_GUTTER}>
-        <Grid md={6} item>
+        <Grid
+          size={{
+            md: 6,
+          }}
+        >
           <Th variant="h3" sans>
             <Trans>La copertura</Trans>
           </Th>
-          <Typography paragraph>
+          <Typography component="p">
             <Trans>
               É possibile acquistare la giostra sprovvista di copertura ma se il
               vostro obbiettivo è quello di poter lavorare 365 giorni all'anno,
@@ -45,7 +49,11 @@ const IppowalkerCopertura = () => {
 
           {GIOSTRE_COPERTURA_NOTE}
         </Grid>
-        <Grid md={6} item>
+        <Grid
+          size={{
+            md: 6,
+          }}
+        >
           <Gallery images={IMAGES} />
         </Grid>
       </Grid>

@@ -1,4 +1,5 @@
-import { Box, Link, styled, Typography } from "@mui/material";
+import { Box, Link, Typography } from "@mui/material";
+import { styled } from "@mui/material/styles";
 import Th from "components/Th";
 import Image, { StaticImageData } from "next/image";
 import NextLink from "next/link";

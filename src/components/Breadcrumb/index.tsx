@@ -1,11 +1,6 @@
 import HomeIcon from "@mui/icons-material/Home";
-import {
-  Breadcrumbs,
-  Container,
-  Link,
-  styled,
-  Typography,
-} from "@mui/material";
+import { Breadcrumbs, Container, Link, Typography } from "@mui/material";
+import { styled } from "@mui/material/styles";
 import { usePages } from "hooks";
 import useTree from "hooks/useTree";
 import NextLink from "next/link";

@@ -1,5 +1,6 @@
 import { Trans } from "@lingui/macro";
-import { Grid, styled } from "@mui/material";
+import { Grid } from "@mui/material";
+import { styled } from "@mui/material/styles";
 import { Product, Section, Th } from "components";
 import { BREAKPOINT, PRODUCT_GUTTER } from "theme";
 
@@ -33,7 +34,12 @@ const Gamma: React.FC<{ products: ProductData[] }> = ({ products }) => (
     </Th>
     <Grid container spacing={PRODUCT_GUTTER * 2}>
       {products.map((item, index) => (
-        <Grid item key={index} md={3}>
+        <Grid
+          key={index}
+          size={{
+            md: 3,
+          }}
+        >
           <ProductStyled {...item} vertical />
         </Grid>
       ))}

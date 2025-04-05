@@ -33,7 +33,7 @@ const Cubi: React.FC<{ products: ProductData[] }> = ({ products }) => (
 
     <Grid container spacing={PRODUCT_GUTTER}>
       {products.map((product, index) => (
-        <Grid item xs={12} key={`cubi_${index}`}>
+        <Grid key={`cubi_${index}`} size={12}>
           <Product {...product} />
         </Grid>
       ))}

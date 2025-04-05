@@ -42,25 +42,24 @@ const IppowalkerServizioClienti = () => {
   return (
     <Section>
       <Th variant="h4">{<Trans>Supporto clienti</Trans>}</Th>
-
       <Grid container spacing={PRODUCT_GUTTER}>
         <Grid
-          item
-          xs={12}
-          md={6}
           component={ContentTable}
           title={<Trans>Dimensioni</Trans>}
           rows={DIMENSIONS}
-        />
+          size={{
+            xs: 12,
+            md: 6
+          }} />
         {MANUALI && (
           <Grid
-            item
-            xs={12}
-            md={6}
             component={ContentTable}
             title={<Trans>Manuale d'istruzioni</Trans>}
             rows={MANUALI}
-          />
+            size={{
+              xs: 12,
+              md: 6
+            }} />
         )}
       </Grid>
     </Section>

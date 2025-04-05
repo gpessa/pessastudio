@@ -6,13 +6,13 @@ import {
   BoxProps,
   Button,
   Paper,
-  styled,
   Table,
   TableBody,
   TableCell,
   TableContainer,
   TableRow,
 } from "@mui/material";
+import { styled } from "@mui/material/styles";
 import { Th } from "components";
 import Link from "next/link";
 import React from "react";

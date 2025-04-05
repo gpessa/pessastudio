@@ -24,16 +24,16 @@ const GiostreIppowalker: React.FC = () => {
           <>
             <Th variant="h1">{PAGES.GIOSTRE_IPPOWALKER.title}</Th>
             <Trans>
-              <Typography paragraph>
+              <Typography component="p">
                 Ippowalker è una giostra di recente realizzazione, nasce dal
                 sogno di poter fornire uno strumento di allenamento
                 professionale anche a coloro che ne fanno un uso sporadico.
               </Typography>
-              <Typography paragraph>
+              <Typography component="p">
                 La giostra è disponibile in due diametri 12 mt. (4 cavalli) e
                 14.2 mt. (6 cavalli).
               </Typography>
-              <Typography paragraph>
+              <Typography component="p">
                 Costruita con la qualità e la robustezza che contraddistingue
                 tutti i nostri prodotti essa rappresenta uno strumento semplice
                 ed essenziale ma al contempo completo.
@@ -46,7 +46,7 @@ const GiostreIppowalker: React.FC = () => {
                 <strong>Porte di separazione elettrificate</strong> ottenute
                 grazie a tubi di plastica elettroconduttiva.
               </Typography>
-              <Typography paragraph>
+              <Typography component="p">
                 Un <strong>pannello di controllo</strong> che ti permetterà di
                 di scegliere tra un programma manuale e uno periodico.
               </Typography>

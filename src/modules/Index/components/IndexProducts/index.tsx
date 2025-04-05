@@ -1,7 +1,8 @@
 import { Trans } from "@lingui/macro";
-import { Grid, styled, useMediaQuery } from "@mui/material";
+import { Grid, useMediaQuery } from "@mui/material";
 import Section from "components/Section";
 import Title from "components/Title";
+import { styled } from "@mui/material/styles";
 
 import { usePages } from "hooks";
 import {
@@ -46,14 +47,24 @@ const IndexProducts: React.FC = () => {
     <CarouselProvider {...CAROUSEL_CONFIGURATION} visibleSlides={ITEM_TO_SHOW}>
       <Section image="dots" type="horizontal">
         <Grid container justifyContent="space-between">
-          <Grid item md={3} xs={12}>
+          <Grid
+            size={{
+              md: 3,
+              xs: 12,
+            }}
+          >
             <Title
               subtitle={<Trans>Prodotti</Trans>}
               title={<Trans>Scopri la nostra gamma di prodotti</Trans>}
             />
           </Grid>
 
-          <Grid item md={8} xs={12}>
+          <Grid
+            size={{
+              md: 8,
+              xs: 12,
+            }}
+          >
             <CarouselStyled>
               {product.map(({ url, title, description, image }, index) => (
                 <Slide index={index} key={url}>
@@ -69,7 +80,7 @@ const IndexProducts: React.FC = () => {
             </CarouselStyled>
           </Grid>
 
-          <SliderSelectorStyled item md={3} xs={12}>
+          <SliderSelectorStyled size={{ md: 3, xs: 12 }}>
             <ProductsSelector />
           </SliderSelectorStyled>
         </Grid>

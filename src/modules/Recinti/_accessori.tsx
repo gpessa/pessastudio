@@ -12,7 +12,12 @@ const Accessori: React.FC<{ products: ProductData[] }> = ({ products }) => (
     </Th>
     <Grid container spacing={PRODUCT_GUTTER}>
       {products.map((product, index) => (
-        <Grid key={index} xs={12} md={12} item>
+        <Grid
+          key={index}
+          size={{
+            xs: 12,
+            md: 12
+          }}>
           <Product {...product} />
         </Grid>
       ))}

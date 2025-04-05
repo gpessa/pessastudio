@@ -263,27 +263,30 @@ const Tondini: React.FC = () => {
   return (
     <>
       <Hero {...HERO} />
-
       <Benefits {...BENEFITS} />
-
       <Section color="primary">
         <Gallery images={IMAGES} md={3} />
       </Section>
-
       <Accessori {...ACCESSORI} />
-
       <Section color="warm1">
         <Th variant="h4">{<Trans>Supporto clienti</Trans>}</Th>
         <Grid container spacing={PRODUCT_GUTTER}>
-          <Grid item xs={12} md={6}>
+          <Grid
+            size={{
+              xs: 12,
+              md: 6
+            }}>
             <ContentTable title={<Trans>Dimensioni</Trans>} rows={DIMENSIONS} />
           </Grid>
-          <Grid item xs={12} md={6}>
+          <Grid
+            size={{
+              xs: 12,
+              md: 6
+            }}>
             <ContentTable title={<Trans>Manuali</Trans>} rows={MANUALS} />
           </Grid>
         </Grid>
       </Section>
-
       <ContactUs />
     </>
   );

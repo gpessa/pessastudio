@@ -13,7 +13,7 @@ const CucchiaiSegnaletica: React.FC<{ products: ProductData[] }> = ({
 
     <Grid container spacing={PRODUCT_GUTTER}>
       {products.map((product, index) => (
-        <Grid item xs={12} key={`cucchiai-segnaletica_${index}`}>
+        <Grid key={`cucchiai-segnaletica_${index}`} size={12}>
           <Product {...product} />
         </Grid>
       ))}

@@ -11,7 +11,12 @@ const CandelieriLameForate: React.FC<{ products: ProductData[] }> = ({
     <Title sx={{ mb: PRODUCT_GUTTER }} title={t`Candelieri e lame forate`} />
     <Grid container spacing={PRODUCT_GUTTER}>
       {products.map((product, index) => (
-        <Grid item xs={12} md={3} key={`candelieri_lame_forate_${index}`}>
+        <Grid
+          key={`candelieri_lame_forate_${index}`}
+          size={{
+            xs: 12,
+            md: 3
+          }}>
           <Product {...product} vertical />
         </Grid>
       ))}

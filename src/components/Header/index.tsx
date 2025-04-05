@@ -8,10 +8,10 @@ import {
   IconButton,
   List,
   ListItem,
-  styled,
   Toolbar,
   useScrollTrigger,
 } from "@mui/material";
+import { styled } from "@mui/material/styles";
 import { usePages } from "hooks";
 
 import Link from "next/link";

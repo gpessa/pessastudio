@@ -1,8 +1,9 @@
 import { Container, Grid } from "@mui/material";
-import { styled } from "@mui/material";
-import { BREAKPOINT } from "theme";
-import React, { ReactNode } from "react";
+
+import { styled } from "@mui/material/styles";
 import Section from "components/Section";
+import { ReactNode } from "react";
+import { BREAKPOINT } from "theme";
 
 interface Props {
   left: ReactNode;
@@ -43,12 +44,8 @@ const Footer = ({ left, right }: Props) => (
   <SectionStyled spacing="small" disableGutters={true}>
     <Container disableGutters>
       <Grid container>
-        <LeftColumn item xs={12} md={6}>
-          {left}
-        </LeftColumn>
-        <RightColumn item xs={12} md={6}>
-          {right}
-        </RightColumn>
+        <LeftColumn size={{ md: 6, xs: 12 }}>{left}</LeftColumn>
+        <RightColumn size={{ md: 6, xs: 12 }}>{right}</RightColumn>
       </Grid>
     </Container>
   </SectionStyled>

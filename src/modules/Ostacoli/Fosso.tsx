@@ -7,7 +7,11 @@ import { PRODUCT_GUTTER } from "theme";
 
 const Fosso: React.FC<{ products: ProductData[] }> = ({ products }) => (
   <Grid container spacing={PRODUCT_GUTTER}>
-    <Grid item xs={12} md={6}>
+    <Grid
+      size={{
+        xs: 12,
+        md: 6
+      }}>
       <Title
         title={<Trans>Fosso</Trans>}
         text={
@@ -23,7 +27,11 @@ const Fosso: React.FC<{ products: ProductData[] }> = ({ products }) => (
         }
       />
     </Grid>
-    <Grid item xs={12} md={6}>
+    <Grid
+      size={{
+        xs: 12,
+        md: 6
+      }}>
       <Product {...products[0]} />
     </Grid>
   </Grid>

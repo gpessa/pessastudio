@@ -1,7 +1,8 @@
-import { Box, Container, styled, Typography } from "@mui/material";
+import { Box, Container, Typography } from "@mui/material";
 import Image, { StaticImageData } from "next/image";
 import React from "react";
 import { BREAKPOINT } from "theme";
+import { styled } from "@mui/material/styles";
 
 const TypographyStyled = styled(Typography)(({ theme }) => ({
   backgroundColor: theme.palette.common.white,

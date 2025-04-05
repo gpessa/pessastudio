@@ -1,4 +1,5 @@
-import { Container, ContainerProps, styled } from "@mui/material";
+import { Container, ContainerProps } from "@mui/material";
+import { styled } from "@mui/material/styles";
 
 import React from "react";
 import { BREAKPOINT, SECTION_SPACING } from "theme";

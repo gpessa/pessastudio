@@ -46,7 +46,6 @@ const Dressage: React.FC = () => {
         }
         right={<Gallery images={IMAGES} />}
       />
-
       <Section id="dressage-training" color="warm1">
         <Th variant="h2">{DRESSAGE_MODELS.TRAINING}</Th>
         <Box sx={{ mb: PRODUCT_GUTTER }}>
@@ -79,13 +78,17 @@ const Dressage: React.FC = () => {
             DRESSAGE_TRAINING_LETTERE_12_KIT,
             DRESSAGE_TRAINING_MODULO,
           ].map((product, index) => (
-            <Grid item key={index} md={3} xs={12}>
+            <Grid
+              key={index}
+              size={{
+                md: 3,
+                xs: 12
+              }}>
               <Product vertical {...product} />
             </Grid>
           ))}
         </Grid>
       </Section>
-
       <Section id="dressage-olympic">
         <Th variant="h2">{DRESSAGE_MODELS.OLYMPIC}</Th>
         <Box sx={{ mb: PRODUCT_GUTTER }}>
@@ -123,13 +126,17 @@ const Dressage: React.FC = () => {
               pictures: [DRESSAGE_OLYMPIC_RETTANGOLO_20X60.pictures[0]],
             },
           ].map((product, index) => (
-            <Grid item key={index} md={3} xs={12}>
+            <Grid
+              key={index}
+              size={{
+                md: 3,
+                xs: 12
+              }}>
               <Product vertical {...product} />
             </Grid>
           ))}
         </Grid>
       </Section>
-
       <ContactUs color="warm1" />
     </>
   );

@@ -1,6 +1,7 @@
-import { Box, BoxProps, styled, Typography } from "@mui/material";
+import { Box, BoxProps, Typography } from "@mui/material";
 import React from "react";
 import { BREAKPOINT } from "theme";
+import { styled } from "@mui/material/styles";
 
 export type TitleProps = {
   text?: JSX.Element | string;

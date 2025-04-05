@@ -46,7 +46,11 @@ const Product: React.FC<ProductProps> = (product) => {
       <Box id={id} className={className}>
         <Grid container spacing={PRODUCT_GUTTER}>
           <ProductImages {...{ images, md }} />
-          <Grid item xs={12} md={md}>
+          <Grid
+            size={{
+              xs: 12,
+              md: md
+            }}>
             <ProductInformations {...product} />
           </Grid>
         </Grid>

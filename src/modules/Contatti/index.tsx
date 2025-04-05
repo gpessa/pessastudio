@@ -8,7 +8,6 @@ import {
   Grid,
   Stack,
   Typography,
-  styled,
 } from "@mui/material";
 import { Columns, Section, Th } from "components";
 import { usePages } from "hooks";
@@ -25,6 +24,7 @@ import {
 import anna from "./assets/anna.jpg";
 import ContattiAddress from "./components/ContattiAddress";
 import ContattiBank from "./components/ContattiBank";
+import { styled } from "@mui/material/styles";
 
 export { getStaticProps } from "utils/getProps";
 
@@ -49,7 +49,7 @@ const Contatti: React.FC = () => {
         left={
           <>
             <Th variant="h1">{PAGES.CONTATTI.title}</Th>
-            <Typography paragraph>
+            <Typography component="p">
               <Trans>
                 Siamo qui per aiutarti! Se hai domande sui nostri prodotti per
                 cavalli, necessiti di assistenza con un ordine o desideri
@@ -98,14 +98,19 @@ const Contatti: React.FC = () => {
           </Stack>
         }
       />
-
       <Section color="warm1">
         <Th variant="h4">
           <Trans>Rivenditori</Trans>
         </Th>
         <Grid container spacing={PRODUCT_GUTTER} alignItems="stretch">
           {CONTATTI_COMMERCIALI.map(({ name, data }, index) => (
-            <Grid item key={index} xs={12} md={3}>
+            <Grid
+              key={index}
+              size={{
+                xs: 12,
+                md: 3,
+              }}
+            >
               <Card sx={{ minHeight: "100%" }} elevation={0}>
                 <CardContent>
                   <Th variant="h5">{name}</Th>

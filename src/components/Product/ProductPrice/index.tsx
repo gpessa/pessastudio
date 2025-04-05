@@ -1,5 +1,6 @@
 import { Trans } from "@lingui/macro";
-import { Badge, styled, Typography } from "@mui/material";
+import { Badge, Typography } from "@mui/material";
+import { styled } from "@mui/material/styles";
 import React from "react";
 import { formatPrice } from "utils/format";
 

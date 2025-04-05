@@ -55,35 +55,34 @@ const TecnoexerciserServizioClienti = () => {
   return (
     <Section>
       <Th variant="h4">{<Trans>Supporto clienti</Trans>}</Th>
-
       <Grid container spacing={PRODUCT_GUTTER}>
         <Grid
-          item
-          xs={12}
-          md
           component={ContentTable}
           rows={DIMENSIONS}
           title={<Trans>Dimensioni</Trans>}
-        />
+          size={{
+            xs: 12,
+            md: "grow"
+          }} />
         {MANUALI && (
           <Grid
-            item
-            xs={12}
-            md
             component={ContentTable}
             rows={MANUALI}
             title={<Trans>Manuale d'istruzioni</Trans>}
-          />
+            size={{
+              xs: 12,
+              md: "grow"
+            }} />
         )}
         {OTHERS && (
           <Grid
-            item
-            xs={12}
-            md
             component={ContentTable}
             rows={OTHERS}
             title={<Trans>Altro</Trans>}
-          />
+            size={{
+              xs: 12,
+              md: "grow"
+            }} />
         )}
       </Grid>
     </Section>

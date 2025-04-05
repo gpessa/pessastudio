@@ -32,12 +32,16 @@ const TecnoexerciserCorridoi = () => {
         spacing={PRODUCT_GUTTER}
         direction={{ [BREAKPOINT]: "row-reverse" }}
       >
-        <Grid md={6} item>
+        <Grid
+          size={{
+            md: 6,
+          }}
+        >
           <Th variant="h3" sans textAlign="right">
             <Trans>I corridoi</Trans>
           </Th>
 
-          <Typography paragraph>
+          <Typography component="p">
             <Trans>
               La giostra puo essere acquistata scegliendo tra il piú economico
               corridoio costituito dalla recinzione <strong>TECNOFENCE</strong>{" "}
@@ -50,7 +54,11 @@ const TecnoexerciserCorridoi = () => {
 
           {GIOSTRA_DESCRIZIONE_RECINZIONE_COMPENSATO_MARINO(18, "EXERCISER")}
         </Grid>
-        <Grid md={6} item>
+        <Grid
+          size={{
+            md: 6,
+          }}
+        >
           <Gallery images={IMAGES} />
         </Grid>
       </Grid>

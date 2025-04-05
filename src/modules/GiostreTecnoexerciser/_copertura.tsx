@@ -38,12 +38,16 @@ const TecnoexerciserCopertura = () => {
   return (
     <Section color="warm1">
       <Grid container spacing={PRODUCT_GUTTER}>
-        <Grid md={6} item>
+        <Grid
+          size={{
+            md: 6,
+          }}
+        >
           <Th variant="h3" sans>
             <Trans>La copertura</Trans>
           </Th>
 
-          <Typography paragraph>
+          <Typography component="p">
             <Trans>
               È possibile acquistare la giostra sprovvista di copertura ma se il
               vostro obbiettivo è quello di poter lavorare 365 giorni all'anno,
@@ -54,7 +58,7 @@ const TecnoexerciserCopertura = () => {
 
           {GIOSTRA_COPERTURA_PVC_DESCRIZIONE}
 
-          <Typography paragraph>
+          <Typography component="p">
             <Trans>
               L’alternativa alla copertura in PVC è la{" "}
               <strong>copertura rigida</strong> in lastre di vetroresina. le
@@ -68,7 +72,11 @@ const TecnoexerciserCopertura = () => {
 
           {GIOSTRE_COPERTURA_NOTE}
         </Grid>
-        <Grid md={6} item>
+        <Grid
+          size={{
+            md: 6,
+          }}
+        >
           <Gallery images={IMAGES} />
         </Grid>
       </Grid>

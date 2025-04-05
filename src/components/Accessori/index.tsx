@@ -38,16 +38,21 @@ const Accessori: React.FC<AccessoriProps> = ({ accessories }) => (
           >
             <Grid
               sx={{ textAlign: { md: index % 2 == 0 ? "right" : "left" } }}
-              item
-              md
-            >
+              size={{
+                md: "grow"
+              }}>
               <Th variant="h4" sans>
                 {name}
               </Th>
               {description}
             </Grid>
             {pictures.map(({ image, md = 6, top, left }) => (
-              <Grid item md={md} xs={6} key={image.src}>
+              <Grid
+                key={image.src}
+                size={{
+                  md: md,
+                  xs: 6
+                }}>
                 <AccessoriImage {...{ image, left, top }} />
               </Grid>
             ))}

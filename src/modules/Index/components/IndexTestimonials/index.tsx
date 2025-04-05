@@ -1,5 +1,6 @@
 import FormatQuoteIcon from "@mui/icons-material/FormatQuote";
-import { styled, Typography } from "@mui/material";
+import { Typography } from "@mui/material";
+import { styled } from "@mui/material/styles";
 import Columns from "components/Columns";
 import Title, { TitleProps } from "components/Title";
 import {

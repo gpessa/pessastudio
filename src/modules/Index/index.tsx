@@ -117,13 +117,13 @@ const Index: React.FC = () => {
         title={<Trans>Pessastudio, una scelta di qualità</Trans>}
         text={
           <Trans>
-            <Typography paragraph>
+            <Typography component="p">
               {NAME} è un'azienda altamente affidabile e rinomata nel settore
               dell'equitazione. Ogni anno, centinaia di persone scelgono i
               nostri articoli d'equitazione per la qualità superiore che li
               caratterizza.
             </Typography>
-            <Typography paragraph>
+            <Typography component="p">
               La gamma di prodotti offerti è ampia e diversificata, con
               un'attenzione particolare alla funzionalità e al design. La
               competenza e l'esperienza del team di {NAME} sono alla base del

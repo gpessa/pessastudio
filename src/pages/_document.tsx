@@ -2,7 +2,7 @@ import {
   DocumentHeadTags,
   DocumentHeadTagsProps,
   documentGetInitialProps,
-} from "@mui/material-nextjs/v13-pagesRouter";
+} from "@mui/material-nextjs/v14-pagesRouter";
 import {
   DocumentContext,
   DocumentProps,

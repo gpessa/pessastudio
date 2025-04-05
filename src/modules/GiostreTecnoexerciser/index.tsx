@@ -23,17 +23,17 @@ const GiostreTecnoexerciser: React.FC = () => {
           <>
             <Th variant="h1">{PAGES.GIOSTRE_TECNOEXERCISER.title}</Th>
             <Trans>
-              <Typography paragraph>
+              <Typography component="p">
                 Tecnoexerciser è il modello di giostra attualmente più
                 richiesto.
               </Typography>
-              <Typography paragraph>
+              <Typography component="p">
                 Oggi, grazie alle già note caratteristiche tecniche e alla
                 grande affidabilità, abbiamo aggiunto alcune specifiche funzioni
                 che fanno, di questo modello, la macchina{" "}
                 <strong>leader</strong> del settore.
               </Typography>
-              <Typography paragraph>È possibile infatti:</Typography>
+              <Typography component="p">È possibile infatti:</Typography>
               <Ul sx={{ mb: 2 }}>
                 <li>
                   Scegliere la forza che la porta mobile esercita sugli animali
@@ -53,7 +53,7 @@ const GiostreTecnoexerciser: React.FC = () => {
                   sta girando
                 </li>
               </Ul>
-              <Typography paragraph>
+              <Typography component="p">
                 La struttura è fornita, a seconda delle esigenze, o con punte
                 per l'ancoraggio al suolo o con tasselli nel caso in cui si
                 desideri ancorarla ad un fondo di calcestruzzo.

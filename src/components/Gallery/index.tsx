@@ -1,8 +1,9 @@
-import { ButtonBase, Grid, GridProps, styled } from "@mui/material";
+import { ButtonBase, Grid, GridProps } from "@mui/material";
 import ModalGallery from "components/ModalGallery";
 import Image from "next/image";
 import React from "react";
 import { PRODUCT_GUTTER } from "theme";
+import { styled } from "@mui/material/styles";
 
 const ButtonBaseStyled = styled(ButtonBase)(() => ({
   display: "block",
@@ -38,12 +39,13 @@ const Gallery: React.FC<Props> = ({ images, xs = 6, md = 6 }) => (
       <Grid container spacing={PRODUCT_GUTTER}>
         {images.map((item) => (
           <Grid
-            item
-            xs={xs}
-            md={md}
             key={item.image.src}
             onClick={() => open(item)}
             component={ButtonBaseStyled}
+            size={{
+              xs: xs,
+              md: md,
+            }}
           >
             <FigureStyled>
               <ImageStyled

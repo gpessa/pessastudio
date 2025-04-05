@@ -10,7 +10,12 @@ const Segnaletica: React.FC<{ products: ProductData[] }> = ({ products }) => (
     <Title title={t`Segnaletica`} />
     <Grid container spacing={PRODUCT_GUTTER}>
       {products.map((product, index) => (
-        <Grid xs={12} md={6} item key={`segnaletica_${index}`}>
+        <Grid
+          key={`segnaletica_${index}`}
+          size={{
+            xs: 12,
+            md: 6
+          }}>
           <Product {...product} />
         </Grid>
       ))}

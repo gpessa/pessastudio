@@ -7,12 +7,16 @@ import { PRODUCT_GUTTER } from "theme";
 
 const Cavalletti: React.FC<{ products: ProductData[] }> = ({ products }) => (
   <Grid container spacing={PRODUCT_GUTTER}>
-    <Grid item md={6}>
+    <Grid
+      size={{
+        md: 6,
+      }}
+    >
       <Title
         title={t`Cavalletti Caprilli`}
         text={
           <Trans>
-            <Typography paragraph>
+            <Typography component="p">
               I cavalletti Caprilli rappresentano uno strumento essenziale per
               l'allenamento del vostro animale, il passaggio sui cavalletti,
               rinforza la schiena del cavallo, scioglie la muscolatura e lo
@@ -26,9 +30,15 @@ const Cavalletti: React.FC<{ products: ProductData[] }> = ({ products }) => (
         }
       />
     </Grid>
-    <Grid item container md={6} spacing={PRODUCT_GUTTER}>
+    <Grid
+      container
+      spacing={PRODUCT_GUTTER}
+      size={{
+        md: 6,
+      }}
+    >
       {products.map((product, index) => (
-        <Grid item xs={12} key={`cavalletti_${index}`}>
+        <Grid key={`cavalletti_${index}`} size={12}>
           <Product {...product} />
         </Grid>
       ))}

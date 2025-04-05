@@ -24,7 +24,6 @@ const ContattiAddress: React.FC<AddressProps> = ({
   return (
     <Stack itemScope {...props} spacing={1}>
       <Typography fontWeight="bold">{name}</Typography>
-
       {hasAddress && (
         <Box itemScope>
           <div>{streetAddress}</div>
@@ -34,7 +33,6 @@ const ContattiAddress: React.FC<AddressProps> = ({
           <span>{country}</span>)
         </Box>
       )}
-
       <Box>
         {id && (
           <Data

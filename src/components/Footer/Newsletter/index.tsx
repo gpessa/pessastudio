@@ -1,15 +1,10 @@
 import { t, Trans } from "@lingui/macro";
 import { useLingui } from "@lingui/react";
 import Send from "@mui/icons-material/Send";
-import {
-  Alert,
-  IconButton,
-  Input,
-  InputAdornment,
-  styled,
-} from "@mui/material";
+import { Alert, IconButton, Input, InputAdornment } from "@mui/material";
 import React, { useState } from "react";
 import MailchimpSubscribe from "react-mailchimp-subscribe";
+import { styled } from "@mui/material/styles";
 
 const StyledAlert = styled(Alert)(({ theme }) => ({
   marginTop: theme.spacing(2),
