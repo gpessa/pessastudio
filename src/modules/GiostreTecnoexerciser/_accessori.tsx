@@ -1,4 +1,4 @@
-import { Trans } from "@lingui/macro";
+import { Trans } from "@lingui/react/macro";
 import { Accessori } from "components";
 import {
   GIOSTRA_ALVEOLO_DESCRIZIONE,

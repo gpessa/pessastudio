@@ -1,4 +1,5 @@
-import { Trans, t } from "@lingui/macro";
+import { t } from "@lingui/core/macro";
+import { Trans } from "@lingui/react/macro";
 import { Link, Stack, Typography } from "@mui/material";
 import { sendGAEvent } from "@next/third-parties/google";
 import { Title } from "components";

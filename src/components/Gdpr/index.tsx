@@ -1,5 +1,4 @@
-/* eslint-disable react/no-children-prop */
-import { Trans } from "@lingui/macro";
+import { Trans } from "@lingui/react/macro";
 import { Box, Button, ButtonProps, Link } from "@mui/material";
 import { makeStyles } from "tss-react/mui";
 import NextLink from "next/link";

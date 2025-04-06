@@ -1,4 +1,4 @@
-import { Trans } from "@lingui/macro";
+import { Trans } from "@lingui/react/macro";
 import { Grid } from "@mui/material";
 import { styled } from "@mui/material/styles";
 import { Product, Section, Th } from "components";
