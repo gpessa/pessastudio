@@ -133,8 +133,8 @@ const Index: React.FC = () => {
           </Trans>
         }
       />
-      <IndexProducts />
-      <IndexTestimonials
+      {/* <IndexProducts /> */}
+      {/* <IndexTestimonials
         subtitle={<Trans>Dicono di noi</Trans>}
         title={<Trans>Cosa dicono di noi</Trans>}
         text={
@@ -144,7 +144,7 @@ const Index: React.FC = () => {
           </Trans>
         }
         testimonials={TESTIMONIALS}
-      />
+      /> */}
     </>
   );
 };
