@@ -45,7 +45,7 @@ const Ostacoli: React.FC = () => {
             non richiedono alcuna manutenzione e conservano, inalterata, la loro
             bellezza anche se lasciati nel campo per anni.
           </Typography>
-          <Typography mx={{ marginBottom: 2 }}>
+          <Typography mx={{ marginBottom: 15 }}>
             Se gli ostacoli per il professionista sono uno strumento di lavoro,
             per molti altri appassionati rappresentano la realizzazione di un
             sogno. Noi abbiamo deciso di rendere questi strumenti resistenti nel
