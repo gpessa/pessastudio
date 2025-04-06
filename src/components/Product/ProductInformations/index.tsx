@@ -1,4 +1,4 @@
-import { t } from "@lingui/macro";
+import { t } from "@lingui/core/macro";
 import { Box, Typography } from "@mui/material";
 import Data from "components/Data";
 import Th from "components/Th";

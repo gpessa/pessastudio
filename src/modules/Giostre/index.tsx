@@ -1,4 +1,5 @@
-import { Trans, t } from "@lingui/macro";
+import { t } from "@lingui/core/macro";
+import { Trans } from "@lingui/react/macro";
 import AccessibilityNew from "@mui/icons-material/AccessibilityNew";
 import Apps from "@mui/icons-material/Apps";
 import DomainDisabled from "@mui/icons-material/DomainDisabled";

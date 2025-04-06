@@ -1,4 +1,4 @@
-import { t } from "@lingui/macro";
+import { t } from "@lingui/core/macro";
 import { Grid } from "@mui/material";
 import { Product, Title } from "components";
 import { ProductData } from "components/Product";

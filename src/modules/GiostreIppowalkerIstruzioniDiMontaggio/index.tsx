@@ -1,4 +1,4 @@
-import { Trans } from "@lingui/macro";
+import { Trans } from "@lingui/react/macro";
 import { Box, Typography } from "@mui/material";
 import { Path, Section, Th } from "components";
 import React from "react";

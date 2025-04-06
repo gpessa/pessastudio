@@ -1,6 +1,6 @@
 {
   "name": "pessastudio",
-  "version": "3.1.174",
+  "version": "3.1.175",
   "private": true,
   "description": "Pessastudio",
   "license": "MIT",
@@ -20,9 +20,9 @@
     "@emotion/react": "^11.14.0",
     "@emotion/server": "^11.11.0",
     "@emotion/styled": "^11.14.0",
-    "@lingui/core": "^4.13.0",
-    "@lingui/macro": "4.13.0",
-    "@lingui/react": "4.13.0",
+    "@lingui/core": "^5.3.0",
+    "@lingui/macro": "5.3.0",
+    "@lingui/react": "5.3.0",
     "@lingui/swc-plugin": "^5.5.1",
     "@mui/icons-material": "^7.0.1",
     "@mui/material": "^7.0.1",
@@ -51,8 +51,8 @@
     "xmlbuilder2": "^3.1.1"
   },
   "devDependencies": {
-    "@lingui/cli": "4.13.0",
-    "@lingui/loader": "^4.13.0",
+    "@lingui/cli": "5.3.0",
+    "@lingui/loader": "^5.3.0",
     "@types/node": "22.14.0",
     "@types/pretty-data": "0.40.3",
     "@types/react": "^19.1.0",

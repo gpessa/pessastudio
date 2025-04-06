@@ -1,4 +1,4 @@
-import { Trans } from "@lingui/macro";
+import { Trans } from "@lingui/react/macro";
 import { Link, Typography } from "@mui/material";
 import { Columns, Th, Video } from "components";
 import { usePages } from "hooks";

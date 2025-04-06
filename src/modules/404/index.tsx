@@ -1,4 +1,4 @@
-import { Trans } from "@lingui/macro";
+import { Trans } from "@lingui/react/macro";
 import { Error } from "components";
 import React from "react";
 export { getStaticProps } from "utils/getProps";
