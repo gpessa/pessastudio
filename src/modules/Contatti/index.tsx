@@ -49,7 +49,7 @@ const Contatti: React.FC = () => {
         left={
           <>
             <Th variant="h1">{PAGES.CONTATTI.title}</Th>
-            <Typography mx={{ marginBottom: 2 }}>
+            <Typography mx={{ marginBottom: 15 }}>
               <Trans>
                 Siamo qui per aiutarti! Se hai domande sui nostri prodotti per
                 cavalli, necessiti di assistenza con un ordine o desideri

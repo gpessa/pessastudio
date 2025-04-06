@@ -17,7 +17,7 @@ const Cavalletti: React.FC<{ products: ProductData[] }> = ({ products }) => (
         title={t`Cavalletti Caprilli`}
         text={
           <Trans>
-            <Typography mx={{ marginBottom: 2 }}>
+            <Typography mx={{ marginBottom: 15 }}>
               I cavalletti Caprilli rappresentano uno strumento essenziale per
               l'allenamento del vostro animale, il passaggio sui cavalletti,
               rinforza la schiena del cavallo, scioglie la muscolatura e lo

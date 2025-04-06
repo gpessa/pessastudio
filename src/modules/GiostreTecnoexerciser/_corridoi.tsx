@@ -42,7 +42,7 @@ const TecnoexerciserCorridoi = () => {
             <Trans>I corridoi</Trans>
           </Th>
 
-          <Typography mx={{ marginBottom: 2 }}>
+          <Typography mx={{ marginBottom: 15 }}>
             <Trans>
               La giostra puo essere acquistata scegliendo tra il piú economico
               corridoio costituito dalla recinzione <strong>TECNOFENCE</strong>{" "}
