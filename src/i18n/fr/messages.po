@@ -63,6 +63,9 @@ msgstr ""
 "<0>Le couloir <1>TECNOFENCE</1> est une solution simple et économique qui vous permettra d’avoir un marcheur complet, sûr et durable, à un coût compétitif.</0><2>La hauteur de la clôture extérieure est de 1,60 m, celle du couloir intérieur est de 1,40 m.</2><3>Le matériau novateur (PPO) ne demande pas d’entretien et vous permettra de réduire les coûts d’entretien qui pèsent sur les clôtures classiques en bois.\n"
 "</3><4>L’un des avantages consiste à pouvoir installer le marcheur en toute autonomie.</4>"
 
+#. placeholder {0}: GIOSTRE_MODELS.TECNOEXERCISER
+#. placeholder {1}: GIOSTRE_MODELS.TECNOEXERCISER
+#. placeholder {2}: GIOSTRE_MODELS.IPPOWALKER
 msgid "<0>Il nostro modello di punta, il <1>{0}</1>, rappresenta lo strumento più avanzato nel suo campo. Frutto di oltre 20 anni di esperienza e studi, il <2>{1}</2> offre prestazioni professionali senza pari, garantendo il massimo in termini di qualità e innovazione.</0><3>Per chi cerca una soluzione più economica ma comunque affidabile, proponiamo l'<4>{2}</4>. Questo modello base è perfetto per chi desidera un'opzione conveniente senza compromettere la sicurezza e l'efficacia.</3><5>Qualunque sia la vostra esigenza, siamo certi di avere il prodotto giusto per voi e i vostri cavalli.</5>"
 msgstr "<0>Notre modèle phare, le <1>{0}</1>, représente l’outil le plus avancé dans son domaine. Fruit de plus de 20 ans d’expérience et d’études, le <2>{1}</2> offre des performances professionnelles inégalées, garantissant la plus haute qualité et innovation.</0><3>Pour ceux qui recherchent une solution plus économique mais néanmoins fiable, nous proposons le <4>{2}</4>. Ce modèle de base est parfait pour ceux qui souhaitent une option économique sans compromettre la sécurité et l’efficacité.</3><5>Quelles que soient vos besoins, nous sommes certains d’avoir le produit idéal pour vous et vos chevaux.</5>"
 
@@ -99,6 +102,10 @@ msgstr "<0>Ce sont les composants de l’obstacle les plus sollicités parce qu�
 msgid "<0>Tecnoexerciser è il modello di giostra attualmente più richiesto.</0><1>Oggi, grazie alle già note caratteristiche tecniche e alla grande affidabilità, abbiamo aggiunto alcune specifiche funzioni che fanno, di questo modello, la macchina <2>leader</2> del settore.</1><3>È possibile infatti:</3><4><5>Scegliere la forza che la porta mobile esercita sugli animali per invitarli ad avanzare</5><6>Mantenere un controllo costante sull'elettrificazione delle porte mobili</6><7>Beneficiare dell'innovativo sistema \"training program\" che vi consentirà di allenare i vostri cavalli fino ad ottenere performance atletiche.</7><8>Scegliere il programma di irrigazione pesta mentre la giostra sta girando</8></4><9>La struttura è fornita, a seconda delle esigenze, o con punte per l'ancoraggio al suolo o con tasselli nel caso in cui si desideri ancorarla ad un fondo di calcestruzzo.</9>"
 msgstr "<0>Tecnoexerciser est le modèle de marcheur le plus demandé actuellement.</0><1>Aujourd’hui, il possède non seulement les caractéristiques techniques et la grande fiabilité déjà connues, mais aussi d’autres fonctions spécifiques que nous avons ajoutées et qui font de ce modèle la machine <2>leader</2> du secteur.</1><3>Il est en effet possible de:</3><4><5>Choisir la force exercée par la séparation mobile sur les animaux, pour les inviter à avancer.</5><6>Maintenir un contrôle constant de l’électrification des séparations mobiles.</6><7>Bénéficier du système novateur « training program », qui vous permettra d’entraîner vos chevaux et d’obtenir des performances athlétiques.</7><8>Choisir le programme d’arrosage de la piste pendant que le marcheur tourne.</8></4><9>D’après vos exigences, la structure est fournie soit avec des piquets d’ancrage au sol, soit avec des chevilles si vous optez pour la pose sur béton.</9>"
 
+#. placeholder {0}: SIZE_20x40.size
+#. placeholder {0}: SIZE_20x60.size
+#. placeholder {1}: SIZE_20x40.modules
+#. placeholder {1}: SIZE_20x60.modules
 msgid "<0>Un set per creare un circuito dressage standard da {0} mt.</0><1>Il set contiene:</1><2><3>{1} moduli</3></2>"
 msgstr "<0>Un kit pour créer un circuit de dressage standard de {0} m.</0><1>Le kit contient:</1><2><3>{1} modules</3></2>"
 
@@ -156,6 +163,8 @@ msgstr "Barres d'obstacles pour Chevaux"
 msgid "Bello e funzionale"
 msgstr "Beau et fonctionnel"
 
+#. placeholder {0}: formatSize(170)
+#. placeholder {0}: formatSize(190)
 msgid "Candeliere da {0} con piede in PVC"
 msgstr "Chandelier de {0} avec pied en PVC"
 
@@ -195,6 +204,8 @@ msgstr "Contactez Pessastudio pour devis de marcheurs pour chevaux, obstacles, c
 msgid "Contattaci per un preventivo per ostacoli, recinti, tondini coperti, giostre, rettangoli da dressage e attrezzature per cavalli"
 msgstr "Contactez-nous pour un devis pour les obstacles, les clôtures, ronds de longe, les rectangles de dressage et l’équipement du cheval"
 
+#. placeholder {0}: ITALIA.email
+#. placeholder {1}: ITALIA.telephone
 msgid "Contattaci usando l'email <0>{0}</0> <1/>o chiamaci al numero: <2>{1}</2>"
 msgstr "Contactez-nous par email à <0>{0}</0> <1/>ou appelez-nous au numéro : <2>{1}</2>"
 
@@ -237,6 +248,7 @@ msgstr "Couverture en PVC"
 msgid "Copertura rigida con lastre ondulate"
 msgstr "Couverture rigide avec tôles ondulées"
 
+#. placeholder {0}: GIOSTRE_MODELS.TECNOEXERCISER
 msgid "Corridoio coperto per accesso giostra {0}"
 msgstr "Couloir couvert pour accès au manège {0}"
 
@@ -255,6 +267,8 @@ msgstr "Ce qu’ils disent de nous"
 msgid "Costruisci la tua barriera personalizzata scegliendo tra i colori a disposizione"
 msgstr "Construisez votre barre d’obstacle personnalisée en choisissant parmi les coloris disponibles"
 
+#. placeholder {0}: CUBI_MODELS.MINI
+#. placeholder {0}: CUBI_MODELS.MAXI
 msgid "Cubi {0}"
 msgstr "Cube d'obstacle {0}"
 
@@ -264,6 +278,8 @@ msgstr "Cubes"
 msgid "Cucchiai"
 msgstr "Fiche pour chandelier"
 
+#. placeholder {0}: CUCCHIAI_MODELS.DE
+#. placeholder {0}: CUCCHIAI_MODELS.PS
 msgid "Cucchiaio {0}"
 msgstr "Fiche pour chandelier {0}"
 
@@ -362,6 +378,7 @@ msgstr "Marcheur Couloir TECNOFENCE"
 msgid "Giostra Ippowalker"
 msgstr "Marcheur Ippowalker"
 
+#. placeholder {0}: formatSizeMeter( dimensions.width )
 msgid "Giostra per {horses} cavalli, solo motore ({0})"
 msgstr "Marcheur pour {horses} chevaux, moteur seulement ({0})"
 
@@ -419,6 +436,8 @@ msgstr "Cuillère munie de notre système breveté de fixation"
 msgid "Il cucchiaio standard utilizzato al livello internazionale"
 msgstr "Cuillère standard utilisée au niveau international"
 
+#. placeholder {0}: SEDE_LEGALE.name
+#. placeholder {1}: SEDE_LEGALE.name
 msgid "Il nostro sito utilizza diverse tipologie di cookie di prima parte (predisposti e gestiti da {0}), cookie di terze parti (predisposti e gestiti da soggetti terzi in base alle proprie privacy policy e non sotto il controllo di {1}), ognuna delle quali ha una specifica funzione. Di seguito una tabella esplicativa."
 msgstr "Notre site utilise différents types de cookies internes (déposés et gérés par {0}), cookies tiers (déposés et gérés par des sociétés tierces en fonction de leurs politiques de confidentialité et non soumis au contrôle de {1}), chacun desquels détient une fonction spécifique. Veuillez trouver ci-après un tableau explicatif."
 
@@ -473,6 +492,9 @@ msgstr "Établissement"
 msgid "Istruzioni di montaggio"
 msgstr "Instructions de montage"
 
+#. placeholder {0}: 8
+#. placeholder {0}: 12
+#. placeholder {1}: DRESSAGE_MODELS.TRAINING
 msgid "Kit {0} Lettere Dressage ({1})"
 msgstr "Kit {0} Lettres de Dressage ({1})"
 
@@ -488,6 +510,8 @@ msgstr "L’alternative à la couverture en PVC est la <0>couverture rigide</0> 
 msgid "L'alveolo è la soluzione ottimale per mantenere un fondo sempre perfetto in ogni condizione, permette di evitare buche o avvallamenti riducendo i costi di manutenzione."
 msgstr "La dalle alvéolée est la solution optimale pour conserver un sol toujours parfait en toutes conditions. Elle permet d’éviter les nids-de-poule ou les affaissements, et réduit les coûts d’entretien."
 
+#. placeholder {0}: SEDE_LEGALE.name
+#. placeholder {1}: SEDE_LEGALE.name
 msgid "L'utilizzo di cookie e di tecnologie affini da parte di {0}, con sede {completeAddress}, rientra nella politica di privacy del Gestore, in conformità a quanto previsto dal D. Lgs 196/03 Codice in materia di protezione dei dati personali (Codice Privacy) e dal Provvedimento dell’8 maggio 2014 “Individuazione delle modalità semplificate per l’informativa e l’acquisizione del consenso per l’uso dei cookie” del Garante Privacy Italiano. {1}, in qualità di Titolare del trattamento agisce conformemente a quanto previsto dalla normativa in materia."
 msgstr "The use of cookies and similar technologies by {0}, with headquarters at {completeAddress}, is governed by the Administrator’s privacy policy, in compliance with the General Data Protection Regulation (GDPR), Italian Legislative Decree 196/03 on Personal Data Protection Code (Privacy Code) and the Order of 8 May 2014, “Identification of simplified procedures for providing information about and obtaining consent for the use of cookies” from the Italian Data Protection Authority. {1}, in its capacity as Data Controller, acts in compliance with relevant legislation."
 
@@ -521,6 +545,8 @@ msgstr "Le filet brise-vent protège l’intérieur du rond de longe contre les 
 msgid "La struttura è stata progettata per garantire un carico neve fino a 120 kg/mq e la velocità del vento fino a 110 km/h."
 msgstr "La structure a été conçue pour résister à une charge de neige jusqu’à 120 kg/m2 et à une vitesse du vent jusqu’à 110 km/h."
 
+#. placeholder {0}: formatSize(50)
+#. placeholder {0}: formatSize(1500)
 msgid "Lama DE da {0}"
 msgstr "Jonc metallique DE {0}"
 
@@ -539,6 +565,7 @@ msgstr "Nos lettres en PVC résistant aux rayons solaires sont durables et lisib
 msgid "Le recinzioni a quattro filagne sono utilizzate per delimitare paddock per stalloni, realizzare tondini per la doma e l'addestramento o per formare ovali per il salto in libertà"
 msgstr "Les clôtures à quatre lices sont utilisées pour délimiter les paddocks pour les étalons, pour réaliser des ronds de longe pour le débourrage et le dressage, ou pour former des ovales pour le saut en liberté"
 
+#. placeholder {0}: DRESSAGE_MODELS.OLYMPIC
 msgid "Lettera dressage ({0})"
 msgstr "Lettre de Dressage ({0})"
 
@@ -566,6 +593,8 @@ msgstr "Matériels"
 msgid "Materiali di qualità"
 msgstr "Matériau de qualité"
 
+#. placeholder {0}: DRESSAGE_MODELS.TRAINING
+#. placeholder {0}: DRESSAGE_MODELS.OLYMPIC
 msgid "Modulo dressage ({0})"
 msgstr "Module de Dressage ({0})"
 
@@ -578,6 +607,7 @@ msgstr "Aucun permis de construire"
 msgid "Newsletters"
 msgstr "Newsletters"
 
+#. placeholder {0}: SEGNALETICA_MODELS.PROFESSIONAL
 msgid "Numero per campo ostacoli {0}"
 msgstr "Plot pour parcours d'obstacles {0}"
 
@@ -638,6 +668,8 @@ msgstr "Séparation"
 msgid "Porte elettrificate"
 msgstr "Séparations"
 
+#. placeholder {0}: 0.75
+#. placeholder {0}: 0.37
 msgid "Potenza motore {0} kw e cadenza regolabile fra 60 e 220 metri al minuto"
 msgstr "Puissance moteur {0} kW et cadence réglable entre 60 et 220 mètres par minute"
 
@@ -671,6 +703,8 @@ msgstr "Tableau de commande avec programme manuel, périodique ou automatique"
 msgid "Quali cookie utilizziamo e per quali finalità?"
 msgstr "Quels cookies utilisons-nous et dans quel but ?"
 
+#. placeholder {0}: SEDE_LEGALE.name
+#. placeholder {1}: SEDE_LEGALE.name
 msgid "Questi cookie di prima parte, sono proprietà di {0} (Gestore del sito) e sono impiegati per raccogliere dati in forma anonima e aggregata. Questi cookie sono utilizzati per elaborare analisi statistiche sulle modalità di navigazione degli utenti sul nostro sito. {1} tratta i risultati di queste analisi in maniera anonima ed esclusivamente per finalità statistiche."
 msgstr "Ces cookies internes appartiennent à {0} (Gestionnaire du site) et sont utilisés afin de collecter des données sous une forme anonyme et agrégée. Ces cookies sont utilisés en vue d’élaborer des analyses statistiques sur les modalités de navigation des usagers de notre site. {1} traite les résultats de ces analyses de manière anonyme et à des fins exclusivement statistiques."
 
@@ -680,9 +714,13 @@ msgstr "Clôtures"
 msgid "Recinzione"
 msgstr "Clôture"
 
+#. placeholder {0}: 1
 msgid "Recinzione cavalli a {0} filagna"
 msgstr "Clôtures avec une lisse"
 
+#. placeholder {0}: 2
+#. placeholder {0}: 3
+#. placeholder {0}: 4
 msgid "Recinzione cavalli a {0} filagne"
 msgstr "Clôtures avec {0} lisse"
 
@@ -695,6 +733,10 @@ msgstr "Filet brise-vent entrée"
 msgid "Rettangoli / Campi professionali da dressage per tutte le esigenze"
 msgstr "Rectangles professionnels de dressage pour toutes les exigences"
 
+#. placeholder {0}: SIZE_20x40.size
+#. placeholder {0}: SIZE_20x60.size
+#. placeholder {1}: DRESSAGE_MODELS.TRAINING
+#. placeholder {1}: DRESSAGE_MODELS.OLYMPIC
 msgid "Rettangolo dressage {0} ({1})"
 msgstr "Rectangle de dressage {0} ({1})"
 
@@ -806,6 +848,7 @@ msgstr "Rond de longe"
 msgid "Tondino coperto"
 msgstr "Covered lunge pen"
 
+#. placeholder {0}: formatSizeMeter( dimensions.width )
 msgid "Tondino coperto {sides} pannelli {0}"
 msgstr "Rond de longe couvert {0}"
 

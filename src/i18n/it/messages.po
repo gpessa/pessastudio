@@ -55,6 +55,9 @@ msgstr "<0>Il corridoio <1>{name}</1> in compensato marino è realizzato con un 
 msgid "<0>Il corridoio <1>TECNOFENCE</1> è una soluzione semplice ed economica che ti permetterà di avere una giostra completa, sicura e durevole ad un costo competitivo.</0><2>L'altezza della recinzione esterna è di 1,60 mt., a differenza del corridoio interno alto 1,40 mt.</2><3>L'innovativo materiale utilizzato per la sua costruzione (PPO) è durevole nel tempo e ti consentirà di abbattere i costi di manutenzione che affliggono le classiche recinzioni in legno.</3><4>Uno dei vantaggi è inoltre quello di poter installare la giostra in piena autonomia.</4>"
 msgstr "<0>Il corridoio <1>TECNOFENCE</1> è una soluzione semplice ed economica che ti permetterà di avere una giostra completa, sicura e durevole ad un costo competitivo.</0><2>L'altezza della recinzione esterna è di 1,60 mt., a differenza del corridoio interno alto 1,40 mt.</2><3>L'innovativo materiale utilizzato per la sua costruzione (PPO) è durevole nel tempo e ti consentirà di abbattere i costi di manutenzione che affliggono le classiche recinzioni in legno.</3><4>Uno dei vantaggi è inoltre quello di poter installare la giostra in piena autonomia.</4>"
 
+#. placeholder {0}: GIOSTRE_MODELS.TECNOEXERCISER
+#. placeholder {1}: GIOSTRE_MODELS.TECNOEXERCISER
+#. placeholder {2}: GIOSTRE_MODELS.IPPOWALKER
 msgid "<0>Il nostro modello di punta, il <1>{0}</1>, rappresenta lo strumento più avanzato nel suo campo. Frutto di oltre 20 anni di esperienza e studi, il <2>{1}</2> offre prestazioni professionali senza pari, garantendo il massimo in termini di qualità e innovazione.</0><3>Per chi cerca una soluzione più economica ma comunque affidabile, proponiamo l'<4>{2}</4>. Questo modello base è perfetto per chi desidera un'opzione conveniente senza compromettere la sicurezza e l'efficacia.</3><5>Qualunque sia la vostra esigenza, siamo certi di avere il prodotto giusto per voi e i vostri cavalli.</5>"
 msgstr "<0>Il nostro modello di punta, il <1>{0}</1>, rappresenta lo strumento più avanzato nel suo campo. Frutto di oltre 20 anni di esperienza e studi, il <2>{1}</2> offre prestazioni professionali senza pari, garantendo il massimo in termini di qualità e innovazione.</0><3>Per chi cerca una soluzione più economica ma comunque affidabile, proponiamo l'<4>{2}</4>. Questo modello base è perfetto per chi desidera un'opzione conveniente senza compromettere la sicurezza e l'efficacia.</3><5>Qualunque sia la vostra esigenza, siamo certi di avere il prodotto giusto per voi e i vostri cavalli.</5>"
 
@@ -91,6 +94,10 @@ msgstr "<0>Sono le componenti dell'ostacolo più stressate, poiché, come i cand
 msgid "<0>Tecnoexerciser è il modello di giostra attualmente più richiesto.</0><1>Oggi, grazie alle già note caratteristiche tecniche e alla grande affidabilità, abbiamo aggiunto alcune specifiche funzioni che fanno, di questo modello, la macchina <2>leader</2> del settore.</1><3>È possibile infatti:</3><4><5>Scegliere la forza che la porta mobile esercita sugli animali per invitarli ad avanzare</5><6>Mantenere un controllo costante sull'elettrificazione delle porte mobili</6><7>Beneficiare dell'innovativo sistema \"training program\" che vi consentirà di allenare i vostri cavalli fino ad ottenere performance atletiche.</7><8>Scegliere il programma di irrigazione pesta mentre la giostra sta girando</8></4><9>La struttura è fornita, a seconda delle esigenze, o con punte per l'ancoraggio al suolo o con tasselli nel caso in cui si desideri ancorarla ad un fondo di calcestruzzo.</9>"
 msgstr "<0>Tecnoexerciser è il modello di giostra attualmente più richiesto.</0><1>Oggi, grazie alle già note caratteristiche tecniche e alla grande affidabilità, abbiamo aggiunto alcune specifiche funzioni che fanno, di questo modello, la macchina <2>leader</2> del settore.</1><3>È possibile infatti:</3><4><5>Scegliere la forza che la porta mobile esercita sugli animali per invitarli ad avanzare</5><6>Mantenere un controllo costante sull'elettrificazione delle porte mobili</6><7>Beneficiare dell'innovativo sistema \"training program\" che vi consentirà di allenare i vostri cavalli fino ad ottenere performance atletiche.</7><8>Scegliere il programma di irrigazione pesta mentre la giostra sta girando</8></4><9>La struttura è fornita, a seconda delle esigenze, o con punte per l'ancoraggio al suolo o con tasselli nel caso in cui si desideri ancorarla ad un fondo di calcestruzzo.</9>"
 
+#. placeholder {0}: SIZE_20x40.size
+#. placeholder {0}: SIZE_20x60.size
+#. placeholder {1}: SIZE_20x40.modules
+#. placeholder {1}: SIZE_20x60.modules
 msgid "<0>Un set per creare un circuito dressage standard da {0} mt.</0><1>Il set contiene:</1><2><3>{1} moduli</3></2>"
 msgstr "<0>Un set per creare un circuito dressage standard da {0} mt.</0><1>Il set contiene:</1><2><3>{1} moduli</3></2>"
 
@@ -148,6 +155,8 @@ msgstr "Barriere"
 msgid "Bello e funzionale"
 msgstr "Bello e funzionale"
 
+#. placeholder {0}: formatSize(170)
+#. placeholder {0}: formatSize(190)
 msgid "Candeliere da {0} con piede in PVC"
 msgstr "Candeliere da {0} con piede in PVC"
 
@@ -187,6 +196,8 @@ msgstr "Contatta Pessastudio per preventivi di Giostre, ostacoli, tondini e attr
 msgid "Contattaci per un preventivo per ostacoli, recinti, tondini coperti, giostre, rettangoli da dressage e attrezzature per cavalli"
 msgstr "Contattaci per un preventivo per ostacoli, recinti, tondini coperti, giostre, rettangoli da dressage e attrezzature per cavalli"
 
+#. placeholder {0}: ITALIA.email
+#. placeholder {1}: ITALIA.telephone
 msgid "Contattaci usando l'email <0>{0}</0> <1/>o chiamaci al numero: <2>{1}</2>"
 msgstr "Contattaci usando l'email <0>{0}</0> <1/>o chiamaci al numero: <2>{1}</2>"
 
@@ -229,6 +240,7 @@ msgstr "Copertura in PVC"
 msgid "Copertura rigida con lastre ondulate"
 msgstr "Copertura rigida con lastre ondulate"
 
+#. placeholder {0}: GIOSTRE_MODELS.TECNOEXERCISER
 msgid "Corridoio coperto per accesso giostra {0}"
 msgstr "Corridoio coperto per accesso giostra {0}"
 
@@ -247,6 +259,8 @@ msgstr "Cosa dicono di noi"
 msgid "Costruisci la tua barriera personalizzata scegliendo tra i colori a disposizione"
 msgstr "Costruisci la tua barriera personalizzata scegliendo tra i colori a disposizione"
 
+#. placeholder {0}: CUBI_MODELS.MINI
+#. placeholder {0}: CUBI_MODELS.MAXI
 msgid "Cubi {0}"
 msgstr "Cubi {0}"
 
@@ -256,6 +270,8 @@ msgstr "Cubi per campo ostacoli"
 msgid "Cucchiai"
 msgstr "Cucchiai"
 
+#. placeholder {0}: CUCCHIAI_MODELS.DE
+#. placeholder {0}: CUCCHIAI_MODELS.PS
 msgid "Cucchiaio {0}"
 msgstr "Cucchiaio {0}"
 
@@ -352,6 +368,7 @@ msgstr "Giostra con corridoio TECNOFENCE"
 msgid "Giostra Ippowalker"
 msgstr "Giostra Ippowalker"
 
+#. placeholder {0}: formatSizeMeter( dimensions.width )
 msgid "Giostra per {horses} cavalli, solo motore ({0})"
 msgstr "Giostra per {horses} cavalli, solo motore ({0})"
 
@@ -409,6 +426,8 @@ msgstr "Il cucchiaio dotato del nostro sistema brevettato di aggancio"
 msgid "Il cucchiaio standard utilizzato al livello internazionale"
 msgstr "Il cucchiaio standard utilizzato al livello internazionale"
 
+#. placeholder {0}: SEDE_LEGALE.name
+#. placeholder {1}: SEDE_LEGALE.name
 msgid "Il nostro sito utilizza diverse tipologie di cookie di prima parte (predisposti e gestiti da {0}), cookie di terze parti (predisposti e gestiti da soggetti terzi in base alle proprie privacy policy e non sotto il controllo di {1}), ognuna delle quali ha una specifica funzione. Di seguito una tabella esplicativa."
 msgstr "Il nostro sito utilizza diverse tipologie di cookie di prima parte (predisposti e gestiti da {0}), cookie di terze parti (predisposti e gestiti da soggetti terzi in base alle proprie privacy policy e non sotto il controllo di {1}), ognuna delle quali ha una specifica funzione. Di seguito una tabella esplicativa."
 
@@ -463,6 +482,9 @@ msgstr "Istituto"
 msgid "Istruzioni di montaggio"
 msgstr "Istruzioni di montaggio"
 
+#. placeholder {0}: 8
+#. placeholder {0}: 12
+#. placeholder {1}: DRESSAGE_MODELS.TRAINING
 msgid "Kit {0} Lettere Dressage ({1})"
 msgstr "Kit {0} Lettere Dressage ({1})"
 
@@ -478,6 +500,8 @@ msgstr "L’alternativa alla copertura in PVC è la <0>copertura rigida</0> in l
 msgid "L'alveolo è la soluzione ottimale per mantenere un fondo sempre perfetto in ogni condizione, permette di evitare buche o avvallamenti riducendo i costi di manutenzione."
 msgstr "L'alveolo è la soluzione ottimale per mantenere un fondo sempre perfetto in ogni condizione, permette di evitare buche o avvallamenti riducendo i costi di manutenzione."
 
+#. placeholder {0}: SEDE_LEGALE.name
+#. placeholder {1}: SEDE_LEGALE.name
 msgid "L'utilizzo di cookie e di tecnologie affini da parte di {0}, con sede {completeAddress}, rientra nella politica di privacy del Gestore, in conformità a quanto previsto dal D. Lgs 196/03 Codice in materia di protezione dei dati personali (Codice Privacy) e dal Provvedimento dell’8 maggio 2014 “Individuazione delle modalità semplificate per l’informativa e l’acquisizione del consenso per l’uso dei cookie” del Garante Privacy Italiano. {1}, in qualità di Titolare del trattamento agisce conformemente a quanto previsto dalla normativa in materia."
 msgstr "L'utilizzo di cookie e di tecnologie affini da parte di {0}, con sede {completeAddress}, rientra nella politica di privacy del Gestore, in conformità a quanto previsto dal D. Lgs 196/03 Codice in materia di protezione dei dati personali (Codice Privacy) e dal Provvedimento dell’8 maggio 2014 “Individuazione delle modalità semplificate per l’informativa e l’acquisizione del consenso per l’uso dei cookie” del Garante Privacy Italiano. {1}, in qualità di Titolare del trattamento agisce conformemente a quanto previsto dalla normativa in materia."
 
@@ -511,6 +535,8 @@ msgstr "La rete antivento protegge l'interno della tondino da correnti d'aria co
 msgid "La struttura è stata progettata per garantire un carico neve fino a 120 kg/mq e la velocità del vento fino a 110 km/h."
 msgstr "La struttura è stata progettata per garantire un carico neve fino a 120 kg/mq e la velocità del vento fino a 110 km/h."
 
+#. placeholder {0}: formatSize(50)
+#. placeholder {0}: formatSize(1500)
 msgid "Lama DE da {0}"
 msgstr "Lama DE da {0}"
 
@@ -529,6 +555,7 @@ msgstr "Le nostre lettere in PVC resistente ai raggi solari sono durevoli e legg
 msgid "Le recinzioni a quattro filagne sono utilizzate per delimitare paddock per stalloni, realizzare tondini per la doma e l'addestramento o per formare ovali per il salto in libertà"
 msgstr "Le recinzioni a quattro filagne sono utilizzate per delimitare paddock per stalloni, realizzare tondini per la doma e l'addestramento o per formare ovali per il salto in libertà"
 
+#. placeholder {0}: DRESSAGE_MODELS.OLYMPIC
 msgid "Lettera dressage ({0})"
 msgstr "Lettera dressage ({0})"
 
@@ -556,6 +583,8 @@ msgstr "Materiali"
 msgid "Materiali di qualità"
 msgstr "Materiali di qualità"
 
+#. placeholder {0}: DRESSAGE_MODELS.TRAINING
+#. placeholder {0}: DRESSAGE_MODELS.OLYMPIC
 msgid "Modulo dressage ({0})"
 msgstr "Modulo dressage ({0})"
 
@@ -568,6 +597,7 @@ msgstr "Nessuna concessione edilizia"
 msgid "Newsletters"
 msgstr "Newsletters"
 
+#. placeholder {0}: SEGNALETICA_MODELS.PROFESSIONAL
 msgid "Numero per campo ostacoli {0}"
 msgstr "Numero per campo ostacoli {0}"
 
@@ -628,6 +658,8 @@ msgstr "Porte"
 msgid "Porte elettrificate"
 msgstr "Porte elettrificate"
 
+#. placeholder {0}: 0.75
+#. placeholder {0}: 0.37
 msgid "Potenza motore {0} kw e cadenza regolabile fra 60 e 220 metri al minuto"
 msgstr "Potenza motore {0} kw e cadenza regolabile fra 60 e 220 metri al minuto"
 
@@ -661,6 +693,8 @@ msgstr "Quadro di comando con programma manuale, periodico o automatico"
 msgid "Quali cookie utilizziamo e per quali finalità?"
 msgstr "Quali cookie utilizziamo e per quali finalità?"
 
+#. placeholder {0}: SEDE_LEGALE.name
+#. placeholder {1}: SEDE_LEGALE.name
 msgid "Questi cookie di prima parte, sono proprietà di {0} (Gestore del sito) e sono impiegati per raccogliere dati in forma anonima e aggregata. Questi cookie sono utilizzati per elaborare analisi statistiche sulle modalità di navigazione degli utenti sul nostro sito. {1} tratta i risultati di queste analisi in maniera anonima ed esclusivamente per finalità statistiche."
 msgstr "Questi cookie di prima parte, sono proprietà di {0} (Gestore del sito) e sono impiegati per raccogliere dati in forma anonima e aggregata. Questi cookie sono utilizzati per elaborare analisi statistiche sulle modalità di navigazione degli utenti sul nostro sito. {1} tratta i risultati di queste analisi in maniera anonima ed esclusivamente per finalità statistiche."
 
@@ -670,9 +704,13 @@ msgstr "Recinti"
 msgid "Recinzione"
 msgstr "Recinzione"
 
+#. placeholder {0}: 1
 msgid "Recinzione cavalli a {0} filagna"
 msgstr "Recinzione cavalli a {0} filagna"
 
+#. placeholder {0}: 2
+#. placeholder {0}: 3
+#. placeholder {0}: 4
 msgid "Recinzione cavalli a {0} filagne"
 msgstr "Recinzione cavalli a {0} filagne"
 
@@ -685,6 +723,10 @@ msgstr "Rete antivento ingresso"
 msgid "Rettangoli / Campi professionali da dressage per tutte le esigenze"
 msgstr "Rettangoli / Campi professionali da dressage per tutte le esigenze"
 
+#. placeholder {0}: SIZE_20x40.size
+#. placeholder {0}: SIZE_20x60.size
+#. placeholder {1}: DRESSAGE_MODELS.TRAINING
+#. placeholder {1}: DRESSAGE_MODELS.OLYMPIC
 msgid "Rettangolo dressage {0} ({1})"
 msgstr "Rettangolo dressage {0} ({1})"
 
@@ -796,6 +838,7 @@ msgstr "Tondino"
 msgid "Tondino coperto"
 msgstr "Tondino coperto"
 
+#. placeholder {0}: formatSizeMeter( dimensions.width )
 msgid "Tondino coperto {sides} pannelli {0}"
 msgstr "Tondino coperto {sides} pannelli {0}"
 

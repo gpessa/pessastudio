@@ -55,6 +55,9 @@ msgstr "<0>The marine plywood corridor <1>{name}</1> is made of a plywood <2>({t
 msgid "<0>Il corridoio <1>TECNOFENCE</1> è una soluzione semplice ed economica che ti permetterà di avere una giostra completa, sicura e durevole ad un costo competitivo.</0><2>L'altezza della recinzione esterna è di 1,60 mt., a differenza del corridoio interno alto 1,40 mt.</2><3>L'innovativo materiale utilizzato per la sua costruzione (PPO) è durevole nel tempo e ti consentirà di abbattere i costi di manutenzione che affliggono le classiche recinzioni in legno.</3><4>Uno dei vantaggi è inoltre quello di poter installare la giostra in piena autonomia.</4>"
 msgstr "<0>The <1>TECNOFENCE</1> corridor is a simple and economical solution for a complete, safe and durable horse exerciser at a competitive price.</0><2>The height of the external fence is 1.60 meters, the internal corridor is 1.40 meters high.</2><3>The innovative material used for its construction (PPO) is durable over time and it reduce the maintenance costs that afflict the classic wooden fences.</3><4>The <1>TECNOFENCE</1> corridor can also being able installed in full autonomy.</4>"
 
+#. placeholder {0}: GIOSTRE_MODELS.TECNOEXERCISER
+#. placeholder {1}: GIOSTRE_MODELS.TECNOEXERCISER
+#. placeholder {2}: GIOSTRE_MODELS.IPPOWALKER
 msgid "<0>Il nostro modello di punta, il <1>{0}</1>, rappresenta lo strumento più avanzato nel suo campo. Frutto di oltre 20 anni di esperienza e studi, il <2>{1}</2> offre prestazioni professionali senza pari, garantendo il massimo in termini di qualità e innovazione.</0><3>Per chi cerca una soluzione più economica ma comunque affidabile, proponiamo l'<4>{2}</4>. Questo modello base è perfetto per chi desidera un'opzione conveniente senza compromettere la sicurezza e l'efficacia.</3><5>Qualunque sia la vostra esigenza, siamo certi di avere il prodotto giusto per voi e i vostri cavalli.</5>"
 msgstr "<0>Our flagship model, the <1>{0}</1>, represents the most advanced tool in its field. The result of over 20 years of experience and studies, the <2>{1}</2> offers unparalleled professional performance, ensuring the highest quality and innovation.</0><3>For those seeking a more economical yet reliable solution, we offer the <4>{2}</4>. This basic model is perfect for those who want a cost-effective option without compromising on safety and efficiency.</3><5>Whatever your needs, we are confident we have the right product for you and your horses.</5>"
 
@@ -93,6 +96,10 @@ msgstr ""
 msgid "<0>Tecnoexerciser è il modello di giostra attualmente più richiesto.</0><1>Oggi, grazie alle già note caratteristiche tecniche e alla grande affidabilità, abbiamo aggiunto alcune specifiche funzioni che fanno, di questo modello, la macchina <2>leader</2> del settore.</1><3>È possibile infatti:</3><4><5>Scegliere la forza che la porta mobile esercita sugli animali per invitarli ad avanzare</5><6>Mantenere un controllo costante sull'elettrificazione delle porte mobili</6><7>Beneficiare dell'innovativo sistema \"training program\" che vi consentirà di allenare i vostri cavalli fino ad ottenere performance atletiche.</7><8>Scegliere il programma di irrigazione pesta mentre la giostra sta girando</8></4><9>La struttura è fornita, a seconda delle esigenze, o con punte per l'ancoraggio al suolo o con tasselli nel caso in cui si desideri ancorarla ad un fondo di calcestruzzo.</9>"
 msgstr "<0>The Tecnoexerciser is currently our most popular walker.</0> <1>With its well-known technical characteristics and great reliability, we have now added some specific functions that make this model the <2>leading</2> machine in the sector.</1> <3>In fact, you can:</3> <4><5>Choose the force that the moving door exerts on the animals to invite them to move forward.</5> <6>Constantly control the electrification of the moving doors.</6> <7>Benefit from the innovative ‘training programme’, which allows you to train your horses for athletic performance.</7> <8>Choose the track irrigation programme while the walker is turning.</8></4> <9>Depending on your needs, the structure can be supplied either with spikes to attach the device to the ground or with anchors for installation on a concrete base.</9>"
 
+#. placeholder {0}: SIZE_20x40.size
+#. placeholder {0}: SIZE_20x60.size
+#. placeholder {1}: SIZE_20x40.modules
+#. placeholder {1}: SIZE_20x60.modules
 msgid "<0>Un set per creare un circuito dressage standard da {0} mt.</0><1>Il set contiene:</1><2><3>{1} moduli</3></2>"
 msgstr "<0>The set contains all the required modules to build a {0} mt. short court.</0><1>The package include:</1><2><3>{1} modules</3></2>"
 
@@ -150,6 +157,8 @@ msgstr "Poles"
 msgid "Bello e funzionale"
 msgstr "Well designed and functional"
 
+#. placeholder {0}: formatSize(170)
+#. placeholder {0}: formatSize(190)
 msgid "Candeliere da {0} con piede in PVC"
 msgstr "Aluminum schooling standard {0}"
 
@@ -189,6 +198,8 @@ msgstr "Contact Pessastudio for quotes on horse walkers, horse exerciser, jumper
 msgid "Contattaci per un preventivo per ostacoli, recinti, tondini coperti, giostre, rettangoli da dressage e attrezzature per cavalli"
 msgstr "Contact us for a quote for obstacles, fences, covered round pens, walkers, dressage rectangles, and equestrian equipment"
 
+#. placeholder {0}: ITALIA.email
+#. placeholder {1}: ITALIA.telephone
 msgid "Contattaci usando l'email <0>{0}</0> <1/>o chiamaci al numero: <2>{1}</2>"
 msgstr "Contact us via email at <0>{0}</0> <1/>or call us at: <2>{1}</2>"
 
@@ -231,6 +242,7 @@ msgstr "PVC roof"
 msgid "Copertura rigida con lastre ondulate"
 msgstr "Rigid roof made of corrugated sheet metal"
 
+#. placeholder {0}: GIOSTRE_MODELS.TECNOEXERCISER
 msgid "Corridoio coperto per accesso giostra {0}"
 msgstr "Covered walkway for {0} horse walker access"
 
@@ -249,6 +261,8 @@ msgstr "Testimonials"
 msgid "Costruisci la tua barriera personalizzata scegliendo tra i colori a disposizione"
 msgstr "Build your custom poles by choosing from the available colors"
 
+#. placeholder {0}: CUBI_MODELS.MINI
+#. placeholder {0}: CUBI_MODELS.MAXI
 msgid "Cubi {0}"
 msgstr "Cavalletti block {0}"
 
@@ -258,6 +272,8 @@ msgstr "Cavaletti block"
 msgid "Cucchiai"
 msgstr "Horse Jump Cups"
 
+#. placeholder {0}: CUCCHIAI_MODELS.DE
+#. placeholder {0}: CUCCHIAI_MODELS.PS
 msgid "Cucchiaio {0}"
 msgstr "Cup {0}"
 
@@ -369,6 +385,7 @@ msgstr "Walker with TECNOFENCE corridor"
 msgid "Giostra Ippowalker"
 msgstr "Ippowalker horse exerciser"
 
+#. placeholder {0}: formatSizeMeter( dimensions.width )
 msgid "Giostra per {horses} cavalli, solo motore ({0})"
 msgstr "Horse Walker {horses} horses, only engine ({0})"
 
@@ -426,6 +443,8 @@ msgstr "High quality, Pessastudio plastic jump cup"
 msgid "Il cucchiaio standard utilizzato al livello internazionale"
 msgstr "High quality, standard plastic pinless jump cup"
 
+#. placeholder {0}: SEDE_LEGALE.name
+#. placeholder {1}: SEDE_LEGALE.name
 msgid "Il nostro sito utilizza diverse tipologie di cookie di prima parte (predisposti e gestiti da {0}), cookie di terze parti (predisposti e gestiti da soggetti terzi in base alle proprie privacy policy e non sotto il controllo di {1}), ognuna delle quali ha una specifica funzione. Di seguito una tabella esplicativa."
 msgstr "Our website uses various types of first-party cookies (provided and managed by {0}), and third-party cookies (provided and managed by third parties based on their own individual privacy policies and not under the control of {1}), each of which has a specific function. The table below explains what they are for."
 
@@ -480,6 +499,9 @@ msgstr "Bank name"
 msgid "Istruzioni di montaggio"
 msgstr "Assembly instructions"
 
+#. placeholder {0}: 8
+#. placeholder {0}: 12
+#. placeholder {1}: DRESSAGE_MODELS.TRAINING
 msgid "Kit {0} Lettere Dressage ({1})"
 msgstr "Kit {0} Dressage Letters ({1})"
 
@@ -499,6 +521,8 @@ msgstr ""
 "The ground grid soil stabilization system is the solution to avoid mud & rutting problems by increasing soil stability & improving drainage.\n"
 "The grid ensure the stabilization of the surface and therefore the safety of its users."
 
+#. placeholder {0}: SEDE_LEGALE.name
+#. placeholder {1}: SEDE_LEGALE.name
 msgid "L'utilizzo di cookie e di tecnologie affini da parte di {0}, con sede {completeAddress}, rientra nella politica di privacy del Gestore, in conformità a quanto previsto dal D. Lgs 196/03 Codice in materia di protezione dei dati personali (Codice Privacy) e dal Provvedimento dell’8 maggio 2014 “Individuazione delle modalità semplificate per l’informativa e l’acquisizione del consenso per l’uso dei cookie” del Garante Privacy Italiano. {1}, in qualità di Titolare del trattamento agisce conformemente a quanto previsto dalla normativa in materia."
 msgstr "The use of cookies and similar technologies by {0}, with headquarters at {completeAddress}, is governed by the Administrator’s privacy policy, in compliance with the General Data Protection Regulation (GDPR), Italian Legislative Decree 196/03 on Personal Data Protection Code (Privacy Code) and the Order of 8 May 2014, “Identification of simplified procedures for providing information about and obtaining consent for the use of cookies” from the Italian Data Protection Authority. {1}, in its capacity as Data Controller, acts in compliance with relevant legislation."
 
@@ -532,6 +556,8 @@ msgstr "The windproof net protects the inside of the horse walker from drafts al
 msgid "La struttura è stata progettata per garantire un carico neve fino a 120 kg/mq e la velocità del vento fino a 110 km/h."
 msgstr "The structure has been designed to withstand a snow load of up to 120 kg/m² and wind speeds of up to 110 km/h."
 
+#. placeholder {0}: formatSize(50)
+#. placeholder {0}: formatSize(1500)
 msgid "Lama DE da {0}"
 msgstr "Metal keyhole track DE {0}"
 
@@ -550,6 +576,7 @@ msgstr "Our sun-resistant PVC letters are durable and readable in all weather co
 msgid "Le recinzioni a quattro filagne sono utilizzate per delimitare paddock per stalloni, realizzare tondini per la doma e l'addestramento o per formare ovali per il salto in libertà"
 msgstr "Four-rail fencing is used to delimit paddocks for stallions, make round pens for taming and training, or create ovals for free jumping"
 
+#. placeholder {0}: DRESSAGE_MODELS.OLYMPIC
 msgid "Lettera dressage ({0})"
 msgstr "Letter cone ({0})"
 
@@ -577,6 +604,8 @@ msgstr "Materials"
 msgid "Materiali di qualità"
 msgstr "Quality materials"
 
+#. placeholder {0}: DRESSAGE_MODELS.TRAINING
+#. placeholder {0}: DRESSAGE_MODELS.OLYMPIC
 msgid "Modulo dressage ({0})"
 msgstr "Dressage module ({0})"
 
@@ -589,6 +618,7 @@ msgstr "No building permit needed"
 msgid "Newsletters"
 msgstr "Newsletters"
 
+#. placeholder {0}: SEGNALETICA_MODELS.PROFESSIONAL
 msgid "Numero per campo ostacoli {0}"
 msgstr "Number cone {0}"
 
@@ -649,6 +679,8 @@ msgstr "Pushers"
 msgid "Porte elettrificate"
 msgstr "Electrified Pushers"
 
+#. placeholder {0}: 0.75
+#. placeholder {0}: 0.37
 msgid "Potenza motore {0} kw e cadenza regolabile fra 60 e 220 metri al minuto"
 msgstr "Engine power {0} kw. Adjustable speed between 60 and 220 meter/minute"
 
@@ -682,6 +714,8 @@ msgstr "Control panel with manual, periodic or automatic program"
 msgid "Quali cookie utilizziamo e per quali finalità?"
 msgstr "Which cookies do we use and for what purposes?"
 
+#. placeholder {0}: SEDE_LEGALE.name
+#. placeholder {1}: SEDE_LEGALE.name
 msgid "Questi cookie di prima parte, sono proprietà di {0} (Gestore del sito) e sono impiegati per raccogliere dati in forma anonima e aggregata. Questi cookie sono utilizzati per elaborare analisi statistiche sulle modalità di navigazione degli utenti sul nostro sito. {1} tratta i risultati di queste analisi in maniera anonima ed esclusivamente per finalità statistiche."
 msgstr "These first-party cookies are the property of {0} (Website Administrator) and are used to gather data in anonymous and aggregated form. These cookies are used to prepare statistical analyses on the browsing methods of our Website’s users. {1} uses the results of these analyses anonymously and exclusively for statistical purposes."
 
@@ -691,9 +725,13 @@ msgstr "Fencing"
 msgid "Recinzione"
 msgstr "Fence"
 
+#. placeholder {0}: 1
 msgid "Recinzione cavalli a {0} filagna"
 msgstr "{0}-rail horse fence"
 
+#. placeholder {0}: 2
+#. placeholder {0}: 3
+#. placeholder {0}: 4
 msgid "Recinzione cavalli a {0} filagne"
 msgstr "{0}-rail horse fence"
 
@@ -706,6 +744,10 @@ msgstr "Entrance windscreen"
 msgid "Rettangoli / Campi professionali da dressage per tutte le esigenze"
 msgstr "Portable and easy to assemble dressage arenas. Here to help you put the finishing touches on your home or professional arena with markers, horse jumps and more"
 
+#. placeholder {0}: SIZE_20x40.size
+#. placeholder {0}: SIZE_20x60.size
+#. placeholder {1}: DRESSAGE_MODELS.TRAINING
+#. placeholder {1}: DRESSAGE_MODELS.OLYMPIC
 msgid "Rettangolo dressage {0} ({1})"
 msgstr "Dressage arena package {0} ({1})"
 
@@ -817,6 +859,7 @@ msgstr "Covered lunge pen"
 msgid "Tondino coperto"
 msgstr "Covered lunge pen"
 
+#. placeholder {0}: formatSizeMeter( dimensions.width )
 msgid "Tondino coperto {sides} pannelli {0}"
 msgstr "Covered lunge pen, {sides} panels, {0}"
 
