@@ -1,4 +1,4 @@
-import { Trans } from "@lingui/macro";
+import { Trans } from "@lingui/react/macro";
 import { Badge, Typography } from "@mui/material";
 import { styled } from "@mui/material/styles";
 import React from "react";

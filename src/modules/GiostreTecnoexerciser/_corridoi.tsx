@@ -1,4 +1,5 @@
-import { t, Trans } from "@lingui/macro";
+import { Trans } from "@lingui/react/macro";
+import { t } from "@lingui/core/macro";
 import { Grid, Typography } from "@mui/material";
 import { Gallery, Section, Th } from "components";
 import { BREAKPOINT, PRODUCT_GUTTER } from "theme";
@@ -41,7 +42,7 @@ const TecnoexerciserCorridoi = () => {
             <Trans>I corridoi</Trans>
           </Th>
 
-          <Typography component="p">
+          <Typography mx={{ marginBottom: 15 }}>
             <Trans>
               La giostra puo essere acquistata scegliendo tra il piú economico
               corridoio costituito dalla recinzione <strong>TECNOFENCE</strong>{" "}

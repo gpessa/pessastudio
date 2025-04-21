@@ -6,12 +6,13 @@ import { Footer, Gdpr, Header, Seo } from "components";
 import { AppProps } from "next/app";
 import theme from "../theme";
 
-import { AppCacheProvider } from "@mui/material-nextjs/v14-pagesRouter";
+import { AppCacheProvider } from "@mui/material-nextjs/v15-pagesRouter";
 import { GoogleAnalytics } from "@next/third-parties/google";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import Breadcrumb from "components/Breadcrumb";
 import { useLinguiInit } from "hooks/useLingui";
-import "pure-react-carousel/dist/react-carousel.es.css";
+import "react-multi-carousel/lib/styles.css";
+
 import { isProduction } from "utils/constants";
 import packageJson from "../../package.json";
 

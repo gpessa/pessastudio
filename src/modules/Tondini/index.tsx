@@ -1,4 +1,5 @@
-import { t, Trans } from "@lingui/macro";
+import { Trans } from "@lingui/react/macro";
+import { t } from "@lingui/core/macro";
 import AccountBalance from "@mui/icons-material/AccountBalance";
 import DomainDisabled from "@mui/icons-material/DomainDisabled";
 import Lock from "@mui/icons-material/Lock";

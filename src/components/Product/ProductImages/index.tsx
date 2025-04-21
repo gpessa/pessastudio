@@ -34,9 +34,9 @@ const ProductImages: React.FC<ProductImagesProps> = ({ images, md }) => (
     images={images}
     render={({ images, open }) => (
       <>
-        {images.map((image) => (
+        {images.map((image, index) => (
           <Grid
-            key={image.image.src}
+            key={`${image.image.src}_${index}`}
             onClick={() => open(image)}
             size={{
               md: md,

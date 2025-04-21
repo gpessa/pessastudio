@@ -1,4 +1,4 @@
-import { Trans } from "@lingui/macro";
+import { Trans } from "@lingui/react/macro";
 import AccountBalance from "@mui/icons-material/AccountBalance";
 import Apps from "@mui/icons-material/Apps";
 import Architecture from "@mui/icons-material/Architecture";
@@ -117,13 +117,13 @@ const Index: React.FC = () => {
         title={<Trans>Pessastudio, una scelta di qualità</Trans>}
         text={
           <Trans>
-            <Typography component="p">
+            <Typography mx={{ marginBottom: 15 }}>
               {NAME} è un'azienda altamente affidabile e rinomata nel settore
               dell'equitazione. Ogni anno, centinaia di persone scelgono i
               nostri articoli d'equitazione per la qualità superiore che li
               caratterizza.
             </Typography>
-            <Typography component="p">
+            <Typography mx={{ marginBottom: 15 }}>
               La gamma di prodotti offerti è ampia e diversificata, con
               un'attenzione particolare alla funzionalità e al design. La
               competenza e l'esperienza del team di {NAME} sono alla base del

@@ -1,4 +1,4 @@
-import { Trans } from "@lingui/macro";
+import { Trans } from "@lingui/react/macro";
 import {
   Avatar,
   Box,
@@ -49,7 +49,7 @@ const Contatti: React.FC = () => {
         left={
           <>
             <Th variant="h1">{PAGES.CONTATTI.title}</Th>
-            <Typography component="p">
+            <Typography mx={{ marginBottom: 15 }}>
               <Trans>
                 Siamo qui per aiutarti! Se hai domande sui nostri prodotti per
                 cavalli, necessiti di assistenza con un ordine o desideri

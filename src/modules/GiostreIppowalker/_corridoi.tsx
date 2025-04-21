@@ -1,4 +1,5 @@
-import { t, Trans } from "@lingui/macro";
+import { Trans } from "@lingui/react/macro";
+import { t } from "@lingui/core/macro";
 import { Grid, Typography } from "@mui/material";
 import { Gallery, Section, Th } from "components";
 import { BREAKPOINT, PRODUCT_GUTTER } from "theme";
@@ -41,7 +42,7 @@ const IppowalkerCorridoi = () => {
             <Trans>I corridoi</Trans>
           </Th>
 
-          <Typography component="p">
+          <Typography mx={{ marginBottom: 15 }}>
             <Trans>
               Anche in questo semplice modello potrai decidere di dotare la tua
               giostra di un corridoio scegliendo tra il piú economico corridoio

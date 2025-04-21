@@ -1,4 +1,5 @@
-import { t, Trans } from "@lingui/macro";
+import { Trans } from "@lingui/react/macro";
+import { t } from "@lingui/core/macro";
 import { Grid, Typography } from "@mui/material";
 import { Product, Title } from "components";
 import { ProductData } from "components/Product";
@@ -16,7 +17,7 @@ const Cavalletti: React.FC<{ products: ProductData[] }> = ({ products }) => (
         title={t`Cavalletti Caprilli`}
         text={
           <Trans>
-            <Typography component="p">
+            <Typography mx={{ marginBottom: 15 }}>
               I cavalletti Caprilli rappresentano uno strumento essenziale per
               l'allenamento del vostro animale, il passaggio sui cavalletti,
               rinforza la schiena del cavallo, scioglie la muscolatura e lo

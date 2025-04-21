@@ -1,0 +1,7 @@
+.root {
+    padding-right: 30px;
+}
+
+.root:last-child {
+    /* padding-right: 0; */
+}
