@@ -11,7 +11,8 @@ import { GoogleAnalytics } from "@next/third-parties/google";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import Breadcrumb from "components/Breadcrumb";
 import { useLinguiInit } from "hooks/useLingui";
-import "pure-react-carousel/dist/react-carousel.es.css";
+import "react-multi-carousel/lib/styles.css";
+
 import { isProduction } from "utils/constants";
 import packageJson from "../../package.json";
 

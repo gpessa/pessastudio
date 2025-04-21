@@ -4,6 +4,7 @@ import { useLingui } from "@lingui/react";
 import { ProductData } from "components/Product";
 import usePages from "hooks/usePages";
 import { Colors } from "theme";
+import { Box } from "@mui/material";
 import {
   CUBI_MODELS,
   CUCCHIAI_MODELS,
@@ -72,7 +73,7 @@ const useProducts = (): ProductList => {
   const SIZE_20x60 = { letters: 12, modules: 80, size: "20x60" };
 
   const DESCRIPTION_20x40 = (
-    <Trans>
+    <Trans component={Box}>
       <p>
         Un set per creare un circuito dressage standard da {SIZE_20x40.size} mt.
       </p>

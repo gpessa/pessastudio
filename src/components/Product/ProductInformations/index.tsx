@@ -24,7 +24,11 @@ const ProductInformations = ({
       {name}
     </Th>
     {description && (
-      <Typography sx={{ fontSize: "96%" }} mx={{ marginBottom: 15 }}>
+      <Typography
+        sx={{ fontSize: "96%" }}
+        mx={{ marginBottom: 15 }}
+        component="div"
+      >
         {description}
       </Typography>
     )}
