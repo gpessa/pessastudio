@@ -5,6 +5,7 @@ import { FloatingWhatsApp } from "react-floating-whatsapp";
 import { ITALIA, NAME_STRING } from "utils/constants";
 import { useLingui } from "@lingui/react";
 import { t } from "@lingui/core/macro";
+import { sendGAEvent } from "@next/third-parties/google";
 
 const FloatingWhatsAppStyled = styled(FloatingWhatsApp)(
   ({ theme }) => `
@@ -15,7 +16,6 @@ const FloatingWhatsAppStyled = styled(FloatingWhatsApp)(
   .floating-whatsapp-button {
     right: ${theme.spacing(3)};
     bottom: ${theme.spacing(3)};
-    // background-color: ${theme.palette.primary.main};
   }
 `
 );
@@ -30,6 +30,7 @@ const WhatsApp: React.FC = () => {
       avatar={anna.src}
       chatMessage={t`Ciao, come posso aiutarti?`}
       statusMessage={t`Disponibile`}
+      onSubmit={() => sendGAEvent("event", "submit_on_whatsapp")}
     />
   );
 };
