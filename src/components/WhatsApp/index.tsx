@@ -26,7 +26,7 @@ const WhatsApp: React.FC = () => {
   return (
     <FloatingWhatsAppStyled
       accountName={NAME_STRING}
-      phoneNumber={ITALIA.whatsapp}
+      phoneNumber={ITALIA.whatsapp.replace(/ /g, "")}
       avatar={anna.src}
       chatMessage={t`Ciao, come posso aiutarti?`}
       statusMessage={t`Disponibile`}
