@@ -19,3 +19,4 @@ export { default as Title } from "./Title";
 export { default as Ul } from "./Ul";
 export { default as ContactUs } from "./ContactUs";
 export { default as Video } from "./Video";
+export { default as WhatsApp } from "./WhatsApp";

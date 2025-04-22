@@ -175,6 +175,9 @@ msgstr "Che cos'è un cookie?"
 msgid "Chiusura a terra"
 msgstr "Chiusura a terra"
 
+msgid "Ciao, come posso aiutarti?"
+msgstr "Ciao, come posso aiutarti?"
+
 msgid "COD. FISC. e Part: I.V.A. 04743610281 C.C.I.A.A. PD - R.E.A. 414822"
 msgstr "COD. FISC. e Part: I.V.A. 04743610281 C.C.I.A.A. PD - R.E.A. 414822"
 
@@ -292,6 +295,9 @@ msgstr "Dimensioni"
 
 msgid "Dimensioni giostra cavalli"
 msgstr "Dimensioni giostra cavalli"
+
+msgid "Disponibile"
+msgstr "Disponibile"
 
 msgid "Dressage"
 msgstr "Dressage"

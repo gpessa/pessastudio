@@ -5,7 +5,7 @@ import NextLink from "next/link";
 import { useRouter } from "next/router";
 import React from "react";
 import CookieConsent from "react-cookie-consent";
-import { PRODUCT_GUTTER } from "theme";
+import { PRODUCT_GUTTER, BREAKPOINT } from "theme";
 
 const useStyles = makeStyles()((theme) => ({
   overlay: {
@@ -19,12 +19,17 @@ const useStyles = makeStyles()((theme) => ({
   },
   root: {
     background: theme.palette.common.white,
-    bottom: `${theme.spacing(4)}!important`,
+    bottom: `${theme.spacing(3)}!important`,
     boxShadow: theme.shadows[10],
+    left: "32px!important",
     padding: theme.spacing(PRODUCT_GUTTER),
     position: "fixed",
-    right: theme.spacing(4),
-    width: 350,
+    right: `calc(${theme.spacing(3)} + ${theme.spacing(3)} + ${theme.spacing(
+      3
+    )} + ${60}px)`,
+    [theme.breakpoints.up(BREAKPOINT)]: {
+      width: 500,
+    },
   },
 }));
 

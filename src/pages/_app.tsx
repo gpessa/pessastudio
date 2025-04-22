@@ -5,17 +5,15 @@ import { ThemeProvider } from "@mui/material/styles";
 import { Footer, Gdpr, Header, Seo } from "components";
 import { AppProps } from "next/app";
 import theme from "../theme";
-
 import { AppCacheProvider } from "@mui/material-nextjs/v15-pagesRouter";
 import { GoogleAnalytics } from "@next/third-parties/google";
 import { SpeedInsights } from "@vercel/speed-insights/next";
-import Breadcrumb from "components/Breadcrumb";
+import { WhatsApp, Breadcrumb } from "components";
 import { useLinguiInit } from "hooks/useLingui";
 import "react-multi-carousel/lib/styles.css";
 
 import { isProduction } from "utils/constants";
 import packageJson from "../../package.json";
-
 export type MyAppProps = AppProps<{ messages: any }>;
 
 const MyApp = (props: MyAppProps) => {
@@ -35,6 +33,7 @@ const MyApp = (props: MyAppProps) => {
           <Component {...pageProps} />
           <Footer version={packageJson.version} />
           <Gdpr />
+          <WhatsApp />
         </ThemeProvider>
       </I18nProvider>
       {isProduction && <GoogleAnalytics gaId="G-11DED996WJ" />}

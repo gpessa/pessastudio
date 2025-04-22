@@ -21,7 +21,7 @@ import {
   SEDE_LEGALE,
   SEDE_OPERATIVA,
 } from "utils/constants";
-import anna from "./assets/anna.jpg";
+import anna from "assets/generals/anna.jpg";
 import ContattiAddress from "./components/ContattiAddress";
 import ContattiBank from "./components/ContattiBank";
 import { styled } from "@mui/material/styles";
