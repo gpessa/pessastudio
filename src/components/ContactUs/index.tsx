@@ -11,7 +11,7 @@ import { ITALIA } from "utils/constants";
 const ContactUs: React.FC<Pick<Parameters<typeof Section>[0], "color">> = ({
   color,
 }) => {
-  const { NAVIGATION } = usePages();
+  // const { NAVIGATION } = usePages();
 
   return (
     <Section color={color} textAlign="center">
@@ -42,13 +42,13 @@ const ContactUs: React.FC<Pick<Parameters<typeof Section>[0], "color">> = ({
         <Typography fontSize="120%">
           <Trans>
             Oppure visita la nostra pagina dei{" "}
-            <Link
+            {/* <Link
               onClick={() => sendGAEvent("event", "click_on_contact")}
-              href={NAVIGATION.CONTATTI.url}
+              // href={NAVIGATION.CONTATTI.url}
               component={LinkNext}
             >
               contatti
-            </Link>{" "}
+            </Link>{" "} */}
             per scoprire i rivenditori nella tua zona.
           </Trans>
         </Typography>

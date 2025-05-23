@@ -1,3 +1,5 @@
+"use client";
+
 import { createTheme, responsiveFontSizes } from "@mui/material/styles";
 import { Source_Sans_3, Roboto_Condensed } from "next/font/google";
 

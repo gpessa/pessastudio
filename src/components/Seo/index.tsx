@@ -1,3 +1,5 @@
+"use client";
+
 import { usePages, useTree } from "hooks";
 import React from "react";
 import {

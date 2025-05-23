@@ -8,13 +8,13 @@ module.exports = {
     }
   ],
   fallbackLocales: {
-    default: nextConfig.i18n.defaultLocale
+    default: 'en'
   },
   format: 'po',
   formatOptions: {
     lineNumbers: false,
     origins: false,
   },
-  locales: nextConfig.i18n.locales,
+  locales: ['it', 'fr', 'en'],
   sourceLocale: 'it',
 }

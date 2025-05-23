@@ -1,5 +1,6 @@
-import { Grid, SvgIconTypeMap } from "@mui/material";
+"use client";
 
+import { Grid, SvgIconTypeMap } from "@mui/material";
 import { OverridableComponent } from "@mui/material/OverridableComponent";
 import { styled } from "@mui/material/styles";
 import Section from "components/Section";

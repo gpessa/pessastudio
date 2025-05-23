@@ -1,3 +1,5 @@
+"use client";
+
 import { Box, BoxProps, Typography } from "@mui/material";
 import React from "react";
 import { BREAKPOINT } from "theme";

@@ -13,7 +13,7 @@ import {
 import linguiConfig from "i18n/config.json";
 import Image from "next/image";
 import Link from "next/link";
-import { useRouter } from "next/router";
+import { useRouter } from "next/compat/router";
 import * as React from "react";
 import { useEffect, useState } from "react";
 
@@ -26,9 +26,11 @@ const LOCALE_ICONS: { [key: string]: string } = {
 const DIM = 20;
 
 const LanguageSelector: React.FC = () => {
-  const { locales, locale } = useRouter();
+  const router = useRouter();
   const [show, setShow] = useState(false);
-  const { pathname } = useRouter();
+  const pathname = router?.pathname;
+  const locales = router?.locales || [];
+  const locale = router?.locale;
 
   useEffect(() => {
     setShow(false);
@@ -45,12 +47,14 @@ const LanguageSelector: React.FC = () => {
       <Tooltip title="Change language">
         <IconButton onClick={handleModal}>
           <Avatar sx={{ height: DIM, width: DIM }}>
-            <Image
-              src={LOCALE_ICONS[locale!]}
-              alt={locale!}
-              width={DIM}
-              height={DIM}
-            />
+            {locale && (
+              <Image
+                src={LOCALE_ICONS[locale!]}
+                alt={locale!}
+                width={DIM}
+                height={DIM}
+              />
+            )}
           </Avatar>
         </IconButton>
       </Tooltip>
@@ -58,14 +62,14 @@ const LanguageSelector: React.FC = () => {
       <Dialog open={show} onClose={handleModal}>
         <DialogTitle>Choose a language</DialogTitle>
         <List disablePadding component="nav">
-          {(locales || []).map((locale) => (
+          {locales.map((locale) => (
             <ListItem disableGutters key={locale}>
-              <Link href={pathname} locale={locale} passHref legacyBehavior>
+              <Link href={pathname!} locale={locale} passHref>
                 <ListItemButton component="a">
                   <ListItemAvatar>
                     <Avatar sx={{ height: DIM, width: DIM }}>
                       <Image
-                        src={LOCALE_ICONS[locale!]}
+                        src={LOCALE_ICONS[locale]}
                         alt={locale}
                         width={DIM}
                         height={DIM}

@@ -1,4 +1,4 @@
-import { t } from "@lingui/core/macro";
+import { msg } from "@lingui/core/macro";
 import { useLingui } from "@lingui/react";
 import dressage from "assets/icons/dressage.jpg";
 import giostre from "assets/icons/giostre.jpg";
@@ -15,99 +15,115 @@ export type Page = {
 };
 
 const usePages = () => {
-  useLingui(); // Fix on locale change
+  const { i18n } = useLingui();
 
   const OSTACOLI: Page = {
-    description: t`Prodotti professionali, sono lo strumento di lavoro indispensabile in un centro ippico o un maneggio. Progettati e costruiti per durare nel tempo senza alcuna manutenzione`,
+    description: i18n._(
+      msg`Prodotti professionali, sono lo strumento di lavoro indispensabile in un centro ippico o un maneggio. Progettati e costruiti per durare nel tempo senza alcuna manutenzione`
+    ),
     image: ostacoli,
-    title: t`Ostacoli`,
+    title: i18n._(msg`Ostacoli`),
     url: "/ostacoli",
   };
 
   const RECINTI: Page = {
-    description: t`Un recinto da cavalli in PVC. Indistruttibile anche in presenza delle più avverse condizioni meteorologiche`,
+    description: i18n._(
+      msg`Un recinto da cavalli in PVC. Indistruttibile anche in presenza delle più avverse condizioni meteorologiche`
+    ),
     image: recinti,
-    title: t`Recinti`,
+    title: i18n._(msg`Recinti`),
     url: "/recinti",
   };
 
   const TONDINI: Page = {
-    description: t`Tondini coperti per addestrare puledri in libertà`,
+    description: i18n._(msg`Tondini coperti per addestrare puledri in libertà`),
     image: tondini,
-    title: t`Tondini`,
+    title: i18n._(msg`Tondini`),
     url: "/tondini",
   };
 
   const GIOSTRE: Page = {
-    description: t`Scopri le nostre giostre per cavalli, lo strumento ideale di lavoro per allenare il vostro cavallo`,
+    description: i18n._(
+      msg`Scopri le nostre giostre per cavalli, lo strumento ideale di lavoro per allenare il vostro cavallo`
+    ),
     image: giostre,
-    title: t`Giostre`,
+    title: i18n._(msg`Giostre`),
     url: "/giostre",
   };
 
   const DRESSAGE: Page = {
-    description: t`Rettangoli / Campi professionali da dressage per tutte le esigenze`,
+    description: i18n._(
+      msg`Rettangoli / Campi professionali da dressage per tutte le esigenze`
+    ),
     image: dressage,
-    title: t`Dressage`,
+    title: i18n._(msg`Dressage`),
     url: "/dressage",
   };
 
   const CONTATTI: Page = {
-    description: t`Contattaci per un preventivo per ostacoli, recinti, tondini coperti, giostre, rettangoli da dressage e attrezzature per cavalli`,
-    title: t`Contatti`,
+    description: i18n._(
+      msg`Contattaci per un preventivo per ostacoli, recinti, tondini coperti, giostre, rettangoli da dressage e attrezzature per cavalli`
+    ),
+    title: i18n._(msg`Contatti`),
     url: "/contatti",
   };
 
   const PAGE_404: Page = {
-    title: t`Pagina non trovata`,
+    title: i18n._(msg`Pagina non trovata`),
     url: "/404",
   };
 
   const PAGE_500: Page = {
-    title: t`Errore`,
+    title: i18n._(msg`Errore`),
     url: "/500",
   };
 
   const COOKIE_POLICY: Page = {
-    title: t`Informativa sui Cookie`,
+    title: i18n._(msg`Informativa sui Cookie`),
     url: "/cookie-policy",
   };
 
   const HOME: Page = {
-    description: t`Contatta Pessastudio per preventivi di Giostre, ostacoli, tondini e attrezzature per cavalli`,
-    title: t`Home`,
+    description: i18n._(
+      msg`Contatta Pessastudio per preventivi di Giostre, ostacoli, tondini e attrezzature per cavalli`
+    ),
+    title: i18n._(msg`Home`),
     url: "/",
   };
 
   const RECINTI_COME_PREPARARE_IL_FONDO: Page = {
-    title: t`Come preparare il fondo`,
+    title: i18n._(msg`Come preparare il fondo`),
     url: "/recinti/come-preparare-il-fondo",
   };
 
   const TONDINI_COME_PREPARARE_IL_FONDO: Page = {
-    title: t`Come preparare il fondo`,
+    title: i18n._(msg`Come preparare il fondo`),
     url: "/tondini/come-preparare-il-fondo",
   };
 
   const GIOSTRE_IPPOWALKER: Page = {
-    description: t`Scopri la nostra giostra IPPOWALKER, lo strumento economico adatto ad allenare il tuo cavallo o il tuo puledro`,
-    title: t`Giostra Ippowalker`,
+    description: i18n._(
+      msg`Scopri la nostra giostra IPPOWALKER, lo strumento economico adatto ad allenare il tuo cavallo o il tuo puledro`
+    ),
+    title: i18n._(msg`Giostra Ippowalker`),
     url: "/giostre/ippowalker",
   };
 
   const GIOSTRE_IPPOWALKER_ISTRUZIONI_MONTAGGIO: Page = {
-    title: t`Istruzioni di montaggio`,
+    title: i18n._(msg`Istruzioni di montaggio`),
     url: "/giostre/ippowalker/istruzioni-montaggio",
   };
 
   const GIOSTRE_TECNOEXERCISER: Page = {
-    description: t`Scopri la nostra giostra TECNOEXERCISER, lo strumento professionale adatto ad allenare il tuo cavallo o il tuo puledro`,
-    title: t`Giostra Tecnoexerciser`,
+    description: i18n._(
+      msg`Scopri la nostra giostra TECNOEXERCISER, lo strumento professionale adatto ad allenare il tuo cavallo o il tuo puledro`
+    ),
+    title: i18n._(msg`Giostra Tecnoexerciser`),
     url: "/giostre/tecnoexerciser",
   };
 
   const GIOSTRE_TECNOEXERCISER_ISTRUZIONI_MONTAGGIO: Page = {
-    title: t`Istruzioni di montaggio`,
+    title: i18n._(msg`Istruzioni di montaggio`),
     url: "/giostre/tecnoexerciser/istruzioni-montaggio",
   };
 

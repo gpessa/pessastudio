@@ -1,10 +1,12 @@
+"use client";
+
 import HomeIcon from "@mui/icons-material/Home";
 import { Breadcrumbs, Container, Link, Typography } from "@mui/material";
 import { styled } from "@mui/material/styles";
 import { usePages } from "hooks";
 import useTree from "hooks/useTree";
 import NextLink from "next/link";
-import { useRouter } from "next/router";
+import { useRouter } from "next/navigation";
 import React from "react";
 
 const RootStyled = styled("div")(({ theme }) => ({
@@ -20,12 +22,12 @@ const HomeIconStyled = styled(HomeIcon)({
 const Breadcrumb: React.FC = () => {
   const { pathname } = useRouter();
   const breadcrumb = useTree(pathname);
-  const { PAGES } = usePages();
+  // const { PAGES } = usePages();
 
   const showBreadcrumb = ![
-    PAGES.PAGE_404.url,
-    PAGES.PAGE_500.url,
-    PAGES.HOME.url,
+    // PAGES.PAGE_404.url,
+    // PAGES.PAGE_500.url,
+    // PAGES.HOME.url,
   ].includes(pathname);
 
   return showBreadcrumb ? (

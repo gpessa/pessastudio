@@ -1,4 +1,6 @@
-import { Trans } from "@lingui/macro";
+"use client";
+
+import { Trans } from "@lingui/react/macro";
 import { Grid } from "@mui/material";
 import { styled } from "@mui/material/styles";
 import Section from "components/Section";

@@ -1,4 +1,4 @@
-import { Trans } from "@lingui/react/macro";
+import { Trans, useLingui } from "@lingui/react/macro";
 import AccountBalance from "@mui/icons-material/AccountBalance";
 import Apps from "@mui/icons-material/Apps";
 import Architecture from "@mui/icons-material/Architecture";
@@ -16,10 +16,11 @@ export { getStaticProps } from "utils/getProps";
 
 import fiera2024_it from "./assets/fiera2024/it.jpg";
 
-import { useRouter } from "next/router";
+import { useRouter } from "next/compat/router";
+import { useLinguiInit } from "hooks/useLingui";
 
 const Index: React.FC = () => {
-  const { locale } = useRouter();
+  // const locale = useRouter()?.locale;
 
   const TESTIMONIALS = [
     <Trans key="test_1">
@@ -100,18 +101,15 @@ const Index: React.FC = () => {
     },
   ];
 
-  const isFieraTime = new Date() < new Date("11/10/2024");
-  const isFieraMode = isFieraTime && locale === "it";
-
   const HERO: HeroProps = {
-    image: isFieraMode ? fiera2024_it : image,
-    text: isFieraMode ? undefined : <Trans>Tradizione e qualità</Trans>,
+    image: image,
+    text: <Trans>Tradizione e qualità</Trans>,
   };
 
   return (
     <>
       <Hero {...HERO} />
-      <Benefits
+      {/* <Benefits
         benefits={BENEFITS}
         subtitle={<Trans>Perché?</Trans>}
         title={<Trans>Pessastudio, una scelta di qualità</Trans>}
@@ -132,9 +130,9 @@ const Index: React.FC = () => {
             </Typography>
           </Trans>
         }
-      />
+      /> */}
       <IndexProducts />
-      <IndexTestimonials
+      {/* <IndexTestimonials
         subtitle={<Trans>Dicono di noi</Trans>}
         title={<Trans>Cosa dicono di noi</Trans>}
         text={
@@ -144,7 +142,7 @@ const Index: React.FC = () => {
           </Trans>
         }
         testimonials={TESTIMONIALS}
-      />
+      /> */}
     </>
   );
 };

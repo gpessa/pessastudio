@@ -22,22 +22,24 @@ const MyApp = (props: MyAppProps) => {
   useLinguiInit(pageProps.messages);
 
   return (
-    <AppCacheProvider {...props}>
-      <SpeedInsights />
+    <>
+      {/* <AppCacheProvider {...props}> */}
+      {/* <SpeedInsights /> */}
       <I18nProvider i18n={i18n}>
         <Seo />
-        <ThemeProvider theme={theme}>
-          <CssBaseline />
-          <Header />
-          <Breadcrumb />
-          <Component {...pageProps} />
-          <Footer version={packageJson.version} />
-          <Gdpr />
-          <WhatsApp />
-        </ThemeProvider>
+        {/* <ThemeProvider theme={theme}> */}
+        {/* <CssBaseline /> */}
+        <Header />
+        <Breadcrumb />
+        <Component {...pageProps} />
+        <Footer version={packageJson.version} />
+        <Gdpr />
+        <WhatsApp />
+        {/* </ThemeProvider> */}
       </I18nProvider>
-      {isProduction && <GoogleAnalytics gaId="G-11DED996WJ" />}
-    </AppCacheProvider>
+      {/* {isProduction && <GoogleAnalytics gaId="G-11DED996WJ" />} */}
+      {/* </AppCacheProvider> */}
+    </>
   );
 };
 

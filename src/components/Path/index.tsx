@@ -1,3 +1,5 @@
+"use client";
+
 import { Step, StepContent, StepLabel, Stepper } from "@mui/material";
 import Th from "components/Th";
 import Image, { StaticImageData } from "next/image";

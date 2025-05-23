@@ -1,18 +1,19 @@
-import { Trans } from "@lingui/react/macro";
-import { t } from "@lingui/core/macro";
-import { useLingui } from "@lingui/react";
+"use client";
+
+import { msg, t } from "@lingui/core/macro";
+import { Trans, useLingui } from "@lingui/react/macro";
 import Send from "@mui/icons-material/Send";
 import { Alert, IconButton, Input, InputAdornment } from "@mui/material";
+import { styled } from "@mui/material/styles";
 import React, { useState } from "react";
 import MailchimpSubscribe from "react-mailchimp-subscribe";
-import { styled } from "@mui/material/styles";
 
 const StyledAlert = styled(Alert)(({ theme }) => ({
   marginTop: theme.spacing(2),
 }));
 
 const NewsletterSubscription: React.FC = () => {
-  useLingui(); // Fix on locale change
+  const { i18n } = useLingui();
   const [email, setEmail] = useState<string>();
 
   const url =
@@ -36,8 +37,8 @@ const NewsletterSubscription: React.FC = () => {
                 fullWidth
                 type="email"
                 name="email"
-                placeholder={t`Email`}
-                inputProps={{ "aria-label": t`Email` }}
+                placeholder={i18n._(msg`Email`)}
+                inputProps={{ "aria-label": i18n._(msg`Email`) }}
                 endAdornment={
                   <InputAdornment position="end">
                     <IconButton
@@ -45,7 +46,7 @@ const NewsletterSubscription: React.FC = () => {
                       type="submit"
                       color="inherit"
                       size="large"
-                      aria-label={t`Iscriviti`}
+                      aria-label={i18n._(msg`Iscriviti`)}
                     >
                       <Send />
                     </IconButton>

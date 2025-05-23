@@ -1,3 +1,5 @@
+"use client";
+
 import { Box, Grid } from "@mui/material";
 import React, { ReactNode } from "react";
 import { Colors, PRODUCT_GUTTER } from "theme";
@@ -49,8 +51,9 @@ const Product: React.FC<ProductProps> = (product) => {
           <Grid
             size={{
               md: md,
-              xs: 12
-            }}>
+              xs: 12,
+            }}
+          >
             <ProductInformations {...product} />
           </Grid>
         </Grid>

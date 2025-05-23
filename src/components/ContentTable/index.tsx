@@ -1,3 +1,5 @@
+"use client";
+
 import { Trans } from "@lingui/react/macro";
 import PictureAsPdf from "@mui/icons-material/PictureAsPdf";
 import Visibility from "@mui/icons-material/Visibility";
@@ -47,7 +49,7 @@ const ContentTable: React.FC<Props> = ({ rows, title, ...props }: Props) => (
 
               <TableCell align="right">
                 {link && (
-                  <Link href={link} legacyBehavior passHref>
+                  <Link href={link} passHref>
                     <ButtonStyled
                       color="inherit"
                       endIcon={<Visibility />}

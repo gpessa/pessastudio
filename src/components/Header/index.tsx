@@ -1,3 +1,5 @@
+"use client";
+
 import { Trans } from "@lingui/react";
 import Menu from "@mui/icons-material/Menu";
 import {
@@ -15,7 +17,7 @@ import { styled } from "@mui/material/styles";
 import { usePages } from "hooks";
 
 import Link from "next/link";
-import { useRouter } from "next/router";
+import { useRouter } from "next/compat/router";
 import React, { useEffect, useState } from "react";
 import { BREAKPOINT } from "theme";
 import LanguageSelector from "./LanguageSelector";
@@ -42,9 +44,11 @@ const HeaderDesktop = styled(Box)(({ theme }) => ({
 }));
 
 const HeaderDesktopButtom = styled(Button)(({ theme, href }) => {
-  const { pathname } = useRouter();
+  const router = useRouter();
+
   const selected =
-    pathname.startsWith(href!.substring(3)) || pathname.startsWith(href!);
+    router?.pathname.startsWith(href!.substring(3)) ||
+    router?.pathname.startsWith(href!);
 
   return {
     color: selected ? theme.palette.primary.main : theme.palette.common.black,
@@ -88,11 +92,11 @@ const Header: React.FC = () => {
   });
   const [open, setOpen] = useState(false);
   const { NAVIGATION } = usePages();
-  const { pathname } = useRouter();
+  const router = useRouter();
 
   useEffect(() => {
     handleMenuClose();
-  }, [pathname]);
+  }, [router?.pathname]);
 
   const handleMenuToggle = () => {
     setOpen((open) => !open);
@@ -109,7 +113,7 @@ const Header: React.FC = () => {
 
         <HeaderDesktop>
           {Object.values(NAVIGATION).map(({ url, title }) => (
-            <Link passHref key={url} href={url} legacyBehavior>
+            <Link passHref key={url} href={url}>
               <HeaderDesktopButtom variant="text" color="inherit">
                 <Trans id={title} />
               </HeaderDesktopButtom>
@@ -137,7 +141,7 @@ const Header: React.FC = () => {
       {open && (
         <MenuMobileStyled>
           {Object.values(NAVIGATION).map(({ url, title }) => (
-            <Link key={url} href={url} legacyBehavior>
+            <Link key={url} href={url}>
               <ListItem>
                 <Trans id={title} />
               </ListItem>

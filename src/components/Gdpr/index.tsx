@@ -1,3 +1,5 @@
+"use client";
+
 import { Trans } from "@lingui/react/macro";
 import { Box, Button, ButtonProps, Link } from "@mui/material";
 import { makeStyles } from "tss-react/mui";

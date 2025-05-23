@@ -1,3 +1,5 @@
+"use client";
+
 import { styled } from "@mui/material/styles";
 import anna from "assets/generals/anna.jpg";
 import React from "react";
