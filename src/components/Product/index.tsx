@@ -1,30 +1,10 @@
+import React from "react";
 import { Box, Grid } from "@mui/material";
-import React, { ReactNode } from "react";
-import { Colors, PRODUCT_GUTTER } from "theme";
-
-import { ProductId } from "hooks/useProducts";
-import { Material } from "utils/constants";
-import ProductImages from "./ProductImages";
-import ProductInformations from "./ProductInformations";
-import { PriceProps } from "./ProductPrice";
-import ProductSeo from "./ProductSeo";
-
-export type ProductData = {
-  pictures: any[];
-  price?: PriceProps["price"];
-  description?: string | ReactNode;
-  name: string;
-  id: ProductId;
-  colors?: Colors[];
-  materials?: Material[];
-  link: string;
-  dimensions: {
-    height?: number;
-    length?: number;
-    weight?: number;
-    width?: number;
-  };
-};
+import { ProductData } from "hooks/useProducts";
+import { PRODUCT_GUTTER } from "theme";
+import ProductImages from "./components/ProductImages";
+import ProductInformations from "./components/ProductInformations";
+import ProductSeo from "./components/ProductSeo";
 
 export type ProductProps = ProductData & {
   className?: string;
@@ -49,8 +29,9 @@ const Product: React.FC<ProductProps> = (product) => {
           <Grid
             size={{
               md: md,
-              xs: 12
-            }}>
+              xs: 12,
+            }}
+          >
             <ProductInformations {...product} />
           </Grid>
         </Grid>

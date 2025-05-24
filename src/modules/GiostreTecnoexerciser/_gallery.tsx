@@ -1,7 +1,6 @@
 import { t } from "@lingui/core/macro";
-import { Gallery } from "components";
-
 import { useLingui } from "@lingui/react";
+import { Gallery } from "components";
 import productsGiostreTecnoexerciserGalleryGiostra_1 from "assets/products/giostre/tecnoexerciser/gallery/giostra-1.jpg";
 import productsGiostreTecnoexerciserGalleryGiostra_2 from "assets/products/giostre/tecnoexerciser/gallery/giostra-2.jpg";
 import productsGiostreTecnoexerciserGalleryMotore_3 from "assets/products/giostre/tecnoexerciser/gallery/motore-3.jpg";

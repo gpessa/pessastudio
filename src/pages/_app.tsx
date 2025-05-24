@@ -2,18 +2,17 @@ import { i18n } from "@lingui/core";
 import { I18nProvider } from "@lingui/react";
 import CssBaseline from "@mui/material/CssBaseline";
 import { ThemeProvider } from "@mui/material/styles";
-import { Footer, Gdpr, Header, Seo } from "components";
-import { AppProps } from "next/app";
-import theme from "../theme";
 import { AppCacheProvider } from "@mui/material-nextjs/v15-pagesRouter";
 import { GoogleAnalytics } from "@next/third-parties/google";
 import { SpeedInsights } from "@vercel/speed-insights/next";
-import { WhatsApp, Breadcrumb } from "components";
+import { AppProps } from "next/app";
+import { Breadcrumb, Footer, Gdpr, Header, Seo, WhatsApp } from "components";
 import { useLinguiInit } from "hooks/useLingui";
 import "react-multi-carousel/lib/styles.css";
-
 import { isProduction } from "utils/constants";
+import theme from "../theme";
 import packageJson from "../../package.json";
+
 export type MyAppProps = AppProps<{ messages: any }>;
 
 const MyApp = (props: MyAppProps) => {

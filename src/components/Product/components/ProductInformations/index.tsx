@@ -2,11 +2,11 @@ import { t } from "@lingui/core/macro";
 import { Box, Typography } from "@mui/material";
 import Data from "components/Data";
 import Th from "components/Th";
+import { ProductData } from "hooks/useProducts";
 import { formatSize, formatWeight } from "utils/format";
 import ProductColorsList from "../ProductColorsList";
 import ProductMaterialsList from "../ProductMaterialsList";
 import ProductPrice from "../ProductPrice";
-import { ProductData } from "../index";
 
 const ProductInformations = ({
   colors,

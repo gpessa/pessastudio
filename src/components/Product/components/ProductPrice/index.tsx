@@ -1,7 +1,8 @@
+import React from "react";
 import { Trans } from "@lingui/react/macro";
 import { Badge, Typography } from "@mui/material";
 import { styled } from "@mui/material/styles";
-import React from "react";
+import { ProductData } from "hooks/useProducts";
 import { formatPrice } from "utils/format";
 
 const PriceStyled = styled(Typography)(({ theme }) => ({
@@ -9,11 +10,7 @@ const PriceStyled = styled(Typography)(({ theme }) => ({
   fontWeight: "bold",
 }));
 
-export type PriceProps = {
-  price: undefined | number;
-};
-
-const ProductPrice: React.FC<PriceProps> = ({ price }) => {
+const ProductPrice: React.FC<Pick<ProductData, "price">> = ({ price }) => {
   if (!price) return null;
 
   return (

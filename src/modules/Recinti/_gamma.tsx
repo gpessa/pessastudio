@@ -3,8 +3,7 @@ import { Grid } from "@mui/material";
 import { styled } from "@mui/material/styles";
 import { Product, Section, Th } from "components";
 import { BREAKPOINT, PRODUCT_GUTTER } from "theme";
-
-import { ProductData } from "components/Product";
+import { ProductData } from "hooks/useProducts";
 
 const ProductStyled = styled(Product)(({ theme }) => ({
   "& .MuiTypography-caption": {

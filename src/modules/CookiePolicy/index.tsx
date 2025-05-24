@@ -9,9 +9,9 @@ import {
   TableRow,
   Typography,
 } from "@mui/material";
+import React from "react";
 import { Section, Th } from "components";
 import { usePages } from "hooks";
-import React from "react";
 import { PRODUCT_GUTTER } from "theme";
 import { ITALIA, SEDE_LEGALE, WEBSITE } from "utils/constants";
 export { getStaticProps } from "utils/getProps";

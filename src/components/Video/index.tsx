@@ -1,7 +1,7 @@
 import { styled } from "@mui/material/styles";
 import { YouTubeEmbed } from "@next/third-parties/google";
-import Section from "../Section";
 import React from "react";
+import Section from "../Section";
 
 const VideoSectionStyled = styled(Section)(({ theme }) => ({
   background: `linear-gradient(to bottom, 

@@ -9,10 +9,11 @@ import {
   Stack,
   Typography,
 } from "@mui/material";
-import { Columns, Section, Th } from "components";
-import { usePages } from "hooks";
 import Image from "next/image";
 import React from "react";
+import { styled } from "@mui/material/styles";
+import { Columns, Section, Th } from "components";
+import { usePages } from "hooks";
 import { PRODUCT_GUTTER } from "theme";
 import {
   BANCHE,
@@ -24,7 +25,7 @@ import {
 import anna from "assets/generals/anna.jpg";
 import ContattiAddress from "./components/ContattiAddress";
 import ContattiBank from "./components/ContattiBank";
-import { styled } from "@mui/material/styles";
+
 
 export { getStaticProps } from "utils/getProps";
 

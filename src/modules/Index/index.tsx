@@ -5,18 +5,17 @@ import Architecture from "@mui/icons-material/Architecture";
 import Restore from "@mui/icons-material/Restore";
 import TurnedInNot from "@mui/icons-material/TurnedInNot";
 import { Typography } from "@mui/material";
+import { useRouter } from "next/router";
+import React from "react";
 import { Benefits, Hero } from "components";
 import { HeroProps } from "components/Hero";
-import React from "react";
 import { NAME } from "utils/constants";
 import image from "./assets/background.jpg";
 import IndexProducts from "./components/IndexProducts";
 import IndexTestimonials from "./components/IndexTestimonials";
-export { getStaticProps } from "utils/getProps";
-
 import fiera2024_it from "./assets/fiera2024/it.jpg";
 
-import { useRouter } from "next/router";
+export { getStaticProps } from "utils/getProps";
 
 const Index: React.FC = () => {
   const { locale } = useRouter();

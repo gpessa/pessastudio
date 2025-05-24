@@ -1,9 +1,9 @@
 import { Trans } from "@lingui/react/macro";
 import { useLingui } from "@lingui/react";
 import { Typography } from "@mui/material";
+import React from "react";
 import { Columns, Th, Ul, Video } from "components";
 import { usePages } from "hooks";
-import React from "react";
 import TecnoexerciserAccessori from "./_accessori";
 import TecnoexerciserCompare from "./_compare";
 import TecnoexerciserCopertura from "./_copertura";

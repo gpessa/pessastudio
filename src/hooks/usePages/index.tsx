@@ -1,11 +1,11 @@
 import { t } from "@lingui/core/macro";
 import { useLingui } from "@lingui/react";
+import { StaticImageData } from "next/image";
 import dressage from "assets/icons/dressage.jpg";
 import giostre from "assets/icons/giostre.jpg";
 import ostacoli from "assets/icons/ostacoli.jpg";
 import recinti from "assets/icons/recinti.jpg";
 import tondini from "assets/icons/tondini.jpg";
-import { StaticImageData } from "next/image";
 
 export type Page = {
   url: string;

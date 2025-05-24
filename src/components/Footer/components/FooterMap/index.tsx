@@ -10,7 +10,7 @@ const FrameStyled = styled("iframe")({
   border: "none",
 });
 
-const Map = () => {
+const FooterMap = () => {
   useLingui(); // Fix on locale change
 
   return (
@@ -25,4 +25,4 @@ const Map = () => {
     </BoxStyled>
   );
 };
-export default Map;
+export default FooterMap;

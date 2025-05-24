@@ -1,14 +1,13 @@
 import { Trans } from "@lingui/react/macro";
 import { t } from "@lingui/core/macro";
 import { Grid, Typography } from "@mui/material";
+import { useLingui } from "@lingui/react";
 import { Gallery, Section, Th } from "components";
 import { PRODUCT_GUTTER } from "theme";
 import {
   GIOSTRA_COPERTURA_PVC_DESCRIZIONE,
   GIOSTRE_COPERTURA_NOTE,
 } from "utils/constants";
-
-import { useLingui } from "@lingui/react";
 import productsGiostreTecnoexerciserCoperturaCoperturaLastreOndulate_1 from "assets/products/giostre/tecnoexerciser/copertura/copertura-lastre-ondulate-1.jpg";
 import productsGiostreTecnoexerciserCoperturaCoperturaLastreOndulate_2 from "assets/products/giostre/tecnoexerciser/copertura/copertura-lastre-ondulate-2.jpg";
 import productsGiostreTecnoexerciserCoperturaCoperturaPvc_1 from "assets/products/giostre/tecnoexerciser/copertura/copertura-pvc-1.jpg";

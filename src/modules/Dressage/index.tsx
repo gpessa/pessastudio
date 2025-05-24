@@ -1,9 +1,9 @@
 import { Trans } from "@lingui/react/macro";
 import { useLingui } from "@lingui/react";
 import { Box, Grid, Link, Typography } from "@mui/material";
+import React from "react";
 import { Columns, ContactUs, Gallery, Product, Section, Th } from "components";
 import { usePages, useProducts } from "hooks";
-import React from "react";
 import { PRODUCT_GUTTER } from "theme";
 import { DRESSAGE_MODELS } from "utils/constants";
 export { getStaticProps } from "utils/getProps";

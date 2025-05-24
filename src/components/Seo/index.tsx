@@ -1,14 +1,4 @@
-import { usePages, useTree } from "hooks";
 import React from "react";
-import {
-  ITALIA,
-  SEDE_LEGALE,
-  SEDE_OPERATIVA,
-  SOCIALS,
-  WEBSITE,
-} from "utils/constants";
-
-import image from "assets/generals/image.jpg";
 import {
   BreadcrumbJsonLd,
   NextSeo,
@@ -17,6 +7,15 @@ import {
 } from "next-seo";
 import Head from "next/head";
 import { useRouter } from "next/router";
+import image from "assets/generals/image.jpg";
+import {
+  ITALIA,
+  SEDE_LEGALE,
+  SEDE_OPERATIVA,
+  SOCIALS,
+  WEBSITE,
+} from "utils/constants";
+import { usePages, useTree } from "hooks";
 
 const Seo: React.FC = () => {
   const { PAGES } = usePages();

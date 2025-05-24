@@ -1,8 +1,8 @@
 import { Trans } from "@lingui/react/macro";
 import { Grid, Typography } from "@mui/material";
-import { Product, Title } from "components";
-import { ProductData } from "components/Product";
 import React from "react";
+import { Product, Title } from "components";
+import { ProductData } from "hooks/useProducts";
 import { PRODUCT_GUTTER } from "theme";
 
 const Fosso: React.FC<{ products: ProductData[] }> = ({ products }) => (
@@ -10,8 +10,9 @@ const Fosso: React.FC<{ products: ProductData[] }> = ({ products }) => (
     <Grid
       size={{
         md: 6,
-        xs: 12
-      }}>
+        xs: 12,
+      }}
+    >
       <Title
         title={<Trans>Fosso</Trans>}
         text={
@@ -30,8 +31,9 @@ const Fosso: React.FC<{ products: ProductData[] }> = ({ products }) => (
     <Grid
       size={{
         md: 6,
-        xs: 12
-      }}>
+        xs: 12,
+      }}
+    >
       <Product {...products[0]} />
     </Grid>
   </Grid>

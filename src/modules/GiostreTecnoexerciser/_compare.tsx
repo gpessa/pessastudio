@@ -1,7 +1,7 @@
 import { Trans } from "@lingui/react/macro";
 import { Typography } from "@mui/material";
-import { Compare } from "components";
 import React from "react";
+import { Compare } from "components";
 import {
   GIOSTRA_FENCE,
   GIOSTRA_FENCE_TYPE_TECNOFENCE,

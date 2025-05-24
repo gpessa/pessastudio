@@ -2,9 +2,8 @@ import { t } from "@lingui/core/macro";
 import { Trans } from "@lingui/react/macro";
 import { Typography } from "@mui/material";
 import { Product, Title } from "components";
+import { ProductData } from "hooks/useProducts";
 import { PRODUCT_GUTTER } from "theme";
-
-import { ProductData } from "components/Product";
 
 const Barriere: React.FC<{ products: ProductData[] }> = ({ products }) => (
   <>

@@ -1,16 +1,14 @@
-import { useProducts } from "hooks";
 import { renderToStaticMarkup } from "react-dom/server";
-
 import { i18n } from "@lingui/core";
 import { I18nProvider } from "@lingui/react";
 import type { GetServerSidePropsContext } from "next";
 import { pd } from "pretty-data";
+import { create } from "xmlbuilder2";
 import { NAME_STRING } from "utils/constants";
-
 import { formatPriceFeed, formatSizeFeed, formatWeight } from "utils/format";
 import { getImageUrl } from "utils/getImageUrl";
 import { loadCatalog } from "utils/getProps";
-import { create } from "xmlbuilder2";
+import { useProducts } from "hooks";
 
 const SitemapIndex = () => null;
 

@@ -1,5 +1,4 @@
 import { GetStaticPropsContext } from "next";
-
 import type { GetServerSidePropsContext } from "next";
 
 export const getStaticProps = async (context: GetStaticPropsContext) => {

@@ -1,7 +1,7 @@
 import { Trans } from "@lingui/react/macro";
 import { Box, Link, Stack, Typography } from "@mui/material";
-import Data from "components/Data";
 import React from "react";
+import Data from "components/Data";
 
 const ContattiAddress: React.FC<AddressProps> = ({
   name,

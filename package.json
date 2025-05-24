@@ -1,6 +1,6 @@
 {
   "name": "pessastudio",
-  "version": "3.1.183",
+  "version": "3.1.187",
   "private": true,
   "description": "Pessastudio",
   "license": "MIT",
@@ -62,6 +62,7 @@
     "@types/react-mailchimp-subscribe": "^2.1.4",
     "eslint": "8.54.0",
     "eslint-config-next": "14.2.15",
+    "eslint-plugin-import": "^2.31.0",
     "husky": "^9.1.7"
   }
 }

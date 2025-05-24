@@ -11,7 +11,7 @@ const StyledAlert = styled(Alert)(({ theme }) => ({
   marginTop: theme.spacing(2),
 }));
 
-const NewsletterSubscription: React.FC = () => {
+const FooterNewsletter: React.FC = () => {
   useLingui(); // Fix on locale change
   const [email, setEmail] = useState<string>();
 
@@ -70,4 +70,4 @@ const NewsletterSubscription: React.FC = () => {
   );
 };
 
-export default NewsletterSubscription;
+export default FooterNewsletter;

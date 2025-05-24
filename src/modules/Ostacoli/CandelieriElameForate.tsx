@@ -1,7 +1,7 @@
 import { t } from "@lingui/core/macro";
 import { Grid } from "@mui/material";
 import { Product, Title } from "components";
-import { ProductData } from "components/Product";
+import { ProductData } from "hooks/useProducts";
 import { PRODUCT_GUTTER } from "theme";
 
 const CandelieriLameForate: React.FC<{ products: ProductData[] }> = ({
@@ -15,8 +15,9 @@ const CandelieriLameForate: React.FC<{ products: ProductData[] }> = ({
           key={`candelieri_lame_forate_${index}`}
           size={{
             md: 3,
-            xs: 12
-          }}>
+            xs: 12,
+          }}
+        >
           <Product {...product} vertical />
         </Grid>
       ))}

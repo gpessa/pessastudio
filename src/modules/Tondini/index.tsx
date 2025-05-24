@@ -5,6 +5,8 @@ import DomainDisabled from "@mui/icons-material/DomainDisabled";
 import Lock from "@mui/icons-material/Lock";
 import Visibility from "@mui/icons-material/Visibility";
 import { Grid } from "@mui/material";
+import React from "react";
+import { useLingui } from "@lingui/react";
 import {
   Accessori,
   Benefits,
@@ -15,11 +17,8 @@ import {
   Section,
   Th,
 } from "components";
-import React from "react";
 import { PRODUCT_GUTTER } from "theme";
 import { GIOSTRA_TONDINO_CHIUSURA_A_TERRA_DESCRIZIONE } from "utils/constants";
-
-import { useLingui } from "@lingui/react";
 import productsTondiniAccessoriAntivento_1 from "assets/products/tondini/accessori/antivento-1.jpg";
 import productsTondiniAccessoriAntivento_2 from "assets/products/tondini/accessori/antivento-2.jpg";
 import productsTondiniAccessoriAntiventoPortIngresso_1 from "assets/products/tondini/accessori/antivento-port-ingresso-1.jpg";

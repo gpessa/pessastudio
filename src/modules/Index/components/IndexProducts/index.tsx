@@ -1,17 +1,14 @@
 import { Trans } from "@lingui/macro";
 import { Grid } from "@mui/material";
 import { styled } from "@mui/material/styles";
+import Carousel from "react-multi-carousel";
+import React, { useRef } from "react";
 import Section from "components/Section";
 import Title from "components/Title";
-import Carousel from "react-multi-carousel";
-
 import { usePages } from "hooks";
-import React, { useRef } from "react";
 import { BREAKPOINT } from "theme";
 import IndexProductsItem from "./components/IndexProductsItem";
-
 import styles from "./styles.module.css";
-
 import IndexProductsButtonGroup from "./components/IndexProductsButtonGroup";
 
 const CarouselStyled = styled(Carousel)(({ theme }) => ({

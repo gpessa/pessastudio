@@ -1,12 +1,10 @@
-import { Grid, SvgIconTypeMap } from "@mui/material";
-
-import { OverridableComponent } from "@mui/material/OverridableComponent";
+import { Grid } from "@mui/material";
 import { styled } from "@mui/material/styles";
+import React from "react";
 import Section from "components/Section";
 import Title, { TitleProps } from "components/Title";
-import React, { ReactElement } from "react";
 import { BREAKPOINT } from "theme";
-import BenefitsItem from "./BenefitsItem";
+import BenefitsItem, { BenefitsItemProps } from "./components/BenefitsItem";
 
 const IntroStyled = styled(Grid)(({ theme }) => ({
   marginBottom: -20,
@@ -15,14 +13,8 @@ const IntroStyled = styled(Grid)(({ theme }) => ({
   },
 }));
 
-export type Benefit = {
-  icon?: OverridableComponent<SvgIconTypeMap<{}, "svg">>;
-  description: string | ReactElement;
-  title: string | ReactElement;
-};
-
 export type BeneftisProps = TitleProps & {
-  benefits: Benefit[];
+  benefits: BenefitsItemProps[];
 };
 
 const Benefits: React.FC<BeneftisProps> = ({

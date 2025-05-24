@@ -1,6 +1,8 @@
 import { Trans } from "@lingui/react/macro";
 import { t } from "@lingui/core/macro";
 import { Typography } from "@mui/material";
+import { useRouter } from "next/router";
+import React from "react";
 import {
   Columns,
   ContactUs,
@@ -10,8 +12,6 @@ import {
   Th,
 } from "components";
 import { usePages, useProducts } from "hooks";
-import { useRouter } from "next/router";
-import React from "react";
 import Accessori from "./_accessori";
 import Gamma from "./_gamma";
 

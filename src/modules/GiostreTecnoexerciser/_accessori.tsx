@@ -5,7 +5,6 @@ import {
   GIOSTRA_RETE_ANTIVENTO_DESCRIZIONE,
   GIOSTRA_TONDINO_CHIUSURA_A_TERRA_DESCRIZIONE,
 } from "utils/constants";
-
 import assetsProductsGiostreAccessoriesAlveolo_01 from "assets/products/giostre/accessories/alveolo-01.jpg";
 import assetsProductsGiostreAccessoriesAlveolo_02 from "assets/products/giostre/accessories/alveolo-02.jpg";
 import assetsProductsGiostreAccessoriesRete_01 from "assets/products/giostre/accessories/rete-01.jpg";

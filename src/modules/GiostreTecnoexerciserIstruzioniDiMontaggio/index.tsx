@@ -1,4 +1,5 @@
 import { Box, Typography } from "@mui/material";
+import React from "react";
 import productsGiostreTecnoexerciserMontaggioStep_01 from "assets/products/giostre/tecnoexerciser/montaggio/step-01.jpg";
 import productsGiostreTecnoexerciserMontaggioStep_02 from "assets/products/giostre/tecnoexerciser/montaggio/step-02.jpg";
 import productsGiostreTecnoexerciserMontaggioStep_04 from "assets/products/giostre/tecnoexerciser/montaggio/step-04.jpg";
@@ -17,7 +18,6 @@ import productsGiostreTecnoexerciserMontaggioStep_16 from "assets/products/giost
 import productsGiostreTecnoexerciserMontaggioStep_17 from "assets/products/giostre/tecnoexerciser/montaggio/step-17.jpg";
 import productsGiostreTecnoexerciserMontaggioStep_18 from "assets/products/giostre/tecnoexerciser/montaggio/step-18.jpg";
 import { Path, Section, Th } from "components";
-import React from "react";
 export { getStaticProps } from "utils/getProps";
 
 const IstruzioniMontaggio: React.FC = () => {

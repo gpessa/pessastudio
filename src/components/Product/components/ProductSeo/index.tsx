@@ -1,11 +1,11 @@
 import { ProductJsonLd, ProductJsonLdProps } from "next-seo";
 import { Offers } from "next-seo/lib/types";
+import { ProductData } from "hooks/useProducts";
 import { NAME_STRING } from "utils/constants";
 import { getImageUrl } from "utils/getImageUrl";
-import { ProductData, ProductProps } from "../index";
 
 const getSeoOffer = (
-  price: ProductProps["price"],
+  price: ProductData["price"],
   url: string
 ): Offers | undefined => {
   if (!price) return undefined;

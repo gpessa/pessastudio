@@ -1,6 +1,6 @@
 import { Trans } from "@lingui/react/macro";
-import { Error } from "components";
 import React from "react";
+import { Error } from "components";
 export { getStaticProps } from "utils/getProps";
 
 const Page500: React.FC = () => (

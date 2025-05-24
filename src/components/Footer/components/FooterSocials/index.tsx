@@ -1,10 +1,10 @@
 import Facebook from "@mui/icons-material/Facebook";
 import Instagram from "@mui/icons-material/Instagram";
 import { IconButton } from "@mui/material";
-import { SOCIALS } from "utils/constants";
 import React from "react";
+import { SOCIALS } from "utils/constants";
 
-const Socials: React.FC = () => (
+const FooterSocials: React.FC = () => (
   <>
     <IconButton
       edge="start"
@@ -31,4 +31,4 @@ const Socials: React.FC = () => (
   </>
 );
 
-export default Socials;
+export default FooterSocials;

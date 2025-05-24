@@ -1,11 +1,11 @@
 import { styled } from "@mui/material/styles";
-import anna from "assets/generals/anna.jpg";
 import React from "react";
 import { FloatingWhatsApp } from "react-floating-whatsapp";
-import { ITALIA, NAME_STRING } from "utils/constants";
 import { useLingui } from "@lingui/react";
 import { t } from "@lingui/core/macro";
 import { sendGAEvent } from "@next/third-parties/google";
+import { ITALIA, NAME_STRING } from "utils/constants";
+import anna from "assets/generals/anna.jpg";
 
 const FloatingWhatsAppStyled = styled(FloatingWhatsApp)(
   ({ theme }) => `

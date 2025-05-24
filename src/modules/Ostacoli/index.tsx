@@ -1,10 +1,8 @@
 import { Trans } from "@lingui/react/macro";
 import { Typography } from "@mui/material";
-import { ContactUs, Section, Th } from "components";
-
-import { usePages, useProducts } from "hooks";
 import React from "react";
-
+import { ContactUs, Section, Th } from "components";
+import { usePages, useProducts } from "hooks";
 import Barriere from "./Barriere";
 import CandelieriLameForate from "./CandelieriElameForate";
 import Cavalletti from "./Cavalletti";

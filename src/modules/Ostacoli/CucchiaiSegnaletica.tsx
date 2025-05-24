@@ -1,8 +1,8 @@
 import { t } from "@lingui/core/macro";
 import { Grid } from "@mui/material";
-import { Product, Title } from "components";
-import { ProductData } from "components/Product";
 import React from "react";
+import { Product, Title } from "components";
+import { ProductData } from "hooks/useProducts";
 import { PRODUCT_GUTTER } from "theme";
 
 const CucchiaiSegnaletica: React.FC<{ products: ProductData[] }> = ({

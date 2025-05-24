@@ -1,6 +1,6 @@
 import { Trans } from "@lingui/react/macro";
-import { Section, Th, Ul } from "components";
 import React from "react";
+import { Section, Th, Ul } from "components";
 export { getStaticProps } from "utils/getProps";
 
 // TODO: Tradurre

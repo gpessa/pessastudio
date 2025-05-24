@@ -2,9 +2,9 @@ import { Button } from "@mui/material";
 import Link from "next/link";
 import Image from "next/image";
 import React from "react";
+import { styled } from "@mui/material/styles";
 import { BREAKPOINT } from "theme";
 import logo from "assets/generals/logo-all.png";
-import { styled } from "@mui/material/styles";
 
 const ButtonStyled = styled(Button)(({ theme }) => ({
   "& img": {
@@ -20,7 +20,7 @@ const ButtonStyled = styled(Button)(({ theme }) => ({
   width: 300 * 0.5,
 }));
 
-const Logo: React.FC = () => (
+const HeaderLogo: React.FC = () => (
   <Link passHref href="/">
     <ButtonStyled variant="text">
       <Image src={logo} alt="Pessastudio" width={300} height={75} />
@@ -28,4 +28,4 @@ const Logo: React.FC = () => (
   </Link>
 );
 
-export default Logo;
+export default HeaderLogo;

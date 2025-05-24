@@ -12,14 +12,13 @@ import {
   useScrollTrigger,
 } from "@mui/material";
 import { styled } from "@mui/material/styles";
-import { usePages } from "hooks";
-
 import Link from "next/link";
 import { useRouter } from "next/router";
 import React, { useEffect, useState } from "react";
+import { usePages } from "hooks";
 import { BREAKPOINT } from "theme";
-import LanguageSelector from "./LanguageSelector";
-import Logo from "./Logo";
+import LanguageSelector from "./components/HeaderLanguageSelector";
+import Logo from "./components/HeaderLogo";
 
 const MenuMobileStyled = styled(List)(({ theme }) => ({
   display: "block",
@@ -94,13 +93,8 @@ const Header: React.FC = () => {
     handleMenuClose();
   }, [pathname]);
 
-  const handleMenuToggle = () => {
-    setOpen((open) => !open);
-  };
-
-  const handleMenuClose = () => {
-    setOpen(false);
-  };
+  const handleMenuToggle = () => setOpen((open) => !open);
+  const handleMenuClose = () => setOpen(false);
 
   return (
     <AppBar position="sticky" color="inherit" elevation={trigger ? 4 : 0}>

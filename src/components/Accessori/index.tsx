@@ -1,21 +1,19 @@
 import { Trans } from "@lingui/react/macro";
-import { Box, Grid, GridSize, Stack } from "@mui/material";
+import { Box, Grid, Stack } from "@mui/material";
+import React from "react";
 import Section from "components/Section";
 import Th from "components/Th";
-import React from "react";
 import { PRODUCT_GUTTER } from "theme";
-import AccessoriImage from "./AccessoriImage";
+import AccessoriImage, {
+  AccessoriImageProps,
+} from "./components/AccessoriImage";
 
 export type AccessoriProps = {
   accessories: {
     id?: string;
     name: JSX.Element;
     description: JSX.Element;
-    pictures: (Picture & {
-      md?: GridSize;
-      top?: string;
-      left?: string;
-    })[];
+    pictures: AccessoriImageProps[];
   }[];
 };
 

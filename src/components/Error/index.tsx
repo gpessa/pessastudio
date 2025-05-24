@@ -1,6 +1,6 @@
 import { Box, Typography } from "@mui/material";
-import Section from "components/Section";
 import React from "react";
+import Section from "components/Section";
 
 const NotFound: React.FC<{
   title: string | JSX.Element;

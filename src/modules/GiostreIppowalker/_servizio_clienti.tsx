@@ -1,9 +1,9 @@
 import { t } from "@lingui/core/macro";
 import { Trans } from "@lingui/react/macro";
 import { Grid } from "@mui/material";
+import { useRouter } from "next/router";
 import { ContentTable, Section, Th } from "components";
 import { usePages } from "hooks";
-import { useRouter } from "next/router";
 import { PRODUCT_GUTTER } from "theme";
 
 const IppowalkerServizioClienti = () => {

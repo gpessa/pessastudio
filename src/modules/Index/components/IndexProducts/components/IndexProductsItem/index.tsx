@@ -1,9 +1,9 @@
 import { Box, Link, Typography } from "@mui/material";
 import { styled } from "@mui/material/styles";
-import Th from "components/Th";
 import Image, { StaticImageData } from "next/image";
 import NextLink from "next/link";
 import React, { ReactElement } from "react";
+import Th from "components/Th";
 
 type Props = {
   readonly index: number;

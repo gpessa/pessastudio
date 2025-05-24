@@ -2,8 +2,7 @@ import { Trans } from "@lingui/react/macro";
 import { Grid } from "@mui/material";
 import { Product, Section, Th } from "components";
 import { PRODUCT_GUTTER } from "theme";
-
-import { ProductData } from "components/Product";
+import { ProductData } from "hooks/useProducts";
 
 const Accessori: React.FC<{ products: ProductData[] }> = ({ products }) => (
   <Section color="warm1">
@@ -16,8 +15,9 @@ const Accessori: React.FC<{ products: ProductData[] }> = ({ products }) => (
           key={index}
           size={{
             md: 12,
-            xs: 12
-          }}>
+            xs: 12,
+          }}
+        >
           <Product {...product} />
         </Grid>
       ))}

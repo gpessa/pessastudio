@@ -1,8 +1,7 @@
 import { Trans } from "@lingui/react/macro";
 import { Box, Typography } from "@mui/material";
-import { Path, Section, Th } from "components";
 import React from "react";
-
+import { Path, Section, Th } from "components";
 import productsGiostreIppowalkerMontaggioStep_01 from "assets/products/giostre/ippowalker/montaggio/step-01.jpg";
 import productsGiostreIppowalkerMontaggioStep_02 from "assets/products/giostre/ippowalker/montaggio/step-02.jpg";
 import productsGiostreIppowalkerMontaggioStep_04 from "assets/products/giostre/ippowalker/montaggio/step-04.jpg";

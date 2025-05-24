@@ -1,13 +1,13 @@
 import { Trans } from "@lingui/react/macro";
 import { Divider, Grid, Typography, useMediaQuery } from "@mui/material";
 import { styled } from "@mui/material/styles";
+import React from "react";
 import Section from "components/Section";
 import Title from "components/Title";
-import React from "react";
 import theme, { BREAKPOINT } from "theme";
-import Map from "./Map";
-import Newsletter from "./Newsletter";
-import Socials from "./Socials";
+import FooterMap from "./components/FooterMap";
+import FooterNewsletter from "./components/FooterNewsletter";
+import FooterSocials from "./components/FooterSocials";
 
 const BottomPartStyled = styled(Section)(({ theme }) => ({
   color: theme.palette.grey[500],
@@ -45,7 +45,7 @@ const Footer: React.FC<{ version: string }> = ({ version }) => {
                 </Trans>
               }
             />
-            <Socials />
+            <FooterSocials />
           </Grid>
 
           <DividerStyled
@@ -66,11 +66,11 @@ const Footer: React.FC<{ version: string }> = ({ version }) => {
                 <Trans>Rimani informato sui nostri sconti e gli eventi</Trans>
               }
             />
-            <Newsletter />
+            <FooterNewsletter />
           </Grid>
         </Grid>
       </Section>
-      <Map />
+      <FooterMap />
       <BottomPartStyled spacing="small">
         <Typography variant="small">
           <Trans>

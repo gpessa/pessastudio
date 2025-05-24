@@ -10,12 +10,12 @@ import {
   ListItemText,
   Tooltip,
 } from "@mui/material";
-import linguiConfig from "i18n/config.json";
 import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import * as React from "react";
 import { useEffect, useState } from "react";
+import linguiConfig from "i18n/config.json";
 
 const LOCALE_ICONS: { [key: string]: string } = {
   en: require(`flag-icons/flags/1x1/gb.svg`),
@@ -25,7 +25,7 @@ const LOCALE_ICONS: { [key: string]: string } = {
 
 const DIM = 20;
 
-const LanguageSelector: React.FC = () => {
+const HeaderLanguageSelector: React.FC = () => {
   const { locales, locale } = useRouter();
   const [show, setShow] = useState(false);
   const { pathname } = useRouter();
@@ -83,4 +83,4 @@ const LanguageSelector: React.FC = () => {
   );
 };
 
-export default LanguageSelector;
+export default HeaderLanguageSelector;

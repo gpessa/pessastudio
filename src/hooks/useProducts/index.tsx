@@ -1,10 +1,10 @@
+import { ReactNode } from "react";
 import { t } from "@lingui/core/macro";
 import { Trans } from "@lingui/react/macro";
 import { useLingui } from "@lingui/react";
-import { ProductData } from "components/Product";
+import { Box } from "@mui/material";
 import usePages from "hooks/usePages";
 import { Colors } from "theme";
-import { Box } from "@mui/material";
 import {
   CUBI_MODELS,
   CUCCHIAI_MODELS,
@@ -57,6 +57,27 @@ export enum ProductId {
   GIOSTRA_6_CAVALLI_1760_SOLO_MOTORE = "GIOSTRA_6_CAVALLI_1760_SOLO_MOTORE",
   GIOSTRA_8_CAVALLI_1920_SOLO_MOTORE = "GIOSTRA_8_CAVALLI_1920_SOLO_MOTORE",
 }
+
+export type Price = {
+  price: undefined | number;
+};
+
+export type ProductData = {
+  pictures: any[];
+  price?: Price["price"];
+  description?: string | ReactNode;
+  name: string;
+  id: ProductId;
+  colors?: Colors[];
+  materials?: Material[];
+  link: string;
+  dimensions: {
+    height?: number;
+    length?: number;
+    weight?: number;
+    width?: number;
+  };
+};
 
 type ProductList = { [key in keyof typeof ProductId]: ProductData };
 
