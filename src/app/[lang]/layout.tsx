@@ -1,4 +1,4 @@
-import { LinguiClientProvider } from "@/components";
+import { LanguageSwitcher, LinguiClientProvider } from "@/components";
 import { GOOGLE_ANALYTICS, IS_PRODUCTION } from "@/constants";
 import theme from "@/theme";
 import { allMessages, getI18nInstance } from "@/utilities/appRouterI18n";
@@ -40,6 +40,7 @@ export default async function RootLayout({
               initialLocale={lang}
               initialMessages={allMessages[lang]!}
             >
+              <LanguageSwitcher />
               {children}
             </LinguiClientProvider>
           </ThemeProvider>

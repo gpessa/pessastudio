@@ -6,8 +6,26 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: @lingui/cli\n"
 "Language: pseudo\n"
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Plural-Forms: \n"
 
-#: src/app/[lang]/page.tsx:11
+#: src/components/LanguageSwitcher/index.tsx:42
+msgid "Choose a language"
+msgstr ""
+
+#: src/components/LanguageSwitcher/index.tsx:12
+msgid "English"
+msgstr ""
+
+#: src/components/LanguageSwitcher/index.tsx:13
+msgid "Italian"
+msgstr ""
+
+#: src/app/[lang]/page.tsx:13
 msgid "Test"
 msgstr ""
 
