@@ -9,7 +9,7 @@ const configuration: LinguiConfig = {
   },
   catalogs: [
     {
-      path: "src/locales/{locale}",
+      path: "src/i18n/translations_{locale}",
       include: ["src/"],
     },
   ],
