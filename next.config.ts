@@ -12,6 +12,9 @@ const nextConfig: NextConfig = {
       },
     },
   },
+  images: {
+    formats: ["image/webp"],
+  },
   webpack: (config) => {
     config.module.rules.push({
       test: /\.po$/,

@@ -1,8 +1,15 @@
-import { LanguageSwitcher, LinguiClientProvider } from "@/components";
-import { GOOGLE_ANALYTICS, IS_PRODUCTION } from "@/constants";
-import theme from "@/theme";
-import { allMessages, getI18nInstance } from "@/utilities/appRouterI18n";
-import { initLingui, PageLangParam } from "@/utilities/initLingui";
+import {
+  Footer,
+  Gdpr,
+  Header,
+  LinguiClientProvider,
+  Seo,
+  WhatsApp,
+} from "components";
+import { GOOGLE_ANALYTICS, IS_PRODUCTION } from "utils/constants";
+import theme from "theme";
+import { allMessages, getI18nInstance } from "utils/appRouterI18n";
+import { initLingui, PageLangParam } from "utils/initLingui";
 import { msg } from "@lingui/core/macro";
 import { AppRouterCacheProvider } from "@mui/material-nextjs/v15-appRouter";
 import { ThemeProvider } from "@mui/material/styles";
@@ -10,17 +17,24 @@ import { GoogleAnalytics } from "@next/third-parties/google";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { PropsWithChildren } from "react";
 import linguiConfig from "../../../lingui.config";
+import { version } from "../../../package.json";
+import { Source_Sans_3, Roboto_Condensed } from "next/font/google";
+import "react-multi-carousel/lib/styles.css";
+
+export const fontSourceCodePro = Source_Sans_3({
+  display: "swap",
+  subsets: ["latin"],
+  weight: ["300", "400", "700"],
+});
+
+export const fontRobotoCondensed = Roboto_Condensed({
+  display: "swap",
+  subsets: ["latin"],
+  weight: ["400"],
+});
 
 export async function generateStaticParams() {
   return linguiConfig.locales.map((lang) => ({ lang }));
-}
-
-export async function generateMetadata(props: PageLangParam) {
-  const i18n = getI18nInstance((await props.params).lang);
-
-  return {
-    title: i18n._(msg`Translation Demo`),
-  };
 }
 
 export default async function RootLayout({
@@ -31,7 +45,10 @@ export default async function RootLayout({
   initLingui(lang);
 
   return (
-    <html>
+    <html
+      className={`${fontSourceCodePro.className} ${fontRobotoCondensed.className}`}
+      lang={lang}
+    >
       <body>
         <AppRouterCacheProvider>
           {IS_PRODUCTION && <GoogleAnalytics gaId={GOOGLE_ANALYTICS} />}
@@ -40,8 +57,12 @@ export default async function RootLayout({
               initialLocale={lang}
               initialMessages={allMessages[lang]!}
             >
-              <LanguageSwitcher />
+              <Seo />
+              <Header />
               {children}
+              <Footer version={version} />
+              <Gdpr />
+              <WhatsApp />
             </LinguiClientProvider>
           </ThemeProvider>
           <SpeedInsights />

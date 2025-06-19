@@ -1,7 +1,7 @@
 import { LinguiConfig } from "@lingui/conf";
 
 const configuration: LinguiConfig = {
-  locales: ["en", "it", "pseudo"],
+  locales: ["en", "it", "fr", "pseudo"],
   pseudoLocale: "pseudo",
   sourceLocale: "en",
   fallbackLocales: {
@@ -9,7 +9,7 @@ const configuration: LinguiConfig = {
   },
   catalogs: [
     {
-      path: "src/i18n/translations_{locale}",
+      path: "src/i18n/{locale}/messages",
       include: ["src/"],
     },
   ],
