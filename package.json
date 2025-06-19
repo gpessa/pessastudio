@@ -12,7 +12,6 @@
     "lingui:extract": "NODE_ENV=development lingui extract --clean",
     "lint": "next lint --fix",
     "postbuild": "next-sitemap",
-    "prepare": "husky",
     "start": "next start"
   },
   "dependencies": {
@@ -31,7 +30,6 @@
     "@next/third-parties": "^15.3.1",
     "@vercel/postgres": "^0.10.0",
     "@vercel/speed-insights": "^1.2.0",
-    "eslint-plugin-sort-keys-fix": "^1.1.2",
     "eslint-plugin-unused-imports": "^4.1.4",
     "flag-icons": "^7.3.2",
     "next": "^15.3.1",
@@ -62,7 +60,6 @@
     "@types/react-mailchimp-subscribe": "^2.1.4",
     "eslint": "8.54.0",
     "eslint-config-next": "14.2.15",
-    "eslint-plugin-import": "^2.31.0",
-    "husky": "^9.1.7"
+    "eslint-plugin-import": "^2.31.0"
   }
 }
