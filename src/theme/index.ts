@@ -27,6 +27,9 @@ export enum Colors {
   LIGHT_BLUE = "#00FFFF",
   BROWN = "#8B4513",
   BLACK = "#000000",
+  WARM_1 = "#F6F4F0",
+  WARM_2 = "#EBE6DE",
+  GRAY = "#787575",
 }
 
 export const SECTION_SPACING = (breakingPoint: "xs" | "md") => {
@@ -94,32 +97,7 @@ declare module "@mui/material/Button" {
   }
 }
 
-const themePalette = createTheme({
-  palette: {
-    primary: {
-      main: "#356434",
-    },
-    warm1: {
-      contrastText: "rgba(0, 0, 0, 0.87)",
-      main: "#F6F4F0",
-    },
-    warm2: {
-      contrastText: "rgba(0, 0, 0, 0.87)",
-      main: "#EBE6DE",
-    },
-  },
-  typography: {
-    fontFamily: sourceCodePro.style.fontFamily,
-    slim: {
-      fontFamily: robotoCondensed.style.fontFamily!,
-    },
-    small: {
-      fontSize: "80%",
-    },
-  },
-});
-
-const theme = createTheme(themePalette, {
+const theme = createTheme({
   components: {
     MuiButton: {
       defaultProps: {
@@ -156,10 +134,10 @@ const theme = createTheme(themePalette, {
       styleOverrides: {
         root: {
           "&:nth-of-type(even)": {
-            backgroundColor: themePalette.palette.common.white,
+            backgroundColor: Colors.WHITE,
           },
           "&:nth-of-type(odd)": {
-            backgroundColor: themePalette.palette.warm1.main,
+            backgroundColor: Colors.WARM_1,
           },
         },
       },
@@ -177,17 +155,31 @@ const theme = createTheme(themePalette, {
       },
     },
   },
+  palette: {
+    primary: {
+      main: "#356434",
+    },
+    warm1: {
+      contrastText: "rgba(0, 0, 0, 0.87)",
+      main: Colors.WARM_1,
+    },
+    warm2: {
+      contrastText: "rgba(0, 0, 0, 0.87)",
+      main: Colors.WARM_2,
+    },
+  },
   shape: {
     borderRadius: 0,
   },
   spacing: (factor: number) => `${7 * factor}px `,
   typography: {
     caption: {
-      color: themePalette.palette.grey[600],
+      color: Colors.GRAY,
       fontSize: "0.9rem",
       lineHeight: "1em",
       textTransform: "uppercase",
     },
+    fontFamily: sourceCodePro.style.fontFamily,
     h1: {
       fontFamily: "serif",
       fontSize: 78,
@@ -225,8 +217,11 @@ const theme = createTheme(themePalette, {
       fontWeight: "bold",
       lineHeight: 1.1,
     },
+    slim: {
+      fontFamily: robotoCondensed.style.fontFamily!,
+    },
     small: {
-      fontSize: "0.9rem",
+      fontSize: 4,
     },
   },
 });
