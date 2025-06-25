@@ -2,7 +2,7 @@ import { ButtonBase, Grid, GridSize } from "@mui/material";
 import { styled } from "@mui/material/styles";
 import Image from "next/image";
 import React from "react";
-import ModalGallery from "components/ModalGallery";
+import { ModalGallery } from "components";
 import { PRODUCT_GUTTER } from "theme";
 
 const ButtonBaseStyled = styled(ButtonBase)(() => ({

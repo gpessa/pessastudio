@@ -1,12 +1,12 @@
 import { Box, BoxProps, Typography } from "@mui/material";
-import React from "react";
+import React, { ReactElement } from "react";
 import { styled } from "@mui/material/styles";
 import { BREAKPOINT } from "theme";
 
 export type TitleProps = {
-  text?: JSX.Element | string;
-  title: JSX.Element | string;
-  subtitle?: JSX.Element | string;
+  text?: ReactElement | string;
+  title: ReactElement | string;
+  subtitle?: ReactElement | string;
 } & Pick<BoxProps, "sx" | "className">;
 
 const StyledBox = styled(Box)(({ theme }) => ({
