@@ -1,6 +1,6 @@
 import { Trans } from "@lingui/react/macro";
 import { Box, Link, Stack, Typography } from "@mui/material";
-import React from "react";
+import React, { ReactNode } from "react";
 import Data from "components/Data";
 
 const ContattiAddress: React.FC<AddressProps> = ({
@@ -107,8 +107,8 @@ const ContattiAddress: React.FC<AddressProps> = ({
 };
 
 export interface AddressProps {
-  bank?: JSX.Element;
-  name?: JSX.Element | string;
+  bank?: ReactNode;
+  name?: ReactNode;
   email?: string;
   country?: string;
   whatsapp?: string;

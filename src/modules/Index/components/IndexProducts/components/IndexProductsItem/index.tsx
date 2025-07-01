@@ -2,12 +2,12 @@ import { Box, Link, Typography } from "@mui/material";
 import { styled } from "@mui/material/styles";
 import Image, { StaticImageData } from "next/image";
 import NextLink from "next/link";
-import React, { ReactElement } from "react";
+import React, { ReactNode } from "react";
 import Th from "components/Th";
 
 type Props = {
   readonly index: number;
-  description?: ReactElement | string;
+  description?: ReactNode;
   image: StaticImageData;
   title: string;
   url: string;

@@ -1,12 +1,12 @@
 import { Box, BoxProps, Typography } from "@mui/material";
-import React, { ReactElement } from "react";
+import React, { ReactNode } from "react";
 import { styled } from "@mui/material/styles";
 import { BREAKPOINT } from "theme";
 
 export type TitleProps = {
-  text?: ReactElement | string;
-  title: ReactElement | string;
-  subtitle?: ReactElement | string;
+  text?: ReactNode;
+  title: ReactNode;
+  subtitle?: ReactNode;
 } & Pick<BoxProps, "sx" | "className">;
 
 const StyledBox = styled(Box)(({ theme }) => ({
@@ -31,7 +31,7 @@ const Title: React.FC<TitleProps> = ({
     <Typography variant="h3" gutterBottom>
       {title}
     </Typography>
-    {text && <>{text}</>}
+    {text && <Typography component="div">{text}</Typography>}
   </StyledBox>
 );
 

@@ -1,6 +1,48 @@
 import { createTheme, responsiveFontSizes } from "@mui/material/styles";
 import { Source_Sans_3, Roboto_Condensed } from "next/font/google";
 
+
+declare module "@mui/material/styles" {
+  interface TypographyVariants {
+    small: React.CSSProperties;
+    slim: React.CSSProperties;
+  }
+
+  interface TypographyVariantsOptions {
+    small?: React.CSSProperties;
+    slim?: React.CSSProperties;
+  }
+}
+
+declare module "@mui/material/styles/createPalette" {
+  interface Palette {
+    warm1: Palette["primary"];
+    warm2: Palette["primary"];
+  }
+  interface PaletteOptions {
+    warm1: PaletteOptions["primary"];
+    warm2: PaletteOptions["primary"];
+  }
+}
+
+declare module "@mui/material/Typography" {
+  interface TypographyPropsVariantOverrides {
+    small: true;
+    slim: true;
+  }
+}
+
+declare module "@mui/material/Badge" {
+  interface BadgePropsColorOverrides {
+    warm2: true;
+  }
+}
+
+declare module "@mui/material/Button" {
+  interface ButtonPropsColorOverrides {
+    warm2: true;
+  }
+}
 const sourceCodePro = Source_Sans_3({
   display: "swap",
   subsets: ["latin"],
@@ -54,48 +96,6 @@ export const SECTION_SPACING = (breakingPoint: "xs" | "md") => {
     return theme.spacing(value);
   };
 };
-
-declare module "@mui/material/styles" {
-  interface TypographyVariants {
-    small: React.CSSProperties;
-    slim: React.CSSProperties;
-  }
-
-  interface TypographyVariantsOptions {
-    small?: React.CSSProperties;
-    slim?: React.CSSProperties;
-  }
-}
-
-declare module "@mui/material/styles/createPalette" {
-  interface Palette {
-    warm1: Palette["primary"];
-    warm2: Palette["primary"];
-  }
-  interface PaletteOptions {
-    warm1: PaletteOptions["primary"];
-    warm2: PaletteOptions["primary"];
-  }
-}
-
-declare module "@mui/material/Typography" {
-  interface TypographyPropsVariantOverrides {
-    small: true;
-    slim: true;
-  }
-}
-
-declare module "@mui/material/Badge" {
-  interface BadgePropsColorOverrides {
-    warm2: true;
-  }
-}
-
-declare module "@mui/material/Button" {
-  interface ButtonPropsColorOverrides {
-    warm2: true;
-  }
-}
 
 const theme = createTheme({
   components: {

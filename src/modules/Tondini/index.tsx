@@ -274,14 +274,14 @@ const Tondini: React.FC = () => {
           <Grid
             size={{
               md: 6,
-              xs: 12
+              xs: 12,
             }}>
             <ContentTable title={<Trans>Dimensioni</Trans>} rows={DIMENSIONS} />
           </Grid>
           <Grid
             size={{
               md: 6,
-              xs: 12
+              xs: 12,
             }}>
             <ContentTable title={<Trans>Manuali</Trans>} rows={MANUALS} />
           </Grid>
