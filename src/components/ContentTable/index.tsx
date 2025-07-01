@@ -14,7 +14,7 @@ import {
 } from "@mui/material";
 import { styled } from "@mui/material/styles";
 import Link from "next/link";
-import React, { ReactElement } from "react";
+import React, { ReactNode } from "react";
 import { Th } from "components";
 
 const ButtonStyled = styled(Button)(({ theme }) => ({
@@ -25,9 +25,9 @@ const ButtonStyled = styled(Button)(({ theme }) => ({
 }));
 
 type Props = {
-  title: ReactElement;
+  title: ReactNode;
   rows: {
-    label: ReactElement;
+    label: ReactNode;
     link?: string;
     file?: string;
   }[];
