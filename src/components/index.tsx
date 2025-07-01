@@ -6,6 +6,7 @@ export { default as Compare } from "./Compare";
 export { default as ContentTable } from "./ContentTable";
 export { default as Error } from "./Error";
 export { default as Footer } from "./Footer";
+export { default as ModalGallery } from "./ModalGallery";
 export { default as Gallery } from "./Gallery";
 export { default as Gdpr } from "./Gdpr";
 export { default as Header } from "./Header";

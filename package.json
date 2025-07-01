@@ -57,6 +57,7 @@
     "@types/react-mailchimp-subscribe": "^2.1.4",
     "eslint": "8.54.0",
     "eslint-config-next": "14.2.15",
-    "eslint-plugin-import": "^2.31.0"
+    "eslint-plugin-import": "^2.31.0",
+    "eslint-plugin-sort-keys-fix": "^1.1.2"
   }
 }
