@@ -31,7 +31,7 @@
     "@vercel/speed-insights": "^1.2.0",
     "eslint-plugin-unused-imports": "^4.1.4",
     "flag-icons": "^7.3.2",
-    "next": "^15.3.1",
+    "next": "^15.3.3",
     "next-seo": "^6.6.0",
     "next-sitemap": "^4.2.3",
     "pretty-data": "^0.40.0",
