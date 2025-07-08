@@ -1,19 +1,20 @@
-import { t } from "@lingui/core/macro";
-import { Trans } from "@lingui/react/macro";
+import { Trans, useLingui } from "@lingui/react/macro";
 import { Grid } from "@mui/material";
-import { useRouter } from "next/router";
 import { ContentTable, Section, Th } from "components";
 import { usePages } from "hooks";
 import { PRODUCT_GUTTER } from "theme";
 
 const IppowalkerServizioClienti = () => {
-  const { locale } = useRouter();
+  const {
+    t,
+    i18n: { locale },
+  } = useLingui();
   const { PAGES } = usePages();
 
   const DIMENSIONS = [
     {
       file: `/products/giostre/pdf/scheda-techina-giostra-${locale}.pdf`,
-      label: t`Dimensioni giostra cavalli`,
+      title: t`Dimensioni giostra cavalli`,
     },
   ];
 
@@ -21,21 +22,18 @@ const IppowalkerServizioClienti = () => {
     fr: [
       {
         file: "/products/giostre/ippowalker/pdf/manuale-quadro-ippowalker-fr.pdf",
-        label: t`Manuale quadro di controllo`,
+        title: t`Manuale quadro di controllo`,
       },
     ],
     it: [
-      {
-        label: PAGES.GIOSTRE_IPPOWALKER_ISTRUZIONI_MONTAGGIO.title,
-        link: PAGES.GIOSTRE_IPPOWALKER_ISTRUZIONI_MONTAGGIO.url,
-      },
+      PAGES.GIOSTRE_IPPOWALKER_ISTRUZIONI_MONTAGGIO,
       {
         file: "/products/giostre/ippowalker/pdf/manuale-quadro-ippowalker-it.pdf",
-        label: t`Manuale quadro di controllo`,
+        title: t`Manuale quadro di controllo`,
       },
       {
         file: "/products/giostre/pdf/giostra-collegamento-elettrico.pdf",
-        label: t`Manuale collegamento elettrico`,
+        title: t`Manuale collegamento elettrico`,
       },
     ],
   }[locale!];
@@ -50,8 +48,9 @@ const IppowalkerServizioClienti = () => {
           rows={DIMENSIONS}
           size={{
             md: 6,
-            xs: 12
-          }} />
+            xs: 12,
+          }}
+        />
         {MANUALI && (
           <Grid
             component={ContentTable}
@@ -59,8 +58,9 @@ const IppowalkerServizioClienti = () => {
             rows={MANUALI}
             size={{
               md: 6,
-              xs: 12
-            }} />
+              xs: 12,
+            }}
+          />
         )}
       </Grid>
     </Section>

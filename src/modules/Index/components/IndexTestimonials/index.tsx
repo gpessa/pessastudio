@@ -1,3 +1,5 @@
+"use client";
+
 import FormatQuoteIcon from "@mui/icons-material/FormatQuote";
 import { Typography } from "@mui/material";
 import { styled } from "@mui/material/styles";
@@ -14,7 +16,7 @@ const StyledTitle = styled(Title)(({ theme }) => ({
 
 const IndexTestimonials: React.FC<
   TitleProps & {
-    testimonials: JSX.Element[] | string[];
+    testimonials: object;
   }
 > = ({ testimonials, title, subtitle, text }) => {
   return (
@@ -43,12 +45,13 @@ const IndexTestimonials: React.FC<
             },
           }}
         >
-          {testimonials.map((quote, index) => (
+          {Object.values(testimonials).map((quote, index) => (
             <Typography
               textAlign="center"
               fontSize="1.2rem"
-              key={index}
+              key={`testimonials_${index}`}
               height={150}
+              component={"div"}
             >
               <FormatQuoteIcon />
               {quote}

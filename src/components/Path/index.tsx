@@ -1,13 +1,16 @@
+"use client";
+
 import { Step, StepContent, StepLabel, Stepper } from "@mui/material";
-import Image, { StaticImageData } from "next/image";
-import { InView } from "react-intersection-observer";
 import { styled } from "@mui/material/styles";
-import { BREAKPOINT } from "theme";
 import Th from "components/Th";
+import Image, { StaticImageData } from "next/image";
+import { ReactNode } from "react";
+import { InView } from "react-intersection-observer";
+import { BREAKPOINT } from "theme";
 
 interface Step {
   image: StaticImageData;
-  text: string | JSX.Element;
+  text: string | ReactNode;
 }
 
 interface Props {

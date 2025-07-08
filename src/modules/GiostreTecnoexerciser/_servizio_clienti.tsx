@@ -1,19 +1,20 @@
-import { Trans } from "@lingui/react/macro";
-import { t } from "@lingui/core/macro";
+import { Trans, useLingui } from "@lingui/react/macro";
 import { Grid } from "@mui/material";
-import { useRouter } from "next/router";
 import { ContentTable, Section, Th } from "components";
 import { usePages } from "hooks";
 import { PRODUCT_GUTTER } from "theme";
 
 const TecnoexerciserServizioClienti = () => {
-  const { locale } = useRouter();
+  const {
+    t,
+    i18n: { locale },
+  } = useLingui();
   const { PAGES } = usePages();
 
   const DIMENSIONS = [
     {
       file: `/products/giostre/pdf/scheda-techina-giostra-${locale}.pdf`,
-      label: t`Dimensioni giostra cavalli`,
+      title: t`Dimensioni giostra cavalli`,
     },
   ];
 
@@ -21,25 +22,22 @@ const TecnoexerciserServizioClienti = () => {
     fr: [
       {
         file: "/products/giostre/tecnoexerciser/pdf/manuale-quadro-tecnoexerciser-fr.pdf",
-        label: t`Manuale quadro di controllo`,
+        title: t`Manuale quadro di controllo`,
       },
     ],
     it: [
-      {
-        label: PAGES.GIOSTRE_TECNOEXERCISER_ISTRUZIONI_MONTAGGIO.title,
-        link: PAGES.GIOSTRE_TECNOEXERCISER_ISTRUZIONI_MONTAGGIO.url,
-      },
+      PAGES.GIOSTRE_TECNOEXERCISER_ISTRUZIONI_MONTAGGIO,
       {
         file: "/products/giostre/tecnoexerciser/pdf/manuale-quadro-tecnoexerciser-it.pdf",
-        label: t`Manuale quadro di controllo`,
+        title: t`Manuale quadro di controllo`,
       },
       {
         file: "/products/giostre/giostra-collegamento-elettrico.pdf",
-        label: t`Manuale collegamento elettrico`,
+        title: t`Manuale collegamento elettrico`,
       },
       {
         file: "https://www.youtube.com/watch?v=QMA4wPxq_ow",
-        label: t`Procedura di lubrificazione`,
+        title: t`Procedura di lubrificazione`,
       },
     ],
   }[locale!];
@@ -48,7 +46,7 @@ const TecnoexerciserServizioClienti = () => {
     it: [
       {
         file: "/products/giostre/tecnoexerciser/pdf/permessi-it.pdf",
-        label: "Fac simile domanda installazione giostra",
+        title: "Fac simile domanda installazione giostra",
       },
     ],
   }[locale!];
@@ -63,8 +61,9 @@ const TecnoexerciserServizioClienti = () => {
           title={<Trans>Dimensioni</Trans>}
           size={{
             md: "grow",
-            xs: 12
-          }} />
+            xs: 12,
+          }}
+        />
         {MANUALI && (
           <Grid
             component={ContentTable}
@@ -72,8 +71,9 @@ const TecnoexerciserServizioClienti = () => {
             title={<Trans>Manuale d'istruzioni</Trans>}
             size={{
               md: "grow",
-              xs: 12
-            }} />
+              xs: 12,
+            }}
+          />
         )}
         {OTHERS && (
           <Grid
@@ -82,8 +82,9 @@ const TecnoexerciserServizioClienti = () => {
             title={<Trans>Altro</Trans>}
             size={{
               md: "grow",
-              xs: 12
-            }} />
+              xs: 12,
+            }}
+          />
         )}
       </Grid>
     </Section>

@@ -23,7 +23,7 @@ export function useLinguiInit(messages: Messages) {
     if (localeDidChange) {
       i18n.loadAndActivate({ locale, messages });
     }
-  }, [locale]);
+  }, [locale, messages]);
 
   return i18n;
 }

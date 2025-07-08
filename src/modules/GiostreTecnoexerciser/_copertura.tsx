@@ -1,7 +1,5 @@
-import { Trans } from "@lingui/react/macro";
-import { t } from "@lingui/core/macro";
+import { Trans, useLingui } from "@lingui/react/macro";
 import { Grid, Typography } from "@mui/material";
-import { useLingui } from "@lingui/react";
 import { Gallery, Section, Th } from "components";
 import { PRODUCT_GUTTER } from "theme";
 import {
@@ -14,7 +12,7 @@ import productsGiostreTecnoexerciserCoperturaCoperturaPvc_1 from "assets/product
 import productsGiostreTecnoexerciserCoperturaCoperturaPvc_2 from "assets/products/giostre/tecnoexerciser/copertura/copertura-pvc-2.jpg";
 
 const TecnoexerciserCopertura = () => {
-  useLingui(); // Fix on locale change
+  const { t } = useLingui();
 
   const IMAGES: Picture[] = [
     {

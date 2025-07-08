@@ -1,10 +1,11 @@
+"use client";
+
 import { Trans } from "@lingui/react/macro";
 import { Link, Typography } from "@mui/material";
-import NextLink from "next/link";
-import React from "react";
-import { useLingui } from "@lingui/react";
 import { Columns, Th, Video } from "components";
 import { usePages } from "hooks";
+import NextLink from "next/link";
+import React from "react";
 import IppowalkerAccessori from "./_accessori";
 import IppowalkerCompare from "./_compare";
 import IppowalkerCopertura from "./_copertura";
@@ -12,10 +13,7 @@ import IppowalkerCorridoi from "./_corridoi";
 import IppowalkerGallery from "./_gallery";
 import IppowalkerServizioClienti from "./_servizio_clienti";
 
-export { getStaticProps } from "utils/getProps";
-
 const GiostreIppowalker: React.FC = () => {
-  useLingui(); // Fix on locale change
   const { PAGES } = usePages();
 
   return (

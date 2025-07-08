@@ -1,6 +1,8 @@
+"use client";
+
 import { Box, Container, Typography } from "@mui/material";
 import Image, { StaticImageData } from "next/image";
-import React from "react";
+import React, { ReactNode } from "react";
 import { styled } from "@mui/material/styles";
 import { BREAKPOINT } from "theme";
 
@@ -38,7 +40,7 @@ const ImageStyled = styled(Image)(({ theme }) => ({
 
 export type HeroProps = {
   image: StaticImageData;
-  text?: JSX.Element | string;
+  text?: ReactNode;
 } & React.HTMLAttributes<HTMLElement>;
 
 const Hero = ({ text, image, className }: HeroProps) => (

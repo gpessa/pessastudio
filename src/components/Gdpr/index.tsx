@@ -1,11 +1,14 @@
+"use client";
+
 import { Trans } from "@lingui/react/macro";
 import { Box, Button, ButtonProps, Link } from "@mui/material";
 import { makeStyles } from "tss-react/mui";
 import NextLink from "next/link";
-import { useRouter } from "next/router";
+import { usePathname } from "next/navigation";
 import React from "react";
 import CookieConsent from "react-cookie-consent";
 import { PRODUCT_GUTTER, BREAKPOINT } from "theme";
+
 
 const useStyles = makeStyles()((theme) => ({
   overlay: {
@@ -39,7 +42,8 @@ const Accept = (props: ButtonProps) => (
 
 const Gdpr: React.FC = () => {
   const classes = useStyles();
-  const isCookiePage = useRouter().route === "/cookie-policy";
+  const path = usePathname();
+  const isCookiePage = path.indexOf("/cookie-policy") != -1;
 
   return isCookiePage ? null : (
     <CookieConsent

@@ -1,9 +1,9 @@
 import { Stack, Typography } from "@mui/material";
-import React from "react";
+import React, { ReactNode } from "react";
 
 type Props = {
-  label: JSX.Element | string;
-  value: number | string | string[] | JSX.Element | JSX.Element[];
+  label: ReactNode;
+  value: ReactNode;
 };
 
 const Data: React.FC<Props> = ({ value, label, ...props }) => (

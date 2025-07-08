@@ -1,3 +1,5 @@
+"use client";
+
 import { Trans } from "@lingui/react/macro";
 import CloseIcon from "@mui/icons-material/Close";
 import {
@@ -12,11 +14,10 @@ import {
   TableRow,
   Typography,
 } from "@mui/material";
-import React from "react";
+import React, { ReactNode } from "react";
 import { sendGAEvent } from "@next/third-parties/google";
 import { Section, Th } from "components";
 import { BREAKPOINT, PRODUCT_GUTTER } from "theme";
-
 
 const TableCellStyled = styled(TableCell)<{ type?: string }>(({ type }) => ({
   display: "table-cell",
@@ -26,17 +27,17 @@ const TableCellStyled = styled(TableCell)<{ type?: string }>(({ type }) => ({
 }));
 
 type Props = {
-  title: JSX.Element;
+  title: ReactNode;
   attributes: Attribute;
   products: Product[];
 };
 
 type Attribute = {
-  [key: string]: JSX.Element | undefined;
+  [key: string]: ReactNode | undefined;
 };
 
 type Product = {
-  [key: keyof Props["attributes"]]: boolean | string | JSX.Element;
+  [key: keyof Props["attributes"]]: boolean | string | ReactNode;
 };
 
 const Compare: React.FC<Props> = ({ title, ...rest }) => (

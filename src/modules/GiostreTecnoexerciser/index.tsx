@@ -1,19 +1,18 @@
+"use client";
+
 import { Trans } from "@lingui/react/macro";
-import { useLingui } from "@lingui/react";
 import { Typography } from "@mui/material";
-import React from "react";
 import { Columns, Th, Ul, Video } from "components";
 import { usePages } from "hooks";
+import React from "react";
 import TecnoexerciserAccessori from "./_accessori";
 import TecnoexerciserCompare from "./_compare";
 import TecnoexerciserCopertura from "./_copertura";
 import TecnoexerciserCorridoi from "./_corridoi";
 import TecnoexerciserGallery from "./_gallery";
 import TecnoexerciserServizioClienti from "./_servizio_clienti";
-export { getStaticProps } from "utils/getProps";
 
 const GiostreTecnoexerciser: React.FC = () => {
-  useLingui(); // Fix on locale change
   const { PAGES } = usePages();
 
   return (

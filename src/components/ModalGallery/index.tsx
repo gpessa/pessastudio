@@ -1,10 +1,12 @@
+"use client";
+
 import { Trans } from "@lingui/react/macro";
 import NavigateBefore from "@mui/icons-material/NavigateBefore";
 import NavigateNext from "@mui/icons-material/NavigateNext";
 import { Button, ButtonBase, Dialog, Typography } from "@mui/material";
 import { styled } from "@mui/material/styles";
 import Image from "next/image";
-import React from "react";
+import React, { ReactNode } from "react";
 import { useGallery } from "hooks";
 
 const ButtonBackStyled = styled(ButtonBase)({
@@ -48,7 +50,7 @@ const StyledCaption = styled(Typography)(({ theme }) => ({
 }));
 
 type Props = {
-  render: (props: ReturnType<typeof useGallery>) => JSX.Element;
+  render: (props: ReturnType<typeof useGallery>) => ReactNode;
   images: Picture[];
 };
 

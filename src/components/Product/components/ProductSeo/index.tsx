@@ -1,13 +1,13 @@
-import { ProductJsonLd, ProductJsonLdProps } from "next-seo";
-import { Offers } from "next-seo/lib/types";
+import { LdJson } from "components";
 import { ProductData } from "hooks/useProducts";
+import { Product, WithContext } from "schema-dts";
 import { NAME_STRING } from "utils/constants";
 import { getImageUrl } from "utils/getImageUrl";
 
 const getSeoOffer = (
   price: ProductData["price"],
   url: string
-): Offers | undefined => {
+): WithContext<Product>["offers"] | undefined => {
   if (!price) return undefined;
 
   var date = new Date();
@@ -15,35 +15,32 @@ const getSeoOffer = (
   const priceValidUntil = date.toISOString().slice(0, 10);
 
   return {
-    availability: "https://schema.org/InStock",
-    itemCondition: "https://schema.org/NewCondition",
+    "@type": "Offer",
+    availability: "InStock",
+    itemCondition: "NewCondition",
     price: String(price),
     priceCurrency: "EUR",
     priceValidUntil,
-    seller: { name: "Pessastudio" },
+    seller: NAME_STRING,
     url,
   };
 };
 
-const useSeoProps = (props: ProductData): ProductJsonLdProps => {
-  const {
-    name: productName,
-    description,
-    pictures,
-    price,
-    link: itemUrl,
-  } = props;
+const useSeoProps = (props: ProductData): WithContext<Product> => {
+  const { name, description, pictures, price, link: url } = props;
 
-  const offers = getSeoOffer(price, itemUrl);
-  const images = pictures.map(getImageUrl);
+  const offers = getSeoOffer(price, url);
+  const image = pictures.map(getImageUrl);
   const brand = NAME_STRING;
 
-  let result: ProductJsonLdProps = {
+  let result: WithContext<Product> = {
+    "@type": "Product",
+    "@context": "https://schema.org",
     brand,
-    images,
-    itemUrl,
+    image,
+    url,
     offers,
-    productName,
+    name,
   };
 
   if (typeof description === "string") {
@@ -54,8 +51,8 @@ const useSeoProps = (props: ProductData): ProductJsonLdProps => {
 };
 
 const ProductSeo = (product: ProductData) => {
-  const jsonld = useSeoProps(product);
-  return <ProductJsonLd {...jsonld} keyOverride={product.id} />;
+  const data = useSeoProps(product);
+  return <LdJson data={data} />;
 };
 
 export default ProductSeo;

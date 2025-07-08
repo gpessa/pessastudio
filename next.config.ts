@@ -4,15 +4,23 @@ const nextConfig: NextConfig = {
   experimental: {
     swcPlugins: [["@lingui/swc-plugin", {}]],
   },
-  i18n: {
-    defaultLocale: "en",
-    locales: ["it", "fr", "en"],
+  turbopack: {
+    rules: {
+      "*.po": {
+        loaders: ["@lingui/loader"],
+        as: "*.js",
+      },
+    },
   },
-  reactStrictMode: true,
+  images: {
+    formats: ["image/webp"],
+  },
   webpack: (config) => {
     config.module.rules.push({
-      test: /\.po/,
-      use: ["@lingui/loader"],
+      test: /\.po$/,
+      use: {
+        loader: "@lingui/loader",
+      },
     });
 
     return config;

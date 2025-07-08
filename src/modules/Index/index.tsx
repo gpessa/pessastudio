@@ -1,40 +1,50 @@
-import { Trans } from "@lingui/react/macro";
+"use client";
+
+import { Trans, useLingui } from "@lingui/react/macro";
 import AccountBalance from "@mui/icons-material/AccountBalance";
 import Apps from "@mui/icons-material/Apps";
 import Architecture from "@mui/icons-material/Architecture";
 import Restore from "@mui/icons-material/Restore";
 import TurnedInNot from "@mui/icons-material/TurnedInNot";
 import { Typography } from "@mui/material";
-import { useRouter } from "next/router";
-import React from "react";
 import { Benefits, Hero } from "components";
 import { HeroProps } from "components/Hero";
 import { NAME } from "utils/constants";
 import image from "./assets/background.jpg";
-import IndexProducts from "./components/IndexProducts";
-import IndexTestimonials from "./components/IndexTestimonials";
 import fiera2024_it from "./assets/fiera2024/it.jpg";
+import IndexProducts from "./components/IndexProducts";
+import { IndexProductItem } from "./components/IndexProducts/components/IndexProductsItem";
+import IndexTestimonials from "./components/IndexTestimonials";
+import { usePages } from "hooks";
 
-export { getStaticProps } from "utils/getProps";
+export default function Index() {
+  const {
+    t,
+    i18n: { locale },
+  } = useLingui();
+  const { PRODUCTS } = usePages();
 
-const Index: React.FC = () => {
-  const { locale } = useRouter();
-
-  const TESTIMONIALS = [
-    <Trans key="test_1">
-      Ho ricevuto questa mattina il materiale. I miei complimenti per la qualità
-      dei prodotti, l'imballo ed il trasportatore
-    </Trans>,
-    <Trans key="test_2">
-      Ringrazio tutto il team per la professionalità, gentilezza, velocità e
-      sopratutto per l'ottimo risultato
-    </Trans>,
-    <Trans key="test_3">
-      Splendido niente da dire! Il tondino è ben pensato e ingegnoso. Molto
-      bene!
-    </Trans>,
-    <Trans key="test_4">Gli ostacoli sono arrivati. Sono fantastici!</Trans>,
-  ];
+  const TESTIMONIALS = {
+    test_1: (
+      <Trans>
+        Ho ricevuto questa mattina il materiale. I miei complimenti per la
+        qualità dei prodotti, l'imballo ed il trasportatore
+      </Trans>
+    ),
+    test_2: (
+      <Trans>
+        Ringrazio tutto il team per la professionalità, gentilezza, velocità e
+        sopratutto per l'ottimo risultato
+      </Trans>
+    ),
+    test_3: (
+      <Trans>
+        Splendido niente da dire! Il tondino è ben pensato e ingegnoso. Molto
+        bene!
+      </Trans>
+    ),
+    test_4: <Trans>Gli ostacoli sono arrivati. Sono fantastici!</Trans>,
+  };
 
   const BENEFITS = [
     {
@@ -132,7 +142,7 @@ const Index: React.FC = () => {
           </Trans>
         }
       />
-      <IndexProducts />
+      <IndexProducts products={Object.values(PRODUCTS)} />
       <IndexTestimonials
         subtitle={<Trans>Dicono di noi</Trans>}
         title={<Trans>Cosa dicono di noi</Trans>}
@@ -146,6 +156,4 @@ const Index: React.FC = () => {
       />
     </>
   );
-};
-
-export default Index;
+}

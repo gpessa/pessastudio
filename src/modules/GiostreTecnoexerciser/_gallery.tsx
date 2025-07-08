@@ -1,5 +1,3 @@
-import { t } from "@lingui/core/macro";
-import { useLingui } from "@lingui/react";
 import { Gallery } from "components";
 import productsGiostreTecnoexerciserGalleryGiostra_1 from "assets/products/giostre/tecnoexerciser/gallery/giostra-1.jpg";
 import productsGiostreTecnoexerciserGalleryGiostra_2 from "assets/products/giostre/tecnoexerciser/gallery/giostra-2.jpg";
@@ -8,9 +6,10 @@ import productsGiostreTecnoexerciserGalleryPortaMobile_1 from "assets/products/g
 import productsGiostreTecnoexerciserGalleryPortaMobile_2 from "assets/products/giostre/tecnoexerciser/gallery/porta-mobile-2.jpg";
 import productsGiostreTecnoexerciserGallerySoloMotore from "assets/products/giostre/tecnoexerciser/gallery/solo-motore.jpg";
 import productsGiostreTecnoexerciserGalleryTecnofence_1 from "assets/products/giostre/tecnoexerciser/gallery/tecnofence-1.jpg";
+import { useLingui } from "@lingui/react/macro";
 
 const TecnoexerciserGallery = () => {
-  useLingui(); // Fix on locale change
+  const { t } = useLingui();
 
   const IMAGES: Picture[] = [
     {

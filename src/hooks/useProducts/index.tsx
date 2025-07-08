@@ -1,18 +1,32 @@
+import { useLingui } from "@lingui/react/macro";
 import { ReactNode } from "react";
-import { t } from "@lingui/core/macro";
+
 import { Trans } from "@lingui/react/macro";
-import { useLingui } from "@lingui/react";
 import { Box } from "@mui/material";
+import { useFormatter } from "hooks";
 import usePages from "hooks/usePages";
 import { Colors } from "theme";
-import {
-  CUBI_MODELS,
-  CUCCHIAI_MODELS,
-  DRESSAGE_MODELS,
-  Material,
-  SEGNALETICA_MODELS,
-} from "utils/constants";
-import { formatSize, formatSizeMeter } from "utils/format";
+import { Material, WEBISTE_URL } from "utils/constants";
+
+export enum DressageModels {
+  OLYMPIC = "Olympic",
+  TRAINING = "Training",
+}
+
+export enum CubiModels {
+  MAXI = "Maxi",
+  MINI = "Mini",
+}
+
+export enum CucchiaiModels {
+  DE = "DE",
+  PS = "PS",
+}
+
+export enum SegnaleticaModels {
+  LIGHT = "Light",
+  PROFESSIONAL = "Professional",
+}
 
 export enum ProductId {
   DRESSAGE_OLYMPIC_LETTERA = "DRESSAGE_OLYMPIC_LETTERA",
@@ -82,10 +96,12 @@ export type ProductData = {
 type ProductList = { [key in keyof typeof ProductId]: ProductData };
 
 const useProducts = (): ProductList => {
+  const { formatSize, formatSizeMeter } = useFormatter();
   const { PRODUCTS } = usePages();
   const {
     i18n: { locale },
-  } = useLingui(); // Fix on locale change
+    t,
+  } = useLingui();
 
   const { BLU, GREEN, RED, WHITE, YELLOW, ORANGE, LIGHT_BLUE, BROWN, BLACK } =
     Colors;
@@ -204,7 +220,7 @@ const useProducts = (): ProductList => {
       },
       id: ProductId.CUBI_MINI,
       link: `${PRODUCTS.OSTACOLI.url}#${ProductId.CUBI_MINI}`,
-      name: t`Cubi ${CUBI_MODELS.MINI}`,
+      name: t`Cubi ${CubiModels.MINI}`,
       pictures: [
         require("assets/products/ostacoli/cubi-mini-01.png"),
         require("assets/products/ostacoli/cubi-mini-02.png"),
@@ -224,7 +240,7 @@ const useProducts = (): ProductList => {
 
       id: ProductId.CUBI_MAXI,
       link: `${PRODUCTS.OSTACOLI.url}#${ProductId.CUBI_MAXI}`,
-      name: t`Cubi ${CUBI_MODELS.MAXI}`,
+      name: t`Cubi ${CubiModels.MAXI}`,
       pictures: [
         require("assets/products/ostacoli/cubi-maxi-01.png"),
         require("assets/products/ostacoli/cubi-maxi-02.png"),
@@ -299,7 +315,7 @@ const useProducts = (): ProductList => {
       id: ProductId.CUCCHIAIO_DE,
       link: `${PRODUCTS.OSTACOLI.url}#${ProductId.CUCCHIAIO_DE}`,
       materials: [Material.TECNOPOLIMERO],
-      name: t`Cucchiaio ${CUCCHIAI_MODELS.DE}`,
+      name: t`Cucchiaio ${CucchiaiModels.DE}`,
       pictures: [
         require("assets/products/ostacoli/cucchiaio-de-01.png"),
         require("assets/products/ostacoli/cucchiaio-de-02.png"),
@@ -318,7 +334,7 @@ const useProducts = (): ProductList => {
       id: ProductId.CUCCHIAIO_PS,
       link: `${PRODUCTS.OSTACOLI.url}#${ProductId.CUCCHIAIO_PS}`,
       materials: [Material.TECNOPOLIMERO],
-      name: t`Cucchiaio ${CUCCHIAI_MODELS.PS}`,
+      name: t`Cucchiaio ${CucchiaiModels.PS}`,
       pictures: [
         require("assets/products/ostacoli/cucchiaio-ps-01.png"),
         require("assets/products/ostacoli/cucchiaio-ps-02.png"),
@@ -370,7 +386,7 @@ const useProducts = (): ProductList => {
       id: ProductId.NUMERO_CAMPO_OSTACOLI_PROFESSIONAL,
       link: `${PRODUCTS.OSTACOLI.url}#${ProductId.NUMERO_CAMPO_OSTACOLI_PROFESSIONAL}`,
       materials: [Material.POLIETILENE],
-      name: t`Numero per campo ostacoli ${SEGNALETICA_MODELS.PROFESSIONAL}`,
+      name: t`Numero per campo ostacoli ${SegnaleticaModels.PROFESSIONAL}`,
       pictures: [require("assets/products/ostacoli/numero-professional.png")],
       price: 29.5,
     },
@@ -386,7 +402,7 @@ const useProducts = (): ProductList => {
       link: PRODUCTS.RECINTI.url,
       materials: [Material.POLIPROPILENE],
       name: t`Recinzione cavalli a ${1} filagna`,
-      pictures: [require("assets/products/recinti/svg-1.webp")],
+      pictures: [require("assets/products/recinti/recinto-1-filagna.png")],
     },
     {
       colors: [Colors.WHITE],
@@ -398,7 +414,7 @@ const useProducts = (): ProductList => {
       link: PRODUCTS.RECINTI.url,
       materials: [Material.POLIPROPILENE],
       name: t`Recinzione cavalli a ${2} filagne`,
-      pictures: [require("assets/products/recinti/svg-2.webp")],
+      pictures: [require("assets/products/recinti/recinto-2-filagna.png")],
     },
     {
       colors: [Colors.WHITE],
@@ -410,7 +426,7 @@ const useProducts = (): ProductList => {
       link: PRODUCTS.RECINTI.url,
       materials: [Material.POLIPROPILENE],
       name: t`Recinzione cavalli a ${3} filagne`,
-      pictures: [require("assets/products/recinti/svg-3.webp")],
+      pictures: [require("assets/products/recinti/recinto-3-filagna.png")],
     },
     {
       colors: [Colors.WHITE],
@@ -422,7 +438,7 @@ const useProducts = (): ProductList => {
       link: PRODUCTS.RECINTI.url,
       materials: [Material.POLIPROPILENE],
       name: t`Recinzione cavalli a ${4} filagne`,
-      pictures: [require("assets/products/recinti/svg-4.webp")],
+      pictures: [require("assets/products/recinti/recinto-4-filagna.png")],
     },
     {
       colors: [Colors.WHITE, Colors.GREEN],
@@ -456,7 +472,7 @@ const useProducts = (): ProductList => {
       id: ProductId.DRESSAGE_TRAINING_LETTERE_8_KIT,
       link: PRODUCTS.DRESSAGE.url,
       materials: [Material.POLIETILENE],
-      name: t`Kit ${8} Lettere Dressage (${DRESSAGE_MODELS.TRAINING})`,
+      name: t`Kit ${8} Lettere Dressage (${DressageModels.TRAINING})`,
       pictures: [require("assets/products/dressage/training-lettera.jpg")],
       price: 236,
     },
@@ -474,7 +490,7 @@ const useProducts = (): ProductList => {
       id: ProductId.DRESSAGE_TRAINING_LETTERE_12_KIT,
       link: PRODUCTS.DRESSAGE.url,
       materials: [Material.POLIETILENE],
-      name: t`Kit ${12} Lettere Dressage (${DRESSAGE_MODELS.TRAINING})`,
+      name: t`Kit ${12} Lettere Dressage (${DressageModels.TRAINING})`,
       pictures: [require("assets/products/dressage/training-lettera.jpg")],
       price: 354,
     },
@@ -489,7 +505,7 @@ const useProducts = (): ProductList => {
       },
       id: ProductId.DRESSAGE_TRAINING_MODULO,
       link: PRODUCTS.DRESSAGE.url,
-      name: t`Modulo dressage (${DRESSAGE_MODELS.TRAINING})`,
+      name: t`Modulo dressage (${DressageModels.TRAINING})`,
       pictures: [
         require("assets/products/dressage/training-modulo-dressage.jpg"),
       ],
@@ -503,7 +519,7 @@ const useProducts = (): ProductList => {
       },
       id: ProductId.DRESSAGE_TRAINING_RETTANGOLO_20X40,
       link: PRODUCTS.DRESSAGE.url,
-      name: t`Rettangolo dressage ${SIZE_20x40.size} (${DRESSAGE_MODELS.TRAINING})`,
+      name: t`Rettangolo dressage ${SIZE_20x40.size} (${DressageModels.TRAINING})`,
       pictures: [
         require("assets/products/dressage/rettangolo-dressage-20x40.jpg"),
         require("assets/products/dressage/training-lettera.jpg"),
@@ -520,7 +536,7 @@ const useProducts = (): ProductList => {
       },
       id: ProductId.DRESSAGE_TRAINING_RETTANGOLO_20X60,
       link: PRODUCTS.DRESSAGE.url,
-      name: t`Rettangolo dressage ${SIZE_20x60.size} (${DRESSAGE_MODELS.TRAINING})`,
+      name: t`Rettangolo dressage ${SIZE_20x60.size} (${DressageModels.TRAINING})`,
       pictures: [
         require("assets/products/dressage/rettangolo-dressage-20x60.jpg"),
         require("assets/products/dressage/training-lettera.jpg"),
@@ -539,7 +555,7 @@ const useProducts = (): ProductList => {
       },
       id: ProductId.DRESSAGE_OLYMPIC_LETTERA,
       link: PRODUCTS.DRESSAGE.url,
-      name: t`Lettera dressage (${DRESSAGE_MODELS.OLYMPIC})`,
+      name: t`Lettera dressage (${DressageModels.OLYMPIC})`,
       pictures: [require("assets/products/dressage/olympic-lettera.jpg")],
       price: 62,
     },
@@ -554,7 +570,7 @@ const useProducts = (): ProductList => {
       },
       id: ProductId.DRESSAGE_OLYMPIC_MODULO,
       link: PRODUCTS.DRESSAGE.url,
-      name: t`Modulo dressage (${DRESSAGE_MODELS.OLYMPIC})`,
+      name: t`Modulo dressage (${DressageModels.OLYMPIC})`,
       pictures: [
         require("assets/products/dressage/olympic-modulo-dressage.jpg"),
       ],
@@ -568,7 +584,7 @@ const useProducts = (): ProductList => {
       },
       id: ProductId.DRESSAGE_OLYMPIC_RETTANGOLO_20X40,
       link: PRODUCTS.DRESSAGE.url,
-      name: t`Rettangolo dressage ${SIZE_20x40.size} (${DRESSAGE_MODELS.OLYMPIC})`,
+      name: t`Rettangolo dressage ${SIZE_20x40.size} (${DressageModels.OLYMPIC})`,
       pictures: [
         require("assets/products/dressage/rettangolo-dressage-20x40.jpg"),
         require("assets/products/dressage/olympic-lettera.jpg"),
@@ -585,7 +601,7 @@ const useProducts = (): ProductList => {
       },
       id: ProductId.DRESSAGE_OLYMPIC_RETTANGOLO_20X60,
       link: PRODUCTS.DRESSAGE.url,
-      name: t`Rettangolo dressage ${SIZE_20x60.size} (${DRESSAGE_MODELS.OLYMPIC})`,
+      name: t`Rettangolo dressage ${SIZE_20x60.size} (${DressageModels.OLYMPIC})`,
       pictures: [
         require("assets/products/dressage/rettangolo-dressage-20x60.jpg"),
         require("assets/products/dressage/olympic-lettera.jpg"),
@@ -602,7 +618,7 @@ const useProducts = (): ProductList => {
       },
       id: ProductId.DRESSAGE_OLYMPIC_RETTANGOLO_20X60,
       link: PRODUCTS.DRESSAGE.url,
-      name: t`Rettangolo dressage ${SIZE_20x60.size} (${DRESSAGE_MODELS.OLYMPIC})`,
+      name: t`Rettangolo dressage ${SIZE_20x60.size} (${DressageModels.OLYMPIC})`,
       pictures: [
         require("assets/products/dressage/rettangolo-dressage-20x60.jpg"),
       ],
@@ -768,7 +784,7 @@ const useProducts = (): ProductList => {
   return PRODUCTS_LIST.map((product) => ({
     ...product,
     // Transoform in an absolute link
-    link: `${process.env.NEXT_PUBLIC_WEBISTE_URL}/${locale}${product.link}`,
+    link: `${WEBISTE_URL}/${locale}${product.link}`,
   })).reduce(
     (products, product) => ({
       ...products,

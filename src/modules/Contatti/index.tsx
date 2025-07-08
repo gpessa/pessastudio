@@ -1,3 +1,5 @@
+"use client";
+
 import { Trans } from "@lingui/react/macro";
 import {
   Avatar,
@@ -25,9 +27,6 @@ import {
 import anna from "assets/generals/anna.jpg";
 import ContattiAddress from "./components/ContattiAddress";
 import ContattiBank from "./components/ContattiBank";
-
-
-export { getStaticProps } from "utils/getProps";
 
 const AvatarStyled = styled(Avatar)(({ theme }) => ({
   height: 150,

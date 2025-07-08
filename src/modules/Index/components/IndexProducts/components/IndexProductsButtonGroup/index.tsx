@@ -1,3 +1,5 @@
+"use client";
+
 import { Typography, Slider } from "@mui/material";
 import { styled } from "@mui/material/styles";
 
