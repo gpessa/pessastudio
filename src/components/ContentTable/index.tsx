@@ -15,9 +15,9 @@ import {
   TableRow,
 } from "@mui/material";
 import { styled } from "@mui/material/styles";
+import { Th } from "components";
 import Link from "next/link";
 import React, { ReactNode } from "react";
-import { Th } from "components";
 
 const ButtonStyled = styled(Button)(({ theme }) => ({
   "&.file": {
@@ -26,16 +26,20 @@ const ButtonStyled = styled(Button)(({ theme }) => ({
   marginLeft: theme.spacing(1),
 }));
 
-type Props = {
+type ContentTableProps = {
   title: ReactNode;
   rows: {
-    label: ReactNode;
-    link?: string;
+    title: ReactNode;
+    url?: string;
     file?: string;
   }[];
 } & Pick<BoxProps, "sx">;
 
-const ContentTable: React.FC<Props> = ({ rows, title, ...props }: Props) => (
+const ContentTable: React.FC<ContentTableProps> = ({
+  rows,
+  title,
+  ...props
+}) => (
   <Box {...props}>
     <Th variant="h5" sans sx={{ mb: 2 }}>
       {title}
@@ -43,13 +47,13 @@ const ContentTable: React.FC<Props> = ({ rows, title, ...props }: Props) => (
     <TableContainer component={Paper} elevation={0} variant="outlined">
       <Table>
         <TableBody>
-          {rows.map(({ label, link, file }, index) => (
+          {rows.map(({ title, url, file }, index) => (
             <TableRow key={index}>
-              <TableCell>{label}</TableCell>
+              <TableCell>{title}</TableCell>
 
               <TableCell align="right">
-                {link && (
-                  <Link href={link} passHref>
+                {url && (
+                  <Link href={url} passHref>
                     <ButtonStyled endIcon={<Visibility />} variant="text">
                       <Trans>Vedi</Trans>
                     </ButtonStyled>

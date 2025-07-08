@@ -183,16 +183,11 @@ const Tondini: React.FC = () => {
   const DIMENSIONS = [
     {
       file: `/products/tondini/scheda-techina-tondino-${locale!}.pdf`,
-      label: t`Tondino coperto`,
+      title: t`Tondino coperto`,
     },
   ];
 
-  const MANUALS = [
-    {
-      label: PAGES.TONDINI_COME_PREPARARE_IL_FONDO.title,
-      link: PAGES.TONDINI_COME_PREPARARE_IL_FONDO.url,
-    },
-  ];
+  const MANUALS = [PAGES.TONDINI_COME_PREPARARE_IL_FONDO];
 
   const BENEFITS: BeneftisProps = {
     benefits: [

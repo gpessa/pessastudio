@@ -14,7 +14,7 @@ const IppowalkerServizioClienti = () => {
   const DIMENSIONS = [
     {
       file: `/products/giostre/pdf/scheda-techina-giostra-${locale}.pdf`,
-      label: t`Dimensioni giostra cavalli`,
+      title: t`Dimensioni giostra cavalli`,
     },
   ];
 
@@ -22,21 +22,18 @@ const IppowalkerServizioClienti = () => {
     fr: [
       {
         file: "/products/giostre/ippowalker/pdf/manuale-quadro-ippowalker-fr.pdf",
-        label: t`Manuale quadro di controllo`,
+        title: t`Manuale quadro di controllo`,
       },
     ],
     it: [
-      {
-        label: PAGES.GIOSTRE_IPPOWALKER_ISTRUZIONI_MONTAGGIO.title,
-        link: PAGES.GIOSTRE_IPPOWALKER_ISTRUZIONI_MONTAGGIO.url,
-      },
+      PAGES.GIOSTRE_IPPOWALKER_ISTRUZIONI_MONTAGGIO,
       {
         file: "/products/giostre/ippowalker/pdf/manuale-quadro-ippowalker-it.pdf",
-        label: t`Manuale quadro di controllo`,
+        title: t`Manuale quadro di controllo`,
       },
       {
         file: "/products/giostre/pdf/giostra-collegamento-elettrico.pdf",
-        label: t`Manuale collegamento elettrico`,
+        title: t`Manuale collegamento elettrico`,
       },
     ],
   }[locale!];

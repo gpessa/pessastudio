@@ -35,7 +35,6 @@ import {
 import { initLingui, PageLangParam } from "utils/initLingui";
 import i18nConfig from "../../../i18nConfig";
 import { version } from "../../../package.json";
-import { headers } from "next/headers";
 
 export async function generateMetadata({
   params,

@@ -58,13 +58,10 @@ const Recinti: React.FC = () => {
 
   const FILES = {
     it: [
-      {
-        label: PAGES.RECINTI_COME_PREPARARE_IL_FONDO.title,
-        link: PAGES.RECINTI_COME_PREPARARE_IL_FONDO.url,
-      },
+      PAGES.RECINTI_COME_PREPARARE_IL_FONDO,
       {
         file: "/products/recinti/recinti-istruzioni-montaggio.pdf",
-        label: t`Istruzioni di montaggio`,
+        title: t`Istruzioni di montaggio`,
       },
     ],
   }[locale!];

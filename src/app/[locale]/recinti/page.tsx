@@ -1,6 +1,6 @@
 import { msg } from "@lingui/core/macro";
-import generateMetadataFunction from "utils/generateMetadataFunction";
 import { PAGES_URL } from "hooks/usePages";
+import generateMetadataFunction from "utils/generateMetadataFunction";
 
 export const generateMetadata = generateMetadataFunction({
   url: PAGES_URL.RECINTI,
