@@ -1,3 +1,5 @@
+"use client";
+
 import { Trans } from "@lingui/react/macro";
 import { Typography } from "@mui/material";
 import React from "react";
@@ -10,8 +12,6 @@ import Cubi from "./Cubi";
 import Cucchiai from "./CucchiaiSegnaletica";
 import Fosso from "./Fosso";
 import Segnaletica from "./Segnaletica";
-
-export { getStaticProps } from "utils/getProps";
 
 const Ostacoli: React.FC = () => {
   const { PAGES } = usePages();

@@ -1,9 +1,14 @@
+"use client";
+
+import { usePages } from "hooks";
+import { BREAKPOINT } from "theme";
 import { Trans } from "@lingui/react";
 import Menu from "@mui/icons-material/Menu";
 import {
   AppBar,
   Box,
   Button,
+  Stack,
   Divider,
   IconButton,
   List,
@@ -13,10 +18,8 @@ import {
 } from "@mui/material";
 import { styled } from "@mui/material/styles";
 import Link from "next/link";
-import { useRouter } from "next/router";
+import { usePathname } from "next/navigation";
 import React, { useEffect, useState } from "react";
-import { usePages } from "hooks";
-import { BREAKPOINT } from "theme";
 import LanguageSelector from "./components/HeaderLanguageSelector";
 import Logo from "./components/HeaderLogo";
 
@@ -31,21 +34,15 @@ const ToolbarStyled = styled(Toolbar)(() => ({
   justifyContent: "space-between",
 }));
 
-const HeaderDesktop = styled(Box)(({ theme }) => ({
-  alignItems: "center",
+const HeaderDesktop = styled(Stack)(({ theme }) => ({
   display: "none",
-  width: "fit-content",
   [theme.breakpoints.up(BREAKPOINT)]: {
     display: "flex",
   },
 }));
 
-const HeaderDesktopButtom = styled(Button)(({ theme, href }) => {
-  const { pathname } = useRouter();
-  const selected =
-    pathname.startsWith(href!.substring(3)) || pathname.startsWith(href!);
-
-  return {
+const HeaderDesktopButtom = styled(Button)<{ selected: boolean }>(
+  ({ theme, selected }) => ({
     color: selected ? theme.palette.primary.main : theme.palette.common.black,
     fontFamily: theme.typography.slim.fontFamily,
     fontSize: theme.typography.h6.fontSize,
@@ -53,14 +50,13 @@ const HeaderDesktopButtom = styled(Button)(({ theme, href }) => {
       ? theme.typography.fontWeightBold
       : theme.typography.fontWeightRegular,
     lineHeight: 1,
-    marginLeft: theme.spacing(3),
-    paddingBottom: theme.spacing(3),
-    paddingTop: theme.spacing(3),
     textTransform: "uppercase",
-  };
-});
+    textAlign: "left",
+    height: 64,
+  })
+);
 
-const HeaderDesktopDivider = styled(Divider)(({ theme }) => ({
+const HeaderDivider = styled(Divider)(({ theme }) => ({
   display: "none",
   margin: theme.spacing(3),
   marginBottom: theme.spacing(2),
@@ -87,7 +83,7 @@ const Header: React.FC = () => {
   });
   const [open, setOpen] = useState(false);
   const { NAVIGATION } = usePages();
-  const { pathname } = useRouter();
+  const pathname = usePathname();
 
   useEffect(() => {
     handleMenuClose();
@@ -101,21 +97,25 @@ const Header: React.FC = () => {
       <ToolbarStyled>
         <Logo />
 
-        <HeaderDesktop>
+        <HeaderDesktop direction="row" spacing={2} role="navigation">
           {Object.values(NAVIGATION).map(({ url, title }) => (
-            <Link passHref key={url} href={url} legacyBehavior>
-              <HeaderDesktopButtom variant="text" color="inherit">
-                <Trans id={title} />
+            <Link passHref key={url} href={url}>
+              <HeaderDesktopButtom
+                variant="text"
+                color="inherit"
+                selected={pathname.indexOf(url) !== -1}
+              >
+                {title}
               </HeaderDesktopButtom>
             </Link>
           ))}
-          <HeaderDesktopDivider orientation="vertical" flexItem />
+          {/* <HeaderDivider orientation="vertical" flexItem /> */}
           <LanguageSelector />
         </HeaderDesktop>
 
         <HeaderMobile>
           <LanguageSelector />
-          <HeaderDesktopDivider />
+          <HeaderDivider />
           <IconButton
             edge="end"
             size="large"
@@ -129,12 +129,10 @@ const Header: React.FC = () => {
       </ToolbarStyled>
 
       {open && (
-        <MenuMobileStyled>
+        <MenuMobileStyled role="navigation">
           {Object.values(NAVIGATION).map(({ url, title }) => (
-            <Link key={url} href={url} legacyBehavior>
-              <ListItem>
-                <Trans id={title} />
-              </ListItem>
+            <Link key={url} href={url} passHref>
+              <ListItem component="a">{title}</ListItem>
             </Link>
           ))}
         </MenuMobileStyled>

@@ -1,7 +1,5 @@
-import { Trans } from "@lingui/react/macro";
-import { t } from "@lingui/core/macro";
+import { Trans, useLingui } from "@lingui/react/macro";
 import { Grid, Typography } from "@mui/material";
-import { useLingui } from "@lingui/react";
 import { Gallery, Section, Th } from "components";
 import { PRODUCT_GUTTER } from "theme";
 import {
@@ -12,7 +10,7 @@ import productsGiostreIppowalkerCoperturaCoperturaPvc1 from "assets/products/gio
 import productsGiostreIppowalkerCoperturaCoperturaPvc2 from "assets/products/giostre/ippowalker/copertura/copertura-pvc-2.jpg";
 
 const IppowalkerCopertura = () => {
-  useLingui(); // Fix on locale change
+  const { t } = useLingui();
 
   const IMAGES: Picture[] = [
     {

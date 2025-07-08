@@ -1,12 +1,14 @@
+"use client";
+
 import React from "react";
 import { Box, Grid } from "@mui/material";
-import { ProductData } from "hooks/useProducts";
+import { ProductDataTranslated } from "hooks/useProducts";
 import { PRODUCT_GUTTER } from "theme";
 import ProductImages from "./components/ProductImages";
 import ProductInformations from "./components/ProductInformations";
 import ProductSeo from "./components/ProductSeo";
 
-export type ProductProps = ProductData & {
+export type ProductProps = ProductDataTranslated & {
   className?: string;
   vertical?: boolean;
 };

@@ -1,5 +1,6 @@
-import { t } from "@lingui/core/macro";
-import { Trans } from "@lingui/react/macro";
+"use client";
+
+import { Trans, useLingui } from "@lingui/react/macro";
 import AccessibilityNew from "@mui/icons-material/AccessibilityNew";
 import Apps from "@mui/icons-material/Apps";
 import DomainDisabled from "@mui/icons-material/DomainDisabled";
@@ -7,8 +8,7 @@ import RemoveRedEyeOutlined from "@mui/icons-material/RemoveRedEyeOutlined";
 import VideogameAsset from "@mui/icons-material/VideogameAsset";
 import { Box, Button, Typography } from "@mui/material";
 import NextLink from "next/link";
-import React from "react";
-import { useLingui } from "@lingui/react";
+
 import {
   Benefits,
   Columns,
@@ -19,12 +19,12 @@ import {
   Th,
   Video,
 } from "components";
-import { usePages } from "hooks";
-import { NAME } from "utils/constants";
 import { BeneftisProps } from "components/Benefits";
 import { HeroProps } from "components/Hero";
+import { NAME } from "utils/constants";
+import { usePages } from "hooks";
+import React from "react";
 import image from "./assets/background.jpg";
-export { getStaticProps } from "utils/getProps";
 
 export const GIOSTRE_MODELS = {
   IPPOWALKER: "Ippowalker",
@@ -32,8 +32,8 @@ export const GIOSTRE_MODELS = {
 };
 
 const Giostre: React.FC = () => {
+  const { t } = useLingui();
   const { PAGES } = usePages();
-  useLingui(); // Fix on locale change
 
   const BENEFITS: BeneftisProps = {
     benefits: [

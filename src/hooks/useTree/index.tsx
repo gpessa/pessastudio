@@ -1,19 +1,20 @@
-import { WEBSITE } from "utils/constants";
-import usePages, { Page } from "../usePages";
+import { WEBISTE_URL } from "utils/constants";
+import { usePages, PageTranslated } from "../usePages";
 
-export type BreadcrumbList = (Page & { absoluteUrl: string })[];
+export type BreadcrumbList = (PageTranslated & { absoluteUrl: string })[];
 
 const useTree = (path: string): BreadcrumbList => {
   const { PAGES } = usePages();
 
   const fragments = [...path.split("/").filter((f) => f != "")];
 
-  const findPage = (url: string): Page =>
+  const findPage = (url: string): PageTranslated =>
     Object.values(PAGES).find((page) => page.url === url)!;
 
   const { urls } = fragments.reduce(
     ({ urls, last }, fragment) => {
       last = [last, fragment].join("/");
+
       const page = findPage(last);
 
       return {
@@ -26,7 +27,7 @@ const useTree = (path: string): BreadcrumbList => {
 
   return urls.map((page) => ({
     ...page,
-    absoluteUrl: WEBSITE + page.url,
+    absoluteUrl: WEBISTE_URL + page.url,
   }));
 };
 

@@ -1,12 +1,11 @@
-import { t } from "@lingui/core/macro";
-import { useLingui } from "@lingui/react";
+import { useLingui } from "@lingui/react/macro";
+import { Material } from "hooks/useProducts";
 import React from "react";
-import { Material } from "utils/constants";
 
 const ProductMaterialsList: React.FC<{ materials: Material[] }> = ({
   materials,
 }) => {
-  useLingui(); // Fix on locale change
+  const { t } = useLingui();
 
   const MATERIALS = {
     [Material.ACCIAIO_ZINCATO]: t`Acciaio zincato`,

@@ -2,9 +2,11 @@ import { Trans } from "@lingui/react/macro";
 import { Grid } from "@mui/material";
 import { Product, Section, Th } from "components";
 import { PRODUCT_GUTTER } from "theme";
-import { ProductData } from "hooks/useProducts";
+import { ProductDataTranslated } from "hooks/useProducts";
 
-const Accessori: React.FC<{ products: ProductData[] }> = ({ products }) => (
+const Accessori: React.FC<{ products: ProductDataTranslated[] }> = ({
+  products,
+}) => (
   <Section color="warm1">
     <Th variant="h2">
       <Trans>Accessori</Trans>

@@ -1,6 +1,8 @@
+"use client";
+
 import { Trans } from "@lingui/react/macro";
-import { Box, Grid, Stack } from "@mui/material";
-import React from "react";
+import { Box, Grid, Stack, Typography } from "@mui/material";
+import React, { ReactNode } from "react";
 import Section from "components/Section";
 import Th from "components/Th";
 import { PRODUCT_GUTTER } from "theme";
@@ -11,8 +13,8 @@ import AccessoriImage, {
 export type AccessoriProps = {
   accessories: {
     id?: string;
-    name: JSX.Element;
-    description: JSX.Element;
+    name: ReactNode;
+    description: ReactNode;
     pictures: AccessoriImageProps[];
   }[];
 };
@@ -43,7 +45,7 @@ const Accessori: React.FC<AccessoriProps> = ({ accessories }) => (
               <Th variant="h4" sans>
                 {name}
               </Th>
-              {description}
+              <Typography>{description}</Typography>
             </Grid>
             {pictures.map(({ image, md = 6, top, left }) => (
               <Grid

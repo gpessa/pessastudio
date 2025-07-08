@@ -2,15 +2,19 @@ import React from "react";
 import { Trans } from "@lingui/react/macro";
 import { Badge, Typography } from "@mui/material";
 import { styled } from "@mui/material/styles";
-import { ProductData } from "hooks/useProducts";
-import { formatPrice } from "utils/format";
+import { ProductDataTranslated } from "hooks/useProducts";
+import { useFormatter } from "hooks";
 
 const PriceStyled = styled(Typography)(({ theme }) => ({
   fontSize: theme.typography.h4.fontSize,
   fontWeight: "bold",
 }));
 
-const ProductPrice: React.FC<Pick<ProductData, "price">> = ({ price }) => {
+const ProductPrice: React.FC<Pick<ProductDataTranslated, "price">> = ({
+  price,
+}) => {
+  const { formatPrice } = useFormatter();
+
   if (!price) return null;
 
   return (

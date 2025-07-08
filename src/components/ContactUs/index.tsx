@@ -1,10 +1,9 @@
-import { t } from "@lingui/core/macro";
 import { Trans } from "@lingui/react/macro";
 import { Link, Stack, Typography } from "@mui/material";
 import { sendGAEvent } from "@next/third-parties/google";
 import LinkNext from "next/link";
-import { Title } from "components";
-import Section from "components/Section";
+import { Title, Section } from "components";
+import { useLingui } from "@lingui/react/macro";
 import { usePages } from "hooks";
 import { ITALIA } from "utils/constants";
 
@@ -12,6 +11,7 @@ const ContactUs: React.FC<Pick<Parameters<typeof Section>[0], "color">> = ({
   color,
 }) => {
   const { NAVIGATION } = usePages();
+  const { t } = useLingui();
 
   return (
     <Section color={color} textAlign="center">
