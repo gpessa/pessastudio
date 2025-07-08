@@ -6,23 +6,24 @@ export type Page = {
 };
 
 export const PAGES_URL = {
-  OSTACOLI: "/ostacoli",
-  RECINTI: "/recinti",
-  TONDINI: "/tondini",
-  GIOSTRE: "/giostre",
-  DRESSAGE: "/dressage",
   CONTATTI: "/contatti",
-  PAGE_404: "/404",
-  PAGE_500: "/500",
   COOKIE_POLICY: "/cookie-policy",
-  RECINTI_COME_PREPARARE_IL_FONDO: "/recinti/come-preparare-il-fondo",
-  TONDINI_COME_PREPARARE_IL_FONDO: "/tondini/come-preparare-il-fondo",
+  DRESSAGE: "/dressage",
+  GIOSTRE: "/giostre",
   GIOSTRE_IPPOWALKER: "/giostre/ippowalker",
   GIOSTRE_IPPOWALKER_ISTRUZIONI_MONTAGGIO:
     "/giostre/ippowalker/istruzioni-montaggio",
   GIOSTRE_TECNOEXERCISER: "/giostre/tecnoexerciser",
   GIOSTRE_TECNOEXERCISER_ISTRUZIONI_MONTAGGIO:
     "/giostre/tecnoexerciser/istruzioni-montaggio",
+  HOME: ``,
+  OSTACOLI: "/ostacoli",
+  PAGE_404: "/404",
+  PAGE_500: "/500",
+  RECINTI: "/recinti",
+  RECINTI_COME_PREPARARE_IL_FONDO: "/recinti/come-preparare-il-fondo",
+  TONDINI: "/tondini",
+  TONDINI_COME_PREPARARE_IL_FONDO: "/tondini/come-preparare-il-fondo",
 };
 
 const usePages = () => {
@@ -78,7 +79,7 @@ const usePages = () => {
 
   const HOME: Page = {
     title: t`Home`,
-    url: `/${locale}`,
+    url: `/${locale}${PAGES_URL.HOME}`,
   };
 
   const RECINTI_COME_PREPARARE_IL_FONDO: Page = {
