@@ -189,8 +189,8 @@ const Tondini: React.FC = () => {
 
   const MANUALS = [
     {
-      label: t`Come preparare il fondo`,
-      link: "/tondini/come-preparare-il-fondo",
+      label: PAGES.TONDINI_COME_PREPARARE_IL_FONDO.title,
+      link: PAGES.TONDINI_COME_PREPARARE_IL_FONDO.url,
     },
   ];
 
