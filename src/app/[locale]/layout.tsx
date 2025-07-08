@@ -99,7 +99,7 @@ export default async function RootLayout({
       </Head>
       <body>
         <AppRouterCacheProvider>
-          {IS_PRODUCTION && <GoogleAnalytics gaId={GOOGLE_ANALYTICS} />}
+          {GOOGLE_ANALYTICS && <GoogleAnalytics gaId={GOOGLE_ANALYTICS} />}
           <ThemeProvider theme={theme}>
             <CssBaseline />
             <LinguiClientProvider
