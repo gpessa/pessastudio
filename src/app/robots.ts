@@ -1,5 +1,5 @@
 import type { MetadataRoute } from "next";
-import { LOCALES } from "utils/constants";
+import { LOCALES_ARRAY } from "utils/constants";
 
 export default function robots(): MetadataRoute.Robots {
   return {
@@ -9,7 +9,7 @@ export default function robots(): MetadataRoute.Robots {
       disallow: "/private/",
     },
     host: process.env.NEXT_PUBLIC_WEBISTE_URL,
-    sitemap: LOCALES.map(
+    sitemap: LOCALES_ARRAY.map(
       ({ code }) => `${process.env.NEXT_PUBLIC_WEBISTE_URL}/${code}/sitemap.xml`
     ),
   };

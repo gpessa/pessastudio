@@ -17,7 +17,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import * as React from "react";
 import { useEffect, useState } from "react";
-import { LOCALES } from "utils/constants";
+import { LOCALES_ARRAY } from "utils/constants";
 
 const LOCALE_ICONS: { [key: string]: string } = {
   en: require(`flag-icons/flags/1x1/gb.svg`),
@@ -64,7 +64,7 @@ const HeaderLanguageSelector: React.FC = () => {
       <Dialog open={show} onClose={handleModal}>
         <DialogTitle>Choose a language</DialogTitle>
         <List disablePadding component="nav">
-          {LOCALES.map(({ code, name }) => (
+          {LOCALES_ARRAY.map(({ code, name }) => (
             <ListItem disableGutters key={code} sx={{ display: "block" }}>
               <LinkStyled href={pathname.replace(`/${locale}`, `/${code}`)}>
                 <ListItemButton>

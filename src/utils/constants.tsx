@@ -12,8 +12,8 @@ export const NAME_STRING = "Pessastudio";
 export const NAME_LEGAL_STRING = `${NAME_STRING} Horse Tecnology srl`;
 export const NAME = <strong>{NAME_STRING}</strong>;
 
-export const LOCALES = [
-  {
+export const LOCALES = {
+  it: {
     code: "it",
     hrefLang: "it",
     name: "Italian",
@@ -21,7 +21,7 @@ export const LOCALES = [
     langDir: "ltr",
     dateFormat: "DD.MM.YYYY",
   },
-  {
+  fr: {
     code: "fr",
     hrefLang: "fr",
     name: "French",
@@ -29,7 +29,7 @@ export const LOCALES = [
     langDir: "ltr",
     dateFormat: "DD.MM.YYYY",
   },
-  {
+  en: {
     code: "en",
     hrefLang: "en",
     name: "English",
@@ -37,7 +37,9 @@ export const LOCALES = [
     langDir: "ltr",
     dateFormat: "DD.MM.YYYY",
   },
-];
+};
+
+export const LOCALES_ARRAY = Object.values(LOCALES);
 
 export const DRESSAGE_MODELS = {
   OLYMPIC: "Olympic",
