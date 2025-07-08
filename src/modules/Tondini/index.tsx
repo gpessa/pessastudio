@@ -1,12 +1,19 @@
+"use client";
+
 import { Trans } from "@lingui/react/macro";
-import { t } from "@lingui/core/macro";
+
+import { useLingui } from "@lingui/react/macro";
 import AccountBalance from "@mui/icons-material/AccountBalance";
 import DomainDisabled from "@mui/icons-material/DomainDisabled";
 import Lock from "@mui/icons-material/Lock";
 import Visibility from "@mui/icons-material/Visibility";
 import { Grid } from "@mui/material";
-import React from "react";
-import { useLingui } from "@lingui/react";
+import productsTondiniAccessoriAntivento_1 from "assets/products/tondini/accessori/antivento-1.jpg";
+import productsTondiniAccessoriAntivento_2 from "assets/products/tondini/accessori/antivento-2.jpg";
+import productsTondiniAccessoriAntiventoPortIngresso_1 from "assets/products/tondini/accessori/antivento-port-ingresso-1.jpg";
+import productsTondiniAccessoriAntiventoPortIngresso_2 from "assets/products/tondini/accessori/antivento-port-ingresso-2.jpg";
+import productsTondiniAccessoriCoperturaTerra_1 from "assets/products/tondini/accessori/copertura-terra-1.jpg";
+import productsTondiniAccessoriIrrigazione_1 from "assets/products/tondini/accessori/irrigazione-1.jpg";
 import {
   Accessori,
   Benefits,
@@ -17,32 +24,20 @@ import {
   Section,
   Th,
 } from "components";
-import { PRODUCT_GUTTER } from "theme";
-import { GIOSTRA_TONDINO_CHIUSURA_A_TERRA_DESCRIZIONE } from "utils/constants";
-import productsTondiniAccessoriAntivento_1 from "assets/products/tondini/accessori/antivento-1.jpg";
-import productsTondiniAccessoriAntivento_2 from "assets/products/tondini/accessori/antivento-2.jpg";
-import productsTondiniAccessoriAntiventoPortIngresso_1 from "assets/products/tondini/accessori/antivento-port-ingresso-1.jpg";
-import productsTondiniAccessoriAntiventoPortIngresso_2 from "assets/products/tondini/accessori/antivento-port-ingresso-2.jpg";
-import productsTondiniAccessoriCoperturaTerra_1 from "assets/products/tondini/accessori/copertura-terra-1.jpg";
-import productsTondiniAccessoriIrrigazione_1 from "assets/products/tondini/accessori/irrigazione-1.jpg";
 import { AccessoriProps } from "components/Accessori";
 import { BeneftisProps } from "components/Benefits";
-import { usePages, useProducts } from "hooks";
+import { usePages } from "hooks";
+import React from "react";
+import { PRODUCT_GUTTER } from "theme";
+import { GIOSTRA_TONDINO_CHIUSURA_A_TERRA_DESCRIZIONE } from "utils/constants";
 import image from "./assets/background.jpg";
-export { getStaticProps } from "utils/getProps";
 
 const Tondini: React.FC = () => {
   const {
+    t,
     i18n: { locale },
   } = useLingui(); // Fix on locale change
   const { PAGES } = usePages();
-  const {
-    TONDINO_1320,
-    TONDINO_1500,
-    TONDINO_1660,
-    TONDINO_1830,
-    TONDINO_1990,
-  } = useProducts();
 
   const ACCESSORI: AccessoriProps = {
     accessories: [
@@ -275,14 +270,16 @@ const Tondini: React.FC = () => {
             size={{
               md: 6,
               xs: 12,
-            }}>
+            }}
+          >
             <ContentTable title={<Trans>Dimensioni</Trans>} rows={DIMENSIONS} />
           </Grid>
           <Grid
             size={{
               md: 6,
               xs: 12,
-            }}>
+            }}
+          >
             <ContentTable title={<Trans>Manuali</Trans>} rows={MANUALS} />
           </Grid>
         </Grid>

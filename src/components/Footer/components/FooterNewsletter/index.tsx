@@ -1,18 +1,17 @@
-import { Trans } from "@lingui/react/macro";
-import { t } from "@lingui/core/macro";
-import { useLingui } from "@lingui/react";
+import { msg } from "@lingui/core/macro";
+import { Trans, useLingui } from "@lingui/react/macro";
 import Send from "@mui/icons-material/Send";
 import { Alert, IconButton, Input, InputAdornment } from "@mui/material";
+import { styled } from "@mui/material/styles";
 import React, { useState } from "react";
 import MailchimpSubscribe from "react-mailchimp-subscribe";
-import { styled } from "@mui/material/styles";
 
 const StyledAlert = styled(Alert)(({ theme }) => ({
   marginTop: theme.spacing(2),
 }));
 
 const FooterNewsletter: React.FC = () => {
-  useLingui(); // Fix on locale change
+  const { t } = useLingui();
   const [email, setEmail] = useState<string>();
 
   const url =

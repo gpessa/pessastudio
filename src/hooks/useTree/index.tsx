@@ -8,12 +8,15 @@ const useTree = (path: string): BreadcrumbList => {
 
   const fragments = [...path.split("/").filter((f) => f != "")];
 
+  console.log("fragments", fragments);
+
   const findPage = (url: string): Page =>
     Object.values(PAGES).find((page) => page.url === url)!;
 
   const { urls } = fragments.reduce(
     ({ urls, last }, fragment) => {
       last = [last, fragment].join("/");
+
       const page = findPage(last);
 
       return {

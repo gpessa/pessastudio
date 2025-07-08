@@ -1,8 +1,7 @@
-import { Trans } from "@lingui/react/macro";
-import { t } from "@lingui/core/macro";
+"use client";
+
+import { Trans, useLingui } from "@lingui/react/macro";
 import { Typography } from "@mui/material";
-import { useRouter } from "next/router";
-import React from "react";
 import {
   Columns,
   ContactUs,
@@ -12,10 +11,9 @@ import {
   Th,
 } from "components";
 import { usePages, useProducts } from "hooks";
+import React from "react";
 import Accessori from "./_accessori";
 import Gamma from "./_gamma";
-
-export { getStaticProps } from "utils/getProps";
 
 const Recinti: React.FC = () => {
   const {
@@ -26,7 +24,10 @@ const Recinti: React.FC = () => {
     RECINZIONE_PIEDE_MOBILE,
   } = useProducts();
   const { PAGES } = usePages();
-  const { locale } = useRouter();
+  const {
+    t,
+    i18n: { locale },
+  } = useLingui();
 
   const IMAGES: Picture[] = [
     {

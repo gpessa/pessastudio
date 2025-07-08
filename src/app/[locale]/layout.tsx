@@ -1,0 +1,124 @@
+import { AppRouterCacheProvider } from "@mui/material-nextjs/v15-appRouter";
+import CssBaseline from "@mui/material/CssBaseline";
+import { ThemeProvider } from "@mui/material/styles";
+import { GoogleAnalytics } from "@next/third-parties/google";
+import { SpeedInsights } from "@vercel/speed-insights/next";
+import image from "assets/generals/image.jpg";
+import {
+  Breadcrumb,
+  Footer,
+  Gdpr,
+  Header,
+  LdJson,
+  LinguiClientProvider,
+  WhatsApp,
+} from "components";
+import { Metadata } from "next";
+import Head from "next/head";
+import { notFound } from "next/navigation";
+import { PropsWithChildren } from "react";
+import "react-multi-carousel/lib/styles.css";
+import { Organization, WithContext } from "schema-dts";
+import theme from "theme";
+import { allMessages } from "utils/appRouterI18n";
+import {
+  GOOGLE_ANALYTICS,
+  IS_PRODUCTION,
+  ITALIA,
+  LOCALES,
+  NAME_STRING,
+  SEDE_LEGALE,
+  SEDE_OPERATIVA,
+  SOCIALS,
+  WEBSITE,
+} from "utils/constants";
+import { initLingui, PageLangParam } from "utils/initLingui";
+import i18nConfig from "../../../i18nConfig";
+import { version } from "../../../package.json";
+import { headers } from "next/headers";
+
+export async function generateMetadata({
+  params,
+}: PageLangParam): Promise<Metadata> {
+  return {
+    title: {
+      template: `%s | ${NAME_STRING}`,
+      default: NAME_STRING,
+    },
+    openGraph: {
+      title: {
+        template: `%s | ${NAME_STRING}`,
+        default: NAME_STRING,
+      },
+    },
+  };
+}
+
+const jsonLdOrganization: WithContext<Organization> = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  telephone: ITALIA.telephone,
+  email: ITALIA.email,
+  url: WEBSITE,
+  logo: image.src,
+  legalName: SEDE_LEGALE.name,
+  name: SEDE_OPERATIVA.name,
+  address: {
+    "@type": "PostalAddress",
+    ...SEDE_OPERATIVA,
+  },
+  sameAs: [
+    SOCIALS.facebook_1,
+    SOCIALS.facebook_2,
+    SOCIALS.instagram,
+    SOCIALS.youtube,
+  ],
+  contactPoint: [
+    {
+      "@type": "ContactPoint",
+      contactType: "customer service",
+      ...ITALIA,
+    },
+  ],
+};
+
+export default async function RootLayout({
+  children,
+  params,
+}: PropsWithChildren<PageLangParam>) {
+  const { locale } = await params;
+
+  if (!i18nConfig.locales.includes(locale)) {
+    notFound();
+  }
+
+  initLingui(locale);
+
+  return (
+    <html lang={locale}>
+      <Head>
+        <LdJson data={jsonLdOrganization} />
+      </Head>
+      <body>
+        <AppRouterCacheProvider>
+          {IS_PRODUCTION && <GoogleAnalytics gaId={GOOGLE_ANALYTICS} />}
+          <ThemeProvider theme={theme}>
+            <CssBaseline />
+            <LinguiClientProvider
+              initialLocale={locale}
+              initialMessages={allMessages[locale]!}
+            >
+              <Header />
+              <Breadcrumb />
+              {children}
+              <Footer version={version} />
+              <Gdpr />
+              <WhatsApp />
+            </LinguiClientProvider>
+          </ThemeProvider>
+          <SpeedInsights />
+        </AppRouterCacheProvider>
+      </body>
+    </html>
+  );
+}

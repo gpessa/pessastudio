@@ -1,7 +1,7 @@
 import { ReactNode } from "react";
-import { t } from "@lingui/core/macro";
+import { useLingui } from "@lingui/react/macro";
+
 import { Trans } from "@lingui/react/macro";
-import { useLingui } from "@lingui/react";
 import { Box } from "@mui/material";
 import usePages from "hooks/usePages";
 import { Colors } from "theme";
@@ -12,7 +12,7 @@ import {
   Material,
   SEGNALETICA_MODELS,
 } from "utils/constants";
-import { formatSize, formatSizeMeter } from "utils/format";
+import { useFormatter } from "hooks";
 
 export enum ProductId {
   DRESSAGE_OLYMPIC_LETTERA = "DRESSAGE_OLYMPIC_LETTERA",
@@ -82,10 +82,12 @@ export type ProductData = {
 type ProductList = { [key in keyof typeof ProductId]: ProductData };
 
 const useProducts = (): ProductList => {
+  const { formatSize, formatSizeMeter } = useFormatter();
   const { PRODUCTS } = usePages();
   const {
     i18n: { locale },
-  } = useLingui(); // Fix on locale change
+    t,
+  } = useLingui();
 
   const { BLU, GREEN, RED, WHITE, YELLOW, ORANGE, LIGHT_BLUE, BROWN, BLACK } =
     Colors;
@@ -386,7 +388,9 @@ const useProducts = (): ProductList => {
       link: PRODUCTS.RECINTI.url,
       materials: [Material.POLIPROPILENE],
       name: t`Recinzione cavalli a ${1} filagna`,
-      pictures: [require("assets/products/recinti/svg-1.webp")],
+      pictures: [
+        //require("assets/products/recinti/svg-1.webp")
+      ],
     },
     {
       colors: [Colors.WHITE],
@@ -398,7 +402,9 @@ const useProducts = (): ProductList => {
       link: PRODUCTS.RECINTI.url,
       materials: [Material.POLIPROPILENE],
       name: t`Recinzione cavalli a ${2} filagne`,
-      pictures: [require("assets/products/recinti/svg-2.webp")],
+      pictures: [
+        //require("assets/products/recinti/svg-2.webp")
+      ],
     },
     {
       colors: [Colors.WHITE],
@@ -410,7 +416,9 @@ const useProducts = (): ProductList => {
       link: PRODUCTS.RECINTI.url,
       materials: [Material.POLIPROPILENE],
       name: t`Recinzione cavalli a ${3} filagne`,
-      pictures: [require("assets/products/recinti/svg-3.webp")],
+      pictures: [
+        //require("assets/products/recinti/svg-3.webp")
+      ],
     },
     {
       colors: [Colors.WHITE],
@@ -422,7 +430,9 @@ const useProducts = (): ProductList => {
       link: PRODUCTS.RECINTI.url,
       materials: [Material.POLIPROPILENE],
       name: t`Recinzione cavalli a ${4} filagne`,
-      pictures: [require("assets/products/recinti/svg-4.webp")],
+      pictures: [
+        //require("assets/products/recinti/svg-4.webp")
+      ],
     },
     {
       colors: [Colors.WHITE, Colors.GREEN],

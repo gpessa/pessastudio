@@ -1,15 +1,19 @@
-import { Trans } from "@lingui/macro";
+"use client";
+
+import { Trans } from "@lingui/react/macro";
 import { Grid } from "@mui/material";
 import { styled } from "@mui/material/styles";
-import Carousel from "react-multi-carousel";
-import React, { useRef } from "react";
 import Section from "components/Section";
 import Title from "components/Title";
 import { usePages } from "hooks";
+import React, { useRef } from "react";
+import Carousel from "react-multi-carousel";
 import { BREAKPOINT } from "theme";
-import IndexProductsItem from "./components/IndexProductsItem";
-import styles from "./styles.module.css";
 import IndexProductsButtonGroup from "./components/IndexProductsButtonGroup";
+import IndexProductsItem, {
+  IndexProductItem,
+} from "./components/IndexProductsItem";
+import styles from "./styles.module.css";
 
 const CarouselStyled = styled(Carousel)(({ theme }) => ({
   [theme.breakpoints.up(BREAKPOINT)]: {
@@ -17,9 +21,9 @@ const CarouselStyled = styled(Carousel)(({ theme }) => ({
   },
 }));
 
-const IndexProducts: React.FC = () => {
-  const { PRODUCTS } = usePages();
-  const product = Object.values(PRODUCTS);
+const IndexProducts: React.FC<{
+  products: IndexProductItem[];
+}> = ({ products }) => {
   const carousel = useRef<Carousel>(null);
   const [currentSlide, setCurrentSlide] = React.useState(0);
 
@@ -68,7 +72,7 @@ const IndexProducts: React.FC = () => {
               },
             }}
           >
-            {product.map(({ url, title, description, image }, index) => (
+            {products.map(({ url, title, description, image }, index) => (
               <div key={url}>
                 <IndexProductsItem
                   index={index}

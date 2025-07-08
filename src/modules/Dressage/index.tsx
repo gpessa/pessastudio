@@ -1,12 +1,12 @@
+"use client";
+
 import { Trans } from "@lingui/react/macro";
-import { useLingui } from "@lingui/react";
 import { Box, Grid, Link, Typography } from "@mui/material";
-import React from "react";
 import { Columns, ContactUs, Gallery, Product, Section, Th } from "components";
 import { usePages, useProducts } from "hooks";
+import React from "react";
 import { PRODUCT_GUTTER } from "theme";
 import { DRESSAGE_MODELS } from "utils/constants";
-export { getStaticProps } from "utils/getProps";
 
 const Dressage: React.FC = () => {
   const { PAGES } = usePages();
@@ -21,7 +21,6 @@ const Dressage: React.FC = () => {
     DRESSAGE_OLYMPIC_RETTANGOLO_20X40,
     DRESSAGE_OLYMPIC_RETTANGOLO_20X60,
   } = useProducts();
-  useLingui(); // Fix on locale change
 
   const IMAGES: Picture[] = [
     {
@@ -82,8 +81,9 @@ const Dressage: React.FC = () => {
               key={index}
               size={{
                 md: 3,
-                xs: 12
-              }}>
+                xs: 12,
+              }}
+            >
               <Product vertical {...product} />
             </Grid>
           ))}
@@ -130,8 +130,9 @@ const Dressage: React.FC = () => {
               key={index}
               size={{
                 md: 3,
-                xs: 12
-              }}>
+                xs: 12,
+              }}
+            >
               <Product vertical {...product} />
             </Grid>
           ))}

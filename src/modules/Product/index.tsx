@@ -2,7 +2,6 @@ import React from "react";
 import { useRouter } from "next/router";
 import { useProducts } from "hooks";
 import { ProductId } from "hooks/useProducts";
-export { getStaticProps } from "utils/getProps";
 
 const Product: React.FC = () => {
   const router = useRouter();

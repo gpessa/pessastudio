@@ -1,3 +1,5 @@
+"use client";
+
 import { Trans } from "@lingui/react/macro";
 import { Box, Typography } from "@mui/material";
 import React from "react";
@@ -12,7 +14,6 @@ import productsGiostreIppowalkerMontaggioStep_08 from "assets/products/giostre/i
 import productsGiostreIppowalkerMontaggioStep_09 from "assets/products/giostre/ippowalker/montaggio/step-09.jpg";
 import productsGiostreIppowalkerMontaggioStep_10 from "assets/products/giostre/ippowalker/montaggio/step-10.jpg";
 import productsGiostreIppowalkerMontaggioStep_11 from "assets/products/giostre/ippowalker/montaggio/step-11.jpg";
-export { getStaticProps } from "utils/getProps";
 
 const IstruzioniMontaggio: React.FC = () => {
   const STEPS = [

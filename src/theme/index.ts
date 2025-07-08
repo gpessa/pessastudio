@@ -1,3 +1,5 @@
+"use client";
+
 import { createTheme, responsiveFontSizes } from "@mui/material/styles";
 import { Source_Sans_3, Roboto_Condensed } from "next/font/google";
 
@@ -11,13 +13,11 @@ declare module "@mui/material/styles" {
     small?: React.CSSProperties;
     slim?: React.CSSProperties;
   }
-}
-
-declare module "@mui/material/styles/createPalette" {
   interface Palette {
     warm1: Palette["primary"];
     warm2: Palette["primary"];
   }
+
   interface PaletteOptions {
     warm1: PaletteOptions["primary"];
     warm2: PaletteOptions["primary"];
@@ -172,13 +172,13 @@ const theme = createTheme({
   },
   spacing: (factor: number) => `${7 * factor}px `,
   typography: {
+    fontFamily: sourceCodePro.style.fontFamily,
     caption: {
       color: Colors.GRAY,
       fontSize: "0.9rem",
       lineHeight: "1em",
       textTransform: "uppercase",
     },
-    fontFamily: sourceCodePro.style.fontFamily,
     h1: {
       fontFamily: "serif",
       fontSize: 78,

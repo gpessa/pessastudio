@@ -1,40 +1,45 @@
-import { Trans } from "@lingui/react/macro";
+"use client";
+
+import { Trans, useLingui } from "@lingui/react/macro";
 import AccountBalance from "@mui/icons-material/AccountBalance";
 import Apps from "@mui/icons-material/Apps";
 import Architecture from "@mui/icons-material/Architecture";
 import Restore from "@mui/icons-material/Restore";
 import TurnedInNot from "@mui/icons-material/TurnedInNot";
 import { Typography } from "@mui/material";
-import { useRouter } from "next/router";
-import React from "react";
 import { Benefits, Hero } from "components";
 import { HeroProps } from "components/Hero";
 import { NAME } from "utils/constants";
 import image from "./assets/background.jpg";
-import IndexProducts from "./components/IndexProducts";
-import IndexTestimonials from "./components/IndexTestimonials";
 import fiera2024_it from "./assets/fiera2024/it.jpg";
+import IndexProducts from "./components/IndexProducts";
+import { IndexProductItem } from "./components/IndexProducts/components/IndexProductsItem";
+import IndexTestimonials from "./components/IndexTestimonials";
 
-export { getStaticProps } from "utils/getProps";
+export default function Index() {
+  const { t, i18n } = useLingui();
 
-const Index: React.FC = () => {
-  const { locale } = useRouter();
-
-  const TESTIMONIALS = [
-    <Trans key="test_1">
-      Ho ricevuto questa mattina il materiale. I miei complimenti per la qualità
-      dei prodotti, l'imballo ed il trasportatore
-    </Trans>,
-    <Trans key="test_2">
-      Ringrazio tutto il team per la professionalità, gentilezza, velocità e
-      sopratutto per l'ottimo risultato
-    </Trans>,
-    <Trans key="test_3">
-      Splendido niente da dire! Il tondino è ben pensato e ingegnoso. Molto
-      bene!
-    </Trans>,
-    <Trans key="test_4">Gli ostacoli sono arrivati. Sono fantastici!</Trans>,
-  ];
+  const TESTIMONIALS = {
+    test_1: (
+      <Trans>
+        Ho ricevuto questa mattina il materiale. I miei complimenti per la
+        qualità dei prodotti, l'imballo ed il trasportatore
+      </Trans>
+    ),
+    test_2: (
+      <Trans>
+        Ringrazio tutto il team per la professionalità, gentilezza, velocità e
+        sopratutto per l'ottimo risultato
+      </Trans>
+    ),
+    test_3: (
+      <Trans>
+        Splendido niente da dire! Il tondino è ben pensato e ingegnoso. Molto
+        bene!
+      </Trans>
+    ),
+    test_4: <Trans>Gli ostacoli sono arrivati. Sono fantastici!</Trans>,
+  };
 
   const BENEFITS = [
     {
@@ -100,12 +105,45 @@ const Index: React.FC = () => {
   ];
 
   const isFieraTime = new Date() < new Date("11/10/2024");
-  const isFieraMode = isFieraTime && locale === "it";
+  const isFieraMode = isFieraTime && i18n.locale === "it";
 
   const HERO: HeroProps = {
     image: isFieraMode ? fiera2024_it : image,
     text: isFieraMode ? undefined : <Trans>Tradizione e qualità</Trans>,
   };
+
+  const PRODUCTS: IndexProductItem[] = [
+    {
+      image: require("assets/icons/ostacoli.jpg"),
+      title: t`Ostacoli`,
+      description: t`Prodotti professionali, sono lo strumento di lavoro indispensabile in un centro ippico o un maneggio. Progettati e costruiti per durare nel tempo senza alcuna manutenzione`,
+      url: "/ostacoli",
+    },
+    {
+      image: require("assets/icons/recinti.jpg"),
+      title: t`Recinti`,
+      description: t`Un recinto da cavalli in PVC. Indistruttibile anche in presenza delle più avverse condizioni meteorologiche`,
+      url: "/recinti",
+    },
+    {
+      image: require("assets/icons/tondini.jpg"),
+      title: t`Tondini`,
+      description: t`Tondini coperti per addestrare puledri in libertà`,
+      url: "/tondini",
+    },
+    {
+      image: require("assets/icons/giostre.jpg"),
+      title: t`Giostre`,
+      description: `Prodotti professionali, sono lo strumento di lavoro indispensabile in un centro ippico o un maneggio. Progettati e costruiti per durare nel tempo senza alcuna manutenzione`,
+      url: "/giostre",
+    },
+    {
+      image: require("assets/icons/dressage.jpg"),
+      title: t`Dressage`,
+      description: t`Rettangoli / Campi professionali da dressage per tutte le esigenze`,
+      url: "/dressage",
+    },
+  ];
 
   return (
     <>
@@ -132,7 +170,7 @@ const Index: React.FC = () => {
           </Trans>
         }
       />
-      <IndexProducts />
+      <IndexProducts products={PRODUCTS} />
       <IndexTestimonials
         subtitle={<Trans>Dicono di noi</Trans>}
         title={<Trans>Cosa dicono di noi</Trans>}
@@ -146,6 +184,4 @@ const Index: React.FC = () => {
       />
     </>
   );
-};
-
-export default Index;
+}

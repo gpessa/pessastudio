@@ -1,5 +1,4 @@
-import { Trans } from "@lingui/react/macro";
-import { t } from "@lingui/core/macro";
+import { Trans, useLingui } from "@lingui/react/macro";
 import { Grid } from "@mui/material";
 import { useRouter } from "next/router";
 import { ContentTable, Section, Th } from "components";
@@ -7,7 +6,10 @@ import { usePages } from "hooks";
 import { PRODUCT_GUTTER } from "theme";
 
 const TecnoexerciserServizioClienti = () => {
-  const { locale } = useRouter();
+  const {
+    t,
+    i18n: { locale },
+  } = useLingui();
   const { PAGES } = usePages();
 
   const DIMENSIONS = [
@@ -63,8 +65,9 @@ const TecnoexerciserServizioClienti = () => {
           title={<Trans>Dimensioni</Trans>}
           size={{
             md: "grow",
-            xs: 12
-          }} />
+            xs: 12,
+          }}
+        />
         {MANUALI && (
           <Grid
             component={ContentTable}
@@ -72,8 +75,9 @@ const TecnoexerciserServizioClienti = () => {
             title={<Trans>Manuale d'istruzioni</Trans>}
             size={{
               md: "grow",
-              xs: 12
-            }} />
+              xs: 12,
+            }}
+          />
         )}
         {OTHERS && (
           <Grid
@@ -82,8 +86,9 @@ const TecnoexerciserServizioClienti = () => {
             title={<Trans>Altro</Trans>}
             size={{
               md: "grow",
-              xs: 12
-            }} />
+              xs: 12,
+            }}
+          />
         )}
       </Grid>
     </Section>

@@ -1,3 +1,5 @@
+"use client";
+
 import { ButtonBase, Grid, GridSize } from "@mui/material";
 import { styled } from "@mui/material/styles";
 import Image from "next/image";

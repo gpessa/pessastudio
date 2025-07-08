@@ -1,13 +1,14 @@
-import { t } from "@lingui/core/macro";
-import { Trans } from "@lingui/react/macro";
+import { Trans, useLingui } from "@lingui/react/macro";
 import { Grid } from "@mui/material";
-import { useRouter } from "next/router";
 import { ContentTable, Section, Th } from "components";
 import { usePages } from "hooks";
 import { PRODUCT_GUTTER } from "theme";
 
 const IppowalkerServizioClienti = () => {
-  const { locale } = useRouter();
+  const {
+    t,
+    i18n: { locale },
+  } = useLingui();
   const { PAGES } = usePages();
 
   const DIMENSIONS = [
@@ -50,8 +51,9 @@ const IppowalkerServizioClienti = () => {
           rows={DIMENSIONS}
           size={{
             md: 6,
-            xs: 12
-          }} />
+            xs: 12,
+          }}
+        />
         {MANUALI && (
           <Grid
             component={ContentTable}
@@ -59,8 +61,9 @@ const IppowalkerServizioClienti = () => {
             rows={MANUALI}
             size={{
               md: 6,
-              xs: 12
-            }} />
+              xs: 12,
+            }}
+          />
         )}
       </Grid>
     </Section>

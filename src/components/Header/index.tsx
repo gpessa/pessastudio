@@ -1,3 +1,7 @@
+"use client";
+
+import { usePages } from "hooks";
+import { BREAKPOINT } from "theme";
 import { Trans } from "@lingui/react";
 import Menu from "@mui/icons-material/Menu";
 import {
@@ -13,10 +17,8 @@ import {
 } from "@mui/material";
 import { styled } from "@mui/material/styles";
 import Link from "next/link";
-import { useRouter } from "next/router";
+import { usePathname } from "next/navigation";
 import React, { useEffect, useState } from "react";
-import { usePages } from "hooks";
-import { BREAKPOINT } from "theme";
 import LanguageSelector from "./components/HeaderLanguageSelector";
 import Logo from "./components/HeaderLogo";
 
@@ -40,12 +42,8 @@ const HeaderDesktop = styled(Box)(({ theme }) => ({
   },
 }));
 
-const HeaderDesktopButtom = styled(Button)(({ theme, href }) => {
-  const { pathname } = useRouter();
-  const selected =
-    pathname.startsWith(href!.substring(3)) || pathname.startsWith(href!);
-
-  return {
+const HeaderDesktopButtom = styled(Button)<{ selected: boolean }>(
+  ({ theme, selected }) => ({
     color: selected ? theme.palette.primary.main : theme.palette.common.black,
     fontFamily: theme.typography.slim.fontFamily,
     fontSize: theme.typography.h6.fontSize,
@@ -57,8 +55,8 @@ const HeaderDesktopButtom = styled(Button)(({ theme, href }) => {
     paddingBottom: theme.spacing(3),
     paddingTop: theme.spacing(3),
     textTransform: "uppercase",
-  };
-});
+  })
+);
 
 const HeaderDesktopDivider = styled(Divider)(({ theme }) => ({
   display: "none",
@@ -87,7 +85,7 @@ const Header: React.FC = () => {
   });
   const [open, setOpen] = useState(false);
   const { NAVIGATION } = usePages();
-  const { pathname } = useRouter();
+  const pathname = usePathname();
 
   useEffect(() => {
     handleMenuClose();
@@ -103,8 +101,12 @@ const Header: React.FC = () => {
 
         <HeaderDesktop>
           {Object.values(NAVIGATION).map(({ url, title }) => (
-            <Link passHref key={url} href={url} legacyBehavior>
-              <HeaderDesktopButtom variant="text" color="inherit">
+            <Link passHref key={url} href={url}>
+              <HeaderDesktopButtom
+                variant="text"
+                color="inherit"
+                selected={pathname.indexOf(url) !== -1}
+              >
                 <Trans id={title} />
               </HeaderDesktopButtom>
             </Link>
@@ -131,8 +133,8 @@ const Header: React.FC = () => {
       {open && (
         <MenuMobileStyled>
           {Object.values(NAVIGATION).map(({ url, title }) => (
-            <Link key={url} href={url} legacyBehavior>
-              <ListItem>
+            <Link key={url} href={url} passHref>
+              <ListItem component="a">
                 <Trans id={title} />
               </ListItem>
             </Link>

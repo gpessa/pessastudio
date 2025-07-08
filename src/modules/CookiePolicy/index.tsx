@@ -1,3 +1,5 @@
+"use client";
+
 import { Trans } from "@lingui/react/macro";
 import {
   Box,
@@ -14,7 +16,6 @@ import { Section, Th } from "components";
 import { usePages } from "hooks";
 import { PRODUCT_GUTTER } from "theme";
 import { ITALIA, SEDE_LEGALE, WEBSITE } from "utils/constants";
-export { getStaticProps } from "utils/getProps";
 
 const completeAddress = `${SEDE_LEGALE.streetAddress}, ${SEDE_LEGALE.addressLocality} (${SEDE_LEGALE.country})`;
 const completeAddressWithAnna = `${ITALIA.name}, ${completeAddress}`;

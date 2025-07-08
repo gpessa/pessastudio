@@ -3,11 +3,41 @@ import RemoveRedEyeRounded from "@mui/icons-material/RemoveRedEyeRounded";
 import { IconButton, Typography } from "@mui/material";
 import { PRODUCT_GUTTER } from "theme";
 
-export const isProduction = !!process && process.env.NODE_ENV === "production";
+// TODO: Replace with your actual Google Analytics ID
+export const GOOGLE_ANALYTICS = "G-XXXXXXXXXX";
+
+export const IS_PRODUCTION = !!process && process.env.NODE_ENV === "production";
 
 export const NAME_STRING = "Pessastudio";
 export const NAME_LEGAL_STRING = `${NAME_STRING} Horse Tecnology srl`;
 export const NAME = <strong>{NAME_STRING}</strong>;
+
+export const LOCALES = [
+  {
+    code: "it",
+    hrefLang: "it",
+    name: "Italian",
+    localName: "Italiano",
+    langDir: "ltr",
+    dateFormat: "DD.MM.YYYY",
+  },
+  {
+    code: "fr",
+    hrefLang: "fr",
+    name: "French",
+    localName: "Français",
+    langDir: "ltr",
+    dateFormat: "DD.MM.YYYY",
+  },
+  {
+    code: "en",
+    hrefLang: "en",
+    name: "English",
+    localName: "English",
+    langDir: "ltr",
+    dateFormat: "DD.MM.YYYY",
+  },
+];
 
 export const DRESSAGE_MODELS = {
   OLYMPIC: "Olympic",

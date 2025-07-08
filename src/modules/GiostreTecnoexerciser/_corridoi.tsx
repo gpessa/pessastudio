@@ -1,18 +1,16 @@
-import { Trans } from "@lingui/react/macro";
-import { t } from "@lingui/core/macro";
+import { Trans, useLingui } from "@lingui/react/macro";
 import { Grid, Typography } from "@mui/material";
-import { useLingui } from "@lingui/react";
+import productsGiostreTecnoexerciserCorridoioCompensatoMarino from "assets/products/giostre/tecnoexerciser/corridoio/compensato-marino.jpg";
+import productsGiostreTecnoexerciserCorridoioTecnofence from "assets/products/giostre/tecnoexerciser/corridoio/tecnofence.jpg";
 import { Gallery, Section, Th } from "components";
 import { BREAKPOINT, PRODUCT_GUTTER } from "theme";
 import {
   GIOSTRA_DESCRIZIONE_RECINZIONE_COMPENSATO_MARINO,
   GIOSTRA_DESCRIZIONE_RECINZIONE_TECONOFENCE,
 } from "utils/constants";
-import productsGiostreTecnoexerciserCorridoioCompensatoMarino from "assets/products/giostre/tecnoexerciser/corridoio/compensato-marino.jpg";
-import productsGiostreTecnoexerciserCorridoioTecnofence from "assets/products/giostre/tecnoexerciser/corridoio/tecnofence.jpg";
 
 const TecnoexerciserCorridoi = () => {
-  useLingui(); // Fix on locale change
+  const { t } = useLingui();
 
   const IMAGES: Picture[] = [
     {

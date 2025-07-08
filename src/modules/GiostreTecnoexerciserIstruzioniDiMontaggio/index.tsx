@@ -18,7 +18,6 @@ import productsGiostreTecnoexerciserMontaggioStep_16 from "assets/products/giost
 import productsGiostreTecnoexerciserMontaggioStep_17 from "assets/products/giostre/tecnoexerciser/montaggio/step-17.jpg";
 import productsGiostreTecnoexerciserMontaggioStep_18 from "assets/products/giostre/tecnoexerciser/montaggio/step-18.jpg";
 import { Path, Section, Th } from "components";
-export { getStaticProps } from "utils/getProps";
 
 const IstruzioniMontaggio: React.FC = () => {
   const STEPS = [
