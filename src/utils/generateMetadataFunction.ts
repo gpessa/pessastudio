@@ -1,7 +1,7 @@
 import { MessageDescriptor } from "@lingui/core";
 import { Metadata } from "next";
 import { getI18nInstance } from "utils/appRouterI18n";
-import { LOCALES } from "utils/constants";
+import { LOCALES_ARRAY } from "utils/constants";
 import { PageLangParam } from "utils/initLingui";
 
 const generateMetadataFunction = (args: {
@@ -23,7 +23,7 @@ const generateMetadataFunction = (args: {
       description: undefined,
       alternates: {
         canonical: `${process.env.NEXT_PUBLIC_WEBISTE_URL}/${locale}${args.url}`,
-        languages: LOCALES.reduce(
+        languages: LOCALES_ARRAY.reduce(
           (acc, { code }) => ({
             ...acc,
             [code]: `${process.env.NEXT_PUBLIC_WEBISTE_URL}/${code}${args.url}`,
