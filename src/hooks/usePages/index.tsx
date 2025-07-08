@@ -5,7 +5,7 @@ export type Page = {
   title: string;
 };
 
-const PAGES_URL = {
+export const PAGES_URL = {
   OSTACOLI: "/ostacoli",
   RECINTI: "/recinti",
   TONDINI: "/tondini",
