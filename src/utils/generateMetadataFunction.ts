@@ -22,11 +22,11 @@ const generateMetadataFunction = (args: {
       title,
       description: undefined,
       alternates: {
-        canonical: `${process.env.NEXT_PUBLIC_WEBISTE_URL}/${locale}/${args.url}`,
+        canonical: `${process.env.NEXT_PUBLIC_WEBISTE_URL}/${locale}${args.url}`,
         languages: LOCALES.reduce(
           (acc, { code }) => ({
             ...acc,
-            [code]: `${process.env.NEXT_PUBLIC_WEBISTE_URL}/${code}/${args.url}`,
+            [code]: `${process.env.NEXT_PUBLIC_WEBISTE_URL}/${code}${args.url}`,
           }),
           {}
         ),
