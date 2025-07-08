@@ -6,10 +6,7 @@ import productsGiostreTecnoexerciserCoperturaCoperturaPvc_1 from "assets/product
 import productsGiostreTecnoexerciserCoperturaCoperturaPvc_2 from "assets/products/giostre/tecnoexerciser/copertura/copertura-pvc-2.jpg";
 import { Gallery, Section, Th } from "components";
 import { PRODUCT_GUTTER } from "theme";
-import {
-  GIOSTRA_COPERTURA_PVC_DESCRIZIONE,
-  GIOSTRE_COPERTURA_NOTE,
-} from "utils/constants";
+import { GIOSTRE_COPERTURA_NOTE } from "utils/constants";
 
 const TecnoexerciserCopertura = () => {
   const { t } = useLingui();
@@ -45,28 +42,36 @@ const TecnoexerciserCopertura = () => {
             <Trans>La copertura</Trans>
           </Th>
 
-          <Typography mx={{ marginBottom: 15 }}>
-            <Trans>
-              È possibile acquistare la giostra sprovvista di copertura ma se il
-              vostro obbiettivo è quello di poter lavorare 365 giorni all'anno,
-              Pessastudio, offre due possibili soluzioni abbinabili al corridoio{" "}
-              <strong>Exerciser</strong>.
-            </Trans>
-          </Typography>
+          <Trans>
+            <Typography mx={{ marginBottom: 15 }}>
+              La <strong>copertura in PVC</strong> è composta da una struttura
+              in acciaio zincato la quale sorregge un telo in tessuto di
+              poliestere spalmato di colore verde, bianco o crema e in base alle
+              esigenze del cliente anche in altre colorazioni.
+            </Typography>
 
-          {GIOSTRA_COPERTURA_PVC_DESCRIZIONE}
+            <Typography mx={{ marginBottom: 15 }}>
+              Questa copertura è in grado di sorreggere un carico neve pari a 80
+              kg/mq * e una forza vento pari a 110 Km/h.
+            </Typography>
 
-          <Typography mx={{ marginBottom: 15 }}>
-            <Trans>
-              L’alternativa alla copertura in PVC è la{" "}
-              <strong>copertura rigida</strong> in lastre di vetroresina. le
-              lastre vengono sorrette da una doppia struttura in acciaio zincato
-              che permette di avere una migliore distribuzione del peso in caso
-              di nevicata e una maggiore sicurezza in caso di forte vento. Una
-              soluzione che ti permetterà senza opere murarie di avere una
-              struttura robusta e durevole nel tempo.
-            </Trans>
-          </Typography>
+            <Typography mx={{ marginBottom: 15 }}>
+              L’alternativa alla <strong>copertura in PVC</strong> è la
+              copertura rigida formata da pannelli sandwich coibentati. I
+              pannelli hanno uno spessore di coibentazione pari a 1 cm che vi
+              permetterà oltre ad avere una robustezza maggiore di attutire il
+              suono delle intemperie ed evitare così che i cavalli si spaventino
+              durante le loro sessioni di allenamento.
+            </Typography>
+
+            <Typography>
+              I pannelli sandwich vengono sorretti da una doppia struttura in
+              acciaio zincato che permette di avere una migliore distribuzione
+              del peso in caso di nevicata e una maggiore sicurezza in caso di
+              forte vento. Una soluzione che ti permetterà senza opere murarie
+              di avere una struttura robusta e durevole nel tempo.
+            </Typography>
+          </Trans>
 
           {GIOSTRE_COPERTURA_NOTE}
         </Grid>

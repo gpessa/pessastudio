@@ -4,10 +4,7 @@ import productsGiostreTecnoexerciserCorridoioCompensatoMarino from "assets/produ
 import productsGiostreTecnoexerciserCorridoioTecnofence from "assets/products/giostre/tecnoexerciser/corridoio/tecnofence.jpg";
 import { Gallery, Section, Th } from "components";
 import { BREAKPOINT, PRODUCT_GUTTER } from "theme";
-import {
-  GIOSTRA_DESCRIZIONE_RECINZIONE_COMPENSATO_MARINO,
-  GIOSTRA_DESCRIZIONE_RECINZIONE_TECONOFENCE,
-} from "utils/constants";
+import { formatSize } from "utils/format";
 
 const TecnoexerciserCorridoi = () => {
   const { t } = useLingui();
@@ -39,18 +36,27 @@ const TecnoexerciserCorridoi = () => {
             <Trans>I corridoi</Trans>
           </Th>
 
-          <Typography mx={{ marginBottom: 15 }}>
-            <Trans>
-              La giostra puo essere acquistata scegliendo tra il piú economico
-              corridoio costituito dalla recinzione <strong>TECNOFENCE</strong>{" "}
-              o il robusto corridoio <strong>EXERCISER</strong> in pannelli in
-              compensato marino.
-            </Trans>
-          </Typography>
-
-          {GIOSTRA_DESCRIZIONE_RECINZIONE_TECONOFENCE}
-
-          {GIOSTRA_DESCRIZIONE_RECINZIONE_COMPENSATO_MARINO(18, "EXERCISER")}
+          <Trans>
+            <Typography mx={{ marginBottom: 15 }}>
+              Il corridoio exerciser in compensato marino è realizzato con un
+              pannelli di multistrato marino spessore {formatSize(18)}{" "}
+              antigraffio, antiurto, resistente allo sporco e idrorepellente.
+            </Typography>
+            <Typography mx={{ marginBottom: 15 }}>
+              L’obiettivo di questa soluzione è quello di fornire un elevato
+              grado di sicurezza forzando il cavallo a concentrarsi sul percorso
+              durante l’allenamento.
+            </Typography>
+            <Typography mx={{ marginBottom: 15 }}>
+              Il corridoio potrà essere installato a terra senza base di cemento
+              con puntazze elicoidali lunghezza {formatSize(60)} oppure con
+              barre filettate su base di cemento, questa scelta non
+              comprometterà la robustezza e durata della struttura. Installando
+              la struttura a terra senza base di cemento inoltre la struttura
+              rientra come struttura precaria evitando così innumerevoli
+              permessi edilizi.
+            </Typography>
+          </Trans>
         </Grid>
         <Grid
           size={{

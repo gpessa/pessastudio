@@ -29,9 +29,8 @@ const GiostreTecnoexerciser: React.FC = () => {
               </Typography>
               <Typography mx={{ marginBottom: 15 }}>
                 Oggi, grazie alle già note caratteristiche tecniche e alla
-                grande affidabilità, abbiamo aggiunto alcune specifiche funzioni
-                che fanno, di questo modello, la macchina{" "}
-                <strong>leader</strong> del settore.
+                grande affidabilità. Abbiamo aggiunto alcune specifiche che
+                fanno, di questo modello, la macchina leader del settore.
               </Typography>
               <Typography mx={{ marginBottom: 15 }}>
                 È possibile infatti:
@@ -41,24 +40,27 @@ const GiostreTecnoexerciser: React.FC = () => {
                   Scegliere la forza che la porta mobile esercita sugli animali
                   per invitarli ad avanzare
                 </li>
+
                 <li>
                   Mantenere un controllo costante sull'elettrificazione delle
-                  porte mobili
+                  porte mobili{" "}
                 </li>
+
                 <li>
                   Beneficiare dell'innovativo sistema "training program" che vi
                   consentirà di allenare i vostri cavalli fino ad ottenere
                   performance atletiche.
                 </li>
+
                 <li>
                   Scegliere il programma di irrigazione pesta mentre la giostra
-                  sta girando
+                  sta girando{" "}
                 </li>
               </Ul>
               <Typography mx={{ marginBottom: 15 }}>
-                La struttura è fornita, a seconda delle esigenze, o con punte
-                per l'ancoraggio al suolo o con tasselli nel caso in cui si
-                desideri ancorarla ad un fondo di calcestruzzo.
+                Il cliente potrà scegliere tra una{" "}
+                <strong>copertura in pvc</strong> e una{" "}
+                <strong>copertura con pannelli sandwich coibentati</strong>.
               </Typography>
             </Trans>
           </>
