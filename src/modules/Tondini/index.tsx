@@ -27,7 +27,7 @@ import productsTondiniAccessoriCoperturaTerra_1 from "assets/products/tondini/ac
 import productsTondiniAccessoriIrrigazione_1 from "assets/products/tondini/accessori/irrigazione-1.jpg";
 import { AccessoriProps } from "components/Accessori";
 import { BeneftisProps } from "components/Benefits";
-import { usePages, useProducts } from "hooks";
+import { usePages } from "hooks";
 import image from "./assets/background.jpg";
 export { getStaticProps } from "utils/getProps";
 
@@ -36,13 +36,6 @@ const Tondini: React.FC = () => {
     i18n: { locale },
   } = useLingui(); // Fix on locale change
   const { PAGES } = usePages();
-  const {
-    TONDINO_1320,
-    TONDINO_1500,
-    TONDINO_1660,
-    TONDINO_1830,
-    TONDINO_1990,
-  } = useProducts();
 
   const ACCESSORI: AccessoriProps = {
     accessories: [
@@ -275,14 +268,16 @@ const Tondini: React.FC = () => {
             size={{
               md: 6,
               xs: 12,
-            }}>
+            }}
+          >
             <ContentTable title={<Trans>Dimensioni</Trans>} rows={DIMENSIONS} />
           </Grid>
           <Grid
             size={{
               md: 6,
               xs: 12,
-            }}>
+            }}
+          >
             <ContentTable title={<Trans>Manuali</Trans>} rows={MANUALS} />
           </Grid>
         </Grid>
