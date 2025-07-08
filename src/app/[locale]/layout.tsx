@@ -108,7 +108,7 @@ export default async function RootLayout({
             >
               <Header />
               <Breadcrumb />
-              {children}
+              <main role="main">{children}</main>
               <Footer version={version} />
               <Gdpr />
               <WhatsApp />

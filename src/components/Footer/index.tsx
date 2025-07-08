@@ -29,7 +29,7 @@ const Footer: React.FC<{ version: string }> = ({ version }) => {
   const isDesktop = useMediaQuery(theme.breakpoints.up(BREAKPOINT));
 
   return (
-    <footer>
+    <footer role="contentinfo">
       <Section color="warm2">
         <Grid container justifyContent="space-evenly">
           <Grid

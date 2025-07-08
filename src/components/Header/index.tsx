@@ -97,7 +97,7 @@ const Header: React.FC = () => {
       <ToolbarStyled>
         <Logo />
 
-        <HeaderDesktop direction="row" spacing={2}>
+        <HeaderDesktop direction="row" spacing={2} role="navigation">
           {Object.values(NAVIGATION).map(({ url, title }) => (
             <Link passHref key={url} href={url}>
               <HeaderDesktopButtom
@@ -129,7 +129,7 @@ const Header: React.FC = () => {
       </ToolbarStyled>
 
       {open && (
-        <MenuMobileStyled>
+        <MenuMobileStyled role="navigation">
           {Object.values(NAVIGATION).map(({ url, title }) => (
             <Link key={url} href={url} passHref>
               <ListItem component="a">
