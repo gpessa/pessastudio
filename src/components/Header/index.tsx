@@ -8,6 +8,7 @@ import {
   AppBar,
   Box,
   Button,
+  Stack,
   Divider,
   IconButton,
   List,
@@ -33,10 +34,8 @@ const ToolbarStyled = styled(Toolbar)(() => ({
   justifyContent: "space-between",
 }));
 
-const HeaderDesktop = styled(Box)(({ theme }) => ({
-  alignItems: "center",
+const HeaderDesktop = styled(Stack)(({ theme }) => ({
   display: "none",
-  width: "fit-content",
   [theme.breakpoints.up(BREAKPOINT)]: {
     display: "flex",
   },
@@ -51,14 +50,13 @@ const HeaderDesktopButtom = styled(Button)<{ selected: boolean }>(
       ? theme.typography.fontWeightBold
       : theme.typography.fontWeightRegular,
     lineHeight: 1,
-    marginLeft: theme.spacing(3),
-    paddingBottom: theme.spacing(3),
-    paddingTop: theme.spacing(3),
     textTransform: "uppercase",
+    textAlign: "left",
+    height: 64,
   })
 );
 
-const HeaderDesktopDivider = styled(Divider)(({ theme }) => ({
+const HeaderDivider = styled(Divider)(({ theme }) => ({
   display: "none",
   margin: theme.spacing(3),
   marginBottom: theme.spacing(2),
@@ -99,7 +97,7 @@ const Header: React.FC = () => {
       <ToolbarStyled>
         <Logo />
 
-        <HeaderDesktop>
+        <HeaderDesktop direction="row" spacing={2}>
           {Object.values(NAVIGATION).map(({ url, title }) => (
             <Link passHref key={url} href={url}>
               <HeaderDesktopButtom
@@ -111,13 +109,13 @@ const Header: React.FC = () => {
               </HeaderDesktopButtom>
             </Link>
           ))}
-          <HeaderDesktopDivider orientation="vertical" flexItem />
+          {/* <HeaderDivider orientation="vertical" flexItem /> */}
           <LanguageSelector />
         </HeaderDesktop>
 
         <HeaderMobile>
           <LanguageSelector />
-          <HeaderDesktopDivider />
+          <HeaderDivider />
           <IconButton
             edge="end"
             size="large"
