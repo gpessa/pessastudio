@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 import { Box, Grid } from "@mui/material";
 import { ProductData } from "hooks/useProducts";

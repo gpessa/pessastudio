@@ -3,11 +3,41 @@ import RemoveRedEyeRounded from "@mui/icons-material/RemoveRedEyeRounded";
 import { IconButton, Typography } from "@mui/material";
 import { PRODUCT_GUTTER } from "theme";
 
-export const isProduction = !!process && process.env.NODE_ENV === "production";
-
+export const PIXEL_ID = process.env.NEXT_PUBLIC_PIXEL_ID;
+export const GOOGLE_ANALYTICS = process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS;
+export const IS_PRODUCTION = !!process && process.env.NODE_ENV === "production";
 export const NAME_STRING = "Pessastudio";
 export const NAME_LEGAL_STRING = `${NAME_STRING} Horse Tecnology srl`;
 export const NAME = <strong>{NAME_STRING}</strong>;
+
+export const LOCALES = {
+  it: {
+    code: "it",
+    hrefLang: "it",
+    name: "Italian",
+    localName: "Italiano",
+    langDir: "ltr",
+    dateFormat: "DD.MM.YYYY",
+  },
+  fr: {
+    code: "fr",
+    hrefLang: "fr",
+    name: "French",
+    localName: "Français",
+    langDir: "ltr",
+    dateFormat: "DD.MM.YYYY",
+  },
+  en: {
+    code: "en",
+    hrefLang: "en",
+    name: "English",
+    localName: "English",
+    langDir: "ltr",
+    dateFormat: "DD.MM.YYYY",
+  },
+};
+
+export const LOCALES_ARRAY = Object.values(LOCALES);
 
 export const DRESSAGE_MODELS = {
   OLYMPIC: "Olympic",
@@ -139,7 +169,7 @@ export const ITALIA = {
   whatsapp: "+39 349 0543098",
 };
 
-export const WEBSITE = process.env.NEXT_PUBLIC_WEBISTE_URL!;
+export const WEBISTE_URL = process.env.NEXT_PUBLIC_WEBISTE_URL!;
 
 export const GIOSTRA_TONDINO_CHIUSURA_A_TERRA_DESCRIZIONE = (
   <Trans>

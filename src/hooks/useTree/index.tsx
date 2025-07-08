@@ -1,4 +1,4 @@
-import { WEBSITE } from "utils/constants";
+import { WEBISTE_URL } from "utils/constants";
 import usePages, { Page } from "../usePages";
 
 export type BreadcrumbList = (Page & { absoluteUrl: string })[];
@@ -14,6 +14,7 @@ const useTree = (path: string): BreadcrumbList => {
   const { urls } = fragments.reduce(
     ({ urls, last }, fragment) => {
       last = [last, fragment].join("/");
+
       const page = findPage(last);
 
       return {
@@ -26,7 +27,7 @@ const useTree = (path: string): BreadcrumbList => {
 
   return urls.map((page) => ({
     ...page,
-    absoluteUrl: WEBSITE + page.url,
+    absoluteUrl: WEBISTE_URL + page.url,
   }));
 };
 

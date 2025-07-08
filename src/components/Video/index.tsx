@@ -1,3 +1,5 @@
+"use client";
+
 import { styled } from "@mui/material/styles";
 import { YouTubeEmbed } from "@next/third-parties/google";
 import React from "react";

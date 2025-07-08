@@ -1,3 +1,4 @@
+import { useLingui } from "@lingui/react/macro";
 import {
   Avatar,
   Dialog,
@@ -8,14 +9,15 @@ import {
   ListItemAvatar,
   ListItemButton,
   ListItemText,
+  styled,
   Tooltip,
 } from "@mui/material";
 import Image from "next/image";
 import Link from "next/link";
-import { useRouter } from "next/router";
+import { usePathname } from "next/navigation";
 import * as React from "react";
 import { useEffect, useState } from "react";
-import linguiConfig from "i18n/config.json";
+import { LOCALES_ARRAY } from "utils/constants";
 
 const LOCALE_ICONS: { [key: string]: string } = {
   en: require(`flag-icons/flags/1x1/gb.svg`),
@@ -25,20 +27,24 @@ const LOCALE_ICONS: { [key: string]: string } = {
 
 const DIM = 20;
 
+const LinkStyled = styled(Link)({
+  display: "flex",
+  textDecoration: "none",
+  color: "inherit",
+});
+
 const HeaderLanguageSelector: React.FC = () => {
-  const { locales, locale } = useRouter();
+  const {
+    i18n: { locale },
+  } = useLingui();
+  const pathname = usePathname();
   const [show, setShow] = useState(false);
-  const { pathname } = useRouter();
 
   useEffect(() => {
     setShow(false);
   }, [locale]);
 
   const handleModal = () => setShow((prevCount) => !prevCount);
-
-  const getLocaleName = (locale: string): string => {
-    return linguiConfig.find((lang) => lang.code === locale)!.localName;
-  };
 
   return (
     <>
@@ -47,7 +53,7 @@ const HeaderLanguageSelector: React.FC = () => {
           <Avatar sx={{ height: DIM, width: DIM }}>
             <Image
               src={LOCALE_ICONS[locale!]}
-              alt={locale!}
+              alt={locale}
               width={DIM}
               height={DIM}
             />
@@ -58,23 +64,23 @@ const HeaderLanguageSelector: React.FC = () => {
       <Dialog open={show} onClose={handleModal}>
         <DialogTitle>Choose a language</DialogTitle>
         <List disablePadding component="nav">
-          {(locales || []).map((locale) => (
-            <ListItem disableGutters key={locale}>
-              <Link href={pathname} locale={locale} passHref legacyBehavior>
-                <ListItemButton component="a">
+          {LOCALES_ARRAY.map(({ code, name }) => (
+            <ListItem disableGutters key={code} sx={{ display: "block" }}>
+              <LinkStyled href={pathname.replace(`/${locale}`, `/${code}`)}>
+                <ListItemButton>
                   <ListItemAvatar>
                     <Avatar sx={{ height: DIM, width: DIM }}>
                       <Image
-                        src={LOCALE_ICONS[locale!]}
+                        src={LOCALE_ICONS[code]}
                         alt={locale}
                         width={DIM}
                         height={DIM}
                       />
                     </Avatar>
                   </ListItemAvatar>
-                  <ListItemText primary={getLocaleName(locale)} />
+                  <ListItemText primary={name} />
                 </ListItemButton>
-              </Link>
+              </LinkStyled>
             </ListItem>
           ))}
         </List>

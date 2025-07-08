@@ -1,13 +1,15 @@
-import { Box, Stack, SvgIconTypeMap } from "@mui/material";
+"use client";
+
+import { Box, Stack, SvgIconTypeMap, Typography } from "@mui/material";
 import React from "react";
 import { OverridableComponent } from "@mui/material/OverridableComponent";
-import { ReactElement } from "react";
+import { ReactNode } from "react";
 import Th from "components/Th";
 
 export type BenefitsItemProps = {
   icon?: OverridableComponent<SvgIconTypeMap<{}, "svg">>;
-  description: string | ReactElement;
-  title: string | ReactElement;
+  description: ReactNode;
+  title: ReactNode;
 };
 
 const BenefitsItem: React.FC<BenefitsItemProps> = ({
@@ -28,7 +30,7 @@ const BenefitsItem: React.FC<BenefitsItemProps> = ({
         {title}
       </Th>
     </Stack>
-    <div>{description}</div>
+    <Typography>{description}</Typography>
   </Box>
 );
 
