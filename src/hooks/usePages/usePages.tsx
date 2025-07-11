@@ -7,7 +7,7 @@ export type PageTranslated = {
   description?: string;
 };
 
-const usePages = () => {
+export const usePages = () => {
   const {
     t,
     i18n: { locale },
@@ -41,8 +41,3 @@ const usePages = () => {
     PRODUCTS: PRODUCTS_TRANSLATED,
   };
 };
-
-export { getPages };
-export type { Page, PageId };
-
-export default usePages;

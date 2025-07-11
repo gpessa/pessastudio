@@ -11,7 +11,7 @@ export type Page = {
 
 export type PageId = keyof ReturnType<typeof getPages>["PAGES"];
 
-const getPages = (locale: string) => {
+export const getPages = (locale: string) => {
   const OSTACOLI: Page = {
     title: msg`Ostacoli`,
     description: msg`Prodotti professionali, sono lo strumento di lavoro indispensabile in un centro ippico o un maneggio. Progettati e costruiti per durare nel tempo senza alcuna manutenzione`,
@@ -132,5 +132,3 @@ const getPages = (locale: string) => {
     PRODUCTS,
   };
 };
-
-export default getPages;

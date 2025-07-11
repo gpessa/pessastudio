@@ -48,15 +48,6 @@ export const SOCIALS = {
   youtube: "https://www.youtube.com/channel/UC_eIQlt5-iLt2KEVTK5DOPg",
 };
 
-export enum Material {
-  ACCIAIO_ZINCATO,
-  PLASTICA,
-  POLIETILENE,
-  POLIPROPILENE,
-  PVC,
-  TECNOPOLIMERO,
-}
-
 export const SEDE_LEGALE = {
   addressLocality: "Monselice",
   addressRegion: "Padova",
