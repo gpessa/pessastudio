@@ -4,9 +4,9 @@ import { Trans } from "@lingui/react/macro";
 import { Box, Grid, Link, Typography } from "@mui/material";
 import { Columns, ContactUs, Gallery, Product, Section, Th } from "components";
 import { usePages, useProducts } from "hooks";
+import { DressageModels } from "hooks/useProducts";
 import React from "react";
 import { PRODUCT_GUTTER } from "theme";
-import { DRESSAGE_MODELS } from "utils/constants";
 
 const Dressage: React.FC = () => {
   const { PAGES } = usePages();
@@ -46,7 +46,7 @@ const Dressage: React.FC = () => {
         right={<Gallery images={IMAGES} />}
       />
       <Section id="dressage-training" color="warm1">
-        <Th variant="h2">{DRESSAGE_MODELS.TRAINING}</Th>
+        <Th variant="h2">{DressageModels.TRAINING}</Th>
         <Box sx={{ mb: PRODUCT_GUTTER }}>
           <Trans>
             <Typography>
@@ -90,7 +90,7 @@ const Dressage: React.FC = () => {
         </Grid>
       </Section>
       <Section id="dressage-olympic">
-        <Th variant="h2">{DRESSAGE_MODELS.OLYMPIC}</Th>
+        <Th variant="h2">{DressageModels.OLYMPIC}</Th>
         <Box sx={{ mb: PRODUCT_GUTTER }}>
           <Trans>
             <Typography>
