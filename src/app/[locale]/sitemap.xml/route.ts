@@ -1,6 +1,6 @@
+import { getPages } from "hooks/usePages";
 import type { NextRequest } from "next/server";
 import { WEBISTE_URL } from "utils/constants";
-import getPages from "utils/getPages";
 import { create } from "xmlbuilder2";
 
 export async function GET(request: NextRequest) {

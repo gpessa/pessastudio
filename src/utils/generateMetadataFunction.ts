@@ -1,9 +1,8 @@
+import { getPages, PageId } from "hooks/usePages";
 import { Metadata } from "next";
 import { getI18nInstance } from "utils/appRouterI18n";
 import { LOCALES_ARRAY, WEBISTE_URL } from "utils/constants";
-import { PageId } from "utils/getPages";
 import { PageLangParam } from "utils/initLingui";
-import getPages from "utils/getPages";
 
 const generateMetadataFunction = (pageId: PageId) => {
   return async function generateMetadata(

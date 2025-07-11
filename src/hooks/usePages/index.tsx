@@ -1,5 +1,5 @@
 import { useLingui } from "@lingui/react/macro";
-import getPages, { Page } from "utils/getPages";
+import getPages, { Page, PageId } from "./utils/getPages";
 
 export type PageTranslated = {
   url: string;
@@ -41,5 +41,8 @@ const usePages = () => {
     PRODUCTS: PRODUCTS_TRANSLATED,
   };
 };
+
+export { getPages };
+export type { Page, PageId };
 
 export default usePages;
