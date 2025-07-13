@@ -49,7 +49,7 @@ const HeaderLanguageSelector: React.FC = () => {
   return (
     <>
       <Tooltip title="Change language">
-        <IconButton onClick={handleModal}>
+        <IconButton onClick={handleModal} sx={{ alignSelf: "center" }}>
           <Avatar sx={{ height: DIM, width: DIM }}>
             <Image
               src={LOCALE_ICONS[locale!]}
