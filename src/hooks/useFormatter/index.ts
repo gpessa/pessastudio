@@ -1,47 +1,35 @@
-// import { i18n } from "@lingui/core/macro";
-
-import { i18n } from "@lingui/core";
-
 const useFormatter = () => {
-  // const { i18n } = useLingui();
+  const country = "de-DE"; // Assuming the locale is German (Germany)
 
   const formatSize = (v: number) =>
-    i18n.number(v, {
-      notation: "standard",
-    }) + " cm";
+    new Intl.NumberFormat(country, {
+      minimumFractionDigits: 0,
+      maximumFractionDigits: 2,
+    }).format(v) + " cm";
 
   const formatWeight = (v: number) =>
-    i18n.number(v, {
-      notation: "compact",
-      style: "unit",
-      unit: "kilogram",
-      unitDisplay: "short",
-    });
+    new Intl.NumberFormat(country, {
+      minimumFractionDigits: 0,
+      maximumFractionDigits: 2,
+    }).format(v) + " kg";
 
   const formatSizeMeter = (v: number) =>
-    i18n.number(v / 100, {
-      notation: "standard",
-    }) + " mt";
+    new Intl.NumberFormat(country, {
+      minimumFractionDigits: 0,
+      maximumFractionDigits: 2,
+    }).format(v / 100) + " mt";
 
   const formatPrice = (v: number) =>
-    i18n.number(v, {
-      currency: "EUR",
+    new Intl.NumberFormat(country, {
       style: "currency",
-    });
-
-  const formatPriceFeed = (v: number) =>
-    i18n.number(v, {
       currency: "EUR",
-      currencyDisplay: "code",
-      style: "currency",
-    });
+    }).format(v);
 
   return {
     formatSize,
     formatWeight,
     formatSizeMeter,
     formatPrice,
-    formatPriceFeed,
   };
 };
 
