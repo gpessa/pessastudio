@@ -1,5 +1,5 @@
 import type { MetadataRoute } from "next";
-import { WEBISTE_URL } from "utils/constants";
+import { LOCALES, LOCALES_ARRAY, WEBISTE_URL } from "utils/constants";
 
 export default function robots(): MetadataRoute.Robots {
   return {
@@ -9,6 +9,8 @@ export default function robots(): MetadataRoute.Robots {
       disallow: "/private/",
     },
     host: WEBISTE_URL,
-    sitemap: `${WEBISTE_URL}/sitemap.xml`,
+    sitemap: LOCALES_ARRAY.map(
+      (locale) => `${WEBISTE_URL}/${locale}/sitemap.xml`
+    ),
   };
 }
