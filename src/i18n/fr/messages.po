@@ -11,7 +11,7 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: \n"
-"X-Generator: Poedit 3.5\n"
+"X-Generator: Poedit 3.6\n"
 
 #: src/modules/Giostre/index.tsx:42
 msgid "{NAME} è stata scelta da oltre 3.000 clienti in tutto il mondo per la realizzazione della propria giostra."
@@ -116,9 +116,9 @@ msgstr "<0>Excellente pour enseigner à vos chevaux/poulains à la sauter.</0><1
 msgid "<0>Porte di separazione.</0><1>(Elettrificatione 200-240 Volt monofase)</1>"
 msgstr "<0>Portes de séparation.</0><1>(Électrification 200-240 volts monophasé).</1>"
 
-#: src/modules/Ostacoli/Barriere.tsx:18
-msgid "<0>Sono le componenti dell'ostacolo più stressate, poiché, come i candelieri e i pilieri, sono perennemente sottoposte all'azione aggressiva degli agenti atmosferici (caldo, freddo, sole, pioggia). A questi si aggiungono anche gli urti degli zoccoli dei cavalli, frequenti ribaltamenti e le manipolazioni necessarie per aggiustarne le altezze.</0><1>Le barriere di abete, comunemente usate, richiedono una continua manutenzione perché si piegano, scoloriscono nel tempo e si rompono frequentemente.</1><2>Le barriere sintetiche di Pessastudio, invece, hanno lo stesso peso di quelle in abete, ma perdono il loro colore solamente dopo anni, non si scrostano e, solo raramente, si rompono sotto l'azione di un carico eccessivo.</2>"
-msgstr "<0>Ce sont les composants de l’obstacle les plus sollicités parce qu’à l’instar des chandeliers et des poteaux, elles sont constamment soumises à l’action agressive des agents atmosphériques (chaleur, froid, soleil, pluie). Viennent s’ajouter les chocs des sabots, les renversements fréquents et les manipulations nécessaires pour régler les hauteurs.</0><1>Les barres d’obstacle en pin, couramment utilisées, requièrent un entretien constant car elles se plient, se décolorent au fil du temps et se cassent fréquemment.</1><2>Les barres synthétiques de Pessastudio ont le même poids que les barres en pin, à la différence qu’elles mettent des années avant de perdre leur couleur, elles ne s’écaillent pas et ne se cassent que rarement sous l’action d’une charge excessive.</2>"
+#: src/modules/Ostacoli/Barriere.tsx:19
+msgid "<0>Sono le componenti dell'ostacolo più stressate, poiché, come i candelieri e i pilieri, sono perennemente sottoposte all'azione aggressiva degli agenti atmosferici (caldo, freddo, sole, pioggia). A questi si aggiungono anche gli urti degli zoccoli dei cavalli, frequenti ribaltamenti e le manipolazioni necessarie per aggiustarne le altezze.</0><1>Le barriere di abete, comunemente usate, richiedono una continua manutenzione perché si piegano, scoloriscono nel tempo e si rompono frequentemente.</1><2>Le barriere sintetiche di {NAME}, invece, hanno lo stesso peso di quelle in abete, ma perdono il loro colore solamente dopo anni, non si scrostano e, solo raramente, si rompono sotto l'azione di un carico eccessivo.</2>"
+msgstr "<0>Ce sont les éléments de l’obstacle les plus sollicités car, tout comme les chandeliers et les montants, ils sont constamment exposés aux agressions des intempéries (chaleur, froid, soleil, pluie). À cela s’ajoutent les chocs causés par les sabots des chevaux, les renversements fréquents et les manipulations nécessaires pour ajuster leur hauteur.</0><1>Les barres en sapin, couramment utilisées, nécessitent un entretien constant car elles se déforment, se décolorent avec le temps et se cassent fréquemment.</1><2>Les barres synthétiques de {NAME}, en revanche, ont le même poids que celles en sapin, mais conservent leur couleur pendant des années, ne s’écaillent pas et ne se cassent que très rarement sous l’effet d’une charge excessive.</2>"
 
 #: src/modules/GiostreTecnoexerciser/index.tsx:24
 msgid "<0>Tecnoexerciser è il modello di giostra attualmente più richiesto.</0><1>Oggi, grazie alle già note caratteristiche tecniche e alla grande affidabilità, abbiamo aggiunto alcune specifiche funzioni che fanno, di questo modello, la macchina <2>leader</2> del settore.</1><3>È possibile infatti:</3><4><5>Scegliere la forza che la porta mobile esercita sugli animali per invitarli ad avanzare</5><6>Mantenere un controllo costante sull'elettrificazione delle porte mobili</6><7>Beneficiare dell'innovativo sistema \"training program\" che vi consentirà di allenare i vostri cavalli fino ad ottenere performance atletiche.</7><8>Scegliere il programma di irrigazione pesta mentre la giostra sta girando</8></4><9>La struttura è fornita, a seconda delle esigenze, o con punte per l'ancoraggio al suolo o con tasselli nel caso in cui si desideri ancorarla ad un fondo di calcestruzzo.</9>"
@@ -155,7 +155,7 @@ msgstr "Hauteur"
 
 #: src/modules/GiostreTecnoexerciser/_servizio_clienti.tsx:82
 msgid "Altro"
-msgstr ""
+msgstr "Autre"
 
 #: src/utils/constants.tsx:190
 #: src/utils/constants.tsx:207
@@ -192,7 +192,7 @@ msgstr "Fanions réalisés en plastique résistant aux chocs. Idéals pour les e
 msgid "Barriera per campo ostacoli (3 mt.)"
 msgstr "Barres d'obstacles pour Chevaux (3 mètres)"
 
-#: src/modules/Ostacoli/Barriere.tsx:16
+#: src/modules/Ostacoli/Barriere.tsx:17
 msgid "Barriere"
 msgstr "Barres d'obstacles pour Chevaux"
 
@@ -234,7 +234,7 @@ msgstr "Fermeture au sol"
 
 #: src/components/WhatsApp/index.tsx:34
 msgid "Ciao, come posso aiutarti"
-msgstr ""
+msgstr "Bonjour, comment puis-je vous aider ?"
 
 #: src/components/Footer/index.tsx:78
 msgid "COD. FISC. e Part: I.V.A. 04743610281 C.C.I.A.A. PD - R.E.A. 414822"
@@ -552,7 +552,7 @@ msgstr "Marcheur"
 #: src/hooks/usePages/utils/index.tsx:89
 #: src/hooks/usePages/utils/index.tsx:101
 msgid "Giostre {0}"
-msgstr ""
+msgstr "Marcheurs pour chevaux {0}"
 
 #: src/modules/Index/index.tsx:46
 msgid "Gli ostacoli sono arrivati. Sono fantastici!"
@@ -1086,12 +1086,12 @@ msgstr "Découvrez notre gamme de produits"
 #. placeholder {0}: GIOSTRE_MODELS.IPPOWALKER
 #: src/hooks/usePages/utils/index.tsx:91
 msgid "Scopri la nostra giostra {0}, lo strumento economico adatto ad allenare il tuo cavallo o il tuo puledro"
-msgstr ""
+msgstr "Découvrez notre marcheur pour chevaux {0}, l’outil économique adapté pour entraîner votre cheval ou votre poulain"
 
 #. placeholder {0}: GIOSTRE_MODELS.TECNOEXERCISER
 #: src/hooks/usePages/utils/index.tsx:102
 msgid "Scopri la nostra giostra {0}, lo strumento professionale adatto ad allenare il tuo cavallo o il tuo puledro"
-msgstr ""
+msgstr "Découvrez notre marcheur pour chevaux {0}, l’outil professionnel adapté pour entraîner votre cheval ou votre poulain"
 
 #: src/modules/Index/index.tsx:150
 msgid "Scopri la qualità dei nostri prodotti attraverso la testimonianza dei clienti"
@@ -1222,7 +1222,7 @@ msgstr "Tradition et qualité"
 
 #: src/hooks/useProducts/utils/index.tsx:79
 msgid "Trasforma qualsiasi terreno in un'arena da dressage con questi coni da dressage. Facili da posizionare, leggeri e anche sicuri per il tuo cavallo. Le nostre lettere in PVC resistente ai raggi solari sono durevoli e leggibili in tutte le condizioni climatiche. Facili da posizionare, offrono un'ottima resistenza agli agenti atmosferici a un prezzo conveniente."
-msgstr ""
+msgstr "Transformez n'importe quel terrain en une carrière de dressage avec ces cônes de dressage. Faciles à installer, légers et sûrs pour votre cheval. Nos lettres en PVC résistantes aux UV sont durables et lisibles par tous les temps. Faciles à positionner, elles offrent une excellente résistance aux intempéries à un prix abordable."
 
 #: src/modules/Tondini/index.tsx:66
 msgid "Tutti i cavalieri sanno quanto sia spiacevole cavalcare in un ambiente polveroso.<0/>La polvere può contribuire a problemi respiratori per te e per i tuoi cavalli e può indicare che il fondo non fornisce un adeguato un supporto allo zoccolo del cavallo. <1/>Per ovviare a questo problema, è possibile installare il nostro sistema di irrigazione. Un rosone verrà posizionato al centro del tondino e ti permetterà di irrigarlo facilmente."
@@ -1230,7 +1230,7 @@ msgstr "Le rond de longe peut disposer d’une rosace placée au centre, qui per
 
 #: src/modules/CookiePolicy/index.tsx:54
 msgid "Un cookie è un file di piccole dimensioni che viene inviato al browser in uso e salvato sul tuo dispositivo quando visiti un sito internet come {WEBISTE_URL} (‘il sito’). I cookie permettono un funzionamento efficiente del sito e ne migliorano le prestazioni, inoltre forniscono informazioni al proprietario del sito per fini statistici o pubblicitari, principalmente per personalizzare la tua esperienza di navigazione ricordando le tue preferenze (per esempio ricordare la lingua e la valuta che hai impostato, per riconoscerti alla visita successiva, ecc.)."
-msgstr ""
+msgstr "Un cookie est un petit fichier envoyé à votre navigateur et enregistré sur votre appareil lorsque vous visitez un site internet tel que {WEBISTE_URL} (« le site »). Les cookies permettent un fonctionnement efficace du site et en améliorent les performances. Ils fournissent également des informations au propriétaire du site à des fins statistiques ou publicitaires, principalement pour personnaliser votre expérience de navigation en mémorisant vos préférences (par exemple, retenir la langue et la devise que vous avez définies, vous reconnaître lors de votre prochaine visite, etc.)."
 
 #: src/hooks/usePages/utils/index.tsx:79
 msgid "Un recinto da cavalli in PVC. Indistruttibile anche in presenza delle più avverse condizioni meteorologiche"
@@ -1250,7 +1250,7 @@ msgstr "Nous utilisons des cookies pour assurer le bon fonctionnement du site. P
 
 #: src/components/ContentTable/index.tsx:58
 msgid "Vedi"
-msgstr ""
+msgstr "Consulter"
 
 #: src/components/ContactUs/index.tsx:19
 msgid "Vuoi maggiori informazioni?"

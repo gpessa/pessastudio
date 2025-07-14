@@ -11,7 +11,7 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: \n"
-"X-Generator: Poedit 3.5\n"
+"X-Generator: Poedit 3.6\n"
 
 #: src/modules/Giostre/index.tsx:42
 msgid "{NAME} è stata scelta da oltre 3.000 clienti in tutto il mondo per la realizzazione della propria giostra."
@@ -108,11 +108,9 @@ msgstr "<0>A great way to desensitize your horse before you encounter the water 
 msgid "<0>Porte di separazione.</0><1>(Elettrificatione 200-240 Volt monofase)</1>"
 msgstr "<0>Electrified Pushers</0>"
 
-#: src/modules/Ostacoli/Barriere.tsx:18
-msgid "<0>Sono le componenti dell'ostacolo più stressate, poiché, come i candelieri e i pilieri, sono perennemente sottoposte all'azione aggressiva degli agenti atmosferici (caldo, freddo, sole, pioggia). A questi si aggiungono anche gli urti degli zoccoli dei cavalli, frequenti ribaltamenti e le manipolazioni necessarie per aggiustarne le altezze.</0><1>Le barriere di abete, comunemente usate, richiedono una continua manutenzione perché si piegano, scoloriscono nel tempo e si rompono frequentemente.</1><2>Le barriere sintetiche di Pessastudio, invece, hanno lo stesso peso di quelle in abete, ma perdono il loro colore solamente dopo anni, non si scrostano e, solo raramente, si rompono sotto l'azione di un carico eccessivo.</2>"
-msgstr ""
-"<0>These are the most overworked parts of a jump field, like the jump standards. They are constantly subjected to the elements (heat, cold, sun, rain), to constant contact from the horses’ hooves, and the frequent adjustment of the height of the poles.</0>\n"
-"<1>The commonly used fir barriers require continuous maintenance because they bend, discolour over time and break frequently.</1><2>Pessastudio’s synthetic barriers, on the other hand, have the same weight as those made in fir, but they maintain their colour even after years os use and do not peel. It is rare that they break in case of excessive load.</2>"
+#: src/modules/Ostacoli/Barriere.tsx:19
+msgid "<0>Sono le componenti dell'ostacolo più stressate, poiché, come i candelieri e i pilieri, sono perennemente sottoposte all'azione aggressiva degli agenti atmosferici (caldo, freddo, sole, pioggia). A questi si aggiungono anche gli urti degli zoccoli dei cavalli, frequenti ribaltamenti e le manipolazioni necessarie per aggiustarne le altezze.</0><1>Le barriere di abete, comunemente usate, richiedono una continua manutenzione perché si piegano, scoloriscono nel tempo e si rompono frequentemente.</1><2>Le barriere sintetiche di {NAME}, invece, hanno lo stesso peso di quelle in abete, ma perdono il loro colore solamente dopo anni, non si scrostano e, solo raramente, si rompono sotto l'azione di un carico eccessivo.</2>"
+msgstr "<0>They are the most stressed components of the obstacle, since—like the standards and uprights—they are constantly exposed to the harsh effects of the weather (heat, cold, sun, rain). In addition, they are subject to impacts from horses’ hooves, frequent falls, and the handling required to adjust their height.</0><1>Commonly used fir rails require constant maintenance because they bend, fade over time, and often break.</1><2>{NAME}’s synthetic rails, on the other hand, have the same weight as fir rails, but retain their color for years, do not chip, and only rarely break under excessive load.</2>"
 
 #: src/modules/GiostreTecnoexerciser/index.tsx:24
 msgid "<0>Tecnoexerciser è il modello di giostra attualmente più richiesto.</0><1>Oggi, grazie alle già note caratteristiche tecniche e alla grande affidabilità, abbiamo aggiunto alcune specifiche funzioni che fanno, di questo modello, la macchina <2>leader</2> del settore.</1><3>È possibile infatti:</3><4><5>Scegliere la forza che la porta mobile esercita sugli animali per invitarli ad avanzare</5><6>Mantenere un controllo costante sull'elettrificazione delle porte mobili</6><7>Beneficiare dell'innovativo sistema \"training program\" che vi consentirà di allenare i vostri cavalli fino ad ottenere performance atletiche.</7><8>Scegliere il programma di irrigazione pesta mentre la giostra sta girando</8></4><9>La struttura è fornita, a seconda delle esigenze, o con punte per l'ancoraggio al suolo o con tasselli nel caso in cui si desideri ancorarla ad un fondo di calcestruzzo.</9>"
@@ -186,7 +184,7 @@ msgstr "Jump flags made from impact-resistant plastic. Ideal for training and co
 msgid "Barriera per campo ostacoli (3 mt.)"
 msgstr "Show jump poles (3 mt.)"
 
-#: src/modules/Ostacoli/Barriere.tsx:16
+#: src/modules/Ostacoli/Barriere.tsx:17
 msgid "Barriere"
 msgstr "Poles"
 
@@ -559,7 +557,7 @@ msgstr "Horse exercisers"
 #: src/hooks/usePages/utils/index.tsx:89
 #: src/hooks/usePages/utils/index.tsx:101
 msgid "Giostre {0}"
-msgstr ""
+msgstr "Horse exercisers {0}"
 
 #: src/modules/Index/index.tsx:46
 msgid "Gli ostacoli sono arrivati. Sono fantastici!"
@@ -1097,12 +1095,12 @@ msgstr "Discover our range of products"
 #. placeholder {0}: GIOSTRE_MODELS.IPPOWALKER
 #: src/hooks/usePages/utils/index.tsx:91
 msgid "Scopri la nostra giostra {0}, lo strumento economico adatto ad allenare il tuo cavallo o il tuo puledro"
-msgstr ""
+msgstr "Discover our {0} horse walker, the affordable tool designed to train your horse or foal"
 
 #. placeholder {0}: GIOSTRE_MODELS.TECNOEXERCISER
 #: src/hooks/usePages/utils/index.tsx:102
 msgid "Scopri la nostra giostra {0}, lo strumento professionale adatto ad allenare il tuo cavallo o il tuo puledro"
-msgstr ""
+msgstr "Discover our {0} horse walker, the professional tool designed to train your horse or foal."
 
 #: src/modules/Index/index.tsx:150
 msgid "Scopri la qualità dei nostri prodotti attraverso la testimonianza dei clienti"
@@ -1233,7 +1231,7 @@ msgstr "Tradition and quality"
 
 #: src/hooks/useProducts/utils/index.tsx:79
 msgid "Trasforma qualsiasi terreno in un'arena da dressage con questi coni da dressage. Facili da posizionare, leggeri e anche sicuri per il tuo cavallo. Le nostre lettere in PVC resistente ai raggi solari sono durevoli e leggibili in tutte le condizioni climatiche. Facili da posizionare, offrono un'ottima resistenza agli agenti atmosferici a un prezzo conveniente."
-msgstr ""
+msgstr "Turn any surface into a dressage arena with these dressage cones. Easy to place, lightweight, and safe for your horse. Our UV-resistant PVC letters are durable and easy to read in all weather conditions. Simple to set up, they offer excellent weather resistance at an affordable price."
 
 #: src/modules/Tondini/index.tsx:66
 msgid "Tutti i cavalieri sanno quanto sia spiacevole cavalcare in un ambiente polveroso.<0/>La polvere può contribuire a problemi respiratori per te e per i tuoi cavalli e può indicare che il fondo non fornisce un adeguato un supporto allo zoccolo del cavallo. <1/>Per ovviare a questo problema, è possibile installare il nostro sistema di irrigazione. Un rosone verrà posizionato al centro del tondino e ti permetterà di irrigarlo facilmente."
@@ -1241,7 +1239,7 @@ msgstr "All riders know dusty arenas are unpleasant. <0/>Dust can contribute to 
 
 #: src/modules/CookiePolicy/index.tsx:54
 msgid "Un cookie è un file di piccole dimensioni che viene inviato al browser in uso e salvato sul tuo dispositivo quando visiti un sito internet come {WEBISTE_URL} (‘il sito’). I cookie permettono un funzionamento efficiente del sito e ne migliorano le prestazioni, inoltre forniscono informazioni al proprietario del sito per fini statistici o pubblicitari, principalmente per personalizzare la tua esperienza di navigazione ricordando le tue preferenze (per esempio ricordare la lingua e la valuta che hai impostato, per riconoscerti alla visita successiva, ecc.)."
-msgstr ""
+msgstr "A cookie is a small file that is sent to your browser and stored on your device when you visit a website such as {WEBISTE_URL} (\"the site\"). Cookies allow the site to function efficiently and improve its performance. They also provide information to the site owner for statistical or advertising purposes, mainly to personalize your browsing experience by remembering your preferences (for example, remembering the language and currency you selected, recognizing you on your next visit, etc.)."
 
 #: src/hooks/usePages/utils/index.tsx:79
 msgid "Un recinto da cavalli in PVC. Indistruttibile anche in presenza delle più avverse condizioni meteorologiche"

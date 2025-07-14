@@ -3,6 +3,7 @@ import { Typography } from "@mui/material";
 import { Product, Title } from "components";
 import { ProductDataTranslated } from "hooks/useProducts";
 import { PRODUCT_GUTTER } from "theme";
+import { NAME } from "utils/constants";
 
 const Barriere: React.FC<{ products: ProductDataTranslated[] }> = ({
   products,
@@ -30,10 +31,10 @@ const Barriere: React.FC<{ products: ProductDataTranslated[] }> = ({
               rompono frequentemente.
             </Typography>
             <Typography>
-              Le barriere sintetiche di Pessastudio, invece, hanno lo stesso
-              peso di quelle in abete, ma perdono il loro colore solamente dopo
-              anni, non si scrostano e, solo raramente, si rompono sotto
-              l'azione di un carico eccessivo.
+              Le barriere sintetiche di {NAME}, invece, hanno lo stesso peso di
+              quelle in abete, ma perdono il loro colore solamente dopo anni,
+              non si scrostano e, solo raramente, si rompono sotto l'azione di
+              un carico eccessivo.
             </Typography>
           </Trans>
         }
