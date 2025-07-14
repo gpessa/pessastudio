@@ -22,18 +22,18 @@ const TecnoexerciserServizioClienti = () => {
     fr: [
       {
         file: "/products/giostre/tecnoexerciser/pdf/manuale-quadro-tecnoexerciser-fr.pdf",
-        label: t`Manuale quadro di controllo ${"TECNOEXERCISER"}`,
+        title: t`Manuale quadro di controllo ${"TECNOEXERCISER"}`,
       },
     ],
     it: [
       PAGES.GIOSTRE_TECNOEXERCISER_ISTRUZIONI_MONTAGGIO,
       {
         file: "/products/giostre/tecnoexerciser/pdf/manuale-quadro-tecnoexerciser-it.pdf",
-        label: t`Manuale quadro di controllo ${"TECNOEXERCISER"}`,
+        title: t`Manuale quadro di controllo ${"TECNOEXERCISER"}`,
       },
       {
         file: "/products/giostre/tecnoexerciser/pdf/manuale-quadro-easy-it.pdf",
-        label: t`Manuale quadro di controllo ${"EASY"}`,
+        title: t`Manuale quadro di controllo ${"EASY"}`,
       },
       {
         file: "https://www.youtube.com/watch?v=QMA4wPxq_ow",
