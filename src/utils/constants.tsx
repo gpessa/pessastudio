@@ -234,6 +234,21 @@ export const GIOSTRA_FENCE_TYPE_TECNOFENCE = (
   </Trans>
 );
 
+export const GIOSTRA_COPERTURA_PVC_DESCRIZIONE = (
+  <Trans>
+    <Typography>
+      La <strong>copertura in PVC</strong> è composta da una struttura in
+      acciaio zincato la quale sorregge un telo in tessuto di poliestere
+      spalmato di colore verde o crema e in base alle esigenze del cliente anche
+      in altre colorazioni.
+    </Typography>
+    <Typography mx={{ marginBottom: 15 }}>
+      Questa copertura è in grado di sorreggere un carico neve pari a 80 kg/mq *
+      e una forza vento pari a 110 Km/h.
+    </Typography>
+  </Trans>
+);
+
 export const GIOSTRE_COPERTURA_NOTE = (
   <Typography variant="small" component="div" mt={PRODUCT_GUTTER}>
     <Trans>
@@ -262,3 +277,44 @@ export const GIOSTRE_ATTRIBUTES = {
   irrigation: <Trans>Irrigazione</Trans>,
   name: undefined,
 };
+
+export const GIOSTRA_DESCRIZIONE_RECINZIONE_TECONOFENCE = (
+  <Trans>
+    <Typography textAlign="justify">
+      Il corridoio{" "}
+      <Typography component="strong" fontWeight="bold">
+        TECNOFENCE
+      </Typography>{" "}
+      è una soluzione semplice ed economica che ti permetterà di avere una
+      giostra completa, sicura e durevole ad un costo competitivo.
+    </Typography>
+    <Typography textAlign="justify">
+      L'altezza della recinzione esterna è di 1,60 mt., a differenza del
+      corridoio interno alto 1,40 mt.
+    </Typography>
+    <Typography textAlign="justify">
+      L'innovativo materiale utilizzato per la sua costruzione (PPO) è durevole
+      nel tempo e ti consentirà di abbattere i costi di manutenzione che
+      affliggono le classiche recinzioni in legno.
+    </Typography>
+    <Typography textAlign="justify" mx={{ marginBottom: 15 }}>
+      Uno dei vantaggi è inoltre quello di poter installare la giostra in piena
+      autonomia.
+    </Typography>
+  </Trans>
+);
+
+export const GIOSTRA_DESCRIZIONE_RECINZIONE_COMPENSATO_MARINO = (
+  thickness: number,
+  name: string
+) => (
+  <Trans>
+    <Typography textAlign="justify">
+      Il corridoio <strong>{name}</strong> in compensato marino è realizzato con
+      un multistrato <small>({thickness} mm. di spessore)</small> antigraffio,
+      antiurto, resistente allo sporco e idrorepellente. L'obbiettivo di questa
+      soluzione è quello di fornire un elevato grado di sicurezza forzando il
+      cavallo a concentrarsi sul percorso durante l'allenamento.
+    </Typography>
+  </Trans>
+);
