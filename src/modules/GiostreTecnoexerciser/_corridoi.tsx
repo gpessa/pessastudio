@@ -3,11 +3,12 @@ import { Grid, Typography } from "@mui/material";
 import productsGiostreTecnoexerciserCorridoioCompensatoMarino from "assets/products/giostre/tecnoexerciser/corridoio/compensato-marino.jpg";
 import productsGiostreTecnoexerciserCorridoioTecnofence from "assets/products/giostre/tecnoexerciser/corridoio/tecnofence.jpg";
 import { Gallery, Section, Th } from "components";
+import { useFormatter } from "hooks";
 import { BREAKPOINT, PRODUCT_GUTTER } from "theme";
-import { formatSize } from "utils/format";
 
 const TecnoexerciserCorridoi = () => {
   const { t } = useLingui();
+  const { formatSize } = useFormatter();
 
   const IMAGES: Picture[] = [
     {
