@@ -1,11 +1,11 @@
 "use client";
 
-import React from "react";
 import { Trans } from "@lingui/react/macro";
 import { Grid } from "@mui/material";
 import { styled } from "@mui/material/styles";
 import { Product, Section, Th } from "components";
 import { ProductDataTranslated } from "hooks/useProducts";
+import React from "react";
 import { BREAKPOINT, PRODUCT_GUTTER } from "theme";
 
 const ProductStyled = styled(Product)(({ theme }) => ({

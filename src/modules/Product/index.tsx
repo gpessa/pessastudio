@@ -1,7 +1,7 @@
-import React from "react";
-import { useRouter } from "next/router";
 import { useProducts } from "hooks";
 import { ProductId } from "hooks/useProducts";
+import { useRouter } from "next/router";
+import React from "react";
 
 const Product: React.FC = () => {
   const router = useRouter();

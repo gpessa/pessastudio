@@ -1,10 +1,10 @@
 "use client";
 
 import { Box, Stack, SvgIconTypeMap, Typography } from "@mui/material";
-import React from "react";
 import { OverridableComponent } from "@mui/material/OverridableComponent";
-import { ReactNode } from "react";
 import Th from "components/Th";
+import React from "react";
+import { ReactNode } from "react";
 
 export type BenefitsItemProps = {
   icon?: OverridableComponent<SvgIconTypeMap<{}, "svg">>;

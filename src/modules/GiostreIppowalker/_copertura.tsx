@@ -1,13 +1,13 @@
 import { Trans, useLingui } from "@lingui/react/macro";
 import { Grid, Typography } from "@mui/material";
+import productsGiostreIppowalkerCoperturaCoperturaPvc1 from "assets/products/giostre/ippowalker/copertura/copertura-pvc-1.jpg";
+import productsGiostreIppowalkerCoperturaCoperturaPvc2 from "assets/products/giostre/ippowalker/copertura/copertura-pvc-2.jpg";
 import { Gallery, Section, Th } from "components";
 import { PRODUCT_GUTTER } from "theme";
 import {
   GIOSTRA_COPERTURA_PVC_DESCRIZIONE,
   GIOSTRE_COPERTURA_NOTE,
 } from "utils/constants";
-import productsGiostreIppowalkerCoperturaCoperturaPvc1 from "assets/products/giostre/ippowalker/copertura/copertura-pvc-1.jpg";
-import productsGiostreIppowalkerCoperturaCoperturaPvc2 from "assets/products/giostre/ippowalker/copertura/copertura-pvc-2.jpg";
 
 const IppowalkerCopertura = () => {
   const { t } = useLingui();

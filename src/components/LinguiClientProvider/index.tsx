@@ -1,7 +1,7 @@
 "use client";
 
-import { I18nProvider } from "@lingui/react";
 import { type Messages, setupI18n } from "@lingui/core";
+import { I18nProvider } from "@lingui/react";
 import { useState } from "react";
 
 type Props = {

@@ -1,6 +1,8 @@
-import { AppRouterCacheProvider } from "@mui/material-nextjs/v15-appRouter";
+import "react-multi-carousel/lib/styles.css";
+
 import CssBaseline from "@mui/material/CssBaseline";
 import { ThemeProvider } from "@mui/material/styles";
+import { AppRouterCacheProvider } from "@mui/material-nextjs/v15-appRouter";
 import { GoogleAnalytics } from "@next/third-parties/google";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import image from "assets/generals/image.jpg";
@@ -18,7 +20,6 @@ import Head from "next/head";
 import { notFound } from "next/navigation";
 import Script from "next/script";
 import { PropsWithChildren } from "react";
-import "react-multi-carousel/lib/styles.css";
 import { Organization, WithContext } from "schema-dts";
 import theme from "theme";
 import { allMessages } from "utils/appRouterI18n";
@@ -33,6 +34,7 @@ import {
   WEBISTE_URL,
 } from "utils/constants";
 import { initLingui, PageLangParam } from "utils/initLingui";
+
 import i18nConfig from "../../../i18nConfig";
 import { version } from "../../../package.json";
 

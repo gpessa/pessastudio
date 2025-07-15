@@ -3,10 +3,10 @@
 import FormatQuoteIcon from "@mui/icons-material/FormatQuote";
 import { Typography } from "@mui/material";
 import { styled } from "@mui/material/styles";
-import React from "react";
-import Carousel from "react-multi-carousel";
 import Columns from "components/Columns";
 import Title, { TitleProps } from "components/Title";
+import React from "react";
+import Carousel from "react-multi-carousel";
 
 const StyledTitle = styled(Title)(({ theme }) => ({
   "& small": {

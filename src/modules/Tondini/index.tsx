@@ -1,7 +1,6 @@
 "use client";
 
 import { Trans } from "@lingui/react/macro";
-
 import { useLingui } from "@lingui/react/macro";
 import AccountBalance from "@mui/icons-material/AccountBalance";
 import DomainDisabled from "@mui/icons-material/DomainDisabled";
@@ -30,6 +29,7 @@ import { usePages } from "hooks";
 import React from "react";
 import { PRODUCT_GUTTER } from "theme";
 import { GIOSTRA_TONDINO_CHIUSURA_A_TERRA_DESCRIZIONE } from "utils/constants";
+
 import image from "./assets/background.jpg";
 
 const Tondini: React.FC = () => {

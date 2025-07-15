@@ -1,9 +1,10 @@
 "use client";
 
-import React from "react";
 import { Box, Grid } from "@mui/material";
 import { ProductDataTranslated } from "hooks/useProducts";
+import React from "react";
 import { PRODUCT_GUTTER } from "theme";
+
 import ProductImages from "./components/ProductImages";
 import ProductInformations from "./components/ProductInformations";
 import ProductSeo from "./components/ProductSeo";

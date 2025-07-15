@@ -2,10 +2,11 @@
 
 import { Grid } from "@mui/material";
 import { styled } from "@mui/material/styles";
-import React from "react";
 import Section from "components/Section";
 import Title, { TitleProps } from "components/Title";
+import React from "react";
 import { BREAKPOINT } from "theme";
+
 import BenefitsItem, { BenefitsItemProps } from "./components/BenefitsItem";
 
 const IntroStyled = styled(Grid)(({ theme }) => ({

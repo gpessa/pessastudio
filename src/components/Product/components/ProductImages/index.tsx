@@ -1,8 +1,8 @@
 import { ButtonBase, Grid, GridSize } from "@mui/material";
 import { styled } from "@mui/material/styles";
+import ModalGallery from "components/ModalGallery";
 import Image from "next/image";
 import React from "react";
-import ModalGallery from "components/ModalGallery";
 
 const ButtonBaseStyled = styled(ButtonBase)(({ theme }) => ({
   backgroundColor: theme.palette.common.white,

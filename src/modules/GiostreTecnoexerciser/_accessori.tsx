@@ -1,17 +1,17 @@
 import { Trans } from "@lingui/react/macro";
-import { Accessori } from "components";
-import {
-  GIOSTRA_ALVEOLO_DESCRIZIONE,
-  GIOSTRA_RETE_ANTIVENTO_DESCRIZIONE,
-  GIOSTRA_TONDINO_CHIUSURA_A_TERRA_DESCRIZIONE,
-} from "utils/constants";
 import assetsProductsGiostreAccessoriesAlveolo_01 from "assets/products/giostre/accessories/alveolo-01.jpg";
 import assetsProductsGiostreAccessoriesAlveolo_02 from "assets/products/giostre/accessories/alveolo-02.jpg";
 import assetsProductsGiostreAccessoriesRete_01 from "assets/products/giostre/accessories/rete-01.jpg";
 import assetsProductsGiostreAccessoriesRete_02 from "assets/products/giostre/accessories/rete-02.jpg";
 import assetsProductsGiostreTecnoexerciserAccessoriChiusura_01 from "assets/products/giostre/tecnoexerciser/accessori/chiusura-01.jpg";
 import assetsProductsGiostreTecnoexerciserAccessoriChiusura_02 from "assets/products/giostre/tecnoexerciser/accessori/chiusura-02.jpg";
+import { Accessori } from "components";
 import { AccessoriProps } from "components/Accessori";
+import {
+  GIOSTRA_ALVEOLO_DESCRIZIONE,
+  GIOSTRA_RETE_ANTIVENTO_DESCRIZIONE,
+  GIOSTRA_TONDINO_CHIUSURA_A_TERRA_DESCRIZIONE,
+} from "utils/constants";
 
 const TecnoexerciserAccessori = () => {
   const ACCESSORI: AccessoriProps = {

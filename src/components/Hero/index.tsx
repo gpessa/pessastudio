@@ -1,9 +1,9 @@
 "use client";
 
 import { Box, Container, Typography } from "@mui/material";
+import { styled } from "@mui/material/styles";
 import Image, { StaticImageData } from "next/image";
 import React, { ReactNode } from "react";
-import { styled } from "@mui/material/styles";
 import { BREAKPOINT } from "theme";
 
 const TypographyStyled = styled(Typography)(({ theme }) => ({

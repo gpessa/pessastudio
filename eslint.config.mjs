@@ -1,4 +1,5 @@
 import { FlatCompat } from '@eslint/eslintrc'
+import simpleImportSort from "eslint-plugin-simple-import-sort";
 
 
 const compat = new FlatCompat({
@@ -6,15 +7,23 @@ const compat = new FlatCompat({
   baseDirectory: import.meta.dirname,
 })
 
-const eslintConfig = [
-  ...compat.config({
-    extends: ['next'],
-    rules: {
-      '@typescript-eslint/no-unused-vars': 'off',
-      'react/no-unescaped-entities': 'off',
+console.log(simpleImportSort);
 
-    },
-  }),
+const eslintConfig = [{
+  plugins: {
+    'simple-import-sort': simpleImportSort
+  },
+},
+...compat.config({
+  extends: ['next'],
+  rules: {
+    '@typescript-eslint/no-unused-vars': 'off',
+    'react/no-unescaped-entities': 'off',
+    'simple-import-sort/imports': 'error',
+    'simple-import-sort/exports': 'error'
+
+  },
+}),
 ]
 
 export default eslintConfig

@@ -3,6 +3,7 @@
 import { styled } from "@mui/material/styles";
 import { YouTubeEmbed } from "@next/third-parties/google";
 import React from "react";
+
 import Section from "../Section";
 
 const VideoSectionStyled = styled(Section)(({ theme }) => ({

@@ -2,8 +2,6 @@
 
 import { Trans } from "@lingui/react/macro";
 import { Box, Typography } from "@mui/material";
-import React from "react";
-import { Path, Section, Th } from "components";
 import productsGiostreIppowalkerMontaggioStep_01 from "assets/products/giostre/ippowalker/montaggio/step-01.jpg";
 import productsGiostreIppowalkerMontaggioStep_02 from "assets/products/giostre/ippowalker/montaggio/step-02.jpg";
 import productsGiostreIppowalkerMontaggioStep_04 from "assets/products/giostre/ippowalker/montaggio/step-04.jpg";
@@ -14,6 +12,8 @@ import productsGiostreIppowalkerMontaggioStep_08 from "assets/products/giostre/i
 import productsGiostreIppowalkerMontaggioStep_09 from "assets/products/giostre/ippowalker/montaggio/step-09.jpg";
 import productsGiostreIppowalkerMontaggioStep_10 from "assets/products/giostre/ippowalker/montaggio/step-10.jpg";
 import productsGiostreIppowalkerMontaggioStep_11 from "assets/products/giostre/ippowalker/montaggio/step-11.jpg";
+import { Path, Section, Th } from "components";
+import React from "react";
 
 const IstruzioniMontaggio: React.FC = () => {
   const STEPS = [

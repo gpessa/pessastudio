@@ -1,4 +1,5 @@
 import { useLingui } from "@lingui/react/macro";
+
 import { getPages, Page } from "./utils";
 
 export type PageTranslated = Omit<Page, "title" | "description"> & {

@@ -1,17 +1,17 @@
 import { Trans } from "@lingui/react/macro";
-import { Accessori } from "components";
-import {
-  GIOSTRA_ALVEOLO_DESCRIZIONE,
-  GIOSTRA_RETE_ANTIVENTO_DESCRIZIONE,
-  GIOSTRA_TONDINO_CHIUSURA_A_TERRA_DESCRIZIONE,
-} from "utils/constants";
 import productsGiostreAccessoriesAlveolo01 from "assets/products/giostre/accessories/alveolo-01.jpg";
 import productsGiostreAccessoriesAlveolo02 from "assets/products/giostre/accessories/alveolo-02.jpg";
 import productsGiostreAccessoriesRete01 from "assets/products/giostre/accessories/rete-01.jpg";
 import productsGiostreAccessoriesRete02 from "assets/products/giostre/accessories/rete-02.jpg";
 import productsGiostreIppowalkerAccessoriChiusura01 from "assets/products/giostre/ippowalker/accessori/chiusura-01.jpg";
 import productsGiostreIppowalkerAccessoriChiusura02 from "assets/products/giostre/ippowalker/accessori/chiusura-02.jpg";
+import { Accessori } from "components";
 import { AccessoriProps } from "components/Accessori";
+import {
+  GIOSTRA_ALVEOLO_DESCRIZIONE,
+  GIOSTRA_RETE_ANTIVENTO_DESCRIZIONE,
+  GIOSTRA_TONDINO_CHIUSURA_A_TERRA_DESCRIZIONE,
+} from "utils/constants";
 
 const IppowalkerAccessori = () => {
   const ACCESSORI: AccessoriProps = {

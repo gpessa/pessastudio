@@ -9,6 +9,7 @@ import { usePages } from "hooks";
 import React, { useRef } from "react";
 import Carousel from "react-multi-carousel";
 import { BREAKPOINT } from "theme";
+
 import IndexProductsButtonGroup from "./components/IndexProductsButtonGroup";
 import IndexProductsItem, {
   IndexProductItem,

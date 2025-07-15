@@ -2,10 +2,11 @@
 
 import { Trans } from "@lingui/react/macro";
 import { Box, Grid, Stack, Typography } from "@mui/material";
-import React, { ReactNode } from "react";
 import Section from "components/Section";
 import Th from "components/Th";
+import React, { ReactNode } from "react";
 import { PRODUCT_GUTTER } from "theme";
+
 import AccessoriImage, {
   AccessoriImageProps,
 } from "./components/AccessoriImage";

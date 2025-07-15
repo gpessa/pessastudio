@@ -1,13 +1,13 @@
 import { Trans, useLingui } from "@lingui/react/macro";
 import { Grid, Typography } from "@mui/material";
+import productsGiostreIppowalkerCorridoioCompensatoMarino from "assets/products/giostre/ippowalker/corridoio/compensato-marino.jpg";
+import productsGiostreTecnoexerciserCorridoioTecnofence from "assets/products/giostre/tecnoexerciser/corridoio/tecnofence.jpg";
 import { Gallery, Section, Th } from "components";
 import { BREAKPOINT, PRODUCT_GUTTER } from "theme";
 import {
   GIOSTRA_DESCRIZIONE_RECINZIONE_COMPENSATO_MARINO,
   GIOSTRA_DESCRIZIONE_RECINZIONE_TECONOFENCE,
 } from "utils/constants";
-import productsGiostreIppowalkerCorridoioCompensatoMarino from "assets/products/giostre/ippowalker/corridoio/compensato-marino.jpg";
-import productsGiostreTecnoexerciserCorridoioTecnofence from "assets/products/giostre/tecnoexerciser/corridoio/tecnofence.jpg";
 
 const IppowalkerCorridoi = () => {
   const { t } = useLingui();

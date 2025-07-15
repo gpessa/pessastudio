@@ -1,10 +1,10 @@
 import { Trans } from "@lingui/react/macro";
+import { useLingui } from "@lingui/react/macro";
 import { Link, Stack, Typography } from "@mui/material";
 import { sendGAEvent } from "@next/third-parties/google";
-import LinkNext from "next/link";
-import { Title, Section } from "components";
-import { useLingui } from "@lingui/react/macro";
+import { Section,Title } from "components";
 import { usePages } from "hooks";
+import LinkNext from "next/link";
 import { ITALIA } from "utils/constants";
 
 const ContactUs: React.FC<Pick<Parameters<typeof Section>[0], "color">> = ({

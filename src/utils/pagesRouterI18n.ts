@@ -1,6 +1,6 @@
 import { i18n, Messages } from "@lingui/core";
-import { useEffect } from "react";
 import { usePathname } from "next/navigation";
+import { useEffect } from "react";
 
 export function useLinguiInit(messages: Messages) {
   const isClient = typeof window !== "undefined";

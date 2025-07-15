@@ -1,8 +1,8 @@
 "use client";
 
 import { Trans } from "@lingui/react/macro";
-import React from "react";
 import { Section, Th, Ul } from "components";
+import React from "react";
 
 // TODO: Tradurre
 const ComePreparareIlFondo: React.FC = () => (

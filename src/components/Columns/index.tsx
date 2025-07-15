@@ -2,8 +2,8 @@
 
 import { Container, Grid } from "@mui/material";
 import { styled } from "@mui/material/styles";
-import { ReactNode } from "react";
 import Section from "components/Section";
+import { ReactNode } from "react";
 import { BREAKPOINT } from "theme";
 
 interface Props {

@@ -6,6 +6,7 @@ import { Columns, Th, Video } from "components";
 import { usePages } from "hooks";
 import NextLink from "next/link";
 import React from "react";
+
 import IppowalkerAccessori from "./_accessori";
 import IppowalkerCompare from "./_compare";
 import IppowalkerCopertura from "./_copertura";

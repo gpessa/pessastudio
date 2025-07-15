@@ -1,5 +1,6 @@
 import { WEBISTE_URL } from "utils/constants";
-import { usePages, PageTranslated } from "../usePages";
+
+import { PageTranslated,usePages } from "../usePages";
 
 export type BreadcrumbList = (PageTranslated & { absoluteUrl: string })[];
 

@@ -5,9 +5,9 @@ import NavigateBefore from "@mui/icons-material/NavigateBefore";
 import NavigateNext from "@mui/icons-material/NavigateNext";
 import { Button, ButtonBase, Dialog, Typography } from "@mui/material";
 import { styled } from "@mui/material/styles";
+import { useGallery } from "hooks";
 import Image from "next/image";
 import React, { ReactNode } from "react";
-import { useGallery } from "hooks";
 
 const ButtonBackStyled = styled(ButtonBase)({
   "& > span": {

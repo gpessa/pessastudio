@@ -1,7 +1,7 @@
 "use client";
 
 import { createTheme, responsiveFontSizes } from "@mui/material/styles";
-import { Source_Sans_3, Roboto_Condensed } from "next/font/google";
+import { Roboto_Condensed,Source_Sans_3 } from "next/font/google";
 
 declare module "@mui/material/styles" {
   interface TypographyVariants {

@@ -1,12 +1,11 @@
+// import { renderToStaticMarkup } from "react-dom/server";
+import { i18n } from "@lingui/core";
+import { t } from "@lingui/core/macro";
 import { getProducts } from "hooks/useProducts";
 import type { NextRequest } from "next/server";
 import { NAME_STRING, WEBISTE_URL } from "utils/constants";
-import { Builder } from "xml2js";
-// import { renderToStaticMarkup } from "react-dom/server";
-
-import { i18n } from "@lingui/core";
-import { t } from "@lingui/core/macro";
 import { getImageUrl } from "utils/getImageUrl";
+import { Builder } from "xml2js";
 
 const formatSize = (value: number) => Math.round(value) + " cm";
 const formatWeight = (value: number) => Math.round(value) + " kg";

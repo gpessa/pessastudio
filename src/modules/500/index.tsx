@@ -1,6 +1,6 @@
 import { Trans } from "@lingui/react/macro";
-import React from "react";
 import { Error } from "components";
+import React from "react";
 
 const Page500: React.FC = () => (
   <Error

@@ -1,15 +1,15 @@
 import { Trans, useLingui } from "@lingui/react/macro";
 import { Grid, Typography } from "@mui/material";
+import productsGiostreTecnoexerciserCoperturaCoperturaLastreOndulate_1 from "assets/products/giostre/tecnoexerciser/copertura/copertura-lastre-ondulate-1.jpg";
+import productsGiostreTecnoexerciserCoperturaCoperturaLastreOndulate_2 from "assets/products/giostre/tecnoexerciser/copertura/copertura-lastre-ondulate-2.jpg";
+import productsGiostreTecnoexerciserCoperturaCoperturaPvc_1 from "assets/products/giostre/tecnoexerciser/copertura/copertura-pvc-1.jpg";
+import productsGiostreTecnoexerciserCoperturaCoperturaPvc_2 from "assets/products/giostre/tecnoexerciser/copertura/copertura-pvc-2.jpg";
 import { Gallery, Section, Th } from "components";
 import { PRODUCT_GUTTER } from "theme";
 import {
   GIOSTRA_COPERTURA_PVC_DESCRIZIONE,
   GIOSTRE_COPERTURA_NOTE,
 } from "utils/constants";
-import productsGiostreTecnoexerciserCoperturaCoperturaLastreOndulate_1 from "assets/products/giostre/tecnoexerciser/copertura/copertura-lastre-ondulate-1.jpg";
-import productsGiostreTecnoexerciserCoperturaCoperturaLastreOndulate_2 from "assets/products/giostre/tecnoexerciser/copertura/copertura-lastre-ondulate-2.jpg";
-import productsGiostreTecnoexerciserCoperturaCoperturaPvc_1 from "assets/products/giostre/tecnoexerciser/copertura/copertura-pvc-1.jpg";
-import productsGiostreTecnoexerciserCoperturaCoperturaPvc_2 from "assets/products/giostre/tecnoexerciser/copertura/copertura-pvc-2.jpg";
 
 const TecnoexerciserCopertura = () => {
   const { t } = useLingui();

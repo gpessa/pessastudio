@@ -2,12 +2,12 @@
 
 import { Trans } from "@lingui/react/macro";
 import { Box, Button, ButtonProps, Link } from "@mui/material";
-import { makeStyles } from "tss-react/mui";
 import NextLink from "next/link";
 import { usePathname } from "next/navigation";
 import React from "react";
 import CookieConsent from "react-cookie-consent";
-import { PRODUCT_GUTTER, BREAKPOINT } from "theme";
+import { BREAKPOINT,PRODUCT_GUTTER } from "theme";
+import { makeStyles } from "tss-react/mui";
 
 
 const useStyles = makeStyles()((theme) => ({

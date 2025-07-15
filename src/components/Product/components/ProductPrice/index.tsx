@@ -1,9 +1,9 @@
-import React from "react";
 import { Trans } from "@lingui/react/macro";
 import { Badge, Typography } from "@mui/material";
 import { styled } from "@mui/material/styles";
-import { ProductDataTranslated } from "hooks/useProducts";
 import { useFormatter } from "hooks";
+import { ProductDataTranslated } from "hooks/useProducts";
+import React from "react";
 
 const PriceStyled = styled(Typography)(({ theme }) => ({
   fontSize: theme.typography.h4.fontSize,

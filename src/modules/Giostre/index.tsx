@@ -7,8 +7,6 @@ import DomainDisabled from "@mui/icons-material/DomainDisabled";
 import RemoveRedEyeOutlined from "@mui/icons-material/RemoveRedEyeOutlined";
 import VideogameAsset from "@mui/icons-material/VideogameAsset";
 import { Box, Button, Typography } from "@mui/material";
-import NextLink from "next/link";
-
 import {
   Benefits,
   Columns,
@@ -21,9 +19,11 @@ import {
 } from "components";
 import { BeneftisProps } from "components/Benefits";
 import { HeroProps } from "components/Hero";
-import { NAME } from "utils/constants";
 import { usePages } from "hooks";
+import NextLink from "next/link";
 import React from "react";
+import { NAME } from "utils/constants";
+
 import image from "./assets/background.jpg";
 
 export const GIOSTRE_MODELS = {

@@ -1,25 +1,26 @@
 "use client";
 
-import { usePages } from "hooks";
-import { BREAKPOINT } from "theme";
 import { Trans } from "@lingui/react";
 import Menu from "@mui/icons-material/Menu";
 import {
   AppBar,
   Box,
   Button,
-  Stack,
   Divider,
   IconButton,
   List,
   ListItem,
+  Stack,
   Toolbar,
   useScrollTrigger,
 } from "@mui/material";
 import { styled } from "@mui/material/styles";
+import { usePages } from "hooks";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import React, { useEffect, useState } from "react";
+import { BREAKPOINT } from "theme";
+
 import LanguageSelector from "./components/HeaderLanguageSelector";
 import Logo from "./components/HeaderLogo";
 

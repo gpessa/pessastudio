@@ -1,8 +1,8 @@
 import { Trans } from "@lingui/react/macro";
 import { Grid } from "@mui/material";
 import { Product, Section, Th } from "components";
-import { PRODUCT_GUTTER } from "theme";
 import { ProductDataTranslated } from "hooks/useProducts";
+import { PRODUCT_GUTTER } from "theme";
 
 const Accessori: React.FC<{ products: ProductDataTranslated[] }> = ({
   products,

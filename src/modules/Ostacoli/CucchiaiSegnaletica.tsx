@@ -1,9 +1,8 @@
-import { useLingui, Trans } from "@lingui/react/macro";
-
+import { Trans,useLingui } from "@lingui/react/macro";
 import { Grid } from "@mui/material";
-import React from "react";
 import { Product, Title } from "components";
 import { ProductDataTranslated } from "hooks/useProducts";
+import React from "react";
 import { PRODUCT_GUTTER } from "theme";
 
 const CucchiaiSegnaletica: React.FC<{ products: ProductDataTranslated[] }> = ({

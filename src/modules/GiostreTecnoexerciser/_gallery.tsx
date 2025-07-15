@@ -1,4 +1,4 @@
-import { Gallery } from "components";
+import { useLingui } from "@lingui/react/macro";
 import productsGiostreTecnoexerciserGalleryGiostra_1 from "assets/products/giostre/tecnoexerciser/gallery/giostra-1.jpg";
 import productsGiostreTecnoexerciserGalleryGiostra_2 from "assets/products/giostre/tecnoexerciser/gallery/giostra-2.jpg";
 import productsGiostreTecnoexerciserGalleryMotore_3 from "assets/products/giostre/tecnoexerciser/gallery/motore-3.jpg";
@@ -6,7 +6,7 @@ import productsGiostreTecnoexerciserGalleryPortaMobile_1 from "assets/products/g
 import productsGiostreTecnoexerciserGalleryPortaMobile_2 from "assets/products/giostre/tecnoexerciser/gallery/porta-mobile-2.jpg";
 import productsGiostreTecnoexerciserGallerySoloMotore from "assets/products/giostre/tecnoexerciser/gallery/solo-motore.jpg";
 import productsGiostreTecnoexerciserGalleryTecnofence_1 from "assets/products/giostre/tecnoexerciser/gallery/tecnofence-1.jpg";
-import { useLingui } from "@lingui/react/macro";
+import { Gallery } from "components";
 
 const TecnoexerciserGallery = () => {
   const { t } = useLingui();

@@ -1,6 +1,6 @@
 import { Box, Typography } from "@mui/material";
-import React, { ReactNode } from "react";
 import Section from "components/Section";
+import React, { ReactNode } from "react";
 
 const NotFound: React.FC<{
   title: ReactNode;

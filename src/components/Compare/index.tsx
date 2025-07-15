@@ -14,9 +14,9 @@ import {
   TableRow,
   Typography,
 } from "@mui/material";
-import React, { ReactNode } from "react";
 import { sendGAEvent } from "@next/third-parties/google";
 import { Section, Th } from "components";
+import React, { ReactNode } from "react";
 import { BREAKPOINT, PRODUCT_GUTTER } from "theme";
 
 const TableCellStyled = styled(TableCell)<{ type?: string }>(({ type }) => ({

@@ -1,7 +1,7 @@
 import { Trans } from "@lingui/react/macro";
 import { Box } from "@mui/material";
-import React from "react";
 import Data from "components/Data";
+import React from "react";
 
 const ContattiBank: React.FC<BankProps> = ({ name, iban, swift, ...props }) => (
   <Box {...props}>

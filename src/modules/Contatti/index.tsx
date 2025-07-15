@@ -11,11 +11,12 @@ import {
   Stack,
   Typography,
 } from "@mui/material";
-import Image from "next/image";
-import React from "react";
 import { styled } from "@mui/material/styles";
+import anna from "assets/generals/anna.jpg";
 import { Columns, Section, Th } from "components";
 import { usePages } from "hooks";
+import Image from "next/image";
+import React from "react";
 import { PRODUCT_GUTTER } from "theme";
 import {
   BANCHE,
@@ -24,7 +25,7 @@ import {
   SEDE_LEGALE,
   SEDE_OPERATIVA,
 } from "utils/constants";
-import anna from "assets/generals/anna.jpg";
+
 import ContattiAddress from "./components/ContattiAddress";
 import ContattiBank from "./components/ContattiBank";
 

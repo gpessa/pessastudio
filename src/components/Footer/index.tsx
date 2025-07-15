@@ -3,10 +3,11 @@
 import { Trans } from "@lingui/react/macro";
 import { Divider, Grid, Typography, useMediaQuery } from "@mui/material";
 import { styled } from "@mui/material/styles";
-import React from "react";
 import Section from "components/Section";
 import Title from "components/Title";
+import React from "react";
 import theme, { BREAKPOINT } from "theme";
+
 import FooterMap from "./components/FooterMap";
 import FooterNewsletter from "./components/FooterNewsletter";
 import FooterSocials from "./components/FooterSocials";

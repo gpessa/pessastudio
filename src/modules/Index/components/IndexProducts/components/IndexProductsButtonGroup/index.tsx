@@ -1,6 +1,6 @@
 "use client";
 
-import { Typography, Slider } from "@mui/material";
+import { Slider,Typography } from "@mui/material";
 import { styled } from "@mui/material/styles";
 
 const DivStyles = styled("div")(({ theme }) => ({

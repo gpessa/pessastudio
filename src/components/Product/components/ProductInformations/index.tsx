@@ -2,11 +2,12 @@ import { useLingui } from "@lingui/react/macro";
 import { Box, Typography } from "@mui/material";
 import Data from "components/Data";
 import Th from "components/Th";
+import { useFormatter } from "hooks";
 import { ProductDataTranslated } from "hooks/useProducts";
+
 import ProductColorsList from "../ProductColorsList";
 import ProductMaterialsList from "../ProductMaterialsList";
 import ProductPrice from "../ProductPrice";
-import { useFormatter } from "hooks";
 
 const ProductInformations = ({
   colors,

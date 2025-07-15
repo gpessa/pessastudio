@@ -9,13 +9,14 @@ import TurnedInNot from "@mui/icons-material/TurnedInNot";
 import { Typography } from "@mui/material";
 import { Benefits, Hero } from "components";
 import { HeroProps } from "components/Hero";
+import { usePages } from "hooks";
 import { NAME } from "utils/constants";
+
 import image from "./assets/background.jpg";
 import fiera2024_it from "./assets/fiera2024/it.jpg";
 import IndexProducts from "./components/IndexProducts";
 import { IndexProductItem } from "./components/IndexProducts/components/IndexProductsItem";
 import IndexTestimonials from "./components/IndexTestimonials";
-import { usePages } from "hooks";
 
 export default function Index() {
   const {

@@ -25,7 +25,7 @@ msgstr "* In presenza di nevicate che superino la portata consentita, sarà oppo
 msgid "+ IVA"
 msgstr "+ IVA"
 
-#: src/modules/Index/index.tsx:128
+#: src/modules/Index/index.tsx:129
 msgid "<0>{NAME} è un'azienda altamente affidabile e rinomata nel settore dell'equitazione. Ogni anno, centinaia di persone scelgono i nostri articoli d'equitazione per la qualità superiore che li caratterizza.</0><1>La gamma di prodotti offerti è ampia e diversificata, con un'attenzione particolare alla funzionalità e al design. La competenza e l'esperienza del team di {NAME} sono alla base del successo dell'azienda e della sua reputazione di affidabilità e professionalità.</1>"
 msgstr "<0>{NAME} è un'azienda altamente affidabile e rinomata nel settore dell'equitazione. Ogni anno, centinaia di persone scelgono i nostri articoli d'equitazione per la qualità superiore che li caratterizza.</0><1>La gamma di prodotti offerti è ampia e diversificata, con un'attenzione particolare alla funzionalità e al design. La competenza e l'esperienza del team di {NAME} sono alla base del successo dell'azienda e della sua reputazione di affidabilità e professionalità.</1>"
 
@@ -57,7 +57,7 @@ msgstr "<0>E' possibile ordinare una giostra nei diametri:</0><1><2>12,0 mt. <3>
 msgid "<0>I cavalletti Caprilli rappresentano uno strumento essenziale per l'allenamento del vostro animale, il passaggio sui cavalletti, rinforza la schiena del cavallo, scioglie la muscolatura e lo induce a flettere le articolazioni.</0><1>Lavati con idropulitrice riprendono i colori originari anche dopo 20 anni.</1>"
 msgstr "<0>I cavalletti Caprilli rappresentano uno strumento essenziale per l'allenamento del vostro animale, il passaggio sui cavalletti, rinforza la schiena del cavallo, scioglie la muscolatura e lo induce a flettere le articolazioni.</0><1>Lavati con idropulitrice riprendono i colori originari anche dopo 20 anni.</1>"
 
-#: src/modules/Ostacoli/index.tsx:40
+#: src/modules/Ostacoli/index.tsx:41
 msgid "<0>I nostri ostacoli sono progettati e costruiti per durare nel tempo non richiedono alcuna manutenzione e conservano, inalterata, la loro bellezza anche se lasciati nel campo per anni.</0><1>Se gli ostacoli per il professionista sono uno strumento di lavoro, per molti altri appassionati rappresentano la realizzazione di un sogno. Noi abbiamo deciso di rendere questi strumenti resistenti nel tempo per fare in modo che questo sogno duri.</1><2>Potrete scegliere le quantità e i colori nella nostra gamma di produzione e acquistare anche singoli pezzi di ricambio.</2>"
 msgstr "<0>I nostri ostacoli sono progettati e costruiti per durare nel tempo non richiedono alcuna manutenzione e conservano, inalterata, la loro bellezza anche se lasciati nel campo per anni.</0><1>Se gli ostacoli per il professionista sono uno strumento di lavoro, per molti altri appassionati rappresentano la realizzazione di un sogno. Noi abbiamo deciso di rendere questi strumenti resistenti nel tempo per fare in modo che questo sogno duri.</1><2>Potrete scegliere le quantità e i colori nella nostra gamma di produzione e acquistare anche singoli pezzi di ricambio.</2>"
 
@@ -80,7 +80,7 @@ msgstr "<0>Il nostro modello di punta, il <1>{0}</1>, rappresenta lo strumento p
 msgid "<0>Il rettangolo della linea <1>training</1> è rivolto a quei maneggi in cui lo spazio a disposizione è limitato e il rettangolo viene installato provvisoriamente.</0><2>Facile da montare, è costituito da elementi modulari di 2 mt. in materiale plastico, non richiede alcuna manutenzione e occupa poco spazio quando non è utilizzato.</2>"
 msgstr "<0>Il rettangolo della linea <1>training</1> è rivolto a quei maneggi in cui lo spazio a disposizione è limitato e il rettangolo viene installato provvisoriamente.</0><2>Facile da montare, è costituito da elementi modulari di 2 mt. in materiale plastico, non richiede alcuna manutenzione e occupa poco spazio quando non è utilizzato.</2>"
 
-#: src/modules/GiostreIppowalker/index.tsx:25
+#: src/modules/GiostreIppowalker/index.tsx:26
 msgid "<0>Ippowalker è una giostra di recente realizzazione, nasce dal sogno di poter fornire uno strumento di allenamento professionale anche a coloro che ne fanno un uso sporadico.</0><1>La giostra è disponibile in due diametri 12 mt. (4 cavalli) e 14.2 mt. (6 cavalli).</1><2>Costruita con la qualità e la robustezza che contraddistingue tutti i nostri prodotti essa rappresenta uno strumento semplice ed essenziale ma al contempo completo.</2><3>Malgrado Ippowalker sia una giostra più economica abbiamo mantenuto tutte le opzioni base per allenare il tuo cavallo.</3><4><5>Porte di separazione elettrificate</5> ottenute grazie a tubi di plastica elettroconduttiva.</4><6>Un <7>pannello di controllo</7> che ti permetterà di di scegliere tra un programma manuale e uno periodico.</6><8>Al contrario del modello <9>Tecnoexercize</9>, questo modello non dispone di irrigazione.</8>"
 msgstr "<0>Ippowalker è una giostra di recente realizzazione, nasce dal sogno di poter fornire uno strumento di allenamento professionale anche a coloro che ne fanno un uso sporadico.</0><1>La giostra è disponibile in due diametri 12 mt. (4 cavalli) e 14.2 mt. (6 cavalli).</1><2>Costruita con la qualità e la robustezza che contraddistingue tutti i nostri prodotti essa rappresenta uno strumento semplice ed essenziale ma al contempo completo.</2><3>Malgrado Ippowalker sia una giostra più economica abbiamo mantenuto tutte le opzioni base per allenare il tuo cavallo.</3><4><5>Porte di separazione elettrificate</5> ottenute grazie a tubi di plastica elettroconduttiva.</4><6>Un <7>pannello di controllo</7> che ti permetterà di di scegliere tra un programma manuale e uno periodico.</6><8>Al contrario del modello <9>Tecnoexercize</9>, questo modello non dispone di irrigazione.</8>"
 
@@ -96,7 +96,7 @@ msgstr "<0>La linea <1>olympic</1>, presente sul mercato da oltre vent'anni, è 
 msgid "<0>La nostra azienda si distingue per le giostre, il nostro punto di forza. </0><1>La loro creazione è stata il risultato della ricerca condotta da <2>Luciano Pessa</2>, con l'intento di sviluppare uno strumento di lavoro affidabile e semplice da utilizzare per l'allenamento dei cavalli anche in assenza del cavaliere.</1><3>La giostra consente non solo di raffreddare il cavallo dopo l'allenamento, ma anche di creare una vera e propria sessione di lavoro, passando da un'andatura all'altra e cambiando di mano. Grazie alla sua versatilità, rappresenta una soluzione pratica ed efficace per l'allenamento quotidiano dei cavalli.</3>"
 msgstr "<0>La nostra azienda si distingue per le giostre, il nostro punto di forza. </0><1>La loro creazione è stata il risultato della ricerca condotta da <2>Luciano Pessa</2>, con l'intento di sviluppare uno strumento di lavoro affidabile e semplice da utilizzare per l'allenamento dei cavalli anche in assenza del cavaliere.</1><3>La giostra consente non solo di raffreddare il cavallo dopo l'allenamento, ma anche di creare una vera e propria sessione di lavoro, passando da un'andatura all'altra e cambiando di mano. Grazie alla sua versatilità, rappresenta una soluzione pratica ed efficace per l'allenamento quotidiano dei cavalli.</3>"
 
-#: src/modules/Recinti/index.tsx:75
+#: src/modules/Recinti/index.tsx:76
 msgid "<0>Le recinzioni <1>TECNOFENCE</1> sono realizzate con materiale particolarmente adatto a durare nel tempo anche in presenza delle più avverse condizioni meteorologiche.</0><2>A differenza del legno o di altri prodotti utilizzati per il medesimo scopo, gli animali non mordono la recinzione.</2><3><4>TECNOFENCE</4>, non presenta spigoli vivi e inoltre, essendo elastica, è in grado di assorbire gli urti senza rompersi evitando cosi di provocare infortuni a persone e animali.</3><5>Il materiale impiegato è lo stesso che viene utilizzato per la produzione di serramenti dove l’inalterabilità del colore e delle caratteristiche tecniche sono condizioni indispensabili per garantire un prodotto di qualità. L’inclusione di inibitori dei raggi ultravioletti consente anche di prevenire crepe e rotture e di resistere alla corrosione e allo sfogliamento mantenendo inalterate le caratteristiche originali anche con temperature variabili da +70 °C a -20 °C.</5><6>Principalmente prodotte nel colore bianco, possono essere fornite, a richiesta, anche nel colore verde.</6><7>In ogni recinzione inoltre si possono inserire uno o più cancelli scorrevoli in alluminio.</7><8>Tutte le nostre recinzioni sono personalizzate in base alle esigenze di metratura e di figura del cliente.</8>"
 msgstr "<0>Le recinzioni <1>TECNOFENCE</1> sono realizzate con materiale particolarmente adatto a durare nel tempo anche in presenza delle più avverse condizioni meteorologiche.</0><2>A differenza del legno o di altri prodotti utilizzati per il medesimo scopo, gli animali non mordono la recinzione.</2><3><4>TECNOFENCE</4>, non presenta spigoli vivi e inoltre, essendo elastica, è in grado di assorbire gli urti senza rompersi evitando cosi di provocare infortuni a persone e animali.</3><5>Il materiale impiegato è lo stesso che viene utilizzato per la produzione di serramenti dove l’inalterabilità del colore e delle caratteristiche tecniche sono condizioni indispensabili per garantire un prodotto di qualità. L’inclusione di inibitori dei raggi ultravioletti consente anche di prevenire crepe e rotture e di resistere alla corrosione e allo sfogliamento mantenendo inalterate le caratteristiche originali anche con temperature variabili da +70 °C a -20 °C.</5><6>Principalmente prodotte nel colore bianco, possono essere fornite, a richiesta, anche nel colore verde.</6><7>In ogni recinzione inoltre si possono inserire uno o più cancelli scorrevoli in alluminio.</7><8>Tutte le nostre recinzioni sono personalizzate in base alle esigenze di metratura e di figura del cliente.</8>"
 
@@ -112,7 +112,7 @@ msgstr "<0>Porte di separazione.</0><1>(Elettrificatione 200-240 Volt monofase)<
 msgid "<0>Sono le componenti dell'ostacolo più stressate, poiché, come i candelieri e i pilieri, sono perennemente sottoposte all'azione aggressiva degli agenti atmosferici (caldo, freddo, sole, pioggia). A questi si aggiungono anche gli urti degli zoccoli dei cavalli, frequenti ribaltamenti e le manipolazioni necessarie per aggiustarne le altezze.</0><1>Le barriere di abete, comunemente usate, richiedono una continua manutenzione perché si piegano, scoloriscono nel tempo e si rompono frequentemente.</1><2>Le barriere sintetiche di {NAME}, invece, hanno lo stesso peso di quelle in abete, ma perdono il loro colore solamente dopo anni, non si scrostano e, solo raramente, si rompono sotto l'azione di un carico eccessivo.</2>"
 msgstr "<0>Sono le componenti dell'ostacolo più stressate, poiché, come i candelieri e i pilieri, sono perennemente sottoposte all'azione aggressiva degli agenti atmosferici (caldo, freddo, sole, pioggia). A questi si aggiungono anche gli urti degli zoccoli dei cavalli, frequenti ribaltamenti e le manipolazioni necessarie per aggiustarne le altezze.</0><1>Le barriere di abete, comunemente usate, richiedono una continua manutenzione perché si piegano, scoloriscono nel tempo e si rompono frequentemente.</1><2>Le barriere sintetiche di {NAME}, invece, hanno lo stesso peso di quelle in abete, ma perdono il loro colore solamente dopo anni, non si scrostano e, solo raramente, si rompono sotto l'azione di un carico eccessivo.</2>"
 
-#: src/modules/GiostreTecnoexerciser/index.tsx:24
+#: src/modules/GiostreTecnoexerciser/index.tsx:25
 msgid "<0>Tecnoexerciser è il modello di giostra attualmente più richiesto.</0><1>Oggi, grazie alle già note caratteristiche tecniche e alla grande affidabilità, abbiamo aggiunto alcune specifiche funzioni che fanno, di questo modello, la macchina <2>leader</2> del settore.</1><3>È possibile infatti:</3><4><5>Scegliere la forza che la porta mobile esercita sugli animali per invitarli ad avanzare</5><6>Mantenere un controllo costante sull'elettrificazione delle porte mobili</6><7>Beneficiare dell'innovativo sistema \"training program\" che vi consentirà di allenare i vostri cavalli fino ad ottenere performance atletiche.</7><8>Scegliere il programma di irrigazione pesta mentre la giostra sta girando</8></4><9>La struttura è fornita, a seconda delle esigenze, o con punte per l'ancoraggio al suolo o con tasselli nel caso in cui si desideri ancorarla ad un fondo di calcestruzzo.</9>"
 msgstr "<0>Tecnoexerciser è il modello di giostra attualmente più richiesto.</0><1>Oggi, grazie alle già note caratteristiche tecniche e alla grande affidabilità, abbiamo aggiunto alcune specifiche funzioni che fanno, di questo modello, la macchina <2>leader</2> del settore.</1><3>È possibile infatti:</3><4><5>Scegliere la forza che la porta mobile esercita sugli animali per invitarli ad avanzare</5><6>Mantenere un controllo costante sull'elettrificazione delle porte mobili</6><7>Beneficiare dell'innovativo sistema \"training program\" che vi consentirà di allenare i vostri cavalli fino ad ottenere performance atletiche.</7><8>Scegliere il programma di irrigazione pesta mentre la giostra sta girando</8></4><9>La struttura è fornita, a seconda delle esigenze, o con punte per l'ancoraggio al suolo o con tasselli nel caso in cui si desideri ancorarla ad un fondo di calcestruzzo.</9>"
 
@@ -120,7 +120,7 @@ msgstr "<0>Tecnoexerciser è il modello di giostra attualmente più richiesto.</
 msgid "3.000 giostre installate"
 msgstr "3.000 giostre installate"
 
-#: src/modules/Index/index.tsx:78
+#: src/modules/Index/index.tsx:79
 msgid "Accessibili"
 msgstr "Accessibili"
 
@@ -129,7 +129,7 @@ msgid "Accesso ai dati e Servizio Clienti"
 msgstr "Accesso ai dati e Servizio Clienti"
 
 #: src/modules/Recinti/_accessori.tsx:12
-#: src/components/Accessori/index.tsx:26
+#: src/components/Accessori/index.tsx:27
 msgid "Accessori"
 msgstr "Accessori"
 
@@ -141,7 +141,7 @@ msgstr "Acciaio zincato"
 msgid "Acconsento"
 msgstr "Acconsento"
 
-#: src/components/Product/components/ProductInformations/index.tsx:40
+#: src/components/Product/components/ProductInformations/index.tsx:41
 msgid "Altezza"
 msgstr "Altezza"
 
@@ -164,7 +164,7 @@ msgstr "Ampia gamma"
 msgid "Anche in questo semplice modello potrai decidere di dotare la tua giostra di un corridoio scegliendo tra il piú economico corridoio costituito dalla recinzione <0>TECNOFENCE</0> o il corridoio <1>EASY</1> in pannelli di compensato marino."
 msgstr "Anche in questo semplice modello potrai decidere di dotare la tua giostra di un corridoio scegliendo tra il piú economico corridoio costituito dalla recinzione <0>TECNOFENCE</0> o il corridoio <1>EASY</1> in pannelli di compensato marino."
 
-#: src/modules/Index/index.tsx:87
+#: src/modules/Index/index.tsx:88
 msgid "Apprezzati"
 msgstr "Apprezzati"
 
@@ -172,15 +172,15 @@ msgstr "Apprezzati"
 msgid "Avanti"
 msgstr "Avanti"
 
-#: src/hooks/useProducts/utils/index.tsx:318
+#: src/hooks/useProducts/utils/index.tsx:319
 msgid "Bandierine"
 msgstr "Bandierine"
 
-#: src/hooks/useProducts/utils/index.tsx:309
+#: src/hooks/useProducts/utils/index.tsx:310
 msgid "Bandierine realizzate in plastica resistente agli urti. Ideali per allenamenti e competizioni, offrono una visibilità eccellente e una lunga durata nel tempo."
 msgstr "Bandierine realizzate in plastica resistente agli urti. Ideali per allenamenti e competizioni, offrono una visibilità eccellente e una lunga durata nel tempo."
 
-#: src/hooks/useProducts/utils/index.tsx:104
+#: src/hooks/useProducts/utils/index.tsx:105
 msgid "Barriera per campo ostacoli (3 mt.)"
 msgstr "Barriera per campo ostacoli (3 mt.)"
 
@@ -194,8 +194,8 @@ msgstr "Bello e funzionale"
 
 #. placeholder {0}: formatSize(170)
 #. placeholder {0}: formatSize(190)
-#: src/hooks/useProducts/utils/index.tsx:205
-#: src/hooks/useProducts/utils/index.tsx:219
+#: src/hooks/useProducts/utils/index.tsx:206
+#: src/hooks/useProducts/utils/index.tsx:220
 msgid "Candeliere da {0} con piede in PVC"
 msgstr "Candeliere da {0} con piede in PVC"
 
@@ -208,7 +208,7 @@ msgid "Caratteristiche"
 msgstr "Caratteristiche"
 
 #: src/modules/Ostacoli/Cavalletti.tsx:21
-#: src/hooks/useProducts/utils/index.tsx:136
+#: src/hooks/useProducts/utils/index.tsx:137
 msgid "Cavalletti Caprilli"
 msgstr "Cavalletti Caprilli"
 
@@ -228,7 +228,7 @@ msgstr "Chiusura a terra"
 msgid "Ciao, come posso aiutarti"
 msgstr "Ciao, come posso aiutarti"
 
-#: src/components/Footer/index.tsx:78
+#: src/components/Footer/index.tsx:79
 msgid "COD. FISC. e Part: I.V.A. 04743610281 C.C.I.A.A. PD - R.E.A. 414822"
 msgstr "COD. FISC. e Part: I.V.A. 04743610281 C.C.I.A.A. PD - R.E.A. 414822"
 
@@ -236,7 +236,7 @@ msgstr "COD. FISC. e Part: I.V.A. 04743610281 C.C.I.A.A. PD - R.E.A. 414822"
 msgid "Codice Fiscale e Partita IVA"
 msgstr "Codice Fiscale e Partita IVA"
 
-#: src/components/Product/components/ProductInformations/index.tsx:50
+#: src/components/Product/components/ProductInformations/index.tsx:51
 msgid "Colori"
 msgstr "Colori"
 
@@ -269,7 +269,7 @@ msgstr "Contattaci usando l'email <0>{0}</0> <1/>o chiamaci al numero: <2>{1}</2
 msgid "Contatti"
 msgstr "Contatti"
 
-#: src/modules/Contatti/index.tsx:60
+#: src/modules/Contatti/index.tsx:61
 msgid "Contatto commerciale"
 msgstr "Contatto commerciale"
 
@@ -304,7 +304,7 @@ msgstr "Cookie Analitici"
 msgid "Cookie di navigazione"
 msgstr "Cookie di navigazione"
 
-#: src/modules/Contatti/index.tsx:90
+#: src/modules/Contatti/index.tsx:91
 msgid "Coordinate bancarie"
 msgstr "Coordinate bancarie"
 
@@ -347,18 +347,18 @@ msgstr "Corridoio EXERCISER in compensato marino"
 msgid "Corridoio TECNOFENCE"
 msgstr "Corridoio TECNOFENCE"
 
-#: src/modules/Index/index.tsx:148
+#: src/modules/Index/index.tsx:149
 msgid "Cosa dicono di noi"
 msgstr "Cosa dicono di noi"
 
-#: src/hooks/useProducts/utils/index.tsx:95
+#: src/hooks/useProducts/utils/index.tsx:96
 msgid "Costruisci la tua barriera personalizzata scegliendo tra i colori a disposizione"
 msgstr "Costruisci la tua barriera personalizzata scegliendo tra i colori a disposizione"
 
 #. placeholder {0}: CubiModels.MINI
 #. placeholder {0}: CubiModels.MAXI
-#: src/hooks/useProducts/utils/index.tsx:167
-#: src/hooks/useProducts/utils/index.tsx:187
+#: src/hooks/useProducts/utils/index.tsx:168
+#: src/hooks/useProducts/utils/index.tsx:188
 msgid "Cubi {0}"
 msgstr "Cubi {0}"
 
@@ -366,18 +366,18 @@ msgstr "Cubi {0}"
 msgid "Cubi per campo ostacoli"
 msgstr "Cubi per campo ostacoli"
 
-#: src/modules/Ostacoli/CucchiaiSegnaletica.tsx:16
+#: src/modules/Ostacoli/CucchiaiSegnaletica.tsx:15
 msgid "Cucchiai"
 msgstr "Cucchiai"
 
 #. placeholder {0}: CucchiaiModels.DE
 #. placeholder {0}: CucchiaiModels.PS
-#: src/hooks/useProducts/utils/index.tsx:262
-#: src/hooks/useProducts/utils/index.tsx:281
+#: src/hooks/useProducts/utils/index.tsx:263
+#: src/hooks/useProducts/utils/index.tsx:282
 msgid "Cucchiaio {0}"
 msgstr "Cucchiaio {0}"
 
-#: src/modules/Index/index.tsx:72
+#: src/modules/Index/index.tsx:73
 msgid "Da anni Pessastudio è focalizzata nel produrre prodotti di qualità a costi accessibili"
 msgstr "Da anni Pessastudio è focalizzata nel produrre prodotti di qualità a costi accessibili"
 
@@ -385,11 +385,11 @@ msgstr "Da anni Pessastudio è focalizzata nel produrre prodotti di qualità a c
 msgid "Diametro"
 msgstr "Diametro"
 
-#: src/hooks/useProducts/utils/index.tsx:389
+#: src/hooks/useProducts/utils/index.tsx:390
 msgid "Diamo la possibilità di montare nella vostra recinzione un piede mobile che vi consentirà di posizionarla e spostarla a seconda delle vostre esigenze"
 msgstr "Diamo la possibilità di montare nella vostra recinzione un piede mobile che vi consentirà di posizionarla e spostarla a seconda delle vostre esigenze"
 
-#: src/modules/Index/index.tsx:147
+#: src/modules/Index/index.tsx:148
 msgid "Dicono di noi"
 msgstr "Dicono di noi"
 
@@ -456,11 +456,11 @@ msgid "Fin dal primo accesso questi cookie permettono al sito di funzionare corr
 msgstr "Fin dal primo accesso questi cookie permettono al sito di funzionare correttamente e ti consentono di visualizzare i contenuti sul tuo dispositivo riconoscendo la lingua e il mercato del Paese dal quale scegli di connetterti. Se sei un utente registrato, permetteranno di riconoscerti e di accedere ai servizi delle aree dedicate. I cookie di navigazione sono cookie tecnici e sono necessari al funzionamento del sito."
 
 #: src/modules/Ostacoli/Fosso.tsx:21
-#: src/hooks/useProducts/utils/index.tsx:121
+#: src/hooks/useProducts/utils/index.tsx:122
 msgid "Fosso"
 msgstr "Fosso"
 
-#: src/hooks/useProducts/utils/index.tsx:113
+#: src/hooks/useProducts/utils/index.tsx:114
 msgid "Fosso in PVC di alta qualità, progettato per allenamenti e competizioni equestri. Resistente agli agenti atmosferici, leggero e facile da spostare, questo ostacolo garantisce durabilità e sicurezza. Ideale per preparare i cavalli alle sfide di salto più impegnative."
 msgstr "Fosso in PVC di alta qualità, progettato per allenamenti e competizioni equestri. Resistente agli agenti atmosferici, leggero e facile da spostare, questo ostacolo garantisce durabilità e sicurezza. Ideale per preparare i cavalli alle sfide di salto più impegnative."
 
@@ -519,7 +519,7 @@ msgid "Giostra Ippowalker"
 msgstr "Giostra Ippowalker"
 
 #. placeholder {0}: formatSizeMeter( dimensions.width )
-#: src/hooks/useProducts/utils/index.tsx:628
+#: src/hooks/useProducts/utils/index.tsx:629
 msgid "Giostra per {horses} cavalli, solo motore ({0})"
 msgstr "Giostra per {horses} cavalli, solo motore ({0})"
 
@@ -544,11 +544,11 @@ msgstr "Giostre"
 msgid "Giostre {0}"
 msgstr "Giostre {0}"
 
-#: src/modules/Index/index.tsx:46
+#: src/modules/Index/index.tsx:47
 msgid "Gli ostacoli sono arrivati. Sono fantastici!"
 msgstr "Gli ostacoli sono arrivati. Sono fantastici!"
 
-#: src/modules/Index/index.tsx:29
+#: src/modules/Index/index.tsx:30
 msgid "Ho ricevuto questa mattina il materiale. I miei complimenti per la qualità dei prodotti, l'imballo ed il trasportatore"
 msgstr "Ho ricevuto questa mattina il materiale. I miei complimenti per la qualità dei prodotti, l'imballo ed il trasportatore"
 
@@ -556,8 +556,8 @@ msgstr "Ho ricevuto questa mattina il materiale. I miei complimenti per la quali
 msgid "Home"
 msgstr "Home"
 
-#: src/hooks/useProducts/utils/index.tsx:196
-#: src/hooks/useProducts/utils/index.tsx:210
+#: src/hooks/useProducts/utils/index.tsx:197
+#: src/hooks/useProducts/utils/index.tsx:211
 msgid "I candelieri sono costruiti con un montante di alluminio verniciato di colore bianco e sono muniti di 4 piedi rivestiti con puntali di plastica che garantiscono, in caso di ribaltamento, l’incolumità vostra e dei vostri cavalli."
 msgstr "I candelieri sono costruiti con un montante di alluminio verniciato di colore bianco e sono muniti di 4 piedi rivestiti con puntali di plastica che garantiscono, in caso di ribaltamento, l’incolumità vostra e dei vostri cavalli."
 
@@ -566,20 +566,20 @@ msgstr "I candelieri sono costruiti con un montante di alluminio verniciato di c
 msgid "I corridoi"
 msgstr "I corridoi"
 
-#: src/hooks/useProducts/utils/index.tsx:158
-#: src/hooks/useProducts/utils/index.tsx:177
+#: src/hooks/useProducts/utils/index.tsx:159
+#: src/hooks/useProducts/utils/index.tsx:178
 msgid "I cubi sono progettati in maniera da poterli incastrare tra di loro. Questo rende questi blocchi da salto più sicuri, stabili e versatili di qualsiasi cosa tu abbia usato prima. Impila i blocchi in una varietà quasi illimitata di posizioni e configurazioni. Raggiungi l'altezza desiderata con più coppie."
 msgstr "I cubi sono progettati in maniera da poterli incastrare tra di loro. Questo rende questi blocchi da salto più sicuri, stabili e versatili di qualsiasi cosa tu abbia usato prima. Impila i blocchi in una varietà quasi illimitata di posizioni e configurazioni. Raggiungi l'altezza desiderata con più coppie."
 
-#: src/hooks/useProducts/utils/index.tsx:504
+#: src/hooks/useProducts/utils/index.tsx:505
 msgid "I moduli premium in PVC, con una finitura superiore e resistente ai raggi solari, combinano leggerezza e facilità di assemblaggio con una robustezza e un'estetica senza pari, ideali per arene di alta qualità."
 msgstr "I moduli premium in PVC, con una finitura superiore e resistente ai raggi solari, combinano leggerezza e facilità di assemblaggio con una robustezza e un'estetica senza pari, ideali per arene di alta qualità."
 
-#: src/hooks/useProducts/utils/index.tsx:439
+#: src/hooks/useProducts/utils/index.tsx:440
 msgid "I nostri moduli economici in PVC resistente ai raggi solari sono leggeri e facili da assemblare, offrendo una soluzione pratica e robusta per delimitare l'area di dressage."
 msgstr "I nostri moduli economici in PVC resistente ai raggi solari sono leggeri e facili da assemblare, offrendo una soluzione pratica e robusta per delimitare l'area di dressage."
 
-#: src/modules/Index/index.tsx:91
+#: src/modules/Index/index.tsx:92
 msgid "I nostri prodotti sono pensati per resistere nel tempo, anche se soggetti a difficili condizioni climatiche"
 msgstr "I nostri prodotti sono pensati per resistere nel tempo, anche se soggetti a difficili condizioni climatiche"
 
@@ -587,7 +587,7 @@ msgstr "I nostri prodotti sono pensati per resistere nel tempo, anche se soggett
 msgid "I nostri tondini sono considerati strutture precarie. Non avrete bisogno di nessuna concessione edilizia"
 msgstr "I nostri tondini sono considerati strutture precarie. Non avrete bisogno di nessuna concessione edilizia"
 
-#: src/modules/Index/index.tsx:82
+#: src/modules/Index/index.tsx:83
 msgid "I prodotti vengono venduti ed apprezzati sia in Italia che all'estero"
 msgstr "I prodotti vengono venduti ed apprezzati sia in Italia che all'estero"
 
@@ -595,11 +595,11 @@ msgstr "I prodotti vengono venduti ed apprezzati sia in Italia che all'estero"
 msgid "Iban"
 msgstr "Iban"
 
-#: src/hooks/useProducts/utils/index.tsx:271
+#: src/hooks/useProducts/utils/index.tsx:272
 msgid "Il cucchiaio dotato del nostro sistema brevettato di aggancio"
 msgstr "Il cucchiaio dotato del nostro sistema brevettato di aggancio"
 
-#: src/hooks/useProducts/utils/index.tsx:252
+#: src/hooks/useProducts/utils/index.tsx:253
 msgid "Il cucchiaio standard utilizzato al livello internazionale"
 msgstr "Il cucchiaio standard utilizzato al livello internazionale"
 
@@ -621,7 +621,7 @@ msgstr "Impediscono alla sabbia di uscire dal tondino riducendo il materiale dis
 msgid "Indietro"
 msgstr "Indietro"
 
-#: src/modules/Index/index.tsx:97
+#: src/modules/Index/index.tsx:98
 msgid "Indistruttibili"
 msgstr "Indistruttibili"
 
@@ -637,11 +637,11 @@ msgstr "Ingresso"
 msgid "Ingresso di 2,05 mt. con catenaccio verticale"
 msgstr "Ingresso di 2,05 mt. con catenaccio verticale"
 
-#: src/modules/Index/index.tsx:58
+#: src/modules/Index/index.tsx:59
 msgid "Innovativi"
 msgstr "Innovativi"
 
-#: src/modules/Index/index.tsx:52
+#: src/modules/Index/index.tsx:53
 msgid "Innovazione tecnologica e qualità sono le caratteristiche chiave dei nostri prodotti"
 msgstr "Innovazione tecnologica e qualità sono le caratteristiche chiave dei nostri prodotti"
 
@@ -668,7 +668,7 @@ msgstr "Irrigazione del percorso controllabile dal quadro di comando. Aiuta a te
 msgid "Iscriviti"
 msgstr "Iscriviti"
 
-#: src/components/Footer/index.tsx:65
+#: src/components/Footer/index.tsx:66
 msgid "Iscriviti alla nostra newsletter"
 msgstr "Iscriviti alla nostra newsletter"
 
@@ -676,7 +676,7 @@ msgstr "Iscriviti alla nostra newsletter"
 msgid "Istituto"
 msgstr "Istituto"
 
-#: src/modules/Recinti/index.tsx:64
+#: src/modules/Recinti/index.tsx:65
 #: src/modules/GiostreIppowalkerIstruzioniDiMontaggio/index.tsx:66
 #: src/hooks/usePages/utils/index.tsx:95
 #: src/hooks/usePages/utils/index.tsx:106
@@ -686,16 +686,16 @@ msgstr "Istruzioni di montaggio"
 #. placeholder {0}: 8
 #. placeholder {0}: 12
 #. placeholder {1}: DressageModels.TRAINING
-#: src/hooks/useProducts/utils/index.tsx:417
-#: src/hooks/useProducts/utils/index.tsx:433
+#: src/hooks/useProducts/utils/index.tsx:418
+#: src/hooks/useProducts/utils/index.tsx:434
 msgid "Kit {0} Lettere Dressage ({1})"
 msgstr "Kit {0} Lettere Dressage ({1})"
 
-#: src/hooks/useProducts/utils/index.tsx:150
+#: src/hooks/useProducts/utils/index.tsx:151
 msgid "Kit Cavalletti Caprilli + barriera"
 msgstr "Kit Cavalletti Caprilli + barriera"
 
-#: src/hooks/useProducts/utils/index.tsx:141
+#: src/hooks/useProducts/utils/index.tsx:142
 msgid "Kit comprensivo di 2 cavalletti e una barriera in PPO di colore bianco, diametro 95, lunghezza 2 mt."
 msgstr "Kit comprensivo di 2 cavalletti e una barriera in PPO di colore bianco, diametro 95, lunghezza 2 mt."
 
@@ -726,15 +726,15 @@ msgstr "La giostra puo essere acquistata scegliendo tra il piú economico corrid
 msgid "La pagina che stai cercando non esiste"
 msgstr "La pagina che stai cercando non esiste"
 
-#: src/hooks/useProducts/utils/index.tsx:353
+#: src/hooks/useProducts/utils/index.tsx:354
 msgid "La recinzione a due filagne genericamente viene utilizzata per delimitare campi da lavoro o per realizzare paddock dove i cavalli sono comunque osservati dal personale presente"
 msgstr "La recinzione a due filagne genericamente viene utilizzata per delimitare campi da lavoro o per realizzare paddock dove i cavalli sono comunque osservati dal personale presente"
 
-#: src/hooks/useProducts/utils/index.tsx:365
+#: src/hooks/useProducts/utils/index.tsx:366
 msgid "La recinzione a tre filagne viene utilizzata per delimitare paddok per animali che rimangono per molte ore al giorno incustoditi oppure per delimitare confini di proprietà o aree. Per garantirne una maggiore sicurezza è possibile installare un impianto d'elettrificazione sulle filagne"
 msgstr "La recinzione a tre filagne viene utilizzata per delimitare paddok per animali che rimangono per molte ore al giorno incustoditi oppure per delimitare confini di proprietà o aree. Per garantirne una maggiore sicurezza è possibile installare un impianto d'elettrificazione sulle filagne"
 
-#: src/hooks/useProducts/utils/index.tsx:341
+#: src/hooks/useProducts/utils/index.tsx:342
 msgid "La recinzione ad una filagna viene utilizzata per delimitare campi da lavoro o gara poco adoperati e non è adatta per l'addestramento. Potete utilizzarla anche per delimitare un'area del vostro giardino di casa"
 msgstr "La recinzione ad una filagna viene utilizzata per delimitare campi da lavoro o gara poco adoperati e non è adatta per l'addestramento. Potete utilizzarla anche per delimitare un'area del vostro giardino di casa"
 
@@ -756,16 +756,16 @@ msgstr "La struttura è stata progettata per garantire un carico neve fino a 120
 
 #. placeholder {0}: formatSize(50)
 #. placeholder {0}: formatSize(1500)
-#: src/hooks/useProducts/utils/index.tsx:233
-#: src/hooks/useProducts/utils/index.tsx:247
+#: src/hooks/useProducts/utils/index.tsx:234
+#: src/hooks/useProducts/utils/index.tsx:248
 msgid "Lama DE da {0}"
 msgstr "Lama DE da {0}"
 
-#: src/components/Product/components/ProductInformations/index.tsx:39
+#: src/components/Product/components/ProductInformations/index.tsx:40
 msgid "Larghezza"
 msgstr "Larghezza"
 
-#: src/hooks/useProducts/utils/index.tsx:489
+#: src/hooks/useProducts/utils/index.tsx:490
 msgid "Le lettere premium in PVC, con una finitura di alta qualità e resistente ai raggi solari, garantiscono massima durabilità e un'estetica superiore. Perfette per chi cerca eccellenza e professionalità nell'arena."
 msgstr "Le lettere premium in PVC, con una finitura di alta qualità e resistente ai raggi solari, garantiscono massima durabilità e un'estetica superiore. Perfette per chi cerca eccellenza e professionalità nell'arena."
 
@@ -773,16 +773,16 @@ msgstr "Le lettere premium in PVC, con una finitura di alta qualità e resistent
 msgid "Le nostre giostre sono considerate strutture precarie. Non avrete bisogno di nessuna concessione edilizia"
 msgstr "Le nostre giostre sono considerate strutture precarie. Non avrete bisogno di nessuna concessione edilizia"
 
-#: src/hooks/useProducts/utils/index.tsx:377
+#: src/hooks/useProducts/utils/index.tsx:378
 msgid "Le recinzioni a quattro filagne sono utilizzate per delimitare paddock per stalloni, realizzare tondini per la doma e l'addestramento o per formare ovali per il salto in libertà"
 msgstr "Le recinzioni a quattro filagne sono utilizzate per delimitare paddock per stalloni, realizzare tondini per la doma e l'addestramento o per formare ovali per il salto in libertà"
 
 #. placeholder {0}: DressageModels.OLYMPIC
-#: src/hooks/useProducts/utils/index.tsx:498
+#: src/hooks/useProducts/utils/index.tsx:499
 msgid "Lettera dressage ({0})"
 msgstr "Lettera dressage ({0})"
 
-#: src/components/Product/components/ProductInformations/index.tsx:41
+#: src/components/Product/components/ProductInformations/index.tsx:42
 msgid "Lunghezza"
 msgstr "Lunghezza"
 
@@ -791,7 +791,7 @@ msgstr "Lunghezza"
 msgid "Manuale collegamento elettrico"
 msgstr "Manuale collegamento elettrico"
 
-#: src/modules/Recinti/index.tsx:134
+#: src/modules/Recinti/index.tsx:135
 #: src/modules/GiostreTecnoexerciser/_servizio_clienti.tsx:71
 #: src/modules/GiostreIppowalker/_servizio_clienti.tsx:57
 msgid "Manuale d'istruzioni"
@@ -812,7 +812,7 @@ msgstr "Manuali"
 msgid "Mappa"
 msgstr "Mappa"
 
-#: src/components/Product/components/ProductInformations/index.tsx:46
+#: src/components/Product/components/ProductInformations/index.tsx:47
 msgid "Materiali"
 msgstr "Materiali"
 
@@ -822,8 +822,8 @@ msgstr "Materiali di qualità"
 
 #. placeholder {0}: DressageModels.TRAINING
 #. placeholder {0}: DressageModels.OLYMPIC
-#: src/hooks/useProducts/utils/index.tsx:448
-#: src/hooks/useProducts/utils/index.tsx:513
+#: src/hooks/useProducts/utils/index.tsx:449
+#: src/hooks/useProducts/utils/index.tsx:514
 msgid "Modulo dressage ({0})"
 msgstr "Modulo dressage ({0})"
 
@@ -837,16 +837,16 @@ msgstr "Motore"
 msgid "Nessuna concessione edilizia"
 msgstr "Nessuna concessione edilizia"
 
-#: src/components/Footer/index.tsx:66
+#: src/components/Footer/index.tsx:67
 msgid "Newsletters"
 msgstr "Newsletters"
 
 #. placeholder {0}: SegnaleticaModels.PROFESSIONAL
-#: src/hooks/useProducts/utils/index.tsx:333
+#: src/hooks/useProducts/utils/index.tsx:334
 msgid "Numero per campo ostacoli {0}"
 msgstr "Numero per campo ostacoli {0}"
 
-#: src/hooks/useProducts/utils/index.tsx:323
+#: src/hooks/useProducts/utils/index.tsx:324
 msgid "Numero per campo ostacoli costruito in materiali robusti e leggeri. La forma piramidale ne assicurano la stabilitá. Perfetto per essere utilizzato in percorsi di salto ostacoli per cavalli."
 msgstr "Numero per campo ostacoli costruito in materiali robusti e leggeri. La forma piramidale ne assicurano la stabilitá. Perfetto per essere utilizzato in percorsi di salto ostacoli per cavalli."
 
@@ -863,8 +863,8 @@ msgstr "Ostacoli"
 msgid "Pagina non trovata"
 msgstr "Pagina non trovata"
 
-#: src/hooks/useProducts/utils/index.tsx:224
-#: src/hooks/useProducts/utils/index.tsx:238
+#: src/hooks/useProducts/utils/index.tsx:225
+#: src/hooks/useProducts/utils/index.tsx:239
 msgid "Per consentirvi di realizzare ostacoli di vostra creazione possiamo fornirvi le lame forate in due diverse lunghezze."
 msgstr "Per consentirvi di realizzare ostacoli di vostra creazione possiamo fornirvi le lame forate in due diverse lunghezze."
 
@@ -872,15 +872,15 @@ msgstr "Per consentirvi di realizzare ostacoli di vostra creazione possiamo forn
 msgid "Perché una giostra Pessastudio"
 msgstr "Perché una giostra Pessastudio"
 
-#: src/modules/Index/index.tsx:125
+#: src/modules/Index/index.tsx:126
 msgid "Perché?"
 msgstr "Perché?"
 
-#: src/modules/Index/index.tsx:68
+#: src/modules/Index/index.tsx:69
 msgid "Personalizzabili"
 msgstr "Personalizzabili"
 
-#: src/components/Product/components/ProductInformations/index.tsx:42
+#: src/components/Product/components/ProductInformations/index.tsx:43
 msgid "Peso"
 msgstr "Peso"
 
@@ -888,15 +888,15 @@ msgstr "Peso"
 msgid "Pessastudio fornisce due soluzioni per trasformare il vostro terreno in un'arena da dressage: la gamma <0>training</0> e quella <1>olympic</1>"
 msgstr "Pessastudio fornisce due soluzioni per trasformare il vostro terreno in un'arena da dressage: la gamma <0>training</0> e quella <1>olympic</1>"
 
-#: src/modules/Index/index.tsx:101
+#: src/modules/Index/index.tsx:102
 msgid "Pessastudio nasce 28 fa dall'ingegno e dalla passione per i cavalli del fondatore Luciano Pessa. Oggi, la figlia Anna, continua a portare avanti lo stesso sogno"
 msgstr "Pessastudio nasce 28 fa dall'ingegno e dalla passione per i cavalli del fondatore Luciano Pessa. Oggi, la figlia Anna, continua a portare avanti lo stesso sogno"
 
-#: src/modules/Index/index.tsx:126
+#: src/modules/Index/index.tsx:127
 msgid "Pessastudio, una scelta di qualità"
 msgstr "Pessastudio, una scelta di qualità"
 
-#: src/hooks/useProducts/utils/index.tsx:395
+#: src/hooks/useProducts/utils/index.tsx:396
 msgid "Piede mobile"
 msgstr "Piede mobile"
 
@@ -937,11 +937,11 @@ msgstr "Potenza motore {0} kw e cadenza regolabile fra 60 e 220 metri al minuto"
 msgid "Procedura di lubrificazione"
 msgstr "Procedura di lubrificazione"
 
-#: src/modules/Index/components/IndexProducts/index.tsx:40
+#: src/modules/Index/components/IndexProducts/index.tsx:41
 msgid "Prodotti"
 msgstr "Prodotti"
 
-#: src/modules/Index/index.tsx:62
+#: src/modules/Index/index.tsx:63
 msgid "Prodotti MADE IN ITALY, costruiti da Pessastudio e personalizzabili (in dimensioni o colori)"
 msgstr "Prodotti MADE IN ITALY, costruiti da Pessastudio e personalizzabili (in dimensioni o colori)"
 
@@ -989,22 +989,22 @@ msgid "Recinzione"
 msgstr "Recinzione"
 
 #. placeholder {0}: 1
-#: src/hooks/useProducts/utils/index.tsx:348
+#: src/hooks/useProducts/utils/index.tsx:349
 msgid "Recinzione cavalli a {0} filagna"
 msgstr "Recinzione cavalli a {0} filagna"
 
 #. placeholder {0}: 2
 #. placeholder {0}: 3
 #. placeholder {0}: 4
-#: src/modules/Recinti/index.tsx:34
-#: src/modules/Recinti/index.tsx:38
-#: src/modules/Recinti/index.tsx:42
-#: src/modules/Recinti/index.tsx:46
-#: src/modules/Recinti/index.tsx:50
-#: src/modules/Recinti/index.tsx:54
-#: src/hooks/useProducts/utils/index.tsx:360
-#: src/hooks/useProducts/utils/index.tsx:372
-#: src/hooks/useProducts/utils/index.tsx:384
+#: src/modules/Recinti/index.tsx:35
+#: src/modules/Recinti/index.tsx:39
+#: src/modules/Recinti/index.tsx:43
+#: src/modules/Recinti/index.tsx:47
+#: src/modules/Recinti/index.tsx:51
+#: src/modules/Recinti/index.tsx:55
+#: src/hooks/useProducts/utils/index.tsx:361
+#: src/hooks/useProducts/utils/index.tsx:373
+#: src/hooks/useProducts/utils/index.tsx:385
 msgid "Recinzione cavalli a {0} filagne"
 msgstr "Recinzione cavalli a {0} filagne"
 
@@ -1027,11 +1027,11 @@ msgstr "Rettangoli / Campi professionali da dressage per tutte le esigenze"
 #. placeholder {0}: DressageData.SIZE_20x60.size
 #. placeholder {1}: DressageModels.TRAINING
 #. placeholder {1}: DressageModels.OLYMPIC
-#: src/hooks/useProducts/utils/index.tsx:462
-#: src/hooks/useProducts/utils/index.tsx:479
-#: src/hooks/useProducts/utils/index.tsx:527
-#: src/hooks/useProducts/utils/index.tsx:544
-#: src/hooks/useProducts/utils/index.tsx:561
+#: src/hooks/useProducts/utils/index.tsx:463
+#: src/hooks/useProducts/utils/index.tsx:480
+#: src/hooks/useProducts/utils/index.tsx:528
+#: src/hooks/useProducts/utils/index.tsx:545
+#: src/hooks/useProducts/utils/index.tsx:562
 msgid "Rettangolo dressage {0} ({1})"
 msgstr "Rettangolo dressage {0} ({1})"
 
@@ -1040,11 +1040,11 @@ msgstr "Rettangolo dressage {0} ({1})"
 msgid "Richiedi un preventivo"
 msgstr "Richiedi un preventivo"
 
-#: src/components/Footer/index.tsx:68
+#: src/components/Footer/index.tsx:69
 msgid "Rimani informato sui nostri sconti e gli eventi"
 msgstr "Rimani informato sui nostri sconti e gli eventi"
 
-#: src/modules/Index/index.tsx:35
+#: src/modules/Index/index.tsx:36
 msgid "Ringrazio tutto il team per la professionalità, gentilezza, velocità e sopratutto per l'ottimo risultato"
 msgstr "Ringrazio tutto il team per la professionalità, gentilezza, velocità e sopratutto per l'ottimo risultato"
 
@@ -1052,7 +1052,7 @@ msgstr "Ringrazio tutto il team per la professionalità, gentilezza, velocità e
 msgid "Riprova piú tardi"
 msgstr "Riprova piú tardi"
 
-#: src/modules/Contatti/index.tsx:103
+#: src/modules/Contatti/index.tsx:104
 msgid "Rivenditori"
 msgstr "Rivenditori"
 
@@ -1069,7 +1069,7 @@ msgstr "Scopri di piú"
 msgid "Scopri il nostro tondino Tecnohalle"
 msgstr "Scopri il nostro tondino Tecnohalle"
 
-#: src/modules/Index/components/IndexProducts/index.tsx:41
+#: src/modules/Index/components/IndexProducts/index.tsx:42
 msgid "Scopri la nostra gamma di prodotti"
 msgstr "Scopri la nostra gamma di prodotti"
 
@@ -1083,7 +1083,7 @@ msgstr "Scopri la nostra giostra {0}, lo strumento economico adatto ad allenare 
 msgid "Scopri la nostra giostra {0}, lo strumento professionale adatto ad allenare il tuo cavallo o il tuo puledro"
 msgstr "Scopri la nostra giostra {0}, lo strumento professionale adatto ad allenare il tuo cavallo o il tuo puledro"
 
-#: src/modules/Index/index.tsx:150
+#: src/modules/Index/index.tsx:151
 msgid "Scopri la qualità dei nostri prodotti attraverso la testimonianza dei clienti"
 msgstr "Scopri la qualità dei nostri prodotti attraverso la testimonianza dei clienti"
 
@@ -1091,11 +1091,11 @@ msgstr "Scopri la qualità dei nostri prodotti attraverso la testimonianza dei c
 msgid "Scopri le nostre giostre per cavalli, lo strumento ideale di lavoro per allenare il vostro cavallo"
 msgstr "Scopri le nostre giostre per cavalli, lo strumento ideale di lavoro per allenare il vostro cavallo"
 
-#: src/modules/Contatti/index.tsx:81
+#: src/modules/Contatti/index.tsx:82
 msgid "Sede legale"
 msgstr "Sede legale"
 
-#: src/modules/Contatti/index.tsx:72
+#: src/modules/Contatti/index.tsx:73
 msgid "Sede operativa"
 msgstr "Sede operativa"
 
@@ -1103,11 +1103,11 @@ msgstr "Sede operativa"
 msgid "Segnaletica"
 msgstr "Segnaletica"
 
-#: src/components/Footer/index.tsx:43
+#: src/components/Footer/index.tsx:44
 msgid "Seguici"
 msgstr "Seguici"
 
-#: src/components/Footer/index.tsx:45
+#: src/components/Footer/index.tsx:46
 msgid "Seguici sui nostra social e scopri le ultime novità"
 msgstr "Seguici sui nostra social e scopri le ultime novità"
 
@@ -1115,7 +1115,7 @@ msgstr "Seguici sui nostra social e scopri le ultime novità"
 msgid "Si è verificato un problema, riprova"
 msgstr "Si è verificato un problema, riprova"
 
-#: src/modules/Contatti/index.tsx:53
+#: src/modules/Contatti/index.tsx:54
 msgid "Siamo qui per aiutarti! Se hai domande sui nostri prodotti per cavalli, necessiti di assistenza con un ordine o desideri maggiori informazioni, non esitare a contattarci."
 msgstr "Siamo qui per aiutarti! Se hai domande sui nostri prodotti per cavalli, necessiti di assistenza con un ordine o desideri maggiori informazioni, non esitare a contattarci."
 
@@ -1123,30 +1123,30 @@ msgstr "Siamo qui per aiutarti! Se hai domande sui nostri prodotti per cavalli, 
 msgid "Sicuro"
 msgstr "Sicuro"
 
-#: src/hooks/useProducts/utils/index.tsx:127
+#: src/hooks/useProducts/utils/index.tsx:128
 msgid "Singolo cavalletto abbinabile a barriere diametro 90, 95, 100, 105 mm."
 msgstr "Singolo cavalletto abbinabile a barriere diametro 90, 95, 100, 105 mm."
 
-#: src/components/Footer/index.tsx:42
+#: src/components/Footer/index.tsx:43
 msgid "Socials"
 msgstr "Socials"
 
-#: src/modules/Index/index.tsx:41
+#: src/modules/Index/index.tsx:42
 msgid "Splendido niente da dire! Il tondino è ben pensato e ingegnoso. Molto bene!"
 msgstr "Splendido niente da dire! Il tondino è ben pensato e ingegnoso. Molto bene!"
 
-#: src/hooks/useProducts/utils/index.tsx:290
+#: src/hooks/useProducts/utils/index.tsx:291
 msgid "Supporti di sicurezza da applicare ai nostri cucchiai per salvaguardare l'integrità degli arti dei vostri cavalli in maniera efficace ed economica."
 msgstr "Supporti di sicurezza da applicare ai nostri cucchiai per salvaguardare l'integrità degli arti dei vostri cavalli in maniera efficace ed economica."
 
 #: src/modules/Tondini/index.tsx:262
-#: src/modules/Recinti/index.tsx:132
+#: src/modules/Recinti/index.tsx:133
 #: src/modules/GiostreTecnoexerciser/_servizio_clienti.tsx:56
 #: src/modules/GiostreIppowalker/_servizio_clienti.tsx:43
 msgid "Supporto clienti"
 msgstr "Supporto clienti"
 
-#: src/hooks/useProducts/utils/index.tsx:300
+#: src/hooks/useProducts/utils/index.tsx:301
 msgid "Supporto di sicurezza"
 msgstr "Supporto di sicurezza"
 
@@ -1190,7 +1190,7 @@ msgid "Tondino coperto"
 msgstr "Tondino coperto"
 
 #. placeholder {0}: formatSizeMeter( dimensions.width )
-#: src/hooks/useProducts/utils/index.tsx:694
+#: src/hooks/useProducts/utils/index.tsx:695
 msgid "Tondino coperto {sides} pannelli {0}"
 msgstr "Tondino coperto {sides} pannelli {0}"
 
@@ -1202,15 +1202,15 @@ msgstr "Tondino coperto {sides} pannelli {size}"
 msgid "Tondino coperto per cavalli"
 msgstr "Tondino coperto per cavalli"
 
-#: src/hooks/useProducts/utils/index.tsx:690
+#: src/hooks/useProducts/utils/index.tsx:691
 msgid "Tondino per cavalli coperto, ideale per allenamenti e addestramenti in ogni stagione. Realizzato con struttura robusta e materiali resistenti, offre protezione dagli agenti atmosferici. Facile da montare, garantisce sicurezza e comfort per cavalli e cavalieri, migliorando le prestazioni in un ambiente controllato."
 msgstr "Tondino per cavalli coperto, ideale per allenamenti e addestramenti in ogni stagione. Realizzato con struttura robusta e materiali resistenti, offre protezione dagli agenti atmosferici. Facile da montare, garantisce sicurezza e comfort per cavalli e cavalieri, migliorando le prestazioni in un ambiente controllato."
 
-#: src/modules/Index/index.tsx:117
+#: src/modules/Index/index.tsx:118
 msgid "Tradizione e qualità"
 msgstr "Tradizione e qualità"
 
-#: src/hooks/useProducts/utils/index.tsx:79
+#: src/hooks/useProducts/utils/index.tsx:80
 msgid "Trasforma qualsiasi terreno in un'arena da dressage con questi coni da dressage. Facili da posizionare, leggeri e anche sicuri per il tuo cavallo. Le nostre lettere in PVC resistente ai raggi solari sono durevoli e leggibili in tutte le condizioni climatiche. Facili da posizionare, offrono un'ottima resistenza agli agenti atmosferici a un prezzo conveniente."
 msgstr "Trasforma qualsiasi terreno in un'arena da dressage con questi coni da dressage. Facili da posizionare, leggeri e anche sicuri per il tuo cavallo. Le nostre lettere in PVC resistente ai raggi solari sono durevoli e leggibili in tutte le condizioni climatiche. Facili da posizionare, offrono un'ottima resistenza agli agenti atmosferici a un prezzo conveniente."
 
@@ -1226,7 +1226,7 @@ msgstr "Un cookie è un file di piccole dimensioni che viene inviato al browser 
 msgid "Un recinto da cavalli in PVC. Indistruttibile anche in presenza delle più avverse condizioni meteorologiche"
 msgstr "Un recinto da cavalli in PVC. Indistruttibile anche in presenza delle più avverse condizioni meteorologiche"
 
-#: src/modules/Index/index.tsx:108
+#: src/modules/Index/index.tsx:109
 msgid "Una lunga storia"
 msgstr "Una lunga storia"
 
