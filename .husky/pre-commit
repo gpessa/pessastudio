@@ -1,0 +1,12 @@
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
+
+echo "🛠️ Running lingui:extract..."
+yarn run lingui:extract
+
+# Only stage the files lingui modifies
+git add ./src/i18n
+
+pwd
+
+echo "✅ Translations extracted and staged."    
