@@ -162,7 +162,24 @@ const Giostre: React.FC = () => {
         </Th>
 
         <Trans>
-          <Typography mx={{ marginBottom: 15 }}></Typography>
+          <Typography mx={{ marginBottom: 15 }}>
+            Il nostro modello Tecnoexerciser, rappresenta lo strumento più
+            avanzato nel suo campo. Frutto di oltre 20 anni di esperienza e
+            studi, il Tecnoexerciser offre prestazioni professionali senza pari,
+            garantendo il massimo in termini di qualità e innovazione.
+          </Typography>
+          <Typography mx={{ marginBottom: 15 }}>
+            Nei vari anni abbiamo voluto creare una gamma completa per ogni
+            esigenza e budget dei nostri clienti, creando cosi varie soluzioni
+            di corridoio coperto o scoperto.
+          </Typography>
+          <Typography mx={{ marginBottom: 15 }}>
+            Troverete giostre da 4, 5, 6, 8 cavalli con vari diametri
+            disponibili 12, 14.40, 16, 17.60, 19.20 mt. La giostra
+            Tecnoexerciser ha un motore da 0.75 kw 220 volt che ti permetterà di
+            utilizzarla senza consumi elettrici esagerati e potrai regolare la
+            cadenza fra 60 e 220 metri al minuto.
+          </Typography>
         </Trans>
       </Section>
 

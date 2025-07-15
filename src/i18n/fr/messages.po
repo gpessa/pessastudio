@@ -25,10 +25,6 @@ msgstr "* En présence de chutes de neige dépassant la portée prévue, il y au
 msgid "+ IVA"
 msgstr "+ TVA"
 
-#: src/modules/Giostre/index.tsx:164
-msgid "<0/>"
-msgstr ""
-
 #: src/modules/Index/index.tsx:129
 msgid "<0>{NAME} è un'azienda altamente affidabile e rinomata nel settore dell'equitazione. Ogni anno, centinaia di persone scelgono i nostri articoli d'equitazione per la qualità superiore che li caratterizza.</0><1>La gamma di prodotti offerti è ampia e diversificata, con un'attenzione particolare alla funzionalità e al design. La competenza e l'esperienza del team di {NAME} sono alla base del successo dell'azienda e della sua reputazione di affidabilità e professionalità.</1>"
 msgstr "<0>{NAME}  est une entreprise hautement fiable et renommée dans le secteur équestre. Chaque année, des centaines de personnes choisissent nos articles équestres pour leur qualité supérieure.</0><1>La gamme de produits proposée est large et diversifiée, avec une attention particulière portée à la fonctionnalité et au design. L’expertise et l’expérience de l’équipe de  {NAME} sont à la base du succès de l’entreprise et de sa réputation en termes de fiabilité et de professionnalisme.</1>"
@@ -81,6 +77,10 @@ msgstr ""
 #. placeholder {1}: formatSize(60)
 #: src/modules/GiostreTecnoexerciserCoperta/_corridoi.tsx:40
 msgid "<0>Il corridoio exerciser in compensato marino è realizzato con un pannelli di multistrato marino spessore {0} antigraffio, antiurto, resistente allo sporco e idrorepellente.</0><1>L’obiettivo di questa soluzione è quello di fornire un elevato grado di sicurezza forzando il cavallo a concentrarsi sul percorso durante l’allenamento.</1><2>Il corridoio potrà essere installato a terra senza base di cemento con puntazze elicoidali lunghezza {1} oppure con barre filettate su base di cemento, questa scelta non comprometterà la robustezza e durata della struttura. Installando la struttura a terra senza base di cemento inoltre la struttura rientra come struttura precaria evitando così innumerevoli permessi edilizi.</2>"
+msgstr ""
+
+#: src/modules/Giostre/index.tsx:164
+msgid "<0>Il nostro modello Tecnoexerciser, rappresenta lo strumento più avanzato nel suo campo. Frutto di oltre 20 anni di esperienza e studi, il Tecnoexerciser offre prestazioni professionali senza pari, garantendo il massimo in termini di qualità e innovazione.</0><1>Nei vari anni abbiamo voluto creare una gamma completa per ogni esigenza e budget dei nostri clienti, creando cosi varie soluzioni di corridoio coperto o scoperto.</1><2>Troverete giostre da 4, 5, 6, 8 cavalli con vari diametri disponibili 12, 14.40, 16, 17.60, 19.20 mt. La giostra Tecnoexerciser ha un motore da 0.75 kw 220 volt che ti permetterà di utilizzarla senza consumi elettrici esagerati e potrai regolare la cadenza fra 60 e 220 metri al minuto.</2>"
 msgstr ""
 
 #: src/modules/Dressage/index.tsx:51
@@ -1000,8 +1000,8 @@ msgstr "Concessionnaires internationaux"
 msgid "Scarica"
 msgstr "Télécharger un fichier"
 
-#: src/modules/Giostre/index.tsx:182
-#: src/modules/Giostre/index.tsx:198
+#: src/modules/Giostre/index.tsx:199
+#: src/modules/Giostre/index.tsx:215
 msgid "Scopri di piú"
 msgstr "En savoir plus"
 
