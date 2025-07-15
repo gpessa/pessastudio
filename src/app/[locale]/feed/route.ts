@@ -23,7 +23,6 @@ export async function GET(request: NextRequest) {
         "xmlns:g": "http://base.google.com/ns/1.0",
       },
       channel: {
-        title: NAME_STRING,
         item: Object.values(products)
           .filter(({ price }) => Boolean(price))
           .map(
@@ -62,6 +61,7 @@ export async function GET(request: NextRequest) {
               "g:title": t(name),
             })
           ),
+        title: NAME_STRING,
       },
     },
   };

@@ -42,15 +42,15 @@ export async function generateMetadata({
   params,
 }: PageLangParam): Promise<Metadata> {
   return {
-    title: {
-      template: `%s | ${NAME_STRING}`,
-      default: NAME_STRING,
-    },
     openGraph: {
       title: {
-        template: `%s | ${NAME_STRING}`,
         default: NAME_STRING,
+        template: `%s | ${NAME_STRING}`,
       },
+    },
+    title: {
+      default: NAME_STRING,
+      template: `%s | ${NAME_STRING}`,
     },
   };
 }
@@ -58,22 +58,10 @@ export async function generateMetadata({
 const jsonLdOrganization: WithContext<Organization> = {
   "@context": "https://schema.org",
   "@type": "Organization",
-  telephone: ITALIA.telephone,
-  email: ITALIA.email,
-  url: WEBISTE_URL,
-  logo: image.src,
-  legalName: SEDE_LEGALE.name,
-  name: SEDE_OPERATIVA.name,
   address: {
     "@type": "PostalAddress",
     ...SEDE_OPERATIVA,
   },
-  sameAs: [
-    SOCIALS.facebook_1,
-    SOCIALS.facebook_2,
-    SOCIALS.instagram,
-    SOCIALS.youtube,
-  ],
   contactPoint: [
     {
       "@type": "ContactPoint",
@@ -81,6 +69,18 @@ const jsonLdOrganization: WithContext<Organization> = {
       ...ITALIA,
     },
   ],
+  email: ITALIA.email,
+  legalName: SEDE_LEGALE.name,
+  logo: image.src,
+  name: SEDE_OPERATIVA.name,
+  sameAs: [
+    SOCIALS.facebook_1,
+    SOCIALS.facebook_2,
+    SOCIALS.instagram,
+    SOCIALS.youtube,
+  ],
+  telephone: ITALIA.telephone,
+  url: WEBISTE_URL,
 };
 
 export default async function RootLayout({

@@ -36,11 +36,11 @@ const LinkStyled = styled(NextLink)<{ index: number }>(({ theme }) => ({
     transform: "scale(1.03)",
   },
   color: "inherit",
-  textDecoration: "none",
   display: "flex",
   flexDirection: "column",
   justifyContent: "flex-end",
   position: "relative",
+  textDecoration: "none",
   transition: theme.transitions.create(["opacity", "transform"], {
     duration: theme.transitions.duration.short,
   }),

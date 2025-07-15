@@ -241,7 +241,7 @@ msgid "Colori"
 msgstr "Colori"
 
 #: src/modules/ComePreparareIlFondo/index.tsx:11
-#: src/hooks/usePages/utils/index.tsx:78
+#: src/hooks/usePages/utils/index.tsx:79
 #: src/hooks/usePages/utils/index.tsx:84
 msgid "Come preparare il fondo"
 msgstr "Come preparare il fondo"
@@ -250,12 +250,12 @@ msgstr "Come preparare il fondo"
 msgid "Complimenti! Ti sei iscritto"
 msgstr "Complimenti! Ti sei iscritto"
 
-#: src/hooks/usePages/utils/index.tsx:73
+#: src/hooks/usePages/utils/index.tsx:72
 msgid "Contatta Pessastudio per preventivi di Giostre, ostacoli, tondini e attrezzature per cavalli"
 msgstr "Contatta Pessastudio per preventivi di Giostre, ostacoli, tondini e attrezzature per cavalli"
 
-#: src/hooks/usePages/utils/index.tsx:51
-#: src/hooks/usePages/utils/index.tsx:67
+#: src/hooks/usePages/utils/index.tsx:50
+#: src/hooks/usePages/utils/index.tsx:66
 msgid "Contattaci per un preventivo per ostacoli, recinti, tondini coperti, giostre, rettangoli da dressage e attrezzature per cavalli"
 msgstr "Contattaci per un preventivo per ostacoli, recinti, tondini coperti, giostre, rettangoli da dressage e attrezzature per cavalli"
 
@@ -265,7 +265,7 @@ msgstr "Contattaci per un preventivo per ostacoli, recinti, tondini coperti, gio
 msgid "Contattaci usando l'email <0>{0}</0> <1/>o chiamaci al numero: <2>{1}</2>"
 msgstr "Contattaci usando l'email <0>{0}</0> <1/>o chiamaci al numero: <2>{1}</2>"
 
-#: src/hooks/usePages/utils/index.tsx:50
+#: src/hooks/usePages/utils/index.tsx:51
 msgid "Contatti"
 msgstr "Contatti"
 
@@ -408,7 +408,7 @@ msgstr "Dimensioni giostra cavalli"
 msgid "Disponibile"
 msgstr "Disponibile"
 
-#: src/hooks/usePages/utils/index.tsx:43
+#: src/hooks/usePages/utils/index.tsx:45
 msgid "Dressage"
 msgstr "Dressage"
 
@@ -533,13 +533,13 @@ msgstr "Giostra per cavalli Tecnoexerciser"
 msgid "Giostra solo motore"
 msgstr "Giostra solo motore"
 
-#: src/hooks/usePages/utils/index.tsx:36
+#: src/hooks/usePages/utils/index.tsx:38
 msgid "Giostre"
 msgstr "Giostre"
 
 #. placeholder {0}: GIOSTRE_MODELS.IPPOWALKER
 #. placeholder {0}: GIOSTRE_MODELS.TECNOEXERCISER
-#: src/hooks/usePages/utils/index.tsx:89
+#: src/hooks/usePages/utils/index.tsx:90
 #: src/hooks/usePages/utils/index.tsx:101
 msgid "Giostre {0}"
 msgstr "Giostre {0}"
@@ -552,7 +552,7 @@ msgstr "Gli ostacoli sono arrivati. Sono fantastici!"
 msgid "Ho ricevuto questa mattina il materiale. I miei complimenti per la qualità dei prodotti, l'imballo ed il trasportatore"
 msgstr "Ho ricevuto questa mattina il materiale. I miei complimenti per la qualità dei prodotti, l'imballo ed il trasportatore"
 
-#: src/hooks/usePages/utils/index.tsx:72
+#: src/hooks/usePages/utils/index.tsx:73
 msgid "Home"
 msgstr "Home"
 
@@ -625,7 +625,7 @@ msgstr "Indietro"
 msgid "Indistruttibili"
 msgstr "Indistruttibili"
 
-#: src/hooks/usePages/utils/index.tsx:66
+#: src/hooks/usePages/utils/index.tsx:67
 msgid "Informativa sui Cookie"
 msgstr "Informativa sui Cookie"
 
@@ -854,7 +854,7 @@ msgstr "Numero per campo ostacoli costruito in materiali robusti e leggeri. La f
 msgid "Oppure visita la nostra pagina dei <0>contatti</0> per scoprire i rivenditori nella tua zona."
 msgstr "Oppure visita la nostra pagina dei <0>contatti</0> per scoprire i rivenditori nella tua zona."
 
-#: src/hooks/usePages/utils/index.tsx:16
+#: src/hooks/usePages/utils/index.tsx:18
 msgid "Ostacoli"
 msgstr "Ostacoli"
 
@@ -945,7 +945,7 @@ msgstr "Prodotti"
 msgid "Prodotti MADE IN ITALY, costruiti da Pessastudio e personalizzabili (in dimensioni o colori)"
 msgstr "Prodotti MADE IN ITALY, costruiti da Pessastudio e personalizzabili (in dimensioni o colori)"
 
-#: src/hooks/usePages/utils/index.tsx:17
+#: src/hooks/usePages/utils/index.tsx:16
 msgid "Prodotti professionali, sono lo strumento di lavoro indispensabile in un centro ippico o un maneggio. Progettati e costruiti per durare nel tempo senza alcuna manutenzione"
 msgstr "Prodotti professionali, sono lo strumento di lavoro indispensabile in un centro ippico o un maneggio. Progettati e costruiti per durare nel tempo senza alcuna manutenzione"
 
@@ -980,7 +980,7 @@ msgstr "Quali cookie utilizziamo e per quali finalità?"
 msgid "Questi cookie di prima parte, sono proprietà di {0} (Gestore del sito) e sono impiegati per raccogliere dati in forma anonima e aggregata. Questi cookie sono utilizzati per elaborare analisi statistiche sulle modalità di navigazione degli utenti sul nostro sito. {1} tratta i risultati di queste analisi in maniera anonima ed esclusivamente per finalità statistiche."
 msgstr "Questi cookie di prima parte, sono proprietà di {0} (Gestore del sito) e sono impiegati per raccogliere dati in forma anonima e aggregata. Questi cookie sono utilizzati per elaborare analisi statistiche sulle modalità di navigazione degli utenti sul nostro sito. {1} tratta i risultati di queste analisi in maniera anonima ed esclusivamente per finalità statistiche."
 
-#: src/hooks/usePages/utils/index.tsx:23
+#: src/hooks/usePages/utils/index.tsx:24
 msgid "Recinti"
 msgstr "Recinti"
 
@@ -1019,7 +1019,7 @@ msgstr "Rete antivento"
 msgid "Rete antivento ingresso"
 msgstr "Rete antivento ingresso"
 
-#: src/hooks/usePages/utils/index.tsx:45
+#: src/hooks/usePages/utils/index.tsx:43
 msgid "Rettangoli / Campi professionali da dressage per tutte le esigenze"
 msgstr "Rettangoli / Campi professionali da dressage per tutte le esigenze"
 
@@ -1074,12 +1074,12 @@ msgid "Scopri la nostra gamma di prodotti"
 msgstr "Scopri la nostra gamma di prodotti"
 
 #. placeholder {0}: GIOSTRE_MODELS.IPPOWALKER
-#: src/hooks/usePages/utils/index.tsx:91
+#: src/hooks/usePages/utils/index.tsx:89
 msgid "Scopri la nostra giostra {0}, lo strumento economico adatto ad allenare il tuo cavallo o il tuo puledro"
 msgstr "Scopri la nostra giostra {0}, lo strumento economico adatto ad allenare il tuo cavallo o il tuo puledro"
 
 #. placeholder {0}: GIOSTRE_MODELS.TECNOEXERCISER
-#: src/hooks/usePages/utils/index.tsx:102
+#: src/hooks/usePages/utils/index.tsx:100
 msgid "Scopri la nostra giostra {0}, lo strumento professionale adatto ad allenare il tuo cavallo o il tuo puledro"
 msgstr "Scopri la nostra giostra {0}, lo strumento professionale adatto ad allenare il tuo cavallo o il tuo puledro"
 
@@ -1087,7 +1087,7 @@ msgstr "Scopri la nostra giostra {0}, lo strumento professionale adatto ad allen
 msgid "Scopri la qualità dei nostri prodotti attraverso la testimonianza dei clienti"
 msgstr "Scopri la qualità dei nostri prodotti attraverso la testimonianza dei clienti"
 
-#: src/hooks/usePages/utils/index.tsx:38
+#: src/hooks/usePages/utils/index.tsx:36
 msgid "Scopri le nostre giostre per cavalli, lo strumento ideale di lavoro per allenare il vostro cavallo"
 msgstr "Scopri le nostre giostre per cavalli, lo strumento ideale di lavoro per allenare il vostro cavallo"
 
@@ -1171,11 +1171,11 @@ msgstr "Tipologia di cookie"
 msgid "Titolare del trattamento"
 msgstr "Titolare del trattamento"
 
-#: src/hooks/usePages/utils/index.tsx:29
+#: src/hooks/usePages/utils/index.tsx:31
 msgid "Tondini"
 msgstr "Tondini"
 
-#: src/hooks/usePages/utils/index.tsx:30
+#: src/hooks/usePages/utils/index.tsx:29
 msgid "Tondini coperti per addestrare puledri in libertà"
 msgstr "Tondini coperti per addestrare puledri in libertà"
 
@@ -1222,7 +1222,7 @@ msgstr "Tutti i cavalieri sanno quanto sia spiacevole cavalcare in un ambiente p
 msgid "Un cookie è un file di piccole dimensioni che viene inviato al browser in uso e salvato sul tuo dispositivo quando visiti un sito internet come {WEBISTE_URL} (‘il sito’). I cookie permettono un funzionamento efficiente del sito e ne migliorano le prestazioni, inoltre forniscono informazioni al proprietario del sito per fini statistici o pubblicitari, principalmente per personalizzare la tua esperienza di navigazione ricordando le tue preferenze (per esempio ricordare la lingua e la valuta che hai impostato, per riconoscerti alla visita successiva, ecc.)."
 msgstr "Un cookie è un file di piccole dimensioni che viene inviato al browser in uso e salvato sul tuo dispositivo quando visiti un sito internet come {WEBISTE_URL} (‘il sito’). I cookie permettono un funzionamento efficiente del sito e ne migliorano le prestazioni, inoltre forniscono informazioni al proprietario del sito per fini statistici o pubblicitari, principalmente per personalizzare la tua esperienza di navigazione ricordando le tue preferenze (per esempio ricordare la lingua e la valuta che hai impostato, per riconoscerti alla visita successiva, ecc.)."
 
-#: src/hooks/usePages/utils/index.tsx:79
+#: src/hooks/usePages/utils/index.tsx:78
 msgid "Un recinto da cavalli in PVC. Indistruttibile anche in presenza delle più avverse condizioni meteorologiche"
 msgstr "Un recinto da cavalli in PVC. Indistruttibile anche in presenza delle più avverse condizioni meteorologiche"
 

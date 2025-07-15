@@ -20,8 +20,8 @@ export const usePages = () => {
     description,
     ...page
   }: Page): PageTranslated => ({
-    title: t(title),
     description: description ? t(description) : undefined,
+    title: t(title),
     ...page,
   });
 

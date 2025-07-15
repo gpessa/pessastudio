@@ -34,13 +34,13 @@ const useSeoProps = (props: ProductDataTranslated): WithContext<Product> => {
   const brand = NAME_STRING;
 
   let result: WithContext<Product> = {
-    "@type": "Product",
     "@context": "https://schema.org",
+    "@type": "Product",
     brand,
     image,
-    url,
-    offers,
     name,
+    offers,
+    url,
   };
 
   if (typeof description === "string") {

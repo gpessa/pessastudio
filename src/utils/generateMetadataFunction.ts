@@ -16,8 +16,6 @@ const generateMetadataFunction = (pageId: PageId) => {
     const title = i18n._(page.title);
 
     const response: Metadata = {
-      title,
-      description: undefined,
       alternates: {
         canonical: `${WEBISTE_URL}/${locale}${page.url}`,
         languages: LOCALES_ARRAY.reduce(
@@ -28,10 +26,12 @@ const generateMetadataFunction = (pageId: PageId) => {
           {}
         ),
       },
+      description: undefined,
       openGraph: {
-        title,
         description: undefined,
+        title,
       },
+      title,
     };
 
     if (page.description) {

@@ -172,13 +172,13 @@ const theme = createTheme({
   },
   spacing: (factor: number) => `${7 * factor}px `,
   typography: {
-    fontFamily: sourceCodePro.style.fontFamily,
     caption: {
       color: Colors.GRAY,
       fontSize: "0.9rem",
       lineHeight: "1em",
       textTransform: "uppercase",
     },
+    fontFamily: sourceCodePro.style.fontFamily,
     h1: {
       fontFamily: "serif",
       fontSize: 78,

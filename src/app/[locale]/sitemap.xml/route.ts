@@ -6,7 +6,7 @@ import { create } from "xmlbuilder2";
 export async function GET(request: NextRequest) {
   const locale = request.headers.get("x-next-i18n-router-locale");
 
-  const doc = create({ version: "1.0", encoding: "UTF-8" }).ele("urlset", {
+  const doc = create({ encoding: "UTF-8", version: "1.0" }).ele("urlset", {
     xmlns: "http://www.sitemaps.org/schemas/sitemap/0.9",
   });
 

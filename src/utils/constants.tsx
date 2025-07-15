@@ -12,29 +12,29 @@ export const NAME_LEGAL_STRING = `${NAME_STRING} Horse Tecnology srl`;
 export const NAME = <strong>{NAME_STRING}</strong>;
 
 export const LOCALES = {
-  it: {
-    code: "it",
-    hrefLang: "it",
-    name: "Italian",
-    localName: "Italiano",
-    langDir: "ltr",
+  en: {
+    code: "en",
     dateFormat: "DD.MM.YYYY",
+    hrefLang: "en",
+    langDir: "ltr",
+    localName: "English",
+    name: "English",
   },
   fr: {
     code: "fr",
+    dateFormat: "DD.MM.YYYY",
     hrefLang: "fr",
-    name: "French",
+    langDir: "ltr",
     localName: "Français",
-    langDir: "ltr",
-    dateFormat: "DD.MM.YYYY",
+    name: "French",
   },
-  en: {
-    code: "en",
-    hrefLang: "en",
-    name: "English",
-    localName: "English",
-    langDir: "ltr",
+  it: {
+    code: "it",
     dateFormat: "DD.MM.YYYY",
+    hrefLang: "it",
+    langDir: "ltr",
+    localName: "Italiano",
+    name: "Italian",
   },
 };
 

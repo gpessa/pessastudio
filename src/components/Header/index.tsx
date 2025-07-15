@@ -50,10 +50,10 @@ const HeaderDesktopButtom = styled(Button)<{ selected: boolean }>(
     fontWeight: selected
       ? theme.typography.fontWeightBold
       : theme.typography.fontWeightRegular,
-    lineHeight: 1,
-    textTransform: "uppercase",
-    textAlign: "left",
     height: 64,
+    lineHeight: 1,
+    textAlign: "left",
+    textTransform: "uppercase",
   })
 );
 

@@ -29,8 +29,8 @@ const useProducts = (): ProductDataTranslatedList => {
     description,
     ...product
   }: ProductData): ProductDataTranslated => ({
-    name: t(name),
     description: description ? t(description) : undefined,
+    name: t(name),
     ...product,
   });
 

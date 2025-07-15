@@ -1,5 +1,6 @@
-import { FlatCompat } from '@eslint/eslintrc'
+import { FlatCompat } from '@eslint/eslintrc';
 import simpleImportSort from "eslint-plugin-simple-import-sort";
+import eslintPluginSortKeysFix from "eslint-plugin-sort-keys-fix";
 
 
 const compat = new FlatCompat({
@@ -7,23 +8,29 @@ const compat = new FlatCompat({
   baseDirectory: import.meta.dirname,
 })
 
-console.log(simpleImportSort);
 
-const eslintConfig = [{
-  plugins: {
-    'simple-import-sort': simpleImportSort
+const eslintConfig = [
+  {
+    plugins: {
+      'simple-import-sort': simpleImportSort,
+    },
   },
-},
-...compat.config({
-  extends: ['next'],
-  rules: {
-    '@typescript-eslint/no-unused-vars': 'off',
-    'react/no-unescaped-entities': 'off',
-    'simple-import-sort/imports': 'error',
-    'simple-import-sort/exports': 'error'
+  {
+    plugins: {
+      'sort-keys-fix': eslintPluginSortKeysFix
+    },
+  },
+  ...compat.config({
+    extends: ['next'],
+    rules: {
+      '@typescript-eslint/no-unused-vars': 'off',
+      'react/no-unescaped-entities': 'off',
+      'simple-import-sort/imports': 'error',
+      'simple-import-sort/exports': 'error',
+      "sort-keys-fix/sort-keys-fix": "warn"
 
-  },
-}),
+    },
+  })
 ]
 
 export default eslintConfig

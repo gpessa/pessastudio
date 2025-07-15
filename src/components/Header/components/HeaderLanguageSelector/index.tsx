@@ -28,9 +28,9 @@ const LOCALE_ICONS: { [key: string]: string } = {
 const DIM = 20;
 
 const LinkStyled = styled(Link)({
+  color: "inherit",
   display: "flex",
   textDecoration: "none",
-  color: "inherit",
 });
 
 const HeaderLanguageSelector: React.FC = () => {

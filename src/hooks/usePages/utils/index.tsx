@@ -13,42 +13,42 @@ export type PageId = keyof ReturnType<typeof getPages>["PAGES"];
 
 export const getPages = (locale: string) => {
   const OSTACOLI: Page = {
-    title: msg`Ostacoli`,
     description: msg`Prodotti professionali, sono lo strumento di lavoro indispensabile in un centro ippico o un maneggio. Progettati e costruiti per durare nel tempo senza alcuna manutenzione`,
-    url: `/${locale}/ostacoli`,
     image: require("assets/icons/ostacoli.jpg"),
+    title: msg`Ostacoli`,
+    url: `/${locale}/ostacoli`,
   };
 
   const RECINTI: Page = {
+    image: require("assets/icons/recinti.jpg"),
     title: msg`Recinti`,
     url: `/${locale}/recinti`,
-    image: require("assets/icons/recinti.jpg"),
   };
 
   const TONDINI: Page = {
-    title: msg`Tondini`,
     description: msg`Tondini coperti per addestrare puledri in libertà`,
-    url: `/${locale}/tondini`,
     image: require("assets/icons/tondini.jpg"),
+    title: msg`Tondini`,
+    url: `/${locale}/tondini`,
   };
 
   const GIOSTRE: Page = {
-    title: msg`Giostre`,
-    url: `/${locale}/giostre`,
     description: msg`Scopri le nostre giostre per cavalli, lo strumento ideale di lavoro per allenare il vostro cavallo`,
     image: require("assets/icons/giostre.jpg"),
+    title: msg`Giostre`,
+    url: `/${locale}/giostre`,
   };
 
   const DRESSAGE: Page = {
-    title: msg`Dressage`,
-    url: `/${locale}/dressage`,
     description: msg`Rettangoli / Campi professionali da dressage per tutte le esigenze`,
     image: require("assets/icons/dressage.jpg"),
+    title: msg`Dressage`,
+    url: `/${locale}/dressage`,
   };
 
   const CONTATTI: Page = {
-    title: msg`Contatti`,
     description: msg`Contattaci per un preventivo per ostacoli, recinti, tondini coperti, giostre, rettangoli da dressage e attrezzature per cavalli`,
+    title: msg`Contatti`,
     url: `/${locale}/contatti`,
   };
 
@@ -63,20 +63,20 @@ export const getPages = (locale: string) => {
   };
 
   const COOKIE_POLICY: Page = {
-    title: msg`Informativa sui Cookie`,
     description: msg`Contattaci per un preventivo per ostacoli, recinti, tondini coperti, giostre, rettangoli da dressage e attrezzature per cavalli`,
+    title: msg`Informativa sui Cookie`,
     url: `/${locale}/cookie-policy`,
   };
 
   const HOME: Page = {
-    title: msg`Home`,
     description: msg`Contatta Pessastudio per preventivi di Giostre, ostacoli, tondini e attrezzature per cavalli`,
+    title: msg`Home`,
     url: `/${locale}`,
   };
 
   const RECINTI_COME_PREPARARE_IL_FONDO: Page = {
-    title: msg`Come preparare il fondo`,
     description: msg`Un recinto da cavalli in PVC. Indistruttibile anche in presenza delle più avverse condizioni meteorologiche`,
+    title: msg`Come preparare il fondo`,
     url: `/${locale}/recinti/come-preparare-il-fondo`,
   };
 
@@ -86,9 +86,9 @@ export const getPages = (locale: string) => {
   };
 
   const GIOSTRE_IPPOWALKER: Page = {
+    description: msg`Scopri la nostra giostra ${GIOSTRE_MODELS.IPPOWALKER}, lo strumento economico adatto ad allenare il tuo cavallo o il tuo puledro`,
     title: msg`Giostre ${GIOSTRE_MODELS.IPPOWALKER}`,
     url: `/${locale}/giostre/ippowalker`,
-    description: msg`Scopri la nostra giostra ${GIOSTRE_MODELS.IPPOWALKER}, lo strumento economico adatto ad allenare il tuo cavallo o il tuo puledro`,
   };
 
   const GIOSTRE_IPPOWALKER_ISTRUZIONI_MONTAGGIO: Page = {
@@ -97,9 +97,9 @@ export const getPages = (locale: string) => {
   };
 
   const GIOSTRE_TECNOEXERCISER: Page = {
-    url: `/${locale}/giostre/tecnoexerciser`,
-    title: msg`Giostre ${GIOSTRE_MODELS.TECNOEXERCISER}`,
     description: msg`Scopri la nostra giostra ${GIOSTRE_MODELS.TECNOEXERCISER}, lo strumento professionale adatto ad allenare il tuo cavallo o il tuo puledro`,
+    title: msg`Giostre ${GIOSTRE_MODELS.TECNOEXERCISER}`,
+    url: `/${locale}/giostre/tecnoexerciser`,
   };
 
   const GIOSTRE_TECNOEXERCISER_ISTRUZIONI_MONTAGGIO: Page = {
@@ -107,7 +107,7 @@ export const getPages = (locale: string) => {
     url: `/${locale}/giostre/tecnoexerciser/istruzioni-montaggio`,
   };
 
-  const PRODUCTS = { GIOSTRE, TONDINI, OSTACOLI, RECINTI, DRESSAGE };
+  const PRODUCTS = { DRESSAGE, GIOSTRE, OSTACOLI, RECINTI, TONDINI };
 
   const NAVIGATION = { ...PRODUCTS, CONTATTI };
 
