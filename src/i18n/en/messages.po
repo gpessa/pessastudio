@@ -13,7 +13,7 @@ msgstr ""
 "Plural-Forms: \n"
 "X-Generator: Poedit 3.6\n"
 
-#: src/modules/Giostre/index.tsx:42
+#: src/modules/Giostre/index.tsx:43
 msgid "{NAME} è stata scelta da oltre 3.000 clienti in tutto il mondo per la realizzazione della propria giostra."
 msgstr "{NAME} has been chosen by over 3,000 clients worldwide for the construction of their horse execiser."
 
@@ -24,6 +24,10 @@ msgstr "* In the presence of snowfall that exceeds the maximum load, it is advis
 #: src/components/Product/components/ProductPrice/index.tsx:24
 msgid "+ IVA"
 msgstr "+ VAT"
+
+#: src/modules/Giostre/index.tsx:164
+msgid "<0/>"
+msgstr ""
 
 #: src/modules/Index/index.tsx:129
 msgid "<0>{NAME} è un'azienda altamente affidabile e rinomata nel settore dell'equitazione. Ogni anno, centinaia di persone scelgono i nostri articoli d'equitazione per la qualità superiore che li caratterizza.</0><1>La gamma di prodotti offerti è ampia e diversificata, con un'attenzione particolare alla funzionalità e al design. La competenza e l'esperienza del team di {NAME} sono alla base del successo dell'azienda e della sua reputazione di affidabilità e professionalità.</1>"
@@ -45,11 +49,7 @@ msgstr "<0>Corridor {name} with marine plywood side panels</0> <1>(thickness {th
 msgid "<0>Corridoio composto da recinzione TECNOFENCE</0><1>(corridoio interno 1,40 mt., esterno 1,60 mt.)</1>"
 msgstr "<0>Corridor composed of TECNOFENCE fence</0> <1>(inner fence height 1.40 mt., outer fence height 1.60 mt.)</1>"
 
-#: src/modules/GiostreIppowalker/_compare.tsx:20
-msgid "<0>È possibile ordinare una giostra nei diametri:</0><1><2>12,0 mt. <3>(4 cavalli)</3></2><4>14,2 mt. <5>(6 cavalli)</5></4></1>"
-msgstr "<0>It is possible to order the horse walker in the diameters:</0> <1><2>12.0 mt. <3>(4 horses)</3></2> <4>14.2 m. <5>(6 horses)</5></4></1>"
-
-#: src/modules/GiostreTecnoexerciser/_compare.tsx:24
+#: src/modules/GiostreTecnoexerciserCoperta/_compare.tsx:24
 msgid "<0>E' possibile ordinare una giostra nei diametri:</0><1><2>12,0 mt. <3>(3 cavalli)</3></2><4>14,4 mt. <5>(4 cavalli)</5></4><6>16,0 mt. <7>(5 cavalli)</7></6><8>17,6 mt. <9>(6 cavalli)</9></8><10>19,2 mt. <11>(8 cavalli)</11></10></1>"
 msgstr "<0>It is possible to order the horse walker in the diameters:</0><1><2>12,0 mt. <3>(3 horses)</3></2><4>14,4 mt. <5>(4 horses)</5></4><6>16,0 mt. <7>(5 horses)</7></6><8>17,6 mt. <9>(6 horses)</9></8><10>19,2 mt. <11>(8 horses)</11></10></1>"
 
@@ -71,30 +71,19 @@ msgstr "<0>The <1>TECNOFENCE</1> corridor is a simple and economical solution fo
 
 #. placeholder {0}: formatSize(18)
 #. placeholder {1}: formatSize(60)
-#: src/modules/GiostreTecnoexerciser/_corridoi.tsx:40
+#: src/modules/GiostreTecnoexerciserCoperta/_corridoi.tsx:40
 msgid "<0>Il corridoio exerciser in compensato marino è realizzato con un pannelli di multistrato marino spessore {0} antigraffio, antiurto, resistente allo sporco e idrorepellente.</0><1>L’obiettivo di questa soluzione è quello di fornire un elevato grado di sicurezza forzando il cavallo a concentrarsi sul percorso durante l’allenamento.</1><2>Il corridoio potrà essere installato a terra senza base di cemento con puntazze elicoidali lunghezza {1} oppure con barre filettate su base di cemento, questa scelta non comprometterà la robustezza e durata della struttura. Installando la struttura a terra senza base di cemento inoltre la struttura rientra come struttura precaria evitando così innumerevoli permessi edilizi.</2>"
 msgstr ""
-
-#. placeholder {0}: GIOSTRE_MODELS.TECNOEXERCISER
-#. placeholder {1}: GIOSTRE_MODELS.TECNOEXERCISER
-#. placeholder {2}: GIOSTRE_MODELS.IPPOWALKER
-#: src/modules/Giostre/index.tsx:163
-msgid "<0>Il nostro modello di punta, il <1>{0}</1>, rappresenta lo strumento più avanzato nel suo campo. Frutto di oltre 20 anni di esperienza e studi, il <2>{1}</2> offre prestazioni professionali senza pari, garantendo il massimo in termini di qualità e innovazione.</0><3>Per chi cerca una soluzione più economica ma comunque affidabile, proponiamo l'<4>{2}</4>. Questo modello base è perfetto per chi desidera un'opzione conveniente senza compromettere la sicurezza e l'efficacia.</3><5>Qualunque sia la vostra esigenza, siamo certi di avere il prodotto giusto per voi e i vostri cavalli.</5>"
-msgstr "<0>Our flagship model, the <1>{0}</1>, represents the most advanced tool in its field. The result of over 20 years of experience and studies, the <2>{1}</2> offers unparalleled professional performance, ensuring the highest quality and innovation.</0><3>For those seeking a more economical yet reliable solution, we offer the <4>{2}</4>. This basic model is perfect for those who want a cost-effective option without compromising on safety and efficiency.</3><5>Whatever your needs, we are confident we have the right product for you and your horses.</5>"
 
 #: src/modules/Dressage/index.tsx:51
 msgid "<0>Il rettangolo della linea <1>training</1> è rivolto a quei maneggi in cui lo spazio a disposizione è limitato e il rettangolo viene installato provvisoriamente.</0><2>Facile da montare, è costituito da elementi modulari di 2 mt. in materiale plastico, non richiede alcuna manutenzione e occupa poco spazio quando non è utilizzato.</2>"
 msgstr "<0>The rectangles in the <1>Training</1> line are intended for stables with limited space, where the rectangles are installed temporarily.</0> <2>Easy to assemble, they consist of 2mt. modular elements made of plastic. They require no maintenance and occupy little space when not in use.</2>"
 
-#: src/modules/GiostreIppowalker/index.tsx:26
-msgid "<0>Ippowalker è una giostra di recente realizzazione, nasce dal sogno di poter fornire uno strumento di allenamento professionale anche a coloro che ne fanno un uso sporadico.</0><1>La giostra è disponibile in due diametri 12 mt. (4 cavalli) e 14.2 mt. (6 cavalli).</1><2>Costruita con la qualità e la robustezza che contraddistingue tutti i nostri prodotti essa rappresenta uno strumento semplice ed essenziale ma al contempo completo.</2><3>Malgrado Ippowalker sia una giostra più economica abbiamo mantenuto tutte le opzioni base per allenare il tuo cavallo.</3><4><5>Porte di separazione elettrificate</5> ottenute grazie a tubi di plastica elettroconduttiva.</4><6>Un <7>pannello di controllo</7> che ti permetterà di di scegliere tra un programma manuale e uno periodico.</6><8>Al contrario del modello <9>Tecnoexercize</9>, questo modello non dispone di irrigazione.</8>"
-msgstr "<0>The recently developed Ippowalker grew out of the dream of offering a professional training tool even to those who use it only sporadically.</0><1>The walker is available in two diameters: 12 m (4 horses) and 14.2 m (6 horses).</1> <2>Built with the same quality and robustness as all our products, it is a simple and essential, yet complete tool.</2> <3>Although the Ippowalker is a lower-cost exerciser, we have kept all the basic options for training your horse.</3><4><5>Electrified separation doors</5> made of electrically conductive plastic tubing.</4> <6>A <7>control panel</7> that allows you to choose either a manual or regular programme.</6> <8>In contrast to the <9>Tecnoexercise</9> model, this one has no irrigation.</8>"
-
 #: src/utils/constants.tsx:238
 msgid "<0>La <1>copertura in PVC</1> è composta da una struttura in acciaio zincato la quale sorregge un telo in tessuto di poliestere spalmato di colore verde o crema e in base alle esigenze del cliente anche in altre colorazioni.</0><2>Questa copertura è in grado di sorreggere un carico neve pari a 80 kg/mq * e una forza vento pari a 110 Km/h.</2>"
 msgstr "<0>The <1>PVC cover</1> is made of a galvanized steel structure over which a polyester fabric that has been specially coated. It comes in green or cream unless otherwise requested.</0><2>This cover can support a snow load of 80 kg / m2 * and a wind force of 110 km / h. </2>"
 
-#: src/modules/GiostreTecnoexerciser/_copertura.tsx:45
+#: src/modules/GiostreTecnoexerciserCoperta/_copertura.tsx:45
 msgid "<0>La <1>copertura in PVC</1> è composta da una struttura in acciaio zincato la quale sorregge un telo in tessuto di poliestere spalmato di colore verde, bianco o crema e in base alle esigenze del cliente anche in altre colorazioni.</0><2>Questa copertura è in grado di sorreggere un carico neve pari a 80 kg/mq * e una forza vento pari a 110 Km/h.</2><3>L’alternativa alla <4>copertura in PVC</4> è la copertura rigida formata da pannelli sandwich coibentati. I pannelli hanno uno spessore di coibentazione pari a 1 cm che vi permetterà oltre ad avere una robustezza maggiore di attutire il suono delle intemperie ed evitare così che i cavalli si spaventino durante le loro sessioni di allenamento.</3><5>I pannelli sandwich vengono sorretti da una doppia struttura in acciaio zincato che permette di avere una migliore distribuzione del peso in caso di nevicata e una maggiore sicurezza in caso di forte vento. Una soluzione che ti permetterà senza opere murarie di avere una struttura robusta e durevole nel tempo.</5>"
 msgstr ""
 
@@ -102,7 +91,7 @@ msgstr ""
 msgid "<0>La linea <1>olympic</1>, presente sul mercato da oltre vent'anni, è rappresentata da un rettangolo professionale, dove il campo da dressage è utilizzato quotidianamente.</0><2>Il campo è delimitato da moduli accostabili tra di loro, ciascuno dei quali è lungo 2 mt. Ogni modulo è costruito in polietilene antiurto resistente anche alle basse temperature e che non ingiallisce sotto l'azione dei raggi ultravioletti.</2><3>Su ciascun modulo sono previste tre aree piane con superficie lucida di 50x12 cm. sulle quali possono essere applicati adesivi pubblicitari.</3>"
 msgstr "<0>The <1>olympic</1> line, which has been on the market for over twenty years, consists of professional rectangles for when the dressage field is used on a daily basis.</0> <2>The field is delimited by 2-m modules that can be placed side by side. Each module is made of impact-resistant polyethylene (even at low temperatures) that will not yellow with exposure to UV radiation.</2> <3>Each module has three flat 50 cm x 12 cm areas with a glossy surface to apply advertising stickers.</3>"
 
-#: src/modules/Giostre/index.tsx:84
+#: src/modules/Giostre/index.tsx:85
 msgid "<0>La nostra azienda si distingue per le giostre, il nostro punto di forza. </0><1>La loro creazione è stata il risultato della ricerca condotta da <2>Luciano Pessa</2>, con l'intento di sviluppare uno strumento di lavoro affidabile e semplice da utilizzare per l'allenamento dei cavalli anche in assenza del cavaliere.</1><3>La giostra consente non solo di raffreddare il cavallo dopo l'allenamento, ma anche di creare una vera e propria sessione di lavoro, passando da un'andatura all'altra e cambiando di mano. Grazie alla sua versatilità, rappresenta una soluzione pratica ed efficace per l'allenamento quotidiano dei cavalli.</3>"
 msgstr "<0>Walkers represent the strength of our company.</0><1>They were created through the research of <2>Luciano Pessa</2> with the intention of developing a simple and reliable tool that will allow you to train your horse even when you are unable to ride it.</1><3>The carousel will not only allow you to cool down your horse with a post-workout walk but also to create a proper training session by changing gaits and direction.</3>"
 
@@ -122,11 +111,11 @@ msgstr "<0>Electrified Pushers</0>"
 msgid "<0>Sono le componenti dell'ostacolo più stressate, poiché, come i candelieri e i pilieri, sono perennemente sottoposte all'azione aggressiva degli agenti atmosferici (caldo, freddo, sole, pioggia). A questi si aggiungono anche gli urti degli zoccoli dei cavalli, frequenti ribaltamenti e le manipolazioni necessarie per aggiustarne le altezze.</0><1>Le barriere di abete, comunemente usate, richiedono una continua manutenzione perché si piegano, scoloriscono nel tempo e si rompono frequentemente.</1><2>Le barriere sintetiche di {NAME}, invece, hanno lo stesso peso di quelle in abete, ma perdono il loro colore solamente dopo anni, non si scrostano e, solo raramente, si rompono sotto l'azione di un carico eccessivo.</2>"
 msgstr "<0>They are the most stressed components of the obstacle, since—like the standards and uprights—they are constantly exposed to the harsh effects of the weather (heat, cold, sun, rain). In addition, they are subject to impacts from horses’ hooves, frequent falls, and the handling required to adjust their height.</0><1>Commonly used fir rails require constant maintenance because they bend, fade over time, and often break.</1><2>{NAME}’s synthetic rails, on the other hand, have the same weight as fir rails, but retain their color for years, do not chip, and only rarely break under excessive load.</2><<<<<<< HEAD"
 
-#: src/modules/GiostreTecnoexerciser/index.tsx:25
+#: src/modules/GiostreTecnoexerciserCoperta/index.tsx:25
 msgid "<0>Tecnoexerciser è il modello di giostra attualmente più richiesto.</0><1>Oggi, grazie alle già note caratteristiche tecniche e alla grande affidabilità. Abbiamo aggiunto alcune specifiche che fanno, di questo modello, la macchina leader del settore.</1><2>È possibile infatti:</2><3><4>Scegliere la forza che la porta mobile esercita sugli animali per invitarli ad avanzare</4><5>Mantenere un controllo costante sull'elettrificazione delle porte mobili </5><6>Beneficiare dell'innovativo sistema \"training program\" che vi consentirà di allenare i vostri cavalli fino ad ottenere performance atletiche.</6><7>Scegliere il programma di irrigazione pesta mentre la giostra sta girando </7></3><8>Il cliente potrà scegliere tra una <9>copertura in pvc</9> e una <10>copertura con pannelli sandwich coibentati</10>.</8>"
 msgstr ">>>>>>> 6fb5d5f8 (fix)"
 
-#: src/modules/Giostre/index.tsx:48
+#: src/modules/Giostre/index.tsx:49
 msgid "3.000 giostre installate"
 msgstr "3,000 horse exercisers produced"
 
@@ -155,24 +144,19 @@ msgstr "Accept"
 msgid "Altezza"
 msgstr "Height"
 
-#: src/modules/GiostreTecnoexerciser/_servizio_clienti.tsx:82
+#: src/modules/GiostreTecnoexerciserCoperta/_servizio_clienti.tsx:82
 msgid "Altro"
 msgstr "Other"
 
 #: src/utils/constants.tsx:190
 #: src/utils/constants.tsx:207
-#: src/modules/GiostreTecnoexerciser/_accessori.tsx:41
-#: src/modules/GiostreIppowalker/_accessori.tsx:41
+#: src/modules/GiostreTecnoexerciserCoperta/_accessori.tsx:41
 msgid "Alveolo sulla pesta"
 msgstr "Ground grid soil stabilization system"
 
-#: src/modules/Giostre/index.tsx:58
+#: src/modules/Giostre/index.tsx:59
 msgid "Ampia gamma"
 msgstr "Wide products range"
-
-#: src/modules/GiostreIppowalker/_corridoi.tsx:43
-msgid "Anche in questo semplice modello potrai decidere di dotare la tua giostra di un corridoio scegliendo tra il piú economico corridoio costituito dalla recinzione <0>TECNOFENCE</0> o il corridoio <1>EASY</1> in pannelli di compensato marino."
-msgstr "Even with this simple model, you can equip the walker with a corridor, using either the lower-cost <0>TECNOFENCE</0> fencing or the <1>EASY</1> corridor made of marine plywood panels."
 
 #: src/modules/Index/index.tsx:88
 msgid "Apprezzati"
@@ -229,8 +213,7 @@ msgstr "What is a cookie?"
 #: src/utils/constants.tsx:184
 #: src/utils/constants.tsx:201
 #: src/modules/Tondini/index.tsx:108
-#: src/modules/GiostreTecnoexerciser/_accessori.tsx:22
-#: src/modules/GiostreIppowalker/_accessori.tsx:22
+#: src/modules/GiostreTecnoexerciserCoperta/_accessori.tsx:22
 msgid "Chiusura a terra"
 msgstr "Closed at the ground"
 
@@ -251,8 +234,8 @@ msgid "Colori"
 msgstr "Colors"
 
 #: src/modules/ComePreparareIlFondo/index.tsx:11
-#: src/hooks/usePages/utils/index.tsx:79
-#: src/hooks/usePages/utils/index.tsx:84
+#: src/hooks/usePages/utils/index.tsx:78
+#: src/hooks/usePages/utils/index.tsx:83
 msgid "Come preparare il fondo"
 msgstr "How to prepare the ground"
 
@@ -260,12 +243,12 @@ msgstr "How to prepare the ground"
 msgid "Complimenti! Ti sei iscritto"
 msgstr "Well done! You signed up"
 
-#: src/hooks/usePages/utils/index.tsx:72
+#: src/hooks/usePages/utils/index.tsx:71
 msgid "Contatta Pessastudio per preventivi di Giostre, ostacoli, tondini e attrezzature per cavalli"
 msgstr "Contact Pessastudio for quotes on horse walkers, horse exerciser, jumpers, lunge & paddock pens, and equipment for horses"
 
-#: src/hooks/usePages/utils/index.tsx:50
-#: src/hooks/usePages/utils/index.tsx:66
+#: src/hooks/usePages/utils/index.tsx:49
+#: src/hooks/usePages/utils/index.tsx:65
 msgid "Contattaci per un preventivo per ostacoli, recinti, tondini coperti, giostre, rettangoli da dressage e attrezzature per cavalli"
 msgstr "Contact us for a quote for obstacles, fences, covered round pens, walkers, dressage rectangles, and equestrian equipment"
 
@@ -275,7 +258,7 @@ msgstr "Contact us for a quote for obstacles, fences, covered round pens, walker
 msgid "Contattaci usando l'email <0>{0}</0> <1/>o chiamaci al numero: <2>{1}</2>"
 msgstr "Contact us via email at <0>{0}</0> <1/>or call us at: <2>{1}</2>"
 
-#: src/hooks/usePages/utils/index.tsx:51
+#: src/hooks/usePages/utils/index.tsx:50
 msgid "Contatti"
 msgstr "Contacts us"
 
@@ -326,34 +309,27 @@ msgid "Copertura"
 msgstr "The roof"
 
 #: src/utils/constants.tsx:262
-#: src/modules/GiostreTecnoexerciser/_copertura.tsx:16
-#: src/modules/GiostreTecnoexerciser/_copertura.tsx:20
-#: src/modules/GiostreIppowalker/_copertura.tsx:17
-#: src/modules/GiostreIppowalker/_copertura.tsx:21
+#: src/modules/GiostreTecnoexerciserCoperta/_copertura.tsx:16
+#: src/modules/GiostreTecnoexerciserCoperta/_copertura.tsx:20
 msgid "Copertura in PVC"
 msgstr "PVC roof"
 
-#: src/modules/GiostreTecnoexerciser/_copertura.tsx:24
-#: src/modules/GiostreTecnoexerciser/_copertura.tsx:28
-#: src/modules/GiostreTecnoexerciser/_compare.tsx:103
+#: src/modules/GiostreTecnoexerciserCoperta/_copertura.tsx:24
+#: src/modules/GiostreTecnoexerciserCoperta/_copertura.tsx:28
+#: src/modules/GiostreTecnoexerciserCoperta/_compare.tsx:103
 msgid "Copertura rigida con lastre ondulate"
 msgstr "Rigid roof made of corrugated sheet metal"
 
-#. placeholder {0}: GIOSTRE_MODELS.TECNOEXERCISER
-#: src/modules/Giostre/index.tsx:137
+#. placeholder {0}: GIOSTRE_TECNOEXERCISER_COPERTA.title
+#: src/modules/Giostre/index.tsx:138
 msgid "Corridoio coperto per accesso giostra {0}"
 msgstr "Covered walkway for {0} horse walker access"
 
-#: src/modules/GiostreIppowalker/_corridoi.tsx:21
-msgid "Corridoio EASY in compensato marino"
-msgstr "EASY corridor in marine plywood"
-
-#: src/modules/GiostreTecnoexerciser/_corridoi.tsx:19
+#: src/modules/GiostreTecnoexerciserCoperta/_corridoi.tsx:19
 msgid "Corridoio EXERCISER in compensato marino"
 msgstr "EXERCISER corridor in marine plywood"
 
-#: src/modules/GiostreTecnoexerciser/_corridoi.tsx:15
-#: src/modules/GiostreIppowalker/_corridoi.tsx:17
+#: src/modules/GiostreTecnoexerciserCoperta/_corridoi.tsx:15
 msgid "Corridoio TECNOFENCE"
 msgstr "TECNOFENCE corridor"
 
@@ -404,13 +380,11 @@ msgid "Dicono di noi"
 msgstr "About us"
 
 #: src/modules/Tondini/index.tsx:270
-#: src/modules/GiostreTecnoexerciser/_servizio_clienti.tsx:61
-#: src/modules/GiostreIppowalker/_servizio_clienti.tsx:47
+#: src/modules/GiostreTecnoexerciserCoperta/_servizio_clienti.tsx:61
 msgid "Dimensioni"
 msgstr "Dimensions"
 
-#: src/modules/GiostreTecnoexerciser/_servizio_clienti.tsx:17
-#: src/modules/GiostreIppowalker/_servizio_clienti.tsx:17
+#: src/modules/GiostreTecnoexerciserCoperta/_servizio_clienti.tsx:17
 msgid "Dimensioni giostra cavalli"
 msgstr "Horse exerciser dimensions"
 
@@ -418,7 +392,7 @@ msgstr "Horse exerciser dimensions"
 msgid "Disponibile"
 msgstr "Available"
 
-#: src/hooks/usePages/utils/index.tsx:45
+#: src/hooks/usePages/utils/index.tsx:44
 msgid "Dressage"
 msgstr "Dressage"
 
@@ -426,11 +400,7 @@ msgstr "Dressage"
 msgid "È costituito da pannelli laterali in compensato marino fissati a colonne in acciaio zincato. La copertura in telo spalmato in PVC, è disponibile in bianco, verde o crema"
 msgstr "Made of marine plywood panels attached to galvanised steel columns. The PVC-coated fabric cover is available in white, green, or cream"
 
-#: src/modules/GiostreIppowalker/_copertura.tsx:38
-msgid "É possibile acquistare la giostra sprovvista di copertura ma se il vostro obbiettivo è quello di poter lavorare 365 giorni all'anno, Pessastudio offre la possibilità di dotare la giostra, con corridoio EASY, di una <0>copertura in PVC</0>."
-msgstr "It is possible to buy the horse exerciser without a cover but if your goal is to be able to work 365 days a year, then Pessastudio offers the possibility of equipping EASY corridor with a <0> PVC cover </0>."
-
-#: src/modules/Giostre/index.tsx:52
+#: src/modules/Giostre/index.tsx:53
 msgid "È possibile acquistare le nostre giostre in diverse versioni adatte ad ogni budget ed esigenza"
 msgstr "Different versions of our walkers may be purchased to suit every budget and need"
 
@@ -444,16 +414,12 @@ msgstr "It is a simple, light and pleasing to the eye"
 msgid "Email"
 msgstr "Email"
 
-#: src/modules/GiostreIppowalker/_gallery.tsx:12
-msgid "Entrata"
-msgstr "Entrance"
-
 #: src/modules/500/index.tsx:7
-#: src/hooks/usePages/utils/index.tsx:61
+#: src/hooks/usePages/utils/index.tsx:60
 msgid "Errore"
 msgstr "Error"
 
-#: src/modules/Giostre/index.tsx:79
+#: src/modules/Giostre/index.tsx:80
 msgid "Facile da usare"
 msgstr "Easy to use"
 
@@ -475,95 +441,76 @@ msgid "Funzione"
 msgstr "Function"
 
 #: src/modules/Recinti/_gamma.tsx:37
-#: src/modules/GiostreTecnoexerciser/_compare.tsx:119
-#: src/modules/GiostreIppowalker/_compare.tsx:92
-#: src/modules/Giostre/index.tsx:160
+#: src/modules/GiostreTecnoexerciserCoperta/_compare.tsx:119
+#: src/modules/Giostre/index.tsx:161
 msgid "Gamma"
 msgstr "Product range"
 
-#: src/modules/GiostreTecnoexerciser/_gallery.tsx:16
-#: src/modules/GiostreTecnoexerciser/_gallery.tsx:20
+#: src/modules/GiostreTecnoexerciserCoperta/_gallery.tsx:16
+#: src/modules/GiostreTecnoexerciserCoperta/_gallery.tsx:20
 msgid "Giostra"
 msgstr "Horse exerciser"
 
-#: src/modules/GiostreIppowalker/_compare.tsx:68
-msgid "Giostra <0/>corridoio EASY"
-msgstr ""
-"Horse exerciser<0/>\n"
-"with EASY fence"
-
-#: src/modules/GiostreIppowalker/_compare.tsx:80
-msgid "Giostra <0/>corridoio EASY<1/>copertura PVC"
-msgstr ""
-"Horse exerciser<0/>\n"
-"with EASY fence<1/>\n"
-"and PVC roof"
-
-#: src/modules/GiostreTecnoexerciser/_compare.tsx:81
+#: src/modules/GiostreTecnoexerciserCoperta/_compare.tsx:81
 msgid "Giostra <0/>corridoio EXERCISER"
 msgstr ""
 "Horse exerciser<0/>\n"
 "with EXERCIZER fence"
 
-#: src/modules/GiostreTecnoexerciser/_compare.tsx:93
+#: src/modules/GiostreTecnoexerciserCoperta/_compare.tsx:93
 msgid "Giostra <0/>corridoio EXERCISER<1/>copertura PVC"
 msgstr ""
 "Horse exerciser<0/>\n"
 "with EXERCIZER fence<1/>\n"
 "and PVC roof"
 
-#: src/modules/GiostreTecnoexerciser/_compare.tsx:107
+#: src/modules/GiostreTecnoexerciserCoperta/_compare.tsx:107
 msgid "Giostra <0/>corridoio EXERCISER<1/>copertura Rigida"
 msgstr ""
 "Horse exerciser<0/>\n"
 "with EXERCIZER fence<1/>\n"
 "and rigid roof"
 
-#: src/modules/GiostreTecnoexerciser/_compare.tsx:69
-#: src/modules/GiostreIppowalker/_compare.tsx:56
+#: src/modules/GiostreTecnoexerciserCoperta/_compare.tsx:69
 msgid "Giostra <0/>corridoio TECNOFENCE"
 msgstr ""
 "Horse exerciser<0/>\n"
 "with TECNOFENCE fence"
 
-#: src/modules/GiostreTecnoexerciser/_compare.tsx:61
-#: src/modules/GiostreIppowalker/_compare.tsx:48
+#: src/modules/GiostreTecnoexerciserCoperta/_compare.tsx:61
 msgid "Giostra base"
 msgstr "Horse Walker Base"
 
-#: src/modules/GiostreTecnoexerciser/_gallery.tsx:32
+#: src/modules/GiostreTecnoexerciserCoperta/_gallery.tsx:32
 msgid "Giostra con corridoio TECNOFENCE"
 msgstr "Walker with TECNOFENCE corridor"
-
-#: src/modules/GiostreIppowalker/_gallery.tsx:16
-msgid "Giostra Ippowalker"
-msgstr "Ippowalker horse exerciser"
 
 #. placeholder {0}: formatSizeMeter( dimensions.width )
 #: src/hooks/useProducts/utils/index.tsx:629
 msgid "Giostra per {horses} cavalli, solo motore ({0})"
 msgstr "Horse Walker {horses} horses, only engine ({0})"
 
-#: src/modules/Giostre/index.tsx:109
-#: src/modules/Giostre/index.tsx:121
-#: src/modules/Giostre/index.tsx:129
+#: src/modules/Giostre/index.tsx:110
+#: src/modules/Giostre/index.tsx:122
+#: src/modules/Giostre/index.tsx:130
 msgid "Giostra per cavalli Tecnoexerciser"
 msgstr "Tecnoexerciser horse exerciser"
 
-#: src/modules/GiostreTecnoexerciser/_gallery.tsx:28
+#: src/modules/GiostreTecnoexerciserCoperta/_gallery.tsx:28
 msgid "Giostra solo motore"
 msgstr "Horse Walker (only engine)"
 
-#: src/hooks/usePages/utils/index.tsx:38
+#: src/hooks/usePages/utils/index.tsx:37
 msgid "Giostre"
 msgstr "Horse exercisers"
 
-#. placeholder {0}: GIOSTRE_MODELS.IPPOWALKER
-#. placeholder {0}: GIOSTRE_MODELS.TECNOEXERCISER
 #: src/hooks/usePages/utils/index.tsx:90
-#: src/hooks/usePages/utils/index.tsx:101
-msgid "Giostre {0}"
-msgstr "Horse exercisers {0}"
+msgid "Giostre Tecnoexerciser Coperta"
+msgstr ""
+
+#: src/hooks/usePages/utils/index.tsx:97
+msgid "Giostre Tecnoexerciser Scoperta"
+msgstr ""
 
 #: src/modules/Index/index.tsx:47
 msgid "Gli ostacoli sono arrivati. Sono fantastici!"
@@ -573,7 +520,7 @@ msgstr "The horse jumps have arrived. They are fantastic!"
 msgid "Ho ricevuto questa mattina il materiale. I miei complimenti per la qualità dei prodotti, l'imballo ed il trasportatore"
 msgstr "I received the equipment this morning. My compliments for the quality of the products, the packaging and the deliverer"
 
-#: src/hooks/usePages/utils/index.tsx:73
+#: src/hooks/usePages/utils/index.tsx:72
 msgid "Home"
 msgstr "Homepage"
 
@@ -582,8 +529,7 @@ msgstr "Homepage"
 msgid "I candelieri sono costruiti con un montante di alluminio verniciato di colore bianco e sono muniti di 4 piedi rivestiti con puntali di plastica che garantiscono, in caso di ribaltamento, l’incolumità vostra e dei vostri cavalli."
 msgstr "Upgrade to the best with our premium aluminum jumps. These 1.7 mt. tall schooling standards are made from powder-coated aluminum and come with a set of pinless jump cup tracks.  And, in addition to being light-weight and easy to move, everything is weather-proof and require almost no maintenance."
 
-#: src/modules/GiostreTecnoexerciser/_corridoi.tsx:37
-#: src/modules/GiostreIppowalker/_corridoi.tsx:39
+#: src/modules/GiostreTecnoexerciserCoperta/_corridoi.tsx:37
 msgid "I corridoi"
 msgstr "The corridors"
 
@@ -646,11 +592,11 @@ msgstr "Back"
 msgid "Indistruttibili"
 msgstr "Indestructible"
 
-#: src/hooks/usePages/utils/index.tsx:67
+#: src/hooks/usePages/utils/index.tsx:66
 msgid "Informativa sui Cookie"
 msgstr "Cookie Policy"
 
-#: src/modules/Giostre/index.tsx:113
+#: src/modules/Giostre/index.tsx:114
 msgid "Ingresso"
 msgstr "Entrance"
 
@@ -666,7 +612,7 @@ msgstr "Innovative"
 msgid "Innovazione tecnologica e qualità sono le caratteristiche chiave dei nostri prodotti"
 msgstr "Technological innovation and quality are the key features of our products"
 
-#: src/modules/Giostre/index.tsx:125
+#: src/modules/Giostre/index.tsx:126
 msgid "Interno giostra con alveolo"
 msgstr "A horse exerciser with ground grid soil stabilization system"
 
@@ -698,9 +644,7 @@ msgid "Istituto"
 msgstr "Bank name"
 
 #: src/modules/Recinti/index.tsx:65
-#: src/modules/GiostreIppowalkerIstruzioniDiMontaggio/index.tsx:66
-#: src/hooks/usePages/utils/index.tsx:95
-#: src/hooks/usePages/utils/index.tsx:106
+#: src/hooks/usePages/utils/index.tsx:102
 msgid "Istruzioni di montaggio"
 msgstr "Assembly instructions"
 
@@ -734,8 +678,7 @@ msgstr ""
 msgid "L'utilizzo di cookie e di tecnologie affini da parte di {0}, con sede {completeAddress}, rientra nella politica di privacy del Gestore, in conformità a quanto previsto dal D. Lgs 196/03 Codice in materia di protezione dei dati personali (Codice Privacy) e dal Provvedimento dell’8 maggio 2014 “Individuazione delle modalità semplificate per l’informativa e l’acquisizione del consenso per l’uso dei cookie” del Garante Privacy Italiano. {1}, in qualità di Titolare del trattamento agisce conformemente a quanto previsto dalla normativa in materia."
 msgstr "The use of cookies and similar technologies by {0}, with headquarters at {completeAddress}, is governed by the Administrator’s privacy policy, in compliance with the General Data Protection Regulation (GDPR), Italian Legislative Decree 196/03 on Personal Data Protection Code (Privacy Code) and the Order of 8 May 2014, “Identification of simplified procedures for providing information about and obtaining consent for the use of cookies” from the Italian Data Protection Authority. {1}, in its capacity as Data Controller, acts in compliance with relevant legislation."
 
-#: src/modules/GiostreTecnoexerciser/_copertura.tsx:42
-#: src/modules/GiostreIppowalker/_copertura.tsx:35
+#: src/modules/GiostreTecnoexerciserCoperta/_copertura.tsx:42
 msgid "La copertura"
 msgstr "The roof"
 
@@ -786,7 +729,7 @@ msgstr "Width"
 msgid "Le lettere premium in PVC, con una finitura di alta qualità e resistente ai raggi solari, garantiscono massima durabilità e un'estetica superiore. Perfette per chi cerca eccellenza e professionalità nell'arena."
 msgstr "Our premium PVC letters, with high-quality sun-resistant finish, ensure maximum durability and superior aesthetics. Perfect for those seeking excellence and professionalism in the arena."
 
-#: src/modules/Giostre/index.tsx:62
+#: src/modules/Giostre/index.tsx:63
 msgid "Le nostre giostre sono considerate strutture precarie. Non avrete bisogno di nessuna concessione edilizia"
 msgstr "You will not need any building permit to install our horse walkers"
 
@@ -803,26 +746,16 @@ msgstr "Letter cone ({0})"
 msgid "Lunghezza"
 msgstr "Length"
 
-#: src/modules/GiostreIppowalker/_servizio_clienti.tsx:36
-msgid "Manuale collegamento elettrico"
-msgstr "Electrical Installation Guide"
-
 #: src/modules/Recinti/index.tsx:135
-#: src/modules/GiostreTecnoexerciser/_servizio_clienti.tsx:71
-#: src/modules/GiostreIppowalker/_servizio_clienti.tsx:57
+#: src/modules/GiostreTecnoexerciserCoperta/_servizio_clienti.tsx:71
 msgid "Manuale d'istruzioni"
 msgstr "Handbook"
 
-#: src/modules/GiostreIppowalker/_servizio_clienti.tsx:25
-#: src/modules/GiostreIppowalker/_servizio_clienti.tsx:32
-msgid "Manuale quadro di controllo"
-msgstr "Control panel manual"
-
 #. placeholder {0}: "TECNOEXERCISER"
 #. placeholder {0}: "EASY"
-#: src/modules/GiostreTecnoexerciser/_servizio_clienti.tsx:25
-#: src/modules/GiostreTecnoexerciser/_servizio_clienti.tsx:32
-#: src/modules/GiostreTecnoexerciser/_servizio_clienti.tsx:36
+#: src/modules/GiostreTecnoexerciserCoperta/_servizio_clienti.tsx:25
+#: src/modules/GiostreTecnoexerciserCoperta/_servizio_clienti.tsx:32
+#: src/modules/GiostreTecnoexerciserCoperta/_servizio_clienti.tsx:36
 msgid "Manuale quadro di controllo {0}"
 msgstr ""
 
@@ -850,12 +783,12 @@ msgid "Modulo dressage ({0})"
 msgstr "Dressage module ({0})"
 
 #: src/utils/constants.tsx:269
-#: src/modules/GiostreTecnoexerciser/_gallery.tsx:24
+#: src/modules/GiostreTecnoexerciserCoperta/_gallery.tsx:24
 msgid "Motore"
 msgstr "Engine"
 
 #: src/modules/Tondini/index.tsx:213
-#: src/modules/Giostre/index.tsx:68
+#: src/modules/Giostre/index.tsx:69
 msgid "Nessuna concessione edilizia"
 msgstr "No building permit needed"
 
@@ -876,12 +809,12 @@ msgstr "Number cone made from strong and lightweight materials. The pyramid shap
 msgid "Oppure visita la nostra pagina dei <0>contatti</0> per scoprire i rivenditori nella tua zona."
 msgstr "Or visit our <0>contact</0> page to find resellers in your area."
 
-#: src/hooks/usePages/utils/index.tsx:18
+#: src/hooks/usePages/utils/index.tsx:17
 msgid "Ostacoli"
 msgstr "Show jumps"
 
 #: src/modules/404/index.tsx:7
-#: src/hooks/usePages/utils/index.tsx:56
+#: src/hooks/usePages/utils/index.tsx:55
 msgid "Pagina non trovata"
 msgstr "Page not found"
 
@@ -890,7 +823,7 @@ msgstr "Page not found"
 msgid "Per consentirvi di realizzare ostacoli di vostra creazione possiamo fornirvi le lame forate in due diverse lunghezze."
 msgstr "Metal keyhole tracks for jump cups. Tracks have predrilled holes so it’s easy to connect them to your post standards. Standard distance between tracks and post standard allows all pinless jump cups to settle perfectly into place."
 
-#: src/modules/Giostre/index.tsx:104
+#: src/modules/Giostre/index.tsx:105
 msgid "Perché una giostra Pessastudio"
 msgstr "Why buy a Pessastudio horse exerciser"
 
@@ -934,9 +867,9 @@ msgstr "Polyethylene"
 msgid "Polipropilene"
 msgstr "Polypropylene"
 
-#: src/modules/GiostreTecnoexerciser/_gallery.tsx:36
-#: src/modules/GiostreTecnoexerciser/_gallery.tsx:40
-#: src/modules/Giostre/index.tsx:133
+#: src/modules/GiostreTecnoexerciserCoperta/_gallery.tsx:36
+#: src/modules/GiostreTecnoexerciserCoperta/_gallery.tsx:40
+#: src/modules/Giostre/index.tsx:134
 msgid "Porta mobile"
 msgstr "Pusher gate"
 
@@ -944,18 +877,12 @@ msgstr "Pusher gate"
 msgid "Porte"
 msgstr "Pushers"
 
-#: src/modules/GiostreIppowalker/_gallery.tsx:20
-msgid "Porte elettrificate"
-msgstr "Electrified Pushers"
-
 #. placeholder {0}: 0.75
-#. placeholder {0}: 0.37
-#: src/modules/GiostreTecnoexerciser/_compare.tsx:47
-#: src/modules/GiostreIppowalker/_compare.tsx:34
+#: src/modules/GiostreTecnoexerciserCoperta/_compare.tsx:47
 msgid "Potenza motore {0} kw e cadenza regolabile fra 60 e 220 metri al minuto"
 msgstr "Engine power {0} kw. Adjustable speed between 60 and 220 meter/minute"
 
-#: src/modules/GiostreTecnoexerciser/_servizio_clienti.tsx:40
+#: src/modules/GiostreTecnoexerciserCoperta/_servizio_clienti.tsx:40
 msgid "Procedura di lubrificazione"
 msgstr "Lubrication procedure"
 
@@ -967,7 +894,7 @@ msgstr "Products"
 msgid "Prodotti MADE IN ITALY, costruiti da Pessastudio e personalizzabili (in dimensioni o colori)"
 msgstr "Equipment built and customised by Pessastudio in Italy"
 
-#: src/hooks/usePages/utils/index.tsx:16
+#: src/hooks/usePages/utils/index.tsx:15
 msgid "Prodotti professionali, sono lo strumento di lavoro indispensabile in un centro ippico o un maneggio. Progettati e costruiti per durare nel tempo senza alcuna manutenzione"
 msgstr "Professional products, these are essential tools in equestrian centres or riding schools. Designed and built to last, maintenance free"
 
@@ -980,15 +907,11 @@ msgid "PVC"
 msgstr "PVC"
 
 #: src/utils/constants.tsx:265
-#: src/modules/Giostre/index.tsx:117
+#: src/modules/Giostre/index.tsx:118
 msgid "Quadro di comando"
 msgstr "Control panel"
 
-#: src/modules/GiostreIppowalker/_compare.tsx:17
-msgid "Quadro di comando con programma manuale, periodico"
-msgstr "Control panel with manual or periodic program"
-
-#: src/modules/GiostreTecnoexerciser/_compare.tsx:19
+#: src/modules/GiostreTecnoexerciserCoperta/_compare.tsx:19
 msgid "Quadro di comando con programma manuale, periodico o automatico"
 msgstr "Control panel with manual, periodic or automatic program"
 
@@ -1002,7 +925,7 @@ msgstr "Which cookies do we use and for what purposes?"
 msgid "Questi cookie di prima parte, sono proprietà di {0} (Gestore del sito) e sono impiegati per raccogliere dati in forma anonima e aggregata. Questi cookie sono utilizzati per elaborare analisi statistiche sulle modalità di navigazione degli utenti sul nostro sito. {1} tratta i risultati di queste analisi in maniera anonima ed esclusivamente per finalità statistiche."
 msgstr "These first-party cookies are the property of {0} (Website Administrator) and are used to gather data in anonymous and aggregated form. These cookies are used to prepare statistical analyses on the browsing methods of our Website’s users. {1} uses the results of these analyses anonymously and exclusively for statistical purposes."
 
-#: src/hooks/usePages/utils/index.tsx:24
+#: src/hooks/usePages/utils/index.tsx:23
 msgid "Recinti"
 msgstr "Fencing"
 
@@ -1032,8 +955,7 @@ msgstr "{0}-rail horse fence"
 
 #: src/utils/constants.tsx:213
 #: src/modules/Tondini/index.tsx:52
-#: src/modules/GiostreTecnoexerciser/_accessori.tsx:56
-#: src/modules/GiostreIppowalker/_accessori.tsx:56
+#: src/modules/GiostreTecnoexerciserCoperta/_accessori.tsx:56
 msgid "Rete antivento"
 msgstr "Windscreen"
 
@@ -1041,7 +963,7 @@ msgstr "Windscreen"
 msgid "Rete antivento ingresso"
 msgstr "Entrance windscreen"
 
-#: src/hooks/usePages/utils/index.tsx:43
+#: src/hooks/usePages/utils/index.tsx:42
 msgid "Rettangoli / Campi professionali da dressage per tutte le esigenze"
 msgstr "Portable and easy to assemble dressage arenas. Here to help you put the finishing touches on your home or professional arena with markers, horse jumps and more"
 
@@ -1082,8 +1004,8 @@ msgstr "International Dealers"
 msgid "Scarica"
 msgstr "Download"
 
-#: src/modules/Giostre/index.tsx:201
-#: src/modules/Giostre/index.tsx:217
+#: src/modules/Giostre/index.tsx:182
+#: src/modules/Giostre/index.tsx:198
 msgid "Scopri di piú"
 msgstr "Discover more"
 
@@ -1095,21 +1017,11 @@ msgstr "Learn about our Tecnohalle round pen"
 msgid "Scopri la nostra gamma di prodotti"
 msgstr "Discover our range of products"
 
-#. placeholder {0}: GIOSTRE_MODELS.IPPOWALKER
-#: src/hooks/usePages/utils/index.tsx:89
-msgid "Scopri la nostra giostra {0}, lo strumento economico adatto ad allenare il tuo cavallo o il tuo puledro"
-msgstr "Discover our {0} horse walker, the affordable tool designed to train your horse or foal"
-
-#. placeholder {0}: GIOSTRE_MODELS.TECNOEXERCISER
-#: src/hooks/usePages/utils/index.tsx:100
-msgid "Scopri la nostra giostra {0}, lo strumento professionale adatto ad allenare il tuo cavallo o il tuo puledro"
-msgstr "Discover our {0} horse walker, the professional tool designed to train your horse or foal."
-
 #: src/modules/Index/index.tsx:151
 msgid "Scopri la qualità dei nostri prodotti attraverso la testimonianza dei clienti"
 msgstr "Discover the quality of our products through our customer’s testimonials"
 
-#: src/hooks/usePages/utils/index.tsx:36
+#: src/hooks/usePages/utils/index.tsx:35
 msgid "Scopri le nostre giostre per cavalli, lo strumento ideale di lavoro per allenare il vostro cavallo"
 msgstr "Learn about our horse walkers, the ideal tools for training your horse"
 
@@ -1163,8 +1075,7 @@ msgstr "The breakaway safety cups will literally break away from the safety adap
 
 #: src/modules/Tondini/index.tsx:262
 #: src/modules/Recinti/index.tsx:133
-#: src/modules/GiostreTecnoexerciser/_servizio_clienti.tsx:56
-#: src/modules/GiostreIppowalker/_servizio_clienti.tsx:43
+#: src/modules/GiostreTecnoexerciserCoperta/_servizio_clienti.tsx:56
 msgid "Supporto clienti"
 msgstr "Customer service"
 
@@ -1193,11 +1104,11 @@ msgstr "Type of cookie"
 msgid "Titolare del trattamento"
 msgstr "Data Controller"
 
-#: src/hooks/usePages/utils/index.tsx:31
+#: src/hooks/usePages/utils/index.tsx:30
 msgid "Tondini"
 msgstr "Covered lunge & Paddock Pens"
 
-#: src/hooks/usePages/utils/index.tsx:29
+#: src/hooks/usePages/utils/index.tsx:28
 msgid "Tondini coperti per addestrare puledri in libertà"
 msgstr "Covered round pens for training free-roaming foals"
 
@@ -1244,7 +1155,7 @@ msgstr "All riders know dusty arenas are unpleasant. <0/>Dust can contribute to 
 msgid "Un cookie è un file di piccole dimensioni che viene inviato al browser in uso e salvato sul tuo dispositivo quando visiti un sito internet come {WEBISTE_URL} (‘il sito’). I cookie permettono un funzionamento efficiente del sito e ne migliorano le prestazioni, inoltre forniscono informazioni al proprietario del sito per fini statistici o pubblicitari, principalmente per personalizzare la tua esperienza di navigazione ricordando le tue preferenze (per esempio ricordare la lingua e la valuta che hai impostato, per riconoscerti alla visita successiva, ecc.)."
 msgstr "A cookie is a small file that is sent to your browser and stored on your device when you visit a website such as {WEBISTE_URL} (\"the site\"). Cookies allow the site to function efficiently and improve its performance. They also provide information to the site owner for statistical or advertising purposes, mainly to personalize your browsing experience by remembering your preferences (for example, remembering the language and currency you selected, recognizing you on your next visit, etc.)."
 
-#: src/hooks/usePages/utils/index.tsx:78
+#: src/hooks/usePages/utils/index.tsx:77
 msgid "Un recinto da cavalli in PVC. Indistruttibile anche in presenza delle più avverse condizioni meteorologiche"
 msgstr "Horse fence in PVC. Indestructible, even under the worst weather conditions"
 
@@ -1252,7 +1163,7 @@ msgstr "Horse fence in PVC. Indestructible, even under the worst weather conditi
 msgid "Una lunga storia"
 msgstr "A long history"
 
-#: src/modules/Giostre/index.tsx:72
+#: src/modules/Giostre/index.tsx:73
 msgid "Usa il nostro semplice pannello di controllo per scegliere uno dei nostri \"training programs\" o seleziona manualmente la velocità desiderata"
 msgstr "Use our simple control panel to choose one of our ‘training programmes’ or manually select the desired speed"
 

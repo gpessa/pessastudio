@@ -1,6 +1,5 @@
 import { MessageDescriptor } from "@lingui/core";
 import { msg } from "@lingui/core/macro";
-import { GIOSTRE_MODELS } from "modules/Giostre";
 
 export type Page = {
   url: string;
@@ -85,24 +84,21 @@ export const getPages = (locale: string) => {
     url: `/${locale}/tondini/come-preparare-il-fondo`,
   };
 
-  const GIOSTRE_IPPOWALKER: Page = {
-    description: msg`Scopri la nostra giostra ${GIOSTRE_MODELS.IPPOWALKER}, lo strumento economico adatto ad allenare il tuo cavallo o il tuo puledro`,
-    title: msg`Giostre ${GIOSTRE_MODELS.IPPOWALKER}`,
-    url: `/${locale}/giostre/ippowalker`,
+  const GIOSTRE_TECNOEXERCISER_COPERTA: Page = {
+    // TODO: add description
+    // description: msg`Scopri la nostra giostra ${GIOSTRE_MODELS.TECNOEXERCISER}, lo strumento professionale adatto ad allenare il tuo cavallo o il tuo puledro`,
+    title: msg`Giostre Tecnoexerciser Coperta`,
+    url: `/${locale}/giostre/tecnoexerciser-coperta`,
   };
 
-  const GIOSTRE_IPPOWALKER_ISTRUZIONI_MONTAGGIO: Page = {
-    title: msg`Istruzioni di montaggio`,
-    url: `/${locale}/giostre/ippowalker/istruzioni-montaggio`,
+  const GIOSTRE_TECNOEXERCISER_SCOPERTA: Page = {
+    // TODO: add description
+    // description: msg`Scopri la nostra giostra ${GIOSTRE_MODELS.TECNOEXERCISER}, lo strumento professionale adatto ad allenare il tuo cavallo o il tuo puledro`,
+    title: msg`Giostre Tecnoexerciser Scoperta`,
+    url: `/${locale}/giostre/tecnoexerciser-scoperta`,
   };
 
-  const GIOSTRE_TECNOEXERCISER: Page = {
-    description: msg`Scopri la nostra giostra ${GIOSTRE_MODELS.TECNOEXERCISER}, lo strumento professionale adatto ad allenare il tuo cavallo o il tuo puledro`,
-    title: msg`Giostre ${GIOSTRE_MODELS.TECNOEXERCISER}`,
-    url: `/${locale}/giostre/tecnoexerciser`,
-  };
-
-  const GIOSTRE_TECNOEXERCISER_ISTRUZIONI_MONTAGGIO: Page = {
+  const GIOSTRE_TECNOEXERCISER_COPERTA_ISTRUZIONI_MONTAGGIO: Page = {
     title: msg`Istruzioni di montaggio`,
     url: `/${locale}/giostre/tecnoexerciser/istruzioni-montaggio`,
   };
@@ -115,10 +111,9 @@ export const getPages = (locale: string) => {
     ...PRODUCTS,
     ...NAVIGATION,
     COOKIE_POLICY,
-    GIOSTRE_IPPOWALKER,
-    GIOSTRE_IPPOWALKER_ISTRUZIONI_MONTAGGIO,
-    GIOSTRE_TECNOEXERCISER,
-    GIOSTRE_TECNOEXERCISER_ISTRUZIONI_MONTAGGIO,
+    GIOSTRE_TECNOEXERCISER_COPERTA,
+    GIOSTRE_TECNOEXERCISER_COPERTA_ISTRUZIONI_MONTAGGIO,
+    GIOSTRE_TECNOEXERCISER_SCOPERTA,
     HOME,
     PAGE_404,
     PAGE_500,

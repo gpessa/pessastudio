@@ -26,14 +26,15 @@ import { NAME } from "utils/constants";
 
 import image from "./assets/background.jpg";
 
-export const GIOSTRE_MODELS = {
-  IPPOWALKER: "Ippowalker",
-  TECNOEXERCISER: "Tecnoexerciser",
-};
-
 const Giostre: React.FC = () => {
   const { t } = useLingui();
-  const { PAGES } = usePages();
+  const {
+    PAGES: {
+      GIOSTRE,
+      GIOSTRE_TECNOEXERCISER_COPERTA,
+      GIOSTRE_TECNOEXERCISER_SCOPERTA,
+    },
+  } = usePages();
 
   const BENEFITS: BeneftisProps = {
     benefits: [
@@ -79,7 +80,7 @@ const Giostre: React.FC = () => {
         title: <Trans>Facile da usare</Trans>,
       },
     ],
-    subtitle: PAGES.GIOSTRE.title,
+    subtitle: GIOSTRE.title,
     text: (
       <Trans>
         <Typography mx={{ marginBottom: 15 }}>
@@ -134,14 +135,14 @@ const Giostre: React.FC = () => {
       image: require("assets/products/giostre/gallery/porta-mobile.jpg"),
     },
     {
-      caption: t`Corridoio coperto per accesso giostra ${GIOSTRE_MODELS.TECNOEXERCISER}`,
+      caption: t`Corridoio coperto per accesso giostra ${GIOSTRE_TECNOEXERCISER_COPERTA.title}`,
       image: require("assets/products/giostre/gallery/corridoio-coperto.jpg"),
     },
   ];
 
   const HERO: HeroProps = {
     image,
-    text: PAGES.GIOSTRE.title,
+    text: GIOSTRE.title,
   };
 
   return (
@@ -161,27 +162,7 @@ const Giostre: React.FC = () => {
         </Th>
 
         <Trans>
-          <Typography mx={{ marginBottom: 15 }}>
-            Il nostro modello di punta, il{" "}
-            <strong>{GIOSTRE_MODELS.TECNOEXERCISER}</strong>, rappresenta lo
-            strumento più avanzato nel suo campo. Frutto di oltre 20 anni di
-            esperienza e studi, il{" "}
-            <strong>{GIOSTRE_MODELS.TECNOEXERCISER}</strong> offre prestazioni
-            professionali senza pari, garantendo il massimo in termini di
-            qualità e innovazione.
-          </Typography>
-
-          <Typography mx={{ marginBottom: 15 }}>
-            Per chi cerca una soluzione più economica ma comunque affidabile,
-            proponiamo l'<strong>{GIOSTRE_MODELS.IPPOWALKER}</strong>. Questo
-            modello base è perfetto per chi desidera un'opzione conveniente
-            senza compromettere la sicurezza e l'efficacia.
-          </Typography>
-
-          <Typography>
-            Qualunque sia la vostra esigenza, siamo certi di avere il prodotto
-            giusto per voi e i vostri cavalli.
-          </Typography>
+          <Typography mx={{ marginBottom: 15 }}></Typography>
         </Trans>
       </Section>
 
@@ -189,11 +170,11 @@ const Giostre: React.FC = () => {
         left={
           <Box textAlign="center">
             <Th variant="h3" sans>
-              {GIOSTRE_MODELS.TECNOEXERCISER}
+              {GIOSTRE_TECNOEXERCISER_COPERTA.title}
             </Th>
             <Button
               component={NextLink}
-              href={PAGES.GIOSTRE_TECNOEXERCISER.url}
+              href={GIOSTRE_TECNOEXERCISER_COPERTA.url}
               color="warm2"
               size="large"
               startIcon={<RemoveRedEyeOutlined />}
@@ -205,13 +186,13 @@ const Giostre: React.FC = () => {
         right={
           <Box textAlign="center">
             <Th variant="h3" sans>
-              {GIOSTRE_MODELS.IPPOWALKER}
+              {GIOSTRE_TECNOEXERCISER_SCOPERTA.title}
             </Th>
             <Button
               color="primary"
               size="large"
               component={NextLink}
-              href={PAGES.GIOSTRE_IPPOWALKER.url}
+              href={GIOSTRE_TECNOEXERCISER_SCOPERTA.url}
               endIcon={<RemoveRedEyeOutlined />}
             >
               <Trans>Scopri di piú</Trans>
