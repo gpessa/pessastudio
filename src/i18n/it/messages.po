@@ -17,7 +17,7 @@ msgstr ""
 msgid "{NAME} è stata scelta da oltre 3.000 clienti in tutto il mondo per la realizzazione della propria giostra."
 msgstr "{NAME} è stata scelta da oltre 3.000 clienti in tutto il mondo per la realizzazione della propria giostra."
 
-#: src/utils/constants.tsx:253
+#: src/utils/constants.tsx:254
 msgid "* In presenza di nevicate che superino la portata consentita, sarà opportuno intervenire rimuovendo l’eccesso di neve e cospargendo di sale la copertura prima di introdurre i cavalli."
 msgstr "* In presenza di nevicate che superino la portata consentita, sarà opportuno intervenire rimuovendo l’eccesso di neve e cospargendo di sale la copertura prima di introdurre i cavalli."
 
@@ -29,7 +29,7 @@ msgstr "+ IVA"
 msgid "<0>{NAME} è un'azienda altamente affidabile e rinomata nel settore dell'equitazione. Ogni anno, centinaia di persone scelgono i nostri articoli d'equitazione per la qualità superiore che li caratterizza.</0><1>La gamma di prodotti offerti è ampia e diversificata, con un'attenzione particolare alla funzionalità e al design. La competenza e l'esperienza del team di {NAME} sono alla base del successo dell'azienda e della sua reputazione di affidabilità e professionalità.</1>"
 msgstr "<0>{NAME} è un'azienda altamente affidabile e rinomata nel settore dell'equitazione. Ogni anno, centinaia di persone scelgono i nostri articoli d'equitazione per la qualità superiore che li caratterizza.</0><1>La gamma di prodotti offerti è ampia e diversificata, con un'attenzione particolare alla funzionalità e al design. La competenza e l'esperienza del team di {NAME} sono alla base del successo dell'azienda e della sua reputazione di affidabilità e professionalità.</1>"
 
-#: src/utils/constants.tsx:311
+#: src/utils/constants.tsx:271
 msgid "<0>Accessori</0><1>(Ordinabili separatamente)</1>"
 msgstr "<0>Accessori</0><1>(Ordinabili separatamente)</1>"
 
@@ -61,13 +61,19 @@ msgstr "<0>I cavalletti Caprilli rappresentano uno strumento essenziale per l'al
 msgid "<0>I nostri ostacoli sono progettati e costruiti per durare nel tempo non richiedono alcuna manutenzione e conservano, inalterata, la loro bellezza anche se lasciati nel campo per anni.</0><1>Se gli ostacoli per il professionista sono uno strumento di lavoro, per molti altri appassionati rappresentano la realizzazione di un sogno. Noi abbiamo deciso di rendere questi strumenti resistenti nel tempo per fare in modo che questo sogno duri.</1><2>Potrete scegliere le quantità e i colori nella nostra gamma di produzione e acquistare anche singoli pezzi di ricambio.</2>"
 msgstr "<0>I nostri ostacoli sono progettati e costruiti per durare nel tempo non richiedono alcuna manutenzione e conservano, inalterata, la loro bellezza anche se lasciati nel campo per anni.</0><1>Se gli ostacoli per il professionista sono uno strumento di lavoro, per molti altri appassionati rappresentano la realizzazione di un sogno. Noi abbiamo deciso di rendere questi strumenti resistenti nel tempo per fare in modo che questo sogno duri.</1><2>Potrete scegliere le quantità e i colori nella nostra gamma di produzione e acquistare anche singoli pezzi di ricambio.</2>"
 
-#: src/utils/constants.tsx:293
+#: src/utils/constants.tsx:311
 msgid "<0>Il corridoio <1>{name}</1> in compensato marino è realizzato con un multistrato <2>({thickness} mm. di spessore)</2> antigraffio, antiurto, resistente allo sporco e idrorepellente. L'obbiettivo di questa soluzione è quello di fornire un elevato grado di sicurezza forzando il cavallo a concentrarsi sul percorso durante l'allenamento.</0>"
 msgstr "<0>Il corridoio <1>{name}</1> in compensato marino è realizzato con un multistrato <2>({thickness} mm. di spessore)</2> antigraffio, antiurto, resistente allo sporco e idrorepellente. L'obbiettivo di questa soluzione è quello di fornire un elevato grado di sicurezza forzando il cavallo a concentrarsi sul percorso durante l'allenamento.</0>"
 
-#: src/utils/constants.tsx:264
+#: src/utils/constants.tsx:282
 msgid "<0>Il corridoio <1>TECNOFENCE</1> è una soluzione semplice ed economica che ti permetterà di avere una giostra completa, sicura e durevole ad un costo competitivo.</0><2>L'altezza della recinzione esterna è di 1,60 mt., a differenza del corridoio interno alto 1,40 mt.</2><3>L'innovativo materiale utilizzato per la sua costruzione (PPO) è durevole nel tempo e ti consentirà di abbattere i costi di manutenzione che affliggono le classiche recinzioni in legno.</3><4>Uno dei vantaggi è inoltre quello di poter installare la giostra in piena autonomia.</4>"
 msgstr "<0>Il corridoio <1>TECNOFENCE</1> è una soluzione semplice ed economica che ti permetterà di avere una giostra completa, sicura e durevole ad un costo competitivo.</0><2>L'altezza della recinzione esterna è di 1,60 mt., a differenza del corridoio interno alto 1,40 mt.</2><3>L'innovativo materiale utilizzato per la sua costruzione (PPO) è durevole nel tempo e ti consentirà di abbattere i costi di manutenzione che affliggono le classiche recinzioni in legno.</3><4>Uno dei vantaggi è inoltre quello di poter installare la giostra in piena autonomia.</4>"
+
+#. placeholder {0}: formatSize(18)
+#. placeholder {1}: formatSize(60)
+#: src/modules/GiostreTecnoexerciser/_corridoi.tsx:40
+msgid "<0>Il corridoio exerciser in compensato marino è realizzato con un pannelli di multistrato marino spessore {0} antigraffio, antiurto, resistente allo sporco e idrorepellente.</0><1>L’obiettivo di questa soluzione è quello di fornire un elevato grado di sicurezza forzando il cavallo a concentrarsi sul percorso durante l’allenamento.</1><2>Il corridoio potrà essere installato a terra senza base di cemento con puntazze elicoidali lunghezza {1} oppure con barre filettate su base di cemento, questa scelta non comprometterà la robustezza e durata della struttura. Installando la struttura a terra senza base di cemento inoltre la struttura rientra come struttura precaria evitando così innumerevoli permessi edilizi.</2>"
+msgstr "<0>Il corridoio exerciser in compensato marino è realizzato con un pannelli di multistrato marino spessore {0} antigraffio, antiurto, resistente allo sporco e idrorepellente.</0><1>L’obiettivo di questa soluzione è quello di fornire un elevato grado di sicurezza forzando il cavallo a concentrarsi sul percorso durante l’allenamento.</1><2>Il corridoio potrà essere installato a terra senza base di cemento con puntazze elicoidali lunghezza {1} oppure con barre filettate su base di cemento, questa scelta non comprometterà la robustezza e durata della struttura. Installando la struttura a terra senza base di cemento inoltre la struttura rientra come struttura precaria evitando così innumerevoli permessi edilizi.</2>"
 
 #. placeholder {0}: GIOSTRE_MODELS.TECNOEXERCISER
 #. placeholder {1}: GIOSTRE_MODELS.TECNOEXERCISER
@@ -87,6 +93,10 @@ msgstr "<0>Ippowalker è una giostra di recente realizzazione, nasce dal sogno d
 #: src/utils/constants.tsx:238
 msgid "<0>La <1>copertura in PVC</1> è composta da una struttura in acciaio zincato la quale sorregge un telo in tessuto di poliestere spalmato di colore verde o crema e in base alle esigenze del cliente anche in altre colorazioni.</0><2>Questa copertura è in grado di sorreggere un carico neve pari a 80 kg/mq * e una forza vento pari a 110 Km/h.</2>"
 msgstr "<0>La <1>copertura in PVC</1> è composta da una struttura in acciaio zincato la quale sorregge un telo in tessuto di poliestere spalmato di colore verde o crema e in base alle esigenze del cliente anche in altre colorazioni.</0><2>Questa copertura è in grado di sorreggere un carico neve pari a 80 kg/mq * e una forza vento pari a 110 Km/h.</2>"
+
+#: src/modules/GiostreTecnoexerciser/_copertura.tsx:45
+msgid "<0>La <1>copertura in PVC</1> è composta da una struttura in acciaio zincato la quale sorregge un telo in tessuto di poliestere spalmato di colore verde, bianco o crema e in base alle esigenze del cliente anche in altre colorazioni.</0><2>Questa copertura è in grado di sorreggere un carico neve pari a 80 kg/mq * e una forza vento pari a 110 Km/h.</2><3>L’alternativa alla <4>copertura in PVC</4> è la copertura rigida formata da pannelli sandwich coibentati. I pannelli hanno uno spessore di coibentazione pari a 1 cm che vi permetterà oltre ad avere una robustezza maggiore di attutire il suono delle intemperie ed evitare così che i cavalli si spaventino durante le loro sessioni di allenamento.</3><5>I pannelli sandwich vengono sorretti da una doppia struttura in acciaio zincato che permette di avere una migliore distribuzione del peso in caso di nevicata e una maggiore sicurezza in caso di forte vento. Una soluzione che ti permetterà senza opere murarie di avere una struttura robusta e durevole nel tempo.</5>"
+msgstr "<0>La <1>copertura in PVC</1> è composta da una struttura in acciaio zincato la quale sorregge un telo in tessuto di poliestere spalmato di colore verde, bianco o crema e in base alle esigenze del cliente anche in altre colorazioni.</0><2>Questa copertura è in grado di sorreggere un carico neve pari a 80 kg/mq * e una forza vento pari a 110 Km/h.</2><3>L’alternativa alla <4>copertura in PVC</4> è la copertura rigida formata da pannelli sandwich coibentati. I pannelli hanno uno spessore di coibentazione pari a 1 cm che vi permetterà oltre ad avere una robustezza maggiore di attutire il suono delle intemperie ed evitare così che i cavalli si spaventino durante le loro sessioni di allenamento.</3><5>I pannelli sandwich vengono sorretti da una doppia struttura in acciaio zincato che permette di avere una migliore distribuzione del peso in caso di nevicata e una maggiore sicurezza in caso di forte vento. Una soluzione che ti permetterà senza opere murarie di avere una struttura robusta e durevole nel tempo.</5>"
 
 #: src/modules/Dressage/index.tsx:95
 msgid "<0>La linea <1>olympic</1>, presente sul mercato da oltre vent'anni, è rappresentata da un rettangolo professionale, dove il campo da dressage è utilizzato quotidianamente.</0><2>Il campo è delimitato da moduli accostabili tra di loro, ciascuno dei quali è lungo 2 mt. Ogni modulo è costruito in polietilene antiurto resistente anche alle basse temperature e che non ingiallisce sotto l'azione dei raggi ultravioletti.</2><3>Su ciascun modulo sono previste tre aree piane con superficie lucida di 50x12 cm. sulle quali possono essere applicati adesivi pubblicitari.</3>"
@@ -110,11 +120,11 @@ msgstr "<0>Porte di separazione.</0><1>(Elettrificatione 200-240 Volt monofase)<
 
 #: src/modules/Ostacoli/Barriere.tsx:19
 msgid "<0>Sono le componenti dell'ostacolo più stressate, poiché, come i candelieri e i pilieri, sono perennemente sottoposte all'azione aggressiva degli agenti atmosferici (caldo, freddo, sole, pioggia). A questi si aggiungono anche gli urti degli zoccoli dei cavalli, frequenti ribaltamenti e le manipolazioni necessarie per aggiustarne le altezze.</0><1>Le barriere di abete, comunemente usate, richiedono una continua manutenzione perché si piegano, scoloriscono nel tempo e si rompono frequentemente.</1><2>Le barriere sintetiche di {NAME}, invece, hanno lo stesso peso di quelle in abete, ma perdono il loro colore solamente dopo anni, non si scrostano e, solo raramente, si rompono sotto l'azione di un carico eccessivo.</2>"
-msgstr "<0>Sono le componenti dell'ostacolo più stressate, poiché, come i candelieri e i pilieri, sono perennemente sottoposte all'azione aggressiva degli agenti atmosferici (caldo, freddo, sole, pioggia). A questi si aggiungono anche gli urti degli zoccoli dei cavalli, frequenti ribaltamenti e le manipolazioni necessarie per aggiustarne le altezze.</0><1>Le barriere di abete, comunemente usate, richiedono una continua manutenzione perché si piegano, scoloriscono nel tempo e si rompono frequentemente.</1><2>Le barriere sintetiche di {NAME}, invece, hanno lo stesso peso di quelle in abete, ma perdono il loro colore solamente dopo anni, non si scrostano e, solo raramente, si rompono sotto l'azione di un carico eccessivo.</2>"
+msgstr "<0>Sono le componenti dell'ostacolo più stressate, poiché, come i candelieri e i pilieri, sono perennemente sottoposte all'azione aggressiva degli agenti atmosferici (caldo, freddo, sole, pioggia). A questi si aggiungono anche gli urti degli zoccoli dei cavalli, frequenti ribaltamenti e le manipolazioni necessarie per aggiustarne le altezze.</0><1>Le barriere di abete, comunemente usate, richiedono una continua manutenzione perché si piegano, scoloriscono nel tempo e si rompono frequentemente.</1><2>Le barriere sintetiche di {NAME}, invece, hanno lo stesso peso di quelle in abete, ma perdono il loro colore solamente dopo anni, non si scrostano e, solo raramente, si rompono sotto l'azione di un carico eccessivo.</2><<<<<<< HEAD"
 
 #: src/modules/GiostreTecnoexerciser/index.tsx:25
-msgid "<0>Tecnoexerciser è il modello di giostra attualmente più richiesto.</0><1>Oggi, grazie alle già note caratteristiche tecniche e alla grande affidabilità, abbiamo aggiunto alcune specifiche funzioni che fanno, di questo modello, la macchina <2>leader</2> del settore.</1><3>È possibile infatti:</3><4><5>Scegliere la forza che la porta mobile esercita sugli animali per invitarli ad avanzare</5><6>Mantenere un controllo costante sull'elettrificazione delle porte mobili</6><7>Beneficiare dell'innovativo sistema \"training program\" che vi consentirà di allenare i vostri cavalli fino ad ottenere performance atletiche.</7><8>Scegliere il programma di irrigazione pesta mentre la giostra sta girando</8></4><9>La struttura è fornita, a seconda delle esigenze, o con punte per l'ancoraggio al suolo o con tasselli nel caso in cui si desideri ancorarla ad un fondo di calcestruzzo.</9>"
-msgstr "<0>Tecnoexerciser è il modello di giostra attualmente più richiesto.</0><1>Oggi, grazie alle già note caratteristiche tecniche e alla grande affidabilità, abbiamo aggiunto alcune specifiche funzioni che fanno, di questo modello, la macchina <2>leader</2> del settore.</1><3>È possibile infatti:</3><4><5>Scegliere la forza che la porta mobile esercita sugli animali per invitarli ad avanzare</5><6>Mantenere un controllo costante sull'elettrificazione delle porte mobili</6><7>Beneficiare dell'innovativo sistema \"training program\" che vi consentirà di allenare i vostri cavalli fino ad ottenere performance atletiche.</7><8>Scegliere il programma di irrigazione pesta mentre la giostra sta girando</8></4><9>La struttura è fornita, a seconda delle esigenze, o con punte per l'ancoraggio al suolo o con tasselli nel caso in cui si desideri ancorarla ad un fondo di calcestruzzo.</9>"
+msgid "<0>Tecnoexerciser è il modello di giostra attualmente più richiesto.</0><1>Oggi, grazie alle già note caratteristiche tecniche e alla grande affidabilità. Abbiamo aggiunto alcune specifiche che fanno, di questo modello, la macchina leader del settore.</1><2>È possibile infatti:</2><3><4>Scegliere la forza che la porta mobile esercita sugli animali per invitarli ad avanzare</4><5>Mantenere un controllo costante sull'elettrificazione delle porte mobili </5><6>Beneficiare dell'innovativo sistema \"training program\" che vi consentirà di allenare i vostri cavalli fino ad ottenere performance atletiche.</6><7>Scegliere il programma di irrigazione pesta mentre la giostra sta girando </7></3><8>Il cliente potrà scegliere tra una <9>copertura in pvc</9> e una <10>copertura con pannelli sandwich coibentati</10>.</8>"
+msgstr "<0>Tecnoexerciser è il modello di giostra attualmente più richiesto.</0><1>Oggi, grazie alle già note caratteristiche tecniche e alla grande affidabilità. Abbiamo aggiunto alcune specifiche che fanno, di questo modello, la macchina leader del settore.</1><2>È possibile infatti:</2><3><4>Scegliere la forza che la porta mobile esercita sugli animali per invitarli ad avanzare</4><5>Mantenere un controllo costante sull'elettrificazione delle porte mobili </5><6>Beneficiare dell'innovativo sistema \"training program\" che vi consentirà di allenare i vostri cavalli fino ad ottenere performance atletiche.</6><7>Scegliere il programma di irrigazione pesta mentre la giostra sta girando </7></3><8>Il cliente potrà scegliere tra una <9>copertura in pvc</9> e una <10>copertura con pannelli sandwich coibentati</10>.</8>>>>>>>> 6fb5d5f8 (fix)"
 
 #: src/modules/Giostre/index.tsx:48
 msgid "3.000 giostre installate"
@@ -308,23 +318,23 @@ msgstr "Cookie di navigazione"
 msgid "Coordinate bancarie"
 msgstr "Coordinate bancarie"
 
-#: src/utils/constants.tsx:306
+#: src/utils/constants.tsx:266
 #: src/modules/Tondini/index.tsx:150
 #: src/modules/Tondini/index.tsx:154
 #: src/modules/Tondini/index.tsx:158
 msgid "Copertura"
 msgstr "Copertura"
 
-#: src/utils/constants.tsx:261
-#: src/modules/GiostreTecnoexerciser/_copertura.tsx:19
-#: src/modules/GiostreTecnoexerciser/_copertura.tsx:23
+#: src/utils/constants.tsx:262
+#: src/modules/GiostreTecnoexerciser/_copertura.tsx:16
+#: src/modules/GiostreTecnoexerciser/_copertura.tsx:20
 #: src/modules/GiostreIppowalker/_copertura.tsx:17
 #: src/modules/GiostreIppowalker/_copertura.tsx:21
 msgid "Copertura in PVC"
 msgstr "Copertura in PVC"
 
-#: src/modules/GiostreTecnoexerciser/_copertura.tsx:27
-#: src/modules/GiostreTecnoexerciser/_copertura.tsx:31
+#: src/modules/GiostreTecnoexerciser/_copertura.tsx:24
+#: src/modules/GiostreTecnoexerciser/_copertura.tsx:28
 #: src/modules/GiostreTecnoexerciser/_compare.tsx:103
 msgid "Copertura rigida con lastre ondulate"
 msgstr "Copertura rigida con lastre ondulate"
@@ -338,11 +348,11 @@ msgstr "Corridoio coperto per accesso giostra {0}"
 msgid "Corridoio EASY in compensato marino"
 msgstr "Corridoio EASY in compensato marino"
 
-#: src/modules/GiostreTecnoexerciser/_corridoi.tsx:21
+#: src/modules/GiostreTecnoexerciser/_corridoi.tsx:19
 msgid "Corridoio EXERCISER in compensato marino"
 msgstr "Corridoio EXERCISER in compensato marino"
 
-#: src/modules/GiostreTecnoexerciser/_corridoi.tsx:17
+#: src/modules/GiostreTecnoexerciser/_corridoi.tsx:15
 #: src/modules/GiostreIppowalker/_corridoi.tsx:17
 msgid "Corridoio TECNOFENCE"
 msgstr "Corridoio TECNOFENCE"
@@ -381,7 +391,7 @@ msgstr "Cucchiaio {0}"
 msgid "Da anni Pessastudio è focalizzata nel produrre prodotti di qualità a costi accessibili"
 msgstr "Da anni Pessastudio è focalizzata nel produrre prodotti di qualità a costi accessibili"
 
-#: src/utils/constants.tsx:307
+#: src/utils/constants.tsx:267
 msgid "Diametro"
 msgstr "Diametro"
 
@@ -419,10 +429,6 @@ msgstr "È costituito da pannelli laterali in compensato marino fissati a colonn
 #: src/modules/GiostreIppowalker/_copertura.tsx:38
 msgid "É possibile acquistare la giostra sprovvista di copertura ma se il vostro obbiettivo è quello di poter lavorare 365 giorni all'anno, Pessastudio offre la possibilità di dotare la giostra, con corridoio EASY, di una <0>copertura in PVC</0>."
 msgstr "É possibile acquistare la giostra sprovvista di copertura ma se il vostro obbiettivo è quello di poter lavorare 365 giorni all'anno, Pessastudio offre la possibilità di dotare la giostra, con corridoio EASY, di una <0>copertura in PVC</0>."
-
-#: src/modules/GiostreTecnoexerciser/_copertura.tsx:49
-msgid "È possibile acquistare la giostra sprovvista di copertura ma se il vostro obbiettivo è quello di poter lavorare 365 giorni all'anno, Pessastudio, offre due possibili soluzioni abbinabili al corridoio <0>Exerciser</0>."
-msgstr "È possibile acquistare la giostra sprovvista di copertura ma se il vostro obbiettivo è quello di poter lavorare 365 giorni all'anno, Pessastudio, offre due possibili soluzioni abbinabili al corridoio <0>Exerciser</0>."
 
 #: src/modules/Giostre/index.tsx:52
 msgid "È possibile acquistare le nostre giostre in diverse versioni adatte ad ogni budget ed esigenza"
@@ -561,7 +567,7 @@ msgstr "Home"
 msgid "I candelieri sono costruiti con un montante di alluminio verniciato di colore bianco e sono muniti di 4 piedi rivestiti con puntali di plastica che garantiscono, in caso di ribaltamento, l’incolumità vostra e dei vostri cavalli."
 msgstr "I candelieri sono costruiti con un montante di alluminio verniciato di colore bianco e sono muniti di 4 piedi rivestiti con puntali di plastica che garantiscono, in caso di ribaltamento, l’incolumità vostra e dei vostri cavalli."
 
-#: src/modules/GiostreTecnoexerciser/_corridoi.tsx:39
+#: src/modules/GiostreTecnoexerciser/_corridoi.tsx:37
 #: src/modules/GiostreIppowalker/_corridoi.tsx:39
 msgid "I corridoi"
 msgstr "I corridoi"
@@ -655,7 +661,7 @@ msgstr "Interno giostra con alveolo"
 msgid "Interno tondino coperto"
 msgstr "Interno tondino coperto"
 
-#: src/utils/constants.tsx:317
+#: src/utils/constants.tsx:277
 #: src/modules/Tondini/index.tsx:78
 msgid "Irrigazione"
 msgstr "Irrigazione"
@@ -699,10 +705,6 @@ msgstr "Kit Cavalletti Caprilli + barriera"
 msgid "Kit comprensivo di 2 cavalletti e una barriera in PPO di colore bianco, diametro 95, lunghezza 2 mt."
 msgstr "Kit comprensivo di 2 cavalletti e una barriera in PPO di colore bianco, diametro 95, lunghezza 2 mt."
 
-#: src/modules/GiostreTecnoexerciser/_copertura.tsx:60
-msgid "L’alternativa alla copertura in PVC è la <0>copertura rigida</0> in lastre di vetroresina. le lastre vengono sorrette da una doppia struttura in acciaio zincato che permette di avere una migliore distribuzione del peso in caso di nevicata e una maggiore sicurezza in caso di forte vento. Una soluzione che ti permetterà senza opere murarie di avere una struttura robusta e durevole nel tempo."
-msgstr "L’alternativa alla copertura in PVC è la <0>copertura rigida</0> in lastre di vetroresina. le lastre vengono sorrette da una doppia struttura in acciaio zincato che permette di avere una migliore distribuzione del peso in caso di nevicata e una maggiore sicurezza in caso di forte vento. Una soluzione che ti permetterà senza opere murarie di avere una struttura robusta e durevole nel tempo."
-
 #: src/utils/constants.tsx:152
 msgid "L'alveolo è la soluzione ottimale per mantenere un fondo sempre perfetto in ogni condizione, permette di evitare buche o avvallamenti riducendo i costi di manutenzione."
 msgstr "L'alveolo è la soluzione ottimale per mantenere un fondo sempre perfetto in ogni condizione, permette di evitare buche o avvallamenti riducendo i costi di manutenzione."
@@ -713,14 +715,10 @@ msgstr "L'alveolo è la soluzione ottimale per mantenere un fondo sempre perfett
 msgid "L'utilizzo di cookie e di tecnologie affini da parte di {0}, con sede {completeAddress}, rientra nella politica di privacy del Gestore, in conformità a quanto previsto dal D. Lgs 196/03 Codice in materia di protezione dei dati personali (Codice Privacy) e dal Provvedimento dell’8 maggio 2014 “Individuazione delle modalità semplificate per l’informativa e l’acquisizione del consenso per l’uso dei cookie” del Garante Privacy Italiano. {1}, in qualità di Titolare del trattamento agisce conformemente a quanto previsto dalla normativa in materia."
 msgstr "L'utilizzo di cookie e di tecnologie affini da parte di {0}, con sede {completeAddress}, rientra nella politica di privacy del Gestore, in conformità a quanto previsto dal D. Lgs 196/03 Codice in materia di protezione dei dati personali (Codice Privacy) e dal Provvedimento dell’8 maggio 2014 “Individuazione delle modalità semplificate per l’informativa e l’acquisizione del consenso per l’uso dei cookie” del Garante Privacy Italiano. {1}, in qualità di Titolare del trattamento agisce conformemente a quanto previsto dalla normativa in materia."
 
-#: src/modules/GiostreTecnoexerciser/_copertura.tsx:45
+#: src/modules/GiostreTecnoexerciser/_copertura.tsx:42
 #: src/modules/GiostreIppowalker/_copertura.tsx:35
 msgid "La copertura"
 msgstr "La copertura"
-
-#: src/modules/GiostreTecnoexerciser/_corridoi.tsx:43
-msgid "La giostra puo essere acquistata scegliendo tra il piú economico corridoio costituito dalla recinzione <0>TECNOFENCE</0> o il robusto corridoio <1>EXERCISER</1> in pannelli in compensato marino."
-msgstr "La giostra puo essere acquistata scegliendo tra il piú economico corridoio costituito dalla recinzione <0>TECNOFENCE</0> o il robusto corridoio <1>EXERCISER</1> in pannelli in compensato marino."
 
 #: src/modules/404/index.tsx:8
 msgid "La pagina che stai cercando non esiste"
@@ -786,7 +784,6 @@ msgstr "Lettera dressage ({0})"
 msgid "Lunghezza"
 msgstr "Lunghezza"
 
-#: src/modules/GiostreTecnoexerciser/_servizio_clienti.tsx:36
 #: src/modules/GiostreIppowalker/_servizio_clienti.tsx:36
 msgid "Manuale collegamento elettrico"
 msgstr "Manuale collegamento elettrico"
@@ -797,12 +794,18 @@ msgstr "Manuale collegamento elettrico"
 msgid "Manuale d'istruzioni"
 msgstr "Manuale d'istruzioni"
 
-#: src/modules/GiostreTecnoexerciser/_servizio_clienti.tsx:25
-#: src/modules/GiostreTecnoexerciser/_servizio_clienti.tsx:32
 #: src/modules/GiostreIppowalker/_servizio_clienti.tsx:25
 #: src/modules/GiostreIppowalker/_servizio_clienti.tsx:32
 msgid "Manuale quadro di controllo"
 msgstr "Manuale quadro di controllo"
+
+#. placeholder {0}: "TECNOEXERCISER"
+#. placeholder {0}: "EASY"
+#: src/modules/GiostreTecnoexerciser/_servizio_clienti.tsx:25
+#: src/modules/GiostreTecnoexerciser/_servizio_clienti.tsx:32
+#: src/modules/GiostreTecnoexerciser/_servizio_clienti.tsx:36
+msgid "Manuale quadro di controllo {0}"
+msgstr "Manuale quadro di controllo {0}"
 
 #: src/modules/Tondini/index.tsx:278
 msgid "Manuali"
@@ -827,7 +830,7 @@ msgstr "Materiali di qualità"
 msgid "Modulo dressage ({0})"
 msgstr "Modulo dressage ({0})"
 
-#: src/utils/constants.tsx:309
+#: src/utils/constants.tsx:269
 #: src/modules/GiostreTecnoexerciser/_gallery.tsx:24
 msgid "Motore"
 msgstr "Motore"
@@ -918,7 +921,7 @@ msgstr "Polipropilene"
 msgid "Porta mobile"
 msgstr "Porta mobile"
 
-#: src/utils/constants.tsx:308
+#: src/utils/constants.tsx:268
 msgid "Porte"
 msgstr "Porte"
 
@@ -957,7 +960,7 @@ msgstr "Puoi in qualsiasi momento ricevere assistenza e spiegazioni su come eser
 msgid "PVC"
 msgstr "PVC"
 
-#: src/utils/constants.tsx:305
+#: src/utils/constants.tsx:265
 #: src/modules/Giostre/index.tsx:117
 msgid "Quadro di comando"
 msgstr "Quadro di comando"
@@ -984,7 +987,7 @@ msgstr "Questi cookie di prima parte, sono proprietà di {0} (Gestore del sito) 
 msgid "Recinti"
 msgstr "Recinti"
 
-#: src/utils/constants.tsx:316
+#: src/utils/constants.tsx:276
 msgid "Recinzione"
 msgstr "Recinzione"
 
