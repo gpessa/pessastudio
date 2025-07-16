@@ -490,8 +490,6 @@ msgstr "Marcheur Couloir TECNOFENCE"
 msgid "Giostra per {horses} cavalli, solo motore ({0})"
 msgstr "Marcheur pour {horses} chevaux, moteur seulement ({0})"
 
-#: src/modules/Giostre/index.tsx:110
-#: src/modules/Giostre/index.tsx:122
 #: src/modules/Giostre/index.tsx:130
 msgid "Giostra per cavalli Tecnoexerciser"
 msgstr "Marcheur Tecnoexerciser"
@@ -904,12 +902,17 @@ msgstr "PVC"
 
 #: src/utils/constants.tsx:265
 #: src/modules/Giostre/index.tsx:118
+#: src/modules/Giostre/index.tsx:122
 msgid "Quadro di comando"
 msgstr "Tableau de commande"
 
 #: src/modules/GiostreTecnoexerciserCoperta/_compare.tsx:19
 msgid "Quadro di comando con programma manuale, periodico o automatico"
 msgstr "Tableau de commande avec programme manuel, périodique ou automatique"
+
+#: src/modules/Giostre/index.tsx:110
+msgid "Quadro elettrico modello easy"
+msgstr ""
 
 #: src/modules/CookiePolicy/index.tsx:69
 msgid "Quali cookie utilizziamo e per quali finalità?"

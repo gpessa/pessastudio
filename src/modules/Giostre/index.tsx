@@ -107,36 +107,36 @@ const Giostre: React.FC = () => {
 
   const IMAGES: Picture[] = [
     {
-      caption: t`Giostra per cavalli Tecnoexerciser`,
-      image: require("assets/products/giostre/gallery/giostra-1.jpg"),
+      caption: t`Quadro elettrico modello easy`,
+      image: require("./assets/gallery/quadro-tecno-easy.jpg"),
     },
     {
       caption: t`Ingresso`,
-      image: require("assets/products/giostre/gallery/porta.jpg"),
+      image: require("./assets/gallery/porta.jpg"),
     },
     {
       caption: t`Quadro di comando`,
-      image: require("assets/products/giostre/gallery/quadro.jpg"),
+      image: require("./assets/gallery/quadro.jpg"),
     },
     {
-      caption: t`Giostra per cavalli Tecnoexerciser`,
-      image: require("assets/products/giostre/gallery/giostra-drone.jpg"),
+      caption: t`Quadro di comando`,
+      image: require("./assets/gallery/quadro-di-comando.jpg"),
     },
     {
       caption: t`Interno giostra con alveolo`,
-      image: require("assets/products/giostre/gallery/giostra-con-alveolo.jpg"),
+      image: require("./assets/gallery/giostra-con-alveolo.jpg"),
     },
     {
       caption: t`Giostra per cavalli Tecnoexerciser`,
-      image: require("assets/products/giostre/gallery/giostra-2.jpg"),
+      image: require("./assets/gallery/giostra-2.jpg"),
     },
     {
       caption: t`Porta mobile`,
-      image: require("assets/products/giostre/gallery/porta-mobile.jpg"),
+      image: require("./assets/gallery/porta-mobile.jpg"),
     },
     {
       caption: t`Corridoio coperto per accesso giostra ${GIOSTRE_TECNOEXERCISER_COPERTA.title}`,
-      image: require("assets/products/giostre/gallery/corridoio-coperto.jpg"),
+      image: require("./assets/gallery/corridoio-coperto.jpg"),
     },
   ];
 

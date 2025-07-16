@@ -630,8 +630,8 @@ export const getProducts = (locale: string): ProductDataList => {
         dimensions.width
       )})`,
       pictures: [
-        require("assets/products/giostre/gallery/giostra-3.jpg"),
-        require("assets/products/giostre/gallery/porta-mobile.jpg"),
+        require("modules/Giostre/assets/gallery/giostra-3.jpg"),
+        require("modules/Giostre/assets/gallery/porta-mobile.jpg"),
       ],
       price,
     })),
