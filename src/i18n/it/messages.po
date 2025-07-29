@@ -45,7 +45,7 @@ msgstr "<0>Corridoio {name} composto da pannelli laterali in compensato marino</
 msgid "<0>Corridoio composto da recinzione TECNOFENCE</0><1>(corridoio interno 1,40 mt., esterno 1,60 mt.)</1>"
 msgstr "<0>Corridoio composto da recinzione TECNOFENCE</0><1>(corridoio interno 1,40 mt., esterno 1,60 mt.)</1>"
 
-#: src/modules/GiostreTecnoexerciserCoperta/_compare.tsx:24
+#: src/modules/GiostreTecnoexerciserCoperta/components/_compare.tsx:24
 msgid "<0>E' possibile ordinare una giostra nei diametri:</0><1><2>12,0 mt. <3>(3 cavalli)</3></2><4>14,4 mt. <5>(4 cavalli)</5></4><6>16,0 mt. <7>(5 cavalli)</7></6><8>17,6 mt. <9>(6 cavalli)</9></8><10>19,2 mt. <11>(8 cavalli)</11></10></1>"
 msgstr "<0>E' possibile ordinare una giostra nei diametri:</0><1><2>12,0 mt. <3>(3 cavalli)</3></2><4>14,4 mt. <5>(4 cavalli)</5></4><6>16,0 mt. <7>(5 cavalli)</7></6><8>17,6 mt. <9>(6 cavalli)</9></8><10>19,2 mt. <11>(8 cavalli)</11></10></1>"
 
@@ -65,11 +65,9 @@ msgstr "<0>Il corridoio <1>{name}</1> in compensato marino è realizzato con un 
 msgid "<0>Il corridoio <1>TECNOFENCE</1> è una soluzione semplice ed economica che ti permetterà di avere una giostra completa, sicura e durevole ad un costo competitivo.</0><2>L'altezza della recinzione esterna è di 1,60 mt., a differenza del corridoio interno alto 1,40 mt.</2><3>L'innovativo materiale utilizzato per la sua costruzione (PPO) è durevole nel tempo e ti consentirà di abbattere i costi di manutenzione che affliggono le classiche recinzioni in legno.</3><4>Uno dei vantaggi è inoltre quello di poter installare la giostra in piena autonomia.</4>"
 msgstr "<0>Il corridoio <1>TECNOFENCE</1> è una soluzione semplice ed economica che ti permetterà di avere una giostra completa, sicura e durevole ad un costo competitivo.</0><2>L'altezza della recinzione esterna è di 1,60 mt., a differenza del corridoio interno alto 1,40 mt.</2><3>L'innovativo materiale utilizzato per la sua costruzione (PPO) è durevole nel tempo e ti consentirà di abbattere i costi di manutenzione che affliggono le classiche recinzioni in legno.</3><4>Uno dei vantaggi è inoltre quello di poter installare la giostra in piena autonomia.</4>"
 
-#. placeholder {0}: formatSize(18)
-#. placeholder {1}: formatSize(60)
-#: src/modules/GiostreTecnoexerciserCoperta/_corridoi.tsx:40
-msgid "<0>Il corridoio exerciser in compensato marino è realizzato con un pannelli di multistrato marino spessore {0} antigraffio, antiurto, resistente allo sporco e idrorepellente.</0><1>L’obiettivo di questa soluzione è quello di fornire un elevato grado di sicurezza forzando il cavallo a concentrarsi sul percorso durante l’allenamento.</1><2>Il corridoio potrà essere installato a terra senza base di cemento con puntazze elicoidali lunghezza {1} oppure con barre filettate su base di cemento, questa scelta non comprometterà la robustezza e durata della struttura. Installando la struttura a terra senza base di cemento inoltre la struttura rientra come struttura precaria evitando così innumerevoli permessi edilizi.</2>"
-msgstr "<0>Il corridoio exerciser in compensato marino è realizzato con un pannelli di multistrato marino spessore {0} antigraffio, antiurto, resistente allo sporco e idrorepellente.</0><1>L’obiettivo di questa soluzione è quello di fornire un elevato grado di sicurezza forzando il cavallo a concentrarsi sul percorso durante l’allenamento.</1><2>Il corridoio potrà essere installato a terra senza base di cemento con puntazze elicoidali lunghezza {1} oppure con barre filettate su base di cemento, questa scelta non comprometterà la robustezza e durata della struttura. Installando la struttura a terra senza base di cemento inoltre la struttura rientra come struttura precaria evitando così innumerevoli permessi edilizi.</2>"
+#: src/modules/GiostreTecnoexerciserCoperta/components/_corridoi.tsx:39
+msgid "<0>Il corridoio con copertura in PVC e/o con pannelli <1>SANDWICH COIBENTATI</1> è realizzato con pannelli in compensato marino spessore 18 antigraffio, antiurto, resistente allo sporco e idrorepellente. L’obiettivo di questa soluzione è quello di fornire un elevato grado di sicurezza forzando il cavallo a concentrarsi sul percorso durante l’allenamento.</0><2>Il corridoio potrà essere installato a terra senza base di cemento con puntazze elicoidali lunghezza 60 cm questa scelta ti garantirà una struttura con carico neve e carico vento garantendo la robustezza e durata della struttura. In alternativa il cliente potrà montare la sua struttura direttamente nel cemento tramite barre filettate e chimico.</2><3>Installando la struttura a terra senza base di cemento è opportuno sottolineare che possiamo farla rientrare come struttura precaria evitando così innumerevoli permessi edilizi.</3>"
+msgstr "<0>Il corridoio con copertura in PVC e/o con pannelli <1>SANDWICH COIBENTATI</1> è realizzato con pannelli in compensato marino spessore 18 antigraffio, antiurto, resistente allo sporco e idrorepellente. L’obiettivo di questa soluzione è quello di fornire un elevato grado di sicurezza forzando il cavallo a concentrarsi sul percorso durante l’allenamento.</0><2>Il corridoio potrà essere installato a terra senza base di cemento con puntazze elicoidali lunghezza 60 cm questa scelta ti garantirà una struttura con carico neve e carico vento garantendo la robustezza e durata della struttura. In alternativa il cliente potrà montare la sua struttura direttamente nel cemento tramite barre filettate e chimico.</2><3>Installando la struttura a terra senza base di cemento è opportuno sottolineare che possiamo farla rientrare come struttura precaria evitando così innumerevoli permessi edilizi.</3>"
 
 #: src/modules/Giostre/index.tsx:164
 msgid "<0>Il nostro modello Tecnoexerciser, rappresenta lo strumento più avanzato nel suo campo. Frutto di oltre 20 anni di esperienza e studi, il Tecnoexerciser offre prestazioni professionali senza pari, garantendo il massimo in termini di qualità e innovazione.</0><1>Nei vari anni abbiamo voluto creare una gamma completa per ogni esigenza e budget dei nostri clienti, creando cosi varie soluzioni di corridoio coperto o scoperto.</1><2>Troverete giostre da 4, 5, 6, 8 cavalli con vari diametri disponibili 12, 14.40, 16, 17.60, 19.20 mt. La giostra Tecnoexerciser ha un motore da 0.75 kw 220 volt che ti permetterà di utilizzarla senza consumi elettrici esagerati e potrai regolare la cadenza fra 60 e 220 metri al minuto.</2>"
@@ -83,9 +81,9 @@ msgstr "<0>Il rettangolo della linea <1>training</1> è rivolto a quei maneggi i
 msgid "<0>La <1>copertura in PVC</1> è composta da una struttura in acciaio zincato la quale sorregge un telo in tessuto di poliestere spalmato di colore verde o crema e in base alle esigenze del cliente anche in altre colorazioni.</0><2>Questa copertura è in grado di sorreggere un carico neve pari a 80 kg/mq * e una forza vento pari a 110 Km/h.</2>"
 msgstr "<0>La <1>copertura in PVC</1> è composta da una struttura in acciaio zincato la quale sorregge un telo in tessuto di poliestere spalmato di colore verde o crema e in base alle esigenze del cliente anche in altre colorazioni.</0><2>Questa copertura è in grado di sorreggere un carico neve pari a 80 kg/mq * e una forza vento pari a 110 Km/h.</2>"
 
-#: src/modules/GiostreTecnoexerciserCoperta/_copertura.tsx:45
-msgid "<0>La <1>copertura in PVC</1> è composta da una struttura in acciaio zincato la quale sorregge un telo in tessuto di poliestere spalmato di colore verde, bianco o crema e in base alle esigenze del cliente anche in altre colorazioni.</0><2>Questa copertura è in grado di sorreggere un carico neve pari a 80 kg/mq * e una forza vento pari a 110 Km/h.</2><3>L’alternativa alla <4>copertura in PVC</4> è la copertura rigida formata da pannelli sandwich coibentati. I pannelli hanno uno spessore di coibentazione pari a 1 cm che vi permetterà oltre ad avere una robustezza maggiore di attutire il suono delle intemperie ed evitare così che i cavalli si spaventino durante le loro sessioni di allenamento.</3><5>I pannelli sandwich vengono sorretti da una doppia struttura in acciaio zincato che permette di avere una migliore distribuzione del peso in caso di nevicata e una maggiore sicurezza in caso di forte vento. Una soluzione che ti permetterà senza opere murarie di avere una struttura robusta e durevole nel tempo.</5>"
-msgstr "<0>La <1>copertura in PVC</1> è composta da una struttura in acciaio zincato la quale sorregge un telo in tessuto di poliestere spalmato di colore verde, bianco o crema e in base alle esigenze del cliente anche in altre colorazioni.</0><2>Questa copertura è in grado di sorreggere un carico neve pari a 80 kg/mq * e una forza vento pari a 110 Km/h.</2><3>L’alternativa alla <4>copertura in PVC</4> è la copertura rigida formata da pannelli sandwich coibentati. I pannelli hanno uno spessore di coibentazione pari a 1 cm che vi permetterà oltre ad avere una robustezza maggiore di attutire il suono delle intemperie ed evitare così che i cavalli si spaventino durante le loro sessioni di allenamento.</3><5>I pannelli sandwich vengono sorretti da una doppia struttura in acciaio zincato che permette di avere una migliore distribuzione del peso in caso di nevicata e una maggiore sicurezza in caso di forte vento. Una soluzione che ti permetterà senza opere murarie di avere una struttura robusta e durevole nel tempo.</5>"
+#: src/modules/GiostreTecnoexerciserCoperta/components/_coperture.tsx:45
+msgid "<0>La <1>copertura in PVC</1> è composta da una struttura in acciaio zincato la quale sorregge un telo in tessuto di poliestere spalmato di colore verde, bianco o crema e in base alle esigenze del cliente anche in altre colorazioni.</0><2>Questa copertura è in grado di sorreggere un carico neve pari a 80 kg/mq * e una forza vento pari a 110 Km/h *.</2><3>L’alternativa alla copertura in PVC è la <4>copertura rigida</4> formata da pannelli sandwich coibentati. I pannelli hanno uno spessore di coibentazione pari a 1 cm che vi permetterà oltre ad avere una robustezza maggiore di attutire il suono delle intemperie ed evitare così che i cavalli si spaventino durante le loro sessioni di allenamento.</3><5>I pannelli sandwich vengono sorretti da una doppia struttura in acciaio zincato che permette di avere una migliore distribuzione del peso in caso di nevicata e una maggiore sicurezza in caso di forte vento. Una soluzione che ti permetterà senza opere murarie di avere una struttura robusta e durevole nel tempo.</5>"
+msgstr "<0>La <1>copertura in PVC</1> è composta da una struttura in acciaio zincato la quale sorregge un telo in tessuto di poliestere spalmato di colore verde, bianco o crema e in base alle esigenze del cliente anche in altre colorazioni.</0><2>Questa copertura è in grado di sorreggere un carico neve pari a 80 kg/mq * e una forza vento pari a 110 Km/h *.</2><3>L’alternativa alla copertura in PVC è la <4>copertura rigida</4> formata da pannelli sandwich coibentati. I pannelli hanno uno spessore di coibentazione pari a 1 cm che vi permetterà oltre ad avere una robustezza maggiore di attutire il suono delle intemperie ed evitare così che i cavalli si spaventino durante le loro sessioni di allenamento.</3><5>I pannelli sandwich vengono sorretti da una doppia struttura in acciaio zincato che permette di avere una migliore distribuzione del peso in caso di nevicata e una maggiore sicurezza in caso di forte vento. Una soluzione che ti permetterà senza opere murarie di avere una struttura robusta e durevole nel tempo.</5>"
 
 #: src/modules/Dressage/index.tsx:95
 msgid "<0>La linea <1>olympic</1>, presente sul mercato da oltre vent'anni, è rappresentata da un rettangolo professionale, dove il campo da dressage è utilizzato quotidianamente.</0><2>Il campo è delimitato da moduli accostabili tra di loro, ciascuno dei quali è lungo 2 mt. Ogni modulo è costruito in polietilene antiurto resistente anche alle basse temperature e che non ingiallisce sotto l'azione dei raggi ultravioletti.</2><3>Su ciascun modulo sono previste tre aree piane con superficie lucida di 50x12 cm. sulle quali possono essere applicati adesivi pubblicitari.</3>"
@@ -112,8 +110,8 @@ msgid "<0>Sono le componenti dell'ostacolo più stressate, poiché, come i cande
 msgstr "<0>Sono le componenti dell'ostacolo più stressate, poiché, come i candelieri e i pilieri, sono perennemente sottoposte all'azione aggressiva degli agenti atmosferici (caldo, freddo, sole, pioggia). A questi si aggiungono anche gli urti degli zoccoli dei cavalli, frequenti ribaltamenti e le manipolazioni necessarie per aggiustarne le altezze.</0><1>Le barriere di abete, comunemente usate, richiedono una continua manutenzione perché si piegano, scoloriscono nel tempo e si rompono frequentemente.</1><2>Le barriere sintetiche di {NAME}, invece, hanno lo stesso peso di quelle in abete, ma perdono il loro colore solamente dopo anni, non si scrostano e, solo raramente, si rompono sotto l'azione di un carico eccessivo.</2><<<<<<< HEAD"
 
 #: src/modules/GiostreTecnoexerciserCoperta/index.tsx:25
-msgid "<0>Tecnoexerciser è il modello di giostra attualmente più richiesto.</0><1>Oggi, grazie alle già note caratteristiche tecniche e alla grande affidabilità. Abbiamo aggiunto alcune specifiche che fanno, di questo modello, la macchina leader del settore.</1><2>È possibile infatti:</2><3><4>Scegliere la forza che la porta mobile esercita sugli animali per invitarli ad avanzare</4><5>Mantenere un controllo costante sull'elettrificazione delle porte mobili </5><6>Beneficiare dell'innovativo sistema \"training program\" che vi consentirà di allenare i vostri cavalli fino ad ottenere performance atletiche.</6><7>Scegliere il programma di irrigazione pesta mentre la giostra sta girando </7></3><8>Il cliente potrà scegliere tra una <9>copertura in pvc</9> e una <10>copertura con pannelli sandwich coibentati</10>.</8>"
-msgstr "<0>Tecnoexerciser è il modello di giostra attualmente più richiesto.</0><1>Oggi, grazie alle già note caratteristiche tecniche e alla grande affidabilità. Abbiamo aggiunto alcune specifiche che fanno, di questo modello, la macchina leader del settore.</1><2>È possibile infatti:</2><3><4>Scegliere la forza che la porta mobile esercita sugli animali per invitarli ad avanzare</4><5>Mantenere un controllo costante sull'elettrificazione delle porte mobili </5><6>Beneficiare dell'innovativo sistema \"training program\" che vi consentirà di allenare i vostri cavalli fino ad ottenere performance atletiche.</6><7>Scegliere il programma di irrigazione pesta mentre la giostra sta girando </7></3><8>Il cliente potrà scegliere tra una <9>copertura in pvc</9> e una <10>copertura con pannelli sandwich coibentati</10>.</8>>>>>>>> 6fb5d5f8 (fix)"
+msgid "<0>Tecnoexerciser con copertura è il modello di giostra attualmente più richiesto .</0><1>Oggi, grazie alle già note caratteristiche tecniche e alla grande affidabilità. Abbiamo aggiunto alcune specifiche che fanno, di questo modello, la macchina leader del settore.</1><2>È possibile infatti:</2><3><4>Scegliere la forza che la porta mobile esercita sugli animali per invitarli ad avanzare</4><5>Mantenere un controllo costante sull'elettrificazione delle porte mobili</5><6>Beneficiare dell'innovativo sistema \"training program\" che vi consentirà di allenare i vostri cavalli fino ad ottenere performance atletiche.</6><7>Scegliere il programma di irrigazione pesta mentre la giostra sta girando</7></3><8>Il cliente potrà scegliere tra una <9>COPERTURA IN PVC</9> e una<10> COPERTURA CON PANNELLI SANDWICH COIBENTATI</10>.</8>"
+msgstr "<0>Tecnoexerciser con copertura è il modello di giostra attualmente più richiesto .</0><1>Oggi, grazie alle già note caratteristiche tecniche e alla grande affidabilità. Abbiamo aggiunto alcune specifiche che fanno, di questo modello, la macchina leader del settore.</1><2>È possibile infatti:</2><3><4>Scegliere la forza che la porta mobile esercita sugli animali per invitarli ad avanzare</4><5>Mantenere un controllo costante sull'elettrificazione delle porte mobili</5><6>Beneficiare dell'innovativo sistema \"training program\" che vi consentirà di allenare i vostri cavalli fino ad ottenere performance atletiche.</6><7>Scegliere il programma di irrigazione pesta mentre la giostra sta girando</7></3><8>Il cliente potrà scegliere tra una <9>COPERTURA IN PVC</9> e una<10> COPERTURA CON PANNELLI SANDWICH COIBENTATI</10>.</8>"
 
 #: src/modules/Giostre/index.tsx:49
 msgid "3.000 giostre installate"
@@ -144,13 +142,13 @@ msgstr "Acconsento"
 msgid "Altezza"
 msgstr "Altezza"
 
-#: src/modules/GiostreTecnoexerciserCoperta/_servizio_clienti.tsx:82
+#: src/modules/GiostreTecnoexerciserCoperta/components/_servizio_clienti.tsx:82
 msgid "Altro"
 msgstr "Altro"
 
 #: src/utils/constants.tsx:190
 #: src/utils/constants.tsx:207
-#: src/modules/GiostreTecnoexerciserCoperta/_accessori.tsx:41
+#: src/modules/GiostreTecnoexerciserCoperta/components/_accessori.tsx:41
 msgid "Alveolo sulla pesta"
 msgstr "Alveolo sulla pesta"
 
@@ -181,6 +179,10 @@ msgstr "Barriera per campo ostacoli (3 mt.)"
 #: src/modules/Ostacoli/Barriere.tsx:17
 msgid "Barriere"
 msgstr "Barriere"
+
+#: src/modules/GiostreTecnoexerciserCoperta/components/_gallery.tsx:9
+msgid "Basamento per parte meccanica"
+msgstr "Basamento per parte meccanica"
 
 #: src/modules/Tondini/index.tsx:222
 msgid "Bello e funzionale"
@@ -213,7 +215,7 @@ msgstr "Che cos'è un cookie?"
 #: src/utils/constants.tsx:184
 #: src/utils/constants.tsx:201
 #: src/modules/Tondini/index.tsx:108
-#: src/modules/GiostreTecnoexerciserCoperta/_accessori.tsx:22
+#: src/modules/GiostreTecnoexerciserCoperta/components/_accessori.tsx:22
 msgid "Chiusura a terra"
 msgstr "Chiusura a terra"
 
@@ -308,15 +310,19 @@ msgstr "Coordinate bancarie"
 msgid "Copertura"
 msgstr "Copertura"
 
+#: src/modules/GiostreTecnoexerciserCoperta/components/_gallery.tsx:29
+msgid "Copertura in pannelli sandwich coibentati"
+msgstr "Copertura in pannelli sandwich coibentati"
+
 #: src/utils/constants.tsx:262
-#: src/modules/GiostreTecnoexerciserCoperta/_copertura.tsx:16
-#: src/modules/GiostreTecnoexerciserCoperta/_copertura.tsx:20
+#: src/modules/GiostreTecnoexerciserCoperta/components/_coperture.tsx:16
+#: src/modules/GiostreTecnoexerciserCoperta/components/_coperture.tsx:20
 msgid "Copertura in PVC"
 msgstr "Copertura in PVC"
 
-#: src/modules/GiostreTecnoexerciserCoperta/_copertura.tsx:24
-#: src/modules/GiostreTecnoexerciserCoperta/_copertura.tsx:28
-#: src/modules/GiostreTecnoexerciserCoperta/_compare.tsx:103
+#: src/modules/GiostreTecnoexerciserCoperta/components/_coperture.tsx:24
+#: src/modules/GiostreTecnoexerciserCoperta/components/_coperture.tsx:28
+#: src/modules/GiostreTecnoexerciserCoperta/components/_compare.tsx:103
 msgid "Copertura rigida con lastre ondulate"
 msgstr "Copertura rigida con lastre ondulate"
 
@@ -325,11 +331,19 @@ msgstr "Copertura rigida con lastre ondulate"
 msgid "Corridoio coperto per accesso giostra {0}"
 msgstr "Corridoio coperto per accesso giostra {0}"
 
-#: src/modules/GiostreTecnoexerciserCoperta/_corridoi.tsx:19
+#: src/modules/GiostreTecnoexerciserCoperta/components/_gallery.tsx:33
+msgid "Corridoio copertura con pannelli sandwich"
+msgstr "Corridoio copertura con pannelli sandwich"
+
+#: src/modules/GiostreTecnoexerciserCoperta/components/_corridoi.tsx:18
 msgid "Corridoio EXERCISER in compensato marino"
 msgstr "Corridoio EXERCISER in compensato marino"
 
-#: src/modules/GiostreTecnoexerciserCoperta/_corridoi.tsx:15
+#: src/modules/GiostreTecnoexerciserCoperta/components/_gallery.tsx:25
+msgid "Corridoio interno copertura in pvc"
+msgstr "Corridoio interno copertura in pvc"
+
+#: src/modules/GiostreTecnoexerciserCoperta/components/_corridoi.tsx:14
 msgid "Corridoio TECNOFENCE"
 msgstr "Corridoio TECNOFENCE"
 
@@ -380,13 +394,9 @@ msgid "Dicono di noi"
 msgstr "Dicono di noi"
 
 #: src/modules/Tondini/index.tsx:270
-#: src/modules/GiostreTecnoexerciserCoperta/_servizio_clienti.tsx:61
+#: src/modules/GiostreTecnoexerciserCoperta/components/_servizio_clienti.tsx:61
 msgid "Dimensioni"
 msgstr "Dimensioni"
-
-#: src/modules/GiostreTecnoexerciserCoperta/_servizio_clienti.tsx:17
-msgid "Dimensioni giostra cavalli"
-msgstr "Dimensioni giostra cavalli"
 
 #: src/components/WhatsApp/index.tsx:32
 msgid "Disponibile"
@@ -441,39 +451,42 @@ msgid "Funzione"
 msgstr "Funzione"
 
 #: src/modules/Recinti/_gamma.tsx:37
-#: src/modules/GiostreTecnoexerciserCoperta/_compare.tsx:119
+#: src/modules/GiostreTecnoexerciserCoperta/components/_compare.tsx:119
 #: src/modules/Giostre/index.tsx:161
 msgid "Gamma"
 msgstr "Gamma"
 
-#: src/modules/GiostreTecnoexerciserCoperta/_gallery.tsx:16
-#: src/modules/GiostreTecnoexerciserCoperta/_gallery.tsx:20
-msgid "Giostra"
-msgstr "Giostra"
-
-#: src/modules/GiostreTecnoexerciserCoperta/_compare.tsx:81
+#: src/modules/GiostreTecnoexerciserCoperta/components/_compare.tsx:81
 msgid "Giostra <0/>corridoio EXERCISER"
 msgstr "Giostra <0/>corridoio EXERCISER"
 
-#: src/modules/GiostreTecnoexerciserCoperta/_compare.tsx:93
+#: src/modules/GiostreTecnoexerciserCoperta/components/_compare.tsx:93
 msgid "Giostra <0/>corridoio EXERCISER<1/>copertura PVC"
 msgstr "Giostra <0/>corridoio EXERCISER<1/>copertura PVC"
 
-#: src/modules/GiostreTecnoexerciserCoperta/_compare.tsx:107
+#: src/modules/GiostreTecnoexerciserCoperta/components/_compare.tsx:107
 msgid "Giostra <0/>corridoio EXERCISER<1/>copertura Rigida"
 msgstr "Giostra <0/>corridoio EXERCISER<1/>copertura Rigida"
 
-#: src/modules/GiostreTecnoexerciserCoperta/_compare.tsx:69
+#: src/modules/GiostreTecnoexerciserCoperta/components/_compare.tsx:69
 msgid "Giostra <0/>corridoio TECNOFENCE"
 msgstr "Giostra <0/>corridoio TECNOFENCE"
 
-#: src/modules/GiostreTecnoexerciserCoperta/_compare.tsx:61
+#: src/modules/GiostreTecnoexerciserCoperta/components/_compare.tsx:61
 msgid "Giostra base"
 msgstr "Giostra base"
 
-#: src/modules/GiostreTecnoexerciserCoperta/_gallery.tsx:32
-msgid "Giostra con corridoio TECNOFENCE"
-msgstr "Giostra con corridoio TECNOFENCE"
+#: src/modules/GiostreTecnoexerciserCoperta/components/_gallery.tsx:17
+msgid "Giostra con copertura in pvc"
+msgstr "Giostra con copertura in pvc"
+
+#: src/modules/GiostreTecnoexerciserCoperta/components/_gallery.tsx:21
+msgid "Giostra con copertura pvc bianca"
+msgstr "Giostra con copertura pvc bianca"
+
+#: src/modules/GiostreTecnoexerciserCoperta/components/_gallery.tsx:37
+msgid "Giostra copertura pvc con rete antivento"
+msgstr "Giostra copertura pvc con rete antivento"
 
 #. placeholder {0}: formatSizeMeter( dimensions.width )
 #: src/hooks/useProducts/utils/index.tsx:629
@@ -483,10 +496,6 @@ msgstr "Giostra per {horses} cavalli, solo motore ({0})"
 #: src/modules/Giostre/index.tsx:130
 msgid "Giostra per cavalli Tecnoexerciser"
 msgstr "Giostra per cavalli Tecnoexerciser"
-
-#: src/modules/GiostreTecnoexerciserCoperta/_gallery.tsx:28
-msgid "Giostra solo motore"
-msgstr "Giostra solo motore"
 
 #: src/hooks/usePages/utils/index.tsx:37
 msgid "Giostre"
@@ -517,10 +526,6 @@ msgstr "Home"
 msgid "I candelieri sono costruiti con un montante di alluminio verniciato di colore bianco e sono muniti di 4 piedi rivestiti con puntali di plastica che garantiscono, in caso di ribaltamento, l’incolumità vostra e dei vostri cavalli."
 msgstr "I candelieri sono costruiti con un montante di alluminio verniciato di colore bianco e sono muniti di 4 piedi rivestiti con puntali di plastica che garantiscono, in caso di ribaltamento, l’incolumità vostra e dei vostri cavalli."
 
-#: src/modules/GiostreTecnoexerciserCoperta/_corridoi.tsx:37
-msgid "I corridoi"
-msgstr "I corridoi"
-
 #: src/hooks/useProducts/utils/index.tsx:159
 #: src/hooks/useProducts/utils/index.tsx:178
 msgid "I cubi sono progettati in maniera da poterli incastrare tra di loro. Questo rende questi blocchi da salto più sicuri, stabili e versatili di qualsiasi cosa tu abbia usato prima. Impila i blocchi in una varietà quasi illimitata di posizioni e configurazioni. Raggiungi l'altezza desiderata con più coppie."
@@ -549,6 +554,10 @@ msgstr "I prodotti vengono venduti ed apprezzati sia in Italia che all'estero"
 #: src/modules/Contatti/components/ContattiBank/index.tsx:9
 msgid "Iban"
 msgstr "Iban"
+
+#: src/modules/GiostreTecnoexerciserCoperta/components/_corridoi.tsx:36
+msgid "Il corrido"
+msgstr "Il corrido"
 
 #: src/hooks/useProducts/utils/index.tsx:272
 msgid "Il cucchiaio dotato del nostro sistema brevettato di aggancio"
@@ -662,10 +671,6 @@ msgstr "L'alveolo è la soluzione ottimale per mantenere un fondo sempre perfett
 msgid "L'utilizzo di cookie e di tecnologie affini da parte di {0}, con sede {completeAddress}, rientra nella politica di privacy del Gestore, in conformità a quanto previsto dal D. Lgs 196/03 Codice in materia di protezione dei dati personali (Codice Privacy) e dal Provvedimento dell’8 maggio 2014 “Individuazione delle modalità semplificate per l’informativa e l’acquisizione del consenso per l’uso dei cookie” del Garante Privacy Italiano. {1}, in qualità di Titolare del trattamento agisce conformemente a quanto previsto dalla normativa in materia."
 msgstr "L'utilizzo di cookie e di tecnologie affini da parte di {0}, con sede {completeAddress}, rientra nella politica di privacy del Gestore, in conformità a quanto previsto dal D. Lgs 196/03 Codice in materia di protezione dei dati personali (Codice Privacy) e dal Provvedimento dell’8 maggio 2014 “Individuazione delle modalità semplificate per l’informativa e l’acquisizione del consenso per l’uso dei cookie” del Garante Privacy Italiano. {1}, in qualità di Titolare del trattamento agisce conformemente a quanto previsto dalla normativa in materia."
 
-#: src/modules/GiostreTecnoexerciserCoperta/_copertura.tsx:42
-msgid "La copertura"
-msgstr "La copertura"
-
 #: src/modules/404/index.tsx:8
 msgid "La pagina che stai cercando non esiste"
 msgstr "La pagina che stai cercando non esiste"
@@ -709,6 +714,10 @@ msgstr "Lama DE da {0}"
 msgid "Larghezza"
 msgstr "Larghezza"
 
+#: src/modules/GiostreTecnoexerciserCoperta/components/_coperture.tsx:42
+msgid "Le coperture"
+msgstr "Le coperture"
+
 #: src/hooks/useProducts/utils/index.tsx:490
 msgid "Le lettere premium in PVC, con una finitura di alta qualità e resistente ai raggi solari, garantiscono massima durabilità e un'estetica superiore. Perfette per chi cerca eccellenza e professionalità nell'arena."
 msgstr "Le lettere premium in PVC, con una finitura di alta qualità e resistente ai raggi solari, garantiscono massima durabilità e un'estetica superiore. Perfette per chi cerca eccellenza e professionalità nell'arena."
@@ -731,15 +740,15 @@ msgid "Lunghezza"
 msgstr "Lunghezza"
 
 #: src/modules/Recinti/index.tsx:135
-#: src/modules/GiostreTecnoexerciserCoperta/_servizio_clienti.tsx:71
+#: src/modules/GiostreTecnoexerciserCoperta/components/_servizio_clienti.tsx:71
 msgid "Manuale d'istruzioni"
 msgstr "Manuale d'istruzioni"
 
 #. placeholder {0}: "TECNOEXERCISER"
 #. placeholder {0}: "EASY"
-#: src/modules/GiostreTecnoexerciserCoperta/_servizio_clienti.tsx:25
-#: src/modules/GiostreTecnoexerciserCoperta/_servizio_clienti.tsx:32
-#: src/modules/GiostreTecnoexerciserCoperta/_servizio_clienti.tsx:36
+#: src/modules/GiostreTecnoexerciserCoperta/components/_servizio_clienti.tsx:25
+#: src/modules/GiostreTecnoexerciserCoperta/components/_servizio_clienti.tsx:32
+#: src/modules/GiostreTecnoexerciserCoperta/components/_servizio_clienti.tsx:36
 msgid "Manuale quadro di controllo {0}"
 msgstr "Manuale quadro di controllo {0}"
 
@@ -767,7 +776,6 @@ msgid "Modulo dressage ({0})"
 msgstr "Modulo dressage ({0})"
 
 #: src/utils/constants.tsx:269
-#: src/modules/GiostreTecnoexerciserCoperta/_gallery.tsx:24
 msgid "Motore"
 msgstr "Motore"
 
@@ -851,22 +859,24 @@ msgstr "Polietilene"
 msgid "Polipropilene"
 msgstr "Polipropilene"
 
-#: src/modules/GiostreTecnoexerciserCoperta/_gallery.tsx:36
-#: src/modules/GiostreTecnoexerciserCoperta/_gallery.tsx:40
 #: src/modules/Giostre/index.tsx:134
 msgid "Porta mobile"
 msgstr "Porta mobile"
+
+#: src/modules/GiostreTecnoexerciserCoperta/components/_gallery.tsx:13
+msgid "Porta mobile elttrificata"
+msgstr "Porta mobile elttrificata"
 
 #: src/utils/constants.tsx:268
 msgid "Porte"
 msgstr "Porte"
 
 #. placeholder {0}: 0.75
-#: src/modules/GiostreTecnoexerciserCoperta/_compare.tsx:47
+#: src/modules/GiostreTecnoexerciserCoperta/components/_compare.tsx:47
 msgid "Potenza motore {0} kw e cadenza regolabile fra 60 e 220 metri al minuto"
 msgstr "Potenza motore {0} kw e cadenza regolabile fra 60 e 220 metri al minuto"
 
-#: src/modules/GiostreTecnoexerciserCoperta/_servizio_clienti.tsx:40
+#: src/modules/GiostreTecnoexerciserCoperta/components/_servizio_clienti.tsx:40
 msgid "Procedura di lubrificazione"
 msgstr "Procedura di lubrificazione"
 
@@ -896,7 +906,7 @@ msgstr "PVC"
 msgid "Quadro di comando"
 msgstr "Quadro di comando"
 
-#: src/modules/GiostreTecnoexerciserCoperta/_compare.tsx:19
+#: src/modules/GiostreTecnoexerciserCoperta/components/_compare.tsx:19
 msgid "Quadro di comando con programma manuale, periodico o automatico"
 msgstr "Quadro di comando con programma manuale, periodico o automatico"
 
@@ -944,7 +954,7 @@ msgstr "Recinzione cavalli a {0} filagne"
 
 #: src/utils/constants.tsx:213
 #: src/modules/Tondini/index.tsx:52
-#: src/modules/GiostreTecnoexerciserCoperta/_accessori.tsx:56
+#: src/modules/GiostreTecnoexerciserCoperta/components/_accessori.tsx:56
 msgid "Rete antivento"
 msgstr "Rete antivento"
 
@@ -992,6 +1002,10 @@ msgstr "Rivenditori"
 #: src/components/ContentTable/index.tsx:72
 msgid "Scarica"
 msgstr "Scarica"
+
+#: src/modules/GiostreTecnoexerciserCoperta/components/_servizio_clienti.tsx:17
+msgid "Scheda tecnica giostra con copertura PVC"
+msgstr "Scheda tecnica giostra con copertura PVC"
 
 #: src/modules/Giostre/index.tsx:199
 #: src/modules/Giostre/index.tsx:215
@@ -1064,7 +1078,7 @@ msgstr "Supporti di sicurezza da applicare ai nostri cucchiai per salvaguardare 
 
 #: src/modules/Tondini/index.tsx:262
 #: src/modules/Recinti/index.tsx:133
-#: src/modules/GiostreTecnoexerciserCoperta/_servizio_clienti.tsx:56
+#: src/modules/GiostreTecnoexerciserCoperta/components/_servizio_clienti.tsx:56
 msgid "Supporto clienti"
 msgstr "Supporto clienti"
 

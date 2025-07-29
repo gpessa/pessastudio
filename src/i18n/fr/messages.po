@@ -45,7 +45,7 @@ msgstr "<0>Couloir {name} composé de panneaux latéraux en contreplaqué marine
 msgid "<0>Corridoio composto da recinzione TECNOFENCE</0><1>(corridoio interno 1,40 mt., esterno 1,60 mt.)</1>"
 msgstr "<0>Couloir composé de clôture TECNOFENCE</0><1>(couloir intérieur 1,40 m, extérieur 1,60 m)</1>"
 
-#: src/modules/GiostreTecnoexerciserCoperta/_compare.tsx:24
+#: src/modules/GiostreTecnoexerciserCoperta/components/_compare.tsx:24
 msgid "<0>E' possibile ordinare una giostra nei diametri:</0><1><2>12,0 mt. <3>(3 cavalli)</3></2><4>14,4 mt. <5>(4 cavalli)</5></4><6>16,0 mt. <7>(5 cavalli)</7></6><8>17,6 mt. <9>(6 cavalli)</9></8><10>19,2 mt. <11>(8 cavalli)</11></10></1>"
 msgstr ""
 "<0>Commande possible de marcheur dans les diamètres :</0>\n"
@@ -73,10 +73,8 @@ msgstr ""
 "<0>Le couloir <1>TECNOFENCE</1> est une solution simple et économique qui vous permettra d’avoir un marcheur complet, sûr et durable, à un coût compétitif.</0><2>La hauteur de la clôture extérieure est de 1,60 m, celle du couloir intérieur est de 1,40 m.</2><3>Le matériau novateur (PPO) ne demande pas d’entretien et vous permettra de réduire les coûts d’entretien qui pèsent sur les clôtures classiques en bois.\n"
 "</3><4>L’un des avantages consiste à pouvoir installer le marcheur en toute autonomie.</4>"
 
-#. placeholder {0}: formatSize(18)
-#. placeholder {1}: formatSize(60)
-#: src/modules/GiostreTecnoexerciserCoperta/_corridoi.tsx:40
-msgid "<0>Il corridoio exerciser in compensato marino è realizzato con un pannelli di multistrato marino spessore {0} antigraffio, antiurto, resistente allo sporco e idrorepellente.</0><1>L’obiettivo di questa soluzione è quello di fornire un elevato grado di sicurezza forzando il cavallo a concentrarsi sul percorso durante l’allenamento.</1><2>Il corridoio potrà essere installato a terra senza base di cemento con puntazze elicoidali lunghezza {1} oppure con barre filettate su base di cemento, questa scelta non comprometterà la robustezza e durata della struttura. Installando la struttura a terra senza base di cemento inoltre la struttura rientra come struttura precaria evitando così innumerevoli permessi edilizi.</2>"
+#: src/modules/GiostreTecnoexerciserCoperta/components/_corridoi.tsx:39
+msgid "<0>Il corridoio con copertura in PVC e/o con pannelli <1>SANDWICH COIBENTATI</1> è realizzato con pannelli in compensato marino spessore 18 antigraffio, antiurto, resistente allo sporco e idrorepellente. L’obiettivo di questa soluzione è quello di fornire un elevato grado di sicurezza forzando il cavallo a concentrarsi sul percorso durante l’allenamento.</0><2>Il corridoio potrà essere installato a terra senza base di cemento con puntazze elicoidali lunghezza 60 cm questa scelta ti garantirà una struttura con carico neve e carico vento garantendo la robustezza e durata della struttura. In alternativa il cliente potrà montare la sua struttura direttamente nel cemento tramite barre filettate e chimico.</2><3>Installando la struttura a terra senza base di cemento è opportuno sottolineare che possiamo farla rientrare come struttura precaria evitando così innumerevoli permessi edilizi.</3>"
 msgstr ""
 
 #: src/modules/Giostre/index.tsx:164
@@ -91,8 +89,8 @@ msgstr "<0>Le rectangle de la ligne <1>training</1> est destiné aux manèges qu
 msgid "<0>La <1>copertura in PVC</1> è composta da una struttura in acciaio zincato la quale sorregge un telo in tessuto di poliestere spalmato di colore verde o crema e in base alle esigenze del cliente anche in altre colorazioni.</0><2>Questa copertura è in grado di sorreggere un carico neve pari a 80 kg/mq * e una forza vento pari a 110 Km/h.</2>"
 msgstr "<0>La <1>couverture en PVC</1> est composée d’une structure en acier galvanisé qui supporte une toile en tissu de polyester enduit, vert ou crème suivant les exigences du client, ou dans d’autres coloris.</0><2>Cette couverture peut supporter une charge de neige de 80 kg/m2* et une force de vent de 110 Km/h.</2>"
 
-#: src/modules/GiostreTecnoexerciserCoperta/_copertura.tsx:45
-msgid "<0>La <1>copertura in PVC</1> è composta da una struttura in acciaio zincato la quale sorregge un telo in tessuto di poliestere spalmato di colore verde, bianco o crema e in base alle esigenze del cliente anche in altre colorazioni.</0><2>Questa copertura è in grado di sorreggere un carico neve pari a 80 kg/mq * e una forza vento pari a 110 Km/h.</2><3>L’alternativa alla <4>copertura in PVC</4> è la copertura rigida formata da pannelli sandwich coibentati. I pannelli hanno uno spessore di coibentazione pari a 1 cm che vi permetterà oltre ad avere una robustezza maggiore di attutire il suono delle intemperie ed evitare così che i cavalli si spaventino durante le loro sessioni di allenamento.</3><5>I pannelli sandwich vengono sorretti da una doppia struttura in acciaio zincato che permette di avere una migliore distribuzione del peso in caso di nevicata e una maggiore sicurezza in caso di forte vento. Una soluzione che ti permetterà senza opere murarie di avere una struttura robusta e durevole nel tempo.</5>"
+#: src/modules/GiostreTecnoexerciserCoperta/components/_coperture.tsx:45
+msgid "<0>La <1>copertura in PVC</1> è composta da una struttura in acciaio zincato la quale sorregge un telo in tessuto di poliestere spalmato di colore verde, bianco o crema e in base alle esigenze del cliente anche in altre colorazioni.</0><2>Questa copertura è in grado di sorreggere un carico neve pari a 80 kg/mq * e una forza vento pari a 110 Km/h *.</2><3>L’alternativa alla copertura in PVC è la <4>copertura rigida</4> formata da pannelli sandwich coibentati. I pannelli hanno uno spessore di coibentazione pari a 1 cm che vi permetterà oltre ad avere una robustezza maggiore di attutire il suono delle intemperie ed evitare così che i cavalli si spaventino durante le loro sessioni di allenamento.</3><5>I pannelli sandwich vengono sorretti da una doppia struttura in acciaio zincato che permette di avere una migliore distribuzione del peso in caso di nevicata e una maggiore sicurezza in caso di forte vento. Una soluzione che ti permetterà senza opere murarie di avere una struttura robusta e durevole nel tempo.</5>"
 msgstr ""
 
 #: src/modules/Dressage/index.tsx:95
@@ -120,8 +118,8 @@ msgid "<0>Sono le componenti dell'ostacolo più stressate, poiché, come i cande
 msgstr "<0>Ce sont les éléments de l’obstacle les plus sollicités car, tout comme les chandeliers et les montants, ils sont constamment exposés aux agressions des intempéries (chaleur, froid, soleil, pluie). À cela s’ajoutent les chocs causés par les sabots des chevaux, les renversements fréquents et les manipulations nécessaires pour ajuster leur hauteur.</0><1>Les barres en sapin, couramment utilisées, nécessitent un entretien constant car elles se déforment, se décolorent avec le temps et se cassent fréquemment.</1><2>Les barres synthétiques de {NAME}, en revanche, ont le même poids que celles en sapin, mais conservent leur couleur pendant des années, ne s’écaillent pas et ne se cassent que très rarement sous l’effet d’une charge excessive.</2><<<<<<< HEAD"
 
 #: src/modules/GiostreTecnoexerciserCoperta/index.tsx:25
-msgid "<0>Tecnoexerciser è il modello di giostra attualmente più richiesto.</0><1>Oggi, grazie alle già note caratteristiche tecniche e alla grande affidabilità. Abbiamo aggiunto alcune specifiche che fanno, di questo modello, la macchina leader del settore.</1><2>È possibile infatti:</2><3><4>Scegliere la forza che la porta mobile esercita sugli animali per invitarli ad avanzare</4><5>Mantenere un controllo costante sull'elettrificazione delle porte mobili </5><6>Beneficiare dell'innovativo sistema \"training program\" che vi consentirà di allenare i vostri cavalli fino ad ottenere performance atletiche.</6><7>Scegliere il programma di irrigazione pesta mentre la giostra sta girando </7></3><8>Il cliente potrà scegliere tra una <9>copertura in pvc</9> e una <10>copertura con pannelli sandwich coibentati</10>.</8>"
-msgstr ">>>>>>> 6fb5d5f8 (fix)"
+msgid "<0>Tecnoexerciser con copertura è il modello di giostra attualmente più richiesto .</0><1>Oggi, grazie alle già note caratteristiche tecniche e alla grande affidabilità. Abbiamo aggiunto alcune specifiche che fanno, di questo modello, la macchina leader del settore.</1><2>È possibile infatti:</2><3><4>Scegliere la forza che la porta mobile esercita sugli animali per invitarli ad avanzare</4><5>Mantenere un controllo costante sull'elettrificazione delle porte mobili</5><6>Beneficiare dell'innovativo sistema \"training program\" che vi consentirà di allenare i vostri cavalli fino ad ottenere performance atletiche.</6><7>Scegliere il programma di irrigazione pesta mentre la giostra sta girando</7></3><8>Il cliente potrà scegliere tra una <9>COPERTURA IN PVC</9> e una<10> COPERTURA CON PANNELLI SANDWICH COIBENTATI</10>.</8>"
+msgstr ""
 
 #: src/modules/Giostre/index.tsx:49
 msgid "3.000 giostre installate"
@@ -152,13 +150,13 @@ msgstr "Accepter tous les cookies"
 msgid "Altezza"
 msgstr "Hauteur"
 
-#: src/modules/GiostreTecnoexerciserCoperta/_servizio_clienti.tsx:82
+#: src/modules/GiostreTecnoexerciserCoperta/components/_servizio_clienti.tsx:82
 msgid "Altro"
 msgstr "Autre"
 
 #: src/utils/constants.tsx:190
 #: src/utils/constants.tsx:207
-#: src/modules/GiostreTecnoexerciserCoperta/_accessori.tsx:41
+#: src/modules/GiostreTecnoexerciserCoperta/components/_accessori.tsx:41
 msgid "Alveolo sulla pesta"
 msgstr "Dalle alvéolée sur la piste"
 
@@ -189,6 +187,10 @@ msgstr "Barres d'obstacles pour Chevaux (3 mètres)"
 #: src/modules/Ostacoli/Barriere.tsx:17
 msgid "Barriere"
 msgstr "Barres d'obstacles pour Chevaux"
+
+#: src/modules/GiostreTecnoexerciserCoperta/components/_gallery.tsx:9
+msgid "Basamento per parte meccanica"
+msgstr ""
 
 #: src/modules/Tondini/index.tsx:222
 msgid "Bello e funzionale"
@@ -221,7 +223,7 @@ msgstr "Qu’est-ce qu’un cookie et à quoi sert-il ?"
 #: src/utils/constants.tsx:184
 #: src/utils/constants.tsx:201
 #: src/modules/Tondini/index.tsx:108
-#: src/modules/GiostreTecnoexerciserCoperta/_accessori.tsx:22
+#: src/modules/GiostreTecnoexerciserCoperta/components/_accessori.tsx:22
 msgid "Chiusura a terra"
 msgstr "Fermeture au sol"
 
@@ -316,15 +318,19 @@ msgstr "Coordonnées bancaires"
 msgid "Copertura"
 msgstr "Couverture"
 
+#: src/modules/GiostreTecnoexerciserCoperta/components/_gallery.tsx:29
+msgid "Copertura in pannelli sandwich coibentati"
+msgstr ""
+
 #: src/utils/constants.tsx:262
-#: src/modules/GiostreTecnoexerciserCoperta/_copertura.tsx:16
-#: src/modules/GiostreTecnoexerciserCoperta/_copertura.tsx:20
+#: src/modules/GiostreTecnoexerciserCoperta/components/_coperture.tsx:16
+#: src/modules/GiostreTecnoexerciserCoperta/components/_coperture.tsx:20
 msgid "Copertura in PVC"
 msgstr "Couverture en PVC"
 
-#: src/modules/GiostreTecnoexerciserCoperta/_copertura.tsx:24
-#: src/modules/GiostreTecnoexerciserCoperta/_copertura.tsx:28
-#: src/modules/GiostreTecnoexerciserCoperta/_compare.tsx:103
+#: src/modules/GiostreTecnoexerciserCoperta/components/_coperture.tsx:24
+#: src/modules/GiostreTecnoexerciserCoperta/components/_coperture.tsx:28
+#: src/modules/GiostreTecnoexerciserCoperta/components/_compare.tsx:103
 msgid "Copertura rigida con lastre ondulate"
 msgstr "Couverture rigide avec tôles ondulées"
 
@@ -333,11 +339,19 @@ msgstr "Couverture rigide avec tôles ondulées"
 msgid "Corridoio coperto per accesso giostra {0}"
 msgstr "Couloir couvert pour accès au manège {0}"
 
-#: src/modules/GiostreTecnoexerciserCoperta/_corridoi.tsx:19
+#: src/modules/GiostreTecnoexerciserCoperta/components/_gallery.tsx:33
+msgid "Corridoio copertura con pannelli sandwich"
+msgstr ""
+
+#: src/modules/GiostreTecnoexerciserCoperta/components/_corridoi.tsx:18
 msgid "Corridoio EXERCISER in compensato marino"
 msgstr "Couloir EXERCISER en contreplaqué marine"
 
-#: src/modules/GiostreTecnoexerciserCoperta/_corridoi.tsx:15
+#: src/modules/GiostreTecnoexerciserCoperta/components/_gallery.tsx:25
+msgid "Corridoio interno copertura in pvc"
+msgstr ""
+
+#: src/modules/GiostreTecnoexerciserCoperta/components/_corridoi.tsx:14
 msgid "Corridoio TECNOFENCE"
 msgstr "Clôture TECNOFENCE"
 
@@ -388,13 +402,9 @@ msgid "Dicono di noi"
 msgstr "Ils disent de nous"
 
 #: src/modules/Tondini/index.tsx:270
-#: src/modules/GiostreTecnoexerciserCoperta/_servizio_clienti.tsx:61
+#: src/modules/GiostreTecnoexerciserCoperta/components/_servizio_clienti.tsx:61
 msgid "Dimensioni"
 msgstr "Dimensions"
-
-#: src/modules/GiostreTecnoexerciserCoperta/_servizio_clienti.tsx:17
-msgid "Dimensioni giostra cavalli"
-msgstr "Dimensions du marcheur pour chevaux"
 
 #: src/components/WhatsApp/index.tsx:32
 msgid "Disponibile"
@@ -449,41 +459,44 @@ msgid "Funzione"
 msgstr "Fonction"
 
 #: src/modules/Recinti/_gamma.tsx:37
-#: src/modules/GiostreTecnoexerciserCoperta/_compare.tsx:119
+#: src/modules/GiostreTecnoexerciserCoperta/components/_compare.tsx:119
 #: src/modules/Giostre/index.tsx:161
 msgid "Gamma"
 msgstr "Gamme"
 
-#: src/modules/GiostreTecnoexerciserCoperta/_gallery.tsx:16
-#: src/modules/GiostreTecnoexerciserCoperta/_gallery.tsx:20
-msgid "Giostra"
-msgstr "Marcheur"
-
-#: src/modules/GiostreTecnoexerciserCoperta/_compare.tsx:81
+#: src/modules/GiostreTecnoexerciserCoperta/components/_compare.tsx:81
 msgid "Giostra <0/>corridoio EXERCISER"
 msgstr "Marcheur<0/>couloir EXERCISER"
 
-#: src/modules/GiostreTecnoexerciserCoperta/_compare.tsx:93
+#: src/modules/GiostreTecnoexerciserCoperta/components/_compare.tsx:93
 msgid "Giostra <0/>corridoio EXERCISER<1/>copertura PVC"
 msgstr "Marcheur<0/>couloir EXERCISER<1/>couverture PVC"
 
-#: src/modules/GiostreTecnoexerciserCoperta/_compare.tsx:107
+#: src/modules/GiostreTecnoexerciserCoperta/components/_compare.tsx:107
 msgid "Giostra <0/>corridoio EXERCISER<1/>copertura Rigida"
 msgstr "Marcheur<0/>couloir EXERCISER<1/>couverture Rigide"
 
-#: src/modules/GiostreTecnoexerciserCoperta/_compare.tsx:69
+#: src/modules/GiostreTecnoexerciserCoperta/components/_compare.tsx:69
 msgid "Giostra <0/>corridoio TECNOFENCE"
 msgstr ""
 "Marcheur<0/>\n"
 "couloir TECNOFENCE"
 
-#: src/modules/GiostreTecnoexerciserCoperta/_compare.tsx:61
+#: src/modules/GiostreTecnoexerciserCoperta/components/_compare.tsx:61
 msgid "Giostra base"
 msgstr "Marcheur base"
 
-#: src/modules/GiostreTecnoexerciserCoperta/_gallery.tsx:32
-msgid "Giostra con corridoio TECNOFENCE"
-msgstr "Marcheur Couloir TECNOFENCE"
+#: src/modules/GiostreTecnoexerciserCoperta/components/_gallery.tsx:17
+msgid "Giostra con copertura in pvc"
+msgstr ""
+
+#: src/modules/GiostreTecnoexerciserCoperta/components/_gallery.tsx:21
+msgid "Giostra con copertura pvc bianca"
+msgstr ""
+
+#: src/modules/GiostreTecnoexerciserCoperta/components/_gallery.tsx:37
+msgid "Giostra copertura pvc con rete antivento"
+msgstr ""
 
 #. placeholder {0}: formatSizeMeter( dimensions.width )
 #: src/hooks/useProducts/utils/index.tsx:629
@@ -493,10 +506,6 @@ msgstr "Marcheur pour {horses} chevaux, moteur seulement ({0})"
 #: src/modules/Giostre/index.tsx:130
 msgid "Giostra per cavalli Tecnoexerciser"
 msgstr "Marcheur Tecnoexerciser"
-
-#: src/modules/GiostreTecnoexerciserCoperta/_gallery.tsx:28
-msgid "Giostra solo motore"
-msgstr "Marcheur uniquement moteur"
 
 #: src/hooks/usePages/utils/index.tsx:37
 msgid "Giostre"
@@ -527,10 +536,6 @@ msgstr "Page d’accueil"
 msgid "I candelieri sono costruiti con un montante di alluminio verniciato di colore bianco e sono muniti di 4 piedi rivestiti con puntali di plastica che garantiscono, in caso di ribaltamento, l’incolumità vostra e dei vostri cavalli."
 msgstr "Les chandeliers sont construits avec un montant en aluminium peint en blanc, muni de 4 pieds revêtus d’embouts en plastique, qui garantissent votre sécurité et celle de vos chevaux en cas de renversement."
 
-#: src/modules/GiostreTecnoexerciserCoperta/_corridoi.tsx:37
-msgid "I corridoi"
-msgstr "Les couloirs"
-
 #: src/hooks/useProducts/utils/index.tsx:159
 #: src/hooks/useProducts/utils/index.tsx:178
 msgid "I cubi sono progettati in maniera da poterli incastrare tra di loro. Questo rende questi blocchi da salto più sicuri, stabili e versatili di qualsiasi cosa tu abbia usato prima. Impila i blocchi in una varietà quasi illimitata di posizioni e configurazioni. Raggiungi l'altezza desiderata con più coppie."
@@ -559,6 +564,10 @@ msgstr "Les produits sont vendus et appréciés tant en Italie qu’à l’étra
 #: src/modules/Contatti/components/ContattiBank/index.tsx:9
 msgid "Iban"
 msgstr "Iban"
+
+#: src/modules/GiostreTecnoexerciserCoperta/components/_corridoi.tsx:36
+msgid "Il corrido"
+msgstr ""
 
 #: src/hooks/useProducts/utils/index.tsx:272
 msgid "Il cucchiaio dotato del nostro sistema brevettato di aggancio"
@@ -672,10 +681,6 @@ msgstr "La dalle alvéolée est la solution optimale pour conserver un sol toujo
 msgid "L'utilizzo di cookie e di tecnologie affini da parte di {0}, con sede {completeAddress}, rientra nella politica di privacy del Gestore, in conformità a quanto previsto dal D. Lgs 196/03 Codice in materia di protezione dei dati personali (Codice Privacy) e dal Provvedimento dell’8 maggio 2014 “Individuazione delle modalità semplificate per l’informativa e l’acquisizione del consenso per l’uso dei cookie” del Garante Privacy Italiano. {1}, in qualità di Titolare del trattamento agisce conformemente a quanto previsto dalla normativa in materia."
 msgstr "The use of cookies and similar technologies by {0}, with headquarters at {completeAddress}, is governed by the Administrator’s privacy policy, in compliance with the General Data Protection Regulation (GDPR), Italian Legislative Decree 196/03 on Personal Data Protection Code (Privacy Code) and the Order of 8 May 2014, “Identification of simplified procedures for providing information about and obtaining consent for the use of cookies” from the Italian Data Protection Authority. {1}, in its capacity as Data Controller, acts in compliance with relevant legislation."
 
-#: src/modules/GiostreTecnoexerciserCoperta/_copertura.tsx:42
-msgid "La copertura"
-msgstr "La couverture"
-
 #: src/modules/404/index.tsx:8
 msgid "La pagina che stai cercando non esiste"
 msgstr "La page que vous recherchez n’existe pas"
@@ -719,6 +724,10 @@ msgstr "Jonc metallique DE {0}"
 msgid "Larghezza"
 msgstr "Largeur"
 
+#: src/modules/GiostreTecnoexerciserCoperta/components/_coperture.tsx:42
+msgid "Le coperture"
+msgstr ""
+
 #: src/hooks/useProducts/utils/index.tsx:490
 msgid "Le lettere premium in PVC, con una finitura di alta qualità e resistente ai raggi solari, garantiscono massima durabilità e un'estetica superiore. Perfette per chi cerca eccellenza e professionalità nell'arena."
 msgstr "Nos lettres premium en PVC, avec une finition de haute qualité résistante aux rayons solaires, garantissent une durabilité maximale et une esthétique supérieure. Parfaites pour ceux qui recherchent l'excellence et le professionnalisme dans l'arène."
@@ -741,15 +750,15 @@ msgid "Lunghezza"
 msgstr "Longueur"
 
 #: src/modules/Recinti/index.tsx:135
-#: src/modules/GiostreTecnoexerciserCoperta/_servizio_clienti.tsx:71
+#: src/modules/GiostreTecnoexerciserCoperta/components/_servizio_clienti.tsx:71
 msgid "Manuale d'istruzioni"
 msgstr "Instructions de montage"
 
 #. placeholder {0}: "TECNOEXERCISER"
 #. placeholder {0}: "EASY"
-#: src/modules/GiostreTecnoexerciserCoperta/_servizio_clienti.tsx:25
-#: src/modules/GiostreTecnoexerciserCoperta/_servizio_clienti.tsx:32
-#: src/modules/GiostreTecnoexerciserCoperta/_servizio_clienti.tsx:36
+#: src/modules/GiostreTecnoexerciserCoperta/components/_servizio_clienti.tsx:25
+#: src/modules/GiostreTecnoexerciserCoperta/components/_servizio_clienti.tsx:32
+#: src/modules/GiostreTecnoexerciserCoperta/components/_servizio_clienti.tsx:36
 msgid "Manuale quadro di controllo {0}"
 msgstr ""
 
@@ -777,7 +786,6 @@ msgid "Modulo dressage ({0})"
 msgstr "Module de Dressage ({0})"
 
 #: src/utils/constants.tsx:269
-#: src/modules/GiostreTecnoexerciserCoperta/_gallery.tsx:24
 msgid "Motore"
 msgstr "Moteur électrique"
 
@@ -861,22 +869,24 @@ msgstr "Polyéthylène"
 msgid "Polipropilene"
 msgstr "Polypropylène"
 
-#: src/modules/GiostreTecnoexerciserCoperta/_gallery.tsx:36
-#: src/modules/GiostreTecnoexerciserCoperta/_gallery.tsx:40
 #: src/modules/Giostre/index.tsx:134
 msgid "Porta mobile"
 msgstr "Séparations"
+
+#: src/modules/GiostreTecnoexerciserCoperta/components/_gallery.tsx:13
+msgid "Porta mobile elttrificata"
+msgstr ""
 
 #: src/utils/constants.tsx:268
 msgid "Porte"
 msgstr "Séparation"
 
 #. placeholder {0}: 0.75
-#: src/modules/GiostreTecnoexerciserCoperta/_compare.tsx:47
+#: src/modules/GiostreTecnoexerciserCoperta/components/_compare.tsx:47
 msgid "Potenza motore {0} kw e cadenza regolabile fra 60 e 220 metri al minuto"
 msgstr "Puissance moteur {0} kW et cadence réglable entre 60 et 220 mètres par minute"
 
-#: src/modules/GiostreTecnoexerciserCoperta/_servizio_clienti.tsx:40
+#: src/modules/GiostreTecnoexerciserCoperta/components/_servizio_clienti.tsx:40
 msgid "Procedura di lubrificazione"
 msgstr "Procedure per la lubrification"
 
@@ -906,7 +916,7 @@ msgstr "PVC"
 msgid "Quadro di comando"
 msgstr "Tableau de commande"
 
-#: src/modules/GiostreTecnoexerciserCoperta/_compare.tsx:19
+#: src/modules/GiostreTecnoexerciserCoperta/components/_compare.tsx:19
 msgid "Quadro di comando con programma manuale, periodico o automatico"
 msgstr "Tableau de commande avec programme manuel, périodique ou automatique"
 
@@ -954,7 +964,7 @@ msgstr "Clôtures avec {0} lisse"
 
 #: src/utils/constants.tsx:213
 #: src/modules/Tondini/index.tsx:52
-#: src/modules/GiostreTecnoexerciserCoperta/_accessori.tsx:56
+#: src/modules/GiostreTecnoexerciserCoperta/components/_accessori.tsx:56
 msgid "Rete antivento"
 msgstr "Filet brise-vent"
 
@@ -1002,6 +1012,10 @@ msgstr "Concessionnaires internationaux"
 #: src/components/ContentTable/index.tsx:72
 msgid "Scarica"
 msgstr "Télécharger un fichier"
+
+#: src/modules/GiostreTecnoexerciserCoperta/components/_servizio_clienti.tsx:17
+msgid "Scheda tecnica giostra con copertura PVC"
+msgstr ""
 
 #: src/modules/Giostre/index.tsx:199
 #: src/modules/Giostre/index.tsx:215
@@ -1074,7 +1088,7 @@ msgstr "Supports de sécurité à utiliser sur nos fiches pour préserver l’in
 
 #: src/modules/Tondini/index.tsx:262
 #: src/modules/Recinti/index.tsx:133
-#: src/modules/GiostreTecnoexerciserCoperta/_servizio_clienti.tsx:56
+#: src/modules/GiostreTecnoexerciserCoperta/components/_servizio_clienti.tsx:56
 msgid "Supporto clienti"
 msgstr "Service client"
 

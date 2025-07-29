@@ -8,7 +8,7 @@ import { Gallery, Section, Th } from "components";
 import { PRODUCT_GUTTER } from "theme";
 import { GIOSTRE_COPERTURA_NOTE } from "utils/constants";
 
-const TecnoexerciserCopertura = () => {
+const TecnoexerciserCoperture = () => {
   const { t } = useLingui();
 
   const IMAGES: Picture[] = [
@@ -39,7 +39,7 @@ const TecnoexerciserCopertura = () => {
           }}
         >
           <Th variant="h3" sans>
-            <Trans>La copertura</Trans>
+            <Trans>Le coperture</Trans>
           </Th>
 
           <Trans>
@@ -52,16 +52,16 @@ const TecnoexerciserCopertura = () => {
 
             <Typography mx={{ marginBottom: 15 }}>
               Questa copertura è in grado di sorreggere un carico neve pari a 80
-              kg/mq * e una forza vento pari a 110 Km/h.
+              kg/mq * e una forza vento pari a 110 Km/h *.
             </Typography>
 
             <Typography mx={{ marginBottom: 15 }}>
-              L’alternativa alla <strong>copertura in PVC</strong> è la
-              copertura rigida formata da pannelli sandwich coibentati. I
-              pannelli hanno uno spessore di coibentazione pari a 1 cm che vi
-              permetterà oltre ad avere una robustezza maggiore di attutire il
-              suono delle intemperie ed evitare così che i cavalli si spaventino
-              durante le loro sessioni di allenamento.
+              L’alternativa alla copertura in PVC è la{" "}
+              <strong>copertura rigida</strong> formata da pannelli sandwich
+              coibentati. I pannelli hanno uno spessore di coibentazione pari a
+              1 cm che vi permetterà oltre ad avere una robustezza maggiore di
+              attutire il suono delle intemperie ed evitare così che i cavalli
+              si spaventino durante le loro sessioni di allenamento.
             </Typography>
 
             <Typography>
@@ -87,4 +87,4 @@ const TecnoexerciserCopertura = () => {
   );
 };
 
-export default TecnoexerciserCopertura;
+export default TecnoexerciserCoperture;

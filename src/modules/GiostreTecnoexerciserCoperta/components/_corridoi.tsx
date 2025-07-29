@@ -8,7 +8,6 @@ import { BREAKPOINT, PRODUCT_GUTTER } from "theme";
 
 const TecnoexerciserCorridoi = () => {
   const { t } = useLingui();
-  const { formatSize } = useFormatter();
 
   const IMAGES: Picture[] = [
     {
@@ -34,28 +33,32 @@ const TecnoexerciserCorridoi = () => {
           }}
         >
           <Th variant="h3" sans textAlign="right">
-            <Trans>I corridoi</Trans>
+            <Trans>Il corrido</Trans>
           </Th>
 
           <Trans>
             <Typography mx={{ marginBottom: 15 }}>
-              Il corridoio exerciser in compensato marino è realizzato con un
-              pannelli di multistrato marino spessore {formatSize(18)}{" "}
-              antigraffio, antiurto, resistente allo sporco e idrorepellente.
+              Il corridoio con copertura in PVC e/o con pannelli{" "}
+              <strong>SANDWICH COIBENTATI</strong> è realizzato con pannelli in
+              compensato marino spessore 18 antigraffio, antiurto, resistente
+              allo sporco e idrorepellente. L’obiettivo di questa soluzione è
+              quello di fornire un elevato grado di sicurezza forzando il
+              cavallo a concentrarsi sul percorso durante l’allenamento.
             </Typography>
-            <Typography mx={{ marginBottom: 15 }}>
-              L’obiettivo di questa soluzione è quello di fornire un elevato
-              grado di sicurezza forzando il cavallo a concentrarsi sul percorso
-              durante l’allenamento.
-            </Typography>
+
             <Typography mx={{ marginBottom: 15 }}>
               Il corridoio potrà essere installato a terra senza base di cemento
-              con puntazze elicoidali lunghezza {formatSize(60)} oppure con
-              barre filettate su base di cemento, questa scelta non
-              comprometterà la robustezza e durata della struttura. Installando
-              la struttura a terra senza base di cemento inoltre la struttura
-              rientra come struttura precaria evitando così innumerevoli
-              permessi edilizi.
+              con puntazze elicoidali lunghezza 60 cm questa scelta ti garantirà
+              una struttura con carico neve e carico vento garantendo la
+              robustezza e durata della struttura. In alternativa il cliente
+              potrà montare la sua struttura direttamente nel cemento tramite
+              barre filettate e chimico.
+            </Typography>
+
+            <Typography>
+              Installando la struttura a terra senza base di cemento è opportuno
+              sottolineare che possiamo farla rientrare come struttura precaria
+              evitando così innumerevoli permessi edilizi.
             </Typography>
           </Trans>
         </Grid>

@@ -14,7 +14,7 @@ const TecnoexerciserServizioClienti = () => {
   const DIMENSIONS = [
     {
       file: `/products/giostre/pdf/scheda-techina-giostra-${locale}.pdf`,
-      title: t`Dimensioni giostra cavalli`,
+      title: t`Scheda tecnica giostra con copertura PVC`,
     },
   ];
 
@@ -26,7 +26,7 @@ const TecnoexerciserServizioClienti = () => {
       },
     ],
     it: [
-      PAGES.GIOSTRE_TECNOEXERCISER_ISTRUZIONI_MONTAGGIO,
+      PAGES.GIOSTRE_TECNOEXERCISER_COPERTA_ISTRUZIONI_MONTAGGIO,
       {
         file: "/products/giostre/tecnoexerciser/pdf/manuale-quadro-tecnoexerciser-it.pdf",
         title: t`Manuale quadro di controllo ${"TECNOEXERCISER"}`,
