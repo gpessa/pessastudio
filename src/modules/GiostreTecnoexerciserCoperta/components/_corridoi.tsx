@@ -1,9 +1,6 @@
 import { Trans, useLingui } from "@lingui/react/macro";
 import { Grid, Typography } from "@mui/material";
-import productsGiostreTecnoexerciserCorridoioCompensatoMarino from "assets/products/giostre/tecnoexerciser/corridoio/compensato-marino.jpg";
-import productsGiostreTecnoexerciserCorridoioTecnofence from "assets/products/giostre/tecnoexerciser/corridoio/tecnofence.jpg";
 import { Gallery, Section, Th } from "components";
-import { useFormatter } from "hooks";
 import { BREAKPOINT, PRODUCT_GUTTER } from "theme";
 
 const TecnoexerciserCorridoi = () => {
@@ -11,12 +8,15 @@ const TecnoexerciserCorridoi = () => {
 
   const IMAGES: Picture[] = [
     {
-      caption: t`Corridoio TECNOFENCE`,
-      image: productsGiostreTecnoexerciserCorridoioTecnofence,
+      caption: t`Giostra corridoio coperto crema`,
+      image: require("../assets/corridoi/giostra_corridoio_coperto_crema.jpg")
+        .default,
     },
     {
-      caption: t`Corridoio EXERCISER in compensato marino`,
-      image: productsGiostreTecnoexerciserCorridoioCompensatoMarino,
+      caption: t`Giostra per cavalli con pannellatura in compensato marino`,
+      image:
+        require("../assets/corridoi/giostra_per_cavalli_con_pannellatura_in_compensato_marino.jpg")
+          .default,
     },
   ];
 

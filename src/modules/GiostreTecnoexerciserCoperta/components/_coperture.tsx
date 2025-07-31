@@ -46,7 +46,8 @@ const TecnoexerciserCoperture = () => {
             <Typography mx={{ marginBottom: 15 }}>
               La <strong>copertura in PVC</strong> è composta da una struttura
               in acciaio zincato la quale sorregge un telo in tessuto di
-              poliestere spalmato di colore verde, bianco o crema e in base alle
+              poliestere spalmato di colore <strong>verde</strong>,{" "}
+              <strong>bianco</strong> o <strong>crema</strong> e in base alle
               esigenze del cliente anche in altre colorazioni.
             </Typography>
 

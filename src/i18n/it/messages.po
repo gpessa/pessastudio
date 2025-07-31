@@ -77,13 +77,13 @@ msgstr "<0>Il nostro modello Tecnoexerciser, rappresenta lo strumento più avanz
 msgid "<0>Il rettangolo della linea <1>training</1> è rivolto a quei maneggi in cui lo spazio a disposizione è limitato e il rettangolo viene installato provvisoriamente.</0><2>Facile da montare, è costituito da elementi modulari di 2 mt. in materiale plastico, non richiede alcuna manutenzione e occupa poco spazio quando non è utilizzato.</2>"
 msgstr "<0>Il rettangolo della linea <1>training</1> è rivolto a quei maneggi in cui lo spazio a disposizione è limitato e il rettangolo viene installato provvisoriamente.</0><2>Facile da montare, è costituito da elementi modulari di 2 mt. in materiale plastico, non richiede alcuna manutenzione e occupa poco spazio quando non è utilizzato.</2>"
 
+#: src/modules/GiostreTecnoexerciserCoperta/components/_coperture.tsx:45
+msgid "<0>La <1>copertura in PVC</1> è composta da una struttura in acciaio zincato la quale sorregge un telo in tessuto di poliestere spalmato di colore <2>verde</2>, <3>bianco</3> o <4>crema</4> e in base alle esigenze del cliente anche in altre colorazioni.</0><5>Questa copertura è in grado di sorreggere un carico neve pari a 80 kg/mq * e una forza vento pari a 110 Km/h *.</5><6>L’alternativa alla copertura in PVC è la <7>copertura rigida</7> formata da pannelli sandwich coibentati. I pannelli hanno uno spessore di coibentazione pari a 1 cm che vi permetterà oltre ad avere una robustezza maggiore di attutire il suono delle intemperie ed evitare così che i cavalli si spaventino durante le loro sessioni di allenamento.</6><8>I pannelli sandwich vengono sorretti da una doppia struttura in acciaio zincato che permette di avere una migliore distribuzione del peso in caso di nevicata e una maggiore sicurezza in caso di forte vento. Una soluzione che ti permetterà senza opere murarie di avere una struttura robusta e durevole nel tempo.</8>"
+msgstr "<0>La <1>copertura in PVC</1> è composta da una struttura in acciaio zincato la quale sorregge un telo in tessuto di poliestere spalmato di colore <2>verde</2>, <3>bianco</3> o <4>crema</4> e in base alle esigenze del cliente anche in altre colorazioni.</0><5>Questa copertura è in grado di sorreggere un carico neve pari a 80 kg/mq * e una forza vento pari a 110 Km/h *.</5><6>L’alternativa alla copertura in PVC è la <7>copertura rigida</7> formata da pannelli sandwich coibentati. I pannelli hanno uno spessore di coibentazione pari a 1 cm che vi permetterà oltre ad avere una robustezza maggiore di attutire il suono delle intemperie ed evitare così che i cavalli si spaventino durante le loro sessioni di allenamento.</6><8>I pannelli sandwich vengono sorretti da una doppia struttura in acciaio zincato che permette di avere una migliore distribuzione del peso in caso di nevicata e una maggiore sicurezza in caso di forte vento. Una soluzione che ti permetterà senza opere murarie di avere una struttura robusta e durevole nel tempo.</8>"
+
 #: src/utils/constants.tsx:238
 msgid "<0>La <1>copertura in PVC</1> è composta da una struttura in acciaio zincato la quale sorregge un telo in tessuto di poliestere spalmato di colore verde o crema e in base alle esigenze del cliente anche in altre colorazioni.</0><2>Questa copertura è in grado di sorreggere un carico neve pari a 80 kg/mq * e una forza vento pari a 110 Km/h.</2>"
 msgstr "<0>La <1>copertura in PVC</1> è composta da una struttura in acciaio zincato la quale sorregge un telo in tessuto di poliestere spalmato di colore verde o crema e in base alle esigenze del cliente anche in altre colorazioni.</0><2>Questa copertura è in grado di sorreggere un carico neve pari a 80 kg/mq * e una forza vento pari a 110 Km/h.</2>"
-
-#: src/modules/GiostreTecnoexerciserCoperta/components/_coperture.tsx:45
-msgid "<0>La <1>copertura in PVC</1> è composta da una struttura in acciaio zincato la quale sorregge un telo in tessuto di poliestere spalmato di colore verde, bianco o crema e in base alle esigenze del cliente anche in altre colorazioni.</0><2>Questa copertura è in grado di sorreggere un carico neve pari a 80 kg/mq * e una forza vento pari a 110 Km/h *.</2><3>L’alternativa alla copertura in PVC è la <4>copertura rigida</4> formata da pannelli sandwich coibentati. I pannelli hanno uno spessore di coibentazione pari a 1 cm che vi permetterà oltre ad avere una robustezza maggiore di attutire il suono delle intemperie ed evitare così che i cavalli si spaventino durante le loro sessioni di allenamento.</3><5>I pannelli sandwich vengono sorretti da una doppia struttura in acciaio zincato che permette di avere una migliore distribuzione del peso in caso di nevicata e una maggiore sicurezza in caso di forte vento. Una soluzione che ti permetterà senza opere murarie di avere una struttura robusta e durevole nel tempo.</5>"
-msgstr "<0>La <1>copertura in PVC</1> è composta da una struttura in acciaio zincato la quale sorregge un telo in tessuto di poliestere spalmato di colore verde, bianco o crema e in base alle esigenze del cliente anche in altre colorazioni.</0><2>Questa copertura è in grado di sorreggere un carico neve pari a 80 kg/mq * e una forza vento pari a 110 Km/h *.</2><3>L’alternativa alla copertura in PVC è la <4>copertura rigida</4> formata da pannelli sandwich coibentati. I pannelli hanno uno spessore di coibentazione pari a 1 cm che vi permetterà oltre ad avere una robustezza maggiore di attutire il suono delle intemperie ed evitare così che i cavalli si spaventino durante le loro sessioni di allenamento.</3><5>I pannelli sandwich vengono sorretti da una doppia struttura in acciaio zincato che permette di avere una migliore distribuzione del peso in caso di nevicata e una maggiore sicurezza in caso di forte vento. Una soluzione che ti permetterà senza opere murarie di avere una struttura robusta e durevole nel tempo.</5>"
 
 #: src/modules/Dressage/index.tsx:95
 msgid "<0>La linea <1>olympic</1>, presente sul mercato da oltre vent'anni, è rappresentata da un rettangolo professionale, dove il campo da dressage è utilizzato quotidianamente.</0><2>Il campo è delimitato da moduli accostabili tra di loro, ciascuno dei quali è lungo 2 mt. Ogni modulo è costruito in polietilene antiurto resistente anche alle basse temperature e che non ingiallisce sotto l'azione dei raggi ultravioletti.</2><3>Su ciascun modulo sono previste tre aree piane con superficie lucida di 50x12 cm. sulle quali possono essere applicati adesivi pubblicitari.</3>"
@@ -331,21 +331,13 @@ msgstr "Copertura rigida con lastre ondulate"
 msgid "Corridoio coperto per accesso giostra {0}"
 msgstr "Corridoio coperto per accesso giostra {0}"
 
-#: src/modules/GiostreTecnoexerciserCoperta/components/_gallery.tsx:33
+#: src/modules/GiostreTecnoexerciserCoperta/components/_gallery.tsx:35
 msgid "Corridoio copertura con pannelli sandwich"
 msgstr "Corridoio copertura con pannelli sandwich"
-
-#: src/modules/GiostreTecnoexerciserCoperta/components/_corridoi.tsx:18
-msgid "Corridoio EXERCISER in compensato marino"
-msgstr "Corridoio EXERCISER in compensato marino"
 
 #: src/modules/GiostreTecnoexerciserCoperta/components/_gallery.tsx:25
 msgid "Corridoio interno copertura in pvc"
 msgstr "Corridoio interno copertura in pvc"
-
-#: src/modules/GiostreTecnoexerciserCoperta/components/_corridoi.tsx:14
-msgid "Corridoio TECNOFENCE"
-msgstr "Corridoio TECNOFENCE"
 
 #: src/modules/Index/index.tsx:149
 msgid "Cosa dicono di noi"
@@ -484,14 +476,22 @@ msgstr "Giostra con copertura in pvc"
 msgid "Giostra con copertura pvc bianca"
 msgstr "Giostra con copertura pvc bianca"
 
-#: src/modules/GiostreTecnoexerciserCoperta/components/_gallery.tsx:37
+#: src/modules/GiostreTecnoexerciserCoperta/components/_gallery.tsx:41
 msgid "Giostra copertura pvc con rete antivento"
 msgstr "Giostra copertura pvc con rete antivento"
+
+#: src/modules/GiostreTecnoexerciserCoperta/components/_corridoi.tsx:11
+msgid "Giostra corridoio coperto crema"
+msgstr "Giostra corridoio coperto crema"
 
 #. placeholder {0}: formatSizeMeter( dimensions.width )
 #: src/hooks/useProducts/utils/index.tsx:629
 msgid "Giostra per {horses} cavalli, solo motore ({0})"
 msgstr "Giostra per {horses} cavalli, solo motore ({0})"
+
+#: src/modules/GiostreTecnoexerciserCoperta/components/_corridoi.tsx:16
+msgid "Giostra per cavalli con pannellatura in compensato marino"
+msgstr "Giostra per cavalli con pannellatura in compensato marino"
 
 #: src/modules/Giostre/index.tsx:130
 msgid "Giostra per cavalli Tecnoexerciser"

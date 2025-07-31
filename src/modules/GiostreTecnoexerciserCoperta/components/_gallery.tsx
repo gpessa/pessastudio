@@ -15,7 +15,7 @@ const TecnoexerciserGallery = () => {
     },
     {
       caption: t`Giostra con copertura in pvc`,
-      image: require("../assets/gallery/placeholder.jpg").default,
+      image: require("../assets/gallery/giostra_copertura_pvc.jpg").default,
     },
     {
       caption: t`Giostra con copertura pvc bianca`,
@@ -27,15 +27,21 @@ const TecnoexerciserGallery = () => {
     },
     {
       caption: t`Copertura in pannelli sandwich coibentati`,
-      image: require("../assets/gallery/placeholder.jpg").default,
+      image:
+        require("../assets/gallery/giostra_con_tetto_sandwich_coibentato.jpg")
+          .default,
     },
     {
       caption: t`Corridoio copertura con pannelli sandwich`,
-      image: require("../assets/gallery/placeholder.jpg").default,
+      image:
+        require("../assets/gallery/giostra_con_corridoio_coperto_con_pannelli_sandwich.jpg")
+          .default,
     },
     {
       caption: t`Giostra copertura pvc con rete antivento`,
-      image: require("../assets/gallery/placeholder.jpg").default,
+      image:
+        require("../assets/gallery/corridoio_con_copertura_in_pvc_e_rete_antivento.jpg")
+          .default,
     },
   ];
 
