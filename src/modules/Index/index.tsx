@@ -6,7 +6,7 @@ import Apps from "@mui/icons-material/Apps";
 import Architecture from "@mui/icons-material/Architecture";
 import Restore from "@mui/icons-material/Restore";
 import TurnedInNot from "@mui/icons-material/TurnedInNot";
-import { Typography } from "@mui/material";
+import { Container, Grid, Stack, Typography } from "@mui/material";
 import { Benefits, Hero } from "components";
 import { HeroProps } from "components/Hero";
 import { usePages } from "hooks";
@@ -15,8 +15,9 @@ import { NAME } from "utils/constants";
 import image from "./assets/background.jpg";
 import fiera2024_it from "./assets/fiera2024/it.jpg";
 import IndexProducts from "./components/IndexProducts";
-import { IndexProductItem } from "./components/IndexProducts/components/IndexProductsItem";
+// import { IndexProductItem } from "./components/IndexProducts/components/IndexProductsItem";
 import IndexTestimonials from "./components/IndexTestimonials";
+import IndexFieraOstacoli from "./components/IndexFieraOstacoli";
 
 export default function Index() {
   const {
@@ -110,17 +111,17 @@ export default function Index() {
     },
   ];
 
-  const isFieraTime = new Date() < new Date("11/10/2024");
+  const isFieraTime = new Date() < new Date("10/11/2025");
   const isFieraMode = isFieraTime && locale === "it";
 
   const HERO: HeroProps = {
-    image: isFieraMode ? fiera2024_it : image,
-    text: isFieraMode ? undefined : <Trans>Tradizione e qualità</Trans>,
+    image,
+    text: <Trans>Tradizione e qualità</Trans>,
   };
 
   return (
     <>
-      <Hero {...HERO} />
+      {isFieraMode ? <IndexFieraOstacoli /> : <Hero {...HERO} />}
       <Benefits
         benefits={BENEFITS}
         subtitle={<Trans>Perché?</Trans>}

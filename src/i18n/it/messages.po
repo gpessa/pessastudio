@@ -25,7 +25,7 @@ msgstr "* In presenza di nevicate che superino la portata consentita, sarà oppo
 msgid "+ IVA"
 msgstr "+ IVA"
 
-#: src/modules/Index/index.tsx:129
+#: src/modules/Index/index.tsx:130
 msgid "<0>{NAME} è un'azienda altamente affidabile e rinomata nel settore dell'equitazione. Ogni anno, centinaia di persone scelgono i nostri articoli d'equitazione per la qualità superiore che li caratterizza.</0><1>La gamma di prodotti offerti è ampia e diversificata, con un'attenzione particolare alla funzionalità e al design. La competenza e l'esperienza del team di {NAME} sono alla base del successo dell'azienda e della sua reputazione di affidabilità e professionalità.</1>"
 msgstr "<0>{NAME} è un'azienda altamente affidabile e rinomata nel settore dell'equitazione. Ogni anno, centinaia di persone scelgono i nostri articoli d'equitazione per la qualità superiore che li caratterizza.</0><1>La gamma di prodotti offerti è ampia e diversificata, con un'attenzione particolare alla funzionalità e al design. La competenza e l'esperienza del team di {NAME} sono alla base del successo dell'azienda e della sua reputazione di affidabilità e professionalità.</1>"
 
@@ -117,7 +117,7 @@ msgstr "<0>Tecnoexerciser con copertura è il modello di giostra attualmente pi�
 msgid "3.000 giostre installate"
 msgstr "3.000 giostre installate"
 
-#: src/modules/Index/index.tsx:79
+#: src/modules/Index/index.tsx:80
 msgid "Accessibili"
 msgstr "Accessibili"
 
@@ -156,7 +156,7 @@ msgstr "Alveolo sulla pesta"
 msgid "Ampia gamma"
 msgstr "Ampia gamma"
 
-#: src/modules/Index/index.tsx:88
+#: src/modules/Index/index.tsx:89
 msgid "Apprezzati"
 msgstr "Apprezzati"
 
@@ -339,7 +339,7 @@ msgstr "Corridoio copertura con pannelli sandwich"
 msgid "Corridoio interno copertura in pvc"
 msgstr "Corridoio interno copertura in pvc"
 
-#: src/modules/Index/index.tsx:149
+#: src/modules/Index/index.tsx:150
 msgid "Cosa dicono di noi"
 msgstr "Cosa dicono di noi"
 
@@ -369,7 +369,7 @@ msgstr "Cucchiai"
 msgid "Cucchiaio {0}"
 msgstr "Cucchiaio {0}"
 
-#: src/modules/Index/index.tsx:73
+#: src/modules/Index/index.tsx:74
 msgid "Da anni Pessastudio è focalizzata nel produrre prodotti di qualità a costi accessibili"
 msgstr "Da anni Pessastudio è focalizzata nel produrre prodotti di qualità a costi accessibili"
 
@@ -381,7 +381,7 @@ msgstr "Diametro"
 msgid "Diamo la possibilità di montare nella vostra recinzione un piede mobile che vi consentirà di posizionarla e spostarla a seconda delle vostre esigenze"
 msgstr "Diamo la possibilità di montare nella vostra recinzione un piede mobile che vi consentirà di posizionarla e spostarla a seconda delle vostre esigenze"
 
-#: src/modules/Index/index.tsx:148
+#: src/modules/Index/index.tsx:149
 msgid "Dicono di noi"
 msgstr "Dicono di noi"
 
@@ -509,11 +509,11 @@ msgstr "Giostre Tecnoexerciser Coperta"
 msgid "Giostre Tecnoexerciser Scoperta"
 msgstr "Giostre Tecnoexerciser Scoperta"
 
-#: src/modules/Index/index.tsx:47
+#: src/modules/Index/index.tsx:48
 msgid "Gli ostacoli sono arrivati. Sono fantastici!"
 msgstr "Gli ostacoli sono arrivati. Sono fantastici!"
 
-#: src/modules/Index/index.tsx:30
+#: src/modules/Index/index.tsx:31
 msgid "Ho ricevuto questa mattina il materiale. I miei complimenti per la qualità dei prodotti, l'imballo ed il trasportatore"
 msgstr "Ho ricevuto questa mattina il materiale. I miei complimenti per la qualità dei prodotti, l'imballo ed il trasportatore"
 
@@ -539,7 +539,7 @@ msgstr "I moduli premium in PVC, con una finitura superiore e resistente ai ragg
 msgid "I nostri moduli economici in PVC resistente ai raggi solari sono leggeri e facili da assemblare, offrendo una soluzione pratica e robusta per delimitare l'area di dressage."
 msgstr "I nostri moduli economici in PVC resistente ai raggi solari sono leggeri e facili da assemblare, offrendo una soluzione pratica e robusta per delimitare l'area di dressage."
 
-#: src/modules/Index/index.tsx:92
+#: src/modules/Index/index.tsx:93
 msgid "I nostri prodotti sono pensati per resistere nel tempo, anche se soggetti a difficili condizioni climatiche"
 msgstr "I nostri prodotti sono pensati per resistere nel tempo, anche se soggetti a difficili condizioni climatiche"
 
@@ -547,7 +547,7 @@ msgstr "I nostri prodotti sono pensati per resistere nel tempo, anche se soggett
 msgid "I nostri tondini sono considerati strutture precarie. Non avrete bisogno di nessuna concessione edilizia"
 msgstr "I nostri tondini sono considerati strutture precarie. Non avrete bisogno di nessuna concessione edilizia"
 
-#: src/modules/Index/index.tsx:83
+#: src/modules/Index/index.tsx:84
 msgid "I prodotti vengono venduti ed apprezzati sia in Italia che all'estero"
 msgstr "I prodotti vengono venduti ed apprezzati sia in Italia che all'estero"
 
@@ -585,7 +585,7 @@ msgstr "Impediscono alla sabbia di uscire dal tondino riducendo il materiale dis
 msgid "Indietro"
 msgstr "Indietro"
 
-#: src/modules/Index/index.tsx:98
+#: src/modules/Index/index.tsx:99
 msgid "Indistruttibili"
 msgstr "Indistruttibili"
 
@@ -601,11 +601,11 @@ msgstr "Ingresso"
 msgid "Ingresso di 2,05 mt. con catenaccio verticale"
 msgstr "Ingresso di 2,05 mt. con catenaccio verticale"
 
-#: src/modules/Index/index.tsx:59
+#: src/modules/Index/index.tsx:60
 msgid "Innovativi"
 msgstr "Innovativi"
 
-#: src/modules/Index/index.tsx:53
+#: src/modules/Index/index.tsx:54
 msgid "Innovazione tecnologica e qualità sono le caratteristiche chiave dei nostri prodotti"
 msgstr "Innovazione tecnologica e qualità sono le caratteristiche chiave dei nostri prodotti"
 
@@ -819,11 +819,11 @@ msgstr "Per consentirvi di realizzare ostacoli di vostra creazione possiamo forn
 msgid "Perché una giostra Pessastudio"
 msgstr "Perché una giostra Pessastudio"
 
-#: src/modules/Index/index.tsx:126
+#: src/modules/Index/index.tsx:127
 msgid "Perché?"
 msgstr "Perché?"
 
-#: src/modules/Index/index.tsx:69
+#: src/modules/Index/index.tsx:70
 msgid "Personalizzabili"
 msgstr "Personalizzabili"
 
@@ -835,11 +835,11 @@ msgstr "Peso"
 msgid "Pessastudio fornisce due soluzioni per trasformare il vostro terreno in un'arena da dressage: la gamma <0>training</0> e quella <1>olympic</1>"
 msgstr "Pessastudio fornisce due soluzioni per trasformare il vostro terreno in un'arena da dressage: la gamma <0>training</0> e quella <1>olympic</1>"
 
-#: src/modules/Index/index.tsx:102
+#: src/modules/Index/index.tsx:103
 msgid "Pessastudio nasce 28 fa dall'ingegno e dalla passione per i cavalli del fondatore Luciano Pessa. Oggi, la figlia Anna, continua a portare avanti lo stesso sogno"
 msgstr "Pessastudio nasce 28 fa dall'ingegno e dalla passione per i cavalli del fondatore Luciano Pessa. Oggi, la figlia Anna, continua a portare avanti lo stesso sogno"
 
-#: src/modules/Index/index.tsx:127
+#: src/modules/Index/index.tsx:128
 msgid "Pessastudio, una scelta di qualità"
 msgstr "Pessastudio, una scelta di qualità"
 
@@ -884,7 +884,7 @@ msgstr "Procedura di lubrificazione"
 msgid "Prodotti"
 msgstr "Prodotti"
 
-#: src/modules/Index/index.tsx:63
+#: src/modules/Index/index.tsx:64
 msgid "Prodotti MADE IN ITALY, costruiti da Pessastudio e personalizzabili (in dimensioni o colori)"
 msgstr "Prodotti MADE IN ITALY, costruiti da Pessastudio e personalizzabili (in dimensioni o colori)"
 
@@ -987,7 +987,7 @@ msgstr "Richiedi un preventivo"
 msgid "Rimani informato sui nostri sconti e gli eventi"
 msgstr "Rimani informato sui nostri sconti e gli eventi"
 
-#: src/modules/Index/index.tsx:36
+#: src/modules/Index/index.tsx:37
 msgid "Ringrazio tutto il team per la professionalità, gentilezza, velocità e sopratutto per l'ottimo risultato"
 msgstr "Ringrazio tutto il team per la professionalità, gentilezza, velocità e sopratutto per l'ottimo risultato"
 
@@ -1020,7 +1020,7 @@ msgstr "Scopri il nostro tondino Tecnohalle"
 msgid "Scopri la nostra gamma di prodotti"
 msgstr "Scopri la nostra gamma di prodotti"
 
-#: src/modules/Index/index.tsx:151
+#: src/modules/Index/index.tsx:152
 msgid "Scopri la qualità dei nostri prodotti attraverso la testimonianza dei clienti"
 msgstr "Scopri la qualità dei nostri prodotti attraverso la testimonianza dei clienti"
 
@@ -1068,7 +1068,7 @@ msgstr "Singolo cavalletto abbinabile a barriere diametro 90, 95, 100, 105 mm."
 msgid "Socials"
 msgstr "Socials"
 
-#: src/modules/Index/index.tsx:42
+#: src/modules/Index/index.tsx:43
 msgid "Splendido niente da dire! Il tondino è ben pensato e ingegnoso. Molto bene!"
 msgstr "Splendido niente da dire! Il tondino è ben pensato e ingegnoso. Molto bene!"
 
@@ -1142,7 +1142,7 @@ msgstr "Tondino coperto per cavalli"
 msgid "Tondino per cavalli coperto, ideale per allenamenti e addestramenti in ogni stagione. Realizzato con struttura robusta e materiali resistenti, offre protezione dagli agenti atmosferici. Facile da montare, garantisce sicurezza e comfort per cavalli e cavalieri, migliorando le prestazioni in un ambiente controllato."
 msgstr "Tondino per cavalli coperto, ideale per allenamenti e addestramenti in ogni stagione. Realizzato con struttura robusta e materiali resistenti, offre protezione dagli agenti atmosferici. Facile da montare, garantisce sicurezza e comfort per cavalli e cavalieri, migliorando le prestazioni in un ambiente controllato."
 
-#: src/modules/Index/index.tsx:118
+#: src/modules/Index/index.tsx:119
 msgid "Tradizione e qualità"
 msgstr "Tradizione e qualità"
 
@@ -1162,7 +1162,7 @@ msgstr "Un cookie è un file di piccole dimensioni che viene inviato al browser 
 msgid "Un recinto da cavalli in PVC. Indistruttibile anche in presenza delle più avverse condizioni meteorologiche"
 msgstr "Un recinto da cavalli in PVC. Indistruttibile anche in presenza delle più avverse condizioni meteorologiche"
 
-#: src/modules/Index/index.tsx:109
+#: src/modules/Index/index.tsx:110
 msgid "Una lunga storia"
 msgstr "Una lunga storia"
 
