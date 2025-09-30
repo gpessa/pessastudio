@@ -61,7 +61,7 @@ const IndexFieraOstacoli = () => (
 
     <Section spacing="small" color="warm2" textAlign="center">
       <Chip
-        label={`Padiglione 4 | Stand F7`}
+        label={`Padiglione 4 · Stand F7`}
         color="primary"
         size="medium"
         sx={{ fontSize: 30, padding: "22px" }}
