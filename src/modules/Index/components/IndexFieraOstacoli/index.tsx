@@ -1,6 +1,6 @@
 "use client";
 
-import { Box, Chip, Divider, Grid, Stack, Typography } from "@mui/material";
+import { Box, Chip, Divider, Grid, Typography } from "@mui/material";
 import { styled } from "@mui/material/styles";
 import { Section } from "components";
 import NextImage from "next/image";
@@ -8,18 +8,10 @@ import theme from "theme";
 
 import logo from "./assets/logo.png";
 
-const FooterStyled = styled(Box)(() => ({
-  backgroundColor: theme.palette.primary.dark,
-  color: theme.palette.common.white,
-  paddingBottom: theme.spacing(4),
-  paddingTop: theme.spacing(4),
-  textAlign: "center",
-}));
-
 const Center = styled(Grid)(() => ({
-  justifyContent: "center",
   display: "flex",
   height: "200px",
+  justifyContent: "center",
   justifyItems: "center",
 }));
 
@@ -66,21 +58,6 @@ const IndexFieraOstacoli = () => (
         size="medium"
         sx={{ fontSize: 30, padding: "22px" }}
       />
-      {/* <Stack
-        direction="row"
-        divider={<Divider orientation="vertical" flexItem />}
-        spacing={2}
-        sx={{
-          justifyContent: "center",
-        }}
-      >
-        <Typography variant="h3" fontFamily={theme.typography.fontFamily}>
-          PAD 4
-        </Typography>
-        <Typography variant="h3" fontFamily={theme.typography.fontFamily}>
-          STAND F7
-        </Typography>
-      </Stack> */}
     </Section>
   </section>
 );
