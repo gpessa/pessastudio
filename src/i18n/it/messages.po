@@ -23,7 +23,7 @@ msgstr "* In presenza di nevicate che superino la portata consentita, sarà oppo
 
 #: src/components/Product/components/ProductPrice/index.tsx:24
 msgid "+ IVA"
-msgstr "+ IVA"
+msgstr "+ IVA<<<<<<< HEAD"
 
 #: src/modules/Index/index.tsx:127
 msgid "<0>{NAME} è un'azienda altamente affidabile e rinomata nel settore dell'equitazione. Ogni anno, centinaia di persone scelgono i nostri articoli d'equitazione per la qualità superiore che li caratterizza.</0><1>La gamma di prodotti offerti è ampia e diversificata, con un'attenzione particolare alla funzionalità e al design. La competenza e l'esperienza del team di {NAME} sono alla base del successo dell'azienda e della sua reputazione di affidabilità e professionalità.</1>"
@@ -118,7 +118,7 @@ msgstr "<0>Tecnoexerciser è il modello di giostra attualmente più richiesto.</
 
 #: src/modules/Giostre/index.tsx:48
 msgid "3.000 giostre installate"
-msgstr "3.000 giostre installate"
+msgstr "3.000 giostre installate<<<<<<< HEAD"
 
 #: src/modules/Index/index.tsx:77
 msgid "Accessibili"
@@ -162,7 +162,7 @@ msgstr "Ampia gamma<<<<<<< HEAD"
 
 #: src/modules/GiostreIppowalker/_corridoi.tsx:43
 msgid "Anche in questo semplice modello potrai decidere di dotare la tua giostra di un corridoio scegliendo tra il piú economico corridoio costituito dalla recinzione <0>TECNOFENCE</0> o il corridoio <1>EASY</1> in pannelli di compensato marino."
-msgstr "Anche in questo semplice modello potrai decidere di dotare la tua giostra di un corridoio scegliendo tra il piú economico corridoio costituito dalla recinzione <0>TECNOFENCE</0> o il corridoio <1>EASY</1> in pannelli di compensato marino."
+msgstr "Anche in questo semplice modello potrai decidere di dotare la tua giostra di un corridoio scegliendo tra il piú economico corridoio costituito dalla recinzione <0>TECNOFENCE</0> o il corridoio <1>EASY</1> in pannelli di compensato marino.<<<<<<< HEAD"
 
 #: src/modules/Index/index.tsx:86
 msgid "Apprezzati"
@@ -345,7 +345,7 @@ msgstr "Corridoio EXERCISER in compensato marino"
 #: src/modules/GiostreTecnoexerciser/_corridoi.tsx:17
 #: src/modules/GiostreIppowalker/_corridoi.tsx:17
 msgid "Corridoio TECNOFENCE"
-msgstr "Corridoio TECNOFENCE"
+msgstr "Corridoio TECNOFENCE<<<<<<< HEAD"
 
 #: src/modules/Index/index.tsx:147
 msgid "Cosa dicono di noi"
@@ -375,7 +375,7 @@ msgstr "Cucchiai"
 #: src/hooks/useProducts/utils/index.tsx:263
 #: src/hooks/useProducts/utils/index.tsx:282
 msgid "Cucchiaio {0}"
-msgstr "Cucchiaio {0}"
+msgstr "Cucchiaio {0}<<<<<<< HEAD"
 
 #: src/modules/Index/index.tsx:71
 msgid "Da anni Pessastudio è focalizzata nel produrre prodotti di qualità a costi accessibili"
@@ -387,7 +387,7 @@ msgstr "Diametro"
 
 #: src/hooks/useProducts/utils/index.tsx:390
 msgid "Diamo la possibilità di montare nella vostra recinzione un piede mobile che vi consentirà di posizionarla e spostarla a seconda delle vostre esigenze"
-msgstr "Diamo la possibilità di montare nella vostra recinzione un piede mobile che vi consentirà di posizionarla e spostarla a seconda delle vostre esigenze"
+msgstr "Diamo la possibilità di montare nella vostra recinzione un piede mobile che vi consentirà di posizionarla e spostarla a seconda delle vostre esigenze<<<<<<< HEAD"
 
 #: src/modules/Index/index.tsx:146
 msgid "Dicono di noi"
@@ -542,7 +542,7 @@ msgstr "Giostre"
 #: src/hooks/usePages/utils/index.tsx:90
 #: src/hooks/usePages/utils/index.tsx:101
 msgid "Giostre {0}"
-msgstr "Giostre {0}"
+msgstr "Giostre {0}<<<<<<< HEAD"
 
 #: src/modules/Index/index.tsx:45
 msgid "Gli ostacoli sono arrivati. Sono fantastici!"
@@ -577,7 +577,7 @@ msgstr "I moduli premium in PVC, con una finitura superiore e resistente ai ragg
 
 #: src/hooks/useProducts/utils/index.tsx:440
 msgid "I nostri moduli economici in PVC resistente ai raggi solari sono leggeri e facili da assemblare, offrendo una soluzione pratica e robusta per delimitare l'area di dressage."
-msgstr "I nostri moduli economici in PVC resistente ai raggi solari sono leggeri e facili da assemblare, offrendo una soluzione pratica e robusta per delimitare l'area di dressage."
+msgstr "I nostri moduli economici in PVC resistente ai raggi solari sono leggeri e facili da assemblare, offrendo una soluzione pratica e robusta per delimitare l'area di dressage.<<<<<<< HEAD"
 
 #: src/modules/Index/index.tsx:90
 msgid "I nostri prodotti sono pensati per resistere nel tempo, anche se soggetti a difficili condizioni climatiche"
@@ -585,7 +585,7 @@ msgstr "I nostri prodotti sono pensati per resistere nel tempo, anche se soggett
 
 #: src/modules/Tondini/index.tsx:207
 msgid "I nostri tondini sono considerati strutture precarie. Non avrete bisogno di nessuna concessione edilizia"
-msgstr "I nostri tondini sono considerati strutture precarie. Non avrete bisogno di nessuna concessione edilizia"
+msgstr "I nostri tondini sono considerati strutture precarie. Non avrete bisogno di nessuna concessione edilizia<<<<<<< HEAD"
 
 #: src/modules/Index/index.tsx:81
 msgid "I prodotti vengono venduti ed apprezzati sia in Italia che all'estero"
@@ -619,7 +619,7 @@ msgstr "Impediscono alla sabbia di uscire dal tondino riducendo il materiale dis
 
 #: src/components/ModalGallery/index.tsx:77
 msgid "Indietro"
-msgstr "Indietro"
+msgstr "Indietro<<<<<<< HEAD"
 
 #: src/modules/Index/index.tsx:96
 msgid "Indistruttibili"
@@ -635,7 +635,7 @@ msgstr "Ingresso"
 
 #: src/modules/Tondini/index.tsx:162
 msgid "Ingresso di 2,05 mt. con catenaccio verticale"
-msgstr "Ingresso di 2,05 mt. con catenaccio verticale"
+msgstr "Ingresso di 2,05 mt. con catenaccio verticale<<<<<<< HEAD"
 
 #: src/modules/Index/index.tsx:57
 msgid "Innovativi"
@@ -870,7 +870,7 @@ msgstr "Per consentirvi di realizzare ostacoli di vostra creazione possiamo forn
 
 #: src/modules/Giostre/index.tsx:104
 msgid "Perché una giostra Pessastudio"
-msgstr "Perché una giostra Pessastudio"
+msgstr "Perché una giostra Pessastudio<<<<<<< HEAD"
 
 #: src/modules/Index/index.tsx:124
 msgid "Perché?"
@@ -886,7 +886,7 @@ msgstr "Peso"
 
 #: src/modules/Dressage/index.tsx:38
 msgid "Pessastudio fornisce due soluzioni per trasformare il vostro terreno in un'arena da dressage: la gamma <0>training</0> e quella <1>olympic</1>"
-msgstr "Pessastudio fornisce due soluzioni per trasformare il vostro terreno in un'arena da dressage: la gamma <0>training</0> e quella <1>olympic</1>"
+msgstr "Pessastudio fornisce due soluzioni per trasformare il vostro terreno in un'arena da dressage: la gamma <0>training</0> e quella <1>olympic</1><<<<<<< HEAD"
 
 #: src/modules/Index/index.tsx:100
 msgid "Pessastudio nasce 28 fa dall'ingegno e dalla passione per i cavalli del fondatore Luciano Pessa. Oggi, la figlia Anna, continua a portare avanti lo stesso sogno"
@@ -939,7 +939,7 @@ msgstr "Procedura di lubrificazione"
 
 #: src/modules/Index/components/IndexProducts/index.tsx:41
 msgid "Prodotti"
-msgstr "Prodotti"
+msgstr "Prodotti<<<<<<< HEAD"
 
 #: src/modules/Index/index.tsx:61
 msgid "Prodotti MADE IN ITALY, costruiti da Pessastudio e personalizzabili (in dimensioni o colori)"
@@ -1042,7 +1042,7 @@ msgstr "Richiedi un preventivo"
 
 #: src/components/Footer/index.tsx:69
 msgid "Rimani informato sui nostri sconti e gli eventi"
-msgstr "Rimani informato sui nostri sconti e gli eventi"
+msgstr "Rimani informato sui nostri sconti e gli eventi<<<<<<< HEAD"
 
 #: src/modules/Index/index.tsx:34
 msgid "Ringrazio tutto il team per la professionalità, gentilezza, velocità e sopratutto per l'ottimo risultato"
@@ -1081,7 +1081,7 @@ msgstr "Scopri la nostra giostra {0}, lo strumento economico adatto ad allenare 
 #. placeholder {0}: GIOSTRE_MODELS.TECNOEXERCISER
 #: src/hooks/usePages/utils/index.tsx:100
 msgid "Scopri la nostra giostra {0}, lo strumento professionale adatto ad allenare il tuo cavallo o il tuo puledro"
-msgstr "Scopri la nostra giostra {0}, lo strumento professionale adatto ad allenare il tuo cavallo o il tuo puledro"
+msgstr "Scopri la nostra giostra {0}, lo strumento professionale adatto ad allenare il tuo cavallo o il tuo puledro<<<<<<< HEAD"
 
 #: src/modules/Index/index.tsx:149
 msgid "Scopri la qualità dei nostri prodotti attraverso la testimonianza dei clienti"
@@ -1129,7 +1129,7 @@ msgstr "Singolo cavalletto abbinabile a barriere diametro 90, 95, 100, 105 mm."
 
 #: src/components/Footer/index.tsx:43
 msgid "Socials"
-msgstr "Socials"
+msgstr "Socials<<<<<<< HEAD"
 
 #: src/modules/Index/index.tsx:40
 msgid "Splendido niente da dire! Il tondino è ben pensato e ingegnoso. Molto bene!"
@@ -1204,7 +1204,7 @@ msgstr "Tondino coperto per cavalli"
 
 #: src/hooks/useProducts/utils/index.tsx:691
 msgid "Tondino per cavalli coperto, ideale per allenamenti e addestramenti in ogni stagione. Realizzato con struttura robusta e materiali resistenti, offre protezione dagli agenti atmosferici. Facile da montare, garantisce sicurezza e comfort per cavalli e cavalieri, migliorando le prestazioni in un ambiente controllato."
-msgstr "Tondino per cavalli coperto, ideale per allenamenti e addestramenti in ogni stagione. Realizzato con struttura robusta e materiali resistenti, offre protezione dagli agenti atmosferici. Facile da montare, garantisce sicurezza e comfort per cavalli e cavalieri, migliorando le prestazioni in un ambiente controllato."
+msgstr "Tondino per cavalli coperto, ideale per allenamenti e addestramenti in ogni stagione. Realizzato con struttura robusta e materiali resistenti, offre protezione dagli agenti atmosferici. Facile da montare, garantisce sicurezza e comfort per cavalli e cavalieri, migliorando le prestazioni in un ambiente controllato.<<<<<<< HEAD"
 
 #: src/modules/Index/index.tsx:116
 msgid "Tradizione e qualità"
@@ -1224,7 +1224,7 @@ msgstr "Un cookie è un file di piccole dimensioni che viene inviato al browser 
 
 #: src/hooks/usePages/utils/index.tsx:78
 msgid "Un recinto da cavalli in PVC. Indistruttibile anche in presenza delle più avverse condizioni meteorologiche"
-msgstr "Un recinto da cavalli in PVC. Indistruttibile anche in presenza delle più avverse condizioni meteorologiche"
+msgstr "Un recinto da cavalli in PVC. Indistruttibile anche in presenza delle più avverse condizioni meteorologiche<<<<<<< HEAD"
 
 #: src/modules/Index/index.tsx:107
 msgid "Una lunga storia"

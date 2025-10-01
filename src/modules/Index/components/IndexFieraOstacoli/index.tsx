@@ -1,6 +1,6 @@
 "use client";
 
-import { Box, Chip, Divider, Grid, Typography } from "@mui/material";
+import { Chip, Divider, Grid, Typography } from "@mui/material";
 import { styled } from "@mui/material/styles";
 import { Section } from "components";
 import NextImage from "next/image";
