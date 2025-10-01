@@ -66,21 +66,6 @@ const IndexFieraOstacoli = () => (
         size="medium"
         sx={{ fontSize: 30, padding: "22px" }}
       />
-      {/* <Stack
-        direction="row"
-        divider={<Divider orientation="vertical" flexItem />}
-        spacing={2}
-        sx={{
-          justifyContent: "center",
-        }}
-      >
-        <Typography variant="h3" fontFamily={theme.typography.fontFamily}>
-          PAD 4
-        </Typography>
-        <Typography variant="h3" fontFamily={theme.typography.fontFamily}>
-          STAND F7
-        </Typography>
-      </Stack> */}
     </Section>
   </section>
 );

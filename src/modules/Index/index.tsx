@@ -6,18 +6,16 @@ import Apps from "@mui/icons-material/Apps";
 import Architecture from "@mui/icons-material/Architecture";
 import Restore from "@mui/icons-material/Restore";
 import TurnedInNot from "@mui/icons-material/TurnedInNot";
-import { Container, Grid, Stack, Typography } from "@mui/material";
+import { Typography } from "@mui/material";
 import { Benefits, Hero } from "components";
 import { HeroProps } from "components/Hero";
 import { usePages } from "hooks";
 import { NAME } from "utils/constants";
 
 import image from "./assets/background.jpg";
-import fiera2024_it from "./assets/fiera2024/it.jpg";
-import IndexProducts from "./components/IndexProducts";
-// import { IndexProductItem } from "./components/IndexProducts/components/IndexProductsItem";
-import IndexTestimonials from "./components/IndexTestimonials";
 import IndexFieraOstacoli from "./components/IndexFieraOstacoli";
+import IndexProducts from "./components/IndexProducts";
+import IndexTestimonials from "./components/IndexTestimonials";
 
 export default function Index() {
   const {
