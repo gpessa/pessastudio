@@ -4,21 +4,24 @@ import { Chip, Divider, Grid, Typography } from "@mui/material";
 import { styled } from "@mui/material/styles";
 import { Section } from "components";
 import NextImage from "next/image";
-import theme from "theme";
+import theme, { BREAKPOINT, PRODUCT_GUTTER } from "theme";
 
 import logo from "./assets/logo.png";
 
 const Center = styled(Grid)(() => ({
   display: "flex",
-  height: "200px",
   justifyContent: "center",
   justifyItems: "center",
 }));
 
 const DividerStyled = styled(Divider)(() => ({
   borderRightColor: theme.palette.common.white,
-  borderRightWidth: "5px",
-  height: "200px",
+  borderRightWidth: "3px",
+  height: "100px",
+  [theme.breakpoints.up(BREAKPOINT)]: {
+    borderRightWidth: "5px",
+    height: "200px",
+  },
 }));
 
 const DividerHorizontalStyled = styled(Divider)(() => ({
@@ -26,10 +29,30 @@ const DividerHorizontalStyled = styled(Divider)(() => ({
   borderBottomWidth: "20px",
 }));
 
+const ChipSyled = styled(Chip)(({ theme }) => ({
+  fontSize: 20,
+  padding: theme.spacing(2),
+  [theme.breakpoints.up(BREAKPOINT)]: {
+    fontSize: 30,
+  },
+}));
+
+const TypographySyled = styled(Typography)(({ theme }) => ({
+  ...theme.typography.h4,
+  [theme.breakpoints.up(BREAKPOINT)]: {
+    ...theme.typography.h2,
+  },
+}));
+
 const IndexFieraOstacoli = () => (
   <section>
     <Section spacing="medium" color="primary">
-      <Grid container spacing={2} alignContent={"center"} alignItems={"center"}>
+      <Grid
+        container
+        spacing={PRODUCT_GUTTER}
+        alignContent="center"
+        alignItems="center"
+      >
         <Grid
           size={4}
           offset={1}
@@ -42,9 +65,9 @@ const IndexFieraOstacoli = () => (
           <DividerStyled orientation="vertical" flexItem />
         </Center>
         <Grid size={4}>
-          <Typography variant="h2">
+          <TypographySyled>
             Vi aspettiamo dal 6 al 9 novembre 2025
-          </Typography>
+          </TypographySyled>
         </Grid>
       </Grid>
     </Section>
@@ -52,11 +75,10 @@ const IndexFieraOstacoli = () => (
     <DividerHorizontalStyled />
 
     <Section spacing="small" color="warm2" textAlign="center">
-      <Chip
+      <ChipSyled
         label={`Padiglione 4 | Stand F7`}
         color="primary"
         size="medium"
-        sx={{ fontSize: 30, padding: "22px" }}
       />
     </Section>
   </section>
