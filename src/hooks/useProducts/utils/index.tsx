@@ -136,7 +136,7 @@ export const getProducts = (locale: string): ProductDataList => {
       link: `${OSTACOLI.url}#${ProductId.CAVALLETTI_CAPRILLI}`,
       name: msg`Cavalletti Caprilli`,
       pictures: [require("assets/products/ostacoli/cavalletto-01.png")],
-      price: 41.9,
+      price: 40,
     },
     {
       description: msg`Kit comprensivo di 2 cavalletti e una barriera in PPO di colore bianco, diametro 95, lunghezza 2 mt.`,
@@ -152,7 +152,7 @@ export const getProducts = (locale: string): ProductDataList => {
       pictures: [
         require("assets/products/ostacoli/cavalletto-barriera-01.png"),
       ],
-      price: 81,
+      price: 105,
     },
     {
       colors: [WHITE, BLU, YELLOW, RED, GREEN],
