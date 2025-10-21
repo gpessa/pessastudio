@@ -765,7 +765,7 @@ msgid "La struttura è stata progettata per garantire un carico neve fino a 120 
 msgstr "La structure a été conçue pour résister à une charge de neige jusqu’à 120 kg/m2 et à une vitesse du vent jusqu’à 110 km/h."
 
 #. placeholder {0}: formatSize(50)
-#. placeholder {0}: formatSize(1500)
+#. placeholder {0}: formatSize(150)
 #: src/hooks/useProducts/utils/index.tsx:234
 #: src/hooks/useProducts/utils/index.tsx:248
 msgid "Lama DE da {0}"

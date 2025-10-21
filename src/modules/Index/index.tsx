@@ -108,7 +108,7 @@ export default function Index() {
     },
   ];
 
-  const isFieraTime = new Date() < new Date("10/11/2025");
+  const isFieraTime = new Date() < new Date("11/10/2025");
   const isFieraMode = isFieraTime && locale === "it";
 
   const HERO: HeroProps = {

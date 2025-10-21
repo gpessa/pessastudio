@@ -245,7 +245,7 @@ export const getProducts = (locale: string): ProductDataList => {
       id: ProductId.LAMA_DE_150,
       link: `${OSTACOLI.url}#${ProductId.LAMA_DE_150}`,
       materials: [Material.ACCIAIO_ZINCATO],
-      name: msg`Lama DE da ${formatSize(1500)}`,
+      name: msg`Lama DE da ${formatSize(150)}`,
       pictures: [require("assets/products/ostacoli/lama-de-50.png")],
       price: 19.2,
     },
