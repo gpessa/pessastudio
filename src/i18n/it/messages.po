@@ -128,8 +128,8 @@ msgstr "Accessibili"
 msgid "Accesso ai dati e Servizio Clienti"
 msgstr "Accesso ai dati e Servizio Clienti"
 
-#: src/modules/Recinti/_accessori.tsx:12
 #: src/components/Accessori/index.tsx:27
+#: src/modules/Recinti/_accessori.tsx:12
 msgid "Accessori"
 msgstr "Accessori"
 
@@ -149,10 +149,10 @@ msgstr "Altezza"
 msgid "Altro"
 msgstr "Altro"
 
+#: src/modules/GiostreIppowalker/_accessori.tsx:41
+#: src/modules/GiostreTecnoexerciser/_accessori.tsx:41
 #: src/utils/constants.tsx:190
 #: src/utils/constants.tsx:207
-#: src/modules/GiostreTecnoexerciser/_accessori.tsx:41
-#: src/modules/GiostreIppowalker/_accessori.tsx:41
 msgid "Alveolo sulla pesta"
 msgstr "Alveolo sulla pesta"
 
@@ -207,8 +207,8 @@ msgstr "Candelieri e lame forate"
 msgid "Caratteristiche"
 msgstr "Caratteristiche"
 
-#: src/modules/Ostacoli/Cavalletti.tsx:21
 #: src/hooks/useProducts/utils/index.tsx:137
+#: src/modules/Ostacoli/Cavalletti.tsx:21
 msgid "Cavalletti Caprilli"
 msgstr "Cavalletti Caprilli"
 
@@ -216,11 +216,11 @@ msgstr "Cavalletti Caprilli"
 msgid "Che cos'è un cookie?"
 msgstr "Che cos'è un cookie?"
 
+#: src/modules/GiostreIppowalker/_accessori.tsx:22
+#: src/modules/GiostreTecnoexerciser/_accessori.tsx:22
+#: src/modules/Tondini/index.tsx:108
 #: src/utils/constants.tsx:184
 #: src/utils/constants.tsx:201
-#: src/modules/Tondini/index.tsx:108
-#: src/modules/GiostreTecnoexerciser/_accessori.tsx:22
-#: src/modules/GiostreIppowalker/_accessori.tsx:22
 msgid "Chiusura a terra"
 msgstr "Chiusura a terra"
 
@@ -240,9 +240,9 @@ msgstr "Codice Fiscale e Partita IVA"
 msgid "Colori"
 msgstr "Colori"
 
-#: src/modules/ComePreparareIlFondo/index.tsx:11
 #: src/hooks/usePages/utils/index.tsx:79
 #: src/hooks/usePages/utils/index.tsx:84
+#: src/modules/ComePreparareIlFondo/index.tsx:11
 msgid "Come preparare il fondo"
 msgstr "Come preparare il fondo"
 
@@ -308,24 +308,24 @@ msgstr "Cookie di navigazione"
 msgid "Coordinate bancarie"
 msgstr "Coordinate bancarie"
 
-#: src/utils/constants.tsx:306
 #: src/modules/Tondini/index.tsx:150
 #: src/modules/Tondini/index.tsx:154
 #: src/modules/Tondini/index.tsx:158
+#: src/utils/constants.tsx:306
 msgid "Copertura"
 msgstr "Copertura"
 
-#: src/utils/constants.tsx:261
-#: src/modules/GiostreTecnoexerciser/_copertura.tsx:19
-#: src/modules/GiostreTecnoexerciser/_copertura.tsx:23
 #: src/modules/GiostreIppowalker/_copertura.tsx:17
 #: src/modules/GiostreIppowalker/_copertura.tsx:21
+#: src/modules/GiostreTecnoexerciser/_copertura.tsx:19
+#: src/modules/GiostreTecnoexerciser/_copertura.tsx:23
+#: src/utils/constants.tsx:261
 msgid "Copertura in PVC"
 msgstr "Copertura in PVC"
 
+#: src/modules/GiostreTecnoexerciser/_compare.tsx:103
 #: src/modules/GiostreTecnoexerciser/_copertura.tsx:27
 #: src/modules/GiostreTecnoexerciser/_copertura.tsx:31
-#: src/modules/GiostreTecnoexerciser/_compare.tsx:103
 msgid "Copertura rigida con lastre ondulate"
 msgstr "Copertura rigida con lastre ondulate"
 
@@ -342,8 +342,8 @@ msgstr "Corridoio EASY in compensato marino"
 msgid "Corridoio EXERCISER in compensato marino"
 msgstr "Corridoio EXERCISER in compensato marino"
 
-#: src/modules/GiostreTecnoexerciser/_corridoi.tsx:17
 #: src/modules/GiostreIppowalker/_corridoi.tsx:17
+#: src/modules/GiostreTecnoexerciser/_corridoi.tsx:17
 msgid "Corridoio TECNOFENCE"
 msgstr "Corridoio TECNOFENCE"
 
@@ -355,8 +355,8 @@ msgstr "Cosa dicono di noi"
 msgid "Costruisci la tua barriera personalizzata scegliendo tra i colori a disposizione"
 msgstr "Costruisci la tua barriera personalizzata scegliendo tra i colori a disposizione"
 
-#. placeholder {0}: CubiModels.MINI
 #. placeholder {0}: CubiModels.MAXI
+#. placeholder {0}: CubiModels.MINI
 #: src/hooks/useProducts/utils/index.tsx:168
 #: src/hooks/useProducts/utils/index.tsx:188
 msgid "Cubi {0}"
@@ -393,14 +393,14 @@ msgstr "Diamo la possibilità di montare nella vostra recinzione un piede mobile
 msgid "Dicono di noi"
 msgstr "Dicono di noi"
 
-#: src/modules/Tondini/index.tsx:270
-#: src/modules/GiostreTecnoexerciser/_servizio_clienti.tsx:61
 #: src/modules/GiostreIppowalker/_servizio_clienti.tsx:47
+#: src/modules/GiostreTecnoexerciser/_servizio_clienti.tsx:61
+#: src/modules/Tondini/index.tsx:270
 msgid "Dimensioni"
 msgstr "Dimensioni"
 
-#: src/modules/GiostreTecnoexerciser/_servizio_clienti.tsx:17
 #: src/modules/GiostreIppowalker/_servizio_clienti.tsx:17
+#: src/modules/GiostreTecnoexerciser/_servizio_clienti.tsx:17
 msgid "Dimensioni giostra cavalli"
 msgstr "Dimensioni giostra cavalli"
 
@@ -432,9 +432,9 @@ msgstr "È possibile acquistare le nostre giostre in diverse versioni adatte ad 
 msgid "É una struttura semplice, leggera e piacevole alla vista"
 msgstr "É una struttura semplice, leggera e piacevole alla vista"
 
-#: src/modules/Contatti/components/ContattiAddress/index.tsx:85
 #: src/components/Footer/components/FooterNewsletter/index.tsx:38
 #: src/components/Footer/components/FooterNewsletter/index.tsx:39
+#: src/modules/Contatti/components/ContattiAddress/index.tsx:85
 msgid "Email"
 msgstr "Email"
 
@@ -442,8 +442,8 @@ msgstr "Email"
 msgid "Entrata"
 msgstr "Entrata"
 
-#: src/modules/500/index.tsx:7
 #: src/hooks/usePages/utils/index.tsx:61
+#: src/modules/500/index.tsx:7
 msgid "Errore"
 msgstr "Errore"
 
@@ -455,8 +455,8 @@ msgstr "Facile da usare"
 msgid "Fin dal primo accesso questi cookie permettono al sito di funzionare correttamente e ti consentono di visualizzare i contenuti sul tuo dispositivo riconoscendo la lingua e il mercato del Paese dal quale scegli di connetterti. Se sei un utente registrato, permetteranno di riconoscerti e di accedere ai servizi delle aree dedicate. I cookie di navigazione sono cookie tecnici e sono necessari al funzionamento del sito."
 msgstr "Fin dal primo accesso questi cookie permettono al sito di funzionare correttamente e ti consentono di visualizzare i contenuti sul tuo dispositivo riconoscendo la lingua e il mercato del Paese dal quale scegli di connetterti. Se sei un utente registrato, permetteranno di riconoscerti e di accedere ai servizi delle aree dedicate. I cookie di navigazione sono cookie tecnici e sono necessari al funzionamento del sito."
 
-#: src/modules/Ostacoli/Fosso.tsx:21
 #: src/hooks/useProducts/utils/index.tsx:122
+#: src/modules/Ostacoli/Fosso.tsx:21
 msgid "Fosso"
 msgstr "Fosso"
 
@@ -468,10 +468,10 @@ msgstr "Fosso in PVC di alta qualità, progettato per allenamenti e competizioni
 msgid "Funzione"
 msgstr "Funzione"
 
-#: src/modules/Recinti/_gamma.tsx:37
-#: src/modules/GiostreTecnoexerciser/_compare.tsx:119
-#: src/modules/GiostreIppowalker/_compare.tsx:92
 #: src/modules/Giostre/index.tsx:160
+#: src/modules/GiostreIppowalker/_compare.tsx:92
+#: src/modules/GiostreTecnoexerciser/_compare.tsx:119
+#: src/modules/Recinti/_gamma.tsx:37
 msgid "Gamma"
 msgstr "Gamma"
 
@@ -500,13 +500,13 @@ msgstr "Giostra <0/>corridoio EXERCISER<1/>copertura PVC"
 msgid "Giostra <0/>corridoio EXERCISER<1/>copertura Rigida"
 msgstr "Giostra <0/>corridoio EXERCISER<1/>copertura Rigida"
 
-#: src/modules/GiostreTecnoexerciser/_compare.tsx:69
 #: src/modules/GiostreIppowalker/_compare.tsx:56
+#: src/modules/GiostreTecnoexerciser/_compare.tsx:69
 msgid "Giostra <0/>corridoio TECNOFENCE"
 msgstr "Giostra <0/>corridoio TECNOFENCE"
 
-#: src/modules/GiostreTecnoexerciser/_compare.tsx:61
 #: src/modules/GiostreIppowalker/_compare.tsx:48
+#: src/modules/GiostreTecnoexerciser/_compare.tsx:61
 msgid "Giostra base"
 msgstr "Giostra base"
 
@@ -561,8 +561,8 @@ msgstr "Home"
 msgid "I candelieri sono costruiti con un montante di alluminio verniciato di colore bianco e sono muniti di 4 piedi rivestiti con puntali di plastica che garantiscono, in caso di ribaltamento, l’incolumità vostra e dei vostri cavalli."
 msgstr "I candelieri sono costruiti con un montante di alluminio verniciato di colore bianco e sono muniti di 4 piedi rivestiti con puntali di plastica che garantiscono, in caso di ribaltamento, l’incolumità vostra e dei vostri cavalli."
 
-#: src/modules/GiostreTecnoexerciser/_corridoi.tsx:39
 #: src/modules/GiostreIppowalker/_corridoi.tsx:39
+#: src/modules/GiostreTecnoexerciser/_corridoi.tsx:39
 msgid "I corridoi"
 msgstr "I corridoi"
 
@@ -655,8 +655,8 @@ msgstr "Interno giostra con alveolo"
 msgid "Interno tondino coperto"
 msgstr "Interno tondino coperto"
 
-#: src/utils/constants.tsx:317
 #: src/modules/Tondini/index.tsx:78
+#: src/utils/constants.tsx:317
 msgid "Irrigazione"
 msgstr "Irrigazione"
 
@@ -676,15 +676,15 @@ msgstr "Iscriviti alla nostra newsletter"
 msgid "Istituto"
 msgstr "Istituto"
 
-#: src/modules/Recinti/index.tsx:65
-#: src/modules/GiostreIppowalkerIstruzioniDiMontaggio/index.tsx:66
 #: src/hooks/usePages/utils/index.tsx:95
 #: src/hooks/usePages/utils/index.tsx:106
+#: src/modules/GiostreIppowalkerIstruzioniDiMontaggio/index.tsx:66
+#: src/modules/Recinti/index.tsx:65
 msgid "Istruzioni di montaggio"
 msgstr "Istruzioni di montaggio"
 
-#. placeholder {0}: 8
 #. placeholder {0}: 12
+#. placeholder {0}: 8
 #. placeholder {1}: DressageModels.TRAINING
 #: src/hooks/useProducts/utils/index.tsx:418
 #: src/hooks/useProducts/utils/index.tsx:434
@@ -713,8 +713,8 @@ msgstr "L'alveolo è la soluzione ottimale per mantenere un fondo sempre perfett
 msgid "L'utilizzo di cookie e di tecnologie affini da parte di {0}, con sede {completeAddress}, rientra nella politica di privacy del Gestore, in conformità a quanto previsto dal D. Lgs 196/03 Codice in materia di protezione dei dati personali (Codice Privacy) e dal Provvedimento dell’8 maggio 2014 “Individuazione delle modalità semplificate per l’informativa e l’acquisizione del consenso per l’uso dei cookie” del Garante Privacy Italiano. {1}, in qualità di Titolare del trattamento agisce conformemente a quanto previsto dalla normativa in materia."
 msgstr "L'utilizzo di cookie e di tecnologie affini da parte di {0}, con sede {completeAddress}, rientra nella politica di privacy del Gestore, in conformità a quanto previsto dal D. Lgs 196/03 Codice in materia di protezione dei dati personali (Codice Privacy) e dal Provvedimento dell’8 maggio 2014 “Individuazione delle modalità semplificate per l’informativa e l’acquisizione del consenso per l’uso dei cookie” del Garante Privacy Italiano. {1}, in qualità di Titolare del trattamento agisce conformemente a quanto previsto dalla normativa in materia."
 
-#: src/modules/GiostreTecnoexerciser/_copertura.tsx:45
 #: src/modules/GiostreIppowalker/_copertura.tsx:35
+#: src/modules/GiostreTecnoexerciser/_copertura.tsx:45
 msgid "La copertura"
 msgstr "La copertura"
 
@@ -754,8 +754,8 @@ msgstr "La rete antivento protegge l'interno della tondino da correnti d'aria co
 msgid "La struttura è stata progettata per garantire un carico neve fino a 120 kg/mq e la velocità del vento fino a 110 km/h."
 msgstr "La struttura è stata progettata per garantire un carico neve fino a 120 kg/mq e la velocità del vento fino a 110 km/h."
 
-#. placeholder {0}: formatSize(50)
 #. placeholder {0}: formatSize(150)
+#. placeholder {0}: formatSize(50)
 #: src/hooks/useProducts/utils/index.tsx:234
 #: src/hooks/useProducts/utils/index.tsx:248
 msgid "Lama DE da {0}"
@@ -786,21 +786,21 @@ msgstr "Lettera dressage ({0})"
 msgid "Lunghezza"
 msgstr "Lunghezza"
 
-#: src/modules/GiostreTecnoexerciser/_servizio_clienti.tsx:36
 #: src/modules/GiostreIppowalker/_servizio_clienti.tsx:36
+#: src/modules/GiostreTecnoexerciser/_servizio_clienti.tsx:36
 msgid "Manuale collegamento elettrico"
 msgstr "Manuale collegamento elettrico"
 
-#: src/modules/Recinti/index.tsx:135
-#: src/modules/GiostreTecnoexerciser/_servizio_clienti.tsx:71
 #: src/modules/GiostreIppowalker/_servizio_clienti.tsx:57
+#: src/modules/GiostreTecnoexerciser/_servizio_clienti.tsx:71
+#: src/modules/Recinti/index.tsx:135
 msgid "Manuale d'istruzioni"
 msgstr "Manuale d'istruzioni"
 
-#: src/modules/GiostreTecnoexerciser/_servizio_clienti.tsx:25
-#: src/modules/GiostreTecnoexerciser/_servizio_clienti.tsx:32
 #: src/modules/GiostreIppowalker/_servizio_clienti.tsx:25
 #: src/modules/GiostreIppowalker/_servizio_clienti.tsx:32
+#: src/modules/GiostreTecnoexerciser/_servizio_clienti.tsx:25
+#: src/modules/GiostreTecnoexerciser/_servizio_clienti.tsx:32
 msgid "Manuale quadro di controllo"
 msgstr "Manuale quadro di controllo"
 
@@ -820,20 +820,20 @@ msgstr "Materiali"
 msgid "Materiali di qualità"
 msgstr "Materiali di qualità"
 
-#. placeholder {0}: DressageModels.TRAINING
 #. placeholder {0}: DressageModels.OLYMPIC
+#. placeholder {0}: DressageModels.TRAINING
 #: src/hooks/useProducts/utils/index.tsx:449
 #: src/hooks/useProducts/utils/index.tsx:514
 msgid "Modulo dressage ({0})"
 msgstr "Modulo dressage ({0})"
 
-#: src/utils/constants.tsx:309
 #: src/modules/GiostreTecnoexerciser/_gallery.tsx:24
+#: src/utils/constants.tsx:309
 msgid "Motore"
 msgstr "Motore"
 
-#: src/modules/Tondini/index.tsx:213
 #: src/modules/Giostre/index.tsx:68
+#: src/modules/Tondini/index.tsx:213
 msgid "Nessuna concessione edilizia"
 msgstr "Nessuna concessione edilizia"
 
@@ -858,8 +858,8 @@ msgstr "Oppure visita la nostra pagina dei <0>contatti</0> per scoprire i rivend
 msgid "Ostacoli"
 msgstr "Ostacoli"
 
-#: src/modules/404/index.tsx:7
 #: src/hooks/usePages/utils/index.tsx:56
+#: src/modules/404/index.tsx:7
 msgid "Pagina non trovata"
 msgstr "Pagina non trovata"
 
@@ -912,9 +912,9 @@ msgstr "Polietilene"
 msgid "Polipropilene"
 msgstr "Polipropilene"
 
+#: src/modules/Giostre/index.tsx:133
 #: src/modules/GiostreTecnoexerciser/_gallery.tsx:36
 #: src/modules/GiostreTecnoexerciser/_gallery.tsx:40
-#: src/modules/Giostre/index.tsx:133
 msgid "Porta mobile"
 msgstr "Porta mobile"
 
@@ -926,10 +926,10 @@ msgstr "Porte"
 msgid "Porte elettrificate"
 msgstr "Porte elettrificate"
 
-#. placeholder {0}: 0.75
 #. placeholder {0}: 0.37
-#: src/modules/GiostreTecnoexerciser/_compare.tsx:47
+#. placeholder {0}: 0.75
 #: src/modules/GiostreIppowalker/_compare.tsx:34
+#: src/modules/GiostreTecnoexerciser/_compare.tsx:47
 msgid "Potenza motore {0} kw e cadenza regolabile fra 60 e 220 metri al minuto"
 msgstr "Potenza motore {0} kw e cadenza regolabile fra 60 e 220 metri al minuto"
 
@@ -957,8 +957,8 @@ msgstr "Puoi in qualsiasi momento ricevere assistenza e spiegazioni su come eser
 msgid "PVC"
 msgstr "PVC"
 
-#: src/utils/constants.tsx:305
 #: src/modules/Giostre/index.tsx:117
+#: src/utils/constants.tsx:305
 msgid "Quadro di comando"
 msgstr "Quadro di comando"
 
@@ -996,22 +996,22 @@ msgstr "Recinzione cavalli a {0} filagna"
 #. placeholder {0}: 2
 #. placeholder {0}: 3
 #. placeholder {0}: 4
+#: src/hooks/useProducts/utils/index.tsx:361
+#: src/hooks/useProducts/utils/index.tsx:373
+#: src/hooks/useProducts/utils/index.tsx:385
 #: src/modules/Recinti/index.tsx:35
 #: src/modules/Recinti/index.tsx:39
 #: src/modules/Recinti/index.tsx:43
 #: src/modules/Recinti/index.tsx:47
 #: src/modules/Recinti/index.tsx:51
 #: src/modules/Recinti/index.tsx:55
-#: src/hooks/useProducts/utils/index.tsx:361
-#: src/hooks/useProducts/utils/index.tsx:373
-#: src/hooks/useProducts/utils/index.tsx:385
 msgid "Recinzione cavalli a {0} filagne"
 msgstr "Recinzione cavalli a {0} filagne"
 
-#: src/utils/constants.tsx:213
-#: src/modules/Tondini/index.tsx:52
-#: src/modules/GiostreTecnoexerciser/_accessori.tsx:56
 #: src/modules/GiostreIppowalker/_accessori.tsx:56
+#: src/modules/GiostreTecnoexerciser/_accessori.tsx:56
+#: src/modules/Tondini/index.tsx:52
+#: src/utils/constants.tsx:213
 msgid "Rete antivento"
 msgstr "Rete antivento"
 
@@ -1025,8 +1025,8 @@ msgstr "Rettangoli / Campi professionali da dressage per tutte le esigenze"
 
 #. placeholder {0}: DressageData.SIZE_20x40.size
 #. placeholder {0}: DressageData.SIZE_20x60.size
-#. placeholder {1}: DressageModels.TRAINING
 #. placeholder {1}: DressageModels.OLYMPIC
+#. placeholder {1}: DressageModels.TRAINING
 #: src/hooks/useProducts/utils/index.tsx:463
 #: src/hooks/useProducts/utils/index.tsx:480
 #: src/hooks/useProducts/utils/index.tsx:528
@@ -1139,10 +1139,10 @@ msgstr "Splendido niente da dire! Il tondino è ben pensato e ingegnoso. Molto b
 msgid "Supporti di sicurezza da applicare ai nostri cucchiai per salvaguardare l'integrità degli arti dei vostri cavalli in maniera efficace ed economica."
 msgstr "Supporti di sicurezza da applicare ai nostri cucchiai per salvaguardare l'integrità degli arti dei vostri cavalli in maniera efficace ed economica."
 
-#: src/modules/Tondini/index.tsx:262
-#: src/modules/Recinti/index.tsx:133
-#: src/modules/GiostreTecnoexerciser/_servizio_clienti.tsx:56
 #: src/modules/GiostreIppowalker/_servizio_clienti.tsx:43
+#: src/modules/GiostreTecnoexerciser/_servizio_clienti.tsx:56
+#: src/modules/Recinti/index.tsx:133
+#: src/modules/Tondini/index.tsx:262
 msgid "Supporto clienti"
 msgstr "Supporto clienti"
 

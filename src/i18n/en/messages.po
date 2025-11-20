@@ -128,8 +128,8 @@ msgstr "Affordable prices"
 msgid "Accesso ai dati e Servizio Clienti"
 msgstr "Access to Data and Customer Care"
 
-#: src/modules/Recinti/_accessori.tsx:12
 #: src/components/Accessori/index.tsx:27
+#: src/modules/Recinti/_accessori.tsx:12
 msgid "Accessori"
 msgstr "Add ons"
 
@@ -149,10 +149,10 @@ msgstr "Height"
 msgid "Altro"
 msgstr "Other"
 
+#: src/modules/GiostreIppowalker/_accessori.tsx:41
+#: src/modules/GiostreTecnoexerciser/_accessori.tsx:41
 #: src/utils/constants.tsx:190
 #: src/utils/constants.tsx:207
-#: src/modules/GiostreTecnoexerciser/_accessori.tsx:41
-#: src/modules/GiostreIppowalker/_accessori.tsx:41
 msgid "Alveolo sulla pesta"
 msgstr "Ground grid soil stabilization system"
 
@@ -207,8 +207,8 @@ msgstr "Aluminum schooling standard and metal keyhole track"
 msgid "Caratteristiche"
 msgstr "Characteristic"
 
-#: src/modules/Ostacoli/Cavalletti.tsx:21
 #: src/hooks/useProducts/utils/index.tsx:137
+#: src/modules/Ostacoli/Cavalletti.tsx:21
 msgid "Cavalletti Caprilli"
 msgstr "Cavaletti Caprilli"
 
@@ -216,11 +216,11 @@ msgstr "Cavaletti Caprilli"
 msgid "Che cos'è un cookie?"
 msgstr "What is a cookie?"
 
+#: src/modules/GiostreIppowalker/_accessori.tsx:22
+#: src/modules/GiostreTecnoexerciser/_accessori.tsx:22
+#: src/modules/Tondini/index.tsx:108
 #: src/utils/constants.tsx:184
 #: src/utils/constants.tsx:201
-#: src/modules/Tondini/index.tsx:108
-#: src/modules/GiostreTecnoexerciser/_accessori.tsx:22
-#: src/modules/GiostreIppowalker/_accessori.tsx:22
 msgid "Chiusura a terra"
 msgstr "Closed at the ground"
 
@@ -240,9 +240,9 @@ msgstr "VAT number"
 msgid "Colori"
 msgstr "Colors"
 
-#: src/modules/ComePreparareIlFondo/index.tsx:11
 #: src/hooks/usePages/utils/index.tsx:79
 #: src/hooks/usePages/utils/index.tsx:84
+#: src/modules/ComePreparareIlFondo/index.tsx:11
 msgid "Come preparare il fondo"
 msgstr "How to prepare the ground"
 
@@ -308,24 +308,24 @@ msgstr "Navigation cookies"
 msgid "Coordinate bancarie"
 msgstr "Bank account details"
 
-#: src/utils/constants.tsx:306
 #: src/modules/Tondini/index.tsx:150
 #: src/modules/Tondini/index.tsx:154
 #: src/modules/Tondini/index.tsx:158
+#: src/utils/constants.tsx:306
 msgid "Copertura"
 msgstr "The roof"
 
-#: src/utils/constants.tsx:261
-#: src/modules/GiostreTecnoexerciser/_copertura.tsx:19
-#: src/modules/GiostreTecnoexerciser/_copertura.tsx:23
 #: src/modules/GiostreIppowalker/_copertura.tsx:17
 #: src/modules/GiostreIppowalker/_copertura.tsx:21
+#: src/modules/GiostreTecnoexerciser/_copertura.tsx:19
+#: src/modules/GiostreTecnoexerciser/_copertura.tsx:23
+#: src/utils/constants.tsx:261
 msgid "Copertura in PVC"
 msgstr "PVC roof"
 
+#: src/modules/GiostreTecnoexerciser/_compare.tsx:103
 #: src/modules/GiostreTecnoexerciser/_copertura.tsx:27
 #: src/modules/GiostreTecnoexerciser/_copertura.tsx:31
-#: src/modules/GiostreTecnoexerciser/_compare.tsx:103
 msgid "Copertura rigida con lastre ondulate"
 msgstr "Rigid roof made of corrugated sheet metal"
 
@@ -342,8 +342,8 @@ msgstr "EASY corridor in marine plywood"
 msgid "Corridoio EXERCISER in compensato marino"
 msgstr "EXERCISER corridor in marine plywood"
 
-#: src/modules/GiostreTecnoexerciser/_corridoi.tsx:17
 #: src/modules/GiostreIppowalker/_corridoi.tsx:17
+#: src/modules/GiostreTecnoexerciser/_corridoi.tsx:17
 msgid "Corridoio TECNOFENCE"
 msgstr "TECNOFENCE corridor"
 
@@ -355,8 +355,8 @@ msgstr "Testimonials"
 msgid "Costruisci la tua barriera personalizzata scegliendo tra i colori a disposizione"
 msgstr "Build your custom poles by choosing from the available colors"
 
-#. placeholder {0}: CubiModels.MINI
 #. placeholder {0}: CubiModels.MAXI
+#. placeholder {0}: CubiModels.MINI
 #: src/hooks/useProducts/utils/index.tsx:168
 #: src/hooks/useProducts/utils/index.tsx:188
 msgid "Cubi {0}"
@@ -393,14 +393,14 @@ msgstr "Movable feet can be installed on the fencing so it can be positioned and
 msgid "Dicono di noi"
 msgstr "About us"
 
-#: src/modules/Tondini/index.tsx:270
-#: src/modules/GiostreTecnoexerciser/_servizio_clienti.tsx:61
 #: src/modules/GiostreIppowalker/_servizio_clienti.tsx:47
+#: src/modules/GiostreTecnoexerciser/_servizio_clienti.tsx:61
+#: src/modules/Tondini/index.tsx:270
 msgid "Dimensioni"
 msgstr "Dimensions"
 
-#: src/modules/GiostreTecnoexerciser/_servizio_clienti.tsx:17
 #: src/modules/GiostreIppowalker/_servizio_clienti.tsx:17
+#: src/modules/GiostreTecnoexerciser/_servizio_clienti.tsx:17
 msgid "Dimensioni giostra cavalli"
 msgstr "Horse exerciser dimensions"
 
@@ -432,9 +432,9 @@ msgstr "Different versions of our walkers may be purchased to suit every budget 
 msgid "É una struttura semplice, leggera e piacevole alla vista"
 msgstr "It is a simple, light and pleasing to the eye"
 
-#: src/modules/Contatti/components/ContattiAddress/index.tsx:85
 #: src/components/Footer/components/FooterNewsletter/index.tsx:38
 #: src/components/Footer/components/FooterNewsletter/index.tsx:39
+#: src/modules/Contatti/components/ContattiAddress/index.tsx:85
 msgid "Email"
 msgstr "Email"
 
@@ -442,8 +442,8 @@ msgstr "Email"
 msgid "Entrata"
 msgstr "Entrance"
 
-#: src/modules/500/index.tsx:7
 #: src/hooks/usePages/utils/index.tsx:61
+#: src/modules/500/index.tsx:7
 msgid "Errore"
 msgstr "Error"
 
@@ -455,8 +455,8 @@ msgstr "Easy to use"
 msgid "Fin dal primo accesso questi cookie permettono al sito di funzionare correttamente e ti consentono di visualizzare i contenuti sul tuo dispositivo riconoscendo la lingua e il mercato del Paese dal quale scegli di connetterti. Se sei un utente registrato, permetteranno di riconoscerti e di accedere ai servizi delle aree dedicate. I cookie di navigazione sono cookie tecnici e sono necessari al funzionamento del sito."
 msgstr "From first access, these cookies allow the Website to function correctly and allow you to view content on your device by recognising the language and market of the country from which you’ve chosen to connect. If you are a registered user, they will allow you to be recognised and to access the services offered from the dedicated areas. Navigation cookies are technical cookies and are needed for the functioning of the Website."
 
-#: src/modules/Ostacoli/Fosso.tsx:21
 #: src/hooks/useProducts/utils/index.tsx:122
+#: src/modules/Ostacoli/Fosso.tsx:21
 msgid "Fosso"
 msgstr "Liverpool Water Jump"
 
@@ -468,10 +468,10 @@ msgstr "High-quality PVC Liverpool Water Jump, designed for equestrian training 
 msgid "Funzione"
 msgstr "Function"
 
-#: src/modules/Recinti/_gamma.tsx:37
-#: src/modules/GiostreTecnoexerciser/_compare.tsx:119
-#: src/modules/GiostreIppowalker/_compare.tsx:92
 #: src/modules/Giostre/index.tsx:160
+#: src/modules/GiostreIppowalker/_compare.tsx:92
+#: src/modules/GiostreTecnoexerciser/_compare.tsx:119
+#: src/modules/Recinti/_gamma.tsx:37
 msgid "Gamma"
 msgstr "Product range"
 
@@ -513,15 +513,15 @@ msgstr ""
 "with EXERCIZER fence<1/>\n"
 "and rigid roof"
 
-#: src/modules/GiostreTecnoexerciser/_compare.tsx:69
 #: src/modules/GiostreIppowalker/_compare.tsx:56
+#: src/modules/GiostreTecnoexerciser/_compare.tsx:69
 msgid "Giostra <0/>corridoio TECNOFENCE"
 msgstr ""
 "Horse exerciser<0/>\n"
 "with TECNOFENCE fence"
 
-#: src/modules/GiostreTecnoexerciser/_compare.tsx:61
 #: src/modules/GiostreIppowalker/_compare.tsx:48
+#: src/modules/GiostreTecnoexerciser/_compare.tsx:61
 msgid "Giostra base"
 msgstr "Horse Walker Base"
 
@@ -576,8 +576,8 @@ msgstr "Homepage"
 msgid "I candelieri sono costruiti con un montante di alluminio verniciato di colore bianco e sono muniti di 4 piedi rivestiti con puntali di plastica che garantiscono, in caso di ribaltamento, l’incolumità vostra e dei vostri cavalli."
 msgstr "Upgrade to the best with our premium aluminum jumps. These 1.7 mt. tall schooling standards are made from powder-coated aluminum and come with a set of pinless jump cup tracks.  And, in addition to being light-weight and easy to move, everything is weather-proof and require almost no maintenance."
 
-#: src/modules/GiostreTecnoexerciser/_corridoi.tsx:39
 #: src/modules/GiostreIppowalker/_corridoi.tsx:39
+#: src/modules/GiostreTecnoexerciser/_corridoi.tsx:39
 msgid "I corridoi"
 msgstr "The corridors"
 
@@ -670,8 +670,8 @@ msgstr "A horse exerciser with ground grid soil stabilization system"
 msgid "Interno tondino coperto"
 msgstr "Internal covered lunge pen"
 
-#: src/utils/constants.tsx:317
 #: src/modules/Tondini/index.tsx:78
+#: src/utils/constants.tsx:317
 msgid "Irrigazione"
 msgstr "Track irrigation"
 
@@ -691,15 +691,15 @@ msgstr "Sign up to our newsletter"
 msgid "Istituto"
 msgstr "Bank name"
 
-#: src/modules/Recinti/index.tsx:65
-#: src/modules/GiostreIppowalkerIstruzioniDiMontaggio/index.tsx:66
 #: src/hooks/usePages/utils/index.tsx:95
 #: src/hooks/usePages/utils/index.tsx:106
+#: src/modules/GiostreIppowalkerIstruzioniDiMontaggio/index.tsx:66
+#: src/modules/Recinti/index.tsx:65
 msgid "Istruzioni di montaggio"
 msgstr "Assembly instructions"
 
-#. placeholder {0}: 8
 #. placeholder {0}: 12
+#. placeholder {0}: 8
 #. placeholder {1}: DressageModels.TRAINING
 #: src/hooks/useProducts/utils/index.tsx:418
 #: src/hooks/useProducts/utils/index.tsx:434
@@ -732,8 +732,8 @@ msgstr ""
 msgid "L'utilizzo di cookie e di tecnologie affini da parte di {0}, con sede {completeAddress}, rientra nella politica di privacy del Gestore, in conformità a quanto previsto dal D. Lgs 196/03 Codice in materia di protezione dei dati personali (Codice Privacy) e dal Provvedimento dell’8 maggio 2014 “Individuazione delle modalità semplificate per l’informativa e l’acquisizione del consenso per l’uso dei cookie” del Garante Privacy Italiano. {1}, in qualità di Titolare del trattamento agisce conformemente a quanto previsto dalla normativa in materia."
 msgstr "The use of cookies and similar technologies by {0}, with headquarters at {completeAddress}, is governed by the Administrator’s privacy policy, in compliance with the General Data Protection Regulation (GDPR), Italian Legislative Decree 196/03 on Personal Data Protection Code (Privacy Code) and the Order of 8 May 2014, “Identification of simplified procedures for providing information about and obtaining consent for the use of cookies” from the Italian Data Protection Authority. {1}, in its capacity as Data Controller, acts in compliance with relevant legislation."
 
-#: src/modules/GiostreTecnoexerciser/_copertura.tsx:45
 #: src/modules/GiostreIppowalker/_copertura.tsx:35
+#: src/modules/GiostreTecnoexerciser/_copertura.tsx:45
 msgid "La copertura"
 msgstr "The roof"
 
@@ -773,8 +773,8 @@ msgstr "The windproof net protects the inside of the horse walker from drafts al
 msgid "La struttura è stata progettata per garantire un carico neve fino a 120 kg/mq e la velocità del vento fino a 110 km/h."
 msgstr "The structure has been designed to withstand a snow load of up to 120 kg/m² and wind speeds of up to 110 km/h."
 
-#. placeholder {0}: formatSize(50)
 #. placeholder {0}: formatSize(150)
+#. placeholder {0}: formatSize(50)
 #: src/hooks/useProducts/utils/index.tsx:234
 #: src/hooks/useProducts/utils/index.tsx:248
 msgid "Lama DE da {0}"
@@ -805,21 +805,21 @@ msgstr "Letter cone ({0})"
 msgid "Lunghezza"
 msgstr "Length"
 
-#: src/modules/GiostreTecnoexerciser/_servizio_clienti.tsx:36
 #: src/modules/GiostreIppowalker/_servizio_clienti.tsx:36
+#: src/modules/GiostreTecnoexerciser/_servizio_clienti.tsx:36
 msgid "Manuale collegamento elettrico"
 msgstr "Electrical Installation Guide"
 
-#: src/modules/Recinti/index.tsx:135
-#: src/modules/GiostreTecnoexerciser/_servizio_clienti.tsx:71
 #: src/modules/GiostreIppowalker/_servizio_clienti.tsx:57
+#: src/modules/GiostreTecnoexerciser/_servizio_clienti.tsx:71
+#: src/modules/Recinti/index.tsx:135
 msgid "Manuale d'istruzioni"
 msgstr "Handbook"
 
-#: src/modules/GiostreTecnoexerciser/_servizio_clienti.tsx:25
-#: src/modules/GiostreTecnoexerciser/_servizio_clienti.tsx:32
 #: src/modules/GiostreIppowalker/_servizio_clienti.tsx:25
 #: src/modules/GiostreIppowalker/_servizio_clienti.tsx:32
+#: src/modules/GiostreTecnoexerciser/_servizio_clienti.tsx:25
+#: src/modules/GiostreTecnoexerciser/_servizio_clienti.tsx:32
 msgid "Manuale quadro di controllo"
 msgstr "Control panel manual"
 
@@ -839,20 +839,20 @@ msgstr "Materials"
 msgid "Materiali di qualità"
 msgstr "Quality materials"
 
-#. placeholder {0}: DressageModels.TRAINING
 #. placeholder {0}: DressageModels.OLYMPIC
+#. placeholder {0}: DressageModels.TRAINING
 #: src/hooks/useProducts/utils/index.tsx:449
 #: src/hooks/useProducts/utils/index.tsx:514
 msgid "Modulo dressage ({0})"
 msgstr "Dressage module ({0})"
 
-#: src/utils/constants.tsx:309
 #: src/modules/GiostreTecnoexerciser/_gallery.tsx:24
+#: src/utils/constants.tsx:309
 msgid "Motore"
 msgstr "Engine"
 
-#: src/modules/Tondini/index.tsx:213
 #: src/modules/Giostre/index.tsx:68
+#: src/modules/Tondini/index.tsx:213
 msgid "Nessuna concessione edilizia"
 msgstr "No building permit needed"
 
@@ -877,8 +877,8 @@ msgstr "Or visit our <0>contact</0> page to find resellers in your area."
 msgid "Ostacoli"
 msgstr "Show jumps"
 
-#: src/modules/404/index.tsx:7
 #: src/hooks/usePages/utils/index.tsx:56
+#: src/modules/404/index.tsx:7
 msgid "Pagina non trovata"
 msgstr "Page not found"
 
@@ -931,9 +931,9 @@ msgstr "Polyethylene"
 msgid "Polipropilene"
 msgstr "Polypropylene"
 
+#: src/modules/Giostre/index.tsx:133
 #: src/modules/GiostreTecnoexerciser/_gallery.tsx:36
 #: src/modules/GiostreTecnoexerciser/_gallery.tsx:40
-#: src/modules/Giostre/index.tsx:133
 msgid "Porta mobile"
 msgstr "Pusher gate"
 
@@ -945,10 +945,10 @@ msgstr "Pushers"
 msgid "Porte elettrificate"
 msgstr "Electrified Pushers"
 
-#. placeholder {0}: 0.75
 #. placeholder {0}: 0.37
-#: src/modules/GiostreTecnoexerciser/_compare.tsx:47
+#. placeholder {0}: 0.75
 #: src/modules/GiostreIppowalker/_compare.tsx:34
+#: src/modules/GiostreTecnoexerciser/_compare.tsx:47
 msgid "Potenza motore {0} kw e cadenza regolabile fra 60 e 220 metri al minuto"
 msgstr "Engine power {0} kw. Adjustable speed between 60 and 220 meter/minute"
 
@@ -976,8 +976,8 @@ msgstr "You may at any time receive assistance and explanations on how to provid
 msgid "PVC"
 msgstr "PVC"
 
-#: src/utils/constants.tsx:305
 #: src/modules/Giostre/index.tsx:117
+#: src/utils/constants.tsx:305
 msgid "Quadro di comando"
 msgstr "Control panel"
 
@@ -1015,22 +1015,22 @@ msgstr "{0}-rail horse fence"
 #. placeholder {0}: 2
 #. placeholder {0}: 3
 #. placeholder {0}: 4
+#: src/hooks/useProducts/utils/index.tsx:361
+#: src/hooks/useProducts/utils/index.tsx:373
+#: src/hooks/useProducts/utils/index.tsx:385
 #: src/modules/Recinti/index.tsx:35
 #: src/modules/Recinti/index.tsx:39
 #: src/modules/Recinti/index.tsx:43
 #: src/modules/Recinti/index.tsx:47
 #: src/modules/Recinti/index.tsx:51
 #: src/modules/Recinti/index.tsx:55
-#: src/hooks/useProducts/utils/index.tsx:361
-#: src/hooks/useProducts/utils/index.tsx:373
-#: src/hooks/useProducts/utils/index.tsx:385
 msgid "Recinzione cavalli a {0} filagne"
 msgstr "{0}-rail horse fence"
 
-#: src/utils/constants.tsx:213
-#: src/modules/Tondini/index.tsx:52
-#: src/modules/GiostreTecnoexerciser/_accessori.tsx:56
 #: src/modules/GiostreIppowalker/_accessori.tsx:56
+#: src/modules/GiostreTecnoexerciser/_accessori.tsx:56
+#: src/modules/Tondini/index.tsx:52
+#: src/utils/constants.tsx:213
 msgid "Rete antivento"
 msgstr "Windscreen"
 
@@ -1044,8 +1044,8 @@ msgstr "Portable and easy to assemble dressage arenas. Here to help you put the 
 
 #. placeholder {0}: DressageData.SIZE_20x40.size
 #. placeholder {0}: DressageData.SIZE_20x60.size
-#. placeholder {1}: DressageModels.TRAINING
 #. placeholder {1}: DressageModels.OLYMPIC
+#. placeholder {1}: DressageModels.TRAINING
 #: src/hooks/useProducts/utils/index.tsx:463
 #: src/hooks/useProducts/utils/index.tsx:480
 #: src/hooks/useProducts/utils/index.tsx:528
@@ -1158,10 +1158,10 @@ msgstr "Fantastic nothing else to add! The lunge pen  is well thought out and in
 msgid "Supporti di sicurezza da applicare ai nostri cucchiai per salvaguardare l'integrità degli arti dei vostri cavalli in maniera efficace ed economica."
 msgstr "The breakaway safety cups will literally break away from the safety adapter under downwards pressure. Is designed to help to prevent serious injury to the rider from a rotational fall of the horse."
 
-#: src/modules/Tondini/index.tsx:262
-#: src/modules/Recinti/index.tsx:133
-#: src/modules/GiostreTecnoexerciser/_servizio_clienti.tsx:56
 #: src/modules/GiostreIppowalker/_servizio_clienti.tsx:43
+#: src/modules/GiostreTecnoexerciser/_servizio_clienti.tsx:56
+#: src/modules/Recinti/index.tsx:133
+#: src/modules/Tondini/index.tsx:262
 msgid "Supporto clienti"
 msgstr "Customer service"
 
