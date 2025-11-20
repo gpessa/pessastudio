@@ -254,7 +254,7 @@ msgstr "Couleurs"
 msgid "Come preparare il fondo"
 msgstr "Preparation du fonds"
 
-#: src/components/Footer/components/FooterNewsletter/index.tsx:63
+#: src/components/Footer/components/FooterNewsletter/index.tsx:73
 msgid "Complimenti! Ti sei iscritto"
 msgstr "Merci pour votre abonnement"
 
@@ -440,8 +440,8 @@ msgstr "Il est possible d’acheter nos marcheur dans différentes versions adap
 msgid "É una struttura semplice, leggera e piacevole alla vista"
 msgstr "C’est une structure simple, légère et esthétique"
 
-#: src/components/Footer/components/FooterNewsletter/index.tsx:38
-#: src/components/Footer/components/FooterNewsletter/index.tsx:39
+#: src/components/Footer/components/FooterNewsletter/index.tsx:48
+#: src/components/Footer/components/FooterNewsletter/index.tsx:49
 #: src/modules/Contatti/components/ContattiAddress/index.tsx:85
 msgid "Email"
 msgstr "Email"
@@ -674,7 +674,7 @@ msgstr "Arrosage"
 msgid "Irrigazione del percorso controllabile dal quadro di comando. Aiuta a tenere la polvere sotto controllo e un terreno sempre perfetto"
 msgstr "Arrosage de la piste contrôlable depuis le tableau de commande. Aide à garder la poussière sous contrôle et un terrain toujours parfait"
 
-#: src/components/Footer/components/FooterNewsletter/index.tsx:47
+#: src/components/Footer/components/FooterNewsletter/index.tsx:57
 msgid "Iscriviti"
 msgstr "Je veux me inscrire à la Newsletter"
 
@@ -1121,7 +1121,7 @@ msgstr "Nous suivre"
 msgid "Seguici sui nostra social e scopri le ultime novità"
 msgstr "Nous suivre sur nos réseaux sociaux et découvrir les dernières nouveautés"
 
-#: src/components/Footer/components/FooterNewsletter/index.tsx:58
+#: src/components/Footer/components/FooterNewsletter/index.tsx:68
 msgid "Si è verificato un problema, riprova"
 msgstr "Il y a eu un problème, veuillez réessayer"
 

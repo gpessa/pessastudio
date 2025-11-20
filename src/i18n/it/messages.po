@@ -246,7 +246,7 @@ msgstr "Colori"
 msgid "Come preparare il fondo"
 msgstr "Come preparare il fondo"
 
-#: src/components/Footer/components/FooterNewsletter/index.tsx:63
+#: src/components/Footer/components/FooterNewsletter/index.tsx:73
 msgid "Complimenti! Ti sei iscritto"
 msgstr "Complimenti! Ti sei iscritto"
 
@@ -432,8 +432,8 @@ msgstr "È possibile acquistare le nostre giostre in diverse versioni adatte ad 
 msgid "É una struttura semplice, leggera e piacevole alla vista"
 msgstr "É una struttura semplice, leggera e piacevole alla vista"
 
-#: src/components/Footer/components/FooterNewsletter/index.tsx:38
-#: src/components/Footer/components/FooterNewsletter/index.tsx:39
+#: src/components/Footer/components/FooterNewsletter/index.tsx:48
+#: src/components/Footer/components/FooterNewsletter/index.tsx:49
 #: src/modules/Contatti/components/ContattiAddress/index.tsx:85
 msgid "Email"
 msgstr "Email"
@@ -664,7 +664,7 @@ msgstr "Irrigazione"
 msgid "Irrigazione del percorso controllabile dal quadro di comando. Aiuta a tenere la polvere sotto controllo e un terreno sempre perfetto"
 msgstr "Irrigazione del percorso controllabile dal quadro di comando. Aiuta a tenere la polvere sotto controllo e un terreno sempre perfetto"
 
-#: src/components/Footer/components/FooterNewsletter/index.tsx:47
+#: src/components/Footer/components/FooterNewsletter/index.tsx:57
 msgid "Iscriviti"
 msgstr "Iscriviti"
 
@@ -1111,7 +1111,7 @@ msgstr "Seguici"
 msgid "Seguici sui nostra social e scopri le ultime novità"
 msgstr "Seguici sui nostra social e scopri le ultime novità"
 
-#: src/components/Footer/components/FooterNewsletter/index.tsx:58
+#: src/components/Footer/components/FooterNewsletter/index.tsx:68
 msgid "Si è verificato un problema, riprova"
 msgstr "Si è verificato un problema, riprova"
 

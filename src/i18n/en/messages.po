@@ -246,7 +246,7 @@ msgstr "Colors"
 msgid "Come preparare il fondo"
 msgstr "How to prepare the ground"
 
-#: src/components/Footer/components/FooterNewsletter/index.tsx:63
+#: src/components/Footer/components/FooterNewsletter/index.tsx:73
 msgid "Complimenti! Ti sei iscritto"
 msgstr "Well done! You signed up"
 
@@ -432,8 +432,8 @@ msgstr "Different versions of our walkers may be purchased to suit every budget 
 msgid "É una struttura semplice, leggera e piacevole alla vista"
 msgstr "It is a simple, light and pleasing to the eye"
 
-#: src/components/Footer/components/FooterNewsletter/index.tsx:38
-#: src/components/Footer/components/FooterNewsletter/index.tsx:39
+#: src/components/Footer/components/FooterNewsletter/index.tsx:48
+#: src/components/Footer/components/FooterNewsletter/index.tsx:49
 #: src/modules/Contatti/components/ContattiAddress/index.tsx:85
 msgid "Email"
 msgstr "Email"
@@ -679,7 +679,7 @@ msgstr "Track irrigation"
 msgid "Irrigazione del percorso controllabile dal quadro di comando. Aiuta a tenere la polvere sotto controllo e un terreno sempre perfetto"
 msgstr "The track irrigation keeps the track in the exerciser moist so that no dust is blown up when the horses walk in the exerciser. Irrigation also ensures a more stable soil"
 
-#: src/components/Footer/components/FooterNewsletter/index.tsx:47
+#: src/components/Footer/components/FooterNewsletter/index.tsx:57
 msgid "Iscriviti"
 msgstr "Subscribe"
 
@@ -1130,7 +1130,7 @@ msgstr "Follow us"
 msgid "Seguici sui nostra social e scopri le ultime novità"
 msgstr "Follow us on our social media"
 
-#: src/components/Footer/components/FooterNewsletter/index.tsx:58
+#: src/components/Footer/components/FooterNewsletter/index.tsx:68
 msgid "Si è verificato un problema, riprova"
 msgstr "There was a problem, please try again"
 

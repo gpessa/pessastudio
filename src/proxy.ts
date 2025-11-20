@@ -17,6 +17,6 @@ export const config = {
      * - robots.txt (SEO robots file)
      * - images - .svg, .png, .jpg, .jpeg, .gif, .webp
      */
-    "/((?!_next/static|_next/image|favicon.ico|robots.txt|sitemap.xml|.*\\.(?:svg|png|jpg|jpeg|gif|webp|pdf|mp4)$).*)",
+    "/((?!_next/static|_next/image|favicon.ico|api|robots.txt|sitemap.xml|.*\\.(?:svg|png|jpg|jpeg|gif|webp|pdf|mp4)$).*)",
   ],
 };
