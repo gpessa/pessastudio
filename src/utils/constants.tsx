@@ -10,6 +10,7 @@ export const IS_PRODUCTION = !!process && process.env.NODE_ENV === "production";
 export const NAME_STRING = "Pessastudio";
 export const NAME_LEGAL_STRING = `${NAME_STRING} Horse Tecnology srl`;
 export const NAME = <strong>{NAME_STRING}</strong>;
+export const GDPR_COOKIE_NAME = "CookieConsent";
 
 export const LOCALES = {
   en: {

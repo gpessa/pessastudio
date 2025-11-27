@@ -13,11 +13,19 @@ msgstr ""
 "Plural-Forms: \n"
 "X-Generator: Poedit 3.4.4\n"
 
+#: src/app/[locale]/informativa-privacy/components/InformativaPrivacy/index.tsx:49
+msgid "{NAME_LEGAL_STRING} si impegna a mantenere aggiornate e accurate le informazioni relative ai prodotti, alle caratteristiche tecniche e ai prezzi. Tuttavia le informazioni presenti sul Sito hanno valore puramente indicativo: prezzi, disponibilità e specifiche possono essere modificati senza preavviso e eventuali errori o inesattezze non sono vincolanti per l’azienda."
+msgstr "{NAME_LEGAL_STRING} si impegna a mantenere aggiornate e accurate le informazioni relative ai prodotti, alle caratteristiche tecniche e ai prezzi. Tuttavia le informazioni presenti sul Sito hanno valore puramente indicativo: prezzi, disponibilità e specifiche possono essere modificati senza preavviso e eventuali errori o inesattezze non sono vincolanti per l’azienda."
+
+#: src/app/[locale]/termini-e-condizioni/components/TerminiECondizioni/index.tsx:109
+msgid "{NAME_LEGAL_STRING} si riserva il diritto di modificare i presenti Termini e Condizioni in qualsiasi momento. Le modifiche saranno pubblicate su questa pagina e avranno effetto dalla data di aggiornamento."
+msgstr "{NAME_LEGAL_STRING} si riserva il diritto di modificare i presenti Termini e Condizioni in qualsiasi momento. Le modifiche saranno pubblicate su questa pagina e avranno effetto dalla data di aggiornamento."
+
 #: src/modules/Giostre/index.tsx:42
 msgid "{NAME} è stata scelta da oltre 3.000 clienti in tutto il mondo per la realizzazione della propria giostra."
 msgstr "{NAME} è stata scelta da oltre 3.000 clienti in tutto il mondo per la realizzazione della propria giostra."
 
-#: src/utils/constants.tsx:253
+#: src/utils/constants.tsx:254
 msgid "* In presenza di nevicate che superino la portata consentita, sarà opportuno intervenire rimuovendo l’eccesso di neve e cospargendo di sale la copertura prima di introdurre i cavalli."
 msgstr "* In presenza di nevicate che superino la portata consentita, sarà opportuno intervenire rimuovendo l’eccesso di neve e cospargendo di sale la copertura prima di introdurre i cavalli."
 
@@ -29,19 +37,27 @@ msgstr "+ IVA"
 msgid "<0>{NAME} è un'azienda altamente affidabile e rinomata nel settore dell'equitazione. Ogni anno, centinaia di persone scelgono i nostri articoli d'equitazione per la qualità superiore che li caratterizza.</0><1>La gamma di prodotti offerti è ampia e diversificata, con un'attenzione particolare alla funzionalità e al design. La competenza e l'esperienza del team di {NAME} sono alla base del successo dell'azienda e della sua reputazione di affidabilità e professionalità.</1>"
 msgstr "<0>{NAME} è un'azienda altamente affidabile e rinomata nel settore dell'equitazione. Ogni anno, centinaia di persone scelgono i nostri articoli d'equitazione per la qualità superiore che li caratterizza.</0><1>La gamma di prodotti offerti è ampia e diversificata, con un'attenzione particolare alla funzionalità e al design. La competenza e l'esperienza del team di {NAME} sono alla base del successo dell'azienda e della sua reputazione di affidabilità e professionalità.</1>"
 
-#: src/utils/constants.tsx:311
+#: src/app/[locale]/cookie-policy/components/CookiePolicy/index.tsx:208
+msgid "<0><1>Alcuni contenuti presenti sul sito sono forniti da servizi esterni (terze parti). <2/>Quando visualizzi o interagisci con tali contenuti, questi servizi potrebbero installare cookie aggiuntivi e raccogliere informazioni sul tuo utilizzo, anche se non fai clic sull’elemento incorporato.</1><3>I servizi di terze parti utilizzati nel sito includono, tra gli altri:</3><4><5><6>YouTube</6>: per mostrare video integrati.</5><7><8>Google Maps</8>: per visualizzare mappe interattive.</7><9><10>Meta (Facebook/Instagram)</10>: tramite Pixel, per misurare interazioni e attività di marketing.</9></4><11>Ogni servizio applica la propria cookie policy e può trasferire dati fuori dall’Unione Europea.</11><12>Ti invitiamo a consultare le loro informative per conoscere modalità, finalità e tempi di conservazione dei dati.</12></0>"
+msgstr "<0><1>Alcuni contenuti presenti sul sito sono forniti da servizi esterni (terze parti). <2/>Quando visualizzi o interagisci con tali contenuti, questi servizi potrebbero installare cookie aggiuntivi e raccogliere informazioni sul tuo utilizzo, anche se non fai clic sull’elemento incorporato.</1><3>I servizi di terze parti utilizzati nel sito includono, tra gli altri:</3><4><5><6>YouTube</6>: per mostrare video integrati.</5><7><8>Google Maps</8>: per visualizzare mappe interattive.</7><9><10>Meta (Facebook/Instagram)</10>: tramite Pixel, per misurare interazioni e attività di marketing.</9></4><11>Ogni servizio applica la propria cookie policy e può trasferire dati fuori dall’Unione Europea.</11><12>Ti invitiamo a consultare le loro informative per conoscere modalità, finalità e tempi di conservazione dei dati.</12></0>"
+
+#: src/utils/constants.tsx:312
 msgid "<0>Accessori</0><1>(Ordinabili separatamente)</1>"
 msgstr "<0>Accessori</0><1>(Ordinabili separatamente)</1>"
+
+#: src/app/[locale]/informativa-privacy/components/InformativaPrivacy/index.tsx:17
+msgid "<0>Benvenuto sul sito di ${NAME_LEGAL_STRING}.</0><1>L’accesso e l’utilizzo del sito implicano l’accettazione dei presenti Termini e Condizioni.</1>"
+msgstr "<0>Benvenuto sul sito di ${NAME_LEGAL_STRING}.</0><1>L’accesso e l’utilizzo del sito implicano l’accettazione dei presenti Termini e Condizioni.</1>"
 
 #: src/modules/Ostacoli/Cubi.tsx:19
 msgid "<0>Bianchi, rossi, blu o gialli, sono utilizzati nei maneggi sia come riempitivi sotto le barriere, sia per realizzare sequenze di piccoli salti.</0><1>Ottimi per indicare le traiettorie quando si predispongono esercizi per i principianti ma anche per preparare una successione di cavalletti quando si addestrano cavalli.</1><2>Sovrapponibili, costruiti con plastica resistente agli agenti atmosferici, nel caso di impatto accidentale garantiscono l'incolumità di cavalli e cavalieri.</2>"
 msgstr "<0>Bianchi, rossi, blu o gialli, sono utilizzati nei maneggi sia come riempitivi sotto le barriere, sia per realizzare sequenze di piccoli salti.</0><1>Ottimi per indicare le traiettorie quando si predispongono esercizi per i principianti ma anche per preparare una successione di cavalletti quando si addestrano cavalli.</1><2>Sovrapponibili, costruiti con plastica resistente agli agenti atmosferici, nel caso di impatto accidentale garantiscono l'incolumità di cavalli e cavalieri.</2>"
 
-#: src/utils/constants.tsx:222
+#: src/utils/constants.tsx:223
 msgid "<0>Corridoio {name} composto da pannelli laterali in compensato marino</0><1>(spessore {thickness} mm.)</1>"
 msgstr "<0>Corridoio {name} composto da pannelli laterali in compensato marino</0><1>(spessore {thickness} mm.)</1>"
 
-#: src/utils/constants.tsx:231
+#: src/utils/constants.tsx:232
 msgid "<0>Corridoio composto da recinzione TECNOFENCE</0><1>(corridoio interno 1,40 mt., esterno 1,60 mt.)</1>"
 msgstr "<0>Corridoio composto da recinzione TECNOFENCE</0><1>(corridoio interno 1,40 mt., esterno 1,60 mt.)</1>"
 
@@ -57,15 +73,23 @@ msgstr "<0>E' possibile ordinare una giostra nei diametri:</0><1><2>12,0 mt. <3>
 msgid "<0>I cavalletti Caprilli rappresentano uno strumento essenziale per l'allenamento del vostro animale, il passaggio sui cavalletti, rinforza la schiena del cavallo, scioglie la muscolatura e lo induce a flettere le articolazioni.</0><1>Lavati con idropulitrice riprendono i colori originari anche dopo 20 anni.</1>"
 msgstr "<0>I cavalletti Caprilli rappresentano uno strumento essenziale per l'allenamento del vostro animale, il passaggio sui cavalletti, rinforza la schiena del cavallo, scioglie la muscolatura e lo induce a flettere le articolazioni.</0><1>Lavati con idropulitrice riprendono i colori originari anche dopo 20 anni.</1>"
 
+#: src/app/[locale]/cookie-policy/components/CookiePolicy/index.tsx:137
+msgid "<0>I cookie sono piccoli file di testo che i siti web inviano al browser dell’utente.</0><1>Vengono utilizzati per migliorare l’esperienza di navigazione, analizzare il traffico e offrire contenuti personalizzati.</1>"
+msgstr "<0>I cookie sono piccoli file di testo che i siti web inviano al browser dell’utente.</0><1>Vengono utilizzati per migliorare l’esperienza di navigazione, analizzare il traffico e offrire contenuti personalizzati.</1>"
+
 #: src/modules/Ostacoli/index.tsx:41
 msgid "<0>I nostri ostacoli sono progettati e costruiti per durare nel tempo non richiedono alcuna manutenzione e conservano, inalterata, la loro bellezza anche se lasciati nel campo per anni.</0><1>Se gli ostacoli per il professionista sono uno strumento di lavoro, per molti altri appassionati rappresentano la realizzazione di un sogno. Noi abbiamo deciso di rendere questi strumenti resistenti nel tempo per fare in modo che questo sogno duri.</1><2>Potrete scegliere le quantità e i colori nella nostra gamma di produzione e acquistare anche singoli pezzi di ricambio.</2>"
 msgstr "<0>I nostri ostacoli sono progettati e costruiti per durare nel tempo non richiedono alcuna manutenzione e conservano, inalterata, la loro bellezza anche se lasciati nel campo per anni.</0><1>Se gli ostacoli per il professionista sono uno strumento di lavoro, per molti altri appassionati rappresentano la realizzazione di un sogno. Noi abbiamo deciso di rendere questi strumenti resistenti nel tempo per fare in modo che questo sogno duri.</1><2>Potrete scegliere le quantità e i colori nella nostra gamma di produzione e acquistare anche singoli pezzi di ricambio.</2>"
 
-#: src/utils/constants.tsx:293
+#: src/app/[locale]/informativa-privacy/components/InformativaPrivacy/index.tsx:177
+msgid "<0>I presenti Termini sono regolati dalla legge italiana.</0><1>Per qualsiasi controversia sarà competente, in via esclusiva, il Foro del luogo in cui ha sede {NAME_LEGAL_STRING}, salvo diversa disposizione obbligatoria.</1>"
+msgstr "<0>I presenti Termini sono regolati dalla legge italiana.</0><1>Per qualsiasi controversia sarà competente, in via esclusiva, il Foro del luogo in cui ha sede {NAME_LEGAL_STRING}, salvo diversa disposizione obbligatoria.</1>"
+
+#: src/utils/constants.tsx:294
 msgid "<0>Il corridoio <1>{name}</1> in compensato marino è realizzato con un multistrato <2>({thickness} mm. di spessore)</2> antigraffio, antiurto, resistente allo sporco e idrorepellente. L'obbiettivo di questa soluzione è quello di fornire un elevato grado di sicurezza forzando il cavallo a concentrarsi sul percorso durante l'allenamento.</0>"
 msgstr "<0>Il corridoio <1>{name}</1> in compensato marino è realizzato con un multistrato <2>({thickness} mm. di spessore)</2> antigraffio, antiurto, resistente allo sporco e idrorepellente. L'obbiettivo di questa soluzione è quello di fornire un elevato grado di sicurezza forzando il cavallo a concentrarsi sul percorso durante l'allenamento.</0>"
 
-#: src/utils/constants.tsx:264
+#: src/utils/constants.tsx:265
 msgid "<0>Il corridoio <1>TECNOFENCE</1> è una soluzione semplice ed economica che ti permetterà di avere una giostra completa, sicura e durevole ad un costo competitivo.</0><2>L'altezza della recinzione esterna è di 1,60 mt., a differenza del corridoio interno alto 1,40 mt.</2><3>L'innovativo materiale utilizzato per la sua costruzione (PPO) è durevole nel tempo e ti consentirà di abbattere i costi di manutenzione che affliggono le classiche recinzioni in legno.</3><4>Uno dei vantaggi è inoltre quello di poter installare la giostra in piena autonomia.</4>"
 msgstr "<0>Il corridoio <1>TECNOFENCE</1> è una soluzione semplice ed economica che ti permetterà di avere una giostra completa, sicura e durevole ad un costo competitivo.</0><2>L'altezza della recinzione esterna è di 1,60 mt., a differenza del corridoio interno alto 1,40 mt.</2><3>L'innovativo materiale utilizzato per la sua costruzione (PPO) è durevole nel tempo e ti consentirà di abbattere i costi di manutenzione che affliggono le classiche recinzioni in legno.</3><4>Uno dei vantaggi è inoltre quello di poter installare la giostra in piena autonomia.</4>"
 
@@ -80,13 +104,46 @@ msgstr "<0>Il nostro modello di punta, il <1>{0}</1>, rappresenta lo strumento p
 msgid "<0>Il rettangolo della linea <1>training</1> è rivolto a quei maneggi in cui lo spazio a disposizione è limitato e il rettangolo viene installato provvisoriamente.</0><2>Facile da montare, è costituito da elementi modulari di 2 mt. in materiale plastico, non richiede alcuna manutenzione e occupa poco spazio quando non è utilizzato.</2>"
 msgstr "<0>Il rettangolo della linea <1>training</1> è rivolto a quei maneggi in cui lo spazio a disposizione è limitato e il rettangolo viene installato provvisoriamente.</0><2>Facile da montare, è costituito da elementi modulari di 2 mt. in materiale plastico, non richiede alcuna manutenzione e occupa poco spazio quando non è utilizzato.</2>"
 
+#: src/app/[locale]/informativa-privacy/components/InformativaPrivacy/index.tsx:33
+msgid "<0>Il Sito ha finalità informative e promozionali e presenta un catalogo di prodotti per cavalli prodotti da {NAME_LEGAL_STRING}.</0><1>Sul Sito non è possibile effettuare acquisti online. Per informazioni, preventivi o acquisti è necessario contattare direttamente l’azienda tramite i canali indicati.</1>"
+msgstr "<0>Il Sito ha finalità informative e promozionali e presenta un catalogo di prodotti per cavalli prodotti da {NAME_LEGAL_STRING}.</0><1>Sul Sito non è possibile effettuare acquisti online. Per informazioni, preventivi o acquisti è necessario contattare direttamente l’azienda tramite i canali indicati.</1>"
+
+#. placeholder {0}: PAGES.INFORMATIVA_PRIVACY.title
+#: src/app/[locale]/informativa-privacy/components/InformativaPrivacy/index.tsx:119
+msgid "<0>Il Sito offre la possibilità di iscrizione alla newsletter tramite Mailchimp, raccogliendo esclusivamente l’indirizzo email dell’utente.</0><1>L’utente può disiscriversi in qualsiasi momento tramite il link presente nelle email. Il trattamento dei dati è descritto nell’apposita <2>{0}</2>.</1>"
+msgstr "<0>Il Sito offre la possibilità di iscrizione alla newsletter tramite Mailchimp, raccogliendo esclusivamente l’indirizzo email dell’utente.</0><1>L’utente può disiscriversi in qualsiasi momento tramite il link presente nelle email. Il trattamento dei dati è descritto nell’apposita <2>{0}</2>.</1>"
+
+#: src/app/[locale]/informativa-privacy/components/InformativaPrivacy/index.tsx:103
+msgid "<0>Il Sito può includere video YouTube, mappe Google Maps, link verso siti esterni e contenuti o servizi di terze parti.</0><1>L’azienda non è responsabile per contenuti, politiche privacy, sicurezza o funzionamento dei servizi non gestiti direttamente.</1>"
+msgstr "<0>Il Sito può includere video YouTube, mappe Google Maps, link verso siti esterni e contenuti o servizi di terze parti.</0><1>L’azienda non è responsabile per contenuti, politiche privacy, sicurezza o funzionamento dei servizi non gestiti direttamente.</1>"
+
+#: src/app/[locale]/informativa-privacy/components/InformativaPrivacy/index.tsx:160
+msgid "<0>Il Titolare può aggiornare o modificare i presenti Termini e Condizioni in qualsiasi momento.</0><1>Le modifiche saranno pubblicate su questa pagina con data di aggiornamento. L’uso continuato del Sito implica l’accettazione delle nuove condizioni.</1>"
+msgstr "<0>Il Titolare può aggiornare o modificare i presenti Termini e Condizioni in qualsiasi momento.</0><1>Le modifiche saranno pubblicate su questa pagina con data di aggiornamento. L’uso continuato del Sito implica l’accettazione delle nuove condizioni.</1>"
+
 #: src/modules/GiostreIppowalker/index.tsx:26
 msgid "<0>Ippowalker è una giostra di recente realizzazione, nasce dal sogno di poter fornire uno strumento di allenamento professionale anche a coloro che ne fanno un uso sporadico.</0><1>La giostra è disponibile in due diametri 12 mt. (4 cavalli) e 14.2 mt. (6 cavalli).</1><2>Costruita con la qualità e la robustezza che contraddistingue tutti i nostri prodotti essa rappresenta uno strumento semplice ed essenziale ma al contempo completo.</2><3>Malgrado Ippowalker sia una giostra più economica abbiamo mantenuto tutte le opzioni base per allenare il tuo cavallo.</3><4><5>Porte di separazione elettrificate</5> ottenute grazie a tubi di plastica elettroconduttiva.</4><6>Un <7>pannello di controllo</7> che ti permetterà di di scegliere tra un programma manuale e uno periodico.</6><8>Al contrario del modello <9>Tecnoexercize</9>, questo modello non dispone di irrigazione.</8>"
 msgstr "<0>Ippowalker è una giostra di recente realizzazione, nasce dal sogno di poter fornire uno strumento di allenamento professionale anche a coloro che ne fanno un uso sporadico.</0><1>La giostra è disponibile in due diametri 12 mt. (4 cavalli) e 14.2 mt. (6 cavalli).</1><2>Costruita con la qualità e la robustezza che contraddistingue tutti i nostri prodotti essa rappresenta uno strumento semplice ed essenziale ma al contempo completo.</2><3>Malgrado Ippowalker sia una giostra più economica abbiamo mantenuto tutte le opzioni base per allenare il tuo cavallo.</3><4><5>Porte di separazione elettrificate</5> ottenute grazie a tubi di plastica elettroconduttiva.</4><6>Un <7>pannello di controllo</7> che ti permetterà di di scegliere tra un programma manuale e uno periodico.</6><8>Al contrario del modello <9>Tecnoexercize</9>, questo modello non dispone di irrigazione.</8>"
 
-#: src/utils/constants.tsx:238
+#: src/app/[locale]/cookie-policy/components/CookiePolicy/index.tsx:254
+msgid "<0>L’installazione dei cookie tecnici è basata sul legittimo interesse.</0><1>I cookie di analytics, marketing e terze parti vengono installati solo previa accettazione esplicita tramite banner cookie.</1>"
+msgstr "<0>L’installazione dei cookie tecnici è basata sul legittimo interesse.</0><1>I cookie di analytics, marketing e terze parti vengono installati solo previa accettazione esplicita tramite banner cookie.</1>"
+
+#: src/app/[locale]/cookie-policy/components/CookiePolicy/index.tsx:270
+msgid "<0>L’utente può modificare in qualsiasi momento le proprie <1>preferenze</1>.</0><2>È inoltre possibile gestire i cookie tramite le impostazioni del browser o strumenti esterni come YourOnlineChoices.</2>"
+msgstr "<0>L’utente può modificare in qualsiasi momento le proprie <1>preferenze</1>.</0><2>È inoltre possibile gestire i cookie tramite le impostazioni del browser o strumenti esterni come YourOnlineChoices.</2>"
+
+#: src/app/[locale]/informativa-privacy/components/InformativaPrivacy/index.tsx:81
+msgid "<0>L’utente si impegna a non utilizzare il Sito per scopi illeciti e a non tentare accessi non autorizzati o azioni che compromettano la sicurezza, integrità o prestazioni del sito.</0><1>È vietato estrarre dati o contenuti a fini commerciali senza consenso e utilizzare bot, scraper o sistemi automatizzati non autorizzati.</1><2>{NAME_LEGAL_STRING} si riserva il diritto di sospendere l’accesso al Sito in caso di attività sospette o dannose.</2>"
+msgstr "<0>L’utente si impegna a non utilizzare il Sito per scopi illeciti e a non tentare accessi non autorizzati o azioni che compromettano la sicurezza, integrità o prestazioni del sito.</0><1>È vietato estrarre dati o contenuti a fini commerciali senza consenso e utilizzare bot, scraper o sistemi automatizzati non autorizzati.</1><2>{NAME_LEGAL_STRING} si riserva il diritto di sospendere l’accesso al Sito in caso di attività sospette o dannose.</2>"
+
+#: src/utils/constants.tsx:239
 msgid "<0>La <1>copertura in PVC</1> è composta da una struttura in acciaio zincato la quale sorregge un telo in tessuto di poliestere spalmato di colore verde o crema e in base alle esigenze del cliente anche in altre colorazioni.</0><2>Questa copertura è in grado di sorreggere un carico neve pari a 80 kg/mq * e una forza vento pari a 110 Km/h.</2>"
 msgstr "<0>La <1>copertura in PVC</1> è composta da una struttura in acciaio zincato la quale sorregge un telo in tessuto di poliestere spalmato di colore verde o crema e in base alle esigenze del cliente anche in altre colorazioni.</0><2>Questa copertura è in grado di sorreggere un carico neve pari a 80 kg/mq * e una forza vento pari a 110 Km/h.</2>"
+
+#: src/app/[locale]/cookie-policy/components/CookiePolicy/index.tsx:286
+msgid "<0>La durata dei cookie varia in base alla tipologia e alla terza parte che li imposta.</0><1>Il banner cookie fornisce una tabella aggiornata delle durate specifiche.</1>"
+msgstr "<0>La durata dei cookie varia in base alla tipologia e alla terza parte che li imposta.</0><1>Il banner cookie fornisce una tabella aggiornata delle durate specifiche.</1>"
 
 #: src/modules/Dressage/index.tsx:95
 msgid "<0>La linea <1>olympic</1>, presente sul mercato da oltre vent'anni, è rappresentata da un rettangolo professionale, dove il campo da dressage è utilizzato quotidianamente.</0><2>Il campo è delimitato da moduli accostabili tra di loro, ciascuno dei quali è lungo 2 mt. Ogni modulo è costruito in polietilene antiurto resistente anche alle basse temperature e che non ingiallisce sotto l'azione dei raggi ultravioletti.</2><3>Su ciascun modulo sono previste tre aree piane con superficie lucida di 50x12 cm. sulle quali possono essere applicati adesivi pubblicitari.</3>"
@@ -100,13 +157,39 @@ msgstr "<0>La nostra azienda si distingue per le giostre, il nostro punto di for
 msgid "<0>Le recinzioni <1>TECNOFENCE</1> sono realizzate con materiale particolarmente adatto a durare nel tempo anche in presenza delle più avverse condizioni meteorologiche.</0><2>A differenza del legno o di altri prodotti utilizzati per il medesimo scopo, gli animali non mordono la recinzione.</2><3><4>TECNOFENCE</4>, non presenta spigoli vivi e inoltre, essendo elastica, è in grado di assorbire gli urti senza rompersi evitando cosi di provocare infortuni a persone e animali.</3><5>Il materiale impiegato è lo stesso che viene utilizzato per la produzione di serramenti dove l’inalterabilità del colore e delle caratteristiche tecniche sono condizioni indispensabili per garantire un prodotto di qualità. L’inclusione di inibitori dei raggi ultravioletti consente anche di prevenire crepe e rotture e di resistere alla corrosione e allo sfogliamento mantenendo inalterate le caratteristiche originali anche con temperature variabili da +70 °C a -20 °C.</5><6>Principalmente prodotte nel colore bianco, possono essere fornite, a richiesta, anche nel colore verde.</6><7>In ogni recinzione inoltre si possono inserire uno o più cancelli scorrevoli in alluminio.</7><8>Tutte le nostre recinzioni sono personalizzate in base alle esigenze di metratura e di figura del cliente.</8>"
 msgstr "<0>Le recinzioni <1>TECNOFENCE</1> sono realizzate con materiale particolarmente adatto a durare nel tempo anche in presenza delle più avverse condizioni meteorologiche.</0><2>A differenza del legno o di altri prodotti utilizzati per il medesimo scopo, gli animali non mordono la recinzione.</2><3><4>TECNOFENCE</4>, non presenta spigoli vivi e inoltre, essendo elastica, è in grado di assorbire gli urti senza rompersi evitando cosi di provocare infortuni a persone e animali.</3><5>Il materiale impiegato è lo stesso che viene utilizzato per la produzione di serramenti dove l’inalterabilità del colore e delle caratteristiche tecniche sono condizioni indispensabili per garantire un prodotto di qualità. L’inclusione di inibitori dei raggi ultravioletti consente anche di prevenire crepe e rotture e di resistere alla corrosione e allo sfogliamento mantenendo inalterate le caratteristiche originali anche con temperature variabili da +70 °C a -20 °C.</5><6>Principalmente prodotte nel colore bianco, possono essere fornite, a richiesta, anche nel colore verde.</6><7>In ogni recinzione inoltre si possono inserire uno o più cancelli scorrevoli in alluminio.</7><8>Tutte le nostre recinzioni sono personalizzate in base alle esigenze di metratura e di figura del cliente.</8>"
 
+#: src/app/[locale]/cookie-policy/components/CookiePolicy/index.tsx:193
+msgid "<0>Meta Pixel viene utilizzato per analizzare le interazioni con il sito e migliorare la comunicazione sulle piattaforme Meta.</0><1>Questi cookie sono installati solo previo consenso e potrebbero comportare trasferimenti di dati fuori dall’UE.</1>"
+msgstr "<0>Meta Pixel viene utilizzato per analizzare le interazioni con il sito e migliorare la comunicazione sulle piattaforme Meta.</0><1>Questi cookie sono installati solo previo consenso e potrebbero comportare trasferimenti di dati fuori dall’UE.</1>"
+
+#: src/app/[locale]/informativa-privacy/components/InformativaPrivacy/index.tsx:141
+msgid "<0>Nei limiti consentiti dalla legge, {NAME_LEGAL_STRING} non garantisce che il Sito sia privo di errori, interruzioni o vulnerabilità e non può essere ritenuta responsabile per danni derivanti dall’uso del Sito, dall’indisponibilità dei servizi, da errori tecnici o da contenuti di terze parti.</0><1>L’utilizzo del Sito avviene sotto esclusiva responsabilità dell’utente.</1>"
+msgstr "<0>Nei limiti consentiti dalla legge, {NAME_LEGAL_STRING} non garantisce che il Sito sia privo di errori, interruzioni o vulnerabilità e non può essere ritenuta responsabile per danni derivanti dall’uso del Sito, dall’indisponibilità dei servizi, da errori tecnici o da contenuti di terze parti.</0><1>L’utilizzo del Sito avviene sotto esclusiva responsabilità dell’utente.</1>"
+
 #: src/modules/Ostacoli/Fosso.tsx:23
 msgid "<0>Ottimo per insegnare ai vostri cavalli/puledri a saltarlo.</0><1>Il fosso ha il fondo in PVC di colore azzurro con un bordo saldato alto 6 cm.</1>"
 msgstr "<0>Ottimo per insegnare ai vostri cavalli/puledri a saltarlo.</0><1>Il fosso ha il fondo in PVC di colore azzurro con un bordo saldato alto 6 cm.</1>"
 
-#: src/utils/constants.tsx:168
+#: src/utils/constants.tsx:169
 msgid "<0>Porte di separazione.</0><1>(Elettrificatione 200-240 Volt monofase)</1>"
 msgstr "<0>Porte di separazione.</0><1>(Elettrificatione 200-240 Volt monofase)</1>"
+
+#: src/app/[locale]/cookie-policy/components/CookiePolicy/index.tsx:301
+msgid "<0>Questa Cookie Policy può essere aggiornata per conformarsi a normative o cambiamenti tecnologici.</0><1>Le modifiche saranno pubblicate su questa pagina.</1>"
+msgstr "<0>Questa Cookie Policy può essere aggiornata per conformarsi a normative o cambiamenti tecnologici.</0><1>Le modifiche saranno pubblicate su questa pagina.</1>"
+
+#: src/app/[locale]/cookie-policy/components/CookiePolicy/index.tsx:121
+msgid "<0>Questa Cookie Policy spiega cosa sono i cookie, quali cookie utilizziamo sul sito di Pessastudio Horse Tecnology srl e come l’utente può gestire le proprie preferenze. </0><1>L’utilizzo dei cookie avviene in conformità al GDPR e alle linee guida europee.</1>"
+msgstr "<0>Questa Cookie Policy spiega cosa sono i cookie, quali cookie utilizziamo sul sito di Pessastudio Horse Tecnology srl e come l’utente può gestire le proprie preferenze. </0><1>L’utilizzo dei cookie avviene in conformità al GDPR e alle linee guida europee.</1>"
+
+#: src/app/[locale]/cookie-policy/components/CookiePolicy/index.tsx:163
+msgid "<0>Questi cookie sono essenziali per il funzionamento del sito e non richiedono il consenso dell’utente.</0><1>Includono quelli relativi alla sicurezza, alla gestione delle preferenze di base e alla funzionalità del cookie banner.</1>"
+msgstr "<0>Questi cookie sono essenziali per il funzionamento del sito e non richiedono il consenso dell’utente.</0><1>Includono quelli relativi alla sicurezza, alla gestione delle preferenze di base e alla funzionalità del cookie banner.</1>"
+
+#. placeholder {0}: COOKIE_POLICY.title
+#. placeholder {1}: INFORMATIVA_PRIVACY.title
+#: src/components/Gdpr/index.tsx:70
+msgid "<0>Questo sito web utilizza cookie per garantirti la migliore esperienza sul nostro sito web, analizzare il traffico verso questo sito web, mostrarti annunci personalizzati su siti web di terze parti e fornirti funzionalità social media.</0><1>Per ulteriori informazioni, consulta la nostra <2>{0}</2> e la nostra <3>{1}</3>.</1>"
+msgstr "<0>Questo sito web utilizza cookie per garantirti la migliore esperienza sul nostro sito web, analizzare il traffico verso questo sito web, mostrarti annunci personalizzati su siti web di terze parti e fornirti funzionalità social media.</0><1>Per ulteriori informazioni, consulta la nostra <2>{0}</2> e la nostra <3>{1}</3>.</1>"
 
 #: src/modules/Ostacoli/Barriere.tsx:19
 msgid "<0>Sono le componenti dell'ostacolo più stressate, poiché, come i candelieri e i pilieri, sono perennemente sottoposte all'azione aggressiva degli agenti atmosferici (caldo, freddo, sole, pioggia). A questi si aggiungono anche gli urti degli zoccoli dei cavalli, frequenti ribaltamenti e le manipolazioni necessarie per aggiustarne le altezze.</0><1>Le barriere di abete, comunemente usate, richiedono una continua manutenzione perché si piegano, scoloriscono nel tempo e si rompono frequentemente.</1><2>Le barriere sintetiche di {NAME}, invece, hanno lo stesso peso di quelle in abete, ma perdono il loro colore solamente dopo anni, non si scrostano e, solo raramente, si rompono sotto l'azione di un carico eccessivo.</2>"
@@ -115,6 +198,14 @@ msgstr "<0>Sono le componenti dell'ostacolo più stressate, poiché, come i cand
 #: src/modules/GiostreTecnoexerciser/index.tsx:25
 msgid "<0>Tecnoexerciser è il modello di giostra attualmente più richiesto.</0><1>Oggi, grazie alle già note caratteristiche tecniche e alla grande affidabilità, abbiamo aggiunto alcune specifiche funzioni che fanno, di questo modello, la macchina <2>leader</2> del settore.</1><3>È possibile infatti:</3><4><5>Scegliere la forza che la porta mobile esercita sugli animali per invitarli ad avanzare</5><6>Mantenere un controllo costante sull'elettrificazione delle porte mobili</6><7>Beneficiare dell'innovativo sistema \"training program\" che vi consentirà di allenare i vostri cavalli fino ad ottenere performance atletiche.</7><8>Scegliere il programma di irrigazione pesta mentre la giostra sta girando</8></4><9>La struttura è fornita, a seconda delle esigenze, o con punte per l'ancoraggio al suolo o con tasselli nel caso in cui si desideri ancorarla ad un fondo di calcestruzzo.</9>"
 msgstr "<0>Tecnoexerciser è il modello di giostra attualmente più richiesto.</0><1>Oggi, grazie alle già note caratteristiche tecniche e alla grande affidabilità, abbiamo aggiunto alcune specifiche funzioni che fanno, di questo modello, la macchina <2>leader</2> del settore.</1><3>È possibile infatti:</3><4><5>Scegliere la forza che la porta mobile esercita sugli animali per invitarli ad avanzare</5><6>Mantenere un controllo costante sull'elettrificazione delle porte mobili</6><7>Beneficiare dell'innovativo sistema \"training program\" che vi consentirà di allenare i vostri cavalli fino ad ottenere performance atletiche.</7><8>Scegliere il programma di irrigazione pesta mentre la giostra sta girando</8></4><9>La struttura è fornita, a seconda delle esigenze, o con punte per l'ancoraggio al suolo o con tasselli nel caso in cui si desideri ancorarla ad un fondo di calcestruzzo.</9>"
+
+#: src/app/[locale]/informativa-privacy/components/InformativaPrivacy/index.tsx:63
+msgid "<0>Tutti i contenuti presenti sul Sito: testi, descrizioni, fotografie, immagini, grafica, loghi, layout, marchi e schede tecniche, sono di proprietà esclusiva di {NAME_LEGAL_STRING} o dei rispettivi aventi diritto.</0><1>È vietato copiare, distribuire, riprodurre, modificare o utilizzare tali contenuti senza autorizzazione scritta.</1>"
+msgstr "<0>Tutti i contenuti presenti sul Sito: testi, descrizioni, fotografie, immagini, grafica, loghi, layout, marchi e schede tecniche, sono di proprietà esclusiva di {NAME_LEGAL_STRING} o dei rispettivi aventi diritto.</0><1>È vietato copiare, distribuire, riprodurre, modificare o utilizzare tali contenuti senza autorizzazione scritta.</1>"
+
+#: src/app/[locale]/cookie-policy/components/CookiePolicy/index.tsx:178
+msgid "<0>Utilizziamo Google Analytics per raccogliere dati anonimi sul traffico e sul comportamento degli utenti.</0><1>I cookie di analytics vengono installati solo dopo il consenso dell’utente. Google potrebbe trattare i dati negli Stati Uniti.</1>"
+msgstr "<0>Utilizziamo Google Analytics per raccogliere dati anonimi sul traffico e sul comportamento degli utenti.</0><1>I cookie di analytics vengono installati solo dopo il consenso dell’utente. Google potrebbe trattare i dati negli Stati Uniti.</1>"
 
 #: src/modules/Giostre/index.tsx:48
 msgid "3.000 giostre installate"
@@ -133,13 +224,13 @@ msgstr "Accesso ai dati e Servizio Clienti"
 msgid "Accessori"
 msgstr "Accessori"
 
+#: src/components/Gdpr/index.tsx:60
+msgid "Accetta"
+msgstr "Accetta"
+
 #: src/components/Product/components/ProductMaterialsList/index.tsx:11
 msgid "Acciaio zincato"
 msgstr "Acciaio zincato"
-
-#: src/components/Gdpr/index.tsx:53
-msgid "Acconsento"
-msgstr "Acconsento"
 
 #: src/components/Product/components/ProductInformations/index.tsx:41
 msgid "Altezza"
@@ -151,8 +242,8 @@ msgstr "Altro"
 
 #: src/modules/GiostreIppowalker/_accessori.tsx:41
 #: src/modules/GiostreTecnoexerciser/_accessori.tsx:41
-#: src/utils/constants.tsx:190
-#: src/utils/constants.tsx:207
+#: src/utils/constants.tsx:191
+#: src/utils/constants.tsx:208
 msgid "Alveolo sulla pesta"
 msgstr "Alveolo sulla pesta"
 
@@ -188,6 +279,10 @@ msgstr "Barriera per campo ostacoli (3 mt.)"
 msgid "Barriere"
 msgstr "Barriere"
 
+#: src/app/[locale]/cookie-policy/components/CookiePolicy/index.tsx:252
+msgid "Base Giuridica del Trattamento"
+msgstr "Base Giuridica del Trattamento"
+
 #: src/modules/Tondini/index.tsx:222
 msgid "Bello e funzionale"
 msgstr "Bello e funzionale"
@@ -219,8 +314,8 @@ msgstr "Che cos'è un cookie?"
 #: src/modules/GiostreIppowalker/_accessori.tsx:22
 #: src/modules/GiostreTecnoexerciser/_accessori.tsx:22
 #: src/modules/Tondini/index.tsx:108
-#: src/utils/constants.tsx:184
-#: src/utils/constants.tsx:201
+#: src/utils/constants.tsx:185
+#: src/utils/constants.tsx:202
 msgid "Chiusura a terra"
 msgstr "Chiusura a terra"
 
@@ -228,11 +323,11 @@ msgstr "Chiusura a terra"
 msgid "Ciao, come posso aiutarti"
 msgstr "Ciao, come posso aiutarti"
 
-#: src/components/Footer/index.tsx:79
+#: src/components/Footer/components/FooterVersion/index.tsx:9
 msgid "COD. FISC. e Part: I.V.A. 04743610281 C.C.I.A.A. PD - R.E.A. 414822"
 msgstr "COD. FISC. e Part: I.V.A. 04743610281 C.C.I.A.A. PD - R.E.A. 414822"
 
-#: src/modules/Contatti/components/ContattiAddress/index.tsx:39
+#: src/components/Address/index.tsx:39
 msgid "Codice Fiscale e Partita IVA"
 msgstr "Codice Fiscale e Partita IVA"
 
@@ -240,8 +335,12 @@ msgstr "Codice Fiscale e Partita IVA"
 msgid "Colori"
 msgstr "Colori"
 
-#: src/hooks/usePages/utils/index.tsx:79
-#: src/hooks/usePages/utils/index.tsx:84
+#: src/app/[locale]/cookie-policy/components/CookiePolicy/index.tsx:267
+msgid "Come Gestire o Revocare il Consenso"
+msgstr "Come Gestire o Revocare il Consenso"
+
+#: src/hooks/usePages/utils/index.tsx:91
+#: src/hooks/usePages/utils/index.tsx:96
 #: src/modules/ComePreparareIlFondo/index.tsx:11
 msgid "Come preparare il fondo"
 msgstr "Come preparare il fondo"
@@ -250,12 +349,15 @@ msgstr "Come preparare il fondo"
 msgid "Complimenti! Ti sei iscritto"
 msgstr "Complimenti! Ti sei iscritto"
 
-#: src/hooks/usePages/utils/index.tsx:72
+#: src/app/[locale]/cookie-policy/components/CookiePolicy/index.tsx:284
+msgid "Conservazione dei Cookie"
+msgstr "Conservazione dei Cookie"
+
+#: src/hooks/usePages/utils/index.tsx:84
 msgid "Contatta Pessastudio per preventivi di Giostre, ostacoli, tondini e attrezzature per cavalli"
 msgstr "Contatta Pessastudio per preventivi di Giostre, ostacoli, tondini e attrezzature per cavalli"
 
 #: src/hooks/usePages/utils/index.tsx:50
-#: src/hooks/usePages/utils/index.tsx:66
 msgid "Contattaci per un preventivo per ostacoli, recinti, tondini coperti, giostre, rettangoli da dressage e attrezzature per cavalli"
 msgstr "Contattaci per un preventivo per ostacoli, recinti, tondini coperti, giostre, rettangoli da dressage e attrezzature per cavalli"
 
@@ -265,31 +367,33 @@ msgstr "Contattaci per un preventivo per ostacoli, recinti, tondini coperti, gio
 msgid "Contattaci usando l'email <0>{0}</0> <1/>o chiamaci al numero: <2>{1}</2>"
 msgstr "Contattaci usando l'email <0>{0}</0> <1/>o chiamaci al numero: <2>{1}</2>"
 
+#: src/app/[locale]/cookie-policy/components/CookiePolicy/index.tsx:313
+#: src/app/[locale]/informativa-privacy/components/InformativaPrivacy/index.tsx:191
 #: src/hooks/usePages/utils/index.tsx:51
 msgid "Contatti"
 msgstr "Contatti"
 
-#: src/modules/Contatti/index.tsx:61
+#: src/modules/Contatti/index.tsx:60
 msgid "Contatto commerciale"
 msgstr "Contatto commerciale"
 
-#: src/utils/constants.tsx:107
+#: src/utils/constants.tsx:108
 msgid "Contatto commerciale Belgio"
 msgstr "Contatto commerciale Belgio"
 
-#: src/utils/constants.tsx:115
+#: src/utils/constants.tsx:116
 msgid "Contatto commerciale Francia"
 msgstr "Contatto commerciale Francia"
 
-#: src/utils/constants.tsx:86
+#: src/utils/constants.tsx:87
 msgid "Contatto commerciale Germania"
 msgstr "Contatto commerciale Germania"
 
-#: src/utils/constants.tsx:99
+#: src/utils/constants.tsx:100
 msgid "Contatto commerciale Germania & Medio Oriente"
 msgstr "Contatto commerciale Germania & Medio Oriente"
 
-#: src/utils/constants.tsx:123
+#: src/utils/constants.tsx:124
 msgid "Contatto commerciale Roma"
 msgstr "Contatto commerciale Roma"
 
@@ -299,19 +403,35 @@ msgstr "Contatto commerciale Roma"
 msgid "Cookie Analitici"
 msgstr "Cookie Analitici"
 
+#: src/app/[locale]/cookie-policy/components/CookiePolicy/index.tsx:176
+msgid "Cookie di Analytics (Google Analytics)"
+msgstr "Cookie di Analytics (Google Analytics)"
+
+#: src/app/[locale]/cookie-policy/components/CookiePolicy/index.tsx:191
+msgid "Cookie di Marketing (Meta Pixel)"
+msgstr "Cookie di Marketing (Meta Pixel)"
+
 #: src/modules/CookiePolicy/index.tsx:100
 #: src/modules/CookiePolicy/index.tsx:168
 msgid "Cookie di navigazione"
 msgstr "Cookie di navigazione"
 
-#: src/modules/Contatti/index.tsx:91
+#: src/app/[locale]/cookie-policy/components/CookiePolicy/index.tsx:206
+msgid "Cookie di Terze Parti"
+msgstr "Cookie di Terze Parti"
+
+#: src/app/[locale]/cookie-policy/components/CookiePolicy/index.tsx:161
+msgid "Cookie Tecnici"
+msgstr "Cookie Tecnici"
+
+#: src/modules/Contatti/index.tsx:90
 msgid "Coordinate bancarie"
 msgstr "Coordinate bancarie"
 
 #: src/modules/Tondini/index.tsx:150
 #: src/modules/Tondini/index.tsx:154
 #: src/modules/Tondini/index.tsx:158
-#: src/utils/constants.tsx:306
+#: src/utils/constants.tsx:307
 msgid "Copertura"
 msgstr "Copertura"
 
@@ -319,7 +439,7 @@ msgstr "Copertura"
 #: src/modules/GiostreIppowalker/_copertura.tsx:21
 #: src/modules/GiostreTecnoexerciser/_copertura.tsx:19
 #: src/modules/GiostreTecnoexerciser/_copertura.tsx:23
-#: src/utils/constants.tsx:261
+#: src/utils/constants.tsx:262
 msgid "Copertura in PVC"
 msgstr "Copertura in PVC"
 
@@ -351,6 +471,10 @@ msgstr "Corridoio TECNOFENCE"
 msgid "Cosa dicono di noi"
 msgstr "Cosa dicono di noi"
 
+#: src/app/[locale]/cookie-policy/components/CookiePolicy/index.tsx:135
+msgid "Cosa sono i Cookie"
+msgstr "Cosa sono i Cookie"
+
 #: src/hooks/useProducts/utils/index.tsx:96
 msgid "Costruisci la tua barriera personalizzata scegliendo tra i colori a disposizione"
 msgstr "Costruisci la tua barriera personalizzata scegliendo tra i colori a disposizione"
@@ -381,7 +505,7 @@ msgstr "Cucchiaio {0}"
 msgid "Da anni Pessastudio è focalizzata nel produrre prodotti di qualità a costi accessibili"
 msgstr "Da anni Pessastudio è focalizzata nel produrre prodotti di qualità a costi accessibili"
 
-#: src/utils/constants.tsx:307
+#: src/utils/constants.tsx:308
 msgid "Diametro"
 msgstr "Diametro"
 
@@ -408,6 +532,10 @@ msgstr "Dimensioni giostra cavalli"
 msgid "Disponibile"
 msgstr "Disponibile"
 
+#: src/app/[locale]/informativa-privacy/components/InformativaPrivacy/index.tsx:47
+msgid "Disponibilità e correttezza delle informazioni"
+msgstr "Disponibilità e correttezza delle informazioni"
+
 #: src/hooks/usePages/utils/index.tsx:45
 msgid "Dressage"
 msgstr "Dressage"
@@ -432,9 +560,9 @@ msgstr "È possibile acquistare le nostre giostre in diverse versioni adatte ad 
 msgid "É una struttura semplice, leggera e piacevole alla vista"
 msgstr "É una struttura semplice, leggera e piacevole alla vista"
 
+#: src/components/Address/index.tsx:85
 #: src/components/Footer/components/FooterNewsletter/index.tsx:48
 #: src/components/Footer/components/FooterNewsletter/index.tsx:49
-#: src/modules/Contatti/components/ContattiAddress/index.tsx:85
 msgid "Email"
 msgstr "Email"
 
@@ -539,8 +667,8 @@ msgstr "Giostre"
 
 #. placeholder {0}: GIOSTRE_MODELS.IPPOWALKER
 #. placeholder {0}: GIOSTRE_MODELS.TECNOEXERCISER
-#: src/hooks/usePages/utils/index.tsx:90
-#: src/hooks/usePages/utils/index.tsx:101
+#: src/hooks/usePages/utils/index.tsx:102
+#: src/hooks/usePages/utils/index.tsx:113
 msgid "Giostre {0}"
 msgstr "Giostre {0}"
 
@@ -552,7 +680,7 @@ msgstr "Gli ostacoli sono arrivati. Sono fantastici!"
 msgid "Ho ricevuto questa mattina il materiale. I miei complimenti per la qualità dei prodotti, l'imballo ed il trasportatore"
 msgstr "Ho ricevuto questa mattina il materiale. I miei complimenti per la qualità dei prodotti, l'imballo ed il trasportatore"
 
-#: src/hooks/usePages/utils/index.tsx:73
+#: src/hooks/usePages/utils/index.tsx:85
 msgid "Home"
 msgstr "Home"
 
@@ -587,6 +715,14 @@ msgstr "I nostri prodotti sono pensati per resistere nel tempo, anche se soggett
 msgid "I nostri tondini sono considerati strutture precarie. Non avrete bisogno di nessuna concessione edilizia"
 msgstr "I nostri tondini sono considerati strutture precarie. Non avrete bisogno di nessuna concessione edilizia"
 
+#: src/app/[locale]/termini-e-condizioni/components/TerminiECondizioni/index.tsx:11
+msgid "I presenti Termini e Condizioni regolano l'accesso e l'utilizzo del sito web di {NAME_LEGAL_STRING}. Navigando su questo sito, l'utente accetta integralmente le condizioni qui indicate. Se non si accettano tali condizioni, si invita a non utilizzare il sito."
+msgstr "I presenti Termini e Condizioni regolano l'accesso e l'utilizzo del sito web di {NAME_LEGAL_STRING}. Navigando su questo sito, l'utente accetta integralmente le condizioni qui indicate. Se non si accettano tali condizioni, si invita a non utilizzare il sito."
+
+#: src/app/[locale]/termini-e-condizioni/components/TerminiECondizioni/index.tsx:120
+msgid "I presenti Termini sono regolati dalla legge italiana. Per qualsiasi controversia relativa all'utilizzo del sito, sarà competente il foro italiano territorialmente competente."
+msgstr "I presenti Termini sono regolati dalla legge italiana. Per qualsiasi controversia relativa all'utilizzo del sito, sarà competente il foro italiano territorialmente competente."
+
 #: src/modules/Index/index.tsx:81
 msgid "I prodotti vengono venduti ed apprezzati sia in Italia che all'estero"
 msgstr "I prodotti vengono venduti ed apprezzati sia in Italia che all'estero"
@@ -609,11 +745,36 @@ msgstr "Il cucchiaio standard utilizzato al livello internazionale"
 msgid "Il nostro sito utilizza diverse tipologie di cookie di prima parte (predisposti e gestiti da {0}), cookie di terze parti (predisposti e gestiti da soggetti terzi in base alle proprie privacy policy e non sotto il controllo di {1}), ognuna delle quali ha una specifica funzione. Di seguito una tabella esplicativa."
 msgstr "Il nostro sito utilizza diverse tipologie di cookie di prima parte (predisposti e gestiti da {0}), cookie di terze parti (predisposti e gestiti da soggetti terzi in base alle proprie privacy policy e non sotto il controllo di {1}), ognuna delle quali ha una specifica funzione. Di seguito una tabella esplicativa."
 
+#. placeholder {0}: SEDE_LEGALE.id
+#: src/app/[locale]/termini-e-condizioni/components/TerminiECondizioni/index.tsx:22
+msgid "Il sito è gestito da {NAME_LEGAL_STRING}, Partita IVA {0}. L'azienda produce e vende prodotti per cavalli esclusivamente offline. Il sito ha finalità informative e funge da catalogo prodotto."
+msgstr "Il sito è gestito da {NAME_LEGAL_STRING}, Partita IVA {0}. L'azienda produce e vende prodotti per cavalli esclusivamente offline. Il sito ha finalità informative e funge da catalogo prodotto."
+
+#: src/app/[locale]/termini-e-condizioni/components/TerminiECondizioni/index.tsx:44
+msgid "Il sito non consente l'acquisto diretto dei prodotti. I prezzi mostrati hanno valore puramente informativo e non costituiscono un'offerta commerciale vincolante. Per acquistare i prodotti è necessario contattare l’azienda tramite i canali ufficiali."
+msgstr "Il sito non consente l'acquisto diretto dei prodotti. I prezzi mostrati hanno valore puramente informativo e non costituiscono un'offerta commerciale vincolante. Per acquistare i prodotti è necessario contattare l’azienda tramite i canali ufficiali."
+
+#: src/app/[locale]/termini-e-condizioni/components/TerminiECondizioni/index.tsx:88
+msgid "Il sito può contenere link verso siti esterni non gestiti da ${NAME_LEGAL_STRING}. L'azienda non è responsabile per i contenuti o le pratiche di tali siti."
+msgstr "Il sito può contenere link verso siti esterni non gestiti da ${NAME_LEGAL_STRING}. L'azienda non è responsabile per i contenuti o le pratiche di tali siti."
+
+#: src/app/[locale]/termini-e-condizioni/components/TerminiECondizioni/index.tsx:33
+msgid "Il sito può essere utilizzato esclusivamente per la consultazione del catalogo e delle informazioni aziendali. È vietato qualsiasi utilizzo improprio, fraudolento o che possa compromettere il funzionamento del sito."
+msgstr "Il sito può essere utilizzato esclusivamente per la consultazione del catalogo e delle informazioni aziendali. È vietato qualsiasi utilizzo improprio, fraudolento o che possa compromettere il funzionamento del sito."
+
+#: src/app/[locale]/termini-e-condizioni/components/TerminiECondizioni/index.tsx:67
+msgid "Il sito può includere integrazioni di terze parti come YouTube e Google Maps. Questi servizi possono raccogliere dati dell'utente secondo le loro rispettive privacy policy.,"
+msgstr "Il sito può includere integrazioni di terze parti come YouTube e Google Maps. Questi servizi possono raccogliere dati dell'utente secondo le loro rispettive privacy policy.,"
+
 #: src/modules/Tondini/index.tsx:237
 msgid "Il tondino coperto è adatto a svolgere molteplici attività, rappresenta la migliore soluzione per addestrare puledri in libertà o lavorare cavalli alla corda. Inoltre facilita il controllo del cavallo durante le lezioni ai principianti ed è indispensabile per il longeur durante le riprese di volteggi."
 msgstr "Il tondino coperto è adatto a svolgere molteplici attività, rappresenta la migliore soluzione per addestrare puledri in libertà o lavorare cavalli alla corda. Inoltre facilita il controllo del cavallo durante le lezioni ai principianti ed è indispensabile per il longeur durante le riprese di volteggi."
 
-#: src/utils/constants.tsx:145
+#: src/app/[locale]/termini-e-condizioni/components/TerminiECondizioni/index.tsx:98
+msgid "Il trattamento dei dati personali raccolti tramite il sito è regolato dalla Privacy Policy e dalla Cookie Policy, disponibili tramite link nel footer. L’utente è invitato a consultarle per informazioni dettagliate."
+msgstr "Il trattamento dei dati personali raccolti tramite il sito è regolato dalla Privacy Policy e dalla Cookie Policy, disponibili tramite link nel footer. L’utente è invitato a consultarle per informazioni dettagliate."
+
+#: src/utils/constants.tsx:146
 msgid "Impediscono alla sabbia di uscire dal tondino riducendo il materiale disperso."
 msgstr "Impediscono alla sabbia di uscire dal tondino riducendo il materiale disperso."
 
@@ -628,6 +789,14 @@ msgstr "Indistruttibili"
 #: src/hooks/usePages/utils/index.tsx:67
 msgid "Informativa sui Cookie"
 msgstr "Informativa sui Cookie"
+
+#: src/hooks/usePages/utils/index.tsx:79
+msgid "Informativa sulla Privacy"
+msgstr "Informativa sulla Privacy"
+
+#: src/hooks/usePages/utils/index.tsx:66
+msgid "Informativa sulla Privacy e Cookie Policy: come raccogliamo, utilizziamo e proteggiamo i tuoi dati personali secondo il GDPR"
+msgstr "Informativa sulla Privacy e Cookie Policy: come raccogliamo, utilizziamo e proteggiamo i tuoi dati personali secondo il GDPR"
 
 #: src/modules/Giostre/index.tsx:113
 msgid "Ingresso"
@@ -656,11 +825,11 @@ msgid "Interno tondino coperto"
 msgstr "Interno tondino coperto"
 
 #: src/modules/Tondini/index.tsx:78
-#: src/utils/constants.tsx:317
+#: src/utils/constants.tsx:318
 msgid "Irrigazione"
 msgstr "Irrigazione"
 
-#: src/utils/constants.tsx:175
+#: src/utils/constants.tsx:176
 msgid "Irrigazione del percorso controllabile dal quadro di comando. Aiuta a tenere la polvere sotto controllo e un terreno sempre perfetto"
 msgstr "Irrigazione del percorso controllabile dal quadro di comando. Aiuta a tenere la polvere sotto controllo e un terreno sempre perfetto"
 
@@ -668,7 +837,7 @@ msgstr "Irrigazione del percorso controllabile dal quadro di comando. Aiuta a te
 msgid "Iscriviti"
 msgstr "Iscriviti"
 
-#: src/components/Footer/index.tsx:66
+#: src/components/Footer/index.tsx:62
 msgid "Iscriviti alla nostra newsletter"
 msgstr "Iscriviti alla nostra newsletter"
 
@@ -676,8 +845,8 @@ msgstr "Iscriviti alla nostra newsletter"
 msgid "Istituto"
 msgstr "Istituto"
 
-#: src/hooks/usePages/utils/index.tsx:95
-#: src/hooks/usePages/utils/index.tsx:106
+#: src/hooks/usePages/utils/index.tsx:107
+#: src/hooks/usePages/utils/index.tsx:118
 #: src/modules/GiostreIppowalkerIstruzioniDiMontaggio/index.tsx:66
 #: src/modules/Recinti/index.tsx:65
 msgid "Istruzioni di montaggio"
@@ -703,7 +872,7 @@ msgstr "Kit comprensivo di 2 cavalletti e una barriera in PPO di colore bianco, 
 msgid "L’alternativa alla copertura in PVC è la <0>copertura rigida</0> in lastre di vetroresina. le lastre vengono sorrette da una doppia struttura in acciaio zincato che permette di avere una migliore distribuzione del peso in caso di nevicata e una maggiore sicurezza in caso di forte vento. Una soluzione che ti permetterà senza opere murarie di avere una struttura robusta e durevole nel tempo."
 msgstr "L’alternativa alla copertura in PVC è la <0>copertura rigida</0> in lastre di vetroresina. le lastre vengono sorrette da una doppia struttura in acciaio zincato che permette di avere una migliore distribuzione del peso in caso di nevicata e una maggiore sicurezza in caso di forte vento. Una soluzione che ti permetterà senza opere murarie di avere una struttura robusta e durevole nel tempo."
 
-#: src/utils/constants.tsx:152
+#: src/utils/constants.tsx:153
 msgid "L'alveolo è la soluzione ottimale per mantenere un fondo sempre perfetto in ogni condizione, permette di evitare buche o avvallamenti riducendo i costi di manutenzione."
 msgstr "L'alveolo è la soluzione ottimale per mantenere un fondo sempre perfetto in ogni condizione, permette di evitare buche o avvallamenti riducendo i costi di manutenzione."
 
@@ -742,7 +911,7 @@ msgstr "La recinzione ad una filagna viene utilizzata per delimitare campi da la
 msgid "La rete antivento della porta è un’ulteriore protezione che offriamo per rendere ancora di più il tuo tondino sicuro in caso di forte vento e per garantire una maggiore concentrazione del tuo cavallo."
 msgstr "La rete antivento della porta è un’ulteriore protezione che offriamo per rendere ancora di più il tuo tondino sicuro in caso di forte vento e per garantire una maggiore concentrazione del tuo cavallo."
 
-#: src/utils/constants.tsx:160
+#: src/utils/constants.tsx:161
 msgid "La rete antivento protegge l'interno della giostra da correnti d'aria e aiuta il cavallo a rimanere concentrato sul percorso rendendolo più tranquillo."
 msgstr "La rete antivento protegge l'interno della giostra da correnti d'aria e aiuta il cavallo a rimanere concentrato sul percorso rendendolo più tranquillo."
 
@@ -777,10 +946,26 @@ msgstr "Le nostre giostre sono considerate strutture precarie. Non avrete bisogn
 msgid "Le recinzioni a quattro filagne sono utilizzate per delimitare paddock per stalloni, realizzare tondini per la doma e l'addestramento o per formare ovali per il salto in libertà"
 msgstr "Le recinzioni a quattro filagne sono utilizzate per delimitare paddock per stalloni, realizzare tondini per la doma e l'addestramento o per formare ovali per il salto in libertà"
 
+#: src/app/[locale]/informativa-privacy/components/InformativaPrivacy/index.tsx:175
+msgid "Legge applicabile e foro competente"
+msgstr "Legge applicabile e foro competente"
+
+#: src/hooks/usePages/utils/index.tsx:72
+msgid "Leggi i Termini e Condizioni di Pessastudio Horse Tecnology srl: uso del sito, responsabilità, proprietà dei contenuti e informazioni sul catalogo prodotti. Tutte le regole per navigare in sicurezza"
+msgstr "Leggi i Termini e Condizioni di Pessastudio Horse Tecnology srl: uso del sito, responsabilità, proprietà dei contenuti e informazioni sul catalogo prodotti. Tutte le regole per navigare in sicurezza"
+
 #. placeholder {0}: DressageModels.OLYMPIC
 #: src/hooks/useProducts/utils/index.tsx:499
 msgid "Lettera dressage ({0})"
 msgstr "Lettera dressage ({0})"
+
+#: src/app/[locale]/informativa-privacy/components/InformativaPrivacy/index.tsx:139
+msgid "Limitazione di responsabilità"
+msgstr "Limitazione di responsabilità"
+
+#: src/app/[locale]/informativa-privacy/components/InformativaPrivacy/index.tsx:101
+msgid "Link e contenuti di terze parti"
+msgstr "Link e contenuti di terze parti"
 
 #: src/components/Product/components/ProductInformations/index.tsx:42
 msgid "Lunghezza"
@@ -820,6 +1005,14 @@ msgstr "Materiali"
 msgid "Materiali di qualità"
 msgstr "Materiali di qualità"
 
+#: src/app/[locale]/informativa-privacy/components/InformativaPrivacy/index.tsx:158
+msgid "Modifiche ai Termini"
+msgstr "Modifiche ai Termini"
+
+#: src/app/[locale]/cookie-policy/components/CookiePolicy/index.tsx:299
+msgid "Modifiche alla Cookie Policy"
+msgstr "Modifiche alla Cookie Policy"
+
 #. placeholder {0}: DressageModels.OLYMPIC
 #. placeholder {0}: DressageModels.TRAINING
 #: src/hooks/useProducts/utils/index.tsx:449
@@ -828,7 +1021,7 @@ msgid "Modulo dressage ({0})"
 msgstr "Modulo dressage ({0})"
 
 #: src/modules/GiostreTecnoexerciser/_gallery.tsx:24
-#: src/utils/constants.tsx:309
+#: src/utils/constants.tsx:310
 msgid "Motore"
 msgstr "Motore"
 
@@ -837,7 +1030,11 @@ msgstr "Motore"
 msgid "Nessuna concessione edilizia"
 msgstr "Nessuna concessione edilizia"
 
-#: src/components/Footer/index.tsx:67
+#: src/app/[locale]/informativa-privacy/components/InformativaPrivacy/index.tsx:117
+msgid "Newsletter"
+msgstr "Newsletter"
+
+#: src/components/Footer/index.tsx:63
 msgid "Newsletters"
 msgstr "Newsletters"
 
@@ -849,6 +1046,10 @@ msgstr "Numero per campo ostacoli {0}"
 #: src/hooks/useProducts/utils/index.tsx:324
 msgid "Numero per campo ostacoli costruito in materiali robusti e leggeri. La forma piramidale ne assicurano la stabilitá. Perfetto per essere utilizzato in percorsi di salto ostacoli per cavalli."
 msgstr "Numero per campo ostacoli costruito in materiali robusti e leggeri. La forma piramidale ne assicurano la stabilitá. Perfetto per essere utilizzato in percorsi di salto ostacoli per cavalli."
+
+#: src/app/[locale]/informativa-privacy/components/InformativaPrivacy/index.tsx:31
+msgid "Oggetto del Sito"
+msgstr "Oggetto del Sito"
 
 #: src/components/ContactUs/index.tsx:43
 msgid "Oppure visita la nostra pagina dei <0>contatti</0> per scoprire i rivenditori nella tua zona."
@@ -867,6 +1068,11 @@ msgstr "Pagina non trovata"
 #: src/hooks/useProducts/utils/index.tsx:239
 msgid "Per consentirvi di realizzare ostacoli di vostra creazione possiamo fornirvi le lame forate in due diverse lunghezze."
 msgstr "Per consentirvi di realizzare ostacoli di vostra creazione possiamo fornirvi le lame forate in due diverse lunghezze."
+
+#. placeholder {0}: ITALIA.email
+#: src/app/[locale]/cookie-policy/components/CookiePolicy/index.tsx:315
+msgid "Per richieste relative ai cookie o al trattamento dei dati personali è possibile scrivere a: <0>{0}</0>"
+msgstr "Per richieste relative ai cookie o al trattamento dei dati personali è possibile scrivere a: <0>{0}</0>"
 
 #: src/modules/Giostre/index.tsx:104
 msgid "Perché una giostra Pessastudio"
@@ -918,7 +1124,7 @@ msgstr "Polipropilene"
 msgid "Porta mobile"
 msgstr "Porta mobile"
 
-#: src/utils/constants.tsx:308
+#: src/utils/constants.tsx:309
 msgid "Porte"
 msgstr "Porte"
 
@@ -949,16 +1155,24 @@ msgstr "Prodotti MADE IN ITALY, costruiti da Pessastudio e personalizzabili (in 
 msgid "Prodotti professionali, sono lo strumento di lavoro indispensabile in un centro ippico o un maneggio. Progettati e costruiti per durare nel tempo senza alcuna manutenzione"
 msgstr "Prodotti professionali, sono lo strumento di lavoro indispensabile in un centro ippico o un maneggio. Progettati e costruiti per durare nel tempo senza alcuna manutenzione"
 
+#: src/app/[locale]/informativa-privacy/components/InformativaPrivacy/index.tsx:61
+msgid "Proprietà intellettuale"
+msgstr "Proprietà intellettuale"
+
 #: src/modules/CookiePolicy/index.tsx:180
 msgid "Puoi in qualsiasi momento ricevere assistenza e spiegazioni su come esercitare il consenso o il diniego selettivo o su come cancellare i cookie e tecnologie affini dal tuo browser, inviando una e-mail al Servizio Clienti selezionando \"Privacy\" come argomento o con richiesta scritta rivolta a {completeAddressWithAnna} all'indirizzo postale della sede legale, daremo tempestivo riscontro."
 msgstr "Puoi in qualsiasi momento ricevere assistenza e spiegazioni su come esercitare il consenso o il diniego selettivo o su come cancellare i cookie e tecnologie affini dal tuo browser, inviando una e-mail al Servizio Clienti selezionando \"Privacy\" come argomento o con richiesta scritta rivolta a {completeAddressWithAnna} all'indirizzo postale della sede legale, daremo tempestivo riscontro."
+
+#: src/app/[locale]/termini-e-condizioni/components/TerminiECondizioni/index.tsx:77
+msgid "Pur impegnandosi per mantenere informazioni accurate e aggiornate, l'azienda non garantisce l'assenza di errori, inesattezze o interruzioni del servizio. L'utilizzo del sito avviene a rischio dell'utente."
+msgstr "Pur impegnandosi per mantenere informazioni accurate e aggiornate, l'azienda non garantisce l'assenza di errori, inesattezze o interruzioni del servizio. L'utilizzo del sito avviene a rischio dell'utente."
 
 #: src/components/Product/components/ProductMaterialsList/index.tsx:15
 msgid "PVC"
 msgstr "PVC"
 
 #: src/modules/Giostre/index.tsx:117
-#: src/utils/constants.tsx:305
+#: src/utils/constants.tsx:306
 msgid "Quadro di comando"
 msgstr "Quadro di comando"
 
@@ -984,7 +1198,7 @@ msgstr "Questi cookie di prima parte, sono proprietà di {0} (Gestore del sito) 
 msgid "Recinti"
 msgstr "Recinti"
 
-#: src/utils/constants.tsx:316
+#: src/utils/constants.tsx:317
 msgid "Recinzione"
 msgstr "Recinzione"
 
@@ -1008,10 +1222,14 @@ msgstr "Recinzione cavalli a {0} filagna"
 msgid "Recinzione cavalli a {0} filagne"
 msgstr "Recinzione cavalli a {0} filagne"
 
+#: src/components/Gdpr/index.tsx:61
+msgid "Refiuta"
+msgstr "Refiuta"
+
 #: src/modules/GiostreIppowalker/_accessori.tsx:56
 #: src/modules/GiostreTecnoexerciser/_accessori.tsx:56
 #: src/modules/Tondini/index.tsx:52
-#: src/utils/constants.tsx:213
+#: src/utils/constants.tsx:214
 msgid "Rete antivento"
 msgstr "Rete antivento"
 
@@ -1040,7 +1258,7 @@ msgstr "Rettangolo dressage {0} ({1})"
 msgid "Richiedi un preventivo"
 msgstr "Richiedi un preventivo"
 
-#: src/components/Footer/index.tsx:69
+#: src/components/Footer/index.tsx:65
 msgid "Rimani informato sui nostri sconti e gli eventi"
 msgstr "Rimani informato sui nostri sconti e gli eventi"
 
@@ -1052,13 +1270,17 @@ msgstr "Ringrazio tutto il team per la professionalità, gentilezza, velocità e
 msgid "Riprova piú tardi"
 msgstr "Riprova piú tardi"
 
-#: src/modules/Contatti/index.tsx:104
+#: src/modules/Contatti/index.tsx:103
 msgid "Rivenditori"
 msgstr "Rivenditori"
 
 #: src/components/ContentTable/index.tsx:72
 msgid "Scarica"
 msgstr "Scarica"
+
+#: src/hooks/usePages/utils/index.tsx:78
+msgid "Scopri come tuteliamo i tuoi dati e quali cookie utilizza il sito. Informazioni chiare su privacy, sicurezza e diritti GDPR"
+msgstr "Scopri come tuteliamo i tuoi dati e quali cookie utilizza il sito. Informazioni chiare su privacy, sicurezza e diritti GDPR"
 
 #: src/modules/Giostre/index.tsx:201
 #: src/modules/Giostre/index.tsx:217
@@ -1074,12 +1296,12 @@ msgid "Scopri la nostra gamma di prodotti"
 msgstr "Scopri la nostra gamma di prodotti"
 
 #. placeholder {0}: GIOSTRE_MODELS.IPPOWALKER
-#: src/hooks/usePages/utils/index.tsx:89
+#: src/hooks/usePages/utils/index.tsx:101
 msgid "Scopri la nostra giostra {0}, lo strumento economico adatto ad allenare il tuo cavallo o il tuo puledro"
 msgstr "Scopri la nostra giostra {0}, lo strumento economico adatto ad allenare il tuo cavallo o il tuo puledro"
 
 #. placeholder {0}: GIOSTRE_MODELS.TECNOEXERCISER
-#: src/hooks/usePages/utils/index.tsx:100
+#: src/hooks/usePages/utils/index.tsx:112
 msgid "Scopri la nostra giostra {0}, lo strumento professionale adatto ad allenare il tuo cavallo o il tuo puledro"
 msgstr "Scopri la nostra giostra {0}, lo strumento professionale adatto ad allenare il tuo cavallo o il tuo puledro"
 
@@ -1091,11 +1313,11 @@ msgstr "Scopri la qualità dei nostri prodotti attraverso la testimonianza dei c
 msgid "Scopri le nostre giostre per cavalli, lo strumento ideale di lavoro per allenare il vostro cavallo"
 msgstr "Scopri le nostre giostre per cavalli, lo strumento ideale di lavoro per allenare il vostro cavallo"
 
-#: src/modules/Contatti/index.tsx:82
+#: src/modules/Contatti/index.tsx:81
 msgid "Sede legale"
 msgstr "Sede legale"
 
-#: src/modules/Contatti/index.tsx:73
+#: src/modules/Contatti/index.tsx:72
 msgid "Sede operativa"
 msgstr "Sede operativa"
 
@@ -1103,11 +1325,11 @@ msgstr "Sede operativa"
 msgid "Segnaletica"
 msgstr "Segnaletica"
 
-#: src/components/Footer/index.tsx:44
+#: src/components/Footer/index.tsx:40
 msgid "Seguici"
 msgstr "Seguici"
 
-#: src/components/Footer/index.tsx:46
+#: src/components/Footer/index.tsx:42
 msgid "Seguici sui nostra social e scopri le ultime novità"
 msgstr "Seguici sui nostra social e scopri le ultime novità"
 
@@ -1115,7 +1337,7 @@ msgstr "Seguici sui nostra social e scopri le ultime novità"
 msgid "Si è verificato un problema, riprova"
 msgstr "Si è verificato un problema, riprova"
 
-#: src/modules/Contatti/index.tsx:54
+#: src/modules/Contatti/index.tsx:53
 msgid "Siamo qui per aiutarti! Se hai domande sui nostri prodotti per cavalli, necessiti di assistenza con un ordine o desideri maggiori informazioni, non esitare a contattarci."
 msgstr "Siamo qui per aiutarti! Se hai domande sui nostri prodotti per cavalli, necessiti di assistenza con un ordine o desideri maggiori informazioni, non esitare a contattarci."
 
@@ -1127,13 +1349,17 @@ msgstr "Sicuro"
 msgid "Singolo cavalletto abbinabile a barriere diametro 90, 95, 100, 105 mm."
 msgstr "Singolo cavalletto abbinabile a barriere diametro 90, 95, 100, 105 mm."
 
-#: src/components/Footer/index.tsx:43
+#: src/components/Footer/index.tsx:39
 msgid "Socials"
 msgstr "Socials"
 
 #: src/modules/Index/index.tsx:40
 msgid "Splendido niente da dire! Il tondino è ben pensato e ingegnoso. Molto bene!"
 msgstr "Splendido niente da dire! Il tondino è ben pensato e ingegnoso. Molto bene!"
+
+#: src/app/[locale]/cookie-policy/components/CookiePolicy/index.tsx:153
+msgid "Sul nostro sito utilizziamo diverse categorie di cookie:"
+msgstr "Sul nostro sito utilizziamo diverse categorie di cookie:"
 
 #: src/hooks/useProducts/utils/index.tsx:291
 msgid "Supporti di sicurezza da applicare ai nostri cucchiai per salvaguardare l'integrità degli arti dei vostri cavalli in maniera efficace ed economica."
@@ -1158,14 +1384,26 @@ msgstr "Swift"
 msgid "Tecnopolimero"
 msgstr "Tecnopolimero"
 
-#: src/modules/Contatti/components/ContattiAddress/index.tsx:46
-#: src/modules/Contatti/components/ContattiAddress/index.tsx:57
+#: src/components/Address/index.tsx:46
+#: src/components/Address/index.tsx:57
 msgid "Telefono"
 msgstr "Telefono"
+
+#: src/hooks/usePages/utils/index.tsx:73
+msgid "Termini & Condizioni"
+msgstr "Termini & Condizioni"
 
 #: src/modules/CookiePolicy/index.tsx:87
 msgid "Tipologia di cookie"
 msgstr "Tipologia di cookie"
+
+#: src/app/[locale]/cookie-policy/components/CookiePolicy/index.tsx:150
+msgid "Tipologie di Cookie Utilizzati"
+msgstr "Tipologie di Cookie Utilizzati"
+
+#: src/app/[locale]/informativa-privacy/components/InformativaPrivacy/index.tsx:27
+msgid "Titolare del Sito"
+msgstr "Titolare del Sito"
 
 #: src/modules/CookiePolicy/index.tsx:32
 msgid "Titolare del trattamento"
@@ -1218,11 +1456,15 @@ msgstr "Trasforma qualsiasi terreno in un'arena da dressage con questi coni da d
 msgid "Tutti i cavalieri sanno quanto sia spiacevole cavalcare in un ambiente polveroso.<0/>La polvere può contribuire a problemi respiratori per te e per i tuoi cavalli e può indicare che il fondo non fornisce un adeguato un supporto allo zoccolo del cavallo. <1/>Per ovviare a questo problema, è possibile installare il nostro sistema di irrigazione. Un rosone verrà posizionato al centro del tondino e ti permetterà di irrigarlo facilmente."
 msgstr "Tutti i cavalieri sanno quanto sia spiacevole cavalcare in un ambiente polveroso.<0/>La polvere può contribuire a problemi respiratori per te e per i tuoi cavalli e può indicare che il fondo non fornisce un adeguato un supporto allo zoccolo del cavallo. <1/>Per ovviare a questo problema, è possibile installare il nostro sistema di irrigazione. Un rosone verrà posizionato al centro del tondino e ti permetterà di irrigarlo facilmente."
 
+#: src/app/[locale]/termini-e-condizioni/components/TerminiECondizioni/index.tsx:55
+msgid "Tutti i contenuti presenti nel sito — inclusi testi, immagini, grafiche, marchi e design — sono di proprietà esclusiva di ${NAME_LEGAL_STRING} o dei rispettivi titolari e sono protetti dalle normative sul diritto d'autore. È vietata la copia, riproduzione o distribuzione senza autorizzazione."
+msgstr "Tutti i contenuti presenti nel sito — inclusi testi, immagini, grafiche, marchi e design — sono di proprietà esclusiva di ${NAME_LEGAL_STRING} o dei rispettivi titolari e sono protetti dalle normative sul diritto d'autore. È vietata la copia, riproduzione o distribuzione senza autorizzazione."
+
 #: src/modules/CookiePolicy/index.tsx:54
 msgid "Un cookie è un file di piccole dimensioni che viene inviato al browser in uso e salvato sul tuo dispositivo quando visiti un sito internet come {WEBISTE_URL} (‘il sito’). I cookie permettono un funzionamento efficiente del sito e ne migliorano le prestazioni, inoltre forniscono informazioni al proprietario del sito per fini statistici o pubblicitari, principalmente per personalizzare la tua esperienza di navigazione ricordando le tue preferenze (per esempio ricordare la lingua e la valuta che hai impostato, per riconoscerti alla visita successiva, ecc.)."
 msgstr "Un cookie è un file di piccole dimensioni che viene inviato al browser in uso e salvato sul tuo dispositivo quando visiti un sito internet come {WEBISTE_URL} (‘il sito’). I cookie permettono un funzionamento efficiente del sito e ne migliorano le prestazioni, inoltre forniscono informazioni al proprietario del sito per fini statistici o pubblicitari, principalmente per personalizzare la tua esperienza di navigazione ricordando le tue preferenze (per esempio ricordare la lingua e la valuta che hai impostato, per riconoscerti alla visita successiva, ecc.)."
 
-#: src/hooks/usePages/utils/index.tsx:78
+#: src/hooks/usePages/utils/index.tsx:90
 msgid "Un recinto da cavalli in PVC. Indistruttibile anche in presenza delle più avverse condizioni meteorologiche"
 msgstr "Un recinto da cavalli in PVC. Indistruttibile anche in presenza delle più avverse condizioni meteorologiche"
 
@@ -1234,9 +1476,9 @@ msgstr "Una lunga storia"
 msgid "Usa il nostro semplice pannello di controllo per scegliere uno dei nostri \"training programs\" o seleziona manualmente la velocità desiderata"
 msgstr "Usa il nostro semplice pannello di controllo per scegliere uno dei nostri \"training programs\" o seleziona manualmente la velocità desiderata"
 
-#: src/components/Gdpr/index.tsx:59
-msgid "Utilizziamo i cookie per garantire il corretto funzionamento del sito. Per ulteriori informazioni sul nostro utilizzo dei cookie, consultare la nostra <0>politica sui cookie</0>"
-msgstr "Utilizziamo i cookie per garantire il corretto funzionamento del sito. Per ulteriori informazioni sul nostro utilizzo dei cookie, consultare la nostra <0>politica sui cookie</0>"
+#: src/app/[locale]/informativa-privacy/components/InformativaPrivacy/index.tsx:79
+msgid "Uso consentito del Sito"
+msgstr "Uso consentito del Sito"
 
 #: src/components/ContentTable/index.tsx:58
 msgid "Vedi"
@@ -1246,10 +1488,10 @@ msgstr "Vedi"
 msgid "Vuoi maggiori informazioni?"
 msgstr "Vuoi maggiori informazioni?"
 
-#: src/modules/Contatti/components/ContattiAddress/index.tsx:96
+#: src/components/Address/index.tsx:96
 msgid "Website"
 msgstr "Website"
 
-#: src/modules/Contatti/components/ContattiAddress/index.tsx:71
+#: src/components/Address/index.tsx:71
 msgid "WhatsApp"
 msgstr "WhatsApp"

@@ -3,7 +3,7 @@ import { Box, Link, Stack, Typography } from "@mui/material";
 import Data from "components/Data";
 import React, { ReactNode } from "react";
 
-const ContattiAddress: React.FC<AddressProps> = ({
+const Address: React.FC<AddressProps> = ({
   name,
   country,
   addressLocality,
@@ -123,4 +123,4 @@ export interface AddressProps {
   website?: string;
 }
 
-export default ContattiAddress;
+export default Address;
