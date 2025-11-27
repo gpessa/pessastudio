@@ -7,107 +7,15 @@ import {
   Table,
   TableBody,
   TableCell,
+  TableContainer,
   TableHead,
   TableRow,
   Typography,
 } from "@mui/material";
-import { LegalPage, Ul } from "components";
+import { LegalPage } from "components";
 import { usePages } from "hooks";
 import useGdprConsent from "hooks/useGdprConsent";
-import { Fragment } from "react/jsx-runtime";
-
-import { ITALIA } from "utils/constants";
-
-const CookieCategoriesTable = () => {
-  return (
-    <Table>
-      <TableHead>
-        <TableRow>
-          <TableCell>Categoria</TableCell>
-          <TableCell>Descrizione</TableCell>
-          <TableCell>Esempi di Cookie / Servizi</TableCell>
-          <TableCell>Necessita consenso?</TableCell>
-        </TableRow>
-      </TableHead>
-
-      <TableBody>
-        {/* --- Technical Cookies --- */}
-        <TableRow>
-          <TableCell>
-            <strong>Cookie Tecnici</strong>
-          </TableCell>
-          <TableCell>
-            Necessari al funzionamento del sito. Non memorizzano informazioni
-            personali utilizzabili per il profiling.
-          </TableCell>
-          <TableCell>
-            <Ul>
-              <li>Cookie banner </li>
-              <li>Preferenze base del sito</li>
-              <li>Caricamento pagine</li>
-            </Ul>
-          </TableCell>
-          <TableCell>No</TableCell>
-        </TableRow>
-
-        {/* --- Analytics Cookies --- */}
-        <TableRow>
-          <TableCell>
-            <strong>Cookie Analitici</strong>
-          </TableCell>
-          <TableCell>
-            Utilizzati per raccogliere dati statistici aggregati e anonimi
-            sull’uso del sito, come pagine visitate e tempo di permanenza.
-          </TableCell>
-          <TableCell>
-            <Ul>
-              <li>Google Analytics (GA4)</li>
-              <li>Eventuali strumenti di analisi del traffico</li>
-            </Ul>
-          </TableCell>
-          <TableCell>Sì</TableCell>
-        </TableRow>
-
-        {/* --- Marketing Cookies --- */}
-        <TableRow>
-          <TableCell>
-            <strong>Cookie di Marketing</strong>
-          </TableCell>
-          <TableCell>
-            Permettono di mostrare annunci personalizzati e misurare le
-            performance delle campagne pubblicitarie.
-          </TableCell>
-          <TableCell>
-            <Ul>
-              <li>Meta Pixel (Facebook / Instagram)</li>
-              <li>Eventuali strumenti di advertising</li>
-            </Ul>
-          </TableCell>
-          <TableCell>Sì</TableCell>
-        </TableRow>
-
-        {/* --- Third Party Cookies --- */}
-        <TableRow>
-          <TableCell style={{ borderBottom: 0 }}>
-            <strong>Cookie di Terze Parti</strong>
-          </TableCell>
-          <TableCell style={{ borderBottom: 0 }}>
-            Cookie generati da servizi esterni integrati nel sito. Possono
-            raccogliere dati anche senza interazione diretta.
-          </TableCell>
-          <TableCell style={{ borderBottom: 0 }}>
-            <Ul>
-              <li>YouTube (video integrati)</li>
-              <li>Google Maps (mappe integrate)</li>
-              <li>CDN e servizi esterni caricati via embed</li>
-            </Ul>
-          </TableCell>
-          <TableCell style={{ borderBottom: 0 }}>Sì</TableCell>
-        </TableRow>
-      </TableBody>
-    </Table>
-  );
-};
+import { ITALIA, NAME_LEGAL_STRING } from "utils/constants";
 
 const CookiePolicy: React.FC = () => {
   const { PAGES } = usePages();
@@ -119,10 +27,11 @@ const CookiePolicy: React.FC = () => {
       <Typography>
         <Trans>
           Questa Cookie Policy spiega cosa sono i cookie, quali cookie
-          utilizziamo sul sito di Pessastudio Horse Tecnology srl e come
-          l’utente può gestire le proprie preferenze.
-          <br /> L’utilizzo dei cookie avviene in conformità al GDPR e alle
-          linee guida europee.
+          utilizziamo sul sito di {NAME_LEGAL_STRING} e come l’utente può
+          gestire le proprie preferenze.
+          <br />
+          L’utilizzo dei cookie avviene in conformità al GDPR e alle linee guida
+          europee.
         </Trans>
       </Typography>
     ),
@@ -143,108 +52,6 @@ const CookiePolicy: React.FC = () => {
         ),
       },
       {
-        title: <Trans>Tipologie di Cookie Utilizzati</Trans>,
-        content: (
-          <Stack gap={2}>
-            <Trans>
-              Sul nostro sito utilizziamo diverse categorie di cookie:
-            </Trans>
-            <CookieCategoriesTable />
-          </Stack>
-        ),
-      },
-      {
-        title: <Trans>Cookie Tecnici</Trans>,
-        content: (
-          <Trans>
-            <Typography>
-              Questi cookie sono essenziali per il funzionamento del sito e non
-              richiedono il consenso dell’utente.
-            </Typography>
-            <Typography>
-              Includono quelli relativi alla sicurezza, alla gestione delle
-              preferenze di base e alla funzionalità del cookie banner.
-            </Typography>
-          </Trans>
-        ),
-      },
-      {
-        title: <Trans>Cookie di Analytics (Google Analytics)</Trans>,
-        content: (
-          <Trans>
-            <Typography>
-              Utilizziamo Google Analytics per raccogliere dati anonimi sul
-              traffico e sul comportamento degli utenti.
-            </Typography>
-            <Typography>
-              I cookie di analytics vengono installati solo dopo il consenso
-              dell’utente. Google potrebbe trattare i dati negli Stati Uniti.
-            </Typography>
-          </Trans>
-        ),
-      },
-      {
-        title: <Trans>Cookie di Marketing (Meta Pixel)</Trans>,
-        content: (
-          <Trans>
-            <Typography>
-              Meta Pixel viene utilizzato per analizzare le interazioni con il
-              sito e migliorare la comunicazione sulle piattaforme Meta.
-            </Typography>
-            <Typography>
-              Questi cookie sono installati solo previo consenso e potrebbero
-              comportare trasferimenti di dati fuori dall’UE.
-            </Typography>
-          </Trans>
-        ),
-      },
-      {
-        title: <Trans>Cookie di Terze Parti</Trans>,
-        content: (
-          <Trans>
-            <Stack gap={2}>
-              <Typography>
-                Alcuni contenuti presenti sul sito sono forniti da servizi
-                esterni (terze parti). <br />
-                Quando visualizzi o interagisci con tali contenuti, questi
-                servizi potrebbero installare cookie aggiuntivi e raccogliere
-                informazioni sul tuo utilizzo, anche se non fai clic
-                sull’elemento incorporato.
-              </Typography>
-
-              <Typography>
-                I servizi di terze parti utilizzati nel sito includono, tra gli
-                altri:
-              </Typography>
-
-              <Ul>
-                <li>
-                  <strong>YouTube</strong>: per mostrare video integrati.
-                </li>
-                <li>
-                  <strong>Google Maps</strong>: per visualizzare mappe
-                  interattive.
-                </li>
-                <li>
-                  <strong>Meta (Facebook/Instagram)</strong>: tramite Pixel, per
-                  misurare interazioni e attività di marketing.
-                </li>
-              </Ul>
-
-              <Typography>
-                Ogni servizio applica la propria cookie policy e può trasferire
-                dati fuori dall’Unione Europea.
-              </Typography>
-
-              <Typography>
-                Ti invitiamo a consultare le loro informative per conoscere
-                modalità, finalità e tempi di conservazione dei dati.
-              </Typography>
-            </Stack>
-          </Trans>
-        ),
-      },
-      {
         title: <Trans>Base Giuridica del Trattamento</Trans>,
         content: (
           <Trans>
@@ -256,6 +63,88 @@ const CookiePolicy: React.FC = () => {
               I cookie di analytics, marketing e terze parti vengono installati
               solo previa accettazione esplicita tramite banner cookie.
             </Typography>
+          </Trans>
+        ),
+      },
+      {
+        title: <Trans>Tipologie di Cookie Utilizzati</Trans>,
+        content: (
+          <Trans>
+            <TableContainer>
+              <Table sx={{ minWidth: 650 }}>
+                <TableHead>
+                  <TableRow>
+                    <TableCell>Nome del Cookie</TableCell>
+                    <TableCell>Durata stimata</TableCell>
+                    <TableCell>Tipo di Parte</TableCell>
+                    <TableCell>Tipologia (GDPR)</TableCell>
+                    <TableCell>Descrizione</TableCell>
+                  </TableRow>
+                </TableHead>
+
+                <TableBody>
+                  <TableRow>
+                    <TableCell component="th" scope="row">
+                      NEXT\_LOCALE
+                    </TableCell>
+                    <TableCell>1 Anno</TableCell>
+                    <TableCell>Prima Parte</TableCell>
+                    <TableCell>Tecnico (Preferenze)</TableCell>
+                    <TableCell>
+                      Memorizza la lingua di visualizzazione preferita
+                      dell'utente.
+                    </TableCell>
+                  </TableRow>
+
+                  <TableRow>
+                    <TableCell component="th" scope="row">
+                      CookieConsent
+                    </TableCell>
+                    <TableCell>1 Anno</TableCell>
+                    <TableCell>Prima Parte</TableCell>
+                    <TableCell>Tecnico (Necessario)</TableCell>
+                    <TableCell>
+                      Registra e memorizza la preferenza di consenso dell'utente
+                      al banner.
+                    </TableCell>
+                  </TableRow>
+
+                  <TableRow>
+                    <TableCell component="th" scope="row">
+                      \_ga
+                    </TableCell>
+                    <TableCell>2 Anni</TableCell>
+                    <TableCell>Terza Parte (Google)</TableCell>
+                    <TableCell>Analitico/Statistico</TableCell>
+                    <TableCell>
+                      Registra un ID univoco per distinguere i visitatori e
+                      tracciare le sessioni.
+                    </TableCell>
+                  </TableRow>
+
+                  <TableRow>
+                    <TableCell
+                      component="th"
+                      scope="row"
+                      sx={{ borderBottom: 0 }}
+                    >
+                      \_ga\_1I0DED996WU
+                    </TableCell>
+                    <TableCell sx={{ borderBottom: 0 }}>2 Anni</TableCell>
+                    <TableCell sx={{ borderBottom: 0 }}>
+                      Terza Parte (Google)
+                    </TableCell>
+                    <TableCell sx={{ borderBottom: 0 }}>
+                      Analitico/Statistico
+                    </TableCell>
+                    <TableCell sx={{ borderBottom: 0 }}>
+                      Mantiene lo stato della sessione di navigazione per lo
+                      specifico ID di misurazione GA4.
+                    </TableCell>
+                  </TableRow>
+                </TableBody>
+              </Table>
+            </TableContainer>
           </Trans>
         ),
       },
@@ -273,21 +162,6 @@ const CookiePolicy: React.FC = () => {
                 browser o strumenti esterni come YourOnlineChoices.
               </Typography>
             </Stack>
-          </Trans>
-        ),
-      },
-      {
-        title: <Trans>Conservazione dei Cookie</Trans>,
-        content: (
-          <Trans>
-            <Typography>
-              La durata dei cookie varia in base alla tipologia e alla terza
-              parte che li imposta.
-            </Typography>
-            <Typography>
-              Il banner cookie fornisce una tabella aggiornata delle durate
-              specifiche.
-            </Typography>
           </Trans>
         ),
       },

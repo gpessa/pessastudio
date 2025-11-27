@@ -17,13 +17,14 @@ const FooterLegal: React.FC = () => {
         divider={<Divider orientation="vertical" flexItem />}
         spacing={2}
       >
-        {[INFORMATIVA_PRIVACY, COOKIE_POLICY, TERMINI_E_CONDIZIONI].map(
+        {[TERMINI_E_CONDIZIONI, INFORMATIVA_PRIVACY, COOKIE_POLICY].map(
           (link) => (
             <Link
               component={NextLink}
               href={link.url}
               variant="small"
               key={link.title}
+              color="textSecondary"
             >
               {link.title}
             </Link>

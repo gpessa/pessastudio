@@ -4,18 +4,24 @@ import { Trans } from "@lingui/react/macro";
 import { LegalPage } from "components";
 import { usePages } from "hooks";
 import { NAME_LEGAL_STRING, SEDE_LEGALE } from "utils/constants";
+import { Link } from "@mui/material";
+import NextLink from "next/link";
 
-const InformativaPrivacyPage: React.FC = () => {
-  const { PAGES } = usePages();
+const TerminiECondizioni: React.FC = () => {
+  const {
+    PAGES: { INFORMATIVA_PRIVACY, COOKIE_POLICY, TERMINI_E_CONDIZIONI },
+  } = usePages();
 
   const CONTENT = {
-    title: PAGES.INFORMATIVA_PRIVACY.title,
+    title: TERMINI_E_CONDIZIONI.title,
     intro: (
       <Trans>
         I presenti Termini e Condizioni regolano l'accesso e l'utilizzo del sito
-        web di {NAME_LEGAL_STRING}. Navigando su questo sito, l'utente accetta
-        integralmente le condizioni qui indicate. Se non si accettano tali
-        condizioni, si invita a non utilizzare il sito.
+        web di {NAME_LEGAL_STRING}.<br />
+        Navigando su questo sito, l'utente accetta integralmente le condizioni
+        qui indicate.
+        <br />
+        Se non si accettano tali condizioni, si invita a non utilizzare il sito.
       </Trans>
     ),
     sections: [
@@ -23,10 +29,10 @@ const InformativaPrivacyPage: React.FC = () => {
         title: <Trans>Informazioni sull'Azienda</Trans>,
         content: (
           <Trans>
-            Il sito è gestito da {NAME_LEGAL_STRING}, Partita IVA{" "}
-            {SEDE_LEGALE.id}. L'azienda produce e vende prodotti per cavalli
-            esclusivamente offline. Il sito ha finalità informative e funge da
-            catalogo prodotto.
+            Il sito è gestito da {NAME_LEGAL_STRING}.<br />
+            Il sito ha finalità puramente informative e funge da catalogo
+            digitale dei prodotti o servizi offerti dall'azienda (ad esempio,
+            attrezzature per l'equitazione e l'addestramento).
           </Trans>
         ),
       },
@@ -34,21 +40,29 @@ const InformativaPrivacyPage: React.FC = () => {
         title: <Trans>Utilizzo del Sito</Trans>,
         content: (
           <Trans>
-            Il sito può essere utilizzato esclusivamente per la consultazione
-            del catalogo e delle informazioni aziendali. È vietato qualsiasi
-            utilizzo improprio, fraudolento o che possa compromettere il
-            funzionamento del sito.
+            L'accesso al sito è gratuito e libero; non è richiesta alcuna
+            registrazione per la consultazione dei contenuti.
+            <br />
+            L'utente si impegna a utilizzare il sito esclusivamente per scopi
+            leciti e in modo da non violare i diritti di terzi o limitare
+            l'utilizzo del sito da parte di altri utenti.
           </Trans>
         ),
       },
       {
-        title: <Trans>Nessuna Vendita Online</Trans>,
+        title: <Trans>Natura del Sito e Assenza di Vendita Online</Trans>,
         content: (
           <Trans>
-            Il sito non consente l'acquisto diretto dei prodotti. I prezzi
-            mostrati hanno valore puramente informativo e non costituiscono
-            un'offerta commerciale vincolante. Per acquistare i prodotti è
-            necessario contattare l’azienda tramite i canali ufficiali.
+            Il sito opera esclusivamente come vetrina espositiva (Catalogo). Non
+            è prevista la possibilità di concludere acquisti, transazioni o
+            pagamenti direttamente online.
+            <br />
+            I prodotti, le descrizioni e gli eventuali prezzi mostrati hanno
+            valore puramente indicativo e non costituiscono offerta al pubblico.
+            <br />
+            Per informazioni commerciali o per l'acquisto, è necessario
+            contattare l'azienda tramite i riferimenti indicati nella sezione
+            contatti.
           </Trans>
         ),
       },
@@ -56,21 +70,13 @@ const InformativaPrivacyPage: React.FC = () => {
         title: <Trans>Proprietà Intellettuale</Trans>,
         content: (
           <Trans>
-            Tutti i contenuti presenti nel sito — inclusi testi, immagini,
-            grafiche, marchi e design — sono di proprietà esclusiva di $
+            Tutti i contenuti presenti nel sito (inclusi testi, immagini,
+            grafiche, loghi, marchi e layout) sono di proprietà esclusiva di{" "}
             {NAME_LEGAL_STRING} o dei rispettivi titolari e sono protetti dalle
-            normative sul diritto d'autore. È vietata la copia, riproduzione o
-            distribuzione senza autorizzazione.
-          </Trans>
-        ),
-      },
-      {
-        title: <Trans>Contenuti di Terze Parti</Trans>,
-        content: (
-          <Trans>
-            Il sito può includere integrazioni di terze parti come YouTube e
-            Google Maps. Questi servizi possono raccogliere dati dell'utente
-            secondo le loro rispettive privacy policy.,
+            vigenti normative sul diritto d'autore e sulla proprietà
+            industriale.
+            <br />È severamente vietata la riproduzione, distribuzione o
+            modifica senza espressa autorizzazione scritta.
           </Trans>
         ),
       },
@@ -78,20 +84,14 @@ const InformativaPrivacyPage: React.FC = () => {
         title: <Trans>Limitazione di Responsabilità</Trans>,
         content: (
           <Trans>
-            Pur impegnandosi per mantenere informazioni accurate e aggiornate,
-            l'azienda non garantisce l'assenza di errori, inesattezze o
-            interruzioni del servizio. L'utilizzo del sito avviene a rischio
-            dell'utente.
-          </Trans>
-        ),
-      },
-      {
-        title: <Trans>Link Esterni</Trans>,
-        content: (
-          <Trans>
-            Il sito può contenere link verso siti esterni non gestiti da $
-            {NAME_LEGAL_STRING}. L'azienda non è responsabile per i contenuti o
-            le pratiche di tali siti.
+            {NAME_LEGAL_STRING} si adopera per fornire informazioni accurate, ma
+            non garantisce che il sito sia privo di errori, inesattezze tecniche
+            o omissioni. L'azienda non si assume alcuna responsabilità per l'uso
+            improprio delle attrezzature mostrate sul catalogo.
+            <br />
+            L'azienda non potrà essere ritenuta responsabile per eventuali danni
+            diretti o indiretti derivanti dall'utilizzo o dall'impossibilità di
+            utilizzare il sito.
           </Trans>
         ),
       },
@@ -99,10 +99,23 @@ const InformativaPrivacyPage: React.FC = () => {
         title: <Trans>Protezione dei Dati Personali</Trans>,
         content: (
           <Trans>
-            Il trattamento dei dati personali raccolti tramite il sito è
-            regolato dalla Privacy Policy e dalla Cookie Policy, disponibili
-            tramite link nel footer. L’utente è invitato a consultarle per
-            informazioni dettagliate.
+            Il sito tratta i dati di navigazione e utilizza cookie.
+            <br />
+            L'indirizzo email viene raccolto per il servizio di newsletter,
+            previo consenso esplicito dell'utente. Tale servizio è gestito
+            tramite la piattaforma esterna Mailchimp (The Rocket Science Group
+            LLC), che agisce come responsabile del trattamento dei dati.
+            <br />
+            Il trattamento di tutti i dati personali è regolato in dettaglio
+            dalla{" "}
+            <Link component={NextLink} href={INFORMATIVA_PRIVACY.url}>
+              Privacy Policy
+            </Link>{" "}
+            e dalla{" "}
+            <Link component={NextLink} href={COOKIE_POLICY.url}>
+              Cookie Policy
+            </Link>
+            , consultabili tramite i link presenti nel footer del sito.
           </Trans>
         ),
       },
@@ -110,20 +123,23 @@ const InformativaPrivacyPage: React.FC = () => {
         title: <Trans>Modifiche ai Termini</Trans>,
         content: (
           <Trans>
-            {NAME_LEGAL_STRING} si riserva il diritto di modificare i presenti
-            Termini e Condizioni in qualsiasi momento. Le modifiche saranno
-            pubblicate su questa pagina e avranno effetto dalla data di
-            aggiornamento.
+            {NAME_LEGAL_STRING} si riserva il diritto di modificare o aggiornare
+            i presenti Termini e Condizioni in qualsiasi momento e senza
+            preavviso.
+            <br />
+            L'utente è invitato a consultare periodicamente questa pagina.
           </Trans>
         ),
       },
       {
-        title: <Trans>Legge Applicabile</Trans>,
+        title: <Trans>Legge Applicabile e Foro Competente</Trans>,
         content: (
           <Trans>
-            I presenti Termini sono regolati dalla legge italiana. Per qualsiasi
-            controversia relativa all'utilizzo del sito, sarà competente il foro
-            italiano territorialmente competente.
+            I presenti Termini sono regolati dalla legge italiana.
+            <br />
+            Per qualsiasi controversia derivante dall'interpretazione o
+            esecuzione dei presenti termini, sarà competente in via esclusiva il
+            Foro del luogo in cui ha sede {NAME_LEGAL_STRING}.
           </Trans>
         ),
       },
@@ -133,4 +149,4 @@ const InformativaPrivacyPage: React.FC = () => {
   return <LegalPage {...CONTENT} />;
 };
 
-export default InformativaPrivacyPage;
+export default TerminiECondizioni;

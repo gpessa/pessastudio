@@ -14,7 +14,7 @@ const LegalPage: React.FC<{
       {title}
     </Th>
 
-    <Stack gap={PRODUCT_GUTTER * 2} divider={<Divider />} mt={PRODUCT_GUTTER}>
+    <Stack gap={PRODUCT_GUTTER * 1.5} divider={<Divider />} mt={PRODUCT_GUTTER}>
       <Typography variant="body1" component="div">
         {intro}
       </Typography>
