@@ -13,8 +13,10 @@ import {
 } from "@mui/material";
 import { LegalPage, Ul } from "components";
 import { usePages } from "hooks";
-import Cookies from "js-cookie";
-import { GDPR_COOKIE_NAME, ITALIA } from "utils/constants";
+import useGdprConsent from "hooks/useGdprConsent";
+import { Fragment } from "react/jsx-runtime";
+
+import { ITALIA } from "utils/constants";
 
 const CookieCategoriesTable = () => {
   return (
@@ -109,26 +111,20 @@ const CookieCategoriesTable = () => {
 
 const CookiePolicy: React.FC = () => {
   const { PAGES } = usePages();
-
-  const showGdprCookies = () => {
-    Cookies.remove(GDPR_COOKIE_NAME);
-    window.location.reload();
-  };
+  const { showCookieConsent } = useGdprConsent();
 
   const CONTENT = {
     title: PAGES.COOKIE_POLICY.title,
     intro: (
-      <Trans>
-        <Typography>
+      <Typography>
+        <Trans>
           Questa Cookie Policy spiega cosa sono i cookie, quali cookie
           utilizziamo sul sito di Pessastudio Horse Tecnology srl e come
-          l’utente può gestire le proprie preferenze.{" "}
-        </Typography>
-        <Typography>
-          L’utilizzo dei cookie avviene in conformità al GDPR e alle linee guida
-          europee.
-        </Typography>
-      </Trans>
+          l’utente può gestire le proprie preferenze.
+          <br /> L’utilizzo dei cookie avviene in conformità al GDPR e alle
+          linee guida europee.
+        </Trans>
+      </Typography>
     ),
     sections: [
       {
@@ -266,18 +262,18 @@ const CookiePolicy: React.FC = () => {
       {
         title: <Trans>Come Gestire o Revocare il Consenso</Trans>,
         content: (
-          <Stack>
-            <Trans>
+          <Trans>
+            <Stack>
               <Typography>
                 L’utente può modificare in qualsiasi momento le proprie{" "}
-                <Link onClick={showGdprCookies}>preferenze</Link>.
+                <Link onClick={showCookieConsent}>preferenze</Link>.
               </Typography>
               <Typography>
                 È inoltre possibile gestire i cookie tramite le impostazioni del
                 browser o strumenti esterni come YourOnlineChoices.
               </Typography>
-            </Trans>
-          </Stack>
+            </Stack>
+          </Trans>
         ),
       },
       {

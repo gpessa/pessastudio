@@ -2,11 +2,14 @@
 
 import { Trans } from "@lingui/react/macro";
 import { LegalPage } from "components";
+import { usePages } from "hooks";
 import { NAME_LEGAL_STRING, SEDE_LEGALE } from "utils/constants";
 
 const InformativaPrivacyPage: React.FC = () => {
+  const { PAGES } = usePages();
+
   const CONTENT = {
-    title: "Termini e Condizioni",
+    title: PAGES.INFORMATIVA_PRIVACY.title,
     intro: (
       <Trans>
         I presenti Termini e Condizioni regolano l'accesso e l'utilizzo del sito
@@ -17,7 +20,7 @@ const InformativaPrivacyPage: React.FC = () => {
     ),
     sections: [
       {
-        title: "Informazioni sull'Azienda",
+        title: <Trans>Informazioni sull'Azienda</Trans>,
         content: (
           <Trans>
             Il sito è gestito da {NAME_LEGAL_STRING}, Partita IVA{" "}
@@ -28,7 +31,7 @@ const InformativaPrivacyPage: React.FC = () => {
         ),
       },
       {
-        title: "Utilizzo del Sito",
+        title: <Trans>Utilizzo del Sito</Trans>,
         content: (
           <Trans>
             Il sito può essere utilizzato esclusivamente per la consultazione
@@ -39,7 +42,7 @@ const InformativaPrivacyPage: React.FC = () => {
         ),
       },
       {
-        title: "Nessuna Vendita Online",
+        title: <Trans>Nessuna Vendita Online</Trans>,
         content: (
           <Trans>
             Il sito non consente l'acquisto diretto dei prodotti. I prezzi
@@ -50,7 +53,7 @@ const InformativaPrivacyPage: React.FC = () => {
         ),
       },
       {
-        title: "Proprietà Intellettuale",
+        title: <Trans>Proprietà Intellettuale</Trans>,
         content: (
           <Trans>
             Tutti i contenuti presenti nel sito — inclusi testi, immagini,
@@ -62,7 +65,7 @@ const InformativaPrivacyPage: React.FC = () => {
         ),
       },
       {
-        title: "Contenuti di Terze Parti",
+        title: <Trans>Contenuti di Terze Parti</Trans>,
         content: (
           <Trans>
             Il sito può includere integrazioni di terze parti come YouTube e
@@ -72,7 +75,7 @@ const InformativaPrivacyPage: React.FC = () => {
         ),
       },
       {
-        title: "Limitazione di Responsabilità",
+        title: <Trans>Limitazione di Responsabilità</Trans>,
         content: (
           <Trans>
             Pur impegnandosi per mantenere informazioni accurate e aggiornate,
@@ -83,7 +86,7 @@ const InformativaPrivacyPage: React.FC = () => {
         ),
       },
       {
-        title: "Link Esterni",
+        title: <Trans>Link Esterni</Trans>,
         content: (
           <Trans>
             Il sito può contenere link verso siti esterni non gestiti da $
@@ -93,7 +96,7 @@ const InformativaPrivacyPage: React.FC = () => {
         ),
       },
       {
-        title: "Protezione dei Dati Personali",
+        title: <Trans>Protezione dei Dati Personali</Trans>,
         content: (
           <Trans>
             Il trattamento dei dati personali raccolti tramite il sito è
@@ -104,7 +107,7 @@ const InformativaPrivacyPage: React.FC = () => {
         ),
       },
       {
-        title: "Modifiche ai Termini",
+        title: <Trans>Modifiche ai Termini</Trans>,
         content: (
           <Trans>
             {NAME_LEGAL_STRING} si riserva il diritto di modificare i presenti
@@ -115,7 +118,7 @@ const InformativaPrivacyPage: React.FC = () => {
         ),
       },
       {
-        title: "Legge Applicabile",
+        title: <Trans>Legge Applicabile</Trans>,
         content: (
           <Trans>
             I presenti Termini sono regolati dalla legge italiana. Per qualsiasi

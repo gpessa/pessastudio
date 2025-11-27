@@ -15,7 +15,9 @@ const LegalPage: React.FC<{
     </Th>
 
     <Stack gap={PRODUCT_GUTTER * 2} divider={<Divider />} mt={PRODUCT_GUTTER}>
-      <Typography variant="body1">{intro}</Typography>
+      <Typography variant="body1" component="div">
+        {intro}
+      </Typography>
       {sections.map(({ title, content }, index) => (
         <Box key={index}>
           <Th variant="h5" gutterBottom sans>

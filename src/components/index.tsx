@@ -1,4 +1,5 @@
 export { default as Accessori } from "./Accessori";
+export { default as Address } from "./Address";
 export { default as Benefits } from "./Benefits";
 export { default as Breadcrumb } from "./Breadcrumb";
 export { default as Columns } from "./Columns";
@@ -20,7 +21,7 @@ export { default as Product } from "./Product";
 export { default as Section } from "./Section";
 export { default as Th } from "./Th";
 export { default as Title } from "./Title";
+export { default as Trackings } from "./Trackings";
 export { default as Ul } from "./Ul";
 export { default as Video } from "./Video";
 export { default as WhatsApp } from "./WhatsApp";
-export { default as Address } from "./Address";

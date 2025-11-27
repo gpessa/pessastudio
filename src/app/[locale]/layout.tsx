@@ -1,10 +1,8 @@
 import "react-multi-carousel/lib/styles.css";
 
+import { AppRouterCacheProvider } from "@mui/material-nextjs/v15-appRouter";
 import CssBaseline from "@mui/material/CssBaseline";
 import { ThemeProvider } from "@mui/material/styles";
-import { AppRouterCacheProvider } from "@mui/material-nextjs/v15-appRouter";
-import { GoogleAnalytics } from "@next/third-parties/google";
-import { SpeedInsights } from "@vercel/speed-insights/next";
 import image from "assets/generals/image.jpg";
 import {
   Breadcrumb,
@@ -13,21 +11,19 @@ import {
   Header,
   LdJson,
   LinguiClientProvider,
+  Trackings,
   WhatsApp,
 } from "components";
 import { Metadata } from "next";
 import Head from "next/head";
 import { notFound } from "next/navigation";
-import Script from "next/script";
 import { PropsWithChildren } from "react";
 import { Organization, WithContext } from "schema-dts";
 import theme from "theme";
 import { allMessages } from "utils/appRouterI18n";
 import {
-  GOOGLE_ANALYTICS,
   ITALIA,
   NAME_STRING,
-  PIXEL_ID,
   SEDE_LEGALE,
   SEDE_OPERATIVA,
   SOCIALS,
@@ -35,12 +31,11 @@ import {
 } from "utils/constants";
 import { initLingui, PageLangParam } from "utils/initLingui";
 
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import i18nConfig from "../../../i18nConfig";
 import { version } from "../../../package.json";
 
-export async function generateMetadata({
-  params,
-}: PageLangParam): Promise<Metadata> {
+export async function generateMetadata({}: PageLangParam): Promise<Metadata> {
   return {
     openGraph: {
       title: {
@@ -102,7 +97,6 @@ export default async function RootLayout({
       </Head>
       <body>
         <AppRouterCacheProvider>
-          {GOOGLE_ANALYTICS && <GoogleAnalytics gaId={GOOGLE_ANALYTICS} />}
           <ThemeProvider theme={theme}>
             <CssBaseline />
             <LinguiClientProvider
@@ -117,27 +111,9 @@ export default async function RootLayout({
               <WhatsApp />
             </LinguiClientProvider>
           </ThemeProvider>
-          <SpeedInsights />
-          <Script
-            id="meta-pixel"
-            strategy="afterInteractive"
-            dangerouslySetInnerHTML={{
-              __html: `
-              !function(f,b,e,v,n,t,s)
-              {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-              n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-              if(!f._fbq)f._fbq=n;
-              n.push=n;n.loaded=!0;n.version='2.0';
-              n.queue=[];t=b.createElement(e);t.async=!0;
-              t.src=v;s=b.getElementsByTagName(e)[0];
-              s.parentNode.insertBefore(t,s)}(window, document,'script',
-              'https://connect.facebook.net/en_US/fbevents.js');
-              fbq('init', '${PIXEL_ID}');
-              fbq('track', 'PageView');
-            `,
-            }}
-          />
         </AppRouterCacheProvider>
+        <Trackings />
+        <SpeedInsights />
       </body>
     </html>
   );

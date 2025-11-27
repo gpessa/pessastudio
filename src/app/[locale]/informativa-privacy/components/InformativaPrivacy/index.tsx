@@ -5,6 +5,7 @@ import { Link, Typography } from "@mui/material";
 import { Address, LegalPage } from "components";
 import { usePages } from "hooks";
 import NextLink from "next/link";
+import { Fragment } from "react/jsx-runtime";
 import { NAME_LEGAL_STRING, SEDE_LEGALE } from "utils/constants";
 
 const InformativaPrivacyPage: React.FC = () => {
@@ -15,7 +16,7 @@ const InformativaPrivacyPage: React.FC = () => {
     title: PAGES.INFORMATIVA_PRIVACY.title,
     intro: (
       <Trans>
-        <Typography>Benvenuto sul sito di ${NAME_LEGAL_STRING}.</Typography>
+        <Typography>Benvenuto sul sito di {NAME_LEGAL_STRING}.</Typography>
         <Typography>
           L’accesso e l’utilizzo del sito implicano l’accettazione dei presenti
           Termini e Condizioni.
@@ -60,18 +61,16 @@ const InformativaPrivacyPage: React.FC = () => {
       {
         title: t`Proprietà intellettuale`,
         content: (
-          <Trans>
-            <Typography>
+          <Typography>
+            <Trans>
               Tutti i contenuti presenti sul Sito: testi, descrizioni,
               fotografie, immagini, grafica, loghi, layout, marchi e schede
               tecniche, sono di proprietà esclusiva di {NAME_LEGAL_STRING} o dei
               rispettivi aventi diritto.
-            </Typography>
-            <Typography>
-              È vietato copiare, distribuire, riprodurre, modificare o
+              <br />È vietato copiare, distribuire, riprodurre, modificare o
               utilizzare tali contenuti senza autorizzazione scritta.
-            </Typography>
-          </Trans>
+            </Trans>
+          </Typography>
         ),
       },
 
