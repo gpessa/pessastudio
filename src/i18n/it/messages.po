@@ -866,8 +866,8 @@ msgid "Legge Applicabile e Foro Competente"
 msgstr "Legge Applicabile e Foro Competente"
 
 #: src/hooks/usePages/utils/index.tsx:72
-msgid "Leggi i Termini e Condizioni di Pessastudio Horse Tecnology srl: uso del sito, responsabilità, proprietà dei contenuti e informazioni sul catalogo prodotti. Tutte le regole per navigare in sicurezza"
-msgstr "Leggi i Termini e Condizioni di Pessastudio Horse Tecnology srl: uso del sito, responsabilità, proprietà dei contenuti e informazioni sul catalogo prodotti. Tutte le regole per navigare in sicurezza"
+msgid "Leggi i Termini e Condizioni: uso del sito, responsabilità, proprietà dei contenuti e informazioni sul catalogo prodotti. Tutte le regole per navigare in sicurezza"
+msgstr "Leggi i Termini e Condizioni: uso del sito, responsabilità, proprietà dei contenuti e informazioni sul catalogo prodotti. Tutte le regole per navigare in sicurezza"
 
 #. placeholder {0}: DressageModels.OLYMPIC
 #: src/hooks/useProducts/utils/index.tsx:499

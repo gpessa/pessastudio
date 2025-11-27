@@ -251,7 +251,7 @@ msgstr "Characteristic"
 
 #: src/app/[locale]/informativa-privacy/components/InformativaPrivacy/index.tsx:39
 msgid "Categorie di Dati Trattati e Finalità"
-msgstr ""
+msgstr "Categories of Data Processed and Purposes"
 
 #: src/hooks/useProducts/utils/index.tsx:137
 #: src/modules/Ostacoli/Cavalletti.tsx:21
@@ -422,7 +422,7 @@ msgstr "For years, Pessastudio has focused on producing quality products at an a
 
 #: src/app/[locale]/informativa-privacy/components/InformativaPrivacy/index.tsx:117
 msgid "Destinatari dei Dati e Trasferimento Extra-UE"
-msgstr ""
+msgstr "Data Recipients and Extra-EU Transfer"
 
 #: src/utils/constants.tsx:308
 msgid "Diametro"
@@ -449,7 +449,7 @@ msgstr "Horse exerciser dimensions"
 
 #: src/app/[locale]/informativa-privacy/components/InformativaPrivacy/index.tsx:171
 msgid "Diritti dell'Interessato (GDPR)"
-msgstr ""
+msgstr "Data Subject Rights (GDPR)"
 
 #: src/components/WhatsApp/index.tsx:32
 msgid "Disponibile"
@@ -617,7 +617,7 @@ msgstr "Upgrade to the best with our premium aluminum jumps. These 1.7 mt. tall 
 
 #: src/app/[locale]/cookie-policy/components/CookiePolicy/index.tsx:43
 msgid "I cookie sono piccoli file di testo che i siti web inviano al browser dell’utente.<0/>Vengono utilizzati per migliorare l’esperienza di navigazione, analizzare il traffico e offrire contenuti personalizzati."
-msgstr ""
+msgstr "Cookies are small text files that websites send to the user's browser.<0/>They are used to improve the browsing experience, analyze traffic, and offer personalized content."
 
 #: src/modules/GiostreIppowalker/_corridoi.tsx:39
 #: src/modules/GiostreTecnoexerciser/_corridoi.tsx:39
@@ -647,7 +647,7 @@ msgstr "You will not need any building permit to install our lunge pen"
 
 #: src/app/[locale]/termini-e-condizioni/components/TerminiECondizioni/index.tsx:18
 msgid "I presenti Termini e Condizioni regolano l'accesso e l'utilizzo del sito web di {NAME_LEGAL_STRING}.<0/>Navigando su questo sito, l'utente accetta integralmente le condizioni qui indicate.<1/>Se non si accettano tali condizioni, si invita a non utilizzare il sito."
-msgstr ""
+msgstr "These Terms and Conditions govern the access and use of {NAME_LEGAL_STRING}'s website.<0/>By browsing this site, the user fully accepts the conditions stated herein.<1/>If you do not agree to these conditions, please do not use the site"
 
 #: src/app/[locale]/termini-e-condizioni/components/TerminiECondizioni/index.tsx:137
 msgid "I presenti Termini sono regolati dalla legge italiana.<0/>Per qualsiasi controversia derivante dall'interpretazione o esecuzione dei presenti termini, sarà competente in via esclusiva il Foro del luogo in cui ha sede {NAME_LEGAL_STRING}."
@@ -675,7 +675,7 @@ msgstr "High quality, standard plastic pinless jump cup"
 
 #: src/app/[locale]/termini-e-condizioni/components/TerminiECondizioni/index.tsx:31
 msgid "Il sito è gestito da {NAME_LEGAL_STRING}.<0/>Il sito ha finalità puramente informative e funge da catalogo digitale dei prodotti o servizi offerti dall'azienda (ad esempio, attrezzature per l'equitazione e l'addestramento)."
-msgstr ""
+msgstr "The site is managed by {NAME_LEGAL_STRING}.<0/>The site is for purely informational purposes and serves as a digital catalog of products or services offered by the company (e.g., equipment for horse riding and training)."
 
 #: src/app/[locale]/termini-e-condizioni/components/TerminiECondizioni/index.tsx:55
 msgid "Il sito opera esclusivamente come vetrina espositiva (Catalogo). Non è prevista la possibilità di concludere acquisti, transazioni o pagamenti direttamente online.<0/>I prodotti, le descrizioni e gli eventuali prezzi mostrati hanno valore puramente indicativo e non costituiscono offerta al pubblico.<1/>Per informazioni commerciali o per l'acquisto, è necessario contattare l'azienda tramite i riferimenti indicati nella sezione contatti."
@@ -888,7 +888,7 @@ msgid "Legge Applicabile e Foro Competente"
 msgstr ""
 
 #: src/hooks/usePages/utils/index.tsx:72
-msgid "Leggi i Termini e Condizioni di Pessastudio Horse Tecnology srl: uso del sito, responsabilità, proprietà dei contenuti e informazioni sul catalogo prodotti. Tutte le regole per navigare in sicurezza"
+msgid "Leggi i Termini e Condizioni: uso del sito, responsabilità, proprietà dei contenuti e informazioni sul catalogo prodotti. Tutte le regole per navigare in sicurezza"
 msgstr ""
 
 #. placeholder {0}: DressageModels.OLYMPIC
@@ -1211,7 +1211,7 @@ msgstr "Download"
 
 #: src/hooks/usePages/utils/index.tsx:78
 msgid "Scopri come tuteliamo i tuoi dati e quali cookie utilizza il sito. Informazioni chiare su privacy, sicurezza e diritti GDPR"
-msgstr ""
+msgstr "Find out how we protect your data and what cookies the site uses. Clear information on privacy, security, and GDPR rights"
 
 #: src/modules/Giostre/index.tsx:201
 #: src/modules/Giostre/index.tsx:217

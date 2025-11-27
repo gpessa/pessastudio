@@ -69,7 +69,7 @@ export const getPages = (locale: string) => {
   };
 
   const TERMINI_E_CONDIZIONI: Page = {
-    description: msg`Leggi i Termini e Condizioni di Pessastudio Horse Tecnology srl: uso del sito, responsabilità, proprietà dei contenuti e informazioni sul catalogo prodotti. Tutte le regole per navigare in sicurezza`,
+    description: msg`Leggi i Termini e Condizioni: uso del sito, responsabilità, proprietà dei contenuti e informazioni sul catalogo prodotti. Tutte le regole per navigare in sicurezza`,
     title: msg`Termini & Condizioni`,
     url: `/${locale}/termini-e-condizioni`,
   };
