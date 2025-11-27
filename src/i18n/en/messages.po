@@ -43,7 +43,7 @@ msgstr ""
 
 #: src/app/[locale]/informativa-privacy/components/InformativaPrivacy/index.tsx:154
 msgid "<0><1><2>Dati per la Newsletter:</2> Saranno conservati fino alla revoca del consenso (disiscrizione) da parte dell'utente.</1><3><4>Dati di Navigazione/Statistiche:</4> Conservati per il tempo tecnico strettamente necessario a adempiere alle finalità o secondo quanto specificato nella Cookie Policy.</3></0>"
-msgstr ""
+msgstr "<0><1><2>Newsletter Data:</2> Will be stored until the user withdraws consent (unsubscribe).</1><3><4>Browsing/Analytics Data:</4> Stored for the time strictly necessary to fulfill the purposes or as specified in the Cookie Policy.</3></0>"
 
 #: src/utils/constants.tsx:312
 msgid "<0>Accessori</0><1>(Ordinabili separatamente)</1>"
@@ -112,6 +112,9 @@ msgstr "<0>The recently developed Ippowalker grew out of the dream of offering a
 #: src/app/[locale]/informativa-privacy/components/InformativaPrivacy/index.tsx:173
 msgid "<0>L'utente ha il diritto di chiedere al Titolare l'accesso, la rettifica, la cancellazione (Diritto all'Oblio), la limitazione del trattamento o di opporsi al loro trattamento. Ha inoltre il diritto alla portabilità dei dati.</0><1>Le richieste relative all'esercizio dei diritti possono essere inviate al Titolare tramite l'indirizzo email dedicato: <2>{0}</2>.</1><3>L'utente ha, in ogni momento, il diritto di proporre reclamo all'Autorità di controllo (Garante per la Protezione dei Dati Personali).</3>"
 msgstr ""
+"<0>The user has the right to request from the Data Controller access, rectification, deletion (Right to Erasure), restriction of processing, or to object to the processing of their personal data. The user also has the right to data portability.</0>\n"
+"<1>Requests concerning the exercise of these rights can be sent to the Data Controller via the dedicated email address: <2>{0}</2>.</1>\n"
+"<3>The user has the right, at any time, to lodge a complaint with the Supervisory Authority (Italian Data Protection Authority – Garante per la Protezione dei Dati Personali).</3>"
 
 #: src/utils/constants.tsx:239
 msgid "<0>La <1>copertura in PVC</1> è composta da una struttura in acciaio zincato la quale sorregge un telo in tessuto di poliestere spalmato di colore verde o crema e in base alle esigenze del cliente anche in altre colorazioni.</0><2>Questa copertura è in grado di sorreggere un carico neve pari a 80 kg/mq * e una forza vento pari a 110 Km/h.</2>"
@@ -141,7 +144,7 @@ msgstr "<0>Electrified Pushers</0>"
 #. placeholder {1}: INFORMATIVA_PRIVACY.title
 #: src/components/Gdpr/index.tsx:70
 msgid "<0>Questo sito web utilizza cookie per garantirti la migliore esperienza sul nostro sito web, analizzare il traffico verso questo sito web, mostrarti annunci personalizzati su siti web di terze parti e fornirti funzionalità social media.</0><1>Per ulteriori informazioni, consulta la nostra <2>{0}</2> e la nostra <3>{1}</3>.</1>"
-msgstr ""
+msgstr "<0>This website uses cookies to ensure you get the best experience on our website, to analyze traffic to this site, to show you personalized ads on third-party websites, and to provide social media features.</0><1>For more information, please refer to our <2>{0}</2> and our <3>{1}</3>.</1>"
 
 #: src/modules/Ostacoli/Barriere.tsx:19
 msgid "<0>Sono le componenti dell'ostacolo più stressate, poiché, come i candelieri e i pilieri, sono perennemente sottoposte all'azione aggressiva degli agenti atmosferici (caldo, freddo, sole, pioggia). A questi si aggiungono anche gli urti degli zoccoli dei cavalli, frequenti ribaltamenti e le manipolazioni necessarie per aggiustarne le altezze.</0><1>Le barriere di abete, comunemente usate, richiedono una continua manutenzione perché si piegano, scoloriscono nel tempo e si rompono frequentemente.</1><2>Le barriere sintetiche di {NAME}, invece, hanno lo stesso peso di quelle in abete, ma perdono il loro colore solamente dopo anni, non si scrostano e, solo raramente, si rompono sotto l'azione di un carico eccessivo.</2>"
