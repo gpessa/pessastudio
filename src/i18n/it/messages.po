@@ -37,17 +37,13 @@ msgstr "+ IVA"
 msgid "<0>{NAME} è un'azienda altamente affidabile e rinomata nel settore dell'equitazione. Ogni anno, centinaia di persone scelgono i nostri articoli d'equitazione per la qualità superiore che li caratterizza.</0><1>La gamma di prodotti offerti è ampia e diversificata, con un'attenzione particolare alla funzionalità e al design. La competenza e l'esperienza del team di {NAME} sono alla base del successo dell'azienda e della sua reputazione di affidabilità e professionalità.</1>"
 msgstr "<0>{NAME} è un'azienda altamente affidabile e rinomata nel settore dell'equitazione. Ogni anno, centinaia di persone scelgono i nostri articoli d'equitazione per la qualità superiore che li caratterizza.</0><1>La gamma di prodotti offerti è ampia e diversificata, con un'attenzione particolare alla funzionalità e al design. La competenza e l'esperienza del team di {NAME} sono alla base del successo dell'azienda e della sua reputazione di affidabilità e professionalità.</1>"
 
-#: src/app/[locale]/cookie-policy/components/CookiePolicy/index.tsx:72
+#: src/app/[locale]/cookie-policy/components/CookiePolicy/index.tsx:70
 msgid "<0><1><2><3><4>Nome del Cookie</4><5>Durata stimata</5><6>Tipo di Parte</6><7>Tipologia (GDPR)</7><8>Descrizione</8></3></2><9><10><11>NEXT\\_LOCALE</11><12>1 Anno</12><13>Prima Parte</13><14>Tecnico (Preferenze)</14><15>Memorizza la lingua di visualizzazione preferita dell'utente.</15></10><16><17>CookieConsent</17><18>1 Anno</18><19>Prima Parte</19><20>Tecnico (Necessario)</20><21>Registra e memorizza la preferenza di consenso dell'utente al banner.</21></16><22><23>\\_ga</23><24>2 Anni</24><25>Terza Parte (Google)</25><26>Analitico/Statistico</26><27>Registra un ID univoco per distinguere i visitatori e tracciare le sessioni.</27></22><28><29>\\_ga\\_1I0DED996WU</29><30>2 Anni</30><31>Terza Parte (Google)</31><32>Analitico/Statistico</32><33>Mantiene lo stato della sessione di navigazione per lo specifico ID di misurazione GA4.</33></28></9></1></0>"
 msgstr "<0><1><2><3><4>Nome del Cookie</4><5>Durata stimata</5><6>Tipo di Parte</6><7>Tipologia (GDPR)</7><8>Descrizione</8></3></2><9><10><11>NEXT\\_LOCALE</11><12>1 Anno</12><13>Prima Parte</13><14>Tecnico (Preferenze)</14><15>Memorizza la lingua di visualizzazione preferita dell'utente.</15></10><16><17>CookieConsent</17><18>1 Anno</18><19>Prima Parte</19><20>Tecnico (Necessario)</20><21>Registra e memorizza la preferenza di consenso dell'utente al banner.</21></16><22><23>\\_ga</23><24>2 Anni</24><25>Terza Parte (Google)</25><26>Analitico/Statistico</26><27>Registra un ID univoco per distinguere i visitatori e tracciare le sessioni.</27></22><28><29>\\_ga\\_1I0DED996WU</29><30>2 Anni</30><31>Terza Parte (Google)</31><32>Analitico/Statistico</32><33>Mantiene lo stato della sessione di navigazione per lo specifico ID di misurazione GA4.</33></28></9></1></0>"
 
-#: src/app/[locale]/informativa-privacy/components/InformativaPrivacy/index.tsx:158
+#: src/app/[locale]/informativa-privacy/components/InformativaPrivacy/index.tsx:154
 msgid "<0><1><2>Dati per la Newsletter:</2> Saranno conservati fino alla revoca del consenso (disiscrizione) da parte dell'utente.</1><3><4>Dati di Navigazione/Statistiche:</4> Conservati per il tempo tecnico strettamente necessario a adempiere alle finalità o secondo quanto specificato nella Cookie Policy.</3></0>"
 msgstr "<0><1><2>Dati per la Newsletter:</2> Saranno conservati fino alla revoca del consenso (disiscrizione) da parte dell'utente.</1><3><4>Dati di Navigazione/Statistiche:</4> Conservati per il tempo tecnico strettamente necessario a adempiere alle finalità o secondo quanto specificato nella Cookie Policy.</3></0>"
-
-#: src/app/[locale]/cookie-policy/components/CookiePolicy/index.tsx:154
-msgid "<0><1>L’utente può modificare in qualsiasi momento le proprie <2>preferenze</2>.</1><3>È inoltre possibile gestire i cookie tramite le impostazioni del browser o strumenti esterni come YourOnlineChoices.</3></0>"
-msgstr "<0><1>L’utente può modificare in qualsiasi momento le proprie <2>preferenze</2>.</1><3>È inoltre possibile gestire i cookie tramite le impostazioni del browser o strumenti esterni come YourOnlineChoices.</3></0>"
 
 #: src/utils/constants.tsx:312
 msgid "<0>Accessori</0><1>(Ordinabili separatamente)</1>"
@@ -77,21 +73,13 @@ msgstr "<0>E' possibile ordinare una giostra nei diametri:</0><1><2>12,0 mt. <3>
 msgid "<0>I cavalletti Caprilli rappresentano uno strumento essenziale per l'allenamento del vostro animale, il passaggio sui cavalletti, rinforza la schiena del cavallo, scioglie la muscolatura e lo induce a flettere le articolazioni.</0><1>Lavati con idropulitrice riprendono i colori originari anche dopo 20 anni.</1>"
 msgstr "<0>I cavalletti Caprilli rappresentano uno strumento essenziale per l'allenamento del vostro animale, il passaggio sui cavalletti, rinforza la schiena del cavallo, scioglie la muscolatura e lo induce a flettere le articolazioni.</0><1>Lavati con idropulitrice riprendono i colori originari anche dopo 20 anni.</1>"
 
-#: src/app/[locale]/cookie-policy/components/CookiePolicy/index.tsx:42
-msgid "<0>I cookie sono piccoli file di testo che i siti web inviano al browser dell’utente.</0><1>Vengono utilizzati per migliorare l’esperienza di navigazione, analizzare il traffico e offrire contenuti personalizzati.</1>"
-msgstr "<0>I cookie sono piccoli file di testo che i siti web inviano al browser dell’utente.</0><1>Vengono utilizzati per migliorare l’esperienza di navigazione, analizzare il traffico e offrire contenuti personalizzati.</1>"
-
-#: src/app/[locale]/informativa-privacy/components/InformativaPrivacy/index.tsx:123
+#: src/app/[locale]/informativa-privacy/components/InformativaPrivacy/index.tsx:119
 msgid "<0>I dati raccolti possono essere comunicati a soggetti che agiscono come Responsabili del Trattamento (es. Mailchimp, Google) per conto del Titolare.<1/>I dati personali possono essere trasferiti in Paesi extra-UE/SEE (come gli Stati Uniti) poiché l'attività ha rilievo internazionale e si avvale di servizi cloud globali.<2/>Tali trasferimenti avvengono solo in presenza di adeguate garanzie di legge, tra cui:</0><3><4><5>Clausole Contrattuali Standard (SCC):</5> Adottate con fornitori come Mailchimp, Google e Facebook.</4><6><7>Decisioni di Adeguatezza:</7> In caso di Paesi che offrono un livello di protezione dei dati adeguato.</6></3><8>Il Titolare assicura che il trattamento avvenga sempre nel rispetto della legislazione italiana e del GDPR.</8>"
 msgstr "<0>I dati raccolti possono essere comunicati a soggetti che agiscono come Responsabili del Trattamento (es. Mailchimp, Google) per conto del Titolare.<1/>I dati personali possono essere trasferiti in Paesi extra-UE/SEE (come gli Stati Uniti) poiché l'attività ha rilievo internazionale e si avvale di servizi cloud globali.<2/>Tali trasferimenti avvengono solo in presenza di adeguate garanzie di legge, tra cui:</0><3><4><5>Clausole Contrattuali Standard (SCC):</5> Adottate con fornitori come Mailchimp, Google e Facebook.</4><6><7>Decisioni di Adeguatezza:</7> In caso di Paesi che offrono un livello di protezione dei dati adeguato.</6></3><8>Il Titolare assicura che il trattamento avvenga sempre nel rispetto della legislazione italiana e del GDPR.</8>"
 
 #: src/modules/Ostacoli/index.tsx:41
 msgid "<0>I nostri ostacoli sono progettati e costruiti per durare nel tempo non richiedono alcuna manutenzione e conservano, inalterata, la loro bellezza anche se lasciati nel campo per anni.</0><1>Se gli ostacoli per il professionista sono uno strumento di lavoro, per molti altri appassionati rappresentano la realizzazione di un sogno. Noi abbiamo deciso di rendere questi strumenti resistenti nel tempo per fare in modo che questo sogno duri.</1><2>Potrete scegliere le quantità e i colori nella nostra gamma di produzione e acquistare anche singoli pezzi di ricambio.</2>"
 msgstr "<0>I nostri ostacoli sono progettati e costruiti per durare nel tempo non richiedono alcuna manutenzione e conservano, inalterata, la loro bellezza anche se lasciati nel campo per anni.</0><1>Se gli ostacoli per il professionista sono uno strumento di lavoro, per molti altri appassionati rappresentano la realizzazione di un sogno. Noi abbiamo deciso di rendere questi strumenti resistenti nel tempo per fare in modo che questo sogno duri.</1><2>Potrete scegliere le quantità e i colori nella nostra gamma di produzione e acquistare anche singoli pezzi di ricambio.</2>"
-
-#: src/app/[locale]/informativa-privacy/components/InformativaPrivacy/index.tsx:106
-msgid "<0>Il conferimento dei <1>Dati di Navigazione</1> è implicito. Il conferimento dell'<2>Indirizzo Email</2> per la newsletter è facoltativo; la mancata fornitura comporta l'impossibilità di ricevere la newsletter.</0><3>Il trattamento è svolto in modalità elettronica, in modo lecito e corretto, con l'adozione di misure di sicurezza adeguate.</3>"
-msgstr "<0>Il conferimento dei <1>Dati di Navigazione</1> è implicito. Il conferimento dell'<2>Indirizzo Email</2> per la newsletter è facoltativo; la mancata fornitura comporta l'impossibilità di ricevere la newsletter.</0><3>Il trattamento è svolto in modalità elettronica, in modo lecito e corretto, con l'adozione di misure di sicurezza adeguate.</3>"
 
 #: src/utils/constants.tsx:294
 msgid "<0>Il corridoio <1>{name}</1> in compensato marino è realizzato con un multistrato <2>({thickness} mm. di spessore)</2> antigraffio, antiurto, resistente allo sporco e idrorepellente. L'obbiettivo di questa soluzione è quello di fornire un elevato grado di sicurezza forzando il cavallo a concentrarsi sul percorso durante l'allenamento.</0>"
@@ -112,28 +100,16 @@ msgstr "<0>Il nostro modello di punta, il <1>{0}</1>, rappresenta lo strumento p
 msgid "<0>Il rettangolo della linea <1>training</1> è rivolto a quei maneggi in cui lo spazio a disposizione è limitato e il rettangolo viene installato provvisoriamente.</0><2>Facile da montare, è costituito da elementi modulari di 2 mt. in materiale plastico, non richiede alcuna manutenzione e occupa poco spazio quando non è utilizzato.</2>"
 msgstr "<0>Il rettangolo della linea <1>training</1> è rivolto a quei maneggi in cui lo spazio a disposizione è limitato e il rettangolo viene installato provvisoriamente.</0><2>Facile da montare, è costituito da elementi modulari di 2 mt. in materiale plastico, non richiede alcuna manutenzione e occupa poco spazio quando non è utilizzato.</2>"
 
-#: src/app/[locale]/informativa-privacy/components/InformativaPrivacy/index.tsx:200
-msgid "<0>Il Titolare si riserva il diritto di modificare la presente Informativa in qualsiasi momento.<1/>L'uso continuato del sito implica l'accettazione delle nuove condizioni.</0>"
-msgstr "<0>Il Titolare si riserva il diritto di modificare la presente Informativa in qualsiasi momento.<1/>L'uso continuato del sito implica l'accettazione delle nuove condizioni.</0>"
-
-#: src/app/[locale]/informativa-privacy/components/InformativaPrivacy/index.tsx:44
+#: src/app/[locale]/informativa-privacy/components/InformativaPrivacy/index.tsx:41
 msgid "<0>Il Titolare tratta dati personali (quali identificativi, di contatto e di navigazione) esclusivamente per le finalità e le basi giuridiche descritte nella seguente tabella.</0><1><2><3><4>Tipo di Dati Raccolti</4><5>Finalità del Trattamento</5><6>Base Giuridica (GDPR)</6></3></2><7><8><9><10>Dati di Navigazione</10><11>(es. indirizzo IP, pagine visitate)</11></9><12>Garantire il corretto funzionamento e la sicurezza del sito; ricavare informazioni statistiche anonime sull'uso.</12><13>Legittimo Interesse del Titolare (Art. 6.1.f)</13></8><14><15><16>Dati per la Newsletter</16><17>(Indirizzo Email)</17></15><18>Invio di comunicazioni promozionali e aggiornamenti.</18><19>Consenso dell'interessato (Art. 6.1.a)</19></14><20><21><22>Dati di Tracking di Terze Parti</22> <23>(Analytics, Pixel)</23></21><24>Analisi delle performance del sito e attività di re-marketing/pubblicità.</24><25>Consenso dell'interessato (tramite Cookie Policy) (Art. 6.1.a)</25></20></7></1>"
 msgstr "<0>Il Titolare tratta dati personali (quali identificativi, di contatto e di navigazione) esclusivamente per le finalità e le basi giuridiche descritte nella seguente tabella.</0><1><2><3><4>Tipo di Dati Raccolti</4><5>Finalità del Trattamento</5><6>Base Giuridica (GDPR)</6></3></2><7><8><9><10>Dati di Navigazione</10><11>(es. indirizzo IP, pagine visitate)</11></9><12>Garantire il corretto funzionamento e la sicurezza del sito; ricavare informazioni statistiche anonime sull'uso.</12><13>Legittimo Interesse del Titolare (Art. 6.1.f)</13></8><14><15><16>Dati per la Newsletter</16><17>(Indirizzo Email)</17></15><18>Invio di comunicazioni promozionali e aggiornamenti.</18><19>Consenso dell'interessato (Art. 6.1.a)</19></14><20><21><22>Dati di Tracking di Terze Parti</22> <23>(Analytics, Pixel)</23></21><24>Analisi delle performance del sito e attività di re-marketing/pubblicità.</24><25>Consenso dell'interessato (tramite Cookie Policy) (Art. 6.1.a)</25></20></7></1>"
-
-#: src/app/[locale]/informativa-privacy/components/InformativaPrivacy/index.tsx:23
-msgid "<0>Informativa ai sensi dell'art. 13 del Regolamento Europeo 2016/679 (GDPR)</0><1>La presente Policy descrive le modalità di gestione del sito web di{NAME_LEGAL_STRING} in riferimento al trattamento dei dati personali degli utenti che lo consultano e che usufruiscono dei servizi proposti, in conformità alle normative europee e nazionali vigenti.</1>"
-msgstr "<0>Informativa ai sensi dell'art. 13 del Regolamento Europeo 2016/679 (GDPR)</0><1>La presente Policy descrive le modalità di gestione del sito web di{NAME_LEGAL_STRING} in riferimento al trattamento dei dati personali degli utenti che lo consultano e che usufruiscono dei servizi proposti, in conformità alle normative europee e nazionali vigenti.</1>"
 
 #: src/modules/GiostreIppowalker/index.tsx:26
 msgid "<0>Ippowalker è una giostra di recente realizzazione, nasce dal sogno di poter fornire uno strumento di allenamento professionale anche a coloro che ne fanno un uso sporadico.</0><1>La giostra è disponibile in due diametri 12 mt. (4 cavalli) e 14.2 mt. (6 cavalli).</1><2>Costruita con la qualità e la robustezza che contraddistingue tutti i nostri prodotti essa rappresenta uno strumento semplice ed essenziale ma al contempo completo.</2><3>Malgrado Ippowalker sia una giostra più economica abbiamo mantenuto tutte le opzioni base per allenare il tuo cavallo.</3><4><5>Porte di separazione elettrificate</5> ottenute grazie a tubi di plastica elettroconduttiva.</4><6>Un <7>pannello di controllo</7> che ti permetterà di di scegliere tra un programma manuale e uno periodico.</6><8>Al contrario del modello <9>Tecnoexercize</9>, questo modello non dispone di irrigazione.</8>"
 msgstr "<0>Ippowalker è una giostra di recente realizzazione, nasce dal sogno di poter fornire uno strumento di allenamento professionale anche a coloro che ne fanno un uso sporadico.</0><1>La giostra è disponibile in due diametri 12 mt. (4 cavalli) e 14.2 mt. (6 cavalli).</1><2>Costruita con la qualità e la robustezza che contraddistingue tutti i nostri prodotti essa rappresenta uno strumento semplice ed essenziale ma al contempo completo.</2><3>Malgrado Ippowalker sia una giostra più economica abbiamo mantenuto tutte le opzioni base per allenare il tuo cavallo.</3><4><5>Porte di separazione elettrificate</5> ottenute grazie a tubi di plastica elettroconduttiva.</4><6>Un <7>pannello di controllo</7> che ti permetterà di di scegliere tra un programma manuale e uno periodico.</6><8>Al contrario del modello <9>Tecnoexercize</9>, questo modello non dispone di irrigazione.</8>"
 
-#: src/app/[locale]/cookie-policy/components/CookiePolicy/index.tsx:57
-msgid "<0>L’installazione dei cookie tecnici è basata sul legittimo interesse.</0><1>I cookie di analytics, marketing e terze parti vengono installati solo previa accettazione esplicita tramite banner cookie.</1>"
-msgstr "<0>L’installazione dei cookie tecnici è basata sul legittimo interesse.</0><1>I cookie di analytics, marketing e terze parti vengono installati solo previa accettazione esplicita tramite banner cookie.</1>"
-
 #. placeholder {0}: ITALIA.email
-#: src/app/[locale]/informativa-privacy/components/InformativaPrivacy/index.tsx:177
+#: src/app/[locale]/informativa-privacy/components/InformativaPrivacy/index.tsx:173
 msgid "<0>L'utente ha il diritto di chiedere al Titolare l'accesso, la rettifica, la cancellazione (Diritto all'Oblio), la limitazione del trattamento o di opporsi al loro trattamento. Ha inoltre il diritto alla portabilità dei dati.</0><1>Le richieste relative all'esercizio dei diritti possono essere inviate al Titolare tramite l'indirizzo email dedicato: <2>{0}</2>.</1><3>L'utente ha, in ogni momento, il diritto di proporre reclamo all'Autorità di controllo (Garante per la Protezione dei Dati Personali).</3>"
 msgstr "<0>L'utente ha il diritto di chiedere al Titolare l'accesso, la rettifica, la cancellazione (Diritto all'Oblio), la limitazione del trattamento o di opporsi al loro trattamento. Ha inoltre il diritto alla portabilità dei dati.</0><1>Le richieste relative all'esercizio dei diritti possono essere inviate al Titolare tramite l'indirizzo email dedicato: <2>{0}</2>.</1><3>L'utente ha, in ogni momento, il diritto di proporre reclamo all'Autorità di controllo (Garante per la Protezione dei Dati Personali).</3>"
 
@@ -161,10 +137,6 @@ msgstr "<0>Ottimo per insegnare ai vostri cavalli/puledri a saltarlo.</0><1>Il f
 msgid "<0>Porte di separazione.</0><1>(Elettrificatione 200-240 Volt monofase)</1>"
 msgstr "<0>Porte di separazione.</0><1>(Elettrificatione 200-240 Volt monofase)</1>"
 
-#: src/app/[locale]/cookie-policy/components/CookiePolicy/index.tsx:171
-msgid "<0>Questa Cookie Policy può essere aggiornata per conformarsi a normative o cambiamenti tecnologici.</0><1>Le modifiche saranno pubblicate su questa pagina.</1>"
-msgstr "<0>Questa Cookie Policy può essere aggiornata per conformarsi a normative o cambiamenti tecnologici.</0><1>Le modifiche saranno pubblicate su questa pagina.</1>"
-
 #. placeholder {0}: COOKIE_POLICY.title
 #. placeholder {1}: INFORMATIVA_PRIVACY.title
 #: src/components/Gdpr/index.tsx:70
@@ -187,10 +159,6 @@ msgstr "3.000 giostre installate"
 msgid "Accessibili"
 msgstr "Accessibili"
 
-#: src/modules/CookiePolicy/index.tsx:177
-msgid "Accesso ai dati e Servizio Clienti"
-msgstr "Accesso ai dati e Servizio Clienti"
-
 #: src/components/Accessori/index.tsx:27
 #: src/modules/Recinti/_accessori.tsx:12
 msgid "Accessori"
@@ -204,7 +172,7 @@ msgstr "Accetta"
 msgid "Acciaio zincato"
 msgstr "Acciaio zincato"
 
-#: src/app/[locale]/informativa-privacy/components/InformativaPrivacy/index.tsx:198
+#: src/app/[locale]/informativa-privacy/components/InformativaPrivacy/index.tsx:194
 msgid "Aggiornamenti della Policy"
 msgstr "Aggiornamenti della Policy"
 
@@ -255,7 +223,7 @@ msgstr "Barriera per campo ostacoli (3 mt.)"
 msgid "Barriere"
 msgstr "Barriere"
 
-#: src/app/[locale]/cookie-policy/components/CookiePolicy/index.tsx:55
+#: src/app/[locale]/cookie-policy/components/CookiePolicy/index.tsx:54
 msgid "Base Giuridica del Trattamento"
 msgstr "Base Giuridica del Trattamento"
 
@@ -278,7 +246,7 @@ msgstr "Candelieri e lame forate"
 msgid "Caratteristiche"
 msgstr "Caratteristiche"
 
-#: src/app/[locale]/informativa-privacy/components/InformativaPrivacy/index.tsx:42
+#: src/app/[locale]/informativa-privacy/components/InformativaPrivacy/index.tsx:39
 msgid "Categorie di Dati Trattati e Finalità"
 msgstr "Categorie di Dati Trattati e Finalità"
 
@@ -286,10 +254,6 @@ msgstr "Categorie di Dati Trattati e Finalità"
 #: src/modules/Ostacoli/Cavalletti.tsx:21
 msgid "Cavalletti Caprilli"
 msgstr "Cavalletti Caprilli"
-
-#: src/modules/CookiePolicy/index.tsx:51
-msgid "Che cos'è un cookie?"
-msgstr "Che cos'è un cookie?"
 
 #: src/modules/GiostreIppowalker/_accessori.tsx:22
 #: src/modules/GiostreTecnoexerciser/_accessori.tsx:22
@@ -315,7 +279,7 @@ msgstr "Codice Fiscale e Partita IVA"
 msgid "Colori"
 msgstr "Colori"
 
-#: src/app/[locale]/cookie-policy/components/CookiePolicy/index.tsx:152
+#: src/app/[locale]/cookie-policy/components/CookiePolicy/index.tsx:150
 msgid "Come Gestire o Revocare il Consenso"
 msgstr "Come Gestire o Revocare il Consenso"
 
@@ -343,7 +307,7 @@ msgstr "Contattaci per un preventivo per ostacoli, recinti, tondini coperti, gio
 msgid "Contattaci usando l'email <0>{0}</0> <1/>o chiamaci al numero: <2>{1}</2>"
 msgstr "Contattaci usando l'email <0>{0}</0> <1/>o chiamaci al numero: <2>{1}</2>"
 
-#: src/app/[locale]/cookie-policy/components/CookiePolicy/index.tsx:183
+#: src/app/[locale]/cookie-policy/components/CookiePolicy/index.tsx:176
 #: src/hooks/usePages/utils/index.tsx:51
 msgid "Contatti"
 msgstr "Contatti"
@@ -371,17 +335,6 @@ msgstr "Contatto commerciale Germania & Medio Oriente"
 #: src/utils/constants.tsx:124
 msgid "Contatto commerciale Roma"
 msgstr "Contatto commerciale Roma"
-
-#: src/modules/CookiePolicy/index.tsx:117
-#: src/modules/CookiePolicy/index.tsx:154
-#: src/modules/CookiePolicy/index.tsx:161
-msgid "Cookie Analitici"
-msgstr "Cookie Analitici"
-
-#: src/modules/CookiePolicy/index.tsx:100
-#: src/modules/CookiePolicy/index.tsx:168
-msgid "Cookie di navigazione"
-msgstr "Cookie di navigazione"
 
 #: src/modules/Contatti/index.tsx:90
 msgid "Coordinate bancarie"
@@ -464,7 +417,7 @@ msgstr "Cucchiaio {0}"
 msgid "Da anni Pessastudio è focalizzata nel produrre prodotti di qualità a costi accessibili"
 msgstr "Da anni Pessastudio è focalizzata nel produrre prodotti di qualità a costi accessibili"
 
-#: src/app/[locale]/informativa-privacy/components/InformativaPrivacy/index.tsx:121
+#: src/app/[locale]/informativa-privacy/components/InformativaPrivacy/index.tsx:117
 msgid "Destinatari dei Dati e Trasferimento Extra-UE"
 msgstr "Destinatari dei Dati e Trasferimento Extra-UE"
 
@@ -491,7 +444,7 @@ msgstr "Dimensioni"
 msgid "Dimensioni giostra cavalli"
 msgstr "Dimensioni giostra cavalli"
 
-#: src/app/[locale]/informativa-privacy/components/InformativaPrivacy/index.tsx:175
+#: src/app/[locale]/informativa-privacy/components/InformativaPrivacy/index.tsx:171
 msgid "Diritti dell'Interessato (GDPR)"
 msgstr "Diritti dell'Interessato (GDPR)"
 
@@ -542,10 +495,6 @@ msgstr "Errore"
 msgid "Facile da usare"
 msgstr "Facile da usare"
 
-#: src/modules/CookiePolicy/index.tsx:103
-msgid "Fin dal primo accesso questi cookie permettono al sito di funzionare correttamente e ti consentono di visualizzare i contenuti sul tuo dispositivo riconoscendo la lingua e il mercato del Paese dal quale scegli di connetterti. Se sei un utente registrato, permetteranno di riconoscerti e di accedere ai servizi delle aree dedicate. I cookie di navigazione sono cookie tecnici e sono necessari al funzionamento del sito."
-msgstr "Fin dal primo accesso questi cookie permettono al sito di funzionare correttamente e ti consentono di visualizzare i contenuti sul tuo dispositivo riconoscendo la lingua e il mercato del Paese dal quale scegli di connetterti. Se sei un utente registrato, permetteranno di riconoscerti e di accedere ai servizi delle aree dedicate. I cookie di navigazione sono cookie tecnici e sono necessari al funzionamento del sito."
-
 #: src/hooks/useProducts/utils/index.tsx:122
 #: src/modules/Ostacoli/Fosso.tsx:21
 msgid "Fosso"
@@ -554,10 +503,6 @@ msgstr "Fosso"
 #: src/hooks/useProducts/utils/index.tsx:114
 msgid "Fosso in PVC di alta qualità, progettato per allenamenti e competizioni equestri. Resistente agli agenti atmosferici, leggero e facile da spostare, questo ostacolo garantisce durabilità e sicurezza. Ideale per preparare i cavalli alle sfide di salto più impegnative."
 msgstr "Fosso in PVC di alta qualità, progettato per allenamenti e competizioni equestri. Resistente agli agenti atmosferici, leggero e facile da spostare, questo ostacolo garantisce durabilità e sicurezza. Ideale per preparare i cavalli alle sfide di salto più impegnative."
-
-#: src/modules/CookiePolicy/index.tsx:92
-msgid "Funzione"
-msgstr "Funzione"
 
 #: src/modules/Giostre/index.tsx:160
 #: src/modules/GiostreIppowalker/_compare.tsx:92
@@ -652,6 +597,10 @@ msgstr "Home"
 msgid "I candelieri sono costruiti con un montante di alluminio verniciato di colore bianco e sono muniti di 4 piedi rivestiti con puntali di plastica che garantiscono, in caso di ribaltamento, l’incolumità vostra e dei vostri cavalli."
 msgstr "I candelieri sono costruiti con un montante di alluminio verniciato di colore bianco e sono muniti di 4 piedi rivestiti con puntali di plastica che garantiscono, in caso di ribaltamento, l’incolumità vostra e dei vostri cavalli."
 
+#: src/app/[locale]/cookie-policy/components/CookiePolicy/index.tsx:43
+msgid "I cookie sono piccoli file di testo che i siti web inviano al browser dell’utente.<0/>Vengono utilizzati per migliorare l’esperienza di navigazione, analizzare il traffico e offrire contenuti personalizzati."
+msgstr "I cookie sono piccoli file di testo che i siti web inviano al browser dell’utente.<0/>Vengono utilizzati per migliorare l’esperienza di navigazione, analizzare il traffico e offrire contenuti personalizzati."
+
 #: src/modules/GiostreIppowalker/_corridoi.tsx:39
 #: src/modules/GiostreTecnoexerciser/_corridoi.tsx:39
 msgid "I corridoi"
@@ -694,6 +643,10 @@ msgstr "I prodotti vengono venduti ed apprezzati sia in Italia che all'estero"
 msgid "Iban"
 msgstr "Iban"
 
+#: src/app/[locale]/informativa-privacy/components/InformativaPrivacy/index.tsx:104
+msgid "Il conferimento dei <0>Dati di Navigazione</0> è implicito. Il conferimento dell'<1>Indirizzo Email</1> per la newsletter è facoltativo; la mancata fornitura comporta l'impossibilità di ricevere la newsletter.<2/>Il trattamento è svolto in modalità elettronica, in modo lecito e corretto, con l'adozione di misure di sicurezza adeguate."
+msgstr "Il conferimento dei <0>Dati di Navigazione</0> è implicito. Il conferimento dell'<1>Indirizzo Email</1> per la newsletter è facoltativo; la mancata fornitura comporta l'impossibilità di ricevere la newsletter.<2/>Il trattamento è svolto in modalità elettronica, in modo lecito e corretto, con l'adozione di misure di sicurezza adeguate."
+
 #: src/hooks/useProducts/utils/index.tsx:272
 msgid "Il cucchiaio dotato del nostro sistema brevettato di aggancio"
 msgstr "Il cucchiaio dotato del nostro sistema brevettato di aggancio"
@@ -701,12 +654,6 @@ msgstr "Il cucchiaio dotato del nostro sistema brevettato di aggancio"
 #: src/hooks/useProducts/utils/index.tsx:253
 msgid "Il cucchiaio standard utilizzato al livello internazionale"
 msgstr "Il cucchiaio standard utilizzato al livello internazionale"
-
-#. placeholder {0}: SEDE_LEGALE.name
-#. placeholder {1}: SEDE_LEGALE.name
-#: src/modules/CookiePolicy/index.tsx:72
-msgid "Il nostro sito utilizza diverse tipologie di cookie di prima parte (predisposti e gestiti da {0}), cookie di terze parti (predisposti e gestiti da soggetti terzi in base alle proprie privacy policy e non sotto il controllo di {1}), ognuna delle quali ha una specifica funzione. Di seguito una tabella esplicativa."
-msgstr "Il nostro sito utilizza diverse tipologie di cookie di prima parte (predisposti e gestiti da {0}), cookie di terze parti (predisposti e gestiti da soggetti terzi in base alle proprie privacy policy e non sotto il controllo di {1}), ognuna delle quali ha una specifica funzione. Di seguito una tabella esplicativa."
 
 #: src/app/[locale]/termini-e-condizioni/components/TerminiECondizioni/index.tsx:31
 msgid "Il sito è gestito da {NAME_LEGAL_STRING}.<0/>Il sito ha finalità puramente informative e funge da catalogo digitale dei prodotti o servizi offerti dall'azienda (ad esempio, attrezzature per l'equitazione e l'addestramento)."
@@ -719,6 +666,10 @@ msgstr "Il sito opera esclusivamente come vetrina espositiva (Catalogo). Non è 
 #: src/app/[locale]/termini-e-condizioni/components/TerminiECondizioni/index.tsx:101
 msgid "Il sito tratta i dati di navigazione e utilizza cookie.<0/>L'indirizzo email viene raccolto per il servizio di newsletter, previo consenso esplicito dell'utente. Tale servizio è gestito tramite la piattaforma esterna Mailchimp (The Rocket Science Group LLC), che agisce come responsabile del trattamento dei dati.<1/>Il trattamento di tutti i dati personali è regolato in dettaglio dalla <2>Privacy Policy</2> e dalla <3>Cookie Policy</3>, consultabili tramite i link presenti nel footer del sito."
 msgstr "Il sito tratta i dati di navigazione e utilizza cookie.<0/>L'indirizzo email viene raccolto per il servizio di newsletter, previo consenso esplicito dell'utente. Tale servizio è gestito tramite la piattaforma esterna Mailchimp (The Rocket Science Group LLC), che agisce come responsabile del trattamento dei dati.<1/>Il trattamento di tutti i dati personali è regolato in dettaglio dalla <2>Privacy Policy</2> e dalla <3>Cookie Policy</3>, consultabili tramite i link presenti nel footer del sito."
+
+#: src/app/[locale]/informativa-privacy/components/InformativaPrivacy/index.tsx:197
+msgid "Il Titolare si riserva il diritto di modificare la presente Informativa in qualsiasi momento.<0/>L'uso continuato del sito implica l'accettazione delle nuove condizioni."
+msgstr "Il Titolare si riserva il diritto di modificare la presente Informativa in qualsiasi momento.<0/>L'uso continuato del sito implica l'accettazione delle nuove condizioni."
 
 #: src/modules/Tondini/index.tsx:237
 msgid "Il tondino coperto è adatto a svolgere molteplici attività, rappresenta la migliore soluzione per addestrare puledri in libertà o lavorare cavalli alla corda. Inoltre facilita il controllo del cavallo durante le lezioni ai principianti ed è indispensabile per il longeur durante le riprese di volteggi."
@@ -735,6 +686,10 @@ msgstr "Indietro"
 #: src/modules/Index/index.tsx:96
 msgid "Indistruttibili"
 msgstr "Indistruttibili"
+
+#: src/app/[locale]/informativa-privacy/components/InformativaPrivacy/index.tsx:23
+msgid "Informativa ai sensi dell'art. 13 del Regolamento Europeo 2016/679 (GDPR)<0/>La presente Policy descrive le modalità di gestione del sito web di{NAME_LEGAL_STRING} in riferimento al trattamento dei dati personali degli utenti che lo consultano e che usufruiscono dei servizi proposti, in conformità alle normative europee e nazionali vigenti."
+msgstr "Informativa ai sensi dell'art. 13 del Regolamento Europeo 2016/679 (GDPR)<0/>La presente Policy descrive le modalità di gestione del sito web di{NAME_LEGAL_STRING} in riferimento al trattamento dei dati personali degli utenti che lo consultano e che usufruiscono dei servizi proposti, in conformità alle normative europee e nazionali vigenti."
 
 #: src/hooks/usePages/utils/index.tsx:67
 msgid "Informativa sui Cookie"
@@ -834,11 +789,13 @@ msgstr "L’alternativa alla copertura in PVC è la <0>copertura rigida</0> in l
 msgid "L'alveolo è la soluzione ottimale per mantenere un fondo sempre perfetto in ogni condizione, permette di evitare buche o avvallamenti riducendo i costi di manutenzione."
 msgstr "L'alveolo è la soluzione ottimale per mantenere un fondo sempre perfetto in ogni condizione, permette di evitare buche o avvallamenti riducendo i costi di manutenzione."
 
-#. placeholder {0}: SEDE_LEGALE.name
-#. placeholder {1}: SEDE_LEGALE.name
-#: src/modules/CookiePolicy/index.tsx:35
-msgid "L'utilizzo di cookie e di tecnologie affini da parte di {0}, con sede {completeAddress}, rientra nella politica di privacy del Gestore, in conformità a quanto previsto dal D. Lgs 196/03 Codice in materia di protezione dei dati personali (Codice Privacy) e dal Provvedimento dell’8 maggio 2014 “Individuazione delle modalità semplificate per l’informativa e l’acquisizione del consenso per l’uso dei cookie” del Garante Privacy Italiano. {1}, in qualità di Titolare del trattamento agisce conformemente a quanto previsto dalla normativa in materia."
-msgstr "L'utilizzo di cookie e di tecnologie affini da parte di {0}, con sede {completeAddress}, rientra nella politica di privacy del Gestore, in conformità a quanto previsto dal D. Lgs 196/03 Codice in materia di protezione dei dati personali (Codice Privacy) e dal Provvedimento dell’8 maggio 2014 “Individuazione delle modalità semplificate per l’informativa e l’acquisizione del consenso per l’uso dei cookie” del Garante Privacy Italiano. {1}, in qualità di Titolare del trattamento agisce conformemente a quanto previsto dalla normativa in materia."
+#: src/app/[locale]/cookie-policy/components/CookiePolicy/index.tsx:57
+msgid "L’installazione dei cookie tecnici è basata sul legittimo interesse.<0/>I cookie di analytics, marketing e terze parti vengono installati solo previa accettazione esplicita tramite banner cookie."
+msgstr "L’installazione dei cookie tecnici è basata sul legittimo interesse.<0/>I cookie di analytics, marketing e terze parti vengono installati solo previa accettazione esplicita tramite banner cookie."
+
+#: src/app/[locale]/cookie-policy/components/CookiePolicy/index.tsx:153
+msgid "L’utente può modificare in qualsiasi momento le proprie <0>preferenze</0>.<1/>È inoltre possibile gestire i cookie tramite le impostazioni del browser o strumenti esterni come YourOnlineChoices."
+msgstr "L’utente può modificare in qualsiasi momento le proprie <0>preferenze</0>.<1/>È inoltre possibile gestire i cookie tramite le impostazioni del browser o strumenti esterni come YourOnlineChoices."
 
 #: src/modules/GiostreIppowalker/_copertura.tsx:35
 #: src/modules/GiostreTecnoexerciser/_copertura.tsx:45
@@ -963,7 +920,7 @@ msgstr "Materiali di qualità"
 msgid "Modifiche ai Termini"
 msgstr "Modifiche ai Termini"
 
-#: src/app/[locale]/cookie-policy/components/CookiePolicy/index.tsx:169
+#: src/app/[locale]/cookie-policy/components/CookiePolicy/index.tsx:163
 msgid "Modifiche alla Cookie Policy"
 msgstr "Modifiche alla Cookie Policy"
 
@@ -979,7 +936,7 @@ msgstr "Modulo dressage ({0})"
 msgid "Motore"
 msgstr "Motore"
 
-#: src/app/[locale]/informativa-privacy/components/InformativaPrivacy/index.tsx:104
+#: src/app/[locale]/informativa-privacy/components/InformativaPrivacy/index.tsx:101
 msgid "Natura del Conferimento e Modalità di Trattamento"
 msgstr "Natura del Conferimento e Modalità di Trattamento"
 
@@ -1024,7 +981,7 @@ msgid "Per consentirvi di realizzare ostacoli di vostra creazione possiamo forni
 msgstr "Per consentirvi di realizzare ostacoli di vostra creazione possiamo fornirvi le lame forate in due diverse lunghezze."
 
 #. placeholder {0}: ITALIA.email
-#: src/app/[locale]/cookie-policy/components/CookiePolicy/index.tsx:185
+#: src/app/[locale]/cookie-policy/components/CookiePolicy/index.tsx:178
 msgid "Per richieste relative ai cookie o al trattamento dei dati personali è possibile scrivere a: <0>{0}</0>"
 msgstr "Per richieste relative ai cookie o al trattamento dei dati personali è possibile scrivere a: <0>{0}</0>"
 
@@ -1036,7 +993,7 @@ msgstr "Perché una giostra Pessastudio"
 msgid "Perché?"
 msgstr "Perché?"
 
-#: src/app/[locale]/informativa-privacy/components/InformativaPrivacy/index.tsx:156
+#: src/app/[locale]/informativa-privacy/components/InformativaPrivacy/index.tsx:152
 msgid "Periodo di Conservazione dei Dati"
 msgstr "Periodo di Conservazione dei Dati"
 
@@ -1121,10 +1078,6 @@ msgstr "Proprietà Intellettuale"
 msgid "Protezione dei Dati Personali"
 msgstr "Protezione dei Dati Personali"
 
-#: src/modules/CookiePolicy/index.tsx:180
-msgid "Puoi in qualsiasi momento ricevere assistenza e spiegazioni su come esercitare il consenso o il diniego selettivo o su come cancellare i cookie e tecnologie affini dal tuo browser, inviando una e-mail al Servizio Clienti selezionando \"Privacy\" come argomento o con richiesta scritta rivolta a {completeAddressWithAnna} all'indirizzo postale della sede legale, daremo tempestivo riscontro."
-msgstr "Puoi in qualsiasi momento ricevere assistenza e spiegazioni su come esercitare il consenso o il diniego selettivo o su come cancellare i cookie e tecnologie affini dal tuo browser, inviando una e-mail al Servizio Clienti selezionando \"Privacy\" come argomento o con richiesta scritta rivolta a {completeAddressWithAnna} all'indirizzo postale della sede legale, daremo tempestivo riscontro."
-
 #: src/components/Product/components/ProductMaterialsList/index.tsx:15
 msgid "PVC"
 msgstr "PVC"
@@ -1142,19 +1095,13 @@ msgstr "Quadro di comando con programma manuale, periodico"
 msgid "Quadro di comando con programma manuale, periodico o automatico"
 msgstr "Quadro di comando con programma manuale, periodico o automatico"
 
-#: src/modules/CookiePolicy/index.tsx:69
-msgid "Quali cookie utilizziamo e per quali finalità?"
-msgstr "Quali cookie utilizziamo e per quali finalità?"
+#: src/app/[locale]/cookie-policy/components/CookiePolicy/index.tsx:166
+msgid "Questa Cookie Policy può essere aggiornata per conformarsi a normative o cambiamenti tecnologici.<0/>Le modifiche saranno pubblicate su questa pagina."
+msgstr "Questa Cookie Policy può essere aggiornata per conformarsi a normative o cambiamenti tecnologici.<0/>Le modifiche saranno pubblicate su questa pagina."
 
 #: src/app/[locale]/cookie-policy/components/CookiePolicy/index.tsx:28
 msgid "Questa Cookie Policy spiega cosa sono i cookie, quali cookie utilizziamo sul sito di {NAME_LEGAL_STRING} e come l’utente può gestire le proprie preferenze.<0/>L’utilizzo dei cookie avviene in conformità al GDPR e alle linee guida europee."
 msgstr "Questa Cookie Policy spiega cosa sono i cookie, quali cookie utilizziamo sul sito di {NAME_LEGAL_STRING} e come l’utente può gestire le proprie preferenze.<0/>L’utilizzo dei cookie avviene in conformità al GDPR e alle linee guida europee."
-
-#. placeholder {0}: SEDE_LEGALE.name
-#. placeholder {1}: SEDE_LEGALE.name
-#: src/modules/CookiePolicy/index.tsx:120
-msgid "Questi cookie di prima parte, sono proprietà di {0} (Gestore del sito) e sono impiegati per raccogliere dati in forma anonima e aggregata. Questi cookie sono utilizzati per elaborare analisi statistiche sulle modalità di navigazione degli utenti sul nostro sito. {1} tratta i risultati di queste analisi in maniera anonima ed esclusivamente per finalità statistiche."
-msgstr "Questi cookie di prima parte, sono proprietà di {0} (Gestore del sito) e sono impiegati per raccogliere dati in forma anonima e aggregata. Questi cookie sono utilizzati per elaborare analisi statistiche sulle modalità di navigazione degli utenti sul nostro sito. {1} tratta i risultati di queste analisi in maniera anonima ed esclusivamente per finalità statistiche."
 
 #: src/hooks/usePages/utils/index.tsx:24
 msgid "Recinti"
@@ -1351,19 +1298,11 @@ msgstr "Telefono"
 msgid "Termini & Condizioni"
 msgstr "Termini & Condizioni"
 
-#: src/modules/CookiePolicy/index.tsx:87
-msgid "Tipologia di cookie"
-msgstr "Tipologia di cookie"
-
-#: src/app/[locale]/cookie-policy/components/CookiePolicy/index.tsx:70
+#: src/app/[locale]/cookie-policy/components/CookiePolicy/index.tsx:68
 msgid "Tipologie di Cookie Utilizzati"
 msgstr "Tipologie di Cookie Utilizzati"
 
-#: src/modules/CookiePolicy/index.tsx:32
-msgid "Titolare del trattamento"
-msgstr "Titolare del trattamento"
-
-#: src/app/[locale]/informativa-privacy/components/InformativaPrivacy/index.tsx:38
+#: src/app/[locale]/informativa-privacy/components/InformativaPrivacy/index.tsx:35
 msgid "Titolare del Trattamento dei Dati"
 msgstr "Titolare del Trattamento dei Dati"
 
@@ -1417,10 +1356,6 @@ msgstr "Tutti i cavalieri sanno quanto sia spiacevole cavalcare in un ambiente p
 #: src/app/[locale]/termini-e-condizioni/components/TerminiECondizioni/index.tsx:72
 msgid "Tutti i contenuti presenti nel sito (inclusi testi, immagini, grafiche, loghi, marchi e layout) sono di proprietà esclusiva di {NAME_LEGAL_STRING} o dei rispettivi titolari e sono protetti dalle vigenti normative sul diritto d'autore e sulla proprietà industriale.<0/>È severamente vietata la riproduzione, distribuzione o modifica senza espressa autorizzazione scritta."
 msgstr "Tutti i contenuti presenti nel sito (inclusi testi, immagini, grafiche, loghi, marchi e layout) sono di proprietà esclusiva di {NAME_LEGAL_STRING} o dei rispettivi titolari e sono protetti dalle vigenti normative sul diritto d'autore e sulla proprietà industriale.<0/>È severamente vietata la riproduzione, distribuzione o modifica senza espressa autorizzazione scritta."
-
-#: src/modules/CookiePolicy/index.tsx:54
-msgid "Un cookie è un file di piccole dimensioni che viene inviato al browser in uso e salvato sul tuo dispositivo quando visiti un sito internet come {WEBISTE_URL} (‘il sito’). I cookie permettono un funzionamento efficiente del sito e ne migliorano le prestazioni, inoltre forniscono informazioni al proprietario del sito per fini statistici o pubblicitari, principalmente per personalizzare la tua esperienza di navigazione ricordando le tue preferenze (per esempio ricordare la lingua e la valuta che hai impostato, per riconoscerti alla visita successiva, ecc.)."
-msgstr "Un cookie è un file di piccole dimensioni che viene inviato al browser in uso e salvato sul tuo dispositivo quando visiti un sito internet come {WEBISTE_URL} (‘il sito’). I cookie permettono un funzionamento efficiente del sito e ne migliorano le prestazioni, inoltre forniscono informazioni al proprietario del sito per fini statistici o pubblicitari, principalmente per personalizzare la tua esperienza di navigazione ricordando le tue preferenze (per esempio ricordare la lingua e la valuta che hai impostato, per riconoscerti alla visita successiva, ecc.)."
 
 #: src/hooks/usePages/utils/index.tsx:90
 msgid "Un recinto da cavalli in PVC. Indistruttibile anche in presenza delle più avverse condizioni meteorologiche"

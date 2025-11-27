@@ -21,16 +21,13 @@ const InformativaPrivacyPage: React.FC = () => {
     title: PAGES.INFORMATIVA_PRIVACY.title,
     intro: (
       <Trans>
-        <Typography variant="h5" component="p" gutterBottom>
-          Informativa ai sensi dell'art. 13 del Regolamento Europeo 2016/679
-          (GDPR)
-        </Typography>
-        <Typography>
-          La presente Policy descrive le modalità di gestione del sito web di
-          {NAME_LEGAL_STRING} in riferimento al trattamento dei dati personali
-          degli utenti che lo consultano e che usufruiscono dei servizi
-          proposti, in conformità alle normative europee e nazionali vigenti.
-        </Typography>
+        Informativa ai sensi dell'art. 13 del Regolamento Europeo 2016/679
+        (GDPR)
+        <br />
+        La presente Policy descrive le modalità di gestione del sito web di
+        {NAME_LEGAL_STRING} in riferimento al trattamento dei dati personali
+        degli utenti che lo consultano e che usufruiscono dei servizi proposti,
+        in conformità alle normative europee e nazionali vigenti.
       </Trans>
     ),
     sections: [
@@ -103,18 +100,17 @@ const InformativaPrivacyPage: React.FC = () => {
       {
         title: <Trans>Natura del Conferimento e Modalità di Trattamento</Trans>,
         content: (
-          <Trans>
-            <Typography>
+          <Typography>
+            <Trans>
               Il conferimento dei <strong>Dati di Navigazione</strong> è
               implicito. Il conferimento dell'<strong>Indirizzo Email</strong>{" "}
               per la newsletter è facoltativo; la mancata fornitura comporta
               l'impossibilità di ricevere la newsletter.
-            </Typography>
-            <Typography>
+              <br />
               Il trattamento è svolto in modalità elettronica, in modo lecito e
               corretto, con l'adozione di misure di sicurezza adeguate.
-            </Typography>
-          </Trans>
+            </Trans>
+          </Typography>
         ),
       },
       {
@@ -197,15 +193,15 @@ const InformativaPrivacyPage: React.FC = () => {
       {
         title: <Trans>Aggiornamenti della Policy</Trans>,
         content: (
-          <Trans>
-            <Typography>
+          <Typography>
+            <Trans>
               Il Titolare si riserva il diritto di modificare la presente
               Informativa in qualsiasi momento.
               <br />
               L'uso continuato del sito implica l'accettazione delle nuove
               condizioni.
-            </Typography>
-          </Trans>
+            </Trans>
+          </Typography>
         ),
       },
     ],

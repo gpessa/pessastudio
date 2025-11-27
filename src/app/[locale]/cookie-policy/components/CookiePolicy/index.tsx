@@ -39,31 +39,29 @@ const CookiePolicy: React.FC = () => {
       {
         title: <Trans>Cosa sono i Cookie</Trans>,
         content: (
-          <Trans>
-            <Typography>
+          <Typography>
+            <Trans>
               I cookie sono piccoli file di testo che i siti web inviano al
               browser dell’utente.
-            </Typography>
-            <Typography>
+              <br />
               Vengono utilizzati per migliorare l’esperienza di navigazione,
               analizzare il traffico e offrire contenuti personalizzati.
-            </Typography>
-          </Trans>
+            </Trans>
+          </Typography>
         ),
       },
       {
         title: <Trans>Base Giuridica del Trattamento</Trans>,
         content: (
-          <Trans>
-            <Typography>
+          <Typography>
+            <Trans>
               L’installazione dei cookie tecnici è basata sul legittimo
               interesse.
-            </Typography>
-            <Typography>
-              I cookie di analytics, marketing e terze parti vengono installati
-              solo previa accettazione esplicita tramite banner cookie.
-            </Typography>
-          </Trans>
+              <br />I cookie di analytics, marketing e terze parti vengono
+              installati solo previa accettazione esplicita tramite banner
+              cookie.
+            </Trans>
+          </Typography>
         ),
       },
       {
@@ -151,32 +149,27 @@ const CookiePolicy: React.FC = () => {
       {
         title: <Trans>Come Gestire o Revocare il Consenso</Trans>,
         content: (
-          <Trans>
-            <Stack>
-              <Typography>
-                L’utente può modificare in qualsiasi momento le proprie{" "}
-                <Link onClick={showCookieConsent}>preferenze</Link>.
-              </Typography>
-              <Typography>
-                È inoltre possibile gestire i cookie tramite le impostazioni del
-                browser o strumenti esterni come YourOnlineChoices.
-              </Typography>
-            </Stack>
-          </Trans>
+          <Typography>
+            <Trans>
+              L’utente può modificare in qualsiasi momento le proprie{" "}
+              <Link onClick={showCookieConsent}>preferenze</Link>.
+              <br />È inoltre possibile gestire i cookie tramite le impostazioni
+              del browser o strumenti esterni come YourOnlineChoices.
+            </Trans>
+          </Typography>
         ),
       },
       {
         title: <Trans>Modifiche alla Cookie Policy</Trans>,
         content: (
-          <Trans>
-            <Typography>
+          <Typography>
+            <Trans>
               Questa Cookie Policy può essere aggiornata per conformarsi a
               normative o cambiamenti tecnologici.
-            </Typography>
-            <Typography>
+              <br />
               Le modifiche saranno pubblicate su questa pagina.
-            </Typography>
-          </Trans>
+            </Trans>
+          </Typography>
         ),
       },
       {
