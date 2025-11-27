@@ -1119,7 +1119,7 @@ msgstr "Control panel with manual, periodic or automatic program"
 
 #: src/app/[locale]/cookie-policy/components/CookiePolicy/index.tsx:166
 msgid "Questa Cookie Policy può essere aggiornata per conformarsi a normative o cambiamenti tecnologici.<0/>Le modifiche saranno pubblicate su questa pagina."
-msgstr ""
+msgstr "This Cookie Policy may be updated to comply with regulations or technological changes.<0/>Changes will be published on this page."
 
 #: src/app/[locale]/cookie-policy/components/CookiePolicy/index.tsx:28
 msgid "Questa Cookie Policy spiega cosa sono i cookie, quali cookie utilizziamo sul sito di {NAME_LEGAL_STRING} e come l’utente può gestire le proprie preferenze.<0/>L’utilizzo dei cookie avviene in conformità al GDPR e alle linee guida europee."
