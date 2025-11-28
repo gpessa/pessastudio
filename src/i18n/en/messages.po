@@ -228,7 +228,7 @@ msgstr "Poles"
 
 #: src/app/[locale]/cookie-policy/components/CookiePolicy/index.tsx:54
 msgid "Base Giuridica del Trattamento"
-msgstr ""
+msgstr "Legal Basis for Data Processing"
 
 #: src/modules/Tondini/index.tsx:222
 msgid "Bello e funzionale"
@@ -813,7 +813,7 @@ msgstr ""
 
 #: src/app/[locale]/cookie-policy/components/CookiePolicy/index.tsx:57
 msgid "L’installazione dei cookie tecnici è basata sul legittimo interesse.<0/>I cookie di analytics, marketing e terze parti vengono installati solo previa accettazione esplicita tramite banner cookie."
-msgstr ""
+msgstr "The installation of technical cookies is based on the lawful ground of legitimate interest. <0/>Analytics, marketing, and third-party cookies are only installed following explicit acceptance through the cookie banner."
 
 #: src/app/[locale]/cookie-policy/components/CookiePolicy/index.tsx:153
 msgid "L’utente può modificare in qualsiasi momento le proprie <0>preferenze</0>.<1/>È inoltre possibile gestire i cookie tramite le impostazioni del browser o strumenti esterni come YourOnlineChoices."
