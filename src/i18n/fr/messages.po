@@ -11,15 +11,15 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: \n"
-"X-Generator: Poedit 3.6\n"
+"X-Generator: Poedit 3.8\n"
 
 #: src/app/[locale]/termini-e-condizioni/components/TerminiECondizioni/index.tsx:86
 msgid "{NAME_LEGAL_STRING} si adopera per fornire informazioni accurate, ma non garantisce che il sito sia privo di errori, inesattezze tecniche o omissioni. L'azienda non si assume alcuna responsabilità per l'uso improprio delle attrezzature mostrate sul catalogo.<0/>L'azienda non potrà essere ritenuta responsabile per eventuali danni diretti o indiretti derivanti dall'utilizzo o dall'impossibilità di utilizzare il sito."
-msgstr ""
+msgstr "{NAME_LEGAL_STRING} s’efforce de fournir des informations exactes, mais ne garantit pas que le site soit exempt d’erreurs, d’inexactitudes techniques ou d’omissions. L’entreprise n’assume aucune responsabilité pour l’utilisation incorrecte des équipements présentés dans le catalogue.<0/>L’entreprise ne pourra être tenue responsable de tout dommage direct ou indirect résultant de l’utilisation ou de l’impossibilité d’utiliser le site."
 
 #: src/app/[locale]/termini-e-condizioni/components/TerminiECondizioni/index.tsx:125
 msgid "{NAME_LEGAL_STRING} si riserva il diritto di modificare o aggiornare i presenti Termini e Condizioni in qualsiasi momento e senza preavviso.<0/>L'utente è invitato a consultare periodicamente questa pagina."
-msgstr ""
+msgstr "{NAME_LEGAL_STRING} se réserve le droit de modifier ou de mettre à jour les présentes Conditions Générales à tout moment et sans préavis.<0/>L’utilisateur est invité à consulter cette page régulièrement."
 
 #: src/modules/Giostre/index.tsx:42
 msgid "{NAME} è stata scelta da oltre 3.000 clienti in tutto il mondo per la realizzazione della propria giostra."
@@ -39,11 +39,11 @@ msgstr "<0>{NAME}  est une entreprise hautement fiable et renommée dans le sect
 
 #: src/app/[locale]/cookie-policy/components/CookiePolicy/index.tsx:70
 msgid "<0><1><2><3><4>Nome del Cookie</4><5>Durata stimata</5><6>Tipo di Parte</6><7>Tipologia (GDPR)</7><8>Descrizione</8></3></2><9><10><11>NEXT\\_LOCALE</11><12>1 Anno</12><13>Prima Parte</13><14>Tecnico (Preferenze)</14><15>Memorizza la lingua di visualizzazione preferita dell'utente.</15></10><16><17>CookieConsent</17><18>1 Anno</18><19>Prima Parte</19><20>Tecnico (Necessario)</20><21>Registra e memorizza la preferenza di consenso dell'utente al banner.</21></16><22><23>\\_ga</23><24>2 Anni</24><25>Terza Parte (Google)</25><26>Analitico/Statistico</26><27>Registra un ID univoco per distinguere i visitatori e tracciare le sessioni.</27></22><28><29>\\_ga\\_1I0DED996WU</29><30>2 Anni</30><31>Terza Parte (Google)</31><32>Analitico/Statistico</32><33>Mantiene lo stato della sessione di navigazione per lo specifico ID di misurazione GA4.</33></28></9></1></0>"
-msgstr ""
+msgstr "<0><1><2><3><4>Nom du Cookie</4><5>Durée estimée</5><6>Partie</6><7>Type (RGPD)</7><8>Description</8></3></2><9><10><11>NEXT_LOCALE</11><12>1 An</12><13>Première Partie</13><14>Technique (Préférences)</14><15>Enregistre la langue d’affichage préférée de l’utilisateur.</15></10><16><17>CookieConsent</17><18>1 An</18><19>Première Partie</19><20>Technique (Nécessaire)</20><21>Enregistre et mémorise la préférence de consentement de l’utilisateur pour la bannière.</21></16><22><23>_ga</23><24>2 Ans</24><25>Tierce Partie (Google)</25><26>Analytique/Statistique</26><27>Enregistre un ID unique pour distinguer les visiteurs et suivre les sessions.</27></22><28><29>_ga_1I0DED996WU</29><30>2 Ans</30><31>Tierce Partie (Google)</31><32>Analytique/Statistique</32><33>Maintient l’état de la session de navigation pour l’ID de mesure GA4 spécifique.</33></28></9></1></0>"
 
 #: src/app/[locale]/informativa-privacy/components/InformativaPrivacy/index.tsx:154
 msgid "<0><1><2>Dati per la Newsletter:</2> Saranno conservati fino alla revoca del consenso (disiscrizione) da parte dell'utente.</1><3><4>Dati di Navigazione/Statistiche:</4> Conservati per il tempo tecnico strettamente necessario a adempiere alle finalità o secondo quanto specificato nella Cookie Policy.</3></0>"
-msgstr ""
+msgstr "<0><1><2>Données pour la Newsletter :</2> Elles seront conservées jusqu’au retrait du consentement (désinscription) par l’utilisateur.</1><3><4>Données de Navigation/Statistiques :</4> Conservées pendant le temps technique strictement nécessaire pour atteindre les finalités ou conformément à ce qui est spécifié dans la Politique de Cookies.</3></0>"
 
 #: src/utils/constants.tsx:312
 msgid "<0>Accessori</0><1>(Ordinabili separatamente)</1>"
@@ -81,7 +81,7 @@ msgstr "<0>Les cavalettis Caprilli sont un équipement essentiel pour l’entra�
 
 #: src/app/[locale]/informativa-privacy/components/InformativaPrivacy/index.tsx:119
 msgid "<0>I dati raccolti possono essere comunicati a soggetti che agiscono come Responsabili del Trattamento (es. Mailchimp, Google) per conto del Titolare.<1/>I dati personali possono essere trasferiti in Paesi extra-UE/SEE (come gli Stati Uniti) poiché l'attività ha rilievo internazionale e si avvale di servizi cloud globali.<2/>Tali trasferimenti avvengono solo in presenza di adeguate garanzie di legge, tra cui:</0><3><4><5>Clausole Contrattuali Standard (SCC):</5> Adottate con fornitori come Mailchimp, Google e Facebook.</4><6><7>Decisioni di Adeguatezza:</7> In caso di Paesi che offrono un livello di protezione dei dati adeguato.</6></3><8>Il Titolare assicura che il trattamento avvenga sempre nel rispetto della legislazione italiana e del GDPR.</8>"
-msgstr ""
+msgstr "<0>Les données collectées peuvent être communiquées à des entités agissant en tant que Responsables du Traitement (par ex. Mailchimp, Google) pour le compte du Responsable de Traitement.<1/>Les données personnelles peuvent être transférées vers des pays hors UE/EEE (comme les États-Unis) car l’activité a une dimension internationale et utilise des services cloud mondiaux.<2/>Ces transferts n’ont lieu que s’il existe des garanties légales appropriées, notamment :</0><3><4><5>Clauses Contractuelles Types (SCC) :</5> Adoptées avec des fournisseurs tels que Mailchimp, Google et Facebook.</4><6><7>Décisions d’Adéquation :</7> Dans le cas de pays offrant un niveau de protection des données adéquat.</6></3><8>Le Responsable de Traitement s’assure que le traitement se déroule toujours conformément à la législation italienne et au RGPD.</8>"
 
 #: src/modules/Ostacoli/index.tsx:41
 msgid "<0>I nostri ostacoli sono progettati e costruiti per durare nel tempo non richiedono alcuna manutenzione e conservano, inalterata, la loro bellezza anche se lasciati nel campo per anni.</0><1>Se gli ostacoli per il professionista sono uno strumento di lavoro, per molti altri appassionati rappresentano la realizzazione di un sogno. Noi abbiamo deciso di rendere questi strumenti resistenti nel tempo per fare in modo che questo sogno duri.</1><2>Potrete scegliere le quantità e i colori nella nostra gamma di produzione e acquistare anche singoli pezzi di ricambio.</2>"
@@ -805,7 +805,7 @@ msgstr ""
 
 #: src/app/[locale]/cookie-policy/components/CookiePolicy/index.tsx:153
 msgid "L’utente può modificare in qualsiasi momento le proprie <0>preferenze</0>.<1/>È inoltre possibile gestire i cookie tramite le impostazioni del browser o strumenti esterni come YourOnlineChoices."
-msgstr ""
+msgstr "L’utilisateur peut modifier ses <0>préférences</0> à tout moment.<1/>Il est également possible de gérer les cookies via les paramètres du navigateur ou des outils externes tels que YourOnlineChoices."
 
 #: src/modules/GiostreIppowalker/_copertura.tsx:35
 #: src/modules/GiostreTecnoexerciser/_copertura.tsx:45
@@ -951,7 +951,7 @@ msgid "Natura del Conferimento e Modalità di Trattamento"
 msgstr ""
 
 #: src/app/[locale]/termini-e-condizioni/components/TerminiECondizioni/index.tsx:53
-msgid "Natura del Sito e Assenza di Vendita Online"
+msgid "Natura del Sito"
 msgstr ""
 
 #: src/modules/Giostre/index.tsx:68
@@ -1111,7 +1111,7 @@ msgstr ""
 
 #: src/app/[locale]/cookie-policy/components/CookiePolicy/index.tsx:28
 msgid "Questa Cookie Policy spiega cosa sono i cookie, quali cookie utilizziamo sul sito di {NAME_LEGAL_STRING} e come l’utente può gestire le proprie preferenze.<0/>L’utilizzo dei cookie avviene in conformità al GDPR e alle linee guida europee."
-msgstr ""
+msgstr "Cette Politique de Cookies explique ce que sont les cookies, quels cookies nous utilisons sur le site de {NAME_LEGAL_STRING} et comment l’utilisateur peut gérer ses préférences.<0/>L’utilisation des cookies se fait conformément au RGPD et aux directives européennes."
 
 #: src/hooks/usePages/utils/index.tsx:24
 msgid "Recinti"
@@ -1199,7 +1199,7 @@ msgstr "Télécharger un fichier"
 
 #: src/hooks/usePages/utils/index.tsx:78
 msgid "Scopri come tuteliamo i tuoi dati e quali cookie utilizza il sito. Informazioni chiare su privacy, sicurezza e diritti GDPR"
-msgstr ""
+msgstr "Découvrez comment nous protégeons vos données et quels cookies le site utilise. Des informations claires sur la confidentialité, la sécurité et vos droits selon le RGPD"
 
 #: src/modules/Giostre/index.tsx:201
 #: src/modules/Giostre/index.tsx:217
@@ -1314,7 +1314,7 @@ msgstr ""
 
 #: src/app/[locale]/informativa-privacy/components/InformativaPrivacy/index.tsx:35
 msgid "Titolare del Trattamento dei Dati"
-msgstr ""
+msgstr "Responsable du Traitement des Données"
 
 #: src/hooks/usePages/utils/index.tsx:31
 msgid "Tondini"

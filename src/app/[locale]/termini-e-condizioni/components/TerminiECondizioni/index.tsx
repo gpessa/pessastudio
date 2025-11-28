@@ -50,7 +50,7 @@ const TerminiECondizioni: React.FC = () => {
         ),
       },
       {
-        title: <Trans>Natura del Sito e Assenza di Vendita Online</Trans>,
+        title: <Trans>Natura del Sito</Trans>,
         content: (
           <Trans>
             Il sito opera esclusivamente come vetrina espositiva (Catalogo). Non

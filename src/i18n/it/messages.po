@@ -941,8 +941,8 @@ msgid "Natura del Conferimento e Modalità di Trattamento"
 msgstr "Natura del Conferimento e Modalità di Trattamento"
 
 #: src/app/[locale]/termini-e-condizioni/components/TerminiECondizioni/index.tsx:53
-msgid "Natura del Sito e Assenza di Vendita Online"
-msgstr "Natura del Sito e Assenza di Vendita Online"
+msgid "Natura del Sito"
+msgstr "Natura del Sito"
 
 #: src/modules/Giostre/index.tsx:68
 #: src/modules/Tondini/index.tsx:213
