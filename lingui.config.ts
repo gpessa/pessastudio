@@ -8,7 +8,7 @@ const configuration: LinguiConfig = {
   },
   catalogs: [
     {
-      path: "src/i18n/{locale}/messages",
+      path: "src/i18n/{locale}",
       include: ["src/"],
     },
   ],
