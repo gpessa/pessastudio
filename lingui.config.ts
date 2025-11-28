@@ -1,6 +1,6 @@
-import { LinguiConfig } from "@lingui/conf";
+import { defineConfig } from "@lingui/cli";
 
-const configuration: LinguiConfig = {
+export default defineConfig({
   locales: ["en", "it", "fr"],
   sourceLocale: "it",
   fallbackLocales: {
@@ -12,6 +12,5 @@ const configuration: LinguiConfig = {
       include: ["src/"],
     },
   ],
-};
-
-export default configuration;
+  orderBy: "origin",
+});
