@@ -63,9 +63,21 @@ export const getPages = (locale: string) => {
   };
 
   const COOKIE_POLICY: Page = {
-    description: msg`Contattaci per un preventivo per ostacoli, recinti, tondini coperti, giostre, rettangoli da dressage e attrezzature per cavalli`,
+    description: msg`Informativa sulla Privacy e Cookie Policy: come raccogliamo, utilizziamo e proteggiamo i tuoi dati personali secondo il GDPR`,
     title: msg`Informativa sui Cookie`,
     url: `/${locale}/cookie-policy`,
+  };
+
+  const TERMINI_E_CONDIZIONI: Page = {
+    description: msg`Leggi i Termini e Condizioni: uso del sito, responsabilità, proprietà dei contenuti e informazioni sul catalogo prodotti. Tutte le regole per navigare in sicurezza`,
+    title: msg`Termini & Condizioni`,
+    url: `/${locale}/termini-e-condizioni`,
+  };
+
+  const INFORMATIVA_PRIVACY: Page = {
+    description: msg`Scopri come tuteliamo i tuoi dati e quali cookie utilizza il sito. Informazioni chiare su privacy, sicurezza e diritti GDPR`,
+    title: msg`Informativa sulla Privacy`,
+    url: `/${locale}/informativa-privacy`,
   };
 
   const HOME: Page = {
@@ -115,6 +127,8 @@ export const getPages = (locale: string) => {
     ...PRODUCTS,
     ...NAVIGATION,
     COOKIE_POLICY,
+    INFORMATIVA_PRIVACY,
+    TERMINI_E_CONDIZIONI,
     GIOSTRE_IPPOWALKER,
     GIOSTRE_IPPOWALKER_ISTRUZIONI_MONTAGGIO,
     GIOSTRE_TECNOEXERCISER,

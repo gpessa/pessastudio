@@ -7,15 +7,11 @@ import Section from "components/Section";
 import Title from "components/Title";
 import React from "react";
 import theme, { BREAKPOINT } from "theme";
-
+import FooterLegal from "./components/FooterLegal";
 import FooterMap from "./components/FooterMap";
 import FooterNewsletter from "./components/FooterNewsletter";
 import FooterSocials from "./components/FooterSocials";
-
-const BottomPartStyled = styled(Section)(({ theme }) => ({
-  color: theme.palette.grey[500],
-  textAlign: "center",
-}));
+import FooterVersion from "./components/FooterVersion";
 
 const DividerStyled = styled(Divider)(({ theme }) => ({
   margin: theme.spacing(4),
@@ -73,15 +69,12 @@ const Footer: React.FC<{ version: string }> = ({ version }) => {
           </Grid>
         </Grid>
       </Section>
+
       <FooterMap />
-      <BottomPartStyled spacing="small">
-        <Typography variant="small">
-          <Trans>
-            COD. FISC. e Part: I.V.A. 04743610281 C.C.I.A.A. PD - R.E.A. 414822
-          </Trans>{" "}
-          | version: {version}
-        </Typography>
-      </BottomPartStyled>
+
+      <FooterVersion version={version} />
+
+      <FooterLegal />
     </footer>
   );
 };

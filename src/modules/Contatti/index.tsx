@@ -13,7 +13,7 @@ import {
 } from "@mui/material";
 import { styled } from "@mui/material/styles";
 import anna from "assets/generals/anna.jpg";
-import { Columns, Section, Th } from "components";
+import { Address, Columns, Section, Th } from "components";
 import { usePages } from "hooks";
 import Image from "next/image";
 import React from "react";
@@ -26,7 +26,6 @@ import {
   SEDE_OPERATIVA,
 } from "utils/constants";
 
-import ContattiAddress from "./components/ContattiAddress";
 import ContattiBank from "./components/ContattiBank";
 
 const AvatarStyled = styled(Avatar)(({ theme }) => ({
@@ -35,7 +34,7 @@ const AvatarStyled = styled(Avatar)(({ theme }) => ({
   width: 150,
 }));
 
-const ContattiAddressStyled = styled(ContattiAddress)(({ theme }) => ({
+const ContattiAddressStyled = styled(Address)(({ theme }) => ({
   ".MuiTypography-caption": {
     color: theme.palette.primary.contrastText,
   },
@@ -72,7 +71,7 @@ const Contatti: React.FC = () => {
               <Th variant="h5" sans>
                 <Trans>Sede operativa</Trans>
               </Th>
-              <ContattiAddress {...SEDE_OPERATIVA} />
+              <Address {...SEDE_OPERATIVA} />
             </Box>
 
             <Divider />
@@ -81,7 +80,7 @@ const Contatti: React.FC = () => {
               <Th variant="h5" sans>
                 <Trans>Sede legale</Trans>
               </Th>
-              <ContattiAddress {...SEDE_LEGALE} />
+              <Address {...SEDE_LEGALE} />
             </Box>
 
             <Divider />
@@ -115,7 +114,7 @@ const Contatti: React.FC = () => {
               <Card sx={{ minHeight: "100%" }} elevation={0}>
                 <CardContent>
                   <Th variant="h5">{name}</Th>
-                  <ContattiAddress {...data} />
+                  <Address {...data} />
                 </CardContent>
               </Card>
             </Grid>

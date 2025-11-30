@@ -11,7 +11,7 @@ type SupportedLocales = string;
 async function loadCatalog(locale: SupportedLocales): Promise<{
   [k: string]: Messages;
 }> {
-  const { messages } = await import(`../i18n/${locale}/messages.po`);
+  const { messages } = await import(`../i18n/${locale}.po`);
   return {
     [locale]: messages,
   };

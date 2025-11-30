@@ -1,14 +1,14 @@
 "use client";
 
 import { Trans } from "@lingui/react/macro";
-import { Box, Button, ButtonProps, Link } from "@mui/material";
+import { Box, Button, ButtonProps, Link, Typography } from "@mui/material";
+import { usePages } from "hooks";
 import NextLink from "next/link";
-import { usePathname } from "next/navigation";
 import React from "react";
 import CookieConsent from "react-cookie-consent";
-import { BREAKPOINT,PRODUCT_GUTTER } from "theme";
+import { BREAKPOINT, PRODUCT_GUTTER } from "theme";
 import { makeStyles } from "tss-react/mui";
-
+import { GDPR_COOKIE_NAME } from "utils/constants";
 
 const useStyles = makeStyles()((theme) => ({
   overlay: {
@@ -34,35 +34,57 @@ const useStyles = makeStyles()((theme) => ({
       width: 500,
     },
   },
+  buttons: {
+    display: "flex",
+    justifyContent: "space-between",
+    flexDirection: "column",
+    gap: theme.spacing(2),
+  },
 }));
 
-const Accept = (props: ButtonProps) => (
+const ButtonComponent = (props: ButtonProps) => (
   <Button {...props} color="primary" fullWidth />
 );
 
 const Gdpr: React.FC = () => {
   const classes = useStyles();
-  const path = usePathname();
-  const isCookiePage = path.indexOf("/cookie-policy") != -1;
+  const {
+    PAGES: { COOKIE_POLICY, INFORMATIVA_PRIVACY },
+  } = usePages();
 
-  return isCookiePage ? null : (
+  return (
     <CookieConsent
       overlay={false}
       disableStyles={true}
-      ButtonComponent={Accept}
-      buttonText={<Trans>Acconsento</Trans>}
+      ButtonComponent={ButtonComponent}
+      buttonText={<Trans>Accetta</Trans>}
+      declineButtonText={<Trans>Refiuta</Trans>}
       containerClasses={classes.classes.root}
       overlayClasses={classes.classes.overlay}
-      cookieName="CookieConsent"
+      cookieName={GDPR_COOKIE_NAME}
+      enableDeclineButton={true}
+      buttonWrapperClasses={classes.classes.buttons}
+      flipButtons={true}
     >
       <Box mb={3}>
         <Trans>
-          Utilizziamo i cookie per garantire il corretto funzionamento del sito.
-          Per ulteriori informazioni sul nostro utilizzo dei cookie, consultare
-          la nostra{" "}
-          <Link component={NextLink} href="/cookie-policy">
-            politica sui cookie
-          </Link>
+          <Typography gutterBottom>
+            Questo sito web utilizza cookie per garantirti la migliore
+            esperienza sul nostro sito web, analizzare il traffico verso questo
+            sito web, mostrarti annunci personalizzati su siti web di terze
+            parti e fornirti funzionalità social media.
+          </Typography>
+          <Typography>
+            Per ulteriori informazioni, consulta la nostra{" "}
+            <Link component={NextLink} href={COOKIE_POLICY.url}>
+              {COOKIE_POLICY.title}
+            </Link>{" "}
+            e la nostra{" "}
+            <Link component={NextLink} href={INFORMATIVA_PRIVACY.url}>
+              {INFORMATIVA_PRIVACY.title}
+            </Link>
+            .
+          </Typography>
         </Trans>
       </Box>
     </CookieConsent>
