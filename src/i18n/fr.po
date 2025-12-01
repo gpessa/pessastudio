@@ -124,53 +124,53 @@ msgstr "Stockage du Consentement. Enregistre si l'utilisateur a accepté ou non 
 msgid "Tecnico (Necessario)"
 msgstr "Technique (Nécessaire)"
 
-#: src/app/[locale]/cookie-policy/components/CookiePolicy/index.tsx:218
+#: src/app/[locale]/cookie-policy/components/CookiePolicy/index.tsx:215
 msgid "Questa Cookie Policy spiega cosa sono i cookie, quali cookie utilizziamo sul sito di {NAME_LEGAL_STRING} e come l’utente può gestire le proprie preferenze.<0/>L’utilizzo dei cookie avviene in conformità al GDPR e alle linee guida europee."
 msgstr "Cette Politique de Cookies explique ce que sont les cookies, quels cookies nous utilisons sur le site de {NAME_LEGAL_STRING} et comment l’utilisateur peut gérer ses préférences.<0/>L’utilisation des cookies se fait conformément au RGPD et aux directives européennes."
 
-#: src/app/[locale]/cookie-policy/components/CookiePolicy/index.tsx:230
+#: src/app/[locale]/cookie-policy/components/CookiePolicy/index.tsx:227
 msgid "Cosa sono i Cookie"
 msgstr "Que sont les Cookies"
 
-#: src/app/[locale]/cookie-policy/components/CookiePolicy/index.tsx:233
+#: src/app/[locale]/cookie-policy/components/CookiePolicy/index.tsx:230
 msgid "I cookie sono piccoli file di testo che i siti web inviano al browser dell’utente.<0/>Vengono utilizzati per migliorare l’esperienza di navigazione, analizzare il traffico e offrire contenuti personalizzati."
 msgstr "Les cookies sont de petits fichiers texte que les sites web envoient au navigateur de l’utilisateur.<0/>Ils sont utilisés pour améliorer l’expérience de navigation, analyser le trafic et offrir du contenu personnalisé."
 
-#: src/app/[locale]/cookie-policy/components/CookiePolicy/index.tsx:244
+#: src/app/[locale]/cookie-policy/components/CookiePolicy/index.tsx:241
 msgid "Base Giuridica del Trattamento"
 msgstr "Base Juridique du Traitement"
 
-#: src/app/[locale]/cookie-policy/components/CookiePolicy/index.tsx:247
+#: src/app/[locale]/cookie-policy/components/CookiePolicy/index.tsx:244
 msgid "L’installazione dei cookie tecnici è basata sul legittimo interesse.<0/>I cookie di analytics, marketing e terze parti vengono installati solo previa accettazione esplicita tramite banner cookie."
 msgstr "L’installation des cookies techniques repose sur l’intérêt légitime.<0/>Les cookies d’analyse, de marketing et de tiers ne sont installés qu’après acceptation explicite via la bannière de cookies."
 
-#: src/app/[locale]/cookie-policy/components/CookiePolicy/index.tsx:258
+#: src/app/[locale]/cookie-policy/components/CookiePolicy/index.tsx:255
 msgid "Tipologie di Cookie Utilizzati"
 msgstr "Types de Cookies Utilisés"
 
-#: src/app/[locale]/cookie-policy/components/CookiePolicy/index.tsx:262
+#: src/app/[locale]/cookie-policy/components/CookiePolicy/index.tsx:259
 msgid "Come Gestire o Revocare il Consenso"
 msgstr "Comment Gérer ou Révoquer le Consentement"
 
-#: src/app/[locale]/cookie-policy/components/CookiePolicy/index.tsx:265
+#: src/app/[locale]/cookie-policy/components/CookiePolicy/index.tsx:262
 msgid "L’utente può modificare in qualsiasi momento le proprie <0>preferenze</0>.<1/>È inoltre possibile gestire i cookie tramite le impostazioni del browser o strumenti esterni come YourOnlineChoices."
 msgstr "L’utilisateur peut modifier ses <0>préférences</0> à tout moment.<1/>Il est également possible de gérer les cookies via les paramètres du navigateur ou des outils externes tels que YourOnlineChoices."
 
-#: src/app/[locale]/cookie-policy/components/CookiePolicy/index.tsx:275
+#: src/app/[locale]/cookie-policy/components/CookiePolicy/index.tsx:272
 msgid "Modifiche alla Cookie Policy"
 msgstr "Modifications de la Politique de Cookies"
 
-#: src/app/[locale]/cookie-policy/components/CookiePolicy/index.tsx:278
+#: src/app/[locale]/cookie-policy/components/CookiePolicy/index.tsx:275
 msgid "Questa Cookie Policy può essere aggiornata per conformarsi a normative o cambiamenti tecnologici.<0/>Le modifiche saranno pubblicate su questa pagina."
 msgstr "Cette Politique de Cookies peut être mise à jour pour se conformer aux réglementations ou aux évolutions technologiques.<0/>Les modifications seront publiées sur cette page."
 
-#: src/app/[locale]/cookie-policy/components/CookiePolicy/index.tsx:288
+#: src/app/[locale]/cookie-policy/components/CookiePolicy/index.tsx:285
 #: src/hooks/usePages/utils/index.tsx:51
 msgid "Contatti"
 msgstr "Contact"
 
 #. placeholder {0}: ITALIA.email
-#: src/app/[locale]/cookie-policy/components/CookiePolicy/index.tsx:290
+#: src/app/[locale]/cookie-policy/components/CookiePolicy/index.tsx:287
 msgid "Per richieste relative ai cookie o al trattamento dei dati personali è possibile scrivere a: <0>{0}</0>"
 msgstr "Pour toute demande relative aux cookies ou au traitement des données personnelles, vous pouvez écrire à : <0>{0}</0>"
 

@@ -191,14 +191,11 @@ export const CookieTable: React.FC = () => {
         <TableBody>
           {cookies.map((row) => (
             <TableRow hover role="checkbox" tabIndex={-1} key={row.nome}>
-              {columns.map((column) => {
-                const value = row[column.id];
-                return (
-                  <TableCell key={column.id} align="left">
-                    {value}
-                  </TableCell>
-                );
-              })}
+              {columns.map(({ id }) => (
+                <TableCell key={id} align="left">
+                  {row[id]}
+                </TableCell>
+              ))}
             </TableRow>
           ))}
         </TableBody>
