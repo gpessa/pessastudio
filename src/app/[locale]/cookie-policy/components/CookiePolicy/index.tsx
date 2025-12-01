@@ -168,41 +168,32 @@ const cookies: CookieData[] = [
 // 3. COMPONENTE TABELLA
 // ----------------------------------------------
 
-export const CookieTable: React.FC = () => {
-  return (
-    <TableContainer>
-      <Typography
-        variant="h6"
-        component="div"
-        sx={{ p: 2, pb: 1, fontWeight: "bold" }}
-      >
-        Dettaglio dei Cookie Utilizzati
-      </Typography>
-      <Table stickyHeader aria-label="tabella dei cookie del sito">
-        <TableHead>
-          <TableRow>
-            {columns.map((column) => (
-              <TableCell key={column.id} align="left">
-                {column.label}
+export const CookieTable: React.FC = () => (
+  <TableContainer>
+    <Table stickyHeader aria-label="tabella dei cookie del sito">
+      <TableHead>
+        <TableRow>
+          {columns.map((column) => (
+            <TableCell key={column.id} align="left">
+              {column.label}
+            </TableCell>
+          ))}
+        </TableRow>
+      </TableHead>
+      <TableBody>
+        {cookies.map((row) => (
+          <TableRow hover role="checkbox" tabIndex={-1} key={row.nome}>
+            {columns.map(({ id }) => (
+              <TableCell key={id} align="left">
+                {row[id]}
               </TableCell>
             ))}
           </TableRow>
-        </TableHead>
-        <TableBody>
-          {cookies.map((row) => (
-            <TableRow hover role="checkbox" tabIndex={-1} key={row.nome}>
-              {columns.map(({ id }) => (
-                <TableCell key={id} align="left">
-                  {row[id]}
-                </TableCell>
-              ))}
-            </TableRow>
-          ))}
-        </TableBody>
-      </Table>
-    </TableContainer>
-  );
-};
+        ))}
+      </TableBody>
+    </Table>
+  </TableContainer>
+);
 
 const CookiePolicy: React.FC = () => {
   const { PAGES } = usePages();

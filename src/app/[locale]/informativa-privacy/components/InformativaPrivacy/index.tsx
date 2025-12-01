@@ -174,15 +174,14 @@ const InformativaPrivacyPage: React.FC = () => {
             <Typography>
               L'utente ha il diritto di chiedere al Titolare l'accesso, la
               rettifica, la cancellazione (Diritto all'Oblio), la limitazione
-              del trattamento o di opporsi al loro trattamento. Ha inoltre il
-              diritto alla portabilità dei dati.
-            </Typography>
-            <Typography>
+              del trattamento o di opporsi al loro trattamento.
+              <br />
+              Ha inoltre il diritto alla portabilità dei dati.
+              <br />
               Le richieste relative all'esercizio dei diritti possono essere
               inviate al Titolare tramite l'indirizzo email dedicato:{" "}
               <Link href={`mailto:${ITALIA.email}`}>{ITALIA.email}</Link>.
-            </Typography>
-            <Typography>
+              <br />
               L'utente ha, in ogni momento, il diritto di proporre reclamo
               all'Autorità di controllo (Garante per la Protezione dei Dati
               Personali).

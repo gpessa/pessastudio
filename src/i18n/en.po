@@ -124,53 +124,53 @@ msgstr "Consent Storage. Records whether the user has accepted or declined the u
 msgid "Tecnico (Necessario)"
 msgstr "Technical (Necessary)"
 
-#: src/app/[locale]/cookie-policy/components/CookiePolicy/index.tsx:215
+#: src/app/[locale]/cookie-policy/components/CookiePolicy/index.tsx:206
 msgid "Questa Cookie Policy spiega cosa sono i cookie, quali cookie utilizziamo sul sito di {NAME_LEGAL_STRING} e come l’utente può gestire le proprie preferenze.<0/>L’utilizzo dei cookie avviene in conformità al GDPR e alle linee guida europee."
 msgstr "This Cookie Policy explains what cookies are, which cookies we use on the {NAME_LEGAL_STRING} website, and how users can manage their preferences.<0/>The use of cookies complies with the GDPR and European guidelines."
 
-#: src/app/[locale]/cookie-policy/components/CookiePolicy/index.tsx:227
+#: src/app/[locale]/cookie-policy/components/CookiePolicy/index.tsx:218
 msgid "Cosa sono i Cookie"
 msgstr "What Cookies Are"
 
-#: src/app/[locale]/cookie-policy/components/CookiePolicy/index.tsx:230
+#: src/app/[locale]/cookie-policy/components/CookiePolicy/index.tsx:221
 msgid "I cookie sono piccoli file di testo che i siti web inviano al browser dell’utente.<0/>Vengono utilizzati per migliorare l’esperienza di navigazione, analizzare il traffico e offrire contenuti personalizzati."
 msgstr "Cookies are small text files that websites send to the user's browser.<0/>They are used to improve the browsing experience, analyze traffic, and offer personalized content."
 
-#: src/app/[locale]/cookie-policy/components/CookiePolicy/index.tsx:241
+#: src/app/[locale]/cookie-policy/components/CookiePolicy/index.tsx:232
 msgid "Base Giuridica del Trattamento"
 msgstr "Legal Basis for Data Processing"
 
-#: src/app/[locale]/cookie-policy/components/CookiePolicy/index.tsx:244
+#: src/app/[locale]/cookie-policy/components/CookiePolicy/index.tsx:235
 msgid "L’installazione dei cookie tecnici è basata sul legittimo interesse.<0/>I cookie di analytics, marketing e terze parti vengono installati solo previa accettazione esplicita tramite banner cookie."
 msgstr "The installation of technical cookies is based on the lawful ground of legitimate interest. <0/>Analytics, marketing, and third-party cookies are only installed following explicit acceptance through the cookie banner."
 
-#: src/app/[locale]/cookie-policy/components/CookiePolicy/index.tsx:255
+#: src/app/[locale]/cookie-policy/components/CookiePolicy/index.tsx:246
 msgid "Tipologie di Cookie Utilizzati"
 msgstr "Types of Cookies Used"
 
-#: src/app/[locale]/cookie-policy/components/CookiePolicy/index.tsx:259
+#: src/app/[locale]/cookie-policy/components/CookiePolicy/index.tsx:250
 msgid "Come Gestire o Revocare il Consenso"
 msgstr "How to Manage or Withdraw Consent"
 
-#: src/app/[locale]/cookie-policy/components/CookiePolicy/index.tsx:262
+#: src/app/[locale]/cookie-policy/components/CookiePolicy/index.tsx:253
 msgid "L’utente può modificare in qualsiasi momento le proprie <0>preferenze</0>.<1/>È inoltre possibile gestire i cookie tramite le impostazioni del browser o strumenti esterni come YourOnlineChoices."
 msgstr "The user can modify their <0>preferences</0> at any time.<1/>It is also possible to manage cookies through browser settings or external tools such as YourOnlineChoices."
 
-#: src/app/[locale]/cookie-policy/components/CookiePolicy/index.tsx:272
+#: src/app/[locale]/cookie-policy/components/CookiePolicy/index.tsx:263
 msgid "Modifiche alla Cookie Policy"
 msgstr "Changes to the Cookie Policy"
 
-#: src/app/[locale]/cookie-policy/components/CookiePolicy/index.tsx:275
+#: src/app/[locale]/cookie-policy/components/CookiePolicy/index.tsx:266
 msgid "Questa Cookie Policy può essere aggiornata per conformarsi a normative o cambiamenti tecnologici.<0/>Le modifiche saranno pubblicate su questa pagina."
 msgstr "This Cookie Policy may be updated to comply with regulations or technological changes.<0/>Changes will be published on this page."
 
-#: src/app/[locale]/cookie-policy/components/CookiePolicy/index.tsx:285
+#: src/app/[locale]/cookie-policy/components/CookiePolicy/index.tsx:276
 #: src/hooks/usePages/utils/index.tsx:51
 msgid "Contatti"
 msgstr "Contacts us"
 
 #. placeholder {0}: ITALIA.email
-#: src/app/[locale]/cookie-policy/components/CookiePolicy/index.tsx:287
+#: src/app/[locale]/cookie-policy/components/CookiePolicy/index.tsx:278
 msgid "Per richieste relative ai cookie o al trattamento dei dati personali è possibile scrivere a: <0>{0}</0>"
 msgstr "For requests regarding cookies or the processing of personal data, you can write to: <0>{0}</0>"
 
@@ -220,17 +220,14 @@ msgstr "Data Subject Rights (GDPR)"
 
 #. placeholder {0}: ITALIA.email
 #: src/app/[locale]/informativa-privacy/components/InformativaPrivacy/index.tsx:173
-msgid "<0>L'utente ha il diritto di chiedere al Titolare l'accesso, la rettifica, la cancellazione (Diritto all'Oblio), la limitazione del trattamento o di opporsi al loro trattamento. Ha inoltre il diritto alla portabilità dei dati.</0><1>Le richieste relative all'esercizio dei diritti possono essere inviate al Titolare tramite l'indirizzo email dedicato: <2>{0}</2>.</1><3>L'utente ha, in ogni momento, il diritto di proporre reclamo all'Autorità di controllo (Garante per la Protezione dei Dati Personali).</3>"
-msgstr ""
-"<0>The user has the right to request from the Data Controller access, rectification, deletion (Right to Erasure), restriction of processing, or to object to the processing of their personal data. The user also has the right to data portability.</0>\n"
-"<1>Requests concerning the exercise of these rights can be sent to the Data Controller via the dedicated email address: <2>{0}</2>.</1>\n"
-"<3>The user has the right, at any time, to lodge a complaint with the Supervisory Authority (Italian Data Protection Authority – Garante per la Protezione dei Dati Personali).</3>"
+msgid "<0>L'utente ha il diritto di chiedere al Titolare l'accesso, la rettifica, la cancellazione (Diritto all'Oblio), la limitazione del trattamento o di opporsi al loro trattamento.<1/>Ha inoltre il diritto alla portabilità dei dati.<2/>Le richieste relative all'esercizio dei diritti possono essere inviate al Titolare tramite l'indirizzo email dedicato: <3>{0}</3>.<4/>L'utente ha, in ogni momento, il diritto di proporre reclamo all'Autorità di controllo (Garante per la Protezione dei Dati Personali).</0>"
+msgstr "<0>The user has the right to ask the Controller for access, rectification, erasure (Right to be Forgotten), restriction of processing, or to object to their processing.<1/>They also have the right to data portability.<2/>Requests regarding the exercise of these rights may be sent to the Controller via the dedicated email address: <3>{0}</3>.<4/>The user has the right, at all times, to lodge a complaint with the Supervisory Authority (Data Protection Authority).</0>"
 
-#: src/app/[locale]/informativa-privacy/components/InformativaPrivacy/index.tsx:194
+#: src/app/[locale]/informativa-privacy/components/InformativaPrivacy/index.tsx:193
 msgid "Aggiornamenti della Policy"
 msgstr "Policy Updates"
 
-#: src/app/[locale]/informativa-privacy/components/InformativaPrivacy/index.tsx:197
+#: src/app/[locale]/informativa-privacy/components/InformativaPrivacy/index.tsx:196
 msgid "Il Titolare si riserva il diritto di modificare la presente Informativa in qualsiasi momento.<0/>L'uso continuato del sito implica l'accettazione delle nuove condizioni."
 msgstr "The Data Controller reserves the right to modify this Notice at any time.<0/>Continued use of the website implies acceptance of the new terms."
 
