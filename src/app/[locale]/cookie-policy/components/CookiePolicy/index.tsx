@@ -17,6 +17,15 @@ import useGdprConsent from "hooks/useGdprConsent";
 import { ReactNode } from "react";
 import { ITALIA, NAME_LEGAL_STRING } from "utils/constants";
 
+interface CookieData {
+  nome: string;
+  fornitore: ReactNode;
+  scopo: ReactNode;
+  durata: ReactNode;
+  categoria: ReactNode;
+  policyLink: ReactNode; // NUOVO CAMPO
+}
+
 interface Column {
   id: keyof CookieData; // La chiave nell'oggetto CookieData
   label: ReactNode; // L'intestazione da visualizzare
@@ -28,17 +37,10 @@ const columns: Column[] = [
   { id: "scopo", label: <Trans>Scopo</Trans> },
   { id: "durata", label: <Trans>Durata Tipica</Trans> },
   { id: "categoria", label: <Trans>Categoria (GDPR)</Trans> },
+  { id: "policyLink", label: <Trans>Policy del Fornitore</Trans> }, // NUOVA COLONNA
 ];
 
-interface CookieData {
-  nome: string;
-  fornitore: ReactNode;
-  scopo: ReactNode;
-  durata: ReactNode;
-  categoria: ReactNode;
-}
-
-export const cookies: CookieData[] = [
+const cookies: CookieData[] = [
   {
     nome: "NEXT_LOCALE",
     fornitore: <Trans>Prima Parte (Tuo Sito)</Trans>,
@@ -52,6 +54,7 @@ export const cookies: CookieData[] = [
     ),
     durata: <Trans>1 Anno</Trans>,
     categoria: <Trans>Tecnico (Preferenze)</Trans>,
+    policyLink: <Trans>N/A</Trans>, // Prima Parte
   },
   {
     nome: "_fbc",
@@ -66,6 +69,15 @@ export const cookies: CookieData[] = [
     ),
     durata: <Trans>3 Mesi</Trans>,
     categoria: <Trans>Marketing/Targeting</Trans>,
+    policyLink: (
+      <Link
+        href="https://www.facebook.com/privacy/policy"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <Trans>Informativa Meta</Trans>
+      </Link>
+    ),
   },
   {
     nome: "_fbp",
@@ -80,6 +92,15 @@ export const cookies: CookieData[] = [
     ),
     durata: <Trans>3 Mesi</Trans>,
     categoria: <Trans>Marketing/Targeting</Trans>,
+    policyLink: (
+      <Link
+        href="https://www.facebook.com/privacy/policy"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <Trans>Informativa Meta</Trans>
+      </Link>
+    ),
   },
   {
     nome: "_ga",
@@ -94,6 +115,15 @@ export const cookies: CookieData[] = [
     ),
     durata: <Trans>2 Anni</Trans>,
     categoria: <Trans>Analitico/Statistico</Trans>,
+    policyLink: (
+      <Link
+        href="https://policies.google.com/privacy?hl=it"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <Trans>Norme sulla Privacy di Google</Trans>
+      </Link>
+    ),
   },
   {
     nome: "_ga_QW9Q2X9B1Y",
@@ -108,6 +138,15 @@ export const cookies: CookieData[] = [
     ),
     durata: <Trans>2 Anni</Trans>,
     categoria: <Trans>Analitico/Statistico</Trans>,
+    policyLink: (
+      <Link
+        href="https://policies.google.com/privacy?hl=it"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <Trans>Norme sulla Privacy di Google</Trans>
+      </Link>
+    ),
   },
   {
     nome: "CookieConsent",
@@ -121,6 +160,7 @@ export const cookies: CookieData[] = [
     ),
     durata: <Trans>1 Anno</Trans>,
     categoria: <Trans>Tecnico (Necessario)</Trans>,
+    policyLink: <Trans>N/A</Trans>, // Prima Parte
   },
 ];
 
