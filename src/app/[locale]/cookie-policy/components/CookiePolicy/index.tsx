@@ -3,7 +3,6 @@
 import { Trans } from "@lingui/react/macro";
 import {
   Link,
-  Stack,
   Table,
   TableBody,
   TableCell,
@@ -15,7 +14,158 @@ import {
 import { LegalPage } from "components";
 import { usePages } from "hooks";
 import useGdprConsent from "hooks/useGdprConsent";
+import { ReactNode } from "react";
 import { ITALIA, NAME_LEGAL_STRING } from "utils/constants";
+
+interface Column {
+  id: keyof CookieData; // La chiave nell'oggetto CookieData
+  label: ReactNode; // L'intestazione da visualizzare
+}
+
+const columns: Column[] = [
+  { id: "nome", label: <Trans>Nome Cookie</Trans> },
+  { id: "fornitore", label: <Trans>Fornitore</Trans> },
+  { id: "scopo", label: <Trans>Scopo</Trans> },
+  { id: "durata", label: <Trans>Durata Tipica</Trans> },
+  { id: "categoria", label: <Trans>Categoria (GDPR)</Trans> },
+];
+
+interface CookieData {
+  nome: string;
+  fornitore: ReactNode;
+  scopo: ReactNode;
+  durata: ReactNode;
+  categoria: ReactNode;
+}
+
+export const cookies: CookieData[] = [
+  {
+    nome: "NEXT_LOCALE",
+    fornitore: <Trans>Prima Parte (Tuo Sito)</Trans>,
+    scopo: (
+      <Trans>
+        Gestione della Localizzazione. Memorizza la lingua di visualizzazione
+        preferita selezionata dall'utente (es. it, en). Essenziale per le
+        applicazioni basate su framework come Next.js che supportano
+        l'internazionalizzazione.
+      </Trans>
+    ),
+    durata: <Trans>1 Anno</Trans>,
+    categoria: <Trans>Tecnico (Preferenze)</Trans>,
+  },
+  {
+    nome: "_fbc",
+    fornitore: <Trans>Meta (Facebook)</Trans>,
+    scopo: (
+      <Trans>
+        Attribuzione del Click (Facebook Click ID). Viene creato quando un
+        utente arriva sul sito cliccando su un annuncio di Facebook/Instagram.
+        Consente di collegare le azioni dell'utente (es. acquisti) alla
+        specifica campagna pubblicitaria Meta che ha generato il traffico.
+      </Trans>
+    ),
+    durata: <Trans>3 Mesi</Trans>,
+    categoria: <Trans>Marketing/Targeting</Trans>,
+  },
+  {
+    nome: "_fbp",
+    fornitore: <Trans>Meta (Facebook)</Trans>,
+    scopo: (
+      <Trans>
+        Identificazione Browser (Facebook Browser ID). Contiene un ID browser
+        univoco generato dal Pixel di Meta. Utilizzato per scopi di misurazione,
+        ottimizzazione degli annunci e re-targeting, consentendo a Meta di
+        mostrare annunci pertinenti all'utente in un secondo momento.
+      </Trans>
+    ),
+    durata: <Trans>3 Mesi</Trans>,
+    categoria: <Trans>Marketing/Targeting</Trans>,
+  },
+  {
+    nome: "_ga",
+    fornitore: <Trans>Google Analytics</Trans>,
+    scopo: (
+      <Trans>
+        Identificativo Utente Unico. Registra un ID univoco (Client ID) che
+        identifica in modo anonimo un singolo utente/browser. Usato per
+        distinguere gli utenti e generare dati statistici sull'uso del sito
+        (numero di visitatori, sessioni, ecc.).
+      </Trans>
+    ),
+    durata: <Trans>2 Anni</Trans>,
+    categoria: <Trans>Analitico/Statistico</Trans>,
+  },
+  {
+    nome: "_ga_QW9Q2X9B1Y",
+    fornitore: <Trans>Google Analytics</Trans>,
+    scopo: (
+      <Trans>
+        Dati di Sessione Specifici (GA4). Cookie specifico per le proprietà
+        Google Analytics 4. Utilizzato per mantenere lo stato della sessione di
+        navigazione e memorizzare informazioni sul traffico di origine (es. da
+        dove proviene l'utente).
+      </Trans>
+    ),
+    durata: <Trans>2 Anni</Trans>,
+    categoria: <Trans>Analitico/Statistico</Trans>,
+  },
+  {
+    nome: "CookieConsent",
+    fornitore: <Trans>Prima Parte (Tuo Sito)</Trans>,
+    scopo: (
+      <Trans>
+        Memorizzazione del Consenso. Registra se l'utente ha accettato o meno
+        l'uso dei cookie e quali categorie ha scelto. Essenziale per il rispetto
+        del GDPR e della normativa sui cookie.
+      </Trans>
+    ),
+    durata: <Trans>1 Anno</Trans>,
+    categoria: <Trans>Tecnico (Necessario)</Trans>,
+  },
+];
+
+// ----------------------------------------------
+// 3. COMPONENTE TABELLA
+// ----------------------------------------------
+
+export const CookieTable: React.FC = () => {
+  return (
+    <TableContainer>
+      <Typography
+        variant="h6"
+        component="div"
+        sx={{ p: 2, pb: 1, fontWeight: "bold" }}
+      >
+        Dettaglio dei Cookie Utilizzati
+      </Typography>
+      <Table stickyHeader aria-label="tabella dei cookie del sito">
+        <TableHead>
+          <TableRow>
+            {columns.map((column) => (
+              <TableCell key={column.id} align="left">
+                {column.label}
+              </TableCell>
+            ))}
+          </TableRow>
+        </TableHead>
+        <TableBody>
+          {cookies.map((row) => (
+            <TableRow hover role="checkbox" tabIndex={-1} key={row.nome}>
+              {columns.map((column) => {
+                const value = row[column.id];
+                return (
+                  <TableCell key={column.id} align="left">
+                    {value}
+                  </TableCell>
+                );
+              })}
+            </TableRow>
+          ))}
+        </TableBody>
+      </Table>
+    </TableContainer>
+  );
+};
 
 const CookiePolicy: React.FC = () => {
   const { PAGES } = usePages();
@@ -66,85 +216,7 @@ const CookiePolicy: React.FC = () => {
       },
       {
         title: <Trans>Tipologie di Cookie Utilizzati</Trans>,
-        content: (
-          <Trans>
-            <TableContainer>
-              <Table sx={{ minWidth: 650 }}>
-                <TableHead>
-                  <TableRow>
-                    <TableCell>Nome del Cookie</TableCell>
-                    <TableCell>Durata stimata</TableCell>
-                    <TableCell>Tipo di Parte</TableCell>
-                    <TableCell>Tipologia (GDPR)</TableCell>
-                    <TableCell>Descrizione</TableCell>
-                  </TableRow>
-                </TableHead>
-
-                <TableBody>
-                  <TableRow>
-                    <TableCell component="th" scope="row">
-                      NEXT\_LOCALE
-                    </TableCell>
-                    <TableCell>1 Anno</TableCell>
-                    <TableCell>Prima Parte</TableCell>
-                    <TableCell>Tecnico (Preferenze)</TableCell>
-                    <TableCell>
-                      Memorizza la lingua di visualizzazione preferita
-                      dell'utente.
-                    </TableCell>
-                  </TableRow>
-
-                  <TableRow>
-                    <TableCell component="th" scope="row">
-                      CookieConsent
-                    </TableCell>
-                    <TableCell>1 Anno</TableCell>
-                    <TableCell>Prima Parte</TableCell>
-                    <TableCell>Tecnico (Necessario)</TableCell>
-                    <TableCell>
-                      Registra e memorizza la preferenza di consenso dell'utente
-                      al banner.
-                    </TableCell>
-                  </TableRow>
-
-                  <TableRow>
-                    <TableCell component="th" scope="row">
-                      \_ga
-                    </TableCell>
-                    <TableCell>2 Anni</TableCell>
-                    <TableCell>Terza Parte (Google)</TableCell>
-                    <TableCell>Analitico/Statistico</TableCell>
-                    <TableCell>
-                      Registra un ID univoco per distinguere i visitatori e
-                      tracciare le sessioni.
-                    </TableCell>
-                  </TableRow>
-
-                  <TableRow>
-                    <TableCell
-                      component="th"
-                      scope="row"
-                      sx={{ borderBottom: 0 }}
-                    >
-                      \_ga\_1I0DED996WU
-                    </TableCell>
-                    <TableCell sx={{ borderBottom: 0 }}>2 Anni</TableCell>
-                    <TableCell sx={{ borderBottom: 0 }}>
-                      Terza Parte (Google)
-                    </TableCell>
-                    <TableCell sx={{ borderBottom: 0 }}>
-                      Analitico/Statistico
-                    </TableCell>
-                    <TableCell sx={{ borderBottom: 0 }}>
-                      Mantiene lo stato della sessione di navigazione per lo
-                      specifico ID di misurazione GA4.
-                    </TableCell>
-                  </TableRow>
-                </TableBody>
-              </Table>
-            </TableContainer>
-          </Trans>
-        ),
+        content: <CookieTable />,
       },
       {
         title: <Trans>Come Gestire o Revocare il Consenso</Trans>,

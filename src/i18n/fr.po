@@ -2,68 +2,154 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-10-12 18:42+0200\n"
+"POT-Creation-Date: \n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
+"Language: \n"
 "Language-Team: \n"
-"Language: fr\n"
-"MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
-"Content-Transfer-Encoding: 8bit\n"
+"Content-Type: \n"
+"Content-Transfer-Encoding: \n"
 "Plural-Forms: \n"
-"X-Generator: Poedit 3.8\n"
+
+#: src/app/[locale]/cookie-policy/components/CookiePolicy/index.tsx:26
+msgid "Nome Cookie"
+msgstr "Nom du Cookie"
+
+#: src/app/[locale]/cookie-policy/components/CookiePolicy/index.tsx:27
+msgid "Fornitore"
+msgstr "Fournisseur"
 
 #: src/app/[locale]/cookie-policy/components/CookiePolicy/index.tsx:28
+msgid "Scopo"
+msgstr "But"
+
+#: src/app/[locale]/cookie-policy/components/CookiePolicy/index.tsx:29
+msgid "Durata Tipica"
+msgstr "Durée Typique"
+
+#: src/app/[locale]/cookie-policy/components/CookiePolicy/index.tsx:30
+msgid "Categoria (GDPR)"
+msgstr "Catégorie (RGPD)"
+
+#: src/app/[locale]/cookie-policy/components/CookiePolicy/index.tsx:44
+#: src/app/[locale]/cookie-policy/components/CookiePolicy/index.tsx:114
+msgid "Prima Parte (Tuo Sito)"
+msgstr "Première Partie (Votre Site)"
+
+#: src/app/[locale]/cookie-policy/components/CookiePolicy/index.tsx:46
+msgid "Gestione della Localizzazione. Memorizza la lingua di visualizzazione preferita selezionata dall'utente (es. it, en). Essenziale per le applicazioni basate su framework come Next.js che supportano l'internazionalizzazione."
+msgstr "Gestion de la Localisation. Stocke la langue d'affichage préférée sélectionnée par l'utilisateur (ex. it, en). Essentiel pour les applications basées sur des frameworks comme Next.js prenant en charge l'internationalisation."
+
+#: src/app/[locale]/cookie-policy/components/CookiePolicy/index.tsx:53
+#: src/app/[locale]/cookie-policy/components/CookiePolicy/index.tsx:122
+msgid "1 Anno"
+msgstr "1 An"
+
+#: src/app/[locale]/cookie-policy/components/CookiePolicy/index.tsx:54
+msgid "Tecnico (Preferenze)"
+msgstr "Technique (Préférences)"
+
+#: src/app/[locale]/cookie-policy/components/CookiePolicy/index.tsx:58
+#: src/app/[locale]/cookie-policy/components/CookiePolicy/index.tsx:72
+msgid "Meta (Facebook)"
+msgstr "Meta (Facebook)"
+
+#: src/app/[locale]/cookie-policy/components/CookiePolicy/index.tsx:60
+msgid "Attribuzione del Click (Facebook Click ID). Viene creato quando un utente arriva sul sito cliccando su un annuncio di Facebook/Instagram. Consente di collegare le azioni dell'utente (es. acquisti) alla specifica campagna pubblicitaria Meta che ha generato il traffico."
+msgstr "Attribution du Clic (ID de Clic Facebook). Créé lorsqu'un utilisateur arrive sur le site en cliquant sur une annonce Facebook/Instagram. Permet de relier les actions de l'utilisateur (ex. achats) à la campagne publicitaire Meta spécifique ayant généré le trafic."
+
+#: src/app/[locale]/cookie-policy/components/CookiePolicy/index.tsx:67
+#: src/app/[locale]/cookie-policy/components/CookiePolicy/index.tsx:81
+msgid "3 Mesi"
+msgstr "3 Mois"
+
+#: src/app/[locale]/cookie-policy/components/CookiePolicy/index.tsx:68
+#: src/app/[locale]/cookie-policy/components/CookiePolicy/index.tsx:82
+msgid "Marketing/Targeting"
+msgstr "Marketing/Ciblage"
+
+#: src/app/[locale]/cookie-policy/components/CookiePolicy/index.tsx:74
+msgid "Identificazione Browser (Facebook Browser ID). Contiene un ID browser univoco generato dal Pixel di Meta. Utilizzato per scopi di misurazione, ottimizzazione degli annunci e re-targeting, consentendo a Meta di mostrare annunci pertinenti all'utente in un secondo momento."
+msgstr "Identification du Navigateur (ID de Navigateur Facebook). Contient un ID de navigateur unique généré par le Pixel Meta. Utilisé à des fins de mesure, d'optimisation des annonces et de re-ciblage, permettant à Meta d'afficher des annonces pertinentes à l'utilisateur ultérieurement."
+
+#: src/app/[locale]/cookie-policy/components/CookiePolicy/index.tsx:86
+#: src/app/[locale]/cookie-policy/components/CookiePolicy/index.tsx:100
+msgid "Google Analytics"
+msgstr "Google Analytics"
+
+#: src/app/[locale]/cookie-policy/components/CookiePolicy/index.tsx:88
+msgid "Identificativo Utente Unico. Registra un ID univoco (Client ID) che identifica in modo anonimo un singolo utente/browser. Usato per distinguere gli utenti e generare dati statistici sull'uso del sito (numero di visitatori, sessioni, ecc.)."
+msgstr "Identifiant Utilisateur Unique. Enregistre un ID unique (Client ID) qui identifie anonymement un utilisateur/navigateur unique. Utilisé pour distinguer les utilisateurs et générer des données statistiques sur l'utilisation du site (nombre de visiteurs, sessions, etc.)."
+
+#: src/app/[locale]/cookie-policy/components/CookiePolicy/index.tsx:95
+#: src/app/[locale]/cookie-policy/components/CookiePolicy/index.tsx:109
+msgid "2 Anni"
+msgstr "2 Ans"
+
+#: src/app/[locale]/cookie-policy/components/CookiePolicy/index.tsx:96
+#: src/app/[locale]/cookie-policy/components/CookiePolicy/index.tsx:110
+msgid "Analitico/Statistico"
+msgstr "Analytique/Statistique"
+
+#: src/app/[locale]/cookie-policy/components/CookiePolicy/index.tsx:102
+msgid "Dati di Sessione Specifici (GA4). Cookie specifico per le proprietà Google Analytics 4. Utilizzato per mantenere lo stato della sessione di navigazione e memorizzare informazioni sul traffico di origine (es. da dove proviene l'utente)."
+msgstr "Données de Session Spécifiques (GA4). Cookie spécifique aux propriétés Google Analytics 4. Utilisé pour maintenir l'état de la session de navigation et stocker des informations sur le trafic d'origine (ex. d'où provient l'utilisateur)."
+
+#: src/app/[locale]/cookie-policy/components/CookiePolicy/index.tsx:116
+msgid "Memorizzazione del Consenso. Registra se l'utente ha accettato o meno l'uso dei cookie e quali categorie ha scelto. Essenziale per il rispetto del GDPR e della normativa sui cookie."
+msgstr "Stockage du Consentement. Enregistre si l'utilisateur a accepté ou non l'utilisation des cookies et quelles catégories il a choisies. Essentiel pour le respect du RGPD et de la réglementation sur les cookies."
+
+#: src/app/[locale]/cookie-policy/components/CookiePolicy/index.tsx:123
+msgid "Tecnico (Necessario)"
+msgstr "Technique (Nécessaire)"
+
+#: src/app/[locale]/cookie-policy/components/CookiePolicy/index.tsx:178
 msgid "Questa Cookie Policy spiega cosa sono i cookie, quali cookie utilizziamo sul sito di {NAME_LEGAL_STRING} e come l’utente può gestire le proprie preferenze.<0/>L’utilizzo dei cookie avviene in conformità al GDPR e alle linee guida europee."
 msgstr "Cette Politique de Cookies explique ce que sont les cookies, quels cookies nous utilisons sur le site de {NAME_LEGAL_STRING} et comment l’utilisateur peut gérer ses préférences.<0/>L’utilisation des cookies se fait conformément au RGPD et aux directives européennes."
 
-#: src/app/[locale]/cookie-policy/components/CookiePolicy/index.tsx:40
+#: src/app/[locale]/cookie-policy/components/CookiePolicy/index.tsx:190
 msgid "Cosa sono i Cookie"
 msgstr "Que sont les Cookies"
 
-#: src/app/[locale]/cookie-policy/components/CookiePolicy/index.tsx:43
+#: src/app/[locale]/cookie-policy/components/CookiePolicy/index.tsx:193
 msgid "I cookie sono piccoli file di testo che i siti web inviano al browser dell’utente.<0/>Vengono utilizzati per migliorare l’esperienza di navigazione, analizzare il traffico e offrire contenuti personalizzati."
 msgstr "Les cookies sont de petits fichiers texte que les sites web envoient au navigateur de l’utilisateur.<0/>Ils sont utilisés pour améliorer l’expérience de navigation, analyser le trafic et offrir du contenu personnalisé."
 
-#: src/app/[locale]/cookie-policy/components/CookiePolicy/index.tsx:54
+#: src/app/[locale]/cookie-policy/components/CookiePolicy/index.tsx:204
 msgid "Base Giuridica del Trattamento"
 msgstr "Base Juridique du Traitement"
 
-#: src/app/[locale]/cookie-policy/components/CookiePolicy/index.tsx:57
+#: src/app/[locale]/cookie-policy/components/CookiePolicy/index.tsx:207
 msgid "L’installazione dei cookie tecnici è basata sul legittimo interesse.<0/>I cookie di analytics, marketing e terze parti vengono installati solo previa accettazione esplicita tramite banner cookie."
 msgstr "L’installation des cookies techniques repose sur l’intérêt légitime.<0/>Les cookies d’analyse, de marketing et de tiers ne sont installés qu’après acceptation explicite via la bannière de cookies."
 
-#: src/app/[locale]/cookie-policy/components/CookiePolicy/index.tsx:68
+#: src/app/[locale]/cookie-policy/components/CookiePolicy/index.tsx:218
 msgid "Tipologie di Cookie Utilizzati"
 msgstr "Types de Cookies Utilisés"
 
-#: src/app/[locale]/cookie-policy/components/CookiePolicy/index.tsx:70
-msgid "<0><1><2><3><4>Nome del Cookie</4><5>Durata stimata</5><6>Tipo di Parte</6><7>Tipologia (GDPR)</7><8>Descrizione</8></3></2><9><10><11>NEXT\\_LOCALE</11><12>1 Anno</12><13>Prima Parte</13><14>Tecnico (Preferenze)</14><15>Memorizza la lingua di visualizzazione preferita dell'utente.</15></10><16><17>CookieConsent</17><18>1 Anno</18><19>Prima Parte</19><20>Tecnico (Necessario)</20><21>Registra e memorizza la preferenza di consenso dell'utente al banner.</21></16><22><23>\\_ga</23><24>2 Anni</24><25>Terza Parte (Google)</25><26>Analitico/Statistico</26><27>Registra un ID univoco per distinguere i visitatori e tracciare le sessioni.</27></22><28><29>\\_ga\\_1I0DED996WU</29><30>2 Anni</30><31>Terza Parte (Google)</31><32>Analitico/Statistico</32><33>Mantiene lo stato della sessione di navigazione per lo specifico ID di misurazione GA4.</33></28></9></1></0>"
-msgstr "<0><1><2><3><4>Nom du Cookie</4><5>Durée estimée</5><6>Partie</6><7>Type (RGPD)</7><8>Description</8></3></2><9><10><11>NEXT_LOCALE</11><12>1 An</12><13>Première Partie</13><14>Technique (Préférences)</14><15>Enregistre la langue d’affichage préférée de l’utilisateur.</15></10><16><17>CookieConsent</17><18>1 An</18><19>Première Partie</19><20>Technique (Nécessaire)</20><21>Enregistre et mémorise la préférence de consentement de l’utilisateur pour la bannière.</21></16><22><23>_ga</23><24>2 Ans</24><25>Tierce Partie (Google)</25><26>Analytique/Statistique</26><27>Enregistre un ID unique pour distinguer les visiteurs et suivre les sessions.</27></22><28><29>_ga_1I0DED996WU</29><30>2 Ans</30><31>Tierce Partie (Google)</31><32>Analytique/Statistique</32><33>Maintient l’état de la session de navigation pour l’ID de mesure GA4 spécifique.</33></28></9></1></0>"
-
-#: src/app/[locale]/cookie-policy/components/CookiePolicy/index.tsx:150
+#: src/app/[locale]/cookie-policy/components/CookiePolicy/index.tsx:222
 msgid "Come Gestire o Revocare il Consenso"
 msgstr "Comment Gérer ou Révoquer le Consentement"
 
-#: src/app/[locale]/cookie-policy/components/CookiePolicy/index.tsx:153
+#: src/app/[locale]/cookie-policy/components/CookiePolicy/index.tsx:225
 msgid "L’utente può modificare in qualsiasi momento le proprie <0>preferenze</0>.<1/>È inoltre possibile gestire i cookie tramite le impostazioni del browser o strumenti esterni come YourOnlineChoices."
 msgstr "L’utilisateur peut modifier ses <0>préférences</0> à tout moment.<1/>Il est également possible de gérer les cookies via les paramètres du navigateur ou des outils externes tels que YourOnlineChoices."
 
-#: src/app/[locale]/cookie-policy/components/CookiePolicy/index.tsx:163
+#: src/app/[locale]/cookie-policy/components/CookiePolicy/index.tsx:235
 msgid "Modifiche alla Cookie Policy"
 msgstr "Modifications de la Politique de Cookies"
 
-#: src/app/[locale]/cookie-policy/components/CookiePolicy/index.tsx:166
+#: src/app/[locale]/cookie-policy/components/CookiePolicy/index.tsx:238
 msgid "Questa Cookie Policy può essere aggiornata per conformarsi a normative o cambiamenti tecnologici.<0/>Le modifiche saranno pubblicate su questa pagina."
 msgstr "Cette Politique de Cookies peut être mise à jour pour se conformer aux réglementations ou aux évolutions technologiques.<0/>Les modifications seront publiées sur cette page."
 
-#: src/app/[locale]/cookie-policy/components/CookiePolicy/index.tsx:176
+#: src/app/[locale]/cookie-policy/components/CookiePolicy/index.tsx:248
 #: src/hooks/usePages/utils/index.tsx:51
 msgid "Contatti"
 msgstr "Contact"
 
 #. placeholder {0}: ITALIA.email
-#: src/app/[locale]/cookie-policy/components/CookiePolicy/index.tsx:178
+#: src/app/[locale]/cookie-policy/components/CookiePolicy/index.tsx:250
 msgid "Per richieste relative ai cookie o al trattamento dei dati personali è possibile scrivere a: <0>{0}</0>"
 msgstr "Pour toute demande relative aux cookies ou au traitement des données personnelles, vous pouvez écrire à : <0>{0}</0>"
 
@@ -896,9 +982,7 @@ msgstr "Marcheur base"
 #: src/modules/GiostreIppowalker/_compare.tsx:56
 #: src/modules/GiostreTecnoexerciser/_compare.tsx:69
 msgid "Giostra <0/>corridoio TECNOFENCE"
-msgstr ""
-"Marcheur<0/>\n"
-"couloir TECNOFENCE"
+msgstr "Marcheur<0/> couloir TECNOFENCE"
 
 #: src/modules/GiostreIppowalker/_compare.tsx:68
 msgid "Giostra <0/>corridoio EASY"

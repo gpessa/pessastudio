@@ -56,6 +56,7 @@
     "@types/react-dom": "^19.2.3",
     "@types/react-mailchimp-subscribe": "^2.1.4",
     "@types/xml2js": "^0.4.14",
+    "baseline-browser-mapping": "^2.8.32",
     "eslint": "^9.39.1",
     "eslint-config-next": "^16.0.3",
     "eslint-plugin-import": "^2.32.0",
