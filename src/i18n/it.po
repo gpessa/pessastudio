@@ -398,17 +398,17 @@ msgstr "Newsletters"
 msgid "Rimani informato sui nostri sconti e gli eventi"
 msgstr "Rimani informato sui nostri sconti e gli eventi"
 
-#: src/components/Gdpr/index.tsx:60
+#: src/components/Gdpr/index.tsx:62
 msgid "Accetta"
 msgstr "Accetta"
 
-#: src/components/Gdpr/index.tsx:61
+#: src/components/Gdpr/index.tsx:63
 msgid "Refiuta"
 msgstr "Refiuta"
 
 #. placeholder {0}: COOKIE_POLICY.title
 #. placeholder {1}: INFORMATIVA_PRIVACY.title
-#: src/components/Gdpr/index.tsx:70
+#: src/components/Gdpr/index.tsx:73
 msgid "<0>Questo sito web utilizza cookie per garantirti la migliore esperienza sul nostro sito web, analizzare il traffico verso questo sito web, mostrarti annunci personalizzati su siti web di terze parti e fornirti funzionalità social media.</0><1>Per ulteriori informazioni, consulta la nostra <2>{0}</2> e la nostra <3>{1}</3>.</1>"
 msgstr "<0>Questo sito web utilizza cookie per garantirti la migliore esperienza sul nostro sito web, analizzare il traffico verso questo sito web, mostrarti annunci personalizzati su siti web di terze parti e fornirti funzionalità social media.</0><1>Per ulteriori informazioni, consulta la nostra <2>{0}</2> e la nostra <3>{1}</3>.</1>"
 

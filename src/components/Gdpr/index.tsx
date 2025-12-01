@@ -3,6 +3,7 @@
 import { Trans } from "@lingui/react/macro";
 import { Box, Button, ButtonProps, Link, Typography } from "@mui/material";
 import { usePages } from "hooks";
+import useGdprConsent from "hooks/useGdprConsent";
 import NextLink from "next/link";
 import React from "react";
 import CookieConsent from "react-cookie-consent";
@@ -51,6 +52,7 @@ const Gdpr: React.FC = () => {
   const {
     PAGES: { COOKIE_POLICY, INFORMATIVA_PRIVACY },
   } = usePages();
+  const { onAcceptCookieConsent } = useGdprConsent();
 
   return (
     <CookieConsent
@@ -65,6 +67,7 @@ const Gdpr: React.FC = () => {
       enableDeclineButton={true}
       buttonWrapperClasses={classes.classes.buttons}
       flipButtons={true}
+      onAccept={onAcceptCookieConsent}
     >
       <Box mb={3}>
         <Trans>

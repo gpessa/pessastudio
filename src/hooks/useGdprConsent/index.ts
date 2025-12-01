@@ -22,7 +22,11 @@ const useGdprConsent = () => {
     window.location.reload();
   };
 
-  return { hasConsented, showCookieConsent };
+  const onAcceptCookieConsent = () => {
+    window.location.reload();
+  };
+
+  return { hasConsented, showCookieConsent, onAcceptCookieConsent };
 };
 
 export default useGdprConsent;
