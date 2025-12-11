@@ -1,8 +1,6 @@
-// import { renderToStaticMarkup } from "react-dom/server";
-import { i18n } from "@lingui/core";
-import { t } from "@lingui/core/macro";
 import { getProducts } from "hooks/useProducts";
 import type { NextRequest } from "next/server";
+import { getI18nInstance } from "utils/appRouterI18n";
 import { NAME_STRING, WEBISTE_URL } from "utils/constants";
 import { getImageUrl } from "utils/getImageUrl";
 import { Builder } from "xml2js";
@@ -12,8 +10,12 @@ const formatWeight = (value: number) => Math.round(value) + " kg";
 const formatPrice = (amount: number) => amount.toFixed(2) + " EUR";
 
 export async function GET(request: NextRequest) {
-  const locale = request.headers.get("x-next-i18n-router-locale");
+  const locale = request.headers.get("x-next-i18n-router-locale")!;
+  const i18n = getI18nInstance(locale);
   i18n.activate(locale!);
+
+  console.log("Generating feed for locale:", locale);
+
   const products = getProducts(locale!);
 
   const feed = {
@@ -39,7 +41,7 @@ export async function GET(request: NextRequest) {
               "g:availability": "in stock",
               "g:brand": NAME_STRING,
               "g:condition": "new",
-              "g:description": description && t(description),
+              "g:description": description && i18n._(description),
               "g:google_product_category": "1031", // Sporting Goods > Outdoor Recreation > Equestrian (check here https://www.google.com/basepages/producttype/taxonomy-with-ids.en-US.txt)
               "g:id": `PESSASTUDIO_${id}`,
               "g:identifier_exists": "no",
@@ -58,7 +60,7 @@ export async function GET(request: NextRequest) {
                 weight && formatWeight(weight > 400 ? 400 : weight),
               "g:shipping_width":
                 width && formatSize(width > 400 ? 400 : width),
-              "g:title": t(name),
+              "g:title": i18n._(name),
             })
           ),
         title: NAME_STRING,
