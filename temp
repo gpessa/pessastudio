@@ -13,12 +13,12 @@
 -100, regalo mamma
  100, migrazione
 -------
-  20, cambio email
-  15, fiera cavalli 
-   5, prezzo cavalletti
-  50, aggiornmaneto librerie, fix newsletter broken, aggiunta secondo pulsante cookie banner, creazione page termini e condizioni
-  50, struttura pagine
-  50, dettagli nelle pagine
-  50, clean cookies after reset 
-  70, traduizioni nuove pagine
-  60, traduzioni
+  20, Cambio email
+  15, Fiera cavalli 
+   5, Aggiornamento prezzo cavalletti
+  50, Aggiornmaneto Librerie, Fix newsletter, Aggiunta secondo pulsante cookie banner, Creazione Privacy & T&C
+ 100, Costruzione Pagine
+  50, Pulizia Cookie dopo reset, meccanismo di bloccaggio. 
+  70, Definizione testi Privacy & T&C
+  60, Traduzione Privacy & T&C
+  10, Rinnovo dominio
