@@ -1,6 +1,6 @@
 {
   "name": "pessastudio",
-  "version": "4.1.0",
+  "version": "4.2.0",
   "private": true,
   "description": "Pessastudio",
   "license": "MIT",
@@ -14,6 +14,7 @@
     "prepare": "husky"
   },
   "dependencies": {
+    "-": "^0.0.1",
     "@emotion/cache": "^11.14.0",
     "@emotion/react": "^11.14.0",
     "@emotion/styled": "^11.14.1",
@@ -56,7 +57,7 @@
     "@types/react-dom": "^19.2.3",
     "@types/react-mailchimp-subscribe": "^2.1.4",
     "@types/xml2js": "^0.4.14",
-    "baseline-browser-mapping": "^2.8.32",
+    "baseline-browser-mapping": "^2.9.19",
     "eslint": "^9.39.1",
     "eslint-config-next": "^16.0.6",
     "eslint-plugin-import": "^2.32.0",

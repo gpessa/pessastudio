@@ -78,6 +78,11 @@ const jsonLdOrganization: WithContext<Organization> = {
   url: WEBISTE_URL,
 };
 
+// This is the key! This tells Next.js exactly which locales to pre-build.
+export function generateStaticParams() {
+  return i18nConfig.locales.map((locale) => ({ locale }));
+}
+
 export default async function RootLayout({
   children,
   params,
