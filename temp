@@ -1,27 +1,33 @@
- 5, cambio dressage (toldo moduli dal bundle)
+5, cambio dressage (toldo moduli dal bundle)
 10, aggiornmaneto prezzi
- 5, dressage fix (different products)
- 5, contatto commerciale
+5, dressage fix (different products)
+5, contatto commerciale
 10, spedizione Augusto
 12, dominio
 15, deps
- 5, deps
+5, deps
 10, deps
 15, whatsapp
- 5, cleaning
--------
+5, cleaning
+
+---
+
 -100, regalo mamma
- 100, migrazione
--------
-  20, cambio email
-  15, fiera cavalli 
-   5, prezzo cavalletti
-  50, aggiornmaneto librerie, fix newsletter broken, aggiunta secondo pulsante cookie banner, creazione page termini e condizioni
-  50, struttura pagine
-  50, dettagli nelle pagine
-  50, clean cookies after reset 
-  70, traduizioni nuove pagine
-  60, traduzioni
--------
-  15, fix funzione
-   5, deps
+100, migrazione
+
+---
+
+20, cambio email
+15, fiera cavalli
+5, prezzo cavalletti
+50, aggiornmaneto librerie, fix newsletter broken, aggiunta secondo pulsante cookie banner, creazione page termini e condizioni
+50, struttura pagine
+50, dettagli nelle pagine
+50, clean cookies after reset
+70, traduizioni nuove pagine
+60, traduzioni
+
+---
+
+20, fix funzione chiamata troppe volte
+5, deps

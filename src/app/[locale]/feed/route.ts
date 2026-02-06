@@ -1,16 +1,23 @@
 import { getProducts } from "hooks/useProducts";
-import type { NextRequest } from "next/server";
 import { getI18nInstance } from "utils/appRouterI18n";
 import { NAME_STRING, WEBISTE_URL } from "utils/constants";
 import { getImageUrl } from "utils/getImageUrl";
 import { Builder } from "xml2js";
+import i18nConfig from "../../../../i18nConfig";
 
 const formatSize = (value: number) => Math.round(value) + " cm";
 const formatWeight = (value: number) => Math.round(value) + " kg";
 const formatPrice = (amount: number) => amount.toFixed(2) + " EUR";
 
-export async function GET(request: NextRequest) {
-  const locale = request.headers.get("x-next-i18n-router-locale")!;
+export function generateStaticParams() {
+  return i18nConfig.locales.map((locale) => ({ locale }));
+}
+
+export async function GET(
+  _request: Request,
+  { params }: { params: Promise<{ locale: string }> },
+) {
+  const { locale } = await params;
   const i18n = getI18nInstance(locale);
   i18n.activate(locale!);
 
@@ -61,7 +68,7 @@ export async function GET(request: NextRequest) {
               "g:shipping_width":
                 width && formatSize(width > 400 ? 400 : width),
               "g:title": i18n._(name),
-            })
+            }),
           ),
         title: NAME_STRING,
       },
